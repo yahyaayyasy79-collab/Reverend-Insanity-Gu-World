@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Aptitude A",
+    "uniques": [
+      "[+15]% Strength"
+    ]
+  },
+  {
+    "name": "Aptitude B",
+    "uniques": [
+      "[+10]% Strength"
+    ]
+  },
+  {
+    "name": "Aptitude C",
+    "uniques": [
+      "[+5]% Strength"
+    ]
+  },
+  {
+    "name": "Aptitude D",
+    "uniques": [
+      "[-5]% Strength"
+    ]
+  },
+  {
+    "name": "Attempt Ascension",
+    "unitTypes": [
+      "Melee"
+    ],
+    "uniques": [
+      "Only available <for [Gu Master] units>",
+      "Triggers a [Unit Ascension] event",
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[+100]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Refinement Attempt",
+    "unitTypes": [
+      "Melee"
+    ],
+    "uniques": [
+      "Triggers a [Refinement] event",
+      "Doing so will consume this opportunity to choose a Promotion",
+      "[+50]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Tribulation Strike",
+    "uniques": [
+      "[This Unit] takes [40] damage",
+      "Doing so will consume this opportunity to choose a Promotion"
+    ]
+  },
+  {
+    "name": "Killer Move Stance",
+    "uniques": [
+      "[+30]% Strength"
+    ]
+  },
+  {
+    "name": "Moonlight Gu",
+    "uniques": [
+      "[+10]% Strength"
+    ]
+  },
+  {
+    "name": "Desert Adapted",
+    "uniques": [
+      "[+10]% Strength <when fighting in [Desert] tiles>"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Eternal Life",
+    "milestones": [
+      "Build [Eternal Life Altar]",
+      "Add all [spaceship parts] in capital"
+    ],
+    "requiredSpaceshipParts": [
+      "Eternal Life Fragment"
+    ]
+  },
+  {
+    "name": "Five Regions Supremacy",
+    "milestones": [
+      "Capture all capitals"
+    ]
+  },
+  {
+    "name": "Heavenly Court Mandate",
+    "milestones": [
+      "Anyone should build [Heavenly Court]",
+      "Win diplomatic vote"
+    ]
+  },
+  {
+    "name": "Time",
+    "milestones": [
+      "Have highest score after max turns"
+    ]
+  }
+]

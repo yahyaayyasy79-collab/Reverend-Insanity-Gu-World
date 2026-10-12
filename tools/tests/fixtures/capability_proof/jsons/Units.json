@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Clan Settler",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 30,
+    "uniques": [
+      "Founds a new city <by consuming this unit>",
+      "Never appears as a Barbarian unit"
+    ]
+  },
+  {
+    "name": "Gu Master",
+    "unitType": "Melee",
+    "movement": 2,
+    "strength": 8,
+    "cost": 30,
+    "uniques": [
+      "[+50]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>"
+    ]
+  },
+  {
+    "name": "Gu Immortal",
+    "unitType": "Melee",
+    "movement": 3,
+    "strength": 40,
+    "cost": 200,
+    "requiredTech": "Dao Comprehension",
+    "uniques": [
+      "Costs [50] [Immortal Essence Stone]",
+      "Limited to [1] per Civilization",
+      "Consumes [1] [Immortal Essence Stone]",
+      "Can pass through impassable tiles",
+      "Never appears as a Barbarian unit",
+      "[-50]% Strength <when below [0] [Immortal Essence Stone]>",
+      "[This Unit] gains the [Killer Move Stance] status for [1] turn(s) <costs [10] [Immortal Essence Stone]>",
+      "[This Unit] gets a name from the [Gu Immortals] group"
+    ]
+  },
+  {
+    "name": "Electric Wolf",
+    "unitType": "Melee",
+    "movement": 3,
+    "strength": 10,
+    "cost": 30,
+    "uniqueTo": "Barbarians"
+  },
+  {
+    "name": "Eternal Life Fragment",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 300,
+    "requiredTech": "Dao Comprehension",
+    "uniques": [
+      "Spaceship part",
+      "Cannot be purchased",
+      "Can be added to [spaceship parts] in the Capital",
+      "Only available <if [Eternal Life Altar] is constructed>",
+      "Never appears as a Barbarian unit"
+    ]
+  }
+]

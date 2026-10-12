@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Mortal",
+    "baseHappiness": 9,
+    "unitSupplyBase": 4,
+    "unitSupplyPerCity": 1,
+    "aiUnitMaintenanceModifier": 0.8
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Spectator",
+    "outerColor": [
+      255,
+      255,
+      255
+    ]
+  },
+  {
+    "name": "Gu Yue Clan",
+    "leaderName": "Clan Leader",
+    "personality": "Righteous Clan",
+    "outerColor": [
+      30,
+      40,
+      90
+    ],
+    "innerColor": [
+      220,
+      220,
+      240
+    ],
+    "cities": [
+      "Gu Yue Village",
+      "Moon Valley"
+    ],
+    "uniques": [
+      "Triggers a [Beast Tide] event <upon turn start> <with [3]% chance> <after turn number [20]>",
+      "[+15]% [Science]",
+      "Land units may cross [Region Wall] tiles after the first [Gu Immortal] is earned"
+    ]
+  },
+  {
+    "name": "Hairy Man Tribe",
+    "cityStateType": "Refiners",
+    "outerColor": [
+      120,
+      80,
+      40
+    ],
+    "cities": [
+      "Hairy Hollow"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ]
+  }
+]

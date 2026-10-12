@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Inheritance",
+    "notification": "An inheritance waits here.",
+    "uniques": [
+      "Triggers a [Inheritance] event"
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Righteous Path",
+    "era": "Rank One era",
+    "uniques": [
+      "Only available <before adopting [Demonic Path]>",
+      "Resting point for Influence with City-States is increased by [20]",
+      "[-33]% maintenance costs <for [Melee] units>"
+    ],
+    "policies": [
+      {
+        "name": "Clan Defense",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+25]% Strength for cities"
+        ]
+      },
+      {
+        "name": "Righteous Path Complete",
+        "uniques": [
+          "[+15]% Strength <when defending>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Demonic Path",
+    "era": "Rank One era",
+    "uniques": [
+      "Only available <before adopting [Righteous Path]>",
+      "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
+      "Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately",
+      "[+50]% City-State Influence degradation"
+    ],
+    "policies": [
+      {
+        "name": "Blood Harvest",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+100]% Yield from pillaging tiles",
+          "Receive [+100]% Gold from Barbarian encampments and pillaging Cities"
+        ]
+      },
+      {
+        "name": "Demonic Path Complete",
+        "uniques": [
+          "[+20]% Unhappiness from [Population] [in all cities]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wind Path",
+    "era": "Rank One era",
+    "uniques": [
+      "Unavailable <after adopting [Earth Path]>",
+      "[+5]% Strength <for [Melee] units> <for every [Adopted [Wind Path branch] Policies]>"
+    ],
+    "policies": [
+      {
+        "name": "Wind Path Complete",
+        "uniques": []
+      }
+    ]
+  },
+  {
+    "name": "Earth Path",
+    "era": "Rank One era",
+    "uniques": [
+      "Unavailable <after adopting [Wind Path]>"
+    ],
+    "policies": [
+      {
+        "name": "Earth Path Complete",
+        "uniques": [
+          "[+50]% unhappiness from the number of cities"
+        ]
+      }
+    ]
+  }
+]

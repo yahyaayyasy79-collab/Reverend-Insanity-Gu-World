@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Immortal Essence Stone",
+    "resourceType": "Strategic",
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ]
+  },
+  {
+    "name": "Primeval Stone Vein",
+    "resourceType": "Bonus",
+    "terrainsCanBeFoundOn": [
+      "Desert"
+    ],
+    "gold": 1,
+    "improvement": "Stone Mine",
+    "improvementStats": {
+      "gold": 2
+    }
+  }
+]

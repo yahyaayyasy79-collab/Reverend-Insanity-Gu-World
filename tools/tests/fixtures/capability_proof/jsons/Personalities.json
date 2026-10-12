@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Righteous Clan",
+    "priorities": {
+      "Righteous Path": 30
+    },
+    "uniques": [
+      "[+50]% weight to [Formation Platform] for AI decisions",
+      "Will not build [Eternal Life Altar]"
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Standard",
+    "modifier": 1.0,
+    "turns": [
+      {
+        "yearsPerTurn": 40,
+        "untilTurn": 100
+      }
+    ]
+  }
+]

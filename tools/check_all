@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""Run every check; exit non-zero on any error.
+
+  1. self-tests of the checkers (tools/tests) - a broken checker must not report "green"
+  2. check_schema   - strict JSON + docs/Modders/schemas
+  3. lint_uniques   - every unique and conditional against uniques.md
+  4. check_refs     - cross-references, base-ruleset completeness, project rules, icons (warnings)
+  5. check_package  - Unciv's "Download mod from URL" archive heuristic (GithubAPI.isValidModFolder)
+
+These approximate Unciv's Ruleset Validator; the in-game "Locate mod errors" stays the final authority.
+
+Usage: tools/check_all [--mod PATH] [--quiet] [--no-self-test]
+"""
+from __future__ import annotations
+
+import subprocess
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import check_package  # noqa: E402
+import check_refs  # noqa: E402
+import check_schema  # noqa: E402
+import lint_uniques  # noqa: E402
+from common import REF_ROOT, TOOLS_DIR, mod_root_from_args, ref_tag, require_ref  # noqa: E402
+
+
+def main(argv: list[str]) -> int:
+    require_ref()
+    quiet = "--quiet" in argv
+    print(f"Unciv reference: {REF_ROOT} (tag {ref_tag()})")
+    failures = []
+
+    if "--no-self-test" not in argv:
+        print("\n== self-tests ==")
+        result = subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", str(TOOLS_DIR / "tests"),
+                                 "-t", str(TOOLS_DIR), "-q"], cwd=TOOLS_DIR)
+        if result.returncode:
+            failures.append("self-tests")
+
+    passthrough = [a for a in argv if a in ("--quiet",)] + (["--mod", argv[argv.index("--mod") + 1]] if "--mod" in argv else [])
+    for name, module in (("check_schema", check_schema), ("lint_uniques", lint_uniques), ("check_refs", check_refs)):
+        print(f"\n== {name} ==")
+        if module.main(passthrough):
+            failures.append(name)
+
+    print("\n== packaging ==")
+    r = check_package.check_packaging(mod_root_from_args(argv))
+    r.print(verbose=not quiet)
+    if r.errors:
+        failures.append("packaging")
+
+    print("\n" + ("FAILED: " + ", ".join(failures) if failures else "ALL CHECKS PASSED"))
+    return 1 if failures else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

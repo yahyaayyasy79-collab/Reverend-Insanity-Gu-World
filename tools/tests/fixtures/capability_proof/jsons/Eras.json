@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rank One era",
+    "startingSettlerUnit": "Clan Settler",
+    "startingMilitaryUnit": "Gu Master",
+    "iconRGB": [
+      150,
+      200,
+      150
+    ]
+  },
+  {
+    "name": "Rank Six era",
+    "startingSettlerUnit": "Clan Settler",
+    "startingMilitaryUnit": "Gu Master",
+    "iconRGB": [
+      220,
+      200,
+      120
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Grassland",
+    "type": "Land",
+    "food": 2,
+    "RGB": [
+      97,
+      138,
+      42
+    ]
+  },
+  {
+    "name": "Desert",
+    "type": "Land",
+    "RGB": [
+      230,
+      210,
+      150
+    ],
+    "uniques": [
+      "Units ending their turn on this terrain take [5] damage"
+    ]
+  },
+  {
+    "name": "Region Wall",
+    "type": "Land",
+    "impassable": true,
+    "RGB": [
+      60,
+      60,
+      60
+    ]
+  },
+  {
+    "name": "Coast",
+    "type": "Water",
+    "food": 1,
+    "RGB": [
+      100,
+      140,
+      220
+    ],
+    "uniques": [
+      "Coastal Water"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Refiners",
+    "color": [
+      180,
+      120,
+      60
+    ],
+    "friendBonusUniques": [
+      "[+1 Science] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+2 Science] [in capital]"
+    ]
+  }
+]

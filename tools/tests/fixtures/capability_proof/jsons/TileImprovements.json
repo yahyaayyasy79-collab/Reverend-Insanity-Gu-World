@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Stone Mine",
+    "turnsToBuild": 5
+  },
+  {
+    "name": "Beast Lair",
+    "uniques": [
+      "Marks a barbarian camp",
+      "Unpillagable"
+    ]
+  },
+  {
+    "name": "Inheritance Site",
+    "uniques": [
+      "Provides a random bonus when entered",
+      "Unpillagable"
+    ]
+  }
+]

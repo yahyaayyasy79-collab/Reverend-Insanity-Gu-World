@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Clan Hall",
+    "isNationalWonder": true,
+    "cost": 0,
+    "production": 2,
+    "gold": 3,
+    "uniques": [
+      "Indicates the capital city",
+      "Unsellable",
+      "[1] Unit Supply"
+    ]
+  },
+  {
+    "name": "Formation Platform",
+    "cost": 60,
+    "requiredTech": "Awakening",
+    "maintenance": 1,
+    "cityStrength": 5
+  },
+  {
+    "name": "Ascension Altar",
+    "isNationalWonder": true,
+    "cost": 150,
+    "requiredTech": "Awakening",
+    "uniques": [
+      "Only available <when number of [[Gu Master] Units] is more than [0]>",
+      "Triggers a [Ascension Trial] event"
+    ]
+  },
+  {
+    "name": "Blessed Land",
+    "isNationalWonder": true,
+    "cost": 200,
+    "requiredTech": "Dao Comprehension",
+    "uniques": [
+      "Provides [2] [Immortal Essence Stone]",
+      "Triggers a [Heavenly Tribulation] event <upon turn start> <every [12] turns>",
+      "Triggers a [Heavenly Tribulation] event <upon turn start> <every [5] turns> <starting from the [Rank Six era]>"
+    ]
+  },
+  {
+    "name": "Eternal Life Altar",
+    "isWonder": true,
+    "cost": 400,
+    "requiredTech": "Dao Comprehension",
+    "uniques": [
+      "Enables construction of Spaceship parts"
+    ]
+  },
+  {
+    "name": "Heavenly Court",
+    "isWonder": true,
+    "cost": 400,
+    "requiredTech": "Dao Comprehension",
+    "uniques": [
+      "Triggers voting for the Diplomatic Victory"
+    ]
+  }
+]

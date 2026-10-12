@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Aptitude Awakening",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "Grade A aptitude",
+        "uniques": [
+          "[This Unit] gains the [Aptitude A] promotion",
+          "[-95]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Grade B aptitude",
+        "uniques": [
+          "[This Unit] gains the [Aptitude B] promotion",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Grade C aptitude",
+        "uniques": [
+          "[This Unit] gains the [Aptitude C] promotion",
+          "[-65]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Grade D aptitude",
+        "uniques": [
+          "[This Unit] gains the [Aptitude D] promotion",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Refinement",
+    "text": "The refinement furnace is lit.",
+    "choices": [
+      {
+        "text": "Pay for a safe refinement",
+        "uniques": [
+          "Only available <when above [60] [Gold]>",
+          "Gain [-60] [Gold]",
+          "[This Unit] gains the [Moonlight Gu] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Gamble on a cheap refinement",
+        "uniques": [
+          "Triggers a [Refinement Dice] event",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Refinement Dice",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "The Gu takes shape",
+        "uniques": [
+          "[This Unit] gains the [Moonlight Gu] promotion",
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "The materials burn away",
+        "uniques": [
+          "[This Unit] takes [30] damage",
+          "[-40]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ascension Trial",
+    "text": "Heaven and earth answer the attempt.",
+    "choices": [
+      {
+        "text": "Force the breakthrough",
+        "uniques": [
+          "Triggers a [Ascension Dice] event",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ascension Dice",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "Ascension succeeds",
+        "uniques": [
+          "Free [Gu Immortal] appears",
+          "Gain a free [Blessed Land] [in capital]",
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Ascension fails",
+        "uniques": [
+          "[-3] population [in capital]",
+          "Gain [-150] [Gold]",
+          "[Gu Master] units gain the [Tribulation Strike] promotion",
+          "Remove [Ascension Altar] [in all cities]",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Unit Ascension",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "The aperture becomes a Blessed Land",
+        "uniques": [
+          "Free [Gu Immortal] appears",
+          "[This Unit] is destroyed",
+          "[-70]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Crushed by the tribulation",
+        "uniques": [
+          "[This Unit] takes [80] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Tribulation",
+    "text": "The tribulation descends.",
+    "choices": [
+      {
+        "text": "Endure",
+        "uniques": [
+          "[-2] population [in capital]",
+          "[Gu Immortal] units gain the [Tribulation Strike] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Shelter behind the formation",
+        "uniques": [
+          "Only available <if [Formation Platform] is constructed>",
+          "Remove [Formation Platform] [in capital]",
+          "Instantly consumes [5] [Immortal Essence Stone]",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beast Tide",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "A wolf tide descends",
+        "uniques": [
+          "[3] [Electric Wolf]s rebel",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inheritance",
+    "text": "A sealed inheritance lies open.",
+    "choices": [
+      {
+        "text": "Take everything",
+        "uniques": [
+          "[This Unit] gains [30] XP",
+          "[This Unit] takes [40] damage",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Leave it",
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  }
+]

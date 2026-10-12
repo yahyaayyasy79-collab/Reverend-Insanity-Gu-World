@@ -1,0 +1,37 @@
+[
+  {
+    "columnNumber": 0,
+    "era": "Rank One era",
+    "techCost": 10,
+    "buildingCost": 40,
+    "wonderCost": 100,
+    "techs": [
+      {
+        "name": "Awakening",
+        "row": 1,
+        "uniques": [
+          "Starting tech"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 1,
+    "era": "Rank Six era",
+    "techCost": 50,
+    "buildingCost": 100,
+    "wonderCost": 200,
+    "techs": [
+      {
+        "name": "Dao Comprehension",
+        "row": 1,
+        "prerequisites": [
+          "Awakening"
+        ],
+        "uniques": [
+          "Can be continually researched"
+        ]
+      }
+    ]
+  }
+]

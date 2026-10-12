@@ -1,0 +1,9 @@
+{
+  "name": "GlobalUniques",
+  "uniques": [
+    "[-3] units cost no maintenance"
+  ],
+  "unitUniques": [
+    "[This Unit] takes [10] damage <upon ending a turn in a [Desert] tile> <for units without [Desert Adapted]>"
+  ]
+}
