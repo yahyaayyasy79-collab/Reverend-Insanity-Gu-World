@@ -22,14 +22,16 @@ git clone --depth 1 --branch "$TAG" --filter=blob:none --sparse \
     https://github.com/yairm210/Unciv "$DEST"
 
 # Spec paths (docs + bundled rulesets), plus the translation template and the
-# engine source used to answer behaviour questions the docs leave open.
+# engine source (core, desktop launcher, Android launcher) used to answer
+# behaviour and installation questions the docs leave open.
 git -C "$DEST" sparse-checkout set --no-cone \
-    "/docs/Modders/" \
-    "/docs/Translating/" \
+    "/docs/" \
     "/android/assets/jsons/Civ V - Gods & Kings/" \
     "/android/assets/jsons/Civ V - Vanilla/" \
     "/android/assets/jsons/translations/template.properties" \
-    "/core/src/com/unciv/"
+    "/core/src/com/unciv/" \
+    "/desktop/src/" \
+    "/android/src/"
 
 # Names of the images bundled with the game (no blobs needed): a mod object whose
 # icon already exists in the base atlas needs no placeholder.

@@ -9,3 +9,4 @@
 * Docs: `docs/CAPABILITIES.md` (systems S1–S8 → uniques, status, AI notes; engine facts E1–E6; docs conflicts
   D1–D8; scaffold recommendation), `CLAUDE.md`, copy of `MOD_SPEC.md`.
 * No ruleset JSON yet (by design, MOD_SPEC §12).
+* `fetch_ref.sh` also fetches all of `docs/`, `desktop/src` and `android/src` (installation questions).
