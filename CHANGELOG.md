@@ -10,3 +10,4 @@
   D1–D8; scaffold recommendation), `CLAUDE.md`, copy of `MOD_SPEC.md`.
 * No ruleset JSON yet (by design, MOD_SPEC §12).
 * `fetch_ref.sh` also fetches all of `docs/`, `desktop/src` and `android/src` (installation questions).
+* `docs/TESTING.md`: verified install routes (desktop, URL download, Android), naming rules, test loop, console.

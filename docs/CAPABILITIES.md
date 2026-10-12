@@ -166,8 +166,9 @@ bundled Vanilla/G&K rulesets.**
   leak into the mod.
 * **Unciv-minimal-base-ruleset — rejected as a base.** It is stale: it has keys the 4.22.8 schemas reject
   (`aisExchangeTechs`, Ruins `color`), no Water terrain although the docs require one, and two units. It adds
-  nothing a clean skeleton lacks. Its `.github/workflows/autoupdate.yml` (atlas packing + unique auto-update) is
-  worth copying for Android (§11; your call).
+  nothing a clean skeleton lacks. For the Android atlas (§11; your call) the better workflow template is the newer
+  RekMOD `autoupdate.yml` that Images-and-Audio.md links (Java 21, `mod-ci`): retarget its `branches:` from `master`,
+  and take only the atlas files from its pull requests — `mod-ci` also rewrites `jsons/*.json`, which are generated.
 * **Clean skeleton, chosen.** Write Slice-1 content from `docs/LORE_MAPPING.md`, and copy from Vanilla (converted to
   strict JSON) only what the engine treats specially: base terrains with their map-generation and region uniques
   (River must keep the vanilla uniques, per docs), the improvements with hardcoded names (Road, Remove \*, City

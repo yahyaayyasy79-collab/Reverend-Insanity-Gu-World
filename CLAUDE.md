@@ -55,5 +55,6 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 
 * `MOD_SPEC.md` — the spec (phases, systems S1–S8, budget, Definition of Done).
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
+* `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.
 * `tools/` — checkers; `tools/tests/fixtures/capability_proof` proves every unique CAPABILITIES.md cites.
