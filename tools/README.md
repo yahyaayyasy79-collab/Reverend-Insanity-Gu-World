@@ -18,9 +18,11 @@ tools/check_all [--quiet]         # everything below; exit 1 on any error
 | `check_package.py` | Unciv's "Download mod from URL" heuristic: mod entries must outnumber other top-level entries. |
 | `make_placeholders.py` | placeholder PNGs at the exact icon paths for objects without art (neither in the mod nor the base game), colour by category, tagged `Placeholder=true`; never overwrites real art. `--dry-run`, `--force`, `--report`, `--preview`. |
 | `unique_check.py` | quick pattern check for loose unique strings (stdin or args) before they sit in a ruleset: base + every modifier must match uniques.md; prints the "Applicable to" targets. Used while designing (Phase 1 tables). |
+| `slice1_prototype.py OUT` | writes the whole Slice 1 plan of `docs/LORE_MAPPING.md` as a throwaway ruleset into `OUT/jsons` so `check_all --mod OUT --no-self-test` (and Unciv's own validator) can check it before real JSON exists. A self-test fails if the document quotes a unique the prototype does not generate, or the prototype generates one the document does not show. Phase 2 replaces it with `data/*.csv` + `tools/gen_*.py`. |
 | `uniques_db.py` | parser shared by the linters; `python3 tools/uniques_db.py` prints pattern counts and detects `UniqueTarget` drift. |
 
 Validation of the validators: run on the bundled rulesets (converted to strict JSON), `lint_uniques` reports zero
 false positives on 1,698 G&K and 1,278 Vanilla uniques apart from the `Aircraft` filter marker, and `check_schema`
 zero errors. `tests/` holds a broken mod every checker must catch, and the capability proof every unique cited in
 `docs/CAPABILITIES.md` must pass — and it passes the official validator with zero findings.
+`tests/` also keeps `docs/LORE_MAPPING.md` and `slice1_prototype.py` in sync.

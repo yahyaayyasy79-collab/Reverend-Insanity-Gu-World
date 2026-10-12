@@ -9,6 +9,8 @@ import io
 import json
 import re
 import shutil
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -258,6 +260,62 @@ class OfficialValidator(unittest.TestCase):
             r = Reporter("refs")
             check_refs.run(root, r)
             self.assertIn("atlas is stale", messages(r, "WARNING"))
+
+
+class LoreMapping(unittest.TestCase):
+    """docs/LORE_MAPPING.md quotes exactly the uniques tools/slice1_prototype.py generates (and check_all validates)."""
+
+    # Files whose uniques the document must quote in full (terrains and engine-coupled improvements are Vanilla copies).
+    QUOTED_FILES = ("Units.json", "UnitPromotions.json", "Buildings.json", "Policies.json", "Techs.json", "Events.json",
+                    "Nations.json", "GlobalUniques.json", "Ruins.json", "TileResources.json", "CityStateTypes.json",
+                    "Personalities.json", "ModOptions.json")
+
+    @staticmethod
+    def _strings(obj, out: set[str]) -> set[str]:
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if k in ("uniques", "friendBonusUniques", "allyBonusUniques", "milestones") and isinstance(v, list):
+                    out.update(v)
+                else:
+                    LoreMapping._strings(v, out)
+        elif isinstance(obj, list):
+            for x in obj:
+                LoreMapping._strings(x, out)
+        return out
+
+    def test_document_matches_prototype(self):
+        doc = REPO_ROOT / "docs" / "LORE_MAPPING.md"
+        if not doc.exists():
+            self.skipTest("docs/LORE_MAPPING.md not written yet")
+        text = doc.read_text(encoding="utf-8")
+        with tempfile.TemporaryDirectory() as tmp:
+            subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "slice1_prototype.py"), tmp], check=True,
+                           capture_output=True)
+            files = {f.name: json.loads(f.read_text(encoding="utf-8")) for f in (Path(tmp) / "jsons").glob("*.json")}
+        generated = self._strings(list(files.values()), set())
+        quoted = set(re.findall(r"`([^`\n]+)`", text))
+        quoted.update(line for block in re.findall(r"```\n(.*?)```", text, re.S) for line in block.splitlines())
+
+        db = load_db()
+        pattern_texts = {p.text for p in db.all_patterns()}
+        unvalidated = []
+        for q in quoted:
+            is_modifier = q.startswith("<") and q.endswith(">")
+            bare = q[1:-1] if is_modifier else q
+            if "[" not in q or placeholder_key(bare if is_modifier else remove_modifiers(q)) not in (
+                    db.modifiers if is_modifier else db.base):
+                continue  # not a unique (a parameter value, a field name...)
+            if q not in generated and bare not in pattern_texts:
+                unvalidated.append(q)
+        self.assertEqual(unvalidated, [], "LORE_MAPPING.md quotes uniques the prototype does not generate")
+
+        missing = []
+        for name in self.QUOTED_FILES:
+            for u in self._strings(files[name], set()):
+                plain_weight = "% weight to this choice for AI decisions" in u and "<" not in u
+                if u not in quoted and not (name == "Events.json" and plain_weight):
+                    missing.append(f"{name}: {u}")
+        self.assertEqual(missing, [], "the prototype generates uniques LORE_MAPPING.md does not show")
 
 
 class Packaging(unittest.TestCase):

@@ -23,3 +23,18 @@
 * Decisions recorded in CLAUDE.md: Unciv 4.22.8, mod name "Reverend Insanity Gu World", clean skeleton,
   promotion-based gambles, atlas packed here and committed.
 
+## Phase 1 — lore → mechanics map (2026-10-12)
+
+* `docs/LORE_MAPPING.md`: one row per planned Slice 1 object (116 rows) with English and Chinese names, lore basis,
+  mechanical role, exact uniques, CANON/ADAPTED/INVENTED and [VERIFY]; budget check, path choice (Moon + Strength),
+  pillar coverage for human and AI, 19 questions for the user, refinement ladder, every event choice with its AI
+  weight, balance starting numbers and known limits. Made from three independent drafts, a synthesis and two
+  skeptic reviews (lore, mechanics), whose findings are applied.
+* `tools/slice1_prototype.py`: writes the whole plan as a throwaway ruleset; it passes `check_all`, including Unciv
+  4.22.8's own validator with 0 errors and 0 warnings. A new self-test keeps it and LORE_MAPPING.md in sync.
+* **Correction of Phase 0 (E4):** the AI never buys a promotion with `Doing so will consume this opportunity to
+  choose a Promotion` (`NextTurnAutomation.applyPromotions`). Refinement and ascension now use a kept promotion that
+  removes itself at the next turn start. Fixed in CAPABILITIES.md (E4, S3), CLAUDE.md and the capability proof.
+* **Correction (E5):** chance rolls are seeded by object identity, so reloading a save can reroll them.
+* No ruleset JSON yet: the user corrects the lore first (⛔).
+

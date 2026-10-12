@@ -31,7 +31,7 @@
     "uniques": [
       "Only available <for [Gu Master] units>",
       "Triggers a [Unit Ascension] event",
-      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] loses the [Attempt Ascension] promotion <upon turn start>",
       "[+100]% weight to this choice for AI decisions"
     ]
   },
@@ -42,7 +42,7 @@
     ],
     "uniques": [
       "Triggers a [Refinement] event",
-      "Doing so will consume this opportunity to choose a Promotion",
+      "[This Unit] loses the [Refinement Attempt] promotion <upon turn start>",
       "[+50]% weight to this choice for AI decisions"
     ]
   },
