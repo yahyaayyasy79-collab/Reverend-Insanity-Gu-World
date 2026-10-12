@@ -17,6 +17,7 @@ tools/check_all [--quiet]         # everything below; exit 1 on any error
 | `unciv_ci.py` | Unciv's **own** RulesetValidator: runs the release jar's `mod-ci` (from `ref/Unciv-<tag>.jar`) on a temporary copy, maps Error/Warning/OK lines to the reporter, flags JSON the autoupdater would rewrite (deprecated uniques), and with `--pack` copies the packed atlas (`game.atlas`, `game*.png`, `Atlases.json`) back for Android. Skipped with a warning without java or the jar. |
 | `check_package.py` | Unciv's "Download mod from URL" heuristic: mod entries must outnumber other top-level entries. |
 | `make_placeholders.py` | placeholder PNGs at the exact icon paths for objects without art (neither in the mod nor the base game), colour by category, tagged `Placeholder=true`; never overwrites real art. `--dry-run`, `--force`, `--report`, `--preview`. |
+| `unique_check.py` | quick pattern check for loose unique strings (stdin or args) before they sit in a ruleset: base + every modifier must match uniques.md; prints the "Applicable to" targets. Used while designing (Phase 1 tables). |
 | `uniques_db.py` | parser shared by the linters; `python3 tools/uniques_db.py` prints pattern counts and detects `UniqueTarget` drift. |
 
 Validation of the validators: run on the bundled rulesets (converted to strict JSON), `lint_uniques` reports zero

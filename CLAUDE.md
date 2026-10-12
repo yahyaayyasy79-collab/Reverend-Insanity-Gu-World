@@ -31,6 +31,7 @@ tools/check_all                          # self-tests, schema, uniques, refs, OF
 
 Single tools: `tools/check_schema.py`, `tools/lint_uniques.py`, `tools/check_refs.py`, `tools/unciv_ci.py [--pack]`,
 `tools/make_placeholders.py [--dry-run|--force|--report|--preview]`; all accept `--mod PATH` and `--quiet`.
+While designing, `printf '%s\n' "<unique>" | tools/unique_check.py` checks loose strings against uniques.md.
 `unciv_ci.py` runs Unciv's own validator (`mod-ci`) on a temp copy — it is the closest thing to "Locate mod
 errors" available here; report its OptionsOnly lines too.
 See `tools/README.md`.
