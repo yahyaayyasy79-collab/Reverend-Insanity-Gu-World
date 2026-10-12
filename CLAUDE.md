@@ -5,19 +5,34 @@ Indonesia**; repository files stay in English.
 
 ## Status
 
-Phase 0 (ground truth + tooling) done, waiting at the ⛔ checkpoint. Next: Phase 1 (`docs/LORE_MAPPING.md`),
-only after the user approves. No ruleset JSON before Phase 1 is approved.
+Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 (`docs/LORE_MAPPING.md`) next;
+it ends at a ⛔ checkpoint where the user corrects the lore. No ruleset JSON before that approval.
+
+## Decisions
+
+* Unciv **4.22.8** (the user's version) — ref, docs and the release jar are pinned to it.
+* Mod name / installed folder: **"Reverend Insanity Gu World"**. The user agreed to rename the GitHub repo to
+  `Reverend-Insanity-Gu-World` (downloads turn dashes into spaces); they must do it themselves — Claude's GitHub
+  integration has no write access (git push and the API both return 403). Until fixed: commit locally and send the
+  user a zip with history after each step.
+* Scaffold: clean skeleton; copy only engine-coupled infrastructure from Vanilla (CAPABILITIES.md).
+* Refinement and ascension: per-unit XP promotions (E4), not unit-action buttons or a national project.
+* Android atlas: packed here with the official jar (`tools/unciv_ci.py --pack`) and committed
+  (`game.atlas`, `game*.png`, `Atlases.json`); `check_refs` flags a stale atlas.
+* User platform: unknown (ask when giving install steps; docs/TESTING.md covers both).
 
 ## Setup (every fresh container: `ref/` is gitignored)
 
 ```
-tools/fetch_ref.sh [TAG]                 # default 4.22.8 = the version the docs were read at
-pip install -r tools/requirements.txt
-tools/check_all                          # self-tests + schema + uniques + refs + packaging; non-zero on error
+tools/fetch_ref.sh [TAG]                 # ref/unciv (docs, schemas, rulesets, source) + ref/Unciv-<tag>.jar
+pip install -r tools/requirements.txt    # java is needed for the official validator (unciv_ci)
+tools/check_all                          # self-tests, schema, uniques, refs, OFFICIAL validator, packaging
 ```
 
-Single tools: `tools/check_schema.py`, `tools/lint_uniques.py`, `tools/check_refs.py`,
+Single tools: `tools/check_schema.py`, `tools/lint_uniques.py`, `tools/check_refs.py`, `tools/unciv_ci.py [--pack]`,
 `tools/make_placeholders.py [--dry-run|--force|--report|--preview]`; all accept `--mod PATH` and `--quiet`.
+`unciv_ci.py` runs Unciv's own validator (`mod-ci`) on a temp copy — it is the closest thing to "Locate mod
+errors" available here; report its OptionsOnly lines too.
 See `tools/README.md`.
 
 ## Rules (MOD_SPEC §2, non-negotiable)

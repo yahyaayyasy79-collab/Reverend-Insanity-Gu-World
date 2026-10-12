@@ -456,13 +456,47 @@ class RefChecker:
                 if not rel.isascii():
                     self.r.error(rel, "image path is not ASCII - atlas loading breaks on some systems")
 
+    def atlas_(self):
+        """Android uses the committed atlas as-is (it cannot pack), while desktop silently repacks: a stale or
+        missing atlas only shows up on phones. Every Images*/**.png must have a region in the packed atlases."""
+        root = self.rs.mod_root
+        image_dirs = [p for p in root.glob("Images*") if p.is_dir()]
+        atlases = sorted(root.glob("*.atlas"))
+        listed = []
+        if (root / "Atlases.json").exists():
+            # Unciv writes it with libGDX's lenient JSON: [game] - unquoted names are normal here.
+            text = (root / "Atlases.json").read_text(encoding="utf-8").strip()
+            if not (text.startswith("[") and text.endswith("]")):
+                self.r.error("Atlases.json", "must be a JSON array of atlas names")
+            listed = [n.strip().strip('"') for n in text[1:-1].split(",") if n.strip()]
+            for name in listed:
+                if not (root / f"{name}.atlas").exists():
+                    self.r.error("Atlases.json", f"lists \"{name}\" but {name}.atlas is missing (blocks the base ruleset)")
+        if not image_dirs:
+            return
+        if not atlases:
+            self.r.warn("game.atlas", "Images exist but no packed atlas: Android cannot pack, so players get blank icons "
+                                      "(run tools/unciv_ci.py --pack)")
+            return
+        regions = set()
+        for atlas in atlases:
+            for line in atlas.read_text(encoding="utf-8").splitlines():
+                if line and not line[0].isspace() and ":" not in line and not line.endswith(".png"):
+                    regions.add(line)
+        stale = sorted(png.relative_to(folder).with_suffix("").as_posix()
+                       for folder in image_dirs for png in folder.rglob("*.png")
+                       if png.relative_to(folder).with_suffix("").as_posix() not in regions)
+        if stale:
+            self.r.warn("game.atlas", f"atlas is stale: {len(stale)} image(s) not packed, e.g. {stale[:3]} "
+                                      f"(run tools/unciv_ci.py --pack)")
+
     def run(self):
         if not self.rs.exists:
             self.r.info("jsons/", "no jsons/ folder yet - nothing to cross-check")
             return
         for step in (self.units_, self.buildings_, self.techs_, self.policies_, self.promotions_, self.map_objects_,
                      self.nations_, self.eras_, self.difficulties_, self.victories_, self.events_, self.misc_,
-                     self.ascii_, self.images_):
+                     self.ascii_, self.images_, self.atlas_):
             step()
 
 

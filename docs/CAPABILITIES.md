@@ -5,7 +5,8 @@ Ground truth: `ref/unciv` at tag **4.22.8** (commit `2eccbd0`, 2026-10-08), fetc
 * Every unique quoted here matches a pattern in `docs/Modders/uniques.md` verbatim (placeholders shown with
   their documented type names) **and** is exercised by `tools/tests/fixtures/capability_proof`, which must
   pass `check_schema`, `lint_uniques` and `check_refs` with zero errors. `tools/tests` enforces both, so this
-  file cannot quote an invented unique without the self-tests failing.
+  file cannot quote an invented unique without the self-tests failing. The same fixture passes Unciv's own
+  RulesetValidator (the 4.22.8 release jar's `mod-ci`, via `tools/unciv_ci.py`) with zero findings.
 * **[src]** marks behaviour the docs do not state, read from the Unciv source (`ref/unciv/core`). Docs win where
   they speak; [src] fills gaps. Every [src] claim needs an in-game test before content depends on it.
 * Status: ✅ supported · ⚠️ approximation (fallback described) · ❌ impossible (fallback described).
@@ -79,7 +80,7 @@ Ground truth: `ref/unciv` at tag **4.22.8** (commit `2eccbd0`, 2026-10-08), fetc
 |---|---|---|---|
 | Path commitment + conflicts | Policy branches. Exclusivity: `Unavailable` + `<after adopting [policy/belief]>` (spec), or the G&K idiom `Only available` + `<before adopting [policy/belief]>` (Autocracy/Freedom/Order). | ✅ ADAPTED | respects availability; Personalities `priorities` choose branches |
 | Path-gated units and promotions | `Only available` + `<after adopting [policy/belief]>` | ✅ | AI only builds what is available |
-| Same-path marks amplify | `<for every [countable]>` on a bonus, counting "Adopted [Wind Path branch] Policies": `[+5]% Strength <for [Melee] units> <for every [Adopted [Wind Path branch] Policies]>` | ⚠️ ADAPTED: dao marks = policies adopted in a branch | automatic |
+| Same-path marks amplify | `<for every [countable]>` on a bonus, counting "Adopted [[Wind Path] branch] Policies" (the policy filter is "[branchName] branch" with literal brackets): `[+5]% Strength <for [Melee] units> <for every [Adopted [[Wind Path] branch] Policies]>` | ⚠️ ADAPTED: dao marks = policies adopted in a branch | automatic |
 | Conflicting paths interfere | Hard exclusivity (above) or penalties with `<after adopting [policy/belief]>` | ⚠️ ADAPTED | automatic |
 
 ## S6 — Righteous vs demonic (pillar 5)

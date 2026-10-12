@@ -35,9 +35,14 @@
     "name": "Hairy Man Tribe",
     "cityStateType": "Refiners",
     "outerColor": [
-      120,
-      80,
-      40
+      60,
+      30,
+      10
+    ],
+    "innerColor": [
+      255,
+      230,
+      180
     ],
     "cities": [
       "Hairy Hollow"

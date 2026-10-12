@@ -5,9 +5,11 @@
   2. check_schema   - strict JSON + docs/Modders/schemas
   3. lint_uniques   - every unique and conditional against uniques.md
   4. check_refs     - cross-references, base-ruleset completeness, project rules, icons (warnings)
-  5. check_package  - Unciv's "Download mod from URL" archive heuristic (GithubAPI.isValidModFolder)
+  5. unciv_ci       - Unciv's OWN validator: the release jar's `mod-ci`, run on a temporary copy
+  6. check_package  - Unciv's "Download mod from URL" archive heuristic (GithubAPI.isValidModFolder)
 
-These approximate Unciv's Ruleset Validator; the in-game "Locate mod errors" stays the final authority.
+Steps 2-4 approximate the validator with clearer messages and project rules; step 5 is the validator itself
+(skipped with a warning when java or the jar is missing). "Locate mod errors" in game stays the final word.
 
 Usage: tools/check_all [--mod PATH] [--quiet] [--no-self-test]
 """
@@ -23,6 +25,7 @@ import check_package  # noqa: E402
 import check_refs  # noqa: E402
 import check_schema  # noqa: E402
 import lint_uniques  # noqa: E402
+import unciv_ci  # noqa: E402
 from common import REF_ROOT, TOOLS_DIR, mod_root_from_args, ref_tag, require_ref  # noqa: E402
 
 
@@ -40,7 +43,8 @@ def main(argv: list[str]) -> int:
             failures.append("self-tests")
 
     passthrough = [a for a in argv if a in ("--quiet",)] + (["--mod", argv[argv.index("--mod") + 1]] if "--mod" in argv else [])
-    for name, module in (("check_schema", check_schema), ("lint_uniques", lint_uniques), ("check_refs", check_refs)):
+    for name, module in (("check_schema", check_schema), ("lint_uniques", lint_uniques), ("check_refs", check_refs),
+                         ("unciv_ci (official validator)", unciv_ci)):
         print(f"\n== {name} ==")
         if module.main(passthrough):
             failures.append(name)

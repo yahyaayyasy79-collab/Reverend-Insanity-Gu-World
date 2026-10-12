@@ -1,20 +1,25 @@
 [
   {
     "name": "Stone Mine",
-    "turnsToBuild": 5
+    "turnsToBuild": 5,
+    "uniques": [
+      "Can only be built to improve a resource"
+    ]
   },
   {
     "name": "Beast Lair",
     "uniques": [
       "Marks a barbarian camp",
-      "Unpillagable"
+      "Unpillagable",
+      "Unbuildable"
     ]
   },
   {
     "name": "Inheritance Site",
     "uniques": [
       "Provides a random bonus when entered",
-      "Unpillagable"
+      "Unpillagable",
+      "Unbuildable"
     ]
   }
 ]

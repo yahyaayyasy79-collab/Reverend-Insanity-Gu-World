@@ -46,6 +46,13 @@ Never commit `Atlases.json` without the atlas it lists (validation error that bl
 * Never press "Autoupdate mod uniques", "Delete [mod]" or "Update [mod]" on the development checkout: the first
   rewrites generated JSON, the others may follow a symlink and wipe the checkout.
 
+## Before you launch: the official validator, here
+
+`tools/unciv_ci.py` runs the 4.22.8 release jar's `mod-ci` mode — the same RulesetValidator as "Locate mod
+errors" — on a temporary copy (part of `tools/check_all`). `tools/unciv_ci.py --pack` also writes the atlas Android
+needs; commit `game.atlas`, `game*.png` and `Atlases.json` together. In-game checking remains the final word for
+behaviour, not for syntax.
+
 ## Reload rules
 
 | Changed | Takes effect after |

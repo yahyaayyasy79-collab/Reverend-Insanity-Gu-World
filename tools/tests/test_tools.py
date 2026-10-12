@@ -17,6 +17,7 @@ import check_package
 import check_refs
 import check_schema
 import lint_uniques
+import unciv_ci
 from common import REPO_ROOT, Reporter, Ruleset
 from uniques_db import load_db, modifiers_of, placeholder_key, remove_modifiers
 
@@ -215,9 +216,48 @@ class Placeholders(unittest.TestCase):
                 make_placeholders.main(["--mod", str(root), "--force"])
             r = Reporter("refs")
             check_refs.run(root, r)
-            self.assertEqual([i for i in r.warnings if "no icon" in i.message], [])
+            self.assertEqual([i for i in r.warnings if "no icon for" in i.message], [])
             self.assertFalse(make_placeholders.is_placeholder(real), "real art was overwritten")
             self.assertTrue(make_placeholders.is_placeholder(root / "Images" / "TechIcons" / "Awakening.png"))
+
+
+@unittest.skipUnless(unciv_ci.jar_path().exists() and shutil.which("java"), "needs java + ref/Unciv-<tag>.jar")
+class OfficialValidator(unittest.TestCase):
+    """Unciv's own RulesetValidator (release jar, mod-ci) agrees with the capability proof and catches breakage."""
+
+    def test_capability_proof_is_clean_for_unciv_itself(self):
+        r = Reporter("unciv_ci")
+        unciv_ci.run(PROOF, r)
+        self.assertEqual([i for i in r.issues if i.severity != "INFO" or "Unciv" in i.where], [],
+                         "the official validator reports findings on fixtures/capability_proof")
+
+    def test_errors_are_reported_and_repo_is_not_rewritten(self):
+        with TempMod({}, base=PROOF) as root:
+            units = root / "jsons" / "Units.json"
+            data = json.loads(units.read_text())
+            data[1]["requiredTech"] = "Nope Tech"
+            units.write_text(json.dumps(data))
+            before = units.read_bytes()
+            r = Reporter("unciv_ci")
+            unciv_ci.run(root, r)
+            self.assertIn("requires tech Nope Tech", messages(r))
+            self.assertEqual(units.read_bytes(), before, "mod-ci must run on a copy")
+
+    def test_pack_produces_an_atlas_check_refs_accepts(self):
+        import make_placeholders
+        with TempMod({}, base=PROOF) as root:
+            with contextlib.redirect_stdout(io.StringIO()):
+                make_placeholders.main(["--mod", str(root)])
+            unciv_ci.run(root, Reporter("unciv_ci"), pack=True)
+            self.assertTrue((root / "game.atlas").exists() and (root / "Atlases.json").exists())
+            r = Reporter("refs")
+            check_refs.run(root, r)
+            self.assertEqual(r.errors + r.warnings, [])
+            (root / "Images" / "UnitIcons" / "Late Addition.png").write_bytes(
+                (root / "Images" / "TechIcons" / "Awakening.png").read_bytes())
+            r = Reporter("refs")
+            check_refs.run(root, r)
+            self.assertIn("atlas is stale", messages(r, "WARNING"))
 
 
 class Packaging(unittest.TestCase):

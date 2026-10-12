@@ -201,7 +201,7 @@ class ParamChecker:
     def policy_atom(self, v):
         if v in {"All", "all"} or v in self.k.policies or v in self.k.policy_uniques:
             return True
-        m = re.fullmatch(r"(.+) branch", v)
+        m = re.fullmatch(r"\[(.+)\] branch", v)  # literal brackets: Policy.matchesSingleFilter "[${branch.name}] branch"
         if m and m.group(1) in self.k.branches:
             return True
         m = re.fullmatch(r"(.+) Completed", v)

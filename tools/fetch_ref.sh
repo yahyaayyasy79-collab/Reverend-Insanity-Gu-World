@@ -13,7 +13,7 @@ DEST="$ROOT/ref/unciv"
 
 if [ -d "$DEST/.git" ]; then
     echo "ref/unciv already exists ($(git -C "$DEST" describe --tags --always 2>/dev/null || echo unknown))."
-    echo "Delete it first to re-fetch: rm -rf ref/unciv"
+    echo "Delete it first to re-fetch: rm -rf ref/unciv ref/Unciv-*.jar"
     exit 0
 fi
 
@@ -41,4 +41,11 @@ git -C "$DEST" ls-tree -r --name-only HEAD -- android \
     | sort -u > "$ROOT/ref/builtin_images.txt"
 
 echo "$TAG" > "$ROOT/ref/UNCIV_TAG"
+
+# The release jar: its `mod-ci` mode is Unciv's own validator + atlas packer (tools/unciv_ci.py).
+if [ "$TAG" != "master" ]; then
+    curl -sSL --fail -o "$ROOT/ref/Unciv-$TAG.jar" \
+        "https://github.com/yairm210/Unciv/releases/download/$TAG/Unciv.jar" \
+        || echo "WARNING: could not download Unciv.jar for $TAG - tools/unciv_ci.py will be skipped"
+fi
 echo "Fetched Unciv $TAG into ref/unciv ($(wc -l < "$ROOT/ref/builtin_images.txt") builtin image names)."
