@@ -7,9 +7,11 @@ Indonesia**; repository files stay in English.
 
 Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 round 1 delivered 2026-10-12; the
 user answered its lore questions; round 2 (2026-10-13) checked those answers against the raw novel text and applied
-them. `docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's 14 round-2 decisions (near its top). No ruleset
-JSON before that approval. Then: apply the decisions to the document and `tools/slice1_prototype.py` together, and
-start Phase 2 (Slice 1) by turning the prototype into `data/*.csv` + `tools/gen_*.py` (keep `tools/ladder_check.py`).
+them; round 3 (2026-10-13) applied the user's decisions (Wu clan as fourth major, hunger meter, Spirit Springs).
+`docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's approval of Phase 1. No ruleset JSON before that
+approval. Then start Phase 2 (Slice 1) by turning `tools/slice1_prototype.py` into `data/*.csv` + `tools/gen_*.py`
+(keep `tools/ladder_check.py`). The round-2/3 rendering pipeline lived in a scratchpad and is gone: from now on edit
+LORE_MAPPING.md and the prototype directly; the LoreMapping self-test keeps them in sync.
 
 The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter
 the plan; round 2 found two of their names unsupported. Research notes do not survive the container: record verdicts
@@ -27,6 +29,8 @@ in LORE_MAPPING.md.
 * Android atlas: packed here with the official jar (`tools/unciv_ci.py --pack`) and committed
   (`game.atlas`, `game*.png`, `Atlases.json`); `check_refs` flags a stale atlas.
 * User platform: unknown (ask when giving install steps; docs/TESTING.md covers both).
+* Slice 1 lore (user, round 3): majors Gu Yue, Bai, Xiong, Wu; paths Moon + Strength; Gu hunger is a meter (weakened,
+  then death after a rank-dependent number of turns), not instant death; Spirit Springs are the map's prize.
 
 ## Setup (every fresh container: `ref/` is gitignored)
 
@@ -76,6 +80,9 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
   `[This Unit] loses the [X] promotion <upon turn start>`; its `Unavailable` lines must close every state in which
   nothing can happen, or the AI pays XP for nothing.
 * E5 `<with [N]% chance>` rolls per unique (never two chance-lines for one outcome) and rerolls on reload.
+* E7 [src] Statuses: turn-start triggers fire before statuses tick down (an N-turn status given at turn start runs
+  out at the (N−1)th turn start after); a status that runs out fires `<upon losing the [X] status>`; reapplying never lowers its
+  timer; `<for units with/without [X]>` sees statuses. The hunger meter rests on this; test it in game.
 * The AI never presses custom unit-action buttons. A `Barbarians` nation must exist or barbarians never spawn.
 * Docs/schema conflicts D1–D8 are listed in CAPABILITIES.md; follow the "We follow" column.
 

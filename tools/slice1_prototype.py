@@ -101,11 +101,11 @@ def col(n, era, cost, bcost, wcost, techs):
 dump("Techs.json", [
     col(1, E12, 20, 45, 75, [{"name": "Aperture Awakening", "row": 2, "uniques": ["Starting tech"]}]),
     col(2, E12, 40, 60, 140, [
-        {"name": "Primeval Stone Mining", "row": 1, "prerequisites": ["Aperture Awakening"]},
+        {"name": "Spirit Spring Lore", "row": 1, "prerequisites": ["Aperture Awakening"]},
         {"name": "Gu Feeding", "row": 3, "prerequisites": ["Aperture Awakening"]}]),
     col(3, E12, 65, 75, 170, [
         {"name": "Wine Brewing", "row": 1, "prerequisites": ["Gu Feeding"]},
-        {"name": "Gu Refinement", "row": 2, "prerequisites": ["Primeval Stone Mining", "Gu Feeding"]},
+        {"name": "Gu Refinement", "row": 2, "prerequisites": ["Spirit Spring Lore", "Gu Feeding"]},
         {"name": "Rank Two Cultivation", "row": 3, "prerequisites": ["Gu Feeding"]}]),
     col(4, E3, 120, 100, 220, [
         {"name": "Gu Formations", "row": 1, "prerequisites": ["Gu Refinement"]},
@@ -200,10 +200,25 @@ LW_IMPOSSIBLE = ["<for units with [Liquor Worm]>", "<when below [1] [Wine]>", "<
 PROMO_DEAD = LADDER_DEAD + [f"{d} {c}" for d in RO_DEAD for c in LW_IMPOSSIBLE]
 
 
-def starve(gu, food):
-    """Canon: a Gu that is not fed starves (MOD_SPEC section 5). While its food is in deficit, each holder loses it at 10% a
-    turn, so an overdraw (the AI promotes on a stale resource count [src]) heals itself instead of lasting forever."""
-    return f"[This Unit] loses the [{gu}] promotion <upon turn start> <when below [0] [{food}]> <with [10]% chance>"
+# R3 hunger meter (the user's design). A Gu whose food is in deficit is first WEAKENED: its effects carry
+# <when above [-1] [food]> and switch off (the engine adds its own -25% missing-resource malus [src BattleDamage]).
+# At the first turn start in deficit the unit gets a timed hunger status (one per food); if the food is still short when
+# the status runs out, the Gu dies. The status is removed early, harmlessly, once the food is back. Statuses tick down at
+# the end of startTurn, after the triggers [src UnitTurnManager.startTurn], so a status of N turns kills at the (N-1)th
+# turn start after the first: rank-1 Gu (eat often in canon) hold out 2 turns, rank-2 Gu 4 turns.
+HUNGER = {"Moon Orchid": "Orchid Hunger", "Wild Boar": "Pork Hunger", "Jade": "Jade Hunger", "Wine": "Wine Hunger"}
+RANK1_TURNS, RANK2_TURNS = 3, 5
+
+
+def fed(unique, food):
+    """The Gu's effect works only while its food is not in deficit (WEAKENED otherwise)."""
+    return f"{unique} <when above [-1] [{food}]>"
+
+
+def hunger(gu, food, turns):
+    status = HUNGER[food]
+    return [f"[This Unit] gains the [{status}] status for [{turns}] turn(s) <upon turn start> <when below [0] [{food}]> <for units without [{status}]>",
+            f"[This Unit] loses the [{gu}] promotion <upon losing the [{status}] status> <when below [0] [{food}]>"]
 
 
 def ladder(base, fusion, tusk):
@@ -242,30 +257,35 @@ dump("UnitPromotions.json", [
         "Triggers a [Refinement Attempt] event",
         "[This Unit] loses the [Refine Gu] promotion <upon turn start>"]},
     # rank-1 Gu (canon)
-    {"name": "Moonlight Gu", "uniques": ["[+20]% Strength <when attacking>", "Consumes [1] [Moon Orchid]", starve("Moonlight Gu", "Moon Orchid"),
+    {"name": "Moonlight Gu", "uniques": [fed("[+20]% Strength <when attacking>", "Moon Orchid"), "Consumes [1] [Moon Orchid]"]
+                                        + hunger("Moonlight Gu", "Moon Orchid", RANK1_TURNS) + [
                                          "[-10]% Strength <for [Strength Gu Master] units>",
                                          # canon: D-grade students could not refine it (fires when added, E4) [src order]
                                          "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"]},
-    {"name": "White Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]", starve("White Boar Gu", "Wild Boar")]},
-    {"name": "Black Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]", starve("Black Boar Gu", "Wild Boar")]},
-    {"name": "Jade Skin Gu", "uniques": ["[+15]% Strength <when defending>", "Consumes [1] [Jade]", starve("Jade Skin Gu", "Jade")]},
-    {"name": "Liquor Worm", "uniques": ["[+50]% XP gained from combat", "Consumes [1] [Wine]", starve("Liquor Worm", "Wine"),
+    {"name": "White Boar Gu", "uniques": [fed("[+15]% Strength", "Wild Boar"), "Consumes [1] [Wild Boar]"] + hunger("White Boar Gu", "Wild Boar", RANK1_TURNS)},
+    {"name": "Black Boar Gu", "uniques": [fed("[+15]% Strength", "Wild Boar"), "Consumes [1] [Wild Boar]"] + hunger("Black Boar Gu", "Wild Boar", RANK1_TURNS)},
+    {"name": "Jade Skin Gu", "uniques": [fed("[+15]% Strength <when defending>", "Jade"), "Consumes [1] [Jade]"] + hunger("Jade Skin Gu", "Jade", RANK1_TURNS)},
+    {"name": "Liquor Worm", "uniques": [fed("[+50]% XP gained from combat", "Wine"), "Consumes [1] [Wine]"]
+                                       + hunger("Liquor Worm", "Wine", RANK1_TURNS) + [
                                         # canon: it refines rank-one essence only; after the breakthrough it is let go
                                         "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
                                         "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"]},
     # rank-2 fusions (canon recipes); each keeps what its ingredients gave
-    {"name": "White Jade Gu", "uniques": ["[+15]% Strength", "[+30]% Strength <when defending>", "Consumes [2] [Jade]",
-                                          starve("White Jade Gu", "Jade")]},
-    {"name": "Moon Raiment", "uniques": ["[+20]% Strength <when attacking>", "[+20]% Strength <when defending>",
-                                         "[+10]% Strength bonus for [Military] units within [1] tiles",
-                                         "Consumes [1] [Moon Orchid]", starve("Moon Raiment", "Moon Orchid")]},
+    {"name": "White Jade Gu", "uniques": [fed("[+15]% Strength", "Jade"), fed("[+30]% Strength <when defending>", "Jade"),
+                                          "Consumes [2] [Jade]"] + hunger("White Jade Gu", "Jade", RANK2_TURNS)},
+    {"name": "Moon Raiment", "uniques": [fed("[+20]% Strength <when attacking>", "Moon Orchid"),
+                                         fed("[+20]% Strength <when defending>", "Moon Orchid"),
+                                         fed("[+10]% Strength bonus for [Military] units within [1] tiles", "Moon Orchid"),
+                                         "Consumes [1] [Moon Orchid]"] + hunger("Moon Raiment", "Moon Orchid", RANK2_TURNS)},
     {"name": "Killer Move", "uniques": ["[+25]% Strength <when attacking>", "[+25]% maintenance costs",
                                         # a killer move needs its rank-2 Gu; if that Gu starved, the move goes too
                                         "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"]},
     # clan emblem Gu (canon names, ch22); effects and foods unknown, so they eat stones
     {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs"]},
     {"name": "Stream Gu", "uniques": ["[+10] HP when healing", "[+10]% maintenance costs"]},
-])
+    # R3 hunger statuses (timers; see hunger()); each removes itself once its food is back
+] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
+     for food, status in HUNGER.items()])
 
 # ---------------- Events (exactly 5) ----------------
 BAI = "<for [Bai Clan] Civilizations>"
@@ -323,7 +343,7 @@ dump("Events.json", [
             "A [Rank Two Strength Gu Master] rebels <after adopting [Strength Path]>",
             "A [Rank Two Moon Gu Master] rebels <after adopting [Moon Path]>",
             "A [Rank One Gu Master] rebels <before adopting [Strength Path]> <before adopting [Moon Path]>",
-            w("+0"), w("+200", "<for [Tie Clan] Civilizations>")]},  # R2 T1: the constables hunt
+            w("+0")]},
         {"text": "Judge the traitor by clan law", "uniques": ["Only available <after adopting [Righteous Path]>",
                                                      "[-1] population [in capital]", "[+2 Happiness] <for [10] turns>",
                                                      w("+100")]},
@@ -344,18 +364,19 @@ dump("Events.json", [
     ]},
 ])
 
-# ---------------- Buildings (12: 7 + 1 Tie unique + 2 national wonders + 2 world wonders) ----------------
+# ---------------- Buildings (12: 7 + 1 Wu unique + 2 national wonders + 2 world wonders) ----------------
 SPRING_TAKEN = "Unavailable <if [Flower Wine Monk Inheritance] is constructed>"
 dump("Buildings.json", [
     # R2 T6: the palace is the clan-head pavilion; its ancestral hall (old 'Ancestral Hall' building) is folded in
     {"name": PAVILION, "isNationalWonder": True, "cost": 0, "production": 3, "gold": 5, "science": 2,
      "culture": 3, "happiness": 1, "cityStrength": 3, "uniques": ["Indicates the capital city"]},
     # R2 T6: the clan's primeval spring and the flower sea around it (was 'Awakening Grounds')
+    # R3: the awakening is held at a clan's spirit spring, so it needs an improved Spirit Spring inside the city
     {"name": SPRING, "isNationalWonder": True, "requiredTech": "Aperture Awakening", "cost": 75, "culture": 1,
-     "gold": 2, "uniques": ["Can only be built <in [Capital] cities>", SPRING_TAKEN]},
+     "gold": 2, "requiredNearbyImprovedResources": ["Spirit Spring"], "uniques": [SPRING_TAKEN]},
     {"name": "Moon Orchid Flower Sea", "isNationalWonder": True, "uniqueTo": "Gu Yue Clan", "replaces": SPRING,
      "requiredTech": "Aperture Awakening", "cost": 75, "culture": 1, "gold": 2,
-     "uniques": ["Can only be built <in [Capital] cities>", SPRING_TAKEN, "Provides [2] [Moon Orchid]"]},
+     "requiredNearbyImprovedResources": ["Spirit Spring"], "uniques": [SPRING_TAKEN, "Provides [2] [Moon Orchid]"]},
     {"name": "Gu Academy", "requiredTech": "Gu Feeding", "cost": 65, "maintenance": 1, "science": 1, "culture": 1,
      "uniques": ["[+1 Science] per [2] population [in this city]", "New [Military] units start with [10] XP [in this city]"]},
     {"name": "Gu Feeding House", "requiredTech": "Gu Feeding", "cost": 70, "maintenance": 1,
@@ -368,10 +389,10 @@ dump("Buildings.json", [
      "science": 1, "uniques": ["Provides [1] [Jade]"]},
     {"name": "Formation Platform", "requiredTech": "Gu Formations", "cost": 110, "maintenance": 1, "cityStrength": 8,
      "cityHealth": 50},
-    # R2 T1: Tie unique building (replacement counts for 'Raise the formation' [src containsBuildingOrEquivalent])
-    {"name": "Demon Suppression Tower", "uniqueTo": "Tie Clan", "replaces": "Formation Platform",
-     "requiredTech": "Gu Formations", "cost": 110, "maintenance": 1, "cityStrength": 12, "cityHealth": 75,
-     "happiness": 1},
+    # R3: Wu unique building - the Wu clan's battle stage, the largest in the Southern Border (vol2 ch122)
+    {"name": "Martial Arena", "uniqueTo": "Wu Clan", "replaces": "Gu Academy", "requiredTech": "Gu Feeding", "cost": 65,
+     "maintenance": 1, "science": 1, "culture": 1,
+     "uniques": ["[+1 Science] per [2] population [in this city]", "New [Military] units start with [20] XP [in this city]"]},
     {"name": "Trading House", "requiredTech": "Merchant Caravans", "cost": 130, "gold": 2,
      "percentStatBonus": {"gold": 20}},
     # R2 T9: canon contents - the jade-eyed stone monkeys' forest (jade), the Heavenly Essence Treasure Lotus planted in
@@ -443,8 +464,13 @@ DEP = {"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 2},
        "majorDepositAmount": {"sparse": 2, "default": 2, "abundant": 3}}
 SB = ["Guaranteed with Strategic Balance resource option"]
 dump("TileResources.json", [
-    {"name": "Primeval Stone Vein", "resourceType": "Bonus", "terrainsCanBeFoundOn": ["Hill", "Plains", "Tundra", "Desert"],
-     "gold": 1, "improvement": "Stone Mine", "improvementStats": {"gold": 2}},
+    # R3: canon primeval stones come from spirit springs (ch15; one per Qing Mao clan, ch180): rare, rich, not
+    # tradeable, one guaranteed near each start with the Strategic Balance option; majors start near one
+    dict({"name": "Spirit Spring", "resourceType": "Strategic", "terrainsCanBeFoundOn": ["Hill", "Grassland", "Plains", "Forest"],
+          "gold": 2, "improvement": "Spring Cave", "improvementStats": {"gold": 3},
+          "uniques": ["Cannot be traded", "Guaranteed with Strategic Balance resource option"]},
+         minorDepositAmount={"sparse": 1, "default": 1, "abundant": 1},
+         majorDepositAmount={"sparse": 1, "default": 1, "abundant": 1}),
     dict({"name": "Moon Orchid", "resourceType": "Strategic", "revealedBy": "Gu Feeding",
           "terrainsCanBeFoundOn": ["Grassland", "Plains", "Forest"], "food": 1, "improvement": "Plantation",
           "improvementStats": {"food": 1}, "uniques": SB}, **DEP),
@@ -452,7 +478,7 @@ dump("TileResources.json", [
           "terrainsCanBeFoundOn": ["Forest", "Jungle", "Grassland", "Hill"], "food": 1, "improvement": "Camp",
           "improvementStats": {"production": 1}, "uniques": SB}, **DEP),
     # R2 T4/T8: Jade Skin Gu eats jade -> Strategic (a consumed luxury is a non-decision [src])
-    dict({"name": "Jade", "resourceType": "Strategic", "revealedBy": "Primeval Stone Mining",
+    dict({"name": "Jade", "resourceType": "Strategic", "revealedBy": "Spirit Spring Lore",
           "terrainsCanBeFoundOn": ["Hill"], "gold": 1, "improvement": "Mine", "improvementStats": {"gold": 1},
           "uniques": SB}, **DEP),
     {"name": "Wine", "resourceType": "Strategic", "terrainsCanBeFoundOn": []},
@@ -464,21 +490,21 @@ dump("TileResources.json", [
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))
        if t.get("type") != "NaturalWonder" and t["name"] != "Fallout"]
 for t in ter:
-    t["uniques"] = [u.replace("receive an extra [Sheep]", "receive an extra [Primeval Stone Vein]") for u in t.get("uniques", [])]
+    t["uniques"] = [u for u in t.get("uniques", []) if "receive an extra [Sheep]" not in u]  # R3: no extra springs
 dump("Terrains.json", ter)
 
 # ---------------- Improvements ----------------
 imp = [
     {"name": "Farm", "techRequired": "Aperture Awakening", "terrainsCanBeBuiltOn": ["Plains", "Grassland", "Desert", "Flood plains"],
      "food": 1, "turnsToBuild": 7, "uniques": ["Can also be built on tiles adjacent to fresh water"]},
-    {"name": "Mine", "techRequired": "Primeval Stone Mining", "terrainsCanBeBuiltOn": ["Hill"], "production": 1, "turnsToBuild": 7},
-    {"name": "Stone Mine", "techRequired": "Primeval Stone Mining", "turnsToBuild": 6,
+    {"name": "Mine", "techRequired": "Spirit Spring Lore", "terrainsCanBeBuiltOn": ["Hill"], "production": 1, "turnsToBuild": 7},
+    {"name": "Spring Cave", "techRequired": "Spirit Spring Lore", "turnsToBuild": 6,
      "uniques": ["Can only be built to improve a resource", "Pillaging this improvement yields approximately [+20 Gold]"]},
     {"name": "Plantation", "techRequired": "Gu Feeding", "turnsToBuild": 6,
      "uniques": ["Can only be built to improve a resource", "Does not need removal of [Forest]"]},
     {"name": "Camp", "techRequired": "Gu Feeding", "turnsToBuild": 6,
      "uniques": ["Does not need removal of [Forest]", "Does not need removal of [Jungle]", "Can only be built to improve a resource"]},
-    {"name": "Road", "techRequired": "Primeval Stone Mining", "terrainsCanBeBuiltOn": ["Land"], "turnsToBuild": 4,
+    {"name": "Road", "techRequired": "Spirit Spring Lore", "terrainsCanBeBuiltOn": ["Land"], "turnsToBuild": 4,
      "uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn when in your territory"]},
     {"name": "Beast Lair", "terrainsCanBeBuiltOn": ["Land"],
      "uniques": ["Unpillagable", "Unbuildable", "Excluded from map editor", "Marks a barbarian camp"]},
@@ -487,7 +513,7 @@ imp = [
                  "Does not need removal of [Forest]", "Does not need removal of [Jungle]"]},
 ]
 van_imp = {i["name"]: i for i in json5.load(open(os.path.join(VAN, "TileImprovements.json")))}
-for n, tech in (("Remove Forest", "Primeval Stone Mining"), ("Remove Jungle", "Gu Formations"), ("Remove Marsh", "Gu Formations"),
+for n, tech in (("Remove Forest", "Spirit Spring Lore"), ("Remove Jungle", "Gu Formations"), ("Remove Marsh", "Gu Formations"),
                 ("Remove Road", None), ("Cancel improvement order", None), ("Repair", None), ("City ruins", None),
                 ("City center", None)):
     i = dict(van_imp[n])
@@ -533,19 +559,18 @@ def emblem(gu, extra=""):
 dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
            ["Gu Yue Village", "Orchid Slope", "Bamboo Ridge", "Cold Spring"],
-           [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), "Start bias [Hill]"]),
+           [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), "Start bias [Spirit Spring]", "Start bias [Hill]"]),
     # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
     nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
            ["Bai Village", "Waterfall Slope", "Frost Pine Slope"],
-           [emblem("Stream Gu"), "[+15]% Strength <vs [Barbarians] units>", "Start bias [Fresh Water]"]),
+           [emblem("Stream Gu"), "[+15]% Strength <vs [Barbarians] units>", "Start bias [Spirit Spring]", "Start bias [Fresh Water]"]),
     nation("Xiong Clan", "Xiong Clan Leader", "Xiong Temperament", [90, 50, 20], [240, 200, 140],
            ["Xiong Village", "Bear Den Ridge", "Boar Hollow"],
-           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Forest]"]),
-    # R2 T1: the fourth major (was Rogue Cultivators led by Fang Yuan)
-    nation("Tie Clan", "Tie Mu Bai", "Tie Temperament", [56, 56, 64], [213, 93, 93],
-           ["Tie Clan City", "Iron Chain Pass", "Black Iron Ridge"],
-           ["Starts with [Righteous Path] adopted", "Earn [50]% of killed [Barbarians] unit's [Cost] as [Gold]",
-            "Start bias [Hill]"]),
+           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Spirit Spring]", "Start bias [Forest]"]),
+    # R3: the fourth major is the Wu clan, the Southern Border's first clan (user's choice); leader Wu Ji (vol2 ch84)
+    nation("Wu Clan", "Wu Ji", "Wu Temperament", [120, 20, 20], [250, 210, 120],
+           ["Wu Clan City", "Martial Peak", "Iron Bone Ridge"],
+           ["Starts with [Righteous Path] adopted", "Start bias [Spirit Spring]", "Start bias [Hill]"]),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -579,17 +604,17 @@ dump("Personalities.json", [
      "preferredVictoryType": "Southern Border Supremacy",
      "priorities": {"Strength Path": 10, "Demonic Path": 6, "Righteous Path": 3},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
-    {"name": "Tie Temperament", "military": 6, "aggressive": 4, "production": 6, "loyal": 8, "expansion": 4,
-     "priorities": {"Righteous Path": 10, "Strength Path": 8},
-     "uniques": ["[+50]% weight to [Demon Suppression Tower] for AI decisions",
-                 f"[+100]% weight to [{SPRING}] for AI decisions"]},
+    {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
+     "preferredVictoryType": "Southern Border Supremacy",
+     "priorities": {"Righteous Path": 10, "Strength Path": 10},
+     "uniques": ["[+50]% weight to [Martial Arena] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
 ])
 dump("VictoryTypes.json", [
     {"name": "Southern Border Supremacy", "milestones": ["Capture all capitals"]},
     {"name": "Endurance", "milestones": ["Have highest score after max turns"]},
 ])
 
-TECHMAP = {"Pottery": "Primeval Stone Mining", "Animal Husbandry": "Gu Feeding", "Mining": "Wine Brewing",
+TECHMAP = {"Pottery": "Spirit Spring Lore", "Animal Husbandry": "Gu Feeding", "Mining": "Wine Brewing",
            "The Wheel": "Gu Refinement"}
 diffs = json5.load(open(os.path.join(VAN, "Difficulties.json")))
 for d in diffs:

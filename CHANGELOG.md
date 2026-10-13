@@ -67,3 +67,19 @@
   - The Gu Yue AI never builds the Flower Wine Monk Inheritance.
   - The Inheritance Trial cannot kill.
 
+## Phase 1, round 3 — the user's decisions (2026-10-13)
+
+* The Wu clan (武家, leader Wu Ji) is the fourth major instead of the Tie clan: righteous, strength path, starts on the
+  Righteous Path; unique building Martial Arena (演武场) replaces the Gu Academy and gives new Gu Masters 20 XP. The Tie
+  clan and its Demon Suppression Tower move to the roadmap.
+* A hunger meter replaces the 10% starvation: an unfed Gu is weakened at once (its effects carry
+  `<when above [-1] [food]>`), gets a timed hunger status (3 turns rank 1, 5 turns rank 2) at the first turn start in
+  deficit, and dies when the status runs out while the food is still short; it recovers once the food is back. Built
+  on the engine's status timing [src `UnitTurnManager.startTurn`, `MapUnit.setStatus`, `removeStatus`]; 4 hunger
+  status promotions added.
+* Spirit Springs (灵泉) replace the invented stone vein: a rare Strategic resource that cannot be traded, improved by a
+  Spring Cave; every major has a start bias towards one; the Awakening Grounds (and Gu Yue's flower sea) need an
+  improved spring in the city instead of the capital. Hill loses its extra start resource.
+* `docs/LORE_MAPPING.md` (125 rows) and `tools/slice1_prototype.py` updated together; the prototype passes `check_all`
+  including Unciv 4.22.8's own validator (0 errors, 0 warnings) and `ladder_check` (14,742 states, 0 errors).
+* No ruleset JSON yet: Phase 1 waits for the user's approval (⛔).
