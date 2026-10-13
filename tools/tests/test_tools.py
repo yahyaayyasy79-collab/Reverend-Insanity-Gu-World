@@ -263,7 +263,8 @@ class OfficialValidator(unittest.TestCase):
 
 
 class LoreMapping(unittest.TestCase):
-    """docs/LORE_MAPPING.md quotes exactly the uniques tools/slice1_prototype.py generates (and check_all validates)."""
+    """docs/LORE_MAPPING.md quotes exactly the uniques tools/slice1_prototype.py generates (and check_all validates),
+    and the prototype's refinement ladder passes tools/ladder_check.py."""
 
     # Files whose uniques the document must quote in full (terrains and engine-coupled improvements are Vanilla copies).
     QUOTED_FILES = ("Units.json", "UnitPromotions.json", "Buildings.json", "Policies.json", "Techs.json", "Events.json",
@@ -283,15 +284,28 @@ class LoreMapping(unittest.TestCase):
                 LoreMapping._strings(x, out)
         return out
 
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp = tempfile.TemporaryDirectory()
+        subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "slice1_prototype.py"), cls.tmp.name], check=True,
+                       capture_output=True)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.tmp.cleanup()
+
+    def test_refinement_ladder_has_no_empty_or_double_attempts(self):
+        import ladder_check
+        states, errors = ladder_check.check(Path(self.tmp.name))
+        self.assertGreater(states, 1000)
+        self.assertEqual(errors[:5], [], f"{len(errors)} ladder error(s)")
+
     def test_document_matches_prototype(self):
         doc = REPO_ROOT / "docs" / "LORE_MAPPING.md"
         if not doc.exists():
             self.skipTest("docs/LORE_MAPPING.md not written yet")
         text = doc.read_text(encoding="utf-8")
-        with tempfile.TemporaryDirectory() as tmp:
-            subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "slice1_prototype.py"), tmp], check=True,
-                           capture_output=True)
-            files = {f.name: json.loads(f.read_text(encoding="utf-8")) for f in (Path(tmp) / "jsons").glob("*.json")}
+        files = {f.name: json.loads(f.read_text(encoding="utf-8")) for f in (Path(self.tmp.name) / "jsons").glob("*.json")}
         generated = self._strings(list(files.values()), set())
         quoted = set(re.findall(r"`([^`\n]+)`", text))
         quoted.update(line for block in re.findall(r"```\n(.*?)```", text, re.S) for line in block.splitlines())

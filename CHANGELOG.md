@@ -38,3 +38,20 @@
 * **Correction (E5):** chance rolls are seeded by object identity, so reloading a save can reroll them.
 * No ruleset JSON yet: the user corrects the lore first (⛔).
 
+## Phase 1, round 2 — the user's lore answers, checked and applied (2026-10-13)
+
+* Fact check of the user's answers and the remaining [VERIFY] items against the raw novel text: 11 claims, each by a
+  researcher and an independent skeptic, all high-confidence. Confirmed: White/Black Boar Gu eat pork and are kept and
+  fed; Jade Skin Gu (玉皮蛊) eats jade; White Jade Gu is the rank-2 fusion. Not supported: the leader names Bai Mo and
+  Xiong Jiang (the novel never names either leader), the ceremony "in the ancestral hall / 祖地" (it is held in the
+  moon-orchid flower sea in a cave reached through the clan-head pavilion), and a rogue-cultivator faction.
+* `docs/LORE_MAPPING.md` rewritten for round 2 (121 rows): Tie Clan replaces the Rogue Cultivators; clan emblem Gu
+  (Moonlight, Bear Strength, Stream); canon fusion ladder (Moon Raiment, White Jade Gu) with the wild-boar tusk; Jade
+  becomes a Strategic Gu food; Lightning Wolf / Bold Lightning Wolf / Thunder Crown Wolf; Clan Head Pavilion with the
+  ancestral hall folded in; Foothill Villages replace the Stone Man Tribe; a double-edged Flower Wine Monk Inheritance.
+  Ten decisions are listed for the user.
+* `tools/ladder_check.py` (new): exhaustive check of the refinement ladder (11,502 unit states: one roll per attempt,
+  one rung per attempt, no attempt that cannot succeed, no Gu food overdrawn). A self-test runs it on the prototype.
+* `tools/slice1_prototype.py` regenerated: passes `check_all`, including Unciv 4.22.8's own validator with 0 errors and
+  0 warnings.
+

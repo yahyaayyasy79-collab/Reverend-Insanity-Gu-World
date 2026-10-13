@@ -8,6 +8,7 @@ plan can be checked in context by the repo's checkers and by Unciv's own validat
 
 Phase 2 replaces it with data/*.csv + tools/gen_*.py (MOD_SPEC section 9). Until then, change the plan here and in
 docs/LORE_MAPPING.md together; tools/tests checks that every unique the document quotes is generated here.
+Comments marked "R2" are round-2 changes (the user's lore answers plus the verified research, 2026-10-13).
 """
 import json
 import os
@@ -49,6 +50,9 @@ GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]
 APT = ("Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> "
        "<for units without [Aptitude C]> <for units without [Aptitude D]>")
 NB = "Never appears as a Barbarian unit"
+TIDE = "Beast Tide"           # the spec's generic name; in Slice 1 the beasts are the canon wolf tide (lang chao)
+SPRING = "Awakening Grounds"  # R2 T6: the cave behind the clan-head pavilion: the clan's primeval spring and flower sea
+PAVILION = "Clan Head Pavilion"  # R2 T6: was "Clan Hall"; the ancestral hall (ci tang) is inside it
 
 
 def w(x, cond=""):
@@ -62,25 +66,22 @@ dump("ModOptions.json", {"isBaseRuleset": True,
 dump("Beliefs.json", [])
 dump("Religions.json", [])
 dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
-    # Vanilla unhappiness effects (engine-coupled infrastructure, retargeted to our settler)
     "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]>",
     "Nullifies Growth [in all cities] <when below [-10] [Happiness]>",
     "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",
     "[-33]% Strength <for [All] units> <when below [-10] [Happiness]>",
     "Cannot build [Clan Settler] units <when below [-10] [Happiness]>",
     "Rebel units may spawn <when below [-20] [Happiness]>",
-    # Pillar 1: every Gu eats; starving treasury weakens everyone
     "[-3] units cost no maintenance <for [Major] Civilizations>",
     "[-20]% Strength <when below [0] [Gold]>",
-    # Pillar 3 / 5 / 1: the world, traitors and hunger
-    "Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations>",
-    "Triggers a [Beast Tide] event <upon turn start> <after turn number [90]> <with [2]% chance> <for [Major] Civilizations>",
+    f"Triggers a [{TIDE}] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations>",
+    f"Triggers a [{TIDE}] event <upon turn start> <after turn number [90]> <with [2]% chance> <for [Major] Civilizations>",
     "Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [8]% chance> <for [Major] Civilizations>",
     "Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [3]% chance> <for [Major] Civilizations>",
     "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations>",
 ]})
 
-# ---------------- Eras ----------------
+# ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
     {"name": E12, "researchAgreementCost": 150, "iconRGB": [72, 140, 100], "startingSettlerUnit": "Clan Settler",
      "startingWorkerCount": 1, "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master",
@@ -91,7 +92,8 @@ dump("Eras.json", [
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 400},
 ])
 
-# ---------------- Techs (15) ----------------
+
+# ---------------- Techs (15, names unchanged) ----------------
 def col(n, era, cost, bcost, wcost, techs):
     return {"columnNumber": n, "era": era, "techCost": cost, "buildingCost": bcost, "wonderCost": wcost, "techs": techs}
 
@@ -128,6 +130,7 @@ dump("Techs.json", [
 dump("UnitTypes.json", [{"name": n, "movementType": "Land"} for n in
                         ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast"]])
 
+
 # ---------------- Units (12) ----------------
 def gm(name, utype, tech, cost, strength, maint, extra, ranged=None, upgrades=None):
     u = {"name": name, "unitType": utype, "movement": 2, "strength": strength, "cost": cost, "requiredTech": tech,
@@ -160,29 +163,68 @@ dump("Units.json", [
     gm("Rank Three Moon Gu Master", "Moon Gu Master", "Rank Three Cultivation", 95, 12, "+150", MOON, ranged=20,
        upgrades="Rank Four Moon Gu Master"),
     gm("Rank Four Moon Gu Master", "Moon Gu Master", "Rank Four Cultivation", 140, 18, "+225", MOON, ranged=29),
-    {"name": "Electric Wolf", "unitType": "Beast", "movement": 3, "strength": 9, "cost": 30, "uniqueTo": "Barbarians",
+    # R2 T5: the canon wolf-tide tiers (plain / hundred-beast tier / ten-thousand-beast king)
+    {"name": "Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 9, "cost": 30, "uniqueTo": "Barbarians",
      "uniques": ["[+50]% maintenance costs"]},
-    {"name": "Electric Wolf King", "unitType": "Beast", "movement": 3, "strength": 16, "cost": 60,
+    {"name": "Bold Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 16, "cost": 60,
      "requiredTech": "Rank Three Cultivation", "uniqueTo": "Barbarians",
-     "uniques": ["[+15]% Strength bonus for [Electric Wolf] units within [2] tiles", "[+100]% maintenance costs"]},
+     "uniques": ["[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles", "[+100]% maintenance costs"]},
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120,
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
 ])
 
-# States in which no ladder line can fire. They close the refining choices AND the Refine Gu promotion, so the
-# AI never pays XP or stones for an attempt that cannot succeed (mechanics review, must-fix 1 and 3).
-DEAD = [
+# ---------------- R2 T4: refinement ladder with the canon recipes ----------------
+# Moon (Fang Zheng's line):      Moonlight Gu -> Moon Raiment (Moonlight + Jade Skin, fused) -> Killer Move
+# Strength (Fang Yuan's line):   White Boar Gu -> White Jade Gu (White Boar + Jade Skin, fused; boar strength kept;
+#                                a spare wild boar = the tusk catalyst, +20 points) -> Killer Move
+# Rank One (unpathed, any clan): Jade Skin Gu (the cap); it is carried into a path and saves the fusion's jade.
+# Black Boar Gu is OFF the ladder: bought from the Jia caravan (Jia ally bonus), stacks as a second boar.
+# Dead states: no ladder line can fire -> the careful and reckless choices close.
+LADDER_DEAD = [
     "Unavailable <for units with [Killer Move]>",
-    "Unavailable <for [Gu Master] units> <for units with [White Jade Gu]>",
-    "Unavailable <for units with [White Jade Gu]> <for units with [Moonlight Gu]> <before discovering [Killer Moves]>",
-    "Unavailable <for units with [White Jade Gu]> <for units with [Black Boar Gu]> <before discovering [Killer Moves]>",
-    "Unavailable <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <when below [1] [Moon Orchid]>",
-    "Unavailable <for [Strength Gu Master] units> <for units without [Black Boar Gu]> <for units without [Moonlight Gu]> <when below [1] [Wild Boar]>",
+    "Unavailable <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
+    "Unavailable <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
+    "Unavailable <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]>",
+    "Unavailable <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]>",
+    "Unavailable <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]>",
+    "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]>",
+    "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]>",
 ]
+RO_DEAD = [
+    "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]>",
+    "Unavailable <for [Gu Master] units> <when below [1] [Jade]>",
+]
+# Refine Gu closes where no rung AND (for a Rank One) no Liquor Worm lure can happen.
+LW_IMPOSSIBLE = ["<for units with [Liquor Worm]>", "<when below [1] [Wine]>", "<when below [31] [Gold]>"]
+PROMO_DEAD = LADDER_DEAD + [f"{d} {c}" for d in RO_DEAD for c in LW_IMPOSSIBLE]
 
 
-# ---------------- Promotions (10) ----------------
+def ladder(base, fusion, tusk):
+    """Highest rung first: choice uniques fire in list order and promotion conditionals are read live, so one attempt
+    climbs at most one rung. Every unit state matches at most one 'gains' line (one chance roll per attempt, E5).
+    The 'loses' lines are deterministic: they remove the two ingredients only after a successful fusion."""
+    b, f, t = (f"<with [{x}]% chance>" for x in (base, fusion, tusk))
+    return [
+        f"[This Unit] gains the [Killer Move] promotion <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> {b}",
+        f"[This Unit] gains the [Killer Move] promotion <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> {b}",
+        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> {t}",
+        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> {f}",
+        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> {t}",
+        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> {f}",
+        "[This Unit] loses the [White Boar Gu] promotion <for units with [White Jade Gu]>",
+        "[This Unit] loses the [Jade Skin Gu] promotion <for units with [White Jade Gu]>",
+        f"[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> {f}",
+        f"[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> {f}",
+        "[This Unit] loses the [Moonlight Gu] promotion <for units with [Moon Raiment]>",
+        "[This Unit] loses the [Jade Skin Gu] promotion <for units with [Moon Raiment]>",
+        f"[This Unit] gains the [White Boar Gu] promotion <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> {b}",
+        f"[This Unit] gains the [Moonlight Gu] promotion <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> {b}",
+        f"[This Unit] gains the [Jade Skin Gu] promotion <for [Gu Master] units> <for units without [Jade Skin Gu]> <when above [0] [Jade]> {b}",
+    ]
+
+
+# ---------------- Promotions (15) ----------------
 dump("UnitPromotions.json", [
     {"name": "Aptitude A", "uniques": ["[+15]% Strength", "[-20]% maintenance costs", "[+25]% XP gained from combat"]},
     {"name": "Aptitude B", "uniques": ["[+5]% Strength", "[-10]% maintenance costs", "[+10]% XP gained from combat"]},
@@ -190,47 +232,44 @@ dump("UnitPromotions.json", [
     {"name": "Aptitude D", "uniques": ["[-10]% Strength", "[+20]% maintenance costs", "[-25]% XP gained from combat"]},
     {"name": "Refine Gu", "unitTypes": GM_TYPES, "uniques": [
         "Only available <after discovering [Gu Refinement]>",
-        "Unavailable <when below [50] HP>"] + DEAD + [
+        "Unavailable <when below [50] HP>"] + PROMO_DEAD + [
         "Triggers a [Refinement Attempt] event",
         "[This Unit] loses the [Refine Gu] promotion <upon turn start>"]},
+    # rank-1 Gu (canon)
     {"name": "Moonlight Gu", "uniques": ["[+20]% Strength <when attacking>", "Consumes [1] [Moon Orchid]",
-                                         "[-10]% Strength <for [Strength Gu Master] units>"]},
-    {"name": "Black Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]",
-                                          "[-10]% Strength <for [Moon Gu Master] units>"]},
-    {"name": "White Jade Gu", "uniques": ["[+25]% Strength <when defending>", "[+20]% maintenance costs"]},
-    {"name": "Liquor Worm", "uniques": ["[+50]% XP gained from combat", "Consumes [1] [Wine]"]},
+                                         "[-10]% Strength <for [Strength Gu Master] units>",
+                                         # canon: D-grade students could not refine it (fires when added, E4) [src order]
+                                         "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"]},
+    {"name": "White Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]"]},
+    {"name": "Black Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]"]},
+    {"name": "Jade Skin Gu", "uniques": ["[+15]% Strength <when defending>", "Consumes [1] [Jade]"]},
+    {"name": "Liquor Worm", "uniques": ["[+50]% XP gained from combat", "Consumes [1] [Wine]",
+                                        # canon: it refines rank-one essence only; after the breakthrough it is let go
+                                        "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
+                                        "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"]},
+    # rank-2 fusions (canon recipes); each keeps what its ingredients gave
+    {"name": "White Jade Gu", "uniques": ["[+15]% Strength", "[+30]% Strength <when defending>", "Consumes [2] [Jade]"]},
+    {"name": "Moon Raiment", "uniques": ["[+20]% Strength <when attacking>", "[+20]% Strength <when defending>",
+                                         "Consumes [1] [Moon Orchid]", "Consumes [1] [Jade]"]},
     {"name": "Killer Move", "uniques": ["[+25]% Strength <when attacking>", "[+25]% maintenance costs"]},
+    # clan emblem Gu (canon names, ch22); effects and foods unknown, so they eat stones
+    {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs",
+                                             "[-10]% Strength <for [Moon Gu Master] units>"]},
+    {"name": "Stream Gu", "uniques": ["[+10] HP when healing", "[+10]% maintenance costs"]},
 ])
 
 # ---------------- Events (exactly 5) ----------------
-def ladder(chance):
-    # Highest rung first: choice uniques fire in list order and promotion conditionals are read live, so one
-    # attempt climbs at most one rung. Every unit state matches at most one line (one roll per attempt, E5).
-    c = f"<with [{chance}]% chance>"
-    return [
-        f"[This Unit] gains the [Killer Move] promotion <for units with [White Jade Gu]> <for units with [Moonlight Gu]> <after discovering [Killer Moves]> {c}",
-        f"[This Unit] gains the [Killer Move] promotion <for units with [White Jade Gu]> <for units with [Black Boar Gu]> <after discovering [Killer Moves]> {c}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for units with [Moonlight Gu]> <for units without [White Jade Gu]> {c}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for units with [Black Boar Gu]> <for units without [White Jade Gu]> {c}",
-        f"[This Unit] gains the [Moonlight Gu] promotion <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <when above [0] [Moon Orchid]> {c}",
-        f"[This Unit] gains the [Black Boar Gu] promotion <for [Strength Gu Master] units> <for units without [Black Boar Gu]> <for units without [Moonlight Gu]> <when above [0] [Wild Boar]> {c}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for [Gu Master] units> <for units without [White Jade Gu]> <for units without [Moonlight Gu]> {c}",
-    ]
-
-
-
-
-ALTAR = "<if [Awakening Grounds] is constructed>"
 BAI = "<for [Bai Clan] Civilizations>"
+SPR = f"<if [{SPRING}] is constructed>"  # containsBuildingOrEquivalent: Gu Yue's Moon Orchid Flower Sea counts [src]
 dump("Events.json", [
     {"name": "Aptitude Awakening", "presentation": "None", "choices": [
         {"text": "Grade A aptitude", "uniques": ["[This Unit] gains the [Aptitude A] promotion", w("-95"),
-                                                 w("+100", ALTAR), w("+100", BAI)]},
+                                                 w("+100", SPR), w("+100", BAI)]},
         {"text": "Grade B aptitude", "uniques": ["[This Unit] gains the [Aptitude B] promotion", w("-80"),
-                                                 w("+50", ALTAR), w("+25", BAI)]},
+                                                 w("+50", SPR), w("+25", BAI)]},
         {"text": "Grade C aptitude", "uniques": ["[This Unit] gains the [Aptitude C] promotion", w("-65")]},
         {"text": "Grade D aptitude", "uniques": ["[This Unit] gains the [Aptitude D] promotion", w("-60"),
-                                                 w("-25", ALTAR)]},
+                                                 w("-25", SPR)]},
     ]},
     {"name": "Refinement Attempt", "text": "The furnace is lit. How far will you risk it?", "choices": [
         {"text": "Refine carefully", "uniques":
@@ -239,23 +278,23 @@ dump("Events.json", [
              f"Unavailable <when below [200] [Gold]> <during the [{E4}]>",
              f"Gain [-40] [Gold] <during the [{E12}]>", f"Gain [-70] [Gold] <during the [{E3}]>",
              f"Gain [-100] [Gold] <during the [{E4}]>"]
-            + DEAD + ladder(85) + [w("+50"), w("-60", "<when below [150] [Gold]>")]},
-        {"text": "Refine recklessly", "uniques": DEAD + ["Unavailable <when below [31] HP>"] + ladder(50)
-            + ["[This Unit] takes [30] damage", w("+0"), w("-90", "<when below [50] HP>")]},
-        {"text": "Lure a wild Liquor Worm with wine", "uniques": [
-            "Only available <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [20] [Gold]>",
-            "Unavailable <for [Beast] units>",
-            "Gain [-20] [Gold]", "[This Unit] gains the [Liquor Worm] promotion <with [70]% chance>", w("+0")]},
+            + LADDER_DEAD + RO_DEAD + ladder(85, 70, 90) + [w("+50"), w("-60", "<when below [150] [Gold]>")]},
+        {"text": "Refine recklessly", "uniques": LADDER_DEAD + RO_DEAD + ["Unavailable <when below [31] HP>"]
+            + ladder(50, 40, 60) + ["[This Unit] takes [30] damage", w("+0"), w("-90", "<when below [50] HP>")]},
+        # R2 T4/T9: canon lure (Green Bamboo Wine) and canon refining cost (at least 30 stones); rank one only
+        {"text": "Lure a wild Liquor Worm with Green Bamboo Wine", "uniques": [
+            "Only available <for [Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [30] [Gold]>",
+            "Gain [-30] [Gold]", "[This Unit] gains the [Liquor Worm] promotion <with [70]% chance>", w("+0")]},
         {"text": "Let the furnace cool", "uniques": ["[This Unit] gains [5] XP", w("-95")]},
     ]},
-    {"name": "Beast Tide", "text": "A beast tide pours down the mountain toward your villages.", "choices": [
-        {"text": "Meet the tide in the field", "uniques": [
-            f"[2] [Electric Wolf]s rebel <during the [{E12}]>",
-            f"[3] [Electric Wolf]s rebel <starting from the [{E3}]>",
-            f"A [Electric Wolf King] rebels <starting from the [{E3}]>",
+    {"name": TIDE, "text": "Lightning wolves pour down the mountain toward your villages.", "choices": [
+        {"text": "Meet the wolves in the field", "uniques": [
+            f"[2] [Lightning Wolf]s rebel <during the [{E12}]>",
+            f"[3] [Lightning Wolf]s rebel <starting from the [{E3}]>",
+            f"A [Bold Lightning Wolf] rebels <starting from the [{E3}]>",
             f"A [Thunder Crown Wolf] rebels <during the [{E4}]>",
             w("+0")]},
-        {"text": "Pay rogue cultivators to thin the pack", "uniques": [
+        {"text": "Hire demonic Gu Masters to thin the pack", "uniques": [
             "Only available <when above [60] [Gold]>",
             f"Unavailable <when below [100] [Gold]> <during the [{E3}]>",
             f"Unavailable <when below [150] [Gold]> <during the [{E4}]>",
@@ -275,7 +314,7 @@ dump("Events.json", [
             "A [Rank Two Strength Gu Master] rebels <after adopting [Strength Path]>",
             "A [Rank Two Moon Gu Master] rebels <after adopting [Moon Path]>",
             "A [Rank One Gu Master] rebels <before adopting [Strength Path]> <before adopting [Moon Path]>",
-            w("+0")]},
+            w("+0"), w("+200", "<for [Tie Clan] Civilizations>")]},  # R2 T1: the constables hunt
         {"text": "Judge the traitor by clan law", "uniques": ["Only available <after adopting [Righteous Path]>",
                                                      "[-1] population [in capital]", "[+2 Happiness] <for [10] turns>",
                                                      w("+100")]},
@@ -295,34 +334,46 @@ dump("Events.json", [
     ]},
 ])
 
-# ---------------- Buildings (12: 9 + 1 national wonder + 2 world wonders; Clan Hall counted) ----------------
+# ---------------- Buildings (12: 7 + 1 Tie unique + 2 national wonders + 2 world wonders) ----------------
+SPRING_TAKEN = "Unavailable <if [Flower Wine Monk Inheritance] is constructed>"
 dump("Buildings.json", [
-    {"name": "Clan Hall", "isNationalWonder": True, "cost": 0, "production": 3, "gold": 5, "science": 2,
-     "culture": 1, "cityStrength": 3, "uniques": ["Indicates the capital city"]},
-    {"name": "Ancestral Hall", "requiredTech": "Aperture Awakening", "cost": 45, "maintenance": 1, "culture": 2,
-     "happiness": 1},
-    {"name": "Awakening Grounds", "isNationalWonder": True, "requiredTech": "Aperture Awakening", "cost": 75,
-     "culture": 1},
-    {"name": "Gu Academy", "requiredTech": "Gu Feeding", "cost": 65, "maintenance": 1, "science": 1,
+    # R2 T6: the palace is the clan-head pavilion; its ancestral hall (old 'Ancestral Hall' building) is folded in
+    {"name": PAVILION, "isNationalWonder": True, "cost": 0, "production": 3, "gold": 5, "science": 2,
+     "culture": 3, "happiness": 1, "cityStrength": 3, "uniques": ["Indicates the capital city"]},
+    # R2 T6: the clan's primeval spring and the flower sea around it (was 'Awakening Grounds')
+    {"name": SPRING, "isNationalWonder": True, "requiredTech": "Aperture Awakening", "cost": 75, "culture": 1,
+     "gold": 2, "uniques": ["Can only be built <in [Capital] cities>", SPRING_TAKEN]},
+    {"name": "Moon Orchid Flower Sea", "isNationalWonder": True, "uniqueTo": "Gu Yue Clan", "replaces": SPRING,
+     "requiredTech": "Aperture Awakening", "cost": 75, "culture": 1, "gold": 2,
+     "uniques": ["Can only be built <in [Capital] cities>", SPRING_TAKEN, "Provides [2] [Moon Orchid]"]},
+    {"name": "Gu Academy", "requiredTech": "Gu Feeding", "cost": 65, "maintenance": 1, "science": 1, "culture": 1,
      "uniques": ["[+1 Science] per [2] population [in this city]", "New [Military] units start with [10] XP [in this city]"]},
     {"name": "Gu Feeding House", "requiredTech": "Gu Feeding", "cost": 70, "maintenance": 1,
      "uniques": ["Provides [1] [Moon Orchid]", "Provides [1] [Wild Boar]"]},
-    {"name": "Moon Orchid Terrace", "uniqueTo": "Gu Yue Clan", "replaces": "Gu Feeding House",
-     "requiredTech": "Gu Feeding", "cost": 70, "maintenance": 1, "food": 1,
-     "uniques": ["Provides [2] [Moon Orchid]", "Provides [1] [Wild Boar]"]},
-    {"name": "Wine Cellar", "requiredTech": "Wine Brewing", "cost": 60, "maintenance": 1, "happiness": 1,
+    # R2 T8: canon tavern (jiu si) selling Green Bamboo Wine; was 'Wine Cellar'
+    {"name": "Tavern", "requiredTech": "Wine Brewing", "cost": 60, "maintenance": 1, "happiness": 1,
      "uniques": ["Provides [1] [Wine]"]},
+    # R2 T8: refining materials include jade, so every clan has an early jade source that does not depend on map luck
     {"name": "Refinement Chamber", "requiredTech": "Gu Refinement", "cost": 90, "maintenance": 1, "production": 1,
-     "science": 1},
+     "science": 1, "uniques": ["Provides [1] [Jade]"]},
     {"name": "Formation Platform", "requiredTech": "Gu Formations", "cost": 110, "maintenance": 1, "cityStrength": 8,
      "cityHealth": 50},
+    # R2 T1: Tie unique building (replacement counts for 'Raise the formation' [src containsBuildingOrEquivalent])
+    {"name": "Demon Suppression Tower", "uniqueTo": "Tie Clan", "replaces": "Formation Platform",
+     "requiredTech": "Gu Formations", "cost": 110, "maintenance": 1, "cityStrength": 12, "cityHealth": 75,
+     "happiness": 1},
     {"name": "Trading House", "requiredTech": "Merchant Caravans", "cost": 130, "gold": 2,
      "percentStatBonus": {"gold": 20}},
+    # R2 T9: canon contents - the jade-eyed stone monkeys' forest (jade), the Heavenly Essence Treasure Lotus planted in
+    # the clan's own spring (stones; taking it wrecks the spring), the trial (XP), the heir's oath against Gu Yue
     {"name": "Flower Wine Monk Inheritance", "isWonder": True, "requiredTech": "Inheritance Lore", "cost": 240,
-     "culture": 3, "uniques": ["Provides [2] [Wine]", "[+25]% XP gained from combat"]},
+     "culture": 3, "gold": 4, "uniques": ["Provides [2] [Jade]", "[+15]% XP gained from combat",
+                                          "[+15]% Strength <vs [Gu Yue Clan] units>",
+                                          f"Remove [{SPRING}] [in all cities]"]},
+    # R2 T1: the free market that fences demonic loot (vol2 ch30)
     {"name": "Shang Clan City", "isWonder": True, "requiredTech": "Super Clan Commerce", "cost": 300, "gold": 5,
      "uniques": ["[+2 Gold] from all [Trading House] buildings",
-                 "Gifts of Gold to City-States generate [+50]% more Influence"]},
+                 "Receive [+50]% Gold from Barbarian encampments and pillaging Cities"]},
 ])
 
 # ---------------- Policies (4 branches) ----------------
@@ -345,8 +396,9 @@ dump("Policies.json", [
         "Triggers a [Betrayal] event <upon turn start> <with [3]% chance>"], "policies": [
         {"name": "Plunder", "row": 1, "column": 1, "uniques": ["[+100]% Yield from pillaging tiles",
                                                              "Receive [+100]% Gold from Barbarian encampments and pillaging Cities"]},
-        {"name": "Blood Harvest", "row": 1, "column": 3, "uniques": ["Heals [15] damage if it kills a unit",
-                                                                   "[+25]% XP gained from combat"]},
+        # R2 T1: the S6 'rogue cultivator' strategy (demonic Gu Masters are lone cultivators, vol2 ch81); was Blood Harvest
+        {"name": "Lone Cultivators", "row": 1, "column": 3, "uniques": ["[2] units cost no maintenance",
+                                                                      "[+30]% unhappiness from the number of cities"]},
         {"name": "Ruthless Cultivation", "row": 2, "column": 2, "requires": ["Plunder"], "uniques": [
             "Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately",
             "[-20]% maintenance costs <when at war>",
@@ -356,7 +408,8 @@ dump("Policies.json", [
         "Only available <before adopting [Strength Path]>",
         "Provides [2] [Moon Orchid]",
         "[+5]% Strength <for [Moon Gu Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"], "policies": [
-        {"name": "Moonlight Mastery", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [Moonlight Gu]>"]},
+        {"name": "Moonlight Mastery", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [Moonlight Gu]>",
+                                                                       "[+15]% Strength <for units with [Moon Raiment]>"]},
         {"name": "Orchid Terraces", "row": 1, "column": 3, "uniques": ["Provides [2] [Moon Orchid]",
                                                                      "[-15]% maintenance costs <for [Moon Gu Master] units>"]},
         {"name": "Moon Blade Step", "row": 2, "column": 2, "requires": ["Moonlight Mastery"],
@@ -366,7 +419,8 @@ dump("Policies.json", [
         "Only available <before adopting [Moon Path]>",
         "Provides [2] [Wild Boar]",
         "[+5]% Strength <for [Strength Gu Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"], "policies": [
-        {"name": "Boar Strength", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [Black Boar Gu]>"]},
+        {"name": "Boar Strength", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [White Boar Gu]>",
+                                                                   "[+15]% Strength <for units with [White Jade Gu]>"]},
         {"name": "Beast Hunters", "row": 1, "column": 3, "uniques": ["Provides [2] [Wild Boar]",
                                                                    "[+25]% Strength <vs [Barbarians] units>"]},
         {"name": "Unyielding Body", "row": 2, "column": 2, "requires": ["Boar Strength"],
@@ -374,21 +428,24 @@ dump("Policies.json", [
         {"name": "Strength Path Complete", "uniques": ["[1] Movement <for [Strength Gu Master] units>"]}]},
 ])
 
-# ---------------- Resources (6) ----------------
+# ---------------- Resources (6: 1 bonus, 4 strategic Gu foods, 1 luxury) ----------------
 DEP = {"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 2},
        "majorDepositAmount": {"sparse": 2, "default": 2, "abundant": 3}}
+SB = ["Guaranteed with Strategic Balance resource option"]
 dump("TileResources.json", [
     {"name": "Primeval Stone Vein", "resourceType": "Bonus", "terrainsCanBeFoundOn": ["Hill", "Plains", "Tundra", "Desert"],
      "gold": 1, "improvement": "Stone Mine", "improvementStats": {"gold": 2}},
     dict({"name": "Moon Orchid", "resourceType": "Strategic", "revealedBy": "Gu Feeding",
           "terrainsCanBeFoundOn": ["Grassland", "Plains", "Forest"], "food": 1, "improvement": "Plantation",
-          "improvementStats": {"food": 1}, "uniques": ["Guaranteed with Strategic Balance resource option"]}, **DEP),
+          "improvementStats": {"food": 1}, "uniques": SB}, **DEP),
     dict({"name": "Wild Boar", "resourceType": "Strategic", "revealedBy": "Gu Feeding",
           "terrainsCanBeFoundOn": ["Forest", "Jungle", "Grassland", "Hill"], "food": 1, "improvement": "Camp",
-          "improvementStats": {"production": 1}, "uniques": ["Guaranteed with Strategic Balance resource option"]}, **DEP),
+          "improvementStats": {"production": 1}, "uniques": SB}, **DEP),
+    # R2 T4/T8: Jade Skin Gu eats jade -> Strategic (a consumed luxury is a non-decision [src])
+    dict({"name": "Jade", "resourceType": "Strategic", "revealedBy": "Primeval Stone Mining",
+          "terrainsCanBeFoundOn": ["Hill"], "gold": 1, "improvement": "Mine", "improvementStats": {"gold": 1},
+          "uniques": SB}, **DEP),
     {"name": "Wine", "resourceType": "Strategic", "terrainsCanBeFoundOn": []},
-    {"name": "Jade", "resourceType": "Luxury", "terrainsCanBeFoundOn": ["Hill"], "gold": 2,
-     "improvement": "Mine", "improvementStats": {"gold": 1}},
     {"name": "Furs", "resourceType": "Luxury", "terrainsCanBeFoundOn": ["Forest", "Tundra", "Jungle"], "gold": 2,
      "improvement": "Camp", "improvementStats": {"gold": 1}},
 ])
@@ -443,9 +500,11 @@ dump("Ruins.json", [
      "uniques": ["[This Unit] gains [30] XP", "[This Unit] takes [40] damage", "Only available <for [Military] units>", "Unavailable <for [Beast] units>"]},
     {"name": "Inheritance Trap", "notification": "The inheritance was guarded by a trap!", "weight": 1,
      "uniques": ["[This Unit] takes [40] damage", "Only available <for [Military] units> <after turn number [10]>"]},
-    {"name": "Wandering Rogue Cultivator", "notification": "A rogue cultivator sheltering in the ruins joins us.",
+    # R2 T1: was 'Wandering Rogue Cultivator' (no rogue-cultivator faction on Qing Mao; clans hire lone demonic GMs, ch74)
+    {"name": "Lone Demonic Gu Master", "notification": "A lone demonic Gu Master sheltering in the ruins offers us his services.",
      "weight": 1, "uniques": ["Free [Rank One Gu Master] found in the ruins"]},
 ])
+
 
 # ---------------- Nations ----------------
 def nation(name, leader, pers, outer, inner, cities, uniques):
@@ -453,27 +512,35 @@ def nation(name, leader, pers, outer, inner, cities, uniques):
             "innerColor": inner, "cities": cities, "uniques": uniques}
 
 
+def emblem(gu, extra=""):
+    # R2 T3: canon - new students pick their first Gu free from the academy Gu room; most take the clan emblem Gu
+    return (f"All newly-trained [Rank One Gu Master] units [in all cities] receive the [{gu}] promotion "
+            f"<in cities with a [Gu Academy]>" + (f" {extra}" if extra else ""))
+
+
 dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
            ["Gu Yue Village", "Orchid Slope", "Bamboo Ridge", "Cold Spring"],
-           ["All newly-trained [Rank One Gu Master] units [in all cities] receive the [Moonlight Gu] promotion <after discovering [Gu Feeding]> <when above [0] [Moon Orchid]>",
-            "Start bias [Hill]"]),
-    nation("Bai Clan", "Bai Ning Bing", "Bai Temperament", [230, 230, 230], [40, 70, 120],
-           ["Bai Village", "White Stone Gully", "Frost Pine Slope"],
-           ["[+15]% Strength <for units with [Aptitude A]>", "Start bias [Plains]"]),
-    nation("Xiong Clan", "Xiong Lin", "Xiong Temperament", [90, 50, 20], [240, 200, 140],
+           [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), "Start bias [Hill]"]),
+    # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
+    nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
+           ["Bai Village", "Waterfall Slope", "Frost Pine Slope"],
+           [emblem("Stream Gu"), "[+15]% Strength <vs [Barbarians] units>", "Start bias [Fresh Water]"]),
+    nation("Xiong Clan", "Xiong Clan Leader", "Xiong Temperament", [90, 50, 20], [240, 200, 140],
            ["Xiong Village", "Bear Den Ridge", "Boar Hollow"],
-           ["Starts with [Strength Path] adopted", "[+15]% Strength <vs [Barbarians] units>", "Start bias [Forest]"]),
-    nation("Rogue Cultivators", "Fang Yuan", "Rogue Temperament", [20, 20, 20], [200, 30, 30],
-           ["Hidden Cave", "Wolf Ravine", "Nameless Camp"],
-           ["[+15]% [Science]", "[1] units cost no maintenance", "[+50]% unhappiness from the number of cities",
-            "Triggers a [Beast Tide] event <upon turn start> <after turn number [20]> <with [2]% chance>"]),
+           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Forest]"]),
+    # R2 T1: the fourth major (was Rogue Cultivators led by Fang Yuan)
+    nation("Tie Clan", "Tie Mu Bai", "Tie Temperament", [56, 56, 64], [213, 93, 93],
+           ["Tie Clan City", "Wan Cheng Mountain", "Iron Chain Pass"],
+           ["Starts with [Righteous Path] adopted", "Earn [50]% of killed [Barbarians] unit's [Cost] as [Gold]",
+            "Start bias [Hill]"]),
+    # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
-     "cities": ["Hairy Man Hollow"]},
-    {"name": "Stone Man Tribe", "cityStateType": "Stone Tribe", "outerColor": [90, 90, 90], "innerColor": [250, 250, 250],
-     "cities": ["Stone Man Crag"]},
+     "cities": ["Bronze Hall"]},
+    {"name": "Foothill Villages", "cityStateType": "Mortal Villages", "outerColor": [110, 90, 50],
+     "innerColor": [240, 240, 210], "cities": ["Qing Mao Foothills"]},
     {"name": "Jia Clan", "cityStateType": "Merchant Clan", "outerColor": [120, 90, 0], "innerColor": [255, 230, 120],
-     "cities": ["Jia Caravan Camp"]},
+     "cities": ["Jia Village"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},
@@ -481,32 +548,33 @@ dump("Nations.json", [
 dump("CityStateTypes.json", [
     {"name": "Refiner Tribe", "color": [180, 120, 60], "friendBonusUniques": ["[+2 Science] [in capital]"],
      "allyBonusUniques": ["[+2 Science] [in capital]", "[+20]% XP gained from combat"]},
-    {"name": "Stone Tribe", "color": [130, 130, 130], "friendBonusUniques": ["[+2 Production] [in capital]"],
-     "allyBonusUniques": ["[+2 Production] [in capital]", "[+20]% Strength for cities"]},
+    {"name": "Mortal Villages", "color": [150, 130, 80], "friendBonusUniques": ["[+2 Food] [in capital]"],
+     "allyBonusUniques": ["[+2 Food] [in capital]", "[+2 Production] [in capital]"]},
+    # R2 T4/T7: the caravan's tree-house Gu shop sold Fang Yuan his Black Boar Gu
     {"name": "Merchant Clan", "color": [255, 216, 0], "friendBonusUniques": ["[+2 Gold] [in capital]"],
-     "allyBonusUniques": ["[+3 Gold] [in capital]", "[+10]% [Gold]"]},
+     "allyBonusUniques": ["[+3 Gold] [in capital]", "[+10]% [Gold]",
+                          "All newly-trained [Strength Gu Master] units [in all cities] receive the [Black Boar Gu] promotion <when above [0] [Wild Boar]>"]},
 ])
 dump("Personalities.json", [
     {"name": "Gu Yue Temperament", "science": 7, "culture": 6, "gold": 5, "military": 4, "aggressive": 3,
      "priorities": {"Moon Path": 10, "Righteous Path": 6},
-     "uniques": ["[+50]% weight to [Moon Orchid Terrace] for AI decisions", "[+100]% weight to [Awakening Grounds] for AI decisions"]},
+     "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 4, "aggressive": 3,
      "priorities": {"Moon Path": 8, "Righteous Path": 7},
-     "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", "[+100]% weight to [Awakening Grounds] for AI decisions"]},
+     "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6,
-     "priorities": {"Strength Path": 10, "Righteous Path": 5, "Demonic Path": 3},
-     "uniques": ["[+50]% weight to [Formation Platform] for AI decisions", "[+100]% weight to [Awakening Grounds] for AI decisions"]},
-    {"name": "Rogue Temperament", "military": 7, "aggressive": 7, "expansion": 3, "loyal": 0,
-     "priorities": {"Strength Path": 12, "Demonic Path": 10},
-     "uniques": ["[+50]% weight to [Refinement Chamber] for AI decisions", "[+50]% weight to [Wine Cellar] for AI decisions",
-                 "[+100]% weight to [Awakening Grounds] for AI decisions"]},
+     "priorities": {"Strength Path": 10, "Demonic Path": 6, "Righteous Path": 3},
+     "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
+    {"name": "Tie Temperament", "military": 6, "aggressive": 4, "production": 6, "loyal": 8, "expansion": 4,
+     "priorities": {"Righteous Path": 10, "Strength Path": 8},
+     "uniques": ["[+50]% weight to [Demon Suppression Tower] for AI decisions",
+                 f"[+100]% weight to [{SPRING}] for AI decisions"]},
 ])
 dump("VictoryTypes.json", [
     {"name": "Southern Border Supremacy", "milestones": ["Capture all capitals"]},
     {"name": "Endurance", "milestones": ["Have highest score after max turns"]},
 ])
 
-# Difficulties: Vanilla 8 levels, bonus units / free techs remapped, AI upkeep softened
 TECHMAP = {"Pottery": "Primeval Stone Mining", "Animal Husbandry": "Gu Feeding", "Mining": "Wine Brewing",
            "The Wheel": "Gu Refinement"}
 diffs = json5.load(open(os.path.join(VAN, "Difficulties.json")))

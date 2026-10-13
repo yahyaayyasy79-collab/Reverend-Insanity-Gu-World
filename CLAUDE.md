@@ -5,10 +5,15 @@ Indonesia**; repository files stay in English.
 
 ## Status
 
-Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 delivered 2026-10-12:
-`docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's lore corrections (19 questions near its top).
-No ruleset JSON before that approval. Then: apply the corrections to the document and `tools/slice1_prototype.py`
-together, and start Phase 2 (Slice 1) by turning the prototype into `data/*.csv` + `tools/gen_*.py`.
+Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 round 1 delivered 2026-10-12; the
+user answered its lore questions; round 2 (2026-10-13) checked those answers against the raw novel text and applied
+them. `docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's 10 round-2 decisions (near its top). No ruleset
+JSON before that approval. Then: apply the decisions to the document and `tools/slice1_prototype.py` together, and
+start Phase 2 (Slice 1) by turning the prototype into `data/*.csv` + `tools/gen_*.py` (keep `tools/ladder_check.py`).
+
+The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter
+the plan; round 2 found two of their names unsupported. Research notes do not survive the container: record verdicts
+in LORE_MAPPING.md.
 
 ## Decisions
 
@@ -34,8 +39,8 @@ tools/check_all                          # self-tests, schema, uniques, refs, OF
 Single tools: `tools/check_schema.py`, `tools/lint_uniques.py`, `tools/check_refs.py`, `tools/unciv_ci.py [--pack]`,
 `tools/make_placeholders.py [--dry-run|--force|--report|--preview]`; all accept `--mod PATH` and `--quiet`.
 While designing, `printf '%s\n' "<unique>" | tools/unique_check.py` checks loose strings against uniques.md, and
-`tools/slice1_prototype.py OUT && tools/check_all --mod OUT --no-self-test` checks the whole Slice 1 plan in context
-(a self-test keeps it and `docs/LORE_MAPPING.md` in sync).
+`tools/slice1_prototype.py OUT && tools/check_all --mod OUT --no-self-test && tools/ladder_check.py OUT` checks the
+whole Slice 1 plan in context (self-tests keep it and `docs/LORE_MAPPING.md` in sync and run the ladder check).
 `unciv_ci.py` runs Unciv's own validator (`mod-ci`) on a temp copy — it is the closest thing to "Locate mod
 errors" available here; report its OptionsOnly lines too.
 See `tools/README.md`.
