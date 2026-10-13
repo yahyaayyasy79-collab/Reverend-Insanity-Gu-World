@@ -83,3 +83,12 @@
 * `docs/LORE_MAPPING.md` (125 rows) and `tools/slice1_prototype.py` updated together; the prototype passes `check_all`
   including Unciv 4.22.8's own validator (0 errors, 0 warnings) and `ladder_check` (14,742 states, 0 errors).
 * No ruleset JSON yet: Phase 1 waits for the user's approval (⛔).
+
+## Phase 1, round 4 — hunger deaths by roll, Phase 1 approved (2026-10-13)
+
+* The user's option B: when a hunger status runs out while the food is still short, each Gu dies with a 50% chance
+  (`<with [50]% chance>`, seeded per unit and turn [src `Conditionals.getStateBasedRandom`]); a survivor gets the
+  status again and rolls 3 (rank 1) or 5 (rank 2) turns later. Before, every holder of the food died at the same turn
+  start, because the civ's resource count is not refreshed between units [src].
+* The user approved Phase 1 and set the tuning rule: autoplay with Strategic Balance on decides; the rank-1 hunger
+  death rate decides whether the rank-1 threshold rises.

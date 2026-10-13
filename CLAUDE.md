@@ -5,13 +5,10 @@ Indonesia**; repository files stay in English.
 
 ## Status
 
-Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 round 1 delivered 2026-10-12; the
-user answered its lore questions; round 2 (2026-10-13) checked those answers against the raw novel text and applied
-them; round 3 (2026-10-13) applied the user's decisions (Wu clan as fourth major, hunger meter, Spirit Springs).
-`docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's approval of Phase 1. No ruleset JSON before that
-approval. Then start Phase 2 (Slice 1) by turning `tools/slice1_prototype.py` into `data/*.csv` + `tools/gen_*.py`
-(keep `tools/ladder_check.py`). The round-2/3 rendering pipeline lived in a scratchpad and is gone: from now on edit
-LORE_MAPPING.md and the prototype directly; the LoreMapping self-test keeps them in sync.
+Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 (`docs/LORE_MAPPING.md`, rounds 1–4)
+approved 2026-10-13. Phase 2 (Slice 1) in progress: turn `tools/slice1_prototype.py` into `data/*.csv` +
+`tools/gen_*.py` (keep `tools/ladder_check.py`), then autoplay. The round-2/3 rendering pipeline lived in a scratchpad
+and is gone: edit LORE_MAPPING.md and the generator directly; the LoreMapping self-test keeps them in sync.
 
 The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter
 the plan; round 2 found two of their names unsupported. Research notes do not survive the container: record verdicts
@@ -30,7 +27,11 @@ in LORE_MAPPING.md.
   (`game.atlas`, `game*.png`, `Atlases.json`); `check_refs` flags a stale atlas.
 * User platform: unknown (ask when giving install steps; docs/TESTING.md covers both).
 * Slice 1 lore (user, round 3): majors Gu Yue, Bai, Xiong, Wu; paths Moon + Strength; Gu hunger is a meter (weakened,
-  then death after a rank-dependent number of turns), not instant death; Spirit Springs are the map's prize.
+  then a 50% death roll per Gu after a rank-dependent number of turns, option B), not instant death; Spirit Springs are
+  the map's prize.
+* Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
+  data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
+  3 or 4) if the trade economy collapses too fast.
 
 ## Setup (every fresh container: `ref/` is gitignored)
 

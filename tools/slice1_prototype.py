@@ -203,11 +203,15 @@ PROMO_DEAD = LADDER_DEAD + [f"{d} {c}" for d in RO_DEAD for c in LW_IMPOSSIBLE]
 # R3 hunger meter (the user's design). A Gu whose food is in deficit is first WEAKENED: its effects carry
 # <when above [-1] [food]> and switch off (the engine adds its own -25% missing-resource malus [src BattleDamage]).
 # At the first turn start in deficit the unit gets a timed hunger status (one per food); if the food is still short when
-# the status runs out, the Gu dies. The status is removed early, harmlessly, once the food is back. Statuses tick down at
-# the end of startTurn, after the triggers [src UnitTurnManager.startTurn], so a status of N turns kills at the (N-1)th
-# turn start after the first: rank-1 Gu (eat often in canon) hold out 2 turns, rank-2 Gu 4 turns.
+# the status runs out, the Gu dies with HUNGER_DEATH_CHANCE (round 4, the user's option B: no mass death, because the
+# civ's resource count is not refreshed between units [src]); a survivor gets the status again at the next turn start.
+# The status is removed early, harmlessly, once the food is back. Statuses tick down at the end of startTurn, after the
+# triggers [src UnitTurnManager.startTurn], so a status of N turns runs out at the (N-1)th turn start after the first:
+# rank-1 Gu (eat often in canon) roll after 2 turns and then every 3, rank-2 Gu after 4 and then every 5. The roll is
+# seeded per unit (name, tile, movement) and turn [src Conditionals.getStateBasedRandom, GameContext.hashCode].
 HUNGER = {"Moon Orchid": "Orchid Hunger", "Wild Boar": "Pork Hunger", "Jade": "Jade Hunger", "Wine": "Wine Hunger"}
 RANK1_TURNS, RANK2_TURNS = 3, 5
+HUNGER_DEATH_CHANCE = 50
 
 
 def fed(unique, food):
@@ -218,7 +222,8 @@ def fed(unique, food):
 def hunger(gu, food, turns):
     status = HUNGER[food]
     return [f"[This Unit] gains the [{status}] status for [{turns}] turn(s) <upon turn start> <when below [0] [{food}]> <for units without [{status}]>",
-            f"[This Unit] loses the [{gu}] promotion <upon losing the [{status}] status> <when below [0] [{food}]>"]
+            f"[This Unit] loses the [{gu}] promotion <upon losing the [{status}] status> <when below [0] [{food}]> "
+            f"<with [{HUNGER_DEATH_CHANCE}]% chance>"]
 
 
 def ladder(base, fusion, tusk):
@@ -278,7 +283,7 @@ dump("UnitPromotions.json", [
                                          fed("[+10]% Strength bonus for [Military] units within [1] tiles", "Moon Orchid"),
                                          "Consumes [1] [Moon Orchid]"] + hunger("Moon Raiment", "Moon Orchid", RANK2_TURNS)},
     {"name": "Killer Move", "uniques": ["[+25]% Strength <when attacking>", "[+25]% maintenance costs",
-                                        # a killer move needs its rank-2 Gu; if that Gu starved, the move goes too
+                                        # a killer move needs its rank-2 Gu; if that Gu died of hunger, the move goes too
                                         "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"]},
     # clan emblem Gu (canon names, ch22); effects and foods unknown, so they eat stones
     {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs"]},
