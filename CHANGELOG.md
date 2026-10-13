@@ -49,9 +49,21 @@
   (Moonlight, Bear Strength, Stream); canon fusion ladder (Moon Raiment, White Jade Gu) with the wild-boar tusk; Jade
   becomes a Strategic Gu food; Lightning Wolf / Bold Lightning Wolf / Thunder Crown Wolf; Clan Head Pavilion with the
   ancestral hall folded in; Foothill Villages replace the Stone Man Tribe; a double-edged Flower Wine Monk Inheritance.
-  Ten decisions are listed for the user.
+  The user has 14 decisions to make.
 * `tools/ladder_check.py` (new): exhaustive check of the refinement ladder (11,502 unit states: one roll per attempt,
   one rung per attempt, no attempt that cannot succeed, no Gu food overdrawn). A self-test runs it on the prototype.
 * `tools/slice1_prototype.py` regenerated: passes `check_all`, including Unciv 4.22.8's own validator with 0 errors and
   0 warnings.
+
+* Final lore and mechanics review of round 2, fixes applied:
+  - Unfed Gu now starve (canon): while a food is in deficit, each holder loses the Gu at 10% a turn. Before this fix,
+    a deficit was permanent, and the AI, which promotes on a stale resource count, ran into one as a matter of course.
+  - The refinement ruin carries Refine Gu's guard; `ladder_check` now also checks it and the starved-Killer-Move
+    state (14,742 states, 0 errors).
+  - Moon Raiment follows canon: a defensive Gu that helps nearby allies, eats Moon Orchid.
+  - The Xiong clan survives the wolf tide (ch175).
+  - Primeval stones come from spirit springs, so the vein tiles are marked INVENTED.
+  - Every difficulty gets +6 base happiness, because the slice has only one luxury.
+  - The Gu Yue AI never builds the Flower Wine Monk Inheritance.
+  - The Inheritance Trial cannot kill.
 

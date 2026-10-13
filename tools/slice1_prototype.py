@@ -200,6 +200,12 @@ LW_IMPOSSIBLE = ["<for units with [Liquor Worm]>", "<when below [1] [Wine]>", "<
 PROMO_DEAD = LADDER_DEAD + [f"{d} {c}" for d in RO_DEAD for c in LW_IMPOSSIBLE]
 
 
+def starve(gu, food):
+    """Canon: a Gu that is not fed starves (MOD_SPEC section 5). While its food is in deficit, each holder loses it at 10% a
+    turn, so an overdraw (the AI promotes on a stale resource count [src]) heals itself instead of lasting forever."""
+    return f"[This Unit] loses the [{gu}] promotion <upon turn start> <when below [0] [{food}]> <with [10]% chance>"
+
+
 def ladder(base, fusion, tusk):
     """Highest rung first: choice uniques fire in list order and promotion conditionals are read live, so one attempt
     climbs at most one rung. Every unit state matches at most one 'gains' line (one chance roll per attempt, E5).
@@ -236,25 +242,28 @@ dump("UnitPromotions.json", [
         "Triggers a [Refinement Attempt] event",
         "[This Unit] loses the [Refine Gu] promotion <upon turn start>"]},
     # rank-1 Gu (canon)
-    {"name": "Moonlight Gu", "uniques": ["[+20]% Strength <when attacking>", "Consumes [1] [Moon Orchid]",
+    {"name": "Moonlight Gu", "uniques": ["[+20]% Strength <when attacking>", "Consumes [1] [Moon Orchid]", starve("Moonlight Gu", "Moon Orchid"),
                                          "[-10]% Strength <for [Strength Gu Master] units>",
                                          # canon: D-grade students could not refine it (fires when added, E4) [src order]
                                          "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"]},
-    {"name": "White Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]"]},
-    {"name": "Black Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]"]},
-    {"name": "Jade Skin Gu", "uniques": ["[+15]% Strength <when defending>", "Consumes [1] [Jade]"]},
-    {"name": "Liquor Worm", "uniques": ["[+50]% XP gained from combat", "Consumes [1] [Wine]",
+    {"name": "White Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]", starve("White Boar Gu", "Wild Boar")]},
+    {"name": "Black Boar Gu", "uniques": ["[+15]% Strength", "Consumes [1] [Wild Boar]", starve("Black Boar Gu", "Wild Boar")]},
+    {"name": "Jade Skin Gu", "uniques": ["[+15]% Strength <when defending>", "Consumes [1] [Jade]", starve("Jade Skin Gu", "Jade")]},
+    {"name": "Liquor Worm", "uniques": ["[+50]% XP gained from combat", "Consumes [1] [Wine]", starve("Liquor Worm", "Wine"),
                                         # canon: it refines rank-one essence only; after the breakthrough it is let go
                                         "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
                                         "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"]},
     # rank-2 fusions (canon recipes); each keeps what its ingredients gave
-    {"name": "White Jade Gu", "uniques": ["[+15]% Strength", "[+30]% Strength <when defending>", "Consumes [2] [Jade]"]},
+    {"name": "White Jade Gu", "uniques": ["[+15]% Strength", "[+30]% Strength <when defending>", "Consumes [2] [Jade]",
+                                          starve("White Jade Gu", "Jade")]},
     {"name": "Moon Raiment", "uniques": ["[+20]% Strength <when attacking>", "[+20]% Strength <when defending>",
-                                         "Consumes [1] [Moon Orchid]", "Consumes [1] [Jade]"]},
-    {"name": "Killer Move", "uniques": ["[+25]% Strength <when attacking>", "[+25]% maintenance costs"]},
+                                         "[+10]% Strength bonus for [Military] units within [1] tiles",
+                                         "Consumes [1] [Moon Orchid]", starve("Moon Raiment", "Moon Orchid")]},
+    {"name": "Killer Move", "uniques": ["[+25]% Strength <when attacking>", "[+25]% maintenance costs",
+                                        # a killer move needs its rank-2 Gu; if that Gu starved, the move goes too
+                                        "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"]},
     # clan emblem Gu (canon names, ch22); effects and foods unknown, so they eat stones
-    {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs",
-                                             "[-10]% Strength <for [Moon Gu Master] units>"]},
+    {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs"]},
     {"name": "Stream Gu", "uniques": ["[+10] HP when healing", "[+10]% maintenance costs"]},
 ])
 
@@ -320,7 +329,8 @@ dump("Events.json", [
                                                      w("+100")]},
         {"text": "Strike first and take the traitor's Gu", "uniques": ["Only available <after adopting [Demonic Path]>",
                                                             "Gain [40] [Gold]", "[-1] population [in capital]",
-                                                            "[-3 Happiness] <for [10] turns>", w("+100")]},
+                                                            "[-3 Happiness] <for [10] turns>", w("+100"),
+                                                            w("-75", "<when below [0] [Happiness]>")]},
     ]},
     {"name": "Stone Shortage", "text": "The stone vaults are empty and the Gu are going hungry.", "choices": [
         {"text": "Ration the Gu feed", "uniques": ["[-40]% maintenance costs <for [8] turns>",
@@ -495,9 +505,11 @@ dump("Ruins.json", [
     {"name": "Cultivation Notes", "notification": "A dead Gu Master's notes yield new insight.", "weight": 3,
      "uniques": ["Gain [15]-[30] [Science]"]},
     {"name": "Unfinished Refinement", "notification": "An unfinished refinement waits in the inheritance.", "weight": 3,
-     "uniques": ["Triggers a [Refinement Attempt] event", "Only available <for [Military] units>", "Unavailable <for [Beast] units>"]},
+     "uniques": ["Triggers a [Refinement Attempt] event", "Only available <for [Military] units>", "Unavailable <for [Beast] units>",
+                 "Unavailable <when below [50] HP>"] + PROMO_DEAD},
     {"name": "Inheritance Trial", "notification": "The inheritance tests our Gu Master.", "weight": 2,
-     "uniques": ["[This Unit] gains [30] XP", "[This Unit] takes [40] damage", "Only available <for [Military] units>", "Unavailable <for [Beast] units>"]},
+     "uniques": ["[This Unit] gains [30] XP", "[This Unit] takes [40] damage", "Only available <for [Military] units>", "Unavailable <for [Beast] units>",
+                 "Unavailable <when below [41] HP>"]},
     {"name": "Inheritance Trap", "notification": "The inheritance was guarded by a trap!", "weight": 1,
      "uniques": ["[This Unit] takes [40] damage", "Only available <for [Military] units> <after turn number [10]>"]},
     # R2 T1: was 'Wandering Rogue Cultivator' (no rogue-cultivator faction on Qing Mao; clans hire lone demonic GMs, ch74)
@@ -531,7 +543,7 @@ dump("Nations.json", [
            [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Forest]"]),
     # R2 T1: the fourth major (was Rogue Cultivators led by Fang Yuan)
     nation("Tie Clan", "Tie Mu Bai", "Tie Temperament", [56, 56, 64], [213, 93, 93],
-           ["Tie Clan City", "Wan Cheng Mountain", "Iron Chain Pass"],
+           ["Tie Clan City", "Iron Chain Pass", "Black Iron Ridge"],
            ["Starts with [Righteous Path] adopted", "Earn [50]% of killed [Barbarians] unit's [Cost] as [Gold]",
             "Start bias [Hill]"]),
     # R2 T7
@@ -558,11 +570,13 @@ dump("CityStateTypes.json", [
 dump("Personalities.json", [
     {"name": "Gu Yue Temperament", "science": 7, "culture": 6, "gold": 5, "military": 4, "aggressive": 3,
      "priorities": {"Moon Path": 10, "Righteous Path": 6},
-     "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
+     "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions",
+                 "Will not build [Flower Wine Monk Inheritance]"]},
     {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 4, "aggressive": 3,
      "priorities": {"Moon Path": 8, "Righteous Path": 7},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6,
+     "preferredVictoryType": "Southern Border Supremacy",
      "priorities": {"Strength Path": 10, "Demonic Path": 6, "Righteous Path": 3},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Tie Temperament", "military": 6, "aggressive": 4, "production": 6, "loyal": 8, "expansion": 4,
@@ -582,6 +596,7 @@ for d in diffs:
     for k in ("playerBonusStartingUnits", "aiMajorCivBonusStartingUnits", "aiCityStateBonusStartingUnits"):
         d[k] = [{"Scout": "Rank One Gu Master", "Settler": "Clan Settler", "Worker": "Mortal Laborer"}.get(u, u) for u in d.get(k, [])]
     d["aiFreeTechs"] = [TECHMAP[t] for t in d.get("aiFreeTechs", [])]
+    d["baseHappiness"] = d.get("baseHappiness", 0) + 6  # Slice 1 has one luxury (Furs) instead of Vanilla's many
 dump("Difficulties.json", diffs)
 dump("Speeds.json", json5.load(open(os.path.join(VAN, "Speeds.json"))))
 

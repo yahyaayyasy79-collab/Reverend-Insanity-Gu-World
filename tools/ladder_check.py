@@ -9,7 +9,9 @@ Moves known x each Gu food at 0/1/2 x stones) it checks, for each refining choic
   2. the choice's Unavailable lines close exactly the states in which no 'gains' line matches (no empty attempts);
   3. firing the matching line plus the deterministic 'loses' lines after it climbs at most one rung;
   4. a successful rung never pushes a Gu food below zero (foods are read from 'Consumes [n] [resource]');
-and that Refine Gu is unavailable exactly where neither a rung nor the Liquor Worm lure is possible.
+and that Refine Gu (and the Unfinished Refinement ruin, which opens the event without it) is unavailable exactly where
+neither a rung nor the Liquor Worm lure is possible. A unit whose rank-2 Gu starved keeps Killer Move until the next turn
+start; in that transient state everything must simply be closed.
 
   tools/ladder_check.py OUT_DIR        # OUT_DIR as written by tools/slice1_prototype.py
 """
@@ -89,9 +91,14 @@ def reachable(t: str, gu: set[str], km: bool) -> bool:
         return False
     if "Moon Raiment" in gu and gu & {"Moonlight Gu", "Jade Skin Gu"}:
         return False
-    if "Killer Move" in gu and (not km or not gu & {"White Jade Gu", "Moon Raiment"}):
+    if "Killer Move" in gu and not km:
         return False
     return True
+
+
+def transient(gu: set[str]) -> bool:
+    """Killer Move whose rank-2 Gu starved: it is removed at the next turn start."""
+    return "Killer Move" in gu and not gu & {"White Jade Gu", "Moon Raiment"}
 
 
 def check(mod_root: Path) -> tuple[int, list[str]]:
@@ -102,6 +109,8 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
     refining = [c for c in choices if any(GAIN.match(u) and "Liquor Worm" not in u for u in c["uniques"])]
     lure = next(c for c in choices if any(GAIN.match(u) and "[Liquor Worm]" in u for u in c["uniques"]))
     refine_gu = promos["Refine Gu"]["uniques"]
+    ruins = {r["name"]: r for r in json.loads((jsons / "Ruins.json").read_text(encoding="utf-8"))}
+    ruin = next((r["uniques"] for r in ruins.values() if "Triggers a [Refinement Attempt] event" in r["uniques"]), None)
     eats = {name: {m[2]: int(m[1]) for u in p.get("uniques", []) if (m := CONSUMES.match(u))}
             for name, p in promos.items()}
     foods = sorted({r for d in eats.values() for r in d})
@@ -123,6 +132,10 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
         for amounts, gold in itertools.product(itertools.product([0, 1, 2], repeat=len(foods)), (0, 1000)):
             s = {"type": t, "gu": gu, "km": km, "Gold": gold, **dict(zip(foods, amounts))}
             states += 1
+            if transient(gu):
+                if not all(closed(u, s) for u in [c["uniques"] for c in refining] + [refine_gu] + ([ruin] if ruin else [])):
+                    errors.append(f"a starved Killer Move state is not closed: {s}")
+                continue
             for c in refining:
                 gains = [u for u in c["uniques"] if GAIN.match(u) and applies(u, s)]
                 if len(gains) > 1:
@@ -141,6 +154,8 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
             can_lure = all(applies(u, s) for u in lure["uniques"] if u.startswith("Only available"))
             if closed(refine_gu, s) != (not rung and not can_lure):
                 errors.append(f"Refine Gu availability is wrong: {s} rung={rung} lure={can_lure}")
+            if ruin is not None and closed(ruin, s) != closed(refine_gu, s):
+                errors.append(f"the refinement ruin and Refine Gu disagree: {s}")
     return states, errors
 
 

@@ -7,7 +7,7 @@ Indonesia**; repository files stay in English.
 
 Phase 0 approved 2026-10-12 (user: technical choices "bebas" = my call). Phase 1 round 1 delivered 2026-10-12; the
 user answered its lore questions; round 2 (2026-10-13) checked those answers against the raw novel text and applied
-them. `docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's 10 round-2 decisions (near its top). No ruleset
+them. `docs/LORE_MAPPING.md` waits at its ⛔ checkpoint for the user's 14 round-2 decisions (near its top). No ruleset
 JSON before that approval. Then: apply the decisions to the document and `tools/slice1_prototype.py` together, and
 start Phase 2 (Slice 1) by turning the prototype into `data/*.csv` + `tools/gen_*.py` (keep `tools/ladder_check.py`).
 
