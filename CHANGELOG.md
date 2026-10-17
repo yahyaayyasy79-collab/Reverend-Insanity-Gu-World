@@ -106,3 +106,15 @@
   the ladder check (14,742 states, 0 errors) runs on it. `ladder_check.py` defaults to the mod.
 * README: installation, Strategic Balance recommendation, credits and disclaimer.
 * Not yet: civilopedia text, the primeval-stones rename, the Indonesian translation, autoplay data.
+
+## Phase 2, step 2 — headless autoplay and the first data (2026-10-17)
+
+* `tools/autoplay.py` + `tools/autoplay/Autoplay.java`: headless AI-vs-AI games on the mod through the engine's own
+  simulation path, compiled against the release jar (no Unciv build). Per-round metrics per civ, including Gu hunger
+  starts, deaths and recoveries per rank; pooled summary; `--mod`/`--majors` for control rulesets. A self-test plays
+  8 turns.
+* `docs/AUTOPLAY.md`: 24 baseline games x 100 turns (Strategic Balance on): no crash, AI solvent (upkeep 30–38% of
+  gross stone income), hunger meter works but almost never fires (0.5% of rank-1 holder-turns in deficit, 6 deaths),
+  almost no trade, no wars (Vanilla control: none either), springs owned by every clan but improved late. Three A/B
+  variants: a second starting laborer doubles the springs improved by T50; more yield does not help.
+* Per the user's rule the rank-1 hunger threshold stays (the trigger condition is not met). No tuning applied.

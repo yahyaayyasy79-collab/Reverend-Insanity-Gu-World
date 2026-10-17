@@ -331,6 +331,24 @@ class LoreMapping(unittest.TestCase):
         self.assertEqual(missing, [], "jsons/ contains uniques LORE_MAPPING.md does not show")
 
 
+class Autoplay(unittest.TestCase):
+    """A short headless AI game on the mod must not crash (tools/autoplay.py, the release jar)."""
+
+    def test_short_game_runs(self):
+        import shutil
+        from common import REF_DIR, ref_tag
+        if not (shutil.which("java") and shutil.which("javac") and (REF_DIR / f"Unciv-{ref_tag()}.jar").exists()):
+            self.skipTest("needs java, javac and the release jar")
+        if not (REPO_ROOT / "jsons").is_dir():
+            self.skipTest("jsons/ not generated yet")
+        with tempfile.TemporaryDirectory() as tmp:
+            r = subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "autoplay.py"), "--games", "1", "--turns", "8",
+                                "--jobs", "1", "--out", tmp, "--quiet"], capture_output=True, text=True, timeout=600)
+            self.assertEqual(r.returncode, 0, r.stdout[-2000:] + r.stderr[-2000:])
+            rows = [json.loads(line) for f in Path(tmp).glob("game-*.jsonl") for line in f.read_text().splitlines()]
+            self.assertEqual(sum(1 for x in rows if x["event"] == "turn" and x["major"]) // 4, 8)
+
+
 class Packaging(unittest.TestCase):
     def test_too_much_tooling_is_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
