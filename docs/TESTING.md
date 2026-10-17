@@ -68,7 +68,7 @@ Open with the backtick key on the world screen (desktop) or long-press the hambu
 
 ```
 civ activatetrigger "Triggers a [Beast Tide] event"      # any Triggerable unique; validated against the ruleset
-unit activatetrigger "Triggers a [Refinement] event"     # same, with the selected unit as context (E2)
+unit activatetrigger "Triggers a [Refinement Attempt] event"  # same, with the selected unit as context (E2)
 civ activatetrigger "Instantly provides [100] [Immortal Essence Stone]"
 civ addstat Gold 500          civ revealmap               civ addtech <civ> "<tech>"   (not "addtechnology")
 civ addpolicy <civ> "<policy>"                            unit add <civ> "<unit>"      (select a tile first)
