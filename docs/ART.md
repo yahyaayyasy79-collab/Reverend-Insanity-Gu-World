@@ -12,10 +12,11 @@ or copied from the novel, its translations, the manhua or fan art (MOD_SPEC rule
 * Motifs: the **Gu beetle** (oval shell with a seam, six legs) marks Gu; **crescents** the Moon path; **fists and boar
   tusks** the Strength path; **lightning** the wolf tide; **rank diamonds** along the bottom of Gu Master icons (one per
   rank); **primeval stones** as faceted gems; Qing Mao's peaks for the Gu Yue clan.
-* Designed so far (19): Rank One, Rank Two and Rank Four Moon, Rank Two Strength Gu Masters; Lightning Wolf, Thunder
-  Crown Wolf; Moonlight Gu, White Boar Gu, Jade Skin Gu, Liquor Worm, Killer Move; Gu Yue Clan; Spirit Spring, Moon
-  Orchid, Jade, Wine; Clan Head Pavilion, Refinement Chamber, Awakening Grounds. The user approves the style before
-  the rest is drawn.
+* Every Slice 1 object has a designed icon (89; `tools/art/glyphs.py` holds the first 19, `glyphs2.py` the rest);
+  18 objects keep the base game's own icon (Farm, Mine, Road, Furs and other engine-coupled Vanilla copies).
+  Approved by the user on the sample sheet (2026-10-17: "lanjut ke semua").
+* Category circles in the contact sheet (`tools/gen_art.py --sheet FILE`) only mimic the game; Unciv picks the real
+  circle colours (civ colours for units and nations).
 
 ## Attack animations
 

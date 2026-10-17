@@ -235,7 +235,8 @@ public class Autoplay {
 
             Map<String, Integer> types = new TreeMap<>(), holders = new TreeMap<>(), hungry = new TreeMap<>();
             Map<String, Integer> start = new TreeMap<>(), death = new TreeMap<>(), recover = new TreeMap<>(),
-                    held = new TreeMap<>(), heldShort = new TreeMap<>(), otherLoss = new TreeMap<>();
+                    held = new TreeMap<>(), heldShort = new TreeMap<>(), otherLoss = new TreeMap<>(),
+                    allPromotions = new TreeMap<>();
             Iterator<MapUnit> it = c.getUnits().getCivUnits().iterator();
             while (it.hasNext()) {
                 MapUnit u = it.next();
@@ -244,6 +245,7 @@ public class Autoplay {
                 xp += u.getPromotions().getXP();
                 Set<String> promos = new HashSet<>(u.getPromotions().getPromotions());
                 Set<String> statuses = new HashSet<>(u.getStatusMap().keySet());
+                for (String pr : promos) inc(allPromotions, pr, 1);  // every promotion, not only Gu that eat
                 now.put(u.getId(), new UnitState(c.getCivName(), promos, statuses));
                 UnitState p = prev.get(u.getId());
                 boolean gainedFusion = false;
@@ -267,7 +269,7 @@ public class Autoplay {
                 }
             }
             rec.put("promotionsBought", bought); rec.put("xp", xp);
-            rec.put("units", types); rec.put("guHolders", holders); rec.put("hungry", hungry);
+            rec.put("units", types); rec.put("promotionHolders", allPromotions); rec.put("guHolders", holders); rec.put("hungry", hungry);
             rec.put("hungerStart", start); rec.put("hungerDeath", death); rec.put("hungerRecover", recover);
             rec.put("guHeld", held); rec.put("guHeldInDeficit", heldShort); rec.put("guLostOther", otherLoss);
 

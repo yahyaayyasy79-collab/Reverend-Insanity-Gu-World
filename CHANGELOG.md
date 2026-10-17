@@ -142,3 +142,12 @@
   type (essence burst, moon blade, boar charge, lightning bite) for the default unit set; atlas repacked;
   `docs/ART.md` style guide. Remaining objects keep placeholders until the user approves the style.
 * The repo is now `Reverend-Insanity-Gu-World`; `main` holds the mod (the user allowed it).
+
+## Phase 2, step 5 — every icon designed (2026-10-17)
+
+* The user approved the art style; `tools/art/glyphs2.py` draws the 70 remaining icons (units, Gu and status
+  promotions, aptitudes, resources, improvements, buildings, city-state types, nations, policy branches, policies,
+  techs) in the same flat style and motif language. No placeholder is left; atlas repacked.
+* `tools/autoplay.py` now counts every promotion a unit holds (`promotionHolders`). It used to count only Gu with a
+  hunger meter, so Killer Move (which eats nothing) was never counted: the earlier claim "Killer Move appears in no
+  game" was not measured. Corrected in docs/AUTOPLAY.md once re-measured.

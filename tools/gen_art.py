@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, glyphs  # noqa: E402
+from art import anims, glyphs, glyphs2  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -75,10 +75,11 @@ def main(argv: list[str]) -> int:
     args = ap.parse_args(argv)
     images = args.mod / "Images"
     written, kept, sheet = 0, [], []
-    for folder, name, draw, ink in glyphs.ICONS:
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2:
         im = draw().image(INK[ink])
-        circle = (30, 40, 90) if folder == "NationIcons" else (60, 110, 60) if folder == "UnitPromotionIcons" \
-            else (150, 40, 40) if ink == "white" else (214, 182, 96)
+        circle = {"NationIcons": (30, 40, 90), "UnitPromotionIcons": (60, 110, 60), "TechIcons": (40, 90, 140),
+                  "PolicyIcons": (120, 60, 120), "PolicyBranchIcons": (90, 40, 100), "CityStateIcons": (110, 90, 40)}.get(
+            folder, (150, 40, 40) if ink == "white" else (214, 182, 96))
         sheet.append((name, im, circle))
         if save(im, images / folder / f"{name}.png"):
             written += 1

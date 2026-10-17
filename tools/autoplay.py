@@ -120,7 +120,7 @@ def summarize(out: Path) -> dict:
                 "maxUnits": max(sum(r["units"].values()) for r in rs), "units": sum(last["units"].values()),
                 "res": last["res"], "resMean": {k: round(statistics.mean(r["res"][k] for r in rs), 2) for k in last["res"]},
                 "resTurnsNegative": {k: sum(1 for r in rs if r["res"][k] < 0) for k in last["res"]},
-                "guHolders": last["guHolders"], "hunger": dict(hs),
+                "guHolders": last["guHolders"], "promotionHolders": last.get("promotionHolders", {}), "hunger": dict(hs),
                 "tradesMean": round(statistics.mean(r["trades"] for r in rs), 2),
                 "resTradedOutMean": round(statistics.mean(r["resOut"] for r in rs), 2),
                 "warTurns": sum(1 for r in rs if r["wars"]), "csAlliesLast": last["csAllies"],
