@@ -85,14 +85,14 @@ per 100 turns; plus wars, captured cities and pillaged tiles. No crash in 30 gam
 
 * **Hunger is irrelevant at every level tested.** Every clan ends with a surplus of every Gu food (mean over the game:
   Moon Orchid 3.8–6.4, Wild Boar 3.7–5.6, Jade 3.4–5.1, Wine 2.1–2.8), the other path's food included. Supply outruns
-  the 8–10 Gu holders a clan keeps. Rank-1 threshold: unchanged (the user's rule).
+  the 7–11 rank-1 Gu a clan keeps. Rank-1 threshold: unchanged (the user's rule).
 * **Conquest is broken.** Wars are half as frequent as in Vanilla and almost never take a city (1 in 24 games vs 6 in
   6). The only Slice 1 victory besides the score is domination, so in practice nobody can win. Not yet explained;
   candidates: city strength bonuses (Clan Head Pavilion, Formation Platform, Guardian Formations), ranged-only Moon
   armies (ranged units cannot capture), upkeep keeping armies small.
 * **Wu vs Xiong: no dominance.** King: Xiong 4.5 cities, 28.5 units, White Jade Gu 7; Wu 4.2, 28.2, 5. Emperor: equal
   within noise. Pork is not scarce for either (mean 4.8–5.6), so there is nothing to clash over.
-* **The refinement ladder stalls at rung 1.** At T200 the clans hold 8–11 rank-1 Gu each but 0.3–0.7 rank-2 Gu, and
+* **The refinement ladder stalls at rung 1.** At T200 the clans hold 7–11 rank-1 Gu each but 0.3–0.7 rank-2 Gu, and
   Killer Move appears in none of the 30 games: the AI buys each unit's first attempt with the academy's starting XP and
   rarely earns the 20 XP for a second one in peace.
 * **The tech tree runs out** at turn 113 (Emperor) to 123 (King) on average; the rest is Dao Comprehension.
