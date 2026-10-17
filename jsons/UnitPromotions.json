@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Aptitude A",
+    "uniques": [
+      "[+15]% Strength",
+      "[-20]% maintenance costs",
+      "[+25]% XP gained from combat"
+    ]
+  },
+  {
+    "name": "Aptitude B",
+    "uniques": [
+      "[+5]% Strength",
+      "[-10]% maintenance costs",
+      "[+10]% XP gained from combat"
+    ]
+  },
+  {
+    "name": "Aptitude C",
+    "uniques": []
+  },
+  {
+    "name": "Aptitude D",
+    "uniques": [
+      "[-10]% Strength",
+      "[+20]% maintenance costs",
+      "[-25]% XP gained from combat"
+    ]
+  },
+  {
+    "name": "Refine Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <after discovering [Gu Refinement]>",
+      "Unavailable <when below [50] HP>",
+      "Unavailable <for units with [Killer Move]>",
+      "Unavailable <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
+      "Unavailable <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
+      "Unavailable <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]>",
+      "Unavailable <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]>",
+      "Unavailable <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]>",
+      "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]>",
+      "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]>",
+      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <for units with [Liquor Worm]>",
+      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [1] [Wine]>",
+      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [31] [Gold]>",
+      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <for units with [Liquor Worm]>",
+      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [1] [Wine]>",
+      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [31] [Gold]>",
+      "Triggers a [Refinement Attempt] event",
+      "[This Unit] loses the [Refine Gu] promotion <upon turn start>"
+    ]
+  },
+  {
+    "name": "Moonlight Gu",
+    "uniques": [
+      "[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
+      "Consumes [1] [Moon Orchid]",
+      "[This Unit] gains the [Orchid Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
+      "[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>",
+      "[-10]% Strength <for [Strength Gu Master] units>",
+      "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"
+    ]
+  },
+  {
+    "name": "White Boar Gu",
+    "uniques": [
+      "[+15]% Strength <when above [-1] [Wild Boar]>",
+      "Consumes [1] [Wild Boar]",
+      "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
+      "[This Unit] loses the [White Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+    ]
+  },
+  {
+    "name": "Black Boar Gu",
+    "uniques": [
+      "[+15]% Strength <when above [-1] [Wild Boar]>",
+      "Consumes [1] [Wild Boar]",
+      "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
+      "[This Unit] loses the [Black Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+    ]
+  },
+  {
+    "name": "Jade Skin Gu",
+    "uniques": [
+      "[+15]% Strength <when defending> <when above [-1] [Jade]>",
+      "Consumes [1] [Jade]",
+      "[This Unit] gains the [Jade Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
+      "[This Unit] loses the [Jade Skin Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+    ]
+  },
+  {
+    "name": "Liquor Worm",
+    "uniques": [
+      "[+50]% XP gained from combat <when above [-1] [Wine]>",
+      "Consumes [1] [Wine]",
+      "[This Unit] gains the [Wine Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>",
+      "[This Unit] loses the [Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>",
+      "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
+      "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"
+    ]
+  },
+  {
+    "name": "White Jade Gu",
+    "uniques": [
+      "[+15]% Strength <when above [-1] [Jade]>",
+      "[+30]% Strength <when defending> <when above [-1] [Jade]>",
+      "Consumes [2] [Jade]",
+      "[This Unit] gains the [Jade Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
+      "[This Unit] loses the [White Jade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+    ]
+  },
+  {
+    "name": "Moon Raiment",
+    "uniques": [
+      "[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
+      "[+20]% Strength <when defending> <when above [-1] [Moon Orchid]>",
+      "[+10]% Strength bonus for [Military] units within [1] tiles <when above [-1] [Moon Orchid]>",
+      "Consumes [1] [Moon Orchid]",
+      "[This Unit] gains the [Orchid Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
+      "[This Unit] loses the [Moon Raiment] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>"
+    ]
+  },
+  {
+    "name": "Killer Move",
+    "uniques": [
+      "[+25]% Strength <when attacking>",
+      "[+25]% maintenance costs",
+      "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"
+    ]
+  },
+  {
+    "name": "Bear Strength Gu",
+    "uniques": [
+      "[+10]% Strength",
+      "[+10]% maintenance costs"
+    ]
+  },
+  {
+    "name": "Stream Gu",
+    "uniques": [
+      "[+10] HP when healing",
+      "[+10]% maintenance costs"
+    ]
+  },
+  {
+    "name": "Orchid Hunger",
+    "uniques": [
+      "[This Unit] loses the [Orchid Hunger] status <upon turn start> <when above [-1] [Moon Orchid]>"
+    ]
+  },
+  {
+    "name": "Pork Hunger",
+    "uniques": [
+      "[This Unit] loses the [Pork Hunger] status <upon turn start> <when above [-1] [Wild Boar]>"
+    ]
+  },
+  {
+    "name": "Jade Hunger",
+    "uniques": [
+      "[This Unit] loses the [Jade Hunger] status <upon turn start> <when above [-1] [Jade]>"
+    ]
+  },
+  {
+    "name": "Wine Hunger",
+    "uniques": [
+      "[This Unit] loses the [Wine Hunger] status <upon turn start> <when above [-1] [Wine]>"
+    ]
+  }
+]

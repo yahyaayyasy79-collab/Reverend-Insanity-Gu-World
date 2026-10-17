@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Gu Yue Temperament",
+    "science": 7,
+    "culture": 6,
+    "gold": 5,
+    "military": 4,
+    "aggressive": 3,
+    "priorities": {
+      "Moon Path": 10,
+      "Righteous Path": 6
+    },
+    "uniques": [
+      "[+50]% weight to [Gu Academy] for AI decisions",
+      "[+100]% weight to [Awakening Grounds] for AI decisions",
+      "Will not build [Flower Wine Monk Inheritance]"
+    ]
+  },
+  {
+    "name": "Bai Temperament",
+    "gold": 7,
+    "production": 6,
+    "science": 6,
+    "military": 4,
+    "aggressive": 3,
+    "priorities": {
+      "Moon Path": 8,
+      "Righteous Path": 7
+    },
+    "uniques": [
+      "[+50]% weight to [Gu Academy] for AI decisions",
+      "[+100]% weight to [Awakening Grounds] for AI decisions"
+    ]
+  },
+  {
+    "name": "Xiong Temperament",
+    "military": 7,
+    "aggressive": 6,
+    "production": 6,
+    "preferredVictoryType": "Southern Border Supremacy",
+    "priorities": {
+      "Strength Path": 10,
+      "Demonic Path": 6,
+      "Righteous Path": 3
+    },
+    "uniques": [
+      "[+50]% weight to [Gu Academy] for AI decisions",
+      "[+100]% weight to [Awakening Grounds] for AI decisions"
+    ]
+  },
+  {
+    "name": "Wu Temperament",
+    "military": 7,
+    "aggressive": 4,
+    "production": 6,
+    "loyal": 7,
+    "expansion": 5,
+    "preferredVictoryType": "Southern Border Supremacy",
+    "priorities": {
+      "Righteous Path": 10,
+      "Strength Path": 10
+    },
+    "uniques": [
+      "[+50]% weight to [Martial Arena] for AI decisions",
+      "[+100]% weight to [Awakening Grounds] for AI decisions"
+    ]
+  }
+]

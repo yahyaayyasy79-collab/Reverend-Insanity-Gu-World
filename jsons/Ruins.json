@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Primeval Stone Cache",
+    "notification": "We found [goldAmount] primeval stones in a dead Gu Master's cache!",
+    "weight": 4,
+    "uniques": [
+      "Gain [30]-[60] [Gold]"
+    ]
+  },
+  {
+    "name": "Cultivation Notes",
+    "notification": "A dead Gu Master's notes yield new insight.",
+    "weight": 3,
+    "uniques": [
+      "Gain [15]-[30] [Science]"
+    ]
+  },
+  {
+    "name": "Unfinished Refinement",
+    "notification": "An unfinished refinement waits in the inheritance.",
+    "weight": 3,
+    "uniques": [
+      "Triggers a [Refinement Attempt] event",
+      "Only available <for [Military] units>",
+      "Unavailable <for [Beast] units>",
+      "Unavailable <when below [50] HP>",
+      "Unavailable <for units with [Killer Move]>",
+      "Unavailable <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
+      "Unavailable <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
+      "Unavailable <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]>",
+      "Unavailable <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]>",
+      "Unavailable <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]>",
+      "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]>",
+      "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]>",
+      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <for units with [Liquor Worm]>",
+      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [1] [Wine]>",
+      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [31] [Gold]>",
+      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <for units with [Liquor Worm]>",
+      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [1] [Wine]>",
+      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [31] [Gold]>"
+    ]
+  },
+  {
+    "name": "Inheritance Trial",
+    "notification": "The inheritance tests our Gu Master.",
+    "weight": 2,
+    "uniques": [
+      "[This Unit] gains [30] XP",
+      "[This Unit] takes [40] damage",
+      "Only available <for [Military] units>",
+      "Unavailable <for [Beast] units>",
+      "Unavailable <when below [41] HP>"
+    ]
+  },
+  {
+    "name": "Inheritance Trap",
+    "notification": "The inheritance was guarded by a trap!",
+    "weight": 1,
+    "uniques": [
+      "[This Unit] takes [40] damage",
+      "Only available <for [Military] units> <after turn number [10]>"
+    ]
+  },
+  {
+    "name": "Lone Demonic Gu Master",
+    "notification": "A lone demonic Gu Master sheltering in the ruins offers us his services.",
+    "weight": 1,
+    "uniques": [
+      "Free [Rank One Gu Master] found in the ruins"
+    ]
+  }
+]

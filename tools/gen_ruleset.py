@@ -1,29 +1,52 @@
 #!/usr/bin/env python3
-"""Validation prototype of the Slice 1 plan in docs/LORE_MAPPING.md. NOT the mod.
+"""Generate the Slice 1 ruleset (jsons/*.json) from data/*.csv and the structured content below (MOD_SPEC section 9).
 
-Writes OUT_DIR/jsons/*.json: a throwaway ruleset holding every object, field and unique the plan names, so the
-plan can be checked in context by the repo's checkers and by Unciv's own validator before any real JSON exists:
+  tools/gen_ruleset.py                 # writes <repo>/jsons, the mod itself; commit data/ and jsons/ together
+  tools/gen_ruleset.py --out DIR       # writes DIR/jsons, a throwaway copy (experiments, autoplay variants)
+  tools/gen_ruleset.py --check         # exit 1 if <repo>/jsons differs from what the tables generate
 
-  tools/slice1_prototype.py /tmp/slice1 && tools/check_all --mod /tmp/slice1 --no-self-test
-
-Phase 2 replaces it with data/*.csv + tools/gen_*.py (MOD_SPEC section 9). Until then, change the plan here and in
-docs/LORE_MAPPING.md together; tools/tests checks that every unique the document quotes is generated here.
-Comments marked "R2" are round-2 changes (the user's lore answers plus the verified research, 2026-10-13).
+Tables (data/): tech_columns.csv + techs.csv (tech tree), gu_masters.csv (Gu Master units, path x rank), gu.csv (Gu
+promotions: effects, food, rank), gu_foods.csv (food -> hunger status), hunger.csv (the hunger meter per rank: status
+length and death chance, the user's main tuning lever). One-of-a-kind content stays below. docs/LORE_MAPPING.md is the
+design record; tools/tests checks that it quotes exactly the uniques generated here. Comments marked R2/R3/R4 record
+design rounds (docs/LORE_MAPPING.md, "How this plan was made").
 """
+import argparse
+import csv
+import filecmp
 import json
 import os
 import sys
+import tempfile
+from pathlib import Path
 
 import json5
 
-from common import VANILLA_JSONS
+from common import REPO_ROOT, VANILLA_JSONS
 
-if len(sys.argv) != 2:
-    sys.exit("usage: slice1_prototype.py OUT_DIR")
-OUT = os.path.join(sys.argv[1], "jsons")
+ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+ap.add_argument("--out", help="mod folder to write into (default: the repo root)")
+ap.add_argument("--check", action="store_true", help="only compare the repo's jsons/ with a fresh generation")
+ap.add_argument("--quiet", action="store_true")
+ARGS = ap.parse_args()
+TARGET = Path(ARGS.out).resolve() if ARGS.out else REPO_ROOT
+_TMP = tempfile.TemporaryDirectory() if ARGS.check else None
+OUT = os.path.join(_TMP.name if _TMP else str(TARGET), "jsons")
+DATA = REPO_ROOT / "data"
 VAN = str(VANILLA_JSONS)
 os.makedirs(OUT, exist_ok=True)
 ALL_UNIQUES = []
+WRITTEN = []
+
+
+def table(name):
+    with open(DATA / name, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def items(cell):
+    """A list cell: entries separated by '|' (no unique contains that character)."""
+    return [x for x in cell.split("|") if x] if cell else []
 
 
 def collect(o):
@@ -40,7 +63,8 @@ def collect(o):
 
 def dump(name, obj):
     collect(obj)
-    with open(os.path.join(OUT, name), "w") as f:
+    WRITTEN.append(name)
+    with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
@@ -93,38 +117,21 @@ dump("Eras.json", [
 ])
 
 
-# ---------------- Techs (15, names unchanged) ----------------
-def col(n, era, cost, bcost, wcost, techs):
-    return {"columnNumber": n, "era": era, "techCost": cost, "buildingCost": bcost, "wonderCost": wcost, "techs": techs}
+# ---------------- Techs (data/tech_columns.csv, data/techs.csv) ----------------
+def tech(t):
+    d = {"name": t["name"], "row": int(t["row"])}
+    if t["prerequisites"]:
+        d["prerequisites"] = items(t["prerequisites"])
+    if t["uniques"]:
+        d["uniques"] = items(t["uniques"])
+    return d
 
 
-dump("Techs.json", [
-    col(1, E12, 20, 45, 75, [{"name": "Aperture Awakening", "row": 2, "uniques": ["Starting tech"]}]),
-    col(2, E12, 40, 60, 140, [
-        {"name": "Spirit Spring Lore", "row": 1, "prerequisites": ["Aperture Awakening"]},
-        {"name": "Gu Feeding", "row": 3, "prerequisites": ["Aperture Awakening"]}]),
-    col(3, E12, 65, 75, 170, [
-        {"name": "Wine Brewing", "row": 1, "prerequisites": ["Gu Feeding"]},
-        {"name": "Gu Refinement", "row": 2, "prerequisites": ["Spirit Spring Lore", "Gu Feeding"]},
-        {"name": "Rank Two Cultivation", "row": 3, "prerequisites": ["Gu Feeding"]}]),
-    col(4, E3, 120, 100, 220, [
-        {"name": "Gu Formations", "row": 1, "prerequisites": ["Gu Refinement"]},
-        {"name": "Rank Three Cultivation", "row": 3, "prerequisites": ["Rank Two Cultivation", "Gu Refinement"]}]),
-    col(5, E3, 170, 130, 240, [
-        {"name": "Merchant Caravans", "row": 1, "prerequisites": ["Gu Formations", "Wine Brewing"],
-         "uniques": ["Enables Open Borders agreements"]},
-        {"name": "Inheritance Lore", "row": 2, "prerequisites": ["Gu Formations", "Rank Three Cultivation"]},
-        {"name": "Killer Moves", "row": 3, "prerequisites": ["Rank Three Cultivation"]}]),
-    col(6, E4, 250, 160, 300, [
-        {"name": "Super Clan Commerce", "row": 1, "prerequisites": ["Merchant Caravans"]},
-        {"name": "Beast Enslavement", "row": 2, "prerequisites": ["Inheritance Lore", "Killer Moves"],
-         "uniques": ["When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>"]},
-        {"name": "Rank Four Cultivation", "row": 3, "prerequisites": ["Killer Moves"]}]),
-    col(7, E4, 350, 200, 350, [
-        {"name": "Dao Comprehension", "row": 2,
-         "prerequisites": ["Super Clan Commerce", "Beast Enslavement", "Rank Four Cultivation"],
-         "uniques": ["Can be continually researched"]}]),
-])
+TECHS = table("techs.csv")
+dump("Techs.json", [{"columnNumber": int(c["column"]), "era": c["era"], "techCost": int(c["techCost"]),
+                     "buildingCost": int(c["buildingCost"]), "wonderCost": int(c["wonderCost"]),
+                     "techs": [tech(t) for t in TECHS if t["column"] == c["column"]]}
+                    for c in table("tech_columns.csv")])
 
 # ---------------- Unit types ----------------
 dump("UnitTypes.json", [{"name": n, "movementType": "Land"} for n in
@@ -143,26 +150,17 @@ def gm(name, utype, tech, cost, strength, maint, extra, ranged=None, upgrades=No
     return u
 
 
-MOON = ["Only available <after adopting [Moon Path]>"]
-STR = ["Only available <after adopting [Strength Path]>"]
+GU_MASTERS = [gm(r["name"], r["unitType"], r["requiredTech"], int(r["cost"]), int(r["strength"]), r["maintenance"],
+                 ([f"Only available <after adopting [{r['path']}]>"] if r["path"] else []) + items(r["extra_uniques"]),
+                 ranged=int(r["rangedStrength"]) if r["rangedStrength"] else None, upgrades=r["upgradesTo"] or None)
+              for r in table("gu_masters.csv")]
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      "uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
                  "Requires at least [2] population", NB]},
     {"name": "Mortal Laborer", "unitType": "Civilian", "movement": 2, "cost": 45, "requiredTech": "Aperture Awakening",
      "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", NB]},
-    gm("Rank One Gu Master", "Gu Master", "Aperture Awakening", 35, 8, "+25",
-       ["Can upgrade to [Rank Two Moon Gu Master]", "Can upgrade to [Rank Two Strength Gu Master]"]),
-    gm("Rank Two Strength Gu Master", "Strength Gu Master", "Rank Two Cultivation", 60, 14, "+100", STR,
-       upgrades="Rank Three Strength Gu Master"),
-    gm("Rank Three Strength Gu Master", "Strength Gu Master", "Rank Three Cultivation", 95, 22, "+175", STR,
-       upgrades="Rank Four Strength Gu Master"),
-    gm("Rank Four Strength Gu Master", "Strength Gu Master", "Rank Four Cultivation", 140, 32, "+275", STR),
-    gm("Rank Two Moon Gu Master", "Moon Gu Master", "Rank Two Cultivation", 60, 8, "+75", MOON, ranged=13,
-       upgrades="Rank Three Moon Gu Master"),
-    gm("Rank Three Moon Gu Master", "Moon Gu Master", "Rank Three Cultivation", 95, 12, "+150", MOON, ranged=20,
-       upgrades="Rank Four Moon Gu Master"),
-    gm("Rank Four Moon Gu Master", "Moon Gu Master", "Rank Four Cultivation", 140, 18, "+225", MOON, ranged=29),
+] + GU_MASTERS + [
     # R2 T5: the canon wolf-tide tiers (plain / hundred-beast tier / ten-thousand-beast king)
     {"name": "Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 9, "cost": 30, "uniqueTo": "Barbarians",
      "uniques": ["[+50]% maintenance costs"]},
@@ -203,15 +201,14 @@ PROMO_DEAD = LADDER_DEAD + [f"{d} {c}" for d in RO_DEAD for c in LW_IMPOSSIBLE]
 # R3 hunger meter (the user's design). A Gu whose food is in deficit is first WEAKENED: its effects carry
 # <when above [-1] [food]> and switch off (the engine adds its own -25% missing-resource malus [src BattleDamage]).
 # At the first turn start in deficit the unit gets a timed hunger status (one per food); if the food is still short when
-# the status runs out, the Gu dies with HUNGER_DEATH_CHANCE (round 4, the user's option B: no mass death, because the
+# the status runs out, the Gu dies with the death chance of data/hunger.csv (R4, the user's option B: no mass death, because the
 # civ's resource count is not refreshed between units [src]); a survivor gets the status again at the next turn start.
 # The status is removed early, harmlessly, once the food is back. Statuses tick down at the end of startTurn, after the
 # triggers [src UnitTurnManager.startTurn], so a status of N turns runs out at the (N-1)th turn start after the first:
 # rank-1 Gu (eat often in canon) roll after 2 turns and then every 3, rank-2 Gu after 4 and then every 5. The roll is
 # seeded per unit (name, tile, movement) and turn [src Conditionals.getStateBasedRandom, GameContext.hashCode].
-HUNGER = {"Moon Orchid": "Orchid Hunger", "Wild Boar": "Pork Hunger", "Jade": "Jade Hunger", "Wine": "Wine Hunger"}
-RANK1_TURNS, RANK2_TURNS = 3, 5
-HUNGER_DEATH_CHANCE = 50
+HUNGER = {r["food"]: r["hunger_status"] for r in table("gu_foods.csv")}
+HUNGER_RANKS = {int(r["rank"]): (int(r["status_turns"]), int(r["death_chance"])) for r in table("hunger.csv")}
 
 
 def fed(unique, food):
@@ -219,11 +216,19 @@ def fed(unique, food):
     return f"{unique} <when above [-1] [{food}]>"
 
 
-def hunger(gu, food, turns):
+def hunger(gu, food, rank):
     status = HUNGER[food]
+    turns, chance = HUNGER_RANKS[rank]
     return [f"[This Unit] gains the [{status}] status for [{turns}] turn(s) <upon turn start> <when below [0] [{food}]> <for units without [{status}]>",
             f"[This Unit] loses the [{gu}] promotion <upon losing the [{status}] status> <when below [0] [{food}]> "
-            f"<with [{HUNGER_DEATH_CHANCE}]% chance>"]
+            f"<with [{chance}]% chance>"]
+
+
+def gu_promotion(r):
+    """data/gu.csv: effects work only while fed (fed()), then the food, the hunger meter, the extra uniques."""
+    return {"name": r["name"], "uniques": [fed(e, r["food"]) for e in items(r["effects"])]
+            + [f"Consumes [{r['eats']}] [{r['food']}]"] + hunger(r["name"], r["food"], int(r["rank"]))
+            + items(r["extra_uniques"])}
 
 
 def ladder(base, fusion, tusk):
@@ -250,7 +255,7 @@ def ladder(base, fusion, tusk):
     ]
 
 
-# ---------------- Promotions (15) ----------------
+# ---------------- Promotions (Gu from data/gu.csv) ----------------
 dump("UnitPromotions.json", [
     {"name": "Aptitude A", "uniques": ["[+15]% Strength", "[-20]% maintenance costs", "[+25]% XP gained from combat"]},
     {"name": "Aptitude B", "uniques": ["[+5]% Strength", "[-10]% maintenance costs", "[+10]% XP gained from combat"]},
@@ -261,27 +266,7 @@ dump("UnitPromotions.json", [
         "Unavailable <when below [50] HP>"] + PROMO_DEAD + [
         "Triggers a [Refinement Attempt] event",
         "[This Unit] loses the [Refine Gu] promotion <upon turn start>"]},
-    # rank-1 Gu (canon)
-    {"name": "Moonlight Gu", "uniques": [fed("[+20]% Strength <when attacking>", "Moon Orchid"), "Consumes [1] [Moon Orchid]"]
-                                        + hunger("Moonlight Gu", "Moon Orchid", RANK1_TURNS) + [
-                                         "[-10]% Strength <for [Strength Gu Master] units>",
-                                         # canon: D-grade students could not refine it (fires when added, E4) [src order]
-                                         "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"]},
-    {"name": "White Boar Gu", "uniques": [fed("[+15]% Strength", "Wild Boar"), "Consumes [1] [Wild Boar]"] + hunger("White Boar Gu", "Wild Boar", RANK1_TURNS)},
-    {"name": "Black Boar Gu", "uniques": [fed("[+15]% Strength", "Wild Boar"), "Consumes [1] [Wild Boar]"] + hunger("Black Boar Gu", "Wild Boar", RANK1_TURNS)},
-    {"name": "Jade Skin Gu", "uniques": [fed("[+15]% Strength <when defending>", "Jade"), "Consumes [1] [Jade]"] + hunger("Jade Skin Gu", "Jade", RANK1_TURNS)},
-    {"name": "Liquor Worm", "uniques": [fed("[+50]% XP gained from combat", "Wine"), "Consumes [1] [Wine]"]
-                                       + hunger("Liquor Worm", "Wine", RANK1_TURNS) + [
-                                        # canon: it refines rank-one essence only; after the breakthrough it is let go
-                                        "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
-                                        "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"]},
-    # rank-2 fusions (canon recipes); each keeps what its ingredients gave
-    {"name": "White Jade Gu", "uniques": [fed("[+15]% Strength", "Jade"), fed("[+30]% Strength <when defending>", "Jade"),
-                                          "Consumes [2] [Jade]"] + hunger("White Jade Gu", "Jade", RANK2_TURNS)},
-    {"name": "Moon Raiment", "uniques": [fed("[+20]% Strength <when attacking>", "Moon Orchid"),
-                                         fed("[+20]% Strength <when defending>", "Moon Orchid"),
-                                         fed("[+10]% Strength bonus for [Military] units within [1] tiles", "Moon Orchid"),
-                                         "Consumes [1] [Moon Orchid]"] + hunger("Moon Raiment", "Moon Orchid", RANK2_TURNS)},
+] + [gu_promotion(r) for r in table("gu.csv")] + [
     {"name": "Killer Move", "uniques": ["[+25]% Strength <when attacking>", "[+25]% maintenance costs",
                                         # a killer move needs its rank-2 Gu; if that Gu died of hunger, the move goes too
                                         "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"]},
@@ -630,4 +615,24 @@ for d in diffs:
 dump("Difficulties.json", diffs)
 dump("Speeds.json", json5.load(open(os.path.join(VAN, "Speeds.json"))))
 
-print(f"{len(set(ALL_UNIQUES))} distinct uniques in {len(os.listdir(OUT))} files written to {OUT}")
+
+
+# ---------------- Write-out ----------------
+stale = sorted(set(os.listdir(OUT)) - set(WRITTEN))
+if ARGS.check:
+    repo = REPO_ROOT / "jsons"
+    diff = [n for n in WRITTEN if not (repo / n).is_file() or not filecmp.cmp(repo / n, Path(OUT) / n, shallow=False)]
+    extra = sorted(p.name for p in repo.glob("*.json") if p.name not in WRITTEN) if repo.is_dir() else []
+    _TMP.cleanup()
+    if diff or extra:
+        print("[gen_ruleset] jsons/ is out of date; run tools/gen_ruleset.py and commit: " + ", ".join(diff + extra))
+        sys.exit(1)
+    if not ARGS.quiet:
+        print(f"[gen_ruleset] jsons/ matches data/ ({len(WRITTEN)} files)")
+    sys.exit(0)
+for n in stale:
+    if n.endswith(".json"):
+        os.remove(os.path.join(OUT, n))  # a file the generator no longer writes would go on loading in game
+if not ARGS.quiet:
+    print(f"[gen_ruleset] wrote {len(WRITTEN)} files to {OUT}, {len(set(ALL_UNIQUES))} distinct uniques"
+          + (f"; removed stale {', '.join(n for n in stale if n.endswith('.json'))}" if any(n.endswith('.json') for n in stale) else ""))

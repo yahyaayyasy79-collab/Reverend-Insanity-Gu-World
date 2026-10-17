@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Civilian",
+    "movementType": "Land"
+  },
+  {
+    "name": "Gu Master",
+    "movementType": "Land"
+  },
+  {
+    "name": "Moon Gu Master",
+    "movementType": "Land"
+  },
+  {
+    "name": "Strength Gu Master",
+    "movementType": "Land"
+  },
+  {
+    "name": "Beast",
+    "movementType": "Land"
+  }
+]

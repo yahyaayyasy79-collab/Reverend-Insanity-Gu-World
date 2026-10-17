@@ -1,0 +1,186 @@
+[
+  {
+    "columnNumber": 1,
+    "era": "Rank One-Two era",
+    "techCost": 20,
+    "buildingCost": 45,
+    "wonderCost": 75,
+    "techs": [
+      {
+        "name": "Aperture Awakening",
+        "row": 2,
+        "uniques": [
+          "Starting tech"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Rank One-Two era",
+    "techCost": 40,
+    "buildingCost": 60,
+    "wonderCost": 140,
+    "techs": [
+      {
+        "name": "Spirit Spring Lore",
+        "row": 1,
+        "prerequisites": [
+          "Aperture Awakening"
+        ]
+      },
+      {
+        "name": "Gu Feeding",
+        "row": 3,
+        "prerequisites": [
+          "Aperture Awakening"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Rank One-Two era",
+    "techCost": 65,
+    "buildingCost": 75,
+    "wonderCost": 170,
+    "techs": [
+      {
+        "name": "Wine Brewing",
+        "row": 1,
+        "prerequisites": [
+          "Gu Feeding"
+        ]
+      },
+      {
+        "name": "Gu Refinement",
+        "row": 2,
+        "prerequisites": [
+          "Spirit Spring Lore",
+          "Gu Feeding"
+        ]
+      },
+      {
+        "name": "Rank Two Cultivation",
+        "row": 3,
+        "prerequisites": [
+          "Gu Feeding"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Rank Three era",
+    "techCost": 120,
+    "buildingCost": 100,
+    "wonderCost": 220,
+    "techs": [
+      {
+        "name": "Gu Formations",
+        "row": 1,
+        "prerequisites": [
+          "Gu Refinement"
+        ]
+      },
+      {
+        "name": "Rank Three Cultivation",
+        "row": 3,
+        "prerequisites": [
+          "Rank Two Cultivation",
+          "Gu Refinement"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 5,
+    "era": "Rank Three era",
+    "techCost": 170,
+    "buildingCost": 130,
+    "wonderCost": 240,
+    "techs": [
+      {
+        "name": "Merchant Caravans",
+        "row": 1,
+        "prerequisites": [
+          "Gu Formations",
+          "Wine Brewing"
+        ],
+        "uniques": [
+          "Enables Open Borders agreements"
+        ]
+      },
+      {
+        "name": "Inheritance Lore",
+        "row": 2,
+        "prerequisites": [
+          "Gu Formations",
+          "Rank Three Cultivation"
+        ]
+      },
+      {
+        "name": "Killer Moves",
+        "row": 3,
+        "prerequisites": [
+          "Rank Three Cultivation"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 6,
+    "era": "Rank Four era",
+    "techCost": 250,
+    "buildingCost": 160,
+    "wonderCost": 300,
+    "techs": [
+      {
+        "name": "Super Clan Commerce",
+        "row": 1,
+        "prerequisites": [
+          "Merchant Caravans"
+        ]
+      },
+      {
+        "name": "Beast Enslavement",
+        "row": 2,
+        "prerequisites": [
+          "Inheritance Lore",
+          "Killer Moves"
+        ],
+        "uniques": [
+          "When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>"
+        ]
+      },
+      {
+        "name": "Rank Four Cultivation",
+        "row": 3,
+        "prerequisites": [
+          "Killer Moves"
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 7,
+    "era": "Rank Four era",
+    "techCost": 350,
+    "buildingCost": 200,
+    "wonderCost": 350,
+    "techs": [
+      {
+        "name": "Dao Comprehension",
+        "row": 2,
+        "prerequisites": [
+          "Super Clan Commerce",
+          "Beast Enslavement",
+          "Rank Four Cultivation"
+        ],
+        "uniques": [
+          "Can be continually researched"
+        ]
+      }
+    ]
+  }
+]

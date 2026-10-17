@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Spirit Spring",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Hill",
+      "Grassland",
+      "Plains",
+      "Forest"
+    ],
+    "gold": 2,
+    "improvement": "Spring Cave",
+    "improvementStats": {
+      "gold": 3
+    },
+    "uniques": [
+      "Cannot be traded",
+      "Guaranteed with Strategic Balance resource option"
+    ],
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 1
+    },
+    "majorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 1
+    }
+  },
+  {
+    "name": "Moon Orchid",
+    "resourceType": "Strategic",
+    "revealedBy": "Gu Feeding",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Forest"
+    ],
+    "food": 1,
+    "improvement": "Plantation",
+    "improvementStats": {
+      "food": 1
+    },
+    "uniques": [
+      "Guaranteed with Strategic Balance resource option"
+    ],
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 2
+    },
+    "majorDepositAmount": {
+      "sparse": 2,
+      "default": 2,
+      "abundant": 3
+    }
+  },
+  {
+    "name": "Wild Boar",
+    "resourceType": "Strategic",
+    "revealedBy": "Gu Feeding",
+    "terrainsCanBeFoundOn": [
+      "Forest",
+      "Jungle",
+      "Grassland",
+      "Hill"
+    ],
+    "food": 1,
+    "improvement": "Camp",
+    "improvementStats": {
+      "production": 1
+    },
+    "uniques": [
+      "Guaranteed with Strategic Balance resource option"
+    ],
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 2
+    },
+    "majorDepositAmount": {
+      "sparse": 2,
+      "default": 2,
+      "abundant": 3
+    }
+  },
+  {
+    "name": "Jade",
+    "resourceType": "Strategic",
+    "revealedBy": "Spirit Spring Lore",
+    "terrainsCanBeFoundOn": [
+      "Hill"
+    ],
+    "gold": 1,
+    "improvement": "Mine",
+    "improvementStats": {
+      "gold": 1
+    },
+    "uniques": [
+      "Guaranteed with Strategic Balance resource option"
+    ],
+    "minorDepositAmount": {
+      "sparse": 1,
+      "default": 1,
+      "abundant": 2
+    },
+    "majorDepositAmount": {
+      "sparse": 2,
+      "default": 2,
+      "abundant": 3
+    }
+  },
+  {
+    "name": "Wine",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": []
+  },
+  {
+    "name": "Furs",
+    "resourceType": "Luxury",
+    "terrainsCanBeFoundOn": [
+      "Forest",
+      "Tundra",
+      "Jungle"
+    ],
+    "gold": 2,
+    "improvement": "Camp",
+    "improvementStats": {
+      "gold": 1
+    }
+  }
+]

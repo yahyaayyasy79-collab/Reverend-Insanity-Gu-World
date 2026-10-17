@@ -1,0 +1,16 @@
+name,column,row,prerequisites,uniques
+Aperture Awakening,1,2,,Starting tech
+Spirit Spring Lore,2,1,Aperture Awakening,
+Gu Feeding,2,3,Aperture Awakening,
+Wine Brewing,3,1,Gu Feeding,
+Gu Refinement,3,2,Spirit Spring Lore|Gu Feeding,
+Rank Two Cultivation,3,3,Gu Feeding,
+Gu Formations,4,1,Gu Refinement,
+Rank Three Cultivation,4,3,Rank Two Cultivation|Gu Refinement,
+Merchant Caravans,5,1,Gu Formations|Wine Brewing,Enables Open Borders agreements
+Inheritance Lore,5,2,Gu Formations|Rank Three Cultivation,
+Killer Moves,5,3,Rank Three Cultivation,
+Super Clan Commerce,6,1,Merchant Caravans,
+Beast Enslavement,6,2,Inheritance Lore|Killer Moves,"When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>"
+Rank Four Cultivation,6,3,Killer Moves,
+Dao Comprehension,7,2,Super Clan Commerce|Beast Enslavement|Rank Four Cultivation,Can be continually researched

@@ -13,7 +13,7 @@ and that Refine Gu (and the Unfinished Refinement ruin, which opens the event wi
 neither a rung nor the Liquor Worm lure is possible. A unit whose rank-2 Gu starved keeps Killer Move until the next turn
 start; in that transient state everything must simply be closed.
 
-  tools/ladder_check.py OUT_DIR        # OUT_DIR as written by tools/slice1_prototype.py
+  tools/ladder_check.py [MOD_DIR]      # default: the mod at the repo root (jsons/ written by tools/gen_ruleset.py)
 """
 from __future__ import annotations
 
@@ -160,9 +160,9 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) != 1:
-        sys.exit("usage: ladder_check.py OUT_DIR")
-    states, errors = check(Path(argv[0]))
+    if len(argv) > 1:
+        sys.exit("usage: ladder_check.py [MOD_DIR]")
+    states, errors = check(Path(argv[0]) if argv else Path(__file__).resolve().parent.parent)
     for e in errors[:50]:
         print("ERROR", e)
     print(f"[ladder_check] {states} unit states, {len(errors)} error(s)")

@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Rank One-Two era",
+    "researchAgreementCost": 150,
+    "iconRGB": [
+      72,
+      140,
+      100
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerCount": 1,
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "startingGold": 50,
+    "baseUnitBuyCost": 200
+  },
+  {
+    "name": "Rank Three era",
+    "researchAgreementCost": 250,
+    "iconRGB": [
+      205,
+      205,
+      215
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 300
+  },
+  {
+    "name": "Rank Four era",
+    "researchAgreementCost": 350,
+    "iconRGB": [
+      230,
+      190,
+      60
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 400
+  }
+]

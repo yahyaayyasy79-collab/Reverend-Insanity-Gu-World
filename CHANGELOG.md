@@ -92,3 +92,17 @@
   start, because the civ's resource count is not refreshed between units [src].
 * The user approved Phase 1 and set the tuning rule: autoplay with Strategic Balance on decides; the rank-1 hunger
   death rate decides whether the rank-1 threshold rises.
+
+## Phase 2, step 1 — the Slice 1 ruleset, generated (2026-10-17)
+
+* `tools/gen_ruleset.py` writes the mod's `jsons/` (22 files, 403 distinct uniques) from `data/*.csv`
+  (`tech_columns`, `techs`, `gu_masters`, `gu`, `gu_foods`, `hunger`) plus the one-of-a-kind content (events,
+  policies, nations, buildings...). Its output is byte-identical to the validated Phase 1 prototype, which is removed.
+  `--out DIR` writes a variant; `--check` detects a stale `jsons/`.
+* `data/hunger.csv` holds the hunger meter per rank (status length, death chance): the user's tuning lever.
+* 88 placeholder icons (`Images/`), `preview.png`, and the packed atlas for Android (`game.atlas`, `game.png`,
+  `Atlases.json`).
+* Self-tests now check the real mod: `jsons/` matches `data/`, `docs/LORE_MAPPING.md` quotes exactly its uniques, and
+  the ladder check (14,742 states, 0 errors) runs on it. `ladder_check.py` defaults to the mod.
+* README: installation, Strategic Balance recommendation, credits and disclaimer.
+* Not yet: civilopedia text, the primeval-stones rename, the Indonesian translation, autoplay data.

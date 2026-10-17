@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Refiner Tribe",
+    "color": [
+      180,
+      120,
+      60
+    ],
+    "friendBonusUniques": [
+      "[+2 Science] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+2 Science] [in capital]",
+      "[+20]% XP gained from combat"
+    ]
+  },
+  {
+    "name": "Mortal Villages",
+    "color": [
+      150,
+      130,
+      80
+    ],
+    "friendBonusUniques": [
+      "[+2 Food] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+2 Food] [in capital]",
+      "[+2 Production] [in capital]"
+    ]
+  },
+  {
+    "name": "Merchant Clan",
+    "color": [
+      255,
+      216,
+      0
+    ],
+    "friendBonusUniques": [
+      "[+2 Gold] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+3 Gold] [in capital]",
+      "[+10]% [Gold]",
+      "All newly-trained [Strength Gu Master] units [in all cities] receive the [Black Boar Gu] promotion <when above [0] [Wild Boar]>"
+    ]
+  }
+]

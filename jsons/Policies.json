@@ -1,0 +1,205 @@
+[
+  {
+    "name": "Righteous Path",
+    "era": "Rank One-Two era",
+    "priorities": {
+      "Southern Border Supremacy": 2,
+      "Endurance": 6
+    },
+    "uniques": [
+      "Only available <before adopting [Demonic Path]>",
+      "Resting point for Influence with City-States is increased by [15]",
+      "[-25]% maintenance costs <in [Friendly Land] tiles>"
+    ],
+    "policies": [
+      {
+        "name": "Clan Rules",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[-15]% Unhappiness from [Population] [in all cities]"
+        ]
+      },
+      {
+        "name": "Righteous Alliance",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "City-State Influence recovers at twice the normal rate",
+          "Gifts of Gold to City-States generate [+25]% more Influence"
+        ]
+      },
+      {
+        "name": "Guardian Formations",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Clan Rules"
+        ],
+        "uniques": [
+          "[+25]% Strength for cities",
+          "[+10]% Strength <when defending>"
+        ]
+      },
+      {
+        "name": "Righteous Path Complete",
+        "uniques": [
+          "[-10]% maintenance costs"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Demonic Path",
+    "era": "Rank One-Two era",
+    "priorities": {
+      "Southern Border Supremacy": 6,
+      "Endurance": 2
+    },
+    "uniques": [
+      "Only available <before adopting [Righteous Path]>",
+      "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
+      "[+50]% City-State Influence degradation",
+      "Triggers a [Betrayal] event <upon turn start> <with [3]% chance>"
+    ],
+    "policies": [
+      {
+        "name": "Plunder",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+100]% Yield from pillaging tiles",
+          "Receive [+100]% Gold from Barbarian encampments and pillaging Cities"
+        ]
+      },
+      {
+        "name": "Lone Cultivators",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[2] units cost no maintenance",
+          "[+30]% unhappiness from the number of cities"
+        ]
+      },
+      {
+        "name": "Ruthless Cultivation",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Plunder"
+        ],
+        "uniques": [
+          "Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately",
+          "[-20]% maintenance costs <when at war>",
+          "[+20]% Unhappiness from [Population] [in all cities]"
+        ]
+      },
+      {
+        "name": "Demonic Path Complete",
+        "uniques": [
+          "[+15]% Strength <when attacking>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Moon Path",
+    "era": "Rank One-Two era",
+    "priorities": {
+      "Southern Border Supremacy": 5,
+      "Endurance": 5
+    },
+    "uniques": [
+      "Only available <before adopting [Strength Path]>",
+      "Provides [2] [Moon Orchid]",
+      "[+5]% Strength <for [Moon Gu Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"
+    ],
+    "policies": [
+      {
+        "name": "Moonlight Mastery",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <for units with [Moonlight Gu]>",
+          "[+15]% Strength <for units with [Moon Raiment]>"
+        ]
+      },
+      {
+        "name": "Orchid Terraces",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "Provides [2] [Moon Orchid]",
+          "[-15]% maintenance costs <for [Moon Gu Master] units>"
+        ]
+      },
+      {
+        "name": "Moon Blade Step",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Moonlight Mastery"
+        ],
+        "uniques": [
+          "[1] Movement <for [Moon Gu Master] units>"
+        ]
+      },
+      {
+        "name": "Moon Path Complete",
+        "uniques": [
+          "New [Moon Gu Master] units start with [10] XP [in all cities]"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Strength Path",
+    "era": "Rank One-Two era",
+    "priorities": {
+      "Southern Border Supremacy": 5,
+      "Endurance": 5
+    },
+    "uniques": [
+      "Only available <before adopting [Moon Path]>",
+      "Provides [2] [Wild Boar]",
+      "[+5]% Strength <for [Strength Gu Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"
+    ],
+    "policies": [
+      {
+        "name": "Boar Strength",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <for units with [White Boar Gu]>",
+          "[+15]% Strength <for units with [White Jade Gu]>"
+        ]
+      },
+      {
+        "name": "Beast Hunters",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "Provides [2] [Wild Boar]",
+          "[+25]% Strength <vs [Barbarians] units>"
+        ]
+      },
+      {
+        "name": "Unyielding Body",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Boar Strength"
+        ],
+        "uniques": [
+          "Heals [10] damage if it kills a unit"
+        ]
+      },
+      {
+        "name": "Strength Path Complete",
+        "uniques": [
+          "[1] Movement <for [Strength Gu Master] units>"
+        ]
+      }
+    ]
+  }
+]

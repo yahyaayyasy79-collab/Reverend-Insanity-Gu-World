@@ -1,0 +1,195 @@
+[
+  {
+    "name": "Farm",
+    "techRequired": "Aperture Awakening",
+    "terrainsCanBeBuiltOn": [
+      "Plains",
+      "Grassland",
+      "Desert",
+      "Flood plains"
+    ],
+    "food": 1,
+    "turnsToBuild": 7,
+    "uniques": [
+      "Can also be built on tiles adjacent to fresh water"
+    ]
+  },
+  {
+    "name": "Mine",
+    "techRequired": "Spirit Spring Lore",
+    "terrainsCanBeBuiltOn": [
+      "Hill"
+    ],
+    "production": 1,
+    "turnsToBuild": 7
+  },
+  {
+    "name": "Spring Cave",
+    "techRequired": "Spirit Spring Lore",
+    "turnsToBuild": 6,
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Pillaging this improvement yields approximately [+20 Gold]"
+    ]
+  },
+  {
+    "name": "Plantation",
+    "techRequired": "Gu Feeding",
+    "turnsToBuild": 6,
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Does not need removal of [Forest]"
+    ]
+  },
+  {
+    "name": "Camp",
+    "techRequired": "Gu Feeding",
+    "turnsToBuild": 6,
+    "uniques": [
+      "Does not need removal of [Forest]",
+      "Does not need removal of [Jungle]",
+      "Can only be built to improve a resource"
+    ]
+  },
+  {
+    "name": "Road",
+    "techRequired": "Spirit Spring Lore",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "turnsToBuild": 4,
+    "uniques": [
+      "Can be built outside your borders",
+      "Costs [1] [Gold] per turn when in your territory"
+    ]
+  },
+  {
+    "name": "Beast Lair",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Unbuildable",
+      "Excluded from map editor",
+      "Marks a barbarian camp"
+    ]
+  },
+  {
+    "name": "Inheritance Site",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Provides a random bonus when entered",
+      "Unbuildable",
+      "Does not need removal of [Forest]",
+      "Does not need removal of [Jungle]"
+    ]
+  },
+  {
+    "name": "Remove Forest",
+    "turnsToBuild": 4,
+    "techRequired": "Spirit Spring Lore",
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "X",
+    "civilopediaText": [
+      {
+        "text": "Provides a one-time Production bonus depending on distance to the closest city once finished"
+      }
+    ]
+  },
+  {
+    "name": "Remove Jungle",
+    "turnsToBuild": 7,
+    "techRequired": "Gu Formations",
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "X"
+  },
+  {
+    "name": "Remove Marsh",
+    "turnsToBuild": 6,
+    "techRequired": "Gu Formations",
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "X"
+  },
+  {
+    "name": "Remove Road",
+    "turnsToBuild": 2,
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ]
+  },
+  {
+    "name": "Cancel improvement order",
+    "uniques": [
+      "Can be built outside your borders",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "."
+  },
+  {
+    "name": "Repair",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "turnsToBuild": 2,
+    "uniques": [
+      "Unbuildable",
+      "Excluded from map editor"
+    ],
+    "shortcutKey": "E",
+    "civilopediaText": [
+      {
+        "text": "Repairs a pillaged Improvement or Route"
+      }
+    ]
+  },
+  {
+    "name": "City ruins",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Unbuildable"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A bleak reminder of the destruction wreaked by War"
+      }
+    ]
+  },
+  {
+    "name": "City center",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Ensures a minimum tile yield of [+2 Food, +1 Production]",
+      "Unpillagable",
+      "Irremovable",
+      "Unbuildable",
+      "Excluded from map editor"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Marks the center of a city"
+      },
+      {
+        "text": "Appearance changes with the technological era of the owning civilization"
+      }
+    ]
+  }
+]

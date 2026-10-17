@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Clan Settler",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 80,
+    "requiredTech": "Aperture Awakening",
+    "uniques": [
+      "Founds a new city <by consuming this unit>",
+      "Excess Food converted to Production when under construction",
+      "Requires at least [2] population",
+      "Never appears as a Barbarian unit"
+    ]
+  },
+  {
+    "name": "Mortal Laborer",
+    "unitType": "Civilian",
+    "movement": 2,
+    "cost": 45,
+    "requiredTech": "Aperture Awakening",
+    "uniques": [
+      "Can build [Land] improvements on tiles",
+      "Automation is a primary action",
+      "Never appears as a Barbarian unit"
+    ]
+  },
+  {
+    "name": "Rank One Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 8,
+    "cost": 35,
+    "requiredTech": "Aperture Awakening",
+    "uniques": [
+      "[+25]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Can upgrade to [Rank Two Moon Gu Master]",
+      "Can upgrade to [Rank Two Strength Gu Master]"
+    ]
+  },
+  {
+    "name": "Rank Two Strength Gu Master",
+    "unitType": "Strength Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+100]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Only available <after adopting [Strength Path]>"
+    ],
+    "upgradesTo": "Rank Three Strength Gu Master"
+  },
+  {
+    "name": "Rank Three Strength Gu Master",
+    "unitType": "Strength Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+175]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Only available <after adopting [Strength Path]>"
+    ],
+    "upgradesTo": "Rank Four Strength Gu Master"
+  },
+  {
+    "name": "Rank Four Strength Gu Master",
+    "unitType": "Strength Gu Master",
+    "movement": 2,
+    "strength": 32,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+275]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Only available <after adopting [Strength Path]>"
+    ]
+  },
+  {
+    "name": "Rank Two Moon Gu Master",
+    "unitType": "Moon Gu Master",
+    "movement": 2,
+    "strength": 8,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+75]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Only available <after adopting [Moon Path]>"
+    ],
+    "rangedStrength": 13,
+    "range": 2,
+    "upgradesTo": "Rank Three Moon Gu Master"
+  },
+  {
+    "name": "Rank Three Moon Gu Master",
+    "unitType": "Moon Gu Master",
+    "movement": 2,
+    "strength": 12,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+150]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Only available <after adopting [Moon Path]>"
+    ],
+    "rangedStrength": 20,
+    "range": 2,
+    "upgradesTo": "Rank Four Moon Gu Master"
+  },
+  {
+    "name": "Rank Four Moon Gu Master",
+    "unitType": "Moon Gu Master",
+    "movement": 2,
+    "strength": 18,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+225]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Only available <after adopting [Moon Path]>"
+    ],
+    "rangedStrength": 29,
+    "range": 2
+  },
+  {
+    "name": "Lightning Wolf",
+    "unitType": "Beast",
+    "movement": 3,
+    "strength": 9,
+    "cost": 30,
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "[+50]% maintenance costs"
+    ]
+  },
+  {
+    "name": "Bold Lightning Wolf",
+    "unitType": "Beast",
+    "movement": 3,
+    "strength": 16,
+    "cost": 60,
+    "requiredTech": "Rank Three Cultivation",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles",
+      "[+100]% maintenance costs"
+    ]
+  },
+  {
+    "name": "Thunder Crown Wolf",
+    "unitType": "Beast",
+    "movement": 3,
+    "strength": 28,
+    "cost": 120,
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "Unbuildable",
+      "[+20]% Strength bonus for [Beast] units within [2] tiles",
+      "[+200]% maintenance costs"
+    ]
+  }
+]

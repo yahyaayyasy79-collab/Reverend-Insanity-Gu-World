@@ -263,8 +263,8 @@ class OfficialValidator(unittest.TestCase):
 
 
 class LoreMapping(unittest.TestCase):
-    """docs/LORE_MAPPING.md quotes exactly the uniques tools/slice1_prototype.py generates (and check_all validates),
-    and the prototype's refinement ladder passes tools/ladder_check.py."""
+    """The mod's jsons/ is what tools/gen_ruleset.py generates from data/; docs/LORE_MAPPING.md quotes exactly its
+    uniques (and check_all validates them); its refinement ladder passes tools/ladder_check.py."""
 
     # Files whose uniques the document must quote in full (terrains and engine-coupled improvements are Vanilla copies).
     QUOTED_FILES = ("Units.json", "UnitPromotions.json", "Buildings.json", "Policies.json", "Techs.json", "Events.json",
@@ -284,28 +284,27 @@ class LoreMapping(unittest.TestCase):
                 LoreMapping._strings(x, out)
         return out
 
-    @classmethod
-    def setUpClass(cls):
-        cls.tmp = tempfile.TemporaryDirectory()
-        subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "slice1_prototype.py"), cls.tmp.name], check=True,
-                       capture_output=True)
+    def setUp(self):
+        if not (REPO_ROOT / "jsons").is_dir():
+            self.skipTest("jsons/ not generated yet")
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.tmp.cleanup()
+    def test_jsons_match_the_data_tables(self):
+        r = subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "gen_ruleset.py"), "--check", "--quiet"],
+                           capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
     def test_refinement_ladder_has_no_empty_or_double_attempts(self):
         import ladder_check
-        states, errors = ladder_check.check(Path(self.tmp.name))
+        states, errors = ladder_check.check(REPO_ROOT)
         self.assertGreater(states, 1000)
         self.assertEqual(errors[:5], [], f"{len(errors)} ladder error(s)")
 
-    def test_document_matches_prototype(self):
+    def test_document_matches_ruleset(self):
         doc = REPO_ROOT / "docs" / "LORE_MAPPING.md"
         if not doc.exists():
             self.skipTest("docs/LORE_MAPPING.md not written yet")
         text = doc.read_text(encoding="utf-8")
-        files = {f.name: json.loads(f.read_text(encoding="utf-8")) for f in (Path(self.tmp.name) / "jsons").glob("*.json")}
+        files = {f.name: json.loads(f.read_text(encoding="utf-8")) for f in (REPO_ROOT / "jsons").glob("*.json")}
         generated = self._strings(list(files.values()), set())
         quoted = set(re.findall(r"`([^`\n]+)`", text))
         quoted.update(line for block in re.findall(r"```\n(.*?)```", text, re.S) for line in block.splitlines())
@@ -321,7 +320,7 @@ class LoreMapping(unittest.TestCase):
                 continue  # not a unique (a parameter value, a field name...)
             if q not in generated and bare not in pattern_texts:
                 unvalidated.append(q)
-        self.assertEqual(unvalidated, [], "LORE_MAPPING.md quotes uniques the prototype does not generate")
+        self.assertEqual(unvalidated, [], "LORE_MAPPING.md quotes uniques jsons/ does not contain")
 
         missing = []
         for name in self.QUOTED_FILES:
@@ -329,7 +328,7 @@ class LoreMapping(unittest.TestCase):
                 plain_weight = "% weight to this choice for AI decisions" in u and "<" not in u
                 if u not in quoted and not (name == "Events.json" and plain_weight):
                     missing.append(f"{name}: {u}")
-        self.assertEqual(missing, [], "the prototype generates uniques LORE_MAPPING.md does not show")
+        self.assertEqual(missing, [], "jsons/ contains uniques LORE_MAPPING.md does not show")
 
 
 class Packaging(unittest.TestCase):

@@ -1,0 +1,10 @@
+{
+  "isBaseRuleset": true,
+  "uniques": [
+    "Disable religion",
+    "Can only start games from the starting era"
+  ],
+  "constants": {
+    "maxXPfromBarbarians": 90
+  }
+}

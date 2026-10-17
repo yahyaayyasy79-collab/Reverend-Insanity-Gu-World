@@ -1,0 +1,193 @@
+[
+  {
+    "name": "Gu Yue Clan",
+    "leaderName": "Gu Yue Bo",
+    "adjective": [
+      "Gu Yue Clan"
+    ],
+    "personality": "Gu Yue Temperament",
+    "outerColor": [
+      30,
+      40,
+      90
+    ],
+    "innerColor": [
+      220,
+      220,
+      240
+    ],
+    "cities": [
+      "Gu Yue Village",
+      "Orchid Slope",
+      "Bamboo Ridge",
+      "Cold Spring"
+    ],
+    "uniques": [
+      "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Moonlight Gu] promotion <in cities with a [Gu Academy]> <when above [0] [Moon Orchid]>",
+      "Start bias [Spirit Spring]",
+      "Start bias [Hill]"
+    ]
+  },
+  {
+    "name": "Bai Clan",
+    "leaderName": "Bai Clan Leader",
+    "adjective": [
+      "Bai Clan"
+    ],
+    "personality": "Bai Temperament",
+    "outerColor": [
+      230,
+      230,
+      230
+    ],
+    "innerColor": [
+      40,
+      70,
+      120
+    ],
+    "cities": [
+      "Bai Village",
+      "Waterfall Slope",
+      "Frost Pine Slope"
+    ],
+    "uniques": [
+      "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Stream Gu] promotion <in cities with a [Gu Academy]>",
+      "[+15]% Strength <vs [Barbarians] units>",
+      "Start bias [Spirit Spring]",
+      "Start bias [Fresh Water]"
+    ]
+  },
+  {
+    "name": "Xiong Clan",
+    "leaderName": "Xiong Clan Leader",
+    "adjective": [
+      "Xiong Clan"
+    ],
+    "personality": "Xiong Temperament",
+    "outerColor": [
+      90,
+      50,
+      20
+    ],
+    "innerColor": [
+      240,
+      200,
+      140
+    ],
+    "cities": [
+      "Xiong Village",
+      "Bear Den Ridge",
+      "Boar Hollow"
+    ],
+    "uniques": [
+      "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Bear Strength Gu] promotion <in cities with a [Gu Academy]>",
+      "Starts with [Strength Path] adopted",
+      "Start bias [Spirit Spring]",
+      "Start bias [Forest]"
+    ]
+  },
+  {
+    "name": "Wu Clan",
+    "leaderName": "Wu Ji",
+    "adjective": [
+      "Wu Clan"
+    ],
+    "personality": "Wu Temperament",
+    "outerColor": [
+      120,
+      20,
+      20
+    ],
+    "innerColor": [
+      250,
+      210,
+      120
+    ],
+    "cities": [
+      "Wu Clan City",
+      "Martial Peak",
+      "Iron Bone Ridge"
+    ],
+    "uniques": [
+      "Starts with [Righteous Path] adopted",
+      "Start bias [Spirit Spring]",
+      "Start bias [Hill]"
+    ]
+  },
+  {
+    "name": "Hairy Man Tribe",
+    "cityStateType": "Refiner Tribe",
+    "outerColor": [
+      60,
+      30,
+      10
+    ],
+    "innerColor": [
+      255,
+      230,
+      180
+    ],
+    "cities": [
+      "Bronze Hall"
+    ]
+  },
+  {
+    "name": "Foothill Villages",
+    "cityStateType": "Mortal Villages",
+    "outerColor": [
+      110,
+      90,
+      50
+    ],
+    "innerColor": [
+      240,
+      240,
+      210
+    ],
+    "cities": [
+      "Qing Mao Foothills"
+    ]
+  },
+  {
+    "name": "Jia Clan",
+    "cityStateType": "Merchant Clan",
+    "outerColor": [
+      120,
+      90,
+      0
+    ],
+    "innerColor": [
+      255,
+      230,
+      120
+    ],
+    "cities": [
+      "Jia Village"
+    ]
+  },
+  {
+    "name": "Barbarians",
+    "outerColor": [
+      0,
+      0,
+      0
+    ],
+    "innerColor": [
+      185,
+      12,
+      12
+    ],
+    "uniques": [
+      "Can only heal by pillaging",
+      "Excluded from map editor"
+    ]
+  },
+  {
+    "name": "Spectator",
+    "outerColor": [
+      255,
+      255,
+      255
+    ]
+  }
+]

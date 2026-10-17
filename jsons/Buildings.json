@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Clan Head Pavilion",
+    "isNationalWonder": true,
+    "cost": 0,
+    "production": 3,
+    "gold": 5,
+    "science": 2,
+    "culture": 3,
+    "happiness": 1,
+    "cityStrength": 3,
+    "uniques": [
+      "Indicates the capital city"
+    ]
+  },
+  {
+    "name": "Awakening Grounds",
+    "isNationalWonder": true,
+    "requiredTech": "Aperture Awakening",
+    "cost": 75,
+    "culture": 1,
+    "gold": 2,
+    "requiredNearbyImprovedResources": [
+      "Spirit Spring"
+    ],
+    "uniques": [
+      "Unavailable <if [Flower Wine Monk Inheritance] is constructed>"
+    ]
+  },
+  {
+    "name": "Moon Orchid Flower Sea",
+    "isNationalWonder": true,
+    "uniqueTo": "Gu Yue Clan",
+    "replaces": "Awakening Grounds",
+    "requiredTech": "Aperture Awakening",
+    "cost": 75,
+    "culture": 1,
+    "gold": 2,
+    "requiredNearbyImprovedResources": [
+      "Spirit Spring"
+    ],
+    "uniques": [
+      "Unavailable <if [Flower Wine Monk Inheritance] is constructed>",
+      "Provides [2] [Moon Orchid]"
+    ]
+  },
+  {
+    "name": "Gu Academy",
+    "requiredTech": "Gu Feeding",
+    "cost": 65,
+    "maintenance": 1,
+    "science": 1,
+    "culture": 1,
+    "uniques": [
+      "[+1 Science] per [2] population [in this city]",
+      "New [Military] units start with [10] XP [in this city]"
+    ]
+  },
+  {
+    "name": "Gu Feeding House",
+    "requiredTech": "Gu Feeding",
+    "cost": 70,
+    "maintenance": 1,
+    "uniques": [
+      "Provides [1] [Moon Orchid]",
+      "Provides [1] [Wild Boar]"
+    ]
+  },
+  {
+    "name": "Tavern",
+    "requiredTech": "Wine Brewing",
+    "cost": 60,
+    "maintenance": 1,
+    "happiness": 1,
+    "uniques": [
+      "Provides [1] [Wine]"
+    ]
+  },
+  {
+    "name": "Refinement Chamber",
+    "requiredTech": "Gu Refinement",
+    "cost": 90,
+    "maintenance": 1,
+    "production": 1,
+    "science": 1,
+    "uniques": [
+      "Provides [1] [Jade]"
+    ]
+  },
+  {
+    "name": "Formation Platform",
+    "requiredTech": "Gu Formations",
+    "cost": 110,
+    "maintenance": 1,
+    "cityStrength": 8,
+    "cityHealth": 50
+  },
+  {
+    "name": "Martial Arena",
+    "uniqueTo": "Wu Clan",
+    "replaces": "Gu Academy",
+    "requiredTech": "Gu Feeding",
+    "cost": 65,
+    "maintenance": 1,
+    "science": 1,
+    "culture": 1,
+    "uniques": [
+      "[+1 Science] per [2] population [in this city]",
+      "New [Military] units start with [20] XP [in this city]"
+    ]
+  },
+  {
+    "name": "Trading House",
+    "requiredTech": "Merchant Caravans",
+    "cost": 130,
+    "gold": 2,
+    "percentStatBonus": {
+      "gold": 20
+    }
+  },
+  {
+    "name": "Flower Wine Monk Inheritance",
+    "isWonder": true,
+    "requiredTech": "Inheritance Lore",
+    "cost": 240,
+    "culture": 3,
+    "gold": 4,
+    "uniques": [
+      "Provides [2] [Jade]",
+      "[+15]% XP gained from combat",
+      "[+15]% Strength <vs [Gu Yue Clan] units>",
+      "Remove [Awakening Grounds] [in all cities]"
+    ]
+  },
+  {
+    "name": "Shang Clan City",
+    "isWonder": true,
+    "requiredTech": "Super Clan Commerce",
+    "cost": 300,
+    "gold": 5,
+    "uniques": [
+      "[+2 Gold] from all [Trading House] buildings",
+      "Receive [+50]% Gold from Barbarian encampments and pillaging Cities"
+    ]
+  }
+]

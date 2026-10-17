@@ -1,0 +1,8 @@
+name,unitType,path,requiredTech,cost,strength,rangedStrength,maintenance,upgradesTo,extra_uniques
+Rank One Gu Master,Gu Master,,Aperture Awakening,35,8,,+25,,Can upgrade to [Rank Two Moon Gu Master]|Can upgrade to [Rank Two Strength Gu Master]
+Rank Two Strength Gu Master,Strength Gu Master,Strength Path,Rank Two Cultivation,60,14,,+100,Rank Three Strength Gu Master,
+Rank Three Strength Gu Master,Strength Gu Master,Strength Path,Rank Three Cultivation,95,22,,+175,Rank Four Strength Gu Master,
+Rank Four Strength Gu Master,Strength Gu Master,Strength Path,Rank Four Cultivation,140,32,,+275,,
+Rank Two Moon Gu Master,Moon Gu Master,Moon Path,Rank Two Cultivation,60,8,13,+75,Rank Three Moon Gu Master,
+Rank Three Moon Gu Master,Moon Gu Master,Moon Path,Rank Three Cultivation,95,12,20,+150,Rank Four Moon Gu Master,
+Rank Four Moon Gu Master,Moon Gu Master,Moon Path,Rank Four Cultivation,140,18,29,+225,,
