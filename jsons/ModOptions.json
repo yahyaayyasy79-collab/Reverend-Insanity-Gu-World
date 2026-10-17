@@ -5,6 +5,7 @@
     "Can only start games from the starting era"
   ],
   "constants": {
-    "maxXPfromBarbarians": 90
+    "maxXPfromBarbarians": 90,
+    "cityStrengthFromTechsFullMultiplier": 0.1
   }
 }

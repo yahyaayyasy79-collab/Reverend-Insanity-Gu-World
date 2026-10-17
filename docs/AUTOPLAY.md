@@ -101,6 +101,45 @@ per 100 turns; plus wars, captured cities and pillaged tiles. No crash in 30 gam
 * **Pillage is 7–10 times Vanilla's:** the wolf tides and barbarians (who heal only by pillaging) hit tiles hard. Pillar
   3 shows up as pillage, not as deaths.
 
+## Round 5b: why cities never fell, and the fix (2026-10-17)
+
+**Cause** [src `CityCombatant.getCityStrength`]: a city gets + (share of the tech tree known x 5.5)^2.8 x
+`cityStrengthFromTechsFullMultiplier` (default 1.0). That is +118 with every tech, and Slice 1's 15-tech tree is
+complete by turn ~120, so every city became a modern-era fortress against Gu Masters of strength 8–32. The user gave
+the choice ("bebas, yang seru seperti di novelnya"). Variants, King, 200 turns, 12 games each:
+
+| Full multiplier | City bonus with every tech | Games with a war | Clan-turns at war | Cities captured | Clans eliminated |
+|---|---|---|---|---|---|
+| 1.0 (old default) | +118 | 4/12 | 3.4% | 0 | 0 |
+| **0.1 (applied)** | +12 | 9/12 | 13.3% | 16 | 8 |
+| 0.17 | +20 | 5/12 | 4.1% | 9 | 2 |
+| 0.25 | +30 | 6/12 | 5.2% | 6 | 1 |
+| Vanilla control (6 games) | — | 5/6 | 7.6% | 6 | — |
+
+Chosen: 0.1, the bloodiest that keeps the AI solvent (lowest stones 6–13 on average). Confirmed on the mod itself
+(12 games): wars in 9/12, 14 cities captured, 5 clans eliminated, no crash, no winner by turn 200; rank-1 Gu now meet
+hunger (0.7% of holder-turns in deficit, 26 deaths, from pillaged camps and plantations).
+
+**New imbalance it exposed:** Wu captured 10 cities and Xiong 4; Gu Yue and Bai captured none and were eliminated 2
+and 3 times. Moon armies are ranged, and ranged units cannot capture cities [src]. See round 5c.
+
+## Round 5c: Moon fights in melee and throws a moon blade first (2026-10-17)
+
+Ranged units cannot take cities, and the documented unit unique `Before engaging in combat performs an extra ranged
+attack with [amount]% of melee combat strength` gives a melee unit a free ranged strike before every clash with a
+unit (never against a city [src `Battle.tryExtraRangedAttack`]). Moon Gu Masters became melee skirmishers that open
+with a moon blade; Strength stays the hardest melee hitter. King, 200 turns, 12 games each, city multiplier 0.1:
+
+| Variant | Captured by Moon clans | Captured by Strength clans | Clans eliminated | Gu Yue / Bai alive |
+|---|---|---|---|---|
+| Moon ranged 13/20/29 (before) | 0 | 14 | 5 | 10 / 9 of 12 |
+| Melee 12/19/27, blade 50% | 3 | 8 | 4 | 11 / 9 |
+| **Melee 13/20/29, blade 40% (applied)** | **5** | **8** | **2** | 12 / 10 |
+
+Wu still leads (5.2 cities on average vs 2.8–4.0; 7 cities captured), consistent with the Wu clan's canon rank as the
+Southern Border's first clan. Bai builds the smallest army (18.8 units) and hoards stones (742): its personality, not
+the ruleset.
+
 ## Re-run
 
 ```

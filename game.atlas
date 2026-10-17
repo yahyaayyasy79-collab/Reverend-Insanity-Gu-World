@@ -62,28 +62,28 @@ BuildingIcons/Moon Orchid Flower Sea
   index: -1
 BuildingIcons/Refinement Chamber
   rotate: false
-  xy: 976, 760
+  xy: 328, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shang Clan City
   rotate: false
-  xy: 652, 328
+  xy: 868, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Tavern
   rotate: false
-  xy: 544, 112
+  xy: 760, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Trading House
   rotate: false
-  xy: 760, 328
+  xy: 976, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -104,7 +104,7 @@ CityStateIcons/Mortal Villages
   index: -1
 CityStateIcons/Refiner Tribe
   rotate: false
-  xy: 1084, 868
+  xy: 436, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -125,7 +125,7 @@ ImprovementIcons/Inheritance Site
   index: -1
 ImprovementIcons/Spring Cave
   rotate: false
-  xy: 976, 652
+  xy: 1192, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -146,14 +146,14 @@ NationIcons/Gu Yue Clan
   index: -1
 NationIcons/Wu Clan
   rotate: false
-  xy: 652, 112
+  xy: 976, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Xiong Clan
   rotate: false
-  xy: 760, 220
+  xy: 1084, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -174,14 +174,14 @@ PolicyBranchIcons/Moon Path
   index: -1
 PolicyBranchIcons/Righteous Path
   rotate: false
-  xy: 436, 112
+  xy: 652, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Strength Path
   rotate: false
-  xy: 1192, 868
+  xy: 544, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -251,21 +251,21 @@ PolicyIcons/Plunder
   index: -1
 PolicyIcons/Righteous Alliance
   rotate: false
-  xy: 328, 4
+  xy: 544, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Ruthless Cultivation
   rotate: false
-  xy: 544, 220
+  xy: 760, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Unyielding Body
   rotate: false
-  xy: 868, 436
+  xy: 1084, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -286,14 +286,21 @@ ResourceIcons/Moon Orchid
   index: -1
 ResourceIcons/Spirit Spring
   rotate: false
-  xy: 760, 436
+  xy: 976, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Wild Boar
   rotate: false
-  xy: 1192, 760
+  xy: 544, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Wine
+  rotate: false
+  xy: 652, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -384,23 +391,128 @@ TechIcons/Rank Two Cultivation
   index: -1
 TechIcons/Spirit Spring Lore
   rotate: false
-  xy: 868, 544
+  xy: 1084, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Super Clan Commerce
   rotate: false
-  xy: 436, 4
+  xy: 652, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Wine Brewing
   rotate: false
-  xy: 1300, 868
+  xy: 760, 220
   size: 100, 100
   orig: 100, 100
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Beast-attack-1
+  rotate: false
+  xy: 1192, 656
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Beast-attack-2
+  rotate: false
+  xy: 1300, 764
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Beast-attack-3
+  rotate: false
+  xy: 1408, 872
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Beast-attack-4
+  rotate: false
+  xy: 652, 8
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Gu Master-attack-1
+  rotate: false
+  xy: 760, 116
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Gu Master-attack-2
+  rotate: false
+  xy: 868, 224
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Gu Master-attack-3
+  rotate: false
+  xy: 976, 332
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-1
+  rotate: false
+  xy: 1084, 440
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-2
+  rotate: false
+  xy: 1192, 552
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-3
+  rotate: false
+  xy: 1512, 872
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-4
+  rotate: false
+  xy: 1616, 872
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-1
+  rotate: false
+  xy: 1720, 872
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-2
+  rotate: false
+  xy: 1824, 872
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-3
+  rotate: false
+  xy: 1928, 872
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-4
+  rotate: false
+  xy: 1192, 448
+  size: 96, 96
+  orig: 96, 96
   offset: 0, 0
   index: -1
 UnitIcons/Bold Lightning Wolf
@@ -459,13 +571,6 @@ UnitIcons/Rank Three Moon Gu Master
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitIcons/Rank Two Moon Gu Master
-  rotate: false
-  xy: 652, 436
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 UnitIcons/Rank Three Strength Gu Master
   rotate: false
   xy: 760, 544
@@ -473,16 +578,23 @@ UnitIcons/Rank Three Strength Gu Master
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitIcons/Rank Two Moon Gu Master
+  rotate: false
+  xy: 868, 652
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitIcons/Rank Two Strength Gu Master
   rotate: false
-  xy: 760, 544
+  xy: 976, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Thunder Crown Wolf
   rotate: false
-  xy: 652, 220
+  xy: 868, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -587,35 +699,35 @@ UnitPromotionIcons/Pork Hunger
   index: -1
 UnitPromotionIcons/Refine Gu
   rotate: false
-  xy: 868, 652
+  xy: 1084, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Stream Gu
   rotate: false
-  xy: 1084, 760
+  xy: 436, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/White Boar Gu
   rotate: false
-  xy: 976, 544
+  xy: 1192, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/White Jade Gu
   rotate: false
-  xy: 1084, 652
+  xy: 1300, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Wine Hunger
   rotate: false
-  xy: 544, 4
+  xy: 868, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

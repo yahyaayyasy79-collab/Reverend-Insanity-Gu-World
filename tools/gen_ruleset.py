@@ -86,7 +86,10 @@ def w(x, cond=""):
 # ---------------- ModOptions / Globals ----------------
 dump("ModOptions.json", {"isBaseRuleset": True,
                          "uniques": ["Disable religion", "Can only start games from the starting era"],
-                         "constants": {"maxXPfromBarbarians": 90}})
+                         # R5: the engine adds (share of techs known x 5.5)^2.8 x this to every city's strength [src
+                         # CityCombatant.getCityStrength]; with a 15-tech tree the default 1.0 gave +118 by turn ~120 and
+                         # no city was ever taken. 0.1 caps it at +12 (autoplay, docs/AUTOPLAY.md round 5).
+                         "constants": {"maxXPfromBarbarians": 90, "cityStrengthFromTechsFullMultiplier": 0.1}})
 dump("Beliefs.json", [])
 dump("Religions.json", [])
 dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
@@ -154,6 +157,8 @@ GU_MASTERS = [gm(r["name"], r["unitType"], r["requiredTech"], int(r["cost"]), in
                  ([f"Only available <after adopting [{r['path']}]>"] if r["path"] else []) + items(r["extra_uniques"]),
                  ranged=int(r["rangedStrength"]) if r["rangedStrength"] else None, upgrades=r["upgradesTo"] or None)
               for r in table("gu_masters.csv")]
+for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
+    u["attackSound"] = r["attackSound"]  # R5: each path sounds different (built-in sounds, Images-and-Audio.md)
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      "uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
@@ -162,12 +167,12 @@ dump("Units.json", [
      "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", NB]},
 ] + GU_MASTERS + [
     # R2 T5: the canon wolf-tide tiers (plain / hundred-beast tier / ten-thousand-beast king)
-    {"name": "Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 9, "cost": 30, "uniqueTo": "Barbarians",
+    {"name": "Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 9, "cost": 30, "attackSound": "shot", "uniqueTo": "Barbarians",
      "uniques": ["[+50]% maintenance costs"]},
-    {"name": "Bold Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 16, "cost": 60,
+    {"name": "Bold Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 16, "cost": 60, "attackSound": "shot",
      "requiredTech": "Rank Three Cultivation", "uniqueTo": "Barbarians",
      "uniques": ["[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles", "[+100]% maintenance costs"]},
-    {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120,
+    {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
 ])

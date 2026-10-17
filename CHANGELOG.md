@@ -127,3 +127,18 @@
   irrelevant (0.17–0.40% of rank-1 holder-turns in deficit; every Gu food in surplus), so the rank-1 threshold stays.
   New findings: conquest almost never happens (1 captured city in 24 games vs 6 in 6 Vanilla games), the ladder stalls
   at rung 1 (no Killer Move in 30 games), the tech tree runs out around turn 120. No tuning applied.
+
+## Phase 2, step 4 — war works: cities can fall, Moon fights in melee, first art (2026-10-17)
+
+* Root cause of "no city ever falls": the engine adds city strength by the share of the tech tree known (+118 with
+  every tech; Slice 1's 15 techs are done by turn ~120). `cityStrengthFromTechsFullMultiplier` 0.1 caps it at +12
+  (variants 0.1/0.17/0.25 tested; 0.1 chosen under the user's "seru seperti di novel"). Engine fact E8.
+* Moon Gu Masters are melee (13/20/29) and open every clash with a unit by throwing a moon blade (40% of their
+  strength, a documented unique); ranged Moon armies could never take a city and were eliminated instead. Tested
+  against a 50% variant. Result at King/200 turns: wars in 5–9 of 12 games, 13 cities captured, 2 clans eliminated,
+  Moon clans capture too.
+* Attack sounds per path (throw, whoosh, nonmetalhit, shot for wolves).
+* Art: `tools/gen_art.py` + `tools/art/`: 19 original icons in Unciv's flat style and attack animations per attacker
+  type (essence burst, moon blade, boar charge, lightning bite) for the default unit set; atlas repacked;
+  `docs/ART.md` style guide. Remaining objects keep placeholders until the user approves the style.
+* The repo is now `Reverend-Insanity-Gu-World`; `main` holds the mod (the user allowed it).

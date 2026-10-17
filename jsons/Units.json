@@ -37,7 +37,8 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Can upgrade to [Rank Two Moon Gu Master]",
       "Can upgrade to [Rank Two Strength Gu Master]"
-    ]
+    ],
+    "attackSound": "throw"
   },
   {
     "name": "Rank Two Strength Gu Master",
@@ -52,7 +53,8 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>"
     ],
-    "upgradesTo": "Rank Three Strength Gu Master"
+    "upgradesTo": "Rank Three Strength Gu Master",
+    "attackSound": "nonmetalhit"
   },
   {
     "name": "Rank Three Strength Gu Master",
@@ -67,7 +69,8 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>"
     ],
-    "upgradesTo": "Rank Four Strength Gu Master"
+    "upgradesTo": "Rank Four Strength Gu Master",
+    "attackSound": "nonmetalhit"
   },
   {
     "name": "Rank Four Strength Gu Master",
@@ -81,57 +84,58 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>"
-    ]
+    ],
+    "attackSound": "nonmetalhit"
   },
   {
     "name": "Rank Two Moon Gu Master",
     "unitType": "Moon Gu Master",
     "movement": 2,
-    "strength": 8,
+    "strength": 13,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
       "[+75]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Moon Path]>"
+      "Only available <after adopting [Moon Path]>",
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength"
     ],
-    "rangedStrength": 13,
-    "range": 2,
-    "upgradesTo": "Rank Three Moon Gu Master"
+    "upgradesTo": "Rank Three Moon Gu Master",
+    "attackSound": "whoosh"
   },
   {
     "name": "Rank Three Moon Gu Master",
     "unitType": "Moon Gu Master",
     "movement": 2,
-    "strength": 12,
+    "strength": 20,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
       "[+150]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Moon Path]>"
+      "Only available <after adopting [Moon Path]>",
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength"
     ],
-    "rangedStrength": 20,
-    "range": 2,
-    "upgradesTo": "Rank Four Moon Gu Master"
+    "upgradesTo": "Rank Four Moon Gu Master",
+    "attackSound": "whoosh"
   },
   {
     "name": "Rank Four Moon Gu Master",
     "unitType": "Moon Gu Master",
     "movement": 2,
-    "strength": 18,
+    "strength": 29,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
       "[+225]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Moon Path]>"
+      "Only available <after adopting [Moon Path]>",
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength"
     ],
-    "rangedStrength": 29,
-    "range": 2
+    "attackSound": "whoosh"
   },
   {
     "name": "Lightning Wolf",
@@ -139,6 +143,7 @@
     "movement": 3,
     "strength": 9,
     "cost": 30,
+    "attackSound": "shot",
     "uniqueTo": "Barbarians",
     "uniques": [
       "[+50]% maintenance costs"
@@ -150,6 +155,7 @@
     "movement": 3,
     "strength": 16,
     "cost": 60,
+    "attackSound": "shot",
     "requiredTech": "Rank Three Cultivation",
     "uniqueTo": "Barbarians",
     "uniques": [
@@ -163,6 +169,7 @@
     "movement": 3,
     "strength": 28,
     "cost": 120,
+    "attackSound": "shot",
     "uniqueTo": "Barbarians",
     "uniques": [
       "Unbuildable",
