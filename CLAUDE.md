@@ -10,9 +10,9 @@ approved 2026-10-13. Phase 2 (Slice 1) step 1 (2026-10-17): the mod's `jsons/` i
 from `data/*.csv` (identical to the validated Phase 1 prototype, which is gone), with placeholder icons and the packed
 atlas. Their "Locate mod errors" on Android: all green (0 errors). Autoplay (`docs/AUTOPLAY.md`): conquest fixed
 (E8 city strength; Moon melee + moon blade), Wu leads moderately, hunger matters only once wars pillage food tiles,
-ladder stalls at rung 1 (XP), tech tree ends ~T120, springs improved late (AI: one laborer per city
+ladder unstuck by cultivation XP (2/turn in academy cities; Killer Move 2.8 per clan at T200), tech tree ends ~T120, springs improved late (AI: one laborer per city
 [src ConstructionAutomation.addWorkerChoice]; the user wants laborers produced, not given). First art pass shipped
-(19 icons, 4 attack animations); waiting for the user's verdict on the style before the full set. Then civilopedia text, the stones rename and the Indonesian translation (Definition of
+(19 icons, 4 attack animations), approved; all 89 icons designed (no placeholder left). Then civilopedia text, the stones rename and the Indonesian translation (Definition of
 Done). Edit
 `data/` or the generator, then LORE_MAPPING.md; the self-tests keep jsons/, data/ and the document in sync.
 
@@ -37,8 +37,8 @@ in LORE_MAPPING.md.
   the map's prize.
 * Repo renamed by the user to `Reverend-Insanity-Gu-World` (2026-10-17); `main` holds the mod (the user allowed it);
   fast-forward `main` to the session branch after each green step so their Android download stays current.
-* Taste delegated (user, round 5): "bebas, yang sesuai dan seru seperti di novelnya" for balance fixes; art style
-  still needs their approval of the sample sheet before the full icon set.
+* Taste delegated (user, round 5): "bebas, yang sesuai dan seru seperti di novelnya" for balance fixes. Art style
+  approved ("lanjut ke semua").
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.

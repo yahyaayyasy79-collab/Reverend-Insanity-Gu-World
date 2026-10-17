@@ -159,6 +159,11 @@ GU_MASTERS = [gm(r["name"], r["unitType"], r["requiredTech"], int(r["cost"]), in
               for r in table("gu_masters.csv")]
 for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     u["attackSound"] = r["attackSound"]  # R5: each path sounds different (built-in sounds, Images-and-Audio.md)
+    if int(r["cultivationXP"]):
+        # R5: cultivation in the clan's academy (the Wu Martial Arena counts: it replaces the Gu Academy [src
+        # containsBuildingOrEquivalent]). Without it XP came only from battle and the ladder stalled at rung 1.
+        u["uniques"].append(f"[This Unit] gains [{r['cultivationXP']}] XP <upon turn start> <in cities with a [Gu Academy]> "
+                            "<for units without [Killer Move]>")
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      "uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",

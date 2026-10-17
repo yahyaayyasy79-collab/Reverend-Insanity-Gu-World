@@ -151,3 +151,11 @@
 * `tools/autoplay.py` now counts every promotion a unit holds (`promotionHolders`). It used to count only Gu with a
   hunger meter, so Killer Move (which eats nothing) was never counted: the earlier claim "Killer Move appears in no
   game" was not measured. Corrected in docs/AUTOPLAY.md once re-measured.
+
+## Phase 2, step 6 — cultivation unsticks the refinement ladder (2026-10-17)
+
+* Every Gu Master in a city with a Gu Academy (or Wu's Martial Arena) gains 2 XP per turn until it holds a Killer
+  Move (`data/gu_masters.csv` column `cultivationXP`). Autoplay, King, 200 turns, per clan: rank-2 Gu 0.71 → 5.1,
+  Killer Move 0.04 → 2.8, stones 315 → 187, hunger deaths 0.12 → 0.45 per 100 turns (3 XP tested too).
+* Correction: the earlier "no Killer Move in any game" came from a counting gap in the tool (fixed in step 5); the
+  true baseline was 0.04 per clan.

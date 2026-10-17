@@ -43,7 +43,7 @@ turn unless noted):
 * **Spirit Springs.** Strategic Balance works for ownership: every clan owns 1–2 springs from turn 10 (Wu 11/12 at T10,
   all by T30). The AI improves them late: an improved spring at T30 for 10 of 48 clans, at T50 for 14, at T100 for
   37. The Awakening Grounds (or Gu Yue's flower sea) is built by 27 of 48 clans, first at turn 80 on average.
-* **Refinement.** By T100 each clan holds 1–3 rank-1 Gu and 0–1 rank-2 Gu; Killer Move never appears.
+* **Refinement.** By T100 each clan holds 1–3 rank-1 Gu and 0–1 rank-2 Gu; Killer Move was not measured (see the correction in round 5d).
 
 Control: Unciv's Vanilla ruleset on the same harness (2 games, four majors): 2–6 cities, 4–11 units, 13–17 techs,
 no wars, and idle settlers as often as here (0.24–0.47 per turn vs 0.32–0.50), so the AI's slow expansion is the
@@ -93,8 +93,9 @@ per 100 turns; plus wars, captured cities and pillaged tiles. No crash in 30 gam
 * **Wu vs Xiong: no dominance.** King: Xiong 4.5 cities, 28.5 units, White Jade Gu 7; Wu 4.2, 28.2, 5. Emperor: equal
   within noise. Pork is not scarce for either (mean 4.8–5.6), so there is nothing to clash over.
 * **The refinement ladder stalls at rung 1.** At T200 the clans hold 7–11 rank-1 Gu each but 0.3–0.7 rank-2 Gu, and
-  Killer Move appears in none of the 30 games: the AI buys each unit's first attempt with the academy's starting XP and
-  rarely earns the 20 XP for a second one in peace.
+  Killer Move is rare (re-measured in round 5d: 0.04 per clan; this line first said "none", which the tool could not
+  see, see round 5d): the AI buys each unit's first attempt with the academy's starting XP and rarely earns the 20 XP
+  for a second one in peace.
 * **The tech tree runs out** at turn 113 (Emperor) to 123 (King) on average; the rest is Dao Comprehension.
 * **Stones.** Upkeep rises from 20% of gross income (T1–50) to 60% (T151–200), but treasuries still grow (mean 420
   stones in T151–200): the AI stays solvent, the late game is not tense.
@@ -139,6 +140,26 @@ with a moon blade; Strength stays the hardest melee hitter. King, 200 turns, 12 
 Wu still leads (5.2 cities on average vs 2.8–4.0; 7 cities captured), consistent with the Wu clan's canon rank as the
 Southern Border's first clan. Bai builds the smallest army (18.8 units) and hoards stones (742): its personality, not
 the ruleset.
+
+## Round 5d: cultivation unsticks the ladder (2026-10-17)
+
+**Correction first.** Until this round `autoplay.py` counted only Gu that have a hunger meter. Killer Move eats
+nothing, so it was never counted, and "Killer Move appears in none of the games" (baseline and round 5) was not a
+measurement. The tool now records every promotion (`promotionHolders`).
+
+Every Gu Master standing in a city with a Gu Academy (or Wu's Martial Arena, which replaces it) gains N XP per turn
+until it holds a Killer Move (`[This Unit] gains [N] XP <upon turn start> <in cities with a [Gu Academy]> <for units
+without [Killer Move]>`). King, 200 turns, 12 games each, per clan at turn 200:
+
+| Variant | Rank-1 Gu | Rank-2 Gu | Killer Move | Attempts bought | Stones | Hunger deaths per clan per 100 turns |
+|---|---|---|---|---|---|---|
+| No cultivation (before) | 7.1 | 0.71 | 0.04 | 16.1 | 315 | 0.12 |
+| **2 XP (applied)** | 6.0 | **5.1** | **2.8** | 38.8 | 187 | 0.45 |
+| 3 XP | 5.8 | 5.4 | 3.7 | 42.7 | 205 | 0.82 |
+
+The ladder now plays out: climbing costs XP, stones (the attempts and the higher rungs' upkeep) and food, and the
+hunger meter matters. 2 XP chosen: the slower climb. The aptitude die checks out in the same data: A 8%, B 27%,
+C 31%, D 33% of Gu Masters.
 
 ## Re-run
 

@@ -36,7 +36,8 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Can upgrade to [Rank Two Moon Gu Master]",
-      "Can upgrade to [Rank Two Strength Gu Master]"
+      "Can upgrade to [Rank Two Strength Gu Master]",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "attackSound": "throw"
   },
@@ -51,7 +52,8 @@
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Strength Path]>"
+      "Only available <after adopting [Strength Path]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Three Strength Gu Master",
     "attackSound": "nonmetalhit"
@@ -67,7 +69,8 @@
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Strength Path]>"
+      "Only available <after adopting [Strength Path]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Four Strength Gu Master",
     "attackSound": "nonmetalhit"
@@ -83,7 +86,8 @@
       "[+275]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Strength Path]>"
+      "Only available <after adopting [Strength Path]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "attackSound": "nonmetalhit"
   },
@@ -99,7 +103,8 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
-      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength"
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Three Moon Gu Master",
     "attackSound": "whoosh"
@@ -116,7 +121,8 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
-      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength"
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Four Moon Gu Master",
     "attackSound": "whoosh"
@@ -133,7 +139,8 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
-      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength"
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "attackSound": "whoosh"
   },
