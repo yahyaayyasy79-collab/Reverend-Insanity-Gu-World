@@ -124,6 +124,9 @@ def summarize(out: Path) -> dict:
                 "tradesMean": round(statistics.mean(r["trades"] for r in rs), 2),
                 "resTradedOutMean": round(statistics.mean(r["resOut"] for r in rs), 2),
                 "warTurns": sum(1 for r in rs if r["wars"]), "csAlliesLast": last["csAllies"],
+                "capturedCitiesLast": last.get("capturedCities", 0),
+                "pillagedTileTurns": sum(r.get("pillagedTiles", 0) for r in rs),
+                "turnsPlayed": len(rs),
                 "happinessMin": min(r["happiness"] for r in rs),
                 "buildingsLast": last.get("buildings", {}),
                 "firstTurnBuilt": {b: next(r["turn"] for r in rs if r.get("buildings", {}).get(b))
@@ -144,7 +147,22 @@ def summarize(out: Path) -> dict:
         rates[rank] = {"holderTurns": held, "holderTurnsInDeficit": short, "hungerEpisodes": starts, "deaths": deaths,
                        "recoveries": rec, "deathsPerEpisode": round(deaths / starts, 3) if starts else None,
                        "deathsPer100HolderTurns": round(100 * deaths / held, 2) if held else None}
-    return {"games": games, "hungerByRank": rates}
+    # the user's round-5 metrics (option B): share of rank-1 holder-turns in deficit, Gu deaths per clan per 100 turns
+    civ_turns = sum(c["turnsPlayed"] for g in games.values() for c in g["civs"].values())
+    deaths = sum(pooled[k] for k in pooled if k.startswith("hungerDeath."))
+    r1 = rates.get("rank1", {})
+    metrics = {
+        "rank1ShareInDeficit": round(r1["holderTurnsInDeficit"] / r1["holderTurns"], 4) if r1.get("holderTurns") else None,
+        "guHungerDeathsPerClanPer100Turns": round(100 * deaths / civ_turns, 3) if civ_turns else None,
+        "clanTurns": civ_turns,
+        "warShareOfClanTurns": round(sum(c["warTurns"] for g in games.values() for c in g["civs"].values()) / civ_turns, 3)
+        if civ_turns else None,
+        "gamesWithAWar": sum(1 for g in games.values() if any(c["warTurns"] for c in g["civs"].values())),
+        "capturedCitiesAtEnd": sum(c["capturedCitiesLast"] for g in games.values() for c in g["civs"].values()),
+        "pillagedTileTurns": sum(c["pillagedTileTurns"] for g in games.values() for c in g["civs"].values()),
+        "games": len(games),
+    }
+    return {"games": games, "hungerByRank": rates, "metrics": metrics}
 
 
 def print_summary(s: dict) -> None:
@@ -159,6 +177,7 @@ def print_summary(s: dict) -> None:
             print(f"   {civ[:11]:<12}{str(c['alive'])[0]:>6}{c['cities']:>5}{c['pop']:>5}{c['techs']:>5}{c['policies']:>4}"
                   f"{c['gold']:>6}{c['gpt']:>5}{c['upkeep']:>5}{c['minGold']:>6}{c['turnsGoldBelow0']:>4}{c['units']:>5}"
                   f"{c['tradesMean']:>6}{c['warTurns']:>4}  {res}")
+    print("\n== metrics:", s.get("metrics"))
     print("\n== hunger by Gu rank (all games, all civs)")
     for rank, r in s["hungerByRank"].items():
         print(f"   {rank}: {r}")

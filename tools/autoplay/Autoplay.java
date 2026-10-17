@@ -181,7 +181,10 @@ public class Autoplay {
         int barbUnits = 0;
         // strategic deposits per owner: [owned tiles, improved and not pillaged], plus unowned ones on the map
         Map<String, Map<String, int[]>> deposits = new HashMap<>();
+        Map<String, Integer> pillaged = new HashMap<>();
         for (com.unciv.logic.map.tile.Tile t : gi.getTileMap().getTileList()) {
+            if (t.getOwner() != null && t.getImprovement() != null && t.getImprovementIsPillaged())
+                inc(pillaged, t.getOwner().getCivName(), 1);
             String r = t.getResource();
             if (r == null || !strategic.contains(r)) continue;
             Civilization owner = t.getOwner();
@@ -200,8 +203,13 @@ public class Autoplay {
             rec.put("event", "turn"); rec.put("turn", gi.getTurns()); rec.put("civ", c.getCivName());
             rec.put("major", major); rec.put("alive", c.isAlive());
             int pop = 0;
-            for (City city : c.getCities()) pop += city.getPopulation().getPopulation();
-            rec.put("cities", c.getCities().size()); rec.put("pop", pop);
+            int captured = 0;
+            for (City city : c.getCities()) {
+                pop += city.getPopulation().getPopulation();
+                if (city.getFoundingCivObject() != null && city.getFoundingCivObject() != c) captured++;
+            }
+            rec.put("cities", c.getCities().size()); rec.put("pop", pop); rec.put("capturedCities", captured);
+            rec.put("pillagedTiles", pillaged.getOrDefault(c.getCivName(), 0));
             if (!major) { out.println(obj(rec)); continue; }
             Stats next = c.getStats().getStatsForNextTurn();
             rec.put("gold", c.getGold()); rec.put("gpt", Math.round(next.getGold()));

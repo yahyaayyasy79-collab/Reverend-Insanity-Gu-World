@@ -118,3 +118,12 @@
   almost no trade, no wars (Vanilla control: none either), springs owned by every clan but improved late. Three A/B
   variants: a second starting laborer doubles the springs improved by T50; more yield does not help.
 * Per the user's rule the rank-1 hunger threshold stays (the trigger condition is not met). No tuning applied.
+
+## Phase 2, step 3 — round 5: King and Emperor, 200 turns (2026-10-17)
+
+* The user chose option B. `tools/autoplay.py` reports the new metrics (share of rank-1 holder-turns in deficit, Gu
+  hunger deaths per clan per 100 turns, games with a war, captured cities, pillaged tiles).
+* `docs/AUTOPLAY.md`: 12 King + 12 Emperor games x 200 turns and a Vanilla control. No crash. Hunger stays
+  irrelevant (0.17–0.40% of rank-1 holder-turns in deficit; every Gu food in surplus), so the rank-1 threshold stays.
+  New findings: conquest almost never happens (1 captured city in 24 games vs 6 in 6 Vanilla games), the ladder stalls
+  at rung 1 (no Killer Move in 30 games), the tech tree runs out around turn 120. No tuning applied.

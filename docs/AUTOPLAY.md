@@ -68,9 +68,43 @@ The trigger condition is not met: rank-1 Gu die of hunger about once per 1,100 h
 economy to collapse. Per the rule, the rank-1 threshold stays at 2 turns (status length 3). The metric itself is weak
 while the AI never trades and never fights; see the report to the user for alternatives.
 
+## Round 5 (user's option B), 2026-10-17: King and Emperor, 200 turns, 12 games each
+
+New metrics (the user's choice): the share of rank-1 Gu holder-turns in food deficit, and Gu hunger deaths per clan
+per 100 turns; plus wars, captured cities and pillaged tiles. No crash in 30 games (24 + 6 control).
+
+| Metric | King | Emperor | Vanilla control, King (6 games) |
+|---|---|---|---|
+| Rank-1 holder-turns in deficit | 0.17% (35 of 21,184) | 0.40% (122 of 30,610) | — |
+| Gu hunger deaths per clan per 100 turns | 0.05 | 0.18 | — |
+| Rank-2: turns in deficit / deaths | 0 / 0 | 10 / 0 (3 episodes, all recovered) | — |
+| Games with a war | 4/12 | 5/12 | 5/6 |
+| Clan-turns at war | 3.4% | 1.8% | 7.6% |
+| Cities captured (at T200) | 0 | 1 | 6 |
+| Pillaged tile-turns | 4,967 | 3,428 | 501 |
+
+* **Hunger is irrelevant at every level tested.** Every clan ends with a surplus of every Gu food (mean over the game:
+  Moon Orchid 3.8–6.4, Wild Boar 3.7–5.6, Jade 3.4–5.1, Wine 2.1–2.8), the other path's food included. Supply outruns
+  the 8–10 Gu holders a clan keeps. Rank-1 threshold: unchanged (the user's rule).
+* **Conquest is broken.** Wars are half as frequent as in Vanilla and almost never take a city (1 in 24 games vs 6 in
+  6). The only Slice 1 victory besides the score is domination, so in practice nobody can win. Not yet explained;
+  candidates: city strength bonuses (Clan Head Pavilion, Formation Platform, Guardian Formations), ranged-only Moon
+  armies (ranged units cannot capture), upkeep keeping armies small.
+* **Wu vs Xiong: no dominance.** King: Xiong 4.5 cities, 28.5 units, White Jade Gu 7; Wu 4.2, 28.2, 5. Emperor: equal
+  within noise. Pork is not scarce for either (mean 4.8–5.6), so there is nothing to clash over.
+* **The refinement ladder stalls at rung 1.** At T200 the clans hold 8–11 rank-1 Gu each but 0.3–0.7 rank-2 Gu, and
+  Killer Move appears in none of the 30 games: the AI buys each unit's first attempt with the academy's starting XP and
+  rarely earns the 20 XP for a second one in peace.
+* **The tech tree runs out** at turn 113 (Emperor) to 123 (King) on average; the rest is Dao Comprehension.
+* **Stones.** Upkeep rises from 20% of gross income (T1–50) to 60% (T151–200), but treasuries still grow (mean 420
+  stones in T151–200): the AI stays solvent, the late game is not tense.
+* **Pillage is 7–10 times Vanilla's:** the wolf tides and barbarians (who heal only by pillaging) hit tiles hard. Pillar
+  3 shows up as pillage, not as deaths.
+
 ## Re-run
 
 ```
 tools/autoplay.py --games 12 --turns 100 --jobs 3 --out /tmp/ap      # about 1 minute on 4 cores
+tools/autoplay.py --games 12 --turns 200 --jobs 3 --difficulty King --out /tmp/apk   # about 2 minutes
 tools/autoplay.py --summarize /tmp/ap
 ```
