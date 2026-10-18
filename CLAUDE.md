@@ -129,6 +129,9 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `MOD_SPEC_2.md` — Immortal Arc (rank 5–9): Gate, mechanics map 1–17, lore seeds, budget, phases A–D, tension targets.
 * `MOD_SPEC_3.md` — amendment: rank chain R1–R9 on three unit types, every canonical path as promotion lines with
   attainment tiers, Venerable and Eternal Life; phases A3 (capability tests) → B3 (docs/PATHS.md) → C3 (migration).
+* `docs/PATHS.md` — MOD_SPEC_3 B3: the 46 canonical paths (source, verdict, family, signature, two moves), attainment
+  tiers, conflict matrix, AI main-path lock; drafted from `tools/b3/paths_data.py` (`gen_proto.py` builds a checkable
+  prototype).
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
 * `docs/LORE_MAPPING.md` — Phase 1: one row per Slice 1 object (lore, role, exact uniques, CANON/ADAPTED/INVENTED,
   [VERIFY]), questions for the user, refinement ladder, events in detail, balance starting numbers.

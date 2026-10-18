@@ -266,3 +266,15 @@
   turns in the red by turn 320 fall from 38 to 11 of 48 and the mean treasury rises from −69 to 101 stones; Marathon
   (480 turns) 3 → 2 of 24; King (200 turns) 1 → 0 of 48, but King treasuries now grow faster (BALANCE.md item 2). A
   richer Trading House ended the deficits but piled up 400–700 stones and was left out.
+
+## MOD_SPEC_3 Phase B3 — the path list (2026-10-18)
+
+* `docs/PATHS.md`: all 46 canonical paths (41 + 5 sub-paths) with Chinese, one source (raw chapter + fan-wiki page)
+  and verdict; seven families; one signature unique per path (no two alike); a mortal and an immortal killer move per
+  path (family templates; CANON / ADAPTED / INVENTED names); the canon nine-grade attainment ladder mapped onto four
+  tiers; the conflict matrix (every pair of paths costs Strength, canon clashes more, human none, sound little,
+  canon pairings none); an AI main-path lock. Six decisions for the user.
+* `tools/b3/`: the draft data and a throwaway prototype of all lines (300 promotions, 2,660 uniques): `check_all`
+  passes on it (lint and Unciv's own validator 0 findings); autoplay on it, 6 × 150 turns: 0 crashes, 264 of 264 AI
+  path promotions on the clan's main path. No content JSON ships.
+
