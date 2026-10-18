@@ -15,9 +15,10 @@ all 89 icons and 4 attack animations designed, style approved. Civilopedia (EN+I
 primeval-stones rename ("Batu Primordial") done 2026-10-18 (`data/civilopedia.csv`, `data/translations_id.csv`,
 `tools/gen_translations.py`). Round 6 (user): wild Gu 1.2% and contested buried inheritances
 (4 events, Gu Inheritance resource, Inheritance Dig); 3D pre-rendered characters (map sprites + civ layers, portraits,
-attack effects; `tools/art/render3d.py`). Left for Slice 1's Definition of Done: the user's 100-turn game on Android,
-`docs/KNOWN_ISSUES.md`, `docs/BALANCE.md`. Edit `data/` or the generators, then LORE_MAPPING.md; the
-self-tests keep jsons/, data/ and the document in sync.
+attack effects; `tools/art/render3d.py`); primeval-stone stat icon. `docs/BALANCE.md` (knobs + generated inventory,
+`tools/gen_balance.py`) and `docs/KNOWN_ISSUES.md` written 2026-10-18. Left for Slice 1's Definition of Done: the
+user's 100-turn game on Android. Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
+data/, BALANCE.md's inventory and the document in sync.
 
 The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter
 the plan; round 2 found two of their names unsupported. Research notes do not survive the container: record verdicts
@@ -111,6 +112,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `docs/LORE_MAPPING.md` — Phase 1: one row per Slice 1 object (lore, role, exact uniques, CANON/ADAPTED/INVENTED,
   [VERIFY]), questions for the user, refinement ladder, events in detail, balance starting numbers.
 * `docs/AUTOPLAY.md` — autoplay method, baseline data, A/B experiments, verdict on the user's tuning rule.
+* `docs/BALANCE.md` — knobs, evidence, what is off; inventory of every tunable number (`tools/gen_balance.py`).
+* `docs/KNOWN_ISSUES.md` — validator warnings explained, engine limits, trade-offs, what needs a real game.
 * `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.
 * `tools/gen_art.py` (+ `tools/art/`) → designed icons and attack animations (`Images/TileSets/AbsoluteUnits/Units/<unit

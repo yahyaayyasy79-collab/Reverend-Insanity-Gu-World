@@ -91,6 +91,9 @@ def main(argv: list[str]) -> int:
                 written += 1
             else:
                 kept.append(f"{unit_type}-attack-{n}")
+    # Gold is shown as primeval stones (tools/gen_translations.py): the stat icon and the in-text emoji become a stone
+    for path, px in (("StatIcons/Gold", 100), ("EmojiIcons/Gold", 50)):
+        written += save(glyphs2.primeval_stone_icon(px), images / f"{path}.png")
     # pre-rendered 3D characters (tools/art/characters.py, render3d.py): map sprites with civ-colour layers
     # (<name>-1 tinted by the nation's inner colour, <name>-2 by its outer colour [src TileLayerUnitSprite]),
     # UI portraits, and per-unit attack effects (played over the unit that takes the damage)

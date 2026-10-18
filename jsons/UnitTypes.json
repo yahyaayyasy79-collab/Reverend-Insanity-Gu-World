@@ -13,7 +13,7 @@
     "movementType": "Land",
     "civilopediaText": [
       {
-        "text": "Unpathed Gu Masters of rank one, the clan's base."
+        "text": "Unpathed Gu Masters of rank one, the clan's base. They choose a path when they reach rank two."
       }
     ]
   },
@@ -22,7 +22,7 @@
     "movementType": "Land",
     "civilopediaText": [
       {
-        "text": "Gu Masters of the moon path."
+        "text": "Gu Masters of the moon path. They fight up close, but open every clash with a thrown moon blade."
       }
     ]
   },
@@ -31,7 +31,7 @@
     "movementType": "Land",
     "civilopediaText": [
       {
-        "text": "Gu Masters of the strength path."
+        "text": "Gu Masters of the strength path. They hit hardest, and they cost the most to keep."
       }
     ]
   },
@@ -40,7 +40,7 @@
     "movementType": "Land",
     "civilopediaText": [
       {
-        "text": "The beasts of the wild: lightning wolves and their kings."
+        "text": "The beasts of the wild: lightning wolves and their kings. They pillage what they cannot eat."
       }
     ]
   }

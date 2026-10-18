@@ -175,7 +175,29 @@ rumour, and the rumour is real 1 in 2 (1 in 8 first gave only 0.42 inheritances 
 | Hunger deaths per clan per 100 turns | 0.45 | 0.52 |
 | Games with a war / cities captured / clans eliminated | 2/12 / 6 / 3 | 5/12 / 3 / 3 |
 
-Wild Gu add mouths, so hunger bites a little more; the ladder is unchanged; nothing crashed.
+Wild Gu add mouths; whether hunger bites more cannot be read from one batch (round 6b: identical batches differ
+twofold). The ladder is unchanged; nothing crashed.
+
+## Round 6b: replication, and how many games a metric needs (2026-10-18)
+
+Two more 12-game batches (King, 200 turns): one on the round-6 commit, one with the step-9 inheritance guard
+(`<in tiles without [resource]>`). The first batch and the round-6 batch ran the same ruleset with the same harness.
+
+| Batch | Hunger deaths per clan per 100 turns | Rank-1 deaths (per 100 holder-turns) | Inheritances per game | Wild Jade Skin / Black Boar per clan | Rank-2 Gu / Killer Move per clan | Games with a war / captured / eliminated | Clans 20+ turns in the red |
+|---|---|---|---|---|---|---|---|
+| Round 6 (above) | 0.52 | 22 (0.06) | 1.25 | 1.50 / 2.40 | 4.8 / 3.0 | 5 / 3 / 3 | 0 of 48 |
+| Same ruleset, again | 1.04 | 67 (0.18) | 2.00 | 1.48 / 2.15 | 4.8 / 2.8 | 4 / 6 / 1 | 2 of 48 |
+| With the inheritance guard | 1.13 | 74 (0.20) | 2.00 | 1.67 / 2.02 | 4.9 / 2.7 | 4 / 7 / 1 | 2 of 48 |
+| **Pooled, 36 games** | **0.90** | 163 (0.15) | **1.75** | 1.55 / 2.19 | 4.8 / 2.8 | 13 / 16 / 5 | 4 of 144 |
+
+* **Hunger deaths vary twofold between identical 12-game batches** (AI randomness is not seeded). The round-6 figure
+  0.52 was a low draw; use the pooled 0.90, and pool at least 36 games before tuning on this metric. Ladder, wild Gu
+  and inheritance figures are stable within about 25%.
+* The guard changes nothing measurable (inheritances 2.00 vs 2.00).
+* The user's rule: rank-1 Gu still die about once per 670 holder-turns and there is still no trade economy, so the
+  rank-1 threshold stays.
+* **Solvency:** 4 of 144 AI clans spent 20 or more turns with a negative treasury, all of them clans at war. None
+  fell into a disband spiral: the worst (Xiong, 41 turns, low of −144 stones) still fielded 24 units at turn 200.
 
 ## Re-run
 

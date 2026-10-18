@@ -94,8 +94,10 @@ APT = ("Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <
        "<for units without [Aptitude C]> <for units without [Aptitude D]>")
 NB = "Never appears as a Barbarian unit"
 WILD_GU_TRIGGER = "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>"
+# "Add [resource] to this tile" deletes the tile's resource [src UniqueTriggerActivation OneTimeAddResource]: never on a
+# Spirit Spring or a Gu food ("resource" matches every resource the civ can see; all are revealed by Inheritance Lore)
 INHERITANCE_TRIGGER = ("Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> "
-                       "<after discovering [Inheritance Lore]>")
+                       "<in tiles without [resource]> <after discovering [Inheritance Lore]>")
 TIDE = "Beast Tide"           # the spec's generic name; in Slice 1 the beasts are the canon wolf tide (lang chao)
 SPRING = "Awakening Grounds"  # R2 T6: the cave behind the clan-head pavilion: the clan's primeval spring and flower sea
 PAVILION = "Clan Head Pavilion"  # R2 T6: was "Clan Hall"; the ancestral hall (ci tang) is inside it

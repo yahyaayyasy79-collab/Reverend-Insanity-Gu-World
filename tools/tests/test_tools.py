@@ -397,6 +397,24 @@ class Translations(unittest.TestCase):
         self.assertEqual(missing, [], "objects without civilopedia text (data/civilopedia.csv)")
 
 
+class Balance(unittest.TestCase):
+    """docs/BALANCE.md lists every tunable number of jsons/ (MOD_SPEC section 10): its inventory must be current."""
+
+    def test_inventory_up_to_date(self):
+        if not (REPO_ROOT / "docs" / "BALANCE.md").exists():
+            self.skipTest("docs/BALANCE.md not written yet")
+        r = subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "gen_balance.py"), "--check"],
+                           capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+    def test_numbers_are_found(self):
+        import gen_balance as gb
+        self.assertEqual(gb.numbers("Gain [30]-[60] [Gold]"), ["30-60"])
+        self.assertEqual(gb.numbers("[-6 Gold] <for [20] turns>"), ["-6", "20"])
+        self.assertEqual(gb.numbers("[This Unit] gains the [Jade Skin Gu] promotion <when above [0] [Jade]> "
+                                    "<with [85]% chance>"), ["85"])  # food gates are logic, not balance
+
+
 class Packaging(unittest.TestCase):
     def test_too_much_tooling_is_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:

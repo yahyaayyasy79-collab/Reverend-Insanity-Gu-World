@@ -49,7 +49,7 @@
       "Can upgrade to [Rank Two Strength Gu Master]",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -72,7 +72,7 @@
       "Only available <after adopting [Strength Path]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Three Strength Gu Master",
     "attackSound": "nonmetalhit",
@@ -96,7 +96,7 @@
       "Only available <after adopting [Strength Path]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Four Strength Gu Master",
     "attackSound": "nonmetalhit",
@@ -120,7 +120,7 @@
       "Only available <after adopting [Strength Path]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
@@ -144,7 +144,7 @@
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Three Moon Gu Master",
     "attackSound": "whoosh",
@@ -169,7 +169,7 @@
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Four Moon Gu Master",
     "attackSound": "whoosh",
@@ -194,7 +194,7 @@
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "attackSound": "whoosh",
     "civilopediaText": [

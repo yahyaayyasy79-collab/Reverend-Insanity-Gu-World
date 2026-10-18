@@ -621,6 +621,26 @@ def inheritance_dig():
     return g
 
 
+def primeval_stone_icon(size=100):
+    """A coloured primeval stone (the Gold stat icon): a faceted gem in three tones with a dark rim, like the base
+    game's coloured stat icons."""
+    from PIL import Image, ImageDraw
+    k = 4
+    n = size * k
+    im = Image.new("RGBA", (n, n), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    P = lambda pts: [(x * n / 100, y * n / 100) for x, y in pts]  # noqa: E731
+    outer = [(50, 6), (86, 30), (80, 74), (50, 94), (20, 74), (14, 30)]
+    d.polygon(P(outer), fill=(46, 70, 66))
+    inner = [(50, 12), (80, 32), (75, 71), (50, 88), (25, 71), (20, 32)]
+    d.polygon(P(inner), fill=(160, 205, 190))
+    d.polygon(P([(50, 12), (80, 32), (50, 44), (20, 32)]), fill=(232, 246, 238))      # top facet
+    d.polygon(P([(20, 32), (50, 44), (50, 88), (25, 71)]), fill=(196, 228, 214))      # left facet
+    d.polygon(P([(80, 32), (75, 71), (50, 88), (50, 44)]), fill=(122, 170, 156))      # right facet, in shade
+    d.polygon(P([(36, 22), (48, 18), (40, 30)]), fill=(255, 255, 255))                # glint
+    return im.resize((size, size), Image.LANCZOS)
+
+
 ICONS2 = [
     ("ResourceIcons", "Gu Inheritance", gu_inheritance, "black"),
     ("ImprovementIcons", "Inheritance Dig", inheritance_dig, "black"),
