@@ -267,6 +267,4903 @@
     ]
   },
   {
+    "name": "Strength Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "No damage penalty for wounded units",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Transformation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Bone Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major} {non-[Xiong Clan]} {non-[Wu Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Strength Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Self-Reliance] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Xiong Clan]} {non-[Wu Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ]
+  },
+  {
+    "name": "Strength Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Xiong Clan]} {non-[Wu Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Strength Grandmaster"
+    ]
+  },
+  {
+    "name": "Strength Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Xiong Clan]} {non-[Wu Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Strength Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Self-Reliance",
+    "uniques": [
+      "[+25]% Strength"
+    ]
+  },
+  {
+    "name": "Myriad Self",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Myriad Self] status>"
+    ]
+  },
+  {
+    "name": "Transformation Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Double movement in [Forest]",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Bone Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Transformation Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Flying Bear Change] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Transformation Master"
+    ]
+  },
+  {
+    "name": "Transformation Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Transformation Grandmaster"
+    ]
+  },
+  {
+    "name": "Transformation Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Transformation Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Flying Bear Change",
+    "uniques": [
+      "[+25]% Strength"
+    ]
+  },
+  {
+    "name": "Ancient Sword Dragon",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Ancient Sword Dragon] status>"
+    ]
+  },
+  {
+    "name": "Bone Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength <when defending>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Blood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Bone Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Bone Spear] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Bone Master"
+    ]
+  },
+  {
+    "name": "Bone Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Bone Spike] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Bone Grandmaster"
+    ]
+  },
+  {
+    "name": "Bone Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Bone Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Bone Spear",
+    "uniques": [
+      "[+25]% Strength"
+    ]
+  },
+  {
+    "name": "Bone Spike",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Bone Spike] status>"
+    ]
+  },
+  {
+    "name": "Blood Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Heals [20] damage if it kills a unit",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Blood Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Blood Skull] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Blood Master"
+    ]
+  },
+  {
+    "name": "Blood Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Blood Grandmaster"
+    ]
+  },
+  {
+    "name": "Blood Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Blood Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Blood Skull",
+    "uniques": [
+      "[+25]% Strength"
+    ]
+  },
+  {
+    "name": "Blood Deity",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Blood Deity] status>"
+    ]
+  },
+  {
+    "name": "Sword Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when attacking>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Sword Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Sword Escape] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Sword Master"
+    ]
+  },
+  {
+    "name": "Sword Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Sword Grandmaster"
+    ]
+  },
+  {
+    "name": "Sword Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Sword Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Sword Escape",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Five Finger Fist Heart Sword",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Blade Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+50]% to Flank Attack bonuses",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Blade Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Edge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Blade Master"
+    ]
+  },
+  {
+    "name": "Blade Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Blade Grandmaster"
+    ]
+  },
+  {
+    "name": "Blade Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Blade Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Edge",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Autumn Blade Sweep",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Metal Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <vs cities>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Metal Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Iron Rain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Metal Master"
+    ]
+  },
+  {
+    "name": "Metal Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Metal Grandmaster"
+    ]
+  },
+  {
+    "name": "Metal Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Metal Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Iron Rain",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "City-Crushing Hammer",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Weapon Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength <when adjacent to a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Weapon Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Weapon Array] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Weapon Master"
+    ]
+  },
+  {
+    "name": "Weapon Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Weapon Grandmaster"
+    ]
+  },
+  {
+    "name": "Weapon Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Weapon Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Weapon Array",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Hundred Weapons",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Killing Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[This Unit] gains [1] movement <upon defeating a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Killing Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Killing Intent] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Killing Master"
+    ]
+  },
+  {
+    "name": "Killing Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Killing Grandmaster"
+    ]
+  },
+  {
+    "name": "Killing Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Killing Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Killing Intent",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Kill",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Fire Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Destroys tile improvements when attacking",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Fire Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Five-Finger Flame Chain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Fire Master"
+    ]
+  },
+  {
+    "name": "Fire Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Fire Grandmaster"
+    ]
+  },
+  {
+    "name": "Fire Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Fire Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Five-Finger Flame Chain",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Nirvana Fire",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Water Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "May travel on Water tiles without embarking",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major} {non-[Bai Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Water Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Stream Surge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Bai Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Water Master"
+    ]
+  },
+  {
+    "name": "Water Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Bai Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Water Grandmaster"
+    ]
+  },
+  {
+    "name": "Water Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Bai Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Water Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Stream Surge",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Worldly Wave Trace",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Wood Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[15] HP when healing",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Wood Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Rooted Vigor] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wood Master"
+    ]
+  },
+  {
+    "name": "Wood Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wood Grandmaster"
+    ]
+  },
+  {
+    "name": "Wood Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wood Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Rooted Vigor",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Verdant Renewal",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Earth Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Earth Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Nine-Ren Mountain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ]
+  },
+  {
+    "name": "Earth Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Earth Grandmaster"
+    ]
+  },
+  {
+    "name": "Earth Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Earth Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Nine-Ren Mountain",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Earthen Bulwark",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Wind Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[1] Movement",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Wind Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Gale Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wind Master"
+    ]
+  },
+  {
+    "name": "Wind Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wind Grandmaster"
+    ]
+  },
+  {
+    "name": "Wind Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wind Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Gale Step",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Wind-Rolled Dragon Whip",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Cloud Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Ignores terrain cost",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Cloud Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Cloud Stride] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Cloud Master"
+    ]
+  },
+  {
+    "name": "Cloud Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Cloud Grandmaster"
+    ]
+  },
+  {
+    "name": "Cloud Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Cloud Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Cloud Stride",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Rising Azure Cloud",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Ice Snow Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] loses [1] movement <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Ice Snow Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Frost Bind] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ]
+  },
+  {
+    "name": "Ice Snow Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Ice Snow Grandmaster"
+    ]
+  },
+  {
+    "name": "Ice Snow Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Ice Snow Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Frost Bind",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Frozen Domain",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Lightning Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <when above [1] movement>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Lightning Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Lightning Wings] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ]
+  },
+  {
+    "name": "Lightning Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Lightning Grandmaster"
+    ]
+  },
+  {
+    "name": "Lightning Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Lightning Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Lightning Wings",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Thunder Judgement",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Poison Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] gains the [Poisoned] status for [3] turn(s) <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Poison Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Bee Net Sting] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Poison Master"
+    ]
+  },
+  {
+    "name": "Poison Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Woman's Heart] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Poison Grandmaster"
+    ]
+  },
+  {
+    "name": "Poison Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Poison Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Bee Net Sting",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Woman's Heart",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Light Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Can move after attacking",
+      "[+10]% Strength",
+      "[-25]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Light Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Glare] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Light Master"
+    ]
+  },
+  {
+    "name": "Light Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Light Grandmaster"
+    ]
+  },
+  {
+    "name": "Light Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Light Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Glare",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Glare] status>"
+    ]
+  },
+  {
+    "name": "Saw-Wheel Light",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Saw-Wheel Light] status>"
+    ]
+  },
+  {
+    "name": "Dark Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Invisible to others",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Dark Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Shroud] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dark Master"
+    ]
+  },
+  {
+    "name": "Dark Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dark Grandmaster"
+    ]
+  },
+  {
+    "name": "Dark Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dark Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Shroud",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Shroud] status>"
+    ]
+  },
+  {
+    "name": "Dark Limit",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Dark Limit] status>"
+    ]
+  },
+  {
+    "name": "Shadow Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <vs [Wounded] units>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dark Master"
+    ]
+  },
+  {
+    "name": "Shadow Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Shadow Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Shadow Master"
+    ]
+  },
+  {
+    "name": "Shadow Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Shadow Grandmaster"
+    ]
+  },
+  {
+    "name": "Shadow Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Shadow Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Shadow Step",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Shadow Step] status>"
+    ]
+  },
+  {
+    "name": "Shadow Severance",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Shadow Severance] status>"
+    ]
+  },
+  {
+    "name": "Star Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[2] Sight",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Star Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Star Snake Rope] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Star Master"
+    ]
+  },
+  {
+    "name": "Star Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Star Grandmaster"
+    ]
+  },
+  {
+    "name": "Star Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Star Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Star Snake Rope",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Star Snake Rope] status>"
+    ]
+  },
+  {
+    "name": "Nebula Millstone",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Nebula Millstone] status>"
+    ]
+  },
+  {
+    "name": "Moon Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
+      "[+10]% Strength",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major} {non-[Gu Yue Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Moon Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Crescent Moon] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Gu Yue Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Moon Master"
+    ]
+  },
+  {
+    "name": "Moon Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Gu Yue Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Moon Grandmaster"
+    ]
+  },
+  {
+    "name": "Moon Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major} {non-[Gu Yue Clan]}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Moon Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Crescent Moon",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Crescent Moon] status>"
+    ]
+  },
+  {
+    "name": "Peerless Crescent Moon Slash",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Peerless Crescent Moon Slash] status>"
+    ]
+  },
+  {
+    "name": "Sound Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+10]% Strength",
+      "[-5]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Sound Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Qin Strike] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Sound Master"
+    ]
+  },
+  {
+    "name": "Sound Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Sound Grandmaster"
+    ]
+  },
+  {
+    "name": "Sound Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Sound Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Qin Strike",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Qin Strike] status>"
+    ]
+  },
+  {
+    "name": "Silence Beats Sound",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Silence Beats Sound] status>"
+    ]
+  },
+  {
+    "name": "Illusion Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Withdraws before melee combat",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Illusion Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Mirage] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Illusion Master"
+    ]
+  },
+  {
+    "name": "Illusion Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Illusion Grandmaster"
+    ]
+  },
+  {
+    "name": "Illusion Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Illusion Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Mirage",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Mirage] status>"
+    ]
+  },
+  {
+    "name": "Illusory Garden",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Illusory Garden] status>"
+    ]
+  },
+  {
+    "name": "Wisdom Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Can see invisible [All] units",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Wisdom Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Deduction] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ]
+  },
+  {
+    "name": "Wisdom Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Unravel Mystery] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wisdom Grandmaster"
+    ]
+  },
+  {
+    "name": "Wisdom Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wisdom Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Deduction",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Unravel Mystery",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Emotion Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when below [50] HP>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ]
+  },
+  {
+    "name": "Emotion Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Doting Mother] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Emotion Master"
+    ]
+  },
+  {
+    "name": "Emotion Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Emotion Grandmaster"
+    ]
+  },
+  {
+    "name": "Emotion Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Emotion Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Doting Mother",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Regret",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Enchantment Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] gains the [Charmed] status for [1] turn(s) <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Emotion Master",
+      "Wisdom Master"
+    ]
+  },
+  {
+    "name": "Enchantment Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Charming Glance] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Enchantment Master"
+    ]
+  },
+  {
+    "name": "Enchantment Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Enchantment Grandmaster"
+    ]
+  },
+  {
+    "name": "Enchantment Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Enchantment Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Charming Glance",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Captivation",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Soul Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[This Unit] gains [10] XP <upon defeating a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Soul Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Guts] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Soul Master"
+    ]
+  },
+  {
+    "name": "Soul Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Soul Grandmaster"
+    ]
+  },
+  {
+    "name": "Soul Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Soul Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Guts",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Soul Search",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Dream Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+50]% XP gained from combat",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Dream Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Waking Dream] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dream Master"
+    ]
+  },
+  {
+    "name": "Dream Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dream Grandmaster"
+    ]
+  },
+  {
+    "name": "Dream Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Dream Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Waking Dream",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Dreamy Light Smoke",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Enslavement Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "May capture killed [Barbarians] units",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Enslavement Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Wolf Enslavement] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Enslavement Master"
+    ]
+  },
+  {
+    "name": "Enslavement Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Enslavement Grandmaster"
+    ]
+  },
+  {
+    "name": "Enslavement Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Enslavement Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Wolf Enslavement",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Ambush on Eight Sides",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ]
+  },
+  {
+    "name": "Time Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Time Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Borrowed Moment] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Time Master"
+    ]
+  },
+  {
+    "name": "Time Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Time Grandmaster"
+    ]
+  },
+  {
+    "name": "Time Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Time Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Borrowed Moment",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Call of the Ancient",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Space Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "All tiles cost 1 movement",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Space Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Folded Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Space Master"
+    ]
+  },
+  {
+    "name": "Space Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Space Grandmaster"
+    ]
+  },
+  {
+    "name": "Space Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Can pass through impassable tiles",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Space Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Folded Step",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Sea and Sky Expands",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Rule Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Ignores Zone of Control",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Rule Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Bent Law] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ]
+  },
+  {
+    "name": "Rule Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Rule Grandmaster"
+    ]
+  },
+  {
+    "name": "Rule Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Rule Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Bent Law",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "One Step Back",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Phantom Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[This Unit] gains the [Phantom Veil] status for [1] turn(s) <upon losing at least [30] HP in a single attack>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ]
+  },
+  {
+    "name": "Phantom Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Hollow Form] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Phantom Master"
+    ]
+  },
+  {
+    "name": "Phantom Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Phantom Grandmaster"
+    ]
+  },
+  {
+    "name": "Phantom Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Phantom Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Hollow Form",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Phantom Body",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Restriction Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ]
+  },
+  {
+    "name": "Restriction Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Severing Essence] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Restriction Master"
+    ]
+  },
+  {
+    "name": "Restriction Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Restriction Grandmaster"
+    ]
+  },
+  {
+    "name": "Restriction Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Restriction Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Severing Essence",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Absolute Ban",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Luck Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <with [50]% chance>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Luck Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Fortune Rivalling Heaven] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Luck Master"
+    ]
+  },
+  {
+    "name": "Luck Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Luck Grandmaster"
+    ]
+  },
+  {
+    "name": "Luck Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Luck Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Fortune Rivalling Heaven",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Turn of Fortune",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Heaven Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when fighting units from a Civilization with more Cities than you>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Heaven Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Heaven's Rebuke] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Heaven Master"
+    ]
+  },
+  {
+    "name": "Heaven Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Heaven Grandmaster"
+    ]
+  },
+  {
+    "name": "Heaven Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Heaven Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Heaven's Rebuke",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Heavenly Web Protection Veil",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Qi Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+3] Strength",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Qi Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Exploding Qi Roar] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Qi Master"
+    ]
+  },
+  {
+    "name": "Qi Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Qi Grandmaster"
+    ]
+  },
+  {
+    "name": "Qi Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Qi Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Exploding Qi Roar",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ]
+  },
+  {
+    "name": "Qi Covers Mountains and Rivers",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ]
+  },
+  {
+    "name": "Refinement Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[-30]% Gold cost of upgrading",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Refinement Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Ink Transformation] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Refinement Master"
+    ]
+  },
+  {
+    "name": "Refinement Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Refinement Grandmaster"
+    ]
+  },
+  {
+    "name": "Refinement Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Refinement Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Ink Transformation",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Ink Transformation] status>"
+    ]
+  },
+  {
+    "name": "Heavenly Light Rotation",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Heavenly Light Rotation] status>"
+    ]
+  },
+  {
+    "name": "Formation Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength bonus for [Military] units within [1] tiles",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Formation Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Linked Formation] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Formation Master"
+    ]
+  },
+  {
+    "name": "Formation Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Formation Grandmaster"
+    ]
+  },
+  {
+    "name": "Formation Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Formation Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Linked Formation",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Linked Formation] status>"
+    ]
+  },
+  {
+    "name": "Grand Formation",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Grand Formation] status>"
+    ]
+  },
+  {
+    "name": "Food Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[-25]% maintenance costs",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Food Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Eat Bitterness] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Food Master"
+    ]
+  },
+  {
+    "name": "Food Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Food Grandmaster"
+    ]
+  },
+  {
+    "name": "Food Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Food Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Eat Bitterness",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Eat Bitterness] status>"
+    ]
+  },
+  {
+    "name": "Banquet of Immortals",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Banquet of Immortals] status>"
+    ]
+  },
+  {
+    "name": "Pill Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Unit will heal every turn, even if it performs an action",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Pill Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Recovery Pill] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Pill Master"
+    ]
+  },
+  {
+    "name": "Pill Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Pill Grandmaster"
+    ]
+  },
+  {
+    "name": "Pill Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Pill Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Recovery Pill",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Recovery Pill] status>"
+    ]
+  },
+  {
+    "name": "Life-Saving Pill",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Life-Saving Pill] status>"
+    ]
+  },
+  {
+    "name": "Information Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Can see over obstacles",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Information Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Mountain Pledge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Information Master"
+    ]
+  },
+  {
+    "name": "Information Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Information Grandmaster"
+    ]
+  },
+  {
+    "name": "Information Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Information Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Mountain Pledge",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Mountain Pledge] status>"
+    ]
+  },
+  {
+    "name": "Sea Oath",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Sea Oath] status>"
+    ]
+  },
+  {
+    "name": "Human Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "All adjacent units heal [10] HP when healing",
+      "[+10]% Strength",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Human Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Hopes of the Crowd] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Human Master"
+    ]
+  },
+  {
+    "name": "Human Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Human Grandmaster"
+    ]
+  },
+  {
+    "name": "Human Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Human Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Hopes of the Crowd",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Hopes of the Crowd] status>"
+    ]
+  },
+  {
+    "name": "Heroes Among People",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Heroes Among People] status>"
+    ]
+  },
+  {
+    "name": "Painting Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength <when fighting in [Friendly Land] tiles>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Painting Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Living Ink] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Painting Master"
+    ]
+  },
+  {
+    "name": "Painting Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Painting Grandmaster"
+    ]
+  },
+  {
+    "name": "Painting Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Painting Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Living Ink",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Living Ink] status>"
+    ]
+  },
+  {
+    "name": "Contented Lifestyle",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Contented Lifestyle] status>"
+    ]
+  },
+  {
+    "name": "Theft Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
+      "[+10]% Strength",
+      "Comment [Holding another path's Master tier costs Strength: dao marks interfere (see Civilopedia)]",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ]
+  },
+  {
+    "name": "Theft Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Light Fingers] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [{non-[Rank One Gu Master]} {non-[Rank Two Strength Gu Master]} {non-[Rank Two Moon Gu Master]}] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Theft Master"
+    ]
+  },
+  {
+    "name": "Theft Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [Rank Four Moon Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Theft Grandmaster"
+    ]
+  },
+  {
+    "name": "Theft Supreme Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength",
+      "Only available <for [Rank Four Strength Gu Master] units>",
+      "Unavailable <for [{AI player} {Major}] Civilizations>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "prerequisites": [
+      "Theft Great Grandmaster"
+    ]
+  },
+  {
+    "name": "Light Fingers",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Light Fingers] status>"
+    ]
+  },
+  {
+    "name": "Great Thief Ghost Hand",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Great Thief Ghost Hand] status>"
+    ]
+  },
+  {
+    "name": "Poisoned",
+    "uniques": [
+      "[This Unit] takes [10] damage <upon turn start>"
+    ]
+  },
+  {
+    "name": "Charmed",
+    "uniques": [
+      "[-25]% Strength <when attacking>"
+    ]
+  },
+  {
+    "name": "Sealed",
+    "uniques": [
+      "Can only heal by pillaging"
+    ]
+  },
+  {
+    "name": "Phantom Veil",
+    "uniques": [
+      "[+50]% Strength <when defending>"
+    ]
+  },
+  {
+    "name": "Shaken",
+    "uniques": [
+      "[-20]% Strength"
+    ]
+  },
+  {
     "name": "Test Path Old Type",
     "unitTypes": [
       "Gu Master"

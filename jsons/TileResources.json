@@ -195,6 +195,14 @@
     ]
   },
   {
+    "name": "Green Grape Immortal Essence",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled"
+    ]
+  },
+  {
     "name": "Test Lifespan Gu",
     "resourceType": "Strategic",
     "terrainsCanBeFoundOn": [],
