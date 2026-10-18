@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from paths_data import (P, FAMILIES, SIG_STATUSES, MOVES, CLASH, CLASH_PAIR, LOW, LOW_PAIR, NEUTRAL, COMPATIBLE,
-                        DEFAULT_PAIR, OWNERS)
+                        DEFAULT_PAIR, SIGNATURE, SIGNATURE_SHARE, MARKER)
 
 SRC = Path(__file__).resolve().parents[2] / "jsons"
 out = Path(sys.argv[1]); j = out / "jsons"
@@ -41,10 +41,20 @@ def pair_value(a, b):
     return DEFAULT_PAIR
 
 
-def ai_lines(k):
-    owners = OWNERS.get(k, [])
-    civ = "{AI player} {Major}" + "".join(f" {{non-[{o}]}}" for o in owners)
-    return [f"Unavailable <for [{civ}] Civilizations>", "[+400]% weight to this choice for AI decisions"]
+VARIED = set(sys.argv[2:])  # optional: clans treated as having no signature path (to measure variety)
+ROOTS = sum(1 for p in P if not p[4])
+SIG_WEIGHT = round((SIGNATURE_SHARE / (1 - SIGNATURE_SHARE) * (ROOTS - 1) - 1) * 100)
+
+
+def ai_lines(k, t, parent):
+    out = ["[+400]% weight to this choice for AI decisions"]
+    if t == 0:
+        out.insert(0, MARKER)
+        if not parent:  # one path per AI unit; sub-paths stay open to their parent's holders
+            out.append(f"Unavailable <for [AI player] Civilizations> <for [{MARKER}] units>")
+        out += [f"[+{SIG_WEIGHT}]% weight to this choice for AI decisions <for [{c}] Civilizations>"
+                for c in SIGNATURE.get(k, []) if c not in VARIED]
+    return out
 
 
 promos = L("UnitPromotions.json")
@@ -69,7 +79,7 @@ for (k, en, zh, fam, parent, src, verdict, sig, why, mortal, immortal) in P:
             u.append("Can pass through impassable tiles")
         if GATE[t]:
             u.append(GATE[t])
-        u += ai_lines(k)
+        u += ai_lines(k, t, parent)
         pre = [name(k, t - 1)] if t else ([name(parent)] + ([name("wisdom")] if k == "enchantment" else []) if parent else [])
         d = {"name": name(k, t), "unitTypes": TYPES, "uniques": u}
         if pre:

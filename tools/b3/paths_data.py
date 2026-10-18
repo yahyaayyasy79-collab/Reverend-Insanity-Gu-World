@@ -224,9 +224,12 @@ COMPATIBLE = {  # 0
     ("lightning", "sound"): "ch1068: a lightning-and-sound tribulation works as one",
 }
 
-# AI main path per nation (Slice 1 majors); arc majors are added in MOD_SPEC_2 Phase B
-OWNERS = {
+# Signature paths (user, 2026-10-18): only clans with a canon signature path lean on it; every other cultivator, in
+# those clans too, takes a varied path. An AI unit keeps one path (its first Master); humans may mix.
+SIGNATURE = {
     "moon": ["Gu Yue Clan"],
     "water": ["Bai Clan"],
     "strength": ["Xiong Clan", "Wu Clan"],
 }
+SIGNATURE_SHARE = 0.85  # MOD_SPEC_3 tension target: >=80% of a signature clan's path promotions on its path
+MARKER = "Path Master"  # filter marker on every Master: an AI unit holding one is offered no other root Master

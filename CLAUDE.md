@@ -30,7 +30,7 @@ mod errors green). MOD_SPEC_3 Phase A3 done 2026-10-18 (CAPABILITIES.md, E9-E10)
 MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). A3 approved
 2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md,
 47 paths) and B (LORE_MAPPING "Immortal arc") approved 2026-10-18 with the user's decisions; the C3 migration plan
-(PATHS.md, M1-M9, legacy bridge for saves) waits at its checkpoint; the test branch carries all 47 lines for the
+(PATHS.md, M1-M9, legacy bridge for saves) approved 2026-10-18 except two open questions (animations, path Gu); the test branch carries all 47 lines for the
 user's Android promotion-screen check.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
@@ -67,6 +67,11 @@ in LORE_MAPPING.md.
   `Can transform to`; fire destroys improvements; Bai's main path Water; Eastern Sea major Zombie Alliance, Western
   Desert major Fang clan; all 15 inheritances (over the cap of 12, the user's call); dream realms by era (canon), Fate
   Gu's fall throws the qi tides; seed corrections accepted (Yellow Apricot rank 9, four blessed-land grades).
+* C3 checkpoint (user, 2026-10-18): migration plan with the legacy bridge approved; Moon/Strength policy branches
+  kept; every cultivator takes its own path and Gu unless its clan has a canon signature path (Gu Yue Moon, Bai Water,
+  Xiong and Wu Strength lean ~85%; arc majors have none); one path per AI unit (`Path Master` marker); the user's
+  Marathon game is over. Open: attack animations per rank (answer unclear: "only when attacked by a lone Gu Master or
+  an enemy") and Gu for paths without one.
 * Saves: Unciv deletes units missing from the ruleset on load [src BackwardCompatibility.removeUnitsAndPromotions];
   never remove a unit a running game may hold without a legacy bridge.
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the

@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from paths_data import (P, FAMILIES, MOVE_TEMPLATE_TEXT, CLASH, CLASH_PAIR, LOW, LOW_PAIR, NEUTRAL, COMPATIBLE,
-                        DEFAULT_PAIR, OWNERS)
+                        DEFAULT_PAIR)
 
 key = {p[0]: p for p in P}
 c = lambda s: "`" + s.replace("|", "\\|") + "`"

@@ -303,3 +303,13 @@
 * `docs/PATHS.md`: the C3 migration plan (M1–M9), with a legacy bridge because Unciv deletes a save's units that the
   ruleset no longer has. Nothing changes in the ruleset before approval.
 
+## C3 checkpoint answers (2026-10-18)
+
+* Migration plan approved with the legacy bridge; the Moon and Strength policy branches stay.
+* AI paths, the user's rule: every cultivator takes its own path unless its clan has a canon signature path. The B3
+  lock is replaced by a `Path Master` marker (an AI unit holding one Master is offered no other root Master) and
+  signature weights for Gu Yue (Moon), Bai (Water), Xiong and Wu (Strength). Prototype autoplay: one path per AI unit,
+  80% of signature-clan cultivators on the signature path at the 80% setting and 86% (12 games) at the shipped 85%, 18–19 different paths in a
+  clan without one. `tools/unique_allowlist.txt` gains the marker.
+* `docs/TESTING.md`: on Android the console button appears only after a long press on the ☰ menu icon [src].
+

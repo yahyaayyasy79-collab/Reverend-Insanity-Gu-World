@@ -19,7 +19,8 @@ migration plan at the end waits for approval (⛔); then C3 turns this document 
   promotions, 1,024 conflict lines) passes `tools/check_all --mod <prototype> --no-self-test`: `lint_uniques` 2,726
   uniques, 0 errors, 0 warnings; Unciv 4.22.8's own validator 0 lines; the only warnings are missing icons.
   Autoplay on the prototype (6 games × 150 turns, Prince): 0 crashes, and the four AI clans held 258 path
-  promotions, **258 on their main path** (see "AI"; the 46-line draft gave 264 of 264). Re-run: `tools/b3/gen_proto.py OUT && tools/check_all --mod OUT
+  promotions, **258 on their main path** under the draft's lock (the 46-line draft gave 264 of 264); the lock was
+  then replaced by signature leanings (see "AI"). Re-run: `tools/b3/gen_proto.py OUT && tools/check_all --mod OUT
   --no-self-test`; the tables below come from `tools/b3/paths_data.py` (`tools/b3/gen_tables.py`).
 * What the prototype does **not** prove (C3 capability tests, one object each): the effects in battle of the
   signatures marked ⚠️ below, the move buttons, and how the promotion screen copes with 42 root lines.
@@ -36,7 +37,7 @@ migration plan at the end waits for approval (⛔); then C3 turns this document 
 4. **Transformation without `Can transform to [unit]`** (a beast form per rank would be 9 more units, over the
    Gu-unit budget): `Double movement in [Forest]`.
 5. **Fire burns the land**: `Destroys tile improvements when attacking`, Spirit Spring caves included.
-6. **Bai's main path is Water** (F: the Bai clan specialises in water and ice; its emblem is the Stream Gu).
+6. **Bai's signature path is Water** (F: the Bai clan specialises in water and ice; its emblem is the Stream Gu).
 
 ## The paths
 
@@ -157,7 +158,7 @@ Grandmaster`), linked by `prerequisites`, `unitTypes` = all three unit types (E1
 
 | Tier | Gate (`Only available <for [mapUnitFilter] units>`) | Carries | Starting numbers |
 |---|---|---|---|
-| Master | none; a sub-path also needs its parent's Master | the signature, the conflict lines, the AI lock | `[+10]% Strength` |
+| Master | none; a sub-path also needs its parent's Master | the signature, the conflict lines, the `Path Master` marker and the AI one-path rule | `[+10]% Strength` |
 | Grandmaster | rank 3+ (C3 writes the filter over the rank chain's units) | the mortal move button | `[+15]% Strength` |
 | Great Grandmaster | rank 6+ (Gu Immortal or Venerable) | the immortal move button | `[+20]% Strength` |
 | Supreme Grandmaster | rank 8+ | space only: `Can pass through impassable tiles`; MOD_SPEC_3's Venerable Ascension counts these | `[+25]% Strength` |
@@ -254,20 +255,31 @@ rank holding three Masters (+30% −30% for three pairs, three signatures); duel
 
 ## AI
 
-* **Main path lock.** Each path's Master carries `Unavailable <for [{AI player} {Major} {non-[<owner>]}] Civilizations>`:
-  an AI major can only enter its own main path; humans and city-states can enter any. The AI buys every promotion it
-  can afford [src `NextTurnAutomation.applyPromotions`: weighted random while XP lasts], so weights alone would push
-  AI units into off-path lines whenever the next main tier is rank-gated; the lock makes the main-path share 100%
-  (prototype: 258 of 258), above MOD_SPEC_3's ≥80% target. The A3 weight math stays for the choice between path
-  tiers (`[+400]% weight to this choice for AI decisions`), Refine Gu and generic promotions.
-* **Canon cost of the lock:** immortals often keep a secondary path (Venerables a hidden specialty, R ch2204); the AI
-  will not. A designated AI secondary would break the 80% target, because the AI buys whatever is left.
-* **Main paths:** Gu Yue — Moon (Slice 1; Moonlight Gu's path is [VERIFY], LORE_MAPPING); Bai — Water (decision 6);
-  Xiong — Strength (Bear Strength Gu, CANON); Wu — Strength (Wu Ji, CANON, LORE_MAPPING). Proposals for the arc majors
-  (the user picked them in MOD_SPEC_2 Phase B): Heavenly Court — Wisdom (Star Constellation's true inheritance stays
-  in the Court); Huang Jin / Longevity Heaven — Luck (Giant Sun); Zombie Alliance (Eastern Sea) — Soul [VERIFY] (no
-  canon path; the Shadow Sect, Spectral Soul's split souls, ran it, R V4/367); Fang clan (Western Desert) — Formation
-  [VERIFY] (no canon path; it holds three Gu Houses, formation-path fortresses, R V5/498).
+User decision (C3 checkpoint, 2026-10-18): **every cultivator takes its own path and Gu, unless its clan has a canon
+signature path.** That replaces the main-path lock of the B3 draft.
+
+* **One path per AI unit.** Every Master carries the filter marker `Path Master`; each root Master (not the sub-paths)
+  also carries `Unavailable` `<for [AI player] Civilizations>` `<for [mapUnitFilter] units>` on that marker, so an AI
+  unit that holds any Master is offered no other root Master. Its sub-paths stay open (they do not clash with the
+  parent). Humans may mix paths and pay the conflict lines. Needed because the AI buys every promotion it can afford
+  [src `NextTurnAutomation.applyPromotions`: weighted random while XP lasts]; without the rule cultivation XP would
+  pile two or three paths onto every AI unit.
+* **Signature clans lean, they are not locked.** Gu Yue — Moon, Bai — Water, Xiong — Strength, Wu — Strength get
+  `[relativeAmount]% weight to this choice for AI decisions` `<for [civFilter] Civilizations>` on their path's
+  Master, sized so that about 85% of their cultivators take it (MOD_SPEC_3's ≥80% target, with margin); the rest
+  take other paths, as canon's Gu Yue produced a strength-path Fang Yuan. All other clans, the arc's majors
+  included (Heavenly Court, Huang Jin, Zombie Alliance, Fang clan), have no signature path: their cultivators
+  spread over all paths.
+* **Evidence (prototype, autoplay 6 games × 150 turns, Prince).** Signature weight for 80%: the four clans held
+  25 / 26 / 29 / 33 root Masters on 25 / 26 / 29 / 33 Gu Masters (one path each), 69–85% on the signature path
+  (pooled 80%, small samples). With Bai and Wu treated as having no signature path: 18 and 19 different paths among
+  27 and 31 cultivators. At the shipped 85% setting (12 games): 84–89% per clan, pooled 214 of 249 (86%), still
+  one path per unit (249 root Masters on 250 Gu Masters), 0 crashes.
+* **Path tiers vs other promotions:** `[+400]% weight to this choice for AI decisions` on every tier keeps the AI
+  spending XP on its path before generic promotions; Refine Gu keeps its own weights (E4).
+* **Canon cost:** immortals often keep a secondary path (Venerables a hidden specialty, R ch2204); AI units do not.
+* **Gu per path:** Slice 1's mortal Gu belong to the Moon and Strength ladders; cultivators of other paths have no
+  path Gu yet (open question, C3).
 
 ## Budget (MOD_SPEC_3)
 
@@ -313,13 +325,18 @@ this plan.
 | # | Step | Detail |
 |---|---|---|
 | M1 | Rank chain | New Rank Two / Three / Four Gu Master (type Gu Master); Rank One upgrades to the one Rank Two. Per rank the Strength line's numbers (strength 14 / 22 / 32, cost 60 / 95 / 140, upkeep +100 / +125 / +175%): Moon units lose 1–3 base Strength, their Master gives back the moon blade and +10%. Rank Five comes with MOD_SPEC_2 C1 |
-| M2 | Path lines, tiers 1–2 | `data/paths.csv` + `tools/gen_paths.py` from `tools/b3/`: 47 Masters, 47 Grandmasters with their mortal moves (47 move statuses), 5 signature statuses, the conflict lines, the AI lock and weights. Tiers 3–4 and the immortal moves wait for MOD_SPEC_2 C3 (they need the Gu Immortal type and essence) |
+| M2 | Path lines, tiers 1–2 | `data/paths.csv` + `tools/gen_paths.py` from `tools/b3/`: 47 Masters, 47 Grandmasters with their mortal moves (47 move statuses), 5 signature statuses, the conflict lines, the AI one-path rule and the signature-clan weights. Tiers 3–4 and the immortal moves wait for MOD_SPEC_2 C3 (they need the Gu Immortal type and essence) |
 | M3 | Retarget the filters | Every `[Moon Gu Master]` / `[Strength Gu Master]` becomes `[Moon Master]` / `[Strength Master]` (a promotion name is a valid mapUnitFilter); the Righteous/Demonic rebellions name Rank Two Gu Master; the refinement ladder keys on the Masters, and `tools/ladder_check.py` walks promotion states, including a human unit holding both Masters (it must match at most one ladder) |
 | M4 | Legacy bridge for saves | Keep the 6 old units and 2 types, hidden (`Will not be displayed in Civilopedia`, `Unbuildable`, `Cannot be purchased`), each upgrading at its next turn start into the same-rank Gu Master after gaining its path's Master (`[unitTriggerTarget] gains the [promotion] promotion` and `[unitTriggerTarget] upgrades for free`, both `<upon turn start>`); promotions and XP survive the upgrade (A3 test 1). Reason: on load Unciv **deletes** every unit of a save that the ruleset no longer has [src `BackwardCompatibility.removeUnitsAndPromotions`], so removing them outright would wipe the Gu Masters of every running game. A capability test comes first (the order of the two triggers). Deleting the legacy objects later is a separate decision |
 | M5 | Policies | Keep both branches (no deletion, no rename), retargeted to the Masters and still mutually exclusive; Bai's personality drops its Moon priority (Bai is Water now) |
 | M6 | Art | Map sprites stay per clan through civ-name variants [src `TileSetStrings.tryGetUnitImageLocation`: `<unit>-<civ name>`]: Gu Yue and Bai keep the moon art (Bai until water art exists), Xiong and Wu the strength art; other civs get a neutral render. Attack animations follow the unit name or unit type only [src `BattleTableHelpers.getAttackAnimationLocation`], so after M1 they are per rank, no longer per path: the moon-blade and boar-charge effects become one effect per rank |
-| M7 | Balance | Autoplay A/B (Prince, Standard, 320 turns; King, 200 turns): conquest per clan, E8 city strength re-tuned, solvency (round 8 must hold), refinement-ladder throughput (path tiers now compete with Refine Gu for XP), AI main-path share ≥80% |
+| M7 | Balance | Autoplay A/B (Prince, Standard, 320 turns; King, 200 turns): conquest per clan, E8 city strength re-tuned, solvency (round 8 must hold), refinement-ladder throughput (path tiers now compete with Refine Gu for XP), signature-clan share ≥80% and path spread in the other clans |
 | M8 | Text | LORE_MAPPING rows (the self-test demands them), civilopedia EN + ID, translations, BALANCE inventory, KNOWN_ISSUES (attack effects, the 42-root promotion screen) |
 | M9 | Android | The promotion screen on the test mod first (branch `test/capability-tests`, all 47 lines on Slice 1's units), then the shipped step |
 
 Nothing is deleted or renamed in M1–M9: the six units and two types live on as hidden legacy objects.
+
+**Decisions (user, 2026-10-18):** the plan with the legacy bridge is approved; the Moon and Strength policy branches
+stay; cultivators take their own paths unless their clan has a signature path (see "AI"); the user's Marathon game is
+over, so the legacy units can be deleted whenever the user says. Open: the attack animations (M6) and Gu for the
+paths that have none.

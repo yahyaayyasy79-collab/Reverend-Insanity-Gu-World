@@ -63,8 +63,9 @@ behaviour, not for syntax.
 
 ## Developer console
 
-Open with the backtick key on the world screen (desktop) or long-press the hamburger menu → "Developer Console"
-(mobile); Enter on empty input lists commands. Names with spaces: `"Quoted Name"` or `dashed-name`.
+Open with the backtick key on the world screen (desktop) or **long-press** the ☰ menu icon (top left) → "Developer
+Console" (mobile; a normal tap opens the menu without that button, and the console is off when more than one human
+plays) [src `WorldScreenMenuPopup`, `ActivationTypes.Longpress`]; Enter on empty input lists commands. Names with spaces: `"Quoted Name"` or `dashed-name`.
 
 ```
 civ activatetrigger "Triggers a [Beast Tide] event"      # any Triggerable unique; validated against the ruleset
