@@ -108,3 +108,5 @@ UnitTypes.json,Gu Master,"Unpathed Gu Masters of rank one, the clan's base.","Gu
 UnitTypes.json,Moon Gu Master,Gu Masters of the moon path.,Gu Master jalur bulan.
 UnitTypes.json,Strength Gu Master,Gu Masters of the strength path.,Gu Master jalur kekuatan.
 UnitTypes.json,Beast,The beasts of the wild: lightning wolves and their kings.,Binatang buas di alam liar: serigala petir dan raja-rajanya.
+TileResources.json,Gu Inheritance,"A dead Gu Master's inheritance (传承), unearthed and held: recipes, materials, insight. Whoever holds the ground holds the prize, so nobody holds it for long without a fight.","Warisan seorang Gu Master yang telah mati (传承), tergali dan dikuasai: resep, bahan, pemahaman. Siapa yang menguasai tanahnya menguasai hadiahnya, jadi tak ada yang menguasainya lama tanpa pertarungan."
+TileImprovements.json,Inheritance Dig,"Diggers open an inheritance slowly and carefully, so that it does not destroy itself. Haste has buried more heirs than enemies have.","Para penggali membuka warisan pelan-pelan dan hati-hati, agar ia tidak menghancurkan dirinya sendiri. Ketergesaan telah mengubur lebih banyak pewaris daripada musuh."

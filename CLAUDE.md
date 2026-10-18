@@ -13,7 +13,9 @@ per clan at T200), hunger matters once wars pillage food tiles, tech tree ends ~
 one laborer per city [src ConstructionAutomation.addWorkerChoice]; the user wants laborers produced, not given). Art:
 all 89 icons and 4 attack animations designed, style approved. Civilopedia (EN+ID), Indonesian translation and the
 primeval-stones rename ("Batu Primordial") done 2026-10-18 (`data/civilopedia.csv`, `data/translations_id.csv`,
-`tools/gen_translations.py`). Left for Slice 1's Definition of Done: the user's 100-turn game on Android,
+`tools/gen_translations.py`). Round 6 (user): wild Gu 1.2% and contested buried inheritances
+(4 events, Gu Inheritance resource, Inheritance Dig); 3D pre-rendered characters (map sprites + civ layers, portraits,
+attack effects; `tools/art/render3d.py`). Left for Slice 1's Definition of Done: the user's 100-turn game on Android,
 `docs/KNOWN_ISSUES.md`, `docs/BALANCE.md`. Edit `data/` or the generators, then LORE_MAPPING.md; the
 self-tests keep jsons/, data/ and the document in sync.
 

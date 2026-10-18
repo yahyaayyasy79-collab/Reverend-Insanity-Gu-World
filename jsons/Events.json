@@ -259,5 +259,96 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Wild Gu",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "Only the wind in the grass",
+        "uniques": [
+          "[+300]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "A wild Gu stirs nearby",
+        "uniques": [
+          "Triggers a [Wild Gu Caught] event",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wild Gu Caught",
+    "text": "Your Gu Master has cornered a wild Gu. Which one will it be?",
+    "choices": [
+      {
+        "text": "Capture the wild Liquor Worm",
+        "uniques": [
+          "Only available <for [Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]>",
+          "[This Unit] gains the [Liquor Worm] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Capture the wild Jade Skin Gu",
+        "uniques": [
+          "Only available <for units without [Jade Skin Gu]> <for units without [White Jade Gu]> <for units without [Moon Raiment]> <when above [0] [Jade]>",
+          "[This Unit] gains the [Jade Skin Gu] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Capture the wild Black Boar Gu",
+        "uniques": [
+          "Only available <for [Strength Gu Master] units> <for units without [Black Boar Gu]> <when above [0] [Wild Boar]>",
+          "[This Unit] gains the [Black Boar Gu] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inheritance Rumour",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "An empty cave",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Something is buried here",
+        "uniques": [
+          "Triggers a [Buried Inheritance] event",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Buried Inheritance",
+    "text": "Your Gu Master has unearthed a buried Gu inheritance. Word will spread fast.",
+    "choices": [
+      {
+        "text": "Claim it for the clan",
+        "uniques": [
+          "Add [Gu Inheritance] to this tile",
+          "Gain control over [Land] tiles in a [1]-tile radius",
+          "[This Unit] gains [20] XP",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Strip it and vanish",
+        "uniques": [
+          "Gain [60] [Gold]",
+          "[This Unit] gains [30] XP",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
   }
 ]

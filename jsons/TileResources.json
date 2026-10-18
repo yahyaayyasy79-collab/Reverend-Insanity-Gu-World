@@ -142,6 +142,40 @@
     ]
   },
   {
+    "name": "Gu Inheritance",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [
+      "Grassland",
+      "Plains",
+      "Tundra",
+      "Desert",
+      "Snow",
+      "Hill",
+      "Forest",
+      "Jungle",
+      "Marsh",
+      "Flood plains",
+      "Oasis"
+    ],
+    "science": 3,
+    "culture": 2,
+    "gold": 2,
+    "improvement": "Inheritance Dig",
+    "improvementStats": {
+      "science": 2,
+      "gold": 2
+    },
+    "uniques": [
+      "Doesn't generate naturally",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A dead Gu Master's inheritance (传承), unearthed and held: recipes, materials, insight. Whoever holds the ground holds the prize, so nobody holds it for long without a fight."
+      }
+    ]
+  },
+  {
     "name": "Furs",
     "resourceType": "Luxury",
     "terrainsCanBeFoundOn": [

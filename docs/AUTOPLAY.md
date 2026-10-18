@@ -161,6 +161,22 @@ The ladder now plays out: climbing costs XP, stones (the attempts and the higher
 hunger meter matters. 2 XP chosen: the slower climb. The aptitude die checks out in the same data: A 8%, B 27%,
 C 31%, D 33% of Gu Masters.
 
+## Round 6: wild Gu and buried inheritances (2026-10-18)
+
+The user asked for wild Gu (about 1.2%) and for inheritances the clans fight over. Each Gu Master rolls 6% per
+turn and 1 in 5 of those is a real wild Gu (1.2%); in foreign land after Inheritance Lore it rolls 1% per turn for a
+rumour, and the rumour is real 1 in 2 (1 in 8 first gave only 0.42 inheritances per game). King, 200 turns, 12 games:
+
+| Measure | Before round 6 (round 5d) | Round 6 |
+|---|---|---|
+| Inheritances held at T200 per game | — | 1.25 (8 of 12 games; Gu Yue 2, Bai 4, Xiong 4, Wu 5) |
+| Wild Gu per clan at T200: Jade Skin / Black Boar / Liquor Worm | 0.08 / 0 / 0 | 1.50 / 2.40 / 0.02 |
+| Rank-2 Gu / Killer Move per clan | 5.1 / 2.8 | 4.8 / 3.0 |
+| Hunger deaths per clan per 100 turns | 0.45 | 0.52 |
+| Games with a war / cities captured / clans eliminated | 2/12 / 6 / 3 | 5/12 / 3 / 3 |
+
+Wild Gu add mouths, so hunger bites a little more; the ladder is unchanged; nothing crashed.
+
 ## Re-run
 
 ```

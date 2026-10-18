@@ -1,733 +1,1356 @@
 
 game.png
-size: 2048, 1024
+size: 2048, 2048
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 BuildingIcons/Awakening Grounds
   rotate: false
-  xy: 220, 868
+  xy: 412, 1236
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Clan Head Pavilion
   rotate: false
-  xy: 436, 868
+  xy: 412, 264
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Flower Wine Monk Inheritance
   rotate: false
-  xy: 436, 760
+  xy: 520, 1128
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Formation Platform
   rotate: false
-  xy: 544, 868
+  xy: 628, 1236
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Gu Academy
   rotate: false
-  xy: 4, 220
+  xy: 520, 1020
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Gu Feeding House
   rotate: false
-  xy: 220, 436
+  xy: 520, 912
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Martial Arena
   rotate: false
-  xy: 112, 112
+  xy: 628, 156
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Moon Orchid Flower Sea
   rotate: false
-  xy: 652, 652
+  xy: 736, 1020
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Refinement Chamber
   rotate: false
-  xy: 436, 112
+  xy: 1440, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shang Clan City
   rotate: false
-  xy: 976, 652
+  xy: 980, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Tavern
   rotate: false
-  xy: 868, 436
+  xy: 844, 1166
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Trading House
   rotate: false
-  xy: 1084, 652
+  xy: 844, 950
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 CityStateIcons/Merchant Clan
   rotate: false
-  xy: 328, 328
+  xy: 736, 1344
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 CityStateIcons/Mortal Villages
   rotate: false
-  xy: 436, 328
+  xy: 736, 372
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 CityStateIcons/Refiner Tribe
   rotate: false
-  xy: 544, 220
+  xy: 1332, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Beast Lair
   rotate: false
-  xy: 4, 436
+  xy: 412, 696
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ImprovementIcons/Inheritance Dig
+  rotate: false
+  xy: 520, 588
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Inheritance Site
   rotate: false
-  xy: 112, 220
+  xy: 520, 480
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Spring Cave
   rotate: false
-  xy: 436, 4
+  xy: 1304, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Bai Clan
   rotate: false
-  xy: 4, 544
+  xy: 412, 1128
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Gu Yue Clan
   rotate: false
-  xy: 544, 760
+  xy: 520, 696
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Wu Clan
   rotate: false
-  xy: 1084, 544
+  xy: 844, 86
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Xiong Clan
   rotate: false
-  xy: 1192, 652
+  xy: 736, 48
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Demonic Path
   rotate: false
-  xy: 328, 652
+  xy: 628, 1344
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Moon Path
   rotate: false
-  xy: 760, 760
+  xy: 736, 912
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Righteous Path
   rotate: false
-  xy: 760, 436
+  xy: 764, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Strength Path
   rotate: false
-  xy: 652, 220
+  xy: 844, 1382
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Beast Hunters
   rotate: false
-  xy: 328, 868
+  xy: 412, 804
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Boar Strength
   rotate: false
-  xy: 220, 652
+  xy: 412, 480
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Clan Rules
   rotate: false
-  xy: 4, 328
+  xy: 412, 156
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Guardian Formations
   rotate: false
-  xy: 652, 868
+  xy: 628, 804
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Lone Cultivators
   rotate: false
-  xy: 4, 4
+  xy: 628, 264
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Moon Blade Step
   rotate: false
-  xy: 436, 436
+  xy: 736, 1236
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Moonlight Mastery
   rotate: false
-  xy: 220, 112
+  xy: 736, 588
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Orchid Terraces
   rotate: false
-  xy: 652, 544
+  xy: 736, 156
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Plunder
   rotate: false
-  xy: 760, 652
+  xy: 684, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Righteous Alliance
   rotate: false
-  xy: 652, 328
+  xy: 1440, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Ruthless Cultivation
   rotate: false
-  xy: 868, 544
+  xy: 872, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Unyielding Body
   rotate: false
-  xy: 1192, 760
+  xy: 844, 842
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Gu Inheritance
+  rotate: false
+  xy: 520, 804
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Jade
   rotate: false
-  xy: 220, 328
+  xy: 628, 588
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Moon Orchid
   rotate: false
-  xy: 544, 544
+  xy: 736, 1128
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Spirit Spring
   rotate: false
-  xy: 1084, 760
+  xy: 1088, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Wild Boar
   rotate: false
-  xy: 652, 112
+  xy: 844, 518
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Wine
   rotate: false
-  xy: 760, 220
+  xy: 844, 410
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Aperture Awakening
   rotate: false
-  xy: 4, 868
+  xy: 276, 36
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Beast Enslavement
   rotate: false
-  xy: 220, 760
+  xy: 412, 912
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Dao Comprehension
   rotate: false
-  xy: 220, 544
+  xy: 520, 1236
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Gu Feeding
   rotate: false
-  xy: 112, 328
+  xy: 628, 1128
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Gu Formations
   rotate: false
-  xy: 328, 544
+  xy: 628, 1020
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Gu Refinement
   rotate: false
-  xy: 436, 652
+  xy: 628, 912
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Inheritance Lore
   rotate: false
-  xy: 4, 112
+  xy: 628, 696
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Merchant Caravans
   rotate: false
-  xy: 220, 220
+  xy: 492, 48
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Rank Four Cultivation
   rotate: false
-  xy: 976, 868
+  xy: 792, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Rank Three Cultivation
   rotate: false
-  xy: 544, 328
+  xy: 900, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Rank Two Cultivation
   rotate: false
-  xy: 868, 652
+  xy: 1224, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Spirit Spring Lore
   rotate: false
-  xy: 1192, 868
+  xy: 1196, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Super Clan Commerce
   rotate: false
-  xy: 760, 328
+  xy: 844, 1274
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Wine Brewing
   rotate: false
-  xy: 868, 328
+  xy: 844, 302
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beast-attack-1
   rotate: false
-  xy: 1300, 764
+  xy: 4, 4
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beast-attack-2
   rotate: false
-  xy: 1408, 872
+  xy: 1520, 1494
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beast-attack-3
   rotate: false
-  xy: 652, 8
+  xy: 1548, 1692
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Beast-attack-4
   rotate: false
-  xy: 760, 116
+  xy: 1652, 1692
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf
+  rotate: false
+  xy: 4, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-1
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-2
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf-1
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf-2
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Mortal Laborer-2
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-1
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-2
+  rotate: false
+  xy: 140, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-1
+  rotate: false
+  xy: 4, 1678
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-1
+  rotate: false
+  xy: 4, 1678
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-2
+  rotate: false
+  xy: 140, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-2
+  rotate: false
+  xy: 140, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-3
+  rotate: false
+  xy: 276, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-3
+  rotate: false
+  xy: 276, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-4
+  rotate: false
+  xy: 4, 1560
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-4
+  rotate: false
+  xy: 4, 1560
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Clan Settler
+  rotate: false
+  xy: 140, 1696
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Clan Settler-1
+  rotate: false
+  xy: 412, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Clan Settler-2
+  rotate: false
+  xy: 4, 1442
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
 TileSets/AbsoluteUnits/Units/Gu Master-attack-1
   rotate: false
-  xy: 868, 224
+  xy: 1624, 1588
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Gu Master-attack-2
   rotate: false
-  xy: 976, 332
+  xy: 1624, 1484
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Gu Master-attack-3
   rotate: false
-  xy: 1084, 440
+  xy: 1520, 1390
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf
+  rotate: false
+  xy: 140, 1578
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
 TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-1
   rotate: false
-  xy: 1192, 548
+  xy: 1624, 1380
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-2
   rotate: false
-  xy: 1300, 660
+  xy: 1520, 1286
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-3
   rotate: false
-  xy: 1512, 872
+  xy: 1624, 1276
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Moon Gu Master-attack-4
   rotate: false
-  xy: 1616, 872
+  xy: 1728, 1484
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
+TileSets/AbsoluteUnits/Units/Mortal Laborer
+  rotate: false
+  xy: 548, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Mortal Laborer-1
+  rotate: false
+  xy: 140, 1460
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master
+  rotate: false
+  xy: 548, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-1
+  rotate: false
+  xy: 4, 1188
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-2
+  rotate: false
+  xy: 140, 1342
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-1
+  rotate: false
+  xy: 820, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-2
+  rotate: false
+  xy: 4, 1070
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-3
+  rotate: false
+  xy: 140, 1224
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-4
+  rotate: false
+  xy: 956, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master
+  rotate: false
+  xy: 4, 952
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-1
+  rotate: false
+  xy: 1092, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-2
+  rotate: false
+  xy: 4, 834
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-1
+  rotate: false
+  xy: 140, 970
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-2
+  rotate: false
+  xy: 1228, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-3
+  rotate: false
+  xy: 4, 716
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-4
+  rotate: false
+  xy: 140, 852
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank One Gu Master
+  rotate: false
+  xy: 1364, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank One Gu Master-1
+  rotate: false
+  xy: 140, 734
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank One Gu Master-2
+  rotate: false
+  xy: 1500, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank One Gu Master-attack-1
+  rotate: false
+  xy: 4, 462
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank One Gu Master-attack-2
+  rotate: false
+  xy: 140, 616
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank One Gu Master-attack-3
+  rotate: false
+  xy: 1636, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master
+  rotate: false
+  xy: 4, 344
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-1
+  rotate: false
+  xy: 1772, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-2
+  rotate: false
+  xy: 4, 226
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-1
+  rotate: false
+  xy: 140, 362
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-2
+  rotate: false
+  xy: 1908, 1932
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-3
+  rotate: false
+  xy: 4, 108
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-4
+  rotate: false
+  xy: 140, 244
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master
+  rotate: false
+  xy: 140, 126
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-1
+  rotate: false
+  xy: 412, 1678
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-2
+  rotate: false
+  xy: 820, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-1
+  rotate: false
+  xy: 956, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-2
+  rotate: false
+  xy: 1092, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-3
+  rotate: false
+  xy: 1228, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-4
+  rotate: false
+  xy: 1364, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master
+  rotate: false
+  xy: 1500, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-1
+  rotate: false
+  xy: 1772, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-2
+  rotate: false
+  xy: 1908, 1814
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-1
+  rotate: false
+  xy: 140, 8
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-2
+  rotate: false
+  xy: 1772, 1696
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-3
+  rotate: false
+  xy: 1908, 1696
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-4
+  rotate: false
+  xy: 276, 1578
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master
+  rotate: false
+  xy: 276, 1460
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-1
+  rotate: false
+  xy: 276, 1342
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-2
+  rotate: false
+  xy: 548, 1560
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-1
+  rotate: false
+  xy: 276, 1224
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-2
+  rotate: false
+  xy: 276, 1106
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-3
+  rotate: false
+  xy: 276, 988
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-4
+  rotate: false
+  xy: 276, 870
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
 TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-1
   rotate: false
-  xy: 1720, 872
+  xy: 1728, 1380
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-2
   rotate: false
-  xy: 1824, 872
+  xy: 1728, 1276
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-3
   rotate: false
-  xy: 1928, 872
+  xy: 952, 1278
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Strength Gu Master-attack-4
   rotate: false
-  xy: 1300, 556
+  xy: 952, 1174
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf
+  rotate: false
+  xy: 276, 752
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-1
+  rotate: false
+  xy: 276, 498
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-2
+  rotate: false
+  xy: 276, 380
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-3
+  rotate: false
+  xy: 276, 262
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-4
+  rotate: false
+  xy: 276, 144
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
 UnitIcons/Bold Lightning Wolf
   rotate: false
-  xy: 328, 760
+  xy: 412, 372
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Clan Settler
   rotate: false
-  xy: 112, 436
+  xy: 520, 1344
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Lightning Wolf
   rotate: false
-  xy: 652, 760
+  xy: 628, 372
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mortal Laborer
   rotate: false
-  xy: 328, 220
+  xy: 736, 480
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Moon Gu Master
   rotate: false
-  xy: 220, 4
+  xy: 900, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Strength Gu Master
   rotate: false
-  xy: 328, 112
+  xy: 792, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank One Gu Master
   rotate: false
-  xy: 436, 220
+  xy: 1008, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Moon Gu Master
   rotate: false
-  xy: 652, 436
+  xy: 1116, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Strength Gu Master
   rotate: false
-  xy: 760, 544
+  xy: 1008, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Moon Gu Master
   rotate: false
-  xy: 976, 760
+  xy: 1116, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Strength Gu Master
   rotate: false
-  xy: 1084, 868
+  xy: 1332, 1706
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Thunder Crown Wolf
   rotate: false
-  xy: 976, 544
+  xy: 844, 1058
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitPortraits/Bold Lightning Wolf
+  rotate: false
+  xy: 4, 1796
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Clan Settler
+  rotate: false
+  xy: 276, 1796
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Lightning Wolf
+  rotate: false
+  xy: 412, 1796
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Mortal Laborer
+  rotate: false
+  xy: 4, 1306
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank Four Moon Gu Master
+  rotate: false
+  xy: 684, 1914
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank Four Strength Gu Master
+  rotate: false
+  xy: 140, 1088
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank One Gu Master
+  rotate: false
+  xy: 4, 580
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank Three Moon Gu Master
+  rotate: false
+  xy: 140, 480
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank Three Strength Gu Master
+  rotate: false
+  xy: 548, 1678
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank Two Moon Gu Master
+  rotate: false
+  xy: 1636, 1796
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Rank Two Strength Gu Master
+  rotate: false
+  xy: 412, 1542
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+UnitPortraits/Thunder Crown Wolf
+  rotate: false
+  xy: 276, 616
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/Aptitude A
   rotate: false
-  xy: 4, 760
+  xy: 384, 36
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Aptitude B
   rotate: false
-  xy: 112, 868
+  xy: 548, 1452
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Aptitude C
   rotate: false
-  xy: 4, 652
+  xy: 656, 1452
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Aptitude D
   rotate: false
-  xy: 112, 760
+  xy: 412, 1344
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Bear Strength Gu
   rotate: false
-  xy: 112, 652
+  xy: 412, 1020
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Black Boar Gu
   rotate: false
-  xy: 112, 544
+  xy: 412, 588
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Jade Hunger
   rotate: false
-  xy: 328, 436
+  xy: 520, 372
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Jade Skin Gu
   rotate: false
-  xy: 436, 544
+  xy: 628, 480
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Killer Move
   rotate: false
-  xy: 544, 652
+  xy: 520, 264
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Killer Moves
   rotate: false
-  xy: 544, 652
+  xy: 520, 264
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Liquor Worm
   rotate: false
-  xy: 760, 868
+  xy: 520, 156
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moon Raiment
   rotate: false
-  xy: 868, 868
+  xy: 736, 804
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moonlight Gu
   rotate: false
-  xy: 112, 4
+  xy: 736, 696
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Orchid Hunger
   rotate: false
-  xy: 544, 436
+  xy: 736, 264
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Pork Hunger
   rotate: false
-  xy: 868, 760
+  xy: 684, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Refine Gu
   rotate: false
-  xy: 328, 4
+  xy: 1224, 1598
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Stream Gu
   rotate: false
-  xy: 544, 112
+  xy: 1412, 1490
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/White Boar Gu
   rotate: false
-  xy: 1300, 868
+  xy: 844, 734
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/White Jade Gu
   rotate: false
-  xy: 544, 4
+  xy: 844, 626
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Wine Hunger
   rotate: false
-  xy: 976, 436
+  xy: 844, 194
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

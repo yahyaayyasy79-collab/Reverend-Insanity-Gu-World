@@ -93,6 +93,9 @@ GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]
 APT = ("Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> "
        "<for units without [Aptitude C]> <for units without [Aptitude D]>")
 NB = "Never appears as a Barbarian unit"
+WILD_GU_TRIGGER = "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>"
+INHERITANCE_TRIGGER = ("Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> "
+                       "<after discovering [Inheritance Lore]>")
 TIDE = "Beast Tide"           # the spec's generic name; in Slice 1 the beasts are the canon wolf tide (lang chao)
 SPRING = "Awakening Grounds"  # R2 T6: the cave behind the clan-head pavilion: the clan's primeval spring and flower sea
 PAVILION = "Clan Head Pavilion"  # R2 T6: was "Clan Hall"; the ancestral hall (ci tang) is inside it
@@ -125,6 +128,8 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [8]% chance> <for [Major] Civilizations>",
     "Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [3]% chance> <for [Major] Civilizations>",
     "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations>",
+    # R6: a held (excavated) inheritance teaches the clan's Gu Masters
+    "[+20]% XP gained from combat <with [Gu Inheritance]>",
 ]})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
@@ -183,6 +188,11 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
         # containsBuildingOrEquivalent]). Without it XP came only from battle and the ladder stalled at rung 1.
         u["uniques"].append(f"[This Unit] gains [{r['cultivationXP']}] XP <upon turn start> <in cities with a [Gu Academy]> "
                             "<for units without [Killer Move]>")
+    # R6 (the user's request): wild Gu and buried inheritances are found by Gu Masters in the field. Chances are whole
+    # numbers [docs Unique-parameters nonNegativeAmount], so each is a small trigger followed by a weighted die (E1):
+    # 6% x 1/5 = 1.2% per Gu Master per turn for a wild Gu; 1% x 1/2 per turn in foreign land for an inheritance
+    # (1/8 gave 0.4 inheritances per game in autoplay; 1/2 aims at about 1.5).
+    u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER]
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      "uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
@@ -381,6 +391,37 @@ dump("Events.json", [
             "Only available <after adopting [Demonic Path]>", "Gain [70] [Gold]",
             "Triggers a [Betrayal] event <with [25]% chance>", w("+50")]},
     ]},
+    # R6: wild Gu. Stage 1 is silent (None): 1 in 5 goes on to stage 2, a popup for the human (Alert; the AI rolls).
+    # Only Gu that live wild in canon or plausibly so: the Liquor Worm (lured wild in canon), Jade Skin Gu, Black Boar
+    # Gu; never the Moonlight Gu, which only Gu Yue breeds. Each is food-gated and keeps the ladder's invariants.
+    {"name": "Wild Gu", "presentation": "None", "choices": [
+        {"text": "Only the wind in the grass", "uniques": [w("+300")]},
+        {"text": "A wild Gu stirs nearby", "uniques": ["Triggers a [Wild Gu Caught] event", w("+0")]},
+    ]},
+    {"name": "Wild Gu Caught", "text": "Your Gu Master has cornered a wild Gu. Which one will it be?", "choices": [
+        {"text": "Capture the wild Liquor Worm", "uniques": [
+            "Only available <for [Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]>",
+            "[This Unit] gains the [Liquor Worm] promotion", w("+0")]},
+        {"text": "Capture the wild Jade Skin Gu", "uniques": [
+            "Only available <for units without [Jade Skin Gu]> <for units without [White Jade Gu]> <for units without [Moon Raiment]> <when above [0] [Jade]>",
+            "[This Unit] gains the [Jade Skin Gu] promotion", w("+0")]},
+        {"text": "Capture the wild Black Boar Gu", "uniques": [
+            "Only available <for [Strength Gu Master] units> <for units without [Black Boar Gu]> <when above [0] [Wild Boar]>",
+            "[This Unit] gains the [Black Boar Gu] promotion", w("+0")]},
+    ]},
+    # R6: a buried inheritance. Silent rumour (1 in 2 is real), then the popup. Claiming it puts a Gu Inheritance on
+    # the tile and takes the tiles around it, from whoever owns them (diplomatic penalty for stealing territory [src
+    # OneTimeTakeOverTilesInRadius]): the clans fight over it.
+    {"name": "Inheritance Rumour", "presentation": "None", "choices": [
+        {"text": "An empty cave", "uniques": [w("+0")]},
+        {"text": "Something is buried here", "uniques": ["Triggers a [Buried Inheritance] event", w("+0")]},
+    ]},
+    {"name": "Buried Inheritance", "text": "Your Gu Master has unearthed a buried Gu inheritance. Word will spread fast.", "choices": [
+        {"text": "Claim it for the clan", "uniques": [
+            "Add [Gu Inheritance] to this tile", "Gain control over [Land] tiles in a [1]-tile radius",
+            "[This Unit] gains [20] XP", w("+100")]},
+        {"text": "Strip it and vanish", "uniques": ["Gain [60] [Gold]", "[This Unit] gains [30] XP", w("+0")]},
+    ]},
 ])
 
 # ---------------- Buildings (12: 7 + 1 Wu unique + 2 national wonders + 2 world wonders) ----------------
@@ -501,6 +542,12 @@ dump("TileResources.json", [
           "terrainsCanBeFoundOn": ["Hill"], "gold": 1, "improvement": "Mine", "improvementStats": {"gold": 1},
           "uniques": SB}, **DEP),
     {"name": "Wine", "resourceType": "Strategic", "terrainsCanBeFoundOn": []},
+    # R6: a buried inheritance, placed only by the Buried Inheritance event (never generated); not tradeable
+    {"name": "Gu Inheritance", "resourceType": "Strategic",
+     "terrainsCanBeFoundOn": ["Grassland", "Plains", "Tundra", "Desert", "Snow", "Hill", "Forest", "Jungle", "Marsh",
+                              "Flood plains", "Oasis"],
+     "science": 3, "culture": 2, "gold": 2, "improvement": "Inheritance Dig", "improvementStats": {"science": 2, "gold": 2},
+     "uniques": ["Doesn't generate naturally", "Cannot be traded"]},
     {"name": "Furs", "resourceType": "Luxury", "terrainsCanBeFoundOn": ["Forest", "Tundra", "Jungle"], "gold": 2,
      "improvement": "Camp", "improvementStats": {"gold": 1}},
 ])
@@ -527,6 +574,8 @@ imp = [
      "uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn when in your territory"]},
     {"name": "Beast Lair", "terrainsCanBeBuiltOn": ["Land"],
      "uniques": ["Unpillagable", "Unbuildable", "Excluded from map editor", "Marks a barbarian camp"]},
+    {"name": "Inheritance Dig", "techRequired": "Inheritance Lore", "turnsToBuild": 5,
+     "uniques": ["Can only be built to improve a resource", "Does not need removal of [Forest]", "Does not need removal of [Jungle]"]},
     {"name": "Inheritance Site", "terrainsCanBeBuiltOn": ["Land"],
      "uniques": ["Unpillagable", "Provides a random bonus when entered", "Unbuildable",
                  "Does not need removal of [Forest]", "Does not need removal of [Jungle]"]},

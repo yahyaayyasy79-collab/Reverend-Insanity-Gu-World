@@ -598,7 +598,32 @@ def dao_comprehension():
     return g
 
 
+def gu_inheritance():
+    """A sealed inheritance chest with a Gu on its lid."""
+    g = G()
+    g.poly([(14, 46), (86, 46), (82, 90), (18, 90)])                                    # chest
+    g.ell(14, 26, 86, 60); g.poly([(14, 44), (86, 44), (86, 48), (14, 48)])
+    g.line([(14, 46), (86, 46)], 3, 0)
+    g.poly([(44, 56), (56, 56), (56, 72), (44, 72)], 0); g.circ(50, 62, 3)               # lock
+    gu_beetle(g, 50, 18, 0.45, legs=False, v=0)
+    for k in range(7):
+        a = math.radians(30 + k * 20)
+        g.line([(50 + 40 * math.cos(a), 30 - 26 * math.sin(a)), (50 + 48 * math.cos(a), 30 - 32 * math.sin(a))], 2.5)
+    return g
+
+
+def inheritance_dig():
+    g = G()
+    g.poly([(26, 22), (74, 22), (78, 70), (22, 70)]); g.ell(26, 10, 74, 34)             # stele
+    g.circ(50, 42, 9, 0); g.circ(50, 42, 4)
+    g.line([(60, 94), (88, 58)], 5); g.poly([(84, 50), (96, 58), (90, 66), (80, 60)])     # spade
+    g.ell(8, 74, 60, 94)                                                                 # dug earth
+    return g
+
+
 ICONS2 = [
+    ("ResourceIcons", "Gu Inheritance", gu_inheritance, "black"),
+    ("ImprovementIcons", "Inheritance Dig", inheritance_dig, "black"),
     ("UnitIcons", "Clan Settler", clan_settler, "white"),
     ("UnitIcons", "Mortal Laborer", mortal_laborer, "white"),
     ("UnitIcons", "Rank Three Moon Gu Master", lambda: moon_gu_master(3), "white"),

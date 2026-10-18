@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, glyphs, glyphs2  # noqa: E402
+from art import anims, characters, glyphs, glyphs2, render3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -91,6 +91,26 @@ def main(argv: list[str]) -> int:
                 written += 1
             else:
                 kept.append(f"{unit_type}-attack-{n}")
+    # pre-rendered 3D characters (tools/art/characters.py, render3d.py): map sprites with civ-colour layers
+    # (<name>-1 tinted by the nation's inner colour, <name>-2 by its outer colour [src TileLayerUnitSprite]),
+    # UI portraits, and per-unit attack effects (played over the unit that takes the damage)
+    units = images / "TileSets" / UNITSET / "Units"
+    for name, build in characters.UNITS.items():
+        wolf = "Wolf" in name
+        frame = dict(size=(128, 110), scale=3.4 if wolf else 4.4, center=(0.0, 0.7 if wolf else 0.95))
+        out = render3d.render(build(), **frame)
+        for suffix, key in (("", "base"), ("-1", "layer1"), ("-2", "layer2")):
+            written += save(out[key], units / f"{name}{suffix}.png")
+        mats = {"robe": render3d.Mat(characters.PORTRAIT_ROBE.get(name, (120, 120, 120))),
+                "trim": render3d.Mat(characters.PORTRAIT_TRIM)}
+        pscale, pcenter = ((1.7, (0.1, 0.8)) if name == "Lightning Wolf" else (2.0, (0.1, 0.9)) if wolf
+                           else (1.5, (0.0, 1.5)))
+        portrait = render3d.render(build(), size=(128, 128), scale=pscale * (1.12 if name == "Thunder Crown Wolf" else 1.0),
+                                   center=pcenter, yaw=30, elevation=12, shadow=False, layers=False, mats=mats)
+        written += save(portrait["base"], images / "UnitPortraits" / f"{name}.png")
+        for n, effect in enumerate(characters.ATTACKS.get(name, []), start=1):
+            fx = render3d.render(effect(), **frame, shadow=False, layers=False, glow=1.2)
+            written += save(fx["base"], units / f"{name}-attack-{n}.png")
     if args.sheet:
         contact_sheet(sheet, args.sheet)
     if not args.quiet:

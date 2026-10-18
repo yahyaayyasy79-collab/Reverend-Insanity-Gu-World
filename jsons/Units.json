@@ -47,7 +47,9 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Can upgrade to [Rank Two Moon Gu Master]",
       "Can upgrade to [Rank Two Strength Gu Master]",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -68,7 +70,9 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Three Strength Gu Master",
     "attackSound": "nonmetalhit",
@@ -90,7 +94,9 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Four Strength Gu Master",
     "attackSound": "nonmetalhit",
@@ -112,7 +118,9 @@
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "attackSound": "nonmetalhit",
     "civilopediaText": [
@@ -134,7 +142,9 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Three Moon Gu Master",
     "attackSound": "whoosh",
@@ -157,7 +167,9 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Four Moon Gu Master",
     "attackSound": "whoosh",
@@ -180,7 +192,9 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <after discovering [Inheritance Lore]>"
     ],
     "attackSound": "whoosh",
     "civilopediaText": [

@@ -172,3 +172,15 @@
   Stones** / **Batu Primordial** (the user's choice) by overriding every base key with the word Gold.
 * Self-tests: translations up to date, every displayed string translated (ours or the base game's), placeholders
   kept, every new object has civilopedia text.
+
+## Phase 2, step 8 — wild Gu, contested inheritances, 3D characters (2026-10-18)
+
+* Wild Gu (the user's request, 1.2%): every Gu Master rolls 6% per turn, 1 in 5 of those corners a wild Gu (popup;
+  the AI rolls): a Liquor Worm, Jade Skin Gu or Black Boar Gu, food-gated and ladder-safe; never the Moonlight Gu.
+* Buried inheritances: a Gu Master in foreign land, once the clan knows Inheritance Lore, rolls 1% per turn for a
+  rumour, real 1 in 2. Claiming adds a **Gu Inheritance** to the tile (new resource: never generated, not tradeable;
+  +3 insight, +2 culture, +2 stones; improved by the new **Inheritance Dig**, +20% combat XP for the holder) and takes
+  the tiles within 1, from whoever owns them, at a diplomatic cost: clans fight over it. Autoplay: 1.25 per game.
+* Four events (two silent dice), one resource, one improvement: over the Slice 1 budget at the user's request.
+* 3D characters: `tools/art/render3d.py` (SDF ray-marcher) and `characters.py` pre-render the twelve units as map
+  sprites with civ-colour layers, UI portraits and per-unit Gu attack effects; `docs/ART.md` documents them.

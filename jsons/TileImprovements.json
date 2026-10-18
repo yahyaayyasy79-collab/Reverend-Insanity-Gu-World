@@ -111,6 +111,21 @@
     ]
   },
   {
+    "name": "Inheritance Dig",
+    "techRequired": "Inheritance Lore",
+    "turnsToBuild": 5,
+    "uniques": [
+      "Can only be built to improve a resource",
+      "Does not need removal of [Forest]",
+      "Does not need removal of [Jungle]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Diggers open an inheritance slowly and carefully, so that it does not destroy itself. Haste has buried more heirs than enemies have."
+      }
+    ]
+  },
+  {
     "name": "Inheritance Site",
     "terrainsCanBeBuiltOn": [
       "Land"

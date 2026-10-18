@@ -29,3 +29,25 @@ art on a 32x32 grid scaled 3x to match the default AbsoluteUnits unit set.
 | Moon Gu Master | a moon blade sweeps and shatters into moonlight | silver-blue | whoosh |
 | Strength Gu Master | boar tusks slam, impact star, shock rings | earth and amber | nonmetalhit |
 | Beast (lightning wolves) | bolt from above, flash, sparks | electric blue | shot |
+
+## 3D characters (pre-rendered)
+
+Unciv draws 2D images only, so the twelve units are modelled in 3D and pre-rendered by `tools/art/render3d.py` (a
+numpy ray-marcher over signed distance fields: spheres, capsules, round cones, ellipsoids, tori, crescent blades;
+three-band toon shading, rim light, specular on metal and jade, outlines, glow on Gu effects) from scenes in
+`tools/art/characters.py`.
+
+* **Map sprites** `Images/TileSets/AbsoluteUnits/Units/<unit>.png` (the default unit set), 128x110, three-quarter
+  view with a ground shadow, plus `<unit>-1.png` (robe, tinted with the clan's inner colour) and `<unit>-2.png`
+  (sash, collar, banner: the outer colour) [src `TileLayerUnitSprite`, `getLayeredImageColored`].
+* **Portraits** `Images/UnitPortraits/<unit>.png`, 128x128, head and shoulders, robe in the path's colour; Unciv uses
+  them everywhere except the world map [docs Images-and-Audio.md].
+* **Attack effects** `<unit>-attack-<n>.png`, chosen by the attacker's unit name: rank-one essence burst; Moon: one,
+  two or three moon blades by rank; Strength: an essence boar charge and shock rings in the rank's essence colour;
+  wolves: a lightning strike (golden for the Thunder Crown Wolf). The pixel frames per unit type stay as fallback.
+* **Rank reads as essence** (canon colours): a ring at the feet in green copper (rank one), red iron (two), white
+  silver (three), yellow gold (four); Strength masters grow broader and gain bracers and boar-skull pauldrons; Moon
+  masters gain blades and, at rank four, a moon behind the back.
+* Limits: Unciv has no idle or walking animation and no death animation; an attack effect plays when a unit takes
+  damage, including the killing blow. The effect follows the attacker's unit (path and rank), not the Gu it holds
+  [src `BattleTableHelpers.getAttackAnimationLocation`].
