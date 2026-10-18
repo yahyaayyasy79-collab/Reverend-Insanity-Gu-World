@@ -259,5 +259,34 @@
         "text": "A king of ten thousand beasts (雷冠头狼) crowned with thunder. When one comes down the mountain, the village either holds or ceases to exist."
       }
     ]
+  },
+  {
+    "name": "Test Rank Five",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 40,
+    "cost": 10,
+    "upgradesTo": "Test Rank Six"
+  },
+  {
+    "name": "Test Rank Six",
+    "unitType": "Gu Immortal",
+    "movement": 2,
+    "strength": 60,
+    "cost": 10,
+    "upgradesTo": "Test Venerable"
+  },
+  {
+    "name": "Test Venerable",
+    "unitType": "Venerable",
+    "movement": 2,
+    "strength": 100,
+    "cost": 10,
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "Unbuildable",
+      "Cannot be purchased",
+      "[This Unit] takes [30] damage <upon turn start>"
+    ]
   }
 ]

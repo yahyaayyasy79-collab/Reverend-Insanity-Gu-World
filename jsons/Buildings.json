@@ -202,5 +202,23 @@
         "text": "The Southern Border's great market city (商家城), where even demonic loot changes hands. The Shang clan does not ask where the goods came from."
       }
     ]
+  },
+  {
+    "name": "Test Ascension",
+    "isWonder": true,
+    "cost": 10,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ]
+  },
+  {
+    "name": "Test True Inheritance",
+    "isWonder": true,
+    "cost": 10,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ]
   }
 ]

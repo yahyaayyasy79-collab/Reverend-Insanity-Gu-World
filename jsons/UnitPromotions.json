@@ -265,5 +265,66 @@
         "text": "The wine has run out and the Liquor Worm is starving. It will not wait long."
       }
     ]
+  },
+  {
+    "name": "Test Path Old Type",
+    "unitTypes": [
+      "Gu Master"
+    ],
+    "uniques": [
+      "[2] Sight"
+    ]
+  },
+  {
+    "name": "Test Path All",
+    "unitTypes": [
+      "Gu Master",
+      "Gu Immortal",
+      "Venerable"
+    ],
+    "uniques": [
+      "[1] Movement"
+    ]
+  },
+  {
+    "name": "Test Tier Immortal",
+    "unitTypes": [
+      "Gu Master",
+      "Gu Immortal",
+      "Venerable"
+    ],
+    "prerequisites": [
+      "Test Path All"
+    ],
+    "uniques": [
+      "Only available <for [Gu Immortal] units>",
+      "[+20]% Strength"
+    ]
+  },
+  {
+    "name": "Test Wu Path",
+    "unitTypes": [
+      "Gu Master",
+      "Gu Immortal",
+      "Venerable"
+    ],
+    "uniques": [
+      "[+5]% Strength",
+      "[-95]% weight to this choice for AI decisions",
+      "[+19900]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
+    ]
+  },
+  {
+    "name": "Test Bai Path",
+    "unitTypes": [
+      "Gu Master",
+      "Gu Immortal",
+      "Venerable"
+    ],
+    "uniques": [
+      "[+5]% Strength",
+      "[-95]% weight to this choice for AI decisions",
+      "[+19900]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>"
+    ]
   }
 ]

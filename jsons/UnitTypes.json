@@ -43,5 +43,13 @@
         "text": "The beasts of the wild: lightning wolves and their kings. They pillage what they cannot eat."
       }
     ]
+  },
+  {
+    "name": "Gu Immortal",
+    "movementType": "Land"
+  },
+  {
+    "name": "Venerable",
+    "movementType": "Land"
   }
 ]
