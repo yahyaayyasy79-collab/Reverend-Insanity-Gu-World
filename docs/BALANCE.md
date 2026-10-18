@@ -32,8 +32,8 @@ decides the rank-1 threshold) and the round-5 delegation ("bebas, yang sesuai da
 | City strength from techs | `cityStrengthFromTechsFullMultiplier` 0.1 (+12 with every tech) | `tools/gen_ruleset.py` `ModOptions` | 1.0: 0 cities captured in 12 games; 0.1: 16 captured, 8 clans eliminated (5b) | Re-tune whenever the tech tree or unit strengths change (E8) |
 | Gu Master strength, Strength path | 8 (Rank One), 14 / 22 / 32 | `data/gu_masters.csv` `strength` | Strength clans capture 8 cities per 12 games (5c) | Together with the Moon row |
 | Gu Master strength, Moon path | 13 / 20 / 29, melee, moon blade 40% of melee strength before each clash with a unit | `data/gu_masters.csv` `strength`, `extra_uniques` | Ranged Moon armies captured 0 cities; melee + 40% blade: 5 (5c) | If Gu Yue or Bai are eliminated in more than 2 of 12 games |
-| Gu Master upkeep | Rank One +25%; Strength +100 / +175 / +275%; Moon +75 / +150 / +225% | `data/gu_masters.csv` `maintenance` | Upkeep is 20% of gross income in T1–50 and 60% in T151–200 (round 5) | See "What the data says is off": the spec asks for about 40% early |
-| Free upkeep | none for majors: `[-3] units cost no maintenance` cancels the engine's 3 free units [src CivInfoStatsForNextTurn.getUnitMaintenance]; the Demonic policy Lone Cultivators gives 2 back | `tools/gen_ruleset.py` `GlobalUniques`, `Policies` | — | Already at the floor; push early pressure through Gu Master upkeep instead |
+| Gu Master upkeep | Rank One +50%; Strength +100 / +125 / +175%; Moon +75 / +100 / +150% (round 8; were +25%, +100 / +175 / +275%, +75 / +150 / +225%) | `data/gu_masters.csv` `maintenance` | Prince, Standard, T320: clans 20+ turns in the red 38 → 11 of 48, upkeep 111% → 90% of gross income in the last quarter, 17% in T1–50 (round 8) | Ranks 3–4 compound with the engine's turn-number growth: raise them only with a 320-turn A/B. The spec asks for about 40% early |
+| Free upkeep | Clan Settler and Mortal Laborer `[-100]% maintenance costs` (round 8: mortals do not eat primeval stones); otherwise none for majors: `[-3] units cost no maintenance` cancels the engine's 3 free units [src CivInfoStatsForNextTurn.getUnitMaintenance]; the Demonic policy Lone Cultivators gives 2 back | `tools/gen_ruleset.py` `Units`, `GlobalUniques`, `Policies` | Free mortals alone: 38 → 26 of 48 clans in the red (round 8, v1) | Already at the floor; push early pressure through Gu Master upkeep instead |
 | Wild Gu | 6% per Gu Master per turn, then a 1-in-5 die (weights +300 / +0): 1.2% on Standard; the die keeps the rate per era on other speeds (`die_weights`: Marathon 0.4%) | `WILD_GU_TRIGGER`, `Events` `Wild Gu` | 1.55 Jade Skin and 2.19 Black Boar per clan by T200, 36 games (6b) | The user asked for about 1.2%; change the die, not the trigger (E5) |
 | Buried inheritance | 1% per Gu Master per turn in foreign land after Inheritance Lore, then 1 in 2 on Standard (Marathon 1 in 6) | `INHERITANCE_TRIGGER`, `Events` `Inheritance Rumour` | 1.75 inheritances per game, 36 games (6b; 1 in 8 gave 0.42) | If fewer than 1 per game, the clans have nothing to fight over |
 | Inheritance claim | takes the land tiles in a 1-tile radius (−10 relations per tile, engine), +20 XP; or strip it for 60 stones and +30 XP | `Events` `Buried Inheritance` | The AI claims 2 times in 3 (weights +100 / +0, E1) | Radius 2 makes it a war trigger; try it only with a human game in hand |
@@ -51,18 +51,21 @@ decides the rank-1 threshold) and the round-5 delegation ("bebas, yang sesuai da
 
 Not fixed, because each needs either a human game or the user's taste:
 
-1. **Early upkeep is light.** The spec asks for upkeep near 40% of stone income early; autoplay measures 20% in
-   T1–50 and 30–38% by T100. Majors already pay for every unit, so the candidates are Rank One upkeep +25% → +50%
-   or a stone upkeep on the Gu Academy and Gu Feeding House (1 → 2).
-2. **The late game is not tense.** Treasuries grow (mean 420 stones in T151–200 at King). Candidates: costlier
-   careful refinement in rank four, or upkeep on Killer Move above +25%.
+1. **Early upkeep is light.** The spec asks for upkeep near 40% of stone income early; autoplay measures 17% in
+   T1–50 (round 8: Rank One went +25% → +50%, but mortals stopped paying). The candidate left is a stone upkeep on the
+   Gu Academy and Gu Feeding House (1 → 2).
+2. **The late game is not tense.** Treasuries grow: mean 431 stones in T151–200 at King after round 8 (244 before).
+   Candidates: costlier careful refinement in rank four, or upkeep on Killer Move above +25%. The immortal arc's
+   essence and lifespan Gu (MOD_SPEC_2) are the real sink; tune this after they exist.
 3. **Food is abundant in peace.** Hunger only bites when wars pillage camps and plantations. That fits the novel (Gu
    starve in sieges, not in good years), so it stays unless the user wants hunger in peacetime.
 4. **A few AI clans go broke in long wars:** 4 of 144 spent 20+ turns in the red (6b). No disband spiral, so the
    spec's line holds, but it is the number to watch in the user's 100-turn game.
-5. **The late-game stone economy breaks at Prince.** By turn 320 on Standard, 40 of 48 AI clans spent 20+ turns in
-   the red (AUTOPLAY.md round 7); unit upkeep grows with the turn number and nothing new is left to research. King's
-   AI upkeep discount hid it in rounds 5-6. Next tuning target.
+5. **The late-game stone economy at Prince: mostly fixed (round 8).** By turn 320 on Standard, 38 of 48 AI clans had
+   spent 20+ turns in the red; after round 8, 11 of 48 (mean treasury −69 → 101 stones). Those 11 keep their armies;
+   the rest of the deficit is war and the engine's upkeep growth with the turn number. A richer Trading House ended
+   it but piled up 400–700 stones (AUTOPLAY.md round 8), so it was left out. The tech tree ending near T120 (item 6)
+   is the root: Slice 2's ranks give late income something to buy.
 6. **The tech tree ends near T113–123.** Slice 1 has 15 techs; the rest of the game is Dao Comprehension. Slice 2 adds
    the next ranks.
 
@@ -150,14 +153,16 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 |---|---|---|---|
 | Clan Settler | movement | 2 | tools/gen_ruleset.py `Units` |
 | Clan Settler | cost | 80 | tools/gen_ruleset.py `Units` |
+| Clan Settler | `[-100]% maintenance costs` | -100 | tools/gen_ruleset.py `Units` |
 | Clan Settler | `Requires at least [2] population` | 2 | tools/gen_ruleset.py `Units` |
 | Clan Settler | `Can only be built <when above [-11] [Happiness]>` | -11 | tools/gen_ruleset.py `Units` |
 | Mortal Laborer | movement | 2 | tools/gen_ruleset.py `Units` |
 | Mortal Laborer | cost | 45 | tools/gen_ruleset.py `Units` |
+| Mortal Laborer | `[-100]% maintenance costs` | -100 | tools/gen_ruleset.py `Units` |
 | Rank One Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank One Gu Master | strength | 8 | data/gu_masters.csv `strength` |
 | Rank One Gu Master | cost | 35 | data/gu_masters.csv `cost` |
-| Rank One Gu Master | `[+25]% maintenance costs` | +25 | data/gu_masters.csv `maintenance` |
+| Rank One Gu Master | `[+50]% maintenance costs` | +50 | data/gu_masters.csv `maintenance` |
 | Rank One Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank One Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank One Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
@@ -171,14 +176,14 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Rank Three Strength Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Three Strength Gu Master | strength | 22 | data/gu_masters.csv `strength` |
 | Rank Three Strength Gu Master | cost | 95 | data/gu_masters.csv `cost` |
-| Rank Three Strength Gu Master | `[+175]% maintenance costs` | +175 | data/gu_masters.csv `maintenance` |
+| Rank Three Strength Gu Master | `[+125]% maintenance costs` | +125 | data/gu_masters.csv `maintenance` |
 | Rank Three Strength Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Three Strength Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Three Strength Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
 | Rank Four Strength Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Four Strength Gu Master | strength | 32 | data/gu_masters.csv `strength` |
 | Rank Four Strength Gu Master | cost | 140 | data/gu_masters.csv `cost` |
-| Rank Four Strength Gu Master | `[+275]% maintenance costs` | +275 | data/gu_masters.csv `maintenance` |
+| Rank Four Strength Gu Master | `[+175]% maintenance costs` | +175 | data/gu_masters.csv `maintenance` |
 | Rank Four Strength Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Four Strength Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Four Strength Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
@@ -193,7 +198,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Rank Three Moon Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Three Moon Gu Master | strength | 20 | data/gu_masters.csv `strength` |
 | Rank Three Moon Gu Master | cost | 95 | data/gu_masters.csv `cost` |
-| Rank Three Moon Gu Master | `[+150]% maintenance costs` | +150 | data/gu_masters.csv `maintenance` |
+| Rank Three Moon Gu Master | `[+100]% maintenance costs` | +100 | data/gu_masters.csv `maintenance` |
 | Rank Three Moon Gu Master | `Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength` | 40 | data/gu_masters.csv `extra_uniques` |
 | Rank Three Moon Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Three Moon Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
@@ -201,7 +206,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Rank Four Moon Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Four Moon Gu Master | strength | 29 | data/gu_masters.csv `strength` |
 | Rank Four Moon Gu Master | cost | 140 | data/gu_masters.csv `cost` |
-| Rank Four Moon Gu Master | `[+225]% maintenance costs` | +225 | data/gu_masters.csv `maintenance` |
+| Rank Four Moon Gu Master | `[+150]% maintenance costs` | +150 | data/gu_masters.csv `maintenance` |
 | Rank Four Moon Gu Master | `Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength` | 40 | data/gu_masters.csv `extra_uniques` |
 | Rank Four Moon Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Four Moon Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
@@ -696,6 +701,6 @@ No tunable numbers.
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-534 numbers listed.
+536 numbers listed.
 
 <!-- inventory:end -->

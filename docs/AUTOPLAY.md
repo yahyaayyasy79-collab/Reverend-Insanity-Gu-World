@@ -235,6 +235,46 @@ surplus from 5.0 to 2.5 with population unchanged and expired after 10 turns. Pr
   (round 5-6: 4 of 144) hides it. Constant stone shortages also hold capitals near the new gate (3-4 population)
   through "Squeeze the mortals". Next step: the late-game stone economy.
 
+## Round 8: the late-game stone economy (2026-10-18)
+
+Where the stones went at Prince, Standard, turn 320 (round 7): upkeep took 111% of gross income in the last quarter
+of the game, and about 10 of a clan's 23 units were Mortal Laborers, each paying the base upkeep of a unit. Unit upkeep grows with the turn number [src `getUnitMaintenance`: (0.5 × N × (1 + g))^(1 + g/3), g = turn /
+total turns], so a fixed army costs about twice as much at turn 320 as at turn 100. Six throwaway variants (12 games
+each, Prince, Small, 4 clans, Standard, 320 turns; the same seeds):
+
+| Variant | Clans 20+ turns in the red | Treasury T320 | Stones per turn T320 | Upkeep / gross T1–50 | Upkeep / gross T241–320 | Units T320 |
+|---|---|---|---|---|---|---|
+| Round 7 (shipped) | 38 of 48 | −69 | −8.3 | 0.21 | 1.11 | 22.8 |
+| v1: mortals pay no upkeep | 26 | −4 | −3.4 | 0.14 | — | 22.5 |
+| v2: v1 + Rank One +25% → +50% | 23 | −6 | −4.6 | 0.17 | — | 22.6 |
+| v3: v1 + ranks 3–4 cheaper (Strength +125 / +175, Moon +100 / +150) | 15 | 101 | 0.1 | 0.16 | — | 24.8 |
+| v4: v1 + Trading House 4 stones, +35% | 10 | 411 | 6.0 | 0.16 | — | 24.9 |
+| **v5: v2 + v3 (shipped)** | **11** | **101** | **2.8** | **0.17** | **0.90** | 24.6 |
+| v6: v5 + the v4 Trading House | 3 | 719 | 11.5 | 0.16 | — | 25.5 |
+
+* Free mortals alone cut the red clans by a third; the rest of the deficit is rank 3–4 Gu Masters, whose upkeep
+  multipliers (up to +275%) compound with the turn-number growth. v3 halves the deficit again without making clans
+  rich.
+* Rank One +50% puts back early pressure that free mortals took out (0.14 → 0.17 of gross income in T1–50).
+* A richer Trading House (v4, v6) ends the deficits but piles up 400–700 stones by turn 320: no late tension, and
+  "What the data says is off" item 2 already says the late game is too calm. Rejected.
+* v5 keeps the worst clans' armies (no disband spiral) and the AI still loses clans to war (1 city captured).
+
+v5 on the other speeds and difficulty:
+
+| Run | Clans 20+ turns in the red | Treasury at the end | Stones per turn at the end | Upkeep / gross, last quarter | Capital pop | Pop per city | Crashes |
+|---|---|---|---|---|---|---|---|
+| Marathon, Prince, 480 turns, 6 games, round 7 | 3 of 24 | 148 | 10.0 | 0.65 | 4.43 | 4.32 | 0 |
+| Marathon, Prince, 480 turns, 6 games, v5 | 2 of 24 | 276 | 15.4 | 0.41 | 4.54 | 4.58 | 0 |
+| King, 200 turns, 12 games, round 7 | 1 of 48 | 180 | 9.9 | 0.64 | 8.69 | 8.16 | 0 |
+| King, 200 turns, 12 games, v5 | 0 of 48 | 607 | 32.6 | 0.38 | 8.43 | 7.94 | 0 |
+
+* Marathon and King stay solvent and keep their population; at King the treasury in T151–200 rises from 244 to 431
+  stones on average, so "the late game is not tense" (BALANCE.md item 2) gets worse in stones. The same King batch
+  saw more war (7 of 12 games with a war, 16 cities captured, against 3 and 2), but war counts swing widely between
+  12-game batches (round 6b), so that is a lead, not a result.
+* Hunger is unchanged (King 1.07 → 0.96 Gu deaths per clan per 100 turns).
+
 ## Re-run
 
 ```

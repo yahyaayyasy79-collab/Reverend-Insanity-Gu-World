@@ -256,3 +256,13 @@
   spawning (fallback: the conditional on `Marks a barbarian camp` itself, proven).
 * Capability fixture: one promotion proves two killer-move uniques the document cites.
 
+## Phase 2, step 12 — the late-game stone economy (2026-10-18)
+
+* Clan Settler and Mortal Laborer pay no upkeep (`[-100]% maintenance costs`): mortals live off the land, not off
+  primeval stones.
+* Gu Master upkeep: Rank One +25% → +50% (keeps early pressure); Strength ranks 3–4 +175 / +275% → +125 / +175%;
+  Moon ranks 3–4 +150 / +225% → +100 / +150%. The engine's upkeep already grows with the turn number.
+* Autoplay round 8 (`docs/AUTOPLAY.md`, six variants, 12 games each): at Prince on Standard, clans that spent 20+
+  turns in the red by turn 320 fall from 38 to 11 of 48 and the mean treasury rises from −69 to 101 stones; Marathon
+  (480 turns) 3 → 2 of 24; King (200 turns) 1 → 0 of 48, but King treasuries now grow faster (BALANCE.md item 2). A
+  richer Trading House ended the deficits but piled up 400–700 stones and was left out.

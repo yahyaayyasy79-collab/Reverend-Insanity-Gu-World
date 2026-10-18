@@ -23,11 +23,13 @@ primeval-stones rename ("Batu Primordial") done 2026-10-18 (`data/civilopedia.cs
 attack effects; `tools/art/render3d.py`); primeval-stone stat icon. `docs/BALANCE.md` (knobs + generated inventory,
 `tools/gen_balance.py`) and `docs/KNOWN_ISSUES.md` written 2026-10-18. Round 7 (the user's bug reports, Marathon
 game): Clan Settler ban shown with its reason; population-cost event choices gated or recast; every event chance has one
-line per game speed (`per_speed`). Open: the late-game stone economy at Prince (40/48 clans in the red by T320).
+line per game speed (`per_speed`). Round 8: mortals pay no upkeep, Rank One +50%, ranks 3-4 cheaper (Prince T320: 38 → 11
+of 48 clans 20+ turns in the red; King now richer, BALANCE.md item 2).
 MOD_SPEC_2 Gate passed 2026-10-18 (Slice 1 Definition of Done met: user's game past T300 Marathon, no crash; Locate
 mod errors green). MOD_SPEC_3 Phase A3 done 2026-10-18 (CAPABILITIES.md, E9-E10), waiting at its checkpoint; then
 MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). A3 approved
-2026-10-18; MOD_SPEC_2 Phase A done 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"), waiting at its checkpoint.
+2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); next B3 (docs/PATHS.md)
+and B (LORE_MAPPING rank 5-9), research notes in LORE_MAPPING/PATHS only.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -54,6 +56,10 @@ in LORE_MAPPING.md.
   fast-forward `main` to the session branch after each green step so their Android download stays current.
 * Taste delegated (user, round 5): "bebas, yang sesuai dan seru seperti di novelnya" for balance fixes. Art style
   approved ("lanjut ke semua").
+* Immortal arc (user, 2026-10-18, after MOD_SPEC_2 Phase A): Fate Gu is a wonder `uniqueTo` the Heavenly Court and
+  built by it (not granted free); inheritances: the trial unlocks *building* the inheritance, so conquest can seize it;
+  tribulation timing: a timed status on the ascended unit (not `<every N turns>`); source research by subagents
+  allowed ("riset sumber semuanya"); the late-game stone economy fix approved ("boleh dituntaskan").
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.
