@@ -26,7 +26,10 @@ game): Clan Settler ban shown with its reason; population-cost event choices gat
 line per game speed (`per_speed`). Open: the late-game stone economy at Prince (40/48 clans in the red by T320).
 MOD_SPEC_2 Gate passed 2026-10-18 (Slice 1 Definition of Done met: user's game past T300 Marathon, no crash; Locate
 mod errors green). MOD_SPEC_3 Phase A3 done 2026-10-18 (CAPABILITIES.md, E9-E10), waiting at its checkpoint; then
-MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
+MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). A3 approved
+2026-10-18; MOD_SPEC_2 Phase A done 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"), waiting at its checkpoint.
+Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
+capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
 
 The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter

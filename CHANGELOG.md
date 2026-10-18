@@ -245,3 +245,14 @@
   per-civ AI promotion weights steer 83% of the AI's picks. Results and design rules in `docs/CAPABILITIES.md`;
   probes on the local throwaway branch `a3-capability-tests`.
 
+## MOD_SPEC_2 Phase A — immortal-arc capabilities (2026-10-18)
+
+* `docs/CAPABILITIES.md`: status, fallback and AI note for mechanics 1–17; the seven risky patterns proven headless on
+  the throwaway branch `test/capability-tests` (also downloadable as a separate test mod). ✅ for-every Strength, Remove
+  on a wonder (reopens the race), owned-tile trigger with throttle and world-state gate, lifespan consumption per
+  immortal with decay, `max()` countable. ⚠️/❌ found: a **free** world wonder ignores world uniqueness (two holders)
+  and is **deleted** when its city is captured, so a free Fate Gu or inheritance cannot be seized (fallback: built,
+  `uniqueTo` or scenario); the lifespan stock goes negative; `Only available` on a camp improvement does not gate camp
+  spawning (fallback: the conditional on `Marks a barbarian camp` itself, proven).
+* Capability fixture: one promotion proves two killer-move uniques the document cites.
+

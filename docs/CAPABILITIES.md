@@ -171,6 +171,67 @@ unit add <civ> "Test Rank Six"               # test 3: upgrade one to Test Vener
 city addbuilding "Test Ascension"            # (before test 4, in the capital)
 ```
 
+## MOD_SPEC_2 Phase A — immortal arc, rank 5 to 9 (2026-10-18)
+
+Every pattern below matches `docs/Modders/uniques.md` 4.22.8 (`tools/unique_check.py`). The seven risky ones were
+proven headless on the throwaway branch `test/capability-tests` (`tools/a3/build_test_mod.py` adds one test object
+each to the shipped `jsons/`; `tools/a3/ProbePhaseA.java`; Unciv's validator: 0 errors). MOD_SPEC_3 overrides two
+items: rank 9 becomes one unit (not only a victory), and paths are promotion lines (not a 6-path cap).
+
+### The seven risky patterns
+
+| # | Pattern | Status | Evidence (probe output) |
+|---|---|---|---|
+| A1 | for-every Strength: `[relativeAmount]% Strength` `<for every [positiveAmount] [countable]>` on [[Strength Path] Buildings] | ✅ | A unit with +5 per Strength mark and −5 per Wisdom mark: 0 → +5 → +10 with 1 and 2 Strength-marker buildings, +5 after one Wisdom marker. |
+| A2 | `Remove [buildingFilter] [cityFilter]` on a world wonder reopens the race | ✅ | While Wu held the test immortal Gu, Gu Yue's city was rejected with `WonderAlreadyBuilt`; after Remove, no rejection. A **built** wonder with `Never destroyed when the city is captured` stays in the city when it changes hands. |
+| A3 | `Unbuildable` + `Cannot be purchased` + free grant | ⚠️ | ✅ Nobody can build it (`Unbuildable`, `WonderAlreadyBuilt`). ✅ A nation unique `Gain a free [buildingName] [cityFilter]` `<upon founding a city>` `<if [buildingFilter] is not constructed by anybody>` granted it once, to that nation's first city. ❌ A free grant **ignores world-wonder uniqueness**: granted to two civs, both held it; [in all cities] put it in every city of the civ [src `GainFreeBuildings` → `completeConstruction`]. ❌ A **free** building is **removed** when its city changes hands, `Never destroyed when the city is captured` notwithstanding [src `CityConquestFunctions.removeBuildingsOnMoveToCiv`]: probe, the free wonder vanished on capture while the built one stayed. |
+| A4 | Owned-tile trigger: `Triggers a [event] event` `<upon turn start>` `<when number of [countable] is more than [countable]>` on the countable Owned [tileFilter] Tiles, throttled by `<every [positiveAmount] turns>` | ✅ | Every 3rd turn, only clans owning more than 6 land tiles rolled the trial (Wu from turn 4, Bai from 7, the others from 13). The event's `Unavailable <if [buildingFilter] is constructed by anybody>` closed it for everybody once one clan held the inheritance: 0 trials in the next 6 turns. All clans roll on the same turn (E6). |
+| A5 | Lifespan: `Instantly consumes [positiveAmount] [stockpiledResource]` `<upon turn start>` `<every [positiveAmount] turns>` `<for every [positiveAmount] [countable]>`; decay `[unitTriggerTarget] takes [positiveAmount] damage` `<upon turn start>` `<when below [amount] [stat/resource]>` | ✅ with ⚠️ | 5 lifespan Gu, 2 immortals, 1 per immortal every 2 turns: 5 → 3 → 1 → −1; the multiplier follows the living count (0 once both died). Decay started the turn the stock fell below 1; with healing, 30 damage per turn killed them in 4 turns. ⚠️ The stock goes **negative** (−5): consumption does not stop at zero, so new lifespan Gu first pay the debt. |
+| A6 | `max()` countable: `Only available <when number of [countable] is more than [countable]>` with the countable max([[Strength Path] Buildings], [[Wisdom Path] Buildings]) | ✅ | Evaluates to 2 for 2 Strength + 1 Wisdom marks, 3 after a third Strength marker; the wonder was available to Wu, hidden (`ShouldNotBeDisplayed`) for a clan with none. |
+| A7 | Camp gate for dream realms | ❌ as specified, ✅ fallback | `Only available <if [buildingFilter] is not constructed by anybody>` on the camp improvement does **not** gate spawning: 104 of 200 camps while the gate was shut. Camp spawning reads the conditional of the camp marker itself [src `BarbarianManager.createNewCamp`, `TileImprovement.isBarbarianCampEquivalent`]: `Marks a barbarian camp <if [buildingFilter] is not constructed by anybody>` gave 0 of 200 while the Fate Gu stood and 71 of 200 after it was removed. |
+
+Note: Unciv's validator lists a path marker that is only referenced inside a countable ([[Wisdom Path] Buildings])
+as "not used as a filtering unique" (INFO, not an error); `tools/unique_allowlist.txt` keeps lint quiet.
+
+### Mechanics map 1–17
+
+| # | Mechanic | Status | Implementation (verified patterns) | Fallback / caveat | AI |
+|---|---|---|---|---|---|
+| 1 | Ascension R5 → R6 | ⚠️ | Heaven, earth and human qi as `Stockpiled` resources; a national wonder with one `Costs [amount] [stockpiledResource]` per qi whose completion triggers `Triggers a [event] event`; `<with [nonNegativeAmount]% chance>` picks the grade; `Gain a free [buildingName] [cityFilter]` grants the Blessed Land. | A building has no unit context (E2): "failure costs a Rank 5 unit" cannot pick the unit. Per the CLAUDE.md decision and MOD_SPEC_3, run the ascension from the unit (a kept promotion, E4) so the event can use `[unitTriggerTarget] is destroyed` or upgrade it. A free Blessed Land vanishes if its city is captured (A3). | AI builds wonders and buys promotions; events by weight. |
+| 2 | Immortal essence | ✅ | One `Stockpiled` resource per tier; it changes only through providers and triggers (Blessed Land buildings, trade, events, plunder). | — | automatic |
+| 3 | Immortal Gu = world wonders | ✅ | `isWonder`, recipe tech, `Costs [amount] [stockpiledResource]`, `Never destroyed when the city is captured` (A2: a built one changes hands with the city), failed refinement `Remove [buildingFilter] [cityFilter]` reopens the race (A2); markers `Immortal Gu` and a path marker, allowlisted. | Never grant one free (A3). | AI builds wonders |
+| 4 | Dao marks | ✅ | A1. | Conflicts: same pattern, negative amount (A1). | automatic |
+| 5 | Immortal killer moves | ⚠️ | UnitTriggerable uniques with action modifiers, e.g. `[unitTriggerTarget] gains the [promotion] status for [positiveAmount] turn(s)` `<costs [amount] [stockpiledResource]>`, limited by `<once>`, `<[positiveAmount] times>`, `<requires [nonNegativeAmount] movement>`; the status carries `[relativeAmount]% Strength`, `[amount] additional attacks per turn` or `[unitTriggerTarget] heals [positiveAmount] HP`. | Never put `Can pass through impassable tiles` on a status (cached). | ❌ the AI never presses unit-action buttons: every unit must be viable without its moves. |
+| 6 | Immortal Gu Houses | ✅ | `Limited to [amount] per Civilization` (MOD_SPEC_3 A3: also blocks upgrades), `Only available <if [buildingFilter] is constructed>`, `[relativeAmount]% maintenance costs`. | — | AI builds what is available |
+| 7 | Lifespan | ✅ with ⚠️ | A5. | Debt: the stock goes negative. Tune damage vs healing for "dies within ~15 turns" (heal 10–20 per turn). | automatic |
+| 8 | Immortal zombie | ⚠️ | `<upon being defeated>` only fires UnitTriggerable effects on the dying unit, so it cannot spawn a unit. Hook that works: civ-level `Free [unit] appears` `<upon losing a [mapUnitFilter] unit>`, plus `Can only heal by pillaging` on the zombie. | `upon losing` also fires on upgrade, capture and gift (E9): filter on the top immortal rank only, or accept a zombie when a rank-8 immortal ascends. Untested here. | automatic |
+| 9 | Tribulations and calamities | ⚠️ | `Triggers a [event] event` `<upon turn start>` `<every [positiveAmount] turns>` `<if [buildingFilter] is constructed>`; interval by `<during the [era]>`; effects `[amount] population [cityFilter]`, `Remove [buildingFilter] [cityFilter]`, `[positiveAmount] [unit]s rebel`, timed debuffs `<for [nonNegativeAmount] turns>`. | `<every N turns>` is turn % N for everyone (E6): "first tribulation 10–15 turns after ascension" cannot be relative. Fallback: `<with [nonNegativeAmount]% chance>` per turn (expected gap 1/p), or a timed status on the ascended unit. | events by weight |
+| 10 | Heaven's Will | ✅ | `<when number of [countable] is more than [countable]>` on `Cities` vs [[Immortal Gu] Buildings] (countables and expressions evaluate, A6). | — | automatic |
+| 11 | Fate Gu | ❌ as specified | `Unbuildable` + `Cannot be purchased` blocks building; the guarded nation-unique grant works once (A3); world state via `<if [buildingFilter] is constructed by anybody>` / `<if [buildingFilter] is not constructed by anybody>` works (A4, A7). | ❌ A **free** Fate Gu is deleted when its city is captured (A3), so "capture → Fate War: Shatter or Seize" never happens. Fallback: Fate Gu `uniqueTo` the Heavenly Court and **built** by it (AI weight), or pre-built in a scenario save; a built wonder changes hands (A2). Detect the capture with `<upon conquering a city>` + `<if [buildingFilter] is constructed>`. | AI builds its unique wonder; events by weight |
+| 12 | Inheritances | ⚠️ | Owned-tile trigger, throttle and `Unavailable <if [buildingFilter] is constructed by anybody>` (A4); trials mix chance and preparation. | Free grants duplicate (A3): guard each with `<if [buildingFilter] is not constructed by anybody>` and use [in capital]. A free inheritance cannot be seized by conquest (A3): if seizing matters, the trial should unlock **building** it (a cheap national seal + `Only available <if [buildingFilter] is constructed>`). | events by weight |
+| 13 | Secret realms | ✅ | `NaturalWonder` terrains; counts by ModOptions constants `naturalWonderCountMultiplier` (0.124) and `naturalWonderCountAddedConstant` (0.1); hazard `[unitTriggerTarget] takes [positiveAmount] damage` `<upon entering a [tileFilter] tile>` `<for units without [promotion]>`. | All of them only on the five-region map (Slice 3). Untested here. | AI walks in blind (takes the damage) |
+| 14 | Dream realms | ✅ via fallback | A7: the conditional goes on `Marks a barbarian camp`, not on the improvement. | — | barbarians |
+| 15 | Desolate beasts | ✅ | Barbarian elite units; civ units carry `Never appears as a Barbarian unit`; `Earn [amount]% of killed [mapUnitFilter] unit's [costOrStrength] as [stockpile]`. | Barbarians only know techs every civ knows (LORE_MAPPING engine facts): gate elites by those techs. | automatic |
+| 16 | Treasure Yellow Heaven | ✅ | A recurring event (`Triggers a [event] event` `<upon turn start>` `<every [positiveAmount] turns>`), every choice weighted. | — | events by weight |
+| 17 | Venerable victory | ✅ | Milestones `Build [building]` and `Have at least [amount] [countable]` (Mod-file-structure 5); single-path mastery by `max()` (A6). | MOD_SPEC_3 makes the Venerable a unit raced against its lifespan (A3 tests 3–4). | AI builds wonders |
+
+Check in game (download `https://github.com/yahyaayyasy79-collab/Reverend-Insanity-Gu-World/tree/test/capability-tests`,
+start a new game on "Reverend Insanity Gu World test capability tests"; console as in `docs/TESTING.md`):
+
+```
+unit add <civ> "Test Dao Unit"            # A1: then city addbuilding "Test Strength Gu A" / "Test Strength Gu B" / "Test Wisdom Gu A";
+                                          #     the attack preview shows +5 / +10 / +5
+city addbuilding "Test Immortal Gu"       # A2: another clan's city no longer offers it; then
+civ activatetrigger "Remove [Test Immortal Gu] [in all cities]"   # A2: it is offered again
+                                          # A3: Bai's first city holds Test Fate Gu from turn 1; nobody can build it
+civ activatetrigger "Gain a free [Test Fate Gu] [in capital]"     # A3: a second holder appears (the duplicate)
+civ checkcountable "[Owned [Land] Tiles]" # A4: above 6, the trial adds 1 Test Trial Counter every 3rd turn
+civ activatetrigger "Instantly provides [5] [Test Lifespan Gu]"   # A5: then unit add <civ> "Test Immortal" twice and end turns:
+                                          #     -2 every 2 turns, then -30 HP per turn once below 1
+civ checkcountable "[max([[Strength Path] Buildings], [[Wisdom Path] Buildings])]"   # A6: Test Venerable Ascension needs more than 1
+                                          # A7: camps never show Test Dream Camp while Test Fate Gu stands
+```
+
 ## Impossible or only approximable (checkpoint summary)
 
 1. ❌ **Damage one specific unit from a civ-level tribulation.** Fallback: carrier promotion on a unit filter (all matching units).
