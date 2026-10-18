@@ -246,5 +246,30 @@
         "text": "Appearance changes with the technological era of the owning civilization"
       }
     ]
+  },
+  {
+    "name": "Test Dream Camp",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Marks a barbarian camp <if [Test Fate Gu] is not constructed by anybody>",
+      "Unbuildable",
+      "Unpillagable",
+      "Excluded from map editor"
+    ]
+  },
+  {
+    "name": "Test Gated Camp",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Marks a barbarian camp",
+      "Only available <if [Test Fate Gu] is not constructed by anybody>",
+      "Unbuildable",
+      "Unpillagable",
+      "Excluded from map editor"
+    ]
   }
 ]

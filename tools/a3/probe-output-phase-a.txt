@@ -1,0 +1,37 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=41267 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+2026-10-18T11:40:43.042799202Z [threadpool-nondaemon-1] [RulesetCache] Mod loaded successfully: A3TEST
+Loaded 3 rulesets in 435ms
+2026-10-18T11:40:43.202326168Z [main] [MapElevationGenerator] Mountain-like generation
+2026-10-18T11:40:43.208798351Z [main] [MapElevationGenerator] Hill-like generation
+2026-10-18T11:40:43.259854356Z [main] [MapGenerationRandomness] chooseSpreadOutLocations: distance 2 < initial 9
+2026-10-18T11:40:43.373529807Z [main] [NaturalWonderGenerator] Natural Wonders for this game: []
+2026-10-18T11:40:43.433798953Z [main] [MapGenerationRandomness] chooseSpreadOutLocations: distance 6 < initial 8
+A3 Test Fate Gu holders after turn 2: [Bai Clan/Bai Village]
+A3 rejections for Wu building Test Fate Gu: [Unbuildable, WonderAlreadyBuilt]
+A1 strength % with 0 marks: 0
+A1 strength % with 1 Strength mark: 5  count=1
+A1 strength % with 2 Strength marks: 10
+A1 strength % with 2 Strength + 1 Wisdom: 5
+A6 max([[Strength Path] Buildings], [[Wisdom Path] Buildings]) for Wu = 2 (Strength 2, Wisdom 1); for Gu Yue = 0
+A6 Test Venerable Ascension rejections: Wu [] | Gu Yue [ShouldNotBeDisplayed]
+A2 Test Immortal Gu holders: [Wu Clan/Wu Clan City]; Gu Yue rejections: [WonderAlreadyBuilt]
+A6 after Test Immortal Gu (also Strength Path): max = 3
+A2 after Remove: holders []; Gu Yue rejections: []
+A4/A5 T3: Wu lifespan=3 immortal HP=[100 100] | Gu land=5 trials=0; Bai land=6 trials=0; Xiong land=5 trials=0; Wu land=7 trials=0; 
+A4/A5 T4: Wu lifespan=3 immortal HP=[100 100] | Gu land=6 trials=0; Bai land=7 trials=0; Xiong land=6 trials=0; Wu land=8 trials=1; 
+A4/A5 T5: Wu lifespan=1 immortal HP=[100 100] | Gu land=6 trials=0; Bai land=7 trials=0; Xiong land=6 trials=0; Wu land=8 trials=1; 
+A4/A5 T6: Wu lifespan=1 immortal HP=[100 100] | Gu land=6 trials=0; Bai land=7 trials=0; Xiong land=6 trials=0; Wu land=8 trials=1; 
+A4/A5 T7: Wu lifespan=-1 immortal HP=[80 80] | Gu land=6 trials=0; Bai land=7 trials=1; Xiong land=6 trials=0; Wu land=8 trials=2; 
+A4/A5 T8: Wu lifespan=-1 immortal HP=[60 60] | Gu land=6 trials=0; Bai land=7 trials=1; Xiong land=6 trials=0; Wu land=8 trials=2; 
+A4/A5 T9: Wu lifespan=-3 immortal HP=[40 40] | Gu land=6 trials=0; Bai land=7 trials=1; Xiong land=6 trials=0; Wu land=8 trials=2; 
+A4/A5 T10: Wu lifespan=-3 immortal HP=[20 20] | Gu land=7 trials=0; Bai land=8 trials=2; Xiong land=7 trials=0; Wu land=9 trials=3; 
+A4/A5 T11: Wu lifespan=-5 immortal HP=[] | Gu land=7 trials=0; Bai land=8 trials=2; Xiong land=7 trials=0; Wu land=9 trials=3; 
+A4/A5 T12: Wu lifespan=-5 immortal HP=[] | Gu land=7 trials=0; Bai land=8 trials=2; Xiong land=7 trials=0; Wu land=9 trials=3; 
+A4/A5 T13: Wu lifespan=-5 immortal HP=[] | Gu land=7 trials=1; Bai land=8 trials=3; Xiong land=7 trials=1; Wu land=9 trials=4; 
+A4/A5 T14: Wu lifespan=-5 immortal HP=[] | Gu land=7 trials=1; Bai land=8 trials=3; Xiong land=7 trials=1; Wu land=9 trials=4; 
+A4 trials in the 6 turns after someone built Test Inheritance Wonder: 0
+A7 Fate Gu exists [Bai Clan/Bai Village]: camps {Beast Lair=96, Test Gated Camp=104}
+A7 after Remove, Fate Gu holders []: camps {Beast Lair=79, Test Dream Camp=71, Test Gated Camp=50}
+A3 two civs granted the same free world wonder: holders [Bai Clan/Bai Village, Wu Clan/Wu Clan City]
+A3 Bai Clan T31 before capture: Waterfall Slope Test Immortal Gu(built)=true Test Inheritance Wonder(free)=true; free wonder holders [Gu Yue Clan/Gu Yue Village, Bai Clan/Bai Village, Bai Clan/Waterfall Slope]
+A3 after Wu Clan takes Waterfall Slope: Test Immortal Gu(built)=true Test Inheritance Wonder(free)=false; free wonder holders [Gu Yue Clan/Gu Yue Village, Bai Clan/Bai Village]

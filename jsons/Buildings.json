@@ -220,5 +220,64 @@
       "Unbuildable",
       "Cannot be purchased"
     ]
+  },
+  {
+    "name": "Test Strength Gu A",
+    "cost": 10,
+    "uniques": [
+      "Strength Path"
+    ]
+  },
+  {
+    "name": "Test Strength Gu B",
+    "cost": 10,
+    "uniques": [
+      "Strength Path"
+    ]
+  },
+  {
+    "name": "Test Wisdom Gu A",
+    "cost": 10,
+    "uniques": [
+      "Wisdom Path"
+    ]
+  },
+  {
+    "name": "Test Immortal Gu",
+    "isWonder": true,
+    "cost": 10,
+    "uniques": [
+      "Immortal Gu",
+      "Strength Path",
+      "Never destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Test Fate Gu",
+    "isWonder": true,
+    "cost": 10,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Test Inheritance Wonder",
+    "isWonder": true,
+    "cost": 10,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never destroyed when the city is captured"
+    ]
+  },
+  {
+    "name": "Test Venerable Ascension",
+    "isWonder": true,
+    "cost": 10,
+    "uniques": [
+      "Only available <when number of [max([[Strength Path] Buildings], [[Wisdom Path] Buildings])] is more than [1]>"
+    ]
   }
 ]

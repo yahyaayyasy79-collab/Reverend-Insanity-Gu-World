@@ -288,5 +288,26 @@
       "Cannot be purchased",
       "[This Unit] takes [30] damage <upon turn start>"
     ]
+  },
+  {
+    "name": "Test Dao Unit",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 20,
+    "cost": 10,
+    "uniques": [
+      "[+5]% Strength <for every [1] [[Strength Path] Buildings]>",
+      "[-5]% Strength <for every [1] [[Wisdom Path] Buildings]>"
+    ]
+  },
+  {
+    "name": "Test Immortal",
+    "unitType": "Gu Immortal",
+    "movement": 2,
+    "strength": 60,
+    "cost": 10,
+    "uniques": [
+      "[This Unit] takes [30] damage <upon turn start> <when below [1] [Test Lifespan Gu]>"
+    ]
   }
 ]

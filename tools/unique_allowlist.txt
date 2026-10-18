@@ -1,3 +1,6 @@
 # Intentional untyped "filter marker" uniques (uniques.md / 1-Overview.md: legitimate when used by filters).
 # One exact string per line: no [brackets], no <conditionals>. lint_uniques.py warns if a marker is never
 # referenced by any filter parameter (Unciv would then flag it as untyped).
+Strength Path
+Wisdom Path
+Immortal Gu

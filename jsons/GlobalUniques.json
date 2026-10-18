@@ -32,6 +32,8 @@
     "Gain [1000] [Gold] <upon losing a [Test Venerable] unit>",
     "Remove [Test Ascension] [in all cities] <upon losing a [Test Venerable] unit>",
     "Gain a free [Test True Inheritance] [in capital] <upon losing a [Test Venerable] unit>",
-    "Gain [7] [Gold] <upon losing a [Test Rank Six] unit>"
+    "Gain [7] [Gold] <upon losing a [Test Rank Six] unit>",
+    "Instantly consumes [1] [Test Lifespan Gu] <upon turn start> <every [2] turns> <for every [1] [[Test Immortal] Units]>",
+    "Triggers a [Test Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [6]> <every [3] turns>"
   ]
 }

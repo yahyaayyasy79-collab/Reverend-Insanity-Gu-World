@@ -193,5 +193,21 @@
         "text": "Pelts of Southern Border beasts, sold by caravans. The only comfort the mountain offers for free, once someone has killed for it."
       }
     ]
+  },
+  {
+    "name": "Test Lifespan Gu",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled"
+    ]
+  },
+  {
+    "name": "Test Trial Counter",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled"
+    ]
   }
 ]

@@ -359,5 +359,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Test Trial",
+    "presentation": "None",
+    "uniques": [
+      "Unavailable <if [Test Inheritance Wonder] is constructed by anybody>"
+    ],
+    "choices": [
+      {
+        "text": "Test trial passed",
+        "uniques": [
+          "Instantly provides [1] [Test Trial Counter]",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
   }
 ]
