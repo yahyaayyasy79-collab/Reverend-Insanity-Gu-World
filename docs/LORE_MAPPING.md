@@ -1,6 +1,6 @@
 # LORE_MAPPING — Slice 1: Qing Mao Mountain and the Southern Border
 
-**Status: Phase 1 approved (2026-10-13).** Round 2 checked the user's lore answers against the novel's raw text;
+**Status: Phase 1 approved (2026-10-13). The rank 5–9 part (MOD_SPEC_2 Phase B) is at the end, drafted 2026-10-18.** Round 2 checked the user's lore answers against the novel's raw text;
 round 3 applied the user's decisions (the Wu clan as fourth major, a hunger meter, spirit springs as the heart of the
 map); round 4 made hunger deaths a per-Gu roll (option B) and set the tuning rule: autoplay with Strategic Balance
 decides, no manual tuning first. Phase 2 builds Slice 1 from this plan.
@@ -742,3 +742,275 @@ Each needs an in-game check in the Phase 2 step report (console commands in `doc
   inheritance), stone men (a blessed land, volume 3).
 * **Slice 3 (Five Regions):** the region-wall map, the other regions' factions, hostile terrain (S4), the Heavenly
   Court, the Eternal Life victory.
+
+---
+
+# Immortal arc — MOD_SPEC_2 Phase B (rank 5–9)
+
+**Status: drafted 2026-10-18, waiting at the Phase B checkpoint (⛔).** One row per rank 5–9 object within MOD_SPEC_2's
+budget (as amended by MOD_SPEC_3: paths and killer moves live in `docs/PATHS.md`). No content JSON ships before
+approval; Phase C builds it in layers C1–C5.
+
+**Sources.** R = the raw Chinese text, cited as R V*v*/*n* (volume *v*, chapter *n* in that volume's numbering) or
+R ch*N* (global chapter number, the fan wiki's numbering); the copies used are unofficial uploads and are never linked
+from the mod. F = the Reverend Insanity fan wiki (page name), whose English names are used. CANON = attested in R
+(F agrees unless noted); ADAPTED = canon bent to a 4X mechanic, or a canon detail that rests on F only; INVENTED =
+mechanical glue. The research was done by subagents against R and F (MOD_SPEC_2 Phase B allows it); only verdicts are
+kept here.
+
+**Patterns, not instances.** The uniques below are written as documented patterns (`uniques.md` 4.22.8 placeholders);
+the numbers come in Phase C and D. Every pattern was matched against the docs; the risky ones were proven in Phase A
+(`docs/CAPABILITIES.md`, "MOD_SPEC_2 Phase A").
+
+## Corrections to MOD_SPEC_2's lore seeds
+
+| Seed | Correction | Source | Verdict |
+|---|---|---|---|
+| Essence tiers: Purple Crystal 紫晶 (9) | Purple Crystal is **rank 5 mortal** primeval essence (紫晶真元); rank 9 immortal essence is **Yellow Apricot 黄杏仙元** | R V2/180; R V3/232, V6/249, V6/280; F Immortal_Essence | CANON |
+| Blessed Land grades, Grotto-Heaven tier | Four grades: 下等 lower, 中等 middle, 上等 upper, 特等 super (about 10 / 20 / 30 / 50 essence a year). A **grotto-heaven 洞天 is not a grade** but what the aperture becomes at rank 8 | R V4/290, V5/6, V5/745; F Blessed_Land | CANON (upper-grade yield ADAPTED) |
+| Wisdom Gu (8) | **Rank 9** for most of the story (rank 8 only in the last volume), wisdom path | R V3/232, V5/559, V6/343 | CANON |
+| Myriad Self (strength) | Fuses **enslavement and strength** (奴力合流); Fang Yuan's rank-6 move | R V4/134, V4/141 | CANON |
+| Tribulations "天劫 / 地灾" | Four tiers: 地灾 earthly calamity < 天劫 heavenly tribulation < 浩劫 grand < 万劫 myriad; rank 9 meets 混沌大难 chaos calamity | R V4/358, V6/280 | CANON |
+| Venerables (seed order) | Eras: Remote Antiquity — Primordial Origin, Star Constellation; Olden — Limitless, Reckless Savage, Red Lotus; Medieval — Genesis Lotus, Thieving Heaven, Giant Sun; Late — Spectral Soul, Paradise Earth. Primordial Origin's path is **qi** (and he founded enslavement); Paradise Earth's is **earth** | R V6/119, V5/302, V5/628 | CANON |
+| Fate Gu guarded by the Heavenly Court | True for the story's present; it first belonged to the Rockman Imperial Court and was carried to Primordial Origin | R V5/720, V5/694 | CANON |
+| Secret realms list | Hu Immortal, Lang Ya and the Imperial Court are **blessed lands**; Treasure Yellow Heaven is a **grotto-heaven market**; Yi Tian Mountain is an ordinary mountain and battlefield | R V2/142, V3/55, V3/143, V3/61, V2/57 | CANON |
+| Fate Gu shattered → dream realms (#11, #14) | **Not canon:** dream realms surface and are fought over before the Fate War; after it, fate becomes heaven-path dao marks in every being, the region walls fade (五域合一) and qi tides sweep the world | R V4/74–85, V6/5–6, V6/1, V6/13 | decision B4 |
+| Immortal zombies "must plunder" | No R line says so; it follows from a zombie's dead aperture (no essence income). Fine as a game rule | R V4/290, V4/141; F Zombie_Gu | ADAPTED |
+| Region walls | Called 界壁 (域壁 has no hits): Miasma 瘴气 (Southern Border), Licorice 甘草 (Northern Plains), Azure Water 苍水 (Eastern Sea), Raging Flame 狂炎 (Western Desert), Sage 圣贤 (Central Continent) | R V5/22, V4/61, V4/279 | CANON |
+
+## Decisions for the user (⛔)
+
+* **B1. Eastern Sea major:** the Shen clan 沈家 (the strongest righteous house, two rank 8s, R V5/885) or the
+  Zombie Alliance 僵盟 (an immortal-zombie playstyle, headquartered there, R V4/4). Lore and taste.
+* **B2. Western Desert major:** the Tang clan 唐家 (dream path; found Thieving Heaven's dream realm, R V4/126) or the
+  Fang clan 房家 (three Gu Houses, the strongest army, R V5/498; 房 is not Fang Yuan's 方).
+* **B3. Inheritances: 12 of 14 candidates.** Default: the ten Venerables' + Three Kings + Long Hair Ancestor; left out:
+  Hu Immortal (it becomes a blessed-land landmark and its contest), Blood Sea Ancestor's nine pieces (civilopedia),
+  the 88 True Yang Building (inside the Imperial Court Blessed Land landmark).
+* **B4. Dream realms:** (a) keep MOD_SPEC_2 #11/#14 (they open when Fate Gu shatters; ADAPTED) or (b) canon: dream
+  realms open by era (rank 7+), and a shattered Fate Gu sets off the qi tides and the fall of the walls. Default (b).
+* **B5.** Confirm the seed corrections above (essences, grades, Wisdom Gu rank 9).
+
+## Budget (MOD_SPEC_2, amended by MOD_SPEC_3)
+
+| Line | Cap | Plan |
+|---|---|---|
+| Eras | Rank 5, 6, 7, 8 (rank 9 is never an era) | 4 |
+| Immortal Gu wonders | ≤30 | 30 (Fate Gu among them) |
+| Killer moves | ≤2 per path (MOD_SPEC_3) | `docs/PATHS.md`: 46 immortal moves at Great Grandmaster |
+| Gu Houses | ≤4 | 4 |
+| Inheritances | ≤12 | 12 (decision B3) |
+| Secret realms | ≤12 | 12 natural wonders |
+| New stockpiles | ≤10 | 10 |
+| Events | ≤25 | 20 |
+| Nations | Heavenly Court + ≤4 majors + ≤4 city-states | Heavenly Court + Wu (Slice 1) + Huang Jin + Eastern Sea (B1) + Western Desert (B2); 4 city-states |
+| Gu units (MOD_SPEC_3) | 9 + ≤1 unique per nation | ranks 5–9 below (ranks 1–4 come from Slice 1 in C3's migration) |
+
+## Eras and techs
+
+| Object | Chinese | Verdict | Lore basis (source) | Mechanic |
+|---|---|---|---|---|
+| Rank Five era | 五转 | CANON | The mortal peak; purple crystal essence (R V2/180) | Era; rank-5 Gu Master; ascension preparations |
+| Rank Six era | 六转 | CANON | The immortal threshold; green grape essence (R V3/232) | Era; Gu Immortals, blessed lands, earthly calamities |
+| Rank Seven era | 七转 | CANON | 300 aperture-years: 30 earthly calamities and 3 heavenly tribulations to get here (R V4/177) | Era; red date essence, grand tribulations |
+| Rank Eight era | 八转 | CANON | The aperture becomes a grotto-heaven (R V5/745) | Era; white lychee essence, myriad tribulations, Gu Houses, Venerable Ascension |
+| Purple Crystal Essence (tech) | 紫晶真元 | CANON | Rank 5 primeval essence (R V2/180) | Unlocks the Rank Five Gu Master |
+| Three Qi (tech) | 三气 | CANON | Heaven, earth and human qi must balance to ascend (R V5/346, V3/201) | Unlocks the qi stockpiles' sources and the ascension promotion |
+| Calamity Lore (tech) | 灾劫 | ADAPTED | Calamities come on a schedule and can be prepared for (R V4/91, V5/22) | Unlocks the safer tribulation choices (`Only available` `<if [buildingFilter] is constructed>` on preparation buildings) |
+| Immortal Gu Recipes, rank 6 / 7 / 8 / 9 (4 techs) | 仙蛊方 | CANON | A recipe is the plan for an immortal Gu; even complete ones cost a fortune (R V4/114, V5/564) | Each unlocks that rank's immortal Gu wonders |
+| Gu House Formation (tech) | 仙蛊屋 | CANON | A Gu House is a formation-path killer move built as a fortress (R V4/356) | Unlocks the Gu Houses |
+| Grotto-Heaven (tech) | 洞天 | CANON | The rank 8 aperture (R V5/745) | Unlocks the Grotto-Heaven building |
+| Dao Lord (tech) | 道主 | CANON | A Venerable refines the world's dao marks of his path (R V6/254) | Unlocks Venerable Ascension |
+
+## Stockpiles (10)
+
+All `Stockpiled` resources. Essence **never regenerates by itself** (MOD_SPEC_2 #2): its only sources are blessed lands,
+the grotto-heaven, one immortal Gu, trade, events and plunder.
+
+| Object | Chinese | Verdict | Lore basis (source) | Sources and sinks (patterns) |
+|---|---|---|---|---|
+| Heaven Qi, Earth Qi, Human Qi | 天气 / 地气 / 人气 | CANON | The three qi of ascension; human qi is what the master accumulated in life, and more of it lets more heaven and earth qi fuse (R V5/346, V5/468) | Heaven and earth qi from land (`Instantly provides [positiveAmount] [stockpiledResource]` `<upon turn start>` `<for every [positiveAmount] [countable]>` on owned tiles); human qi from deeds (`Instantly gain [amount] [stockpile]` on victories and events); spent by the ascension (`<costs [amount] [stockpiledResource]>`) |
+| Green Grape Immortal Essence | 青提仙元 | CANON | Rank 6 essence (R V3/232) | Blessed lands; spent by rank-6 immortal Gu recipes (`Costs [amount] [stockpiledResource]`) and immortal moves (`<costs [amount] [stockpiledResource]>`) |
+| Red Date Immortal Essence | 红枣仙元 | CANON | Rank 7 (R V4/141) | Rank 7 blessed lands; rank-7 recipes and moves |
+| White Lychee Immortal Essence | 白荔仙元 | CANON | Rank 8; produced by grotto-heavens (R V5/613, V5/745) | Grotto-Heaven; rank-8 recipes, Gu Houses |
+| Yellow Apricot Immortal Essence | 黄杏仙元 | CANON | Rank 9; even a Venerable runs short (R V6/249, V6/280) | Heavenly Essence Treasure Imperial Lotus, plunder; rank-9 recipes, Venerable Ascension |
+| Lifespan Gu | 寿蛊 | CANON | Named by years; made only by heaven and earth where life teems, never refined; Heaven's Will thins it while a Venerable lives (R V3/194, V4/298, V5/54; F Lifespan_Gu) | Rare finds on lush tiles (`<with [nonNegativeAmount]% chance>`), Year Gu, the market; fewer while a Venerable lives (`<when number of [countable] is more than [countable]>` on [[Venerable] Units]); each immortal consumes it (`Instantly consumes [positiveAmount] [stockpiledResource]` `<every [positiveAmount] turns>` `<for every [positiveAmount] [countable]>`; Phase A: the stock can go negative, a debt) |
+| Immortal Materials | 仙材 | CANON | Ranked materials consumed in refinement; a desolate beast's corpse is a heap of them (R V5/52, V5/734) | Beast kills (`Earn [amount]% of killed [mapUnitFilter] unit's [costOrStrength] as [stockpile]`), secret realms; spent by recipes |
+| Immortal Essence Stones | 仙元石 | CANON | A currency only the Heavenly Court makes; a quick refill of essence in war (R V6/262, V5/428) | The Heavenly Court produces them; the market converts them into essence one way (F) |
+
+## Units
+
+Ranks 1–4 stay Slice 1's until C3's migration (MOD_SPEC_3: one chain of 9 units on three unit types; promotions kept
+on upgrade, Phase A3).
+
+| Object | Chinese | Verdict | Lore basis (source) | Mechanic (patterns) |
+|---|---|---|---|---|
+| Rank Five Gu Master | 五转蛊师 | CANON | Peak mortal; many never risk ascension (R V3/201) | Gu Master type; reaches rank 6 only through the Ascension event (`[unitTriggerTarget] upgrades for free`). How the plain Upgrade button stays shut while the event can still upgrade is a C1 capability test (a gate on the rank-6 unit that the event's promotion satisfies) |
+| Ascension (kept promotion) | 升仙 | ADAPTED | Crush the aperture, draw in and balance the three qi, survive the ascension calamity and tribulation; failure kills (R V3/201, V5/346, V3/222) | A kept, self-removing promotion (E4) costing the three qi; it triggers the Ascension event from the unit, so failure can destroy the unit (`[unitTriggerTarget] is destroyed`) and success upgrades it |
+| Rank Six / Seven / Eight Gu Immortal | 六转 / 七转 / 八转蛊仙 | CANON | The immortal ranks; one rank is a strong edge, not an absolute one (R V6/105) | Gu Immortal type; R7 and R8 gated on essence (`Only available` `<when above [amount] [stat/resource]>`, which also blocks upgrades); lifespan decay (`[unitTriggerTarget] takes [positiveAmount] damage` `<upon turn start>` `<when below [amount] [stat/resource]>`) |
+| Venerable | 尊者 (仙尊 / 魔尊) | CANON (as a unit ADAPTED) | Rank 9, unbeatable in its era, but only long-lived, never eternal (R V6/105, V3/194) | MOD_SPEC_3: one alive in the world (`Limited to [amount] per Civilization` + the world wonder gate `Only available` `<if [buildingFilter] is constructed>`), `Unbuildable`, `Cannot be purchased`, finite life (`[unitTriggerTarget] takes [positiveAmount] damage` `<upon turn start>` + `Can only heal by pillaging`) |
+| Immortal Zombie | 仙僵 | CANON | An immortal turned zombie: no ageing, a dead aperture, no essence income, no calamities, no advancement (R V4/141, V4/290, V5/70) | Civ-level `Free [unit] appears` `<upon losing a [mapUnitFilter] unit>` filtered on the top immortal rank (E9: it also fires on upgrade), plus `Can only heal by pillaging`; no lifespan decay |
+| Desolate Beast | 荒兽 | CANON | About a rank 6 immortal; its corpse is rank 6 materials (R V5/14, V5/734) | Barbarian elite; kills yield Immortal Materials; civ units carry `Never appears as a Barbarian unit` |
+| Ancient Desolate Beast | 上古荒兽 | CANON | About rank 7 (R V5/14) | As above, rank 7 |
+| Immemorial Desolate Beast | 太古荒兽 | CANON | About rank 8; one killed the Heavenly Court's rank-7 Fixed Immortal Travel holder (R V5/14, V5/48) | As above, rank 8 |
+
+### Gu Houses (4)
+
+Super units (MOD_SPEC_2 #6): `Limited to [amount] per Civilization`, `Only available` `<if [buildingFilter] is constructed>`
+(a specific immortal Gu), heavy `[relativeAmount]% maintenance costs`. A Gu House is a formation-path move built as a
+fortress that more operators make stronger (R V4/356, V5/613).
+
+| Object | Chinese | Verdict | Lore basis (source) | Needs (immortal Gu) |
+|---|---|---|---|---|
+| Heaven Overseeing Tower | 监天塔 | CANON (as a unit ADAPTED) | The Heavenly Court's rank-9 Gu House around Fate Gu; it watches the world and shrugs off calamities (R V4/356, V5/694, V4/358) | Fate Gu; the Heavenly Court's unique unit |
+| Calamity Luck Altar | 劫运坛 | CANON | Longevity Heaven's rank-8 luck altar, used in the war on the Heavenly Court (R V5/694) | Connect Luck |
+| Myriad Year Flying Warship | 万年斗飞车 | CANON (name) | A rank-8 time-path fortress that sails the river of time (R V6/68; F) | Years Flow Like Water |
+| Dragon Palace | 龙宫 | ADAPTED | A rank-8 dream-token enslavement fortress (R V6/14; F) | Dream Token |
+
+## Buildings and wonders
+
+| Object | Chinese | Verdict | Lore basis (source) | Mechanic (patterns) |
+|---|---|---|---|---|
+| Lower / Middle / Upper / Super Grade Blessed Land (4) | 下等 / 中等 / 上等 / 特等福地 | CANON | The rank 6–7 immortal aperture; grade sets size and essence (about 10 / 20 / 30 / 50 a year); most rank 6s get lower or middle; super needs a physique like the Ten Extremes; faster time brings calamities sooner (R V4/290, V5/6, V4/44) | Granted by the Ascension event's grade die (`<with [nonNegativeAmount]% chance>`, preparation raising the odds) with `Gain a free [buildingName] [cityFilter]`; essence yield 1 : 2 : 3 : 5. Phase A: a free building vanishes if its city is captured, which fits canon (a lost aperture is lost) |
+| Grotto-Heaven | 洞天 | CANON | The rank 8 aperture: white lychee essence, heavenly crystals (R V5/745; F Grotto-Heaven) | Replaces the blessed land at rank 8 (`Remove [buildingFilter] [cityFilter]` + a free Grotto-Heaven) |
+| Calamity preparations (Formation Ward, Stockpile Vault) | — | ADAPTED | Canon preparation: stockpile, plan defences, clear the land of creatures a tribulation could turn (R V5/22, V5/70) | Open the safer tribulation choices (`Only available` `<if [buildingFilter] is constructed>`) |
+| Venerable Ascension (world wonder) | 成尊 | ADAPTED | Rank 9 needs rank 8 essence, supreme-grandmaster attainment, ~300k main-path dao marks and breaking the three blockades (tribulation, Lifespan Gu, Fate Gu) (R V6/119, V4/362) | MOD_SPEC_3: single-path mastery via `max()` (Phase A6) or a count of Supreme Grandmasters (`[mapUnitFilter] Units`); `Costs [amount] [stockpiledResource]` (Yellow Apricot); Fate Gu as the third blockade (canon) is an option for C5 |
+| Eternal Life (world wonder) | 永生 | ADAPTED | Fang Yuan's goal, beyond any Venerable; rank 9 is only a step (R V3/194, V6/119) | Victory milestone `Build [building]`; buildable only while you own a Venerable (`Only available` `<when number of [countable] is more than [countable]>` on [[Venerable] Units]) |
+| True Inheritance (world wonder) | 真传 | ADAPTED | A Venerable's death leaves a true inheritance others fight over (canon pattern: every Venerable left one) | On the Venerable's death the ascension wonder is removed (`Remove [buildingFilter] [cityFilter]`) and a free seal (`Gain a free [buildingName] [cityFilter]`; a seal need not be seizable) makes the True Inheritance **buildable** (`Only available` `<if [buildingFilter] is constructed>`): Phase A3, a free wonder vanishes on capture, so seizing needs a built one |
+
+### Immortal Gu (30 world wonders)
+
+MOD_SPEC_2 #3: `isWonder`; a recipe tech per rank; `Costs [amount] [stockpiledResource]` in that rank's essence;
+`Never destroyed when the city is captured` (Phase A2: a built one changes hands); markers `Immortal Gu` and
+`<Path> Path` (the dao-mark countable `[buildingFilter] Buildings`, PATHS.md conflicts); refinement can fail: the
+completion event may `Remove [buildingFilter] [cityFilter]`, reopening the race, or call down its own tribulation
+(仙蛊成劫, R V5/54). Canon: each immortal Gu is unique in the world (R V4/100, V5/56); most rank 6s own none, rank 7–8s
+two or three (R V5/440); they must be fed (R V4/61). Fewer than ten rank 9 Gu exist at a time (R V5/559).
+
+| Immortal Gu | Chinese | Rank / path | Verdict | Lore basis (source) | Effect for its owner (patterns) |
+|---|---|---|---|---|---|
+| Spring Autumn Cicada | 春秋蝉 | 6 / Time | CANON | Red Lotus's vital Gu: on death its holder's will returns up the river of time; risky, drains luck (R V5/456, V5/9) | `Free [unit] appears` `<upon losing a [mapUnitFilter] unit>` `<with [nonNegativeAmount]% chance>` (a rank-6 immortal returns) |
+| Fixed Immortal Travel | 定仙游 | 6 / Space | CANON | Teleports its holder to any remembered place, own rank only (R V5/48, V5/56) | `[amount] Movement` `<for [mapUnitFilter] units>` (rank-6 immortals only) |
+| Man as Before | 人如故 | 6 / Time | CANON | Restores a body to an earlier moment (R V4/44, V5/440) | `[amount] HP when healing` `<for [mapUnitFilter] units>` |
+| Unravel Mystery | 解谜 | 6 / Wisdom | CANON | Solves inheritance trials and puzzles (R V4/114, V5/440) | Opens the safest choice of each inheritance trial (`Only available` `<if [buildingFilter] is constructed>`) |
+| Connect Luck | 连运 | 6 / Luck | CANON | Links one's luck to others; offsets Spring Autumn Cicada's cost (R V4/15, V5/440) | Raises Spring Autumn Cicada's chance (a second `Free [unit] appears` line needs both: `<if [buildingFilter] is constructed>`); the Calamity Luck Altar needs it |
+| Self Strength | 我力 | 6 / Strength | CANON | Core of Myriad Self (R V5/440, V4/44) | `[relativeAmount]% Strength` `<for [mapUnitFilter] units>` (strength-path units) |
+| Woman's Heart | 妇人心 | 6 / Poison | CANON | A rank-6 poison-path immortal Gu (R V5/440; PATHS.md) | `[relativeAmount]% Strength` `<vs [mapUnitFilter] units>` (vs wounded units) |
+| Bone Spike | 骨刺 | 6 / Bone | CANON | A rank-6 bone-path immortal Gu (R ch1132; F Bone_Path) | `[relativeAmount]% Strength` `<when defending>` `<for [mapUnitFilter] units>` |
+| Star Eyes | 星眸 | 6 / Star | CANON | A rank-6 immortal Gu in Fang Yuan's inventory (R V5/440) | `[amount] Sight` `<for [mapUnitFilter] units>` |
+| Divert Disaster | 排难 | 6 / Luck | ADAPTED | Weakens or diverts calamities (R V5/30 name; F, rank 6–7) | Opens the gentlest choice of each tribulation (`Only available` `<if [buildingFilter] is constructed>`) |
+| Dragon Strength | 龙力 | 7 / Strength | CANON | Permanent dragon-grade strength (R V5/440) | `[relativeAmount]% Strength` `<for [mapUnitFilter] units>` (larger than Self Strength) |
+| Year Gu | 年蛊 | 7 / Time | CANON | Stored years: time-path fuel and a trade good (R V5/440, V5/430) | `Instantly provides [positiveAmount] [stockpiledResource]` `<upon turn start>` `<every [positiveAmount] turns>` (Lifespan Gu) |
+| Formation Flag | 阵旗 | 7 / Formation | CANON | Stores a whole formation and carries it elsewhere (R V5/440) | `[relativeAmount]% Strength` `<when adjacent to a [mapUnitFilter] unit>` `<for [mapUnitFilter] units>` |
+| Divination Tortoise Shell | 卜卦龟背 | 7 / Wisdom | CANON | Blocks deductions about its user (R V5/440) | Shields its owner from Heaven's Will's extra calamities (`Unavailable` `<if [buildingFilter] is constructed>` on the Heaven's Will trigger) |
+| Dragon Centipede | 龙蜈 | 7 / Sword | CANON | The world's only one; a wild Gu that hunts ancient desolate beasts (R V5/65) | `[relativeAmount]% Strength` `<vs [mapUnitFilter] units>` (vs desolate beasts) |
+| Reputation Restriction | 名缰 | 7 / Information | CANON | A rope that binds desolate, even ancient desolate, beasts (R V5/440) | `Earn [amount]% of killed [mapUnitFilter] unit's [costOrStrength] as [stockpile]` (Immortal Materials from desolate beasts; capturing them is a unit-only unique) |
+| Calamity Beckoning | 招灾 | 7 / Luck | CANON | Draws calamities onto oneself instead of others (R V4/114) | Adds a tribulation choice: take it now, prepared (`Only available` `<if [buildingFilter] is constructed>`) |
+| Change Soul | 换魂 | 7 / Soul | CANON | A rank-7 soul-path immortal Gu (R V5/440) | `[relativeAmount]% XP gained from combat` `<for [mapUnitFilter] units>` |
+| Dragon Breath | 龙息 | 7 / Transformation | CANON | A rank-7 transformation immortal Gu (R V5/440; PATHS.md) | `[relativeAmount]% Strength` `<when attacking>` `<for [mapUnitFilter] units>` |
+| Heavenly Essence Treasure Imperial Lotus | 天元宝皇莲 | 8 / Wood | CANON | Genesis Lotus's core Gu; swells essence income (R V6/249, V2/109) | The one essence source that is a Gu: `Instantly provides [positiveAmount] [stockpiledResource]` `<upon turn start>` `<every [positiveAmount] turns>` |
+| Years Flow Like Water | 似水流年 | 8 / Time | CANON | Turns immortal essence into Year Gu (R V5/108, V5/440) | `Instantly consumes [positiveAmount] [stockpiledResource]` + `Instantly provides [positiveAmount] [stockpiledResource]` `<every [positiveAmount] turns>` (essence into Lifespan Gu); the Warship needs it |
+| Dream Token | 如梦令 | 8 / Dream | ADAPTED | Enslaves even rank 8s through dreams (R V5/827; F) | `[relativeAmount]% Strength` `<vs [mapUnitFilter] units>` (vs Gu Immortals: dream-bound foes falter); the Dragon Palace needs it |
+| Soul Beast Token | 魂兽令 | 8 / Enslavement | ADAPTED | Commands soul beasts (R V5/508; F) | `[amount] units cost no maintenance` |
+| Treasure Light Gu | 宝光蛊 | 8 / Light | ADAPTED | Prices goods at Treasure Yellow Heaven (R V3/61; F) | Better market choices (`Only available` `<if [buildingFilter] is constructed>`) |
+| Advance Refinement Gu | 升炼蛊 | 8 / Refinement | ADAPTED | Raises other Gu's rank; core of refinement formations (F) | `[relativeAmount]% Production when constructing [buildingFilter] wonders [cityFilter]` (immortal Gu) |
+| Steal Life | 偷生 | 8 / Theft | ADAPTED | Thieving Heaven's first Gu, life theft (R V5/729; F) | `Heals [amount] damage if it kills a unit` `<for [mapUnitFilter] units>` |
+| Human Qi Immortal Gu | 人气仙蛊 | 8 / Qi | ADAPTED | One of the three qi as a rank-8 Gu, held by Primordial Origin (F) | `Instantly gain [amount] [stockpile]` `<upon turn start>` `<every [positiveAmount] turns>` (Human Qi: easier ascensions) |
+| Fate Gu | 宿命蛊 | 9 / Heaven | CANON | Fixes every being's destiny; wounded by Red Lotus and repaired by the Heavenly Court, read through the Heaven Overseeing Tower; Heaven's Will is one of its materials; Fang Yuan destroyed it (R V5/720, V5/721, V5/694, V4/358, V5/940) | **User decision (Phase A): `uniqueTo` the Heavenly Court and built by it.** World state: `<if [buildingFilter] is constructed by anybody>` / `<if [buildingFilter] is not constructed by anybody>`; the Fate War on capture (`<upon conquering a city>`); dream-realm camps gated on `Marks a barbarian camp` (Phase A7) or the qi tides (decision B4) |
+| Wisdom Gu | 智慧蛊 | 9 / Wisdom | CANON | Light of wisdom that speeds deduction, at a lifespan cost; second only to Fate Gu in the Court's eyes (R V5/559, V6/343; F) | `[relativeAmount]% [stat]` (Science) + `Instantly consumes [positiveAmount] [stockpiledResource]` `<every [positiveAmount] turns>` (Lifespan Gu) |
+| Derivation Gu | 衍化蛊 | 9 / Rule | ADAPTED | Derives new results from given inputs; core of a Heavenly Court formation (R V6/319; F) | `[relativeAmount]% Production when constructing [buildingFilter] buildings [cityFilter]` |
+
+Left out (civilopedia only): Sovereign Immortal Fetus Gu (Fang Yuan's one-use rebirth, R V5/350), Love Gu (F only,
+[VERIFY]), Heavenly Secret Immortal Gu, Mutation, Regret, the four seasons, Landscape as Before, Dog Shit Luck,
+Blessing in Disguise, Great Thief, Possession, Time Anchor and the other rank 6–8 Gu of R V5/440.
+
+## Inheritances (12, decision B3)
+
+MOD_SPEC_2 #12, with the user's Phase A decision: **the trial unlocks building the inheritance** (a world wonder;
+`Only available` `<if [buildingFilter] is constructed>` on a cheap seal the trial grants), so conquest can seize it.
+Trials are thrown by the owned-tile trigger (`Triggers a [event] event` `<upon turn start>`
+`<when number of [countable] is more than [countable]>` on Owned [tileFilter] Tiles, `<every [positiveAmount] turns>`;
+`Unavailable` `<if [buildingFilter] is constructed by anybody>`, Phase A4), mix chance and preparation, and can cost units.
+Giant Sun grades true inheritances ordinary / unparalleled / supreme (R V3/193–195).
+
+| Inheritance | Chinese | Verdict | Lore basis (source) | Trial and prize |
+|---|---|---|---|---|
+| Primordial Origin's true inheritance | 元始真传 | CANON | Qi-path heritage of the Court's founder; a bargaining chip (R V5/818, V6/20) | Central Continent; qi-path units, Human Qi |
+| Star Constellation's true inheritance | 星宿真传 | CANON | Wisdom-path heritage, intricate and taxing on the mind (R V5/558) | Central Continent; wisdom and star paths |
+| Limitless's inheritance | 无极真传 | CANON | Ends in a last test that must be broken (R V4/288, V5/350) | Northern Plains (Crazed Demon Cave, F); rule path |
+| Reckless Savage's inheritances | 狂蛮传承 | CANON | Endurance tests before the heritage yields (R V3/192, V4/63) | Strength and transformation paths |
+| Red Lotus's true inheritances | 红莲真传 | CANON | Seven, carried by Stone Lotus Islands in the River of Time, meant to arm Fate's future enemy (R V5/414, V4/181) | River of Time realm; time path; contested in open battle |
+| Genesis Lotus's inheritance | 元莲真传 | CANON | Rumoured key: refine the Heavenly Essence Treasure Imperial Lotus to rank 6 (R V2/109, V5/447) | Wood path; the trial needs the Lotus |
+| Thieving Heaven's true inheritances | 盗天真传 | CANON | Ten, in pairs; only an otherworldly demon qualifies, no combat (R V4/300, V4/341) | Luo Po Valley; theft path; no fight, a pure chance trial |
+| Giant Sun's luck true inheritances | 己运 / 众生运 / 天地运 | CANON | A ladder of luck: self, all beings, heaven and earth (R V5/30) | Northern Plains; luck path |
+| Spectral Soul's true inheritance | 幽魂真传 | CANON | Soul-path summit on a Stone Lotus Island he seized (R V5/414) | Soul path |
+| Paradise Earth's true inheritances | 乐土真传 | CANON | One per region (F); the Eastern Sea one lies inside the Azure Dragon Whale (R V5/628) | Earth path; Dragon Whale Paradise |
+| Three Kings Inheritance | 三王传承 | CANON | Three light pillars (enslavement, refinement, fire), each needing a key Gu, inside a dying blessed land (R V2/87, V2/173) | Southern Border (San Cha Mountain); the rank-5 trial |
+| Long Hair Ancestor's refinement true inheritance | 长毛老祖炼道真传 | CANON | The "first refiner of all time", one of three refinement supreme grandmasters (R V5/426, V5/761; R ch1326) | Lang Ya; refinement path |
+
+## Secret realms and landmarks (12 natural wonders)
+
+MOD_SPEC_2 #13: `NaturalWonder` terrains, all placed on the five-region map (Slice 3); hazards on units
+(`[unitTriggerTarget] takes [positiveAmount] damage` `<upon entering a [tileFilter] tile>` `<for units without [promotion]>`,
+or `Units ending their turn on this terrain take [amount] damage`), boons by
+`Grants [promotion] ([comment]) to adjacent [mapUnitFilter] units for the rest of the game`.
+
+| Realm | Chinese | Verdict | Lore basis (source) | Hazard / boon |
+|---|---|---|---|---|
+| Dang Hun Mountain | 荡魂山 | CANON | Shakes the soul harder the higher one climbs; broken souls become Guts Gu (R V2/167, V2/173) | Damage on entry; soul-path boon |
+| Luo Po Valley | 落魄谷 | CANON | Soul-loosening fog and soul-cutting wind; one of soul path's two holy lands; sealed by Thieving Heaven (R V3/17, V4/341) | Damage per turn; Thieving Heaven's inheritance |
+| Reverse Flow River | 逆流河 | CANON | No Gu works inside; attacks near it rebound (R V3/241, V5/231) | Strength penalty nearby; the Reverse Flow Protection Seal |
+| River of Time | 光阴长河 | CANON | Time-path currents; Red Lotus's Stone Lotus Islands (R V4/181, V5/414) | Damage; Red Lotus's inheritance |
+| Door of Life and Death | 生死门 | CANON | The dead are drawn in; since Fate Gu's wound some escape as zombies; Life and Death Gu (R V2/185, V4/73) | Zombie spawns; heal boon |
+| Book Mountain | 书山 | CANON | Ink waterfall and literature spring (R V3/90) | Science yield; information path |
+| Crazed Demon Cave | 疯魔窟 | CANON | Demonic sound drives creatures mad (R V5/152, V5/895) | Damage; Limitless's inheritance |
+| Dragon Whale Paradise | 龙鲸乐土 | CANON | Inside the Azure Dragon Whale; maddening black fire; Paradise Earth's Eastern Sea inheritance (R V5/628, V5/734) | Damage; Paradise Earth's inheritance |
+| Tian Ti Mountain | 天梯山 | CANON | The ruined stair to the Heavenly Court; fighting on it affronts the Court (R V3/2, V4/53) | Heavenly Court flavour; Hu Immortal contest site |
+| Lang Ya Blessed Land | 琅琊福地 | ADAPTED (a blessed land as a landmark) | Refinement succeeds more often; its land spirit trades Gu (R V3/55, V3/80) | Refinement boon |
+| Imperial Court Blessed Land | 王庭福地 | ADAPTED (as a landmark) | Opens every ten years to the contest winner; shelter from the blizzard; the 88 True Yang Building (R V3/143, V3/84) | The Imperial Court Contest's prize |
+| Hu Immortal Blessed Land | 狐仙福地 | ADAPTED (as a landmark) | A rank-6 aperture on Tian Ti Mountain, won by the first to climb its Dang Hun Mountain (R V2/142, V2/166) | Contest prize (decision B3) |
+
+## Events (20)
+
+Every choice carries `[relativeAmount]% weight to this choice for AI decisions` (MOD_SPEC rule 7); no choice may strictly
+dominate another (MOD_SPEC_2 tension targets).
+
+| Event | Chinese | Verdict | Lore basis (source) | Mechanic |
+|---|---|---|---|---|
+| Ascension | 升仙 | CANON | Crush, balance, blast out the aperture; imbalance kills (R V3/201, V6/124, V3/222) | From the unit's kept promotion; prepared choices (`Only available` `<when above [amount] [stat/resource]>`) |
+| Blessed Land Grade (silent die) | 福地品级 | CANON | Grade by qi balance and foundation (R V4/290) | Weighted die (E1), preparation raises the odds |
+| Earthly Calamity | 地灾 | CANON | Every 10 aperture-years at rank 6 (R V4/91) | **User decision: a timed status on the ascended unit** (`[unitTriggerTarget] gains the [promotion] status for [positiveAmount] turn(s)`; `<upon losing the [promotion] status>` throws the event, E7) |
+| Heavenly Tribulation | 天劫 | CANON | Every 100 years at rank 6, every 50 at rank 7 (R V4/91, V4/177) | As above, longer timer |
+| Grand Tribulation | 浩劫 | CANON | Rank 7–8 (R V4/91, V6/167) | As above |
+| Myriad Tribulation | 万劫 | CANON | Rank 8; surviving one is a rare glory (R V4/358) | As above |
+| Chaos Calamity | 混沌大难 | CANON | The rank-9 trial, from outside the world (R V6/280) | The Venerable's lifespan race (MOD_SPEC_3) |
+| Heaven's Will | 天意 | CANON | Trims the strong: harsher calamities, fewer Lifespan Gu (R V5/54) | MOD_SPEC_2 #10: `<when number of [countable] is more than [countable]>` on Cities vs [[Immortal Gu] Buildings] |
+| Immortal Gu Refinement | 炼仙蛊 | CANON | Refinement can fail or call its own tribulation (R V5/54) | On completion (`<upon constructing [buildingFilter]>`): success / tribulation / `Remove [buildingFilter] [cityFilter]` |
+| Inheritance Rumour (silent die) | — | INVENTED | Glue | Throttles the trials |
+| Inheritance Trial | 传承考验 | CANON | Every inheritance is a test or a trap (MOD_SPEC_2 #12) | Grants the seal that unlocks building the inheritance, or costs units |
+| Treasure Yellow Heaven | 宝黄天 | CANON | The immortals' market; treasure light prices goods (R V3/61) | MOD_SPEC_2 #16: stones for essence, Lifespan Gu, materials |
+| Desolate Beast Tide | 兽潮 | ADAPTED | Under Heaven's Will even gentle beasts turn frenzied (R V4/359) | `[positiveAmount] [unit]s rebel` inside borders |
+| Immortal Zombie | 仙僵 | CANON | Some dead keep their power as zombies since Fate Gu's wound (R V4/73) | Rise as a zombie or rest (choice) |
+| Fate War | 宿命大战 | CANON | Longevity Heaven storms the Court for Fate Gu; Fang Yuan shatters it (R V5/689–718, V5/939) | MOD_SPEC_2 #11: on capturing Fate Gu's city, Shatter (`Remove [buildingFilter] [cityFilter]`) or Seize |
+| Qi Tides | 气潮 | CANON | After the Fate War the walls fade and qi tides sweep the world (R V6/1, V6/13) | Decision B4 |
+| Refinement Path Convention | 炼道大会 | CANON | The Court's refinement fair whose failures heal Fate Gu (R V4/81, V4/196) | The Heavenly Court repairs Fate Gu; rivals may raid it |
+| Imperial Court Contest | 王庭之争 | CANON | Every ten years a killing blizzard; the winning alliance enters the blessed land (R V3/143, V3/131) | Northern Plains, every N turns |
+| Battle of Yi Tian Mountain | 义天山大战 | CANON | A drawn-out righteous-demonic war steered by immortals (R V5/48, V4/316) | Southern Border: Righteous vs Demonic policy holders |
+| Wild Immortal Gu | 野生仙蛊 | CANON | Wild immortal Gu live inside desolate beasts and plants (R V5/65, V5/45) | Rare find from beast kills, like Slice 1's wild Gu |
+
+## Nations
+
+| Nation | Chinese | Verdict | Lore basis (source) | Role and main path (PATHS.md) |
+|---|---|---|---|---|
+| Heavenly Court | 天庭 | CANON | Founded by Primordial Origin, ruled by three Venerables; guards and repairs Fate Gu in the Heaven Overseeing Tower; rules the Central Continent through the ten ancient sects; hunts fate escapees (R V6/117, V4/189, V4/299) | The special faction; builds Fate Gu; unique Gu House; main path Wisdom (proposal: Star Constellation's inheritance stays in the Court) |
+| Wu Clan (Slice 1) | 武家 | CANON | First of the 13 Southern Border super clans (R V5/589) | Southern Border; Strength |
+| Huang Jin Family / Longevity Heaven | 黄金家族 / 长生天 | CANON | Every bloodline of Giant Sun; no Huang Jin line may be wiped out; Longevity Heaven raids the Court in the Fate War (R V3/92, V3/139, V5/689) | Northern Plains; Luck; Calamity Luck Altar |
+| Eastern Sea major | 沈家 or 僵盟 | CANON | Decision B1 | Eastern Sea; path [VERIFY] |
+| Western Desert major | 唐家 or 房家 | CANON | Decision B2 | Western Desert; Tang: Dream |
+| City-states: Lang Ya Sect, Spirit Affinity House, Combat Immortal Sect, Merman Imperial Court | 琅琊派 / 灵缘斋 / 战仙宗 / 鲛人王庭 | CANON | Hairy-men refiners of Lang Ya (R V3/55); two of the ten ancient sects (R V4/55); the Eastern Sea's merfolk court (R V5/640) | Refiner, cultured, militaristic and maritime city-states |
+| Shadow Sect | 影宗 | CANON | Spectral Soul's split souls working to revive him; fate defiers (R V4/367) | Not a nation: hostile events and zombie formations |
+
+## Victory
+
+Eternal Life (MOD_SPEC_3): milestones `Build [building]` (Eternal Life) after Venerable Ascension; the Venerable races
+its own lifespan. Domination (Slice 1) stays.

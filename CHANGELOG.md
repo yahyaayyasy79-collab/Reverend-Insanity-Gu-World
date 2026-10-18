@@ -278,3 +278,16 @@
   passes on it (lint and Unciv's own validator 0 findings); autoplay on it, 6 × 150 turns: 0 crashes, 264 of 264 AI
   path promotions on the clan's main path. No content JSON ships.
 
+## MOD_SPEC_2 Phase B — immortal-arc lore (2026-10-18)
+
+* `docs/LORE_MAPPING.md`, new part "Immortal arc": one row per rank 5–9 object within the budget, each with Chinese,
+  a raw-text or fan-wiki source, CANON / ADAPTED / INVENTED and the documented patterns it will use: 4 eras and 11
+  techs, 10 stockpiles, the rank 5–9 units, immortal zombie, three desolate-beast tiers, 4 Gu Houses, blessed-land
+  grades, grotto-heaven, Venerable Ascension, Eternal Life, True Inheritance, 30 immortal Gu, 12 inheritances, 12
+  secret realms and landmarks, 20 events, the Heavenly Court and the other majors, 4 city-states.
+* Corrections to MOD_SPEC_2's lore seeds from the source research: Purple Crystal is rank 5 mortal essence and rank 9 is
+  Yellow Apricot; four blessed-land grades and the grotto-heaven as the rank 8 aperture; Wisdom Gu rank 9; Myriad Self
+  fuses enslavement and strength; four tribulation tiers plus the chaos calamity; dream realms precede the Fate War in
+  canon. Five decisions for the user (B1–B5).
+* `docs/PATHS.md`: Myriad Self's tag notes the enslavement-strength fusion.
+

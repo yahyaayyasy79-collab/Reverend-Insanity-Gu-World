@@ -7,8 +7,8 @@ approves the migration plan).
 
 ## How this was checked
 
-* **Sources.** R = the raw Chinese text, cited by global chapter number (the numbering of the fan wiki's
-  citations); the copy used is an unofficial upload, so it is never linked from the mod. F = the Reverend Insanity
+* **Sources.** R = the raw Chinese text, cited by global chapter number (R ch*N*, the numbering of the fan wiki's
+  citations) or as R V*v*/*n* (volume *v*, chapter *n* of that volume); the copy used is an unofficial upload, so it is never linked from the mod. F = the Reverend Insanity
   fan wiki (`reverend-insanity.fandom.com/wiki/<page>`), whose English names (a fan translation) are used here.
   Verdict rule: CANON = the name and its Chinese are attested in R **and** described on F. The research was done by
   subagents against R and F; only the verdicts are kept here (CLAUDE.md).
@@ -187,7 +187,7 @@ literal. The names that are canon killer moves without a known grade are placed 
 
 | Path | Family template | Mortal move (Grandmaster) | Tag | Immortal move (Great Grandmaster) | Tag |
 |---|---|---|---|---|---|
-| Strength | A | Self-Reliance 自力更生 | ADAPTED: a Gu | Myriad Self 万我 | CANON |
+| Strength | A | Self-Reliance 自力更生 | ADAPTED: a Gu | Myriad Self 万我 | CANON; canon fuses enslavement and strength (R V4/134) |
 | Transformation | A | Flying Bear Change 飞熊变 | CANON, lit. name | Ancient Sword Dragon 上古剑蛟 | CANON |
 | Bone | A | Bone Spear 骨枪 | ADAPTED: a Gu | Bone Spike 骨刺 | ADAPTED: a rank-6 Immortal Gu |
 | Blood | A | Blood Skull 血颅 | ADAPTED: a Gu | Blood Deity 血神子 | CANON |

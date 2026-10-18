@@ -28,8 +28,9 @@ of 48 clans 20+ turns in the red; King now richer, BALANCE.md item 2).
 MOD_SPEC_2 Gate passed 2026-10-18 (Slice 1 Definition of Done met: user's game past T300 Marathon, no crash; Locate
 mod errors green). MOD_SPEC_3 Phase A3 done 2026-10-18 (CAPABILITIES.md, E9-E10), waiting at its checkpoint; then
 MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). A3 approved
-2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); next B3 (docs/PATHS.md)
-and B (LORE_MAPPING rank 5-9), research notes in LORE_MAPPING/PATHS only.
+2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md)
+and B (LORE_MAPPING "Immortal arc") drafted 2026-10-18, waiting at their checkpoints (decisions 1-6 in PATHS.md, B1-B5
+in LORE_MAPPING).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.

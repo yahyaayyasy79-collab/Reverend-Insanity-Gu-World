@@ -16,7 +16,7 @@ FAMILIES = {
 P = [
     ("strength", "Strength", "力道", "A", None, "F Strength_Path; R ch597, 1064", "CANON",
      "No damage penalty for wounded units", "a tempered body keeps its force while hurt",
-     ("Self-Reliance", "自力更生", "ADAPTED: a Gu"), ("Myriad Self", "万我", "CANON")),
+     ("Self-Reliance", "自力更生", "ADAPTED: a Gu"), ("Myriad Self", "万我", "CANON; canon fuses enslavement and strength (R V4/134)")),
     ("transformation", "Transformation", "变化道", "A", None, "F Transformation_Path; R ch597, 1041", "CANON",
      "Double movement in [Forest]", "beast forms run where beasts run",
      ("Flying Bear Change", "飞熊变", "CANON, lit. name"), ("Ancient Sword Dragon", "上古剑蛟", "CANON")),
