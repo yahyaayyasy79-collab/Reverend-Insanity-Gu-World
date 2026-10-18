@@ -1,6 +1,8 @@
 # CLAUDE.md — Reverend Insanity: Gu World (Unciv base-ruleset mod)
 
-Read `MOD_SPEC.md` completely at the start of every session; it is the contract. Talk to the user in **Bahasa
+Read `MOD_SPEC.md` completely at the start of every session; it is the contract. `MOD_SPEC_3.md` (2026-10-18:
+Gu Masters rank 1–9, all canonical paths) amends it; precedence on conflict: MOD_SPEC_3 > MOD_SPEC_2 > MOD_SPEC.
+MOD_SPEC_2 is referenced but not in the repo (never received as of 2026-10-18); MOD_SPEC_3 Phase A3 waits for its Gate. Talk to the user in **Bahasa
 Indonesia**; repository files stay in English.
 
 ## Status
@@ -110,6 +112,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 ## Files
 
 * `MOD_SPEC.md` — the spec (phases, systems S1–S8, budget, Definition of Done).
+* `MOD_SPEC_3.md` — amendment: rank chain R1–R9 on three unit types, every canonical path as promotion lines with
+  attainment tiers, Venerable and Eternal Life; phases A3 (capability tests) → B3 (docs/PATHS.md) → C3 (migration).
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
 * `docs/LORE_MAPPING.md` — Phase 1: one row per Slice 1 object (lore, role, exact uniques, CANON/ADAPTED/INVENTED,
   [VERIFY]), questions for the user, refinement ladder, events in detail, balance starting numbers.
