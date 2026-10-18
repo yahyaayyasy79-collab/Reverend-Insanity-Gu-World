@@ -12,6 +12,11 @@
     "turnsToBuild": 7,
     "uniques": [
       "Can also be built on tiles adjacent to fresh water"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mortal fields that feed the village. Nobody writes songs about them."
+      }
     ]
   },
   {
@@ -21,7 +26,12 @@
       "Hill"
     ],
     "production": 1,
-    "turnsToBuild": 7
+    "turnsToBuild": 7,
+    "civilopediaText": [
+      {
+        "text": "Shafts dug into the hills by mortal hands. Jade comes out of some of them."
+      }
+    ]
   },
   {
     "name": "Spring Cave",
@@ -30,6 +40,11 @@
     "uniques": [
       "Can only be built to improve a resource",
       "Pillaging this improvement yields approximately [+20 Gold]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The sealed cave in which a clan keeps and taps its spring. Raiders know exactly what it is worth."
+      }
     ]
   },
   {
@@ -39,6 +54,11 @@
     "uniques": [
       "Can only be built to improve a resource",
       "Does not need removal of [Forest]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tended beds of moon orchids and other crops. Gu are fed from here."
+      }
     ]
   },
   {
@@ -49,6 +69,11 @@
       "Does not need removal of [Forest]",
       "Does not need removal of [Jungle]",
       "Can only be built to improve a resource"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A hunters' lodge in the forest. Boar and furs come out of it; sometimes the hunters do not."
+      }
     ]
   },
   {
@@ -61,6 +86,11 @@
     "uniques": [
       "Can be built outside your borders",
       "Costs [1] [Gold] per turn when in your territory"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mountain paths between villages. They carry caravans, armies and wolves alike."
+      }
     ]
   },
   {
@@ -73,6 +103,11 @@
       "Unbuildable",
       "Excluded from map editor",
       "Marks a barbarian camp"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The den of a beast group (兽巢). Packs keep coming out of it until someone clears it."
+      }
     ]
   },
   {
@@ -86,6 +121,11 @@
       "Unbuildable",
       "Does not need removal of [Forest]",
       "Does not need removal of [Jungle]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A dead Gu Master's sealed legacy (传承). It rewards the lucky and the prepared, and punishes the rest."
+      }
     ]
   },
   {

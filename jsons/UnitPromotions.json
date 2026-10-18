@@ -5,6 +5,11 @@
       "[+15]% Strength",
       "[-20]% maintenance costs",
       "[+25]% XP gained from combat"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grade A aptitude (甲等资质): an essence sea that fills most of the aperture and refills fast. Rare, prized, and watched closely by everyone."
+      }
     ]
   },
   {
@@ -13,11 +18,21 @@
       "[+5]% Strength",
       "[-10]% maintenance costs",
       "[+10]% XP gained from combat"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grade B aptitude (乙等资质): a solid essence sea. The backbone of a clan's next generation."
+      }
     ]
   },
   {
     "name": "Aptitude C",
-    "uniques": []
+    "uniques": [],
+    "civilopediaText": [
+      {
+        "text": "Grade C aptitude (丙等资质): an ordinary essence sea. Ordinary is enough, for those willing to work for it."
+      }
+    ]
   },
   {
     "name": "Aptitude D",
@@ -25,6 +40,11 @@
       "[-10]% Strength",
       "[+20]% maintenance costs",
       "[-25]% XP gained from combat"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grade D aptitude (丁等资质): a shallow essence sea that refills slowly. Such students eat more stones and are given fewer chances."
+      }
     ]
   },
   {
@@ -53,6 +73,11 @@
       "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [31] [Gold]>",
       "Triggers a [Refinement Attempt] event",
       "[This Unit] loses the [Refine Gu] promotion <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Gu Master spends hard-won insight on a refinement attempt. Success climbs one rung; failure keeps the cost."
+      }
     ]
   },
   {
@@ -64,6 +89,11 @@
       "[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>",
       "[-10]% Strength <for [Strength Gu Master] units>",
       "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moonlight Gu (月光蛊), the Gu Yue emblem, throws blades of moonlight and eats moon orchid petals. Bred only by the clan's own method."
+      }
     ]
   },
   {
@@ -73,6 +103,11 @@
       "Consumes [1] [Wild Boar]",
       "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
       "[This Unit] loses the [White Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "White Boar Gu (白豕蛊) rebuilds its user's body until it carries one boar's strength. It eats pork, and the strength stays even if the Gu dies."
+      }
     ]
   },
   {
@@ -82,6 +117,11 @@
       "Consumes [1] [Wild Boar]",
       "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
       "[This Unit] loses the [Black Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Black Boar Gu (黑豕蛊), the white one's twin: a second boar's strength that stacks with the first. The merchant caravans sell it to whoever pays most."
+      }
     ]
   },
   {
@@ -91,6 +131,11 @@
       "Consumes [1] [Jade]",
       "[This Unit] gains the [Jade Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
       "[This Unit] loses the [Jade Skin Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Jade Skin Gu (玉皮蛊) wraps its user in a pale-green skin of jade, and eats jade to keep it. The cap of an unpathed Gu Master, and an ingredient for those who go further."
+      }
     ]
   },
   {
@@ -102,6 +147,11 @@
       "[This Unit] loses the [Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>",
       "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
       "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Liquor Worm (酒虫) drinks wine and refines a rank-one Gu Master's essence. It has no use above rank one and is let go after the breakthrough."
+      }
     ]
   },
   {
@@ -112,6 +162,11 @@
       "Consumes [2] [Jade]",
       "[This Unit] gains the [Jade Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
       "[This Unit] loses the [White Jade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "White Jade Gu (白玉蛊) is fused from a boar Gu and a jade-skin Gu. The boar's strength stays in the body; the jade light hardens; the appetite for jade doubles."
+      }
     ]
   },
   {
@@ -123,6 +178,11 @@
       "Consumes [1] [Moon Orchid]",
       "[This Unit] gains the [Orchid Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
       "[This Unit] loses the [Moon Raiment] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moon Raiment (月霓裳) is fused from a Moonlight Gu and a Jade Skin Gu: a garment of moonlight that shields its wearer and steadies the allies beside him."
+      }
     ]
   },
   {
@@ -131,6 +191,11 @@
       "[+25]% Strength <when attacking>",
       "[+25]% maintenance costs",
       "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A killer move (杀招): the unit's Gu strike together as one technique. It needs a rank-two fusion Gu to hold it, and it dies with that Gu."
+      }
     ]
   },
   {
@@ -138,6 +203,11 @@
     "uniques": [
       "[+10]% Strength",
       "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bear Strength Gu (熊力蛊), the Xiong emblem, lends its user a bear's strength. The Xiong clan has little else and needs little else."
+      }
     ]
   },
   {
@@ -145,30 +215,55 @@
     "uniques": [
       "[+10] HP when healing",
       "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stream Gu (溪流蛊), the Bai emblem, named for running water. It keeps its user on his feet between fights."
+      }
     ]
   },
   {
     "name": "Orchid Hunger",
     "uniques": [
       "[This Unit] loses the [Orchid Hunger] status <upon turn start> <when above [-1] [Moon Orchid]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The moon orchids have run out and the Gu are starving. If the orchids do not return in time, some of them will not survive the wait."
+      }
     ]
   },
   {
     "name": "Pork Hunger",
     "uniques": [
       "[This Unit] loses the [Pork Hunger] status <upon turn start> <when above [-1] [Wild Boar]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The pork has run out and the boar Gu are starving. A starving Gu does not fight, and a Gu that starves long enough dies."
+      }
     ]
   },
   {
     "name": "Jade Hunger",
     "uniques": [
       "[This Unit] loses the [Jade Hunger] status <upon turn start> <when above [-1] [Jade]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The jade has run out and the jade Gu are starving. Rank-two Gu last longer than rank-one Gu, but not forever."
+      }
     ]
   },
   {
     "name": "Wine Hunger",
     "uniques": [
       "[This Unit] loses the [Wine Hunger] status <upon turn start> <when above [-1] [Wine]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The wine has run out and the Liquor Worm is starving. It will not wait long."
+      }
     ]
   }
 ]

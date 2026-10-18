@@ -11,8 +11,10 @@ the user's "Locate mod errors" on Android is all green. Autoplay (`docs/AUTOPLAY
 strength; Moon melee + moon blade), Wu leads moderately (canon), cultivation XP unsticks the ladder (Killer Move 2.8
 per clan at T200), hunger matters once wars pillage food tiles, tech tree ends ~T120, springs improved late (AI keeps
 one laborer per city [src ConstructionAutomation.addWorkerChoice]; the user wants laborers produced, not given). Art:
-all 89 icons and 4 attack animations designed, style approved. Next (Definition of Done): civilopedia text, the
-primeval-stones rename, the Indonesian translation. Edit `data/` or the generators, then LORE_MAPPING.md; the
+all 89 icons and 4 attack animations designed, style approved. Civilopedia (EN+ID), Indonesian translation and the
+primeval-stones rename ("Batu Primordial") done 2026-10-18 (`data/civilopedia.csv`, `data/translations_id.csv`,
+`tools/gen_translations.py`). Left for Slice 1's Definition of Done: the user's 100-turn game on Android,
+`docs/KNOWN_ISSUES.md`, `docs/BALANCE.md`. Edit `data/` or the generators, then LORE_MAPPING.md; the
 self-tests keep jsons/, data/ and the document in sync.
 
 The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter

@@ -12,7 +12,12 @@
     "startingWorkerUnit": "Mortal Laborer",
     "startingMilitaryUnit": "Rank One Gu Master",
     "startingGold": 50,
-    "baseUnitBuyCost": 200
+    "baseUnitBuyCost": 200,
+    "civilopediaText": [
+      {
+        "text": "Rank one and rank two (一转、二转): green-copper essence, then red-iron. Most Gu Masters never climb higher; a clan is judged by how many it can keep fed."
+      }
+    ]
   },
   {
     "name": "Rank Three era",
@@ -25,7 +30,12 @@
     "startingSettlerUnit": "Clan Settler",
     "startingWorkerUnit": "Mortal Laborer",
     "startingMilitaryUnit": "Rank One Gu Master",
-    "baseUnitBuyCost": 300
+    "baseUnitBuyCost": 300,
+    "civilopediaText": [
+      {
+        "text": "Rank three (三转): white-silver essence. Elders of this rank hold a mountain clan together, and losing one costs more than losing a village."
+      }
+    ]
   },
   {
     "name": "Rank Four era",
@@ -38,6 +48,11 @@
     "startingSettlerUnit": "Clan Settler",
     "startingWorkerUnit": "Mortal Laborer",
     "startingMilitaryUnit": "Rank One Gu Master",
-    "baseUnitBuyCost": 400
+    "baseUnitBuyCost": 400,
+    "civilopediaText": [
+      {
+        "text": "Rank four (四转): yellow-gold essence. Such masters decide wars on the Southern Border; their upkeep decides whether the clan survives them."
+      }
+    ]
   }
 ]

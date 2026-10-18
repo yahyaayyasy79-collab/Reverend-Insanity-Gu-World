@@ -25,7 +25,8 @@ from common import RULESET_FILES, SCHEMA_DIR, Reporter, StrictJsonError, load_st
 # does not declare. Reported as warnings, not errors; the docs win (MOD_SPEC.md rule 1).
 SCHEMA_GAPS = {
     "Personalities": {"denounceWillingness"},  # docs: Personality Behaviours ("not fully implemented yet")
-    "Eras": {"uniques"},                       # docs: Eras.json attribute table
+    "Eras": {"uniques", "civilopediaText"},    # docs: Eras.json attribute table; civilopediaText [src]: Era is a
+                                               # RulesetObject, which carries it (used by Slice 1's era pages)
 }
 
 

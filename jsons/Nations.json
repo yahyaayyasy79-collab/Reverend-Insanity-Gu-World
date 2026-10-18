@@ -26,6 +26,11 @@
       "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Moonlight Gu] promotion <in cities with a [Gu Academy]> <when above [0] [Moon Orchid]>",
       "Start bias [Spirit Spring]",
       "Start bias [Hill]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Gu Yue clan (古月一族), halfway up Qing Mao Mountain. Its emblem is the Moonlight Gu, bred by a secret method and fed from its own sea of moon orchids."
+      }
     ]
   },
   {
@@ -55,6 +60,11 @@
       "[+15]% Strength <vs [Barbarians] units>",
       "Start bias [Spirit Spring]",
       "Start bias [Fresh Water]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Bai clan (白家) of the waterfall village on Qing Mao's back slope, Gu Yue's rival. Its fighters have killed a Thunder Crown Wolf before."
+      }
     ]
   },
   {
@@ -84,6 +94,11 @@
       "Starts with [Strength Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Forest]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Xiong clan (熊家) on Qing Mao's front slope, the weakest of the three. It answers every problem with bodily strength, and every problem keeps coming."
+      }
     ]
   },
   {
@@ -112,6 +127,11 @@
       "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Hill]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Wu clan (武家), the first clan of the Southern Border, righteous and enormous. Its leader walks the strength path, and its battle stage trains Gu Masters no one else can match."
+      }
     ]
   },
   {
@@ -129,6 +149,11 @@
     ],
     "cities": [
       "Bronze Hall"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hairy men (毛民), born refiners who follow whoever refines better than they do. Their friendship is measured in insight."
+      }
     ]
   },
   {
@@ -146,6 +171,11 @@
     ],
     "cities": [
       "Qing Mao Foothills"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The mortal villages at the foot of Qing Mao. The mountain clans divide their farmers and hunters among themselves."
+      }
     ]
   },
   {
@@ -163,6 +193,11 @@
     ],
     "cities": [
       "Jia Village"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The merchant clan of Jia Village (贾家), whose caravans bring a market and a Gu shop up the mountain. Their best Gu go to the highest bidder."
+      }
     ]
   },
   {

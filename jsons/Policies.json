@@ -18,6 +18,11 @@
         "column": 1,
         "uniques": [
           "[-15]% Unhappiness from [Population] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Strict clan law (族规) keeps members in line. Obedience is cheaper than unrest."
+          }
         ]
       },
       {
@@ -27,6 +32,11 @@
         "uniques": [
           "City-State Influence recovers at twice the normal rate",
           "Gifts of Gold to City-States generate [+25]% more Influence"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Righteous clans band together against a shared threat, and keep count of who owes whom."
+          }
         ]
       },
       {
@@ -39,13 +49,28 @@
         "uniques": [
           "[+25]% Strength for cities",
           "[+10]% Strength <when defending>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A righteous village is held, not abandoned. Its formations and its defenders are built for that."
+          }
         ]
       },
       {
         "name": "Righteous Path Complete",
         "uniques": [
           "[-10]% maintenance costs"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A stable clan feeds its Gu efficiently. Order is a resource too."
+          }
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The righteous path (正道): clan law, alliances and a respectable face. Righteous clans kill as readily as demonic ones; they keep better records of why."
       }
     ]
   },
@@ -70,6 +95,11 @@
         "uniques": [
           "[+100]% Yield from pillaging tiles",
           "Receive [+100]% Gold from Barbarian encampments and pillaging Cities"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Demonic Gu Masters strip whatever they overrun. Nothing left behind is wasted."
+          }
         ]
       },
       {
@@ -79,6 +109,11 @@
         "uniques": [
           "[2] units cost no maintenance",
           "[+30]% unhappiness from the number of cities"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A demonic cultivator (散修) has no clan behind him: few, strong, travelling light, owing nothing to anyone."
+          }
         ]
       },
       {
@@ -92,13 +127,28 @@
           "Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately",
           "[-20]% maintenance costs <when at war>",
           "[+20]% Unhappiness from [Population] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "War feeds the Gu; peace starves them; mortals pay either way."
+          }
         ]
       },
       {
         "name": "Demonic Path Complete",
         "uniques": [
           "[+15]% Strength <when attacking>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Strike first and strike hardest. The second blow is for those who missed the first."
+          }
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The demonic path (魔道): take what you need by force and trust no one. It pays well and makes enemies faster than it makes stones."
       }
     ]
   },
@@ -122,6 +172,11 @@
         "uniques": [
           "[+15]% Strength <for units with [Moonlight Gu]>",
           "[+15]% Strength <for units with [Moon Raiment]>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Path insight multiplies Gu of the same path. Moon Gu in moon hands cut deeper."
+          }
         ]
       },
       {
@@ -131,6 +186,11 @@
         "uniques": [
           "Provides [2] [Moon Orchid]",
           "[-15]% maintenance costs <for [Moon Gu Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Terraced orchid fields across the slopes. More petals, more blades."
+          }
         ]
       },
       {
@@ -142,13 +202,28 @@
         ],
         "uniques": [
           "[1] Movement <for [Moon Gu Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Moon cultivators strike and slip away before the answer comes."
+          }
         ]
       },
       {
         "name": "Moon Path Complete",
         "uniques": [
           "New [Moon Gu Master] units start with [10] XP [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The clan's moon tradition is fully mastered; its students arrive already blooded."
+          }
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The moon path (月道): Gu that shape moonlight into blades, the Gu Yue tradition. Lighter on the treasury than strength, and dependent on orchids."
       }
     ]
   },
@@ -172,6 +247,11 @@
         "uniques": [
           "[+15]% Strength <for units with [White Boar Gu]>",
           "[+15]% Strength <for units with [White Jade Gu]>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Path insight multiplies the boar strength grafted onto the body."
+          }
         ]
       },
       {
@@ -181,6 +261,11 @@
         "uniques": [
           "Provides [2] [Wild Boar]",
           "[+25]% Strength <vs [Barbarians] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Strength cultivators prove themselves against beast packs, and bring the meat home."
+          }
         ]
       },
       {
@@ -192,13 +277,28 @@
         ],
         "uniques": [
           "Heals [10] damage if it kills a unit"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A tempered body recovers in the middle of a fight. The enemy tires first."
+          }
         ]
       },
       {
         "name": "Strength Path Complete",
         "uniques": [
           "[1] Movement <for [Strength Gu Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The body itself becomes the weapon, and the weapon moves faster."
+          }
         ]
+      }
+    ],
+    "civilopediaText": [
+      {
+        "text": "The strength path (力道): Gu that add raw might to the body itself. It hits hardest and eats the most."
       }
     ]
   }

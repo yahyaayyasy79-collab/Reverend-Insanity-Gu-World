@@ -3,12 +3,22 @@
     "name": "Southern Border Supremacy",
     "milestones": [
       "Capture all capitals"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Southern Border clans swallow one another. The clan whose capital is the last one standing rules the mountains."
+      }
     ]
   },
   {
     "name": "Endurance",
     "milestones": [
       "Have highest score after max turns"
+    ],
+    "civilopediaText": [
+      {
+        "text": "When time runs out, the strongest clan is the one remembered."
+      }
     ]
   }
 ]

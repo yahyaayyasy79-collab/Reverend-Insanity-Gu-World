@@ -11,6 +11,11 @@
     "cityStrength": 3,
     "uniques": [
       "Indicates the capital city"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan head's pavilion (家主阁) at the heart of the village, with the ancestral hall inside. Whoever sits in it decides who gets stones and who gets none."
+      }
     ]
   },
   {
@@ -25,6 +30,11 @@
     ],
     "uniques": [
       "Unavailable <if [Flower Wine Monk Inheritance] is constructed>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's own spring (元泉), where the yearly awakening is held. The deeper a youth walks into the spring's pressure, the better the grade; a clan without its spring awakens blind."
+      }
     ]
   },
   {
@@ -42,6 +52,11 @@
     "uniques": [
       "Unavailable <if [Flower Wine Monk Inheritance] is constructed>",
       "Provides [2] [Moon Orchid]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gu Yue's sea of moon orchids around the clan spring (花海): food for every Moonlight Gu and the stage of the awakening. The clan guards it more closely than its treasury."
+      }
     ]
   },
   {
@@ -54,6 +69,11 @@
     "uniques": [
       "[+1 Science] per [2] population [in this city]",
       "New [Military] units start with [10] XP [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan school (学堂). Every new student picks a first Gu from its Gu room, and those who stay cultivate there between battles."
+      }
     ]
   },
   {
@@ -64,6 +84,11 @@
     "uniques": [
       "Provides [1] [Moon Orchid]",
       "Provides [1] [Wild Boar]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mortal servants grow and gather the foods the clan's Gu eat. Unglamorous, and the reason the clan's Gu are still alive."
+      }
     ]
   },
   {
@@ -74,6 +99,11 @@
     "happiness": 1,
     "uniques": [
       "Provides [1] [Wine]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A village tavern (酒肆) selling wine to mortals and Gu Masters alike. It also feeds the Liquor Worm and hears every rumour."
+      }
     ]
   },
   {
@@ -85,6 +115,11 @@
     "science": 1,
     "uniques": [
       "Provides [1] [Jade]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A sealed furnace room stocked with materials. Careful refinement happens here, at a price; reckless refinement happens anywhere."
+      }
     ]
   },
   {
@@ -93,7 +128,12 @@
     "cost": 110,
     "maintenance": 1,
     "cityStrength": 8,
-    "cityHealth": 50
+    "cityHealth": 50,
+    "civilopediaText": [
+      {
+        "text": "The platform from which the village raises its defensive formation. It turns a wall of stones into a wall the enemy cannot climb."
+      }
+    ]
   },
   {
     "name": "Martial Arena",
@@ -107,6 +147,11 @@
     "uniques": [
       "[+1 Science] per [2] population [in this city]",
       "New [Military] units start with [20] XP [in this city]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Wu clan's battle stage (演武场), the largest in the Southern Border. Its Gu Masters fight each other until they no longer lose to anyone else."
+      }
     ]
   },
   {
@@ -116,7 +161,12 @@
     "gold": 2,
     "percentStatBonus": {
       "gold": 20
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "A shop (商铺) where caravans trade Gu, materials and stones. Everything here has a price, including information."
+      }
+    ]
   },
   {
     "name": "Flower Wine Monk Inheritance",
@@ -130,6 +180,11 @@
       "[+15]% XP gained from combat",
       "[+15]% Strength <vs [Gu Yue Clan] units>",
       "Remove [Awakening Grounds] [in all cities]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hidden inheritance of a demonic Gu Master who died on Qing Mao (花酒行者传承). Its heir gains jade, insight and strength, and inherits a grudge: its last prize ruins the heir's own spring."
+      }
     ]
   },
   {
@@ -141,6 +196,11 @@
     "uniques": [
       "[+2 Gold] from all [Trading House] buildings",
       "Receive [+50]% Gold from Barbarian encampments and pillaging Cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Southern Border's great market city (商家城), where even demonic loot changes hands. The Shang clan does not ask where the goods came from."
+      }
     ]
   }
 ]

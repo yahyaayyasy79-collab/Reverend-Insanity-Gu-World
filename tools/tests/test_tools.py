@@ -349,6 +349,54 @@ class Autoplay(unittest.TestCase):
             self.assertEqual(sum(1 for x in rows if x["event"] == "turn" and x["major"]) // 4, 8)
 
 
+class Translations(unittest.TestCase):
+    """jsons/translations matches data/, covers every string the mod shows, keeps placeholders, and every new object
+    has civilopedia text (MOD_SPEC section 11, Definition of Done)."""
+
+    def setUp(self):
+        from common import REF_DIR, ref_tag
+        if not (REF_DIR / f"Unciv-{ref_tag()}.jar").exists() or not (REPO_ROOT / "jsons" / "translations").is_dir():
+            self.skipTest("needs the release jar and generated translations")
+
+    def test_up_to_date(self):
+        r = subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "gen_translations.py"), "--check"],
+                           capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+    def test_every_displayed_string_is_translated(self):
+        import gen_translations as gt
+        ours = gt.read_properties(REPO_ROOT / "jsons" / "translations" / "Indonesian.properties")
+        base = gt.base_translations("Indonesian")
+        missing = [k for k in gt.displayed_strings() if k not in ours and k not in base]
+        self.assertEqual(missing, [], "strings without an Indonesian translation (data/translations_id.csv)")
+
+    def test_placeholders_survive_translation(self):
+        import gen_translations as gt
+        bad = []
+        for f in ("Indonesian.properties", "English.properties"):
+            for k, v in gt.read_properties(REPO_ROOT / "jsons" / "translations" / f).items():
+                if sorted(re.findall(r"\[[^\]]*\]", k)) != sorted(re.findall(r"\[[^\]]*\]", v)):
+                    bad.append(f"{f}: {k}")
+        self.assertEqual(bad, [])
+
+    def test_every_new_object_has_civilopedia_text(self):
+        missing = []
+        def objects(f):
+            data = json.loads((REPO_ROOT / "jsons" / f).read_text(encoding="utf-8"))
+            if f == "Techs.json":
+                return [t for c in data for t in c["techs"]]
+            if f == "Policies.json":
+                return [p for b in data for p in [b] + b["policies"]]
+            return data
+        for f in ("Eras.json", "Techs.json", "Units.json", "UnitPromotions.json", "Buildings.json", "TileResources.json",
+                  "Policies.json", "VictoryTypes.json", "UnitTypes.json"):  # city-state types have no page
+            missing += [f"{f}: {o['name']}" for o in objects(f) if not o.get("civilopediaText")]
+        nations = json.loads((REPO_ROOT / "jsons" / "Nations.json").read_text(encoding="utf-8"))
+        missing += [f"Nations.json: {n['name']}" for n in nations
+                    if n["name"] not in ("Barbarians", "Spectator") and not n.get("civilopediaText")]
+        self.assertEqual(missing, [], "objects without civilopedia text (data/civilopedia.csv)")
+
+
 class Packaging(unittest.TestCase):
     def test_too_much_tooling_is_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:

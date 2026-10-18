@@ -26,7 +26,12 @@
       "sparse": 1,
       "default": 1,
       "abundant": 1
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "A spring of heaven-and-earth energy (灵泉) that yields primeval stones. Every Qing Mao clan built its village on one; whoever loses its spring loses its future."
+      }
+    ]
   },
   {
     "name": "Moon Orchid",
@@ -54,7 +59,12 @@
       "sparse": 2,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Moon orchids (月兰花), whose petals feed the Moonlight Gu. A Moon clan without them has blades that will not cut."
+      }
+    ]
   },
   {
     "name": "Wild Boar",
@@ -83,7 +93,12 @@
       "sparse": 2,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Wild boars (野猪) of the Qing Mao forests: pork for the boar Gu, tusks for the refiner. Strength clans count them like stones."
+      }
+    ]
   },
   {
     "name": "Jade",
@@ -109,12 +124,22 @@
       "sparse": 2,
       "default": 2,
       "abundant": 3
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Fine jade (玉石), the food of the jade-skin Gu and the price of every rank-two fusion. Both paths need it, so both paths fight for it."
+      }
+    ]
   },
   {
     "name": "Wine",
     "resourceType": "Strategic",
-    "terrainsCanBeFoundOn": []
+    "terrainsCanBeFoundOn": [],
+    "civilopediaText": [
+      {
+        "text": "Brewed wine (酒), drunk by villagers and by the Liquor Worm. Brewed in taverns, never found in the wild."
+      }
+    ]
   },
   {
     "name": "Furs",
@@ -128,6 +153,11 @@
     "improvement": "Camp",
     "improvementStats": {
       "gold": 1
-    }
+    },
+    "civilopediaText": [
+      {
+        "text": "Pelts of Southern Border beasts, sold by caravans. The only comfort the mountain offers for free, once someone has killed for it."
+      }
+    ]
   }
 ]

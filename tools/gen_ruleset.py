@@ -7,7 +7,8 @@
 
 Tables (data/): tech_columns.csv + techs.csv (tech tree), gu_masters.csv (Gu Master units, path x rank), gu.csv (Gu
 promotions: effects, food, rank), gu_foods.csv (food -> hunger status), hunger.csv (the hunger meter per rank: status
-length and death chance, the user's main tuning lever). One-of-a-kind content stays below. docs/LORE_MAPPING.md is the
+length and death chance, the user's main tuning lever). civilopedia.csv: the English civilopedia text of every object (its
+Indonesian column feeds tools/gen_translations.py). One-of-a-kind content stays below. docs/LORE_MAPPING.md is the
 design record; tools/tests checks that it quotes exactly the uniques generated here. Comments marked R2/R3/R4 record
 design rounds (docs/LORE_MAPPING.md, "How this plan was made").
 """
@@ -61,7 +62,25 @@ def collect(o):
             collect(x)
 
 
+PEDIA = {}  # (file, object name) -> English civilopedia text, from data/civilopedia.csv
+
+
+def pedia(name, obj):
+    """Attach civilopediaText to every object of this file that has an entry (techs and policies are nested)."""
+    if not PEDIA:
+        PEDIA.update({(r["file"], r["name"]): r["en"] for r in table("civilopedia.csv")})
+    items = obj if isinstance(obj, list) else []
+    if name == "Techs.json":
+        items = [t for col in obj for t in col["techs"]]
+    elif name == "Policies.json":
+        items = obj + [p for branch in obj for p in branch["policies"]]
+    for o in items:
+        if isinstance(o, dict) and (name, o.get("name")) in PEDIA:
+            o["civilopediaText"] = [{"text": PEDIA[(name, o["name"])]}]
+
+
 def dump(name, obj):
+    pedia(name, obj)
     collect(obj)
     WRITTEN.append(name)
     with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:

@@ -81,6 +81,9 @@ Hidden Debug tab (long-press / right-click "Options"): "Simulate until turn:" au
 
 ## Translations
 
-Desktop only: create `jsons/translations/Indonesian.properties` with at least one real `key = value` line, then
-Options → Advanced → "Generate translation files" with the mod selected. Without the seed line it silently does
-nothing. It also writes `completionPercentages.properties` into the mod.
+The mod's translations are generated here: `tools/gen_translations.py` writes `jsons/translations/Indonesian.properties`
+and `English.properties` from `data/translations_id.csv` and `data/civilopedia.csv` (the user plays on Android, where
+the in-game generator does not exist). To test: Options → Language → Bahasa Indonesia, then reload the mod. For
+reference, the desktop-only in-game tool: create `jsons/translations/Indonesian.properties` with at least one real
+`key = value` line, then Options → Advanced → "Generate translation files" with the mod selected; without the seed
+line it silently does nothing, and it also writes `completionPercentages.properties` into the mod.

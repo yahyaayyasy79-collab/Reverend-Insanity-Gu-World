@@ -159,3 +159,16 @@
   Killer Move 0.04 → 2.8, stones 315 → 187, hunger deaths 0.12 → 0.45 per 100 turns (3 XP tested too).
 * Correction: the earlier "no Killer Move in any game" came from a counting gap in the tool (fixed in step 5); the
   true baseline was 0.04 per clan.
+
+## Phase 2, step 7 — civilopedia, Indonesian translation, primeval stones (2026-10-18)
+
+* `data/civilopedia.csv`: original civilopedia text (English and Indonesian, cold and pragmatic, the Chinese term once)
+  for 109 objects: eras, techs, units, Gu and status promotions, buildings, resources, improvements, policies, clans
+  and city-states, victories, unit types. `gen_ruleset.py` attaches it as `civilopediaText`. City-state types have no
+  civilopedia page (the schema rejects the field); eras carry it although the docs omit it ([src] `Era` is a
+  `RulesetObject`).
+* `tools/gen_translations.py` writes `jsons/translations/Indonesian.properties` (162 names and texts from
+  `data/translations_id.csv`, the civilopedia, the rename) and `English.properties`. Gold is shown as **Primeval
+  Stones** / **Batu Primordial** (the user's choice) by overriding every base key with the word Gold.
+* Self-tests: translations up to date, every displayed string translated (ours or the base game's), placeholders
+  kept, every new object has civilopedia text.

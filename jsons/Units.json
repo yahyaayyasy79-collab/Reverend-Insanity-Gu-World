@@ -10,6 +10,11 @@
       "Excess Food converted to Production when under construction",
       "Requires at least [2] population",
       "Never appears as a Barbarian unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A branch family sent out to raise a new village under the clan's name. It carries the clan's claim, and nothing to defend it with."
+      }
     ]
   },
   {
@@ -22,6 +27,11 @@
       "Can build [Land] improvements on tiles",
       "Automation is a primary action",
       "Never appears as a Barbarian unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mortals (凡人) whose apertures never opened farm, mine and haul for the Gu Masters. They outnumber the cultivators and matter less to them."
+      }
     ]
   },
   {
@@ -39,7 +49,12 @@
       "Can upgrade to [Rank Two Strength Gu Master]",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
-    "attackSound": "throw"
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A freshly awakened youth (一转蛊师) with a first Gu from the academy. Cheap, numerous and expendable: the clan learns which ones are worth feeding."
+      }
+    ]
   },
   {
     "name": "Rank Two Strength Gu Master",
@@ -56,7 +71,12 @@
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Three Strength Gu Master",
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "A rank-two strength cultivator (二转力道蛊师) who grafts beast strength onto the body. Hits harder than a moon cultivator and costs more to keep."
+      }
+    ]
   },
   {
     "name": "Rank Three Strength Gu Master",
@@ -73,7 +93,12 @@
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Four Strength Gu Master",
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "A rank-three strength cultivator (三转力道蛊师), able to stand against a beast pack alone. Every fight it wins is paid for in pork and stones."
+      }
+    ]
   },
   {
     "name": "Rank Four Strength Gu Master",
@@ -89,7 +114,12 @@
       "Only available <after adopting [Strength Path]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
-    "attackSound": "nonmetalhit"
+    "attackSound": "nonmetalhit",
+    "civilopediaText": [
+      {
+        "text": "A rank-four strength master (四转力道蛊师), a siege engine that walks. Few clans can afford one for long."
+      }
+    ]
   },
   {
     "name": "Rank Two Moon Gu Master",
@@ -107,7 +137,12 @@
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Three Moon Gu Master",
-    "attackSound": "whoosh"
+    "attackSound": "whoosh",
+    "civilopediaText": [
+      {
+        "text": "A rank-two moon cultivator (二转月道蛊师). It throws a moon blade before every clash and then closes in, the Gu Yue way."
+      }
+    ]
   },
   {
     "name": "Rank Three Moon Gu Master",
@@ -125,7 +160,12 @@
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
     "upgradesTo": "Rank Four Moon Gu Master",
-    "attackSound": "whoosh"
+    "attackSound": "whoosh",
+    "civilopediaText": [
+      {
+        "text": "A rank-three moon cultivator (三转月道蛊师) whose first blade often decides the fight before it begins. Lighter than a strength master, and cheaper to feed."
+      }
+    ]
   },
   {
     "name": "Rank Four Moon Gu Master",
@@ -142,7 +182,12 @@
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>"
     ],
-    "attackSound": "whoosh"
+    "attackSound": "whoosh",
+    "civilopediaText": [
+      {
+        "text": "A rank-four moon master (四转月道蛊师), the pride of a moonlit clan. Its upkeep is the price of that pride."
+      }
+    ]
   },
   {
     "name": "Lightning Wolf",
@@ -154,6 +199,11 @@
     "uniqueTo": "Barbarians",
     "uniques": [
       "[+50]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightning wolves (电狼) hunt in packs of thousands on the Southern Border. One is a nuisance; a tide of them empties villages."
+      }
     ]
   },
   {
@@ -168,6 +218,11 @@
     "uniques": [
       "[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles",
       "[+100]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A calf-sized lightning wolf (豪电狼) that leads a hundred others. Kill it and the pack around it falters."
+      }
     ]
   },
   {
@@ -182,6 +237,11 @@
       "Unbuildable",
       "[+20]% Strength bonus for [Beast] units within [2] tiles",
       "[+200]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A king of ten thousand beasts (雷冠头狼) crowned with thunder. When one comes down the mountain, the village either holds or ceases to exist."
+      }
     ]
   }
 ]

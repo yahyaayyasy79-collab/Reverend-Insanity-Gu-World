@@ -11,6 +11,11 @@
         "row": 2,
         "uniques": [
           "Starting tech"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Each year the clan opens the apertures of its youths (开窍) with a Hope Gu. The ones who open become Gu Masters; the rest stay mortal and work."
+          }
         ]
       }
     ]
@@ -27,6 +32,11 @@
         "row": 1,
         "prerequisites": [
           "Aperture Awakening"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Primeval stones come out of spirit springs. A clan that cannot tap its spring cannot pay its Gu Masters, so this knowledge comes before almost everything else."
+          }
         ]
       },
       {
@@ -34,6 +44,11 @@
         "row": 3,
         "prerequisites": [
           "Aperture Awakening"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Every Gu eats one food and nothing else (养蛊). Raising Gu is bookkeeping: count the mouths, count the food, and never let the second number fall below the first."
+          }
         ]
       }
     ]
@@ -50,6 +65,11 @@
         "row": 1,
         "prerequisites": [
           "Gu Feeding"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Villages brew wine (酿酒) for mortals and for the Gu that drink it. A jar of good wine has bought more than one Gu Master's loyalty."
+          }
         ]
       },
       {
@@ -58,6 +78,11 @@
         "prerequisites": [
           "Spirit Spring Lore",
           "Gu Feeding"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Gu are refined (炼蛊) from a recipe and its materials. A failed refinement burns everything put into it; nobody refunds the loss."
+          }
         ]
       },
       {
@@ -65,6 +90,11 @@
         "row": 3,
         "prerequisites": [
           "Gu Feeding"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The step from rank one to rank two. Essence turns from copper to iron, and so does the price of keeping the cultivator alive."
+          }
         ]
       }
     ]
@@ -81,6 +111,11 @@
         "row": 1,
         "prerequisites": [
           "Gu Refinement"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Villages hide behind formations (蛊阵) fed with Gu and primeval stones. A formation does not win a war; it buys the time to win one."
+          }
         ]
       },
       {
@@ -89,6 +124,11 @@
         "prerequisites": [
           "Rank Two Cultivation",
           "Gu Refinement"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The step to rank three. Few reach it, and a clan spends years of stones on each one who does."
+          }
         ]
       }
     ]
@@ -109,6 +149,11 @@
         ],
         "uniques": [
           "Enables Open Borders agreements"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Merchant clans send caravans (商队) up the mountain with goods, Gu and news. Their protection is paid for, and their prices are not negotiable."
+          }
         ]
       },
       {
@@ -117,6 +162,11 @@
         "prerequisites": [
           "Gu Formations",
           "Rank Three Cultivation"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Dead Gu Masters leave inheritances behind: stores, techniques, trials. Every inheritance has a reason to exist, and the reason is rarely the heir's welfare."
+          }
         ]
       },
       {
@@ -124,6 +174,11 @@
         "row": 3,
         "prerequisites": [
           "Rank Three Cultivation"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Several Gu used together in one technique make a killer move, stronger than any of them alone. The cost is paid in essence, and the essence comes from stones."
+          }
         ]
       }
     ]
@@ -140,6 +195,11 @@
         "row": 1,
         "prerequisites": [
           "Merchant Caravans"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The great clans of the Southern Border (超级家族) run whole market cities. Trade is how they turn other people's wars into their own income."
+          }
         ]
       },
       {
@@ -151,6 +211,11 @@
         ],
         "uniques": [
           "When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Some Gu Masters bind beasts to their will (奴道). A captured wolf is an army that never complains, as long as it is fed."
+          }
         ]
       },
       {
@@ -158,6 +223,11 @@
         "row": 3,
         "prerequisites": [
           "Killer Moves"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The step to rank four. On a mountain of three villages, a single rank-four master is a deciding weight."
+          }
         ]
       }
     ]
@@ -179,6 +249,11 @@
         ],
         "uniques": [
           "Can be continually researched"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Insight into the Great Dao (悟道) has no end. Each step teaches how little the previous one understood."
+          }
         ]
       }
     ]
