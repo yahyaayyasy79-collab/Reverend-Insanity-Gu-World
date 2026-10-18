@@ -8,6 +8,7 @@
     "uniques": [
       "Founds a new city <by consuming this unit>",
       "Excess Food converted to Production when under construction",
+      "[-100]% maintenance costs",
       "Requires at least [2] population",
       "Can only be built <when above [-11] [Happiness]>",
       "Shown while unbuilable",
@@ -28,6 +29,7 @@
     "uniques": [
       "Can build [Land] improvements on tiles",
       "Automation is a primary action",
+      "[-100]% maintenance costs",
       "Never appears as a Barbarian unit"
     ],
     "civilopediaText": [
@@ -44,7 +46,7 @@
     "cost": 35,
     "requiredTech": "Aperture Awakening",
     "uniques": [
-      "[+25]% maintenance costs",
+      "[+50]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Can upgrade to [Rank Two Moon Gu Master]",
@@ -92,7 +94,7 @@
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
-      "[+175]% maintenance costs",
+      "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>",
@@ -116,7 +118,7 @@
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
-      "[+275]% maintenance costs",
+      "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Strength Path]>",
@@ -164,7 +166,7 @@
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
-      "[+150]% maintenance costs",
+      "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",
@@ -189,7 +191,7 @@
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
-      "[+225]% maintenance costs",
+      "[+150]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Only available <after adopting [Moon Path]>",

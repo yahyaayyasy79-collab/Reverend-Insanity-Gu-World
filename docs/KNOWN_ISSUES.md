@@ -66,9 +66,9 @@ rest of the list is what a player or the next session should know before trustin
 3. **Popups.** Each Gu Master rolls 1.2% per turn for a wild Gu; with ten Gu Masters the human sees one wild-Gu popup
    every eight turns or so, plus the rare inheritance.
 4. **The wild Liquor Worm needs wine** (a Tavern): the AI almost never has spare wine (0.02 per clan by turn 200).
-5. **Balance verdicts not acted on yet** (light early upkeep, a calm late game, food abundant in peace, 4 of 144 AI
-   clans 20+ turns in the red during long wars, 40 of 48 at Prince by turn 320 on Standard, the tech tree ending near turn 120): `docs/BALANCE.md`, "What the
-   data says is off".
+5. **Balance verdicts not acted on yet** (light early upkeep, a calm late game, food abundant in peace, 11 of 48 AI
+   clans at Prince still 20+ turns in the red by turn 320 on Standard after round 8, the tech tree ending near turn
+   120): `docs/BALANCE.md`, "What the data says is off".
 6. **Springs are improved late:** the AI keeps one Mortal Laborer per city [src `ConstructionAutomation`]; the user
    wants laborers produced, not given.
 7. **Population costs need a population:** "Judge the traitor", "Strike first" and "Squeeze the mortals" are open

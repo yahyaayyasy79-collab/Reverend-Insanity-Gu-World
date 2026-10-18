@@ -229,14 +229,16 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER]
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
+     # R8: mortals live off the land, not off primeval stones (late-game AI bankruptcy, docs/AUTOPLAY.md round 8)
      "uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+                 "[-100]% maintenance costs",
                  "Requires at least [2] population",
                  # Vanilla's "Cannot build [Settler] units <when below [-10] [Happiness]>" hides the unit without a word
                  # (CannotBeBuilt is never shown [src BaseUnit.shouldBeDisplayed]); a player with a big city thought
                  # settlers were broken. Same rule, kept in the list, greyed, with the reason shown.
                  "Can only be built <when above [-11] [Happiness]>", "Shown while unbuilable", NB]},
     {"name": "Mortal Laborer", "unitType": "Civilian", "movement": 2, "cost": 45, "requiredTech": "Aperture Awakening",
-     "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", NB]},
+     "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", "[-100]% maintenance costs", NB]},
 ] + GU_MASTERS + [
     # R2 T5: the canon wolf-tide tiers (plain / hundred-beast tier / ten-thousand-beast king)
     {"name": "Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 9, "cost": 30, "attackSound": "shot", "uniqueTo": "Barbarians",

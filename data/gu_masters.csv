@@ -1,8 +1,8 @@
 name,unitType,path,requiredTech,cost,strength,rangedStrength,maintenance,upgradesTo,extra_uniques,attackSound,cultivationXP
-Rank One Gu Master,Gu Master,,Aperture Awakening,35,8,,+25,,Can upgrade to [Rank Two Moon Gu Master]|Can upgrade to [Rank Two Strength Gu Master],throw,2
+Rank One Gu Master,Gu Master,,Aperture Awakening,35,8,,+50,,Can upgrade to [Rank Two Moon Gu Master]|Can upgrade to [Rank Two Strength Gu Master],throw,2
 Rank Two Strength Gu Master,Strength Gu Master,Strength Path,Rank Two Cultivation,60,14,,+100,Rank Three Strength Gu Master,,nonmetalhit,2
-Rank Three Strength Gu Master,Strength Gu Master,Strength Path,Rank Three Cultivation,95,22,,+175,Rank Four Strength Gu Master,,nonmetalhit,2
-Rank Four Strength Gu Master,Strength Gu Master,Strength Path,Rank Four Cultivation,140,32,,+275,,,nonmetalhit,2
+Rank Three Strength Gu Master,Strength Gu Master,Strength Path,Rank Three Cultivation,95,22,,+125,Rank Four Strength Gu Master,,nonmetalhit,2
+Rank Four Strength Gu Master,Strength Gu Master,Strength Path,Rank Four Cultivation,140,32,,+175,,,nonmetalhit,2
 Rank Two Moon Gu Master,Moon Gu Master,Moon Path,Rank Two Cultivation,60,13,,+75,Rank Three Moon Gu Master,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
-Rank Three Moon Gu Master,Moon Gu Master,Moon Path,Rank Three Cultivation,95,20,,+150,Rank Four Moon Gu Master,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
-Rank Four Moon Gu Master,Moon Gu Master,Moon Path,Rank Four Cultivation,140,29,,+225,,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
+Rank Three Moon Gu Master,Moon Gu Master,Moon Path,Rank Three Cultivation,95,20,,+100,Rank Four Moon Gu Master,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
+Rank Four Moon Gu Master,Moon Gu Master,Moon Path,Rank Four Cultivation,140,29,,+150,,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2

@@ -232,3 +232,62 @@
 * `tools/autoplay.py` records capital population and cities at population 1 (`capitalPopMean`, `popPerCityMean`,
   `popOneCityShare`).
 
+## MOD_SPEC_2 Gate and MOD_SPEC_3 Phase A3 (2026-10-18)
+
+* `MOD_SPEC_2.md` and `MOD_SPEC_3.md` saved verbatim; `CLAUDE.md` points to both (precedence MOD_SPEC_3 > MOD_SPEC_2 >
+  MOD_SPEC).
+* MOD_SPEC_2 Gate passed: check_all green; the user's Android "Locate mod errors" all green on the latest download; the
+  user's game ran past turn 300 (Marathon) without a crash; autoplay keeps the AI solvent to turn 100 (2 of 48 clans
+  briefly in the red, at most 7 turns).
+* Phase A3 (capability tests, no content JSON): promotions survive an upgrade across unit types; `Only available`
+  with a unit conditional works on promotions; `Limited to [amount] per Civilization` blocks upgrades and reopens on
+  death; `<upon losing a [mapUnitFilter] unit>` fires on death by turn damage but also on upgrade (new engine fact E9);
+  per-civ AI promotion weights steer 83% of the AI's picks. Results and design rules in `docs/CAPABILITIES.md`;
+  probes on the local throwaway branch `a3-capability-tests`.
+
+## MOD_SPEC_2 Phase A — immortal-arc capabilities (2026-10-18)
+
+* `docs/CAPABILITIES.md`: status, fallback and AI note for mechanics 1–17; the seven risky patterns proven headless on
+  the throwaway branch `test/capability-tests` (also downloadable as a separate test mod). ✅ for-every Strength, Remove
+  on a wonder (reopens the race), owned-tile trigger with throttle and world-state gate, lifespan consumption per
+  immortal with decay, `max()` countable. ⚠️/❌ found: a **free** world wonder ignores world uniqueness (two holders)
+  and is **deleted** when its city is captured, so a free Fate Gu or inheritance cannot be seized (fallback: built,
+  `uniqueTo` or scenario); the lifespan stock goes negative; `Only available` on a camp improvement does not gate camp
+  spawning (fallback: the conditional on `Marks a barbarian camp` itself, proven).
+* Capability fixture: one promotion proves two killer-move uniques the document cites.
+
+## Phase 2, step 12 — the late-game stone economy (2026-10-18)
+
+* Clan Settler and Mortal Laborer pay no upkeep (`[-100]% maintenance costs`): mortals live off the land, not off
+  primeval stones.
+* Gu Master upkeep: Rank One +25% → +50% (keeps early pressure); Strength ranks 3–4 +175 / +275% → +125 / +175%;
+  Moon ranks 3–4 +150 / +225% → +100 / +150%. The engine's upkeep already grows with the turn number.
+* Autoplay round 8 (`docs/AUTOPLAY.md`, six variants, 12 games each): at Prince on Standard, clans that spent 20+
+  turns in the red by turn 320 fall from 38 to 11 of 48 and the mean treasury rises from −69 to 101 stones; Marathon
+  (480 turns) 3 → 2 of 24; King (200 turns) 1 → 0 of 48, but King treasuries now grow faster (BALANCE.md item 2). A
+  richer Trading House ended the deficits but piled up 400–700 stones and was left out.
+
+## MOD_SPEC_3 Phase B3 — the path list (2026-10-18)
+
+* `docs/PATHS.md`: all 46 canonical paths (41 + 5 sub-paths) with Chinese, one source (raw chapter + fan-wiki page)
+  and verdict; seven families; one signature unique per path (no two alike); a mortal and an immortal killer move per
+  path (family templates; CANON / ADAPTED / INVENTED names); the canon nine-grade attainment ladder mapped onto four
+  tiers; the conflict matrix (every pair of paths costs Strength, canon clashes more, human none, sound little,
+  canon pairings none); an AI main-path lock. Six decisions for the user.
+* `tools/b3/`: the draft data and a throwaway prototype of all lines (300 promotions, 2,660 uniques): `check_all`
+  passes on it (lint and Unciv's own validator 0 findings); autoplay on it, 6 × 150 turns: 0 crashes, 264 of 264 AI
+  path promotions on the clan's main path. No content JSON ships.
+
+## MOD_SPEC_2 Phase B — immortal-arc lore (2026-10-18)
+
+* `docs/LORE_MAPPING.md`, new part "Immortal arc": one row per rank 5–9 object within the budget, each with Chinese,
+  a raw-text or fan-wiki source, CANON / ADAPTED / INVENTED and the documented patterns it will use: 4 eras and 11
+  techs, 10 stockpiles, the rank 5–9 units, immortal zombie, three desolate-beast tiers, 4 Gu Houses, blessed-land
+  grades, grotto-heaven, Venerable Ascension, Eternal Life, True Inheritance, 30 immortal Gu, 12 inheritances, 12
+  secret realms and landmarks, 20 events, the Heavenly Court and the other majors, 4 city-states.
+* Corrections to MOD_SPEC_2's lore seeds from the source research: Purple Crystal is rank 5 mortal essence and rank 9 is
+  Yellow Apricot; four blessed-land grades and the grotto-heaven as the rank 8 aperture; Wisdom Gu rank 9; Myriad Self
+  fuses enslavement and strength; four tribulation tiers plus the chaos calamity; dream realms precede the Fate War in
+  canon. Five decisions for the user (B1–B5).
+* `docs/PATHS.md`: Myriad Self's tag notes the enslavement-strength fusion.
+

@@ -70,5 +70,12 @@
     "uniques": [
       "[+10]% Strength <when fighting in [Desert] tiles>"
     ]
+  },
+  {
+    "name": "Immortal Killer Move",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[This Unit] heals [20] HP"
+    ]
   }
 ]
