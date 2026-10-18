@@ -291,3 +291,15 @@
   canon. Five decisions for the user (B1–B5).
 * `docs/PATHS.md`: Myriad Self's tag notes the enslavement-strength fusion.
 
+## B3 and B decisions, C3 migration plan (2026-10-18)
+
+* The user's decisions applied: the Killing path joins (47 lines; signature `[unitTriggerTarget] gains
+  [positiveAmount] movement` after a kill), Bai's main path is Water, Eastern Sea major the Zombie Alliance, Western
+  Desert major the Fang clan, all 15 inheritances (Hu Immortal, Blood Sea Ancestor and the 88 True Yang Building back
+  in, over the cap at the user's request), dream realms by era as in canon, Fate Gu's fall throws the qi tides.
+* Prototype of all 47 lines: `check_all` passes (2,726 uniques; Unciv's validator 0 findings); autoplay 6 × 150 turns:
+  0 crashes, 258 of 258 AI path promotions on the main path. The test branch carries it for an Android check of the
+  promotion screen.
+* `docs/PATHS.md`: the C3 migration plan (M1–M9), with a legacy bridge because Unciv deletes a save's units that the
+  ruleset no longer has. Nothing changes in the ruleset before approval.
+

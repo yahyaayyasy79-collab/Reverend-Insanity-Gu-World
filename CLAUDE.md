@@ -28,9 +28,10 @@ of 48 clans 20+ turns in the red; King now richer, BALANCE.md item 2).
 MOD_SPEC_2 Gate passed 2026-10-18 (Slice 1 Definition of Done met: user's game past T300 Marathon, no crash; Locate
 mod errors green). MOD_SPEC_3 Phase A3 done 2026-10-18 (CAPABILITIES.md, E9-E10), waiting at its checkpoint; then
 MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). A3 approved
-2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md)
-and B (LORE_MAPPING "Immortal arc") drafted 2026-10-18, waiting at their checkpoints (decisions 1-6 in PATHS.md, B1-B5
-in LORE_MAPPING).
+2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md,
+47 paths) and B (LORE_MAPPING "Immortal arc") approved 2026-10-18 with the user's decisions; the C3 migration plan
+(PATHS.md, M1-M9, legacy bridge for saves) waits at its checkpoint; the test branch carries all 47 lines for the
+user's Android promotion-screen check.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -61,6 +62,13 @@ in LORE_MAPPING.md.
   built by it (not granted free); inheritances: the trial unlocks *building* the inheritance, so conquest can seize it;
   tribulation timing: a timed status on the ascended unit (not `<every N turns>`); source research by subagents
   allowed ("riset sumber semuanya"); the late-game stone economy fix approved ("boleh dituntaskan").
+* Paths and arc (user, 2026-10-18, B3/B): Killing path included (47 lines); sub-paths need the parent's Master; four
+  tiers (Master any rank, Grandmaster rank 3+, Great Grandmaster 6+, Supreme 8+); transformation without
+  `Can transform to`; fire destroys improvements; Bai's main path Water; Eastern Sea major Zombie Alliance, Western
+  Desert major Fang clan; all 15 inheritances (over the cap of 12, the user's call); dream realms by era (canon), Fate
+  Gu's fall throws the qi tides; seed corrections accepted (Yellow Apricot rank 9, four blessed-land grades).
+* Saves: Unciv deletes units missing from the ruleset on load [src BackwardCompatibility.removeUnitsAndPromotions];
+  never remove a unit a running game may hold without a legacy bridge.
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.
@@ -130,8 +138,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `MOD_SPEC_2.md` — Immortal Arc (rank 5–9): Gate, mechanics map 1–17, lore seeds, budget, phases A–D, tension targets.
 * `MOD_SPEC_3.md` — amendment: rank chain R1–R9 on three unit types, every canonical path as promotion lines with
   attainment tiers, Venerable and Eternal Life; phases A3 (capability tests) → B3 (docs/PATHS.md) → C3 (migration).
-* `docs/PATHS.md` — MOD_SPEC_3 B3: the 46 canonical paths (source, verdict, family, signature, two moves), attainment
-  tiers, conflict matrix, AI main-path lock; drafted from `tools/b3/paths_data.py` (`gen_proto.py` builds a checkable
+* `docs/PATHS.md` — MOD_SPEC_3 B3: the 47 canonical paths (source, verdict, family, signature, two moves), attainment
+  tiers, conflict matrix, AI main-path lock, C3 migration plan; drafted from `tools/b3/paths_data.py` (`gen_proto.py` builds a checkable
   prototype).
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
 * `docs/LORE_MAPPING.md` — Phase 1: one row per Slice 1 object (lore, role, exact uniques, CANON/ADAPTED/INVENTED,

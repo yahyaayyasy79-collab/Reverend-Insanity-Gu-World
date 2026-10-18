@@ -747,7 +747,7 @@ Each needs an in-game check in the Phase 2 step report (console commands in `doc
 
 # Immortal arc — MOD_SPEC_2 Phase B (rank 5–9)
 
-**Status: drafted 2026-10-18, waiting at the Phase B checkpoint (⛔).** One row per rank 5–9 object within MOD_SPEC_2's
+**Status: approved 2026-10-18 with the user's decisions B1–B5 below.** One row per rank 5–9 object within MOD_SPEC_2's
 budget (as amended by MOD_SPEC_3: paths and killer moves live in `docs/PATHS.md`). No content JSON ships before
 approval; Phase C builds it in layers C1–C5.
 
@@ -774,22 +774,20 @@ the numbers come in Phase C and D. Every pattern was matched against the docs; t
 | Venerables (seed order) | Eras: Remote Antiquity — Primordial Origin, Star Constellation; Olden — Limitless, Reckless Savage, Red Lotus; Medieval — Genesis Lotus, Thieving Heaven, Giant Sun; Late — Spectral Soul, Paradise Earth. Primordial Origin's path is **qi** (and he founded enslavement); Paradise Earth's is **earth** | R V6/119, V5/302, V5/628 | CANON |
 | Fate Gu guarded by the Heavenly Court | True for the story's present; it first belonged to the Rockman Imperial Court and was carried to Primordial Origin | R V5/720, V5/694 | CANON |
 | Secret realms list | Hu Immortal, Lang Ya and the Imperial Court are **blessed lands**; Treasure Yellow Heaven is a **grotto-heaven market**; Yi Tian Mountain is an ordinary mountain and battlefield | R V2/142, V3/55, V3/143, V3/61, V2/57 | CANON |
-| Fate Gu shattered → dream realms (#11, #14) | **Not canon:** dream realms surface and are fought over before the Fate War; after it, fate becomes heaven-path dao marks in every being, the region walls fade (五域合一) and qi tides sweep the world | R V4/74–85, V6/5–6, V6/1, V6/13 | decision B4 |
+| Fate Gu shattered → dream realms (#11, #14) | **Not canon:** dream realms surface and are fought over before the Fate War; after it, fate becomes heaven-path dao marks in every being, the region walls fade (五域合一) and qi tides sweep the world | R V4/74–85, V6/5–6, V6/1, V6/13 | CANON (user: follow canon, B4) |
 | Immortal zombies "must plunder" | No R line says so; it follows from a zombie's dead aperture (no essence income). Fine as a game rule | R V4/290, V4/141; F Zombie_Gu | ADAPTED |
 | Region walls | Called 界壁 (域壁 has no hits): Miasma 瘴气 (Southern Border), Licorice 甘草 (Northern Plains), Azure Water 苍水 (Eastern Sea), Raging Flame 狂炎 (Western Desert), Sage 圣贤 (Central Continent) | R V5/22, V4/61, V4/279 | CANON |
 
-## Decisions for the user (⛔)
+## Decisions (user, 2026-10-18)
 
-* **B1. Eastern Sea major:** the Shen clan 沈家 (the strongest righteous house, two rank 8s, R V5/885) or the
-  Zombie Alliance 僵盟 (an immortal-zombie playstyle, headquartered there, R V4/4). Lore and taste.
-* **B2. Western Desert major:** the Tang clan 唐家 (dream path; found Thieving Heaven's dream realm, R V4/126) or the
-  Fang clan 房家 (three Gu Houses, the strongest army, R V5/498; 房 is not Fang Yuan's 方).
-* **B3. Inheritances: 12 of 14 candidates.** Default: the ten Venerables' + Three Kings + Long Hair Ancestor; left out:
-  Hu Immortal (it becomes a blessed-land landmark and its contest), Blood Sea Ancestor's nine pieces (civilopedia),
-  the 88 True Yang Building (inside the Imperial Court Blessed Land landmark).
-* **B4. Dream realms:** (a) keep MOD_SPEC_2 #11/#14 (they open when Fate Gu shatters; ADAPTED) or (b) canon: dream
-  realms open by era (rank 7+), and a shattered Fate Gu sets off the qi tides and the fall of the walls. Default (b).
-* **B5.** Confirm the seed corrections above (essences, grades, Wisdom Gu rank 9).
+* **B1. Eastern Sea major: the Zombie Alliance 僵盟** (headquartered there, it outranks the local super forces, R V4/4).
+* **B2. Western Desert major: the Fang clan 房家** (three Gu Houses, the strongest army, R V5/498; 房 is not Fang
+  Yuan's 方).
+* **B3. All 15 inheritances stay**, three over MOD_SPEC_2's cap of 12, at the user's request (the cap was the only
+  reason to cut Hu Immortal, Blood Sea Ancestor and the 88 True Yang Building).
+* **B4. Canon:** dream realms open by era (rank 7 on), as they surface before the Fate War; a shattered Fate Gu sets
+  off the qi tides and the fading of the region walls.
+* **B5.** The seed corrections above are accepted.
 
 ## Budget (MOD_SPEC_2, amended by MOD_SPEC_3)
 
@@ -799,11 +797,11 @@ the numbers come in Phase C and D. Every pattern was matched against the docs; t
 | Immortal Gu wonders | ≤30 | 30 (Fate Gu among them) |
 | Killer moves | ≤2 per path (MOD_SPEC_3) | `docs/PATHS.md`: 46 immortal moves at Great Grandmaster |
 | Gu Houses | ≤4 | 4 |
-| Inheritances | ≤12 | 12 (decision B3) |
+| Inheritances | ≤12 | **15, over the cap at the user's request (B3)** |
 | Secret realms | ≤12 | 12 natural wonders |
 | New stockpiles | ≤10 | 10 |
 | Events | ≤25 | 20 |
-| Nations | Heavenly Court + ≤4 majors + ≤4 city-states | Heavenly Court + Wu (Slice 1) + Huang Jin + Eastern Sea (B1) + Western Desert (B2); 4 city-states |
+| Nations | Heavenly Court + ≤4 majors + ≤4 city-states | Heavenly Court + Wu (Slice 1) + Huang Jin + Zombie Alliance (B1) + Fang clan (B2); 4 city-states |
 | Gu units (MOD_SPEC_3) | 9 + ≤1 unique per nation | ranks 5–9 below (ranks 1–4 come from Slice 1 in C3's migration) |
 
 ## Eras and techs
@@ -916,7 +914,7 @@ two or three (R V5/440); they must be fed (R V4/61). Fewer than ten rank 9 Gu ex
 | Advance Refinement Gu | 升炼蛊 | 8 / Refinement | ADAPTED | Raises other Gu's rank; core of refinement formations (F) | `[relativeAmount]% Production when constructing [buildingFilter] wonders [cityFilter]` (immortal Gu) |
 | Steal Life | 偷生 | 8 / Theft | ADAPTED | Thieving Heaven's first Gu, life theft (R V5/729; F) | `Heals [amount] damage if it kills a unit` `<for [mapUnitFilter] units>` |
 | Human Qi Immortal Gu | 人气仙蛊 | 8 / Qi | ADAPTED | One of the three qi as a rank-8 Gu, held by Primordial Origin (F) | `Instantly gain [amount] [stockpile]` `<upon turn start>` `<every [positiveAmount] turns>` (Human Qi: easier ascensions) |
-| Fate Gu | 宿命蛊 | 9 / Heaven | CANON | Fixes every being's destiny; wounded by Red Lotus and repaired by the Heavenly Court, read through the Heaven Overseeing Tower; Heaven's Will is one of its materials; Fang Yuan destroyed it (R V5/720, V5/721, V5/694, V4/358, V5/940) | **User decision (Phase A): `uniqueTo` the Heavenly Court and built by it.** World state: `<if [buildingFilter] is constructed by anybody>` / `<if [buildingFilter] is not constructed by anybody>`; the Fate War on capture (`<upon conquering a city>`); dream-realm camps gated on `Marks a barbarian camp` (Phase A7) or the qi tides (decision B4) |
+| Fate Gu | 宿命蛊 | 9 / Heaven | CANON | Fixes every being's destiny; wounded by Red Lotus and repaired by the Heavenly Court, read through the Heaven Overseeing Tower; Heaven's Will is one of its materials; Fang Yuan destroyed it (R V5/720, V5/721, V5/694, V4/358, V5/940) | **User decision (Phase A): `uniqueTo` the Heavenly Court and built by it.** World state: `<if [buildingFilter] is constructed by anybody>` / `<if [buildingFilter] is not constructed by anybody>`; the Fate War on capture (`<upon conquering a city>`); its fall throws the Qi Tides (B4); dream realms do not wait for it |
 | Wisdom Gu | 智慧蛊 | 9 / Wisdom | CANON | Light of wisdom that speeds deduction, at a lifespan cost; second only to Fate Gu in the Court's eyes (R V5/559, V6/343; F) | `[relativeAmount]% [stat]` (Science) + `Instantly consumes [positiveAmount] [stockpiledResource]` `<every [positiveAmount] turns>` (Lifespan Gu) |
 | Derivation Gu | 衍化蛊 | 9 / Rule | ADAPTED | Derives new results from given inputs; core of a Heavenly Court formation (R V6/319; F) | `[relativeAmount]% Production when constructing [buildingFilter] buildings [cityFilter]` |
 
@@ -924,7 +922,7 @@ Left out (civilopedia only): Sovereign Immortal Fetus Gu (Fang Yuan's one-use re
 [VERIFY]), Heavenly Secret Immortal Gu, Mutation, Regret, the four seasons, Landscape as Before, Dog Shit Luck,
 Blessing in Disguise, Great Thief, Possession, Time Anchor and the other rank 6–8 Gu of R V5/440.
 
-## Inheritances (12, decision B3)
+## Inheritances (15, over the cap at the user's request, B3)
 
 MOD_SPEC_2 #12, with the user's Phase A decision: **the trial unlocks building the inheritance** (a world wonder;
 `Only available` `<if [buildingFilter] is constructed>` on a cheap seal the trial grants), so conquest can seize it.
@@ -947,6 +945,9 @@ Giant Sun grades true inheritances ordinary / unparalleled / supreme (R V3/193�
 | Paradise Earth's true inheritances | 乐土真传 | CANON | One per region (F); the Eastern Sea one lies inside the Azure Dragon Whale (R V5/628) | Earth path; Dragon Whale Paradise |
 | Three Kings Inheritance | 三王传承 | CANON | Three light pillars (enslavement, refinement, fire), each needing a key Gu, inside a dying blessed land (R V2/87, V2/173) | Southern Border (San Cha Mountain); the rank-5 trial |
 | Long Hair Ancestor's refinement true inheritance | 长毛老祖炼道真传 | CANON | The "first refiner of all time", one of three refinement supreme grandmasters (R V5/426, V5/761; R ch1326) | Lang Ya; refinement path |
+| Hu Immortal inheritance | 狐仙传承 | CANON | The sects seal Tian Ti Mountain and set their disciples against each other; the first to the top of its Dang Hun Mountain wins the land spirit's loyalty, and souls break on the way (R V2/136, V2/142, V2/167) | Central Continent, at the Hu Immortal Blessed Land; a race: the trial is thrown to every clan near it, the first to pass builds it |
+| Blood Sea Ancestor's true inheritances | 血海真传 | CANON | Nine pieces (blood Gu, a rank-6 immortal Gu, an ancient desolate bat); whoever holds one is hunted as the infamous demon's heir (R V3/2, V3/4) | Blood path; the trial is open to Demonic Path holders only (`Only available` `<after adopting [policy/belief]>`), and the heir is hunted (C4 picks the pattern) |
+| 88 True Yang Building | 八十八角真阳楼 | CANON | Giant Sun's tiered inheritance tower in the Imperial Court Blessed Land; only thick Huang Jin blood may enter, and rank limits what a visitor may study (R V3/84, V3/149, V3/192) | Luck path; only the Huang Jin may pass its trial (`<for [civFilter] Civilizations>`), but a conqueror keeps the built wonder |
 
 ## Secret realms and landmarks (12 natural wonders)
 
@@ -967,8 +968,14 @@ or `Units ending their turn on this terrain take [amount] damage`), boons by
 | Dragon Whale Paradise | 龙鲸乐土 | CANON | Inside the Azure Dragon Whale; maddening black fire; Paradise Earth's Eastern Sea inheritance (R V5/628, V5/734) | Damage; Paradise Earth's inheritance |
 | Tian Ti Mountain | 天梯山 | CANON | The ruined stair to the Heavenly Court; fighting on it affronts the Court (R V3/2, V4/53) | Heavenly Court flavour; Hu Immortal contest site |
 | Lang Ya Blessed Land | 琅琊福地 | ADAPTED (a blessed land as a landmark) | Refinement succeeds more often; its land spirit trades Gu (R V3/55, V3/80) | Refinement boon |
-| Imperial Court Blessed Land | 王庭福地 | ADAPTED (as a landmark) | Opens every ten years to the contest winner; shelter from the blizzard; the 88 True Yang Building (R V3/143, V3/84) | The Imperial Court Contest's prize |
-| Hu Immortal Blessed Land | 狐仙福地 | ADAPTED (as a landmark) | A rank-6 aperture on Tian Ti Mountain, won by the first to climb its Dang Hun Mountain (R V2/142, V2/166) | Contest prize (decision B3) |
+| Imperial Court Blessed Land | 王庭福地 | ADAPTED (as a landmark) | Opens every ten years to the contest winner; shelter from the blizzard; the 88 True Yang Building (R V3/143, V3/84) | The Imperial Court Contest's prize; site of the 88 True Yang Building |
+| Hu Immortal Blessed Land | 狐仙福地 | ADAPTED (as a landmark) | A rank-6 aperture on Tian Ti Mountain, won by the first to climb its Dang Hun Mountain (R V2/142, V2/166) | Site of the Hu Immortal inheritance |
+
+### Dream realms
+
+| Object | Chinese | Verdict | Lore basis (source) | Mechanic (patterns) |
+|---|---|---|---|---|
+| Dream Realm | 梦境 | CANON | Dreams surface and are scrambled for before the Fate War; they burn the soul and can trap a dreamer for good, but pour attainment into whoever survives (R V4/74–75, V4/85, V5/48) | User (B4): a camp improvement that appears from the Rank Seven era on (`Marks a barbarian camp` `<starting from the [era]>`; Phase A7 proved that camp spawning reads the marker's own conditional, an era conditional is a C4 test); clearing it gives XP to the unit (dream path) |
 
 ## Events (20)
 
@@ -992,7 +999,7 @@ dominate another (MOD_SPEC_2 tension targets).
 | Desolate Beast Tide | 兽潮 | ADAPTED | Under Heaven's Will even gentle beasts turn frenzied (R V4/359) | `[positiveAmount] [unit]s rebel` inside borders |
 | Immortal Zombie | 仙僵 | CANON | Some dead keep their power as zombies since Fate Gu's wound (R V4/73) | Rise as a zombie or rest (choice) |
 | Fate War | 宿命大战 | CANON | Longevity Heaven storms the Court for Fate Gu; Fang Yuan shatters it (R V5/689–718, V5/939) | MOD_SPEC_2 #11: on capturing Fate Gu's city, Shatter (`Remove [buildingFilter] [cityFilter]`) or Seize |
-| Qi Tides | 气潮 | CANON | After the Fate War the walls fade and qi tides sweep the world (R V6/1, V6/13) | Decision B4 |
+| Qi Tides | 气潮 | CANON | After the Fate War the walls fade and qi tides sweep the world (R V6/1, V6/13) | User (B4): thrown while Fate Gu stands shattered (`<if [buildingFilter] is not constructed by anybody>` after the Fate War); hampers fighting and weakens the walls |
 | Refinement Path Convention | 炼道大会 | CANON | The Court's refinement fair whose failures heal Fate Gu (R V4/81, V4/196) | The Heavenly Court repairs Fate Gu; rivals may raid it |
 | Imperial Court Contest | 王庭之争 | CANON | Every ten years a killing blizzard; the winning alliance enters the blessed land (R V3/143, V3/131) | Northern Plains, every N turns |
 | Battle of Yi Tian Mountain | 义天山大战 | CANON | A drawn-out righteous-demonic war steered by immortals (R V5/48, V4/316) | Southern Border: Righteous vs Demonic policy holders |
@@ -1005,8 +1012,8 @@ dominate another (MOD_SPEC_2 tension targets).
 | Heavenly Court | 天庭 | CANON | Founded by Primordial Origin, ruled by three Venerables; guards and repairs Fate Gu in the Heaven Overseeing Tower; rules the Central Continent through the ten ancient sects; hunts fate escapees (R V6/117, V4/189, V4/299) | The special faction; builds Fate Gu; unique Gu House; main path Wisdom (proposal: Star Constellation's inheritance stays in the Court) |
 | Wu Clan (Slice 1) | 武家 | CANON | First of the 13 Southern Border super clans (R V5/589) | Southern Border; Strength |
 | Huang Jin Family / Longevity Heaven | 黄金家族 / 长生天 | CANON | Every bloodline of Giant Sun; no Huang Jin line may be wiped out; Longevity Heaven raids the Court in the Fate War (R V3/92, V3/139, V5/689) | Northern Plains; Luck; Calamity Luck Altar |
-| Eastern Sea major | 沈家 or 僵盟 | CANON | Decision B1 | Eastern Sea; path [VERIFY] |
-| Western Desert major | 唐家 or 房家 | CANON | Decision B2 | Western Desert; Tang: Dream |
+| Zombie Alliance | 僵盟 | CANON | Immortal zombies across the five regions, headquartered in the Eastern Sea, above its super forces; run by the Shadow Sect; zombies cannot make new essence, so they hoard it (R V4/4, V4/73, V4/367) | Eastern Sea (B1). Its immortals do not age (no lifespan decay) but earn no essence: plunder, trade and the market feed it (ADAPTED); unique unit: the Immortal Zombie. Main path Soul [VERIFY] (PATHS.md) |
+| Fang Clan | 房家 | CANON | The Western Desert's top force, with three Gu Houses (R V5/498) | Western Desert (B2). Gu Houses cheaper to build (`[relativeAmount]% Production when constructing [baseUnitFilter] units [cityFilter]`); main path Formation [VERIFY] (PATHS.md) |
 | City-states: Lang Ya Sect, Spirit Affinity House, Combat Immortal Sect, Merman Imperial Court | 琅琊派 / 灵缘斋 / 战仙宗 / 鲛人王庭 | CANON | Hairy-men refiners of Lang Ya (R V3/55); two of the ten ancient sects (R V4/55); the Eastern Sea's merfolk court (R V5/640) | Refiner, cultured, militaristic and maritime city-states |
 | Shadow Sect | 影宗 | CANON | Spectral Soul's split souls working to revive him; fate defiers (R V4/367) | Not a nation: hostile events and zombie formations |
 

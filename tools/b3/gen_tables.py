@@ -12,7 +12,7 @@ key = {p[0]: p for p in P}
 c = lambda s: "`" + s.replace("|", "\\|") + "`"
 sigs = [p[7] for p in P]
 assert len(set(sigs)) == len(sigs), "two paths share a signature"
-assert len(P) == 46
+assert len(P) == 47
 
 out = []
 out.append("| # | Path | Chinese | Family | Sub-path of | Source | Verdict | Signature (one unique) | Lore hook |")
