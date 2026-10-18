@@ -215,3 +215,20 @@
   unbuilable`: the Clan Settler stays in the list, greyed, with the reason ("Hanya dapat dibangun saat di atas -11
   Kebahagiaan"). Verified headless: happiness −23 → shown, with that reason; normal play unchanged.
 
+## Phase 2, step 11 — population-draining events, game speed (2026-10-18)
+
+* The user's capital at population 1 (Marathon, turn 321): its focus was Production, so its one citizen worked a
+  0-food tile, and a human city does not re-check its tiles each turn [src] (KNOWN_ISSUES engine limit 10). An
+  investigation of five hypotheses with engine probes found three faults in the mod:
+  * "Abandon the outer fields" now halves growth in every city for 10 turns, instead of taking a citizen from every
+    city (free at population 1, and the largest drain on every clan).
+  * "Judge the traitor", "Strike first" and "Squeeze the mortals" need a capital above 3 population: at population 1
+    the loss was void and the reward free.
+  * Event chances keep their rate per era on every speed (`<on [speed] game speed>`: chance ÷ modifier, turn gates ×
+    modifier, the wild-Gu and inheritance dice re-weighted). Marathon used to roll three times the disasters per era.
+* Autoplay round 7 (`docs/AUTOPLAY.md`): cities at population 1 fall from 17% to 2.4% (Standard, turn 320) and from 19%
+  to 3.4% (Marathon, turn 480); on Marathon population per city rises from 3.0 to 4.3 and clans in the red from 12 to 3
+  of 24. Found on the way, not caused here: at Prince, 40 of 48 clans are in the red by turn 320 on Standard.
+* `tools/autoplay.py` records capital population and cities at population 1 (`capitalPopMean`, `popPerCityMean`,
+  `popOneCityShare`).
+

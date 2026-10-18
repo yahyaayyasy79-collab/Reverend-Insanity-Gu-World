@@ -199,6 +199,42 @@ Two more 12-game batches (King, 200 turns): one on the round-6 commit, one with 
 * **Solvency:** 4 of 144 AI clans spent 20 or more turns with a negative treasury, all of them clans at war. None
   fell into a disband spiral: the worst (Xiong, 41 turns, low of −144 stones) still fielded 24 units at turn 200.
 
+## Round 7: the user's pop-1 capital, event population costs and game speed (2026-10-18)
+
+The user's capital (human Wu, Marathon, turn 321) sat at population 1 with a food surplus of exactly 0. The direct cause
+was in the game, not the ruleset: its focus was Production, so its one citizen worked a 0-food hill tile, and a human
+city does not re-check its tiles each turn [src `CityTurnManager.startTurn`] (docs/KNOWN_ISSUES.md, engine limit 10).
+A five-way investigation (citizen ranking, a human-flagged simulation, events, ruleset food, Wu's terrain; engine
+probes, adversarially checked) found three faults in the mod that drain population on every speed:
+
+* "Abandon the outer fields" took a citizen from every city on every beast tide, and the capital population costs
+  ("Judge the traitor", "Strike first", "Squeeze the mortals") were free rewards at population 1. With all four clans
+  answering events but never taking a population choice, capitals averaged 8.4 at turn 320 (Standard); with the AI's
+  weights, 1.8-4.
+* Every random event rolled per turn whatever the speed, so Marathon met three times the tides, betrayals and stone
+  shortages per era.
+* The simulation mode drops a human civ's Alert events, so autoplay keeps every civ AI.
+
+Fix: Abandon halves growth in every city for 10 turns; the capital population costs need more than 3 population;
+event chances divide by the speed modifier and turn gates multiply by it (`<on [speed] game speed>`, whole-number
+chances); the wild-Gu and inheritance dice keep their rate per era. Verified in the engine: Abandon took a city's
+surplus from 5.0 to 2.5 with population unchanged and expired after 10 turns. Prince, Small, 4 clans:
+
+| Run | Cities at pop 1 | Pop per city | Capital pop | Hunger deaths per clan per 100 turns | Pillaged tile-turns | Clans 20+ turns in the red |
+|---|---|---|---|---|---|---|
+| Standard, 320 turns, 12 games, before | 17.1% | 5.12 | 2.92 | 0.42 | 7,259 | 40 of 48 |
+| Standard, 320 turns, 12 games, round 7 | **2.4%** | 5.28 | 3.60 | 0.51 | 9,855 | 38 of 48 |
+| Marathon, 480 turns, 6 games, before | 19.3% | 3.02 | 2.38 | 0.42 | 18,357 | 12 of 24 |
+| Marathon, 480 turns, 6 games, round 7 | **3.4%** | **4.32** | **4.43** | 0.18 | 7,993 | **3 of 24** |
+
+* Pop-1 cities nearly vanish on both speeds; Marathon now plays like Standard per era (pillage halves, treasuries
+  recover).
+* **New, and not caused by round 7:** at Prince on Standard, 40 of 48 clans spend 20+ turns in the red by turn 320
+  (mean treasury about −65 at the end), before and after. Unit upkeep grows with the turn number [src
+  `getUnitMaintenance`] and the tech tree ends near turn 120, so late armies outgrow income; King's AI upkeep discount
+  (round 5-6: 4 of 144) hides it. Constant stone shortages also hold capitals near the new gate (3-4 population)
+  through "Squeeze the mortals". Next step: the late-game stone economy.
+
 ## Re-run
 
 ```

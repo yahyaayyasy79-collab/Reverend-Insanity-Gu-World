@@ -107,6 +107,34 @@ def w(x, cond=""):
     return f"[{x}]% weight to this choice for AI decisions" + (f" {cond}" if cond else "")
 
 
+# R7 (the user's Marathon game, 2026-10-18): every random event rolls per turn, but a slower speed has more turns per
+# era (Speeds.json modifier: Quick 0.67, Standard 1, Epic 1.5, Marathon 3), so Marathon met three times the tides,
+# betrayals and shortages per era. Chances divide by the modifier and turn gates multiply by it, one line per speed
+# (`<on [speed] game speed>`); chances stay whole numbers [docs nonNegativeAmount], so the slowest speeds round up.
+SPEEDS = [(s["name"], s["modifier"]) for s in json5.load(open(os.path.join(VAN, "Speeds.json")))]
+
+
+def per_speed(make):
+    """make(modifier) -> unique without a speed conditional; one line per game speed."""
+    return [f"{make(m)} <on [{name}] game speed>" for name, m in SPEEDS]
+
+
+def chance(base, m):
+    return max(1, round(base / m))
+
+
+def turn_gate(base, m):
+    return round(base * m)
+
+
+def die_weights(p_standard, m):
+    """Weights for the silent 'nothing happens' choice of a two-stage die whose second stage fires with p_standard on
+    Standard: per speed, multiply its weight so the second stage fires with p_standard / m (weights multiply [src
+    IHasUniques.getWeightForAiDecision])."""
+    nothing = 1 / p_standard - 1
+    return round(100 * ((1 / (p_standard / m) - 1) / nothing - 1))
+
+
 # ---------------- ModOptions / Globals ----------------
 dump("ModOptions.json", {"isBaseRuleset": True,
                          "uniques": ["Disable religion", "Can only start games from the starting era"],
@@ -124,11 +152,16 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "Rebel units may spawn <when below [-20] [Happiness]>",
     "[-3] units cost no maintenance <for [Major] Civilizations>",
     "[-20]% Strength <when below [0] [Gold]>",
-    f"Triggers a [{TIDE}] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations>",
-    f"Triggers a [{TIDE}] event <upon turn start> <after turn number [90]> <with [2]% chance> <for [Major] Civilizations>",
-    "Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [8]% chance> <for [Major] Civilizations>",
-    "Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [3]% chance> <for [Major] Civilizations>",
-    "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations>",
+] + per_speed(lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
+                       f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(90, m)}]> "
+              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [{chance(8, m)}]% chance> "
+              "<for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [{chance(3, m)}]% chance> "
+              "<for [Major] Civilizations>") + per_speed(
+    lambda m: "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] "
+              f"is less than [0]> <with [{chance(25, m)}]% chance> <for [Major] Civilizations>") + [
     # R6: a held (excavated) inheritance teaches the clan's Gu Masters
     "[+20]% XP gained from combat <with [Gu Inheritance]>",
 ]})
@@ -321,8 +354,10 @@ dump("UnitPromotions.json", [
 ] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
      for food, status in HUNGER.items()])
 
-# ---------------- Events (exactly 5) ----------------
+# ---------------- Events (9: the spec's 5 + wild Gu and inheritances, R6) ----------------
 BAI = "<for [Bai Clan] Civilizations>"
+# R7: a capital population cost needs a capital to pay it: at population 1 the loss is void [src] and the reward free
+CAP_POP = "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>"
 SPR = f"<if [{SPRING}] is constructed>"  # containsBuildingOrEquivalent: Gu Yue's Moon Orchid Flower Sea counts [src]
 dump("Events.json", [
     {"name": "Aptitude Awakening", "presentation": "None", "choices": [
@@ -364,7 +399,10 @@ dump("Events.json", [
             f"Gain [-60] [Gold] <during the [{E12}]>", f"Gain [-100] [Gold] <during the [{E3}]>",
             f"Gain [-150] [Gold] <during the [{E4}]>",
             w("+0")]},
-        {"text": "Abandon the outer fields", "uniques": ["[-1] population [in all cities]", w("-30")]},
+        # R7: was "[-1] population [in all cities]": free in cities at population 1 (losses stop at 1 [src]) and the
+        # largest drain on every clan (autoplay: capitals at 1.8-4 by turn 320, 8.4 without population choices).
+        # The fields lie fallow for a while instead.
+        {"text": "Abandon the outer fields", "uniques": ["[-50]% growth [in all cities] <for [10] turns>", w("-30")]},
         {"text": "Raise the formation", "uniques": [
             "Only available <if [Formation Platform] is constructed> <when above [70] [Gold]>",
             f"Gain [-40] [Gold] <during the [{E3}]>", f"Gain [-70] [Gold] <during the [{E4}]>",
@@ -378,10 +416,10 @@ dump("Events.json", [
             "A [Rank Two Moon Gu Master] rebels <after adopting [Moon Path]>",
             "A [Rank One Gu Master] rebels <before adopting [Strength Path]> <before adopting [Moon Path]>",
             w("+0")]},
-        {"text": "Judge the traitor by clan law", "uniques": ["Only available <after adopting [Righteous Path]>",
+        {"text": "Judge the traitor by clan law", "uniques": ["Only available <after adopting [Righteous Path]>", CAP_POP,
                                                      "[-1] population [in capital]", "[+2 Happiness] <for [10] turns>",
                                                      w("+100")]},
-        {"text": "Strike first and take the traitor's Gu", "uniques": ["Only available <after adopting [Demonic Path]>",
+        {"text": "Strike first and take the traitor's Gu", "uniques": ["Only available <after adopting [Demonic Path]>", CAP_POP,
                                                             "Gain [40] [Gold]", "[-1] population [in capital]",
                                                             "[-3 Happiness] <for [10] turns>", w("+100"),
                                                             w("-75", "<when below [0] [Happiness]>")]},
@@ -391,7 +429,7 @@ dump("Events.json", [
                                                   "[-15]% Strength <for [8] turns>", w("+100")]},
         {"text": "Borrow from the merchant caravans", "uniques": [
             "Only available <when above [-100] [Gold]>", "Gain [80] [Gold]", "[-6 Gold] <for [20] turns>", w("-80")]},
-        {"text": "Squeeze the mortals", "uniques": ["Gain [50] [Gold]", "[-1] population [in capital]", w("-20")]},
+        {"text": "Squeeze the mortals", "uniques": [CAP_POP, "Gain [50] [Gold]", "[-1] population [in capital]", w("-20")]},
         {"text": "Rob a passing caravan", "uniques": [
             "Only available <after adopting [Demonic Path]>", "Gain [70] [Gold]",
             "Triggers a [Betrayal] event <with [25]% chance>", w("+50")]},
@@ -400,7 +438,8 @@ dump("Events.json", [
     # Only Gu that live wild in canon or plausibly so: the Liquor Worm (lured wild in canon), Jade Skin Gu, Black Boar
     # Gu; never the Moonlight Gu, which only Gu Yue breeds. Each is food-gated and keeps the ladder's invariants.
     {"name": "Wild Gu", "presentation": "None", "choices": [
-        {"text": "Only the wind in the grass", "uniques": [w("+300")]},
+        {"text": "Only the wind in the grass", "uniques": [w("+300")] + [w(f"{die_weights(0.2, m):+d}", f"<on [{n}] game speed>")
+                                                                     for n, m in SPEEDS if m != 1]},
         {"text": "A wild Gu stirs nearby", "uniques": ["Triggers a [Wild Gu Caught] event", w("+0")]},
     ]},
     {"name": "Wild Gu Caught", "text": "Your Gu Master has cornered a wild Gu. Which one will it be?", "choices": [
@@ -418,7 +457,8 @@ dump("Events.json", [
     # the tile and takes the tiles around it, from whoever owns them (diplomatic penalty for stealing territory [src
     # OneTimeTakeOverTilesInRadius]): the clans fight over it.
     {"name": "Inheritance Rumour", "presentation": "None", "choices": [
-        {"text": "An empty cave", "uniques": [w("+0")]},
+        {"text": "An empty cave", "uniques": [w("+0")] + [w(f"{die_weights(0.5, m):+d}", f"<on [{n}] game speed>")
+                                                       for n, m in SPEEDS if m != 1]},
         {"text": "Something is buried here", "uniques": ["Triggers a [Buried Inheritance] event", w("+0")]},
     ]},
     {"name": "Buried Inheritance", "text": "Your Gu Master has unearthed a buried Gu inheritance. Word will spread fast.", "choices": [
@@ -524,7 +564,7 @@ dump("Policies.json", [
         {"name": "Strength Path Complete", "uniques": ["[1] Movement <for [Strength Gu Master] units>"]}]},
 ])
 
-# ---------------- Resources (6: 1 bonus, 4 strategic Gu foods, 1 luxury) ----------------
+# ---------------- Resources (7: Spirit Spring, 4 strategic Gu foods, Gu Inheritance, 1 luxury) ----------------
 DEP = {"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 2},
        "majorDepositAmount": {"sparse": 2, "default": 2, "abundant": 3}}
 SB = ["Guaranteed with Strategic Balance resource option"]

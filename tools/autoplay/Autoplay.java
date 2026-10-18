@@ -204,11 +204,17 @@ public class Autoplay {
             rec.put("major", major); rec.put("alive", c.isAlive());
             int pop = 0;
             int captured = 0;
+            int capitalPop = 0;
+            int popOneCities = 0;
             for (City city : c.getCities()) {
-                pop += city.getPopulation().getPopulation();
+                int p = city.getPopulation().getPopulation();
+                pop += p;
+                if (city.isCapital()) capitalPop = p;
+                if (p <= 1) popOneCities++;
                 if (city.getFoundingCivObject() != null && city.getFoundingCivObject() != c) captured++;
             }
             rec.put("cities", c.getCities().size()); rec.put("pop", pop); rec.put("capturedCities", captured);
+            rec.put("capitalPop", capitalPop); rec.put("popOneCities", popOneCities);
             rec.put("pillagedTiles", pillaged.getOrDefault(c.getCivName(), 0));
             if (!major) { out.println(obj(rec)); continue; }
             Stats next = c.getStats().getStatsForNextTurn();

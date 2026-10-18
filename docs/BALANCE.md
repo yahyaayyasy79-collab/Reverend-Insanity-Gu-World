@@ -34,13 +34,14 @@ decides the rank-1 threshold) and the round-5 delegation ("bebas, yang sesuai da
 | Gu Master strength, Moon path | 13 / 20 / 29, melee, moon blade 40% of melee strength before each clash with a unit | `data/gu_masters.csv` `strength`, `extra_uniques` | Ranged Moon armies captured 0 cities; melee + 40% blade: 5 (5c) | If Gu Yue or Bai are eliminated in more than 2 of 12 games |
 | Gu Master upkeep | Rank One +25%; Strength +100 / +175 / +275%; Moon +75 / +150 / +225% | `data/gu_masters.csv` `maintenance` | Upkeep is 20% of gross income in T1–50 and 60% in T151–200 (round 5) | See "What the data says is off": the spec asks for about 40% early |
 | Free upkeep | none for majors: `[-3] units cost no maintenance` cancels the engine's 3 free units [src CivInfoStatsForNextTurn.getUnitMaintenance]; the Demonic policy Lone Cultivators gives 2 back | `tools/gen_ruleset.py` `GlobalUniques`, `Policies` | — | Already at the floor; push early pressure through Gu Master upkeep instead |
-| Wild Gu | 6% per Gu Master per turn, then a 1-in-5 die (weights +300 / +0): 1.2% | `WILD_GU_TRIGGER`, `Events` `Wild Gu` | 1.55 Jade Skin and 2.19 Black Boar per clan by T200, 36 games (6b) | The user asked for about 1.2%; change the die, not the trigger (E5) |
-| Buried inheritance | 1% per Gu Master per turn in foreign land after Inheritance Lore, then 1 in 2 | `INHERITANCE_TRIGGER`, `Events` `Inheritance Rumour` | 1.75 inheritances per game, 36 games (6b; 1 in 8 gave 0.42) | If fewer than 1 per game, the clans have nothing to fight over |
+| Wild Gu | 6% per Gu Master per turn, then a 1-in-5 die (weights +300 / +0): 1.2% on Standard; the die keeps the rate per era on other speeds (`die_weights`: Marathon 0.4%) | `WILD_GU_TRIGGER`, `Events` `Wild Gu` | 1.55 Jade Skin and 2.19 Black Boar per clan by T200, 36 games (6b) | The user asked for about 1.2%; change the die, not the trigger (E5) |
+| Buried inheritance | 1% per Gu Master per turn in foreign land after Inheritance Lore, then 1 in 2 on Standard (Marathon 1 in 6) | `INHERITANCE_TRIGGER`, `Events` `Inheritance Rumour` | 1.75 inheritances per game, 36 games (6b; 1 in 8 gave 0.42) | If fewer than 1 per game, the clans have nothing to fight over |
 | Inheritance claim | takes the land tiles in a 1-tile radius (−10 relations per tile, engine), +20 XP; or strip it for 60 stones and +30 XP | `Events` `Buried Inheritance` | The AI claims 2 times in 3 (weights +100 / +0, E1) | Radius 2 makes it a war trigger; try it only with a human game in hand |
 | Gu Inheritance yield | tile 3 science, 2 culture, 2 stones; Inheritance Dig +2 science, +2 stones; +20% combat XP while held | `Resources`, `Improvements`, `GlobalUniques` | — | — |
-| Beast tide | 3% per turn after T30, another 2% after T90 | `GlobalUniques` | Pillage 7–10× Vanilla's (round 5) | Lower if pillage starves clans in human games |
-| Betrayal | 8% per turn while unhappy, 3% while above 300 stones | `GlobalUniques` | — | — |
-| Stone shortage | 25% per turn with a negative treasury and income | `GlobalUniques` | — | — |
+| Beast tide | Standard: 3% per turn after T30, another 2% after T90. Per speed (round 7): Quick 4% / 3% after T20 / T60, Epic 2% / 1% after T45 / T135, Marathon 1% / 1% after T90 / T270 | `GlobalUniques` (`per_speed`, `chance`, `turn_gate`) | Pillage 7–10× Vanilla's (round 5) | Lower if pillage starves clans in human games |
+| Betrayal | Standard: 8% per turn while unhappy, 3% while above 300 stones (Quick 12 / 4, Epic 5 / 2, Marathon 3 / 1) | `GlobalUniques` | — | — |
+| Stone shortage | Standard: 25% per turn with a negative treasury and income (Quick 37, Epic 17, Marathon 8) | `GlobalUniques` | — | — |
+| Population-cost choices | Judge, Strike first, Squeeze: only while the capital has more than 3 population; Abandon the outer fields: −50% growth in every city for 10 turns (was −1 population in every city) | `Events` (`CAP_POP`) | Round 7 (AUTOPLAY.md) | Keep every population cost gated: at population 1 a loss is void and the reward free |
 | Happiness | every difficulty +6 base happiness (one luxury only) | `tools/gen_ruleset.py` `Nations (Difficulties)` | — | — |
 | Spirit Spring | 1 deposit per start (Strategic Balance), Spring Cave +3 stones, 6 turns | `Resources`, `Improvements` | Improved late: the AI keeps one laborer (experiments, baseline) | The user wants laborers produced, not given: do not add a free laborer |
 | Gu food deposits | minor 1 / 1 / 2, major 2 / 2 / 3 (sparse / default / abundant) | `tools/gen_ruleset.py` `DEP` | Every clan ends with a surplus of every food (round 5) | Lower majors to 1 / 1 / 2 if hunger should matter in peace |
@@ -59,7 +60,10 @@ Not fixed, because each needs either a human game or the user's taste:
    starve in sieges, not in good years), so it stays unless the user wants hunger in peacetime.
 4. **A few AI clans go broke in long wars:** 4 of 144 spent 20+ turns in the red (6b). No disband spiral, so the
    spec's line holds, but it is the number to watch in the user's 100-turn game.
-5. **The tech tree ends near T113–123.** Slice 1 has 15 techs; the rest of the game is Dao Comprehension. Slice 2 adds
+5. **The late-game stone economy breaks at Prince.** By turn 320 on Standard, 40 of 48 AI clans spent 20+ turns in
+   the red (AUTOPLAY.md round 7); unit upkeep grows with the turn number and nothing new is left to research. King's
+   AI upkeep discount hid it in rounds 5-6. Next tuning target.
+6. **The tech tree ends near T113–123.** Slice 1 has 15 techs; the rest of the game is Dao Comprehension. Slice 2 adds
    the next ranks.
 
 ## Part 2 — inventory
@@ -86,11 +90,26 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Rebel units may spawn <when below [-20] [Happiness]>` | -20 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-3] units cost no maintenance <for [Major] Civilizations>` | -3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-20]% Strength <when below [0] [Gold]>` | -20, 0 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [90]> <with [2]% chance> <for [Major] Civilizations>` | 90, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [8]% chance> <for [Major] Civilizations>` | 0, 8 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [3]% chance> <for [Major] Civilizations>` | 300, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations>` | 0, 0, 25 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [20]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 20, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [45]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 90, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [60]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 60, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [90]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 90, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [135]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 135, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [270]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 270, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [12]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 0, 12 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [8]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 8 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [5]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 5 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when below [0] [Happiness]> <with [3]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 300, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 300, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 300, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 300, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [37]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 0, 0, 37 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 0, 25 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [17]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 0, 17 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [8]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 0, 8 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+20]% XP gained from combat <with [Gu Inheritance]>` | +20 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
@@ -320,7 +339,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `Gain [-100] [Gold] <during the [Rank Three era]>` | -100 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `Gain [-150] [Gold] <during the [Rank Four era]>` | -150 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Abandon the outer fields | `[-1] population [in all cities]` | -1 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Abandon the outer fields | `[-50]% growth [in all cities] <for [10] turns>` | -50, 10 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Abandon the outer fields | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Raise the formation | `Only available <if [Formation Platform] is constructed> <when above [70] [Gold]>` | 70 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Raise the formation | `Gain [-40] [Gold] <during the [Rank Three era]>` | -40 | tools/gen_ruleset.py `Events` |
@@ -331,9 +350,11 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Betrayal › Let the traitor go | `Gain [-60] [Gold]` | -60 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Betrayal › Hunt the traitor down | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Betrayal › Judge the traitor by clan law | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
 | Betrayal › Judge the traitor by clan law | `[-1] population [in capital]` | -1 | tools/gen_ruleset.py `Events` |
 | Betrayal › Judge the traitor by clan law | `[+2 Happiness] <for [10] turns>` | +2, 10 | tools/gen_ruleset.py `Events` |
 | Betrayal › Judge the traitor by clan law | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Betrayal › Strike first and take the traitor's Gu | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
 | Betrayal › Strike first and take the traitor's Gu | `Gain [40] [Gold]` | 40 | tools/gen_ruleset.py `Events` |
 | Betrayal › Strike first and take the traitor's Gu | `[-1] population [in capital]` | -1 | tools/gen_ruleset.py `Events` |
 | Betrayal › Strike first and take the traitor's Gu | `[-3 Happiness] <for [10] turns>` | -3, 10 | tools/gen_ruleset.py `Events` |
@@ -346,6 +367,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Stone Shortage › Borrow from the merchant caravans | `Gain [80] [Gold]` | 80 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Borrow from the merchant caravans | `[-6 Gold] <for [20] turns>` | -6, 20 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Borrow from the merchant caravans | `[-80]% weight to this choice for AI decisions` | -80 | tools/gen_ruleset.py `Events` |
+| Stone Shortage › Squeeze the mortals | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Squeeze the mortals | `Gain [50] [Gold]` | 50 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Squeeze the mortals | `[-1] population [in capital]` | -1 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Squeeze the mortals | `[-20]% weight to this choice for AI decisions` | -20 | tools/gen_ruleset.py `Events` |
@@ -353,11 +375,17 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Stone Shortage › Rob a passing caravan | `Triggers a [Betrayal] event <with [25]% chance>` | 25 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Rob a passing caravan | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Wild Gu › Only the wind in the grass | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Events` |
+| Wild Gu › Only the wind in the grass | `[-41]% weight to this choice for AI decisions <on [Quick] game speed>` | -41 | tools/gen_ruleset.py `Events` |
+| Wild Gu › Only the wind in the grass | `[+62]% weight to this choice for AI decisions <on [Epic] game speed>` | +62 | tools/gen_ruleset.py `Events` |
+| Wild Gu › Only the wind in the grass | `[+250]% weight to this choice for AI decisions <on [Marathon] game speed>` | +250 | tools/gen_ruleset.py `Events` |
 | Wild Gu › A wild Gu stirs nearby | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Wild Gu Caught › Capture the wild Liquor Worm | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Wild Gu Caught › Capture the wild Jade Skin Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Wild Gu Caught › Capture the wild Black Boar Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Inheritance Rumour › An empty cave | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Inheritance Rumour › An empty cave | `[-66]% weight to this choice for AI decisions <on [Quick] game speed>` | -66 | tools/gen_ruleset.py `Events` |
+| Inheritance Rumour › An empty cave | `[+100]% weight to this choice for AI decisions <on [Epic] game speed>` | +100 | tools/gen_ruleset.py `Events` |
+| Inheritance Rumour › An empty cave | `[+400]% weight to this choice for AI decisions <on [Marathon] game speed>` | +400 | tools/gen_ruleset.py `Events` |
 | Inheritance Rumour › Something is buried here | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Buried Inheritance › Claim it for the clan | `Gain control over [Land] tiles in a [1]-tile radius` | 1 | tools/gen_ruleset.py `Events` |
 | Buried Inheritance › Claim it for the clan | `[This Unit] gains [20] XP` | 20 | tools/gen_ruleset.py `Events` |
@@ -668,6 +696,6 @@ No tunable numbers.
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-510 numbers listed.
+534 numbers listed.
 
 <!-- inventory:end -->

@@ -95,6 +95,15 @@ def play(mod: Path, args, seed: int, jar: Path, classes: Path, out: Path) -> tup
         return seed, r.returncode, time.time() - start, tail
 
 
+def _mean(xs) -> float | None:
+    xs = list(xs)
+    return round(statistics.mean(xs), 2) if xs else None
+
+
+def _share(n: int, d: int) -> float | None:
+    return round(n / d, 3) if d else None
+
+
 def summarize(out: Path) -> dict:
     games = {}
     for f in sorted(out.glob("game-*.jsonl")):
@@ -132,6 +141,7 @@ def summarize(out: Path) -> dict:
                 "firstTurnBuilt": {b: next(r["turn"] for r in rs if r.get("buildings", {}).get(b))
                                    for b in sorted({b for r in rs for b in r.get("buildings", {})})},
                 "promotionsBoughtLast": last.get("promotionsBought"),
+                "capitalPopLast": last.get("capitalPop"), "popOneCitiesLast": last.get("popOneCities"),
             }
         games[f.stem] = {"end": end, "civs": per_civ}
     # pooled hunger statistics per rank
@@ -160,6 +170,13 @@ def summarize(out: Path) -> dict:
         "gamesWithAWar": sum(1 for g in games.values() if any(c["warTurns"] for c in g["civs"].values())),
         "capturedCitiesAtEnd": sum(c["capturedCitiesLast"] for g in games.values() for c in g["civs"].values()),
         "pillagedTileTurns": sum(c["pillagedTileTurns"] for g in games.values() for c in g["civs"].values()),
+        # the user's pop-1 report (2026-10-18): capital size and cities stuck at population 1, alive clans at the end
+        "capitalPopMean": _mean(c["capitalPopLast"] for g in games.values() for c in g["civs"].values()
+                                if c["alive"] and c.get("capitalPopLast") is not None),
+        "popPerCityMean": _mean(c["pop"] / c["cities"] for g in games.values() for c in g["civs"].values()
+                                if c["alive"] and c["cities"]),
+        "popOneCityShare": _share(sum(c.get("popOneCitiesLast") or 0 for g in games.values() for c in g["civs"].values()),
+                                  sum(c["cities"] for g in games.values() for c in g["civs"].values())),
         "games": len(games),
     }
     return {"games": games, "hungerByRank": rates, "metrics": metrics}

@@ -16,7 +16,9 @@ primeval-stones rename ("Batu Primordial") done 2026-10-18 (`data/civilopedia.cs
 `tools/gen_translations.py`). Round 6 (user): wild Gu 1.2% and contested buried inheritances
 (4 events, Gu Inheritance resource, Inheritance Dig); 3D pre-rendered characters (map sprites + civ layers, portraits,
 attack effects; `tools/art/render3d.py`); primeval-stone stat icon. `docs/BALANCE.md` (knobs + generated inventory,
-`tools/gen_balance.py`) and `docs/KNOWN_ISSUES.md` written 2026-10-18. Left for Slice 1's Definition of Done: the
+`tools/gen_balance.py`) and `docs/KNOWN_ISSUES.md` written 2026-10-18. Round 7 (the user's bug reports, Marathon
+game): Clan Settler ban shown with its reason; population-cost event choices gated or recast; every event chance has one
+line per game speed (`per_speed`). Open: the late-game stone economy at Prince (40/48 clans in the red by T320). Left for Slice 1's Definition of Done: the
 user's 100-turn game on Android. Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
 

@@ -37,6 +37,24 @@ rest of the list is what a player or the next session should know before trustin
    `Can only be built <when above [-11] [Happiness]>` plus `Shown while unbuilable`, so it stays in the list, greyed,
    with the reason. Use that pattern for every future conditional ban.
 
+10. **A human city does not re-check its worked tiles each turn; an AI city does** [src `CityTurnManager.startTurn`].
+    A human city stuck at population 1 on a 0-food tile (a hill Spring Cave or mine) never grows, and never triggers
+    the re-check that growth would. The user's capital sat at population 1 on turn 321 (Marathon) for exactly this
+    reason: its focus was set to Production. A pop-1 city lands on a 0-food tile through Production or Gold focus, a
+    locked tile, an idle citizen, or a re-check made while unhappy (growth food then counts for little) or while
+    stones per turn were negative (the engine doubles the weight of gold) [src `Automation.rankStatsForCityWork`].
+    Remedy in game: Default (Bawaan) or Food focus, then "Atur Ulang Warga Negara" (reset citizens). Not fixed in the
+    ruleset: the only lever, a richer city centre, would speed up every clan's growth and needs its own autoplay A/B.
+11. **Autoplay cannot stand in for a human's events:** the engine's simulation mode plays a human civ's turns but
+    drops its Alert events, so a human-flagged civ in a simulation never loses population to them
+    (`docs/AUTOPLAY.md`, round 7). `tools/autoplay.py` keeps every civ AI for that reason.
+12. **Game speed.** Since round 7 every random event keeps the same rate per era on every speed (chance divided by the
+    speed modifier, turn gates multiplied; chances are whole numbers, so Marathon's beast tides run about 20% above
+    the Standard rate per era). What still counts per turn and so weighs differently on slower speeds: timed effects
+    (`<for [N] turns>`), flat stone gains and costs of events (building and unit costs scale with speed, event stones
+    do not), cultivation XP (2 per turn, so Gu Masters climb the ladder faster per era on Marathon), and the hunger
+    meter's turn counts. Balance was measured on Standard.
+
 ## Design trade-offs (accepted, watched)
 
 1. **Claiming an inheritance steals land.** The tiles in a 1-tile radius change owner, city-states' included, and
@@ -49,11 +67,15 @@ rest of the list is what a player or the next session should know before trustin
    every eight turns or so, plus the rare inheritance.
 4. **The wild Liquor Worm needs wine** (a Tavern): the AI almost never has spare wine (0.02 per clan by turn 200).
 5. **Balance verdicts not acted on yet** (light early upkeep, a calm late game, food abundant in peace, 4 of 144 AI
-   clans 20+ turns in the red during long wars, the tech tree ending near turn 120): `docs/BALANCE.md`, "What the
+   clans 20+ turns in the red during long wars, 40 of 48 at Prince by turn 320 on Standard, the tech tree ending near turn 120): `docs/BALANCE.md`, "What the
    data says is off".
 6. **Springs are improved late:** the AI keeps one Mortal Laborer per city [src `ConstructionAutomation`]; the user
    wants laborers produced, not given.
-7. **Over the Slice 1 budget at the user's request:** 9 events instead of 5 and 7 resources instead of about 6
+7. **Population costs need a population:** "Judge the traitor", "Strike first" and "Squeeze the mortals" are open
+   only while the capital has more than 3 population, and "Abandon the outer fields" halves growth for 10 turns instead
+   of taking a citizen from every city (round 7). At population 1 those choices used to be free rewards, and taken
+   with the AI's weights they kept capitals at 1-4 population by turn 320.
+8. **Over the Slice 1 budget at the user's request:** 9 events instead of 5 and 7 resources instead of about 6
    (round 6, `docs/LORE_MAPPING.md` "Budget").
 
 ## Not yet seen in a real game

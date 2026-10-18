@@ -161,7 +161,7 @@
       {
         "text": "Abandon the outer fields",
         "uniques": [
-          "[-1] population [in all cities]",
+          "[-50]% growth [in all cities] <for [10] turns>",
           "[-30]% weight to this choice for AI decisions"
         ]
       },
@@ -202,6 +202,7 @@
         "text": "Judge the traitor by clan law",
         "uniques": [
           "Only available <after adopting [Righteous Path]>",
+          "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>",
           "[-1] population [in capital]",
           "[+2 Happiness] <for [10] turns>",
           "[+100]% weight to this choice for AI decisions"
@@ -211,6 +212,7 @@
         "text": "Strike first and take the traitor's Gu",
         "uniques": [
           "Only available <after adopting [Demonic Path]>",
+          "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>",
           "Gain [40] [Gold]",
           "[-1] population [in capital]",
           "[-3 Happiness] <for [10] turns>",
@@ -244,6 +246,7 @@
       {
         "text": "Squeeze the mortals",
         "uniques": [
+          "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>",
           "Gain [50] [Gold]",
           "[-1] population [in capital]",
           "[-20]% weight to this choice for AI decisions"
@@ -267,7 +270,10 @@
       {
         "text": "Only the wind in the grass",
         "uniques": [
-          "[+300]% weight to this choice for AI decisions"
+          "[+300]% weight to this choice for AI decisions",
+          "[-41]% weight to this choice for AI decisions <on [Quick] game speed>",
+          "[+62]% weight to this choice for AI decisions <on [Epic] game speed>",
+          "[+250]% weight to this choice for AI decisions <on [Marathon] game speed>"
         ]
       },
       {
@@ -316,7 +322,10 @@
       {
         "text": "An empty cave",
         "uniques": [
-          "[+0]% weight to this choice for AI decisions"
+          "[+0]% weight to this choice for AI decisions",
+          "[-66]% weight to this choice for AI decisions <on [Quick] game speed>",
+          "[+100]% weight to this choice for AI decisions <on [Epic] game speed>",
+          "[+400]% weight to this choice for AI decisions <on [Marathon] game speed>"
         ]
       },
       {
