@@ -29,6 +29,8 @@ Ground truth: `ref/unciv` at tag **4.22.8** (commit `2eccbd0`, 2026-10-08), fetc
 | E6 | `<every [positiveAmount] turns>` is `game turn % N == 0`: all civs are hit on the same turn. | [src] `Conditionals.kt` |
 | E8 | City strength grows with the **share** of the tech tree a civ knows: + (share × `cityStrengthFromTechsMultiplier`)^`cityStrengthFromTechsExponent` × `cityStrengthFromTechsFullMultiplier` (ModOptions constants, defaults 5.5, 2.8, 1.0: +118 with every tech). A short tree reaches "every tech" early, so a slice must scale the full multiplier to its unit strengths (Slice 1: 0.1, autoplay round 5). Adding techs in a later slice changes every city's strength. | [src] `CityCombatant.getCityStrength`; docs Mod-file-structure 5 |
 | E7 | Statuses (Phase 1, round 3): at turn start a unit's triggers fire **before** its statuses tick down, so an N-turn status given by an `<upon turn start>` trigger runs out at the (N−1)th turn start after that. A status that runs out fires `<upon losing the [promotion] status>`; giving a status the unit already has only ever raises its timer; `<for units without [promotion]>` sees statuses. The Gu hunger meter rests on this. | [src] `UnitTurnManager.startTurn`, `MapUnit.setStatus`, `removeStatus` |
+| E9 | `<upon losing a [mapUnitFilter] unit>` fires whenever a unit leaves the civ's unit list: death (also by its own turn damage), **upgrade** (the old unit is destroyed and a new one placed), capture and gift. Filter it on a unit that never upgrades or changes owner. | [src] `UnitManager.removeUnit` (called by `MapUnit.destroy`, `capturedBy`, `gift`), `UnitUpgradeManager.performUpgrade`; probed (MOD_SPEC_3 A3, test 4) |
+| E10 | An upgrade keeps every promotion, XP and promotion count, **also across a unit-type change** and also promotions whose `unitTypes` exclude the new type; their effects keep working. A unit is only *offered* promotions whose `unitTypes` list its own type. `Limited to [amount] per Civilization` counts the civ's living units of that name (plus queued ones) and blocks upgrades too; `Unbuildable` does not block upgrades. | [src] `MapUnit.copyStatisticsTo`, `UnitPromotions.isAvailable`, `CivConstructions.countConstructedObjects`, `UnitUpgradeManager.canUpgrade`; probed (MOD_SPEC_3 A3, tests 1-3) |
 
 ---
 
@@ -125,6 +127,49 @@ Ground truth: `ref/unciv` at tag **4.22.8** (commit `2eccbd0`, 2026-10-08), fetc
 * Score at max turns: "Have highest score after max turns". ✅
 
 ---
+
+## MOD_SPEC_3 Phase A3 — rank chain and path promotions (2026-10-18)
+
+Five capability tests, one test object each, on the throwaway branch `a3-capability-tests` (local):
+`tools/a3/build_test_mod.py` builds the shipped `jsons/` plus the test objects as the mod `A3TEST` (Unciv's own
+validator: 0 errors); `tools/a3/ProbeA3.java` runs them headless on the 4.22.8 release jar. Test objects: unit types
+Gu Immortal and Venerable; units Test Rank Five (Gu Master) → Test Rank Six (Gu Immortal) → Test Venerable (Venerable:
+`Limited to [amount] per Civilization`, `Unbuildable`, `Cannot be purchased`,
+`[unitTriggerTarget] takes [positiveAmount] damage` `<upon turn start>`); five promotions; two test world wonders.
+
+| # | Capability | Status | Evidence (probe output) | AI note |
+|---|---|---|---|---|
+| 1 | Promotions kept across a unit-type change on upgrade | ✅ | Test Rank Five (Gu Master) with a Gu-Master-only promotion (+2 sight) and an all-types promotion (+1 movement), 57 XP, upgraded to Test Rank Six (Gu Immortal): both promotions, both effects and the XP survive; the second upgrade to Test Venerable keeps both promotions too. The Gu Immortal is no longer *offered* the Gu-Master-only promotion (E10). | Automatic; the AI upgrades units itself. |
+| 2 | `Only available` with a unit conditional on a promotion | ✅ | Tier promotion with prerequisite "Test Path All" and `Only available <for [mapUnitFilter] units>` (Gu Immortal): offered to the Gu Immortal that holds the prerequisite, not to a Gu Master that holds it, not to a Gu Immortal without it. | The AI picks only from available promotions [src `NextTurnAutomation.applyPromotions`]. |
+| 3 | `Limited to [amount] per Civilization` blocks upgrades | ✅ | Two Test Rank Six: both may upgrade while no Venerable lives; after one upgrades, the other cannot (rejection `MaxNumberBuildable`; `Unbuildable` is ignored for upgrades); after the Venerable dies, it can again. | The AI's upgrade check uses the same `canUpgrade`. |
+| 4 | `<upon losing a [mapUnitFilter] unit>` on death by turn damage | ✅ with ⚠️ | Venerable at 100 HP taking 30 per turn start dies at the 4th; at that moment `Gain [amount] [civWideStat]` (+1000 stones), `Remove [buildingFilter] [cityFilter]` (the ascension wonder is gone) and `Gain a free [buildingName] [cityFilter]` (the inheritance wonder appears in the capital) all fire. ⚠️ The same trigger also fired (+7 stones) when a Test Rank Six was **upgraded** (E9): never filter it on a unit that upgrades. | Global trigger: hits AI and human alike. |
+| 5 | Per-civ AI promotion weights | ✅ | Two path promotions, each `[relativeAmount]% weight to this choice for AI decisions` −95 plus +19900 `<for [civFilter] Civilizations>` for its own clan. Weights: main path 10, the other path 0.05, two generic promotions 1 each → 83%. The AI's own routine on 161 units per clan: Wu took its path 133 times (83%), Bai's once; Bai mirrored it. | Weighted random per promotion purchase [src `applyPromotions`]. |
+
+Design rules for Phase B3/C3 that follow:
+
+* **Main-path share.** The AI draws one promotion at a time, weighted over everything the unit is offered. With
+  about 35 path lines (off-path weight 0.05 each, 1.7 in total) and k generic promotions at weight 1, the main path
+  needs a weight of at least 4 × (1.7 + k) to reach the ≥80% target: 47 for k = 10. So either give generic promotions
+  negative weights too, or raise the main path's per-civ weight; B3 sets the numbers and autoplay checks them.
+* **Death hooks** (Venerable, inheritance drop): filter on the Venerable only; it never upgrades, and its `Unbuildable`
+  and `Cannot be purchased` do not stop the R8 → R9 upgrade.
+* **One Venerable in the world** needs both locks: `Limited to [amount] per Civilization` (per civ) and the world wonder
+  gate `Only available <if [buildingFilter] is constructed>` (one owner world-wide), which test 4 shows is removed again
+  on death.
+* Path lines must list all three unit types in `unitTypes`, or a unit that ranks up stops being offered its own line.
+
+Check in game (needs the A3TEST mod from the throwaway branch; console as in `docs/TESTING.md`):
+
+```
+unit add <civ> "Test Rank Five"              # then, with it selected:
+unit addpromotion "Test Path Old Type"       # test 1: +2 sight
+unit addpromotion "Test Path All"            # test 1: +1 movement
+civ addstat Gold 500                         # then the Upgrade button: promotions and XP stay
+unit setxp 100                               # test 2: on the Gu Immortal the promotion screen offers Test Tier Immortal
+unit add <civ> "Test Rank Six"               # test 3: upgrade one to Test Venerable; the second one's Upgrade is disabled
+                                             # test 4: end 4 turns: +1000 stones, Test Ascension gone, Test True Inheritance in the capital
+city addbuilding "Test Ascension"            # (before test 4, in the capital)
+```
 
 ## Impossible or only approximable (checkpoint summary)
 

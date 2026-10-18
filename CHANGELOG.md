@@ -232,3 +232,16 @@
 * `tools/autoplay.py` records capital population and cities at population 1 (`capitalPopMean`, `popPerCityMean`,
   `popOneCityShare`).
 
+## MOD_SPEC_2 Gate and MOD_SPEC_3 Phase A3 (2026-10-18)
+
+* `MOD_SPEC_2.md` and `MOD_SPEC_3.md` saved verbatim; `CLAUDE.md` points to both (precedence MOD_SPEC_3 > MOD_SPEC_2 >
+  MOD_SPEC).
+* MOD_SPEC_2 Gate passed: check_all green; the user's Android "Locate mod errors" all green on the latest download; the
+  user's game ran past turn 300 (Marathon) without a crash; autoplay keeps the AI solvent to turn 100 (2 of 48 clans
+  briefly in the red, at most 7 turns).
+* Phase A3 (capability tests, no content JSON): promotions survive an upgrade across unit types; `Only available`
+  with a unit conditional works on promotions; `Limited to [amount] per Civilization` blocks upgrades and reopens on
+  death; `<upon losing a [mapUnitFilter] unit>` fires on death by turn damage but also on upgrade (new engine fact E9);
+  per-civ AI promotion weights steer 83% of the AI's picks. Results and design rules in `docs/CAPABILITIES.md`;
+  probes on the local throwaway branch `a3-capability-tests`.
+

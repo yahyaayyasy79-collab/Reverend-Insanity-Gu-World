@@ -23,8 +23,10 @@ primeval-stones rename ("Batu Primordial") done 2026-10-18 (`data/civilopedia.cs
 attack effects; `tools/art/render3d.py`); primeval-stone stat icon. `docs/BALANCE.md` (knobs + generated inventory,
 `tools/gen_balance.py`) and `docs/KNOWN_ISSUES.md` written 2026-10-18. Round 7 (the user's bug reports, Marathon
 game): Clan Settler ban shown with its reason; population-cost event choices gated or recast; every event chance has one
-line per game speed (`per_speed`). Open: the late-game stone economy at Prince (40/48 clans in the red by T320). Left for Slice 1's Definition of Done: the
-user's 100-turn game on Android. Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
+line per game speed (`per_speed`). Open: the late-game stone economy at Prince (40/48 clans in the red by T320).
+MOD_SPEC_2 Gate passed 2026-10-18 (Slice 1 Definition of Done met: user's game past T300 Marathon, no crash; Locate
+mod errors green). MOD_SPEC_3 Phase A3 done 2026-10-18 (CAPABILITIES.md, E9-E10), waiting at its checkpoint; then
+MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence made A3 go first). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
 
 The user is the lore authority, but check lore claims (theirs and yours) against the raw novel text before they enter
