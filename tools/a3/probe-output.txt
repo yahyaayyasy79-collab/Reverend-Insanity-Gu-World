@@ -1,0 +1,31 @@
+Picked up JAVA_TOOL_OPTIONS: -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Djavax.net.ssl.trustStoreType=JKS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=41267 -Dhttp.nonProxyHosts=localhost|127.0.0.1|::1|127.*|0.*|::|169.254.*|api.anthropic.com|api-staging.anthropic.com|api-pr-preview.anthropic.com|mcp-proxy.anthropic.com|mcp-proxy-staging.anthropic.com|registry.npmjs.org|jsr.io|npm.jsr.io|pypi.org|files.pythonhosted.org|index.crates.io|proxy.golang.org|host.docker.internal|10.*|172.16.*|172.17.*|172.18.*|172.19.*|172.20.*|172.21.*|172.22.*|172.23.*|172.24.*|172.25.*|172.26.*|172.27.*|172.28.*|172.29.*|172.30.*|172.31.*|192.168.*|100.64.0.0/10|*.svc.cluster.local|*.svc.cluster.local -Djdk.http.auth.tunneling.disabledSchemes= -Djdk.http.auth.proxying.disabledSchemes=
+2026-10-18T11:28:00.647988133Z [threadpool-nondaemon-1] [RulesetCache] Mod loaded successfully: A3TEST
+Loaded 3 rulesets in 369ms
+2026-10-18T11:28:00.842700760Z [main] [MapElevationGenerator] Mountain-like generation
+2026-10-18T11:28:00.851301034Z [main] [MapElevationGenerator] Hill-like generation
+2026-10-18T11:28:00.903652454Z [main] [MapGenerationRandomness] chooseSpreadOutLocations: distance 5 < initial 11
+2026-10-18T11:28:01.009605131Z [main] [NaturalWonderGenerator] Natural Wonders for this game: []
+2026-10-18T11:28:01.060337652Z [main] [MapGenerationRandomness] chooseSpreadOutLocations: distance 6 < initial 8
+T1 before: Test Rank Five type=Gu Master promotions=[Test Path Old Type, Test Path All] sightUnique=true movement=3 xp=57
+T1 after:  Test Rank Six type=Gu Immortal promotions=[Test Path Old Type, Test Path All] sightUnique=true movement=3 xp=57
+T2 Gu Master (has Test Path All): offers Test Tier Immortal=false
+T2 Gu Immortal (has Test Path All): offers Test Tier Immortal=true
+T2 Gu Immortal without the prerequisite: offers Test Tier Immortal=false
+T2 Gu Immortal offered Test Path Old Type=false
+T3 before any Venerable: A canUpgrade=true B canUpgrade=true
+T3 upgraded A: Test Venerable promotions=[Test Path Old Type, Test Path All]
+T4 side effect: gold delta at the upgrade (7 = 'upon losing a [Test Rank Six] unit' fired) = 7
+T3 with one Venerable alive: B canUpgrade=false
+T3 rejection for B: Unbuildable construction=true
+T3 rejection for B: MaxNumberBuildable construction=false
+T4 setup: capital has Test Ascension=true
+T4 turn start 1: health=70 destroyed=false gold delta=0
+T4 turn start 2: health=40 destroyed=false gold delta=0
+T4 turn start 3: health=10 destroyed=false gold delta=0
+T4 turn start 4: health=0 destroyed=true gold delta=1000
+T4 after death: Test Ascension=false Test True Inheritance=true
+T3 after the Venerable died: B canUpgrade=true
+T5 Wu Clan weights: Test Bai Path=0.05 (0%) Test Path All=1.00 (8%) Test Path Old Type=1.00 (8%) Test Wu Path=10.00 (83%) 
+T5 Bai Clan weights: Test Bai Path=10.00 (83%) Test Path All=1.00 (8%) Test Path Old Type=1.00 (8%) Test Wu Path=0.05 (0%) 
+T5 empirical Wu Clan (161 units, one promotion each): {Test Bai Path=1, Test Path All=9, Test Path Old Type=18, Test Wu Path=133}
+T5 empirical Bai Clan (161 units, one promotion each): {Test Bai Path=133, Test Path All=15, Test Path Old Type=12, Test Wu Path=1}
