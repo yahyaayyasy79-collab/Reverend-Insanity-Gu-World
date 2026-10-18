@@ -203,3 +203,15 @@
   so the round-6 figure (0.52) was a low draw; pooled over 36 games: 0.90 hunger deaths per clan per 100 turns, 1.75
   inheritances per game, 4 of 144 clans 20+ turns in the red (all at war, no disband spiral). The guard changes
   nothing measurable.
+
+## Phase 2, step 10 — the vanishing Clan Settler (2026-10-18)
+
+* Bug (the user, Android): "Clan Settler cannot be produced although the city has more than 5 population". Cause,
+  reproduced headless on the 4.22.8 engine: with happiness below −10 the Vanilla rule `Cannot build [Clan Settler]
+  units <when below [-10] [Happiness]>` hides the unit from the build list without any reason [src
+  `BaseUnit.shouldBeDisplayed`]; every citizen adds unhappiness, so big cities make it worse. In normal play the
+  settler was buildable in every probed city-turn (404 of 404, all four clans, AI and human).
+* Fix: the same rule moved onto the unit as `Can only be built <when above [-11] [Happiness]>` with `Shown while
+  unbuilable`: the Clan Settler stays in the list, greyed, with the reason ("Hanya dapat dibangun saat di atas -11
+  Kebahagiaan"). Verified headless: happiness −23 → shown, with that reason; normal play unchanged.
+

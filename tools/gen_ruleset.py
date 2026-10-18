@@ -121,7 +121,6 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "Nullifies Growth [in all cities] <when below [-10] [Happiness]>",
     "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",
     "[-33]% Strength <for [All] units> <when below [-10] [Happiness]>",
-    "Cannot build [Clan Settler] units <when below [-10] [Happiness]>",
     "Rebel units may spawn <when below [-20] [Happiness]>",
     "[-3] units cost no maintenance <for [Major] Civilizations>",
     "[-20]% Strength <when below [0] [Gold]>",
@@ -198,7 +197,11 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      "uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
-                 "Requires at least [2] population", NB]},
+                 "Requires at least [2] population",
+                 # Vanilla's "Cannot build [Settler] units <when below [-10] [Happiness]>" hides the unit without a word
+                 # (CannotBeBuilt is never shown [src BaseUnit.shouldBeDisplayed]); a player with a big city thought
+                 # settlers were broken. Same rule, kept in the list, greyed, with the reason shown.
+                 "Can only be built <when above [-11] [Happiness]>", "Shown while unbuilable", NB]},
     {"name": "Mortal Laborer", "unitType": "Civilian", "movement": 2, "cost": 45, "requiredTech": "Aperture Awakening",
      "uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action", NB]},
 ] + GU_MASTERS + [

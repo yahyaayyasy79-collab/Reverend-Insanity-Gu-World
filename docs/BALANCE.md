@@ -83,7 +83,6 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Nullifies Growth [in all cities] <when below [-10] [Happiness]>` | -10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-50]% [Production] [in all cities] <when below [-10] [Happiness]>` | -50, -10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-33]% Strength <for [All] units> <when below [-10] [Happiness]>` | -33, -10 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Cannot build [Clan Settler] units <when below [-10] [Happiness]>` | -10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Rebel units may spawn <when below [-20] [Happiness]>` | -20 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-3] units cost no maintenance <for [Major] Civilizations>` | -3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-20]% Strength <when below [0] [Gold]>` | -20, 0 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -133,6 +132,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Clan Settler | movement | 2 | tools/gen_ruleset.py `Units` |
 | Clan Settler | cost | 80 | tools/gen_ruleset.py `Units` |
 | Clan Settler | `Requires at least [2] population` | 2 | tools/gen_ruleset.py `Units` |
+| Clan Settler | `Can only be built <when above [-11] [Happiness]>` | -11 | tools/gen_ruleset.py `Units` |
 | Mortal Laborer | movement | 2 | tools/gen_ruleset.py `Units` |
 | Mortal Laborer | cost | 45 | tools/gen_ruleset.py `Units` |
 | Rank One Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |

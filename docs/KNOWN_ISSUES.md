@@ -31,6 +31,12 @@ rest of the list is what a player or the next session should know before trustin
 8. **Tech-column building costs are inert.** `data/tech_columns.csv` `buildingCost` and `wonderCost` only apply to a
    building without its own cost [src `Ruleset.updateBuildingCosts`]; every Slice 1 building sets one.
 
+9. **A construction blocked by a `Cannot build` unique vanishes from the build list without a reason** [src
+   `BaseUnit.shouldBeDisplayed`: `CannotBeBuilt` is never shown]. The user hit it on 2026-10-18 with the Vanilla
+   settler ban (happiness below −10): the Clan Settler disappeared and looked broken. The ban now sits on the unit as
+   `Can only be built <when above [-11] [Happiness]>` plus `Shown while unbuilable`, so it stays in the list, greyed,
+   with the reason. Use that pattern for every future conditional ban.
+
 ## Design trade-offs (accepted, watched)
 
 1. **Claiming an inheritance steals land.** The tiles in a 1-tile radius change owner, city-states' included, and
