@@ -118,12 +118,12 @@
     ],
     "civilopediaText": [
       {
-        "text": "A sealed furnace room stocked with materials. Careful refinement happens here, at a price; reckless refinement happens anywhere."
+        "text": "A sealed, quiet room stocked with materials and spare stones, where a Gu Master can pour essence into a recipe undisturbed. Careful refinement happens here, at a price; reckless refinement happens anywhere."
       }
     ]
   },
   {
-    "name": "Formation Platform",
+    "name": "Stockade Wall",
     "requiredTech": "Gu Formations",
     "cost": 110,
     "maintenance": 1,
@@ -131,7 +131,7 @@
     "cityHealth": 50,
     "civilopediaText": [
       {
-        "text": "The platform from which the village raises its defensive formation. It turns a wall of stones into a wall the enemy cannot climb."
+        "text": "The stockade wall (寨墙) of a mountain village, manned by Gu Masters and elders when beasts or rivals come. Every Qing Mao village trusts its wall; a formation, if the clan ever learns one, is raised behind it."
       }
     ]
   },

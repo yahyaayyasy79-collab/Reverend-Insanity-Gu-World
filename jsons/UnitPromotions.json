@@ -181,7 +181,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Liquor Worm (酒虫) drinks wine and refines a rank-one Gu Master's essence. It has no use above rank one and is let go after the breakthrough."
+        "text": "Liquor Worm (酒虫) drinks wine and refines a rank-one Gu Master's essence. Above rank one it is useless unless refined further, into the Four Flavours Liquor Worm (四味酒虫)."
       }
     ]
   },
@@ -225,7 +225,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A killer move (杀招): the unit's Gu strike together as one technique. It needs a rank-two fusion Gu to hold it, and it dies with that Gu."
+        "text": "A killer move (杀招): the unit's Gu strike together as one technique. It rests on a core Gu, here its rank-two fusion Gu, and is lost if that core dies."
       }
     ]
   },
@@ -249,7 +249,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Stream Gu (溪流蛊), the Bai emblem, named for running water. It keeps its user standing between fights."
+        "text": "Stream Gu (溪流蛊), the Bai emblem, named for running water. The Bai clan favours water and ice Gu."
       }
     ]
   },

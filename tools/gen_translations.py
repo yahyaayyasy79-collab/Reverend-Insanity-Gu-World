@@ -4,7 +4,11 @@
   jsons/translations/Indonesian.properties   every string the mod shows (names, cities, leaders, event texts and
                                              choices, ruin notifications) from data/translations_id.csv, the
                                              civilopedia from data/civilopedia.csv, and the primeval-stones rename
-  jsons/translations/English.properties      the primeval-stones rename only
+  jsons/translations/English.properties      the primeval-stones rename, and display overrides
+
+Display overrides (data/display_overrides.csv) change only what the player reads, never an object name: terrain names
+in the setting's words (the engine and the tile art key on the Vanilla names) and base-game lines that mention modern
+things. An override wins over the primeval-stones rename of the same key; an empty column leaves that language alone.
 
 The rename ("Gold" is displayed as primeval stones, the user's choice: "Batu Primordial" in Indonesian) overrides
 every base-game translation key that contains the word Gold (not Golden, not inside [placeholders]); the base
@@ -122,14 +126,19 @@ def build() -> dict[str, str]:
     en_stones, id_stones = stones_overrides(base_id)
     names = [(r["key"], r["id"]) for r in table("translations_id.csv")]
     pedia = [(r["en"], r["id"]) for r in table("civilopedia.csv")]
+    overrides = table("display_overrides.csv")
+    en_over = [(r["key"], r["en"]) for r in overrides if r["en"]]
+    id_over = [(r["key"], r["id"]) for r in overrides if r["id"]]
     import gen_paths
     return {
-        "Indonesian.properties": render([("Names, places, events (data/translations_id.csv)", names),
+        "Indonesian.properties": render([("Display overrides (data/display_overrides.csv)", id_over),
+                                         ("Names, places, events (data/translations_id.csv)", names),
                                          ("Civilopedia (data/civilopedia.csv)", pedia),
                                          ("Paths: tiers, killer moves, statuses (data/paths*.csv, tools/gen_paths.py)",
                                           gen_paths.translations()),
                                          (f"Gold is displayed as {STONES_ID} (overrides base translations)", id_stones)]),
-        "English.properties": render([(f"Gold is displayed as {STONES_EN} (overrides base strings)", en_stones)]),
+        "English.properties": render([("Display overrides (data/display_overrides.csv)", en_over),
+                                      (f"Gold is displayed as {STONES_EN} (overrides base strings)", en_stones)]),
     }
 
 

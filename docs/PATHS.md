@@ -387,7 +387,7 @@ this plan.
   Policies 6, Ruins 5, UnitTypes 2, CityStateTypes 1), plus `tools/gen_ruleset.py`
   (`GM_TYPES`, the refinement ladder), `tools/ladder_check.py`, the art, civilopedia, translations and autoplay counters.
 * The Moon Path and Strength Path policy branches (mutually exclusive; +5% Strength per adopted policy for their unit
-  type; Orchid Terraces −15% upkeep for Moon units); Xiong starts with Strength Path; AI priorities Gu Yue Moon 10,
+  type; Orchid Beds −15% upkeep for Moon units); Xiong starts with Strength Path; AI priorities Gu Yue Moon 10,
   Bai Moon 8, Xiong Strength 10, Wu Strength 10.
 
 **Steps** (each one shippable: `tools/check_all`, autoplay, CHANGELOG, commit, then the user's "Locate mod errors")

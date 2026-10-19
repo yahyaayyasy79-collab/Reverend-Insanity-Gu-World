@@ -5,7 +5,7 @@ Rank Four era,Era Tingkat Empat
 Aperture Awakening,Pembukaan Apertur
 Spirit Spring Lore,Ilmu Mata Air Roh
 Gu Feeding,Pemeliharaan Gu
-Wine Brewing,Penyulingan Arak
+Wine Brewing,Pembuatan Arak
 Gu Refinement,Pemurnian Gu
 Rank Two Cultivation,Kultivasi Tingkat Dua
 Gu Formations,Formasi Gu
@@ -55,7 +55,7 @@ Gu Academy,Akademi Gu
 Gu Feeding House,Rumah Pakan Gu
 Tavern,Kedai Arak
 Refinement Chamber,Ruang Pemurnian
-Formation Platform,Panggung Formasi
+Stockade Wall,Tembok Benteng
 Martial Arena,Panggung Laga
 Trading House,Rumah Dagang
 Flower Wine Monk Inheritance,Warisan Biksu Arak Bunga
@@ -87,7 +87,7 @@ Ruthless Cultivation,Kultivasi Kejam
 Demonic Path Complete,Jalan Iblis Sempurna
 Moon Path,Jalur Bulan
 Moonlight Mastery,Penguasaan Cahaya Bulan
-Orchid Terraces,Teras Anggrek
+Orchid Beds,Petak Anggrek
 Moon Blade Step,Langkah Bilah Bulan
 Moon Path Complete,Jalur Bulan Sempurna
 Strength Path,Jalur Kekuatan
@@ -101,24 +101,24 @@ Inheritance Site,Situs Warisan
 Gu Yue Clan,Klan Gu Yue
 Gu Yue Bo,Gu Yue Bo
 Gu Yue Village,Desa Gu Yue
-Orchid Slope,Lereng Anggrek
-Bamboo Ridge,Punggung Bambu
-Cold Spring,Mata Air Dingin
+Alliance Slope,Lereng Persekutuan
+Spear Bamboo Grove,Hutan Bambu Tombak
+Stone Forest,Hutan Batu
 Bai Clan,Klan Bai
 Bai Clan Leader,Pemimpin Klan Bai
 Bai Village,Desa Bai
-Waterfall Slope,Lereng Air Terjun
-Frost Pine Slope,Lereng Pinus Beku
+Back-Slope Waterfall,Air Terjun Lereng Belakang
+Deep Pool,Kolam Dalam
 Xiong Clan,Klan Xiong
 Xiong Clan Leader,Pemimpin Klan Xiong
 Xiong Village,Desa Xiong
-Bear Den Ridge,Punggung Sarang Beruang
-Boar Hollow,Lembah Babi
+Front Slope,Lereng Depan
+Honey Hollow,Lembah Madu
 Wu Clan,Klan Wu
 Wu Ji,Wu Ji
-Wu Clan City,Kota Klan Wu
-Martial Peak,Puncak Laga
-Iron Bone Ridge,Punggung Tulang Besi
+Wu Yi Mountain,Gunung Wu Yi
+Golden Cloud Canyon,Ngarai Awan Emas
+Xuan Ming Mountain,Gunung Xuan Ming
 Hairy Man Tribe,Suku Manusia Berbulu
 Bronze Hall,Balai Perunggu
 Foothill Villages,Desa-Desa Kaki Gunung
@@ -129,16 +129,16 @@ Grade A aptitude,Bakat tingkat A
 Grade B aptitude,Bakat tingkat B
 Grade C aptitude,Bakat tingkat C
 Grade D aptitude,Bakat tingkat D
-The furnace is lit. How far will you risk it?,Tungku telah menyala. Seberapa jauh kau berani bertaruh?
+Your essence pours into the Gu and its materials. How far will you push it?,Esensimu mengalir ke dalam Gu dan bahan-bahannya. Seberapa jauh kau berani memaksanya?
 Refine carefully,Murnikan dengan hati-hati
 Refine recklessly,Murnikan dengan nekat
 Lure a wild Liquor Worm with Green Bamboo Wine,Pancing Cacing Arak liar dengan Arak Bambu Hijau
-Let the furnace cool,Biarkan tungku mendingin
+Stop and recover your essence,Berhenti dan pulihkan esensimu
 Lightning wolves pour down the mountain toward your villages.,Serigala petir membanjiri lereng gunung menuju desa-desamu.
 Meet the wolves in the field,Hadang serigala di medan terbuka
 Hire demonic Gu Masters to thin the pack,Sewa Gu Master iblis untuk menipiskan kawanan
 Abandon the outer fields,Tinggalkan ladang terluar
-Raise the formation,Bangkitkan formasi
+Man the stockade walls,Jaga tembok benteng
 A clan member has sold you out and fled with stones and Gu.,Seorang anggota klan telah mengkhianatimu dan kabur membawa batu dan Gu.
 Let the traitor go,Biarkan pengkhianat pergi
 Hunt the traitor down,Buru pengkhianat itu
@@ -189,3 +189,5 @@ Rank Four Gu Yue Gu Master,Gu Master Gu Yue Tingkat Empat
 Rank Four Bai Gu Master,Gu Master Bai Tingkat Empat
 Rank Four Xiong Gu Master,Gu Master Xiong Tingkat Empat
 Rank Four Wu Gu Master,Gu Master Wu Tingkat Empat
+Bitter Shell Pool,Kolam Kerang Pahit
+Moon Bowl,Mangkuk Bulan

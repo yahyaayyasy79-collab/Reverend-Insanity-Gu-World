@@ -40,7 +40,7 @@
   },
   {
     "name": "Refinement Attempt",
-    "text": "The furnace is lit. How far will you risk it?",
+    "text": "Your essence pours into the Gu and its materials. How far will you push it?",
     "choices": [
       {
         "text": "Refine carefully",
@@ -128,7 +128,7 @@
         ]
       },
       {
-        "text": "Let the furnace cool",
+        "text": "Stop and recover your essence",
         "uniques": [
           "[This Unit] gains [5] XP",
           "[-95]% weight to this choice for AI decisions"
@@ -170,9 +170,9 @@
         ]
       },
       {
-        "text": "Raise the formation",
+        "text": "Man the stockade walls",
         "uniques": [
-          "Only available <if [Formation Platform] is constructed> <when above [70] [Gold]>",
+          "Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>",
           "Gain [-40] [Gold] <during the [Rank Three era]>",
           "Gain [-70] [Gold] <during the [Rank Four era]>",
           "[-20]% [Production] <for [5] turns>",

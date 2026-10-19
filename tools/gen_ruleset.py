@@ -406,7 +406,7 @@ dump("Events.json", [
         {"text": "Grade D aptitude", "uniques": ["[This Unit] gains the [Aptitude D] promotion", w("-60"),
                                                  w("-25", SPR)]},
     ]},
-    {"name": "Refinement Attempt", "text": "The furnace is lit. How far will you risk it?", "choices": [
+    {"name": "Refinement Attempt", "text": "Your essence pours into the Gu and its materials. How far will you push it?", "choices": [
         {"text": "Refine carefully", "uniques":
             ["Only available <if [Refinement Chamber] is constructed> <when above [80] [Gold]>",
              f"Unavailable <when below [140] [Gold]> <during the [{E3}]>",
@@ -420,7 +420,7 @@ dump("Events.json", [
         {"text": "Lure a wild Liquor Worm with Green Bamboo Wine", "uniques": [
             f"Only available {RANK1} <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [30] [Gold]>",
             "Gain [-30] [Gold]", "[This Unit] gains the [Liquor Worm] promotion <with [70]% chance>", w("+0")]},
-        {"text": "Let the furnace cool", "uniques": ["[This Unit] gains [5] XP", w("-95")]},
+        {"text": "Stop and recover your essence", "uniques": ["[This Unit] gains [5] XP", w("-95")]},
     ]},
     {"name": TIDE, "text": "Lightning wolves pour down the mountain toward your villages.", "choices": [
         {"text": "Meet the wolves in the field", "uniques": [
@@ -440,8 +440,8 @@ dump("Events.json", [
         # largest drain on every clan (autoplay: capitals at 1.8-4 by turn 320, 8.4 without population choices).
         # The fields lie fallow for a while instead.
         {"text": "Abandon the outer fields", "uniques": ["[-50]% growth [in all cities] <for [10] turns>", w("-30")]},
-        {"text": "Raise the formation", "uniques": [
-            "Only available <if [Formation Platform] is constructed> <when above [70] [Gold]>",
+        {"text": "Man the stockade walls", "uniques": [
+            "Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>",
             f"Gain [-40] [Gold] <during the [{E3}]>", f"Gain [-70] [Gold] <during the [{E4}]>",
             "[-20]% [Production] <for [5] turns>", w("+50")]},
     ]},
@@ -529,7 +529,7 @@ dump("Buildings.json", [
     # R2 T8: refining materials include jade, so every clan has an early jade source that does not depend on map luck
     {"name": "Refinement Chamber", "requiredTech": "Gu Refinement", "cost": 90, "maintenance": 1, "production": 1,
      "science": 1, "uniques": ["Provides [1] [Jade]"]},
-    {"name": "Formation Platform", "requiredTech": "Gu Formations", "cost": 110, "maintenance": 1, "cityStrength": 8,
+    {"name": "Stockade Wall", "requiredTech": "Gu Formations", "cost": 110, "maintenance": 1, "cityStrength": 8,
      "cityHealth": 50},
     # R3: Wu unique building - the Wu clan's battle stage, the largest in the Southern Border (vol2 ch122)
     {"name": "Martial Arena", "uniqueTo": "Wu Clan", "replaces": "Gu Academy", "requiredTech": "Gu Feeding", "cost": 65,
@@ -583,7 +583,7 @@ dump("Policies.json", [
         "[+5]% Strength <for [Moon Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"], "policies": [
         {"name": "Moonlight Mastery", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [Moonlight Gu]>",
                                                                        "[+15]% Strength <for units with [Moon Raiment]>"]},
-        {"name": "Orchid Terraces", "row": 1, "column": 3, "uniques": ["Provides [2] [Moon Orchid]",
+        {"name": "Orchid Beds", "row": 1, "column": 3, "uniques": ["Provides [2] [Moon Orchid]",
                                                                      "[-15]% maintenance costs <for [Moon Master] units>"]},
         {"name": "Moon Blade Step", "row": 2, "column": 2, "requires": ["Moonlight Mastery"],
          "uniques": ["[1] Movement <for [Moon Master] units>"]},
@@ -708,19 +708,20 @@ def emblem(gu, extra=""):
 
 dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
-           ["Gu Yue Village", "Orchid Slope", "Bamboo Ridge", "Cold Spring"],
+           ["Gu Yue Village", "Alliance Slope", "Spear Bamboo Grove", "Stone Forest"],
            [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), "Start bias [Spirit Spring]", "Start bias [Hill]"]),
     # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
     nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
-           ["Bai Village", "Waterfall Slope", "Frost Pine Slope"],
+           ["Bai Village", "Back-Slope Waterfall", "Deep Pool", "Bitter Shell Pool"],
            [emblem("Stream Gu"), "[+15]% Strength <vs [Barbarians] units>", "Start bias [Spirit Spring]", "Start bias [Fresh Water]"]),
     nation("Xiong Clan", "Xiong Clan Leader", "Xiong Temperament", [90, 50, 20], [240, 200, 140],
-           ["Xiong Village", "Bear Den Ridge", "Boar Hollow"],
-           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Spirit Spring]", "Start bias [Forest]"]),
+           ["Xiong Village", "Front Slope", "Honey Hollow"],
+           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Spirit Spring]", "Start bias [Hill]"]),
+    # canon start biases (geography research): Xiong on the front slope (R V1c65), Wu by the rivers (R V2c1)
     # R3: the fourth major is the Wu clan, the Southern Border's first clan (user's choice); leader Wu Ji (vol2 ch84)
     nation("Wu Clan", "Wu Ji", "Wu Temperament", [120, 20, 20], [250, 210, 120],
-           ["Wu Clan City", "Martial Peak", "Iron Bone Ridge"],
-           ["Starts with [Righteous Path] adopted", "Start bias [Spirit Spring]", "Start bias [Hill]"]),
+           ["Wu Yi Mountain", "Moon Bowl", "Golden Cloud Canyon", "Xuan Ming Mountain"],
+           ["Starts with [Righteous Path] adopted", "Start bias [Spirit Spring]", "Start bias [River]"]),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},

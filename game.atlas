@@ -25,51 +25,51 @@ BuildingIcons/Flower Wine Monk Inheritance
   orig: 100, 100
   offset: 0, 0
   index: -1
-BuildingIcons/Formation Platform
-  rotate: false
-  xy: 112, 328
-  size: 100, 100
-  orig: 100, 100
-  offset: 0, 0
-  index: -1
 BuildingIcons/Gu Academy
   rotate: false
-  xy: 220, 896
+  xy: 220, 1004
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Gu Feeding House
   rotate: false
-  xy: 220, 680
+  xy: 220, 788
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Martial Arena
   rotate: false
-  xy: 436, 440
+  xy: 544, 656
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Moon Orchid Flower Sea
   rotate: false
-  xy: 544, 8
+  xy: 436, 8
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Refinement Chamber
   rotate: false
-  xy: 868, 928
+  xy: 896, 1036
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 BuildingIcons/Shang Clan City
   rotate: false
-  xy: 760, 576
+  xy: 868, 604
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/Stockade Wall
+  rotate: false
+  xy: 868, 64
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -90,21 +90,21 @@ BuildingIcons/Trading House
   index: -1
 CityStateIcons/Merchant Clan
   rotate: false
-  xy: 436, 332
+  xy: 544, 548
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 CityStateIcons/Mortal Villages
   rotate: false
-  xy: 1196, 1604
+  xy: 1088, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 CityStateIcons/Refiner Tribe
   rotate: false
-  xy: 1060, 1280
+  xy: 952, 1252
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -125,21 +125,21 @@ ImprovementIcons/Beast Lair
   index: -1
 ImprovementIcons/Inheritance Dig
   rotate: false
-  xy: 1656, 1712
+  xy: 1548, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Inheritance Site
   rotate: false
-  xy: 1872, 1712
+  xy: 1764, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ImprovementIcons/Spring Cave
   rotate: false
-  xy: 760, 144
+  xy: 868, 172
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -153,7 +153,7 @@ NationIcons/Bai Clan
   index: -1
 NationIcons/Gu Yue Clan
   rotate: false
-  xy: 220, 248
+  xy: 220, 356
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -181,14 +181,14 @@ PolicyBranchIcons/Demonic Path
   index: -1
 PolicyBranchIcons/Moon Path
   rotate: false
-  xy: 652, 900
+  xy: 544, 8
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyBranchIcons/Righteous Path
   rotate: false
-  xy: 1492, 1280
+  xy: 1384, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -223,56 +223,56 @@ PolicyIcons/Clan Rules
   index: -1
 PolicyIcons/Guardian Formations
   rotate: false
-  xy: 220, 140
+  xy: 220, 248
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Lone Cultivators
   rotate: false
-  xy: 544, 764
+  xy: 436, 656
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Moon Blade Step
   rotate: false
-  xy: 436, 116
+  xy: 544, 332
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Moonlight Mastery
   rotate: false
-  xy: 980, 1604
+  xy: 872, 1576
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-PolicyIcons/Orchid Terraces
+PolicyIcons/Orchid Beds
   rotate: false
-  xy: 1628, 1604
+  xy: 1412, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Plunder
   rotate: false
-  xy: 1304, 1496
+  xy: 1196, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Righteous Alliance
   rotate: false
-  xy: 1384, 1280
+  xy: 1276, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 PolicyIcons/Ruthless Cultivation
   rotate: false
-  xy: 1708, 1280
+  xy: 1600, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -286,28 +286,28 @@ PolicyIcons/Unyielding Body
   index: -1
 ResourceIcons/Gu Inheritance
   rotate: false
-  xy: 220, 464
+  xy: 220, 572
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Jade
   rotate: false
-  xy: 680, 1008
+  xy: 680, 1116
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Moon Orchid
   rotate: false
-  xy: 436, 8
+  xy: 544, 116
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Spirit Spring
   rotate: false
-  xy: 760, 252
+  xy: 868, 280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -328,7 +328,7 @@ ResourceIcons/Wine
   index: -1
 StatIcons/Gold
   rotate: false
-  xy: 220, 1004
+  xy: 248, 1112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -356,63 +356,63 @@ TechIcons/Dao Comprehension
   index: -1
 TechIcons/Gu Feeding
   rotate: false
-  xy: 220, 788
+  xy: 220, 896
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Gu Formations
   rotate: false
-  xy: 220, 572
+  xy: 220, 680
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Gu Refinement
   rotate: false
-  xy: 220, 356
+  xy: 220, 464
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Inheritance Lore
   rotate: false
-  xy: 1764, 1712
+  xy: 1656, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Merchant Caravans
   rotate: false
-  xy: 544, 548
+  xy: 436, 440
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Rank Four Cultivation
   rotate: false
-  xy: 844, 1468
+  xy: 736, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Rank Three Cultivation
   rotate: false
-  xy: 1384, 1388
+  xy: 1276, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Rank Two Cultivation
   rotate: false
-  xy: 844, 1252
+  xy: 1816, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Spirit Spring Lore
   rotate: false
-  xy: 868, 172
+  xy: 760, 252
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -447,168 +447,168 @@ UnitIcons/Clan Settler
   index: -1
 UnitIcons/Lightning Wolf
   rotate: false
-  xy: 436, 764
+  xy: 544, 980
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Mortal Laborer
   rotate: false
-  xy: 1088, 1604
+  xy: 980, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Bai Gu Master
   rotate: false
-  xy: 736, 1280
+  xy: 736, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Gu Master
   rotate: false
-  xy: 844, 1360
+  xy: 844, 1468
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Gu Yue Gu Master
   rotate: false
-  xy: 952, 1388
+  xy: 844, 1360
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Moon Gu Master
   rotate: false
-  xy: 952, 1388
+  xy: 844, 1360
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Strength Gu Master
   rotate: false
-  xy: 1060, 1388
+  xy: 952, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Wu Gu Master
   rotate: false
-  xy: 1060, 1388
+  xy: 952, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Four Xiong Gu Master
   rotate: false
-  xy: 1060, 1388
+  xy: 952, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank One Gu Master
   rotate: false
-  xy: 1168, 1388
+  xy: 1060, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Bai Gu Master
   rotate: false
-  xy: 1276, 1388
+  xy: 1168, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Gu Master
   rotate: false
-  xy: 1492, 1388
+  xy: 1384, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Gu Yue Gu Master
   rotate: false
-  xy: 1600, 1388
+  xy: 1492, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Moon Gu Master
   rotate: false
-  xy: 1600, 1388
+  xy: 1492, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Strength Gu Master
   rotate: false
-  xy: 1708, 1388
+  xy: 1600, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Wu Gu Master
   rotate: false
-  xy: 1708, 1388
+  xy: 1600, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Three Xiong Gu Master
   rotate: false
-  xy: 1708, 1388
+  xy: 1600, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Bai Gu Master
   rotate: false
-  xy: 1816, 1388
+  xy: 1708, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Gu Master
   rotate: false
-  xy: 1924, 1388
+  xy: 844, 1252
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Gu Yue Gu Master
   rotate: false
-  xy: 788, 1144
+  xy: 1924, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Moon Gu Master
   rotate: false
-  xy: 788, 1144
+  xy: 1924, 1388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Strength Gu Master
   rotate: false
-  xy: 788, 1036
+  xy: 788, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Wu Gu Master
   rotate: false
-  xy: 788, 1036
+  xy: 788, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Rank Two Xiong Gu Master
   rotate: false
-  xy: 788, 1036
+  xy: 788, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1154,329 +1154,329 @@ UnitPromotionIcons/Formation Master
   index: -1
 UnitPromotionIcons/Fortune Rivalling Heaven
   rotate: false
-  xy: 112, 220
+  xy: 112, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Frost Bind
   rotate: false
-  xy: 112, 112
+  xy: 112, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Gale Step
   rotate: false
-  xy: 112, 4
+  xy: 112, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Glare
   rotate: false
-  xy: 248, 1112
+  xy: 112, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Guts
   rotate: false
-  xy: 220, 32
+  xy: 220, 140
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Heaven Grandmaster
   rotate: false
-  xy: 384, 1196
+  xy: 220, 32
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Heaven Master
   rotate: false
-  xy: 492, 1196
+  xy: 384, 1196
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Heaven's Rebuke
   rotate: false
-  xy: 356, 1088
+  xy: 492, 1196
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Hollow Form
   rotate: false
-  xy: 464, 1088
+  xy: 356, 1088
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Hopes of the Crowd
   rotate: false
-  xy: 628, 1224
+  xy: 464, 1088
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Human Grandmaster
   rotate: false
-  xy: 764, 1576
+  xy: 628, 1224
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Human Master
   rotate: false
-  xy: 900, 1712
+  xy: 764, 1576
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Ice Snow Grandmaster
   rotate: false
-  xy: 1008, 1712
+  xy: 900, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Ice Snow Master
   rotate: false
-  xy: 1116, 1712
+  xy: 1008, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Illusion Grandmaster
   rotate: false
-  xy: 1224, 1712
+  xy: 1116, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Illusion Master
   rotate: false
-  xy: 1332, 1712
+  xy: 1224, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Information Grandmaster
   rotate: false
-  xy: 1440, 1712
+  xy: 1332, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Information Master
   rotate: false
-  xy: 1548, 1712
+  xy: 1440, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Ink Transformation
   rotate: false
-  xy: 572, 1088
+  xy: 1872, 1712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Iron Rain
   rotate: false
-  xy: 680, 1116
+  xy: 572, 1088
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Jade Hunger
   rotate: false
-  xy: 328, 896
+  xy: 680, 1008
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Jade Skin Gu
   rotate: false
-  xy: 328, 788
+  xy: 328, 896
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Killer Move
   rotate: false
-  xy: 328, 680
+  xy: 328, 788
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TechIcons/Killer Moves
   rotate: false
-  xy: 328, 680
+  xy: 328, 788
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Killing Grandmaster
   rotate: false
-  xy: 328, 572
+  xy: 328, 680
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Killing Intent
   rotate: false
-  xy: 328, 464
+  xy: 328, 572
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Killing Master
   rotate: false
-  xy: 328, 356
+  xy: 328, 464
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Light Fingers
   rotate: false
-  xy: 328, 248
+  xy: 328, 356
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Linked Formation
   rotate: false
-  xy: 328, 248
+  xy: 328, 356
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Light Grandmaster
   rotate: false
-  xy: 328, 140
+  xy: 328, 248
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Light Master
   rotate: false
-  xy: 328, 32
+  xy: 328, 140
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Lightning Grandmaster
   rotate: false
-  xy: 436, 980
+  xy: 328, 32
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Lightning Master
   rotate: false
-  xy: 436, 872
+  xy: 436, 980
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Lightning Wings
   rotate: false
-  xy: 544, 980
+  xy: 436, 872
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Liquor Worm
   rotate: false
-  xy: 544, 872
+  xy: 436, 764
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Living Ink
   rotate: false
-  xy: 436, 656
+  xy: 544, 872
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Luck Grandmaster
   rotate: false
-  xy: 436, 548
+  xy: 544, 764
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Luck Master
   rotate: false
-  xy: 544, 656
+  xy: 436, 548
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Metal Grandmaster
   rotate: false
-  xy: 544, 440
+  xy: 436, 332
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Metal Master
   rotate: false
-  xy: 436, 224
+  xy: 544, 440
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Mirage
   rotate: false
-  xy: 544, 332
+  xy: 436, 224
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moon Grandmaster
   rotate: false
-  xy: 544, 224
+  xy: 436, 116
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moon Master
   rotate: false
-  xy: 544, 116
+  xy: 544, 224
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moon Raiment
   rotate: false
-  xy: 760, 900
+  xy: 652, 900
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moonlight Gu
   rotate: false
-  xy: 872, 1576
+  xy: 760, 900
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Mountain Pledge
   rotate: false
-  xy: 1304, 1604
+  xy: 1196, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Nine-Ren Mountain
   rotate: false
-  xy: 1412, 1604
+  xy: 1304, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -1490,280 +1490,280 @@ UnitPromotionIcons/Orchid Hunger
   index: -1
 UnitPromotionIcons/Painting Grandmaster
   rotate: false
-  xy: 1736, 1604
+  xy: 1628, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Pill Grandmaster
   rotate: false
-  xy: 1736, 1604
+  xy: 1628, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Painting Master
   rotate: false
-  xy: 1844, 1604
+  xy: 1736, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Pill Master
   rotate: false
-  xy: 1844, 1604
+  xy: 1736, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Phantom Grandmaster
   rotate: false
-  xy: 980, 1496
+  xy: 1844, 1604
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Phantom Master
   rotate: false
-  xy: 1088, 1496
+  xy: 980, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Phantom Veil
   rotate: false
-  xy: 1196, 1496
+  xy: 1088, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Poison Grandmaster
   rotate: false
-  xy: 1412, 1496
+  xy: 1304, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Poison Master
   rotate: false
-  xy: 1520, 1496
+  xy: 1412, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Poisoned
   rotate: false
-  xy: 1628, 1496
+  xy: 1520, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Pork Hunger
   rotate: false
-  xy: 1736, 1496
+  xy: 1628, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Qi Grandmaster
   rotate: false
-  xy: 1844, 1496
+  xy: 1736, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Qi Master
   rotate: false
-  xy: 760, 792
+  xy: 1844, 1496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Qin Strike
   rotate: false
-  xy: 736, 1388
+  xy: 760, 792
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Recovery Pill
   rotate: false
-  xy: 896, 1144
+  xy: 788, 1036
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Refine Gu
   rotate: false
-  xy: 896, 1036
+  xy: 896, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Refinement Grandmaster
   rotate: false
-  xy: 868, 820
+  xy: 868, 928
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Refinement Master
   rotate: false
-  xy: 952, 1252
+  xy: 868, 820
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Restriction Grandmaster
   rotate: false
-  xy: 1168, 1280
+  xy: 1060, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Rule Grandmaster
   rotate: false
-  xy: 1168, 1280
+  xy: 1060, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Restriction Master
   rotate: false
-  xy: 1276, 1280
+  xy: 1168, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Rule Master
   rotate: false
-  xy: 1276, 1280
+  xy: 1168, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Rooted Vigor
   rotate: false
-  xy: 1600, 1280
+  xy: 1492, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Sealed
   rotate: false
-  xy: 1816, 1280
+  xy: 1708, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Self-Reliance
   rotate: false
-  xy: 1924, 1280
+  xy: 1816, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Severing Essence
   rotate: false
-  xy: 1004, 1144
+  xy: 1924, 1280
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Shadow Grandmaster
   rotate: false
-  xy: 1004, 1036
+  xy: 1004, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Sound Grandmaster
   rotate: false
-  xy: 1004, 1036
+  xy: 1004, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Star Grandmaster
   rotate: false
-  xy: 1004, 1036
+  xy: 1004, 1144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Shadow Master
   rotate: false
-  xy: 868, 712
+  xy: 1004, 1036
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Sound Master
   rotate: false
-  xy: 868, 712
+  xy: 1004, 1036
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Star Master
   rotate: false
-  xy: 868, 712
+  xy: 1004, 1036
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Shadow Step
   rotate: false
-  xy: 760, 684
+  xy: 868, 712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Shaken
   rotate: false
-  xy: 868, 604
+  xy: 760, 684
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Shroud
   rotate: false
-  xy: 868, 496
+  xy: 760, 576
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Soul Grandmaster
   rotate: false
-  xy: 760, 468
+  xy: 868, 496
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Soul Master
   rotate: false
-  xy: 868, 388
+  xy: 760, 468
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Space Grandmaster
   rotate: false
-  xy: 760, 360
+  xy: 868, 388
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Space Master
   rotate: false
-  xy: 868, 280
+  xy: 760, 360
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Star Snake Rope
   rotate: false
-  xy: 868, 64
+  xy: 760, 144
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

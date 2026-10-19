@@ -341,3 +341,26 @@
   `docs/BALANCE.md` lists the path knobs once instead of 1,500 per-promotion rows; `docs/KNOWN_ISSUES.md` (look
   follows the clan, not the path; Rank One paths) and new in-game checks; `tools/b3/` removed (it became
   `tools/gen_paths.py`).
+
+## Canon overhaul 1 — texts and renames (2026-10-19)
+
+* The user's decisions on docs/CANON_OVERHAUL.md: D1 renames yes, D2 path Gu granted with the Master (invented Gu
+  for Weapon and Killing), D3 Wu's signature path becomes Wind, D4 all four majors start righteous and the Gu Yue
+  blood-demon twist is used, D5 tile regions as a side task, D6 arc items wait for MOD_SPEC_2 Phase C (with their art).
+* Texts (part A, EN + ID): Liquor Worm refines on into the Four Flavours Liquor Worm; refinement pours essence (no
+  furnace: event text, choice 4, Refinement Chamber, Gu Refinement); formations are a volume-4 idea (Gu Formations);
+  散修 means a lone cultivator; Wu Ji walks strength, the Wu clan's tradition is wind; Gu Yue the old overlord, Bai the
+  rising rival after three springs, Xiong righteous but happy to let others bleed; Thunder Crown Wolf, Rank Four era,
+  Super Clan Commerce, Killer Move (core Gu), Stream Gu, Moon Path; 酿酒 is brewing in Indonesian.
+* Renames (D1): Formation Platform → Stockade Wall (寨墙), "Raise the formation" → "Man the stockade walls", Orchid
+  Terraces → Orchid Beds, with new icons; canon city names (Wu Yi Mountain, Alliance Slope, Spear Bamboo Grove, Stone
+  Forest, Back-Slope Waterfall, Deep Pool, Bitter Shell Pool, Front Slope, Honey Hollow, Moon Bowl, Golden Cloud
+  Canyon, Xuan Ming Mountain). A running game loses a renamed building or policy on load; the user has none running.
+* `data/display_overrides.csv` (tools/gen_translations.py): what the player reads only: terrains in the setting's
+  words (Mountain Slope, Ten-Thousand-Foot Peak, Spear Bamboo Forest, Rainforest, Rotting Swamp) and base-game lines
+  without submarines, railroads or tourism.
+* Start biases: Xiong on hills (the front slope), Wu by rivers.
+* `docs/LORE_MAPPING.md` verdicts: Gu Formations INVENTED for this arc, Stockade Wall CANON, Orchid Beds ADAPTED, Jia
+  ADAPTED (a large clan shrunk to a city-state), Inheritance Trial and Trap verified (lethal tests are demonic), Beast
+  Tide's 兽潮 canon, Righteous Path's lore line CANON; arc: the Fang clan is not the desert's first, the Zombie
+  Alliance shows a righteous face and serves the Shadow Sect in secret.

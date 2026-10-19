@@ -322,8 +322,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `Gain [-30] [Gold]` | -30 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `[This Unit] gains the [Liquor Worm] promotion <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
 | Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Let the furnace cool | `[This Unit] gains [5] XP` | 5 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Let the furnace cool | `[-95]% weight to this choice for AI decisions` | -95 | tools/gen_ruleset.py `Events` |
+| Refinement Attempt › Stop and recover your essence | `[This Unit] gains [5] XP` | 5 | tools/gen_ruleset.py `Events` |
+| Refinement Attempt › Stop and recover your essence | `[-95]% weight to this choice for AI decisions` | -95 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Meet the wolves in the field | `[2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>` | 2 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Meet the wolves in the field | `[3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>` | 3 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Meet the wolves in the field | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
@@ -336,11 +336,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Abandon the outer fields | `[-50]% growth [in all cities] <for [10] turns>` | -50, 10 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Abandon the outer fields | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Raise the formation | `Only available <if [Formation Platform] is constructed> <when above [70] [Gold]>` | 70 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Raise the formation | `Gain [-40] [Gold] <during the [Rank Three era]>` | -40 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Raise the formation | `Gain [-70] [Gold] <during the [Rank Four era]>` | -70 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Raise the formation | `[-20]% [Production] <for [5] turns>` | -20, 5 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Raise the formation | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Man the stockade walls | `Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>` | 70 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Man the stockade walls | `Gain [-40] [Gold] <during the [Rank Three era]>` | -40 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Man the stockade walls | `Gain [-70] [Gold] <during the [Rank Four era]>` | -70 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Man the stockade walls | `[-20]% [Production] <for [5] turns>` | -20, 5 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Man the stockade walls | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `Only available <when above [60] [Gold]>` | 60 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `Gain [-60] [Gold]` | -60 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
@@ -426,10 +426,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Refinement Chamber | production | 1 | tools/gen_ruleset.py `Buildings` |
 | Refinement Chamber | science | 1 | tools/gen_ruleset.py `Buildings` |
 | Refinement Chamber | `Provides [1] [Jade]` | 1 | tools/gen_ruleset.py `Buildings` |
-| Formation Platform | cost | 110 | tools/gen_ruleset.py `Buildings` |
-| Formation Platform | maintenance | 1 | tools/gen_ruleset.py `Buildings` |
-| Formation Platform | cityStrength | 8 | tools/gen_ruleset.py `Buildings` |
-| Formation Platform | cityHealth | 50 | tools/gen_ruleset.py `Buildings` |
+| Stockade Wall | cost | 110 | tools/gen_ruleset.py `Buildings` |
+| Stockade Wall | maintenance | 1 | tools/gen_ruleset.py `Buildings` |
+| Stockade Wall | cityStrength | 8 | tools/gen_ruleset.py `Buildings` |
+| Stockade Wall | cityHealth | 50 | tools/gen_ruleset.py `Buildings` |
 | Martial Arena | cost | 65 | tools/gen_ruleset.py `Buildings` |
 | Martial Arena | maintenance | 1 | tools/gen_ruleset.py `Buildings` |
 | Martial Arena | science | 1 | tools/gen_ruleset.py `Buildings` |
@@ -509,8 +509,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Moon Path | `[+5]% Strength <for [Moon Master] units> <for every [Adopted [[Moon Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Moonlight Mastery | `[+15]% Strength <for units with [Moonlight Gu]>` | +15 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Moonlight Mastery | `[+15]% Strength <for units with [Moon Raiment]>` | +15 | tools/gen_ruleset.py `Policies` |
-| Moon Path › Orchid Terraces | `Provides [2] [Moon Orchid]` | 2 | tools/gen_ruleset.py `Policies` |
-| Moon Path › Orchid Terraces | `[-15]% maintenance costs <for [Moon Master] units>` | -15 | tools/gen_ruleset.py `Policies` |
+| Moon Path › Orchid Beds | `Provides [2] [Moon Orchid]` | 2 | tools/gen_ruleset.py `Policies` |
+| Moon Path › Orchid Beds | `[-15]% maintenance costs <for [Moon Master] units>` | -15 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Moon Blade Step | `[1] Movement <for [Moon Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Moon Path Complete | `New [Gu Master] units start with [10] XP [in all cities]` | 10 | tools/gen_ruleset.py `Policies` |
 | Strength Path | priorities.Southern Border Supremacy | 5 | tools/gen_ruleset.py `Policies` |

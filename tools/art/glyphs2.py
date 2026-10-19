@@ -285,9 +285,19 @@ def flower_wine_monk_inheritance():
     return g
 
 
-def formation_platform():
-    g = G(); octagon_array(g, 50, 46, 38)
-    g.poly([(14, 86), (86, 86), (92, 94), (8, 94)])
+def stockade_wall():
+    """The village's stockade wall (寨墙): sharpened spear-bamboo stakes bound by two bands, a gate in the middle."""
+    g = G()
+    for k in range(8):
+        x = 9 + k * 11.7
+        if k in (3, 4):
+            continue                                                                    # the gate
+        top = 18 if k % 2 else 24
+        g.poly([(x - 4.5, 90), (x + 4.5, 90), (x + 4.5, top + 9), (x, top), (x - 4.5, top + 9)])
+    g.poly([(36, 90), (64, 90), (64, 44), (50, 34), (36, 44)])                         # gate tower
+    g.poly([(42, 90), (58, 90), (58, 56), (42, 56)], 0)                                 # gate opening
+    for y in (52, 74):
+        g.line([(4, y), (36, y)], 3.5); g.line([(64, y), (96, y)], 3.5)                # binding bands
     return g
 
 
@@ -482,12 +492,15 @@ def moonlight_mastery():
     return g
 
 
-def orchid_terraces():
+def orchid_beds():
+    """Orchid beds in the spring cave: a cave arch with stalactites over a bed of moon orchids."""
     g = G()
-    for k in range(3):
-        y = 60 + k * 12
-        g.poly([(10 + k * 0, y), (90, y), (90, y + 8), (10, y + 8)])
-    orchid(g, 30, 40, 10); orchid(g, 66, 34, 12)
+    g.arc_band(50, 64, 48, 40, 0, 180)                                                  # cave mouth
+    for x, l in ((30, 14), (44, 9), (58, 16), (70, 10)):
+        g.poly([(x - 3, 26), (x + 3, 26), (x, 26 + l)])                                  # stalactites
+    g.poly([(8, 82), (92, 82), (92, 90), (8, 90)])                                      # the bed
+    for x, y, r in ((28, 66, 9), (50, 60, 11), (72, 66, 9)):
+        orchid(g, x, y, r); g.line([(x, y + r), (x, 82)], 2.5)
     return g
 
 
@@ -687,7 +700,7 @@ ICONS2 = [
     ("ImprovementIcons", "Beast Lair", beast_lair, "black"),
     ("ImprovementIcons", "Inheritance Site", inheritance_site, "black"),
     ("BuildingIcons", "Flower Wine Monk Inheritance", flower_wine_monk_inheritance, "black"),
-    ("BuildingIcons", "Formation Platform", formation_platform, "black"),
+    ("BuildingIcons", "Stockade Wall", stockade_wall, "black"),
     ("BuildingIcons", "Gu Academy", gu_academy, "black"),
     ("BuildingIcons", "Gu Feeding House", gu_feeding_house, "black"),
     ("BuildingIcons", "Martial Arena", martial_arena, "black"),
@@ -712,7 +725,7 @@ ICONS2 = [
     ("PolicyIcons", "Lone Cultivators", lone_cultivators, "white"),
     ("PolicyIcons", "Ruthless Cultivation", ruthless_cultivation, "white"),
     ("PolicyIcons", "Moonlight Mastery", moonlight_mastery, "white"),
-    ("PolicyIcons", "Orchid Terraces", orchid_terraces, "white"),
+    ("PolicyIcons", "Orchid Beds", orchid_beds, "white"),
     ("PolicyIcons", "Moon Blade Step", moon_blade_step, "white"),
     ("PolicyIcons", "Boar Strength", boar_strength, "white"),
     ("PolicyIcons", "Beast Hunters", beast_hunters, "white"),

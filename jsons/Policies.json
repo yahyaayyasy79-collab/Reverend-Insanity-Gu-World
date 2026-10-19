@@ -52,7 +52,7 @@
         ],
         "civilopediaText": [
           {
-            "text": "A righteous village is held, not abandoned. Its formations and its defenders are built for that."
+            "text": "A righteous village is held, not abandoned. Its walls and its defenders are built for that."
           }
         ]
       },
@@ -112,7 +112,7 @@
         ],
         "civilopediaText": [
           {
-            "text": "A demonic cultivator (散修) has no clan behind them: few, strong, travelling light, owing nothing to anyone. Every new village they hold is one more place to be betrayed."
+            "text": "A lone cultivator (散修) has no clan behind them, and on the Southern Border every demonic Gu Master is one: few, strong, travelling light, owing nothing to anyone. Every new village they hold is one more place to be betrayed."
           }
         ]
       },
@@ -180,7 +180,7 @@
         ]
       },
       {
-        "name": "Orchid Terraces",
+        "name": "Orchid Beds",
         "row": 1,
         "column": 3,
         "uniques": [
@@ -189,7 +189,7 @@
         ],
         "civilopediaText": [
           {
-            "text": "Terraced orchid fields across the slopes. More petals, more blades."
+            "text": "More orchid beds in the spring cave and on the slopes. More petals, more blades."
           }
         ]
       },
@@ -223,7 +223,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The moon path (月道): Gu that shape moonlight into blades, the Gu Yue tradition. Lighter on the treasury than strength, and dependent on orchids."
+        "text": "The moon path (月道): Gu that shape moonlight into blades. On Qing Mao that art means the Gu Yue clan and its Moonlight Gu. Lighter on the treasury than strength, and dependent on orchids."
       }
     ]
   },
