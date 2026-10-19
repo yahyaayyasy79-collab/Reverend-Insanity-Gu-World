@@ -1006,6 +1006,20 @@ kept here.
 the numbers come in Phase C and D. Every pattern was matched against the docs; the risky ones were proven in Phase A
 (`docs/CAPABILITIES.md`, "MOD_SPEC_2 Phase A").
 
+## Canon overhaul items waiting for Phase C (the user's D6, 2026-10-19)
+
+From docs/CANON_OVERHAUL.md (conflicts and geography research); each object gets a designed icon or sprite when it is
+built, never a placeholder (the user: "jangan lupa buat desain gambar yg perlu gambarnya").
+
+| Item | Canon | Plan | Art |
+|---|---|---|---|
+| Zombie Alliance's camp | Shows a righteous face, suppressed by righteous forces, allied with demonic immortals, a secret lower sect of the Shadow Sect; its natural enemy the Heavenly Court (R V4c242, V4c359, V5c864) | Starts righteous; +15% Strength against Immortal Zombie units (planned) for the Heavenly Court; the zombies weaken while Fate Gu stands | nation icon, Immortal Zombie sprite and attack |
+| Fang clan's camp | Righteous; branded demonic by the Wan clan late in the story (R V6c287) | Starts righteous; Collusion Exposed can flip it, as in Slice 1 | nation icon, Gu House sprites |
+| A third camp at immortal level | The novel names righteous, demonic and lone immortals (R V5c83) | A "Lone Path" branch for ranks 6+, if the budget allows (ask before exceeding it) | branch and policy icons |
+| Demon Extermination List | The Heavenly Court lists demonic and blood-path cultivators every ten years (R V4c51, V4c61) | A ten-turn Heavenly Court event with bounties on Demonic Infamy units | none (event) |
+| Region walls and the five-region map | Miasma, Licorice, Azure Water, Raging Flame, Sage walls (R V5/22); poison fog in the Northern Plains | Impassable wall terrains crossed by immortals; a five-region premade map like Qing Mao's | terrain tiles |
+| Landmarks | Spring Whirlpool, Howling Moon Mountain, Moon Bowl and others | Natural wonders within the 12-realm cap | natural-wonder icons |
+
 ## Corrections to MOD_SPEC_2's lore seeds
 
 | Seed | Correction | Source | Verdict |
