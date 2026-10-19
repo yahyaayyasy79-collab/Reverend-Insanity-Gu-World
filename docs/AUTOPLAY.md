@@ -275,6 +275,38 @@ v5 on the other speeds and difficulty:
   12-game batches (round 6b), so that is a lead, not a result.
 * Hunger is unchanged (King 1.07 → 0.96 Gu deaths per clan per 100 turns).
 
+## C3 M7: rank chain and 47 paths against round 8 (2026-10-19)
+
+The C3 mod (path promotions, clan chains, legacy bridge) against round 8's shipped v5, two 12-game batches each
+(different seeds), Small, 4 clans, Standard speed, Strategic Balance on:
+
+| Batch | Clans 20+ turns in the red | Treasury T320 | Stones per turn T320 | Upkeep / gross T151–320 | Rank-2 Gu per clan T200 | Gu deaths per clan per 100 turns | Crashes |
+|---|---|---|---|---|---|---|---|
+| Prince 320, v5, batch 1 | 11 of 48 | 101 | 2.8 | 0.77 | 3.79 | 0.63 | 0 |
+| Prince 320, v5, batch 2 | 12 of 48 | 89 | −0.1 | 0.77 | 3.53 | 0.59 | 0 |
+| Prince 320, C3, batch 1 | 18 of 48 | 111 | 2.6 | 0.80 | 1.58 | 0.79 | 0 |
+| Prince 320, C3, batch 2 | 12 of 48 | 122 | 0.2 | 0.81 | 1.46 | 0.59 | 0 |
+
+| Batch | Games with a war | Cities captured | Share of clan-turns at war | Gu deaths per clan per 100 turns | Crashes |
+|---|---|---|---|---|---|
+| King 200, v5, batch 1 | 7 of 12 | 16 | 0.112 | 0.96 | 0 |
+| King 200, v5, batch 2 | 0 of 12 | 0 | 0.000 | 1.29 | 0 |
+| King 200, C3, batch 1 | 4 of 12 | 6 | 0.037 | 0.53 | 0 |
+| King 200, C3, batch 2 | 5 of 12 | 4 | 0.029 | 0.53 | 0 |
+
+Paths (end of game, all batches): one root path per AI unit (the few extra Masters are sub-paths, which need their
+parent); 84–86% of the signature clans' cultivators on the signature path (Prince 472 of 547 and 431 of 507, King 672
+of 795); 41–45 different paths in a batch among the other 15%.
+
+* **Solvency: no change beyond noise.** Pooled 30 of 96 red clans against 23 of 96 (the two C3 batches alone gave 18
+  and 12), with a higher treasury at turn 320. The red turns sit in T240–319 as before. No re-tune.
+* **Conquest: no change beyond noise.** Round 8's two King batches gave 16 and 0 captured cities; C3 gives 6 and 4.
+  City strength (E8) stays at 0.1.
+* **The ladder: half the rank-2 Gu.** Bai now walks Water (the user's decision), which has no fusion ladder: its units
+  stop at Jade Skin Gu. Every path except Moon and Strength is in the same place until it has its own Gu (decision
+  B.b, next step).
+* **Hunger is lower** (King 0.53 against 0.96–1.29): fewer clans compete for moon orchids.
+
 ## Re-run
 
 ```
