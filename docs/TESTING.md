@@ -46,6 +46,13 @@ Never commit `Atlases.json` without the atlas it lists (validation error that bl
 * Never press "Autoupdate mod uniques", "Delete [mod]" or "Update [mod]" on the development checkout: the first
   rewrites generated JSON, the others may follow a symlink and wipe the checkout.
 
+## The Qing Mao Mountain map
+
+New Game → choose the mod as base ruleset → **Map Type: Custom** (the premade maps of the selected mods are listed)
+→ **Qing Mao Mountain**. Turn on "Select players from starting locations" to give each clan its canon village (Bai
+north, Gu Yue centre, Xiong south, Wu east). Recommended: Prince or King; the AI clans rarely start wars at Settler to
+Prince, so the tension comes from tides, hunger, betrayals and you.
+
 ## Before you launch: the official validator, here
 
 `tools/unciv_ci.py` runs the 4.22.8 release jar's `mod-ci` mode — the same RulesetValidator as "Locate mod

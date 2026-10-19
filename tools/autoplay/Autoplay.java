@@ -127,8 +127,16 @@ public class Autoplay {
         mp.setStrategicBalance(Boolean.parseBoolean(cfg.getOrDefault("strategicBalance", "true")));
         mp.setSeed(seed);
 
+        GameSetupInfo setup = new GameSetupInfo(gp, mp);
+        if (cfg.containsKey("map")) {  // a hand-made map (tools/make_map.py) instead of a generated one
+            java.io.File mapFile = new java.io.File(cfg.get("map"));
+            com.unciv.logic.map.TileMap tm = com.unciv.logic.files.MapSaver.INSTANCE.mapFromSavedString(
+                    new String(Files.readAllBytes(mapFile.toPath()), StandardCharsets.UTF_8));
+            setup = new GameSetupInfo(gp, tm.getMapParameters());
+            setup.setMapFile(new com.badlogic.gdx.files.FileHandle(mapFile));
+        }
         long t0 = System.currentTimeMillis();
-        GameInfo gi = GameStarter.Companion.startNewGame(new GameSetupInfo(gp, mp));
+        GameInfo gi = GameStarter.Companion.startNewGame(setup);
         gi.getGameParameters().setVictoryTypes(new ArrayList<>(gi.getRuleset().getVictories().keySet()));
         game.setGameInfo(gi);
         out.println(obj(new LinkedHashMap<String, Object>() {{

@@ -319,7 +319,7 @@ Demonic; personalities set the rest.
 | **Righteous Path** (branch) | 正道 | CANON | Righteous clans uphold clan law and alliances, and keep a respectable face.<br>*Note: Verified (conflicts research 2026-10-19): the righteous need face and a pretext even to grab land (R V5c361); clan law and written alliances (R V1c105, V1c127). The mechanic stays a 4X mapping.* | Excludes Demonic. City-state favour, and cheaper upkeep for units standing on friendly land (the S6 'cheaper defensive upkeep'; civ-wide maintenance uniques are evaluated per unit [src]) (P5, P1).<br>*Fields:* era Rank One-Two era; members Clan Rules, Righteous Alliance, Guardian Formations, Righteous Path Complete | `Only available <before adopting [Demonic Path]>`<br>`Resting point for Influence with City-States is increased by [15]`<br>`[-25]% maintenance costs <in [Friendly Land] tiles>`<br>`[+10]% Strength <vs [Demonic Infamy] units>` |
 | Clan Rules | 族规 | ADAPTED | Strict clan law keeps members in line. | Less unhappiness, so fewer unhappiness-driven betrayals (P5).<br>*Fields:* Righteous Path, row 1, column 1 | `[-15]% Unhappiness from [Population] [in all cities]` |
 | Righteous Alliance | — | INVENTED | Righteous clans band together against demonic threats. | City-state favour (P5).<br>*Fields:* Righteous Path, row 1, column 3 | `City-State Influence recovers at twice the normal rate`<br>`Gifts of Gold to City-States generate [+25]% more Influence`<br>`Enables Defensive Pacts` |
-| Guardian Formations | — | INVENTED | A righteous village is held, not abandoned. | Defence against tides and raiders (P3, P5).<br>*Fields:* Righteous Path, row 2, column 2, requires [Clan Rules] | `[+25]% Strength for cities`<br>`[+10]% Strength <when defending>` |
+| Guardian Formations | — | INVENTED | A righteous village is held, not abandoned. | Defence against tides and raiders (P3, P5).<br>*Fields:* Righteous Path, row 2, column 2, requires [Clan Rules] | `[+10]% Strength for cities`<br>`[+10]% Strength <when defending>` |
 | Righteous Path Complete | — | INVENTED | A stable clan feeds its Gu efficiently. | Finisher: cheaper upkeep everywhere (P1).<br>*Fields:* finisher of Righteous Path | `[-10]% maintenance costs`<br>`Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]` |
 | **Demonic Path** (branch) | 魔道 | ADAPTED | Demonic cultivators take what they need by force and trust no one. | Excludes Righteous. Every kill pays stones, beasts included (wolf 15, bold wolf 30). The price: faster city-state influence decay and a 3% Betrayal chance per turn (P5, P1).<br>*Fields:* era Rank One-Two era; members Plunder, Blood Harvest, Ruthless Cultivation, Demonic Path Complete | `Only available <before adopting [Righteous Path]>`<br>`Earn [50]% of killed [Military] unit's [Cost] as [Gold]`<br>`[+50]% City-State Influence degradation`<br>`Triggers a [Betrayal] event <upon turn start> <with [3]% chance>`<br>`[Military] units gain the [Demonic Infamy] promotion`<br>`All newly-trained [Military] units [in all cities] receive the [Demonic Infamy] promotion` |
 | Plunder | — | INVENTED | Demonic Gu Masters strip whatever they overrun. | Pillage and lair income (P1, P5).<br>*Fields:* Demonic Path, row 1, column 1 | `[+100]% Yield from pillaging tiles`<br>`Receive [+100]% Gold from Barbarian encampments and pillaging Cities` |
@@ -446,6 +446,29 @@ Temperaments and voices (C4, C5; Personalities.json fields, Nations.json texts i
 | Wu Clan | 6 | 7 | 5 | 7 | 4 | 5 | Wu Ji of the Wu clan. The Southern Border keeps me busy; state your purpose. | The righteous never strike without a reason. Here is ours. | Write it down: the Wu fell to you. Few will believe it. |
 
 Nation starting uniques: `Starts with [Righteous Path] adopted`, `Starts with [Strength Path] adopted`
+
+## The Qing Mao Mountain map (D5, canon overhaul 2026-10-19)
+
+`maps/Qing Mao Mountain` (40 × 26), built by `tools/make_map.py` with Unciv's own serializer (`tools/autoplay/MakeMap.java`).
+The random generator places terrain by latitude and cannot put three clan villages on one mountain, so the mod ships
+the canon setting (geography research):
+
+| Place | Where | Canon |
+|---|---|---|
+| Qing Mao Mountain (青茅山) | centre: a ridge of peaks, hill slopes, spear-bamboo forest | R V1c7, V1c13 |
+| Bai village (白家寨) | north, by the deep pool under the back-slope waterfall (a lake) | R V1c14, V1c65 |
+| Gu Yue village (古月山寨) | halfway up, with moon orchids and the stone forest's jade | R V1c4, V1c79 |
+| Xiong village (熊家寨) | south, on the front slope | R V1c65 |
+| Spirit springs | one under each village, three contested on the slopes, two for Wu, one for Jia | R V2c183 (three or four on a famous mountain) |
+| Lightning-wolf nest | Beast Lairs low on the mountain | R V1c31 |
+| Yellow Dragon tributary, foothill villages | a river along the foot; the Foothill Villages city-state beside it | R V1c117, V1c124 |
+| Jia village (贾家寨) | north-east, on its own mountain | R V1c45 |
+| Hairy men | the western rainforest | R V2 |
+| Rotting swamp | south-east marsh | R V2c8-9 |
+| Wu Yi Mountain (武仪山) | east, by its river (ADAPTED: a Southern Border super clan drawn closer for a four-clan game) | R V5c300 |
+
+Inheritance Sites (ruins) and wild resources are placed by hand; the starting locations allow "Select players from
+starting locations". Autoplay on the map: 0 crashes, every clan alive at turn 250.
 
 ## Refinement ladder
 

@@ -596,7 +596,9 @@ dump("Policies.json", [
             # C2: the written three-village alliance (R V1c127); demonic clans can never pact
             "Enables Defensive Pacts"]},
         {"name": "Guardian Formations", "row": 2, "column": 2, "requires": ["Clan Rules"],
-         "uniques": ["[+25]% Strength for cities", "[+10]% Strength <when defending>"]},
+         # canon overhaul: +25% made every righteous village unassailable once all four clans started righteous (no
+         # war in 12 autoplay games); +10% leaves a war worth starting (3 of 12)
+         "uniques": ["[+10]% Strength for cities", "[+10]% Strength <when defending>"]},
         {"name": "Righteous Path Complete", "uniques": ["[-10]% maintenance costs",
                                                         "Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]"]}]},
     {"name": "Demonic Path", "era": E12, "priorities": {"Southern Border Supremacy": 6, "Endurance": 2}, "uniques": [
@@ -818,8 +820,8 @@ dump("Personalities.json", [
      "priorities": {"Moon Path": 10, "Righteous Path": 6},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions",
                  "Will not build [Flower Wine Monk Inheritance]"]},
-    {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 4, "aggressive": 6,
-     "declareWar": 7, "expansion": 7, "diplomacy": 3, "loyal": 3,
+    {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 6, "aggressive": 8,
+     "declareWar": 9, "expansion": 7, "diplomacy": 3, "loyal": 3, "preferredVictoryType": "Southern Border Supremacy",
      "priorities": {"Righteous Path": 8},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6, "declareWar": 5, "loyal": 2,

@@ -416,3 +416,17 @@
 * Autoplay (12 × 320 Prince; 12 × 200 King): 0 crashes; by the end 11 of 48 clans (Prince) and 6 of 48 (King) have
   turned demonic; clans 20+ turns in the red 15 of 48; 1.73 Gu deaths per clan per 100 turns (Xiong's pork Gu).
 * `tools/autoplay/Autoplay.java` logs adopted policy names.
+
+## Canon overhaul 5 — the Qing Mao Mountain map, livelier wars (2026-10-19)
+
+* `maps/Qing Mao Mountain` (D5): the canon setting as a premade map, 40 × 26: Bai by the deep pool on the back slope,
+  Gu Yue halfway up, Xiong on the front slope, ten spirit springs (one under each village, three contested), the
+  lightning-wolf nest, the Yellow Dragon tributary and the foothill villages, Jia on its own mountain, the hairy men's
+  rainforest, the rotting swamp and the Wu clan's Wu Yi Mountain to the east. Built by `tools/make_map.py` through
+  Unciv's own serializer (`tools/autoplay/MakeMap.java`), reproducible (fixed seed; a self-test checks it).
+* `tools/autoplay.py --map FILE`: autoplay on a premade map. 6 games × 250 turns on Qing Mao: 0 crashes, every clan
+  alive; Wu's springs moved next to its village after it found none in three games.
+* With every clan righteous the AI never went to war (0 of 12 games at Prince): Guardian Formations +25% → +10% city
+  strength (3 of 12 games with a war, 2 cities taken). Bai is the canon aggressor: declareWar 9, aggressive 8,
+  domination preferred.
+* `docs/TESTING.md`: how to pick the map on Android; `docs/KNOWN_ISSUES.md` item 11.

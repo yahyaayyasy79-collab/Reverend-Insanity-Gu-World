@@ -67,7 +67,8 @@ def config(mod: Path, args, seed: int) -> str:
     lines = [f"mod={args.mod_name}", f"turns={args.turns}", f"seed={seed}", f"difficulty={args.difficulty}",
              f"mapSize={args.map_size}", f"cityStates={args.city_states if args.city_states is not None else city_states}",
              f"speed={args.speed}", f"startingEra={eras[0]['name'] if eras else 'Ancient era'}",
-             f"strategicBalance={'false' if args.no_strategic_balance else 'true'}"]
+             f"strategicBalance={'false' if args.no_strategic_balance else 'true'}"] + (
+        [f"map={Path(args.map).resolve()}"] if args.map else [])
     lines += [f"major={m}" for m in majors] + [f"strategic={r}" for r in strategic]
     lines += [f"building={b['name']}" for b in load(mod, "Buildings.json")]
     lines += [f"gu={g}|{s}|{f}|{r}" for g, s, f, r in gus] + [f"fusion={g}" for g, _, _, r in gus if r >= 2]
@@ -209,6 +210,7 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--jobs", type=int, default=max(1, min(4, (os.cpu_count() or 2) // 2)))
     ap.add_argument("--difficulty", default="Prince")
     ap.add_argument("--speed", default="Standard")
+    ap.add_argument("--map", default=None, help="a map file (e.g. maps/Qing Mao Mountain) instead of a generated map")
     ap.add_argument("--map-size", default="Small", choices=["Tiny", "Small", "Medium", "Large", "Huge"])
     ap.add_argument("--city-states", type=int, default=None, help="default: every city-state nation of the mod")
     ap.add_argument("--no-strategic-balance", action="store_true")

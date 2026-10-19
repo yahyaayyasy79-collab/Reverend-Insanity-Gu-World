@@ -537,7 +537,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Righteous Path | `[+10]% Strength <vs [Demonic Infamy] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Clan Rules | `[-15]% Unhappiness from [Population] [in all cities]` | -15 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Righteous Alliance | `Gifts of Gold to City-States generate [+25]% more Influence` | +25 | tools/gen_ruleset.py `Policies` |
-| Righteous Path › Guardian Formations | `[+25]% Strength for cities` | +25 | tools/gen_ruleset.py `Policies` |
+| Righteous Path › Guardian Formations | `[+10]% Strength for cities` | +10 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Guardian Formations | `[+10]% Strength <when defending>` | +10 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Righteous Path Complete | `[-10]% maintenance costs` | -10 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Righteous Path Complete | `Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]` | 100 | tools/gen_ruleset.py `Policies` |
@@ -711,9 +711,9 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bai Temperament | gold | 7 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | production | 6 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | military | 4 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | declareWar | 7 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | aggressive | 8 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | declareWar | 9 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | expansion | 7 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | diplomacy | 3 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | loyal | 3 | tools/gen_ruleset.py `Nations` |

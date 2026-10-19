@@ -340,6 +340,19 @@ class LoreMapping(unittest.TestCase):
         self.assertEqual(missing, [], "jsons/ contains uniques LORE_MAPPING.md does not show")
 
 
+class MapFile(unittest.TestCase):
+    """maps/Qing Mao Mountain is what tools/make_map.py builds from its design (Unciv's own serializer, the jar)."""
+
+    def test_map_is_current(self):
+        import shutil
+        from common import REF_DIR, ref_tag
+        if not (shutil.which("java") and shutil.which("javac") and (REF_DIR / f"Unciv-{ref_tag()}.jar").exists()):
+            self.skipTest("needs java, javac and the release jar")
+        r = subprocess.run([sys.executable, str(REPO_ROOT / "tools" / "make_map.py"), "--check", "--quiet"],
+                           capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+
+
 class Autoplay(unittest.TestCase):
     """A short headless AI game on the mod must not crash (tools/autoplay.py, the release jar)."""
 

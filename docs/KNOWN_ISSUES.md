@@ -82,6 +82,10 @@ rest of the list is what a player or the next session should know before trustin
    signature clans train their own rank 2-4 units, drawn and animated in their signature path (Gu Yue moon, Bai
    water, Xiong strength, Wu wind); about 15% of their cultivators take another path and still look like the clan's.
    Every other cultivator uses the neutral rank units and the rank-one essence burst.
+11. **The AI clans are slow to go to war at Prince.** Unciv's AI attacks only when its units can take a city without
+   dying and its motivation clears trade, friendship and pact penalties [src `MotivationToAttackAutomation`]; with
+   every clan righteous the villages were unassailable (0 wars in 12 games). Guardian Formations now gives +10% city
+   strength, not +25% (3 of 12 games with a war); King plays more aggressively.
 10. **A Rank One may hold a path (C3).** It climbs that path's first rung only; the fusions wait for rank two. An
    unpathed D-grade Rank One still loses the Gu Yue emblem at once (canon), a D-grade Moon Master keeps it.
 
