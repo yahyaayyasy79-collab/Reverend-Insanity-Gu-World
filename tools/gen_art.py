@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, characters, glyphs, glyphs2, render3d  # noqa: E402
+from art import anims, characters, glyphs, glyphs2, pathart, render3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -78,7 +78,7 @@ def main(argv: list[str]) -> int:
     # texture, which costs texture swaps on phones (Images-and-Audio.md, "Multiple texture atlases")
     tiles = args.mod / "Images.Units" / "TileSets" / UNITSET / "Units"
     written, kept, sheet = 0, [], []
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2:
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons():
         im = draw().image(INK[ink])
         circle = {"NationIcons": (30, 40, 90), "UnitPromotionIcons": (60, 110, 60), "TechIcons": (40, 90, 140),
                   "PolicyIcons": (120, 60, 120), "PolicyBranchIcons": (90, 40, 100), "CityStateIcons": (110, 90, 40)}.get(

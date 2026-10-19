@@ -309,37 +309,8 @@ LW_IMPOSSIBLE = ["<for units with [Liquor Worm]>", "<when below [1] [Wine]>", "<
 PROMO_DEAD = [f"{d} {c}" for d in LADDER_DEAD + RO_DEAD for c in LW_IMPOSSIBLE if not (RANK1 in d and c == RANK2)]
 
 
-# R3 hunger meter (the user's design). A Gu whose food is in deficit is first WEAKENED: its effects carry
-# <when above [-1] [food]> and switch off (the engine adds its own -25% missing-resource malus [src BattleDamage]).
-# At the first turn start in deficit the unit gets a timed hunger status (one per food); if the food is still short when
-# the status runs out, the Gu dies with the death chance of data/hunger.csv (R4, the user's option B: no mass death, because the
-# civ's resource count is not refreshed between units [src]); a survivor gets the status again at the next turn start.
-# The status is removed early, harmlessly, once the food is back. Statuses tick down at the end of startTurn, after the
-# triggers [src UnitTurnManager.startTurn], so a status of N turns runs out at the (N-1)th turn start after the first:
-# rank-1 Gu (eat often in canon) roll after 2 turns and then every 3, rank-2 Gu after 4 and then every 5. The roll is
-# seeded per unit (name, tile, movement) and turn [src Conditionals.getStateBasedRandom, GameContext.hashCode].
-HUNGER = {r["food"]: r["hunger_status"] for r in table("gu_foods.csv")}
-HUNGER_RANKS = {int(r["rank"]): (int(r["status_turns"]), int(r["death_chance"])) for r in table("hunger.csv")}
-
-
-def fed(unique, food):
-    """The Gu's effect works only while its food is not in deficit (WEAKENED otherwise)."""
-    return f"{unique} <when above [-1] [{food}]>"
-
-
-def hunger(gu, food, rank):
-    status = HUNGER[food]
-    turns, chance = HUNGER_RANKS[rank]
-    return [f"[This Unit] gains the [{status}] status for [{turns}] turn(s) <upon turn start> <when below [0] [{food}]> <for units without [{status}]>",
-            f"[This Unit] loses the [{gu}] promotion <upon losing the [{status}] status> <when below [0] [{food}]> "
-            f"<with [{chance}]% chance>"]
-
-
-def gu_promotion(r):
-    """data/gu.csv: effects work only while fed (fed()), then the food, the hunger meter, the extra uniques."""
-    return {"name": r["name"], "uniques": [fed(e, r["food"]) for e in items(r["effects"])]
-            + [f"Consumes [{r['eats']}] [{r['food']}]"] + hunger(r["name"], r["food"], int(r["rank"]))
-            + items(r["extra_uniques"])}
+# R3 hunger meter: tools/gu_rules.py (shared with the path Gu of tools/gen_paths.py).
+from gu_rules import HUNGER, gu_promotion  # noqa: E402
 
 
 def ladder(base, fusion, tusk):
@@ -389,7 +360,7 @@ dump("UnitPromotions.json", [
 ] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
      for food, status in HUNGER.items()]
     # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
-    + gen_paths.promotions(GM_TYPES))
+    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions())
 
 # ---------------- Events (9: the spec's 5 + wild Gu and inheritances, R6) ----------------
 BAI = "<for [Bai Clan] Civilizations>"

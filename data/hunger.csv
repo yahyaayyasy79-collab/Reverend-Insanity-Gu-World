@@ -1,3 +1,5 @@
 rank,status_turns,death_chance,note
 1,3,50,"status_turns N: the first death roll comes N-1 turns after the first turn start in deficit, then every N turns"
 2,5,50,"the user's tuning rule: the autoplay's rank-1 hunger death rate decides whether rank 1 rises to 4 or 5"
+3,7,50,"rank-3 and rank-4 rows: path Gu (data/path_gu.csv) that eat a Gu food; the meter grows two turns per rank"
+4,9,50,""

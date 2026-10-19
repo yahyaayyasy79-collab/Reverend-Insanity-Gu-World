@@ -373,3 +373,23 @@
 * The Wu chain (ranks 2-4) is redrawn: gust rings around the robe, a whirl over the palm, a sage-green portrait robe,
   a whirlwind attack effect and the whoosh sound.
 * Autoplay check (6 games × 150 turns, Prince): 23 of Wu's 27 cultivators on the wind path (85%), 0 crashes.
+
+## Canon overhaul 3 — one Gu per path, and every path icon designed (2026-10-19)
+
+* The user's decision D2: every path has its Gu, granted with the Master. `data/path_gu.csv` (48 rows): the canon
+  mortal Gu from the source research (35 canon; Illusion, Pill, Moon and Food adapted; Shadow, Enchantment, Phantom,
+  Restriction, Refinement and Painting borrow the nearest canon Gu as ADAPTED; Weapon and Killing get INVENTED Gu,
+  the Armoury Gu and the Killing Intent Gu). Moon keeps the Moonlight Gu, Strength the White Boar Gu, Food the Liquor
+  Worm at rank one and the canon Four Flavours Liquor Worm above it.
+* A Master hands its Gu to the unit at a turn start once the unit's rank reaches the Gu's (a rank-5 Gu at rank four
+  until the immortal arc) and, for a Gu that eats a Gu food, while that food is in surplus; a starved Gu comes back
+  when the food does. Effects follow each Gu's canon use; four eat a Gu food (Bone Spear, Blood Skull, Sole Blade,
+  Illusory Moon) and starve on the hunger meter (`data/hunger.csv` gains ranks 3 and 4: 7 and 9 turns), the rest cost
+  +10% upkeep in stones, and the Heavenly Essence Treasure Lotus pays for its keeper (-20% upkeep).
+* `tools/gu_rules.py`: the hunger meter and Gu promotion rules, shared by `gen_ruleset.py` and `gen_paths.py`.
+  `docs/PATHS.md` "Path Gu" table (generated); `docs/BALANCE.md` lists the path Gu knobs.
+* Art (D6): `tools/art/pathart.py` draws one symbol per path and composes every path icon: 47 Masters, 47
+  Grandmasters (ringed), 47 killer-move statuses (with a burst), 45 path Gu (with a Gu beetle) and the 5 signature
+  statuses. No placeholder icon is left (297 designed icons); the icon atlas still fits one page.
+* Autoplay (12 games × 320 turns, Prince): 17 of 48 clans 20+ turns in the red (C3 batches: 18 and 12), treasury at
+  turn 320 140 stones (111, 122), 1.28 Gu deaths per clan per 100 turns (0.79), 0 crashes.

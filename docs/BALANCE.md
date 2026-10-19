@@ -698,7 +698,7 @@ No tunable numbers.
 
 ### Paths (tools/gen_paths.py)
 
-Every path promotion is built from these knobs; the hidden conflict lines follow data/path_conflicts.csv (an exact pair wins, then the milder of the two paths' `x,*` rows, then `*,*`).
+Every path promotion and path Gu is built from these knobs; the hidden conflict lines follow data/path_conflicts.csv (an exact pair wins, then the milder of the two paths' `x,*` rows, then `*,*`).
 
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
@@ -782,6 +782,95 @@ Every path promotion is built from these knobs; the hidden conflict lines follow
 | Human Master | `All adjacent units heal [10] HP when healing` | 10 | data/paths.csv `signature` |
 | Painting Master | `[+20]% Strength <when fighting in [Friendly Land] tiles>` | +20 | data/paths.csv `signature` |
 | Theft Master | `Earn [50]% of killed [Military] unit's [Cost] as [Gold]` | 50 | data/paths.csv `signature` |
+| Roaming Zombie Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
+| Roaming Zombie Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Bone Spear Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Bone Spear Gu | eats Wild Boar | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Blood Skull Gu | `[+25]% XP gained from combat` | +25 | data/path_gu.csv `effects` |
+| Blood Skull Gu | eats Wild Boar | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Sword Shadow Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Sword Shadow Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Sole Blade Gu | `[+25]% Strength <when attacking> <with [50]% chance>` | +25, 50 | data/path_gu.csv `effects` |
+| Sole Blade Gu | eats Jade | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Bronze Skin Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
+| Bronze Skin Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Armoury Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Armoury Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Killing Intent Gu | `[+20]% Strength <vs [Wounded] units>` | +20 | data/path_gu.csv `effects` |
+| Killing Intent Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Fiery Claw Gu | `[Target Unit] takes [5] damage <upon damaging a [Military] unit>` | 5 | data/path_gu.csv `effects` |
+| Fiery Claw Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Water Shield Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
+| Water Shield Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Heavenly Essence Treasure Lotus | `[-20]% maintenance costs` | -20 | data/path_gu.csv `effects` |
+| Gruel Mud Gu | `[+15]% Strength <when fighting in [Hill] tiles>` | +15 | data/path_gu.csv `effects` |
+| Gruel Mud Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Whirlwind Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Whirlwind Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Flying Cloud Gu | `[1] Movement` | 1 | data/path_gu.csv `effects` |
+| Flying Cloud Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Frost Demon Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Frost Demon Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Thunderclap Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Thunderclap Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Poison Scorpion Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Poison Scorpion Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Little Light Gu | `[1] Sight` | 1 | data/path_gu.csv `effects` |
+| Little Light Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Shadow Follower Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Shadow Follower Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Overlapping Shadow Gu | `[+20]% Strength <when attacking>` | +20 | data/path_gu.csv `effects` |
+| Overlapping Shadow Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Star Dart Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Star Dart Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Heaven Earth Magnificent Sound Gu | `[+20]% Strength <when attacking>` | +20 | data/path_gu.csv `effects` |
+| Heaven Earth Magnificent Sound Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Illusory Moon Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
+| Illusory Moon Gu | eats Moon Orchid | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Clear Mind Gu | `[+20]% XP gained from combat` | +20 | data/path_gu.csv `effects` |
+| Clear Mind Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Emotion Poetry Gu | `[+15]% Strength <when below [50] HP>` | +15, 50 | data/path_gu.csv `effects` |
+| Emotion Poetry Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Estrus Gu | `[+15]% Strength <vs [Barbarians] units>` | +15 | data/path_gu.csv `effects` |
+| Estrus Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Soul Search Gu | `[+25]% XP gained from combat` | +25 | data/path_gu.csv `effects` |
+| Soul Search Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Dream Pillow Gu | `[10] HP when healing` | 10 | data/path_gu.csv `effects` |
+| Dream Pillow Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Wolf Enslavement Gu | `[+15]% Strength <vs [Barbarians] units>` | +15 | data/path_gu.csv `effects` |
+| Wolf Enslavement Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Man as Before Gu | `[20] HP when healing` | 20 | data/path_gu.csv `effects` |
+| Man as Before Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Warp Gu | `[1] Movement` | 1 | data/path_gu.csv `effects` |
+| Warp Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Amplify Effect Gu | `[+10]% Strength` | +10 | data/path_gu.csv `effects` |
+| Amplify Effect Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Turn Phantom Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
+| Turn Phantom Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Primeval Break Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
+| Primeval Break Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Luck Inspection Gu | `[1] Sight` | 1 | data/path_gu.csv `effects` |
+| Luck Inspection Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Lifespan Gu | `[10] HP when healing` | 10 | data/path_gu.csv `effects` |
+| Lifespan Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Strength Qi Gu | `[+15]% Strength` | +15 | data/path_gu.csv `effects` |
+| Strength Qi Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Revert Gu | `[+10]% Strength` | +10 | data/path_gu.csv `effects` |
+| Revert Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Formation Heart Gu | `[+10]% Strength bonus for [Military] units within [1] tiles` | +10, 1 | data/path_gu.csv `effects` |
+| Formation Heart Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Four Flavours Liquor Worm | `[+50]% XP gained from combat` | +50 | data/path_gu.csv `effects` |
+| Four Flavours Liquor Worm | eats Wine | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Pill Refiner Gu | `[10] HP when healing` | 10 | data/path_gu.csv `effects` |
+| Pill Refiner Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Flying Sword Letter Gu | `[1] Sight` | 1 | data/path_gu.csv `effects` |
+| Flying Sword Letter Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Relic Gu | `[+25]% XP gained from combat` | +25 | data/path_gu.csv `effects` |
+| Relic Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Painting Idea Gu | `[+15]% Strength <when fighting in [Friendly Land] tiles>` | +15 | data/path_gu.csv `effects` |
+| Painting Idea Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Plunder Gu | `Earn [25]% of killed [Military] unit's [Cost] as [Gold]` | 25 | data/path_gu.csv `effects` |
+| Plunder Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
 | Poisoned | `[This Unit] takes [10] damage <upon turn start>` | 10 | data/path_statuses.csv `uniques` |
 | Charmed | `[-25]% Strength <when attacking>` | -25 | data/path_statuses.csv `uniques` |
 | Phantom Veil | `[+50]% Strength <when defending>` | +50 | data/path_statuses.csv `uniques` |
@@ -791,6 +880,6 @@ Every path promotion is built from these knobs; the hidden conflict lines follow
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-615 numbers listed.
+704 numbers listed.
 
 <!-- inventory:end -->

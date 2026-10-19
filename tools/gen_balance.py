@@ -78,7 +78,7 @@ class Source:
         self.gm = {r["name"] for r in table("gu_masters.csv")}
         # C3: clan units copy their rank's row (gen_ruleset asserts it) and legacy units only bridge old saves
         self.copies = {r["name"] for r in table("gu_masters.csv") if r["uniqueTo"] or r["legacyPath"]}
-        self.paths = {p["name"] for p in gen_paths.promotions([])}
+        self.paths = {p["name"] for p in gen_paths.promotions([]) + gen_paths.gu_promotions()}
         self.gu = {r["name"] for r in table("gu.csv")}
 
     def __call__(self, file: str, obj: str, what: str) -> str:
@@ -189,6 +189,14 @@ def path_rows() -> list[tuple[str, str, str, str]]:
         if numbers(p["signature"]):
             rows.append((f"{p['name']} Master", code(p["signature"]), ", ".join(numbers(p["signature"])),
                          "data/paths.csv `signature`"))
+    for gu in (g for g in gen_paths.PATH_GU if gen_paths.new_gu(g)):
+        for u in gen_paths.split(gu["effects"]):
+            if numbers(u):
+                rows.append((gu["name"], code(u), ", ".join(numbers(u)), "data/path_gu.csv `effects`"))
+        if gu["food"]:
+            rows.append((gu["name"], f"eats {gu['food']}", gu["eats"], "data/path_gu.csv `eats` (hunger: data/hunger.csv)"))
+        elif gu["upkeep"] != "0":
+            rows.append((gu["name"], code(f"[+{gu['upkeep']}]% maintenance costs"), f"+{gu['upkeep']}", "data/path_gu.csv `upkeep`"))
     for st in gen_paths.STATUSES:
         for u in gen_paths.split(st.get("uniques", "")):
             if numbers(u):
@@ -234,7 +242,7 @@ def inventory() -> str:
     rows = path_rows()
     total += len(rows)
     out += ["### Paths (tools/gen_paths.py)", "",
-            "Every path promotion is built from these knobs; the hidden conflict lines follow data/path_conflicts.csv "
+            "Every path promotion and path Gu is built from these knobs; the hidden conflict lines follow data/path_conflicts.csv "
             "(an exact pair wins, then the milder of the two paths' `x,*` rows, then `*,*`).", "",
             "| Object | Field or unique | Value | Edit in |", "|---|---|---|---|"]
     out += [f"| {o} | {w} | {v} | {s} |" for o, w, v, s in rows]

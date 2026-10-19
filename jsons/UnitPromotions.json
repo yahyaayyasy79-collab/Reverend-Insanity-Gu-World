@@ -354,6 +354,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [White Boar Gu] promotion <upon turn start> <for units without [White Boar Gu]> <for units without [White Jade Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>"
@@ -453,6 +454,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Roaming Zombie Gu] promotion <upon turn start> <for units without [Roaming Zombie Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -550,6 +552,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Bone Spear Gu] promotion <upon turn start> <for units without [Bone Spear Gu]> <when above [0] [Wild Boar]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -646,6 +649,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Blood Skull Gu] promotion <upon turn start> <for units without [Blood Skull Gu]> <for [Rank Four era] units> <when above [0] [Wild Boar]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -741,6 +745,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Sword Shadow Gu] promotion <upon turn start> <for units without [Sword Shadow Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -835,6 +840,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Sole Blade Gu] promotion <upon turn start> <for units without [Sole Blade Gu]> <for [Rank Four era] units> <when above [0] [Jade]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -928,6 +934,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Bronze Skin Gu] promotion <upon turn start> <for units without [Bronze Skin Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1020,6 +1027,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Armoury Gu] promotion <upon turn start> <for units without [Armoury Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1111,6 +1119,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Killing Intent Gu] promotion <upon turn start> <for units without [Killing Intent Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1201,6 +1210,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Fiery Claw Gu] promotion <upon turn start> <for units without [Fiery Claw Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1291,6 +1301,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Water Shield Gu] promotion <upon turn start> <for units without [Water Shield Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>"
@@ -1381,6 +1392,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Heavenly Essence Treasure Lotus] promotion <upon turn start> <for units without [Heavenly Essence Treasure Lotus]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1469,6 +1481,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Gruel Mud Gu] promotion <upon turn start> <for units without [Gruel Mud Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1556,6 +1569,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Whirlwind Gu] promotion <upon turn start> <for units without [Whirlwind Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
@@ -1643,6 +1657,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Flying Cloud Gu] promotion <upon turn start> <for units without [Flying Cloud Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1728,6 +1743,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Frost Demon Gu] promotion <upon turn start> <for units without [Frost Demon Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1811,6 +1827,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Thunderclap Gu] promotion <upon turn start> <for units without [Thunderclap Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1894,6 +1911,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Poison Scorpion Gu] promotion <upon turn start> <for units without [Poison Scorpion Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1975,6 +1993,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Little Light Gu] promotion <upon turn start> <for units without [Little Light Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2055,6 +2074,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Shadow Follower Gu] promotion <upon turn start> <for units without [Shadow Follower Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2135,6 +2155,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Overlapping Shadow Gu] promotion <upon turn start> <for units without [Overlapping Shadow Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -2216,6 +2237,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Star Dart Gu] promotion <upon turn start> <for units without [Star Dart Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2294,6 +2316,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Moonlight Gu] promotion <upon turn start> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
@@ -2372,6 +2395,7 @@
       "[-5]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Heaven Earth Magnificent Sound Gu] promotion <upon turn start> <for units without [Heaven Earth Magnificent Sound Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2448,6 +2472,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Illusory Moon Gu] promotion <upon turn start> <for units without [Illusory Moon Gu]> <for [non-[Rank One-Two era]] units> <when above [0] [Moon Orchid]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2519,6 +2544,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Clear Mind Gu] promotion <upon turn start> <for units without [Clear Mind Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2591,6 +2617,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Emotion Poetry Gu] promotion <upon turn start> <for units without [Emotion Poetry Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -2665,6 +2692,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Estrus Gu] promotion <upon turn start> <for units without [Estrus Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -2738,6 +2766,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Soul Search Gu] promotion <upon turn start> <for units without [Soul Search Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2808,6 +2837,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Dream Pillow Gu] promotion <upon turn start> <for units without [Dream Pillow Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2877,6 +2907,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Wolf Enslavement Gu] promotion <upon turn start> <for units without [Wolf Enslavement Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2945,6 +2976,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Man as Before Gu] promotion <upon turn start> <for units without [Man as Before Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3012,6 +3044,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Warp Gu] promotion <upon turn start> <for units without [Warp Gu]> <for [Rank Four era] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3076,6 +3109,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Amplify Effect Gu] promotion <upon turn start> <for units without [Amplify Effect Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3141,6 +3175,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Turn Phantom Gu] promotion <upon turn start> <for units without [Turn Phantom Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -3207,6 +3242,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Primeval Break Gu] promotion <upon turn start> <for units without [Primeval Break Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -3272,6 +3308,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Luck Inspection Gu] promotion <upon turn start> <for units without [Luck Inspection Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3334,6 +3371,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Lifespan Gu] promotion <upon turn start> <for units without [Lifespan Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3395,6 +3433,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Strength Qi Gu] promotion <upon turn start> <for units without [Strength Qi Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3455,6 +3494,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Revert Gu] promotion <upon turn start> <for units without [Revert Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3515,6 +3555,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Formation Heart Gu] promotion <upon turn start> <for units without [Formation Heart Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3574,6 +3615,8 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Liquor Worm] promotion <upon turn start> <for units without [Liquor Worm]> <for [Rank One Gu Master] units> <when above [0] [Wine]>",
+      "[This Unit] gains the [Four Flavours Liquor Worm] promotion <upon turn start> <for units without [Four Flavours Liquor Worm]> <for [non-[Rank One Gu Master]] units> <when above [0] [Wine]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3632,6 +3675,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Pill Refiner Gu] promotion <upon turn start> <for units without [Pill Refiner Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3689,6 +3733,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Flying Sword Letter Gu] promotion <upon turn start> <for units without [Flying Sword Letter Gu]> <for [non-[Rank One-Two era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3744,6 +3789,7 @@
       "[+10]% Strength",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Relic Gu] promotion <upon turn start> <for units without [Relic Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3800,6 +3846,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Painting Idea Gu] promotion <upon turn start> <for units without [Painting Idea Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3855,6 +3902,7 @@
       "[+10]% Strength",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
+      "[This Unit] gains the [Plunder Gu] promotion <upon turn start> <for units without [Plunder Gu]> <for [non-[Rank One Gu Master]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3950,6 +3998,555 @@
     "civilopediaText": [
       {
         "text": "A mind-path move has shaken the unit's resolve: weaker in battle."
+      }
+    ]
+  },
+  {
+    "name": "Roaming Zombie Gu",
+    "uniques": [
+      "[+15]% Strength <when defending>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Roaming Zombie Gu (游僵蛊) turns its user into a walking corpse that feels no pain and shrugs off blows, weaker by daylight. Used too long, the change stays."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spear Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking> <when above [-1] [Wild Boar]>",
+      "Consumes [1] [Wild Boar]",
+      "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
+      "[This Unit] loses the [Bone Spear Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone Spear Gu (骨枪蛊) fires a small spinning spike of bone, the bone path's answer to the moon blade. In canon it drinks milk; here it eats pork."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu",
+    "uniques": [
+      "[+25]% XP gained from combat <when above [-1] [Wild Boar]>",
+      "Consumes [1] [Wild Boar]",
+      "[This Unit] gains the [Pork Hunger] status for [9] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
+      "[This Unit] loses the [Blood Skull Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Skull Gu (血颅蛊) drinks the blood of the slain and turns it into essence that raises its user's aptitude, one of the Blood Sea Ancestor's true inheritances."
+      }
+    ]
+  },
+  {
+    "name": "Sword Shadow Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword Shadow Gu (剑影蛊) sends out the shadow of a sword, counted among the strongest rank-three attack Gu."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu",
+    "uniques": [
+      "[+25]% Strength <when attacking> <with [50]% chance> <when above [-1] [Jade]>",
+      "Consumes [1] [Jade]",
+      "[This Unit] gains the [Jade Hunger] status for [9] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
+      "[This Unit] loses the [Sole Blade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sole Blade Gu (单刀蛊) lives on a blade as a gleam of edge-light and can cut through a defence of its own rank, then needs long rest. It wears its blade away; here it eats jade."
+      }
+    ]
+  },
+  {
+    "name": "Bronze Skin Gu",
+    "uniques": [
+      "[+15]% Strength <when defending>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bronze Skin Gu (铜皮蛊) coats the body in a bronze glow that turns blows aside, a close fighter's defence from the skin series."
+      }
+    ]
+  },
+  {
+    "name": "Armoury Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Armoury Gu shapes its user's essence into whatever weapon the fight needs. The weapon path is young and canon names no mortal Gu for it; this one is the mod's invention."
+      }
+    ]
+  },
+  {
+    "name": "Killing Intent Gu",
+    "uniques": [
+      "[+20]% Strength <vs [Wounded] units>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Killing Intent Gu sharpens at the scent of a wounded enemy. The killing path is still forming in canon and has no mortal Gu; this one is the mod's invention."
+      }
+    ]
+  },
+  {
+    "name": "Fiery Claw Gu",
+    "uniques": [
+      "[Target Unit] takes [5] damage <upon damaging a [Military] unit>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fiery Claw Gu (火爪蛊) hurls a great three-fingered claw of flame; several claws can merge into a bigger blaze."
+      }
+    ]
+  },
+  {
+    "name": "Water Shield Gu",
+    "uniques": [
+      "[+15]% Strength <when defending>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Shield Gu (水罩蛊) wraps its user in a sphere of moving water that turns blows aside; it fails only when pinned against a wall."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Essence Treasure Lotus",
+    "uniques": [
+      "[-20]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Essence Treasure Lotus (天元宝莲) is a flower Gu that works like a pocket spirit spring, yielding primeval stones day after day; it pays for its keeper."
+      }
+    ]
+  },
+  {
+    "name": "Gruel Mud Gu",
+    "uniques": [
+      "[+15]% Strength <when fighting in [Hill] tiles>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gruel Mud Gu (和稀泥蛊) softens earth into mud; common at low ranks, and used to raise whole towns."
+      }
+    ]
+  },
+  {
+    "name": "Whirlwind Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Whirlwind Gu (旋风蛊) gives a short burst of speed and puts its momentum behind every strike."
+      }
+    ]
+  },
+  {
+    "name": "Flying Cloud Gu",
+    "uniques": [
+      "[1] Movement",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Cloud Gu (腾云蛊) lifts its user high on a cloud: a good climber, a poor turner."
+      }
+    ]
+  },
+  {
+    "name": "Frost Demon Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Frost Demon Gu (霜妖蛊) turns the arm into frosty ice for a piercing palm-blade; used too often, it hurts the joints."
+      }
+    ]
+  },
+  {
+    "name": "Thunderclap Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Thunderclap Gu (炸雷蛊) spits a fast, bursting thunderball, but never twice in a row. One was found on a lightning wolf king."
+      }
+    ]
+  },
+  {
+    "name": "Poison Scorpion Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Poison Scorpion Gu (毒蝎蛊) stings to hold a slow poison in check: its victims need a new sting every seven days, which makes them obedient servants."
+      }
+    ]
+  },
+  {
+    "name": "Little Light Gu",
+    "uniques": [
+      "[1] Sight",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Little Light Gu (小光蛊), a famous rank-one light Gu: it lights up the area and doubles the size of a moon blade."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Follower Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow Follower Gu (幽影随行蛊) cloaks its user in darkness; a flash of light breaks the cloak, and the Gu must rest."
+      }
+    ]
+  },
+  {
+    "name": "Overlapping Shadow Gu",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Overlapping Shadow Gu (叠影蛊) layers shadow over shadow to strengthen an attack Gu. Canon files it under the dark path; the young shadow path borrows it here."
+      }
+    ]
+  },
+  {
+    "name": "Star Dart Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star Dart Gu (星镖蛊), the commonest star Gu, throws a dart of starlight; hundreds of them make a star killer move."
+      }
+    ]
+  },
+  {
+    "name": "Heaven Earth Magnificent Sound Gu",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven Earth Magnificent Sound Gu (天地宏音蛊) looses a wide wave of sound for mass kills; long use can strip its user's voice."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu",
+    "uniques": [
+      "[+15]% Strength <when defending> <when above [-1] [Moon Orchid]>",
+      "Consumes [1] [Moon Orchid]",
+      "[This Unit] gains the [Orchid Hunger] status for [7] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
+      "[This Unit] loses the [Illusory Moon Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illusory Moon Gu (幻影月蛊) makes an illusory double that draws attacks and confuses the enemy, a Gu Yue fusion of the moonlight line that eats moon orchids by the handful."
+      }
+    ]
+  },
+  {
+    "name": "Clear Mind Gu",
+    "uniques": [
+      "[+20]% XP gained from combat",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Clear Mind Gu (神清蛊) enters the head like a breeze, clearing and steadying the mind for deduction."
+      }
+    ]
+  },
+  {
+    "name": "Emotion Poetry Gu",
+    "uniques": [
+      "[+15]% Strength <when below [50] HP>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Emotion Poetry Gu (诗情蛊) stores a single emotion for later use; rare and costly."
+      }
+    ]
+  },
+  {
+    "name": "Estrus Gu",
+    "uniques": [
+      "[+15]% Strength <vs [Barbarians] units>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Estrus Gu (发情蛊) bursts into a pink powder that drives beasts to breed, used to grow enslaved herds. Canon lists it in the emotion line from which enchantment split."
+      }
+    ]
+  },
+  {
+    "name": "Soul Search Gu",
+    "uniques": [
+      "[+25]% XP gained from combat",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul Search Gu (搜魂蛊) reads part of a captive's memories from his soul; the results are patchy, and overuse clouds the searcher's own mind."
+      }
+    ]
+  },
+  {
+    "name": "Dream Pillow Gu",
+    "uniques": [
+      "[10] HP when healing",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream Pillow Gu (梦枕蛊), set under the pillow, lets an ordinary Gu Master walk into his own dream realm to gather dream materials."
+      }
+    ]
+  },
+  {
+    "name": "Wolf Enslavement Gu",
+    "uniques": [
+      "[+15]% Strength <vs [Barbarians] units>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wolf Enslavement Gu (驭狼蛊), planted in a wolf's soul, makes it obey for life; higher ranks hold a thousand-wolf or a ten-thousand-wolf king."
+      }
+    ]
+  },
+  {
+    "name": "Man as Before Gu",
+    "uniques": [
+      "[20] HP when healing",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Man as Before Gu (人如故蛊) turns a body back to its state of a short while ago, a near-complete healing."
+      }
+    ]
+  },
+  {
+    "name": "Warp Gu",
+    "uniques": [
+      "[1] Movement",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Warp Gu (挪移蛊) tears space to move its user's body away; frequent use twists flesh and bone."
+      }
+    ]
+  },
+  {
+    "name": "Amplify Effect Gu",
+    "uniques": [
+      "[+10]% Strength",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Amplify Effect Gu (功倍蛊) multiplies the effect of another Gu, at a higher essence cost."
+      }
+    ]
+  },
+  {
+    "name": "Turn Phantom Gu",
+    "uniques": [
+      "[+15]% Strength <when defending>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Turn Phantom Gu (弄虚蛊) makes a solid thing insubstantial, so attacks pass through it. Canon does not give its rank."
+      }
+    ]
+  },
+  {
+    "name": "Primeval Break Gu",
+    "uniques": [
+      "[+15]% Strength <when attacking>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Primeval Break Gu (断元蛊) cuts a wild Gu off from primeval energy. Canon does not give its rank."
+      }
+    ]
+  },
+  {
+    "name": "Luck Inspection Gu",
+    "uniques": [
+      "[1] Sight",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Luck Inspection Gu (察运蛊) shows the colour of a person's luck; the series reaches rank five."
+      }
+    ]
+  },
+  {
+    "name": "Lifespan Gu",
+    "uniques": [
+      "[10] HP when healing",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lifespan Gu (寿蛊) adds a set number of years of life: ten, a hundred, more. The heaven path rules them."
+      }
+    ]
+  },
+  {
+    "name": "Strength Qi Gu",
+    "uniques": [
+      "[+15]% Strength",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Strength Qi Gu (力气蛊) is a formless qi of strength that doubles or triples its user's battle strength for a while."
+      }
+    ]
+  },
+  {
+    "name": "Revert Gu",
+    "uniques": [
+      "[+10]% Strength",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Revert Gu (幡然蛊) turns a fused Gu back into one of its ingredients, so a failed plan can be unpicked. Canon does not give its rank."
+      }
+    ]
+  },
+  {
+    "name": "Formation Heart Gu",
+    "uniques": [
+      "[+10]% Strength bonus for [Military] units within [1] tiles",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation Heart Gu (阵心蛊) is the core of a Gu formation; every other Gu in it circles around it."
+      }
+    ]
+  },
+  {
+    "name": "Four Flavours Liquor Worm",
+    "uniques": [
+      "[+50]% XP gained from combat <when above [-1] [Wine]>",
+      "Consumes [1] [Wine]",
+      "[This Unit] gains the [Wine Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>",
+      "[This Unit] loses the [Four Flavours Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Four Flavours Liquor Worm (四味酒虫), refined from two Liquor Worms and four wines (sour, sweet, bitter, spicy), does for rank-two essence what the Liquor Worm does for rank one."
+      }
+    ]
+  },
+  {
+    "name": "Pill Refiner Gu",
+    "uniques": [
+      "[10] HP when healing",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pill Refiner Gu (炼丹师蛊) becomes a pill-refiner clone that refines pill Gu; canon calls it a human-path recipe born from a pill-path inheritance."
+      }
+    ]
+  },
+  {
+    "name": "Flying Sword Letter Gu",
+    "uniques": [
+      "[1] Sight",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Sword Letter Gu (飞剑传书蛊) is a sword-shaped messenger that carries a letter very fast."
+      }
+    ]
+  },
+  {
+    "name": "Relic Gu",
+    "uniques": [
+      "[+25]% XP gained from combat",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Relic Gu (舍利蛊) raises a Gu Master by one small stage; there is one kind for every rank, green copper to purple crystal."
+      }
+    ]
+  },
+  {
+    "name": "Painting Idea Gu",
+    "uniques": [
+      "[+15]% Strength <when fighting in [Friendly Land] tiles>",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Painting Idea Gu (画意蛊) turns a sight into a scene etched in memory. Canon files it under wisdom; only its name points to painting."
+      }
+    ]
+  },
+  {
+    "name": "Plunder Gu",
+    "uniques": [
+      "Earn [25]% of killed [Military] unit's [Cost] as [Gold]",
+      "[+10]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Plunder Gu (强取蛊) tears a Gu away from an enemy while its user stands still; the odds are low, and failure strikes back."
       }
     ]
   }

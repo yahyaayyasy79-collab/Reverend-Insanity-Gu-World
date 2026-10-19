@@ -52,6 +52,15 @@ PATHS = table("paths.csv")
 FAMILIES = {r["family"]: r for r in table("path_families.csv")}
 STATUSES = table("path_statuses.csv")
 KEY = {p["key"]: p for p in PATHS}
+# D2 (the user, 2026-10-19): one Gu per path, granted with the Master. Rows with no name_id are Slice 1 Gu that
+# already exist (Moonlight Gu, White Boar Gu, Liquor Worm); the rest are new promotions built here.
+PATH_GU = table("path_gu.csv")
+GU_OF = {p["key"]: [g for g in PATH_GU if g["path"] == p["key"]] for p in PATHS}
+assert all(GU_OF.values()), "every path needs its Gu (data/path_gu.csv)"
+# a Gu of rank r needs a unit of rank r (the rank-5 Gu wait at rank four until the immortal arc; ADAPTED); a unit's
+# era is its required tech's era [src BaseUnit.matchesFilter]
+RANK_GATE = {1: "", 2: "<for [non-[Rank One Gu Master]] units>", 3: "<for [non-[Rank One-Two era]] units>",
+             4: "<for [Rank Four era] units>", 5: "<for [Rank Four era] units>"}
 assert len({p["signature"] for p in PATHS}) == len(PATHS), "two paths share a signature unique"
 ROOTS = sum(1 for p in PATHS if not p["parent"])
 SIGNATURE_WEIGHT = round((SIGNATURE_SHARE / (1 - SIGNATURE_SHARE) * (ROOTS - 1) - 1) * 100)
@@ -99,10 +108,37 @@ def move_uniques(p: dict, immortal: bool = False) -> list[str]:
     return [u.replace("{n}", name) for u in split(FAMILIES[p["family"]]["immortal_uniques" if immortal else "mortal_uniques"])]
 
 
+def grant(g: dict) -> str:
+    """The Master hands its path's Gu to the unit at a turn start, once the unit's rank and the Gu's food allow; a Gu
+    that starved comes back only when its food is in surplus again."""
+    gates = [g["gate"] or RANK_GATE[int(g["rank"])]] + ([f"<when above [0] [{g['food']}]>"] if g["food"] else [])
+    return " ".join([f"[This Unit] gains the [{g['name']}] promotion <upon turn start> <for units without [{g['name']}]>"]
+                    + [x for x in gates if x])
+
+
+def new_gu(g: dict) -> bool:
+    return bool(g["name_id"])
+
+
+def gu_promotions() -> list[dict]:
+    """The new path Gu: a food eater follows the Slice 1 hunger meter (tools/gu_rules.py), the others eat stones."""
+    from gu_rules import gu_promotion, items
+    out = []
+    for g in (g for g in PATH_GU if new_gu(g)):
+        if g["food"]:
+            d = gu_promotion({**g, "rank": str(min(int(g["rank"]), 4)), "extra_uniques": ""})
+        else:
+            d = {"name": g["name"], "uniques": items(g["effects"])
+                 + ([f"[+{g['upkeep']}]% maintenance costs"] if g["upkeep"] != "0" else [])}
+        d["civilopediaText"] = [{"text": g["pedia"]}]
+        out.append(d)
+    return out
+
+
 def tier_uniques(p: dict, t: int) -> list[str]:
     u = [f"[+{TIER_STRENGTH[t]}]% Strength"]
     if t == 0:
-        u = [p["signature"]] + u + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER]
+        u = [p["signature"]] + u + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER] + [grant(g) for g in GU_OF[p["key"]]]
     if t == 1:
         u.append(f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}")
     if TIER_GATE[t]:
@@ -159,6 +195,8 @@ def translations() -> list[tuple[str, str]]:
         out += [(p["mortal"], p["mortal_id"]), move_pedia(p)]
     for s in STATUSES:
         out += [(s["name"], s["name_id"]), (s["pedia"], s["pedia_id"])]
+    for g in (g for g in PATH_GU if new_gu(g)):
+        out += [(g["name"], g["name_id"]), (g["pedia"], g["pedia_id"])]
     return out
 
 
@@ -197,7 +235,17 @@ def doc_tables() -> dict[str, str]:
         uniq.append(f"| {p['name']} | " + " | ".join(cells) + " |")
     uniq += ["", "| Status | Uniques |", "|---|---|"]
     uniq += [f"| {s['name']} | " + " ".join(code(u) for u in split(s["uniques"])) + " |" for s in STATUSES]
-    return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq)}
+    gu = ["Granted at a turn start to a unit holding the path's Master (the line is in the Master's column above), once "
+          "the unit's rank reaches the Gu's (a rank-5 Gu at rank four until the immortal arc) and, for a food eater, "
+          "while that food is in surplus. Moonlight Gu, White Boar Gu and the Liquor Worm are the Slice 1 Gu.", "",
+          "| Path | Gu | Chinese | Rank | Food | Uniques | Verdict | Source |", "|---|---|---|---|---|---|---|---|"]
+    built = {d["name"]: d for d in gu_promotions()}
+    for g in PATH_GU:
+        uniques = " ".join(code(u) for u in built[g["name"]]["uniques"]) if g["name"] in built else "Slice 1 Gu"
+        gu.append(f"| {KEY[g['path']]['name']} | {g['name']} | {g['chinese'] or '—'} | {g['rank']} | {g['food'] or 'stones'} "
+                  f"| {uniques} | {g['verdict']} | {g['source']} |")
+    return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
+            "gu": "\n".join(gu)}
 
 
 def splice(text: str, tables: dict[str, str]) -> str:
