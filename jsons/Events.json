@@ -178,6 +178,18 @@
           "[-20]% [Production] <for [5] turns>",
           "[+50]% weight to this choice for AI decisions"
         ]
+      },
+      {
+        "text": "Call the clans' alliance",
+        "uniques": [
+          "Only available <when number of [Known [Major] Civilizations] is more than [1]> <when not at war>",
+          "[2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>",
+          "[3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>",
+          "A [Bold Lightning Wolf] rebels <starting from the [Rank Three era]>",
+          "[+30]% Strength <vs [Barbarians] units> <for [10] turns>",
+          "[-10]% [Gold] <for [10] turns>",
+          "[+30]% weight to this choice for AI decisions"
+        ]
       }
     ]
   },
@@ -259,10 +271,120 @@
       {
         "text": "Rob a passing caravan",
         "uniques": [
-          "Only available <after adopting [Demonic Path]>",
           "Gain [70] [Gold]",
           "Triggers a [Betrayal] event <with [25]% chance>",
+          "[+100]% City-State Influence degradation <for [10] turns>",
+          "Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>",
+          "[+50]% weight to this choice for AI decisions",
+          "[-80]% weight to this choice for AI decisions <after adopting [Righteous Path]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Collusion Exposed",
+    "text": "Word spreads that your clan deals with demonic cultivators. The righteous clans demand an answer.",
+    "choices": [
+      {
+        "text": "Pay to bury the scandal",
+        "uniques": [
+          "Only available <when above [100] [Gold]>",
+          "Gain [-100] [Gold]",
           "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Ride it out",
+        "uniques": [
+          "[-3 Happiness] <for [10] turns>",
+          "[+100]% City-State Influence degradation <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Walk the demonic path openly",
+        "uniques": [
+          "Remove [[Righteous Path] branch]",
+          "Adopt [Demonic Path]",
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whitewashed Name",
+    "text": "The Shang clan's battle stage will wash any name white, for a price.",
+    "choices": [
+      {
+        "text": "Buy a righteous name",
+        "uniques": [
+          "Only available <when above [150] [Gold]>",
+          "Gain [-150] [Gold]",
+          "Remove [[Demonic Path] branch]",
+          "Adopt [Righteous Path]",
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Stay what you are",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Clan Contest",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "Your young Gu Masters carry the day",
+        "uniques": [
+          "Gain [60] [Gold]",
+          "New [Gu Master] units start with [10] XP [in all cities] <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions",
+          "[+100]% weight to this choice for AI decisions <if [Martial Arena] is constructed>",
+          "[+100]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>"
+        ]
+      },
+      {
+        "text": "Your young Gu Masters are beaten",
+        "uniques": [
+          "Gain [-30] [Gold]",
+          "[-3 Happiness] <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blood Lake",
+    "text": "Beneath the spring cave the elders have found a blood-red lake and, in it, the coffin of the clan's founder. Something in the coffin is still alive.",
+    "choices": [
+      {
+        "text": "Seal the lake and speak of it to no one",
+        "uniques": [
+          "Only available <when above [80] [Gold]>",
+          "Gain [-80] [Gold]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Send for the Tie clan's constable",
+        "uniques": [
+          "A [Rank Four Gu Master] rebels",
+          "[+2 Happiness] <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Claim the founder's blood inheritance",
+        "uniques": [
+          "Remove [[Righteous Path] branch]",
+          "Adopt [Demonic Path]",
+          "Gain [150] [Gold]",
+          "[+15]% Strength <for [10] turns>",
+          "[-50]% weight to this choice for AI decisions"
         ]
       }
     ]

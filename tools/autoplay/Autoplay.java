@@ -225,6 +225,7 @@ public class Autoplay {
             rec.put("happiness", c.getHappiness());
             rec.put("techs", c.getTech().getTechsResearched().size());
             rec.put("policies", c.getPolicies().getAdoptedPolicies().size());
+            rec.put("policyNames", new ArrayList<>(c.getPolicies().getAdoptedPolicies()));
             rec.put("era", c.getEra().getName());
             Map<String, Integer> res = new LinkedHashMap<>();
             for (String r : strategic) res.put(r, c.getResourceAmount(r));

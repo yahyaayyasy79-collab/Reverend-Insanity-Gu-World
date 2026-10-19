@@ -254,6 +254,18 @@
     ]
   },
   {
+    "name": "Demonic Infamy",
+    "uniques": [
+      "Comment [Righteous clans fight harder against this unit and pay a bounty for it]",
+      "[This Unit] loses the [Demonic Infamy] promotion <upon turn start> <before adopting [Demonic Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The mark of a demonic clan's cultivator. Righteous clans post bounties and wanted notices for such heads, and fight harder against them; the mark fades once the clan takes a righteous name."
+      }
+    ]
+  },
+  {
     "name": "Orchid Hunger",
     "uniques": [
       "[This Unit] loses the [Orchid Hunger] status <upon turn start> <when above [-1] [Moon Orchid]>"
@@ -552,7 +564,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Bone Spear Gu] promotion <upon turn start> <for units without [Bone Spear Gu]> <when above [0] [Wild Boar]>",
+      "[This Unit] gains the [Bone Spear Gu] promotion <upon turn start> <for units without [Bone Spear Gu]> <when above [1] [Wild Boar]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -649,7 +661,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Blood Skull Gu] promotion <upon turn start> <for units without [Blood Skull Gu]> <for [Rank Four era] units> <when above [0] [Wild Boar]>",
+      "[This Unit] gains the [Blood Skull Gu] promotion <upon turn start> <for units without [Blood Skull Gu]> <for [Rank Four era] units> <when above [1] [Wild Boar]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -840,7 +852,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Sole Blade Gu] promotion <upon turn start> <for units without [Sole Blade Gu]> <for [Rank Four era] units> <when above [0] [Jade]>",
+      "[This Unit] gains the [Sole Blade Gu] promotion <upon turn start> <for units without [Sole Blade Gu]> <for [Rank Four era] units> <when above [1] [Jade]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2316,7 +2328,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Moonlight Gu] promotion <upon turn start> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]>",
+      "[This Unit] gains the [Moonlight Gu] promotion <upon turn start> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [1] [Moon Orchid]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
@@ -2472,7 +2484,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Illusory Moon Gu] promotion <upon turn start> <for units without [Illusory Moon Gu]> <for [non-[Rank One-Two era]] units> <when above [0] [Moon Orchid]>",
+      "[This Unit] gains the [Illusory Moon Gu] promotion <upon turn start> <for units without [Illusory Moon Gu]> <for [non-[Rank One-Two era]] units> <when above [1] [Moon Orchid]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3615,8 +3627,8 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Liquor Worm] promotion <upon turn start> <for units without [Liquor Worm]> <for [Rank One Gu Master] units> <when above [0] [Wine]>",
-      "[This Unit] gains the [Four Flavours Liquor Worm] promotion <upon turn start> <for units without [Four Flavours Liquor Worm]> <for [non-[Rank One Gu Master]] units> <when above [0] [Wine]>",
+      "[This Unit] gains the [Liquor Worm] promotion <upon turn start> <for units without [Liquor Worm]> <for [Rank One Gu Master] units> <when above [1] [Wine]> <with [25]% chance>",
+      "[This Unit] gains the [Four Flavours Liquor Worm] promotion <upon turn start> <for units without [Four Flavours Liquor Worm]> <for [non-[Rank One Gu Master]] units> <when above [1] [Wine]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],

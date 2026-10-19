@@ -95,6 +95,8 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | 3D sprites, clan colours, portraits | Start a game; `unit add <civ> "Rank Four Gu Yue Gu Master"` next to `"Rank Four Bai Gu Master"`, `"Rank Four Xiong Gu Master"` and `"Rank Four Gu Master"` |
 | Attack effects per clan chain | Put those units next to a wolf (`unit add Barbarians "Lightning Wolf"`) and attack |
 | 47 path lines on the promotion screen (C3) | Select a Gu Master: `unit setxp 200`; every Master shows; a Grandmaster only after its Master, on a rank-three or higher unit |
+| Camp change (Collusion Exposed, Blood Lake) | As Gu Yue: `civ addtech "Gu Yue Clan" "Inheritance Lore"` fires Blood Lake; choice 3 swaps Righteous for Demonic and marks every military unit with Demonic Infamy |
+| Clan voices | Meet a clan (diplomacy screen) and declare war: the canon lines show in EN and ID |
 | Path Gu (D2) | Select a rank-three Gu Master: `unit addpromotion "Fire Master"`, end the turn: it holds the Fiery Claw Gu; the Moon Master's Moonlight Gu needs a spare Moon Orchid |
 | Path moves (Grandmaster) | With a Grandmaster: the move button costs 15 stones and 1 movement and gives its status for the turn |
 | Legacy bridge (old saves) | `unit add <civ> "Rank Two Moon Gu Master"`, end the turn: it becomes Rank Two Gu Master (Gu Yue: its clan unit) holding Moon Master, promotions kept |

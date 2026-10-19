@@ -113,6 +113,19 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 0, 25 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [17]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 0, 17 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [8]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 0, 8 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 0, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Clan Contest] event <upon turn start> <after turn number [40]> <when not at war> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 40, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Clan Contest] event <upon turn start> <after turn number [60]> <when not at war> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 60, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Clan Contest] event <upon turn start> <after turn number [90]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 90, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Clan Contest] event <upon turn start> <after turn number [180]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 180, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Collusion Exposed] event <upon conquering a city> <after adopting [Righteous Path]> <with [25]% chance> <for [Major] Civilizations>` | 25 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+20]% XP gained from combat <with [Gu Inheritance]>` | +20 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
@@ -341,6 +354,12 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Beast Tide › Man the stockade walls | `Gain [-70] [Gold] <during the [Rank Four era]>` | -70 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Man the stockade walls | `[-20]% [Production] <for [5] turns>` | -20, 5 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Man the stockade walls | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Call the clans' alliance | `Only available <when number of [Known [Major] Civilizations] is more than [1]> <when not at war>` | 1 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Call the clans' alliance | `[2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>` | 2 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Call the clans' alliance | `[3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>` | 3 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Call the clans' alliance | `[+30]% Strength <vs [Barbarians] units> <for [10] turns>` | +30, 10 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Call the clans' alliance | `[-10]% [Gold] <for [10] turns>` | -10, 10 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Call the clans' alliance | `[+30]% weight to this choice for AI decisions` | +30 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `Only available <when above [60] [Gold]>` | 60 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `Gain [-60] [Gold]` | -60 | tools/gen_ruleset.py `Events` |
 | Betrayal › Let the traitor go | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
@@ -368,7 +387,37 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Stone Shortage › Squeeze the mortals | `[-20]% weight to this choice for AI decisions` | -20 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Rob a passing caravan | `Gain [70] [Gold]` | 70 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Rob a passing caravan | `Triggers a [Betrayal] event <with [25]% chance>` | 25 | tools/gen_ruleset.py `Events` |
+| Stone Shortage › Rob a passing caravan | `[+100]% City-State Influence degradation <for [10] turns>` | +100, 10 | tools/gen_ruleset.py `Events` |
+| Stone Shortage › Rob a passing caravan | `Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Events` |
 | Stone Shortage › Rob a passing caravan | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Stone Shortage › Rob a passing caravan | `[-80]% weight to this choice for AI decisions <after adopting [Righteous Path]>` | -80 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Pay to bury the scandal | `Only available <when above [100] [Gold]>` | 100 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Pay to bury the scandal | `Gain [-100] [Gold]` | -100 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Pay to bury the scandal | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Ride it out | `[-3 Happiness] <for [10] turns>` | -3, 10 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Ride it out | `[+100]% City-State Influence degradation <for [10] turns>` | +100, 10 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Ride it out | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Collusion Exposed › Walk the demonic path openly | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
+| Whitewashed Name › Buy a righteous name | `Only available <when above [150] [Gold]>` | 150 | tools/gen_ruleset.py `Events` |
+| Whitewashed Name › Buy a righteous name | `Gain [-150] [Gold]` | -150 | tools/gen_ruleset.py `Events` |
+| Whitewashed Name › Buy a righteous name | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
+| Whitewashed Name › Stay what you are | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters carry the day | `Gain [60] [Gold]` | 60 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters carry the day | `New [Gu Master] units start with [10] XP [in all cities] <for [10] turns>` | 10, 10 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters carry the day | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters carry the day | `[+100]% weight to this choice for AI decisions <if [Martial Arena] is constructed>` | +100 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters carry the day | `[+100]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>` | +100, 8 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters are beaten | `Gain [-30] [Gold]` | -30 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters are beaten | `[-3 Happiness] <for [10] turns>` | -3, 10 | tools/gen_ruleset.py `Events` |
+| Clan Contest › Your young Gu Masters are beaten | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Seal the lake and speak of it to no one | `Only available <when above [80] [Gold]>` | 80 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Seal the lake and speak of it to no one | `Gain [-80] [Gold]` | -80 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Seal the lake and speak of it to no one | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Send for the Tie clan's constable | `[+2 Happiness] <for [10] turns>` | +2, 10 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Send for the Tie clan's constable | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Claim the founder's blood inheritance | `Gain [150] [Gold]` | 150 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Claim the founder's blood inheritance | `[+15]% Strength <for [10] turns>` | +15, 10 | tools/gen_ruleset.py `Events` |
+| Blood Lake › Claim the founder's blood inheritance | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
 | Wild Gu › Only the wind in the grass | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Events` |
 | Wild Gu › Only the wind in the grass | `[-41]% weight to this choice for AI decisions <on [Quick] game speed>` | -41 | tools/gen_ruleset.py `Events` |
 | Wild Gu › Only the wind in the grass | `[+62]% weight to this choice for AI decisions <on [Epic] game speed>` | +62 | tools/gen_ruleset.py `Events` |
@@ -485,11 +534,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Righteous Path | priorities.Endurance | 6 | tools/gen_ruleset.py `Policies` |
 | Righteous Path | `Resting point for Influence with City-States is increased by [15]` | 15 | tools/gen_ruleset.py `Policies` |
 | Righteous Path | `[-25]% maintenance costs <in [Friendly Land] tiles>` | -25 | tools/gen_ruleset.py `Policies` |
+| Righteous Path | `[+10]% Strength <vs [Demonic Infamy] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Clan Rules | `[-15]% Unhappiness from [Population] [in all cities]` | -15 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Righteous Alliance | `Gifts of Gold to City-States generate [+25]% more Influence` | +25 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Guardian Formations | `[+25]% Strength for cities` | +25 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Guardian Formations | `[+10]% Strength <when defending>` | +10 | tools/gen_ruleset.py `Policies` |
 | Righteous Path › Righteous Path Complete | `[-10]% maintenance costs` | -10 | tools/gen_ruleset.py `Policies` |
+| Righteous Path › Righteous Path Complete | `Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]` | 100 | tools/gen_ruleset.py `Policies` |
 | Demonic Path | priorities.Southern Border Supremacy | 6 | tools/gen_ruleset.py `Policies` |
 | Demonic Path | priorities.Endurance | 2 | tools/gen_ruleset.py `Policies` |
 | Demonic Path | `Earn [50]% of killed [Military] unit's [Cost] as [Gold]` | 50 | tools/gen_ruleset.py `Policies` |
@@ -649,6 +700,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Gu Yue Temperament | gold | 5 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | military | 4 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | aggressive | 3 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Temperament | declareWar | 3 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Temperament | diplomacy | 7 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Temperament | commerce | 7 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Temperament | loyal | 6 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | priorities.Moon Path | 10 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | priorities.Righteous Path | 6 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
@@ -657,15 +712,21 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bai Temperament | production | 6 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | military | 4 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | aggressive | 3 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | declareWar | 7 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | expansion | 7 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | diplomacy | 3 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | loyal | 3 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | priorities.Righteous Path | 8 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | production | 6 | tools/gen_ruleset.py `Nations` |
+| Xiong Temperament | declareWar | 5 | tools/gen_ruleset.py `Nations` |
+| Xiong Temperament | loyal | 2 | tools/gen_ruleset.py `Nations` |
+| Xiong Temperament | diplomacy | 6 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | priorities.Strength Path | 10 | tools/gen_ruleset.py `Nations` |
-| Xiong Temperament | priorities.Demonic Path | 6 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | priorities.Righteous Path | 3 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
@@ -674,6 +735,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Wu Temperament | production | 6 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | loyal | 7 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | expansion | 5 | tools/gen_ruleset.py `Nations` |
+| Wu Temperament | declareWar | 6 | tools/gen_ruleset.py `Nations` |
+| Wu Temperament | diplomacy | 7 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | priorities.Righteous Path | 10 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | priorities.Strength Path | 4 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | `[+50]% weight to [Martial Arena] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
@@ -880,6 +943,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-704 numbers listed.
+767 numbers listed.
 
 <!-- inventory:end -->

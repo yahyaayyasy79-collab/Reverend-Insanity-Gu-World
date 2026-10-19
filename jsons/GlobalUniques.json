@@ -28,6 +28,20 @@
     "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [25]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
     "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [17]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
     "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] is less than [0]> <with [8]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Clan Contest] event <upon turn start> <after turn number [40]> <when not at war> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Clan Contest] event <upon turn start> <after turn number [60]> <when not at war> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Clan Contest] event <upon turn start> <after turn number [90]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Clan Contest] event <upon turn start> <after turn number [180]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Collusion Exposed] event <upon conquering a city> <after adopting [Righteous Path]> <with [25]% chance> <for [Major] Civilizations>",
+    "Triggers a [Blood Lake] event <upon discovering [Inheritance Lore] technology> <for [Gu Yue Clan] Civilizations>",
     "[+20]% XP gained from combat <with [Gu Inheritance]>"
   ]
 }

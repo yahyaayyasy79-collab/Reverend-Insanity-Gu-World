@@ -9,7 +9,8 @@
     "uniques": [
       "Only available <before adopting [Demonic Path]>",
       "Resting point for Influence with City-States is increased by [15]",
-      "[-25]% maintenance costs <in [Friendly Land] tiles>"
+      "[-25]% maintenance costs <in [Friendly Land] tiles>",
+      "[+10]% Strength <vs [Demonic Infamy] units>"
     ],
     "policies": [
       {
@@ -31,7 +32,8 @@
         "column": 3,
         "uniques": [
           "City-State Influence recovers at twice the normal rate",
-          "Gifts of Gold to City-States generate [+25]% more Influence"
+          "Gifts of Gold to City-States generate [+25]% more Influence",
+          "Enables Defensive Pacts"
         ],
         "civilopediaText": [
           {
@@ -59,7 +61,8 @@
       {
         "name": "Righteous Path Complete",
         "uniques": [
-          "[-10]% maintenance costs"
+          "[-10]% maintenance costs",
+          "Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]"
         ],
         "civilopediaText": [
           {
@@ -85,7 +88,9 @@
       "Only available <before adopting [Righteous Path]>",
       "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
       "[+50]% City-State Influence degradation",
-      "Triggers a [Betrayal] event <upon turn start> <with [3]% chance>"
+      "Triggers a [Betrayal] event <upon turn start> <with [3]% chance>",
+      "[Military] units gain the [Demonic Infamy] promotion",
+      "All newly-trained [Military] units [in all cities] receive the [Demonic Infamy] promotion"
     ],
     "policies": [
       {

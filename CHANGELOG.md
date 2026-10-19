@@ -393,3 +393,26 @@
   statuses. No placeholder icon is left (297 designed icons); the icon atlas still fits one page.
 * Autoplay (12 games × 320 turns, Prince): 17 of 48 clans 20+ turns in the red (C3 batches: 18 and 12), treasury at
   turn 320 140 stones (111, 122), 1.28 Gu deaths per clan per 100 turns (0.79), 0 crashes.
+
+## Canon overhaul 4 — world conflicts: righteous, demonic and lone (2026-10-19)
+
+* D4: all four majors start on the Righteous Path, as in canon; Xiong's demonic lean is gone. The demonic camp is
+  reached through events, and a camp can change both ways:
+  * **Collusion Exposed** (a righteous clan friendly with a demonic one, a righteous clan that conquers a city, or one
+    that robs a caravan): pay, ride it out, or walk the demonic path openly (`Remove [[Righteous Path] branch]`,
+    `Adopt [Demonic Path]`). Checked headless: the branch and its members go, Demonic Path is adopted despite its gate,
+    and every military unit gets the mark at once.
+  * **Whitewashed Name**: once anyone has built Shang Clan City, a demonic clan can buy a righteous name.
+  * **Blood Lake** (the Gu Yue twist, used at the user's word): when Gu Yue learns Inheritance Lore the elders find the
+    founder's coffin under the Blood Lake: seal it, call the Tie constable (the founder rises), or claim his blood
+    inheritance and turn demonic.
+* C1 **Demonic Infamy**: every military unit of a demonic clan carries the mark; righteous clans fight it at +10% and,
+  with Righteous Path Complete, collect a bounty of its cost. C2: Righteous Alliance enables defensive pacts. C3: Beast
+  Tide choice "Call the clans' alliance". C4: canon temperaments (Bai the aggressor, Gu Yue the broker, Xiong the
+  free-rider, Wu the coalition leader). C5: leader voices in EN and ID. C7: robbing a caravan angers the city-states.
+  C9: **Clan Contest**, a peacetime silent die.
+* Food path Gu now come from a spare of two, one unit in four per turn: the loose gate fed one spare to every Master at
+  the same turn start and they starved together.
+* Autoplay (12 × 320 Prince; 12 × 200 King): 0 crashes; by the end 11 of 48 clans (Prince) and 6 of 48 (King) have
+  turned demonic; clans 20+ turns in the red 15 of 48; 1.73 Gu deaths per clan per 100 turns (Xiong's pork Gu).
+* `tools/autoplay/Autoplay.java` logs adopted policy names.

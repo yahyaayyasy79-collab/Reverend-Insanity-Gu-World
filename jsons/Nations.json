@@ -24,9 +24,13 @@
     ],
     "uniques": [
       "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Moonlight Gu] promotion <in cities with a [Gu Academy]> <when above [0] [Moon Orchid]>",
+      "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Hill]"
     ],
+    "introduction": "I am Gu Yue Bo of the Gu Yue clan. Our village has stood on Qing Mao longer than any other; speak, and be brief.",
+    "declaringWar": "The covenant of the alliance slope does not shelter you. The Gu Yue will settle this themselves.",
+    "defeated": "Take the village. The spring beneath it will outlast you too.",
     "civilopediaText": [
       {
         "text": "The Gu Yue clan (古月一族), halfway up Qing Mao Mountain. Its emblem is the Moonlight Gu, bred by a secret method and fed from its own sea of moon orchids. For centuries it ruled the mountain; now the Bai are catching up."
@@ -59,9 +63,13 @@
     "uniques": [
       "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Stream Gu] promotion <in cities with a [Gu Academy]>",
       "[+15]% Strength <vs [Barbarians] units>",
+      "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Fresh Water]"
     ],
+    "introduction": "The Bai clan bows to no overlord any more. Remember that when you speak.",
+    "declaringWar": "One spring makes a village; three make a clan. Yours will be the second.",
+    "defeated": "Centuries under another clan's heel, and it ends like this.",
     "civilopediaText": [
       {
         "text": "The Bai clan (白家) of the waterfall village on Qing Mao's back slope, second of the three clans and Gu Yue's rising rival, which wants all three springs. Its Gu Masters favour water and ice, and its fighters once brought down a Thunder Crown Wolf."
@@ -93,9 +101,13 @@
     "uniques": [
       "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Bear Strength Gu] promotion <in cities with a [Gu Academy]>",
       "Starts with [Strength Path] adopted",
+      "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Hill]"
     ],
+    "introduction": "Xiong village. Count our Gu Masters before you call us weak.",
+    "declaringWar": "You spent your strength on the wolves. We kept ours.",
+    "defeated": "Even a bear has to sleep.",
     "civilopediaText": [
       {
         "text": "The Xiong clan (熊家) on Qing Mao's front slope: the weakest of the three on paper, the most numerous in the field, and righteous like the others. It lets others bleed first and is not above hiring demonic muscle."
@@ -130,6 +142,9 @@
       "Start bias [Spirit Spring]",
       "Start bias [River]"
     ],
+    "introduction": "Wu Ji of the Wu clan. The Southern Border keeps me busy; state your purpose.",
+    "declaringWar": "The righteous never strike without a reason. Here is ours.",
+    "defeated": "Write it down: the Wu fell to you. Few will believe it.",
     "civilopediaText": [
       {
         "text": "The Wu clan (武家), first among the Southern Border's righteous super clans, seated on Wu Yi Mountain. Its head Wu Ji walks the strength path, but the clan's own strongest tradition is the wind path (风道); its battle stage is the largest in the region."

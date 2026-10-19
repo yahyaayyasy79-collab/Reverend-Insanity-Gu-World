@@ -316,12 +316,12 @@ Demonic; personalities set the rest.
 
 | Object | 中文 | Status | Lore basis | Mechanical role · key fields | Uniques |
 |---|---|---|---|---|---|
-| **Righteous Path** (branch) | 正道 | CANON | Righteous clans uphold clan law and alliances, and keep a respectable face.<br>*Note: Verified (conflicts research 2026-10-19): the righteous need face and a pretext even to grab land (R V5c361); clan law and written alliances (R V1c105, V1c127). The mechanic stays a 4X mapping.* | Excludes Demonic. City-state favour, and cheaper upkeep for units standing on friendly land (the S6 'cheaper defensive upkeep'; civ-wide maintenance uniques are evaluated per unit [src]) (P5, P1).<br>*Fields:* era Rank One-Two era; members Clan Rules, Righteous Alliance, Guardian Formations, Righteous Path Complete | `Only available <before adopting [Demonic Path]>`<br>`Resting point for Influence with City-States is increased by [15]`<br>`[-25]% maintenance costs <in [Friendly Land] tiles>` |
+| **Righteous Path** (branch) | 正道 | CANON | Righteous clans uphold clan law and alliances, and keep a respectable face.<br>*Note: Verified (conflicts research 2026-10-19): the righteous need face and a pretext even to grab land (R V5c361); clan law and written alliances (R V1c105, V1c127). The mechanic stays a 4X mapping.* | Excludes Demonic. City-state favour, and cheaper upkeep for units standing on friendly land (the S6 'cheaper defensive upkeep'; civ-wide maintenance uniques are evaluated per unit [src]) (P5, P1).<br>*Fields:* era Rank One-Two era; members Clan Rules, Righteous Alliance, Guardian Formations, Righteous Path Complete | `Only available <before adopting [Demonic Path]>`<br>`Resting point for Influence with City-States is increased by [15]`<br>`[-25]% maintenance costs <in [Friendly Land] tiles>`<br>`[+10]% Strength <vs [Demonic Infamy] units>` |
 | Clan Rules | 族规 | ADAPTED | Strict clan law keeps members in line. | Less unhappiness, so fewer unhappiness-driven betrayals (P5).<br>*Fields:* Righteous Path, row 1, column 1 | `[-15]% Unhappiness from [Population] [in all cities]` |
-| Righteous Alliance | — | INVENTED | Righteous clans band together against demonic threats. | City-state favour (P5).<br>*Fields:* Righteous Path, row 1, column 3 | `City-State Influence recovers at twice the normal rate`<br>`Gifts of Gold to City-States generate [+25]% more Influence` |
+| Righteous Alliance | — | INVENTED | Righteous clans band together against demonic threats. | City-state favour (P5).<br>*Fields:* Righteous Path, row 1, column 3 | `City-State Influence recovers at twice the normal rate`<br>`Gifts of Gold to City-States generate [+25]% more Influence`<br>`Enables Defensive Pacts` |
 | Guardian Formations | — | INVENTED | A righteous village is held, not abandoned. | Defence against tides and raiders (P3, P5).<br>*Fields:* Righteous Path, row 2, column 2, requires [Clan Rules] | `[+25]% Strength for cities`<br>`[+10]% Strength <when defending>` |
-| Righteous Path Complete | — | INVENTED | A stable clan feeds its Gu efficiently. | Finisher: cheaper upkeep everywhere (P1).<br>*Fields:* finisher of Righteous Path | `[-10]% maintenance costs` |
-| **Demonic Path** (branch) | 魔道 | ADAPTED | Demonic cultivators take what they need by force and trust no one. | Excludes Righteous. Every kill pays stones, beasts included (wolf 15, bold wolf 30). The price: faster city-state influence decay and a 3% Betrayal chance per turn (P5, P1).<br>*Fields:* era Rank One-Two era; members Plunder, Blood Harvest, Ruthless Cultivation, Demonic Path Complete | `Only available <before adopting [Righteous Path]>`<br>`Earn [50]% of killed [Military] unit's [Cost] as [Gold]`<br>`[+50]% City-State Influence degradation`<br>`Triggers a [Betrayal] event <upon turn start> <with [3]% chance>` |
+| Righteous Path Complete | — | INVENTED | A stable clan feeds its Gu efficiently. | Finisher: cheaper upkeep everywhere (P1).<br>*Fields:* finisher of Righteous Path | `[-10]% maintenance costs`<br>`Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]` |
+| **Demonic Path** (branch) | 魔道 | ADAPTED | Demonic cultivators take what they need by force and trust no one. | Excludes Righteous. Every kill pays stones, beasts included (wolf 15, bold wolf 30). The price: faster city-state influence decay and a 3% Betrayal chance per turn (P5, P1).<br>*Fields:* era Rank One-Two era; members Plunder, Blood Harvest, Ruthless Cultivation, Demonic Path Complete | `Only available <before adopting [Righteous Path]>`<br>`Earn [50]% of killed [Military] unit's [Cost] as [Gold]`<br>`[+50]% City-State Influence degradation`<br>`Triggers a [Betrayal] event <upon turn start> <with [3]% chance>`<br>`[Military] units gain the [Demonic Infamy] promotion`<br>`All newly-trained [Military] units [in all cities] receive the [Demonic Infamy] promotion` |
 | Plunder | — | INVENTED | Demonic Gu Masters strip whatever they overrun. | Pillage and lair income (P1, P5).<br>*Fields:* Demonic Path, row 1, column 1 | `[+100]% Yield from pillaging tiles`<br>`Receive [+100]% Gold from Barbarian encampments and pillaging Cities` |
 | Lone Cultivators | 散修 | ADAPTED | A lone cultivator (散修) has no clan behind them, and on the Southern Border every demonic Gu Master is one.<br>*Note: Verified (fang_yuan verdict): vol2 ch81 says demonic Gu Masters are all lone cultivators (散修) without clan backing; vol1 never uses the word, so the policy sits in the Demonic branch, not on Qing Mao.* | The S6 rogue-cultivator strategy as a Demonic member policy: two units eat free (an elite core) and every extra city costs more unrest, so the policy rewards a small, hard clan (P1, P5).<br>*Fields:* Demonic Path, row 1, column 3 (Blood Harvest's old slot) | `[2] units cost no maintenance`<br>`[+30]% unhappiness from the number of cities` |
 | Ruthless Cultivation | — | INVENTED | War feeds the Gu; peace starves them; mortals pay. | Stones on city capture and cheaper upkeep at war, paid for with unrest (P5, P1).<br>*Fields:* Demonic Path, row 2, column 2, requires [Plunder] | `Upon capturing a city, receive [3] times its [Gold] production as [Gold] immediately`<br>`[-20]% maintenance costs <when at war>`<br>`[+20]% Unhappiness from [Population] [in all cities]` |
@@ -357,7 +357,7 @@ Demonic; personalities set the rest.
 |---|---|---|---|---|---|
 | Gu Yue Clan | 古月一族 | CANON | The Qing Mao clan halfway up the mountain whose emblem Gu, the Moonlight Gu, is bred only by its own secret method and fed from its moon-orchid flower sea.<br>*Note: Verified: Gu Yue Bo (古月博) is the rank-4 clan leader (leaders research). Moonlight Gu is the clan's emblem Gu, bred by a secret clan method; most clansmen take it as their life-bound Gu; new students pick a first Gu free from the academy Gu room; D-grade students could not refine it (moon_path research, ch8/22/23). Extra city names are invented.* | Every Rank One Gu Master trained in a city with a Gu Academy receives the emblem Moonlight Gu while Moon Orchids are in surplus; a D-grade youth loses it at once (canon). Unique building Moon Orchid Flower Sea. AI leans Moon and Righteous (P1, P4). Its AI never builds the Flower Wine Monk Inheritance (it would wreck its flower sea). Starts near a Spirit Spring.<br>*Fields:* leaderName Gu Yue Bo; personality Gu Yue Temperament; unique building Moon Orchid Flower Sea; cities Gu Yue Village (canon) + Orchid Slope, Bamboo Ridge, Cold Spring (invented); colours [30,40,90]/[220,220,240] | `All newly-trained [Rank One Gu Master] units [in all cities] receive the [Moonlight Gu] promotion <in cities with a [Gu Academy]> <when above [0] [Moon Orchid]>`<br>`Start bias [Spirit Spring]`<br>`Start bias [Hill]`<br>Personality: `[+50]% weight to [Gu Academy] for AI decisions`<br>Personality: `[+100]% weight to [Awakening Grounds] for AI decisions`<br>Personality: `Will not build [Flower Wine Monk Inheritance]` |
 | Bai Clan | 白家 | CANON | The waterfall village on Qing Mao's back slope, Gu Yue's rival, whose emblem is the Stream Gu and whose fighters slew a Thunder Crown Wolf.<br>*Note: Verified: the Bai leader is never named (白家族长 only; 0 hits for 白墓 in volume 1) and is Bai Ning Bing's adoptive father; the Bai emblem Gu is the Stream Gu (ch22); the Bai village lies by the waterfall on the back slope; the Bai side killed a Thunder Crown Wolf in the wolf tide (ch165). Bai Ning Bing is a junior genius, not the leader. The Moon lean is a balance choice (decision T3). The fan wiki says the Bai specialise in water and ice paths (not in Slice 1); the Moon lean is a balance choice (question 11).* | Emblem Stream Gu for academy-trained Rank Ones; +15% against beasts (the Bai side killed a Thunder Crown Wolf in the tide); A-grade youths about twice as likely (event weights; adapted from 'the clan that raised Qing Mao's first genius' — Bai Ning Bing's gift is a personal physique, so civilopedia avoids 'lineage'). AI leans Moon and Righteous (P2, P3). Starts near a Spirit Spring.<br>*Fields:* leaderName Bai Clan Leader (decision T2); personality Bai Temperament; cities Bai Village (canon), Waterfall Slope (named after the canon waterfall), Frost Pine Slope (invented); start bias Fresh Water (the waterfall); colours unchanged | `All newly-trained [Rank One Gu Master] units [in all cities] receive the [Stream Gu] promotion <in cities with a [Gu Academy]>`<br>`[+15]% Strength <vs [Barbarians] units>`<br>`Start bias [Spirit Spring]`<br>`Start bias [Fresh Water]`<br>Personality: `[+50]% weight to [Gu Academy] for AI decisions`<br>Personality: `[+100]% weight to [Awakening Grounds] for AI decisions` |
-| Xiong Clan | 熊家 | CANON | The front-slope village of Qing Mao, weakest of the three, whose emblem Bear Strength Gu marks a clan of raw bodily strength.<br>*Note: Verified: the Xiong leader is never named (熊家族长 only); 'Xiong Jiang' is really 熊姜, a rank-2 envoy Fang Yuan kills (ch137); Xiong Lin is the village's top young genius; the emblem is the Bear Strength Gu (ch22); Xiong Li, its strongest rank-2, fights with a bear's strength (ch121). The village on the front slope is the weakest; the clans believed it wiped out in the wolf tide (ch168), but most of the clan escaped with an ancestral concealment Gu (ch175) and fights in the ch189 contest.* | Starts on the Strength Path (a committed AI specialist from turn 1); emblem Bear Strength Gu for academy-trained Rank Ones. AI leans Strength, then Demonic: the field's demonic pole, against the righteous Wu (P4, P5). Its AI prefers the domination victory. Starts near a Spirit Spring.<br>*Fields:* leaderName Xiong Clan Leader (decision T2); personality Xiong Temperament; cities Xiong Village (canon) + Bear Den Ridge, Boar Hollow (invented); colours unchanged | `All newly-trained [Rank One Gu Master] units [in all cities] receive the [Bear Strength Gu] promotion <in cities with a [Gu Academy]>`<br>`Starts with [Strength Path] adopted`<br>`Start bias [Spirit Spring]`<br>`Start bias [Hill]`<br>Personality: `[+50]% weight to [Gu Academy] for AI decisions`<br>Personality: `[+100]% weight to [Awakening Grounds] for AI decisions` |
+| Xiong Clan | 熊家 | CANON | The front-slope village of Qing Mao, weakest of the three, whose emblem Bear Strength Gu marks a clan of raw bodily strength.<br>*Note: Verified: the Xiong leader is never named (熊家族长 only); 'Xiong Jiang' is really 熊姜, a rank-2 envoy Fang Yuan kills (ch137); Xiong Lin is the village's top young genius; the emblem is the Bear Strength Gu (ch22); Xiong Li, its strongest rank-2, fights with a bear's strength (ch121). The village on the front slope is the weakest; the clans believed it wiped out in the wolf tide (ch168), but most of the clan escaped with an ancestral concealment Gu (ch175) and fights in the ch189 contest.* | Starts on the Strength Path (a committed AI specialist from turn 1); emblem Bear Strength Gu for academy-trained Rank Ones. AI leans Strength; it starts righteous like every Qing Mao clan (D4, 2026-10-19; its old demonic lean was an adaptation of its hired demonic Gu Masters, R V1c175) and plays the free-rider (P4, P5). Its AI prefers the domination victory. Starts near a Spirit Spring.<br>*Fields:* leaderName Xiong Clan Leader (decision T2); personality Xiong Temperament; cities Xiong Village (canon) + Bear Den Ridge, Boar Hollow (invented); colours unchanged | `All newly-trained [Rank One Gu Master] units [in all cities] receive the [Bear Strength Gu] promotion <in cities with a [Gu Academy]>`<br>`Starts with [Strength Path] adopted`<br>`Start bias [Spirit Spring]`<br>`Start bias [Hill]`<br>Personality: `[+50]% weight to [Gu Academy] for AI decisions`<br>Personality: `[+100]% weight to [Awakening Grounds] for AI decisions` |
 | Wu Clan | 武家 | ADAPTED | The Southern Border's first clan, a righteous giant seated on Wu Yi Mountain; its head Wu Ji walks the strength path, the clan's own strongest tradition is the wind path, and its battle stage is the largest in the region.<br>*Note: Verified (canon audit 2026-10-19): Wu Ji held the clan head's post for years (R V2, V6c130); the clan is best at the wind path and its top elder Wu Yong is a wind cultivator (V6c130); the seat is Wu Yi Mountain (R V5c300, V5c321). Signature path Wind (the user's decision D3). Earlier note: Verified (super_clans): the Wu clan is righteous and 'the Southern Border's first clan' (vol.2 ch29-30); its early-arc leader is 武姬娘娘 Wu Ji (vol.2 ch84), a strength-path master who refined a rank-5 Dragon Strength Gu (vol.2 ch66/82/93); its battle stage is the largest in the region (vol.2 ch122). ADAPTED: a super clan, first met in volume 2, shrunk to a peer of three mountain villages. Its seat and the English form of Wu Ji's title are not verified; later Wu clan figures are left out as spoilers.* | Fourth major (your choice), the righteous pole (P5): starts on the Righteous Path. Its Martial Arena trains Gu Masters to 20 XP, so its units reach the refinement gambles sooner (P2, P4). Starts near a Spirit Spring. AI leans Righteous and Strength and prefers the domination victory.<br>*Fields:* leaderName Wu Ji (武姬娘娘); personality Wu Temperament (military 7, aggressive 4, production 6, loyal 7, expansion 5; priorities Righteous Path 10, Strength Path 10); unique building Martial Arena; cities Wu Clan City + Martial Peak, Iron Bone Ridge (invented); colours [120,20,20]/[250,210,120] | `Starts with [Righteous Path] adopted`<br>`Start bias [Spirit Spring]`<br>`Start bias [River]`<br>Personality: `[+50]% weight to [Martial Arena] for AI decisions`<br>Personality: `[+100]% weight to [Awakening Grounds] for AI decisions` |
 | Barbarians | 兽群 | ADAPTED | The beast groups of the wild, their kings and their lairs. | The name is required by the engine: without it barbarians never spawn. It owns every beast, tide rebel and traitor (P3). Display text 'Beast Groups' comes later through English.properties.<br>*Fields:* name must stay 'Barbarians'; colours [0,0,0]/[185,12,12] | `Can only heal by pillaging`<br>`Excluded from map editor` |
 | Spectator | — | INVENTED | Not lore. | Engine infrastructure for the spectator slot and autoplay, copied from Vanilla.<br>*Fields:* outerColor [255,255,255] | Vanilla, verbatim |
@@ -399,6 +399,53 @@ Demonic; personalities set the rest.
 
 
 ---
+
+## World conflicts (canon overhaul, 2026-10-19)
+
+The user's decision D4: **all four majors start righteous** (`Starts with [Righteous Path] adopted`), as every Qing Mao
+clan and the Wu are in canon; Xiong's demonic lean is gone (it was an adaptation of its hired demonic Gu Masters,
+R V1c175). The demonic camp is reached through events, and a camp can change both ways, as for the Fang clan and
+Wei Yang in canon. The engine cannot force war, peace or another civ's opinion, so the conflicts work through marks,
+bounties, pacts, temperaments and events (conflicts research, docs/CANON_OVERHAUL.md part C).
+
+| Object | 中文 | Status | Lore basis | Mechanical role | Uniques |
+|---|---|---|---|---|---|
+| Demonic Infamy | 魔名 | ADAPTED | The righteous hunt demonic cultivators and post bounties and wanted notices for them (R V2c29, V2c35). | Marker on every military unit of a Demonic Path clan (given on adoption and to new units); it clears itself once the clan's camp changes. Righteous clans get +10% against such units and, with Righteous Path Complete, a bounty of the unit's cost (C1).<br>*Fields:* no unitTypes | `Comment [Righteous clans fight harder against this unit and pay a bounty for it]`<br>`[This Unit] loses the [Demonic Infamy] promotion <upon turn start> <before adopting [Demonic Path]>` |
+
+Righteous Alliance enables defensive pacts (C2, the written three-village alliance, R V1c127): only two righteous
+clans can pact. Beast Tide gains choice 5 "Call the clans' alliance" (C3); Stone Shortage choice 4 is open to every
+clan, shunned by the merchants, and exposes a righteous robber with a 50% chance (C7). The Flower Wine Monk
+Inheritance already carried its grudge against Gu Yue (C6).
+
+Triggers in GlobalUniques:
+
+```
+Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> <when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> <if [Shang Clan City] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Clan Contest] event <upon turn start> <after turn number [40]> <when not at war> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Clan Contest] event <upon turn start> <after turn number [60]> <when not at war> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Clan Contest] event <upon turn start> <after turn number [90]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Clan Contest] event <upon turn start> <after turn number [180]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Collusion Exposed] event <upon conquering a city> <after adopting [Righteous Path]> <with [25]% chance> <for [Major] Civilizations>
+Triggers a [Blood Lake] event <upon discovering [Inheritance Lore] technology> <for [Gu Yue Clan] Civilizations>
+```
+
+Temperaments and voices (C4, C5; Personalities.json fields, Nations.json texts in the mod's own words):
+
+| Clan | declareWar | diplomacy | commerce | loyal | aggressive | expansion | Introduction | Declaring war | Defeated |
+|---|---|---|---|---|---|---|---|---|---|
+| Gu Yue Clan | 3 | 7 | 7 | 6 | 3 | 5 | I am Gu Yue Bo of the Gu Yue clan. Our village has stood on Qing Mao longer than any other; speak, and be brief. | The covenant of the alliance slope does not shelter you. The Gu Yue will settle this themselves. | Take the village. The spring beneath it will outlast you too. |
+| Bai Clan | 7 | 3 | 5 | 3 | 6 | 7 | The Bai clan bows to no overlord any more. Remember that when you speak. | One spring makes a village; three make a clan. Yours will be the second. | Centuries under another clan's heel, and it ends like this. |
+| Xiong Clan | 5 | 6 | 5 | 2 | 6 | 5 | Xiong village. Count our Gu Masters before you call us weak. | You spent your strength on the wolves. We kept ours. | Even a bear has to sleep. |
+| Wu Clan | 6 | 7 | 5 | 7 | 4 | 5 | Wu Ji of the Wu clan. The Southern Border keeps me busy; state your purpose. | The righteous never strike without a reason. Here is ours. | Write it down: the Wu fell to you. Few will believe it. |
+
+Nation starting uniques: `Starts with [Righteous Path] adopted`, `Starts with [Strength Path] adopted`
 
 ## Refinement ladder
 
@@ -611,7 +658,7 @@ Gain [-30] [Gold]
 
 Presentation **Alert**. Fired by GlobalUniques for every major (3% per turn after T30, +2% after T90). Popup text: *Lightning wolves pour down the mountain toward your villages.*
 
-**1. Meet the wolves in the field** — AI weight 1, 24% when every choice is open and no conditional weight applies
+**1. Meet the wolves in the field** — AI weight 1, 18% when every choice is open and no conditional weight applies
 
 ```
 [2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>
@@ -620,7 +667,7 @@ A [Bold Lightning Wolf] rebels <starting from the [Rank Three era]>
 A [Thunder Crown Wolf] rebels <during the [Rank Four era]>
 ```
 
-**2. Hire demonic Gu Masters to thin the pack** — AI weight 1, 24% when every choice is open and no conditional weight applies
+**2. Hire demonic Gu Masters to thin the pack** — AI weight 1, 18% when every choice is open and no conditional weight applies
 
 ```
 Only available <when above [60] [Gold]>
@@ -631,20 +678,32 @@ Gain [-100] [Gold] <during the [Rank Three era]>
 Gain [-150] [Gold] <during the [Rank Four era]>
 ```
 
-**3. Abandon the outer fields** — AI weight 0.7, 17% when every choice is open and no conditional weight applies.
+**3. Abandon the outer fields** — AI weight 0.7, 13% when every choice is open and no conditional weight applies.
 Round 7: was `-1 population in all cities`, which cost nothing at population 1 and drained every clan (AUTOPLAY.md round 7).
 
 ```
 [-50]% growth [in all cities] <for [10] turns>
 ```
 
-**4. Man the stockade walls** — AI weight 1.5, 36% when every choice is open and no conditional weight applies
+**4. Man the stockade walls** — AI weight 1.5, 27% when every choice is open and no conditional weight applies
 
 ```
 Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>
 Gain [-40] [Gold] <during the [Rank Three era]>
 Gain [-70] [Gold] <during the [Rank Four era]>
 [-20]% [Production] <for [5] turns>
+```
+
+**5. Call the clans' alliance** — AI weight 1.3, 24% when every choice is open and no conditional weight applies.
+C3 (canon overhaul): the clans' alliance against a wolf tide (R V1c124, V1c127, V1c179).
+
+```
+Only available <when number of [Known [Major] Civilizations] is more than [1]> <when not at war>
+[2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>
+[3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>
+A [Bold Lightning Wolf] rebels <starting from the [Rank Three era]>
+[+30]% Strength <vs [Barbarians] units> <for [10] turns>
+[-10]% [Gold] <for [10] turns>
 ```
 
 ### Betrayal
@@ -712,16 +771,106 @@ Gain [50] [Gold]
 [-1] population [in capital]
 ```
 
-**4. Rob a passing caravan** — AI weight 1.5, 33% when every choice is open and no conditional weight applies
+**4. Rob a passing caravan** — AI weight 1.5, 33% when every choice is open and no conditional weight applies; conditional weights: `[-80]% weight to this choice for AI decisions <after adopting [Righteous Path]>`
 
 ```
-Only available <after adopting [Demonic Path]>
 Gain [70] [Gold]
 Triggers a [Betrayal] event <with [25]% chance>
+[+100]% City-State Influence degradation <for [10] turns>
+Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>
 ```
 
 
 ---
+
+### Collusion Exposed
+
+Presentation **Alert**. Fired by GlobalUniques for a righteous major friendly with a demonic one (3% per turn on Standard), on conquering a city (25%), and by Stone Shortage choice 4 for a righteous clan (50%). Canon: the Fang clan, pressed for colluding with a demon and later branded demonic (R V5c595-596, V6c287); camp change verified headless (Remove takes the branch and its members, Adopt ignores the opener's gate). Popup text: *Word spreads that your clan deals with demonic cultivators. The righteous clans demand an answer.*
+
+**1. Pay to bury the scandal** — AI weight 1.5, 50% when every choice is open and no conditional weight applies
+
+```
+Only available <when above [100] [Gold]>
+Gain [-100] [Gold]
+```
+
+**2. Ride it out** — AI weight 1, 33% when every choice is open and no conditional weight applies
+
+```
+[-3 Happiness] <for [10] turns>
+[+100]% City-State Influence degradation <for [10] turns>
+```
+
+**3. Walk the demonic path openly** — AI weight 0.5, 17% when every choice is open and no conditional weight applies
+
+```
+Remove [[Righteous Path] branch]
+Adopt [Demonic Path]
+```
+
+### Whitewashed Name
+
+Presentation **Alert**. Fired by GlobalUniques for a demonic major once anyone has built Shang Clan City (2% per turn on Standard). Canon: demonic Gu Masters fight in the Shang battle district to be whitened (R V2c60, V2c66). Popup text: *The Shang clan's battle stage will wash any name white, for a price.*
+
+**1. Buy a righteous name** — AI weight 0.5, 33% when every choice is open and no conditional weight applies
+
+```
+Only available <when above [150] [Gold]>
+Gain [-150] [Gold]
+Remove [[Demonic Path] branch]
+Adopt [Righteous Path]
+```
+
+**2. Stay what you are** — AI weight 1, 67% when every choice is open and no conditional weight applies
+
+```
+```
+
+### Clan Contest
+
+Presentation **None**. Silent die, fired by GlobalUniques for every major at peace after turn 60 (2% per turn on Standard). Canon: the three-clan contest splits the mountain's gains (R V1c179).
+
+**1. Your young Gu Masters carry the day** — AI weight 1, 50% when every choice is open and no conditional weight applies; conditional weights: `[+100]% weight to this choice for AI decisions <if [Martial Arena] is constructed>`; `[+100]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>`
+
+```
+Gain [60] [Gold]
+New [Gu Master] units start with [10] XP [in all cities] <for [10] turns>
+```
+
+**2. Your young Gu Masters are beaten** — AI weight 1, 50% when every choice is open and no conditional weight applies
+
+```
+Gain [-30] [Gold]
+[-3 Happiness] <for [10] turns>
+```
+
+### Blood Lake
+
+Presentation **Alert**. Fired once, for the Gu Yue Clan, when it discovers Inheritance Lore. Canon (volume 1 twist, the user's decision D4): the first clan head took a Blood Sea Ancestor inheritance, became a blood zombie and lay hidden under the Blood Lake; the Tie constable came to root out the blood disaster (R V1c181-185, V1c192, V1c195). The rebel stands in for the risen founder (ADAPTED). Popup text: *Beneath the spring cave the elders have found a blood-red lake and, in it, the coffin of the clan's founder. Something in the coffin is still alive.*
+
+**1. Seal the lake and speak of it to no one** — AI weight 1.5, 50% when every choice is open and no conditional weight applies
+
+```
+Only available <when above [80] [Gold]>
+Gain [-80] [Gold]
+```
+
+**2. Send for the Tie clan's constable** — AI weight 1, 33% when every choice is open and no conditional weight applies
+
+```
+A [Rank Four Gu Master] rebels
+[+2 Happiness] <for [10] turns>
+```
+
+**3. Claim the founder's blood inheritance** — AI weight 0.5, 17% when every choice is open and no conditional weight applies
+
+```
+Remove [[Righteous Path] branch]
+Adopt [Demonic Path]
+Gain [150] [Gold]
+[+15]% Strength <for [10] turns>
+```
+
 
 ## Balance starting numbers
 

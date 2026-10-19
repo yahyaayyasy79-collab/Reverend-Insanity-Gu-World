@@ -170,7 +170,18 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     lambda m: f"Triggers a [Betrayal] event <upon turn start> <when above [300] [Gold]> <with [{chance(3, m)}]% chance> "
               "<for [Major] Civilizations>") + per_speed(
     lambda m: "Triggers a [Stone Shortage] event <upon turn start> <when below [0] [Gold]> <when number of [[Gold] Per Turn] "
-              f"is less than [0]> <with [{chance(25, m)}]% chance> <for [Major] Civilizations>") + [
+              f"is less than [0]> <with [{chance(25, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    # C8: a righteous clan friendly with a demonic one, or conquering a city, may be exposed
+    lambda m: "Triggers a [Collusion Exposed] event <upon turn start> <after adopting [Righteous Path]> "
+              "<when number of [Adopted [[Demonic Path] branch] Policies by [Friendly] Civilizations] is more than [0]> "
+              f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: "Triggers a [Whitewashed Name] event <upon turn start> <after adopting [Demonic Path]> "
+              f"<if [Shang Clan City] is constructed by anybody> <with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Clan Contest] event <upon turn start> <after turn number [{turn_gate(60, m)}]> <when not at war> "
+              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + [
+    "Triggers a [Collusion Exposed] event <upon conquering a city> <after adopting [Righteous Path]> <with [25]% chance> "
+    "<for [Major] Civilizations>",
+    "Triggers a [Blood Lake] event <upon discovering [Inheritance Lore] technology> <for [Gu Yue Clan] Civilizations>",
     # R6: a held (excavated) inheritance teaches the clan's Gu Masters
     "[+20]% XP gained from combat <with [Gu Inheritance]>",
 ]})
@@ -356,13 +367,18 @@ dump("UnitPromotions.json", [
     # clan emblem Gu (canon names, ch22); effects and foods unknown, so they eat stones
     {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs"]},
     {"name": "Stream Gu", "uniques": ["[+10] HP when healing", "[+10]% maintenance costs"]},
+    # C1 (canon overhaul, conflicts research): the righteous hunt demonic cultivators and post bounties on them (R V2c29,
+    # V2c35). A marker on every military unit of a Demonic Path clan; it clears itself once the clan's camp changes.
+    {"name": "Demonic Infamy", "uniques": [
+        "Comment [Righteous clans fight harder against this unit and pay a bounty for it]",
+        "[This Unit] loses the [Demonic Infamy] promotion <upon turn start> <before adopting [Demonic Path]>"]},
     # R3 hunger statuses (timers; see hunger()); each removes itself once its food is back
 ] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
      for food, status in HUNGER.items()]
     # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
     + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions())
 
-# ---------------- Events (9: the spec's 5 + wild Gu and inheritances, R6) ----------------
+# ---------------- Events (13: the spec's 5, wild Gu and inheritances (R6), world conflicts (canon overhaul)) ----------------
 BAI = "<for [Bai Clan] Civilizations>"
 # R7: a capital population cost needs a capital to pay it: at population 1 the loss is void [src] and the reward free
 CAP_POP = "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>"
@@ -415,6 +431,13 @@ dump("Events.json", [
             "Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>",
             f"Gain [-40] [Gold] <during the [{E3}]>", f"Gain [-70] [Gold] <during the [{E4}]>",
             "[-20]% [Production] <for [5] turns>", w("+50")]},
+        # C3: canon answers a wolf tide with an alliance of the clans and a split of the spoils (R V1c124, V1c127,
+        # V1c179); the wolves still come, the clan fights them stronger and pays its share. Not while at war.
+        {"text": "Call the clans' alliance", "uniques": [
+            "Only available <when number of [Known [Major] Civilizations] is more than [1]> <when not at war>",
+            f"[2] [Lightning Wolf]s rebel <during the [{E12}]>", f"[3] [Lightning Wolf]s rebel <starting from the [{E3}]>",
+            f"A [Bold Lightning Wolf] rebels <starting from the [{E3}]>",
+            "[+30]% Strength <vs [Barbarians] units> <for [10] turns>", "[-10]% [Gold] <for [10] turns>", w("+30")]},
     ]},
     {"name": "Betrayal", "text": "A clan member has sold you out and fled with stones and Gu.", "choices": [
         {"text": "Let the traitor go", "uniques": ["Only available <when above [60] [Gold]>", "Gain [-60] [Gold]",
@@ -438,9 +461,48 @@ dump("Events.json", [
         {"text": "Borrow from the merchant caravans", "uniques": [
             "Only available <when above [-100] [Gold]>", "Gain [80] [Gold]", "[-6 Gold] <for [20] turns>", w("-80")]},
         {"text": "Squeeze the mortals", "uniques": [CAP_POP, "Gain [50] [Gold]", "[-1] population [in capital]", w("-20")]},
+        # C7: merchants shun a clan that robs caravans (R V1c55-57); a righteous clan that does it risks exposure
         {"text": "Rob a passing caravan", "uniques": [
-            "Only available <after adopting [Demonic Path]>", "Gain [70] [Gold]",
-            "Triggers a [Betrayal] event <with [25]% chance>", w("+50")]},
+            "Gain [70] [Gold]", "Triggers a [Betrayal] event <with [25]% chance>",
+            "[+100]% City-State Influence degradation <for [10] turns>",
+            "Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>",
+            w("+50"), w("-80", "<after adopting [Righteous Path]>")]},
+    ]},
+    # C8 (conflicts research M4): a righteous clan caught dealing with demons, or grabbing land without a pretext, is
+    # pressed by the others and may be branded demonic, as the Fang clan was (R V5c595-596, V6c287). `Remove` takes the
+    # branch and its members [src Policy.matchesSingleFilter, UniqueTriggerActivation.OneTimeRemovePolicy]; `Adopt`
+    # ignores the opener's own gate [src PolicyManager.adopt]; checked headless (docs/AUTOPLAY.md, canon overhaul 4).
+    {"name": "Collusion Exposed", "text": "Word spreads that your clan deals with demonic cultivators. The righteous clans demand an answer.", "choices": [
+        {"text": "Pay to bury the scandal", "uniques": ["Only available <when above [100] [Gold]>", "Gain [-100] [Gold]", w("+50")]},
+        {"text": "Ride it out", "uniques": ["[-3 Happiness] <for [10] turns>",
+                                           "[+100]% City-State Influence degradation <for [10] turns>", w("+0")]},
+        {"text": "Walk the demonic path openly", "uniques": ["Remove [[Righteous Path] branch]", "Adopt [Demonic Path]",
+                                                            w("-50")]},
+    ]},
+    # C8 (M4b): a demonic clan can buy a righteous name in the Shang clan's battle district (R V2c60, V2c66)
+    {"name": "Whitewashed Name", "text": "The Shang clan's battle stage will wash any name white, for a price.", "choices": [
+        {"text": "Buy a righteous name", "uniques": ["Only available <when above [150] [Gold]>", "Gain [-150] [Gold]",
+                                                    "Remove [[Demonic Path] branch]", "Adopt [Righteous Path]", w("-50")]},
+        {"text": "Stay what you are", "uniques": [w("+0")]},
+    ]},
+    # C9 (M11): a peacetime contest between the clans splits the mountain's gains (R V1c179); a silent die
+    {"name": "Clan Contest", "presentation": "None", "choices": [
+        {"text": "Your young Gu Masters carry the day", "uniques": [
+            "Gain [60] [Gold]", "New [Gu Master] units start with [10] XP [in all cities] <for [10] turns>", w("+0"),
+            w("+100", "<if [Martial Arena] is constructed>"), w("+100", "<when number of [[Military] Units] is more than [8]>")]},
+        {"text": "Your young Gu Masters are beaten", "uniques": ["Gain [-30] [Gold]", "[-3 Happiness] <for [10] turns>", w("+0")]},
+    ]},
+    # D4 (the user: the twist is used): Gu Yue's first clan head took a Blood Sea Ancestor inheritance, became a blood
+    # zombie and lay hidden under the Blood Lake; the Tie constable came to root out the blood disaster (R V1c181-185,
+    # V1c192, V1c195). Fired once, for Gu Yue, when it learns Inheritance Lore.
+    {"name": "Blood Lake", "text": "Beneath the spring cave the elders have found a blood-red lake and, in it, the coffin of the clan's founder. Something in the coffin is still alive.", "choices": [
+        {"text": "Seal the lake and speak of it to no one", "uniques": ["Only available <when above [80] [Gold]>",
+                                                                       "Gain [-80] [Gold]", w("+50")]},
+        {"text": "Send for the Tie clan's constable", "uniques": ["A [Rank Four Gu Master] rebels",
+                                                                 "[+2 Happiness] <for [10] turns>", w("+0")]},
+        {"text": "Claim the founder's blood inheritance", "uniques": [
+            "Remove [[Righteous Path] branch]", "Adopt [Demonic Path]", "Gain [150] [Gold]",
+            "[+15]% Strength <for [10] turns>", w("-50")]},
     ]},
     # R6: wild Gu. Stage 1 is silent (None): 1 in 5 goes on to stage 2, a popup for the human (Alert; the AI rolls).
     # Only Gu that live wild in canon or plausibly so: the Liquor Worm (lured wild in canon), Jade Skin Gu, Black Boar
@@ -525,19 +587,26 @@ dump("Policies.json", [
     {"name": "Righteous Path", "era": E12, "priorities": {"Southern Border Supremacy": 2, "Endurance": 6}, "uniques": [
         "Only available <before adopting [Demonic Path]>",
         "Resting point for Influence with City-States is increased by [15]",
-        "[-25]% maintenance costs <in [Friendly Land] tiles>"], "policies": [
+        "[-25]% maintenance costs <in [Friendly Land] tiles>",
+        "[+10]% Strength <vs [Demonic Infamy] units>"], "policies": [
         {"name": "Clan Rules", "row": 1, "column": 1, "uniques": ["[-15]% Unhappiness from [Population] [in all cities]"]},
         {"name": "Righteous Alliance", "row": 1, "column": 3, "uniques": [
             "City-State Influence recovers at twice the normal rate",
-            "Gifts of Gold to City-States generate [+25]% more Influence"]},
+            "Gifts of Gold to City-States generate [+25]% more Influence",
+            # C2: the written three-village alliance (R V1c127); demonic clans can never pact
+            "Enables Defensive Pacts"]},
         {"name": "Guardian Formations", "row": 2, "column": 2, "requires": ["Clan Rules"],
          "uniques": ["[+25]% Strength for cities", "[+10]% Strength <when defending>"]},
-        {"name": "Righteous Path Complete", "uniques": ["[-10]% maintenance costs"]}]},
+        {"name": "Righteous Path Complete", "uniques": ["[-10]% maintenance costs",
+                                                        "Earn [100]% of killed [Demonic Infamy] unit's [Cost] as [Gold]"]}]},
     {"name": "Demonic Path", "era": E12, "priorities": {"Southern Border Supremacy": 6, "Endurance": 2}, "uniques": [
         "Only available <before adopting [Righteous Path]>",
         "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
         "[+50]% City-State Influence degradation",
-        "Triggers a [Betrayal] event <upon turn start> <with [3]% chance>"], "policies": [
+        "Triggers a [Betrayal] event <upon turn start> <with [3]% chance>",
+        # C1: a demonic clan is marked; the first line fires once, on adoption [src PolicyManager.adopt]
+        "[Military] units gain the [Demonic Infamy] promotion",
+        "All newly-trained [Military] units [in all cities] receive the [Demonic Infamy] promotion"], "policies": [
         {"name": "Plunder", "row": 1, "column": 1, "uniques": ["[+100]% Yield from pillaging tiles",
                                                              "Receive [+100]% Gold from Barbarian encampments and pillaging Cities"]},
         # R2 T1: the S6 'rogue cultivator' strategy (demonic Gu Masters are lone cultivators, vol2 ch81); was Blood Harvest
@@ -666,9 +735,32 @@ dump("Ruins.json", [
 
 
 # ---------------- Nations ----------------
+# D4 (the user, 2026-10-19): all four majors start righteous, as in canon; the demonic camp is reached through the
+# Collusion Exposed and Blood Lake events (a camp can flip both ways, as for the Fang clan and Wei Yang in canon)
+RIGHTEOUS_START = "Starts with [Righteous Path] adopted"
+# C5: canon voices in the mod's own words (conflicts research, M7)
+VOICES = {
+    "Gu Yue Clan": ("I am Gu Yue Bo of the Gu Yue clan. Our village has stood on Qing Mao longer than any other; speak, and be brief.",
+                    "The covenant of the alliance slope does not shelter you. The Gu Yue will settle this themselves.",
+                    "Take the village. The spring beneath it will outlast you too."),
+    "Bai Clan": ("The Bai clan bows to no overlord any more. Remember that when you speak.",
+                 "One spring makes a village; three make a clan. Yours will be the second.",
+                 "Centuries under another clan's heel, and it ends like this."),
+    "Xiong Clan": ("Xiong village. Count our Gu Masters before you call us weak.",
+                   "You spent your strength on the wolves. We kept ours.",
+                   "Even a bear has to sleep."),
+    "Wu Clan": ("Wu Ji of the Wu clan. The Southern Border keeps me busy; state your purpose.",
+                "The righteous never strike without a reason. Here is ours.",
+                "Write it down: the Wu fell to you. Few will believe it."),
+}
+
+
 def nation(name, leader, pers, outer, inner, cities, uniques):
-    return {"name": name, "leaderName": leader, "adjective": [name], "personality": pers, "outerColor": outer,
-            "innerColor": inner, "cities": cities, "uniques": uniques}
+    d = {"name": name, "leaderName": leader, "adjective": [name], "personality": pers, "outerColor": outer,
+         "innerColor": inner, "cities": cities, "uniques": uniques}
+    if name in VOICES:
+        d["introduction"], d["declaringWar"], d["defeated"] = VOICES[name]
+    return d
 
 
 def emblem(gu, extra=""):
@@ -680,19 +772,22 @@ def emblem(gu, extra=""):
 dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
            ["Gu Yue Village", "Alliance Slope", "Spear Bamboo Grove", "Stone Forest"],
-           [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), "Start bias [Spirit Spring]", "Start bias [Hill]"]),
+           [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), RIGHTEOUS_START, "Start bias [Spirit Spring]",
+            "Start bias [Hill]"]),
     # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
     nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
            ["Bai Village", "Back-Slope Waterfall", "Deep Pool", "Bitter Shell Pool"],
-           [emblem("Stream Gu"), "[+15]% Strength <vs [Barbarians] units>", "Start bias [Spirit Spring]", "Start bias [Fresh Water]"]),
+           [emblem("Stream Gu"), "[+15]% Strength <vs [Barbarians] units>", RIGHTEOUS_START, "Start bias [Spirit Spring]",
+            "Start bias [Fresh Water]"]),
     nation("Xiong Clan", "Xiong Clan Leader", "Xiong Temperament", [90, 50, 20], [240, 200, 140],
            ["Xiong Village", "Front Slope", "Honey Hollow"],
-           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", "Start bias [Spirit Spring]", "Start bias [Hill]"]),
+           [emblem("Bear Strength Gu"), "Starts with [Strength Path] adopted", RIGHTEOUS_START, "Start bias [Spirit Spring]",
+            "Start bias [Hill]"]),
     # canon start biases (geography research): Xiong on the front slope (R V1c65), Wu by the rivers (R V2c1)
     # R3: the fourth major is the Wu clan, the Southern Border's first clan (user's choice); leader Wu Ji (vol2 ch84)
     nation("Wu Clan", "Wu Ji", "Wu Temperament", [120, 20, 20], [250, 210, 120],
            ["Wu Yi Mountain", "Moon Bowl", "Golden Cloud Canyon", "Xuan Ming Mountain"],
-           ["Starts with [Righteous Path] adopted", "Start bias [Spirit Spring]", "Start bias [River]"]),
+           [RIGHTEOUS_START, "Start bias [Spirit Spring]", "Start bias [River]"]),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -716,18 +811,24 @@ dump("CityStateTypes.json", [
                           "All newly-trained [Gu Master] units [in all cities] receive the [Black Boar Gu] promotion <when above [0] [Wild Boar]>"]},
 ])
 dump("Personalities.json", [
+    # C4 (conflicts research M6): Gu Yue the declining overlord that brokers alliances and lives off caravans; Bai the
+    # rising aggressor after all three springs; Xiong the free-rider; Wu the coalition leader. Never declareWar 0 [src].
     {"name": "Gu Yue Temperament", "science": 7, "culture": 6, "gold": 5, "military": 4, "aggressive": 3,
+     "declareWar": 3, "diplomacy": 7, "commerce": 7, "loyal": 6,
      "priorities": {"Moon Path": 10, "Righteous Path": 6},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions",
                  "Will not build [Flower Wine Monk Inheritance]"]},
-    {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 4, "aggressive": 3,
+    {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 4, "aggressive": 6,
+     "declareWar": 7, "expansion": 7, "diplomacy": 3, "loyal": 3,
      "priorities": {"Righteous Path": 8},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
-    {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6,
+    {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6, "declareWar": 5, "loyal": 2,
+     "diplomacy": 6,
      "preferredVictoryType": "Southern Border Supremacy",
-     "priorities": {"Strength Path": 10, "Demonic Path": 6, "Righteous Path": 3},
+     "priorities": {"Strength Path": 10, "Righteous Path": 3},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
+     "declareWar": 6, "diplomacy": 7,
      "preferredVictoryType": "Southern Border Supremacy",
      "priorities": {"Righteous Path": 10, "Strength Path": 4},  # D3: the clan walks wind; Wu Ji alone walks strength
      "uniques": ["[+50]% weight to [Martial Arena] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},

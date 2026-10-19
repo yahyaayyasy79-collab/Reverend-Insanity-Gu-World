@@ -667,6 +667,17 @@ def water_gu_master(rank):
     pips(g, rank); return g
 
 
+def demonic_infamy():
+    """A horned demon mask with a bounty notch: the mark righteous clans hunt."""
+    g = G()
+    g.ell(22, 26, 78, 90)
+    for side in (-1, 1):
+        g.poly([(50 + side * 18, 34), (50 + side * 40, 6), (50 + side * 28, 40)])         # horns
+    g.poly([(32, 50), (46, 56), (34, 60)], 0); g.poly([(68, 50), (54, 56), (66, 60)], 0)  # slanted eyes
+    g.poly([(38, 74), (62, 74), (58, 80), (50, 76), (42, 80)], 0)                       # fanged mouth
+    return g
+
+
 ICONS2 = [
     ("ResourceIcons", "Gu Inheritance", gu_inheritance, "black"),
     ("ImprovementIcons", "Inheritance Dig", inheritance_dig, "black"),
@@ -726,6 +737,7 @@ ICONS2 = [
     ("PolicyIcons", "Ruthless Cultivation", ruthless_cultivation, "white"),
     ("PolicyIcons", "Moonlight Mastery", moonlight_mastery, "white"),
     ("PolicyIcons", "Orchid Beds", orchid_beds, "white"),
+    ("UnitPromotionIcons", "Demonic Infamy", demonic_infamy, "white"),
     ("PolicyIcons", "Moon Blade Step", moon_blade_step, "white"),
     ("PolicyIcons", "Boar Strength", boar_strength, "white"),
     ("PolicyIcons", "Beast Hunters", beast_hunters, "white"),

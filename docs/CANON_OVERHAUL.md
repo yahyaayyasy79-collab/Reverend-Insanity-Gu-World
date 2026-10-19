@@ -1,4 +1,4 @@
-# Canon overhaul plan (2026-10-19) — waiting at a checkpoint
+# Canon overhaul plan (2026-10-19) — approved; parts A, B, C (Slice 1), E, F built
 
 The user's request (2026-10-18): rework all lore, the world's conflicts (between clans, and between righteous, demonic
 and lone cultivators), the texts and the tile regions to follow *Reverend Insanity*. Nothing below is implemented

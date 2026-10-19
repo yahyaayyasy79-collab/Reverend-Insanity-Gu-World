@@ -91,6 +91,7 @@ def displayed_strings(mod_root: Path = REPO_ROOT) -> list[str]:
     for n in load("Nations.json"):
         if n["name"] != "Spectator":
             out += [n["name"]] + ([n["leaderName"]] if n.get("leaderName") else []) + n.get("cities", [])
+            out += [n[k] for k in ("introduction", "declaringWar", "defeated") if n.get(k)]
     for e in load("Events.json"):
         out += ([e["text"]] if e.get("text") else []) + [c["text"] for c in e["choices"]]
     for r in load("Ruins.json"):

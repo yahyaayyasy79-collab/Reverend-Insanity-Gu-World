@@ -111,7 +111,11 @@ def move_uniques(p: dict, immortal: bool = False) -> list[str]:
 def grant(g: dict) -> str:
     """The Master hands its path's Gu to the unit at a turn start, once the unit's rank and the Gu's food allow; a Gu
     that starved comes back only when its food is in surplus again."""
-    gates = [g["gate"] or RANK_GATE[int(g["rank"])]] + ([f"<when above [0] [{g['food']}]>"] if g["food"] else [])
+    # a Gu that eats a Gu food comes only from a spare of two, one unit in four per turn: the civ's resource count is
+    # not refreshed between units at a turn start [src], so a looser gate fed one spare to every Master at once and
+    # they starved together (autoplay, canon overhaul 4)
+    gates = [g["gate"] or RANK_GATE[int(g["rank"])]] + (
+        [f"<when above [1] [{g['food']}]>", "<with [25]% chance>"] if g["food"] else [])
     return " ".join([f"[This Unit] gains the [{g['name']}] promotion <upon turn start> <for units without [{g['name']}]>"]
                     + [x for x in gates if x])
 
