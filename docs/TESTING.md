@@ -30,7 +30,7 @@ top-level `Images/` folder exists.
 
 **Android.** Use the URL download; the manual `Android/data/com.unciv.app/files/mods` route is usually unwritable
 from the phone since Android 11, and its copy merges without deleting [src `AndroidLauncher.copyMods`]. Android
-cannot pack atlases: without a committed `game.atlas` + `game.png` (+ `Atlases.json`) icons are blank circles.
+cannot pack atlases: without the committed atlases (`game.*`, `Units.*`, `Atlases.json`) icons are blank circles.
 Never commit `Atlases.json` without the atlas it lists (validation error that blocks the base ruleset).
 
 ## Play and check
@@ -50,7 +50,7 @@ Never commit `Atlases.json` without the atlas it lists (validation error that bl
 
 `tools/unciv_ci.py` runs the 4.22.8 release jar's `mod-ci` mode — the same RulesetValidator as "Locate mod
 errors" — on a temporary copy (part of `tools/check_all`). `tools/unciv_ci.py --pack` also writes the atlas Android
-needs; commit `game.atlas`, `game*.png` and `Atlases.json` together. In-game checking remains the final word for
+needs; commit every `*.atlas`, its `.png` and `Atlases.json` together. In-game checking remains the final word for
 behaviour, not for syntax.
 
 ## Reload rules
@@ -58,7 +58,7 @@ behaviour, not for syntax.
 | Changed | Takes effect after |
 |---|---|
 | `jsons/*.json` | Locate mod errors → "Reload mods", then a new game (running games keep their ruleset) |
-| `Images/**` | full restart (packing happens at launch; delete `game.atlas` after removing images) |
+| `Images/**`, `Images.Units/**` | full restart (packing happens at launch; delete the `.atlas` files after removing images) |
 | `jsons/translations/*.properties` | restart or a language change |
 
 ## Developer console

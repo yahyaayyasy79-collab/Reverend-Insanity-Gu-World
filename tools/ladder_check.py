@@ -2,8 +2,9 @@
 """Exhaustive check of the refinement ladder (MOD_SPEC pillar 2, CAPABILITIES E4/E5) in a generated ruleset.
 
 Models the engine as read in the 4.22.8 source [src Event.triggerChoice, UnitPromotions]: a choice's uniques fire in
-list order and promotion conditionals are read live. For every reachable unit state (unit type x Gu held x Killer
-Moves known x each Gu food at 0/1/2 x stones) it checks, for each refining choice of the Refinement Attempt event:
+list order and promotion conditionals are read live. For every reachable unit state (rank one or higher x path Masters
+held x Gu held x Killer Moves known x each Gu food at 0/1/2 x stones) it checks, for each refining choice of the
+Refinement Attempt event:
 
   1. at most one 'gains' chance line matches (one roll per attempt, E5);
   2. the choice's Unavailable lines close exactly the states in which no 'gains' line matches (no empty attempts);
@@ -26,7 +27,8 @@ from pathlib import Path
 GAIN = re.compile(r"\[This Unit\] gains the \[(.+?)\] promotion")
 LOSE = re.compile(r"\[This Unit\] loses the \[(.+?)\] promotion")
 CONSUMES = re.compile(r"^Consumes \[(\d+)\] \[(.+?)\]$")
-TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]
+UNITS = ["Rank One Gu Master", "Rank Two Gu Master"]  # rank one, and any higher rank (all of unit type Gu Master)
+PATHS = ["Moon Master", "Strength Master"]  # since C3 the path is a promotion (docs/PATHS.md)
 # Modifiers that do not depend on the unit state modelled here (eras, buildings, HP, the careful stone reserve).
 IGNORED = ("if [", "during the", "starting from the", "upon turn start", " HP", "when above [80] [Gold]",
            "when below [140] [Gold]", "when below [200] [Gold]", "when below [150] [Gold]")
@@ -36,11 +38,16 @@ def modifiers(u: str) -> list[str]:
     return re.findall(r"<([^>]*)>", u)
 
 
+def unit_is(s: dict, f: str) -> bool:
+    return f in (s["unit"], "Gu Master")
+
+
 def holds(c: str, s: dict) -> bool:
     if c.startswith("with [") and c.endswith("% chance"):
         return True  # every roll is assumed to succeed; the checks are about which lines CAN fire
     for pattern, test in (
-        (r"for \[(.+)\] units", lambda m: s["type"] == m[1]),
+        (r"for \[non-\[(.+)\]\] units", lambda m: not unit_is(s, m[1])),
+        (r"for \[(.+)\] units", lambda m: unit_is(s, m[1])),
         (r"for units with \[(.+)\]", lambda m: m[1] in s["gu"]),
         (r"for units without \[(.+)\]", lambda m: m[1] not in s["gu"]),
         (r"(after|before) discovering \[Killer Moves\]", lambda m: s["km"] == (m[1] == "after")),
@@ -76,16 +83,17 @@ def fire(uniques: list[str], s: dict) -> tuple[list[str], set[str]]:
     return fired, gu
 
 
-def reachable(t: str, gu: set[str], km: bool) -> bool:
-    """Unit states the ladder can actually produce (the round-2 plan in docs/LORE_MAPPING.md)."""
-    rank_two = {"White Boar Gu", "Black Boar Gu", "White Jade Gu", "Moon Raiment", "Killer Move"}
-    if t == "Gu Master" and gu & rank_two:
+def reachable(unit: str, gu: set[str], km: bool) -> bool:
+    """Unit states the ladder can actually produce (docs/LORE_MAPPING.md, refinement ladder; C3: paths are promotions
+    held for good, a Rank One may hold one, a human unit may hold both)."""
+    rank_one = unit == "Rank One Gu Master"
+    if rank_one and gu & {"White Jade Gu", "Moon Raiment", "Killer Move"}:
+        return False  # the fusions need a rank-two aperture
+    if not rank_one and "Liquor Worm" in gu:
+        return False  # let go at the turn start after rank one (a transient state)
+    if "Moon Raiment" in gu and "Moon Master" not in gu:
         return False
-    if t != "Gu Master" and "Liquor Worm" in gu:
-        return False
-    if t == "Moon Gu Master" and gu & {"White Boar Gu", "Black Boar Gu", "White Jade Gu"}:
-        return False
-    if t == "Strength Gu Master" and "Moon Raiment" in gu:
+    if gu & {"White Boar Gu", "White Jade Gu"} and "Strength Master" not in gu:
         return False
     if "White Jade Gu" in gu and gu & {"White Boar Gu", "Jade Skin Gu"}:
         return False
@@ -115,7 +123,7 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
             for name, p in promos.items()}
     foods = sorted({r for d in eats.values() for r in d})
     ladder_gu = sorted({g[1] for c in refining for u in c["uniques"] if (g := GAIN.match(u) or LOSE.match(u))}
-                       | {"Black Boar Gu", "Liquor Worm"})
+                       | {"Black Boar Gu", "Liquor Worm"} | set(PATHS))
 
     def eaten(gu: set[str]) -> dict[str, int]:
         total: dict[str, int] = {}
@@ -125,12 +133,12 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
         return total
 
     errors, states = [], 0
-    for t, bits, km in itertools.product(TYPES, itertools.product([0, 1], repeat=len(ladder_gu)), (False, True)):
+    for unit, bits, km in itertools.product(UNITS, itertools.product([0, 1], repeat=len(ladder_gu)), (False, True)):
         gu = {g for g, b in zip(ladder_gu, bits) if b}
-        if not reachable(t, gu, km):
+        if not reachable(unit, gu, km):
             continue
         for amounts, gold in itertools.product(itertools.product([0, 1, 2], repeat=len(foods)), (0, 1000)):
-            s = {"type": t, "gu": gu, "km": km, "Gold": gold, **dict(zip(foods, amounts))}
+            s = {"unit": unit, "gu": gu, "km": km, "Gold": gold, **dict(zip(foods, amounts))}
             states += 1
             if transient(gu):
                 if not all(closed(u, s) for u in [c["uniques"] for c in refining] + [refine_gu] + ([ruin] if ruin else [])):

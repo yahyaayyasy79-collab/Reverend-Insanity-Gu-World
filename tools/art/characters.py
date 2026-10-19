@@ -91,6 +91,17 @@ def gu_master(rank: int, path: str | None):
         if rank >= 4:
             s.add("crescent", (0.0, 1.75, -0.32), 0.42, 0.015, 0.16, 0.0, 0.0, mat="moon")          # moon behind the back
         s.add("torus", (0, 0.02, 0), 0.42 + 0.04 * rank, 0.018, mat=ESSENCE[rank])
+    elif path == "Water":
+        # the Bai clan (water path, Stream Gu): water ribbons circle the master, one more per rank
+        cultivator(s, height=1.0, build=0.95, robe=True, bun=True, pose="cast")
+        for k in range(rank - 1):
+            s.add("torus", (0, 0.7 + 0.45 * k, 0), 0.42 + 0.05 * k, 0.03, mat="water")
+        s.add("sphere", (0.36, 1.45, 0.5), 0.08 + 0.02 * rank, mat="water")
+        s.add("torus", (0, 0.02, 0), 0.42 + 0.04 * rank, 0.018, mat=ESSENCE[rank])
+    elif rank > 1:   # any other path (C3: the path is a promotion): a grown cultivator with an orb of his rank's essence
+        cultivator(s, height=1.0, build=1.0, robe=True, bun=True, pose="cast")
+        s.add("sphere", (0.36, 1.45, 0.5), 0.08 + 0.02 * rank, mat=ESSENCE[rank])
+        s.add("torus", (0, 0.02, 0), 0.42 + 0.04 * rank, 0.018, mat=ESSENCE[rank])
     else:   # rank one, unpathed: a youth with a green-copper essence orb over the palm
         cultivator(s, height=0.94, build=0.9, robe=True, bun=True, pose="cast", young=True)
         s.add("sphere", (0.36, 1.45, 0.5), 0.09, mat="essence1")
@@ -187,6 +198,21 @@ def lightning_frame(i, crown=False):
     return s
 
 
+def water_frame(i, rank):
+    """A wave of water rolls in and breaks over the target."""
+    s = Scene()
+    k = 0.6 + 0.1 * rank
+    if i < 2:
+        z = -0.7 + 0.6 * i
+        s.add("ellipsoid", (0, 0.5, z), (0.6 * k, 0.35 * k, 0.2 * k), mat="water")
+        s.add("crescent", (0, 0.85, z + 0.1), 0.35 * k, 0.04, 0.15, 0.0, 1.2, mat="water")
+    else:
+        r = 0.35 + 0.3 * (i - 1)
+        s.add("torus", (0, 0.25, 0), r * k, 0.05, mat="water")
+        s.add("sphere", (0, 0.6, 0), 0.12 * (i - 1), mat="water")
+    return s
+
+
 def essence_frame(i, rank=1):
     s = Scene()
     s.add("sphere", (0, 0.9, 0), 0.12 + 0.12 * i, mat=ESSENCE[rank])
@@ -203,6 +229,11 @@ UNITS = {
     "Rank Two Moon Gu Master": lambda: gu_master(2, "Moon"),
     "Rank Three Moon Gu Master": lambda: gu_master(3, "Moon"),
     "Rank Four Moon Gu Master": lambda: gu_master(4, "Moon"),
+    # C3: the rank chain, and the signature clans' own chains (their path's look; the user's choice A.b)
+    **{f"Rank {w} Gu Master": (lambda r=r: gu_master(r, None)) for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
+    **{f"Rank {w} {clan} Gu Master": (lambda r=r, pth=pth: gu_master(r, pth))
+       for clan, pth in (("Gu Yue", "Moon"), ("Bai", "Water"), ("Xiong", "Strength"), ("Wu", "Strength"))
+       for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     "Lightning Wolf": lambda: wolf(0.85),
     "Bold Lightning Wolf": lambda: wolf(1.05, mane=True),
     "Thunder Crown Wolf": lambda: wolf(1.25, mane=True, crown=True),
@@ -215,6 +246,12 @@ ATTACKS = {
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     **{f"Rank {w} Strength Gu Master": [lambda i=i, r=r: boar_charge_frame(i, r) for i in range(4)]
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
+    **{f"Rank {w} Gu Master": [lambda i=i, r=r: essence_frame(i, r) for i in range(3)]
+       for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
+    **{f"Rank {w} {clan} Gu Master": [lambda i=i, r=r, f=f: f(i, r) for i in range(4)]
+       for clan, f in (("Gu Yue", moon_blade_frame), ("Bai", water_frame), ("Xiong", boar_charge_frame),
+                       ("Wu", boar_charge_frame))
+       for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     "Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Bold Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Thunder Crown Wolf": [lambda i=i: lightning_frame(i, crown=True) for i in range(4)],
@@ -224,5 +261,8 @@ ATTACKS = {
 PORTRAIT_ROBE = {"Clan Settler": (120, 92, 64), "Mortal Laborer": (140, 110, 80), "Rank One Gu Master": (70, 120, 90),
                  "Rank Two Strength Gu Master": (120, 40, 34), "Rank Three Strength Gu Master": (120, 40, 34),
                  "Rank Four Strength Gu Master": (120, 40, 34), "Rank Two Moon Gu Master": (40, 60, 130),
-                 "Rank Three Moon Gu Master": (40, 60, 130), "Rank Four Moon Gu Master": (40, 60, 130)}
+                 "Rank Three Moon Gu Master": (40, 60, 130), "Rank Four Moon Gu Master": (40, 60, 130),
+                 **{f"Rank {w} {who}Gu Master": col for w in ("Two", "Three", "Four")
+                    for who, col in (("", (90, 90, 100)), ("Gu Yue ", (40, 60, 130)), ("Bai ", (40, 110, 150)),
+                                     ("Xiong ", (110, 60, 30)), ("Wu ", (130, 30, 30)))}}
 PORTRAIT_TRIM = (225, 215, 190)

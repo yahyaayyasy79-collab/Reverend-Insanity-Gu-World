@@ -1,0 +1,20 @@
+a,b,strength,basis
+*,*,-10,"R ch1077, ch1804, ch1724: dao marks of different paths hinder each other"
+earth,water,-25,R ch1425: an earth move in a water-rich place loses half or more
+earth,fire,-25,R ch721: fire marks weaken earth Gu
+strength,water,-25,"R ch734, ch758: a strength body gets 70-80% from a water Immortal Gu"
+metal,strength,-25,R ch716: metal marks block a strength body's healing
+dark,light,-25,R ch2271: White Heaven and Black Heaven fragments shatter each other
+sound,*,-5,R ch1425: a sound move loses only a fifth to a third where earth loses half
+human,*,0,R ch1729: human-path marks neither disturb nor get disturbed
+enslavement,soul,0,"R ch870, ch1062"
+soul,wisdom,0,R ch870
+enslavement,wisdom,0,R ch870
+restriction,rule,0,R ch1062: a natural pairing; sub-path of rule
+phantom,rule,0,R ch1869: phantom attainment counts as rule path
+emotion,wisdom,0,R ch1062: a natural pairing; sub-path of wisdom
+emotion,enchantment,0,R 魅情道: enchantment branches from emotion
+enchantment,wisdom,0,a wisdom sub-path through emotion
+dark,shadow,0,R ch2284: shadow is a dark-path offshoot
+light,shadow,0,R ch2284: shadow holds light and dark together
+lightning,sound,0,R ch1068: a lightning-and-sound tribulation works as one

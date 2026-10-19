@@ -313,3 +313,31 @@
   clan without one. `tools/unique_allowlist.txt` gains the marker.
 * `docs/TESTING.md`: on Android the console button appears only after a long press on the ☰ menu icon [src].
 
+
+## C3 core — rank chain, clan chains, 47 paths, legacy bridge (2026-10-19)
+
+* Rank chain: Rank One to Rank Four Gu Master (unit type Gu Master); the path is no longer a unit but an XP promotion.
+  `data/paths.csv`, `data/path_families.csv`, `data/path_conflicts.csv`, `data/path_statuses.csv` and
+  `tools/gen_paths.py` write 47 Masters and 47 Grandmasters (tiers 1-2; a Grandmaster needs its Master and a rank-three
+  or higher unit), 47 move statuses and 5 signature statuses, the hidden conflict lines (default -10%, clashes -25%),
+  the AI's one-path rule (`Path Master` marker) and the signature-clan weights (85%), plus the tables of
+  `docs/PATHS.md`.
+* Clan chains (the user's choice A.b): Gu Yue, Bai, Xiong and Wu train their own rank 2-4 units with the same numbers
+  (`tools/gen_ruleset.py` asserts it), so the map sprite and attack animation show the signature path (moon, water,
+  strength). New 3D characters for the neutral ranks and the water chain.
+* Legacy bridge for running saves: the old Moon and Strength units stay hidden and unbuildable; at their first turn
+  start they gain their path's Master and upgrade for free into the rank unit (the clan's own where one exists).
+* Retargeted to the path promotions: the refinement ladder (Moon Master; Strength Master without Moon Master; the
+  fusions need rank two; the non-Killer-Move gains close once a Killer Move is held), the Moon and Strength policies,
+  Moon Path Complete (10 XP for every new Gu Master), the Jia ally's Black Boar Gu (every new Gu Master), the wild
+  Black Boar (Strength Masters), Betrayal's rebels (Rank Two Gu Master), Bai's AI priorities. `tools/ladder_check.py`
+  models paths and ranks: 62,208 unit states, 0 errors. Refine Gu and the refinement ruin close on 46 dead-state lines.
+* Fixes found on the way: an unpathed D-grade Rank One loses the Gu Yue emblem, a D-grade Moon Master keeps its
+  Moonlight Gu (the C3 retarget had made every D grade lose it, so a D-grade Moon Master paid XP for nothing); two
+  contradictory dead lines dropped.
+* Map sprites moved to `Images.Units/` (their own atlas, `Units.png`): with 146 new path icons the single `game.png`
+  spilled into a second page, which Unciv warns costs rendering performance.
+* `docs/LORE_MAPPING.md` rows for the rank, clan and legacy units, the retargeted promotions, policies and events;
+  `docs/BALANCE.md` lists the path knobs once instead of 1,500 per-promotion rows; `docs/KNOWN_ISSUES.md` (look
+  follows the clan, not the path; Rank One paths) and new in-game checks; `tools/b3/` removed (it became
+  `tools/gen_paths.py`).

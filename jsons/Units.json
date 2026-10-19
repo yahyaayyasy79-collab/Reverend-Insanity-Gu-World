@@ -49,8 +49,75 @@
       "[+50]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Can upgrade to [Rank Two Moon Gu Master]",
-      "Can upgrade to [Rank Two Strength Gu Master]",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Two Gu Master",
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A freshly awakened youth (一转蛊师) with a first Gu from the academy. Cheap, numerous and expendable: the clan learns which ones are worth feeding."
+      }
+    ]
+  },
+  {
+    "name": "Rank Two Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+100]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Three Gu Master",
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A rank-two Gu Master (二转): red-iron essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
+      }
+    ]
+  },
+  {
+    "name": "Rank Three Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+125]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Four Gu Master",
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A rank-three Gu Master (三转): white-silver essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
+      }
+    ]
+  },
+  {
+    "name": "Rank Four Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 32,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+175]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
@@ -58,7 +125,303 @@
     "attackSound": "throw",
     "civilopediaText": [
       {
-        "text": "A freshly awakened youth (一转蛊师) with a first Gu from the academy. Cheap, numerous and expendable: the clan learns which ones are worth feeding."
+        "text": "A rank-four Gu Master (四转): yellow-gold essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
+      }
+    ]
+  },
+  {
+    "name": "Rank Two Gu Yue Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+100]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Three Gu Master",
+    "attackSound": "whoosh",
+    "uniqueTo": "Gu Yue Clan",
+    "replaces": "Rank Two Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-two Gu Master of the Gu Yue clan (二转): moonlight is the clan's tradition, though not every member walks the moon path."
+      }
+    ]
+  },
+  {
+    "name": "Rank Three Gu Yue Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+125]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Four Gu Master",
+    "attackSound": "whoosh",
+    "uniqueTo": "Gu Yue Clan",
+    "replaces": "Rank Three Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-three Gu Master of the Gu Yue clan (三转): moonlight is the clan's tradition, though not every member walks the moon path."
+      }
+    ]
+  },
+  {
+    "name": "Rank Four Gu Yue Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 32,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+175]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "attackSound": "whoosh",
+    "uniqueTo": "Gu Yue Clan",
+    "replaces": "Rank Four Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-four Gu Master of the Gu Yue clan (四转): moonlight is the clan's tradition, though not every member walks the moon path."
+      }
+    ]
+  },
+  {
+    "name": "Rank Two Bai Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+100]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Three Gu Master",
+    "attackSound": "whoosh",
+    "uniqueTo": "Bai Clan",
+    "replaces": "Rank Two Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-two Gu Master of the Bai clan (二转): the clan's tradition is the water of its Stream Gu."
+      }
+    ]
+  },
+  {
+    "name": "Rank Three Bai Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+125]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Four Gu Master",
+    "attackSound": "whoosh",
+    "uniqueTo": "Bai Clan",
+    "replaces": "Rank Three Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-three Gu Master of the Bai clan (三转): the clan's tradition is the water of its Stream Gu."
+      }
+    ]
+  },
+  {
+    "name": "Rank Four Bai Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 32,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+175]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "attackSound": "whoosh",
+    "uniqueTo": "Bai Clan",
+    "replaces": "Rank Four Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-four Gu Master of the Bai clan (四转): the clan's tradition is the water of its Stream Gu."
+      }
+    ]
+  },
+  {
+    "name": "Rank Two Xiong Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+100]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Three Gu Master",
+    "attackSound": "nonmetalhit",
+    "uniqueTo": "Xiong Clan",
+    "replaces": "Rank Two Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-two Gu Master of the Xiong clan (二转): the clan's tradition is the raw strength of its Bear Strength Gu."
+      }
+    ]
+  },
+  {
+    "name": "Rank Three Xiong Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+125]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Four Gu Master",
+    "attackSound": "nonmetalhit",
+    "uniqueTo": "Xiong Clan",
+    "replaces": "Rank Three Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-three Gu Master of the Xiong clan (三转): the clan's tradition is the raw strength of its Bear Strength Gu."
+      }
+    ]
+  },
+  {
+    "name": "Rank Four Xiong Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 32,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+175]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "attackSound": "nonmetalhit",
+    "uniqueTo": "Xiong Clan",
+    "replaces": "Rank Four Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-four Gu Master of the Xiong clan (四转): the clan's tradition is the raw strength of its Bear Strength Gu."
+      }
+    ]
+  },
+  {
+    "name": "Rank Two Wu Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "uniques": [
+      "[+100]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Three Gu Master",
+    "attackSound": "nonmetalhit",
+    "uniqueTo": "Wu Clan",
+    "replaces": "Rank Two Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-two Gu Master of the Wu clan (二转): the Southern Border's first clan trains its own in the largest battle stage of the region."
+      }
+    ]
+  },
+  {
+    "name": "Rank Three Wu Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "uniques": [
+      "[+125]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "upgradesTo": "Rank Four Gu Master",
+    "attackSound": "nonmetalhit",
+    "uniqueTo": "Wu Clan",
+    "replaces": "Rank Three Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-three Gu Master of the Wu clan (三转): the Southern Border's first clan trains its own in the largest battle stage of the region."
+      }
+    ]
+  },
+  {
+    "name": "Rank Four Wu Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 32,
+    "cost": 140,
+    "requiredTech": "Rank Four Cultivation",
+    "uniques": [
+      "[+175]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "attackSound": "nonmetalhit",
+    "uniqueTo": "Wu Clan",
+    "replaces": "Rank Four Gu Master",
+    "civilopediaText": [
+      {
+        "text": "A rank-four Gu Master of the Wu clan (四转): the Southern Border's first clan trains its own in the largest battle stage of the region."
       }
     ]
   },
@@ -72,13 +435,13 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Strength Path]>",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
-      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Will not be displayed in Civilopedia",
+      "[This Unit] gains the [Strength Master] promotion <upon turn start>",
+      "[This Unit] upgrades for free <upon turn start>"
     ],
-    "upgradesTo": "Rank Three Strength Gu Master",
+    "upgradesTo": "Rank Two Gu Master",
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
@@ -96,13 +459,13 @@
     "uniques": [
       "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Strength Path]>",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
-      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Will not be displayed in Civilopedia",
+      "[This Unit] gains the [Strength Master] promotion <upon turn start>",
+      "[This Unit] upgrades for free <upon turn start>"
     ],
-    "upgradesTo": "Rank Four Strength Gu Master",
+    "upgradesTo": "Rank Three Gu Master",
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
@@ -120,12 +483,13 @@
     "uniques": [
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Strength Path]>",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
-      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Will not be displayed in Civilopedia",
+      "[This Unit] gains the [Strength Master] promotion <upon turn start>",
+      "[This Unit] upgrades for free <upon turn start>"
     ],
+    "upgradesTo": "Rank Four Gu Master",
     "attackSound": "nonmetalhit",
     "civilopediaText": [
       {
@@ -143,14 +507,13 @@
     "uniques": [
       "[+75]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Moon Path]>",
-      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
-      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Will not be displayed in Civilopedia",
+      "[This Unit] gains the [Moon Master] promotion <upon turn start>",
+      "[This Unit] upgrades for free <upon turn start>"
     ],
-    "upgradesTo": "Rank Three Moon Gu Master",
+    "upgradesTo": "Rank Two Gu Master",
     "attackSound": "whoosh",
     "civilopediaText": [
       {
@@ -168,14 +531,13 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Moon Path]>",
-      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
-      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Will not be displayed in Civilopedia",
+      "[This Unit] gains the [Moon Master] promotion <upon turn start>",
+      "[This Unit] upgrades for free <upon turn start>"
     ],
-    "upgradesTo": "Rank Four Moon Gu Master",
+    "upgradesTo": "Rank Three Gu Master",
     "attackSound": "whoosh",
     "civilopediaText": [
       {
@@ -193,13 +555,13 @@
     "uniques": [
       "[+150]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
-      "Only available <after adopting [Moon Path]>",
-      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
-      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Will not be displayed in Civilopedia",
+      "[This Unit] gains the [Moon Master] promotion <upon turn start>",
+      "[This Unit] upgrades for free <upon turn start>"
     ],
+    "upgradesTo": "Rank Four Gu Master",
     "attackSound": "whoosh",
     "civilopediaText": [
       {

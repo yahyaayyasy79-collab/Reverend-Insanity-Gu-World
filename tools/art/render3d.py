@@ -143,7 +143,7 @@ DEFAULT_MATS = {
     "essence1": Mat((110, 220, 150), emissive=True), "essence2": Mat((240, 90, 70), emissive=True),
     "essence3": Mat((235, 240, 255), emissive=True), "essence4": Mat((255, 214, 90), emissive=True),
     "volt": Mat((150, 210, 255), emissive=True), "volt_gold": Mat((255, 236, 120), emissive=True),
-    "earth": Mat((200, 140, 70)), "shadow": Mat((0, 0, 0)),
+    "earth": Mat((200, 140, 70)), "shadow": Mat((0, 0, 0)), "water": Mat((110, 190, 255), emissive=True),
 }
 
 

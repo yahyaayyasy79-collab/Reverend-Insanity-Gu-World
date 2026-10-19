@@ -303,11 +303,19 @@ class LoreMapping(unittest.TestCase):
         doc = REPO_ROOT / "docs" / "LORE_MAPPING.md"
         if not doc.exists():
             self.skipTest("docs/LORE_MAPPING.md not written yet")
-        text = doc.read_text(encoding="utf-8")
+        # C3: the path promotions are generated from data/paths*.csv and quoted by docs/PATHS.md (tools/gen_paths.py
+        # writes its tables); their hidden conflict lines follow one documented rule and are exempt. PATHS.md's prose
+        # also sketches patterns, so only LORE_MAPPING.md's quotes must all be real uniques.
+        import gen_paths
         files = {f.name: json.loads(f.read_text(encoding="utf-8")) for f in (REPO_ROOT / "jsons").glob("*.json")}
         generated = self._strings(list(files.values()), set())
-        quoted = set(re.findall(r"`([^`\n]+)`", text))
-        quoted.update(line for block in re.findall(r"```\n(.*?)```", text, re.S) for line in block.splitlines())
+
+        def quotes(text: str) -> set[str]:
+            found = set(re.findall(r"`([^`\n]+)`", text))
+            found.update(line for block in re.findall(r"```\n(.*?)```", text, re.S) for line in block.splitlines())
+            return found
+
+        quoted = quotes(doc.read_text(encoding="utf-8"))
 
         db = load_db()
         pattern_texts = {p.text for p in db.all_patterns()}
@@ -322,11 +330,12 @@ class LoreMapping(unittest.TestCase):
                 unvalidated.append(q)
         self.assertEqual(unvalidated, [], "LORE_MAPPING.md quotes uniques jsons/ does not contain")
 
+        quoted |= quotes((REPO_ROOT / "docs" / "PATHS.md").read_text(encoding="utf-8"))
         missing = []
         for name in self.QUOTED_FILES:
             for u in self._strings(files[name], set()):
                 plain_weight = "% weight to this choice for AI decisions" in u and "<" not in u
-                if u not in quoted and not (name == "Events.json" and plain_weight):
+                if u not in quoted and not (name == "Events.json" and plain_weight) and not gen_paths.CONFLICT.match(u):
                     missing.append(f"{name}: {u}")
         self.assertEqual(missing, [], "jsons/ contains uniques LORE_MAPPING.md does not show")
 

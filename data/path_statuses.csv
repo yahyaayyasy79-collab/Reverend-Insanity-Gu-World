@@ -1,0 +1,6 @@
+name,name_id,uniques,pedia,pedia_id
+Poisoned,Teracuni,[This Unit] takes [10] damage <upon turn start>,Venom works through the body: damage at every turn start until it fades.,Bisa menjalari tubuh: kerusakan di setiap awal giliran sampai hilang.
+Charmed,Terpesona,[-25]% Strength <when attacking>,Charm saps the will: weaker attacks while it lasts.,Pesona melemahkan niat: serangan lebih lemah selama berlangsung.
+Sealed,Tersegel,Can only heal by pillaging,A restriction seal cuts the unit off from healing; only pillage restores it.,Segel larangan memutus unit dari penyembuhan; hanya menjarah yang memulihkannya.
+Phantom Veil,Selubung Hampa,[+50]% Strength <when defending>,After a heavy blow the body turns insubstantial for a moment: much harder to hit.,Setelah pukulan berat tubuh menjadi tak berwujud sejenak: jauh lebih sulit dilukai.
+Shaken,Gentar,[-20]% Strength,A mind-path move has shaken the unit's resolve: weaker in battle.,Jurus jalur pikiran mengguncang tekad unit: lebih lemah dalam pertempuran.

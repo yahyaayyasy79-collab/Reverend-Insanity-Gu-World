@@ -641,6 +641,19 @@ def primeval_stone_icon(size=100):
     return im.resize((size, size), Image.LANCZOS)
 
 
+def ranked_gu_master(rank):
+    """C3 rank chain, any path: a cultivator raising an essence orb; pips give the rank."""
+    g = G(); human(g, 42, 8, 1.25, arms="raised"); g.circ(78, 20, 9 + rank); pips(g, rank); return g
+
+
+def water_gu_master(rank):
+    """The Bai clan's water path (Stream Gu): a cultivator behind a breaking wave."""
+    g = G(); human(g, 32, 8, 1.2, arms="forward")
+    g.arc_band(74, 62, 22 + 2 * rank, 13 + 2 * rank, 0, 180)                   # wave crest
+    g.circ(62, 50, 6)                                                          # spray
+    pips(g, rank); return g
+
+
 ICONS2 = [
     ("ResourceIcons", "Gu Inheritance", gu_inheritance, "black"),
     ("ImprovementIcons", "Inheritance Dig", inheritance_dig, "black"),
@@ -650,6 +663,11 @@ ICONS2 = [
     ("UnitIcons", "Rank Three Strength Gu Master", lambda: strength_gu_master(3), "white"),
     ("UnitIcons", "Rank Four Strength Gu Master", lambda: strength_gu_master(4), "white"),
     ("UnitIcons", "Bold Lightning Wolf", bold_lightning_wolf, "white"),
+    # C3: the rank chain and the signature clans' chains (their path's emblem)
+    *[("UnitIcons", f"Rank {w} {clan}Gu Master", (lambda r=r, f=f: f(r)), "white")
+      for w, r in (("Two", 2), ("Three", 3), ("Four", 4))
+      for clan, f in (("", ranked_gu_master), ("Gu Yue ", moon_gu_master), ("Bai ", water_gu_master),
+                      ("Xiong ", strength_gu_master), ("Wu ", strength_gu_master))],
     ("UnitPromotionIcons", "Aptitude A", aptitude("A"), "white"),
     ("UnitPromotionIcons", "Aptitude B", aptitude("B"), "white"),
     ("UnitPromotionIcons", "Aptitude C", aptitude("C"), "white"),

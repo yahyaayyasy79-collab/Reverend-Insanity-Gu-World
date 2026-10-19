@@ -76,7 +76,14 @@ rest of the list is what a player or the next session should know before trustin
    of taking a citizen from every city (round 7). At population 1 those choices used to be free rewards, and taken
    with the AI's weights they kept capitals at 1-4 population by turn 320.
 8. **Over the Slice 1 budget at the user's request:** 9 events instead of 5 and 7 resources instead of about 6
-   (round 6, `docs/LORE_MAPPING.md` "Budget").
+   (round 6), and since C3 12 clan units (`docs/LORE_MAPPING.md` "Budget").
+9. **The look follows the clan, not the path (C3).** Unciv picks a unit's map sprite and attack animation by unit
+   name or unit type only [src `BattleTableHelpers.getAttackAnimationLocation`], never by promotion. The four
+   signature clans train their own rank 2-4 units, drawn and animated in their signature path (Gu Yue moon, Bai
+   water, Xiong and Wu strength); about 15% of their cultivators take another path and still look like the clan's.
+   Every other cultivator uses the neutral rank units and the rank-one essence burst.
+10. **A Rank One may hold a path (C3).** It climbs that path's first rung only; the fusions wait for rank two. An
+   unpathed D-grade Rank One still loses the Gu Yue emblem at once (canon), a D-grade Moon Master keeps it.
 
 ## Not yet seen in a real game
 
@@ -85,12 +92,15 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 
 | What | How to reach it |
 |---|---|
-| 3D sprites, clan colours, portraits | Start a game; `unit add <civ> "Rank Four Moon Gu Master"` next to a Strength one |
-| Attack effects per path | Put a Moon and a Strength Gu Master next to a wolf (`unit add Barbarians "Lightning Wolf"`) and attack |
+| 3D sprites, clan colours, portraits | Start a game; `unit add <civ> "Rank Four Gu Yue Gu Master"` next to `"Rank Four Bai Gu Master"`, `"Rank Four Xiong Gu Master"` and `"Rank Four Gu Master"` |
+| Attack effects per clan chain | Put those units next to a wolf (`unit add Barbarians "Lightning Wolf"`) and attack |
+| 47 path lines on the promotion screen (C3) | Select a Gu Master: `unit setxp 200`; every Master shows; a Grandmaster only after its Master, on a rank-three or higher unit |
+| Path moves (Grandmaster) | With a Grandmaster: the move button costs 15 stones and 1 movement and gives its status for the turn |
+| Legacy bridge (old saves) | `unit add <civ> "Rank Two Moon Gu Master"`, end the turn: it becomes Rank Two Gu Master (Gu Yue: its clan unit) holding Moon Master, promotions kept |
 | Primeval-stone icon in the top bar and in texts | Any game; the stone replaces the gold coin in the stats bar, the city screen and notifications |
 | Wild Gu popup | Select a Gu Master: `unit activatetrigger "Triggers a [Wild Gu Caught] event"` (have Jade or Wild Boar) |
 | Buried inheritance, tile steal | Gu Master on a resource-free land tile beside a rival's border: `unit activatetrigger "Triggers a [Buried Inheritance] event"`; then `civ addtech <civ> "Inheritance Lore"` to build the Inheritance Dig |
 | Hunger meter (E7) | Trade or pillage away all Moon Orchid as Gu Yue; Moonlight Gu holders weaken at once and about half lose the Gu two turns later |
-| Moon blade before melee | Attack a unit with a Moon Gu Master: two damage numbers (blade, then melee); against a city only one |
+| Moon blade before melee | Attack a unit with a Moon Master: two damage numbers (blade, then melee); against a city only one |
 | Indonesian text | Options → Language → Bahasa Indonesia; every name, event and Civilopedia page should be translated |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

@@ -1,8 +1,8 @@
 name,rank,food,eats,effects,extra_uniques,note
-Moonlight Gu,1,Moon Orchid,1,[+20]% Strength <when attacking>,[-10]% Strength <for [Strength Gu Master] units>|[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>,"canon: D-grade students could not refine it (the last line fires when added, E4)"
+Moonlight Gu,1,Moon Orchid,1,[+20]% Strength <when attacking>,[-10]% Strength <for units with [Strength Master]>|[This Unit] loses the [Moonlight Gu] promotion <for [Rank One Gu Master] units> <for units without [Moon Master]> <for units with [Aptitude D]>,"canon: D-grade students could not refine it (the last line fires when added, E4)"
 White Boar Gu,1,Wild Boar,1,[+15]% Strength,,
 Black Boar Gu,1,Wild Boar,1,[+15]% Strength,,"off the ladder: the Jia Clan (Merchant Clan) ally bonus"
 Jade Skin Gu,1,Jade,1,[+15]% Strength <when defending>,,
-Liquor Worm,1,Wine,1,[+50]% XP gained from combat,[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>|[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>,"canon: it refines rank-one essence only; after the breakthrough it is let go"
+Liquor Worm,1,Wine,1,[+50]% XP gained from combat,[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [non-[Rank One Gu Master]] units>,"canon: it refines rank-one essence only; after the breakthrough it is let go"
 White Jade Gu,2,Jade,2,[+15]% Strength|[+30]% Strength <when defending>,,"fusion of White Boar Gu + Jade Skin Gu; keeps the boar strength"
 Moon Raiment,2,Moon Orchid,1,[+20]% Strength <when attacking>|[+20]% Strength <when defending>|[+10]% Strength bonus for [Military] units within [1] tiles,,"fusion of Moonlight Gu + Jade Skin Gu"

@@ -162,7 +162,7 @@
     "uniques": [
       "Only available <before adopting [Strength Path]>",
       "Provides [2] [Moon Orchid]",
-      "[+5]% Strength <for [Moon Gu Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"
+      "[+5]% Strength <for [Moon Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"
     ],
     "policies": [
       {
@@ -185,7 +185,7 @@
         "column": 3,
         "uniques": [
           "Provides [2] [Moon Orchid]",
-          "[-15]% maintenance costs <for [Moon Gu Master] units>"
+          "[-15]% maintenance costs <for [Moon Master] units>"
         ],
         "civilopediaText": [
           {
@@ -201,7 +201,7 @@
           "Moonlight Mastery"
         ],
         "uniques": [
-          "[1] Movement <for [Moon Gu Master] units>"
+          "[1] Movement <for [Moon Master] units>"
         ],
         "civilopediaText": [
           {
@@ -212,7 +212,7 @@
       {
         "name": "Moon Path Complete",
         "uniques": [
-          "New [Moon Gu Master] units start with [10] XP [in all cities]"
+          "New [Gu Master] units start with [10] XP [in all cities]"
         ],
         "civilopediaText": [
           {
@@ -237,7 +237,7 @@
     "uniques": [
       "Only available <before adopting [Moon Path]>",
       "Provides [2] [Wild Boar]",
-      "[+5]% Strength <for [Strength Gu Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"
+      "[+5]% Strength <for [Strength Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"
     ],
     "policies": [
       {
@@ -287,7 +287,7 @@
       {
         "name": "Strength Path Complete",
         "uniques": [
-          "[1] Movement <for [Strength Gu Master] units>"
+          "[1] Movement <for [Strength Master] units>"
         ],
         "civilopediaText": [
           {

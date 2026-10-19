@@ -149,6 +149,8 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 
 ### Units.json
 
+The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's numbers: tune the rank's row and its clan rows in data/gu_masters.csv together (tools/gen_ruleset.py asserts they match). The 6 legacy units only carry old saves into the rank chain and are left out.
+
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
 | Clan Settler | movement | 2 | tools/gen_ruleset.py `Units` |
@@ -166,51 +168,27 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Rank One Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank One Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank One Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
-| Rank Two Strength Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Two Strength Gu Master | strength | 14 | data/gu_masters.csv `strength` |
-| Rank Two Strength Gu Master | cost | 60 | data/gu_masters.csv `cost` |
-| Rank Two Strength Gu Master | `[+100]% maintenance costs` | +100 | data/gu_masters.csv `maintenance` |
-| Rank Two Strength Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
-| Rank Two Strength Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
-| Rank Two Strength Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
-| Rank Three Strength Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Three Strength Gu Master | strength | 22 | data/gu_masters.csv `strength` |
-| Rank Three Strength Gu Master | cost | 95 | data/gu_masters.csv `cost` |
-| Rank Three Strength Gu Master | `[+125]% maintenance costs` | +125 | data/gu_masters.csv `maintenance` |
-| Rank Three Strength Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
-| Rank Three Strength Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
-| Rank Three Strength Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
-| Rank Four Strength Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Four Strength Gu Master | strength | 32 | data/gu_masters.csv `strength` |
-| Rank Four Strength Gu Master | cost | 140 | data/gu_masters.csv `cost` |
-| Rank Four Strength Gu Master | `[+175]% maintenance costs` | +175 | data/gu_masters.csv `maintenance` |
-| Rank Four Strength Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
-| Rank Four Strength Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
-| Rank Four Strength Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
-| Rank Two Moon Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Two Moon Gu Master | strength | 13 | data/gu_masters.csv `strength` |
-| Rank Two Moon Gu Master | cost | 60 | data/gu_masters.csv `cost` |
-| Rank Two Moon Gu Master | `[+75]% maintenance costs` | +75 | data/gu_masters.csv `maintenance` |
-| Rank Two Moon Gu Master | `Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength` | 40 | data/gu_masters.csv `extra_uniques` |
-| Rank Two Moon Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
-| Rank Two Moon Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
-| Rank Two Moon Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
-| Rank Three Moon Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Three Moon Gu Master | strength | 20 | data/gu_masters.csv `strength` |
-| Rank Three Moon Gu Master | cost | 95 | data/gu_masters.csv `cost` |
-| Rank Three Moon Gu Master | `[+100]% maintenance costs` | +100 | data/gu_masters.csv `maintenance` |
-| Rank Three Moon Gu Master | `Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength` | 40 | data/gu_masters.csv `extra_uniques` |
-| Rank Three Moon Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
-| Rank Three Moon Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
-| Rank Three Moon Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
-| Rank Four Moon Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Four Moon Gu Master | strength | 29 | data/gu_masters.csv `strength` |
-| Rank Four Moon Gu Master | cost | 140 | data/gu_masters.csv `cost` |
-| Rank Four Moon Gu Master | `[+150]% maintenance costs` | +150 | data/gu_masters.csv `maintenance` |
-| Rank Four Moon Gu Master | `Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength` | 40 | data/gu_masters.csv `extra_uniques` |
-| Rank Four Moon Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
-| Rank Four Moon Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
-| Rank Four Moon Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Two Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Two Gu Master | strength | 14 | data/gu_masters.csv `strength` |
+| Rank Two Gu Master | cost | 60 | data/gu_masters.csv `cost` |
+| Rank Two Gu Master | `[+100]% maintenance costs` | +100 | data/gu_masters.csv `maintenance` |
+| Rank Two Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Two Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Two Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Three Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Three Gu Master | strength | 22 | data/gu_masters.csv `strength` |
+| Rank Three Gu Master | cost | 95 | data/gu_masters.csv `cost` |
+| Rank Three Gu Master | `[+125]% maintenance costs` | +125 | data/gu_masters.csv `maintenance` |
+| Rank Three Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Three Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Three Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Four Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Four Gu Master | strength | 32 | data/gu_masters.csv `strength` |
+| Rank Four Gu Master | cost | 140 | data/gu_masters.csv `cost` |
+| Rank Four Gu Master | `[+175]% maintenance costs` | +175 | data/gu_masters.csv `maintenance` |
+| Rank Four Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Four Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Four Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
 | Lightning Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | strength | 9 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | cost | 30 | tools/gen_ruleset.py `Units` |
@@ -228,6 +206,8 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 
 ### UnitPromotions.json
 
+The path promotions and their statuses are listed under 'Paths' below.
+
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
 | Aptitude A | `[+15]% Strength` | +15 | tools/gen_ruleset.py `Promotions` |
@@ -240,13 +220,23 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Aptitude D | `[+20]% maintenance costs` | +20 | tools/gen_ruleset.py `Promotions` |
 | Aptitude D | `[-25]% XP gained from combat` | -25 | tools/gen_ruleset.py `Promotions` |
 | Refine Gu | `Unavailable <when below [50] HP>` | 50 | tools/gen_ruleset.py `Promotions` |
-| Refine Gu | `Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
-| Refine Gu | `Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Killer Move]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for [Rank One Gu Master] units> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for [Rank One Gu Master] units> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <for units with [Jade Skin Gu]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Refine Gu | `Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
 | Moonlight Gu | `[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>` | +20 | data/gu.csv `effects` / `extra_uniques` |
 | Moonlight Gu | `Consumes [1] [Moon Orchid]` | 1 | data/gu.csv `eats` |
 | Moonlight Gu | `[This Unit] gains the [Orchid Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>` | 3 | data/hunger.csv |
 | Moonlight Gu | `[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>` | 50 | data/hunger.csv |
-| Moonlight Gu | `[-10]% Strength <for [Strength Gu Master] units>` | -10 | data/gu.csv `effects` / `extra_uniques` |
+| Moonlight Gu | `[-10]% Strength <for units with [Strength Master]>` | -10 | data/gu.csv `effects` / `extra_uniques` |
 | White Boar Gu | `[+15]% Strength <when above [-1] [Wild Boar]>` | +15 | data/gu.csv `effects` / `extra_uniques` |
 | White Boar Gu | `Consumes [1] [Wild Boar]` | 1 | data/gu.csv `eats` |
 | White Boar Gu | `[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>` | 3 | data/hunger.csv |
@@ -300,35 +290,35 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Refinement Attempt › Refine carefully | `Gain [-40] [Gold] <during the [Rank One-Two era]>` | -40 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Gain [-70] [Gold] <during the [Rank Three era]>` | -70 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Gain [-100] [Gold] <during the [Rank Four era]>` | -100 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [Killer Move] promotion <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [Killer Move] promotion <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> <with [90]% chance>` | 90 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> <with [90]% chance>` | 90 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Boar Gu] promotion <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [Moonlight Gu] promotion <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine carefully | `[This Unit] gains the [Jade Skin Gu] promotion <for [Gu Master] units> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [Killer Move] promotion <for units with [Moon Master]> <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [Killer Move] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [90]% chance>` | 90 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> <for units without [Killer Move]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [90]% chance>` | 90 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> <for units without [Killer Move]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [Moon Raiment] promotion <for units with [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> <for units without [Killer Move]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [Moon Raiment] promotion <for units with [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <for units without [Killer Move]> <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [White Boar Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [Moonlight Gu] promotion <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> <for units without [Killer Move]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine carefully | `[This Unit] gains the [Jade Skin Gu] promotion <for units without [Moon Master]> <for units without [Strength Master]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <for units without [Killer Move]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
 | Refinement Attempt › Refine carefully | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `[-60]% weight to this choice for AI decisions <when below [150] [Gold]>` | -60, 150 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine recklessly | `Unavailable <when below [31] HP>` | 31 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Killer Move] promotion <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Killer Move] promotion <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> <with [60]% chance>` | 60 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> <with [60]% chance>` | 60 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Boar Gu] promotion <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Moonlight Gu] promotion <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
-| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Jade Skin Gu] promotion <for [Gu Master] units> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Killer Move] promotion <for units with [Moon Master]> <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Killer Move] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [60]% chance>` | 60 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> <for units without [Killer Move]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [60]% chance>` | 60 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> <for units without [Killer Move]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Moon Raiment] promotion <for units with [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> <for units without [Killer Move]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Moon Raiment] promotion <for units with [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <for units without [Killer Move]> <with [40]% chance>` | 40 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [White Boar Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Moonlight Gu] promotion <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> <for units without [Killer Move]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
+| Refinement Attempt › Refine recklessly | `[This Unit] gains the [Jade Skin Gu] promotion <for units without [Moon Master]> <for units without [Strength Master]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> <for units without [Killer Move]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ladder()` arguments |
 | Refinement Attempt › Refine recklessly | `[This Unit] takes [30] damage` | 30 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine recklessly | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine recklessly | `[-90]% weight to this choice for AI decisions <when below [50] HP>` | -90, 50 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `Only available <for [Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [30] [Gold]>` | 30 | tools/gen_ruleset.py `Events` |
+| Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `Only available <for [Rank One Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [30] [Gold]>` | 30 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `Gain [-30] [Gold]` | -30 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `[This Unit] gains the [Liquor Worm] promotion <with [70]% chance>` | 70 | tools/gen_ruleset.py `ladder()` arguments |
 | Refinement Attempt › Lure a wild Liquor Worm with Green Bamboo Wine | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
@@ -516,23 +506,23 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Moon Path | priorities.Southern Border Supremacy | 5 | tools/gen_ruleset.py `Policies` |
 | Moon Path | priorities.Endurance | 5 | tools/gen_ruleset.py `Policies` |
 | Moon Path | `Provides [2] [Moon Orchid]` | 2 | tools/gen_ruleset.py `Policies` |
-| Moon Path | `[+5]% Strength <for [Moon Gu Master] units> <for every [Adopted [[Moon Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Moon Path | `[+5]% Strength <for [Moon Master] units> <for every [Adopted [[Moon Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Moonlight Mastery | `[+15]% Strength <for units with [Moonlight Gu]>` | +15 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Moonlight Mastery | `[+15]% Strength <for units with [Moon Raiment]>` | +15 | tools/gen_ruleset.py `Policies` |
 | Moon Path › Orchid Terraces | `Provides [2] [Moon Orchid]` | 2 | tools/gen_ruleset.py `Policies` |
-| Moon Path › Orchid Terraces | `[-15]% maintenance costs <for [Moon Gu Master] units>` | -15 | tools/gen_ruleset.py `Policies` |
-| Moon Path › Moon Blade Step | `[1] Movement <for [Moon Gu Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
-| Moon Path › Moon Path Complete | `New [Moon Gu Master] units start with [10] XP [in all cities]` | 10 | tools/gen_ruleset.py `Policies` |
+| Moon Path › Orchid Terraces | `[-15]% maintenance costs <for [Moon Master] units>` | -15 | tools/gen_ruleset.py `Policies` |
+| Moon Path › Moon Blade Step | `[1] Movement <for [Moon Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
+| Moon Path › Moon Path Complete | `New [Gu Master] units start with [10] XP [in all cities]` | 10 | tools/gen_ruleset.py `Policies` |
 | Strength Path | priorities.Southern Border Supremacy | 5 | tools/gen_ruleset.py `Policies` |
 | Strength Path | priorities.Endurance | 5 | tools/gen_ruleset.py `Policies` |
 | Strength Path | `Provides [2] [Wild Boar]` | 2 | tools/gen_ruleset.py `Policies` |
-| Strength Path | `[+5]% Strength <for [Strength Gu Master] units> <for every [Adopted [[Strength Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Strength Path | `[+5]% Strength <for [Strength Master] units> <for every [Adopted [[Strength Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
 | Strength Path › Boar Strength | `[+15]% Strength <for units with [White Boar Gu]>` | +15 | tools/gen_ruleset.py `Policies` |
 | Strength Path › Boar Strength | `[+15]% Strength <for units with [White Jade Gu]>` | +15 | tools/gen_ruleset.py `Policies` |
 | Strength Path › Beast Hunters | `Provides [2] [Wild Boar]` | 2 | tools/gen_ruleset.py `Policies` |
 | Strength Path › Beast Hunters | `[+25]% Strength <vs [Barbarians] units>` | +25 | tools/gen_ruleset.py `Policies` |
 | Strength Path › Unyielding Body | `Heals [10] damage if it kills a unit` | 10 | tools/gen_ruleset.py `Policies` |
-| Strength Path › Strength Path Complete | `[1] Movement <for [Strength Gu Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
+| Strength Path › Strength Path Complete | `[1] Movement <for [Strength Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 
 ### TileResources.json
 
@@ -609,8 +599,18 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Cultivation Notes | `Gain [15]-[30] [Science]` | 15-30 | tools/gen_ruleset.py `Ruins` |
 | Unfinished Refinement | weight | 3 | tools/gen_ruleset.py `Ruins` |
 | Unfinished Refinement | `Unavailable <when below [50] HP>` | 50 | tools/gen_ruleset.py `Ruins` |
-| Unfinished Refinement | `Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
-| Unfinished Refinement | `Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Killer Move]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for [Rank One Gu Master] units> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for [Rank One Gu Master] units> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <for units with [Jade Skin Gu]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
+| Unfinished Refinement | `Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Ruins` |
 | Inheritance Trial | weight | 2 | tools/gen_ruleset.py `Ruins` |
 | Inheritance Trial | `[This Unit] gains [30] XP` | 30 | tools/gen_ruleset.py `Ruins` |
 | Inheritance Trial | `[This Unit] takes [40] damage` | 40 | tools/gen_ruleset.py `Ruins` |
@@ -658,8 +658,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Bai Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | military | 4 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | aggressive | 3 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | priorities.Moon Path | 8 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | priorities.Righteous Path | 7 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | priorities.Righteous Path | 8 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
@@ -697,10 +696,101 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 
 No tunable numbers.
 
+### Paths (tools/gen_paths.py)
+
+Every path promotion is built from these knobs; the hidden conflict lines follow data/path_conflicts.csv (an exact pair wins, then the milder of the two paths' `x,*` rows, then `*,*`).
+
+| Object | Field or unique | Value | Edit in |
+|---|---|---|---|
+| every Master | `[+10]% Strength` | +10 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Grandmaster | `[+15]% Strength` | +15 | tools/gen_paths.py `TIER_STRENGTH` |
+| every move | `<costs [+15 Gold] stats> <requires [1] movement>` | +15, 1 | tools/gen_paths.py `MOVE_COST` |
+| every tier | `[+400]% weight to this choice for AI decisions` | +400 | tools/gen_paths.py `TIER_WEIGHT` |
+| signature Masters | AI weight for the clan's signature path | +23133 (share 0.85) | tools/gen_paths.py `SIGNATURE_SHARE` |
+| conflict * / * | Strength of a unit holding both | -10 | data/path_conflicts.csv |
+| conflict earth / water | Strength of a unit holding both | -25 | data/path_conflicts.csv |
+| conflict earth / fire | Strength of a unit holding both | -25 | data/path_conflicts.csv |
+| conflict strength / water | Strength of a unit holding both | -25 | data/path_conflicts.csv |
+| conflict metal / strength | Strength of a unit holding both | -25 | data/path_conflicts.csv |
+| conflict dark / light | Strength of a unit holding both | -25 | data/path_conflicts.csv |
+| conflict sound / * | Strength of a unit holding both | -5 | data/path_conflicts.csv |
+| conflict human / * | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict enslavement / soul | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict soul / wisdom | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict enslavement / wisdom | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict restriction / rule | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict phantom / rule | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict emotion / wisdom | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict emotion / enchantment | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict enchantment / wisdom | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict dark / shadow | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict light / shadow | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| conflict lightning / sound | Strength of a unit holding both | 0 | data/path_conflicts.csv |
+| family A (Body & Beast) move | `[+25]% Strength` | +25 | data/path_families.csv `mortal_uniques` |
+| family A (Body & Beast) move | `[+50]% Strength` | +50 | data/path_families.csv `immortal_uniques` |
+| family A (Body & Beast) move | `[This Unit] heals [30] HP <upon gaining the [{n}] status>` | 30 | data/path_families.csv `immortal_uniques` |
+| family B (Edge & War) move | `[+40]% Strength <when attacking>` | +40 | data/path_families.csv `mortal_uniques` |
+| family B (Edge & War) move | `[+80]% Strength <when attacking>` | +80 | data/path_families.csv `immortal_uniques` |
+| family C (Five Phases & Weather) move | `[+20]% Strength` | +20 | data/path_families.csv `mortal_uniques` |
+| family C (Five Phases & Weather) move | `[Target Unit] takes [10] damage <upon damaging a [Military] unit>` | 10 | data/path_families.csv `mortal_uniques` |
+| family C (Five Phases & Weather) move | `[+40]% Strength` | +40 | data/path_families.csv `immortal_uniques` |
+| family C (Five Phases & Weather) move | `[Target Unit] takes [25] damage <upon damaging a [Military] unit>` | 25 | data/path_families.csv `immortal_uniques` |
+| family D (Sky & Shade) move | `[+20]% Strength <when attacking>` | +20 | data/path_families.csv `mortal_uniques` |
+| family D (Sky & Shade) move | `[This Unit] gains [2] movement <upon gaining the [{n}] status>` | 2 | data/path_families.csv `mortal_uniques` |
+| family D (Sky & Shade) move | `[+40]% Strength <when attacking>` | +40 | data/path_families.csv `immortal_uniques` |
+| family D (Sky & Shade) move | `[This Unit] gains [3] movement <upon gaining the [{n}] status>` | 3 | data/path_families.csv `immortal_uniques` |
+| family E (Mind & Spirit) move | `[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>` | 2 | data/path_families.csv `mortal_uniques` |
+| family E (Mind & Spirit) move | `[+30]% Strength` | +30 | data/path_families.csv `immortal_uniques` |
+| family E (Mind & Spirit) move | `[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>` | 2 | data/path_families.csv `immortal_uniques` |
+| family F (Law & Cosmos) move | `[1] additional attacks per turn` | 1 | data/path_families.csv `mortal_uniques` |
+| family F (Law & Cosmos) move | `[1] additional attacks per turn` | 1 | data/path_families.csv `immortal_uniques` |
+| family F (Law & Cosmos) move | `[+40]% Strength` | +40 | data/path_families.csv `immortal_uniques` |
+| family G (Craft & Society) move | `[+15]% Strength` | +15 | data/path_families.csv `mortal_uniques` |
+| family G (Craft & Society) move | `[This Unit] heals [40] HP <upon gaining the [{n}] status>` | 40 | data/path_families.csv `mortal_uniques` |
+| family G (Craft & Society) move | `[+30]% Strength` | +30 | data/path_families.csv `immortal_uniques` |
+| family G (Craft & Society) move | `[This Unit] heals [80] HP <upon gaining the [{n}] status>` | 80 | data/path_families.csv `immortal_uniques` |
+| Bone Master | `[+20]% Strength <when defending>` | +20 | data/paths.csv `signature` |
+| Blood Master | `Heals [20] damage if it kills a unit` | 20 | data/paths.csv `signature` |
+| Sword Master | `[+25]% Strength <when attacking>` | +25 | data/paths.csv `signature` |
+| Blade Master | `[+50]% to Flank Attack bonuses` | +50 | data/paths.csv `signature` |
+| Metal Master | `[+30]% Strength <vs cities>` | +30 | data/paths.csv `signature` |
+| Weapon Master | `[+20]% Strength <when adjacent to a [Military] unit>` | +20 | data/paths.csv `signature` |
+| Killing Master | `[This Unit] gains [1] movement <upon defeating a [Military] unit>` | 1 | data/paths.csv `signature` |
+| Wood Master | `[15] HP when healing` | 15 | data/paths.csv `signature` |
+| Earth Master | `[+25]% Strength <when fighting in [Hill] tiles>` | +25 | data/paths.csv `signature` |
+| Wind Master | `[1] Movement` | 1 | data/paths.csv `signature` |
+| Ice Snow Master | `[Target Unit] loses [1] movement <upon damaging a [Military] unit>` | 1 | data/paths.csv `signature` |
+| Lightning Master | `[+30]% Strength <when above [1] movement>` | +30, 1 | data/paths.csv `signature` |
+| Poison Master | `[Target Unit] gains the [Poisoned] status for [3] turn(s) <upon damaging a [Military] unit>` | 3 | data/paths.csv `signature` |
+| Shadow Master | `[+30]% Strength <vs [Wounded] units>` | +30 | data/paths.csv `signature` |
+| Star Master | `[2] Sight` | 2 | data/paths.csv `signature` |
+| Moon Master | `Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength` | 40 | data/paths.csv `signature` |
+| Sound Master | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles` | -10 | data/paths.csv `signature` |
+| Emotion Master | `[+25]% Strength <when below [50] HP>` | +25, 50 | data/paths.csv `signature` |
+| Enchantment Master | `[Target Unit] gains the [Charmed] status for [1] turn(s) <upon damaging a [Military] unit>` | 1 | data/paths.csv `signature` |
+| Soul Master | `[This Unit] gains [10] XP <upon defeating a [Military] unit>` | 10 | data/paths.csv `signature` |
+| Dream Master | `[+50]% XP gained from combat` | +50 | data/paths.csv `signature` |
+| Time Master | `[1] additional attacks per turn` | 1 | data/paths.csv `signature` |
+| Phantom Master | `[This Unit] gains the [Phantom Veil] status for [1] turn(s) <upon losing at least [30] HP in a single attack>` | 1, 30 | data/paths.csv `signature` |
+| Restriction Master | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit>` | 2 | data/paths.csv `signature` |
+| Luck Master | `[+30]% Strength <with [50]% chance>` | +30, 50 | data/paths.csv `signature` |
+| Heaven Master | `[+25]% Strength <when fighting units from a Civilization with more Cities than you>` | +25 | data/paths.csv `signature` |
+| Qi Master | `[+3] Strength` | +3 | data/paths.csv `signature` |
+| Refinement Master | `[-30]% Gold cost of upgrading` | -30 | data/paths.csv `signature` |
+| Formation Master | `[+15]% Strength bonus for [Military] units within [1] tiles` | +15, 1 | data/paths.csv `signature` |
+| Food Master | `[-25]% maintenance costs` | -25 | data/paths.csv `signature` |
+| Human Master | `All adjacent units heal [10] HP when healing` | 10 | data/paths.csv `signature` |
+| Painting Master | `[+20]% Strength <when fighting in [Friendly Land] tiles>` | +20 | data/paths.csv `signature` |
+| Theft Master | `Earn [50]% of killed [Military] unit's [Cost] as [Gold]` | 50 | data/paths.csv `signature` |
+| Poisoned | `[This Unit] takes [10] damage <upon turn start>` | 10 | data/path_statuses.csv `uniques` |
+| Charmed | `[-25]% Strength <when attacking>` | -25 | data/path_statuses.csv `uniques` |
+| Phantom Veil | `[+50]% Strength <when defending>` | +50 | data/path_statuses.csv `uniques` |
+| Shaken | `[-20]% Strength` | -20 | data/path_statuses.csv `uniques` |
+
 ### Terrains.json, Speeds.json
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-536 numbers listed.
+615 numbers listed.
 
 <!-- inventory:end -->

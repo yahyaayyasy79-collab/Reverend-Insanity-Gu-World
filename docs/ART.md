@@ -37,7 +37,8 @@ numpy ray-marcher over signed distance fields: spheres, capsules, round cones, e
 three-band toon shading, rim light, specular on metal and jade, outlines, glow on Gu effects) from scenes in
 `tools/art/characters.py`.
 
-* **Map sprites** `Images/TileSets/AbsoluteUnits/Units/<unit>.png` (the default unit set), 128x110, three-quarter
+* **Map sprites** `Images.Units/TileSets/AbsoluteUnits/Units/<unit>.png` (the default unit set; `Images.Units` packs
+  into its own atlas, `Units.png`, so the icons keep `game.png` to one page), 128x110, three-quarter
   view with a ground shadow, plus `<unit>-1.png` (robe, tinted with the clan's inner colour) and `<unit>-2.png`
   (sash, collar, banner: the outer colour) [src `TileLayerUnitSprite`, `getLayeredImageColored`].
 * **Portraits** `Images/UnitPortraits/<unit>.png`, 128x128, head and shoulders, robe in the path's colour; Unciv uses

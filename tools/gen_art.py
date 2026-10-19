@@ -4,7 +4,7 @@
 * Icons follow Unciv's flat-icon style: a one-colour silhouette on a transparent 100x100 canvas; white for units,
   nations, techs, promotions and policies, black for buildings, resources and improvements (as in the base game's
   atlases). Unciv draws them on coloured circles.
-* Attack animations: Images/TileSets/<unitset>/Units/<attacker unit type>-attack-<n>.png, played over the unit that
+* Attack animations: Images.Units/TileSets/<unitset>/Units/<attacker unit type>-attack-<n>.png, played over the unit that
   takes the damage [docs Creating-a-custom-tileset.md, src BattleTableHelpers]; written for the default unit set
   (AbsoluteUnits).
 * Every file carries the PNG text chunk GeneratedArt=gen_art. The tool overwrites only its own files and
@@ -74,6 +74,9 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args(argv)
     images = args.mod / "Images"
+    # map sprites and attack frames get their own atlas (Units.png): with the icons they spilled into a second game
+    # texture, which costs texture swaps on phones (Images-and-Audio.md, "Multiple texture atlases")
+    tiles = args.mod / "Images.Units" / "TileSets" / UNITSET / "Units"
     written, kept, sheet = 0, [], []
     for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2:
         im = draw().image(INK[ink])
@@ -87,7 +90,7 @@ def main(argv: list[str]) -> int:
             kept.append(f"{folder}/{name}")
     for unit_type, make in anims.ANIMS.items():
         for n, im in enumerate(make(), start=1):
-            if save(im, images / "TileSets" / UNITSET / "Units" / f"{unit_type}-attack-{n}.png"):
+            if save(im, tiles / f"{unit_type}-attack-{n}.png"):
                 written += 1
             else:
                 kept.append(f"{unit_type}-attack-{n}")
@@ -97,7 +100,7 @@ def main(argv: list[str]) -> int:
     # pre-rendered 3D characters (tools/art/characters.py, render3d.py): map sprites with civ-colour layers
     # (<name>-1 tinted by the nation's inner colour, <name>-2 by its outer colour [src TileLayerUnitSprite]),
     # UI portraits, and per-unit attack effects (played over the unit that takes the damage)
-    units = images / "TileSets" / UNITSET / "Units"
+    units = tiles
     for name, build in characters.UNITS.items():
         wolf = "Wolf" in name
         frame = dict(size=(128, 110), scale=3.4 if wolf else 4.4, center=(0.0, 0.7 if wolf else 0.95))

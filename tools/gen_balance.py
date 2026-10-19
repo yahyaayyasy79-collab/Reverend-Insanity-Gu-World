@@ -21,6 +21,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import REPO_ROOT  # noqa: E402
+import gen_paths  # noqa: E402
 
 DOC = REPO_ROOT / "docs" / "BALANCE.md"
 START, END = "<!-- inventory:start (tools/gen_balance.py) -->", "<!-- inventory:end -->"
@@ -75,6 +76,9 @@ class Source:
 
     def __init__(self):
         self.gm = {r["name"] for r in table("gu_masters.csv")}
+        # C3: clan units copy their rank's row (gen_ruleset asserts it) and legacy units only bridge old saves
+        self.copies = {r["name"] for r in table("gu_masters.csv") if r["uniqueTo"] or r["legacyPath"]}
+        self.paths = {p["name"] for p in gen_paths.promotions([])}
         self.gu = {r["name"] for r in table("gu.csv")}
 
     def __call__(self, file: str, obj: str, what: str) -> str:
@@ -128,6 +132,8 @@ def rows_for(file: str, data, source: Source) -> list[tuple[str, str, str, str]]
     items = data if isinstance(data, list) else [data]
     for o in items:
         name = o.get("name", file[:-5])
+        if (file == "Units.json" and name in source.copies) or (file == "UnitPromotions.json" and name in source.paths):
+            continue
         if file == "Techs.json":
             col = f"Column {o['columnNumber']} ({', '.join(t['name'] for t in o['techs'])})"
             rows.append((col, "techCost", str(o["techCost"]), "data/tech_columns.csv `techCost`"))
@@ -162,6 +168,34 @@ def difficulties(diffs: list[dict]) -> list[str]:
     return lines
 
 
+def path_rows() -> list[tuple[str, str, str, str]]:
+    src = "tools/gen_paths.py"
+    rows = [(f"every {t}", code(f"[+{n}]% Strength"), f"+{n}", f"{src} `TIER_STRENGTH`")
+            for t, n in zip(gen_paths.TIERS[:gen_paths.MAX_TIER], gen_paths.TIER_STRENGTH)]
+    rows.append(("every move", code(gen_paths.MOVE_COST), ", ".join(numbers(gen_paths.MOVE_COST)), f"{src} `MOVE_COST`"))
+    rows.append(("every tier", code(gen_paths.TIER_WEIGHT), "+400", f"{src} `TIER_WEIGHT`"))
+    rows.append(("signature Masters", "AI weight for the clan's signature path",
+                 f"+{gen_paths.SIGNATURE_WEIGHT} (share {gen_paths.SIGNATURE_SHARE})", f"{src} `SIGNATURE_SHARE`"))
+    for r in table("path_conflicts.csv"):
+        rows.append((f"conflict {r['a']} / {r['b']}", "Strength of a unit holding both", r["strength"],
+                     "data/path_conflicts.csv"))
+    for f in gen_paths.FAMILIES.values():
+        for col in ("mortal_uniques", "immortal_uniques"):
+            for u in gen_paths.split(f[col]):
+                if numbers(u):
+                    rows.append((f"family {f['family']} ({f['name']}) move", code(u), ", ".join(numbers(u)),
+                                 f"data/path_families.csv `{col}`"))
+    for p in gen_paths.PATHS:
+        if numbers(p["signature"]):
+            rows.append((f"{p['name']} Master", code(p["signature"]), ", ".join(numbers(p["signature"])),
+                         "data/paths.csv `signature`"))
+    for st in gen_paths.STATUSES:
+        for u in gen_paths.split(st.get("uniques", "")):
+            if numbers(u):
+                rows.append((st["name"], code(u), ", ".join(numbers(u)), "data/path_statuses.csv `uniques`"))
+    return rows
+
+
 def inventory() -> str:
     jsons = REPO_ROOT / "jsons"
     files = {p.name: json.loads(p.read_text(encoding="utf-8")) for p in jsons.glob("*.json")}
@@ -184,6 +218,12 @@ def inventory() -> str:
             continue
         rows = rows_for(name, data, source)
         total += len(rows)
+        if name == "Units.json":
+            out += ["The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's numbers: tune the rank's "
+                    "row and its clan rows in data/gu_masters.csv together (tools/gen_ruleset.py asserts they match). "
+                    "The 6 legacy units only carry old saves into the rank chain and are left out.", ""]
+        if name == "UnitPromotions.json":
+            out += ["The path promotions and their statuses are listed under 'Paths' below.", ""]
         if not rows:
             out += ["No tunable numbers.", ""]
             continue
@@ -191,6 +231,14 @@ def inventory() -> str:
         out.append("|---|---|---|---|")
         out += [f"| {o} | {w} | {v} | {s} |" for o, w, v, s in rows]
         out.append("")
+    rows = path_rows()
+    total += len(rows)
+    out += ["### Paths (tools/gen_paths.py)", "",
+            "Every path promotion is built from these knobs; the hidden conflict lines follow data/path_conflicts.csv "
+            "(an exact pair wins, then the milder of the two paths' `x,*` rows, then `*,*`).", "",
+            "| Object | Field or unique | Value | Edit in |", "|---|---|---|---|"]
+    out += [f"| {o} | {w} | {v} | {s} |" for o, w, v, s in rows]
+    out.append("")
     out += ["### Terrains.json, Speeds.json", "",
             f"Vanilla copies ({GEN} `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in "
             f"`Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them "

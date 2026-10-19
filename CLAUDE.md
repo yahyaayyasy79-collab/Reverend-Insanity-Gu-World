@@ -31,7 +31,7 @@ MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence 
 2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md,
 47 paths) and B (LORE_MAPPING "Immortal arc") approved 2026-10-18 with the user's decisions; the C3 migration plan
 (PATHS.md, M1-M9, legacy bridge for saves) approved 2026-10-18 except two open questions (animations, path Gu); the test branch carries all 47 lines for the
-user's Android promotion-screen check.
+user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one canon mortal Gu per path, 47; research/path_gu.md done, not yet built); animations A.b (clan chains, 12 units). C3 core (M1-M6) done 2026-10-19: rank chain, clan chains, 47 paths tiers 1-2, legacy bridge, retargets, `Images.Units` atlas. Next: M7 autoplay A/B, then path Gu, then the user's canon overhaul request (lore texts, righteous/demonic/rogue and clan conflicts, tile regions: a plan at a checkpoint first).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -49,7 +49,7 @@ in LORE_MAPPING.md.
 * Refinement and ascension: per-unit XP promotions (E4: kept and self-removing), not unit-action buttons or a
   national project.
 * Android atlas: packed here with the official jar (`tools/unciv_ci.py --pack`) and committed
-  (`game.atlas`, `game*.png`, `Atlases.json`); `check_refs` flags a stale atlas.
+  (`game.atlas`/`game.png` for icons, `Units.atlas`/`Units.png` for map sprites, `Atlases.json`); `check_refs` flags a stale atlas.
 * User platform: Android (2026-10-17): install via "Download mod from URL"; the committed atlas is required.
 * Slice 1 lore (user, round 3): majors Gu Yue, Bai, Xiong, Wu; paths Moon + Strength; Gu hunger is a meter (weakened,
   then a 50% death roll per Gu after a rank-dependent number of turns, option B), not instant death; Spirit Springs are
@@ -144,8 +144,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `MOD_SPEC_3.md` — amendment: rank chain R1–R9 on three unit types, every canonical path as promotion lines with
   attainment tiers, Venerable and Eternal Life; phases A3 (capability tests) → B3 (docs/PATHS.md) → C3 (migration).
 * `docs/PATHS.md` — MOD_SPEC_3 B3: the 47 canonical paths (source, verdict, family, signature, two moves), attainment
-  tiers, conflict matrix, AI main-path lock, C3 migration plan; drafted from `tools/b3/paths_data.py` (`gen_proto.py` builds a checkable
-  prototype).
+  tiers, conflict matrix, AI signature leanings, C3 migration plan; its tables are written by `tools/gen_paths.py` from
+  `data/paths*.csv` (also the path promotions in jsons/).
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
 * `docs/LORE_MAPPING.md` — Phase 1: one row per Slice 1 object (lore, role, exact uniques, CANON/ADAPTED/INVENTED,
   [VERIFY]), questions for the user, refinement ladder, events in detail, balance starting numbers.
@@ -154,8 +154,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `docs/KNOWN_ISSUES.md` — validator warnings explained, engine limits, trade-offs, what needs a real game.
 * `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.
-* `tools/gen_art.py` (+ `tools/art/`) → designed icons and attack animations (`Images/TileSets/AbsoluteUnits/Units/<unit
+* `tools/gen_art.py` (+ `tools/art/`) → designed icons and attack animations (`Images.Units/TileSets/AbsoluteUnits/Units/<unit
   type>-attack-<n>.png`); style guide `docs/ART.md`; repack the atlas after art changes.
 * `data/*.csv` + `tools/gen_ruleset.py` → `jsons/` (commit all three); `Images/` placeholders (`make_placeholders.py`),
-  `game.atlas`/`game.png`/`Atlases.json` (`unciv_ci.py --pack`), `preview.png`.
+  `game.*`/`Units.*`/`Atlases.json` (`unciv_ci.py --pack`), `preview.png`.
 * `tools/` — checkers; `tools/tests/fixtures/capability_proof` proves every unique CAPABILITIES.md cites.

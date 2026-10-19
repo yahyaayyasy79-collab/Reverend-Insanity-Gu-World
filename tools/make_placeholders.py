@@ -2,7 +2,7 @@
 """Generate placeholder icons at the exact paths Unciv looks up (Images/<Category>Icons/<Name>.png).
 
 * Only objects whose icon exists neither in the mod nor in the base game get one.
-* Colour encodes the category; the label is the object's initials.
+* Colour encodes the category (a path's promotions: its family colour, MOD_SPEC_3); the label is the object's initials.
 * Every generated PNG carries the text chunk `Placeholder=true`, so real art is never overwritten:
   --force regenerates placeholders only, and --report counts placeholders vs real art.
 * --preview writes preview.png (mod-manager thumbnail, MOD_SPEC §11) if it is missing.
@@ -27,6 +27,18 @@ COLORS = {  # folder -> RGB, chosen to be distinguishable at a glance
     "NationIcons": (40, 40, 40), "PolicyIcons": (0, 139, 139), "PolicyBranchIcons": (0, 95, 95),
     "ReligionIcons": (199, 21, 133), "CityStateIcons": (105, 105, 105),
 }
+
+
+def path_colors() -> dict[str, tuple[int, int, int]]:
+    """Promotion name -> family colour for every path tier and killer move (data/paths.csv, data/path_families.csv)."""
+    import gen_paths
+    out = {}
+    for p in gen_paths.PATHS:
+        rgb = tuple(int(x) for x in gen_paths.FAMILIES[p["family"]]["color"].split())
+        for t in range(len(gen_paths.TIERS)):
+            out[gen_paths.tier_name(p, t)] = rgb
+        out[p["mortal"]] = out[p["immortal"]] = rgb
+    return out
 
 
 def initials(name: str) -> str:
@@ -96,6 +108,7 @@ def main(argv: list[str]) -> int:
             for png in folder.rglob("*.png"):
                 mod_images[png.relative_to(folder).with_suffix("").as_posix()] = png
 
+    family = path_colors()
     created = skipped = placeholders = real = 0
     for kind, name, candidates in expected_images(rs):
         existing = next((mod_images[c] for c in candidates if c in mod_images), None)
@@ -115,7 +128,8 @@ def main(argv: list[str]) -> int:
         if dry:
             print(f"would create {target.relative_to(mod_root)}")
         else:
-            draw_icon(target, initials(name), COLORS.get(folder, (90, 90, 90)))
+            color = family.get(name) if folder == "UnitPromotionIcons" else None
+            draw_icon(target, initials(name), color or COLORS.get(folder, (90, 90, 90)))
         if existing is None:
             created += 1
 

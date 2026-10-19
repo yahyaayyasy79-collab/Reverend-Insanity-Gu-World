@@ -24,8 +24,7 @@
     "military": 4,
     "aggressive": 3,
     "priorities": {
-      "Moon Path": 8,
-      "Righteous Path": 7
+      "Righteous Path": 8
     },
     "uniques": [
       "[+50]% weight to [Gu Academy] for AI decisions",

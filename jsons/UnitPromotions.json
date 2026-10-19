@@ -57,20 +57,52 @@
     "uniques": [
       "Only available <after discovering [Gu Refinement]>",
       "Unavailable <when below [50] HP>",
-      "Unavailable <for units with [Killer Move]>",
-      "Unavailable <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
-      "Unavailable <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
-      "Unavailable <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]>",
-      "Unavailable <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]>",
-      "Unavailable <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]>",
-      "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]>",
-      "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]>",
-      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <for units with [Liquor Worm]>",
-      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [1] [Wine]>",
-      "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]> <when below [31] [Gold]>",
-      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <for units with [Liquor Worm]>",
-      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [1] [Wine]>",
-      "Unavailable <for [Gu Master] units> <when below [1] [Jade]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Killer Move]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Killer Move]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Killer Move]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Killer Move]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Moon Master]> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]> <when below [1] [Wine]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]> <when below [31] [Gold]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for [Rank One Gu Master] units> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for [Rank One Gu Master] units> <when below [1] [Wine]>",
+      "Unavailable <for units with [Moon Master]> <for units with [Moonlight Gu]> <for [Rank One Gu Master] units> <when below [31] [Gold]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for [Rank One Gu Master] units> <for units with [Liquor Worm]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for [Rank One Gu Master] units> <when below [1] [Wine]>",
+      "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Boar Gu]> <for [Rank One Gu Master] units> <when below [31] [Gold]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <for units with [Jade Skin Gu]> <for units with [Liquor Worm]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <for units with [Jade Skin Gu]> <when below [1] [Wine]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <for units with [Jade Skin Gu]> <when below [31] [Gold]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <for units with [Jade Skin Gu]> <for [non-[Rank One Gu Master]] units>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <for units with [Liquor Worm]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <when below [1] [Wine]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <when below [31] [Gold]>",
+      "Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <for [non-[Rank One Gu Master]] units>",
       "Triggers a [Refinement Attempt] event",
       "[This Unit] loses the [Refine Gu] promotion <upon turn start>"
     ],
@@ -87,8 +119,8 @@
       "Consumes [1] [Moon Orchid]",
       "[This Unit] gains the [Orchid Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
       "[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>",
-      "[-10]% Strength <for [Strength Gu Master] units>",
-      "[This Unit] loses the [Moonlight Gu] promotion <for [Gu Master] units> <for units with [Aptitude D]>"
+      "[-10]% Strength <for units with [Strength Master]>",
+      "[This Unit] loses the [Moonlight Gu] promotion <for [Rank One Gu Master] units> <for units without [Moon Master]> <for units with [Aptitude D]>"
     ],
     "civilopediaText": [
       {
@@ -145,8 +177,7 @@
       "Consumes [1] [Wine]",
       "[This Unit] gains the [Wine Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>",
       "[This Unit] loses the [Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>",
-      "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Moon Gu Master] units>",
-      "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [Strength Gu Master] units>"
+      "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [non-[Rank One Gu Master]] units>"
     ],
     "civilopediaText": [
       {
@@ -263,6 +294,3662 @@
     "civilopediaText": [
       {
         "text": "The wine has run out and the Liquor Worm is starving. It will not wait long."
+      }
+    ]
+  },
+  {
+    "name": "Strength Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "No damage penalty for wounded units",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Transformation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Bone Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
+      "[+23133]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[+23133]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Strength path (力道), Master attainment (大师): a tempered body keeps its force while hurt."
+      }
+    ]
+  },
+  {
+    "name": "Strength Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Self-Reliance] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Strength path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Self-Reliance."
+      }
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ]
+  },
+  {
+    "name": "Self-Reliance",
+    "uniques": [
+      "[+25]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Self-Reliance (自力更生): a strength-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Transformation Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Double movement in [Forest]",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Bone Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Transformation path (变化道), Master attainment (大师): beast forms run where beasts run."
+      }
+    ]
+  },
+  {
+    "name": "Transformation Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Flying Bear Change] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Transformation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Flying Bear Change."
+      }
+    ],
+    "prerequisites": [
+      "Transformation Master"
+    ]
+  },
+  {
+    "name": "Flying Bear Change",
+    "uniques": [
+      "[+25]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bear Change (飞熊变): a transformation-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Bone Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength <when defending>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Blood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone path (骨道), Master attainment (大师): bone armour grown from one's own skeleton."
+      }
+    ]
+  },
+  {
+    "name": "Bone Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Bone Spear] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bone Spear."
+      }
+    ],
+    "prerequisites": [
+      "Bone Master"
+    ]
+  },
+  {
+    "name": "Bone Spear",
+    "uniques": [
+      "[+25]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone Spear (骨枪): a bone-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Blood Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Heals [20] damage if it kills a unit",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Sword Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood path (血道), Master attainment (大师): blood taken from the slain feeds the killer."
+      }
+    ]
+  },
+  {
+    "name": "Blood Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Blood Skull] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Blood Skull."
+      }
+    ],
+    "prerequisites": [
+      "Blood Master"
+    ]
+  },
+  {
+    "name": "Blood Skull",
+    "uniques": [
+      "[+25]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Skull (血颅): a blood-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Sword Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when attacking>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Blade Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword path (剑道), Master attainment (大师): focused piercing, one of the five strongest attack paths."
+      }
+    ]
+  },
+  {
+    "name": "Sword Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Sword Escape] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Sword Escape."
+      }
+    ],
+    "prerequisites": [
+      "Sword Master"
+    ]
+  },
+  {
+    "name": "Sword Escape",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword Escape (剑遁): a sword-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Blade Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+50]% to Flank Attack bonuses",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Metal Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blade path (刀道), Master attainment (大师): sweeping blade-qi cuts the flanks."
+      }
+    ]
+  },
+  {
+    "name": "Blade Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Edge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blade path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Edge."
+      }
+    ],
+    "prerequisites": [
+      "Blade Master"
+    ]
+  },
+  {
+    "name": "Edge",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Edge (刃): a blade-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Metal Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <vs cities>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Weapon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Metal path (金道), Master attainment (大师): metal breaks walls."
+      }
+    ]
+  },
+  {
+    "name": "Metal Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Iron Rain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Metal path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Iron Rain."
+      }
+    ],
+    "prerequisites": [
+      "Metal Master"
+    ]
+  },
+  {
+    "name": "Iron Rain",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Iron Rain: a metal-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Weapon Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength <when adjacent to a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Killing Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Weapon path (兵道), Master attainment (大师): a path for armies, built on human-path ideas."
+      }
+    ]
+  },
+  {
+    "name": "Weapon Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Weapon Array] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Weapon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Weapon Array."
+      }
+    ],
+    "prerequisites": [
+      "Weapon Master"
+    ]
+  },
+  {
+    "name": "Weapon Array",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Weapon Array: a weapon-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Killing Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[This Unit] gains [1] movement <upon defeating a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Fire Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Killing path (杀道), Master attainment (大师): slaughter feeds the next kill."
+      }
+    ]
+  },
+  {
+    "name": "Killing Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Killing Intent] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Killing path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Killing Intent."
+      }
+    ],
+    "prerequisites": [
+      "Killing Master"
+    ]
+  },
+  {
+    "name": "Killing Intent",
+    "uniques": [
+      "[+40]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Killing Intent: a killing-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Fire Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Destroys tile improvements when attacking",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Water Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire path (炎道), Master attainment (大师): fire burns the fields it fights over."
+      }
+    ]
+  },
+  {
+    "name": "Fire Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Five-Finger Flame Chain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Five-Finger Flame Chain."
+      }
+    ],
+    "prerequisites": [
+      "Fire Master"
+    ]
+  },
+  {
+    "name": "Five-Finger Flame Chain",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Five-Finger Flame Chain (五指炎链): a fire-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Water Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "May travel on Water tiles without embarking",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Wood Master]> <hidden from users>",
+      "[-25]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
+      "[+23133]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water path (水道), Master attainment (大师): water carries its own."
+      }
+    ]
+  },
+  {
+    "name": "Water Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Stream Surge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Stream Surge."
+      }
+    ],
+    "prerequisites": [
+      "Water Master"
+    ]
+  },
+  {
+    "name": "Stream Surge",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stream Surge: a water-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Wood Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[15] HP when healing",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Earth Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wood path (木道), Master attainment (大师): wood mends what grows."
+      }
+    ]
+  },
+  {
+    "name": "Wood Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Rooted Vigor] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Rooted Vigor."
+      }
+    ],
+    "prerequisites": [
+      "Wood Master"
+    ]
+  },
+  {
+    "name": "Rooted Vigor",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rooted Vigor: a wood-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Earth Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when fighting in [Hill] tiles>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Wind Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth path (土道), Master attainment (大师): rock and soil hold the high ground."
+      }
+    ]
+  },
+  {
+    "name": "Earth Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Nine-Ren Mountain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Nine-Ren Mountain."
+      }
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ]
+  },
+  {
+    "name": "Nine-Ren Mountain",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nine-Ren Mountain (为山九仞): a earth-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Wind Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[1] Movement",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Cloud Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wind path (风道), Master attainment (大师): air currents and flight."
+      }
+    ]
+  },
+  {
+    "name": "Wind Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Gale Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wind path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Gale Step."
+      }
+    ],
+    "prerequisites": [
+      "Wind Master"
+    ]
+  },
+  {
+    "name": "Gale Step",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gale Step: a wind-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Cloud Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Ignores terrain cost",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Ice Snow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cloud path (云道), Master attainment (大师): clouds carry the walker over any ground."
+      }
+    ]
+  },
+  {
+    "name": "Cloud Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Cloud Stride] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cloud path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Cloud Stride."
+      }
+    ],
+    "prerequisites": [
+      "Cloud Master"
+    ]
+  },
+  {
+    "name": "Cloud Stride",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cloud Stride: a cloud-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Ice Snow Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] loses [1] movement <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Lightning Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Snow path (冰雪道), Master attainment (大师): cold that numbs and slows."
+      }
+    ]
+  },
+  {
+    "name": "Ice Snow Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Frost Bind] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Snow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Frost Bind."
+      }
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ]
+  },
+  {
+    "name": "Frost Bind",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Frost Bind: a ice snow-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <when above [1] movement>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Poison Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightning path (雷道), Master attainment (大师): the first strike, before the thunder."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Lightning Wings] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightning path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Lightning Wings."
+      }
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ]
+  },
+  {
+    "name": "Lightning Wings",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightning Wings (雷翼): a lightning-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Poison Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] gains the [Poisoned] status for [3] turn(s) <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Light Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Shadow Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Poison path (毒道), Master attainment (大师): hidden venom that keeps working."
+      }
+    ]
+  },
+  {
+    "name": "Poison Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Bee Net Sting] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Poison path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bee Net Sting."
+      }
+    ],
+    "prerequisites": [
+      "Poison Master"
+    ]
+  },
+  {
+    "name": "Bee Net Sting",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bee Net Sting (蜂罗刺): a poison-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Light Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Can move after attacking",
+      "[+10]% Strength",
+      "[-25]% Strength <for units with [Dark Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Light path (光道), Master attainment (大师): light is speed."
+      }
+    ]
+  },
+  {
+    "name": "Light Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Glare] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Light path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Glare."
+      }
+    ],
+    "prerequisites": [
+      "Light Master"
+    ]
+  },
+  {
+    "name": "Glare",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Glare] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Glare: a light-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Dark Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Invisible to others",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark path (暗道), Master attainment (大师): darkness hides auras and moves."
+      }
+    ]
+  },
+  {
+    "name": "Dark Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Shroud] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shroud."
+      }
+    ],
+    "prerequisites": [
+      "Dark Master"
+    ]
+  },
+  {
+    "name": "Shroud",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Shroud] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shroud: a dark-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <vs [Wounded] units>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Star Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow path (影道), Master attainment (大师): a dark-path offshoot that strikes the weakened."
+      }
+    ],
+    "prerequisites": [
+      "Dark Master"
+    ]
+  },
+  {
+    "name": "Shadow Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Shadow Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shadow Step."
+      }
+    ],
+    "prerequisites": [
+      "Shadow Master"
+    ]
+  },
+  {
+    "name": "Shadow Step",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Shadow Step] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow Step: a shadow-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Star Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[2] Sight",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Moon Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star path (星道), Master attainment (大师): conjured stars light the field."
+      }
+    ]
+  },
+  {
+    "name": "Star Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Star Snake Rope] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Star Snake Rope."
+      }
+    ],
+    "prerequisites": [
+      "Star Master"
+    ]
+  },
+  {
+    "name": "Star Snake Rope",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Star Snake Rope] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star Snake Rope (星蛇索): a star-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Moon Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
+      "[+10]% Strength",
+      "[-5]% Strength <for units with [Sound Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
+      "[+23133]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moon path (月道), Master attainment (大师): a crescent blade of moonlight strikes before the clash."
+      }
+    ]
+  },
+  {
+    "name": "Moon Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Crescent Moon] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Crescent Moon."
+      }
+    ],
+    "prerequisites": [
+      "Moon Master"
+    ]
+  },
+  {
+    "name": "Crescent Moon",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Crescent Moon] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Crescent Moon (偃月): a moon-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Sound Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+10]% Strength",
+      "[-5]% Strength <for units with [Illusion Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-5]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sound path (音道), Master attainment (大师): sound spreads and rattles."
+      }
+    ]
+  },
+  {
+    "name": "Sound Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Qin Strike] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sound path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Qin Strike."
+      }
+    ],
+    "prerequisites": [
+      "Sound Master"
+    ]
+  },
+  {
+    "name": "Qin Strike",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Qin Strike] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qin Strike (琴): a sound-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Illusion Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Withdraws before melee combat",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Wisdom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Emotion Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enchantment Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illusion path (幻道), Master attainment (大师): the blow lands on an illusion."
+      }
+    ]
+  },
+  {
+    "name": "Illusion Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Mirage] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illusion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mirage."
+      }
+    ],
+    "prerequisites": [
+      "Illusion Master"
+    ]
+  },
+  {
+    "name": "Mirage",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "[This Unit] gains [2] movement <upon gaining the [Mirage] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mirage: a illusion-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Wisdom Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Can see invisible [All] units",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wisdom path (智道), Master attainment (大师): deduction sees through hiding."
+      }
+    ]
+  },
+  {
+    "name": "Wisdom Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Deduction] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wisdom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Deduction."
+      }
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ]
+  },
+  {
+    "name": "Deduction",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Deduction: a wisdom-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Emotion Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when below [50] HP>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Emotion path (情道), Master attainment (大师): feeling surges when hurt."
+      }
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ]
+  },
+  {
+    "name": "Emotion Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Doting Mother] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Emotion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Doting Mother."
+      }
+    ],
+    "prerequisites": [
+      "Emotion Master"
+    ]
+  },
+  {
+    "name": "Doting Mother",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Doting Mother (慈母): a emotion-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] gains the [Charmed] status for [1] turn(s) <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Soul Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enchantment path (魅道), Master attainment (大师): charm saps the will to strike."
+      }
+    ],
+    "prerequisites": [
+      "Emotion Master",
+      "Wisdom Master"
+    ]
+  },
+  {
+    "name": "Enchantment Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Charming Glance] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enchantment path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Charming Glance."
+      }
+    ],
+    "prerequisites": [
+      "Enchantment Master"
+    ]
+  },
+  {
+    "name": "Charming Glance",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Charming Glance: a enchantment-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Soul Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[This Unit] gains [10] XP <upon defeating a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Dream Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul path (魂道), Master attainment (大师): the soul grows by taking souls."
+      }
+    ]
+  },
+  {
+    "name": "Soul Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Guts] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Guts."
+      }
+    ],
+    "prerequisites": [
+      "Soul Master"
+    ]
+  },
+  {
+    "name": "Guts",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Guts (胆识): a soul-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Dream Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+50]% XP gained from combat",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Enslavement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream path (梦道), Master attainment (大师): dream realms pour attainment into the explorer."
+      }
+    ]
+  },
+  {
+    "name": "Dream Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Waking Dream] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Waking Dream."
+      }
+    ],
+    "prerequisites": [
+      "Dream Master"
+    ]
+  },
+  {
+    "name": "Waking Dream",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Waking Dream: a dream-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Enslavement Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "May capture killed [Barbarians] units",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Time Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enslavement path (奴道), Master attainment (大师): beasts beaten become beasts commanded."
+      }
+    ]
+  },
+  {
+    "name": "Enslavement Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Wolf Enslavement] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enslavement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Wolf Enslavement."
+      }
+    ],
+    "prerequisites": [
+      "Enslavement Master"
+    ]
+  },
+  {
+    "name": "Wolf Enslavement",
+    "uniques": [
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wolf Enslavement (驭狼): a enslavement-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Time Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Space Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Time path (宙道), Master attainment (大师): stretched time gives one more strike."
+      }
+    ]
+  },
+  {
+    "name": "Time Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Borrowed Moment] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Time path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Borrowed Moment."
+      }
+    ],
+    "prerequisites": [
+      "Time Master"
+    ]
+  },
+  {
+    "name": "Borrowed Moment",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Borrowed Moment: a time-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Space Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "All tiles cost 1 movement",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Rule Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Phantom Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Space path (宇道), Master attainment (大师): distance folds."
+      }
+    ]
+  },
+  {
+    "name": "Space Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Folded Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Space path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Folded Step."
+      }
+    ],
+    "prerequisites": [
+      "Space Master"
+    ]
+  },
+  {
+    "name": "Folded Step",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Folded Step: a space-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Rule Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Ignores Zone of Control",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rule path (律道), Master attainment (大师): the laws bend around the walker."
+      }
+    ]
+  },
+  {
+    "name": "Rule Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Bent Law] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rule path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bent Law."
+      }
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ]
+  },
+  {
+    "name": "Bent Law",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bent Law: a rule-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Phantom Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[This Unit] gains the [Phantom Veil] status for [1] turn(s) <upon losing at least [30] HP in a single attack>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Restriction Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Phantom path (虚道), Master attainment (大师): turns insubstantial after a heavy blow."
+      }
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ]
+  },
+  {
+    "name": "Phantom Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Hollow Form] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Phantom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hollow Form."
+      }
+    ],
+    "prerequisites": [
+      "Phantom Master"
+    ]
+  },
+  {
+    "name": "Hollow Form",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hollow Form: a phantom-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Restriction Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Luck Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Restriction path (禁道), Master attainment (大师): seals cut the target off from healing."
+      }
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ]
+  },
+  {
+    "name": "Restriction Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Severing Essence] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Restriction path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Severing Essence."
+      }
+    ],
+    "prerequisites": [
+      "Restriction Master"
+    ]
+  },
+  {
+    "name": "Severing Essence",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Severing Essence (断元): a restriction-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Luck Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+30]% Strength <with [50]% chance>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Heaven Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Luck path (运道), Master attainment (大师): fortune turns, for better or not at all."
+      }
+    ]
+  },
+  {
+    "name": "Luck Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Fortune Rivalling Heaven] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Luck path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Fortune Rivalling Heaven."
+      }
+    ],
+    "prerequisites": [
+      "Luck Master"
+    ]
+  },
+  {
+    "name": "Fortune Rivalling Heaven",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fortune Rivalling Heaven (鸿运齐天): a luck-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Heaven Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+25]% Strength <when fighting units from a Civilization with more Cities than you>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Qi Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven path (天道), Master attainment (大师): heaven's balance strikes the strongest."
+      }
+    ]
+  },
+  {
+    "name": "Heaven Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Heaven's Rebuke] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Heaven's Rebuke."
+      }
+    ],
+    "prerequisites": [
+      "Heaven Master"
+    ]
+  },
+  {
+    "name": "Heaven's Rebuke",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven's Rebuke: a heaven-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Qi Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+3] Strength",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Refinement Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qi path (气道), Master attainment (大师): formless qi adds raw force, which counts for less at high rank."
+      }
+    ]
+  },
+  {
+    "name": "Qi Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Exploding Qi Roar] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qi path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Exploding Qi Roar."
+      }
+    ],
+    "prerequisites": [
+      "Qi Master"
+    ]
+  },
+  {
+    "name": "Exploding Qi Roar",
+    "uniques": [
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Exploding Qi Roar (爆气吼): a qi-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Refinement Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[-30]% Gold cost of upgrading",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Formation Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Refinement path (炼道), Master attainment (大师): refiners raise their own Gu more cheaply."
+      }
+    ]
+  },
+  {
+    "name": "Refinement Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Ink Transformation] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Refinement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Ink Transformation."
+      }
+    ],
+    "prerequisites": [
+      "Refinement Master"
+    ]
+  },
+  {
+    "name": "Ink Transformation",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Ink Transformation] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ink Transformation (墨化): a refinement-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Formation Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength bonus for [Military] units within [1] tiles",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Food Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation path (阵道), Master attainment (大师): a formation strengthens everyone inside it."
+      }
+    ]
+  },
+  {
+    "name": "Formation Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Linked Formation] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Linked Formation."
+      }
+    ],
+    "prerequisites": [
+      "Formation Master"
+    ]
+  },
+  {
+    "name": "Linked Formation",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Linked Formation] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Linked Formation: a formation-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Food Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[-25]% maintenance costs",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Pill Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Food path (食道), Master attainment (大师): the food path feeds Gu cheaply."
+      }
+    ]
+  },
+  {
+    "name": "Food Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Eat Bitterness] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Food path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Eat Bitterness."
+      }
+    ],
+    "prerequisites": [
+      "Food Master"
+    ]
+  },
+  {
+    "name": "Eat Bitterness",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Eat Bitterness] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eat Bitterness (吃苦): a food-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Pill Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Unit will heal every turn, even if it performs an action",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Information Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pill path (丹道), Master attainment (大师): pills heal on the march."
+      }
+    ]
+  },
+  {
+    "name": "Pill Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Recovery Pill] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pill path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Recovery Pill."
+      }
+    ],
+    "prerequisites": [
+      "Pill Master"
+    ]
+  },
+  {
+    "name": "Recovery Pill",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Recovery Pill] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Recovery Pill: a pill-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Information Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Can see over obstacles",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Painting Master]> <hidden from users>",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Information path (信道), Master attainment (大师): messages and records reach past the hills."
+      }
+    ]
+  },
+  {
+    "name": "Information Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Mountain Pledge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Information path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mountain Pledge."
+      }
+    ],
+    "prerequisites": [
+      "Information Master"
+    ]
+  },
+  {
+    "name": "Mountain Pledge",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Mountain Pledge] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mountain Pledge (山盟): a information-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Human Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "All adjacent units heal [10] HP when healing",
+      "[+10]% Strength",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Human path (人道), Master attainment (大师): human-path marks clash with nothing, so it helps any ally."
+      }
+    ]
+  },
+  {
+    "name": "Human Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Hopes of the Crowd] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Human path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hopes of the Crowd."
+      }
+    ],
+    "prerequisites": [
+      "Human Master"
+    ]
+  },
+  {
+    "name": "Hopes of the Crowd",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Hopes of the Crowd] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hopes of the Crowd (众望所归): a human-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Painting Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength <when fighting in [Friendly Land] tiles>",
+      "[+10]% Strength",
+      "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Painting path (画道), Master attainment (大师): paintings guard the home that hangs them."
+      }
+    ]
+  },
+  {
+    "name": "Painting Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Living Ink] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Painting path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Living Ink."
+      }
+    ],
+    "prerequisites": [
+      "Painting Master"
+    ]
+  },
+  {
+    "name": "Living Ink",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Living Ink] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Living Ink: a painting-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Theft Master",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
+      "[+10]% Strength",
+      "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
+      "Path Master",
+      "[+400]% weight to this choice for AI decisions",
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Theft path (偷道), Master attainment (大师): gain without paying the cost."
+      }
+    ]
+  },
+  {
+    "name": "Theft Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] gains the [Light Fingers] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Theft path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Light Fingers."
+      }
+    ],
+    "prerequisites": [
+      "Theft Master"
+    ]
+  },
+  {
+    "name": "Light Fingers",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] heals [40] HP <upon gaining the [Light Fingers] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Light Fingers: a theft-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Poisoned",
+    "uniques": [
+      "[This Unit] takes [10] damage <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Venom works through the body: damage at every turn start until it fades."
+      }
+    ]
+  },
+  {
+    "name": "Charmed",
+    "uniques": [
+      "[-25]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Charm saps the will: weaker attacks while it lasts."
+      }
+    ]
+  },
+  {
+    "name": "Sealed",
+    "uniques": [
+      "Can only heal by pillaging"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A restriction seal cuts the unit off from healing; only pillage restores it."
+      }
+    ]
+  },
+  {
+    "name": "Phantom Veil",
+    "uniques": [
+      "[+50]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "After a heavy blow the body turns insubstantial for a moment: much harder to hit."
+      }
+    ]
+  },
+  {
+    "name": "Shaken",
+    "uniques": [
+      "[-20]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A mind-path move has shaken the unit's resolve: weaker in battle."
       }
     ]
   }

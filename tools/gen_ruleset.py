@@ -5,7 +5,8 @@
   tools/gen_ruleset.py --out DIR       # writes DIR/jsons, a throwaway copy (experiments, autoplay variants)
   tools/gen_ruleset.py --check         # exit 1 if <repo>/jsons differs from what the tables generate
 
-Tables (data/): tech_columns.csv + techs.csv (tech tree), gu_masters.csv (Gu Master units, path x rank), gu.csv (Gu
+Tables (data/): tech_columns.csv + techs.csv (tech tree), gu_masters.csv (Gu Master units: the rank chain, the
+signature clans' chains, the hidden legacy path x rank units), paths*.csv (via tools/gen_paths.py), gu.csv (Gu
 promotions: effects, food, rank), gu_foods.csv (food -> hunger status), hunger.csv (the hunger meter per rank: status
 length and death chance, the user's main tuning lever). civilopedia.csv: the English civilopedia text of every object (its
 Indonesian column feeds tools/gen_translations.py). One-of-a-kind content stays below. docs/LORE_MAPPING.md is the
@@ -23,6 +24,7 @@ from pathlib import Path
 
 import json5
 
+import gen_paths
 from common import REPO_ROOT, VANILLA_JSONS
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -89,7 +91,14 @@ def dump(name, obj):
 
 
 E12, E3, E4 = "Rank One-Two era", "Rank Three era", "Rank Four era"
-GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]
+GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]  # the last two only carry the hidden legacy units
+# C3 (MOD_SPEC_3): the path is a promotion now, not the unit type. The refinement ladder keys on the two Slice 1 paths
+# that have Gu; a unit holding both Masters (only a human can) climbs the Moon ladder.
+MOON = "<for units with [Moon Master]>"
+STR = "<for units with [Strength Master]> <for units without [Moon Master]>"
+UNPATHED = "<for units without [Moon Master]> <for units without [Strength Master]>"
+RANK1 = "<for [Rank One Gu Master] units>"  # the Liquor Worm refines rank-one essence only (canon)
+RANK2 = "<for [non-[Rank One Gu Master]] units>"  # a fused rank-two Gu needs a rank-two aperture
 APT = ("Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> "
        "<for units without [Aptitude C]> <for units without [Aptitude D]>")
 NB = "Never appears as a Barbarian unit"
@@ -199,10 +208,10 @@ dump("UnitTypes.json", [{"name": n, "movementType": "Land"} for n in
                         ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast"]])
 
 
-# ---------------- Units (12) ----------------
-def gm(name, utype, tech, cost, strength, maint, extra, ranged=None, upgrades=None):
+# ---------------- Units ----------------
+def gm(name, utype, tech, cost, strength, maint, extra, ranged=None, upgrades=None, legacy=False):
     u = {"name": name, "unitType": utype, "movement": 2, "strength": strength, "cost": cost, "requiredTech": tech,
-         "uniques": [f"[{maint}]% maintenance costs", NB, APT] + extra}
+         "uniques": [f"[{maint}]% maintenance costs", NB] + ([] if legacy else [APT]) + extra}
     if ranged:
         u["rangedStrength"] = ranged
         u["range"] = 2
@@ -211,12 +220,31 @@ def gm(name, utype, tech, cost, strength, maint, extra, ranged=None, upgrades=No
     return u
 
 
+def legacy(path):
+    """C3 M4: Unciv deletes a save's units that the ruleset no longer has [src BackwardCompatibility.
+    removeUnitsAndPromotions], so the old path x rank units stay, hidden, and turn into their rank's unit (the clan's
+    own, through getEquivalentUnit) with their path's Master at the next turn start; promotions survive (A3 test 1)."""
+    return ["Unbuildable", "Cannot be purchased", "Will not be displayed in Civilopedia",
+            f"[This Unit] gains the [{path} Master] promotion <upon turn start>", "[This Unit] upgrades for free <upon turn start>"]
+
+
 GU_MASTERS = [gm(r["name"], r["unitType"], r["requiredTech"], int(r["cost"]), int(r["strength"]), r["maintenance"],
-                 ([f"Only available <after adopting [{r['path']}]>"] if r["path"] else []) + items(r["extra_uniques"]),
-                 ranged=int(r["rangedStrength"]) if r["rangedStrength"] else None, upgrades=r["upgradesTo"] or None)
+                 items(r["extra_uniques"]) + (legacy(r["legacyPath"]) if r["legacyPath"] else []),
+                 ranged=int(r["rangedStrength"]) if r["rangedStrength"] else None, upgrades=r["upgradesTo"] or None,
+                 legacy=bool(r["legacyPath"]))
               for r in table("gu_masters.csv")]
 for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     u["attackSound"] = r["attackSound"]  # R5: each path sounds different (built-in sounds, Images-and-Audio.md)
+    if r["uniqueTo"]:
+        # C3 (the user's choice A.b): a signature clan keeps its path's look and attack effect through its own chain,
+        # since Unciv picks attack animations by unit name or type only [src BattleTableHelpers.getAttackAnimationLocation]
+        u["uniqueTo"], u["replaces"] = r["uniqueTo"], r["replaces"]
+        base = next(b for b in table("gu_masters.csv") if b["name"] == r["replaces"])
+        same = ("unitType", "requiredTech", "cost", "strength", "rangedStrength", "maintenance", "upgradesTo",
+                "extra_uniques", "cultivationXP")
+        assert all(r[k] == base[k] for k in same), f"{r['name']} must keep {r['replaces']}'s numbers (tune both rows)"
+    if r["legacyPath"]:
+        continue
     if int(r["cultivationXP"]):
         # R5: cultivation in the clan's academy (the Wu Martial Arena counts: it replaces the Gu Academy [src
         # containsBuildingOrEquivalent]). Without it XP came only from battle and the ladder stalled at rung 1.
@@ -255,26 +283,30 @@ dump("Units.json", [
 # Moon (Fang Zheng's line):      Moonlight Gu -> Moon Raiment (Moonlight + Jade Skin, fused) -> Killer Move
 # Strength (Fang Yuan's line):   White Boar Gu -> White Jade Gu (White Boar + Jade Skin, fused; boar strength kept;
 #                                a spare wild boar = the tusk catalyst, +20 points) -> Killer Move
-# Rank One (unpathed, any clan): Jade Skin Gu (the cap); it is carried into a path and saves the fusion's jade.
+# Unpathed (no Moon or Strength Master; any rank since C3): Jade Skin Gu (the cap); carried into a path, it saves the
+# fusion's jade.
 # Black Boar Gu is OFF the ladder: bought from the Jia caravan (Jia ally bonus), stacks as a second boar.
 # Dead states: no ladder line can fire -> the careful and reckless choices close.
 LADDER_DEAD = [
     "Unavailable <for units with [Killer Move]>",
-    "Unavailable <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
-    "Unavailable <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
-    "Unavailable <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]>",
-    "Unavailable <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]>",
-    "Unavailable <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]>",
-    "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]>",
-    "Unavailable <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]>",
+    f"Unavailable {MOON} <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
+    f"Unavailable {STR} <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
+    f"Unavailable {MOON} <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when below [1] [Moon Orchid]>",
+    f"Unavailable {MOON} <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when below [1] [Jade]>",
+    f"Unavailable {STR} <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when below [1] [Wild Boar]>",
+    f"Unavailable {STR} <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when below [1] [Jade]>",
+    f"Unavailable {STR} <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when below [2] [Jade]>",
+    f"Unavailable {MOON} <for units with [Moonlight Gu]> {RANK1}",
+    f"Unavailable {STR} <for units with [White Boar Gu]> {RANK1}",
 ]
 RO_DEAD = [
-    "Unavailable <for [Gu Master] units> <for units with [Jade Skin Gu]>",
-    "Unavailable <for [Gu Master] units> <when below [1] [Jade]>",
+    f"Unavailable {UNPATHED} <for units with [Jade Skin Gu]>",
+    f"Unavailable {UNPATHED} <when below [1] [Jade]>",
 ]
-# Refine Gu closes where no rung AND (for a Rank One) no Liquor Worm lure can happen.
-LW_IMPOSSIBLE = ["<for units with [Liquor Worm]>", "<when below [1] [Wine]>", "<when below [31] [Gold]>"]
-PROMO_DEAD = LADDER_DEAD + [f"{d} {c}" for d in RO_DEAD for c in LW_IMPOSSIBLE]
+# Refine Gu closes where no rung AND (for an unpathed unit) no Liquor Worm lure can happen.
+LW_IMPOSSIBLE = ["<for units with [Liquor Worm]>", "<when below [1] [Wine]>", "<when below [31] [Gold]>", RANK2]
+# since C3 a Rank One may already hold a path, so every dead state counts only where the lure is impossible too
+PROMO_DEAD = [f"{d} {c}" for d in LADDER_DEAD + RO_DEAD for c in LW_IMPOSSIBLE if not (RANK1 in d and c == RANK2)]
 
 
 # R3 hunger meter (the user's design). A Gu whose food is in deficit is first WEAKENED: its effects carry
@@ -315,22 +347,23 @@ def ladder(base, fusion, tusk):
     climbs at most one rung. Every unit state matches at most one 'gains' line (one chance roll per attempt, E5).
     The 'loses' lines are deterministic: they remove the two ingredients only after a successful fusion."""
     b, f, t = (f"<with [{x}]% chance>" for x in (base, fusion, tusk))
+    NK = "<for units without [Killer Move]>"  # a killer move ends the climb on every ladder (C3: a human may hold both paths)
     return [
-        f"[This Unit] gains the [Killer Move] promotion <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> {b}",
-        f"[This Unit] gains the [Killer Move] promotion <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> {b}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> {t}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> {f}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> {t}",
-        f"[This Unit] gains the [White Jade Gu] promotion <for [Strength Gu Master] units> <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> {f}",
+        f"[This Unit] gains the [Killer Move] promotion {MOON} <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> {b}",
+        f"[This Unit] gains the [Killer Move] promotion {STR} <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> {b}",
+        f"[This Unit] gains the [White Jade Gu] promotion {STR} {RANK2} <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> {NK} {t}",
+        f"[This Unit] gains the [White Jade Gu] promotion {STR} {RANK2} <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when below [1] [Wild Boar]> {NK} {f}",
+        f"[This Unit] gains the [White Jade Gu] promotion {STR} {RANK2} <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when above [0] [Wild Boar]> {NK} {t}",
+        f"[This Unit] gains the [White Jade Gu] promotion {STR} {RANK2} <for units with [White Boar Gu]> <for units without [Jade Skin Gu]> <when above [1] [Jade]> <when below [1] [Wild Boar]> {NK} {f}",
         "[This Unit] loses the [White Boar Gu] promotion <for units with [White Jade Gu]>",
         "[This Unit] loses the [Jade Skin Gu] promotion <for units with [White Jade Gu]>",
-        f"[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> {f}",
-        f"[This Unit] gains the [Moon Raiment] promotion <for [Moon Gu Master] units> <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> {f}",
+        f"[This Unit] gains the [Moon Raiment] promotion {MOON} {RANK2} <for units with [Moonlight Gu]> <for units with [Jade Skin Gu]> {NK} {f}",
+        f"[This Unit] gains the [Moon Raiment] promotion {MOON} {RANK2} <for units with [Moonlight Gu]> <for units without [Jade Skin Gu]> <when above [0] [Jade]> {NK} {f}",
         "[This Unit] loses the [Moonlight Gu] promotion <for units with [Moon Raiment]>",
         "[This Unit] loses the [Jade Skin Gu] promotion <for units with [Moon Raiment]>",
-        f"[This Unit] gains the [White Boar Gu] promotion <for [Strength Gu Master] units> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> {b}",
-        f"[This Unit] gains the [Moonlight Gu] promotion <for [Moon Gu Master] units> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> {b}",
-        f"[This Unit] gains the [Jade Skin Gu] promotion <for [Gu Master] units> <for units without [Jade Skin Gu]> <when above [0] [Jade]> {b}",
+        f"[This Unit] gains the [White Boar Gu] promotion {STR} <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [0] [Wild Boar]> {NK} {b}",
+        f"[This Unit] gains the [Moonlight Gu] promotion {MOON} <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [0] [Moon Orchid]> {NK} {b}",
+        f"[This Unit] gains the [Jade Skin Gu] promotion {UNPATHED} <for units without [Jade Skin Gu]> <when above [0] [Jade]> {NK} {b}",
     ]
 
 
@@ -354,7 +387,9 @@ dump("UnitPromotions.json", [
     {"name": "Stream Gu", "uniques": ["[+10] HP when healing", "[+10]% maintenance costs"]},
     # R3 hunger statuses (timers; see hunger()); each removes itself once its food is back
 ] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
-     for food, status in HUNGER.items()])
+     for food, status in HUNGER.items()]
+    # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
+    + gen_paths.promotions(GM_TYPES))
 
 # ---------------- Events (9: the spec's 5 + wild Gu and inheritances, R6) ----------------
 BAI = "<for [Bai Clan] Civilizations>"
@@ -383,7 +418,7 @@ dump("Events.json", [
             + ladder(50, 40, 60) + ["[This Unit] takes [30] damage", w("+0"), w("-90", "<when below [50] HP>")]},
         # R2 T4/T9: canon lure (Green Bamboo Wine) and canon refining cost (at least 30 stones); rank one only
         {"text": "Lure a wild Liquor Worm with Green Bamboo Wine", "uniques": [
-            "Only available <for [Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [30] [Gold]>",
+            f"Only available {RANK1} <for units without [Liquor Worm]> <when above [0] [Wine]> <when above [30] [Gold]>",
             "Gain [-30] [Gold]", "[This Unit] gains the [Liquor Worm] promotion <with [70]% chance>", w("+0")]},
         {"text": "Let the furnace cool", "uniques": ["[This Unit] gains [5] XP", w("-95")]},
     ]},
@@ -414,8 +449,8 @@ dump("Events.json", [
         {"text": "Let the traitor go", "uniques": ["Only available <when above [60] [Gold]>", "Gain [-60] [Gold]",
                                                    w("+0")]},
         {"text": "Hunt the traitor down", "uniques": [
-            "A [Rank Two Strength Gu Master] rebels <after adopting [Strength Path]>",
-            "A [Rank Two Moon Gu Master] rebels <after adopting [Moon Path]>",
+            "A [Rank Two Gu Master] rebels <after adopting [Strength Path]>",
+            "A [Rank Two Gu Master] rebels <after adopting [Moon Path]>",
             "A [Rank One Gu Master] rebels <before adopting [Strength Path]> <before adopting [Moon Path]>",
             w("+0")]},
         {"text": "Judge the traitor by clan law", "uniques": ["Only available <after adopting [Righteous Path]>", CAP_POP,
@@ -446,13 +481,13 @@ dump("Events.json", [
     ]},
     {"name": "Wild Gu Caught", "text": "Your Gu Master has cornered a wild Gu. Which one will it be?", "choices": [
         {"text": "Capture the wild Liquor Worm", "uniques": [
-            "Only available <for [Gu Master] units> <for units without [Liquor Worm]> <when above [0] [Wine]>",
+            f"Only available {RANK1} <for units without [Liquor Worm]> <when above [0] [Wine]>",
             "[This Unit] gains the [Liquor Worm] promotion", w("+0")]},
         {"text": "Capture the wild Jade Skin Gu", "uniques": [
             "Only available <for units without [Jade Skin Gu]> <for units without [White Jade Gu]> <for units without [Moon Raiment]> <when above [0] [Jade]>",
             "[This Unit] gains the [Jade Skin Gu] promotion", w("+0")]},
         {"text": "Capture the wild Black Boar Gu", "uniques": [
-            "Only available <for [Strength Gu Master] units> <for units without [Black Boar Gu]> <when above [0] [Wild Boar]>",
+            f"Only available {STR} <for units without [Black Boar Gu]> <when above [0] [Wild Boar]>",
             "[This Unit] gains the [Black Boar Gu] promotion", w("+0")]},
     ]},
     # R6: a buried inheritance. Silent rumour (1 in 2 is real), then the popup. Claiming it puts a Gu Inheritance on
@@ -545,25 +580,25 @@ dump("Policies.json", [
     {"name": "Moon Path", "era": E12, "priorities": {"Southern Border Supremacy": 5, "Endurance": 5}, "uniques": [
         "Only available <before adopting [Strength Path]>",
         "Provides [2] [Moon Orchid]",
-        "[+5]% Strength <for [Moon Gu Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"], "policies": [
+        "[+5]% Strength <for [Moon Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"], "policies": [
         {"name": "Moonlight Mastery", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [Moonlight Gu]>",
                                                                        "[+15]% Strength <for units with [Moon Raiment]>"]},
         {"name": "Orchid Terraces", "row": 1, "column": 3, "uniques": ["Provides [2] [Moon Orchid]",
-                                                                     "[-15]% maintenance costs <for [Moon Gu Master] units>"]},
+                                                                     "[-15]% maintenance costs <for [Moon Master] units>"]},
         {"name": "Moon Blade Step", "row": 2, "column": 2, "requires": ["Moonlight Mastery"],
-         "uniques": ["[1] Movement <for [Moon Gu Master] units>"]},
-        {"name": "Moon Path Complete", "uniques": ["New [Moon Gu Master] units start with [10] XP [in all cities]"]}]},
+         "uniques": ["[1] Movement <for [Moon Master] units>"]},
+        {"name": "Moon Path Complete", "uniques": ["New [Gu Master] units start with [10] XP [in all cities]"]}]},
     {"name": "Strength Path", "era": E12, "priorities": {"Southern Border Supremacy": 5, "Endurance": 5}, "uniques": [
         "Only available <before adopting [Moon Path]>",
         "Provides [2] [Wild Boar]",
-        "[+5]% Strength <for [Strength Gu Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"], "policies": [
+        "[+5]% Strength <for [Strength Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"], "policies": [
         {"name": "Boar Strength", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [White Boar Gu]>",
                                                                    "[+15]% Strength <for units with [White Jade Gu]>"]},
         {"name": "Beast Hunters", "row": 1, "column": 3, "uniques": ["Provides [2] [Wild Boar]",
                                                                    "[+25]% Strength <vs [Barbarians] units>"]},
         {"name": "Unyielding Body", "row": 2, "column": 2, "requires": ["Boar Strength"],
          "uniques": ["Heals [10] damage if it kills a unit"]},
-        {"name": "Strength Path Complete", "uniques": ["[1] Movement <for [Strength Gu Master] units>"]}]},
+        {"name": "Strength Path Complete", "uniques": ["[1] Movement <for [Strength Master] units>"]}]},
 ])
 
 # ---------------- Resources (7: Spirit Spring, 4 strategic Gu foods, Gu Inheritance, 1 luxury) ----------------
@@ -702,10 +737,11 @@ dump("CityStateTypes.json", [
      "allyBonusUniques": ["[+2 Science] [in capital]", "[+20]% XP gained from combat"]},
     {"name": "Mortal Villages", "color": [150, 130, 80], "friendBonusUniques": ["[+2 Food] [in capital]"],
      "allyBonusUniques": ["[+2 Food] [in capital]", "[+2 Production] [in capital]"]},
-    # R2 T4/T7: the caravan's tree-house Gu shop sold Fang Yuan his Black Boar Gu
+    # R2 T4/T7: the caravan's tree-house Gu shop sold Fang Yuan his Black Boar Gu (before he chose a path, so since C3
+    # every newly trained Gu Master may get one: a new unit holds no path yet)
     {"name": "Merchant Clan", "color": [255, 216, 0], "friendBonusUniques": ["[+2 Gold] [in capital]"],
      "allyBonusUniques": ["[+3 Gold] [in capital]", "[+10]% [Gold]",
-                          "All newly-trained [Strength Gu Master] units [in all cities] receive the [Black Boar Gu] promotion <when above [0] [Wild Boar]>"]},
+                          "All newly-trained [Gu Master] units [in all cities] receive the [Black Boar Gu] promotion <when above [0] [Wild Boar]>"]},
 ])
 dump("Personalities.json", [
     {"name": "Gu Yue Temperament", "science": 7, "culture": 6, "gold": 5, "military": 4, "aggressive": 3,
@@ -713,7 +749,7 @@ dump("Personalities.json", [
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions",
                  "Will not build [Flower Wine Monk Inheritance]"]},
     {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 4, "aggressive": 3,
-     "priorities": {"Moon Path": 8, "Righteous Path": 7},
+     "priorities": {"Righteous Path": 8},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6,
      "preferredVictoryType": "Southern Border Supremacy",

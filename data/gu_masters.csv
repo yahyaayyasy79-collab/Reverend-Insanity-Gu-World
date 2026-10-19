@@ -1,8 +1,23 @@
-name,unitType,path,requiredTech,cost,strength,rangedStrength,maintenance,upgradesTo,extra_uniques,attackSound,cultivationXP
-Rank One Gu Master,Gu Master,,Aperture Awakening,35,8,,+50,,Can upgrade to [Rank Two Moon Gu Master]|Can upgrade to [Rank Two Strength Gu Master],throw,2
-Rank Two Strength Gu Master,Strength Gu Master,Strength Path,Rank Two Cultivation,60,14,,+100,Rank Three Strength Gu Master,,nonmetalhit,2
-Rank Three Strength Gu Master,Strength Gu Master,Strength Path,Rank Three Cultivation,95,22,,+125,Rank Four Strength Gu Master,,nonmetalhit,2
-Rank Four Strength Gu Master,Strength Gu Master,Strength Path,Rank Four Cultivation,140,32,,+175,,,nonmetalhit,2
-Rank Two Moon Gu Master,Moon Gu Master,Moon Path,Rank Two Cultivation,60,13,,+75,Rank Three Moon Gu Master,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
-Rank Three Moon Gu Master,Moon Gu Master,Moon Path,Rank Three Cultivation,95,20,,+100,Rank Four Moon Gu Master,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
-Rank Four Moon Gu Master,Moon Gu Master,Moon Path,Rank Four Cultivation,140,29,,+150,,Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength,whoosh,2
+name,unitType,requiredTech,cost,strength,rangedStrength,maintenance,upgradesTo,extra_uniques,attackSound,cultivationXP,uniqueTo,replaces,legacyPath
+Rank One Gu Master,Gu Master,Aperture Awakening,35,8,,+50,Rank Two Gu Master,,throw,2,,,
+Rank Two Gu Master,Gu Master,Rank Two Cultivation,60,14,,+100,Rank Three Gu Master,,throw,2,,,
+Rank Three Gu Master,Gu Master,Rank Three Cultivation,95,22,,+125,Rank Four Gu Master,,throw,2,,,
+Rank Four Gu Master,Gu Master,Rank Four Cultivation,140,32,,+175,,,throw,2,,,
+Rank Two Gu Yue Gu Master,Gu Master,Rank Two Cultivation,60,14,,+100,Rank Three Gu Master,,whoosh,2,Gu Yue Clan,Rank Two Gu Master,
+Rank Three Gu Yue Gu Master,Gu Master,Rank Three Cultivation,95,22,,+125,Rank Four Gu Master,,whoosh,2,Gu Yue Clan,Rank Three Gu Master,
+Rank Four Gu Yue Gu Master,Gu Master,Rank Four Cultivation,140,32,,+175,,,whoosh,2,Gu Yue Clan,Rank Four Gu Master,
+Rank Two Bai Gu Master,Gu Master,Rank Two Cultivation,60,14,,+100,Rank Three Gu Master,,whoosh,2,Bai Clan,Rank Two Gu Master,
+Rank Three Bai Gu Master,Gu Master,Rank Three Cultivation,95,22,,+125,Rank Four Gu Master,,whoosh,2,Bai Clan,Rank Three Gu Master,
+Rank Four Bai Gu Master,Gu Master,Rank Four Cultivation,140,32,,+175,,,whoosh,2,Bai Clan,Rank Four Gu Master,
+Rank Two Xiong Gu Master,Gu Master,Rank Two Cultivation,60,14,,+100,Rank Three Gu Master,,nonmetalhit,2,Xiong Clan,Rank Two Gu Master,
+Rank Three Xiong Gu Master,Gu Master,Rank Three Cultivation,95,22,,+125,Rank Four Gu Master,,nonmetalhit,2,Xiong Clan,Rank Three Gu Master,
+Rank Four Xiong Gu Master,Gu Master,Rank Four Cultivation,140,32,,+175,,,nonmetalhit,2,Xiong Clan,Rank Four Gu Master,
+Rank Two Wu Gu Master,Gu Master,Rank Two Cultivation,60,14,,+100,Rank Three Gu Master,,nonmetalhit,2,Wu Clan,Rank Two Gu Master,
+Rank Three Wu Gu Master,Gu Master,Rank Three Cultivation,95,22,,+125,Rank Four Gu Master,,nonmetalhit,2,Wu Clan,Rank Three Gu Master,
+Rank Four Wu Gu Master,Gu Master,Rank Four Cultivation,140,32,,+175,,,nonmetalhit,2,Wu Clan,Rank Four Gu Master,
+Rank Two Strength Gu Master,Strength Gu Master,Rank Two Cultivation,60,14,,+100,Rank Two Gu Master,,nonmetalhit,0,,,Strength
+Rank Three Strength Gu Master,Strength Gu Master,Rank Three Cultivation,95,22,,+125,Rank Three Gu Master,,nonmetalhit,0,,,Strength
+Rank Four Strength Gu Master,Strength Gu Master,Rank Four Cultivation,140,32,,+175,Rank Four Gu Master,,nonmetalhit,0,,,Strength
+Rank Two Moon Gu Master,Moon Gu Master,Rank Two Cultivation,60,13,,+75,Rank Two Gu Master,,whoosh,0,,,Moon
+Rank Three Moon Gu Master,Moon Gu Master,Rank Three Cultivation,95,20,,+100,Rank Three Gu Master,,whoosh,0,,,Moon
+Rank Four Moon Gu Master,Moon Gu Master,Rank Four Cultivation,140,29,,+150,Rank Four Gu Master,,whoosh,0,,,Moon

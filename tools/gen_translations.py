@@ -122,9 +122,12 @@ def build() -> dict[str, str]:
     en_stones, id_stones = stones_overrides(base_id)
     names = [(r["key"], r["id"]) for r in table("translations_id.csv")]
     pedia = [(r["en"], r["id"]) for r in table("civilopedia.csv")]
+    import gen_paths
     return {
         "Indonesian.properties": render([("Names, places, events (data/translations_id.csv)", names),
                                          ("Civilopedia (data/civilopedia.csv)", pedia),
+                                         ("Paths: tiers, killer moves, statuses (data/paths*.csv, tools/gen_paths.py)",
+                                          gen_paths.translations()),
                                          (f"Gold is displayed as {STONES_ID} (overrides base translations)", id_stones)]),
         "English.properties": render([(f"Gold is displayed as {STONES_EN} (overrides base strings)", en_stones)]),
     }
