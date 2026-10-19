@@ -69,9 +69,14 @@ in LORE_MAPPING.md.
   Gu's fall throws the qi tides; seed corrections accepted (Yellow Apricot rank 9, four blessed-land grades).
 * C3 checkpoint (user, 2026-10-18): migration plan with the legacy bridge approved; Moon/Strength policy branches
   kept; every cultivator takes its own path and Gu unless its clan has a canon signature path (Gu Yue Moon, Bai Water,
-  Xiong and Wu Strength lean ~85%; arc majors have none); one path per AI unit (`Path Master` marker); the user's
-  Marathon game is over. Open: attack animations per rank (answer unclear: "only when attacked by a lone Gu Master or
-  an enemy") and Gu for paths without one.
+  Xiong Strength, Wu Wind since D3 2026-10-19; lean ~85%; arc majors have none); one path per AI unit (`Path Master` marker); the user's
+  Marathon game is over. Answered 2026-10-18: attack animations through clan chains (A.b); one Gu per path (B.b).
+* Canon overhaul (user, 2026-10-19, docs/CANON_OVERHAUL.md): D1 renames yes (Stockade Wall, Orchid Beds, canon city
+  and terrain display names); D2 path Gu granted with the Master, invented Gu for Weapon and Killing (the six
+  [VERIFY] Gu used as ADAPTED); D3 Wu's signature path Wind; D4 all four majors start righteous, the Gu Yue
+  blood-demon twist is used; D5 tile regions as a side task; D6 arc items wait for MOD_SPEC_2 Phase C, with their
+  art designed ("jangan lupa buat desain gambar yg perlu gambarnya": every object that shows an image gets a designed
+  one, not a placeholder).
 * Saves: Unciv deletes units missing from the ruleset on load [src BackwardCompatibility.removeUnitsAndPromotions];
   never remove a unit a running game may hold without a legacy bridge.
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the

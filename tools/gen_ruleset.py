@@ -758,7 +758,7 @@ dump("Personalities.json", [
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
      "preferredVictoryType": "Southern Border Supremacy",
-     "priorities": {"Righteous Path": 10, "Strength Path": 10},
+     "priorities": {"Righteous Path": 10, "Strength Path": 4},  # D3: the clan walks wind; Wu Ji alone walks strength
      "uniques": ["[+50]% weight to [Martial Arena] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
 ])
 dump("VictoryTypes.json", [

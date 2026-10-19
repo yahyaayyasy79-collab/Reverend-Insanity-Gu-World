@@ -80,7 +80,7 @@ rest of the list is what a player or the next session should know before trustin
 9. **The look follows the clan, not the path (C3).** Unciv picks a unit's map sprite and attack animation by unit
    name or unit type only [src `BattleTableHelpers.getAttackAnimationLocation`], never by promotion. The four
    signature clans train their own rank 2-4 units, drawn and animated in their signature path (Gu Yue moon, Bai
-   water, Xiong and Wu strength); about 15% of their cultivators take another path and still look like the clan's.
+   water, Xiong strength, Wu wind); about 15% of their cultivators take another path and still look like the clan's.
    Every other cultivator uses the neutral rank units and the rank-one essence burst.
 10. **A Rank One may hold a path (C3).** It climbs that path's first rung only; the fusions wait for rank two. An
    unpathed D-grade Rank One still loses the Gu Yue emblem at once (canon), a D-grade Moon Master keeps it.

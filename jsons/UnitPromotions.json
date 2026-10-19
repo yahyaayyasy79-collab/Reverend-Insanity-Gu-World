@@ -356,8 +356,7 @@
       "Path Master",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
-      "[+23133]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
-      "[+23133]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
+      "[+23133]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -1558,7 +1557,8 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[+400]% weight to this choice for AI decisions",
-      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
+      "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
+      "[+23133]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
     ],
     "civilopediaText": [
       {

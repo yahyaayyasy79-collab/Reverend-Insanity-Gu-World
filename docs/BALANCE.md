@@ -675,7 +675,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Wu Temperament | loyal | 7 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | expansion | 5 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | priorities.Righteous Path | 10 | tools/gen_ruleset.py `Nations` |
-| Wu Temperament | priorities.Strength Path | 10 | tools/gen_ruleset.py `Nations` |
+| Wu Temperament | priorities.Strength Path | 4 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | `[+50]% weight to [Martial Arena] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
 

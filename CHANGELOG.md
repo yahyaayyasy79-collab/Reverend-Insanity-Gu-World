@@ -364,3 +364,12 @@
   ADAPTED (a large clan shrunk to a city-state), Inheritance Trial and Trap verified (lethal tests are demonic), Beast
   Tide's 兽潮 canon, Righteous Path's lore line CANON; arc: the Fang clan is not the desert's first, the Zombie
   Alliance shows a righteous face and serves the Shadow Sect in secret.
+
+## Canon overhaul 2 — Wu walks the wind path (2026-10-19)
+
+* The user's decision D3: Wu's signature path is Wind (the clan's own strongest tradition, R V6c130), not Strength
+  (Wu Ji's personal path). `data/paths.csv` signature clans: Xiong alone leans Strength, Wu leans Wind; Wu's AI
+  priorities Righteous 10, Strength 4.
+* The Wu chain (ranks 2-4) is redrawn: gust rings around the robe, a whirl over the palm, a sage-green portrait robe,
+  a whirlwind attack effect and the whoosh sound.
+* Autoplay check (6 games × 150 turns, Prince): 23 of Wu's 27 cultivators on the wind path (85%), 0 crashes.

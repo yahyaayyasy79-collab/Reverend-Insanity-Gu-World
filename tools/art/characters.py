@@ -98,6 +98,15 @@ def gu_master(rank: int, path: str | None):
             s.add("torus", (0, 0.7 + 0.45 * k, 0), 0.42 + 0.05 * k, 0.03, mat="water")
         s.add("sphere", (0.36, 1.45, 0.5), 0.08 + 0.02 * rank, mat="water")
         s.add("torus", (0, 0.02, 0), 0.42 + 0.04 * rank, 0.018, mat=ESSENCE[rank])
+    elif path == "Wind":
+        # the Wu clan (D3: its strongest tradition is the wind path, R V6c130): gust rings spiral up the robe, one
+        # more per rank, and a whirl over the palm
+        cultivator(s, height=1.0, build=1.0, robe=True, bun=True, pose="cast")
+        for k in range(rank):
+            s.add("torus", (0.05 * (k % 2 * 2 - 1), 0.25 + 0.24 * k, 0), 0.64 + 0.04 * k, 0.014, mat="wind")
+        for k in range(3):
+            s.add("torus", (0.36, 1.32 + 0.1 * k, 0.5), 0.07 + 0.04 * k + 0.01 * rank, 0.015, mat="wind")
+        s.add("torus", (0, 0.02, 0), 0.42 + 0.04 * rank, 0.018, mat=ESSENCE[rank])
     elif rank > 1:   # any other path (C3: the path is a promotion): a grown cultivator with an orb of his rank's essence
         cultivator(s, height=1.0, build=1.0, robe=True, bun=True, pose="cast")
         s.add("sphere", (0.36, 1.45, 0.5), 0.08 + 0.02 * rank, mat=ESSENCE[rank])
@@ -213,6 +222,21 @@ def water_frame(i, rank):
     return s
 
 
+def wind_frame(i, rank):
+    """A whirlwind sweeps over the target and tears outward."""
+    s = Scene()
+    k = 0.6 + 0.1 * rank
+    if i < 3:
+        sway = (-0.4, 0.0, 0.3)[i]
+        for h in range(5):
+            s.add("torus", (sway + 0.08 * h * (1 if i % 2 else -1), 0.1 + 0.42 * h, 0), (0.22 + 0.14 * h) * k, 0.04,
+                  mat="wind")
+    else:
+        for r in (0.5, 0.8):
+            s.add("torus", (0, 0.3, 0), r * k, 0.04, mat="wind")
+    return s
+
+
 def essence_frame(i, rank=1):
     s = Scene()
     s.add("sphere", (0, 0.9, 0), 0.12 + 0.12 * i, mat=ESSENCE[rank])
@@ -232,7 +256,7 @@ UNITS = {
     # C3: the rank chain, and the signature clans' own chains (their path's look; the user's choice A.b)
     **{f"Rank {w} Gu Master": (lambda r=r: gu_master(r, None)) for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     **{f"Rank {w} {clan} Gu Master": (lambda r=r, pth=pth: gu_master(r, pth))
-       for clan, pth in (("Gu Yue", "Moon"), ("Bai", "Water"), ("Xiong", "Strength"), ("Wu", "Strength"))
+       for clan, pth in (("Gu Yue", "Moon"), ("Bai", "Water"), ("Xiong", "Strength"), ("Wu", "Wind"))
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     "Lightning Wolf": lambda: wolf(0.85),
     "Bold Lightning Wolf": lambda: wolf(1.05, mane=True),
@@ -250,7 +274,7 @@ ATTACKS = {
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     **{f"Rank {w} {clan} Gu Master": [lambda i=i, r=r, f=f: f(i, r) for i in range(4)]
        for clan, f in (("Gu Yue", moon_blade_frame), ("Bai", water_frame), ("Xiong", boar_charge_frame),
-                       ("Wu", boar_charge_frame))
+                       ("Wu", wind_frame))
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     "Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Bold Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
@@ -264,5 +288,5 @@ PORTRAIT_ROBE = {"Clan Settler": (120, 92, 64), "Mortal Laborer": (140, 110, 80)
                  "Rank Three Moon Gu Master": (40, 60, 130), "Rank Four Moon Gu Master": (40, 60, 130),
                  **{f"Rank {w} {who}Gu Master": col for w in ("Two", "Three", "Four")
                     for who, col in (("", (90, 90, 100)), ("Gu Yue ", (40, 60, 130)), ("Bai ", (40, 110, 150)),
-                                     ("Xiong ", (110, 60, 30)), ("Wu ", (130, 30, 30)))}}
+                                     ("Xiong ", (110, 60, 30)), ("Wu ", (60, 120, 95)))}}
 PORTRAIT_TRIM = (225, 215, 190)

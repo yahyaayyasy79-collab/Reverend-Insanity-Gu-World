@@ -367,12 +367,12 @@
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "whoosh",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Two Gu Master",
     "civilopediaText": [
       {
-        "text": "A rank-two Gu Master of the Wu clan (二转): the Southern Border's first clan trains its own in the largest battle stage of the region."
+        "text": "A rank-two Gu Master of the Wu clan (二转): the Southern Border's first clan trains its own in the largest battle stage of the region"
       }
     ]
   },
@@ -392,12 +392,12 @@
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "whoosh",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Three Gu Master",
     "civilopediaText": [
       {
-        "text": "A rank-three Gu Master of the Wu clan (三转): the Southern Border's first clan trains its own in the largest battle stage of the region."
+        "text": "A rank-three Gu Master of the Wu clan (三转): the Southern Border's first clan trains its own in the largest battle stage of the region"
       }
     ]
   },
@@ -416,12 +416,12 @@
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
-    "attackSound": "nonmetalhit",
+    "attackSound": "whoosh",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Four Gu Master",
     "civilopediaText": [
       {
-        "text": "A rank-four Gu Master of the Wu clan (四转): the Southern Border's first clan trains its own in the largest battle stage of the region."
+        "text": "A rank-four Gu Master of the Wu clan (四转): the Southern Border's first clan trains its own in the largest battle stage of the region"
       }
     ]
   },

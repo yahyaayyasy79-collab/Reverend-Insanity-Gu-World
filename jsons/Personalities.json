@@ -57,7 +57,7 @@
     "preferredVictoryType": "Southern Border Supremacy",
     "priorities": {
       "Righteous Path": 10,
-      "Strength Path": 10
+      "Strength Path": 4
     },
     "uniques": [
       "[+50]% weight to [Martial Arena] for AI decisions",
