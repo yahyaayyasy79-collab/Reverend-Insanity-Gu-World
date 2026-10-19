@@ -31,7 +31,7 @@ MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence 
 2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md,
 47 paths) and B (LORE_MAPPING "Immortal arc") approved 2026-10-18 with the user's decisions; the C3 migration plan
 (PATHS.md, M1-M9, legacy bridge for saves) approved 2026-10-18 except two open questions (animations, path Gu); the test branch carries all 47 lines for the
-user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one canon mortal Gu per path, 47; research/path_gu.md done, not yet built); animations A.b (clan chains, 12 units). C3 core (M1-M6) done 2026-10-19: rank chain, clan chains, 47 paths tiers 1-2, legacy bridge, retargets, `Images.Units` atlas. Next: M7 autoplay A/B, then path Gu, then the user's canon overhaul request (lore texts, righteous/demonic/rogue and clan conflicts, tile regions: a plan at a checkpoint first).
+user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one canon mortal Gu per path, 47; research done, options in docs/CANON_OVERHAUL.md E); animations A.b (clan chains, 12 units). C3 core (M1-M6) done 2026-10-19: rank chain, clan chains, 47 paths tiers 1-2, legacy bridge, retargets, `Images.Units` atlas. M7 autoplay done (no change beyond noise, docs/AUTOPLAY.md); pushed, main fast-forwarded. The canon overhaul plan (docs/CANON_OVERHAUL.md: texts, renames, conflicts, tile regions, path Gu options, Wu's signature) waits at its checkpoint.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -147,6 +147,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
   tiers, conflict matrix, AI signature leanings, C3 migration plan; its tables are written by `tools/gen_paths.py` from
   `data/paths*.csv` (also the path promotions in jsons/).
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
+* `docs/CANON_OVERHAUL.md` — the user's canon overhaul request: text fixes, renames, conflicts, tile regions, path Gu
+  options, Wu's signature; the research verdicts behind them (2026-10-19, waiting at a checkpoint).
 * `docs/LORE_MAPPING.md` — Phase 1: one row per Slice 1 object (lore, role, exact uniques, CANON/ADAPTED/INVENTED,
   [VERIFY]), questions for the user, refinement ladder, events in detail, balance starting numbers.
 * `docs/AUTOPLAY.md` — autoplay method, baseline data, A/B experiments, verdict on the user's tuning rule.
