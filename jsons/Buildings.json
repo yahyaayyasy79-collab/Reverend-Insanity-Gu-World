@@ -264,7 +264,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Fixed Immortal Travel (定仙游), rank six, space path: carries its holder to any place it remembers. Your rank-six immortals gain 1 movement. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+        "text": "Fixed Immortal Travel (定仙游), rank six, space path: carries its holder to any place it remembers. Your immortals gain 1 movement. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
       }
     ]
   },
@@ -284,7 +284,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Man as Before (人如故), rank six, time path: returns a body to an earlier moment. Your rank-six immortals heal 20 more HP a turn. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+        "text": "Man as Before (人如故), rank six, time path: returns a body to an earlier moment. Your immortals heal 20 more HP a turn. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
       }
     ]
   },
@@ -324,7 +324,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Connect Luck (连运), rank six, luck path: links one's luck to others'. Your rank-six immortals fight 10% harder, and with Spring Autumn Cicada a fallen immortal returns more often. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+        "text": "Connect Luck (连运), rank six, luck path: links one's luck to others'. Your immortals fight 10% harder, and with Spring Autumn Cicada a fallen immortal returns more often. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
       }
     ]
   },
@@ -384,7 +384,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bone Spike (骨刺), rank six, bone path. Your rank-six immortals defend 20% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+        "text": "Bone Spike (骨刺), rank six, bone path. Your immortals defend 20% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
       }
     ]
   },
@@ -404,7 +404,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Star Eyes (星眸), rank six, star path: one of the immortal Gu in Fang Yuan's hands. Your rank-six immortals see 2 tiles farther. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+        "text": "Star Eyes (星眸), rank six, star path: one of the immortal Gu in Fang Yuan's hands. Your immortals see 2 tiles farther. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
       }
     ]
   },
@@ -1316,7 +1316,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Eternal life (永生), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence) before its lifespan runs out; it wins the game."
+        "text": "Eternal life (永生), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence on Standard) before its lifespan runs out; it wins the game."
       }
     ]
   },

@@ -44,7 +44,12 @@ WRITTEN = []
 
 def table(name):
     with open(DATA / name, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
+        rows = list(csv.DictReader(f))
+    # an unquoted comma splits a cell and shifts the rest into extra columns (the audit found four such rows)
+    bad = [r.get(next(iter(r))) for r in rows if None in r or None in r.values()]
+    if bad:
+        raise SystemExit(f"data/{name}: rows with the wrong number of columns (quote cells holding commas): {bad}")
+    return rows
 
 
 def items(cell):
@@ -745,6 +750,9 @@ dump("UnitPromotions.json", [
         + [f"Unavailable <when below [{qi_cost(60, m)}] [{WHITE}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(60, m)}] [{WHITE}] <on [{n}] game speed>" for n, m in SPEEDS]
         + ["Gain a free [Venerable Ascension] [in capital]", "[This Unit] loses the [Ascend to Venerable] promotion",
+           # an upgrade keeps every promotion [src MapUnit.copyStatisticsTo]: without this the Venerable kept the
+           # grotto-heaven's calamity and tribulation countdowns, whose essence choices stop at rank eight
+           "[This Unit] loses the [Grotto-Heaven Aperture] promotion",
            "[This Unit] gains the [Advancing] status for [1] turn(s)", "[This Unit] upgrades for free including special upgrades",
            w("+500")]},
 ] + [{"name": r["promotion"], "uniques": [r["promotion_effect"]]} for r in REALMS] + [
@@ -975,7 +983,7 @@ dump("Events.json", [
         toll("Lie low", ["[-20]% Strength <for [10] turns>"], "+0"),
         toll("Pay heaven its due", [f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]"], "+50"),
         toll("Defy heaven", [f"A [{DESOLATE}] rebels", "[2] [Bold Lightning Wolf]s rebel"], "-30")]},
-    {"name": "Venerable Falls", "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable "
+    {"name": "Venerable Falls", "text": "Your Venerable has fallen. Its ascension is gone, so a new Venerable "
                                         "may rise anywhere; its true inheritance's seal lies in your capital.",
      "choices": [toll("Guard the true inheritance", [], "+0")]},
     {"name": "Dream Realm", "text": "A dream realm has surfaced near your land: a dead man's dream, full of his dao. It burns "

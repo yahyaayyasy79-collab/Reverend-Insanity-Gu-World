@@ -1022,7 +1022,7 @@
   },
   {
     "name": "Venerable Falls",
-    "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable may rise anywhere; its true inheritance's seal lies in your capital.",
+    "text": "Your Venerable has fallen. Its ascension is gone, so a new Venerable may rise anywhere; its true inheritance's seal lies in your capital.",
     "choices": [
       {
         "text": "Guard the true inheritance",

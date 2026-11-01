@@ -624,3 +624,19 @@
   Regions map 44 of 48 clans spent 20+ turns in the red. A/B (4 clans, Prince, 6 × 320): 12 of 24 clans 20+ turns red
   with hall upkeep, 4 of 24 without; mean stones per turn −5.5 against +5.4. Halls now cost no upkeep (BALANCE.md).
 * Slice 1's Strength branch now also excludes the Water and Metal branches (the clash worked one way only).
+
+## Civilopedia audit (2026-11-01)
+
+* An audit of every civilopedia and event text against the rules found 19 mismatches; all fixed (EN + ID):
+  * Four `civilopedia.csv` rows had unquoted commas, so three Wu Masters and Lifespan Gu showed cut-off text. The
+    generator now refuses a CSV row with the wrong number of columns.
+  * Wrong numbers or rules: tribulation turns per rank, the grotto-heaven's calamity turns, the chaos calamity's HP cost,
+    how a Venerable heals, the Spring Autumn Cicada's free immortal, green grape essence sources, White Boar Gu, Dragon
+    Palace, Heaven Overseeing Tower, the fourth Gu House, the Eternal Life victory, dao-mark tiers in every
+    advancement requirement, "your immortals" on five rank-six Gu, red date essence on blessed lands at rank seven,
+    two secret realms' adjacency bonuses; Standard-speed numbers now say "on Standard".
+  * Lakes, Oasis, River and Marsh no longer link to Vanilla techs and improvements the mod does not have.
+  * "Venerable Falls" fires on any death, so its text no longer says the lifespan ran out.
+* Rule fix found by the audit: a Venerable kept its Grotto-Heaven Aperture through the upgrade (an upgrade keeps every
+  promotion [src MapUnit.copyStatisticsTo]), so calamities and tribulations kept falling on it with essence choices
+  closed to rank nine (25% death when bare). Ascending now removes the aperture; the chaos calamity is its trial.

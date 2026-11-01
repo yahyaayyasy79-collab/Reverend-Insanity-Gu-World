@@ -138,7 +138,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "White Boar Gu (白豕蛊) rebuilds its user's body until it carries one boar's strength. It eats pork, and the strength stays even if the Gu dies."
+        "text": "White Boar Gu (白豕蛊) rebuilds its user's body until it carries one boar's strength. It eats pork, and the strength lasts only while the Gu lives (fusing it into White Jade Gu keeps it)."
       }
     ]
   },
@@ -7281,7 +7281,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A lower-grade blessed land (下等福地), the most common: 1 green grape essence and 2 stones a turn."
+        "text": "A lower-grade blessed land (下等福地), the most common: 1 green grape essence and 2 stones a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -7308,7 +7308,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A middle-grade blessed land (中等福地): 2 green grape essence and 4 stones a turn."
+        "text": "A middle-grade blessed land (中等福地): 2 green grape essence and 4 stones a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -7335,7 +7335,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "An upper-grade blessed land (上等福地), rare: 3 green grape essence and 6 stones a turn."
+        "text": "An upper-grade blessed land (上等福地), rare: 3 green grape essence and 6 stones a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -7362,7 +7362,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A super-grade blessed land (特等福地), the foundation of a prodigy: 5 green grape essence and 10 stones a turn."
+        "text": "A super-grade blessed land (特等福地), the foundation of a prodigy: 5 green grape essence and 10 stones a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -7373,7 +7373,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Ten aperture-years pass between earthly calamities (地灾). When this runs out the immortal's blessed land is struck; a bigger land runs faster and is struck sooner (11 to 14 turns on Standard)."
+        "text": "Ten aperture-years pass between earthly calamities (地灾). When this runs out the immortal's blessed land is struck; a bigger land runs faster and is struck sooner (11 to 14 turns on Standard; 10 in a grotto-heaven)."
       }
     ]
   },
@@ -7384,7 +7384,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A heavenly tribulation (天劫) comes every hundred aperture-years: 60 turns on Standard. Unprepared, one immortal in four dies of it."
+        "text": "A heavenly tribulation (天劫) comes every hundred aperture-years: 60 turns on Standard at rank six, 30 at rank seven, 50 in a grotto-heaven. Unprepared, one immortal in four dies of it."
       }
     ]
   },
@@ -7428,7 +7428,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Tier I: +5% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier I: +5% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
@@ -7440,7 +7440,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Tier II: +10% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier II: +10% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
@@ -7452,7 +7452,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Tier III: +15% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier III: +15% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
@@ -7465,7 +7465,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
@@ -7478,7 +7478,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Tier V: +30% strength, heals 15 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier V: +30% strength, heals 15 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
@@ -7511,7 +7511,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A grotto-heaven (洞天): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50."
+        "text": "A grotto-heaven (洞天): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50 (on Standard). A Venerable leaves it behind."
       }
     ]
   },
@@ -7543,7 +7543,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Climb to rank seven: needs a survived heavenly tribulation and 60 green grape essence, at home."
+        "text": "Climb to rank seven: needs a survived heavenly tribulation, dao marks tier II and 60 green grape essence on Standard, at home."
       }
     ]
   },
@@ -7580,7 +7580,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Climb to rank eight: needs another survived tribulation and 60 red date essence, at home. The blessed land becomes a grotto-heaven."
+        "text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven."
       }
     ]
   },
@@ -7619,7 +7619,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The Venerable spends 150 yellow apricot essence on eternal life, Fang Yuan's goal: its clan wins the game."
+        "text": "The Venerable spends 150 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."
       }
     ]
   },
@@ -7646,13 +7646,14 @@
       "Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>",
       "Gain a free [Venerable Ascension] [in capital]",
       "[This Unit] loses the [Ascend to Venerable] promotion",
+      "[This Unit] loses the [Grotto-Heaven Aperture] promotion",
       "[This Unit] gains the [Advancing] status for [1] turn(s)",
       "[This Unit] upgrades for free including special upgrades",
       "[+500]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (60 white lychee essence, at home). Only one Venerable lives in the world at a time."
+        "text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (dao marks tier IV and 60 white lychee essence on Standard, at home). Only one Venerable lives in the world at a time."
       }
     ]
   },
@@ -7795,7 +7796,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Every 25 turns a chaos calamity (混沌大难) falls on the Venerable: 40 yellow apricot essence, or 25 HP of its burning life."
+        "text": "Every 25 turns on Standard a chaos calamity (混沌大难) falls on the Venerable: 40 yellow apricot essence and 10 HP, or 25 HP of its burning life."
       }
     ]
   }

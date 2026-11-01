@@ -1349,7 +1349,7 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 ```
 
-**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one. Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
 
 ```
 [+300]% maintenance costs
@@ -1421,7 +1421,7 @@ Triggers a [Ascension] event <for [Rank Five Gu Master] units>
 [This Unit] loses the [Ascension] promotion <upon turn start>
 ```
 
-**Lower Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A lower-grade blessed land (\u4e0b\u7b49\u798f\u5730), the most common: 1 green grape essence and 2 stones a turn."}]})
+**Lower Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A lower-grade blessed land (\u4e0b\u7b49\u798f\u5730), the most common: 1 green grape essence and 2 stones a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1443,7 +1443,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 [This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
-**Middle Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A middle-grade blessed land (\u4e2d\u7b49\u798f\u5730): 2 green grape essence and 4 stones a turn."}]})
+**Middle Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A middle-grade blessed land (\u4e2d\u7b49\u798f\u5730): 2 green grape essence and 4 stones a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1465,7 +1465,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 [This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
-**Upper Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "An upper-grade blessed land (\u4e0a\u7b49\u798f\u5730), rare: 3 green grape essence and 6 stones a turn."}]})
+**Upper Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "An upper-grade blessed land (\u4e0a\u7b49\u798f\u5730), rare: 3 green grape essence and 6 stones a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1487,7 +1487,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 [This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
-**Super Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A super-grade blessed land (\u7279\u7b49\u798f\u5730), the foundation of a prodigy: 5 green grape essence and 10 stones a turn."}]})
+**Super Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A super-grade blessed land (\u7279\u7b49\u798f\u5730), the foundation of a prodigy: 5 green grape essence and 10 stones a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1760,13 +1760,13 @@ runs out (E7) it throws the event from the unit, so the event can hurt that immo
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Calamity Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "Ten aperture-years pass between earthly calamities (\u5730\u707e). When this runs out the immortal's blessed land is struck; a bigger land runs faster and is struck sooner (11 to 14 turns on Standard)."}]})
+**Calamity Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "Ten aperture-years pass between earthly calamities (\u5730\u707e). When this runs out the immortal's blessed land is struck; a bigger land runs faster and is struck sooner (11 to 14 turns on Standard; 10 in a grotto-heaven)."}]})
 
 ```
 Comment [When it runs out, the blessed land meets an earthly calamity]
 ```
 
-**Tribulation Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "A heavenly tribulation (\u5929\u52ab) comes every hundred aperture-years: 60 turns on Standard. Unprepared, one immortal in four dies of it."}]})
+**Tribulation Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "A heavenly tribulation (\u5929\u52ab) comes every hundred aperture-years: 60 turns on Standard at rank six, 30 at rank seven, 50 in a grotto-heaven. Unprepared, one immortal in four dies of it."}]})
 
 ```
 Comment [When it runs out, the immortal meets a heavenly tribulation]
@@ -2146,7 +2146,7 @@ Triggers a [Immortal Gu Refinement] event
 [+300]% weight to this choice for AI decisions
 ```
 
-**Fixed Immortal Travel** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Fixed Immortal Travel (\u5b9a\u4ed9\u6e38), rank six, space path: carries its holder to any place it remembers. Your rank-six immortals gain 1 movement. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+**Fixed Immortal Travel** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Fixed Immortal Travel (\u5b9a\u4ed9\u6e38), rank six, space path: carries its holder to any place it remembers. Your immortals gain 1 movement. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
 
 ```
 Costs [40] [Green Grape Immortal Essence]
@@ -2158,7 +2158,7 @@ Triggers a [Immortal Gu Refinement] event
 [+300]% weight to this choice for AI decisions
 ```
 
-**Man as Before** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Man as Before (\u4eba\u5982\u6545), rank six, time path: returns a body to an earlier moment. Your rank-six immortals heal 20 more HP a turn. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+**Man as Before** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Man as Before (\u4eba\u5982\u6545), rank six, time path: returns a body to an earlier moment. Your immortals heal 20 more HP a turn. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
 
 ```
 Costs [35] [Green Grape Immortal Essence]
@@ -2182,7 +2182,7 @@ Triggers a [Immortal Gu Refinement] event
 [+300]% weight to this choice for AI decisions
 ```
 
-**Connect Luck** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Connect Luck (\u8fde\u8fd0), rank six, luck path: links one's luck to others'. Your rank-six immortals fight 10% harder, and with Spring Autumn Cicada a fallen immortal returns more often. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+**Connect Luck** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Connect Luck (\u8fde\u8fd0), rank six, luck path: links one's luck to others'. Your immortals fight 10% harder, and with Spring Autumn Cicada a fallen immortal returns more often. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
 
 ```
 Costs [35] [Green Grape Immortal Essence]
@@ -2218,7 +2218,7 @@ Triggers a [Immortal Gu Refinement] event
 [+300]% weight to this choice for AI decisions
 ```
 
-**Bone Spike** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Bone Spike (\u9aa8\u523a), rank six, bone path. Your rank-six immortals defend 20% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+**Bone Spike** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Bone Spike (\u9aa8\u523a), rank six, bone path. Your immortals defend 20% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
 
 ```
 Costs [35] [Green Grape Immortal Essence]
@@ -2230,7 +2230,7 @@ Triggers a [Immortal Gu Refinement] event
 [+300]% weight to this choice for AI decisions
 ```
 
-**Star Eyes** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 300, "civilopediaText": [{"text": "Star Eyes (\u661f\u7738), rank six, star path: one of the immortal Gu in Fang Yuan's hands. Your rank-six immortals see 2 tiles farther. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+**Star Eyes** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 300, "civilopediaText": [{"text": "Star Eyes (\u661f\u7738), rank six, star path: one of the immortal Gu in Fang Yuan's hands. Your immortals see 2 tiles farther. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
 
 ```
 Costs [30] [Green Grape Immortal Essence]
@@ -3106,7 +3106,7 @@ Comment [Survived a heavenly tribulation: may climb to the next rank]
 Comment [Climbing to the next rank]
 ```
 
-**Grotto-Heaven Aperture** (UnitPromotions.json; {"civilopediaText": [{"text": "A grotto-heaven (\u6d1e\u5929): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50."}]})
+**Grotto-Heaven Aperture** (UnitPromotions.json; {"civilopediaText": [{"text": "A grotto-heaven (\u6d1e\u5929): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50 (on Standard). A Venerable leaves it behind."}]})
 
 ```
 Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
@@ -3123,7 +3123,7 @@ Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status
 Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
 ```
 
-**Advance to Rank Seven** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank seven: needs a survived heavenly tribulation and 60 green grape essence, at home."}]})
+**Advance to Rank Seven** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank seven: needs a survived heavenly tribulation, dao marks tier II and 60 green grape essence on Standard, at home."}]})
 
 ```
 Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>
@@ -3145,7 +3145,7 @@ Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game spee
 [+200]% weight to this choice for AI decisions
 ```
 
-**Advance to Rank Eight** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank eight: needs another survived tribulation and 60 red date essence, at home. The blessed land becomes a grotto-heaven."}]})
+**Advance to Rank Eight** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven."}]})
 
 ```
 Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>
@@ -3220,7 +3220,7 @@ Cannot be purchased
 Suppress warning [is both granted free and could possibly be removed by triggers]
 ```
 
-**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence) before its lifespan runs out; it wins the game."}]})
+**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence on Standard) before its lifespan runs out; it wins the game."}]})
 
 ```
 Unbuildable
@@ -3244,7 +3244,7 @@ Unbuildable
 Cannot be purchased
 ```
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by pillaging or killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3311,7 +3311,7 @@ Never appears as a Barbarian unit
 Ignores terrain cost
 ```
 
-**Dragon Palace** (Units.json; {"unitType": "Gu House", "movement": 3, "strength": 160, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u9f99\u5bab): a rank-eight dream-token fortress that enslaves. Needs Dream Token; one per clan; +20% strength against immortals."}]})
+**Dragon Palace** (Units.json; {"unitType": "Gu House", "movement": 3, "strength": 160, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u9f99\u5bab): a rank-eight dream-token fortress. Needs Dream Token; one per clan; +20% strength against immortals."}]})
 
 ```
 Only available <if [Dream Token] is constructed>
@@ -3331,7 +3331,7 @@ Never appears as a Barbarian unit
 [+0]% weight to this choice for AI decisions
 ```
 
-**Yellow Apricot Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-nine essence (\u9ec4\u674f\u4ed9\u5143); even a Venerable runs short of it. Only a living Venerable makes it; Eternal Life costs 150."}]})
+**Yellow Apricot Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-nine essence (\u9ec4\u674f\u4ed9\u5143); even a Venerable runs short of it. Only a living Venerable makes it; Eternal Life costs 150 on Standard."}]})
 
 ```
 Stockpiled
@@ -3448,7 +3448,7 @@ Can pass through impassable tiles
 [+100]% maintenance costs
 ```
 
-**Heaven Overseeing Tower** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 190, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "uniqueTo": "Heavenly Court", "civilopediaText": [{"text": "The Heavenly Court's rank-nine Gu House (\u76d1\u5929\u5854) around Fate Gu: it watches the world and shrugs off calamities. Needs Fate Gu."}]})
+**Heaven Overseeing Tower** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 190, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "uniqueTo": "Heavenly Court", "civilopediaText": [{"text": "The Heavenly Court's rank-nine Gu House (\u76d1\u5929\u5854) around Fate Gu: it watches the world (+2 sight) and holds fast (+25% defending). Needs Fate Gu."}]})
 
 ```
 Only available <if [Fate Gu] is constructed>
@@ -3574,7 +3574,7 @@ outside the world is the rank-nine trial (R V6/280).
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by pillaging or killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3623,13 +3623,13 @@ Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 [+100]% Strength
 ```
 
-**Chaos Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "Every 25 turns a chaos calamity (\u6df7\u6c8c\u5927\u96be) falls on the Venerable: 40 yellow apricot essence, or 25 HP of its burning life."}]})
+**Chaos Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "Every 25 turns on Standard a chaos calamity (\u6df7\u6c8c\u5927\u96be) falls on the Venerable: 40 yellow apricot essence and 10 HP, or 25 HP of its burning life."}]})
 
 ```
 Comment [When it runs out, a chaos calamity falls on the Venerable]
 ```
 
-**Ascend to Venerable** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (60 white lychee essence, at home). Only one Venerable lives in the world at a time."}]})
+**Ascend to Venerable** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (dao marks tier IV and 60 white lychee essence on Standard, at home). Only one Venerable lives in the world at a time."}]})
 
 ```
 Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>
@@ -3647,12 +3647,13 @@ Instantly consumes [90] [White Lychee Immortal Essence] <on [Epic] game speed>
 Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>
 Gain a free [Venerable Ascension] [in capital]
 [This Unit] loses the [Ascend to Venerable] promotion
+[This Unit] loses the [Grotto-Heaven Aperture] promotion
 [This Unit] gains the [Advancing] status for [1] turn(s)
 [This Unit] upgrades for free including special upgrades
 [+500]% weight to this choice for AI decisions
 ```
 
-**Seek Eternal Life** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "The Venerable spends 150 yellow apricot essence on eternal life, Fang Yuan's goal: its clan wins the game."}]})
+**Seek Eternal Life** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "The Venerable spends 150 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."}]})
 
 ```
 Only available <for [Venerable] units>
@@ -3754,27 +3755,27 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; every non-legacy Gu 
 Comment [When it runs out, the unit's dao marks grow by one tier]
 ```
 
-**Dao Marks I** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier I: +5% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks I** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier I: +5% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
 [+5]% Strength
 ```
 
-**Dao Marks II** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier II: +10% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks II** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier II: +10% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
 [+10]% Strength
 [This Unit] loses the [Dao Marks I] promotion
 ```
 
-**Dao Marks III** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier III: +15% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks III** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier III: +15% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
 [+15]% Strength
 [This Unit] loses the [Dao Marks II] promotion
 ```
 
-**Dao Marks IV** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks IV** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
 [+20]% Strength
@@ -3782,7 +3783,7 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 [This Unit] loses the [Dao Marks III] promotion
 ```
 
-**Dao Marks V** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier V: +30% strength, heals 15 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks V** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier V: +30% strength, heals 15 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
 [+30]% Strength
@@ -3790,7 +3791,7 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 [This Unit] loses the [Dao Marks IV] promotion
 ```
 
-**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one. Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
 
 ```
 [+300]% maintenance costs
@@ -3918,7 +3919,7 @@ Tile provides yield without assigned population
 Must be adjacent to [0] [Coast] tiles
 ```
 
-**Luo Po Valley** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": false, "unbuildable": true, "weight": 10, "science": 3, "civilopediaText": [{"text": "Luo Po Valley (\u843d\u9b44\u8c37), a secret realm of heaven and earth. A valley of soul-loosening fog and soul-cutting wind, one of the soul path's two holy lands. Units that end their turn inside take 15 damage; those that come out fight 10% harder."}]})
+**Luo Po Valley** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": false, "unbuildable": true, "weight": 10, "science": 3, "civilopediaText": [{"text": "Luo Po Valley (\u843d\u9b44\u8c37), a secret realm of heaven and earth. A valley of soul-loosening fog and soul-cutting wind, one of the soul path's two holy lands. Units that end their turn inside take 15 damage; units beside it fight 10% harder."}]})
 
 ```
 Grants [Soul Loosened] ([soul loosened and hardened]) to adjacent [{Military} {Land}] units for the rest of the game
@@ -3959,7 +3960,7 @@ Tile provides yield without assigned population
 Must be adjacent to [0] [Coast] tiles
 ```
 
-**Crazed Demon Cave** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Plains", "Grassland"], "turnsInto": "Plains", "impassable": false, "unbuildable": true, "weight": 10, "production": 3, "civilopediaText": [{"text": "Crazed Demon Cave (\u75af\u9b54\u7a9f), a secret realm of heaven and earth. A cave whose demonic sound drives creatures mad; Limitless's inheritance lies within. Units that end their turn inside take 20 damage; survivors attack 15% harder."}]})
+**Crazed Demon Cave** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Plains", "Grassland"], "turnsInto": "Plains", "impassable": false, "unbuildable": true, "weight": 10, "production": 3, "civilopediaText": [{"text": "Crazed Demon Cave (\u75af\u9b54\u7a9f), a secret realm of heaven and earth. A cave whose demonic sound drives creatures mad; Limitless's inheritance lies within. Units that end their turn inside take 20 damage; units beside it attack 15% harder."}]})
 
 ```
 Grants [Demon Sound Steeled] ([survived the demonic sound]) to adjacent [{Military} {Land}] units for the rest of the game

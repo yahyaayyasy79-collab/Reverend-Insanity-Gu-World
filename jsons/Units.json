@@ -268,7 +268,7 @@
     "attackSound": "throw",
     "civilopediaText": [
       {
-        "text": "A rank-six Gu Immortal (六转蛊仙). Only the ascension makes one. Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."
+        "text": "A rank-six Gu Immortal (六转蛊仙). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."
       }
     ]
   },
@@ -756,7 +756,7 @@
     "replaces": "Rank Two Gu Master",
     "civilopediaText": [
       {
-        "text": "A rank-two Gu Master of the Wu clan (二转): the Southern Border's first clan trains its own in the largest battle stage of the region"
+        "text": "A rank-two Gu Master of the Wu clan (二转): the Southern Border's first clan trains its own in the largest battle stage of the region, in the clan's wind path."
       }
     ]
   },
@@ -795,7 +795,7 @@
     "replaces": "Rank Three Gu Master",
     "civilopediaText": [
       {
-        "text": "A rank-three Gu Master of the Wu clan (三转): the Southern Border's first clan trains its own in the largest battle stage of the region"
+        "text": "A rank-three Gu Master of the Wu clan (三转): the Southern Border's first clan trains its own in the largest battle stage of the region, in the clan's wind path."
       }
     ]
   },
@@ -834,7 +834,7 @@
     "replaces": "Rank Four Gu Master",
     "civilopediaText": [
       {
-        "text": "A rank-four Gu Master of the Wu clan (四转): the Southern Border's first clan trains its own in the largest battle stage of the region"
+        "text": "A rank-four Gu Master of the Wu clan (四转): the Southern Border's first clan trains its own in the largest battle stage of the region, in the clan's wind path."
       }
     ]
   },
@@ -1125,7 +1125,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by killing (10 HP a kill); it makes 6 yellow apricot essence a turn."
+        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by pillaging or killing (10 HP a kill); it makes 6 yellow apricot essence a turn."
       }
     ]
   },
@@ -1194,7 +1194,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A Gu House (龙宫): a rank-eight dream-token fortress that enslaves. Needs Dream Token; one per clan; +20% strength against immortals."
+        "text": "A Gu House (龙宫): a rank-eight dream-token fortress. Needs Dream Token; one per clan; +20% strength against immortals."
       }
     ]
   },
@@ -1219,7 +1219,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The Heavenly Court's rank-nine Gu House (监天塔) around Fate Gu: it watches the world and shrugs off calamities. Needs Fate Gu."
+        "text": "The Heavenly Court's rank-nine Gu House (监天塔) around Fate Gu: it watches the world (+2 sight) and holds fast (+25% defending). Needs Fate Gu."
       }
     ]
   },

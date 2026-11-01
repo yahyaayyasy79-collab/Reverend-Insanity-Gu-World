@@ -158,27 +158,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Lakes provide fresh water to adjacent tiles, allowing farming where it would otherwise not be possible (similar to Rivers and Oases)."
-      },
-      {
-        "text": "Rivers",
-        "link": "Terrain/River"
-      },
-      {
-        "text": "Oasis",
-        "link": "Terrain/Oasis"
-      },
-      {
-        "text": "Farm",
-        "link": "Improvement/Farm"
-      },
-      {
-        "text": "Civil Service",
-        "link": "Technology/Civil Service"
-      },
-      {
-        "text": "Fertilizer",
-        "link": "Technology/Fertilizer"
+        "text": "Lakes give fresh water to the tiles beside them, so farms can be built there (as beside rivers and oases)."
       }
     ]
   },
@@ -336,8 +316,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Only Polders can be built here",
-        "link": "Improvement/Polder"
+        "text": "A marsh slows every step. Clear it (Remove Marsh) before building on the tile."
       }
     ]
   },
@@ -362,27 +341,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Oases provide fresh water to adjacent tiles, allowing farming where it would otherwise not be possible (similar to Rivers and Lakes)."
-      },
-      {
-        "text": "Rivers",
-        "link": "Terrain/River"
-      },
-      {
-        "text": "Lakes",
-        "link": "Terrain/Lakes"
-      },
-      {
-        "text": "Farm",
-        "link": "Improvement/Farm"
-      },
-      {
-        "text": "Civil Service",
-        "link": "Technology/Civil Service"
-      },
-      {
-        "text": "Fertilizer",
-        "link": "Technology/Fertilizer"
+        "text": "An oasis gives fresh water to the tiles beside it, so farms can be built there (as beside rivers and lakes)."
       }
     ]
   },
@@ -440,51 +399,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Rivers exist on tile edges, not as terrain feature per se."
-      },
-      {
-        "text": "Tiles on both sides gain its benefits. These benefits do not stack."
-      },
-      {
-        "text": "The tile has access to fresh water, allowing farming where it would otherwise not be possible (similar to Oases and Lakes)."
-      },
-      {
-        "text": "Movement across rivers takes all remaining movement points of a unit unless there is a bridge."
-      },
-      {
-        "text": "When attacking across a river, the attacker gets a -20% strength malus."
-      },
-      {
-        "text": "Lakes",
-        "link": "Terrain/Lakes"
-      },
-      {
-        "text": "Oasis",
-        "link": "Terrain/Oasis"
-      },
-      {
-        "text": "Farm",
-        "link": "Improvement/Farm"
-      },
-      {
-        "text": "Road",
-        "link": "Improvement/Road"
-      },
-      {
-        "text": "Engineering",
-        "link": "Technology/Engineering"
-      },
-      {
-        "text": "Civil Service",
-        "link": "Technology/Civil Service"
-      },
-      {
-        "text": "Fertilizer",
-        "link": "Technology/Fertilizer"
-      },
-      {
-        "text": "Amphibious",
-        "link": "Promotion/Amphibious"
+        "text": "Rivers run along tile edges and give fresh water to the tiles on both sides, so farms can be built there. Crossing one takes all remaining movement; attacking across one costs 20% strength."
       }
     ]
   },
@@ -532,7 +447,7 @@
     "science": 3,
     "civilopediaText": [
       {
-        "text": "Luo Po Valley (落魄谷), a secret realm of heaven and earth. A valley of soul-loosening fog and soul-cutting wind, one of the soul path's two holy lands. Units that end their turn inside take 15 damage; those that come out fight 10% harder."
+        "text": "Luo Po Valley (落魄谷), a secret realm of heaven and earth. A valley of soul-loosening fog and soul-cutting wind, one of the soul path's two holy lands. Units that end their turn inside take 15 damage; units beside it fight 10% harder."
       }
     ]
   },
@@ -650,7 +565,7 @@
     "production": 3,
     "civilopediaText": [
       {
-        "text": "Crazed Demon Cave (疯魔窟), a secret realm of heaven and earth. A cave whose demonic sound drives creatures mad; Limitless's inheritance lies within. Units that end their turn inside take 20 damage; survivors attack 15% harder."
+        "text": "Crazed Demon Cave (疯魔窟), a secret realm of heaven and earth. A cave whose demonic sound drives creatures mad; Limitless's inheritance lies within. Units that end their turn inside take 20 damage; units beside it attack 15% harder."
       }
     ]
   },
