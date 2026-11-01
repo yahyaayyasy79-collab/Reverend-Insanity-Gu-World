@@ -653,3 +653,11 @@
 * The autoplay harness records stones per turn and happiness by source. AUTOPLAY.md, BALANCE.md, KNOWN_ISSUES 19
   (the engine's AI keeps training soldiers while its stones per turn are positive; item 15 updated: secret realms
   are in the game).
+
+## Phase D: the Zombie Alliance's missing drawback (2026-11-01)
+
+* The Zombie Alliance was designed as "its immortals never age but make no essence", and only the first half was
+  built: autoplay on the Five Regions map (6 × 500) showed it hoarding 65–116 red date essence and winning 5 of 6
+  games through a Venerable (T369–395). Its blessed lands and grotto-heavens now make no essence (each essence line is
+  cancelled for it; stones unchanged). After: rank eight reached by the Heavenly Court (2), Xiong, Wu and Bai; no
+  AI Venerable in 500 turns (KNOWN_ISSUES 18). 0 crashes in both batches, including the Venerable's grotto fix.

@@ -113,7 +113,8 @@ rest of the list is what a player or the next session should know before trustin
     closed on water, and every clan can embark land units from the start.
 18. **The AI reaches a Venerable late and rarely** (Phase D): in 8-game batches of 500–550 turns, one or two AI clans
     become Venerables (T342–T494) and one won Eternal Life (T373). The AI never queues the two wonders, so both are
-    promotions (Ascend to Venerable, Seek Eternal Life) and the wonders only markers.
+    promotions (Ascend to Venerable, Seek Eternal Life) and the wonders only markers. On the Five Regions map (6 × 500)
+    no AI Venerable rose once the Zombie Alliance's immortals stopped making essence (before: 5 of 6 games won by it).
 19. **Late-game AI debt on wide maps** (Phase D): Unciv's AI keeps training soldiers while its stones per turn are
     positive, up to five per city outside war [src ConstructionAutomation], and every rank they climb then raises
     their upkeep without any decision of the AI. So the AI clans drift into the red late; on the wide Five Regions

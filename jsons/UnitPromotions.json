@@ -7263,6 +7263,8 @@
     "uniques": [
       "Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>",
       "Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>",
+      "Instantly consumes [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
+      "Instantly consumes [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
@@ -7290,6 +7292,8 @@
     "uniques": [
       "Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>",
       "Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>",
+      "Instantly consumes [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
+      "Instantly consumes [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
@@ -7317,6 +7321,8 @@
     "uniques": [
       "Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>",
       "Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>",
+      "Instantly consumes [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
+      "Instantly consumes [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
@@ -7344,6 +7350,8 @@
     "uniques": [
       "Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>",
       "Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>",
+      "Instantly consumes [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
+      "Instantly consumes [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
@@ -7497,6 +7505,7 @@
     "name": "Grotto-Heaven Aperture",
     "uniques": [
       "Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>",
+      "Instantly consumes [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Zombie Alliance] Civilizations>",
       "Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",

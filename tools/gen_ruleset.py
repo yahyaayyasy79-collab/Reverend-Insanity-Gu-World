@@ -230,6 +230,11 @@ def blessed_land(grade, essence, stones):
     return {"name": f"{grade} Grade Blessed Land", "uniques": [
         f"Instantly provides [{essence}] [{e}] <upon turn start> <for units without [{RAVAGED}]> <for [{u}] units>"
         for u, e in list(IMMORTALS.items())[:2]] + [
+        # the Zombie Alliance's immortals never age but make no essence (LORE_MAPPING, its nation row): the provide line
+        # is cancelled for it, since a nation filter has no negation. Autoplay (Five Regions, 6 x 500) without this:
+        # its immortals hoarded 65-116 red date essence and it won 5 of 6 games through a Venerable at T369-395
+        f"Instantly consumes [{essence}] [{e}] <upon turn start> <for units without [{RAVAGED}]> <for [{u}] units> "
+        f"<for [Zombie Alliance] Civilizations>" for u, e in list(IMMORTALS.items())[:2]] + [
         f"Gain [{stones}] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
         + countdown("Calamity Countdown", CALAMITY_TURNS[grade], "Earthly Calamity")
         # Phase D: heavenly tribulations every 100 aperture-years at rank six, every 50 at rank seven (R V4/91, V4/177)
@@ -341,6 +346,7 @@ GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques)
 # the rank-eight aperture: a grotto-heaven (R V5/745) makes white lychee essence; its calamities come faster
 GROTTO = {"name": "Grotto-Heaven Aperture", "uniques": [
     f"Instantly provides [3] [{WHITE}] <upon turn start> <for units without [{RAVAGED}]>",
+    f"Instantly consumes [3] [{WHITE}] <upon turn start> <for units without [{RAVAGED}]> <for [Zombie Alliance] Civilizations>",
     f"Gain [12] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
     + countdown("Calamity Countdown", 10, "Earthly Calamity") + countdown("Tribulation Countdown", 50, "Heavenly Tribulation")}
 

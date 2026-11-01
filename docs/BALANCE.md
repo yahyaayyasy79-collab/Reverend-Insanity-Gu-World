@@ -556,6 +556,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Ascension | `Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `Instantly consumes [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `Instantly consumes [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 9 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 14 | tools/gen_ruleset.py `Promotions` |
@@ -571,6 +573,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `Instantly consumes [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `Instantly consumes [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 4 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 9 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 13 | tools/gen_ruleset.py `Promotions` |
@@ -586,6 +590,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `Instantly consumes [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `Instantly consumes [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 8 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 12 | tools/gen_ruleset.py `Promotions` |
@@ -601,6 +607,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 5 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 5 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `Instantly consumes [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 5 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `Instantly consumes [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>` | 5 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 10 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 11 | tools/gen_ruleset.py `Promotions` |
@@ -622,6 +630,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dao Marks V | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks V | `[+15] HP when healing` | +15 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `Instantly consumes [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Zombie Alliance] Civilizations>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 10 | tools/gen_ruleset.py `Promotions` |
@@ -2291,6 +2300,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2090 numbers listed.
+2099 numbers listed.
 
 <!-- inventory:end -->

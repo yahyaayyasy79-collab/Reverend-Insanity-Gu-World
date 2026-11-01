@@ -1272,7 +1272,7 @@ dominate another (MOD_SPEC_2 tension targets).
 | Heavenly Court | 天庭 | CANON | Founded by Primordial Origin, ruled by three Venerables; guards and repairs Fate Gu in the Heaven Overseeing Tower; rules the Central Continent through the ten ancient sects; hunts fate escapees (R V6/117, V4/189, V4/299) | The special faction; builds Fate Gu; unique Gu House; no signature path: its immortals spread over every path (user, C3; canon: five of its immortals fighting together held wood, information, fire, blood and transformation, R ch2304) |
 | Wu Clan (Slice 1) | 武家 | CANON | First of the 13 Southern Border super clans (R V5/589) | Southern Border; signature path Wind (D3, 2026-10-19) |
 | Huang Jin Family / Longevity Heaven | 黄金家族 / 长生天 | CANON | Every bloodline of Giant Sun; no Huang Jin line may be wiped out; Longevity Heaven raids the Court in the Fate War (R V3/92, V3/139, V5/689) | Northern Plains; no signature path (Giant Sun's luck lives on in its inheritances and the Calamity Luck Altar); Calamity Luck Altar |
-| Zombie Alliance | 僵盟 | ADAPTED | Immortal zombies across the five regions; only the Eastern Sea headquarters outranks the local super forces. It shows a righteous face, is suppressed by righteous forces and allied with demonic immortals, and is secretly a lower sect of the Shadow Sect, unknown to most of its own leaders; zombies cannot make new essence, so they hoard it (R V4/4, V4/73, V4/367, V4c242, V4c359). ADAPTED: in the novel's present it is wiped out at Yi Tian (V5c143); the arc keeps it alive (Fang Yuan's first-life timeline), its natural enemy the Heavenly Court | Eastern Sea (B1). Its immortals do not age (no lifespan decay) but earn no essence: plunder, trade and the market feed it (ADAPTED); unique unit: the Immortal Zombie. No signature path (user, C3) |
+| Zombie Alliance | 僵盟 | ADAPTED | Immortal zombies across the five regions; only the Eastern Sea headquarters outranks the local super forces. It shows a righteous face, is suppressed by righteous forces and allied with demonic immortals, and is secretly a lower sect of the Shadow Sect, unknown to most of its own leaders; zombies cannot make new essence, so they hoard it (R V4/4, V4/73, V4/367, V4c242, V4c359). ADAPTED: in the novel's present it is wiped out at Yi Tian (V5c143); the arc keeps it alive (Fang Yuan's first-life timeline), its natural enemy the Heavenly Court | Eastern Sea (B1). Its immortals do not age (no lifespan decay) but earn no essence: plunder, trade and the market feed it (ADAPTED; the no-essence half was missing until Phase D, when autoplay showed it winning 5 of 6 Five Regions games through a Venerable: each blessed-land and grotto-heaven essence line is now cancelled for it); unique unit: the Immortal Zombie. No signature path (user, C3) |
 | Fang Clan | 房家 | CANON | A righteous Western Desert super force, unrivalled at building and running Gu Houses, with its own wisdom-path tradition; not the desert's first, it schemes for generations to seize the Qing clan's Dou Shen Palace and become so; its rival the Wan clan later brands it demonic (R V5c483-499, V6c252, V6c287) | Western Desert (B2). Gu Houses cheaper to build (`[relativeAmount]% Production when constructing [baseUnitFilter] units [cityFilter]`); no signature path (user, C3) |
 | City-states: Lang Ya Sect, Spirit Affinity House, Combat Immortal Sect, Merman Imperial Court | 琅琊派 / 灵缘斋 / 战仙宗 / 鲛人王庭 | CANON | Hairy-men refiners of Lang Ya (R V3/55); two of the ten ancient sects (R V4/55); the Eastern Sea's merfolk court (R V5/640) | Refiner, cultured, militaristic and maritime city-states |
 | Shadow Sect | 影宗 | CANON | Spectral Soul's split souls working to revive him; fate defiers (R V4/367) | Not a nation: hostile events and zombie formations |
@@ -1426,6 +1426,8 @@ Triggers a [Ascension] event <for [Rank Five Gu Master] units>
 ```
 Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
 Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
+Instantly consumes [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
+Instantly consumes [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1448,6 +1450,8 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 ```
 Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
 Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
+Instantly consumes [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
+Instantly consumes [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1470,6 +1474,8 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 ```
 Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
 Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
+Instantly consumes [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
+Instantly consumes [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1492,6 +1498,8 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 ```
 Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
 Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
+Instantly consumes [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
+Instantly consumes [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -3110,6 +3118,7 @@ Comment [Climbing to the next rank]
 
 ```
 Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
+Instantly consumes [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Zombie Alliance] Civilizations>
 Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -3477,7 +3486,7 @@ Starts with [Righteous Path] adopted
 Start bias [Grassland]
 ```
 
-**Zombie Alliance** (Nations.json; {"leaderName": "Zombie Alliance Elder", "adjective": ["Zombie Alliance"], "personality": "Zombie Alliance Temperament", "outerColor": [60, 80, 70], "innerColor": [180, 220, 190], "cities": ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"], "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.", "declaringWar": "Your immortals will keep. Ours never age.", "defeated": "Dead again. It was bound to happen.", "civilopediaText": [{"text": "The Zombie Alliance (\u50f5\u76df): immortal zombies with a righteous face and a secret master. Its immortals never age, and its fallen rise again as zombies."}]})
+**Zombie Alliance** (Nations.json; {"leaderName": "Zombie Alliance Elder", "adjective": ["Zombie Alliance"], "personality": "Zombie Alliance Temperament", "outerColor": [60, 80, 70], "innerColor": [180, 220, 190], "cities": ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"], "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.", "declaringWar": "Your immortals will keep. Ours never age.", "defeated": "Dead again. It was bound to happen.", "civilopediaText": [{"text": "The Zombie Alliance (\u50f5\u76df): immortal zombies with a righteous face and a secret master. Its immortals never age but their blessed lands make no essence (plunder and trade must feed them), and its fallen rise again as zombies."}]})
 
 ```
 Starts with [Righteous Path] adopted
