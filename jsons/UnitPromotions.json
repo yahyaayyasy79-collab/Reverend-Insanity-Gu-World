@@ -7493,5 +7493,27 @@
         "text": "Climb to rank eight: needs another survived tribulation and 60 red date essence, at home. The blessed land becomes a grotto-heaven."
       }
     ]
+  },
+  {
+    "name": "Venerable Killer Move",
+    "uniques": [
+      "[+100]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Venerable's killer move for one turn: double strength. Costs 20 yellow apricot essence."
+      }
+    ]
+  },
+  {
+    "name": "Chaos Countdown",
+    "uniques": [
+      "Comment [When it runs out, a chaos calamity falls on the Venerable]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Every 25 turns a chaos calamity (混沌大难) falls on the Venerable: 40 yellow apricot essence, or 25 HP of its burning life."
+      }
+    ]
   }
 ]

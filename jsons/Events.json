@@ -988,6 +988,58 @@
     ]
   },
   {
+    "name": "Venerable's Shadow",
+    "text": "A Venerable walks the world. Its gaze has fallen on your clan; whole regions have vanished for less.",
+    "choices": [
+      {
+        "text": "Send tribute",
+        "uniques": [
+          "Unavailable <when below [150] [Gold]>",
+          "Gain [-150] [Gold]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Hide the clan's Gu",
+        "uniques": [
+          "[-25]% [Production] [in all cities] <for [8] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Defy the Venerable",
+        "uniques": [
+          "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>",
+          "[-2] population [in capital]",
+          "[+20]% Strength <for [10] turns>",
+          "[-40]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chaos Calamity",
+    "text": "A chaos calamity, older than the world, falls on your Venerable.",
+    "choices": [
+      {
+        "text": "Pour yellow apricot essence",
+        "uniques": [
+          "Unavailable <when below [40] [Yellow Apricot Immortal Essence]>",
+          "Instantly consumes [40] [Yellow Apricot Immortal Essence]",
+          "[This Unit] takes [10] damage",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Endure it",
+        "uniques": [
+          "[This Unit] takes [25] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Fate War",
     "text": "Fate Gu is in your hands. The Heavenly Court guarded it since Primordial Origin. Shatter it and set every being's fate free, or keep it?",
     "choices": [

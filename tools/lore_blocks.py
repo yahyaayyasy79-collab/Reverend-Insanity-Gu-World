@@ -57,6 +57,10 @@ SECTIONS = {
                       "Nations.json": ["Heavenly Court", "Huang Jin Family", "Zombie Alliance", "Fang Clan"],
                       "Events.json": ["Fate War", "Qi Tides"],
                       "Globals": ["[Fate War]", "[Qi Tides]"]},
+    "## Rank Nine era:": {"Units.json": ["Venerable"],
+                          "UnitPromotions.json": ["Venerable Killer Move", "Chaos Countdown"],
+                          "Events.json": ["Venerable's Shadow", "Chaos Calamity"],
+                          "Globals": ["[Venerable Ascension] is", "[Venerable's Shadow]"]},
 }
 
 

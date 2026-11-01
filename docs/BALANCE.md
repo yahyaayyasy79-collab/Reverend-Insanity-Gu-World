@@ -169,6 +169,15 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Earn [10]% of killed [Ancient Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-10]% Strength <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>` | -10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-2 Happiness] <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>` | -2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <if [Venerable Ascension] is constructed by anybody> <for [Major] Civilizations>` | 1, 10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[+20]% [Production] [in all cities] <if [Venerable Ascension] is constructed>` | +20 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[+3 Happiness] <if [Venerable Ascension] is constructed>` | +3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 6 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 4 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -321,13 +330,22 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Immemorial Desolate Beast | cost | 500 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
-| Venerable | movement | 4 | tools/gen_ruleset.py `Units` |
-| Venerable | strength | 200 | tools/gen_ruleset.py `Units` |
+| Venerable | movement | 5 | tools/gen_ruleset.py `Units` |
+| Venerable | strength | 280 | tools/gen_ruleset.py `Units` |
 | Venerable | cost | 1000 | tools/gen_ruleset.py `Units` |
 | Venerable | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] takes [3] damage <upon turn start>` | 3 | tools/gen_ruleset.py `Units` |
 | Venerable | `Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>` | 6 | tools/gen_ruleset.py `Units` |
 | Venerable | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
+| Venerable | `[2] additional attacks per turn` | 2 | tools/gen_ruleset.py `Units` |
+| Venerable | `[-25]% Strength for enemy [Military] units in adjacent [All] tiles` | -25 | tools/gen_ruleset.py `Units` |
+| Venerable | `[+50]% Strength <vs cities>` | +50 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>` | 1, 20, 1 | tools/gen_ruleset.py `Units` |
+| Venerable | `Heals [10] damage if it kills a unit` | 10 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>` | 17 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Chaos Countdown] status for [25] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Standard] game speed>` | 25 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Chaos Countdown] status for [38] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Epic] game speed>` | 38 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Chaos Countdown] status for [75] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Marathon] game speed>` | 75 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | movement | 2 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | strength | 140 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | cost | 650 | tools/gen_ruleset.py `Units` |
@@ -531,6 +549,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Advance to Rank Eight | `Instantly consumes [180] [Red Date Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
+| Venerable Killer Move | `[+100]% Strength` | +100 | tools/gen_ruleset.py `Promotions` |
 
 ### Events.json
 
@@ -845,6 +864,21 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven's Will › Defy heaven | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Venerable Falls › Guard the true inheritance | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Send tribute | `Unavailable <when below [150] [Gold]>` | 150 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Send tribute | `Gain [-150] [Gold]` | -150 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Send tribute | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Hide the clan's Gu | `[-25]% [Production] [in all cities] <for [8] turns>` | -25, 8 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Hide the clan's Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Defy the Venerable | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Defy the Venerable | `[-2] population [in capital]` | -2 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Defy the Venerable | `[+20]% Strength <for [10] turns>` | +20, 10 | tools/gen_ruleset.py `Events` |
+| Venerable's Shadow › Defy the Venerable | `[-40]% weight to this choice for AI decisions` | -40 | tools/gen_ruleset.py `Events` |
+| Chaos Calamity › Pour yellow apricot essence | `Unavailable <when below [40] [Yellow Apricot Immortal Essence]>` | 40 | tools/gen_ruleset.py `Events` |
+| Chaos Calamity › Pour yellow apricot essence | `Instantly consumes [40] [Yellow Apricot Immortal Essence]` | 40 | tools/gen_ruleset.py `Events` |
+| Chaos Calamity › Pour yellow apricot essence | `[This Unit] takes [10] damage` | 10 | tools/gen_ruleset.py `Events` |
+| Chaos Calamity › Pour yellow apricot essence | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Chaos Calamity › Endure it | `[This Unit] takes [25] damage` | 25 | tools/gen_ruleset.py `Events` |
+| Chaos Calamity › Endure it | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Fate War › Shatter Fate Gu | `[+20]% Strength <for [20] turns>` | +20, 20 | tools/gen_ruleset.py `Events` |
 | Fate War › Shatter Fate Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Fate War › Seize Fate Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
@@ -1379,9 +1413,9 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 12 (Dao Lord, Gu House Formation) | techCost | 1500 | data/tech_columns.csv `techCost` |
 | Column 12 (Dao Lord, Gu House Formation) | buildingCost | 480 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 12 (Dao Lord, Gu House Formation) | wonderCost | 700 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 13 (Rank Nine Immortal Gu Recipes) | techCost | 1700 | data/tech_columns.csv `techCost` |
-| Column 13 (Rank Nine Immortal Gu Recipes) | buildingCost | 520 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 13 (Rank Nine Immortal Gu Recipes) | wonderCost | 750 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 13 (Rank Nine Immortal Gu Recipes, Venerable Dominion) | techCost | 1700 | data/tech_columns.csv `techCost` |
+| Column 13 (Rank Nine Immortal Gu Recipes, Venerable Dominion) | buildingCost | 520 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 13 (Rank Nine Immortal Gu Recipes, Venerable Dominion) | wonderCost | 750 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 14 (Dao Comprehension) | techCost | 1900 | data/tech_columns.csv `techCost` |
 | Column 14 (Dao Comprehension) | buildingCost | 560 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 14 (Dao Comprehension) | wonderCost | 800 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
@@ -1972,6 +2006,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Rank Seven era | baseUnitBuyCost | 700 | tools/gen_ruleset.py `Eras` |
 | Rank Eight era | researchAgreementCost | 750 | tools/gen_ruleset.py `Eras` |
 | Rank Eight era | baseUnitBuyCost | 800 | tools/gen_ruleset.py `Eras` |
+| Rank Nine era | researchAgreementCost | 900 | tools/gen_ruleset.py `Eras` |
+| Rank Nine era | baseUnitBuyCost | 900 | tools/gen_ruleset.py `Eras` |
 
 ### UnitTypes.json
 
@@ -2163,6 +2199,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-1987 numbers listed.
+2023 numbers listed.
 
 <!-- inventory:end -->

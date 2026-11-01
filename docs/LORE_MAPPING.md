@@ -2003,6 +2003,7 @@ Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu
 Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
 Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <if [Venerable Ascension] is constructed by anybody> <for [Major] Civilizations>
 ```
 
 
@@ -3116,7 +3117,7 @@ Unbuildable
 Cannot be purchased
 ```
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 4, "strength": 200, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. It loses 3 HP a turn and cannot heal; while it lives it makes 6 yellow apricot essence a turn. One per clan, and one Venerable Ascension in the world at a time."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3127,6 +3128,21 @@ Never appears as a Barbarian unit
 Can only heal by pillaging
 Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
 [+300]% maintenance costs
+[2] additional attacks per turn
+Can move after attacking
+Ignores terrain cost
+Can pass through impassable tiles
+May capture killed [Military] units
+[-25]% Strength for enemy [Military] units in adjacent [All] tiles
+[+50]% Strength <vs cities>
+Destroys tile improvements when attacking
+[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>
+Heals [10] damage if it kills a unit
+[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>
+[This Unit] gains the [Chaos Countdown] status for [25] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Standard] game speed>
+[This Unit] gains the [Chaos Countdown] status for [38] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Epic] game speed>
+[This Unit] gains the [Chaos Countdown] status for [75] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Marathon] game speed>
+Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 ```
 
 **Calamity Luck Altar** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 140, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u4ed9\u86ca\u5c4b): Longevity Heaven's rank-eight luck altar (\u52ab\u8fd0\u575b), a fortress that walks. Needs Connect Luck; one per clan; defends 50% harder."}]})
@@ -3379,4 +3395,123 @@ Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructe
 Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
 Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+```
+
+
+## Rank Nine era: the Venerables (the user, 2026-11-01)
+
+The user asked for rank nine as an era, "very dominating, very frightening, very terrible", overriding MOD_SPEC_2's
+"Rank 9 is the victory, never an era". Canon: a Venerable is unbeatable in its era (R V6/105), its will spans
+regions, Heaven's Will thins the Lifespan Gu of the world while one lives (R V5/54), and a chaos calamity from
+outside the world is the rank-nine trial (R V6/280).
+
+* **Rank Nine era** (yellow apricot), techs Rank Nine Immortal Gu Recipes and **Venerable Dominion** (column 13),
+  Dao Comprehension at column 14.
+* **The Venerable** (strength 280, 5 moves): three strikes a turn, moves after attacking, ignores terrain and walks
+  through impassable tiles, enslaves the defeated, every enemy military unit beside it fights 25% weaker, +50%
+  against cities, burns improvements; a human-only killer move doubles its strength for a turn (20 yellow apricot).
+  It loses 3 HP a turn and heals only by killing (10 HP a kill): a Venerable buys time with slaughter.
+* **Chaos calamity** every 25 turns on the Venerable: 40 yellow apricot essence, or 25 HP.
+* **The world's dread** while a Venerable lives: every other clan −10% strength and −2 happiness, the **Venerable's
+  Shadow** event (4% a turn: tribute, hide the clan's Gu, or defy and lose population), every clan loses a Lifespan
+  Gu each ten turns; the Venerable's own clan +20% production and +3 happiness.
+
+Exact uniques (written by tools/lore_blocks.py from jsons/):
+
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
+
+```
+Unbuildable
+Cannot be purchased
+Limited to [1] per Civilization
+Never appears as a Barbarian unit
+[This Unit] takes [3] damage <upon turn start>
+Can only heal by pillaging
+Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
+[+300]% maintenance costs
+[2] additional attacks per turn
+Can move after attacking
+Ignores terrain cost
+Can pass through impassable tiles
+May capture killed [Military] units
+[-25]% Strength for enemy [Military] units in adjacent [All] tiles
+[+50]% Strength <vs cities>
+Destroys tile improvements when attacking
+[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>
+Heals [10] damage if it kills a unit
+[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>
+[This Unit] gains the [Chaos Countdown] status for [25] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Standard] game speed>
+[This Unit] gains the [Chaos Countdown] status for [38] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Epic] game speed>
+[This Unit] gains the [Chaos Countdown] status for [75] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Marathon] game speed>
+Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
+```
+
+**Venerable Killer Move** (UnitPromotions.json; {"civilopediaText": [{"text": "A Venerable's killer move for one turn: double strength. Costs 20 yellow apricot essence."}]})
+
+```
+[+100]% Strength
+```
+
+**Chaos Countdown** (UnitPromotions.json; {"civilopediaText": [{"text": "Every 25 turns a chaos calamity (\u6df7\u6c8c\u5927\u96be) falls on the Venerable: 40 yellow apricot essence, or 25 HP of its burning life."}]})
+
+```
+Comment [When it runs out, a chaos calamity falls on the Venerable]
+```
+
+**Venerable's Shadow** (popup)
+
+* Send tribute
+
+```
+Unavailable <when below [150] [Gold]>
+Gain [-150] [Gold]
+[+50]% weight to this choice for AI decisions
+```
+
+* Hide the clan's Gu
+
+```
+[-25]% [Production] [in all cities] <for [8] turns>
+[+0]% weight to this choice for AI decisions
+```
+
+* Defy the Venerable
+
+```
+Only available <when number of [[Population] in [in capital] Cities] is more than [3]>
+[-2] population [in capital]
+[+20]% Strength <for [10] turns>
+[-40]% weight to this choice for AI decisions
+```
+
+**Chaos Calamity** (popup)
+
+* Pour yellow apricot essence
+
+```
+Unavailable <when below [40] [Yellow Apricot Immortal Essence]>
+Instantly consumes [40] [Yellow Apricot Immortal Essence]
+[This Unit] takes [10] damage
+[+100]% weight to this choice for AI decisions
+```
+
+* Endure it
+
+```
+[This Unit] takes [25] damage
+[+0]% weight to this choice for AI decisions
+```
+
+**GlobalUniques**
+
+```
+[-10]% Strength <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>
+[-2 Happiness] <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <if [Venerable Ascension] is constructed by anybody> <for [Major] Civilizations>
+[+20]% [Production] [in all cities] <if [Venerable Ascension] is constructed>
+[+3 Happiness] <if [Venerable Ascension] is constructed>
+Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```

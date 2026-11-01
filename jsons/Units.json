@@ -788,8 +788,8 @@
   {
     "name": "Venerable",
     "unitType": "Gu Master",
-    "movement": 4,
-    "strength": 200,
+    "movement": 5,
+    "strength": 280,
     "cost": 1000,
     "requiredTech": "Dao Lord",
     "attackSound": "throw",
@@ -801,11 +801,26 @@
       "[This Unit] takes [3] damage <upon turn start>",
       "Can only heal by pillaging",
       "Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>",
-      "[+300]% maintenance costs"
+      "[+300]% maintenance costs",
+      "[2] additional attacks per turn",
+      "Can move after attacking",
+      "Ignores terrain cost",
+      "Can pass through impassable tiles",
+      "May capture killed [Military] units",
+      "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+50]% Strength <vs cities>",
+      "Destroys tile improvements when attacking",
+      "[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>",
+      "Heals [10] damage if it kills a unit",
+      "[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Chaos Countdown] status for [25] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Chaos Countdown] status for [38] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Chaos Countdown] status for [75] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>"
     ],
     "civilopediaText": [
       {
-        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. It loses 3 HP a turn and cannot heal; while it lives it makes 6 yellow apricot essence a turn. One per clan, and one Venerable Ascension in the world at a time."
+        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by killing (10 HP a kill); it makes 6 yellow apricot essence a turn."
       }
     ]
   },

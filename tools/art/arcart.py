@@ -596,6 +596,31 @@ def heaven_overseeing_tower():
     g.ell(38, 6, 62, 22); g.circ(50, 14, 4, 0)
     return g
 
+
+# ---- rank nine (the user, 2026-11-01)
+def venerable_dominion():
+    """Nine rays over a bowed horizon: a Venerable's dominion."""
+    g = venerable(); g.poly([(4, 90), (96, 90), (96, 96), (4, 96)]); return g
+
+
+def venerable_killer_move():
+    """A fist inside a ring of nine flames."""
+    from .glyphs2 import flame
+    g = G()
+    for k in range(9):
+        a = math.radians(90 + 40 * k)
+        flame(g, 50 + 38 * math.cos(a), 50 - 38 * math.sin(a) + 8, 14)
+    fist(g, 50, 40, 0.9)
+    return g
+
+
+def chaos_countdown():
+    """An hourglass torn by a spiral."""
+    g = G(); _hourglass(g, 50, 50, 36)
+    pts = [(50 + (2 + 2.2 * t) * math.cos(t), 50 - (2 + 2.2 * t) * math.sin(t)) for t in [i * 0.2 for i in range(70)]]
+    g.line(pts, 3, 0)
+    return g
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -665,6 +690,9 @@ ICONS3 = [
     ("UnitIcons", "Immortal Zombie", immortal_zombie_icon, "white"),
     ("UnitIcons", "Heaven Overseeing Tower", heaven_overseeing_tower, "white"),
     ("TechIcons", "Rank Nine Immortal Gu Recipes", recipes_rank(9), "white"),
+    ("TechIcons", "Venerable Dominion", venerable_dominion, "white"),
+    ("UnitPromotionIcons", "Venerable Killer Move", venerable_killer_move, "white"),
+    ("UnitPromotionIcons", "Chaos Countdown", chaos_countdown, "white"),
 ]
 
 

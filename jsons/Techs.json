@@ -412,7 +412,7 @@
   },
   {
     "columnNumber": 13,
-    "era": "Rank Eight era",
+    "era": "Rank Nine era",
     "techCost": 1700,
     "buildingCost": 520,
     "wonderCost": 750,
@@ -428,12 +428,24 @@
             "text": "Recipes for rank-nine immortal Gu; fewer than ten exist at a time. They cost yellow apricot essence, which only a Venerable makes."
           }
         ]
+      },
+      {
+        "name": "Venerable Dominion",
+        "row": 2,
+        "prerequisites": [
+          "Dao Lord"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A Venerable's will reaches every region. While a Venerable lives, its clan thrives (+20% production, +3 happiness) and every other clan fights 10% weaker, loses 2 happiness, and meets the Venerable's Shadow."
+          }
+        ]
       }
     ]
   },
   {
     "columnNumber": 14,
-    "era": "Rank Eight era",
+    "era": "Rank Nine era",
     "techCost": 1900,
     "buildingCost": 560,
     "wonderCost": 800,
@@ -443,6 +455,7 @@
         "row": 2,
         "prerequisites": [
           "Rank Nine Immortal Gu Recipes",
+          "Venerable Dominion",
           "Gu House Formation"
         ],
         "uniques": [

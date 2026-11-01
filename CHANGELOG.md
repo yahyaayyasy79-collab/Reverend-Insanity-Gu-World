@@ -565,3 +565,14 @@
   Master.
 * Art: 45 branch banners, 135 policy icons, 47 halls, in a fifth atlas (Policies.png). Text in EN and ID; the tables
   are in docs/PATHS.md ("Policy branches and halls").
+
+## Rank Nine era: the Venerables (2026-11-01)
+
+* The user asked for rank nine as a dominating, frightening era: **Rank Nine era** (Rank Nine Immortal Gu Recipes,
+  **Venerable Dominion**).
+* **The Venerable** now: strength 280, 5 moves, three strikes a turn, moves after attacking, walks through anything,
+  enslaves the defeated, enemies beside it −25%, +50% against cities, burns improvements, a killer move (double
+  strength, 20 yellow apricot); it heals only by killing. A **chaos calamity** falls on it every 25 turns.
+* While a Venerable lives every other clan fights 10% weaker, loses 2 happiness and faces the **Venerable's Shadow**
+  (tribute, hiding, or defiance); every clan loses Lifespan Gu; the Venerable's clan gains production and happiness.
+* Autoplay (4 × 300): 0 crashes; the AI adopts 24 different path branches across 16 clans.

@@ -93,6 +93,7 @@ def dump(name, obj):
 E12, E3, E4 = "Rank One-Two era", "Rank Three era", "Rank Four era"
 E5, E6 = "Rank Five era", "Rank Six era"  # MOD_SPEC_2 C1
 E7, E8 = "Rank Seven era", "Rank Eight era"  # MOD_SPEC_2 C5
+E9 = "Rank Nine era"  # the user (2026-11-01): rank nine as an era, overriding MOD_SPEC_2 "never an era"
 GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]  # the last two only carry the hidden legacy units
 # C3 (MOD_SPEC_3): the path is a promotion now, not the unit type. The refinement ladder keys on the two Slice 1 paths
 # that have Gu; a unit holding both Masters (only a human can) climbs the Moon ladder.
@@ -280,6 +281,7 @@ def advance(target):
 # Eternal Life, Fang Yuan's goal and the arc's victory (MOD_SPEC_3). When it dies its ascension is removed (the race
 # reopens, Phase A2) and its clan gains the seal of its true inheritance.
 APRICOT = "Yellow Apricot Immortal Essence"  # rank nine (R V6/249)
+VEN_ELSEWHERE = "<if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>"
 VENERABLE = "Venerable"
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
@@ -398,10 +400,18 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     f"Remove [Venerable Ascension] [in all cities] <upon losing a [{VENERABLE}] unit>",
     f"Gain a free [True Inheritance Seal] [in capital] <upon losing a [{VENERABLE}] unit>",
     f"Triggers a [Venerable Falls] event <upon losing a [{VENERABLE}] unit>",
+    # the user (2026-11-01): while a Venerable lives the world is afraid. Every other clan fights weaker and is unhappy,
+    # Heaven's Will thins the Lifespan Gu of every clan (R V5/54), and the Venerable's own clan thrives
+    f"[-10]% Strength {VEN_ELSEWHERE}", f"[-2 Happiness] {VEN_ELSEWHERE}",
+    f"Instantly consumes [1] [{LIFESPAN}] <upon turn start> <every [10] turns> <if [Venerable Ascension] is constructed by anybody> "
+    "<for [Major] Civilizations>",
+    "[+20]% [Production] [in all cities] <if [Venerable Ascension] is constructed>",
+    "[+3 Happiness] <if [Venerable Ascension] is constructed>",
     # C5c
     f"Triggers a [Fate War] event <upon conquering a city> <if [Fate Gu] is constructed> <if [Fate Seized] is not "
     f"constructed> <for [non-[{HC}]] Civilizations>",
-] + per_speed(lambda m: f"Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> "
+] + per_speed(lambda m: f"Triggers a [Venerable's Shadow] event <upon turn start> {VEN_ELSEWHERE} "
+                        f"<with [{chance(4, m)}]% chance> <for [Major] Civilizations>") + per_speed(lambda m: f"Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> "
                         f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>")})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
@@ -423,6 +433,8 @@ dump("Eras.json", [
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 700},
     {"name": E8, "researchAgreementCost": 750, "iconRGB": [240, 236, 222], "startingSettlerUnit": "Clan Settler",
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 800},
+    {"name": E9, "researchAgreementCost": 900, "iconRGB": [255, 196, 70], "startingSettlerUnit": "Clan Settler",
+     "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 900},
 ])
 
 
@@ -523,10 +535,19 @@ dump("Units.json", [
     {"name": IMMEMORIAL, "unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot",
      "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+300]% maintenance costs"]},
     # C5b: the Venerable and the Gu Houses
-    {"name": VENERABLE, "unitType": "Gu Master", "movement": 4, "strength": 200, "cost": 1000, "requiredTech": "Dao Lord",
+    # the user (2026-11-01): rank nine dominates and terrifies. A Venerable is unbeatable in its era (R V6/105): it strikes
+    # three times, walks through anything, enslaves the defeated, cows every enemy beside it, and burns its own life
+    {"name": VENERABLE, "unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord",
      "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
                                          "[This Unit] takes [3] damage <upon turn start>", "Can only heal by pillaging",
-                                         f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs"]},
+                                         f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs",
+                                         "[2] additional attacks per turn", "Can move after attacking", "Ignores terrain cost",
+                                         "Can pass through impassable tiles", "May capture killed [Military] units",
+                                         "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
+                                         "[+50]% Strength <vs cities>", "Destroys tile improvements when attacking",
+                                         f"[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [{APRICOT}]> <requires [1] movement>"]
+     # a Venerable buys time only with slaughter: every kill restores some of its burning life
+     + ["Heals [10] damage if it kills a unit"] + countdown("Chaos Countdown", 25, "Chaos Calamity")},
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
       "attackSound": "throw", **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
@@ -652,6 +673,8 @@ dump("UnitPromotions.json", [
     {"name": SURVIVOR, "uniques": ["Comment [Survived a heavenly tribulation: may climb to the next rank]"]},
     {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),
+    {"name": "Venerable Killer Move", "uniques": ["[+100]% Strength"]},
+    {"name": "Chaos Countdown", "uniques": ["Comment [When it runs out, a chaos calamity falls on the Venerable]"]},
 ])
 
 # ---------------- Events (13: the spec's 5, wild Gu and inheritances (R6), world conflicts (canon overhaul)) ----------------
@@ -881,6 +904,16 @@ dump("Events.json", [
     {"name": "Venerable Falls", "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable "
                                         "may rise anywhere; its true inheritance's seal lies in your capital.",
      "choices": [toll("Guard the true inheritance", [], "+0")]},
+    {"name": "Venerable's Shadow", "text": "A Venerable walks the world. Its gaze has fallen on your clan; whole regions "
+                                           "have vanished for less.", "choices": [
+        toll("Send tribute", ["Unavailable <when below [150] [Gold]>", "Gain [-150] [Gold]"], "+50"),
+        toll("Hide the clan's Gu", ["[-25]% [Production] [in all cities] <for [8] turns>"], "+0"),
+        toll("Defy the Venerable", [CAP_POP, "[-2] population [in capital]", "[+20]% Strength <for [10] turns>"], "-40")]},
+    # the rank-nine trial from outside the world (混沌大难, R V6/280): a countdown on the Venerable
+    {"name": "Chaos Calamity", "text": "A chaos calamity, older than the world, falls on your Venerable.", "choices": [
+        toll("Pour yellow apricot essence", [f"Unavailable <when below [40] [{APRICOT}]>", f"Instantly consumes [40] [{APRICOT}]",
+                                             "[This Unit] takes [10] damage"], "+100"),
+        toll("Endure it", ["[This Unit] takes [25] damage"], "+0")]},
     {"name": "Fate War", "text": "Fate Gu is in your hands. The Heavenly Court guarded it since Primordial Origin. Shatter "
                                  "it and set every being's fate free, or keep it?", "choices": [
         toll("Shatter Fate Gu", ["Remove [Fate Gu] [in all cities]", "Gain a free [Shattered Fate] [in capital]",

@@ -126,5 +126,23 @@
         "text": "Rank eight (八转): white lychee essence. The aperture becomes a grotto-heaven, and the tribulations grow worse."
       }
     ]
+  },
+  {
+    "name": "Rank Nine era",
+    "researchAgreementCost": 900,
+    "iconRGB": [
+      255,
+      196,
+      70
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 900,
+    "civilopediaText": [
+      {
+        "text": "Rank nine (九转): the Venerables. One alone outweighs a region; while one lives, every other clan fights in its shadow."
+      }
+    ]
   }
 ]
