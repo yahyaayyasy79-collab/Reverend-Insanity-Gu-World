@@ -883,9 +883,287 @@
       {
         "text": "Defy heaven",
         "uniques": [
-          "A [Thunder Crown Wolf] rebels",
+          "A [Desolate Beast] rebels",
           "[2] [Bold Lightning Wolf]s rebel",
           "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inheritance Trial",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "Nothing surfaces",
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "The trial claims its seekers",
+        "uniques": [
+          "Only available <when number of [[Population] in [in capital] Cities] is more than [3]>",
+          "[-2] population [in capital]",
+          "Triggers a [Inheritance Lost] event",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Primordial Origin Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Primordial Origin Inheritance] is constructed by anybody>",
+          "Unavailable <if [Primordial Origin Seal] is constructed>",
+          "Gain a free [Primordial Origin Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Qi Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Star Constellation Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Star Constellation Inheritance] is constructed by anybody>",
+          "Unavailable <if [Star Constellation Seal] is constructed>",
+          "Gain a free [Star Constellation Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Wisdom Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Limitless Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Limitless Inheritance] is constructed by anybody>",
+          "Unavailable <if [Limitless Seal] is constructed>",
+          "Gain a free [Limitless Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Rule Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Reckless Savage Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Reckless Savage Inheritance] is constructed by anybody>",
+          "Unavailable <if [Reckless Savage Seal] is constructed>",
+          "Gain a free [Reckless Savage Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Strength Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Red Lotus Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Red Lotus Inheritance] is constructed by anybody>",
+          "Unavailable <if [Red Lotus Seal] is constructed>",
+          "Gain a free [Red Lotus Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Time Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Genesis Lotus Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Genesis Lotus Inheritance] is constructed by anybody>",
+          "Unavailable <if [Genesis Lotus Seal] is constructed>",
+          "Gain a free [Genesis Lotus Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Wood Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Thieving Heaven Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Thieving Heaven Inheritance] is constructed by anybody>",
+          "Unavailable <if [Thieving Heaven Seal] is constructed>",
+          "Gain a free [Thieving Heaven Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Theft Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Giant Sun Luck Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Giant Sun Luck Inheritance] is constructed by anybody>",
+          "Unavailable <if [Giant Sun Seal] is constructed>",
+          "Gain a free [Giant Sun Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Luck Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Spectral Soul Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Spectral Soul Inheritance] is constructed by anybody>",
+          "Unavailable <if [Spectral Soul Seal] is constructed>",
+          "Gain a free [Spectral Soul Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Soul Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Paradise Earth Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Paradise Earth Inheritance] is constructed by anybody>",
+          "Unavailable <if [Paradise Earth Seal] is constructed>",
+          "Gain a free [Paradise Earth Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Earth Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Three Kings Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Three Kings Inheritance] is constructed by anybody>",
+          "Unavailable <if [Three Kings Seal] is constructed>",
+          "Gain a free [Three Kings Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Enslavement Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Long Hair Ancestor Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Long Hair Ancestor Inheritance] is constructed by anybody>",
+          "Unavailable <if [Long Hair Ancestor Seal] is constructed>",
+          "Gain a free [Long Hair Ancestor Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Refinement Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Hu Immortal Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Hu Immortal Inheritance] is constructed by anybody>",
+          "Unavailable <if [Hu Immortal Seal] is constructed>",
+          "Gain a free [Hu Immortal Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Human Master] Units] is more than [0]>"
+        ]
+      },
+      {
+        "text": "Blood Sea Inheritance: the trial is passed",
+        "uniques": [
+          "Unavailable <if [Blood Sea Inheritance] is constructed by anybody>",
+          "Unavailable <if [Blood Sea Seal] is constructed>",
+          "Only available <after adopting [Demonic Path]>",
+          "Gain a free [Blood Sea Seal] [in capital]",
+          "Triggers a [Inheritance Won] event",
+          "[-90]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when number of [[Blood Master] Units] is more than [0]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inheritance Won",
+    "text": "Your seekers passed a Venerable's trial. Its seal now lies in your capital: the inheritance can be built (see the wonders). A rival may win the same seal; the first to build it keeps it, and a conqueror takes it.",
+    "choices": [
+      {
+        "text": "Begin the work",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inheritance Lost",
+    "text": "The inheritance was a trap. Its trial killed the seekers, and the clan mourns.",
+    "choices": [
+      {
+        "text": "Bury the dead",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Desolate Beast Tide",
+    "text": "A desolate beast has come down from the wild into your land.",
+    "choices": [
+      {
+        "text": "Hunt it for its corpse",
+        "uniques": [
+          "A [Desolate Beast] rebels",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Turn it aside with the formation ward",
+        "uniques": [
+          "Only available <if [Formation Ward] is constructed>",
+          "Unavailable <when below [80] [Gold]>",
+          "Gain [-80] [Gold]",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Let it rampage",
+        "uniques": [
+          "[-30]% [Production] [in all cities] <for [5] turns>",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Treasure Yellow Heaven",
+    "text": "Treasure Yellow Heaven opens to your immortals. What will you trade?",
+    "choices": [
+      {
+        "text": "Buy green grape essence",
+        "uniques": [
+          "Unavailable <when below [150] [Gold]>",
+          "Gain [-150] [Gold]",
+          "Instantly provides [20] [Green Grape Immortal Essence]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Buy Lifespan Gu",
+        "uniques": [
+          "Unavailable <when below [120] [Gold]>",
+          "Gain [-120] [Gold]",
+          "Instantly provides [3] [Lifespan Gu]",
+          "[+0]% weight to this choice for AI decisions",
+          "[+300]% weight to this choice for AI decisions <when below [3] [Lifespan Gu]>"
+        ]
+      },
+      {
+        "text": "Sell immortal materials",
+        "uniques": [
+          "Unavailable <when below [20] [Immortal Materials]>",
+          "Instantly consumes [20] [Immortal Materials]",
+          "Instantly provides [25] [Green Grape Immortal Essence]",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Sell essence for stones",
+        "uniques": [
+          "Unavailable <when below [40] [Green Grape Immortal Essence]>",
+          "Instantly consumes [40] [Green Grape Immortal Essence]",
+          "Gain [200] [Gold]",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Leave the market",
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
         ]
       }
     ]

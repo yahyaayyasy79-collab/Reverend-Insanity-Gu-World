@@ -426,5 +426,453 @@
         "text": "Divert Disaster (排难), rank six, luck path: weakens or turns aside calamities. Its owner's immortals may divert every earthly calamity and heavenly tribulation at no cost. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
       }
     ]
+  },
+  {
+    "name": "Primordial Origin Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Primordial Origin Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "Instantly provides [2] [Human Qi] <upon turn start>",
+      "[+15]% Strength <for units with [Qi Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The qi-path heritage of the Heavenly Court's founder. 2 human qi a turn; qi-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (元始真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Primordial Origin Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Primordial Origin Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Star Constellation Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Star Constellation Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+20]% [Science] [in all cities]",
+      "[+15]% Strength <for units with [Wisdom Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star Constellation's wisdom-path heritage, intricate and hard on the mind. +20% science; wisdom-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (星宿真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Star Constellation Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Star Constellation Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Limitless Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Limitless Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[-25]% maintenance cost for [All] buildings [in all cities]",
+      "[+15]% Strength <for units with [Rule Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Limitless's rule-path heritage, which ends in a test that must be broken. Building upkeep -25%; rule-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (无极真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Limitless Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Limitless Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Reckless Savage Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Reckless Savage Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+25]% Strength <for units with [Strength Master]>",
+      "[+10]% Strength <for units with [Transformation Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Reckless Savage's strength-path heritage, won only by enduring. Strength-path units fight 25% harder, transformation-path units 10%. Built only by a clan holding its seal, which a trial grants (狂蛮传承); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Reckless Savage Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Reckless Savage Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Red Lotus Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Red Lotus Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [5] turns>",
+      "[+15]% Strength <for units with [Time Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One of Red Lotus's time-path heritages, left on the River of Time to arm Fate's future enemy. A Lifespan Gu every five turns; time-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (红莲真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Red Lotus Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Red Lotus Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Genesis Lotus Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Genesis Lotus Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>",
+      "[+15]% Strength <for units with [Wood Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Genesis Lotus's wood-path heritage. 2 green grape essence a turn; wood-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (元莲真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Genesis Lotus Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Genesis Lotus Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Thieving Heaven Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Thieving Heaven Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
+      "[+15]% Strength <for units with [Theft Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One of Thieving Heaven's theft-path heritages; its trial is pure chance, no fight. Half of every slain enemy's cost becomes stones; theft-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (盗天真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Thieving Heaven Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Thieving Heaven Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Giant Sun Luck Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Giant Sun Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+10]% [Gold] [in all cities]",
+      "[+15]% Strength <for units with [Luck Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The first rung of Giant Sun's luck ladder, the luck of the self. +10% stones; luck-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (己运真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Giant Sun Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Giant Sun Luck Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Spectral Soul Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Spectral Soul Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+25]% XP gained from combat",
+      "[+15]% Strength <for units with [Soul Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spectral Soul's soul-path summit. Units gain 25% more XP in battle; soul-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (幽魂真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Spectral Soul Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Spectral Soul Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Paradise Earth Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Paradise Earth Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "Instantly provides [2] [Earth Qi] <upon turn start>",
+      "[+15]% Strength <for units with [Earth Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One of Paradise Earth's earth-path heritages, one per region. 2 earth qi a turn; earth-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (乐土真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Paradise Earth Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Paradise Earth Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Three Kings Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Three Kings Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[3] units cost no maintenance",
+      "[+15]% Strength <for units with [Enslavement Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Three pillars of light (enslavement, refinement, fire) inside a dying blessed land. Three units cost no upkeep; enslavement-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (三王传承); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Three Kings Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Three Kings Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Long Hair Ancestor Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Long Hair Ancestor Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+25]% Production when constructing [Immortal Gu] wonders [in all cities]",
+      "[+15]% Strength <for units with [Refinement Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The refinement-path heritage of the first refiner of all time. Immortal Gu are built 25% faster; refinement-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (长毛老祖炼道真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Long Hair Ancestor Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Long Hair Ancestor Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Hu Immortal Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Hu Immortal Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+2 Happiness]",
+      "Instantly provides [1] [Heaven Qi] <upon turn start>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hu Immortal's blessed land, whose land spirit serves the first to climb Dang Hun Mountain. +2 happiness and 1 heaven qi a turn. Built only by a clan holding its seal, which a trial grants (狐仙传承); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Hu Immortal Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Hu Immortal Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
+    "name": "Blood Sea Inheritance",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [Blood Sea Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+25]% Strength <for units with [Blood Master]>",
+      "Earn [25]% of killed [Military] unit's [Cost] as [Human Qi]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A piece of Blood Sea Ancestor's heritage; only a demonic clan may claim it, and its heir is hunted. Blood-path units fight 25% harder; kills feed human qi. Built only by a clan holding its seal, which a trial grants (血海真传); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Sea Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the Blood Sea Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
   }
 ]

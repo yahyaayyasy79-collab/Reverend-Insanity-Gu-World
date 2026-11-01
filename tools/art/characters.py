@@ -237,6 +237,28 @@ def wind_frame(i, rank):
     return s
 
 
+def desolate_beast():
+    """MOD_SPEC_2 C4: a desolate beast (荒兽): a hill-shouldered horned brute, dark hide, ember eyes, bone plates."""
+    s = Scene()
+    k = 1.35
+    s.add("ellipsoid", (0, 0.62 * k, -0.1 * k), (0.32 * k, 0.3 * k, 0.55 * k), mat="hide")                      # body
+    s.add("ellipsoid", (0, 0.72 * k, 0.32 * k), (0.34 * k, 0.34 * k, 0.3 * k), mat="hide", blend=0.12 * k)      # hump
+    s.add("sphere", (0, 0.72 * k, 0.66 * k), 0.19 * k, mat="hide", blend=0.08 * k)                              # head
+    s.add("cone", (0, 0.66 * k, 0.76 * k), (0, 0.6 * k, 0.98 * k), 0.12 * k, 0.07 * k, mat="hide_dark", blend=0.04 * k)
+    for side in (-1, 1):
+        s.add("cone", (side * 0.12 * k, 0.84 * k, 0.6 * k), (side * 0.42 * k, 1.12 * k, 0.5 * k), 0.06 * k, 0.012, mat="bone")  # horns
+        s.add("sphere", (side * 0.09 * k, 0.78 * k, 0.8 * k), 0.03 * k, mat="ember")
+        for z in (0.3, -0.45):
+            top = (side * 0.2 * k, 0.55 * k, z * k)
+            paw = (side * 0.22 * k, 0.05, (z + 0.04) * k)
+            s.add("capsule", top, paw, 0.1 * k, mat="hide_dark", blend=0.05 * k)
+    for i in range(4):                                                                                           # spine plates
+        z = 0.35 - 0.25 * i
+        s.add("cone", (0, 0.92 * k, z * k), (0, 1.15 * k, (z - 0.08) * k), 0.07 * k, 0.01, mat="bone")
+    s.add("cone", (0, 0.62 * k, -0.62 * k), (0, 0.4 * k, -1.0 * k), 0.12 * k, 0.04 * k, mat="hide", blend=0.05 * k)
+    return s
+
+
 def gu_immortal():
     """MOD_SPEC_2 C1: a rank-six Gu Immortal standing on a cloud, a halo of green grape essence behind the head and an
     essence orb over the palm."""
@@ -275,6 +297,7 @@ UNITS = {
     "Lightning Wolf": lambda: wolf(0.85),
     "Bold Lightning Wolf": lambda: wolf(1.05, mane=True),
     "Thunder Crown Wolf": lambda: wolf(1.25, mane=True, crown=True),
+    "Desolate Beast": desolate_beast,
 }
 
 # attack frames per unit name (Unciv plays them over the unit that takes damage)
@@ -294,6 +317,7 @@ ATTACKS = {
     "Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Bold Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Thunder Crown Wolf": [lambda i=i: lightning_frame(i, crown=True) for i in range(4)],
+    "Desolate Beast": [lambda i=i: essence_frame(i, 5) for i in range(3)],
 }
 
 # portraits are single images (no civ tint): the robe takes the path's colour

@@ -154,6 +154,19 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>` | 25 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 30, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 30, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 0, 6 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -259,6 +272,11 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Bold Lightning Wolf | cost | 60 | tools/gen_ruleset.py `Units` |
 | Bold Lightning Wolf | `[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles` | +15, 2 | tools/gen_ruleset.py `Units` |
 | Bold Lightning Wolf | `[+100]% maintenance costs` | +100 | tools/gen_ruleset.py `Units` |
+| Desolate Beast | movement | 3 | tools/gen_ruleset.py `Units` |
+| Desolate Beast | strength | 62 | tools/gen_ruleset.py `Units` |
+| Desolate Beast | cost | 200 | tools/gen_ruleset.py `Units` |
+| Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
+| Desolate Beast | `[+200]% maintenance costs` | +200 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | strength | 28 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | cost | 120 | tools/gen_ruleset.py `Units` |
@@ -681,6 +699,64 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven's Will › Pay heaven its due | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Nothing surfaces | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › The trial claims its seekers | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › The trial claims its seekers | `[-2] population [in capital]` | -2 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › The trial claims its seekers | `[-80]% weight to this choice for AI decisions` | -80 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Primordial Origin Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Primordial Origin Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Qi Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Star Constellation Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Star Constellation Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Wisdom Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Limitless Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Limitless Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Rule Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Reckless Savage Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Reckless Savage Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Strength Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Red Lotus Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Red Lotus Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Time Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Genesis Lotus Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Genesis Lotus Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Wood Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Thieving Heaven Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Thieving Heaven Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Theft Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Giant Sun Luck Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Giant Sun Luck Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Luck Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Spectral Soul Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Spectral Soul Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Soul Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Paradise Earth Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Paradise Earth Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Earth Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Three Kings Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Three Kings Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Enslavement Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Long Hair Ancestor Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Long Hair Ancestor Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Refinement Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Hu Immortal Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Hu Immortal Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Human Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Blood Sea Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › Blood Sea Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Blood Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Won › Begin the work | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Inheritance Lost › Bury the dead | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Desolate Beast Tide › Hunt it for its corpse | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Desolate Beast Tide › Turn it aside with the formation ward | `Unavailable <when below [80] [Gold]>` | 80 | tools/gen_ruleset.py `Events` |
+| Desolate Beast Tide › Turn it aside with the formation ward | `Gain [-80] [Gold]` | -80 | tools/gen_ruleset.py `Events` |
+| Desolate Beast Tide › Turn it aside with the formation ward | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Desolate Beast Tide › Let it rampage | `[-30]% [Production] [in all cities] <for [5] turns>` | -30, 5 | tools/gen_ruleset.py `Events` |
+| Desolate Beast Tide › Let it rampage | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy green grape essence | `Unavailable <when below [150] [Gold]>` | 150 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy green grape essence | `Gain [-150] [Gold]` | -150 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy green grape essence | `Instantly provides [20] [Green Grape Immortal Essence]` | 20 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy green grape essence | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy Lifespan Gu | `Unavailable <when below [120] [Gold]>` | 120 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy Lifespan Gu | `Gain [-120] [Gold]` | -120 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy Lifespan Gu | `Instantly provides [3] [Lifespan Gu]` | 3 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy Lifespan Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Buy Lifespan Gu | `[+300]% weight to this choice for AI decisions <when below [3] [Lifespan Gu]>` | +300, 3 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell immortal materials | `Unavailable <when below [20] [Immortal Materials]>` | 20 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell immortal materials | `Instantly consumes [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell immortal materials | `Instantly provides [25] [Green Grape Immortal Essence]` | 25 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell immortal materials | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell essence for stones | `Unavailable <when below [40] [Green Grape Immortal Essence]>` | 40 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell essence for stones | `Instantly consumes [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell essence for stones | `Gain [200] [Gold]` | 200 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell essence for stones | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Leave the market | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
 
 ### Buildings.json
 
@@ -786,6 +862,76 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Divert Disaster | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Primordial Origin Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Primordial Origin Inheritance | `Instantly provides [2] [Human Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
+| Primordial Origin Inheritance | `[+15]% Strength <for units with [Qi Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Primordial Origin Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Primordial Origin Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Star Constellation Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Star Constellation Inheritance | `[+20]% [Science] [in all cities]` | +20 | tools/gen_ruleset.py `Buildings` |
+| Star Constellation Inheritance | `[+15]% Strength <for units with [Wisdom Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Star Constellation Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Star Constellation Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Limitless Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Limitless Inheritance | `[-25]% maintenance cost for [All] buildings [in all cities]` | -25 | tools/gen_ruleset.py `Buildings` |
+| Limitless Inheritance | `[+15]% Strength <for units with [Rule Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Limitless Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Limitless Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Reckless Savage Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Reckless Savage Inheritance | `[+25]% Strength <for units with [Strength Master]>` | +25 | tools/gen_ruleset.py `Buildings` |
+| Reckless Savage Inheritance | `[+10]% Strength <for units with [Transformation Master]>` | +10 | tools/gen_ruleset.py `Buildings` |
+| Reckless Savage Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Reckless Savage Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Red Lotus Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Red Lotus Inheritance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [5] turns>` | 1, 5 | tools/gen_ruleset.py `Buildings` |
+| Red Lotus Inheritance | `[+15]% Strength <for units with [Time Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Red Lotus Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Red Lotus Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Genesis Lotus Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Genesis Lotus Inheritance | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
+| Genesis Lotus Inheritance | `[+15]% Strength <for units with [Wood Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Genesis Lotus Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Genesis Lotus Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Thieving Heaven Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Thieving Heaven Inheritance | `Earn [50]% of killed [Military] unit's [Cost] as [Gold]` | 50 | tools/gen_ruleset.py `Buildings` |
+| Thieving Heaven Inheritance | `[+15]% Strength <for units with [Theft Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Thieving Heaven Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Thieving Heaven Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Giant Sun Luck Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Giant Sun Luck Inheritance | `[+10]% [Gold] [in all cities]` | +10 | tools/gen_ruleset.py `Buildings` |
+| Giant Sun Luck Inheritance | `[+15]% Strength <for units with [Luck Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Giant Sun Luck Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Giant Sun Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Spectral Soul Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Spectral Soul Inheritance | `[+25]% XP gained from combat` | +25 | tools/gen_ruleset.py `Buildings` |
+| Spectral Soul Inheritance | `[+15]% Strength <for units with [Soul Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Spectral Soul Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Spectral Soul Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Paradise Earth Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Paradise Earth Inheritance | `Instantly provides [2] [Earth Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
+| Paradise Earth Inheritance | `[+15]% Strength <for units with [Earth Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Paradise Earth Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Paradise Earth Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Three Kings Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Three Kings Inheritance | `[3] units cost no maintenance` | 3 | tools/gen_ruleset.py `Buildings` |
+| Three Kings Inheritance | `[+15]% Strength <for units with [Enslavement Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Three Kings Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Three Kings Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Long Hair Ancestor Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Long Hair Ancestor Inheritance | `[+25]% Production when constructing [Immortal Gu] wonders [in all cities]` | +25 | tools/gen_ruleset.py `Buildings` |
+| Long Hair Ancestor Inheritance | `[+15]% Strength <for units with [Refinement Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Long Hair Ancestor Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Long Hair Ancestor Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Hu Immortal Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Hu Immortal Inheritance | `[+2 Happiness]` | +2 | tools/gen_ruleset.py `Buildings` |
+| Hu Immortal Inheritance | `Instantly provides [1] [Heaven Qi] <upon turn start>` | 1 | tools/gen_ruleset.py `Buildings` |
+| Hu Immortal Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Hu Immortal Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Blood Sea Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Blood Sea Inheritance | `[+25]% Strength <for units with [Blood Master]>` | +25 | tools/gen_ruleset.py `Buildings` |
+| Blood Sea Inheritance | `Earn [25]% of killed [Military] unit's [Cost] as [Human Qi]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Blood Sea Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Blood Sea Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
 
 ### Techs.json
 
@@ -1245,6 +1391,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-1069 numbers listed.
+1215 numbers listed.
 
 <!-- inventory:end -->

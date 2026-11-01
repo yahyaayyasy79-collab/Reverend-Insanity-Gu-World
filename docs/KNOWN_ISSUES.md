@@ -100,6 +100,9 @@ rest of the list is what a player or the next session should know before trustin
     Woman's Heart, Bone Spike and Divert Disaster rarely or never (they help units, which the AI weighs low), so a
     human can usually claim them.
 
+15. **Secret realms are not in the game yet (C4).** The twelve natural wonders need the five-region map and tile art;
+    inheritances surface anywhere instead of in their canon regions.
+
 ## Not yet seen in a real game
 
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
@@ -131,4 +134,7 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Immortal Gu wonders (C3) | `civ addtech <civ> "Immortal Gu Recipes"`; `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`; the ten Gu appear in the wonder list; on completion a city may lose 2 population to the birth's calamity; capture the city to seize the Gu |
 | Great Grandmaster and immortal move | With a Rank Six Gu Immortal holding a Grandmaster: `unit setxp 300`, buy `<Path> Great Grandmaster`; the move button costs 5 essence |
 | Dao marks | A Strength Master's strength rises 5% after Self Strength is built (unit's combat preview) |
+| Inheritance trial (C4) | `civ addtech <civ> "Calamity Lore"`; `civ activatetrigger "Triggers a [Inheritance Trial] event"` a few times: a won trial puts a seal in the capital and the inheritance appears in the wonder list |
+| Desolate beast | `civ activatetrigger "Triggers a [Desolate Beast Tide] event"`, choose "Hunt it"; kill it for 20 Immortal Materials |
+| Treasure Yellow Heaven | `civ activatetrigger "Triggers a [Treasure Yellow Heaven] event"` |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

@@ -34,6 +34,13 @@ SECTIONS = {
                                         "Divert Disaster"],
                      "Events.json": ["Immortal Gu Refinement"],
                      "Globals": ["appears <upon losing"]},
+    "## Phase C4:": {"Buildings.json": ['Primordial Origin Inheritance', 'Star Constellation Inheritance', 'Limitless Inheritance', 'Reckless Savage Inheritance', 'Red Lotus Inheritance', 'Genesis Lotus Inheritance', 'Thieving Heaven Inheritance', 'Giant Sun Luck Inheritance', 'Spectral Soul Inheritance', 'Paradise Earth Inheritance', 'Three Kings Inheritance', 'Long Hair Ancestor Inheritance', 'Hu Immortal Inheritance', 'Blood Sea Inheritance'] + ["Primordial Origin Seal"],
+                     "Units.json": ["Desolate Beast"],
+                     "Events.json": ["Inheritance Trial", "Inheritance Won", "Inheritance Lost", "Desolate Beast Tide",
+                                     "Treasure Yellow Heaven"],
+                     "TileResources.json": ["Immortal Materials"],
+                     "Globals": ["[Inheritance Trial]", "[Desolate Beast Tide]", "[Treasure Yellow Heaven]",
+                                 "[Immortal Materials]"]},
 }
 
 

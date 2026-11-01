@@ -665,6 +665,25 @@
     ]
   },
   {
+    "name": "Desolate Beast",
+    "unitType": "Beast",
+    "movement": 3,
+    "strength": 62,
+    "cost": 200,
+    "attackSound": "shot",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "Unbuildable",
+      "[+15]% Strength <when defending>",
+      "[+200]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A desolate beast (荒兽), about as strong as a rank-six immortal. Only a beast tide or Heaven's Will brings one; its corpse is a heap of immortal materials."
+      }
+    ]
+  },
+  {
     "name": "Thunder Crown Wolf",
     "unitType": "Beast",
     "movement": 3,

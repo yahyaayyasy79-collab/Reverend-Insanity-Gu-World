@@ -248,6 +248,25 @@ DIVERT = toll("Divert the disaster", ["Only available <if [Divert Disaster] is c
 IMMORTAL_GU = table("immortal_gu.csv")
 IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes"}
 
+# ---------------- MOD_SPEC_2 C4: inheritances, desolate beasts, the market ----------------
+# Inheritances (data/inheritances.csv; the user's Phase A decision): a trial die grants a seal that unlocks BUILDING
+# the inheritance, a world wonder, so a rival with the same seal can race for it and conquest can seize it. The trial
+# is thrown by the owned-tile trigger (Phase A4); preparation (Masters of the inheritance's path) raises the odds.
+INHERITANCES = table("inheritances.csv")
+MATERIALS = "Immortal Materials"
+DESOLATE = "Desolate Beast"
+
+
+def path_master(key):
+    return gen_paths.tier_name(gen_paths.KEY[key], 0)
+
+
+def trial_won(i):
+    return {"text": f"{i['name']}: the trial is passed", "uniques": [
+        f"Unavailable <if [{i['name']}] is constructed by anybody>", f"Unavailable <if [{i['seal']}] is constructed>"]
+        + items(i["gate"]) + [f"Gain a free [{i['seal']}] [in capital]", "Triggers a [Inheritance Won] event",
+                              w("-90"), w("+300", f"<when number of [[{path_master(i['path'])}] Units] is more than [0]>")]}
+
 
 # ---------------- ModOptions / Globals ----------------
 dump("ModOptions.json", {"isBaseRuleset": True,
@@ -296,7 +315,16 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     # C3: so does a clan holding more than two immortal Gu (MOD_SPEC_2 #10)
     lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more "
               f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>")
-    + [u for g in IMMORTAL_GU for u in items(g["global_effects"])]})
+    + [u for g in IMMORTAL_GU for u in items(g["global_effects"])] + per_speed(
+    # C4: a clan holding enough land hears of a Venerable's inheritance now and then
+    lambda m: f"Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than "
+              f"[30]> <after discovering [Calamity Lore]> <with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> "
+              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] "
+              f"is more than [0]> <with [{chance(4, m)}]% chance> <for [Major] Civilizations>") + [
+    # a desolate beast's corpse is a heap of immortal materials (R V5/734)
+    f"Earn [10]% of killed [{DESOLATE}] unit's [Cost] as [{MATERIALS}]"]})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -404,6 +432,9 @@ dump("Units.json", [
     {"name": "Bold Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 16, "cost": 60, "attackSound": "shot",
      "requiredTech": "Rank Three Cultivation", "uniqueTo": "Barbarians",
      "uniques": ["[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles", "[+100]% maintenance costs"]},
+    # C4: a desolate beast (荒兽), about a rank-six immortal (R V5/14); only events bring one
+    {"name": DESOLATE, "unitType": "Beast", "movement": 3, "strength": 62, "cost": 200, "attackSound": "shot",
+     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+200]% maintenance costs"]},
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
@@ -733,7 +764,37 @@ dump("Events.json", [
                                       "luck runs thin.", "choices": [
         toll("Lie low", ["[-20]% Strength <for [10] turns>"], "+0"),
         toll("Pay heaven its due", [f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]"], "+50"),
-        toll("Defy heaven", ["A [Thunder Crown Wolf] rebels", "[2] [Bold Lightning Wolf]s rebel"], "-30")]},
+        toll("Defy heaven", [f"A [{DESOLATE}] rebels", "[2] [Bold Lightning Wolf]s rebel"], "-30")]},
+    # C4: inheritance trial (silent die) and its two result popups
+    {"name": "Inheritance Trial", "presentation": "None", "choices": [
+        toll("Nothing surfaces", [], "+100"),
+        toll("The trial claims its seekers", [CAP_POP, "[-2] population [in capital]", "Triggers a [Inheritance Lost] event"], "-80"),
+    ] + [trial_won(i) for i in INHERITANCES]},
+    {"name": "Inheritance Won", "text": "Your seekers passed a Venerable's trial. Its seal now lies in your capital: the "
+                                        "inheritance can be built (see the wonders). A rival may win the same seal; the "
+                                        "first to build it keeps it, and a conqueror takes it.",
+     "choices": [toll("Begin the work", [], "+0")]},
+    {"name": "Inheritance Lost", "text": "The inheritance was a trap. Its trial killed the seekers, and the clan mourns.",
+     "choices": [toll("Bury the dead", [], "+0")]},
+    # C4: under Heaven's Will even gentle beasts turn frenzied (R V4/359); a desolate beast is about a rank-six immortal
+    # (R V5/14) and its corpse is immortal materials
+    {"name": "Desolate Beast Tide", "text": "A desolate beast has come down from the wild into your land.", "choices": [
+        toll("Hunt it for its corpse", [f"A [{DESOLATE}] rebels"], "+50"),
+        toll("Turn it aside with the formation ward", ["Only available <if [Formation Ward] is constructed>",
+                                                       "Unavailable <when below [80] [Gold]>", "Gain [-80] [Gold]"], "+0"),
+        toll("Let it rampage", ["[-30]% [Production] [in all cities] <for [5] turns>"], "-30")]},
+    # C4: the immortals' market, a grotto-heaven where treasure light prices goods (R V3/61; MOD_SPEC_2 #16)
+    {"name": "Treasure Yellow Heaven", "text": "Treasure Yellow Heaven opens to your immortals. What will you trade?", "choices": [
+        toll("Buy green grape essence", ["Unavailable <when below [150] [Gold]>", "Gain [-150] [Gold]",
+                                         f"Instantly provides [20] [{GREEN}]"], "+50"),
+        {"text": "Buy Lifespan Gu", "uniques": ["Unavailable <when below [120] [Gold]>", "Gain [-120] [Gold]",
+                                                f"Instantly provides [3] [{LIFESPAN}]", w("+0"),
+                                                w("+300", f"<when below [3] [{LIFESPAN}]>")]},
+        toll("Sell immortal materials", [f"Unavailable <when below [20] [{MATERIALS}]>", f"Instantly consumes [20] [{MATERIALS}]",
+                                         f"Instantly provides [25] [{GREEN}]"], "+100"),
+        toll("Sell essence for stones", [f"Unavailable <when below [40] [{GREEN}]>", f"Instantly consumes [40] [{GREEN}]",
+                                         "Gain [200] [Gold]"], "+0"),
+        toll("Leave the market", [], "-50")]},
 ])
 
 # ---------------- Buildings (12: 7 + 1 Wu unique + 2 national wonders + 2 world wonders) ----------------
@@ -788,6 +849,12 @@ dump("Buildings.json", [
       # autoplay (C3): without it the AI built only the two stat wonders, after turn 275
       + [w("+300")]}
      for g in IMMORTAL_GU
+] + [b for i in INHERITANCES for b in (
+    {"name": i["name"], "isWonder": True, "requiredTech": "Calamity Lore", "cost": 420,
+     "uniques": [f"Only available <if [{i['seal']}] is constructed>", "Never destroyed when the city is captured"]
+     + items(i["effects"]) + [w("+300")]},
+    # the seal is a free grant: it need not be seizable (Phase A3), it only unlocks building the inheritance
+    {"name": i["seal"], "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]})
 ])
 
 # ---------------- Policies (4 branches) ----------------
@@ -884,7 +951,7 @@ dump("TileResources.json", [
      "improvement": "Camp", "improvementStats": {"gold": 1}},
     # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
 ] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
-     for r in QI + [GREEN, LIFESPAN]])
+     for r in QI + [GREEN, LIFESPAN, MATERIALS]])
 
 # ---------------- Terrains (Vanilla minus natural wonders and Fallout) ----------------
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))

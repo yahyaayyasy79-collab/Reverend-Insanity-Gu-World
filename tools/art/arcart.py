@@ -281,6 +281,58 @@ def immortal_gu_recipes():
     from .glyphs2 import scroll
     g = G(); scroll(g, 50, 66, 34, 22); gu_beetle(g, 50, 28, 0.7); g.arc_band(50, 28, 22, 18, 20, 160); return g
 
+
+# ---- C4: inheritances (a stele carved with the path's symbol), their seals, the desolate beast, immortal materials
+def _path_symbol(key):
+    from .pathart import symbol
+    return symbol(key)
+
+
+def inheritance(key):
+    """A tall stele under a roof, the path's symbol cut into its face."""
+    from .pathart import place
+    def draw():
+        g = G()
+        roof(g, 50, 18, 36, 14)
+        g.poly([(28, 22), (72, 22), (70, 84), (30, 84)])
+        g.poly([(18, 84), (82, 84), (82, 92), (18, 92)])
+        place(g, _path_symbol(key), 50, 52, 0.42, 0)
+        return g
+    return draw
+
+
+def seal(key):
+    """A square seal stamp with a knob, the path's symbol cut into the face."""
+    from .pathart import place
+    def draw():
+        g = G()
+        g.poly([(20, 44), (80, 44), (80, 92), (20, 92)])
+        g.ell(36, 12, 64, 40); g.poly([(42, 30), (58, 30), (60, 46), (40, 46)])
+        place(g, _path_symbol(key), 50, 68, 0.4, 0)
+        return g
+    return draw
+
+
+def desolate_beast_icon():
+    """A horned beast head with ember eyes."""
+    g = G()
+    g.poly([(28, 34), (72, 34), (80, 58), (64, 88), (36, 88), (20, 58)])
+    for side in (-1, 1):
+        g.poly([(50 + side * 18, 38), (50 + side * 44, 6), (50 + side * 30, 42)])
+        g.circ(50 + side * 12, 56, 5, 0)
+    g.poly([(40, 72), (60, 72), (56, 80), (44, 80)], 0)
+    return g
+
+
+def immortal_materials():
+    """Crystals and a bone heaped together."""
+    g = G()
+    for cx, h in ((34, 40), (52, 52), (70, 36)):
+        g.poly([(cx - 9, 80), (cx - 7, 80 - h * 0.7), (cx, 80 - h), (cx + 7, 80 - h * 0.7), (cx + 9, 80)])
+    g.line([(16, 86), (84, 86)], 7)
+    g.circ(16, 86, 6); g.circ(84, 86, 6)
+    return g
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -311,4 +363,17 @@ ICONS3 = [
     ("BuildingIcons", "Star Eyes", star_eyes, "black"),
     ("BuildingIcons", "Divert Disaster", divert_disaster, "black"),
     ("TechIcons", "Immortal Gu Recipes", immortal_gu_recipes, "white"),
+    ("UnitIcons", "Desolate Beast", desolate_beast_icon, "white"),
+    ("ResourceIcons", "Immortal Materials", immortal_materials, "black"),
 ]
+
+
+def inheritance_icons():
+    """C4: one stele and one seal per inheritance (data/inheritances.csv)."""
+    import csv
+    from common import REPO_ROOT
+    with open(REPO_ROOT / "data" / "inheritances.csv", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    return [x for i in rows for x in (
+        ("BuildingIcons", i["name"], inheritance(i["path"]), "black"),
+        ("BuildingIcons", i["seal"], seal(i["path"]), "black"))]

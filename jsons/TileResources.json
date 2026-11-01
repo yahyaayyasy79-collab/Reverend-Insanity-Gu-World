@@ -263,5 +263,19 @@
         "text": "Lifespan Gu (寿蛊) are made only by heaven and earth where life teems; nobody can refine one. Forests"
       }
     ]
+  },
+  {
+    "name": "Immortal Materials",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ranked materials (仙材) that refinement consumes. A slain desolate beast yields 20; Treasure Yellow Heaven buys them for essence."
+      }
+    ]
   }
 ]

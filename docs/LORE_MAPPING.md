@@ -1661,6 +1661,10 @@ Instantly provides [1] [Earth Qi] <upon turn start> <for every [1] [Owned [Sprin
 Instantly provides [1] [Earth Qi] <upon turn start> <for every [8] [Owned [Hill] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>
 Instantly provides [1] [Human Qi] <upon turn start> <for every [10] [[Population] in [in all cities] Cities]> <after discovering [Three Qi]> <for [Major] Civilizations>
 Earn [5]% of the damage done to [All] units as [Human Qi] <after discovering [Three Qi]> <for [Major] Civilizations>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```
 
 
@@ -1868,7 +1872,7 @@ Instantly consumes [30] [Green Grape Immortal Essence]
 * Defy heaven
 
 ```
-A [Thunder Crown Wolf] rebels
+A [Desolate Beast] rebels
 [2] [Bold Lightning Wolf]s rebel
 [-30]% weight to this choice for AI decisions
 ```
@@ -2086,4 +2090,469 @@ Triggers a [Immortal Gu Refinement] event
 ```
 Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>
 Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>
+```
+
+
+## Phase C4: inheritances, desolate beasts, the market (built 2026-11-01)
+
+MOD_SPEC_2 Phase C, fourth layer, from the "Inheritances" and "Events" rows above.
+
+* **Fourteen inheritances** (data/inheritances.csv) as world wonders, with the user's Phase A decision: a trial grants
+  a **seal** (a free national building, `Unbuildable`; it need not be seizable, A3) that unlocks *building* the
+  inheritance, so a rival holding the same seal races for it and conquest seizes it (A2). The trial is a silent die
+  thrown by the owned-tile trigger (A4): a clan with more than 30 land tiles after Calamity Lore rolls it 2% a turn
+  (Standard). Each inheritance is a rare outcome (weight ×0.1), four times likelier while the clan holds a Master of
+  its path (preparation); a trap kills the seekers (2 population of the capital) about one roll in fifteen. Blood Sea
+  Ancestor's pieces go only to a Demonic Path clan. Each prize is its path's +15–25% strength plus one civ-wide gift.
+* **Left for later:** the 88 True Yang Building (only the Huang Jin may pass its trial; that nation comes with C5), and
+  the region bindings (Central Continent, Northern Plains…): the game has no five-region map yet, so every
+  inheritance can surface anywhere (ADAPTED).
+* **Desolate Beast** (荒兽, about rank six, R V5/14): a barbarian elite (`Unbuildable`) that only events bring: the
+  **Desolate Beast Tide** (2% a turn after Three Qi: hunt it, turn it aside with the Formation Ward for 80 stones, or
+  let it rampage, −30% production for 5 turns) and Heaven's Will's "Defy heaven". Its corpse gives **Immortal
+  Materials** (10% of its cost, 20).
+* **Treasure Yellow Heaven** (宝黄天, MOD_SPEC_2 #16): 4% a turn for a clan with an immortal: buy 20 essence for 150
+  stones, 3 Lifespan Gu for 120 (the AI's choice when it is short), sell 20 materials for 25 essence, sell 40 essence
+  for 200 stones, or leave.
+* **Secret realms (12 natural wonders) are not built yet.** They need the five-region map (T3) and tile art; random
+  maps place only one to five natural wonders [MOD_SPEC_2 #13].
+
+Exact uniques (written by tools/lore_blocks.py from jsons/; every seal has the same two lines as the first):
+
+**Primordial Origin Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "The qi-path heritage of the Heavenly Court's founder. 2 human qi a turn; qi-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u5143\u59cb\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Primordial Origin Seal] is constructed>
+Never destroyed when the city is captured
+Instantly provides [2] [Human Qi] <upon turn start>
+[+15]% Strength <for units with [Qi Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Star Constellation Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Star Constellation's wisdom-path heritage, intricate and hard on the mind. +20% science; wisdom-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u661f\u5bbf\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Star Constellation Seal] is constructed>
+Never destroyed when the city is captured
+[+20]% [Science] [in all cities]
+[+15]% Strength <for units with [Wisdom Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Limitless Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Limitless's rule-path heritage, which ends in a test that must be broken. Building upkeep -25%; rule-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u65e0\u6781\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Limitless Seal] is constructed>
+Never destroyed when the city is captured
+[-25]% maintenance cost for [All] buildings [in all cities]
+[+15]% Strength <for units with [Rule Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Reckless Savage Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Reckless Savage's strength-path heritage, won only by enduring. Strength-path units fight 25% harder, transformation-path units 10%. Built only by a clan holding its seal, which a trial grants (\u72c2\u86ee\u4f20\u627f); a captured city keeps it."}]})
+
+```
+Only available <if [Reckless Savage Seal] is constructed>
+Never destroyed when the city is captured
+[+25]% Strength <for units with [Strength Master]>
+[+10]% Strength <for units with [Transformation Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Red Lotus Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "One of Red Lotus's time-path heritages, left on the River of Time to arm Fate's future enemy. A Lifespan Gu every five turns; time-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u7ea2\u83b2\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Red Lotus Seal] is constructed>
+Never destroyed when the city is captured
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [5] turns>
+[+15]% Strength <for units with [Time Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Genesis Lotus Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Genesis Lotus's wood-path heritage. 2 green grape essence a turn; wood-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u5143\u83b2\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Genesis Lotus Seal] is constructed>
+Never destroyed when the city is captured
+Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>
+[+15]% Strength <for units with [Wood Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Thieving Heaven Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "One of Thieving Heaven's theft-path heritages; its trial is pure chance, no fight. Half of every slain enemy's cost becomes stones; theft-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u76d7\u5929\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Thieving Heaven Seal] is constructed>
+Never destroyed when the city is captured
+Earn [50]% of killed [Military] unit's [Cost] as [Gold]
+[+15]% Strength <for units with [Theft Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Giant Sun Luck Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "The first rung of Giant Sun's luck ladder, the luck of the self. +10% stones; luck-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u5df1\u8fd0\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Giant Sun Seal] is constructed>
+Never destroyed when the city is captured
+[+10]% [Gold] [in all cities]
+[+15]% Strength <for units with [Luck Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Spectral Soul Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Spectral Soul's soul-path summit. Units gain 25% more XP in battle; soul-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u5e7d\u9b42\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Spectral Soul Seal] is constructed>
+Never destroyed when the city is captured
+[+25]% XP gained from combat
+[+15]% Strength <for units with [Soul Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Paradise Earth Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "One of Paradise Earth's earth-path heritages, one per region. 2 earth qi a turn; earth-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u4e50\u571f\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Paradise Earth Seal] is constructed>
+Never destroyed when the city is captured
+Instantly provides [2] [Earth Qi] <upon turn start>
+[+15]% Strength <for units with [Earth Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Three Kings Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Three pillars of light (enslavement, refinement, fire) inside a dying blessed land. Three units cost no upkeep; enslavement-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u4e09\u738b\u4f20\u627f); a captured city keeps it."}]})
+
+```
+Only available <if [Three Kings Seal] is constructed>
+Never destroyed when the city is captured
+[3] units cost no maintenance
+[+15]% Strength <for units with [Enslavement Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Long Hair Ancestor Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "The refinement-path heritage of the first refiner of all time. Immortal Gu are built 25% faster; refinement-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u957f\u6bdb\u8001\u7956\u70bc\u9053\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Long Hair Ancestor Seal] is constructed>
+Never destroyed when the city is captured
+[+25]% Production when constructing [Immortal Gu] wonders [in all cities]
+[+15]% Strength <for units with [Refinement Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Hu Immortal Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Hu Immortal's blessed land, whose land spirit serves the first to climb Dang Hun Mountain. +2 happiness and 1 heaven qi a turn. Built only by a clan holding its seal, which a trial grants (\u72d0\u4ed9\u4f20\u627f); a captured city keeps it."}]})
+
+```
+Only available <if [Hu Immortal Seal] is constructed>
+Never destroyed when the city is captured
+[+2 Happiness]
+Instantly provides [1] [Heaven Qi] <upon turn start>
+[+300]% weight to this choice for AI decisions
+```
+
+**Blood Sea Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "A piece of Blood Sea Ancestor's heritage; only a demonic clan may claim it, and its heir is hunted. Blood-path units fight 25% harder; kills feed human qi. Built only by a clan holding its seal, which a trial grants (\u8840\u6d77\u771f\u4f20); a captured city keeps it."}]})
+
+```
+Only available <if [Blood Sea Seal] is constructed>
+Never destroyed when the city is captured
+[+25]% Strength <for units with [Blood Master]>
+Earn [25]% of killed [Military] unit's [Cost] as [Human Qi]
+[+300]% weight to this choice for AI decisions
+```
+
+**Primordial Origin Seal** (Buildings.json; {"isNationalWonder": true, "cost": 1, "civilopediaText": [{"text": "The seal of the Primordial Origin Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."}]})
+
+```
+Unbuildable
+Cannot be purchased
+```
+
+**Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 62, "cost": 200, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A desolate beast (\u8352\u517d), about as strong as a rank-six immortal. Only a beast tide or Heaven's Will brings one; its corpse is a heap of immortal materials."}]})
+
+```
+Unbuildable
+[+15]% Strength <when defending>
+[+200]% maintenance costs
+```
+
+**Inheritance Trial** (silent die)
+
+* Nothing surfaces
+
+```
+[+100]% weight to this choice for AI decisions
+```
+
+* The trial claims its seekers
+
+```
+Only available <when number of [[Population] in [in capital] Cities] is more than [3]>
+[-2] population [in capital]
+Triggers a [Inheritance Lost] event
+[-80]% weight to this choice for AI decisions
+```
+
+* Primordial Origin Inheritance: the trial is passed
+
+```
+Unavailable <if [Primordial Origin Inheritance] is constructed by anybody>
+Unavailable <if [Primordial Origin Seal] is constructed>
+Gain a free [Primordial Origin Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Qi Master] Units] is more than [0]>
+```
+
+* Star Constellation Inheritance: the trial is passed
+
+```
+Unavailable <if [Star Constellation Inheritance] is constructed by anybody>
+Unavailable <if [Star Constellation Seal] is constructed>
+Gain a free [Star Constellation Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Wisdom Master] Units] is more than [0]>
+```
+
+* Limitless Inheritance: the trial is passed
+
+```
+Unavailable <if [Limitless Inheritance] is constructed by anybody>
+Unavailable <if [Limitless Seal] is constructed>
+Gain a free [Limitless Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Rule Master] Units] is more than [0]>
+```
+
+* Reckless Savage Inheritance: the trial is passed
+
+```
+Unavailable <if [Reckless Savage Inheritance] is constructed by anybody>
+Unavailable <if [Reckless Savage Seal] is constructed>
+Gain a free [Reckless Savage Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Strength Master] Units] is more than [0]>
+```
+
+* Red Lotus Inheritance: the trial is passed
+
+```
+Unavailable <if [Red Lotus Inheritance] is constructed by anybody>
+Unavailable <if [Red Lotus Seal] is constructed>
+Gain a free [Red Lotus Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Time Master] Units] is more than [0]>
+```
+
+* Genesis Lotus Inheritance: the trial is passed
+
+```
+Unavailable <if [Genesis Lotus Inheritance] is constructed by anybody>
+Unavailable <if [Genesis Lotus Seal] is constructed>
+Gain a free [Genesis Lotus Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Wood Master] Units] is more than [0]>
+```
+
+* Thieving Heaven Inheritance: the trial is passed
+
+```
+Unavailable <if [Thieving Heaven Inheritance] is constructed by anybody>
+Unavailable <if [Thieving Heaven Seal] is constructed>
+Gain a free [Thieving Heaven Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Theft Master] Units] is more than [0]>
+```
+
+* Giant Sun Luck Inheritance: the trial is passed
+
+```
+Unavailable <if [Giant Sun Luck Inheritance] is constructed by anybody>
+Unavailable <if [Giant Sun Seal] is constructed>
+Gain a free [Giant Sun Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Luck Master] Units] is more than [0]>
+```
+
+* Spectral Soul Inheritance: the trial is passed
+
+```
+Unavailable <if [Spectral Soul Inheritance] is constructed by anybody>
+Unavailable <if [Spectral Soul Seal] is constructed>
+Gain a free [Spectral Soul Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Soul Master] Units] is more than [0]>
+```
+
+* Paradise Earth Inheritance: the trial is passed
+
+```
+Unavailable <if [Paradise Earth Inheritance] is constructed by anybody>
+Unavailable <if [Paradise Earth Seal] is constructed>
+Gain a free [Paradise Earth Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Earth Master] Units] is more than [0]>
+```
+
+* Three Kings Inheritance: the trial is passed
+
+```
+Unavailable <if [Three Kings Inheritance] is constructed by anybody>
+Unavailable <if [Three Kings Seal] is constructed>
+Gain a free [Three Kings Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Enslavement Master] Units] is more than [0]>
+```
+
+* Long Hair Ancestor Inheritance: the trial is passed
+
+```
+Unavailable <if [Long Hair Ancestor Inheritance] is constructed by anybody>
+Unavailable <if [Long Hair Ancestor Seal] is constructed>
+Gain a free [Long Hair Ancestor Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Refinement Master] Units] is more than [0]>
+```
+
+* Hu Immortal Inheritance: the trial is passed
+
+```
+Unavailable <if [Hu Immortal Inheritance] is constructed by anybody>
+Unavailable <if [Hu Immortal Seal] is constructed>
+Gain a free [Hu Immortal Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Human Master] Units] is more than [0]>
+```
+
+* Blood Sea Inheritance: the trial is passed
+
+```
+Unavailable <if [Blood Sea Inheritance] is constructed by anybody>
+Unavailable <if [Blood Sea Seal] is constructed>
+Only available <after adopting [Demonic Path]>
+Gain a free [Blood Sea Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Blood Master] Units] is more than [0]>
+```
+
+**Inheritance Won** (popup)
+
+* Begin the work
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+**Inheritance Lost** (popup)
+
+* Bury the dead
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+**Desolate Beast Tide** (popup)
+
+* Hunt it for its corpse
+
+```
+A [Desolate Beast] rebels
+[+50]% weight to this choice for AI decisions
+```
+
+* Turn it aside with the formation ward
+
+```
+Only available <if [Formation Ward] is constructed>
+Unavailable <when below [80] [Gold]>
+Gain [-80] [Gold]
+[+0]% weight to this choice for AI decisions
+```
+
+* Let it rampage
+
+```
+[-30]% [Production] [in all cities] <for [5] turns>
+[-30]% weight to this choice for AI decisions
+```
+
+**Treasure Yellow Heaven** (popup)
+
+* Buy green grape essence
+
+```
+Unavailable <when below [150] [Gold]>
+Gain [-150] [Gold]
+Instantly provides [20] [Green Grape Immortal Essence]
+[+50]% weight to this choice for AI decisions
+```
+
+* Buy Lifespan Gu
+
+```
+Unavailable <when below [120] [Gold]>
+Gain [-120] [Gold]
+Instantly provides [3] [Lifespan Gu]
+[+0]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when below [3] [Lifespan Gu]>
+```
+
+* Sell immortal materials
+
+```
+Unavailable <when below [20] [Immortal Materials]>
+Instantly consumes [20] [Immortal Materials]
+Instantly provides [25] [Green Grape Immortal Essence]
+[+100]% weight to this choice for AI decisions
+```
+
+* Sell essence for stones
+
+```
+Unavailable <when below [40] [Green Grape Immortal Essence]>
+Instantly consumes [40] [Green Grape Immortal Essence]
+Gain [200] [Gold]
+[+0]% weight to this choice for AI decisions
+```
+
+* Leave the market
+
+```
+[-50]% weight to this choice for AI decisions
+```
+
+**Immortal Materials** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Ranked materials (\u4ed9\u6750) that refinement consumes. A slain desolate beast yields 20; Treasure Yellow Heaven buys them for essence."}]})
+
+```
+Stockpiled
+Cannot be traded
+```
+
+**GlobalUniques**
+
+```
+Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]
 ```

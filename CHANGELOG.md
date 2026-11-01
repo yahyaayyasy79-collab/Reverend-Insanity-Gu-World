@@ -488,3 +488,17 @@
 * Art: ten wonder icons, the recipe tech, 94 tier and move icons; path promotions moved to their own atlas (Paths.png).
 * Autoplay (8 × 330, Prince): 0 crashes; 3.9 immortal Gu built per game (Star Eyes and Unravel Mystery every game,
   Man as Before 6 of 8, Spring Autumn Cicada 5, Fixed Immortal Travel 3, Connect Luck 1); 1.0 immortal per clan.
+
+## MOD_SPEC_2 C4 — inheritances, desolate beasts, the market (2026-11-01)
+
+* **Fourteen Venerable inheritances** as world wonders (data/inheritances.csv). A silent trial (2% a turn for a clan
+  with more than 30 land tiles, after Calamity Lore) may grant an inheritance's **seal**, which unlocks building it;
+  holding a Master of its path makes that inheritance four times likelier; a trap costs 2 capital population. Rivals
+  can win the same seal and race; a conqueror keeps a built inheritance. Blood Sea pieces only for demonic clans.
+* **Desolate Beast** (strength 62, barbarian elite, 3D sprite) from the new **Desolate Beast Tide** event and from
+  Heaven's Will; its corpse yields **Immortal Materials**.
+* **Treasure Yellow Heaven**, the immortals' market: essence, Lifespan Gu, materials and stones change hands.
+* Art: 14 steles, 14 seals, the beast's icon, sprite and attack effect, the materials icon.
+* Not built yet: the 12 secret realms (they need the five-region map) and the 88 True Yang Building (Huang Jin, C5).
+* Autoplay (8 × 330, Prince): 0 crashes; per clan 1.5 seals won, 0.44 inheritances built (1.75 per game), 1.1
+  immortal Gu, 24 immortal materials, 1.4 immortals at the end; 5 of 32 clans in debt at the end.

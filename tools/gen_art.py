@@ -81,7 +81,7 @@ def main(argv: list[str]) -> int:
     # the path promotions (several hundred icons) get their own atlas, Paths.png: with the other icons they spilled into a
     # second game texture (game2.png)
     path_icons = {(folder, name) for folder, name, _, _ in pathart.icons()}
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3:
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons():
         if (folder, name) in path_icons:
             stale = images / folder / f"{name}.png"
             if stale.exists() and ours(stale):
@@ -112,7 +112,7 @@ def main(argv: list[str]) -> int:
     # UI portraits, and per-unit attack effects (played over the unit that takes the damage)
     units = tiles
     for name, build in characters.UNITS.items():
-        wolf = "Wolf" in name
+        wolf = "Wolf" in name or name == "Desolate Beast"
         frame = dict(size=(128, 110), scale=3.4 if wolf else 4.4, center=(0.0, 0.7 if wolf else 0.95))
         out = render3d.render(build(), **frame)
         for suffix, key in (("", "base"), ("-1", "layer1"), ("-2", "layer2")):
