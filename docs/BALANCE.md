@@ -79,6 +79,23 @@ debt at the end, mean stones per turn −5.5; with no hall upkeep, 4 of 24, 2, +
 disbands military units once the treasury is at −200 or below [src TurnManager.endTurn], so a broke clan also loses
 its army.
 
+## The Five Regions economy and wide clans' stability (2026-11-01)
+
+The autoplay harness now records stones per turn and happiness by source (`goldBy`, `happyBy`). Five Regions, eight
+majors, Prince, 6 × 280–400, against Qing Mao Mountain with the same eight majors:
+
+* **Map riches.** The map had nothing beyond the start rings: one spirit spring per clan; stones per turn 3.0 at T80
+  against 12.8 on Qing Mao. Scattering springs, jade, Gu foods, furs, inheritances and lairs at Qing Mao's density
+  (`tools/make_map.py` RICHES): 6.1 at T80, 6.3 at T120 (was 1.7); 20+ turns in the red by T400 42 → 32 of 48.
+* **Stability.** Base 15, −3 per village, −0.9 per person, and almost nothing to offset it (one luxury, Furs; the
+  Pavilion and the Tavern at +1): at T280 happiness −5.5, 39 of 44 clans below zero, growth −75%, population stuck near
+  18 however many villages. `[-33]% unhappiness from the number of cities` and the Tavern at +2: population 27 at T280,
+  in the red at the end 14 → 8 clans (Five Regions T280); Qing Mao T300: 10 → 5, mean stones per turn −1.5 → +1.3.
+* **What remains** is the engine's AI (KNOWN_ISSUES 19): it trains soldiers while stones per turn are positive (up to
+  five per village outside war), and their upkeep rises with every rank they climb. Weighted upkeep at T280: rank-five
+  Masters a third (3.5 per clan at 325%), captured lightning wolves (the Enslavement path; barbarians are many on a wide
+  map) a sixth. Levers if a real game feels too poor: rank-five upkeep (`data/gu_masters.csv`), wolves' upkeep.
+
 <!-- inventory:start (tools/gen_balance.py) -->
 
 Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it is stale. Edit the source in the last column, regenerate (`tools/gen_ruleset.py && tools/gen_balance.py`), run `tools/check_all`.
@@ -103,6 +120,7 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Rebel units may spawn <when below [-20] [Happiness]>` | -20 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-3] units cost no maintenance <for [Major] Civilizations>` | -3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-20]% Strength <when below [0] [Gold]>` | -20, 0 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-33]% unhappiness from the number of cities` | -33 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [20]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 20, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [45]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -1110,7 +1128,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Gu Feeding House | `Provides [1] [Wild Boar]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Tavern | cost | 60 | tools/gen_ruleset.py `Buildings` |
 | Tavern | maintenance | 1 | tools/gen_ruleset.py `Buildings` |
-| Tavern | happiness | 1 | tools/gen_ruleset.py `Buildings` |
+| Tavern | happiness | 2 | tools/gen_ruleset.py `Buildings` |
 | Tavern | `Provides [1] [Wine]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Refinement Chamber | cost | 90 | tools/gen_ruleset.py `Buildings` |
 | Refinement Chamber | maintenance | 1 | tools/gen_ruleset.py `Buildings` |
@@ -2273,6 +2291,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2089 numbers listed.
+2090 numbers listed.
 
 <!-- inventory:end -->

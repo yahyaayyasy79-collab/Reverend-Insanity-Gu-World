@@ -640,3 +640,16 @@
 * Rule fix found by the audit: a Venerable kept its Grotto-Heaven Aperture through the upgrade (an upgrade keeps every
   promotion [src MapUnit.copyStatisticsTo]), so calamities and tribulations kept falling on it with essence choices
   closed to rank nine (25% death when bare). Ascending now removes the aperture; the chaos calamity is its trial.
+
+## Phase D: the Five Regions economy (2026-11-01)
+
+* The Five Regions map had no resources beyond the start rings (one spirit spring per clan). It now carries each
+  region's riches at Qing Mao Mountain's density: 28 spirit springs, jade, wild boar, moon orchids, furs, buried
+  inheritances, beast lairs, and the Yellow Dragon River on the Southern Border. Autoplay: stones per turn at T80
+  3.0 → 6.1; clans 20+ turns in the red by T400 42 → 32 of 48.
+* Wide clans could not grow: one luxury and two small happiness buildings, so every village past the second pushed a
+  clan below zero (growth −75%). New villages now cost a third less stability and the Tavern gives +2: Five Regions
+  population at T280 18 → 27; Qing Mao clans in the red at the end 10 → 5.
+* The autoplay harness records stones per turn and happiness by source. AUTOPLAY.md, BALANCE.md, KNOWN_ISSUES 19
+  (the engine's AI keeps training soldiers while its stones per turn are positive; item 15 updated: secret realms
+  are in the game).

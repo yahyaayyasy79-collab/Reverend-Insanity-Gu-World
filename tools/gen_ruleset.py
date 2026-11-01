@@ -404,6 +404,11 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "Rebel units may spawn <when below [-20] [Happiness]>",
     "[-3] units cost no maintenance <for [Major] Civilizations>",
     "[-20]% Strength <when below [0] [Gold]>",
+    # Phase D: a clan's new villages are settled by its own kin. With one luxury (Furs) and few happiness buildings,
+    # every village past the second pushed a clan below zero (autoplay, Five Regions T280: happiness -5.5, 39 of 44
+    # clans unhappy, growth -75%, population stuck near 18 whatever the number of villages). With this and the
+    # Tavern's +2: population 27 at T280 (Qing Mao: no change in debt, stones per turn -1.5 -> +1.3)
+    "[-33]% unhappiness from the number of cities",
 ] + per_speed(lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
                        f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
     lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(90, m)}]> "
@@ -1070,7 +1075,7 @@ dump("Buildings.json", [
     {"name": "Gu Feeding House", "requiredTech": "Gu Feeding", "cost": 70, "maintenance": 1,
      "uniques": ["Provides [1] [Moon Orchid]", "Provides [1] [Wild Boar]"]},
     # R2 T8: canon tavern (jiu si) selling Green Bamboo Wine; was 'Wine Cellar'
-    {"name": "Tavern", "requiredTech": "Wine Brewing", "cost": 60, "maintenance": 1, "happiness": 1,
+    {"name": "Tavern", "requiredTech": "Wine Brewing", "cost": 60, "maintenance": 1, "happiness": 2,
      "uniques": ["Provides [1] [Wine]"]},
     # R2 T8: refining materials include jade, so every clan has an early jade source that does not depend on map luck
     {"name": "Refinement Chamber", "requiredTech": "Gu Refinement", "cost": 90, "maintenance": 1, "production": 1,

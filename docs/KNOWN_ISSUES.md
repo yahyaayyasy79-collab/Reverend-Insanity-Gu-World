@@ -100,8 +100,9 @@ rest of the list is what a player or the next session should know before trustin
     Woman's Heart, Bone Spike and Divert Disaster rarely or never (they help units, which the AI weighs low), so a
     human can usually claim them.
 
-15. **Secret realms are not in the game yet (C4).** The twelve natural wonders need the five-region map and tile art;
-    inheritances surface anywhere instead of in their canon regions.
+15. **Secret realms are natural wonders (C4, done 2026-11-01).** On the Five Regions map the twelve stand in their
+    canon regions; on generated maps Unciv scatters a few of them (naturalWonderCountMultiplier 0.3). Inheritances
+    still surface anywhere, not in their canon regions.
 
 16. **High immortals die young in autoplay (C5a).** Half the clans reach rank seven, but by turn 420 most of those
     immortals are gone (lifespan debt, unprepared tribulations, wars) and rank eight rarely lasts. Canon-like, but a
@@ -113,6 +114,13 @@ rest of the list is what a player or the next session should know before trustin
 18. **The AI reaches a Venerable late and rarely** (Phase D): in 8-game batches of 500–550 turns, one or two AI clans
     become Venerables (T342–T494) and one won Eternal Life (T373). The AI never queues the two wonders, so both are
     promotions (Ascend to Venerable, Seek Eternal Life) and the wonders only markers.
+19. **Late-game AI debt on wide maps** (Phase D): Unciv's AI keeps training soldiers while its stones per turn are
+    positive, up to five per city outside war [src ConstructionAutomation], and every rank they climb then raises
+    their upkeep without any decision of the AI. So the AI clans drift into the red late; on the wide Five Regions
+    map (eight majors, about four villages each) 32 of 48 clans spent 20+ turns in the red by T400, against 9 of 48 on
+    Qing Mao Mountain with the same eight majors by T300. The red is shallow and self-correcting (weaker units, the
+    Stone Shortage event); a human who keeps the army lean does not hit it. Fixed on the way: the map's riches and
+    the stability of wide clans.
 
 ## Not yet seen in a real game
 

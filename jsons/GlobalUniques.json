@@ -8,6 +8,7 @@
     "Rebel units may spawn <when below [-20] [Happiness]>",
     "[-3] units cost no maintenance <for [Major] Civilizations>",
     "[-20]% Strength <when below [0] [Gold]>",
+    "[-33]% unhappiness from the number of cities",
     "Triggers a [Beast Tide] event <upon turn start> <after turn number [20]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
     "Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
     "Triggers a [Beast Tide] event <upon turn start> <after turn number [45]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>",

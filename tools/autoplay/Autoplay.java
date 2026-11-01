@@ -229,6 +229,14 @@ public class Autoplay {
             rec.put("gold", c.getGold()); rec.put("gpt", Math.round(next.getGold()));
             Stats upkeep = c.getStats().getStatMapForNextTurn().get("Unit upkeep");
             rec.put("upkeep", upkeep == null ? 0 : Math.round(-upkeep.getGold()));
+            Map<String, Integer> goldBy = new LinkedHashMap<>();   // stones per turn by source (cities, upkeep, ...)
+            for (Map.Entry<String, Stats> e : c.getStats().getStatMapForNextTurn().entrySet())
+                if (Math.round(e.getValue().getGold()) != 0) goldBy.put(e.getKey(), Math.round(e.getValue().getGold()));
+            rec.put("goldBy", goldBy);
+            Map<String, Integer> happyBy = new LinkedHashMap<>();  // happiness by source (cities, luxuries, buildings, ...)
+            for (Map.Entry<String, Float> e : c.getStats().getHappinessBreakdown().entrySet())
+                if (Math.round(e.getValue()) != 0) happyBy.put(e.getKey(), Math.round(e.getValue()));
+            rec.put("happyBy", happyBy);
             rec.put("science", Math.round(next.getScience()));
             rec.put("happiness", c.getHappiness());
             rec.put("techs", c.getTech().getTechsResearched().size());

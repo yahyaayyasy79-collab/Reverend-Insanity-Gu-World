@@ -9,8 +9,8 @@ threshold if the trade economy collapses too fast. This file records the runs; `
 `tools/autoplay.py` compiles `tools/autoplay/Autoplay.java` against the Unciv 4.22.8 release jar and drives the
 engine's own simulation path [src `ConsoleLauncher.kt`, `Simulation.kt`]: every major civ is AI, a Spectator watches,
 `GameInfo.nextTurn` plays one round per step, and a snapshot is written after each round (one line per civ: stones,
-upkeep, strategic resources and deposits, buildings, units, Gu holders, hunger starts, deaths and recoveries, trades,
-wars). Setup: Small map, Prince, Standard speed, the four majors and three city-states, barbarians on, Strategic
+upkeep, stones per turn and happiness by source (`goldBy`, `happyBy`, since Phase D), strategic resources and
+deposits, buildings, units, Gu holders, hunger starts, deaths and recoveries, trades, wars). Setup: Small map, Prince, Standard speed, the four majors and three city-states, barbarians on, Strategic
 Balance on, 100 turns.
 
 Caveats: the engine's AI randomness is not tied to the map seed, so a seed does not reproduce a game; compare pooled
@@ -306,6 +306,25 @@ of 795); 41–45 different paths in a batch among the other 15%.
   stop at Jade Skin Gu. Every path except Moon and Strength is in the same place until it has its own Gu (decision
   B.b, next step).
 * **Hunger is lower** (King 0.53 against 0.96–1.29): fewer clans compete for moon orchids.
+
+## Phase D: the Five Regions economy (2026-11-01)
+
+Eight majors, Prince, seed 261, 6 games per batch (`--map "maps/Five Regions"`; Qing Mao Mountain with the same eight
+majors as the reference). Clans 20+ turns in the red / in the red at the end / mean stones per turn at the end:
+
+| Batch | Turns | Red 20+ | Red at end | Stones/turn |
+| --- | --- | --- | --- | --- |
+| Five Regions, start rings only | 400 | 42 / 48 | 14 | −12.6 |
+| Five Regions + riches | 400 | 32 / 48 | 12 | −10.9 |
+| Five Regions + riches | 280 | 18 / 48 | 14 | −5.9 |
+| Five Regions + riches + stability | 280 | 14 / 48 | 8 | −9.0 |
+| Qing Mao Mountain | 300 | 9 / 48 | 10 | −1.5 |
+| Qing Mao Mountain + stability | 300 | 10 / 48 | 5 | +1.3 |
+
+Stability (−33% unhappiness from villages, Tavern +2) raised the Five Regions population at T280 from 18 to 27; the
+extra people became production and soldiers, so stones per turn fell while fewer clans ended in the red. Sources at
+T280 (Five Regions): tiles +21, buildings +19, trade routes +16; unit upkeep −35, building upkeep −18, roads −11.
+Details and levers: BALANCE.md "The Five Regions economy".
 
 ## Re-run
 

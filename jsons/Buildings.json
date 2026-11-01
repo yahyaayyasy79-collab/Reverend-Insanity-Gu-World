@@ -96,7 +96,7 @@
     "requiredTech": "Wine Brewing",
     "cost": 60,
     "maintenance": 1,
-    "happiness": 1,
+    "happiness": 2,
     "uniques": [
       "Provides [1] [Wine]"
     ],

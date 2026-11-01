@@ -150,6 +150,62 @@ FIVE_REALMS = {  # realm: (region, column, row)
     "Dragon Whale Paradise": ("east", 56, 28), "Lang Ya Blessed Land": ("central", 25, 21), "River of Time": ("central", 35, 21)}
 
 
+# Each region's riches beyond the start rings (autoplay 6 × 400: with nothing but the start ring's spring, 42 of 48
+# clans spent 20+ turns in the red). Counts bring every region near Qing Mao Mountain's density (a spirit spring per
+# ~100 land tiles, jade per ~200); the Eastern Sea has 100 land tiles, the Southern Border is Qing Mao's own country.
+RICHES = {  # region: [(resource or improvement, count)]
+    "south": [("Spirit Spring", 6), ("Jade", 3), ("Wild Boar", 4), ("Moon Orchid", 2), ("Furs", 2),
+              ("Inheritance Site", 3), ("Beast Lair", 2)],
+    "central": [("Spirit Spring", 4), ("Jade", 2), ("Wild Boar", 2), ("Moon Orchid", 1), ("Inheritance Site", 2),
+                ("Beast Lair", 1)],
+    "north": [("Spirit Spring", 5), ("Jade", 3), ("Wild Boar", 3), ("Furs", 4), ("Inheritance Site", 2),
+              ("Beast Lair", 1)],
+    "west": [("Spirit Spring", 3), ("Jade", 3), ("Wild Boar", 1), ("Inheritance Site", 2), ("Beast Lair", 1)],
+    "east": [("Spirit Spring", 1), ("Jade", 1), ("Wild Boar", 2), ("Moon Orchid", 1), ("Inheritance Site", 1)],
+}
+IMPROVEMENT_SITES = {"Inheritance Site", "Beast Lair"}
+
+
+def scatter_riches(tiles, reg, wall, taken, starts):
+    rng = random.Random(23)
+    placed = list(taken)
+    cells = sorted(tiles)
+    rng.shuffle(cells)
+    for region, wants in RICHES.items():
+        for what, count in wants:
+            for q in cells:
+                if count == 0:
+                    break
+                t = tiles[q]
+                if reg[q] != region or q in wall or t[2] != "-" or t[4] != "-" or t[6] != "-" \
+                        or t[0] in ("Ocean", "Coast", "Mountain", "Lakes"):
+                    continue
+                if any(math.hypot(q[0] - a, q[1] - b) < 2.5 for a, b in placed):
+                    continue
+                if what == "Furs" and region == "north":
+                    t[0], t[1] = "Tundra", ["Forest"]
+                elif what == "Furs":
+                    t[1] = ["Jungle"]
+                elif what == "Jade":
+                    t[1] = ["Hill"]
+                elif what in ("Wild Boar", "Beast Lair"):
+                    t[1] = ["Jungle"] if "Jungle" in t[1] else ["Forest"]
+                elif what == "Spirit Spring":
+                    t[1] = [f for f in t[1] if f == "Hill"]
+                elif what == "Moon Orchid":
+                    t[1] = []
+                if t[0] == "Desert" and what not in ("Jade", "Inheritance Site"):
+                    t[0] = "Plains"
+                if t[0] == "Tundra" and what in ("Spirit Spring", "Moon Orchid"):
+                    t[0] = "Plains"
+                if what in IMPROVEMENT_SITES:
+                    t[4] = what
+                else:
+                    t[2], t[3] = what, (0 if what == "Furs" else 1 if what == "Spirit Spring" else 2)
+                placed.append(q)
+                count -= 1
+
+
 def region_of(c, r):
     dx, dy = (c - (FW - 1) / 2) / (FW / 2), (r - (FH - 1) / 2) / (FH / 2)
     if max(abs(dx), abs(dy)) < 0.42:
@@ -270,6 +326,11 @@ def five_regions() -> list[str]:
     for q in ((za[0] + 1, za[1]), (za[0], za[1] + 1)):
         if q in tiles and tiles[q][0] not in ("Ocean", "Coast"):
             tiles[q][2], tiles[q][3] = "Spirit Spring", 1
+    scatter_riches(tiles, reg, wall, taken, starts)
+    # the Yellow Dragon River along the Southern Border, north of the villages (Qing Mao Mountain has its tributary)
+    for c in range(FW):
+        if reg[(c, 29)] == "south" and (c, 29) not in wall and (c, 30) not in wall and tiles[(c, 29)][0] not in ("Mountain",):
+            tiles[(c, 29)][5] += "b"
     lines = [f"size\t{FW}\t{FH}"]
     for (c, r), (base, feats, res, amount, imp, riv, wonder) in sorted(tiles.items()):
         col, row = c - FW // 2, (FH - 1 - r) - FH // 2
