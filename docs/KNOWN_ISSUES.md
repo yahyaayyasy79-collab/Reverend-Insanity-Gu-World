@@ -153,4 +153,8 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Arc nations (C5c) | New game: pick the Heavenly Court, Huang Jin Family, Zombie Alliance or Fang Clan; leaders speak their own lines |
 | Fate Gu and the Fate War | As the Heavenly Court: `civ addtech "Heavenly Court" "Immortal Gu Recipes"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, build Fate Gu; as another clan capture that city: the Fate War popup; shatter it and the Qi Tides follow (`civ activatetrigger "Triggers a [Qi Tides] event"`) |
 | Immortal zombie | As the Zombie Alliance with an immortal: `unit remove` on it (or lose it in battle): an Immortal Zombie appears |
+| Path branches and halls | Policies screen: 47 path branches by era; adopt one, build its hall, train a Gu Master there: it starts as that path's Master |
+| Rank nine dread | With a Venerable alive (see above), the other clans show -10% strength; `civ activatetrigger "Triggers a [Venerable's Shadow] event"` |
+| Secret realms | Start a Medium or larger random map and explore; or the map editor: place a realm terrain, move a unit beside it |
+| Dream realm, Shadow Sect | `civ activatetrigger "Triggers a [Dream Realm] event"`, `civ activatetrigger "Triggers a [Shadow Sect Envoy] event"` |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

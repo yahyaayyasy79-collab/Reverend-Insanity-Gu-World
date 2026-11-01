@@ -718,3 +718,13 @@ def inheritance_icons():
     return [x for i in rows for x in (
         ("BuildingIcons", i["name"], inheritance(i["path"]), "black"),
         ("BuildingIcons", i["seal"], seal(i["path"]), "black"))]
+
+
+def realm_icons():
+    """The secret realms' blessings (data/secret_realms.csv): one design, each a promotion icon."""
+    import csv
+    from common import REPO_ROOT
+    from .realms import promotion_icon
+    with open(REPO_ROOT / "data" / "secret_realms.csv", newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    return [("UnitPromotionIcons", r["promotion"], (lambda n=r["promotion"]: promotion_icon(n)), "white") for r in rows]

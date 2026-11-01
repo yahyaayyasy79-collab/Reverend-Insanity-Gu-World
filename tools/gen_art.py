@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, arcart, characters, glyphs, glyphs2, pathart, render3d  # noqa: E402
+from art import anims, arcart, characters, glyphs, glyphs2, pathart, realms, render3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -86,7 +86,7 @@ def main(argv: list[str]) -> int:
     # the immortal tiers and moves (MOD_SPEC_2 C3/C5) overflowed Paths.png in turn: a third atlas, Arc.png
     import gen_paths
     arc_names = {m for p in gen_paths.PATHS for m in (p["immortal"], gen_paths.tier_name(p, 2), gen_paths.tier_name(p, 3))}
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons() + pathart.policy_icons():
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons() + pathart.policy_icons() + arcart.realm_icons():
         if (folder, name) in policy_icons:
             target = args.mod / "Images.Policies" / folder / f"{name}.png"
         elif (folder, name) in path_icons:
@@ -138,6 +138,10 @@ def main(argv: list[str]) -> int:
         for n, effect in enumerate(characters.ATTACKS.get(name, []), start=1):
             fx = render3d.render(effect(), **frame, shadow=False, layers=False, glow=1.2)
             written += save(fx["base"], units / f"{name}-attack-{n}.png")
+    # the secret realms' natural-wonder tiles for the default tileset and its fallback (MOD_SPEC_2 #13)
+    for name in realms.SCENES:
+        for tileset, im in realms.tile(name).items():
+            written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
     if args.sheet:
         contact_sheet(sheet, args.sheet)
     if not args.quiet:

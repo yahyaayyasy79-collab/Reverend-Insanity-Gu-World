@@ -303,6 +303,7 @@ GROTTO = {"name": "Grotto-Heaven Aperture", "uniques": [
 # kept on capture (Phase A2: conquest seizes the Gu), the Immortal Gu marker and its path's marker (dao marks,
 # tools/gen_paths.py). Never granted free (A3). Their completion rolls the refinement die (仙蛊成劫, R V5/54).
 IMMORTAL_GU = table("immortal_gu.csv")
+REALMS = table("secret_realms.csv")  # the secret realms (natural wonders, Terrains section below)
 IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes", "7": "Rank Seven Immortal Gu Recipes",
                        "8": "Rank Eight Immortal Gu Recipes"}
 IMMORTAL_GU_ESSENCE = {"6": GREEN, "7": RED, "8": WHITE, "9": APRICOT}
@@ -343,7 +344,10 @@ dump("ModOptions.json", {"isBaseRuleset": True,
                          # R5: the engine adds (share of techs known x 5.5)^2.8 x this to every city's strength [src
                          # CityCombatant.getCityStrength]; with a 15-tech tree the default 1.0 gave +118 by turn ~120 and
                          # no city was ever taken. 0.1 caps it at +12 (autoplay, docs/AUTOPLAY.md round 5).
-                         "constants": {"maxXPfromBarbarians": 90, "cityStrengthFromTechsFullMultiplier": 0.1}})
+                         "constants": {"maxXPfromBarbarians": 90, "cityStrengthFromTechsFullMultiplier": 0.1,
+                                       # MOD_SPEC_2 #13: random maps place only 1-5 natural wonders by default; the
+                                       # twelve secret realms want more (Small about 5, Huge about 12)
+                                       "naturalWonderCountMultiplier": 0.3, "naturalWonderCountAddedConstant": 1.0}})
 dump("Beliefs.json", [])
 dump("Religions.json", [])
 dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
@@ -410,7 +414,13 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     # C5c
     f"Triggers a [Fate War] event <upon conquering a city> <if [Fate Gu] is constructed> <if [Fate Seized] is not "
     f"constructed> <for [non-[{HC}]] Civilizations>",
-] + per_speed(lambda m: f"Triggers a [Venerable's Shadow] event <upon turn start> {VEN_ELSEWHERE} "
+] + per_speed(
+    # dream realms surface before the Fate War and burn the soul, but pour attainment into survivors (R V4/74-85; B4)
+    lambda m: f"Triggers a [Dream Realm] event <upon turn start> <starting from the [{E7}]> <if [Shattered Fate] is not "
+              f"constructed by anybody> <with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    # the Shadow Sect: Spectral Soul's split souls working to revive him (R V4/367)
+    lambda m: f"Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [{E6}]> "
+              f"<with [{chance(1, m)}]% chance> <for [Major] Civilizations>") + per_speed(lambda m: f"Triggers a [Venerable's Shadow] event <upon turn start> {VEN_ELSEWHERE} "
                         f"<with [{chance(4, m)}]% chance> <for [Major] Civilizations>") + per_speed(lambda m: f"Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> "
                         f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>")})
 
@@ -674,6 +684,7 @@ dump("UnitPromotions.json", [
     {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),
     {"name": "Venerable Killer Move", "uniques": ["[+100]% Strength"]},
+] + [{"name": r["promotion"], "uniques": [r["promotion_effect"]]} for r in REALMS] + [
     {"name": "Chaos Countdown", "uniques": ["Comment [When it runs out, a chaos calamity falls on the Venerable]"]},
 ])
 
@@ -904,6 +915,16 @@ dump("Events.json", [
     {"name": "Venerable Falls", "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable "
                                         "may rise anywhere; its true inheritance's seal lies in your capital.",
      "choices": [toll("Guard the true inheritance", [], "+0")]},
+    {"name": "Dream Realm", "text": "A dream realm has surfaced near your land: a dead man's dream, full of his dao. It burns "
+                                    "the soul, and pours attainment into whoever survives it.", "choices": [
+        toll("Enter the dream", ["[+50]% XP gained from combat <for [10] turns>", "[-10]% Strength <for [10] turns>"], "+50"),
+        toll("Leave it to fade", [], "+0")]},
+    {"name": "Shadow Sect Envoy", "text": "An envoy of the Shadow Sect offers essence for a favour no one may ever learn of.",
+     "choices": [
+        toll("Accept their help", [f"Instantly provides [30] [{GREEN}]",
+                                   "Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>"], "+0"),
+        toll("Turn them away", [], "+50"),
+        toll("Hunt the envoy", ["Unavailable <when below [100] [Gold]>", "Gain [-100] [Gold]", "[+15]% Strength <for [10] turns>"], "+0")]},
     {"name": "Venerable's Shadow", "text": "A Venerable walks the world. Its gaze has fallen on your clan; whole regions "
                                            "have vanished for less.", "choices": [
         toll("Send tribute", ["Unavailable <when below [150] [Gold]>", "Gain [-150] [Gold]"], "+50"),
@@ -1140,6 +1161,22 @@ ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))
        if t.get("type") != "NaturalWonder" and t["name"] != "Fallout"]
 for t in ter:
     t["uniques"] = [u for u in t.get("uniques", []) if "receive an extra [Sheep]" not in u]  # R3: no extra springs
+# the twelve secret realms of heaven and earth (MOD_SPEC_2 #13, data/secret_realms.csv) as natural wonders; each grants a
+# promotion to land units beside it, and the two hazardous ones hurt units that end their turn inside
+def realm(r):
+    t = {"name": r["name"], "type": "NaturalWonder", "occursOn": items(r["occurs_on"]), "turnsInto": r["turns_into"],
+         "impassable": r["impassable"] == "true", "unbuildable": True, "weight": 10,
+         "uniques": [f"Grants [{r['promotion']}] ([{r['comment']}]) to adjacent [{{Military}} {{Land}}] units for the rest of the game",
+                     "Tile provides yield without assigned population"]
+         + (["Must be adjacent to [6] [Water] tiles"] if r["turns_into"] == "Ocean" else ["Must be adjacent to [0] [Coast] tiles"])
+         + ([f"Units ending their turn on this terrain take [{r['hazard']}] damage"] if r["hazard"] else [])}
+    for kv in items(r["stats"]):
+        k, v = kv.split(":")
+        t[k] = int(v)
+    return t
+
+
+ter += [realm(r) for r in REALMS]
 dump("Terrains.json", ter)
 
 # ---------------- Improvements ----------------

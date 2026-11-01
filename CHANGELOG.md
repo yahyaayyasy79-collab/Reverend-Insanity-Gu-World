@@ -576,3 +576,12 @@
 * While a Venerable lives every other clan fights 10% weaker, loses 2 happiness and faces the **Venerable's Shadow**
   (tribute, hiding, or defiance); every clan loses Lifespan Gu; the Venerable's clan gains production and happiness.
 * Autoplay (4 × 300): 0 crashes; the AI adopts 24 different path branches across 16 clans.
+
+## Secret realms, dream realms, the Shadow Sect (2026-11-01)
+
+* **Twelve secret realms** as natural wonders (Dang Hun Mountain, Luo Po Valley, Reverse Flow River, River of Time,
+  Door of Life and Death, Book Mountain, Crazed Demon Cave, Dragon Whale Paradise, Tian Ti Mountain, Lang Ya, Imperial
+  Court and Hu Immortal Blessed Lands): yields, a lasting blessing for land units beside them, two that hurt units
+  inside. Random maps now place about five (Small) to twelve (Huge). Tiles drawn for HexaRealm and FantasyHex.
+* **Dream Realm** event (Rank Seven era on, until Fate Gu is shattered) and **Shadow Sect Envoy** event.
+* Autoplay (4 × 250, Medium maps): 0 crashes. Still not built: the five-region map with its region walls.

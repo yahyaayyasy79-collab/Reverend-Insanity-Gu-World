@@ -6,6 +6,8 @@
   ],
   "constants": {
     "maxXPfromBarbarians": 90,
-    "cityStrengthFromTechsFullMultiplier": 0.1
+    "cityStrengthFromTechsFullMultiplier": 0.1,
+    "naturalWonderCountMultiplier": 0.3,
+    "naturalWonderCountAddedConstant": 1.0
   }
 }

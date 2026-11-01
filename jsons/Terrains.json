@@ -487,5 +487,289 @@
         "link": "Promotion/Amphibious"
       }
     ]
+  },
+  {
+    "name": "Dang Hun Mountain",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Soul Tempered] ([soul shaken and steadied]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "science": 2,
+    "culture": 2,
+    "civilopediaText": [
+      {
+        "text": "Dang Hun Mountain (荡魂山), a secret realm of heaven and earth. A mountain that shakes the soul harder the higher one climbs; broken souls become Guts Gu. Units beside it are tempered: +15% battle XP."
+      }
+    ]
+  },
+  {
+    "name": "Luo Po Valley",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": false,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Soul Loosened] ([soul loosened and hardened]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles",
+      "Units ending their turn on this terrain take [15] damage"
+    ],
+    "science": 3,
+    "civilopediaText": [
+      {
+        "text": "Luo Po Valley (落魄谷), a secret realm of heaven and earth. A valley of soul-loosening fog and soul-cutting wind, one of the soul path's two holy lands. Units that end their turn inside take 15 damage; those that come out fight 10% harder."
+      }
+    ]
+  },
+  {
+    "name": "Reverse Flow River",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Reverse Flow Seal] ([attacks near it rebound]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "food": 2,
+    "gold": 2,
+    "civilopediaText": [
+      {
+        "text": "Reverse Flow River (逆流河), a secret realm of heaven and earth. A river where no Gu works and attacks rebound. Units beside it bear its seal: +15% defending."
+      }
+    ]
+  },
+  {
+    "name": "River of Time",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Time Touched] ([touched by the currents of time]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "science": 3,
+    "culture": 1,
+    "civilopediaText": [
+      {
+        "text": "River of Time (光阴长河), a secret realm of heaven and earth. Time-path currents where Red Lotus's stone lotus islands drift. Units beside it fight 10% harder."
+      }
+    ]
+  },
+  {
+    "name": "Door of Life and Death",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Plains",
+      "Tundra"
+    ],
+    "turnsInto": "Plains",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Life and Death Glimpse] ([has seen the door]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "culture": 3,
+    "civilopediaText": [
+      {
+        "text": "Door of Life and Death (生死门), a secret realm of heaven and earth. The door that draws the dead in; since Fate Gu's wound some escape as zombies. Units beside it heal 10 HP more."
+      }
+    ]
+  },
+  {
+    "name": "Book Mountain",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Ink Wisdom] ([read at the ink waterfall]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "science": 5,
+    "civilopediaText": [
+      {
+        "text": "Book Mountain (书山), a secret realm of heaven and earth. A mountain of books with an ink waterfall and a literature spring. +5 science; units beside it gain 20% more XP."
+      }
+    ]
+  },
+  {
+    "name": "Crazed Demon Cave",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Plains",
+      "Grassland"
+    ],
+    "turnsInto": "Plains",
+    "impassable": false,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Demon Sound Steeled] ([survived the demonic sound]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles",
+      "Units ending their turn on this terrain take [20] damage"
+    ],
+    "production": 3,
+    "civilopediaText": [
+      {
+        "text": "Crazed Demon Cave (疯魔窟), a secret realm of heaven and earth. A cave whose demonic sound drives creatures mad; Limitless's inheritance lies within. Units that end their turn inside take 20 damage; survivors attack 15% harder."
+      }
+    ]
+  },
+  {
+    "name": "Dragon Whale Paradise",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Ocean"
+    ],
+    "turnsInto": "Ocean",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Whale Blessing] ([blessed by the azure dragon whale]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [6] [Water] tiles"
+    ],
+    "food": 3,
+    "gold": 3,
+    "civilopediaText": [
+      {
+        "text": "Dragon Whale Paradise (龙鲸乐土), a secret realm of heaven and earth. Paradise Earth's Eastern Sea inheritance inside the azure dragon whale. Units beside it heal 10 HP more."
+      }
+    ]
+  },
+  {
+    "name": "Tian Ti Mountain",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Heavenly Stair] ([climbed the ruined stair]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "culture": 3,
+    "gold": 2,
+    "civilopediaText": [
+      {
+        "text": "Tian Ti Mountain (天梯山), a secret realm of heaven and earth. The ruined stair to the Heavenly Court; fighting on it affronts the Court. Units beside it see 1 tile farther."
+      }
+    ]
+  },
+  {
+    "name": "Lang Ya Blessed Land",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Lang Ya Craft] ([refined in Lang Ya]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "production": 3,
+    "science": 2,
+    "civilopediaText": [
+      {
+        "text": "Lang Ya Blessed Land (琅琊福地), a secret realm of heaven and earth. The hairy men's blessed land, where refinement succeeds more often and the land spirit trades Gu. Units beside it fight 10% harder."
+      }
+    ]
+  },
+  {
+    "name": "Imperial Court Blessed Land",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Imperial Shelter] ([sheltered from the blizzard]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "food": 3,
+    "gold": 3,
+    "civilopediaText": [
+      {
+        "text": "Imperial Court Blessed Land (王庭福地), a secret realm of heaven and earth. Opens every ten years to the contest's winner and shelters from the killing blizzard. Units beside it defend 15% harder."
+      }
+    ]
+  },
+  {
+    "name": "Hu Immortal Blessed Land",
+    "type": "NaturalWonder",
+    "occursOn": [
+      "Grassland",
+      "Plains"
+    ],
+    "turnsInto": "Grassland",
+    "impassable": true,
+    "unbuildable": true,
+    "weight": 10,
+    "uniques": [
+      "Grants [Fox Spirit Favor] ([favoured by the land spirit]) to adjacent [{Military} {Land}] units for the rest of the game",
+      "Tile provides yield without assigned population",
+      "Must be adjacent to [0] [Coast] tiles"
+    ],
+    "happiness": 3,
+    "civilopediaText": [
+      {
+        "text": "Hu Immortal Blessed Land (狐仙福地), a secret realm of heaven and earth. A rank-six aperture on Tian Ti Mountain, won by the first to climb Dang Hun Mountain. +3 happiness; units beside it move 1 tile farther."
+      }
+    ]
   }
 ]

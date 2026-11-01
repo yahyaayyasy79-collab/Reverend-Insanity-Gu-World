@@ -988,6 +988,55 @@
     ]
   },
   {
+    "name": "Dream Realm",
+    "text": "A dream realm has surfaced near your land: a dead man's dream, full of his dao. It burns the soul, and pours attainment into whoever survives it.",
+    "choices": [
+      {
+        "text": "Enter the dream",
+        "uniques": [
+          "[+50]% XP gained from combat <for [10] turns>",
+          "[-10]% Strength <for [10] turns>",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Leave it to fade",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shadow Sect Envoy",
+    "text": "An envoy of the Shadow Sect offers essence for a favour no one may ever learn of.",
+    "choices": [
+      {
+        "text": "Accept their help",
+        "uniques": [
+          "Instantly provides [30] [Green Grape Immortal Essence]",
+          "Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Turn them away",
+        "uniques": [
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Hunt the envoy",
+        "uniques": [
+          "Unavailable <when below [100] [Gold]>",
+          "Gain [-100] [Gold]",
+          "[+15]% Strength <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Venerable's Shadow",
     "text": "A Venerable walks the world. Its gaze has fallen on your clan; whole regions have vanished for less.",
     "choices": [

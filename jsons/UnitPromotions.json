@@ -7506,6 +7506,138 @@
     ]
   },
   {
+    "name": "Soul Tempered",
+    "uniques": [
+      "[+15]% XP gained from combat"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Dang Hun Mountain."
+      }
+    ]
+  },
+  {
+    "name": "Soul Loosened",
+    "uniques": [
+      "[+10]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Luo Po Valley."
+      }
+    ]
+  },
+  {
+    "name": "Reverse Flow Seal",
+    "uniques": [
+      "[+15]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Reverse Flow River."
+      }
+    ]
+  },
+  {
+    "name": "Time Touched",
+    "uniques": [
+      "[+10]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside River of Time."
+      }
+    ]
+  },
+  {
+    "name": "Life and Death Glimpse",
+    "uniques": [
+      "[+10] HP when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Door of Life and Death."
+      }
+    ]
+  },
+  {
+    "name": "Ink Wisdom",
+    "uniques": [
+      "[+20]% XP gained from combat"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Book Mountain."
+      }
+    ]
+  },
+  {
+    "name": "Demon Sound Steeled",
+    "uniques": [
+      "[+15]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Crazed Demon Cave."
+      }
+    ]
+  },
+  {
+    "name": "Whale Blessing",
+    "uniques": [
+      "[+10] HP when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Dragon Whale Paradise."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Stair",
+    "uniques": [
+      "[1] Sight"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Tian Ti Mountain."
+      }
+    ]
+  },
+  {
+    "name": "Lang Ya Craft",
+    "uniques": [
+      "[+10]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Lang Ya Blessed Land."
+      }
+    ]
+  },
+  {
+    "name": "Imperial Shelter",
+    "uniques": [
+      "[+15]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Imperial Court Blessed Land."
+      }
+    ]
+  },
+  {
+    "name": "Fox Spirit Favor",
+    "uniques": [
+      "[1] Movement"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Granted for the rest of the game to land units that stood beside Hu Immortal Blessed Land."
+      }
+    ]
+  },
+  {
     "name": "Chaos Countdown",
     "uniques": [
       "Comment [When it runs out, a chaos calamity falls on the Venerable]"

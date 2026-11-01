@@ -81,6 +81,8 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 |---|---|---|---|
 | ModOptions | constants.maxXPfromBarbarians | 90 | tools/gen_ruleset.py `ModOptions / Globals` |
 | ModOptions | constants.cityStrengthFromTechsFullMultiplier | 0.1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| ModOptions | constants.naturalWonderCountMultiplier | 0.3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| ModOptions | constants.naturalWonderCountAddedConstant | 1.0 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### GlobalUniques.json
 
@@ -174,6 +176,14 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <if [Venerable Ascension] is constructed by anybody> <for [Major] Civilizations>` | 1, 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+20]% [Production] [in all cities] <if [Venerable Ascension] is constructed>` | +20 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+3 Happiness] <if [Venerable Ascension] is constructed>` | +3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 6 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 4 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -550,6 +560,18 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Advance to Rank Eight | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
 | Venerable Killer Move | `[+100]% Strength` | +100 | tools/gen_ruleset.py `Promotions` |
+| Soul Tempered | `[+15]% XP gained from combat` | +15 | tools/gen_ruleset.py `Promotions` |
+| Soul Loosened | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
+| Reverse Flow Seal | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Time Touched | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
+| Life and Death Glimpse | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
+| Ink Wisdom | `[+20]% XP gained from combat` | +20 | tools/gen_ruleset.py `Promotions` |
+| Demon Sound Steeled | `[+15]% Strength <when attacking>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Whale Blessing | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Stair | `[1] Sight` | 1 | tools/gen_ruleset.py `Promotions` |
+| Lang Ya Craft | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
+| Imperial Shelter | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Fox Spirit Favor | `[1] Movement` | 1 | tools/gen_ruleset.py `Promotions` |
 
 ### Events.json
 
@@ -864,6 +886,18 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven's Will › Defy heaven | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Venerable Falls › Guard the true inheritance | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Dream Realm › Enter the dream | `[+50]% XP gained from combat <for [10] turns>` | +50, 10 | tools/gen_ruleset.py `Events` |
+| Dream Realm › Enter the dream | `[-10]% Strength <for [10] turns>` | -10, 10 | tools/gen_ruleset.py `Events` |
+| Dream Realm › Enter the dream | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Dream Realm › Leave it to fade | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Accept their help | `Instantly provides [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Accept their help | `Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Accept their help | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Turn them away | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Hunt the envoy | `Unavailable <when below [100] [Gold]>` | 100 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Hunt the envoy | `Gain [-100] [Gold]` | -100 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Hunt the envoy | `[+15]% Strength <for [10] turns>` | +15, 10 | tools/gen_ruleset.py `Events` |
+| Shadow Sect Envoy › Hunt the envoy | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Venerable's Shadow › Send tribute | `Unavailable <when below [150] [Gold]>` | 150 | tools/gen_ruleset.py `Events` |
 | Venerable's Shadow › Send tribute | `Gain [-150] [Gold]` | -150 | tools/gen_ruleset.py `Events` |
 | Venerable's Shadow › Send tribute | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
@@ -2199,6 +2233,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2023 numbers listed.
+2057 numbers listed.
 
 <!-- inventory:end -->

@@ -3515,3 +3515,245 @@ Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension
 Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```
+
+
+## Secret realms, dream realms, the Shadow Sect: (built 2026-11-01)
+
+* **Twelve secret realms** (data/secret_realms.csv; the "Secret realms and landmarks" rows above) as natural wonders.
+  Without the five-region map they appear on random maps: ModOptions raise the count (`naturalWonderCountMultiplier`
+  0.3, `naturalWonderCountAddedConstant` 1: about five on a Small map, twelve on a Huge one). Each yields stats without
+  a worker and grants its blessing for the rest of the game to land military units beside it (+XP, +strength,
+  +defence, healing, sight or movement); Luo Po Valley and Crazed Demon Cave can be entered and hurt units that end
+  their turn inside (15 and 20). Tiles drawn for the default tileset (HexaRealm, 64x56) and its fallback (FantasyHex).
+  The five-region map and its region walls (T3) are still not built.
+* **Dream realms** (B4: they surface before the Fate War, from the Rank Seven era on): a civ-level event, not the
+  camp the plan proposed (Phase A7's camp test showed spawning follows the camp marker, and a dream camp would only
+  breed beasts): enter the dream (+50% battle XP and −10% strength for 10 turns) or let it fade.
+* **Shadow Sect Envoy** (R V4/367): essence for a secret favour; a righteous clan that accepts may be exposed
+  (Collusion Exposed), or the clan hunts the envoy.
+
+Exact uniques (written by tools/lore_blocks.py from jsons/):
+
+**Dang Hun Mountain** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "science": 2, "culture": 2, "civilopediaText": [{"text": "Dang Hun Mountain (\u8361\u9b42\u5c71), a secret realm of heaven and earth. A mountain that shakes the soul harder the higher one climbs; broken souls become Guts Gu. Units beside it are tempered: +15% battle XP."}]})
+
+```
+Grants [Soul Tempered] ([soul shaken and steadied]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Luo Po Valley** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": false, "unbuildable": true, "weight": 10, "science": 3, "civilopediaText": [{"text": "Luo Po Valley (\u843d\u9b44\u8c37), a secret realm of heaven and earth. A valley of soul-loosening fog and soul-cutting wind, one of the soul path's two holy lands. Units that end their turn inside take 15 damage; those that come out fight 10% harder."}]})
+
+```
+Grants [Soul Loosened] ([soul loosened and hardened]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+Units ending their turn on this terrain take [15] damage
+```
+
+**Reverse Flow River** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "food": 2, "gold": 2, "civilopediaText": [{"text": "Reverse Flow River (\u9006\u6d41\u6cb3), a secret realm of heaven and earth. A river where no Gu works and attacks rebound. Units beside it bear its seal: +15% defending."}]})
+
+```
+Grants [Reverse Flow Seal] ([attacks near it rebound]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**River of Time** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "science": 3, "culture": 1, "civilopediaText": [{"text": "River of Time (\u5149\u9634\u957f\u6cb3), a secret realm of heaven and earth. Time-path currents where Red Lotus's stone lotus islands drift. Units beside it fight 10% harder."}]})
+
+```
+Grants [Time Touched] ([touched by the currents of time]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Door of Life and Death** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Plains", "Tundra"], "turnsInto": "Plains", "impassable": true, "unbuildable": true, "weight": 10, "culture": 3, "civilopediaText": [{"text": "Door of Life and Death (\u751f\u6b7b\u95e8), a secret realm of heaven and earth. The door that draws the dead in; since Fate Gu's wound some escape as zombies. Units beside it heal 10 HP more."}]})
+
+```
+Grants [Life and Death Glimpse] ([has seen the door]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Book Mountain** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "science": 5, "civilopediaText": [{"text": "Book Mountain (\u4e66\u5c71), a secret realm of heaven and earth. A mountain of books with an ink waterfall and a literature spring. +5 science; units beside it gain 20% more XP."}]})
+
+```
+Grants [Ink Wisdom] ([read at the ink waterfall]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Crazed Demon Cave** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Plains", "Grassland"], "turnsInto": "Plains", "impassable": false, "unbuildable": true, "weight": 10, "production": 3, "civilopediaText": [{"text": "Crazed Demon Cave (\u75af\u9b54\u7a9f), a secret realm of heaven and earth. A cave whose demonic sound drives creatures mad; Limitless's inheritance lies within. Units that end their turn inside take 20 damage; survivors attack 15% harder."}]})
+
+```
+Grants [Demon Sound Steeled] ([survived the demonic sound]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+Units ending their turn on this terrain take [20] damage
+```
+
+**Dragon Whale Paradise** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Ocean"], "turnsInto": "Ocean", "impassable": true, "unbuildable": true, "weight": 10, "food": 3, "gold": 3, "civilopediaText": [{"text": "Dragon Whale Paradise (\u9f99\u9cb8\u4e50\u571f), a secret realm of heaven and earth. Paradise Earth's Eastern Sea inheritance inside the azure dragon whale. Units beside it heal 10 HP more."}]})
+
+```
+Grants [Whale Blessing] ([blessed by the azure dragon whale]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [6] [Water] tiles
+```
+
+**Tian Ti Mountain** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "culture": 3, "gold": 2, "civilopediaText": [{"text": "Tian Ti Mountain (\u5929\u68af\u5c71), a secret realm of heaven and earth. The ruined stair to the Heavenly Court; fighting on it affronts the Court. Units beside it see 1 tile farther."}]})
+
+```
+Grants [Heavenly Stair] ([climbed the ruined stair]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Lang Ya Blessed Land** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "production": 3, "science": 2, "civilopediaText": [{"text": "Lang Ya Blessed Land (\u7405\u740a\u798f\u5730), a secret realm of heaven and earth. The hairy men's blessed land, where refinement succeeds more often and the land spirit trades Gu. Units beside it fight 10% harder."}]})
+
+```
+Grants [Lang Ya Craft] ([refined in Lang Ya]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Imperial Court Blessed Land** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "food": 3, "gold": 3, "civilopediaText": [{"text": "Imperial Court Blessed Land (\u738b\u5ead\u798f\u5730), a secret realm of heaven and earth. Opens every ten years to the contest's winner and shelters from the killing blizzard. Units beside it defend 15% harder."}]})
+
+```
+Grants [Imperial Shelter] ([sheltered from the blizzard]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Hu Immortal Blessed Land** (Terrains.json; {"type": "NaturalWonder", "occursOn": ["Grassland", "Plains"], "turnsInto": "Grassland", "impassable": true, "unbuildable": true, "weight": 10, "happiness": 3, "civilopediaText": [{"text": "Hu Immortal Blessed Land (\u72d0\u4ed9\u798f\u5730), a secret realm of heaven and earth. A rank-six aperture on Tian Ti Mountain, won by the first to climb Dang Hun Mountain. +3 happiness; units beside it move 1 tile farther."}]})
+
+```
+Grants [Fox Spirit Favor] ([favoured by the land spirit]) to adjacent [{Military} {Land}] units for the rest of the game
+Tile provides yield without assigned population
+Must be adjacent to [0] [Coast] tiles
+```
+
+**Soul Tempered** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Dang Hun Mountain."}]})
+
+```
+[+15]% XP gained from combat
+```
+
+**Soul Loosened** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Luo Po Valley."}]})
+
+```
+[+10]% Strength
+```
+
+**Reverse Flow Seal** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Reverse Flow River."}]})
+
+```
+[+15]% Strength <when defending>
+```
+
+**Time Touched** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside River of Time."}]})
+
+```
+[+10]% Strength
+```
+
+**Life and Death Glimpse** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Door of Life and Death."}]})
+
+```
+[+10] HP when healing
+```
+
+**Ink Wisdom** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Book Mountain."}]})
+
+```
+[+20]% XP gained from combat
+```
+
+**Demon Sound Steeled** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Crazed Demon Cave."}]})
+
+```
+[+15]% Strength <when attacking>
+```
+
+**Whale Blessing** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Dragon Whale Paradise."}]})
+
+```
+[+10] HP when healing
+```
+
+**Heavenly Stair** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Tian Ti Mountain."}]})
+
+```
+[1] Sight
+```
+
+**Lang Ya Craft** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Lang Ya Blessed Land."}]})
+
+```
+[+10]% Strength
+```
+
+**Imperial Shelter** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Imperial Court Blessed Land."}]})
+
+```
+[+15]% Strength <when defending>
+```
+
+**Fox Spirit Favor** (UnitPromotions.json; {"civilopediaText": [{"text": "Granted for the rest of the game to land units that stood beside Hu Immortal Blessed Land."}]})
+
+```
+[1] Movement
+```
+
+**Dream Realm** (popup)
+
+* Enter the dream
+
+```
+[+50]% XP gained from combat <for [10] turns>
+[-10]% Strength <for [10] turns>
+[+50]% weight to this choice for AI decisions
+```
+
+* Leave it to fade
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+**Shadow Sect Envoy** (popup)
+
+* Accept their help
+
+```
+Instantly provides [30] [Green Grape Immortal Essence]
+Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>
+[+0]% weight to this choice for AI decisions
+```
+
+* Turn them away
+
+```
+[+50]% weight to this choice for AI decisions
+```
+
+* Hunt the envoy
+
+```
+Unavailable <when below [100] [Gold]>
+Gain [-100] [Gold]
+[+15]% Strength <for [10] turns>
+[+0]% weight to this choice for AI decisions
+```
+
+**GlobalUniques**
+
+```
+Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+```
