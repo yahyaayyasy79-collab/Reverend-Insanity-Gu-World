@@ -1,0 +1,1030 @@
+[
+  {
+    "name": "Gu World: Power Scaling",
+    "civilopediaText": [
+      {
+        "text": "The five layers of power",
+        "header": 2
+      },
+      {
+        "text": "1. Rank. Base strength: Rank One 8, Rank Two 14, Rank Three 22, Rank Four 32, Rank Five 44, Rank Six 60, Rank Seven 85, Rank Eight 115, the Venerable 280. Clan Masters of a rank have the same strength."
+      },
+      {
+        "text": "2. Path attainment (comprehension). Four tiers stack: Master +10% at any rank, Grandmaster +15% from rank three, Great Grandmaster +20% from rank six, Supreme Grandmaster +25% from rank eight: +70% at the top. Each tier opens a new kind of power: the Master the path's hit on every attack it makes, the Grandmaster a second effect and the mortal killer move, the Great Grandmaster a domain or a new art and the immortal killer move, the Supreme Grandmaster the path's peak."
+      },
+      {
+        "text": "3. Dao marks, the quantity of dao. Tiers I to V give +5%, +10%, +15%, +20% and +10 HP healing, +30% and +15 HP healing. Every tier also raises the path's hit: extra damage 4/5/6/8/10/12, status turns 2/2/2/3/3/4, healing 5/6/8/10/12/15, XP 2/3/4/5/6/8, stolen stones 10/15/20/25/30/40%, movement 1/1/1/1/2/2 (no marks, then I to V; a path may multiply them). The Master's promotion lists what each tier adds."
+      },
+      {
+        "text": "Dao marks grow one tier every 20 turns on Standard for a path Master of rank three or more; an immortal also gains one for every immortal it kills and every heavenly tribulation it survives. Mortals stop at tier II. Rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+      },
+      {
+        "text": "4. Gu. Each path's Gu comes with its Master. Every immortal Gu of your own path that your clan owns adds 5% strength; one of a strongly clashing path takes 5% away."
+      },
+      {
+        "text": "5. Conflicts. A second path whose dao marks clash with the first costs 5% to 25% strength."
+      },
+      {
+        "text": "Killer moves",
+        "header": 3
+      },
+      {
+        "text": "A unit-action button, so only you use them: for one turn the path family's burst plus the path's hit at full power (twice that for the immortal move). The mortal move costs 15 stones, the immortal move 5 green grape essence."
+      },
+      {
+        "text": "Example",
+        "header": 3
+      },
+      {
+        "text": "A Rank Six fire-path Great Grandmaster with Dao Marks III: strength 60, +45% from attainment and +15% from dao marks. Each attack inflicts Burning for 3 turns; each attack deals 6 extra damage; domain: enemies beside it fight 10% weaker."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Body and Beast Paths",
+    "civilopediaText": [
+      {
+        "text": "Strength path (力道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: no penalty for wounds."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Guard Broken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack takes 1 movement from the target. Killer move Self-Reliance: +25% Strength; each attack inflicts Guard Broken for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Myriad Self: +50% Strength, heal 30 HP; each attack inflicts Guard Broken for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: 1 more attack per turn."
+      },
+      {
+        "text": "Transformation path (变化道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: double movement in forest."
+      },
+      {
+        "text": "Master, +10%: each attack deals 4 extra damage (dao marks I-V: 5/6/8/10/12)."
+      },
+      {
+        "text": "Grandmaster, +15%: +1 movement. Killer move Flying Bear Change: +25% Strength; each attack deals 12 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: can move after attacking. Immortal move Ancient Sword Dragon: +50% Strength, heal 30 HP; each attack deals 24 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: double movement in jungle; double movement in hills; +20% strength."
+      },
+      {
+        "text": "Bone path (骨道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +20% strength when defending."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Bleeding for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: whoever fights it takes 6 damage. Killer move Bone Spear: +25% Strength; each attack inflicts Bleeding for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Bone Spike Forest: +50% Strength, heal 30 HP; each attack inflicts Bleeding for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +40% strength when defending."
+      },
+      {
+        "text": "Blood path (血道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: heals 20 HP per kill."
+      },
+      {
+        "text": "Master, +10%: heals 8 HP with each attack (dao marks I-V: 9/12/15/18/22)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack inflicts Bleeding for 2 turns. Killer move Blood Skull: +25% Strength; heals 22 HP with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: +20% strength below 50 HP. Immortal move Blood Deity: +50% Strength, heal 30 HP; heals 44 HP with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: heals 40 HP per kill."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Edge and War Paths",
+    "civilopediaText": [
+      {
+        "text": "Sword path (剑道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +25% strength when attacking."
+      },
+      {
+        "text": "Master, +10%: each attack deals 4 extra damage (dao marks I-V: 5/6/8/10/12)."
+      },
+      {
+        "text": "Grandmaster, +15%: strikes first from range at 25% strength. Killer move Sword Escape: +40% Strength when attacking; each attack deals 12 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Five Finger Fist Heart Sword: +80% Strength when attacking; each attack deals 24 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +50% strength when attacking."
+      },
+      {
+        "text": "Blade path (刀道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: flanking bonus +50%."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Bleeding for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when attacking. Killer move Edge: +40% Strength when attacking; each attack inflicts Bleeding for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: heals 15 HP per kill. Immortal move Autumn Blade Sweep: +80% Strength when attacking; each attack inflicts Bleeding for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: flanking bonus +100%."
+      },
+      {
+        "text": "Metal path (金道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +30% strength against villages."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Guard Broken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +20% strength when defending. Killer move Iron Rain: +40% Strength when attacking; each attack inflicts Guard Broken for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: destroys improvements when attacking. Immortal move City-Crushing Hammer: +80% Strength when attacking; each attack inflicts Guard Broken for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +60% strength against villages."
+      },
+      {
+        "text": "Weapon path (兵道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +20% strength beside a soldier."
+      },
+      {
+        "text": "Master, +10%: each attack deals 3 extra damage (dao marks I-V: 4/4/6/8/9)."
+      },
+      {
+        "text": "Grandmaster, +15%: strikes first from range at 25% strength. Killer move Weapon Array: +40% Strength when attacking; each attack deals 9 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 1-tile radius fight 15% harder. Immortal move Hundred Weapons: +80% Strength when attacking; each attack deals 18 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +40% strength beside a soldier."
+      },
+      {
+        "text": "Killing path (杀道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: 1 movement per kill."
+      },
+      {
+        "text": "Master, +10%: each attack deals 5 extra damage (dao marks I-V: 6/8/10/12/15)."
+      },
+      {
+        "text": "Grandmaster, +15%: heals 15 HP per kill. Killer move Killing Intent: +40% Strength when attacking; each attack deals 15 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Kill: +80% Strength when attacking; each attack deals 30 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: 2 movement per kill."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Five Phases and Weather Paths",
+    "civilopediaText": [
+      {
+        "text": "Fire path (炎道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: destroys improvements when attacking."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Burning for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack deals 6 extra damage. Killer move Five-Finger Flame Chain: +20% Strength, 10 extra damage to the target; each attack inflicts Burning for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Nirvana Fire: +40% Strength, 25 extra damage; each attack inflicts Burning for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: each attack deals 12 extra damage."
+      },
+      {
+        "text": "Water path (水道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: walks on water without embarking."
+      },
+      {
+        "text": "Master, +10%: each attack takes 1 movement from the target (dao marks I-V: 1/1/1/2/2)."
+      },
+      {
+        "text": "Grandmaster, +15%: heals 10 HP with each attack. Killer move Stream Surge: +20% Strength, 10 extra damage to the target; each attack takes 2 movement from the target."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: units beside it heal 10 HP more. Immortal move Worldly Wave Trace: +40% Strength, 25 extra damage; each attack takes 4 movement from the target."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: each attack takes 2 movement from the target."
+      },
+      {
+        "text": "Wood path (木道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +15 HP when healing."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Entangled for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: heals 10 HP with each attack. Killer move Rooted Vigor: +20% Strength, 10 extra damage to the target; each attack inflicts Entangled for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: units beside it heal 10 HP more. Immortal move Verdant Renewal: +40% Strength, 25 extra damage; each attack inflicts Entangled for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +30 HP when healing."
+      },
+      {
+        "text": "Earth path (土道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +25% strength on hills."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Weighted for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when defending. Killer move Nine-Ren Mountain: +20% Strength, 10 extra damage to the target; each attack inflicts Weighted for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 1-tile radius fight 15% harder. Immortal move Earthen Bulwark: +40% Strength, 25 extra damage; each attack inflicts Weighted for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +50% strength on hills."
+      },
+      {
+        "text": "Wind path (风道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +1 movement."
+      },
+      {
+        "text": "Master, +10%: gains 1 movement with each attack (dao marks I-V: 1/1/1/2/2)."
+      },
+      {
+        "text": "Grandmaster, +15%: can move after attacking. Killer move Gale Step: +20% Strength, 10 extra damage to the target; gains 2 movement with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 1-tile radius fight 10% harder. Immortal move Wind-Rolled Dragon Whip: +40% Strength, 25 extra damage; gains 4 movement with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +2 movement."
+      },
+      {
+        "text": "Cloud path (云道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: ignores terrain cost."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Blinded for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +20% strength when defending. Killer move Cloud Stride: +20% Strength, 10 extra damage to the target; each attack inflicts Blinded for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Rising Azure Cloud: +40% Strength, 25 extra damage; each attack inflicts Blinded for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +1 movement; ignores zones of control."
+      },
+      {
+        "text": "Ice Snow path (冰雪道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: each blow, attacking or defending, takes 1 movement from the target."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Frozen for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when defending. Killer move Frost Bind: +20% Strength, 10 extra damage to the target; each attack inflicts Frozen for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Frozen Domain: +40% Strength, 25 extra damage; each attack inflicts Frozen for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: each attack takes 2 movement from the target."
+      },
+      {
+        "text": "Lightning path (雷道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +30% strength with more than 1 movement left."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Shocked for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +1 movement. Killer move Lightning Wings: +20% Strength, 10 extra damage to the target; each attack inflicts Shocked for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: can move after attacking. Immortal move Thunder Judgement: +40% Strength, 25 extra damage; each attack inflicts Shocked for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +60% strength with more than 1 movement left."
+      },
+      {
+        "text": "Poison path (毒道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: each blow, attacking or defending, inflicts Poisoned for 3 turns."
+      },
+      {
+        "text": "Master, +10%: each attack deals 5 extra damage (dao marks I-V: 6/8/10/12/15)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack inflicts Guard Broken for 2 turns. Killer move Bee Net Sting: +20% Strength, 10 extra damage to the target; each attack deals 15 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Heart of Venom: +40% Strength, 25 extra damage; each attack deals 30 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: each attack inflicts Poisoned for 6 turns."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Sky and Shade Paths",
+    "civilopediaText": [
+      {
+        "text": "Light path (光道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: can move after attacking."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Blinded for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +2 sight. Killer move Glare: +2 movement now, +20% Strength when attacking; each attack inflicts Blinded for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: strikes first from range at 30% strength. Immortal move Saw-Wheel Light: +3 movement now, +40% Strength when attacking; each attack inflicts Blinded for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: 1 more attack per turn."
+      },
+      {
+        "text": "Dark path (暗道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: invisible to others."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Shaken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack takes 1 movement from the target. Killer move Shroud: +2 movement now, +20% Strength when attacking; each attack inflicts Shaken for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Dark Limit: +3 movement now, +40% Strength when attacking; each attack inflicts Shaken for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +40% strength when attacking."
+      },
+      {
+        "text": "Shadow path (影道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +30% strength against wounded units."
+      },
+      {
+        "text": "Master, +10%: each attack deals 4 extra damage (dao marks I-V: 5/6/8/10/12)."
+      },
+      {
+        "text": "Grandmaster, +15%: can move after attacking. Killer move Shadow Step: +2 movement now, +20% Strength when attacking; each attack deals 12 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: invisible to others. Immortal move Shadow Severance: +3 movement now, +40% Strength when attacking; each attack deals 24 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +60% strength against wounded units."
+      },
+      {
+        "text": "Star path (星道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +2 sight."
+      },
+      {
+        "text": "Master, +10%: each attack deals 3 extra damage (dao marks I-V: 4/4/6/8/9)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack inflicts Weighted for 2 turns. Killer move Star Snake Rope: +2 movement now, +20% Strength when attacking; each attack deals 9 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 2-tile radius fight 10% harder. Immortal move Nebula Millstone: +3 movement now, +40% Strength when attacking; each attack deals 18 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +4 sight."
+      },
+      {
+        "text": "Moon path (月道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: strikes first from range at 40% strength."
+      },
+      {
+        "text": "Master, +10%: each attack deals 4 extra damage (dao marks I-V: 5/6/8/10/12)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when attacking. Killer move Crescent Moon: +2 movement now, +20% Strength when attacking; each attack deals 12 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Peerless Crescent Moon Slash: +3 movement now, +40% Strength when attacking; each attack deals 24 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: 1 more attack per turn."
+      },
+      {
+        "text": "Sound path (音道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: domain: enemies beside it fight 10% weaker."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Dazed for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack takes 1 movement from the target. Killer move Qin Strike: +2 movement now, +20% Strength when attacking; each attack inflicts Dazed for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: strikes first from range at 25% strength. Immortal move Silence Beats Sound: +3 movement now, +40% Strength when attacking; each attack inflicts Dazed for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: domain: enemies beside it fight 20% weaker."
+      },
+      {
+        "text": "Illusion path (幻道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: slips away from melee."
+      },
+      {
+        "text": "Master, +10%: each attack takes 1 movement from the target (dao marks I-V: 1/1/1/2/2)."
+      },
+      {
+        "text": "Grandmaster, +15%: +25% strength when defending. Killer move Mirage: +2 movement now, +20% Strength when attacking; each attack takes 2 movement from the target."
+      },
+      {
+        "text": "Great Grandmaster, +20%: invisible to others. Immortal move Illusory Garden: +3 movement now, +40% Strength when attacking; each attack takes 4 movement from the target."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: whoever fights it suffers Dazed for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Mind and Spirit Paths",
+    "civilopediaText": [
+      {
+        "text": "Wisdom path (智道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: sees invisible units."
+      },
+      {
+        "text": "Master, +10%: gains 3 XP with each attack (dao marks I-V: 4/6/8/9/12)."
+      },
+      {
+        "text": "Grandmaster, +15%: +30% battle XP. Killer move Deduction: the target is Shaken (-20% Strength) for 2 turns; gains 12 XP with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 2-tile radius fight 10% harder. Immortal move Mystery Unravelled: Shaken target, +30% Strength; gains 24 XP with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +25% strength; +2 sight."
+      },
+      {
+        "text": "Emotion path (情道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +25% strength below 50 HP."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Shaken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength below 75 HP. Killer move Doting Mother: the target is Shaken (-20% Strength) for 2 turns; each attack inflicts Shaken for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Regret: Shaken target, +30% Strength; each attack inflicts Shaken for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +50% strength below 50 HP."
+      },
+      {
+        "text": "Enchantment path (魅道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: each blow, attacking or defending, inflicts Charmed for 1 turns."
+      },
+      {
+        "text": "Master, +10%: each attack takes 1 movement from the target (dao marks I-V: 1/1/1/2/2)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack inflicts Shaken for 2 turns. Killer move Charming Glance: the target is Shaken (-20% Strength) for 2 turns; each attack takes 2 movement from the target."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Captivation: Shaken target, +30% Strength; each attack takes 4 movement from the target."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: captures slain soldier units."
+      },
+      {
+        "text": "Soul path (魂道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: 10 XP per kill."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Soul-Torn for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: heals 10 HP per kill. Killer move Guts: the target is Shaken (-20% Strength) for 2 turns; each attack inflicts Soul-Torn for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Soul Search: Shaken target, +30% Strength; each attack inflicts Soul-Torn for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: 20 XP per kill."
+      },
+      {
+        "text": "Dream path (梦道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +50% battle XP."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Dazed for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: each attack inflicts Soul-Torn for 2 turns. Killer move Waking Dream: the target is Shaken (-20% Strength) for 2 turns; each attack inflicts Dazed for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Dreamy Light Smoke: Shaken target, +30% Strength; each attack inflicts Dazed for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +100% battle XP."
+      },
+      {
+        "text": "Enslavement path (奴道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: captures slain barbarian units."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Shaken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: domain: own beasts within a 2-tile radius fight 15% harder. Killer move Wolf Enslavement: the target is Shaken (-20% Strength) for 2 turns; each attack inflicts Shaken for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: +20% strength against beast units. Immortal move Ambush on Eight Sides: Shaken target, +30% Strength; each attack inflicts Shaken for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: captures slain soldier units."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Law and Cosmos Paths",
+    "civilopediaText": [
+      {
+        "text": "Time path (宙道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: 1 more attack per turn."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Aged for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: heals 10 HP with each attack. Killer move Borrowed Moment: 1 additional attack this turn; each attack inflicts Aged for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: +1 movement. Immortal move Call of the Ancient: 1 additional attack, +40% Strength; each attack inflicts Aged for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: 1 more attack per turn."
+      },
+      {
+        "text": "Space path (宇道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: every tile costs 1 movement."
+      },
+      {
+        "text": "Master, +10%: gains 1 movement with each attack (dao marks I-V: 1/1/1/2/2)."
+      },
+      {
+        "text": "Grandmaster, +15%: can move after attacking. Killer move Folded Step: 1 additional attack this turn; gains 2 movement with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: slips away from melee. Immortal move Sea and Sky Expands: 1 additional attack, +40% Strength; gains 4 movement with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +2 movement."
+      },
+      {
+        "text": "Rule path (律道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: ignores zones of control."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Sealed for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +20% strength when defending. Killer move Bent Law: 1 additional attack this turn; each attack inflicts Sealed for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move One Step Back: 1 additional attack, +40% Strength; each attack inflicts Sealed for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: whoever fights it suffers Sealed for 2 turns."
+      },
+      {
+        "text": "Phantom path (虚道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: after losing 30+ HP in one blow it gains Phantom Veil for 1 turn."
+      },
+      {
+        "text": "Master, +10%: each attack deals 3 extra damage (dao marks I-V: 4/4/6/8/9)."
+      },
+      {
+        "text": "Grandmaster, +15%: slips away from melee. Killer move Hollow Form: 1 additional attack this turn; each attack deals 9 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: invisible to others. Immortal move Phantom Body: 1 additional attack, +40% Strength; each attack deals 18 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +60% strength when defending."
+      },
+      {
+        "text": "Restriction path (禁道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: each blow, attacking or defending, inflicts Sealed for 2 turns."
+      },
+      {
+        "text": "Master, +10%: each attack takes 1 movement from the target (dao marks I-V: 1/1/1/2/2)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when defending. Killer move Severing Essence: 1 additional attack this turn; each attack takes 2 movement from the target."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Absolute Ban: 1 additional attack, +40% Strength; each attack takes 4 movement from the target."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: each attack inflicts Sealed for 4 turns."
+      },
+      {
+        "text": "Luck path (运道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +30% strength in 50% of fights."
+      },
+      {
+        "text": "Master, +10%: 50% of hits inflict Doomed for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: earns stones worth 20% of the damage it deals. Killer move Fortune Rivalling Heaven: 1 additional attack this turn; 50% of hits inflict Doomed for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 1-tile radius fight 10% harder. Immortal move Turn of Fortune: 1 additional attack, +40% Strength; 50% of hits inflict Doomed for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +60% strength in 50% of fights."
+      },
+      {
+        "text": "Heaven path (天道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +25% strength against clans with more villages."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Doomed for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +2 sight. Killer move Heaven's Rebuke: 1 additional attack this turn; each attack inflicts Doomed for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 15% weaker. Immortal move Heavenly Web Protection Veil: 1 additional attack, +40% Strength; each attack inflicts Doomed for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +50% strength against clans with more villages."
+      },
+      {
+        "text": "Qi path (气道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +3 flat strength."
+      },
+      {
+        "text": "Master, +10%: each attack deals 3 extra damage (dao marks I-V: 4/4/6/8/9)."
+      },
+      {
+        "text": "Grandmaster, +15%: strikes first from range at 25% strength. Killer move Exploding Qi Roar: 1 additional attack this turn; each attack deals 9 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: enemies beside it fight 10% weaker. Immortal move Qi Covers Mountains and Rivers: 1 additional attack, +40% Strength; each attack deals 18 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +6 flat strength."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Craft and Society Paths",
+    "civilopediaText": [
+      {
+        "text": "Refinement path (炼道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: upgrades cost 30% fewer stones."
+      },
+      {
+        "text": "Master, +10%: each attack deals 3 extra damage (dao marks I-V: 4/4/6/8/9)."
+      },
+      {
+        "text": "Grandmaster, +15%: +20% battle XP. Killer move Ink Transformation: heal 40 HP, +15% Strength; each attack deals 9 extra damage."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 1-tile radius fight 10% harder. Immortal move Heavenly Light Rotation: heal 80 HP, +30% Strength; each attack deals 18 extra damage."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: upgrades cost 60% fewer stones; +20% strength."
+      },
+      {
+        "text": "Formation path (阵道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: domain: own soldiers within a 1-tile radius fight 15% harder."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Entangled for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when defending. Killer move Linked Formation: heal 40 HP, +15% Strength; each attack inflicts Entangled for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 2-tile radius fight 15% harder. Immortal move Grand Formation: heal 80 HP, +30% Strength; each attack inflicts Entangled for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: domain: own soldiers within a 1-tile radius fight 30% harder."
+      },
+      {
+        "text": "Food path (食道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: upkeep 25% lower."
+      },
+      {
+        "text": "Master, +10%: heals 5 HP with each attack (dao marks I-V: 6/8/10/12/15)."
+      },
+      {
+        "text": "Grandmaster, +15%: +10 HP when healing. Killer move Eat Bitterness: heal 40 HP, +15% Strength; heals 15 HP with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: units beside it heal 10 HP more. Immortal move Banquet of Immortals: heal 80 HP, +30% Strength; heals 30 HP with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: upkeep 50% lower."
+      },
+      {
+        "text": "Pill path (丹道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: heals every turn, even after acting."
+      },
+      {
+        "text": "Master, +10%: heals 6 HP with each attack (dao marks I-V: 8/10/12/15/19)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15 HP when healing. Killer move Recovery Pill: heal 40 HP, +15% Strength; heals 19 HP with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: units beside it heal 15 HP more. Immortal move Life-Saving Pill: heal 80 HP, +30% Strength; heals 38 HP with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: all healing doubled."
+      },
+      {
+        "text": "Information path (信道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: sees over obstacles."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Guard Broken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +2 sight. Killer move Mountain Pledge: heal 40 HP, +15% Strength; each attack inflicts Guard Broken for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 2-tile radius fight 10% harder. Immortal move Sea Oath: heal 80 HP, +30% Strength; each attack inflicts Guard Broken for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: sees invisible units; +3 sight."
+      },
+      {
+        "text": "Human path (人道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: domain: units beside it heal 10 HP more."
+      },
+      {
+        "text": "Master, +10%: gains 2 XP with each attack (dao marks I-V: 3/4/5/6/8)."
+      },
+      {
+        "text": "Grandmaster, +15%: domain: own soldiers within a 1-tile radius fight 15% harder. Killer move Hopes of the Crowd: heal 40 HP, +15% Strength; gains 8 XP with each attack."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 2-tile radius fight 10% harder. Immortal move Heroes Among People: heal 80 HP, +30% Strength; gains 16 XP with each attack."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: domain: units beside it heal 25 HP more."
+      },
+      {
+        "text": "Painting path (画道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: +20% strength on its own land."
+      },
+      {
+        "text": "Master, +10%: each attack inflicts Dazed for 2 turns (dao marks I-V: 2/2/3/3/4)."
+      },
+      {
+        "text": "Grandmaster, +15%: +15% strength when defending. Killer move Living Ink: heal 40 HP, +15% Strength; each attack inflicts Dazed for 4 turns."
+      },
+      {
+        "text": "Great Grandmaster, +20%: domain: own soldiers within a 1-tile radius fight 10% harder. Immortal move Contented Lifestyle: heal 80 HP, +30% Strength; each attack inflicts Dazed for 6 turns."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: +40% strength on its own land."
+      },
+      {
+        "text": "Theft path (偷道)",
+        "header": 3
+      },
+      {
+        "text": "Signature: earns stones worth 50% of each slain soldier's cost."
+      },
+      {
+        "text": "Master, +10%: earns stones worth 10% of the damage it deals (dao marks I-V: 15/20/25/30/40)."
+      },
+      {
+        "text": "Grandmaster, +15%: gains 1 movement with each attack. Killer move Light Fingers: heal 40 HP, +15% Strength; earns stones worth 40% of the damage it deals."
+      },
+      {
+        "text": "Great Grandmaster, +20%: slips away from melee. Immortal move Great Thief Ghost Hand: heal 80 HP, +30% Strength; earns stones worth 80% of the damage it deals."
+      },
+      {
+        "text": "Supreme Grandmaster, +25%: earns stones worth 100% of each slain soldier's cost."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Statuses",
+    "civilopediaText": [
+      {
+        "text": "What a path's hit leaves on its target. A status ticks at the start of the target's own turn."
+      },
+      {
+        "text": "Poisoned: Venom works through the body: damage at every turn start until it fades."
+      },
+      {
+        "text": "Charmed: Charm saps the will: weaker attacks while it lasts."
+      },
+      {
+        "text": "Sealed: A restriction seal cuts the unit off from healing; only pillage restores it."
+      },
+      {
+        "text": "Phantom Veil: After a heavy blow the body turns insubstantial for a moment: much harder to hit."
+      },
+      {
+        "text": "Shaken: A mind-path move has shaken the unit's resolve: weaker in battle."
+      },
+      {
+        "text": "Burning: Fire-path flames cling to the body: 8 damage at every turn start until they die out."
+      },
+      {
+        "text": "Frozen: Ice-path frost locks the limbs: 1 movement less and 15% weaker attacks."
+      },
+      {
+        "text": "Bleeding: Open wounds from bone, blade or blood: 6 damage at every turn start."
+      },
+      {
+        "text": "Blinded: Light or cloud fills the eyes: 2 sight less and 10% weaker."
+      },
+      {
+        "text": "Soul-Torn: The soul is wounded: 15% weaker, and half the battle experience."
+      },
+      {
+        "text": "Dazed: Sound, dream or ink has muddled the mind: 1 movement less and 10% weaker."
+      },
+      {
+        "text": "Guard Broken: The guard is broken, by force, metal, venom or a weakness exposed: 20% weaker when defending."
+      },
+      {
+        "text": "Entangled: Roots or a formation hold the legs: 2 movement less."
+      },
+      {
+        "text": "Shocked: Lightning runs through the body: 25% weaker."
+      },
+      {
+        "text": "Doomed: Fortune has turned, or heaven itself frowns: 10% weaker and 5 damage at every turn start."
+      },
+      {
+        "text": "Aged: Time-path years pour into the body: 10% weaker when defending and 5 damage at every turn start."
+      },
+      {
+        "text": "Weighted: Earth or starlight presses down: 1 movement less and 15% weaker when defending."
+      }
+    ]
+  }
+]

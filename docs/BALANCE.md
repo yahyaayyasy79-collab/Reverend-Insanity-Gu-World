@@ -47,6 +47,14 @@ decides the rank-1 threshold) and the round-5 delegation ("bebas, yang sesuai da
 | Gu food deposits | minor 1 / 1 / 2, major 2 / 2 / 3 (sparse / default / abundant) | `tools/gen_ruleset.py` `DEP` | Every clan ends with a surplus of every food (round 5) | Lower majors to 1 / 1 / 2 if hunger should matter in peace |
 | Barbarian XP cap | 90 XP | `ModOptions` `maxXPfromBarbarians` | — | — |
 
+## Path power scaling (Phase D, 2026-11-02)
+
+Knobs: `tools/path_powers.py` SCALE (a hit's amount with no dao marks and at tiers I-V, per kind), `data/path_powers.csv`
+(each path's hit kind, multiplier and its four tiers' uniques), the twelve statuses in `data/path_statuses.csv`, and
+TIER_STRENGTH in `tools/gen_paths.py`. Evidence (Five Regions, 6 × 350): hits on both attack and defence made sieges
+fail (captured cities 16 → 9, clans destroyed 7 → 1); attack-only hits gave 27 and 9. If wars feel too bloody, lower
+the dmg and dur rows first.
+
 ## What the data says is off
 
 Not fixed, because each needs either a human game or the user's taste:
@@ -408,7 +416,12 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Venerable | strength | 280 | tools/gen_ruleset.py `Units` |
 | Venerable | cost | 1000 | tools/gen_ruleset.py `Units` |
 | Venerable | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
-| Venerable | `[This Unit] takes [3] damage <upon turn start>` | 3 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `Units` |
+| Venerable | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>` | 6 | tools/gen_ruleset.py `Units` |
 | Venerable | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
 | Venerable | `[2] additional attacks per turn` | 2 | tools/gen_ruleset.py `Units` |
@@ -2295,11 +2308,30 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 | Charmed | `[-25]% Strength <when attacking>` | -25 | data/path_statuses.csv `uniques` |
 | Phantom Veil | `[+50]% Strength <when defending>` | +50 | data/path_statuses.csv `uniques` |
 | Shaken | `[-20]% Strength` | -20 | data/path_statuses.csv `uniques` |
+| Burning | `[This Unit] takes [8] damage <upon turn start>` | 8 | data/path_statuses.csv `uniques` |
+| Frozen | `[-1] Movement` | -1 | data/path_statuses.csv `uniques` |
+| Frozen | `[-15]% Strength <when attacking>` | -15 | data/path_statuses.csv `uniques` |
+| Bleeding | `[This Unit] takes [6] damage <upon turn start>` | 6 | data/path_statuses.csv `uniques` |
+| Blinded | `[-2] Sight` | -2 | data/path_statuses.csv `uniques` |
+| Blinded | `[-10]% Strength` | -10 | data/path_statuses.csv `uniques` |
+| Soul-Torn | `[-15]% Strength` | -15 | data/path_statuses.csv `uniques` |
+| Soul-Torn | `[-50]% XP gained from combat` | -50 | data/path_statuses.csv `uniques` |
+| Dazed | `[-1] Movement` | -1 | data/path_statuses.csv `uniques` |
+| Dazed | `[-10]% Strength` | -10 | data/path_statuses.csv `uniques` |
+| Guard Broken | `[-20]% Strength <when defending>` | -20 | data/path_statuses.csv `uniques` |
+| Entangled | `[-2] Movement` | -2 | data/path_statuses.csv `uniques` |
+| Shocked | `[-25]% Strength` | -25 | data/path_statuses.csv `uniques` |
+| Doomed | `[-10]% Strength` | -10 | data/path_statuses.csv `uniques` |
+| Doomed | `[This Unit] takes [5] damage <upon turn start>` | 5 | data/path_statuses.csv `uniques` |
+| Aged | `[-10]% Strength <when defending>` | -10 | data/path_statuses.csv `uniques` |
+| Aged | `[This Unit] takes [5] damage <upon turn start>` | 5 | data/path_statuses.csv `uniques` |
+| Weighted | `[-1] Movement` | -1 | data/path_statuses.csv `uniques` |
+| Weighted | `[-15]% Strength <when defending>` | -15 | data/path_statuses.csv `uniques` |
 
 ### Terrains.json, Speeds.json
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2099 numbers listed.
+2123 numbers listed.
 
 <!-- inventory:end -->

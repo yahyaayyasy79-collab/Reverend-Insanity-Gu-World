@@ -3197,8 +3197,8 @@ MOD_SPEC_2 Phase C, fifth layer, second half; the arc's victory (MOD_SPEC_3: Ete
   clan holding a rank-eight immortal of supreme attainment can build: every Supreme Grandmaster carries the marker
   `Supreme Attainment` (allowlisted) and the wonder counts a count of rank-eight immortals with that marker
   (the plan's single-path `max()` countable, simplified to "any one path at its summit"). It costs white lychee essence
-  and brings forth the **Venerable** (strength 200): unbeatable in its era, but it loses 3 HP a turn and cannot heal
-  (canon: long-lived, never eternal, R V6/105), and it makes 6 **yellow apricot essence** a turn.
+  and brings forth the **Venerable** (strength 200): unbeatable in its era, but long-lived, never eternal (R V6/105;
+  since Phase D its lifespan is the Lifespan Gu stock, not HP), and it makes 6 **yellow apricot essence** a turn.
 * **Eternal Life** (world wonder; victory type **Eternal Life**, milestone `Build [Eternal Life]`): only a clan with a
   living Venerable can build it, and it costs 150 yellow apricot essence, about 25 of the Venerable's 33 turns: the
   Venerable races its own lifespan (MOD_SPEC_3).
@@ -3253,15 +3253,19 @@ Unbuildable
 Cannot be purchased
 ```
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by pillaging or killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. Like every immortal it burns a Lifespan Gu each ten turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
 Cannot be purchased
 Limited to [1] per Civilization
 Never appears as a Barbarian unit
-[This Unit] takes [3] damage <upon turn start>
-Can only heal by pillaging
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Can only heal by pillaging <when below [1] [Lifespan Gu]>
+[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
 [+300]% maintenance costs
 [2] additional attacks per turn
@@ -3566,7 +3570,9 @@ outside the world is the rank-nine trial (R V6/280).
 * **The Venerable** (strength 280, 5 moves): three strikes a turn, moves after attacking, ignores terrain and walks
   through impassable tiles, enslaves the defeated, every enemy military unit beside it fights 25% weaker, +50%
   against cities, burns improvements; a human-only killer move doubles its strength for a turn (20 yellow apricot).
-  It loses 3 HP a turn and heals only by killing (10 HP a kill): a Venerable buys time with slaughter.
+  Its life (Phase D, the user: "kenapa venerable darahnya setiap langkah berkurang terus?"): it no longer loses 3 HP a
+  turn; like every immortal it burns a Lifespan Gu each ten turns on Standard and, with none left, takes 7 damage a
+  turn and heals only by pillaging. HP is battle damage only; each kill heals 10 HP.
 * **Chaos calamity** every 25 turns on the Venerable: 40 yellow apricot essence, or 25 HP.
 * **Phase D (autoplay):** the AI never queued the Venerable Ascension or Eternal Life wonders, even with every condition
   met (a headless probe showed the wonder available, only the essence missing; one AI clan sat on 625 white lychee
@@ -3583,15 +3589,19 @@ outside the world is the rank-nine trial (R V6/280).
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by pillaging or killing (10 HP a kill); it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. Like every immortal it burns a Lifespan Gu each ten turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
 Cannot be purchased
 Limited to [1] per Civilization
 Never appears as a Barbarian unit
-[This Unit] takes [3] damage <upon turn start>
-Can only heal by pillaging
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Can only heal by pillaging <when below [1] [Lifespan Gu]>
+[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
 [+300]% maintenance costs
 [2] additional attacks per turn
@@ -4149,3 +4159,31 @@ Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank 
 Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```
+
+## Phase D: power scaling (the user, 2026-11-02: "powerscalling sangat jelas dan detail")
+
+The request: each path's attacks distinct and clear, its Gu attacks distinct within and across paths, the quantity of
+dao and the comprehension of the path each with a clear, different effect. Before this, the four attainment tiers
+gave only +10/+15/+20/+25% Strength, killer moves were one of seven family templates, and dao marks were a flat bonus.
+
+* **Hit (Master):** every path has its own attack effect from `data/path_powers.csv` (extra damage, a status on the
+  target, movement taken, healing, XP, stones), firing when the unit attacks. Twelve new target statuses (Burning,
+  Frozen, Bleeding, Blinded, Soul-Torn, Dazed, Guard Broken, Entangled, Shocked, Doomed, Aged, Weighted) join the five
+  of C3, each with a designed icon (the path's symbol over a falling wedge). Verdict ADAPTED: each effect follows the
+  path's character in the novel (fire burns, ice freezes, blood drinks, theft steals), the numbers are the mod's.
+* **Quantity of dao:** each dao-mark tier raises the hit (extra damage 4/5/6/8/10/12, status turns 2/2/2/3/3/4,
+  healing 5..15, XP 2..8, stolen stones 10..40%, movement 1..2; some paths multiply them). The Master's promotion
+  carries one line per tier, so the promotion screen shows what each tier adds.
+* **Comprehension of the path:** Grandmaster opens a second effect, Great Grandmaster a domain or new art, Supreme
+  Grandmaster the path's peak (most often its signature raised). Killer moves: the family's burst plus the path's hit
+  at full power (doubled for the immortal move).
+* **Clarity:** every civilopedia line of a tier or move, the PATHS.md "Power scaling" table and nine Tutorial pages
+  (Civilopedia > Tutorials, "Gu World: ...") are written from the uniques by `tools/path_powers.py`; the game's own
+  notifications name each effect when it lands ("... due to being damaged by a ...").
+* **Not possible:** a different attack animation per path. Unciv chooses the animation by unit name or type, never by
+  promotion (KNOWN_ISSUES 9).
+* Autoplay (Five Regions, 6 × 350, seed 401): with hits on defence as well, besiegers took every defender's hit while
+  cities take none: captured cities 16 → 9, clans destroyed 7 → 1. Attack-only hits: 27 and 9, 0 crashes.
+* **The Venerable** no longer loses 3 HP a turn (the user: "kenapa venerable darahnya setiap langkah berkurang
+  terus?"): lifespan is its Lifespan Gu stock, like every immortal's; HP is battle damage only.
+

@@ -328,7 +328,7 @@ def advance(target):
 # ---------------- MOD_SPEC_2 C5b: the Venerable, Eternal Life, Gu Houses ----------------
 # Rank nine is never an era (MOD_SPEC_2): a Venerable rises when a clan holding a rank-eight immortal of supreme
 # attainment builds the Venerable Ascension (one in the world at a time). The Venerable is unbeatable in its era but
-# only long-lived (R V6/105, V3/194): it loses HP every turn and cannot heal, while its yellow apricot essence pays for
+# only long-lived (R V6/105, V3/194): it burns Lifespan Gu like every immortal, while its yellow apricot essence pays for
 # Eternal Life, Fang Yuan's goal and the arc's victory (MOD_SPEC_3). When it dies its ascension is removed (the race
 # reopens, Phase A2) and its clan gains the seal of its true inheritance.
 APRICOT = "Yellow Apricot Immortal Essence"  # rank nine (R V6/249)
@@ -604,10 +604,14 @@ dump("Units.json", [
      "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+300]% maintenance costs"]},
     # C5b: the Venerable and the Gu Houses
     # the user (2026-11-01): rank nine dominates and terrifies. A Venerable is unbeatable in its era (R V6/105): it strikes
-    # three times, walks through anything, enslaves the defeated, cows every enemy beside it, and burns its own life
-    {"name": VENERABLE, "unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord",
+    # three times, walks through anything, enslaves the defeated, cows every enemy beside it. Its life is long but not
+    # eternal: like every immortal it burns Lifespan Gu and wastes away without them (the user, 2026-11-02: "kenapa
+    # venerable darahnya setiap langkah berkurang terus?" -- it lost 3 HP every turn and healed only by pillaging;
+    # lifespan is now the Lifespan Gu stock, HP is only battle damage)
+    {"name": VENERABLE, "unitType": "Gu Master", "movement": 5, "strength": gen_paths.PP.VENERABLE_STRENGTH, "cost": 1000,
+     "requiredTech": "Dao Lord",
      "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
-                                         "[This Unit] takes [3] damage <upon turn start>", "Can only heal by pillaging",
+                                         *IMMORTAL_LIFE[:-2],
                                          f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs",
                                          "[2] additional attacks per turn", "Can move after attacking", "Ignores terrain cost",
                                          "Can pass through impassable tiles", "May capture killed [Military] units",
@@ -615,7 +619,7 @@ dump("Units.json", [
                                          "[+50]% Strength <vs cities>", "Destroys tile improvements when attacking",
                                          "[This Unit] gains [5] XP <upon turn start>", *DAO_LINES,
                                          f"[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [{APRICOT}]> <requires [1] movement>"]
-     # a Venerable buys time only with slaughter: every kill restores some of its burning life
+     # slaughter restores it too
      + ["Heals [10] damage if it kills a unit"] + countdown("Chaos Countdown", 25, "Chaos Calamity")},
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
       "attackSound": "throw", **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
@@ -1480,6 +1484,10 @@ dump("Personalities.json", [
      "priorities": {"Righteous Path": 10, "Strength Path": 4},  # D3: the clan walks wind; Wu Ji alone walks strength
      "uniques": ["[+50]% weight to [Martial Arena] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
 ])
+# Phase D: the power-scaling pages in Civilopedia > Tutorials (tools/gen_paths.py, tools/path_powers.py)
+assert [x[0] for x in DAO_EFFECTS] == ["[+5]% Strength", "[+10]% Strength", "[+15]% Strength", "[+20]% Strength",
+                                       "[+30]% Strength"] and DAO == gen_paths.PP.DAO_TIERS, "update tools/path_powers.py"
+dump("Tutorials.json", gen_paths.tutorials())
 dump("VictoryTypes.json", [
     {"name": "Southern Border Supremacy", "milestones": ["Capture all capitals"]},
     {"name": "Endurance", "milestones": ["Have highest score after max turns"]},

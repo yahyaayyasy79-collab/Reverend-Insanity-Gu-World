@@ -20,6 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import REPO_ROOT  # noqa: E402
+import path_powers as PP  # noqa: E402  (power scaling: data/path_powers.csv)
 
 DATA = REPO_ROOT / "data"
 DOC = REPO_ROOT / "docs" / "PATHS.md"
@@ -71,6 +72,10 @@ assert all(GU_OF.values()), "every path needs its Gu (data/path_gu.csv)"
 RANK_GATE = {1: "", 2: "<for [non-[Rank One Gu Master]] units>", 3: "<for [non-[Rank One-Two era]] units>",
              4: "<for [post-[Rank Three era]] units>", 5: "<for [post-[Rank Four era]] units>"}
 assert len({p["signature"] for p in PATHS}) == len(PATHS), "two paths share a signature unique"
+# Phase D power scaling (the user, 2026-11-02): each path's hit, tier unlocks and peak (tools/path_powers.py)
+POWERS = {r["key"]: r for r in table("path_powers.csv")}
+assert set(POWERS) == set(KEY), "data/path_powers.csv needs exactly one row per path"
+PP.STATUS_ID.update({s["name"]: s["name_id"] for s in STATUSES})
 ROOTS = sum(1 for p in PATHS if not p["parent"])
 SIGNATURE_WEIGHT = round((SIGNATURE_SHARE / (1 - SIGNATURE_SHARE) * (ROOTS - 1) - 1) * 100)
 
@@ -129,7 +134,8 @@ def dao_mark_lines(p: dict) -> list[str]:
 
 def move_uniques(p: dict, immortal: bool = False) -> list[str]:
     name = p["immortal" if immortal else "mortal"]
-    return [u.replace("{n}", name) for u in split(FAMILIES[p["family"]]["immortal_uniques" if immortal else "mortal_uniques"])]
+    return [u.replace("{n}", name) for u in split(FAMILIES[p["family"]]["immortal_uniques" if immortal else "mortal_uniques"])] \
+        + [PP.move_burst(POWERS[p["key"]], immortal)]
 
 
 def grant(g: dict) -> str:
@@ -164,16 +170,17 @@ def gu_promotions() -> list[dict]:
 
 
 def tier_uniques(p: dict, t: int) -> list[str]:
+    pw = POWERS[p["key"]]
     u = [f"[+{TIER_STRENGTH[t]}]% Strength"]
     if t == 0:
-        u = ([p["signature"]] + u + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER] + [grant(g) for g in GU_OF[p["key"]]]
-             + dao_mark_lines(p))
+        u = ([p["signature"]] + u + PP.hit_lines(pw) + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER]
+             + [grant(g) for g in GU_OF[p["key"]]] + dao_mark_lines(p))
     if t == 1:
-        u.append(f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}")
+        u += PP.cell(pw, "gm") + [f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}"]
     if t == 2:
-        u.append(f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}")
+        u += PP.cell(pw, "ggm") + [f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}"]
     if t == 3:
-        u += SUPREME_EXTRA.get(p["key"], []) + [SUPREME_MARKER]
+        u += PP.cell(pw, "sup") + SUPREME_EXTRA.get(p["key"], []) + [SUPREME_MARKER]
     if TIER_GATE[t]:
         u.append(TIER_GATE[t])
     u.append(TIER_WEIGHT)
@@ -186,6 +193,20 @@ def tier_uniques(p: dict, t: int) -> list[str]:
 
 
 def pedia(p: dict, t: int) -> tuple[str, str]:
+    """The tier's lore line, then what it does (written from the uniques by tools/path_powers.py)."""
+    en, idt = _pedia_lore(p, t)
+    pw = POWERS[p["key"]]
+    if t == 0:
+        sig, hit = PP.describe(p["signature"]), PP.hit_summary(pw)
+        return (f"{en} +10% strength. Signature: {sig[0]}. Hit: {hit[0]}.",
+                f"{idt} +10% kekuatan. Ciri khas: {sig[1]}. Serangan: {hit[1]}.")
+    label = {1: ("unlocks", "membuka"), 2: ("adds", "menambah"), 3: ("peak", "puncak")}[t]
+    eff = PP.describe_all(PP.cell(pw, ("gm", "ggm", "sup")[t - 1]))
+    return (f"{en} +{TIER_STRENGTH[t]}% strength; {label[0]}: {eff[0]}.",
+            f"{idt} +{TIER_STRENGTH[t]}% kekuatan; {label[1]}: {eff[1]}.")
+
+
+def _pedia_lore(p: dict, t: int) -> tuple[str, str]:
     if t == 0:
         return (f"{p['name']} path ({p['chinese']}), Master attainment ({TIERS_ZH[0]}): {p['hook']}.",
                 f"Jalur {p['name_id']} ({p['chinese']}), pencapaian {TIERS_ID[0]} ({TIERS_ZH[0]}): {p['hook_id']}.")
@@ -209,16 +230,20 @@ def pedia(p: dict, t: int) -> tuple[str, str]:
 def immortal_move_pedia(p: dict) -> tuple[str, str]:
     zh = f" ({p['immortal_zh']})" if p["immortal_zh"] else ""
     f = FAMILIES[p["family"]]
-    return (f"{p['immortal']}{zh}: a {p['name'].lower()}-path immortal killer move for one turn: {f['immortal_text']}.",
+    b = PP.describe(PP.move_burst(POWERS[p["key"]], True))
+    return (f"{p['immortal']}{zh}: a {p['name'].lower()}-path immortal killer move for one turn: {f['immortal_text']}; "
+            f"{b[0]}.",
             f"{p['immortal_id']}{zh}: jurus pamungkas abadi jalur {p['name_id']} selama satu giliran: "
-            f"{f['immortal_text_id']}.")
+            f"{f['immortal_text_id']}; {b[1]}.")
 
 
 def move_pedia(p: dict) -> tuple[str, str]:
     zh = f" ({p['mortal_zh']})" if p["mortal_zh"] else ""
     f = FAMILIES[p["family"]]
-    return (f"{p['mortal']}{zh}: a {p['name'].lower()}-path killer move for one turn: {f['mortal_text']}.",
-            f"{p['mortal_id']}{zh}: jurus pamungkas jalur {p['name_id']} selama satu giliran: {f['mortal_text_id']}.")
+    b = PP.describe(PP.move_burst(POWERS[p["key"]], False))
+    return (f"{p['mortal']}{zh}: a {p['name'].lower()}-path killer move for one turn: {f['mortal_text']}; {b[0]}.",
+            f"{p['mortal_id']}{zh}: jurus pamungkas jalur {p['name_id']} selama satu giliran: {f['mortal_text_id']}; "
+            f"{b[1]}.")
 
 
 def promotions(unit_types: list[str]) -> list[dict]:
@@ -393,7 +418,133 @@ def translations() -> list[tuple[str, str]]:
         out += [(s["name"], s["name_id"]), (s["pedia"], s["pedia_id"])]
     for g in (g for g in PATH_GU if new_gu(g)):
         out += [(g["name"], g["name_id"]), (g["pedia"], g["pedia_id"])]
-    return out + policy_translations()
+    return out + policy_translations() + tutorial_translations()
+
+
+# ---------------- Tutorials (Civilopedia > Tutorials): the power-scaling pages (Phase D) ----------------
+NUM_ID = {"One": "Satu", "Two": "Dua", "Three": "Tiga", "Four": "Empat", "Five": "Lima", "Six": "Enam", "Seven": "Tujuh",
+          "Eight": "Delapan"}
+
+
+def rank_strengths() -> list[tuple[str, str, int]]:
+    rows = [r for r in table("gu_masters.csv") if r["name"].startswith("Rank ") and not r["uniqueTo"]
+            and not r.get("legacyPath")]
+    out = []
+    for r in rows:
+        word = r["name"].split()[1]
+        out.append((f"Rank {word}", f"Tingkat {NUM_ID[word]}", int(r["strength"])))
+    return out + [("the Venerable", "Yang Mulia", PP.VENERABLE_STRENGTH)]
+
+
+def _lines_power() -> list[tuple[str, str, dict]]:
+    ranks = rank_strengths()
+    fire = POWERS["fire"]
+    d = PP.DAO_STRENGTH
+    L = [("The five layers of power", "Lima lapis kekuatan", {"header": 2}),
+         ("1. Rank. Base strength: " + ", ".join(f"{e} {v}" for e, _, v in ranks) + ". Clan Masters of a rank have the "
+          "same strength.",
+          "1. Tingkat. Kekuatan dasar: " + ", ".join(f"{i} {v}" for _, i, v in ranks) + ". Gu Master klan pada tingkat "
+          "yang sama punya kekuatan yang sama.", {}),
+         ("2. Path attainment (comprehension). Four tiers stack: Master +10% at any rank, Grandmaster +15% from rank "
+          "three, Great Grandmaster +20% from rank six, Supreme Grandmaster +25% from rank eight: +70% at the top. Each "
+          "tier opens a new kind of power: the Master the path's hit on every attack it makes, the Grandmaster a second effect and "
+          "the mortal killer move, the Great Grandmaster a domain or a new art and the immortal killer move, the Supreme "
+          "Grandmaster the path's peak.",
+          "2. Pencapaian jalur (pemahaman). Empat tingkat bertumpuk: Ahli +10% di tingkat mana pun, Mahaguru +15% sejak "
+          "tingkat tiga, Mahaguru Agung +20% sejak tingkat enam, Mahaguru Tertinggi +25% sejak tingkat delapan: +70% di "
+          "puncak. Tiap tingkat membuka jenis kekuatan baru: Ahli membuka serangan khas jalur pada setiap serangan, "
+          "Mahaguru efek kedua dan jurus pamungkas fana, Mahaguru Agung sebuah domain atau seni baru dan jurus pamungkas "
+          "abadi, Mahaguru Tertinggi puncak jalur itu.", {}),
+         ("3. Dao marks, the quantity of dao. Tiers I to V give " + ", ".join(d[0]) + ". Every tier also raises the "
+          "path's hit: extra damage " + "/".join(map(str, PP.SCALE['dmg'])) + ", status turns "
+          + "/".join(map(str, PP.SCALE['dur'])) + ", healing " + "/".join(map(str, PP.SCALE['heal'])) + ", XP "
+          + "/".join(map(str, PP.SCALE['xp'])) + ", stolen stones " + "/".join(map(str, PP.SCALE['earn'])) + "%, movement "
+          + "/".join(map(str, PP.SCALE['movegain'])) + " (no marks, then I to V; a path may multiply them). The Master's "
+          "promotion lists what each tier adds.",
+          "3. Jejak dao, kuantitas dao. Tingkat I sampai V memberi " + ", ".join(d[1]) + ". Tiap tingkat juga menaikkan "
+          "serangan khas jalur: kerusakan tambahan " + "/".join(map(str, PP.SCALE['dmg'])) + ", lama status "
+          + "/".join(map(str, PP.SCALE['dur'])) + " giliran, pemulihan " + "/".join(map(str, PP.SCALE['heal'])) + ", XP "
+          + "/".join(map(str, PP.SCALE['xp'])) + ", batu curian " + "/".join(map(str, PP.SCALE['earn'])) + "%, gerak "
+          + "/".join(map(str, PP.SCALE['movegain'])) + " (tanpa jejak, lalu I sampai V; sebagian jalur mengalikannya). "
+          "Promosi Ahli menuliskan tambahan tiap tingkat.", {}),
+         ("Dao marks grow one tier every 20 turns on Standard for a path Master of rank three or more; an immortal also "
+          "gains one for every immortal it kills and every heavenly tribulation it survives. Mortals stop at tier II. "
+          "Rank seven needs tier II, rank eight tier III, the Venerable tier IV.",
+          "Jejak dao naik satu tingkat tiap 20 giliran pada kecepatan Standar bagi Ahli jalur tingkat tiga ke atas; "
+          "seorang abadi juga mendapat satu dari setiap abadi yang dibunuhnya dan setiap kesengsaraan langit yang "
+          "dilaluinya. Manusia fana berhenti di tingkat II. Tingkat tujuh butuh tingkat II, tingkat delapan III, Yang "
+          "Mulia IV.", {}),
+         ("4. Gu. Each path's Gu comes with its Master. Every immortal Gu of your own path that your clan owns adds 5% "
+          "strength; one of a strongly clashing path takes 5% away.",
+          "4. Gu. Gu tiap jalur datang bersama Ahlinya. Setiap Gu abadi dari jalurmu sendiri yang dimiliki klanmu "
+          "menambah 5% kekuatan; Gu dari jalur yang sangat bertentangan mengurangi 5%.", {}),
+         ("5. Conflicts. A second path whose dao marks clash with the first costs 5% to 25% strength.",
+          "5. Pertentangan. Jalur kedua yang jejak daonya berbenturan dengan jalur pertama memotong 5% sampai 25% "
+          "kekuatan.", {}),
+         ("Killer moves", "Jurus pamungkas", {"header": 3}),
+         ("A unit-action button, so only you use them: for one turn the path family's burst plus the path's hit at full "
+          "power (twice that for the immortal move). The mortal move costs 15 stones, the immortal move 5 green grape "
+          "essence.",
+          "Tombol aksi unit, jadi hanya kamu yang memakainya: selama satu giliran ledakan keluarga jalur ditambah "
+          "serangan khas jalur pada kekuatan penuh (dua kali lipat untuk jurus abadi). Jurus fana 15 batu, jurus abadi "
+          "5 esensi anggur hijau.", {})]
+    # a worked example from the data
+    ex = [r for _, _, r in ranks][5]
+    hit = PP.describe(PP.attack_only(fire["hit"]).replace("{n}", str(PP.amounts(fire)[3])))
+    gm, ggm = PP.describe_all(PP.cell(fire, "gm")), PP.describe_all(PP.cell(fire, "ggm"))
+    L += [("Example", "Contoh", {"header": 3}),
+          (f"A Rank Six fire-path Great Grandmaster with Dao Marks III: strength {ex}, +45% from attainment and +15% from "
+           f"dao marks. {hit[0][0].upper() + hit[0][1:]}; {gm[0]}; {ggm[0]}.",
+           f"Gu Abadi tingkat enam jalur api, Mahaguru Agung, dengan Jejak Dao III: kekuatan {ex}, +45% dari pencapaian dan "
+           f"+15% dari jejak dao. {hit[1][0].upper() + hit[1][1:]}; {gm[1]}; {ggm[1]}.", {})]
+    return L
+
+
+def _lines_family(k: str) -> list[tuple[str, str, dict]]:
+    L = []
+    for p in (p for p in PATHS if p["family"] == k):
+        pw = POWERS[p["key"]]
+        sig, hit = PP.describe(p["signature"]), PP.hit_summary(pw)
+        gm, ggm, sup = (PP.describe_all(PP.cell(pw, c)) for c in ("gm", "ggm", "sup"))
+        mb, ib = PP.describe(PP.move_burst(pw, False)), PP.describe(PP.move_burst(pw, True))
+        f = FAMILIES[k]
+        L += [(f"{p['name']} path ({p['chinese']})", f"Jalur {p['name_id']} ({p['chinese']})", {"header": 3}),
+              (f"Signature: {sig[0]}.", f"Ciri khas: {sig[1]}.", {}),
+              (f"Master, +10%: {hit[0]}.", f"Ahli, +10%: {hit[1]}.", {}),
+              (f"Grandmaster, +15%: {gm[0]}. Killer move {p['mortal']}: {f['mortal_text']}; {mb[0]}.",
+               f"Mahaguru, +15%: {gm[1]}. Jurus pamungkas {p['mortal_id']}: {f['mortal_text_id']}; {mb[1]}.", {}),
+              (f"Great Grandmaster, +20%: {ggm[0]}. Immortal move {p['immortal']}: {f['immortal_text']}; {ib[0]}.",
+               f"Mahaguru Agung, +20%: {ggm[1]}. Jurus abadi {p['immortal_id']}: {f['immortal_text_id']}; {ib[1]}.", {}),
+              (f"Supreme Grandmaster, +25%: {sup[0]}.", f"Mahaguru Tertinggi, +25%: {sup[1]}.", {})]
+    return L
+
+
+def _lines_statuses() -> list[tuple[str, str, dict]]:
+    return [("What a path's hit leaves on its target. A status ticks at the start of the target's own turn.",
+             "Apa yang ditinggalkan serangan khas jalur pada sasarannya. Status berkurang di awal giliran sasaran itu "
+             "sendiri.", {})] + [(f"{s['name']}: {s['pedia']}", f"{s['name_id']}: {s['pedia_id']}", {}) for s in STATUSES]
+
+
+def _tutorial_specs() -> list[tuple[str, str, list]]:
+    out = [("Gu World: Power Scaling", "Dunia Gu: Skala Kekuatan", _lines_power())]
+    out += [(f"Gu World: {f['name'].replace('&', 'and')} Paths", f"Dunia Gu: Jalur {f['name_id'].replace('&', 'dan')}",
+             _lines_family(k)) for k, f in FAMILIES.items()]
+    out.append(("Gu World: Statuses", "Dunia Gu: Status", _lines_statuses()))
+    return out
+
+
+def tutorials() -> list[dict]:
+    """jsons/Tutorials.json: added to the game's own tutorials (a base ruleset's file extends them)."""
+    return [{"name": n, "civilopediaText": [{"text": en, **extra} for en, _, extra in lines]}
+            for n, _, lines in _tutorial_specs()]
+
+
+def tutorial_translations() -> list[tuple[str, str]]:
+    out = []
+    for n, n_id, lines in _tutorial_specs():
+        out.append((n, n_id))
+        out += [(en, idt) for en, idt, _ in lines]
+    return out
 
 
 # ---------------- docs/PATHS.md tables ----------------
@@ -455,8 +606,14 @@ def doc_tables() -> dict[str, str]:
     for name in ("Moon", "Strength"):
         h = halls_by[f"{name} Hall"]
         br.append(f"| {name} Path (Slice 1) | Rank One-Two era | see LORE_MAPPING | — | — | " + " ".join(code(u) for u in h["uniques"]) + " |")
+    pw = ["| Path | Signature | Master hit (no marks; dao marks I-V) | Grandmaster | Great Grandmaster | Supreme Grandmaster |",
+          "|---|---|---|---|---|---|"]
+    for p in PATHS:
+        q = POWERS[p["key"]]
+        pw.append(f"| {p['name']} | {PP.describe(p['signature'])[0]} | {PP.hit_summary(q)[0]} | "
+                  + " | ".join(PP.describe_all(PP.cell(q, c))[0] for c in ("gm", "ggm", "sup")) + " |")
     return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
-            "gu": "\n".join(gu), "branches": "\n".join(br)}
+            "gu": "\n".join(gu), "branches": "\n".join(br), "powers": "\n".join(pw)}
 
 
 def splice(text: str, tables: dict[str, str]) -> str:

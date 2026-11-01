@@ -661,3 +661,25 @@
   games through a Venerable (T369–395). Its blessed lands and grotto-heavens now make no essence (each essence line is
   cancelled for it; stones unchanged). After: rank eight reached by the Heavenly Court (2), Xiong, Wu and Bai; no
   AI Venerable in 500 turns (KNOWN_ISSUES 18). 0 crashes in both batches, including the Venerable's grotto fix.
+
+## Phase D: path power scaling and the Venerable's lifespan (2026-11-02)
+
+* **The Venerable** no longer loses 3 HP every turn (the user: "kenapa venerable darahnya setiap langkah berkurang
+  terus?"). Like every immortal it burns a Lifespan Gu each ten turns on Standard; only without any does it waste away
+  (7 HP a turn) and heal only by pillaging. It heals normally otherwise; each kill still heals 10 HP.
+* **Power scaling** (the user: "powerscalling sangat jelas dan detail"), five visible layers: rank, path attainment,
+  dao marks, Gu, conflicts.
+  * Every one of the 47 paths has its own **hit**, which fires on each attack it makes: extra damage, a status on the
+    target, movement taken, healing, XP or stones. There are twelve new target statuses with icons: Burning, Frozen,
+    Bleeding, Blinded, Soul-Torn, Dazed, Guard Broken, Entangled, Shocked, Doomed, Aged, Weighted.
+  * **Dao marks** raise the hit tier by tier. Extra damage goes 4/5/6/8/10/12, status turns 2/2/2/3/3/4, healing
+    5..15, XP 2..8, stolen stones 10..40%. The Master's promotion shows one line per tier.
+  * **Attainment** tiers open new kinds of power: Grandmaster a second effect, Great Grandmaster a domain or new art,
+    Supreme Grandmaster the path's peak.
+  * Each **killer move** is the family's burst plus the path's own hit at full power, so all 94 moves differ.
+* Clarity: the civilopedia line of every tier and move is written from its uniques (EN + ID). Nine Tutorial pages
+  hold the layers, one page per path family and the statuses (Civilopedia > Tutorials > "Gu World: ..."). PATHS.md
+  gains a generated power table.
+* Autoplay (Five Regions, 6 × 350): with hits on defence as well, sieges stalled (captured cities 16 → 9, clans
+  destroyed 7 → 1), so hits fire on attack only: 27 captured and 9 destroyed. 20+ turns in the red: 25 → 23 of 48.
+  0 crashes.

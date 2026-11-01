@@ -326,6 +326,19 @@ extra people became production and soldiers, so stones per turn fell while fewer
 T280 (Five Regions): tiles +21, buildings +19, trade routes +16; unit upkeep −35, building upkeep −18, roads −11.
 Details and levers: BALANCE.md "The Five Regions economy".
 
+## Phase D: path power scaling (2026-11-02)
+
+Five Regions, eight majors, Prince, seed 401, 6 × 350, per game (captured cities, clans destroyed):
+
+| Batch | Per game | Total | Red 20+ |
+| --- | --- | --- | --- |
+| Before (flat tiers) | (3,1) (4,2) (0,0) (2,1) (2,1) (5,2) | 16, 7 | 25 / 48 |
+| Hits on attack and defence | (5,1) (1,0) (2,0) (0,0) (1,0) (0,0) | 9, 1 | 32 / 48 |
+| Hits on attack only (shipped) | (4,2) (2,1) (6,2) (6,2) (5,1) (4,1) | 27, 9 | 23 / 48 |
+
+0 crashes in all three. Defenders hit back at melee besiegers while cities take no hits, so two-way hits stalled
+conquest; attack-only hits make the attacker's path decide the fight.
+
 ## Re-run
 
 ```

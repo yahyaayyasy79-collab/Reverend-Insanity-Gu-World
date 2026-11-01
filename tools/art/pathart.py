@@ -451,9 +451,17 @@ def status(name: str) -> G:
         for k, (x, y) in enumerate(((22, 22), (50, 12), (78, 22))):
             _star(g, x, y, 9)
         g.line([(44, 36), (54, 54), (46, 64), (56, 82)], 3.5, 0)                        # a crack
+    elif name in DEBUFF_SYMBOL:   # Phase D: a path hit's mark on its target: the path's symbol over a falling wedge
+        place(g, symbol(DEBUFF_SYMBOL[name]), 44, 44, 0.74)
+        g.poly([(64, 70), (96, 70), (80, 96)])
     else:
         raise KeyError(name)
     return g
+
+
+DEBUFF_SYMBOL = {"Burning": "fire", "Frozen": "ice", "Bleeding": "blood", "Blinded": "light", "Soul-Torn": "soul",
+                 "Dazed": "sound", "Guard Broken": "metal", "Entangled": "wood", "Shocked": "lightning",
+                 "Doomed": "luck", "Aged": "time", "Weighted": "earth"}
 
 
 def icons() -> list[tuple[str, str, object, str]]:

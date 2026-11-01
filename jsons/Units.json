@@ -1088,8 +1088,12 @@
       "Cannot be purchased",
       "Limited to [1] per Civilization",
       "Never appears as a Barbarian unit",
-      "[This Unit] takes [3] damage <upon turn start>",
-      "Can only heal by pillaging",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
+      "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
+      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>",
       "[+300]% maintenance costs",
       "[2] additional attacks per turn",
@@ -1125,7 +1129,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It loses 3 HP a turn and heals only by pillaging or killing (10 HP a kill); it makes 6 yellow apricot essence a turn."
+        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. Like every immortal it burns a Lifespan Gu each ten turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."
       }
     ]
   },

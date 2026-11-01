@@ -101,6 +101,14 @@ unit add gu-yue-clan "Rank Five Gu Master"
 unit setxp 300                      # select the new unit first, then buy Ascension on its promotion screen
 ```
 
+Path power scaling (Civilopedia > Tutorials > "Gu World: Power Scaling"; select a Gu Master first):
+
+```
+unit addpromotion "Fire Master"             # each attack: Burning 2 turns (3 with Dao Marks III); see the promotion
+unit addpromotion "Fire Grandmaster"        # +6 damage per attack; the killer move button Five-Finger Flame Chain
+unit addpromotion "Dao Marks V"             # Burning lasts 4 turns now: attack an enemy and read the notification
+```
+
 Dao marks (select one of your Gu Masters first; the tiers replace one another, the icon shows the stars):
 
 ```
