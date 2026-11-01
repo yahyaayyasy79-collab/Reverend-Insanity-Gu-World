@@ -1361,6 +1361,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 ```
 Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>
 Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Water] tiles>
 Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
 Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>
@@ -1467,6 +1468,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 
 ```
 Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>
 Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>
@@ -1499,6 +1501,7 @@ Triggers a [Ascension Trial] event
 
 ```
 Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Water] tiles>
 Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
 Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>
@@ -2985,6 +2988,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 ```
 Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>
 Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Green Grape Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [60] [Green Grape Immortal Essence]> <on [Standard] game speed>
 Unavailable <when below [90] [Green Grape Immortal Essence]> <on [Epic] game speed>
@@ -3005,6 +3009,7 @@ Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game spee
 ```
 Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>
 Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [60] [Red Date Immortal Essence]> <on [Standard] game speed>
 Unavailable <when below [90] [Red Date Immortal Essence]> <on [Epic] game speed>
@@ -3030,4 +3035,140 @@ Instantly consumes [180] [Red Date Immortal Essence] <on [Marathon] game speed>
 ```
 Stockpiled
 Cannot be traded
+```
+
+
+## Phase C5b: the Venerable, Eternal Life, true inheritances, Gu Houses (built 2026-11-01)
+
+MOD_SPEC_2 Phase C, fifth layer, second half; the arc's victory (MOD_SPEC_3: Eternal Life after Venerable Ascension).
+
+* **Dao Lord** (column 12) opens the **Venerable Ascension**, a world wonder (one in the world at a time) that only a
+  clan holding a rank-eight immortal of supreme attainment can build: every Supreme Grandmaster carries the marker
+  `Supreme Attainment` (allowlisted) and the wonder counts a count of rank-eight immortals with that marker
+  (the plan's single-path `max()` countable, simplified to "any one path at its summit"). It costs white lychee essence
+  and brings forth the **Venerable** (strength 200): unbeatable in its era, but it loses 3 HP a turn and cannot heal
+  (canon: long-lived, never eternal, R V6/105), and it makes 6 **yellow apricot essence** a turn.
+* **Eternal Life** (world wonder; victory type **Eternal Life**, milestone `Build [Eternal Life]`): only a clan with a
+  living Venerable can build it, and it costs 150 yellow apricot essence, about 25 of the Venerable's 33 turns: the
+  Venerable races its own lifespan (MOD_SPEC_3).
+* When a Venerable dies (losing one is its death: it never upgrades, E9), the Venerable Ascension is removed (A2: the
+  race reopens) and its clan gains the **True Inheritance Seal**, which unlocks building the **True Inheritance**
+  (+25% battle XP, immortals +20%), seizable by conquest. The **Venerable Falls** popup tells the clan.
+* **Gu House Formation** (column 12) opens three **Gu Houses** (R V4/356), a new unit type: the Calamity Luck Altar
+  (needs Connect Luck), the Myriad Year Flying Warship (Years Flow Like Water) and the Dragon Palace (Dream Token); one
+  each per clan, white lychee essence on top of production, +500% upkeep. The Heaven Overseeing Tower waits for Fate
+  Gu and the Heavenly Court.
+* **Still to come** (the arc's nations and world state): the Heavenly Court and Fate Gu, the Fate War and the qi
+  tides, the Huang Jin, the Zombie Alliance and the Fang clan, the immortal zombie, the four city-states, the rank-nine
+  immortal Gu, the 88 True Yang Building, the secret realms and the five-region map.
+* Art: the Venerable (three halos and a sun disc), the three Gu Houses in 3D, nine icons.
+* Crash guard (autoplay): Unciv places an upgraded unit before copying its promotions, so a Water Master that
+  ascended on open water found no tile and the game crashed restoring it. Ascension and advancement carry
+  `Unavailable <in [Water] tiles>`, and Aperture Awakening (the starting tech) now has
+  `Enables embarkation for land units`, so any upgrade at sea can place the new unit (ADAPTED: Gu Masters cross water
+  by boat from the start).
+
+Exact uniques (written by tools/lore_blocks.py from jsons/):
+
+**Venerable Ascension** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 900, "civilopediaText": [{"text": "Rank nine (\u6210\u5c0a): a rank-eight immortal of supreme attainment in some path breaks the three blockades. Built with white lychee essence, it brings forth a Venerable. When the Venerable dies the ascension is removed and the race reopens."}]})
+
+```
+Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>
+Costs [120] [White Lychee Immortal Essence]
+Free [Venerable] appears
+[+500]% weight to this choice for AI decisions
+```
+
+**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. Only a clan with a living Venerable can build it, with its yellow apricot essence, before its lifespan runs out. Building it wins the game."}]})
+
+```
+Only available <when number of [[Venerable] Units] is more than [0]>
+Costs [150] [Yellow Apricot Immortal Essence]
+[+1000]% weight to this choice for AI decisions
+```
+
+**True Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 600, "civilopediaText": [{"text": "A dead Venerable's true inheritance (\u771f\u4f20), which others fight over. Built by the clan holding its seal; a conqueror takes it. +25% battle XP; immortals fight 20% harder."}]})
+
+```
+Only available <if [True Inheritance Seal] is constructed>
+Never destroyed when the city is captured
+[+25]% XP gained from combat
+[+20]% Strength <for [post-[Rank Five era]] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**True Inheritance Seal** (Buildings.json; {"isNationalWonder": true, "cost": 1, "civilopediaText": [{"text": "The seal a dead Venerable leaves its clan. It unlocks building the true inheritance."}]})
+
+```
+Unbuildable
+Cannot be purchased
+```
+
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 4, "strength": 200, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. It loses 3 HP a turn and cannot heal; while it lives it makes 6 yellow apricot essence a turn. One per clan, and one Venerable Ascension in the world at a time."}]})
+
+```
+Unbuildable
+Cannot be purchased
+Limited to [1] per Civilization
+Never appears as a Barbarian unit
+[This Unit] takes [3] damage <upon turn start>
+Can only heal by pillaging
+Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
+[+300]% maintenance costs
+```
+
+**Calamity Luck Altar** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 140, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u4ed9\u86ca\u5c4b): Longevity Heaven's rank-eight luck altar (\u52ab\u8fd0\u575b), a fortress that walks. Needs Connect Luck; one per clan; defends 50% harder."}]})
+
+```
+Only available <if [Connect Luck] is constructed>
+Limited to [1] per Civilization
+Costs [50] [White Lychee Immortal Essence]
+[+500]% maintenance costs
+Never appears as a Barbarian unit
+[+50]% Strength <when defending>
+```
+
+**Myriad Year Flying Warship** (Units.json; {"unitType": "Gu House", "movement": 5, "strength": 150, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u4e07\u5e74\u6597\u98de\u8f66): a rank-eight time-path fortress that sails the river of time. Needs Years Flow Like Water; one per clan; ignores terrain."}]})
+
+```
+Only available <if [Years Flow Like Water] is constructed>
+Limited to [1] per Civilization
+Costs [50] [White Lychee Immortal Essence]
+[+500]% maintenance costs
+Never appears as a Barbarian unit
+Ignores terrain cost
+```
+
+**Dragon Palace** (Units.json; {"unitType": "Gu House", "movement": 3, "strength": 160, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u9f99\u5bab): a rank-eight dream-token fortress that enslaves. Needs Dream Token; one per clan; +20% strength against immortals."}]})
+
+```
+Only available <if [Dream Token] is constructed>
+Limited to [1] per Civilization
+Costs [50] [White Lychee Immortal Essence]
+[+500]% maintenance costs
+Never appears as a Barbarian unit
+[+20]% Strength <vs [post-[Rank Five era]] units>
+```
+
+**Venerable Falls** (popup)
+
+* Guard the true inheritance
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+**Yellow Apricot Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-nine essence (\u9ec4\u674f\u4ed9\u5143); even a Venerable runs short of it. Only a living Venerable makes it; Eternal Life costs 150."}]})
+
+```
+Stockpiled
+Cannot be traded
+```
+
+**GlobalUniques**
+
+```
+Remove [Venerable Ascension] [in all cities] <upon losing a [Venerable] unit>
+Gain a free [True Inheritance Seal] [in capital] <upon losing a [Venerable] unit>
+Triggers a [Venerable Falls] event <upon losing a [Venerable] unit>
 ```

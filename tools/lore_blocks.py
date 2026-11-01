@@ -46,6 +46,11 @@ SECTIONS = {
                       "UnitPromotions.json": ["Tribulation Survivor", "Advancing", "Grotto-Heaven Aperture",
                                               "Advance to Rank Seven", "Advance to Rank Eight"],
                       "TileResources.json": ["Red Date Immortal Essence"]},
+    "## Phase C5b:": {"Buildings.json": ["Venerable Ascension", "Eternal Life", "True Inheritance", "True Inheritance Seal"],
+                      "Units.json": ["Venerable", "Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace"],
+                      "Events.json": ["Venerable Falls"],
+                      "TileResources.json": ["Yellow Apricot Immortal Essence"],
+                      "Globals": ["[Venerable] unit>"]},
 }
 
 

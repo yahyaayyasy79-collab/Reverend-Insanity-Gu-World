@@ -786,6 +786,96 @@
     ]
   },
   {
+    "name": "Venerable",
+    "unitType": "Gu Master",
+    "movement": 4,
+    "strength": 200,
+    "cost": 1000,
+    "requiredTech": "Dao Lord",
+    "attackSound": "throw",
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Limited to [1] per Civilization",
+      "Never appears as a Barbarian unit",
+      "[This Unit] takes [3] damage <upon turn start>",
+      "Can only heal by pillaging",
+      "Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>",
+      "[+300]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. It loses 3 HP a turn and cannot heal; while it lives it makes 6 yellow apricot essence a turn. One per clan, and one Venerable Ascension in the world at a time."
+      }
+    ]
+  },
+  {
+    "name": "Calamity Luck Altar",
+    "unitType": "Gu House",
+    "movement": 2,
+    "strength": 140,
+    "cost": 650,
+    "requiredTech": "Gu House Formation",
+    "attackSound": "throw",
+    "uniques": [
+      "Only available <if [Connect Luck] is constructed>",
+      "Limited to [1] per Civilization",
+      "Costs [50] [White Lychee Immortal Essence]",
+      "[+500]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "[+50]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Gu House (仙蛊屋): Longevity Heaven's rank-eight luck altar (劫运坛), a fortress that walks. Needs Connect Luck; one per clan; defends 50% harder."
+      }
+    ]
+  },
+  {
+    "name": "Myriad Year Flying Warship",
+    "unitType": "Gu House",
+    "movement": 5,
+    "strength": 150,
+    "cost": 650,
+    "requiredTech": "Gu House Formation",
+    "attackSound": "throw",
+    "uniques": [
+      "Only available <if [Years Flow Like Water] is constructed>",
+      "Limited to [1] per Civilization",
+      "Costs [50] [White Lychee Immortal Essence]",
+      "[+500]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Ignores terrain cost"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Gu House (万年斗飞车): a rank-eight time-path fortress that sails the river of time. Needs Years Flow Like Water; one per clan; ignores terrain."
+      }
+    ]
+  },
+  {
+    "name": "Dragon Palace",
+    "unitType": "Gu House",
+    "movement": 3,
+    "strength": 160,
+    "cost": 650,
+    "requiredTech": "Gu House Formation",
+    "attackSound": "throw",
+    "uniques": [
+      "Only available <if [Dream Token] is constructed>",
+      "Limited to [1] per Civilization",
+      "Costs [50] [White Lychee Immortal Essence]",
+      "[+500]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "[+20]% Strength <vs [post-[Rank Five era]] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Gu House (龙宫): a rank-eight dream-token fortress that enslaves. Needs Dream Token; one per clan; +20% strength against immortals."
+      }
+    ]
+  },
+  {
     "name": "Thunder Crown Wolf",
     "unitType": "Beast",
     "movement": 3,

@@ -8,7 +8,7 @@ import math
 from .render3d import Scene
 
 ESSENCE = {1: "essence1", 2: "essence2", 3: "essence3", 4: "essence4", 5: "essence5", 6: "essence6", 7: "essence7",
-           8: "essence8"}
+           8: "essence8", 9: "essence9"}
 
 
 def _arm(s: Scene, side, shoulder, elbow, hand, r_upper=0.075, r_fore=0.065, sleeve=None, hand_r=0.07):
@@ -272,7 +272,40 @@ def gu_immortal(rank=6):
     s.add("torus", (0, 2.02, -0.05), 0.2, 0.022, mat=mat)
     if rank >= 8:
         s.add("torus", (0, 2.12, -0.05), 0.27, 0.018, mat=mat)
+    if rank >= 9:   # the Venerable: a third, wide halo and a sun disc behind the back
+        s.add("torus", (0, 2.22, -0.05), 0.34, 0.016, mat=mat)
+        s.add("ellipsoid", (0, 1.85, -0.7), (0.38, 0.38, 0.02), mat=mat)
     s.add("sphere", (0.36, 1.45, 0.5), 0.13 + 0.01 * (rank - 6), mat=mat)
+    return s
+
+
+def gu_house(kind: str):
+    """MOD_SPEC_2 C5b: Gu Houses, formation-path fortresses (R V4/356): a tiered luck altar, a flying warship over
+    clouds, a dragon palace pagoda. Civ colour on the walls and sails."""
+    s = Scene()
+    if kind == "altar":
+        for k, (w, h) in enumerate(((0.9, 0.18), (0.68, 0.18), (0.46, 0.18))):
+            s.add("box", (0, 0.09 + 0.2 * k, 0), (w / 2, h / 2, w / 2), mat="robe" if k == 1 else "metal")
+        for x in (-0.38, 0.38):
+            for z in (-0.38, 0.38):
+                s.add("capsule", (x, 0.1, z), (x, 0.95, z), 0.04, mat="jade")
+        s.add("sphere", (0, 0.92, 0), 0.18, mat="essence9")
+    elif kind == "warship":
+        s.add("ellipsoid", (0, 0.55, 0), (0.36, 0.2, 1.0), mat="wood")
+        s.add("box", (0, 0.7, -0.1), (0.2, 0.08, 0.4), mat="trim")
+        s.add("capsule", (0, 0.7, 0.1), (0, 1.5, 0.1), 0.03, mat="wood")
+        s.add("box", (0, 1.15, 0.12), (0.32, 0.3, 0.015), mat="sail")
+        for x, z, r in ((-0.3, 0.3, 0.24), (0.25, -0.2, 0.26), (0.0, 0.5, 0.2), (0.1, -0.6, 0.22)):
+            s.add("sphere", (x, 0.2, z), r, mat="cloud", blend=0.1)
+    else:   # palace
+        for k, w in enumerate((0.55, 0.42, 0.3)):
+            y = 0.22 + 0.46 * k
+            s.add("box", (0, y, 0), (w * 0.75, 0.14, w * 0.75), mat="robe")
+            s.add("ellipsoid", (0, y + 0.18, 0), (w * 1.15, 0.06, w * 1.15), mat="roof")      # flat eaves (a round
+            s.add("ellipsoid", (0, y + 0.23, 0), (w * 0.7, 0.05, w * 0.7), mat="roof")        # cone would be a ball)
+        s.add("capsule", (0, 1.3, 0), (0, 1.55, 0), 0.03, mat="metal")
+        s.add("sphere", (0, 1.6, 0), 0.08, mat="essence8")
+        s.add("box", (0, 0.04, 0), (0.6, 0.04, 0.6), mat="metal")
     return s
 
 
@@ -306,6 +339,10 @@ UNITS = {
     "Immemorial Desolate Beast": lambda: desolate_beast(1.65, "hide_pale", "hide_red"),
     "Rank Seven Gu Immortal": lambda: gu_immortal(7),
     "Rank Eight Gu Immortal": lambda: gu_immortal(8),
+    "Venerable": lambda: gu_immortal(9),
+    "Calamity Luck Altar": lambda: gu_house("altar"),
+    "Myriad Year Flying Warship": lambda: gu_house("warship"),
+    "Dragon Palace": lambda: gu_house("palace"),
 }
 
 # attack frames per unit name (Unciv plays them over the unit that takes damage)
@@ -330,6 +367,9 @@ ATTACKS = {
     "Immemorial Desolate Beast": [lambda i=i: essence_frame(i, 8) for i in range(3)],
     "Rank Seven Gu Immortal": [lambda i=i: essence_frame(i, 7) for i in range(4)],
     "Rank Eight Gu Immortal": [lambda i=i: essence_frame(i, 8) for i in range(4)],
+    "Venerable": [lambda i=i: essence_frame(i, 9) for i in range(4)],
+    **{n: [lambda i=i: essence_frame(i, 8) for i in range(3)]
+       for n in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace")},
 }
 
 # portraits are single images (no civ tint): the robe takes the path's colour
@@ -341,5 +381,7 @@ PORTRAIT_ROBE = {"Clan Settler": (120, 92, 64), "Mortal Laborer": (140, 110, 80)
                     for who, col in (("", (90, 90, 100)), ("Gu Yue ", (40, 60, 130)), ("Bai ", (40, 110, 150)),
                                      ("Xiong ", (110, 60, 30)), ("Wu ", (60, 120, 95)))},
                  "Rank Five Gu Master": (110, 70, 150), "Rank Six Gu Immortal": (90, 140, 70),
-                 "Rank Seven Gu Immortal": (140, 50, 45), "Rank Eight Gu Immortal": (200, 196, 182)}
+                 "Rank Seven Gu Immortal": (140, 50, 45), "Rank Eight Gu Immortal": (200, 196, 182),
+                 "Venerable": (200, 150, 50), "Calamity Luck Altar": (150, 120, 60), "Myriad Year Flying Warship": (120, 90, 60),
+                 "Dragon Palace": (60, 80, 120)}
 PORTRAIT_TRIM = (225, 215, 190)

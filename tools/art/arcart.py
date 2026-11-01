@@ -410,6 +410,109 @@ def advance_to(rank):
         return g
     return draw
 
+
+# ---- C5b: the Venerable, Eternal Life, Gu Houses
+def venerable():
+    """The Venerable: an immortal before a sun disc with nine rays."""
+    g = G()
+    for k in range(9):
+        a = math.radians(90 + 40 * k)
+        g.line([(50 + 34 * math.cos(a), 34 - 34 * math.sin(a)), (50 + 46 * math.cos(a), 34 - 46 * math.sin(a))], 4)
+    g.circ(50, 34, 28); g.circ(50, 34, 24, 0)
+    human(g, 50, 14, 1.1, arms="raised")
+    return g
+
+
+def venerable_ascension():
+    """A figure on a peak under nine rays."""
+    g = G()
+    g.poly([(10, 92), (50, 46), (90, 92)])
+    human(g, 50, 14, 0.7, arms="raised")
+    for k in range(9):
+        a = math.radians(20 + 17.5 * k)
+        g.line([(50 + 30 * math.cos(a), 30 - 30 * math.sin(a) + 6), (50 + 44 * math.cos(a), 30 - 44 * math.sin(a) + 6)], 3)
+    return g
+
+
+def eternal_life():
+    """An endless loop around a small figure: Fang Yuan's goal."""
+    g = G()
+    g.arc_band(30, 50, 22, 14, 0, 360); g.arc_band(70, 50, 22, 14, 0, 360)
+    g.circ(50, 50, 9, 0)
+    human(g, 50, 36, 0.45)
+    return g
+
+
+def true_inheritance():
+    """A stele crowned with nine points."""
+    g = inheritance("rule")()
+    for k in range(5):
+        x = 30 + 10 * k
+        g.poly([(x - 4, 10), (x, 0), (x + 4, 10)])
+    return g
+
+
+def true_inheritance_seal():
+    g = seal("rule")()
+    for k in range(3):
+        x = 40 + 10 * k
+        g.poly([(x - 4, 12), (x, 2), (x + 4, 12)], 0)
+    return g
+
+
+def dao_lord():
+    """A figure inside a ring of dao marks."""
+    g = G()
+    for k in range(24):
+        a = math.radians(15 * k)
+        g.line([(50 + 38 * math.cos(a), 50 - 38 * math.sin(a)), (50 + 46 * math.cos(a), 50 - 46 * math.sin(a))], 3 if k % 2 else 5)
+    human(g, 50, 18, 0.95, arms="raised")
+    return g
+
+
+def gu_house_formation():
+    """A pagoda over a formation ring."""
+    g = G(); octagon_array(g, 50, 70, 24)
+    roof(g, 50, 22, 26, 12); g.poly([(36, 24), (64, 24), (62, 42), (38, 42)])
+    return g
+
+
+def yellow_apricot():
+    """An apricot with a leaf: rank-nine essence."""
+    g = G(); g.circ(50, 56, 30); g.line([(50, 26), (52, 12)], 4); g.poly([(52, 16), (74, 10), (68, 26)])
+    g.arc_band(50, 56, 26, 23, 100, 170, 0)
+    return g
+
+
+def calamity_luck_altar():
+    g = G()
+    for k, w in enumerate((40, 30, 20)):
+        y = 86 - 16 * k
+        g.poly([(50 - w, y), (50 + w, y), (50 + w, y - 12), (50 - w, y - 12)])
+    g.circ(50, 26, 12)
+    for x in (16, 84):
+        g.line([(x, 88), (x, 40)], 5)
+    return g
+
+
+def flying_warship():
+    g = G()
+    g.poly([(10, 58), (90, 58), (78, 74), (22, 74)])
+    g.line([(50, 58), (50, 12)], 4)
+    g.poly([(52, 16), (80, 30), (52, 50)])
+    _cloud(g, 50, 84, 70)
+    return g
+
+
+def dragon_palace():
+    g = G()
+    for k, w in enumerate((40, 30, 20)):
+        y = 82 - 24 * k
+        roof(g, 50, y - 12, w + 8, 10)
+        g.poly([(50 - w + 6, y - 10), (50 + w - 6, y - 10), (50 + w - 6, y + 6), (50 - w + 6, y + 6)])
+    g.circ(50, 14, 5)
+    return g
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -457,6 +560,17 @@ ICONS3 = [
     ("UnitPromotionIcons", "Grotto-Heaven Aperture", grotto_heaven, "white"),
     ("UnitPromotionIcons", "Advance to Rank Seven", advance_to(7), "white"),
     ("UnitPromotionIcons", "Advance to Rank Eight", advance_to(8), "white"),
+    ("UnitIcons", "Venerable", venerable, "white"),
+    ("UnitIcons", "Calamity Luck Altar", calamity_luck_altar, "white"),
+    ("UnitIcons", "Myriad Year Flying Warship", flying_warship, "white"),
+    ("UnitIcons", "Dragon Palace", dragon_palace, "white"),
+    ("BuildingIcons", "Venerable Ascension", venerable_ascension, "black"),
+    ("BuildingIcons", "Eternal Life", eternal_life, "black"),
+    ("BuildingIcons", "True Inheritance", true_inheritance, "black"),
+    ("BuildingIcons", "True Inheritance Seal", true_inheritance_seal, "black"),
+    ("TechIcons", "Dao Lord", dao_lord, "white"),
+    ("TechIcons", "Gu House Formation", gu_house_formation, "white"),
+    ("ResourceIcons", "Yellow Apricot Immortal Essence", yellow_apricot, "black"),
 ]
 
 

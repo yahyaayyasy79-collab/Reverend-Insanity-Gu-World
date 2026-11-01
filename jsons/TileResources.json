@@ -305,5 +305,19 @@
         "text": "Rank-eight immortal essence (白荔仙元), made by grotto-heavens; rank-eight immortal Gu cost it."
       }
     ]
+  },
+  {
+    "name": "Yellow Apricot Immortal Essence",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rank-nine essence (黄杏仙元); even a Venerable runs short of it. Only a living Venerable makes it; Eternal Life costs 150."
+      }
+    ]
   }
 ]

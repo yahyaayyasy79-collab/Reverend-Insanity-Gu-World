@@ -10,7 +10,8 @@
         "name": "Aperture Awakening",
         "row": 2,
         "uniques": [
-          "Starting tech"
+          "Starting tech",
+          "Enables embarkation for land units"
         ],
         "civilopediaText": [
           {
@@ -384,11 +385,44 @@
     "wonderCost": 700,
     "techs": [
       {
+        "name": "Dao Lord",
+        "row": 1,
+        "prerequisites": [
+          "Rank Eight Immortal Gu Recipes"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A Venerable refines the world's dao marks of its path (道主). Opens the Venerable Ascension and Eternal Life."
+          }
+        ]
+      },
+      {
+        "name": "Gu House Formation",
+        "row": 3,
+        "prerequisites": [
+          "Grotto-Heaven"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A Gu House (仙蛊屋) is a formation-path killer move built as a fortress. Opens the three Gu Houses, each needing its key immortal Gu."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 13,
+    "era": "Rank Eight era",
+    "techCost": 1700,
+    "buildingCost": 520,
+    "wonderCost": 750,
+    "techs": [
+      {
         "name": "Dao Comprehension",
         "row": 2,
         "prerequisites": [
-          "Grotto-Heaven",
-          "Rank Eight Immortal Gu Recipes"
+          "Dao Lord",
+          "Gu House Formation"
         ],
         "uniques": [
           "Can be continually researched"

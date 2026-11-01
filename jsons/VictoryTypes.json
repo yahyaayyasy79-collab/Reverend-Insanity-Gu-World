@@ -20,5 +20,16 @@
         "text": "When time runs out, the strongest clan is the one remembered. The score counts what a clan has built and kept."
       }
     ]
+  },
+  {
+    "name": "Eternal Life",
+    "milestones": [
+      "Build [Eternal Life]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eternal life, beyond any Venerable: raise a Venerable and build Eternal Life before its lifespan runs out."
+      }
+    ]
   }
 ]

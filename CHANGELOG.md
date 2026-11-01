@@ -522,3 +522,20 @@
   icons; a fourth atlas (Arc.png) for the immortal tiers.
 * Autoplay (8 × 420, Prince): 0 crashes; rank seven reached by 15 of 32 clans (first at T255), rank eight by 2 (T322);
   at T420, 1.1 rank-six and 0.19 rank-seven immortals per clan, 2.2 immortal Gu; 9 of 32 clans in debt.
+
+## MOD_SPEC_2 C5b — the Venerable, Eternal Life, true inheritances, Gu Houses (2026-11-01)
+
+* **Crash fix:** a Water Master (walks on water) that ascended at sea crashed the game the same way as C3's
+  foreign-land case: the upgraded unit is placed before its promotions are copied and finds no tile. Ascension and
+  rank advancement are closed on water, and land units can embark from the start (so any upgrade at sea can place
+  the new unit) [src TileMap.placeUnitNearTile, UnitUpgradeManager.performUpgrade].
+* **Dao Lord** opens the **Venerable Ascension** (one in the world at a time; needs a rank-eight immortal with a
+  Supreme Grandmaster): it brings forth the **Venerable** (strength 200), who loses 3 HP a turn, cannot heal, and makes
+  6 **yellow apricot essence** a turn.
+* **Eternal Life**, a new victory: build the Eternal Life wonder (150 yellow apricot essence) while your Venerable
+  lives. When a Venerable dies, its ascension is removed and its clan gains the seal of a **True Inheritance**.
+* **Gu House Formation** opens three **Gu Houses**: Calamity Luck Altar (Connect Luck), Myriad Year Flying Warship
+  (Years Flow Like Water), Dragon Palace (Dream Token).
+* Art: the Venerable and the three Gu Houses in 3D, nine icons.
+* Autoplay: 8 × 500 (Small) and 8 × 450 (Qing Mao map), 0 crashes. Rank seven reached by 21 of 32 clans, rank eight by
+  1; the AI does not reach a Venerable in 500 turns (it rarely buys a fourth path tier): the victory is a human's race.

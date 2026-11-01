@@ -494,6 +494,7 @@
         "text": "Balance the three qi",
         "uniques": [
           "Unavailable <in [Foreign Land] tiles>",
+          "Unavailable <in [Water] tiles>",
           "Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>",
           "Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>",
           "Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>",
@@ -526,6 +527,7 @@
         "text": "Ascend in haste",
         "uniques": [
           "Unavailable <in [Foreign Land] tiles>",
+          "Unavailable <in [Water] tiles>",
           "Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>",
           "Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>",
           "Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>",
@@ -969,6 +971,18 @@
           "A [Desolate Beast] rebels",
           "[2] [Bold Lightning Wolf]s rebel",
           "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Venerable Falls",
+    "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable may rise anywhere; its true inheritance's seal lies in your capital.",
+    "choices": [
+      {
+        "text": "Guard the true inheritance",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
         ]
       }
     ]

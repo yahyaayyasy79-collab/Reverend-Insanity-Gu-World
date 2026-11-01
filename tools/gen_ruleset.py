@@ -265,12 +265,27 @@ def advance(target):
              + ["[This Unit] gains the [Grotto-Heaven Aperture] promotion"]) if target == "Rank Eight" else []
     return {"name": name, "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{unit}] units> <after discovering [{tech}]> <for units with [{SURVIVOR}]>",
-        "Unavailable <in [Foreign Land] tiles>"]
+        "Unavailable <in [Foreign Land] tiles>", "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(ADVANCE_COST, m)}] [{essence}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(ADVANCE_COST, m)}] [{essence}] <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"[This Unit] loses the [{SURVIVOR}] promotion", f"[This Unit] loses the [{name}] promotion",
            "[This Unit] gains the [Advancing] status for [1] turn(s)"] + extra
         + ["[This Unit] upgrades for free including special upgrades", w("+200")]}
+
+
+# ---------------- MOD_SPEC_2 C5b: the Venerable, Eternal Life, Gu Houses ----------------
+# Rank nine is never an era (MOD_SPEC_2): a Venerable rises when a clan holding a rank-eight immortal of supreme
+# attainment builds the Venerable Ascension (one in the world at a time). The Venerable is unbeatable in its era but
+# only long-lived (R V6/105, V3/194): it loses HP every turn and cannot heal, while its yellow apricot essence pays for
+# Eternal Life, Fang Yuan's goal and the arc's victory (MOD_SPEC_3). When it dies its ascension is removed (the race
+# reopens, Phase A2) and its clan gains the seal of its true inheritance.
+APRICOT = "Yellow Apricot Immortal Essence"  # rank nine (R V6/249)
+VENERABLE = "Venerable"
+GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
+    ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
+    ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
+    ("Dragon Palace", "Dream Token", 160, 3, ["[+20]% Strength <vs [post-[Rank Five era]] units>"]),
+]
 
 
 # the rank-eight aperture: a grotto-heaven (R V5/745) makes white lychee essence; its calamities come faster
@@ -367,7 +382,11 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     lambda m: f"Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[{IMMORTAL}] Units] "
               f"is more than [0]> <with [{chance(4, m)}]% chance> <for [Major] Civilizations>") + [
     # a desolate beast's corpse is a heap of immortal materials (R V5/734)
-] + [f"Earn [10]% of killed [{b}] unit's [Cost] as [{MATERIALS}]" for b in (DESOLATE, ANCIENT, IMMEMORIAL)]})
+] + [f"Earn [10]% of killed [{b}] unit's [Cost] as [{MATERIALS}]" for b in (DESOLATE, ANCIENT, IMMEMORIAL)] + [
+    # C5b: a Venerable's death (it never upgrades, so losing it means its death, E9)
+    f"Remove [Venerable Ascension] [in all cities] <upon losing a [{VENERABLE}] unit>",
+    f"Gain a free [True Inheritance Seal] [in capital] <upon losing a [{VENERABLE}] unit>",
+    f"Triggers a [Venerable Falls] event <upon losing a [{VENERABLE}] unit>"]})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -409,7 +428,7 @@ dump("Techs.json", [{"columnNumber": int(c["column"]), "era": c["era"], "techCos
 
 # ---------------- Unit types ----------------
 dump("UnitTypes.json", [{"name": n, "movementType": "Land"} for n in
-                        ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast"]])
+                        ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
 
 # ---------------- Units ----------------
@@ -487,6 +506,15 @@ dump("Units.json", [
      "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+250]% maintenance costs"]},
     {"name": IMMEMORIAL, "unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot",
      "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+300]% maintenance costs"]},
+    # C5b: the Venerable and the Gu Houses
+    {"name": VENERABLE, "unitType": "Gu Master", "movement": 4, "strength": 200, "cost": 1000, "requiredTech": "Dao Lord",
+     "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
+                                         "[This Unit] takes [3] damage <upon turn start>", "Can only heal by pillaging",
+                                         f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs"]},
+] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
+      "attackSound": "throw", "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
+                                          f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
+     for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
@@ -585,7 +613,10 @@ dump("UnitPromotions.json", [
         "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>",
         # an upgrade anywhere fails in foreign land without open borders, and Unciv then crashes restoring the old unit
         # [src UnitUpgradeManager.performUpgrade, TileMap.placeUnitNearTile]: ascend at home (autoplay crash, C3)
-        "Unavailable <in [Foreign Land] tiles>"]
+        "Unavailable <in [Foreign Land] tiles>",
+        # a Water Master walks on water, but the upgraded unit is placed before its promotions are copied: at sea it
+        # finds no tile and Unciv crashes restoring the old one (autoplay crash, C5)
+        "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(ASCEND['Ascend in haste'], m)}] [{q}]> <on [{n}] game speed>"
            for q in QI for n, m in SPEEDS]
         + [f"Unavailable <when below [{qi_cost(ASCEND['Balance the three qi'], m)}] [{q}]> <for [AI player] Civilizations> "
@@ -764,7 +795,7 @@ dump("Events.json", [
     # MOD_SPEC_2 C1: crush the aperture, draw in and balance the three qi, survive (R V3/201, V5/346, V3/222)
     {"name": "Ascension", "text": "Your rank-five Gu Master is ready to crush the aperture and draw in the three qi. "
                                   "Balanced qi gives the best odds; haste costs less and risks everything.", "choices": [
-        {"text": text, "uniques": ["Unavailable <in [Foreign Land] tiles>"] + [
+        {"text": text, "uniques": ["Unavailable <in [Foreign Land] tiles>", "Unavailable <in [Water] tiles>"] + [
             f"Unavailable <when below [{qi_cost(a, m)}] [{q}]> <on [{n}] game speed>"
                                    for q in QI for n, m in SPEEDS]
             + [f"Instantly consumes [{qi_cost(a, m)}] [{q}] <on [{n}] game speed>" for q in QI for n, m in SPEEDS]
@@ -826,6 +857,9 @@ dump("Events.json", [
         toll("Lie low", ["[-20]% Strength <for [10] turns>"], "+0"),
         toll("Pay heaven its due", [f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]"], "+50"),
         toll("Defy heaven", [f"A [{DESOLATE}] rebels", "[2] [Bold Lightning Wolf]s rebel"], "-30")]},
+    {"name": "Venerable Falls", "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable "
+                                        "may rise anywhere; its true inheritance's seal lies in your capital.",
+     "choices": [toll("Guard the true inheritance", [], "+0")]},
     # C4: inheritance trial (silent die) and its two result popups
     {"name": "Inheritance Trial", "presentation": "None", "choices": [
         toll("Nothing surfaces", [], "+100"),
@@ -920,6 +954,17 @@ dump("Buildings.json", [
      + items(i["effects"]) + [w("+300")]},
     # the seal is a free grant: it need not be seizable (Phase A3), it only unlocks building the inheritance
     {"name": i["seal"], "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]})
+] + [
+    {"name": "Venerable Ascension", "isWonder": True, "requiredTech": "Dao Lord", "cost": 900,
+     "uniques": [f"Only available <when number of [[{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] Units] is more than [0]>",
+                 f"Costs [120] [{WHITE}]", f"Free [{VENERABLE}] appears", w("+500")]},
+    {"name": "Eternal Life", "isWonder": True, "requiredTech": "Dao Lord", "cost": 1200,
+     "uniques": [f"Only available <when number of [[{VENERABLE}] Units] is more than [0]>", f"Costs [150] [{APRICOT}]",
+                 w("+1000")]},
+    {"name": "True Inheritance", "isWonder": True, "requiredTech": "Dao Lord", "cost": 600,
+     "uniques": ["Only available <if [True Inheritance Seal] is constructed>", "Never destroyed when the city is captured",
+                 "[+25]% XP gained from combat", "[+20]% Strength <for [post-[Rank Five era]] units>", w("+300")]},
+    {"name": "True Inheritance Seal", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]}
 ])
 
 # ---------------- Policies (4 branches) ----------------
@@ -1016,7 +1061,7 @@ dump("TileResources.json", [
      "improvement": "Camp", "improvementStats": {"gold": 1}},
     # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
 ] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
-     for r in QI + [GREEN, LIFESPAN, MATERIALS, RED, WHITE]])
+     for r in QI + [GREEN, LIFESPAN, MATERIALS, RED, WHITE, APRICOT]])
 
 # ---------------- Terrains (Vanilla minus natural wonders and Fallout) ----------------
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))
@@ -1180,6 +1225,8 @@ dump("Personalities.json", [
 dump("VictoryTypes.json", [
     {"name": "Southern Border Supremacy", "milestones": ["Capture all capitals"]},
     {"name": "Endurance", "milestones": ["Have highest score after max turns"]},
+    # C5b (MOD_SPEC_3): Fang Yuan's goal, beyond any Venerable
+    {"name": "Eternal Life", "milestones": ["Build [Eternal Life]"]},
 ])
 
 TECHMAP = {"Pottery": "Spirit Spring Lore", "Animal Husbandry": "Gu Feeding", "Mining": "Wine Brewing",

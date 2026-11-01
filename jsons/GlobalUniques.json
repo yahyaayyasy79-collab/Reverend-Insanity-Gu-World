@@ -84,6 +84,9 @@
     "Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
     "Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]",
     "Earn [10]% of killed [Ancient Desolate Beast] unit's [Cost] as [Immortal Materials]",
-    "Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]"
+    "Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]",
+    "Remove [Venerable Ascension] [in all cities] <upon losing a [Venerable] unit>",
+    "Gain a free [True Inheritance Seal] [in capital] <upon losing a [Venerable] unit>",
+    "Triggers a [Venerable Falls] event <upon losing a [Venerable] unit>"
   ]
 }

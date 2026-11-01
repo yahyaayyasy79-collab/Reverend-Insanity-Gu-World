@@ -317,6 +317,33 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Immemorial Desolate Beast | cost | 500 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
+| Venerable | movement | 4 | tools/gen_ruleset.py `Units` |
+| Venerable | strength | 200 | tools/gen_ruleset.py `Units` |
+| Venerable | cost | 1000 | tools/gen_ruleset.py `Units` |
+| Venerable | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] takes [3] damage <upon turn start>` | 3 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>` | 6 | tools/gen_ruleset.py `Units` |
+| Venerable | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | movement | 2 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | strength | 140 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | cost | 650 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | movement | 5 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | strength | 150 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | cost | 650 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | movement | 3 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | strength | 160 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | cost | 650 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | `[+20]% Strength <vs [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | strength | 28 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | cost | 120 | tools/gen_ruleset.py `Units` |
@@ -800,6 +827,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven's Will › Pay heaven its due | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
+| Venerable Falls › Guard the true inheritance | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › Nothing surfaces | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › The trial claims its seekers | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › The trial claims its seekers | `[-2] population [in capital]` | -2 | tools/gen_ruleset.py `Events` |
@@ -1106,6 +1134,19 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Blood Sea Inheritance | `Earn [25]% of killed [Military] unit's [Cost] as [Human Qi]` | 25 | tools/gen_ruleset.py `Buildings` |
 | Blood Sea Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Blood Sea Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Venerable Ascension | cost | 900 | tools/gen_ruleset.py `Buildings` |
+| Venerable Ascension | `Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>` | 0 | tools/gen_ruleset.py `Buildings` |
+| Venerable Ascension | `Costs [120] [White Lychee Immortal Essence]` | 120 | tools/gen_ruleset.py `Buildings` |
+| Venerable Ascension | `[+500]% weight to this choice for AI decisions` | +500 | tools/gen_ruleset.py `Buildings` |
+| Eternal Life | cost | 1200 | tools/gen_ruleset.py `Buildings` |
+| Eternal Life | `Only available <when number of [[Venerable] Units] is more than [0]>` | 0 | tools/gen_ruleset.py `Buildings` |
+| Eternal Life | `Costs [150] [Yellow Apricot Immortal Essence]` | 150 | tools/gen_ruleset.py `Buildings` |
+| Eternal Life | `[+1000]% weight to this choice for AI decisions` | +1000 | tools/gen_ruleset.py `Buildings` |
+| True Inheritance | cost | 600 | tools/gen_ruleset.py `Buildings` |
+| True Inheritance | `[+25]% XP gained from combat` | +25 | tools/gen_ruleset.py `Buildings` |
+| True Inheritance | `[+20]% Strength <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| True Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| True Inheritance Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
 
 ### Techs.json
 
@@ -1145,9 +1186,12 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 11 (Grotto-Heaven, Rank Eight Immortal Gu Recipes) | techCost | 1300 | data/tech_columns.csv `techCost` |
 | Column 11 (Grotto-Heaven, Rank Eight Immortal Gu Recipes) | buildingCost | 440 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 11 (Grotto-Heaven, Rank Eight Immortal Gu Recipes) | wonderCost | 650 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 12 (Dao Comprehension) | techCost | 1500 | data/tech_columns.csv `techCost` |
-| Column 12 (Dao Comprehension) | buildingCost | 480 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 12 (Dao Comprehension) | wonderCost | 700 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 12 (Dao Lord, Gu House Formation) | techCost | 1500 | data/tech_columns.csv `techCost` |
+| Column 12 (Dao Lord, Gu House Formation) | buildingCost | 480 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 12 (Dao Lord, Gu House Formation) | wonderCost | 700 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 13 (Dao Comprehension) | techCost | 1700 | data/tech_columns.csv `techCost` |
+| Column 13 (Dao Comprehension) | buildingCost | 520 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 13 (Dao Comprehension) | wonderCost | 750 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 
 ### Policies.json
 
@@ -1576,6 +1620,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-1400 numbers listed.
+1444 numbers listed.
 
 <!-- inventory:end -->

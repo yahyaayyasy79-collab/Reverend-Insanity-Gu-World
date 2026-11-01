@@ -1215,5 +1215,70 @@
         "text": "The seal of the Blood Sea Inheritance: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
       }
     ]
+  },
+  {
+    "name": "Venerable Ascension",
+    "isWonder": true,
+    "requiredTech": "Dao Lord",
+    "cost": 900,
+    "uniques": [
+      "Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>",
+      "Costs [120] [White Lychee Immortal Essence]",
+      "Free [Venerable] appears",
+      "[+500]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rank nine (成尊): a rank-eight immortal of supreme attainment in some path breaks the three blockades. Built with white lychee essence, it brings forth a Venerable. When the Venerable dies the ascension is removed and the race reopens."
+      }
+    ]
+  },
+  {
+    "name": "Eternal Life",
+    "isWonder": true,
+    "requiredTech": "Dao Lord",
+    "cost": 1200,
+    "uniques": [
+      "Only available <when number of [[Venerable] Units] is more than [0]>",
+      "Costs [150] [Yellow Apricot Immortal Essence]",
+      "[+1000]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eternal life (永生), Fang Yuan's goal, beyond any Venerable. Only a clan with a living Venerable can build it, with its yellow apricot essence, before its lifespan runs out. Building it wins the game."
+      }
+    ]
+  },
+  {
+    "name": "True Inheritance",
+    "isWonder": true,
+    "requiredTech": "Dao Lord",
+    "cost": 600,
+    "uniques": [
+      "Only available <if [True Inheritance Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+25]% XP gained from combat",
+      "[+20]% Strength <for [post-[Rank Five era]] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A dead Venerable's true inheritance (真传), which others fight over. Built by the clan holding its seal; a conqueror takes it. +25% battle XP; immortals fight 20% harder."
+      }
+    ]
+  },
+  {
+    "name": "True Inheritance Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal a dead Venerable leaves its clan. It unlocks building the true inheritance."
+      }
+    ]
   }
 ]

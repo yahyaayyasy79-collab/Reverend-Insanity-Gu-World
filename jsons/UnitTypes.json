@@ -13,7 +13,7 @@
     "movementType": "Land",
     "civilopediaText": [
       {
-        "text": "Unpathed Gu Masters of rank one, the clan's base. They choose a path when they reach rank two."
+        "text": "Gu Masters of every rank, from rank one to the immortals and the Venerable. A path is a promotion they may take at any rank."
       }
     ]
   },
@@ -41,6 +41,15 @@
     "civilopediaText": [
       {
         "text": "The beasts of the wild: lightning wolves and their kings. They pillage what they cannot eat."
+      }
+    ]
+  },
+  {
+    "name": "Gu House",
+    "movementType": "Land",
+    "civilopediaText": [
+      {
+        "text": "Gu Houses: immortal fortresses that walk, one of each per clan, each built around its key immortal Gu."
       }
     ]
   }

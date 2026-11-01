@@ -147,6 +147,7 @@ DEFAULT_MATS = {
     "hide": Mat((92, 70, 62)), "hide_dark": Mat((58, 44, 40)), "ember": Mat((255, 120, 40), emissive=True),
     "essence7": Mat((215, 60, 55), emissive=True), "essence8": Mat((250, 248, 236), emissive=True),
     "hide_red": Mat((110, 46, 40)), "hide_pale": Mat((196, 188, 170)),
+    "essence9": Mat((255, 196, 70), emissive=True), "roof": Mat((70, 90, 110), spec=0.3), "sail": Mat((230, 220, 200), layer=1),
     "volt": Mat((150, 210, 255), emissive=True), "volt_gold": Mat((255, 236, 120), emissive=True),
     "earth": Mat((200, 140, 70)), "shadow": Mat((0, 0, 0)), "water": Mat((110, 190, 255), emissive=True), "wind": Mat((205, 245, 215), emissive=True),
 }

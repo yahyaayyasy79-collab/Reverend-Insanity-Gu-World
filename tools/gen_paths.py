@@ -37,6 +37,7 @@ TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", "Only 
              "Only available <for [post-[Rank Seven era]] units>"]
 # PATHS.md: the space path's Supreme Grandmaster walks through anything (a permanent promotion: the unique is cached)
 SUPREME_EXTRA = {"space": ["Can pass through impassable tiles"]}
+SUPREME_MARKER = "Supreme Attainment"  # filter marker: the Venerable Ascension counts rank-eight holders (MOD_SPEC_3)
 MOVE_COST = "<costs [+15 Gold] stats> <requires [1] movement>"
 IMMORTAL_MOVE_COST = "<costs [5] [Green Grape Immortal Essence]> <requires [1] movement>"  # MOD_SPEC_2 #5
 # MOD_SPEC_2 #4: dao marks. Every immortal Gu carries its path's marker; a path's Master gains per mark of its own path
@@ -172,7 +173,7 @@ def tier_uniques(p: dict, t: int) -> list[str]:
     if t == 2:
         u.append(f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}")
     if t == 3:
-        u += SUPREME_EXTRA.get(p["key"], [])
+        u += SUPREME_EXTRA.get(p["key"], []) + [SUPREME_MARKER]
     if TIER_GATE[t]:
         u.append(TIER_GATE[t])
     u.append(TIER_WEIGHT)
