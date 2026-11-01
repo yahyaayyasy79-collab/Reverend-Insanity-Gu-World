@@ -621,6 +621,32 @@ def chaos_countdown():
     g.line(pts, 3, 0)
     return g
 
+
+# ---- dao marks (道痕): engraved strokes inside an aperture ring; more rings of strokes for higher tiers
+def dao_marks(level: int):
+    def draw():
+        g = G()
+        g.arc_band(50, 50, 46, 41, 0, 360)
+        rings = 1 if level <= 3 else level - 2
+        for r in range(rings):
+            rad = 30 - r * 9
+            n = 10 + 4 * r
+            for k in range(n):
+                a = math.radians(360 * k / n + 9 * r)
+                x, y = 50 + rad * math.cos(a), 50 - rad * math.sin(a)
+                dx, dy = 4 * math.cos(a + 1.2), -4 * math.sin(a + 1.2)
+                g.line([(x - dx, y - dy), (x + dx, y + dy)], 3)
+        g.circ(50, 50, 6 if level <= 3 else 9)
+        return g
+    return draw
+
+
+def dao_comprehension():
+    """A seated figure under a single engraved stroke."""
+    g = G(); human(g, 50, 26, 0.95)
+    g.line([(26, 14), (50, 6), (74, 14)], 5)
+    return g
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -694,6 +720,10 @@ ICONS3 = [
     ("UnitPromotionIcons", "Venerable Killer Move", venerable_killer_move, "white"),
     ("UnitPromotionIcons", "Chaos Countdown", chaos_countdown, "white"),
     ("UnitPromotionIcons", "Ascend to Venerable", venerable_dominion, "white"),
+    ("UnitPromotionIcons", "Dao Marks", dao_marks(1), "white"),            # Unciv shows I-III as stars on this icon
+    ("UnitPromotionIcons", "Dao Marks IV", dao_marks(4), "white"),
+    ("UnitPromotionIcons", "Dao Marks V", dao_marks(5), "white"),
+    ("UnitPromotionIcons", "Dao Comprehension", dao_comprehension, "white"),
     ("UnitPromotionIcons", "Seek Eternal Life", lambda: _eternal_white(), "white"),
 ]
 

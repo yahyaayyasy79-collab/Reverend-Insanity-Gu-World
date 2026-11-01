@@ -1333,6 +1333,20 @@ May upgrade to [Rank Six Gu Immortal] through ruins-like effects
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
 Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 ```
 
 **Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one. Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
@@ -1348,6 +1362,20 @@ May upgrade to [Rank Seven Gu Immortal] through ruins-like effects
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
 Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
@@ -1853,6 +1881,11 @@ Triggers a [Calamity Toll] event
 ```
 Only available <if [Divert Disaster] is constructed>
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -1862,6 +1895,11 @@ Only available <if [Divert Disaster] is constructed>
 Only available <if [Formation Ward] is constructed>
 Only available <for [Rank Six Gu Immortal] units>
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <when below [30] [Green Grape Immortal Essence]>
 Instantly consumes [30] [Green Grape Immortal Essence]
 [This Unit] takes [30] damage
@@ -1874,6 +1912,11 @@ Instantly consumes [30] [Green Grape Immortal Essence]
 Only available <if [Formation Ward] is constructed>
 Only available <for [Rank Seven Gu Immortal] units>
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <when below [30] [Red Date Immortal Essence]>
 Instantly consumes [30] [Red Date Immortal Essence]
 [This Unit] takes [30] damage
@@ -1886,6 +1929,11 @@ Instantly consumes [30] [Red Date Immortal Essence]
 Only available <if [Formation Ward] is constructed>
 Only available <for [Rank Eight Gu Immortal] units>
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <when below [30] [White Lychee Immortal Essence]>
 Instantly consumes [30] [White Lychee Immortal Essence]
 [This Unit] takes [30] damage
@@ -1900,6 +1948,11 @@ Unavailable <when below [50] [Green Grape Immortal Essence]>
 Instantly consumes [50] [Green Grape Immortal Essence]
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 [-60]% weight to this choice for AI decisions
 ```
 
@@ -1911,6 +1964,11 @@ Unavailable <when below [50] [Red Date Immortal Essence]>
 Instantly consumes [50] [Red Date Immortal Essence]
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 [-60]% weight to this choice for AI decisions
 ```
 
@@ -1922,6 +1980,11 @@ Unavailable <when below [50] [White Lychee Immortal Essence]>
 Instantly consumes [50] [White Lychee Immortal Essence]
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 [-60]% weight to this choice for AI decisions
 ```
 
@@ -1950,6 +2013,11 @@ Triggers a [Tribulation Toll] event
 [This Unit] gains the [Ravaged Land] status for [30] turn(s) <on [Marathon] game speed>
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 [+0]% weight to this choice for AI decisions
 ```
 
@@ -1958,6 +2026,11 @@ Triggers a [Tribulation Toll] event
 ```
 [This Unit] takes [30] damage
 [This Unit] gains the [Tribulation Survivor] promotion
+[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 [-33]% weight to this choice for AI decisions
 ```
 
@@ -2941,6 +3014,20 @@ May upgrade to [Rank Eight Gu Immortal] through ruins-like effects
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
 Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
@@ -2964,6 +3051,20 @@ May upgrade to [Venerable] through ruins-like effects
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
 Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
@@ -3023,6 +3124,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 
 ```
 Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>
+Unavailable <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <in [Foreign Land] tiles>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Green Grape Immortal Essence]> <on [Quick] game speed>
@@ -3044,6 +3146,7 @@ Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game spee
 
 ```
 Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>
+Unavailable <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <in [Foreign Land] tiles>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>
@@ -3158,6 +3261,20 @@ May capture killed [Military] units
 [+50]% Strength <vs cities>
 Destroys tile improvements when attacking
 [This Unit] gains [5] XP <upon turn start>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>
 Heals [10] damage if it kills a unit
 [This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>
@@ -3469,6 +3586,20 @@ May capture killed [Military] units
 [+50]% Strength <vs cities>
 Destroys tile improvements when attacking
 [This Unit] gains [5] XP <upon turn start>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>
 Heals [10] damage if it kills a unit
 [This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>
@@ -3495,6 +3626,7 @@ Comment [When it runs out, a chaos calamity falls on the Venerable]
 ```
 Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>
 Unavailable <if [Venerable Ascension] is constructed by anybody>
+Unavailable <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <in [Foreign Land] tiles>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>
@@ -3586,6 +3718,105 @@ Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension
 Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>
 Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+```
+
+
+## Dao marks: (the user, 2026-11-01: "dao marknya mana?")
+
+Until now dao marks (道痕) were only a hidden line on each path's Master (MOD_SPEC_2 #4: +5% strength per immortal Gu
+of its own path, −5% per immortal Gu of a strongly clashing path). They stay, and dao marks become visible on the unit:
+
+* **Dao Marks I–V**, five promotion tiers that replace one another: +5%, +10%, +15%, +20% (heal +10), +30% (heal +15).
+  Unciv draws I–III as stars on one icon; IV and V have their own.
+* **Growth:** a path's Master of rank three or more holds the **Dao Comprehension** status (20 turns on Standard);
+  when it runs out the marks grow one tier (E7). An immortal also takes a tier from every immortal it kills (absorbing
+  its marks) and from every heavenly tribulation it survives. Each trigger climbs one tier only (highest tier checked
+  first, like the refinement ladder). Mortals hold at most tier II (canon: a mortal's dao marks are few; an immortal's
+  run to thousands).
+* **Gates:** Advance to Rank Seven needs tier II, Advance to Rank Eight tier III, Ascend to Venerable tier IV (canon:
+  rank nine needs some hundred thousand main-path marks, R V6/119).
+* Autoplay 8 × 520: at turn 300, 363 Gu Masters at tier II, 17 / 11 / 10 immortals at tiers III / IV / V; rank seven
+  reached by 26 of 32 clans, rank eight by 3, one AI Venerable (T497); 0 crashes.
+
+Exact uniques (written by tools/lore_blocks.py from jsons/; every non-legacy Gu Master unit carries the Rank Six
+
+**Dao Comprehension** (UnitPromotions.json; {"civilopediaText": [{"text": "A Master contemplating its path: when this runs out (20 turns on Standard) its dao marks grow by one tier."}]})
+
+```
+Comment [When it runs out, the unit's dao marks grow by one tier]
+```
+
+**Dao Marks I** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier I: +5% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+
+```
+[+5]% Strength
+```
+
+**Dao Marks II** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier II: +10% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+
+```
+[+10]% Strength
+[This Unit] loses the [Dao Marks I] promotion
+```
+
+**Dao Marks III** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier III: +15% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+
+```
+[+15]% Strength
+[This Unit] loses the [Dao Marks II] promotion
+```
+
+**Dao Marks IV** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+
+```
+[+20]% Strength
+[+10] HP when healing
+[This Unit] loses the [Dao Marks III] promotion
+```
+
+**Dao Marks V** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier V: +30% strength, heals 15 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+
+```
+[+30]% Strength
+[+15] HP when healing
+[This Unit] loses the [Dao Marks IV] promotion
+```
+
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one. Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+
+```
+[+300]% maintenance costs
+Never appears as a Barbarian unit
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Unbuildable
+Cannot be purchased
+May upgrade to [Rank Seven Gu Immortal] through ruins-like effects
+[+15]% Strength <when above [9] [Green Grape Immortal Essence]>
+[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
+Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
+Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
+[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
+[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>
+[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>
+[This Unit] gains the [Dao Marks V] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon losing the [Dao Comprehension] status> <for units with [Dao Marks I]>
+[This Unit] gains the [Dao Marks I] promotion <upon losing the [Dao Comprehension] status> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
+[This Unit] gains the [Dao Marks V] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
+[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Can only heal by pillaging <when below [1] [Lifespan Gu]>
+[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
+[This Unit] gains [3] XP <upon turn start>
+[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 ```
 
 

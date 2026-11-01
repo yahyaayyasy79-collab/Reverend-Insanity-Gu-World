@@ -4,7 +4,7 @@ Python 3.10+ checkers that approximate Unciv's Ruleset Validator. The in-game Op
 **"Locate mod errors"** stays the final authority.
 
 ```
-tools/fetch_ref.sh [TAG]          # ref/unciv: docs, schemas, G&K + Vanilla rulesets, engine source (default 4.22.8)
+tools/fetch_ref.sh [TAG]          # ref/unciv: docs, schemas, G&K + Vanilla rulesets, engine source (default 4.22.15, the user's version since 2026-11-01)
 pip install -r tools/requirements.txt
 tools/check_all [--quiet]         # everything below; exit 1 on any error
 ```

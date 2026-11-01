@@ -7411,6 +7411,78 @@
     ]
   },
   {
+    "name": "Dao Comprehension",
+    "uniques": [
+      "Comment [When it runs out, the unit's dao marks grow by one tier]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Master contemplating its path: when this runs out (20 turns on Standard) its dao marks grow by one tier."
+      }
+    ]
+  },
+  {
+    "name": "Dao Marks I",
+    "uniques": [
+      "[+5]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tier I: +5% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+      }
+    ]
+  },
+  {
+    "name": "Dao Marks II",
+    "uniques": [
+      "[+10]% Strength",
+      "[This Unit] loses the [Dao Marks I] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tier II: +10% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+      }
+    ]
+  },
+  {
+    "name": "Dao Marks III",
+    "uniques": [
+      "[+15]% Strength",
+      "[This Unit] loses the [Dao Marks II] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tier III: +15% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+      }
+    ]
+  },
+  {
+    "name": "Dao Marks IV",
+    "uniques": [
+      "[+20]% Strength",
+      "[+10] HP when healing",
+      "[This Unit] loses the [Dao Marks III] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+      }
+    ]
+  },
+  {
+    "name": "Dao Marks V",
+    "uniques": [
+      "[+30]% Strength",
+      "[+15] HP when healing",
+      "[This Unit] loses the [Dao Marks IV] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tier V: +30% strength, heals 15 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+      }
+    ]
+  },
+  {
     "name": "Advancing",
     "uniques": [
       "Comment [Climbing to the next rank]"
@@ -7452,6 +7524,7 @@
     ],
     "uniques": [
       "Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>",
+      "Unavailable <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
       "Unavailable <in [Foreign Land] tiles>",
       "Unavailable <in [Water] tiles>",
       "Unavailable <when below [40] [Green Grape Immortal Essence]> <on [Quick] game speed>",
@@ -7483,6 +7556,7 @@
     ],
     "uniques": [
       "Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>",
+      "Unavailable <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
       "Unavailable <in [Foreign Land] tiles>",
       "Unavailable <in [Water] tiles>",
       "Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>",
@@ -7559,6 +7633,7 @@
     "uniques": [
       "Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>",
       "Unavailable <if [Venerable Ascension] is constructed by anybody>",
+      "Unavailable <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
       "Unavailable <in [Foreign Land] tiles>",
       "Unavailable <in [Water] tiles>",
       "Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>",

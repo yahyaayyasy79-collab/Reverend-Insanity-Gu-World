@@ -42,7 +42,7 @@ in LORE_MAPPING.md.
 
 ## Decisions
 
-* Unciv **4.22.8** (the user's version) — ref, docs and the release jar are pinned to it.
+* Unciv **4.22.15** (the user's version since 2026-11-01; was 4.22.8) — ref, docs and the release jar are pinned to it (`tools/fetch_ref.sh` default). Its console calls the tech command `civ addtechnology`.
 * Mod name / installed folder: **"Reverend Insanity Gu World"**. The user agreed to rename the GitHub repo to
   `Reverend-Insanity-Gu-World` (downloads turn dashes into spaces); done 2026-10-17, remote updated.
 * Scaffold: clean skeleton; copy only engine-coupled infrastructure from Vanilla (CAPABILITIES.md).

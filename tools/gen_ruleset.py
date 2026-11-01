@@ -253,8 +253,42 @@ def toll(text, effects, weight):
 
 
 DIVERT = toll("Divert the disaster", ["Only available <if [Divert Disaster] is constructed>"], "+300")
+# ---------------- dao marks (道痕; the user, 2026-11-01: "dao marknya mana?") ----------------
+# Dao marks are engraved in a cultivator's body and aperture; the more of its path, the stronger its methods, and the
+# marks of different paths interfere (R ch1077, ch1804; docs/PATHS.md "Conflicts"). Visible as five promotion tiers that
+# replace one another. A path's Master of rank three or more comprehends a tier every 20 turns; an immortal also takes
+# a tier from every immortal it kills and from every heavenly tribulation it survives. Mortals hold at most tier II;
+# rank seven needs II, rank eight III, the Venerable IV (canon: a Venerable holds hundreds of thousands, R V6/119).
+DAO = ["Dao Marks I", "Dao Marks II", "Dao Marks III", "Dao Marks IV", "Dao Marks V"]
+DAO_EFFECTS = [["[+5]% Strength"], ["[+10]% Strength"], ["[+15]% Strength"], ["[+20]% Strength", "[+10] HP when healing"],
+               ["[+30]% Strength", "[+15] HP when healing"]]
+IMMORTAL_ONLY = "<for [post-[Rank Five era]] units>"
+
+
+def dao_step(trigger=""):
+    """One tier more, highest first so a single trigger climbs one tier only (each tier removes the one below when
+    gained)."""
+    t = f" {trigger}" if trigger else ""
+    out = []
+    for i in range(len(DAO) - 1, 0, -1):
+        cap = f" {IMMORTAL_ONLY}" if i >= 2 else ""
+        out.append(f"[This Unit] gains the [{DAO[i]}] promotion{t} <for units with [{DAO[i - 1]}]>{cap}")
+    out.append(f"[This Unit] gains the [{DAO[0]}] promotion{t} " + " ".join(f"<for units without [{d}]>" for d in DAO))
+    return out
+
+
+def dao_at_least(i):
+    """Unavailable unless the unit holds tier i (0-based) or higher."""
+    return "Unavailable " + " ".join(f"<for units without [{d}]>" for d in DAO[i:])
+
+
+DAO_LINES = per_speed(lambda m: f"[This Unit] gains the [Dao Comprehension] status for [{turns(20, m)}] turn(s) <upon turn start> "
+                                "<for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units>") \
+    + dao_step("<upon losing the [Dao Comprehension] status>") \
+    + [u + f" {IMMORTAL_ONLY}" for u in dao_step("<upon defeating a [post-[Rank Five era]] unit>")]
 SURVIVOR = "Tribulation Survivor"  # C5: surviving a heavenly tribulation opens the next rank (300 aperture-years, R V4/177)
 SURVIVED = f"[This Unit] gains the [{SURVIVOR}] promotion"
+SURVIVE = [SURVIVED] + dao_step()  # a survived tribulation also tempers the immortal's dao marks
 
 # ---------------- MOD_SPEC_2 C5: ranks seven and eight ----------------
 # An immortal climbs a rank after surviving a heavenly tribulation and gathering its rank's essence (R V4/177): a kept
@@ -272,6 +306,7 @@ def advance(target):
              + ["[This Unit] gains the [Grotto-Heaven Aperture] promotion"]) if target == "Rank Eight" else []
     return {"name": name, "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{unit}] units> <after discovering [{tech}]> <for units with [{SURVIVOR}]>",
+        dao_at_least(1 if target == "Rank Seven" else 2),
         "Unavailable <in [Foreign Land] tiles>", "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(ADVANCE_COST, m)}] [{essence}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(ADVANCE_COST, m)}] [{essence}] <on [{n}] game speed>" for n, m in SPEEDS]
@@ -521,7 +556,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     # numbers [docs Unique-parameters nonNegativeAmount], so each is a small trigger followed by a weighted die (E1):
     # 6% x 1/5 = 1.2% per Gu Master per turn for a wild Gu; 1% x 1/2 per turn in foreign land for an inheritance
     # (1/8 gave 0.4 inheritances per game in autoplay; 1/2 aims at about 1.5).
-    u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER]
+    u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER] + DAO_LINES
     if r["name"] in IMMORTALS:
         u["uniques"] += IMMORTAL_LIFE  # MOD_SPEC_2 C2: every immortal burns Lifespan Gu
 dump("Units.json", [
@@ -561,7 +596,7 @@ dump("Units.json", [
                                          "Can pass through impassable tiles", "May capture killed [Military] units",
                                          "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
                                          "[+50]% Strength <vs cities>", "Destroys tile improvements when attacking",
-                                         "[This Unit] gains [5] XP <upon turn start>",
+                                         "[This Unit] gains [5] XP <upon turn start>", *DAO_LINES,
                                          f"[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [{APRICOT}]> <requires [1] movement>"]
      # a Venerable buys time only with slaughter: every kill restores some of its burning life
      + ["Heals [10] damage if it kills a unit"] + countdown("Chaos Countdown", 25, "Chaos Calamity")},
@@ -688,6 +723,9 @@ dump("UnitPromotions.json", [
     {"name": RAVAGED, "uniques": ["Comment [The blessed land yields nothing until it heals]"]},
     # C5
     {"name": SURVIVOR, "uniques": ["Comment [Survived a heavenly tribulation: may climb to the next rank]"]},
+    {"name": "Dao Comprehension", "uniques": ["Comment [When it runs out, the unit's dao marks grow by one tier]"]},
+] + [{"name": d, "uniques": DAO_EFFECTS[i] + ([f"[This Unit] loses the [{DAO[i - 1]}] promotion"] if i else [])}
+     for i, d in enumerate(DAO)] + [
     {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),
     {"name": "Venerable Killer Move", "uniques": ["[+100]% Strength"]},
@@ -699,7 +737,7 @@ dump("UnitPromotions.json", [
         + ["Gain a free [Eternal Life] [in capital]", "[This Unit] loses the [Seek Eternal Life] promotion", w("+1000")]},
     {"name": "Ascend to Venerable", "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] units> <after discovering [Dao Lord]>",
-        "Unavailable <if [Venerable Ascension] is constructed by anybody>", "Unavailable <in [Foreign Land] tiles>",
+        "Unavailable <if [Venerable Ascension] is constructed by anybody>", dao_at_least(3), "Unavailable <in [Foreign Land] tiles>",
         "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(60, m)}] [{WHITE}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(60, m)}] [{WHITE}] <on [{n}] game speed>" for n, m in SPEEDS]
@@ -912,18 +950,18 @@ dump("Events.json", [
         toll("It passes", [], "-60")]},
     {"name": "Heavenly Tribulation", "text": "A heavenly tribulation gathers over your immortal: heaven itself tests "
                                              "whether it may go on living.", "choices": [
-        toll("Divert the disaster", ["Only available <if [Divert Disaster] is constructed>", SURVIVED], "+300"),
+        toll("Divert the disaster", ["Only available <if [Divert Disaster] is constructed>", *SURVIVE], "+300"),
         *[toll("Ward and essence together", ["Only available <if [Formation Ward] is constructed>", f"Only available <for [{u}] units>",
-                                             SURVIVED, f"Unavailable <when below [30] [{e}]>", f"Instantly consumes [30] [{e}]",
+                                             *SURVIVE, f"Unavailable <when below [30] [{e}]>", f"Instantly consumes [30] [{e}]",
                                              "[This Unit] takes [30] damage"], "+100") for u, e in IMMORTALS.items()],
         *[toll("Pour essence into the land", [f"Only available <for [{u}] units>", f"Unavailable <when below [50] [{e}]>",
-                                              f"Instantly consumes [50] [{e}]", "[This Unit] takes [50] damage", SURVIVED], "-60")
+                                              f"Instantly consumes [50] [{e}]", "[This Unit] takes [50] damage", *SURVIVE], "-60")
           for u, e in IMMORTALS.items()],
         toll("Face it bare", ["Triggers a [Tribulation Toll] event"], "-30")]},
     {"name": "Tribulation Toll", "presentation": "None", "choices": [   # 25 / 45 / 30
         toll("The tribulation kills it", ["[This Unit] is destroyed"], "-44"),
-        toll("It survives, its land ravaged", ravage(10) + ["[This Unit] takes [50] damage", SURVIVED], "+0"),
-        toll("It survives", ["[This Unit] takes [30] damage", SURVIVED], "-33")]},
+        toll("It survives, its land ravaged", ravage(10) + ["[This Unit] takes [50] damage", *SURVIVE], "+0"),
+        toll("It survives", ["[This Unit] takes [30] damage", *SURVIVE], "-33")]},
     # C3: an immortal Gu's birth may call down its own calamity (R V5/54); civ-level, in the city that refined it
     {"name": "Immortal Gu Refinement", "presentation": "None", "choices": [   # 75 / 25
         toll("The Gu takes shape", [], "+0"),

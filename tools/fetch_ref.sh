@@ -3,11 +3,11 @@
 # ref/ is gitignored; run this once per fresh checkout (cloud containers are ephemeral).
 #
 #   tools/fetch_ref.sh            # default tag below
-#   tools/fetch_ref.sh 4.22.8     # pin another release (match the version you play)
+#   tools/fetch_ref.sh 4.22.15    # pin another release (match the version you play)
 #   tools/fetch_ref.sh master     # bleeding edge: docs may describe features your release lacks
 set -euo pipefail
 
-TAG="${1:-4.22.8}"
+TAG="${1:-4.22.15}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="$ROOT/ref/unciv"
 

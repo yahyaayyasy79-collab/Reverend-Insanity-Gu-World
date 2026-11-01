@@ -158,4 +158,5 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Rank nine dread | With a Venerable alive (see above), the other clans show -10% strength; `civ activatetrigger "Triggers a [Venerable's Shadow] event"` |
 | Secret realms | Start a Medium or larger random map and explore; or the map editor: place a realm terrain, move a unit beside it |
 | Dream realm, Shadow Sect | `civ activatetrigger "Triggers a [Dream Realm] event"`, `civ activatetrigger "Triggers a [Shadow Sect Envoy] event"` |
+| Dao marks | Select a rank-three or higher Gu Master holding a path Master: its promotions show Dao Comprehension (a countdown) and later Dao Marks I with a star; `unit addpromotion "Dao Marks IV"` on an immortal shows tier IV and removes nothing below it unless gained by a step |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

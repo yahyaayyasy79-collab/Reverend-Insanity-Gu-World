@@ -597,3 +597,14 @@
 * Autoplay 8 × 550: rank eight reached by 5 clans, an AI Bai Clan became a Venerable at T342 and won Eternal Life at
   T373 (an earlier 8 × 500 batch: two AI Venerables, one died and left a true inheritance). 0 crashes.
 * Docs: working developer-console commands (`civ addtechnology`, civ names like `gu-yue-clan`).
+
+## Unciv 4.22.15 and visible dao marks (2026-11-01)
+
+* The user plays **Unciv 4.22.15**: the reference, docs and release jar are now pinned to it (`tools/fetch_ref.sh`
+  default). The 4.22.15 validator and every check pass. Its console calls the tech command `civ addtechnology`.
+* **Dao marks** (the user: "dao marknya mana?") are now visible on units: **Dao Marks I–V** (+5% to +30% strength,
+  more healing at IV–V). A path's Master of rank three or more grows one tier every 20 turns (**Dao Comprehension**),
+  an immortal also from every immortal it kills and every heavenly tribulation it survives; mortals stop at tier II.
+  Rank seven needs tier II, rank eight III, the Venerable IV. The immortal-Gu dao-mark bonus on the path Masters stays.
+* Autoplay 8 × 520: hundreds of Gu Masters at tier II by T200, immortals at III–V; rank seven by 26 of 32 clans, one AI
+  Venerable; 0 crashes.

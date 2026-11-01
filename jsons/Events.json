@@ -812,6 +812,11 @@
         "uniques": [
           "Only available <if [Divert Disaster] is constructed>",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "[+300]% weight to this choice for AI decisions"
         ]
       },
@@ -821,6 +826,11 @@
           "Only available <if [Formation Ward] is constructed>",
           "Only available <for [Rank Six Gu Immortal] units>",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "Unavailable <when below [30] [Green Grape Immortal Essence]>",
           "Instantly consumes [30] [Green Grape Immortal Essence]",
           "[This Unit] takes [30] damage",
@@ -833,6 +843,11 @@
           "Only available <if [Formation Ward] is constructed>",
           "Only available <for [Rank Seven Gu Immortal] units>",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "Unavailable <when below [30] [Red Date Immortal Essence]>",
           "Instantly consumes [30] [Red Date Immortal Essence]",
           "[This Unit] takes [30] damage",
@@ -845,6 +860,11 @@
           "Only available <if [Formation Ward] is constructed>",
           "Only available <for [Rank Eight Gu Immortal] units>",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "Unavailable <when below [30] [White Lychee Immortal Essence]>",
           "Instantly consumes [30] [White Lychee Immortal Essence]",
           "[This Unit] takes [30] damage",
@@ -859,6 +879,11 @@
           "Instantly consumes [50] [Green Grape Immortal Essence]",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "[-60]% weight to this choice for AI decisions"
         ]
       },
@@ -870,6 +895,11 @@
           "Instantly consumes [50] [Red Date Immortal Essence]",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "[-60]% weight to this choice for AI decisions"
         ]
       },
@@ -881,6 +911,11 @@
           "Instantly consumes [50] [White Lychee Immortal Essence]",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "[-60]% weight to this choice for AI decisions"
         ]
       },
@@ -913,6 +948,11 @@
           "[This Unit] gains the [Ravaged Land] status for [30] turn(s) <on [Marathon] game speed>",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "[+0]% weight to this choice for AI decisions"
         ]
       },
@@ -921,6 +961,11 @@
         "uniques": [
           "[This Unit] takes [30] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[This Unit] gains the [Dao Marks V] promotion <for units with [Dao Marks IV]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks IV] promotion <for units with [Dao Marks III]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks III] promotion <for units with [Dao Marks II]> <for [post-[Rank Five era]] units>",
+          "[This Unit] gains the [Dao Marks II] promotion <for units with [Dao Marks I]>",
+          "[This Unit] gains the [Dao Marks I] promotion <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>",
           "[-33]% weight to this choice for AI decisions"
         ]
       }

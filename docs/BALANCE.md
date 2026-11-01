@@ -246,6 +246,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank One Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank One Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank One Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank One Gu Master | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank One Gu Master | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank One Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank One Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Two Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Two Gu Master | strength | 14 | data/gu_masters.csv `strength` |
 | Rank Two Gu Master | cost | 60 | data/gu_masters.csv `cost` |
@@ -253,6 +257,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Two Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Two Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Two Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Two Gu Master | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Two Gu Master | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Two Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Two Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Three Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Three Gu Master | strength | 22 | data/gu_masters.csv `strength` |
 | Rank Three Gu Master | cost | 95 | data/gu_masters.csv `cost` |
@@ -260,6 +268,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Three Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Three Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Three Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Three Gu Master | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Three Gu Master | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Three Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Three Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Four Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Four Gu Master | strength | 32 | data/gu_masters.csv `strength` |
 | Rank Four Gu Master | cost | 140 | data/gu_masters.csv `cost` |
@@ -267,6 +279,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Four Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Four Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Four Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Four Gu Master | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Four Gu Master | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Four Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Four Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Five Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Five Gu Master | strength | 44 | data/gu_masters.csv `strength` |
 | Rank Five Gu Master | cost | 190 | data/gu_masters.csv `cost` |
@@ -274,6 +290,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Five Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Five Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Five Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Five Gu Master | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Five Gu Master | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Five Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Five Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | strength | 60 | data/gu_masters.csv `strength` |
 | Rank Six Gu Immortal | cost | 260 | data/gu_masters.csv `cost` |
@@ -282,6 +302,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Six Gu Immortal | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Six Gu Immortal | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Six Gu Immortal | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Six Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
@@ -298,6 +322,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Seven Gu Immortal | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Seven Gu Immortal | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Seven Gu Immortal | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
@@ -314,6 +342,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Eight Gu Immortal | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Eight Gu Immortal | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Eight Gu Immortal | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
@@ -357,6 +389,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Venerable | `[-25]% Strength for enemy [Military] units in adjacent [All] tiles` | -25 | tools/gen_ruleset.py `Units` |
 | Venerable | `[+50]% Strength <vs cities>` | +50 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains [5] XP <upon turn start>` | 5 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>` | 1, 20, 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `Heals [10] damage if it kills a unit` | 10 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>` | 17 | tools/gen_ruleset.py `Units` |
@@ -552,6 +588,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks I | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks II | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks III | `[+15]% Strength` | +15 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks IV | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks IV | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks V | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks V | `[+15] HP when healing` | +15 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Promotions` |
@@ -2269,6 +2312,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2093 numbers listed.
+2136 numbers listed.
 
 <!-- inventory:end -->
