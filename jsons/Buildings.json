@@ -202,5 +202,31 @@
         "text": "The Southern Border's great market city (商家城), where even demonic loot changes hands. The Shang clan does not ask where the goods came from."
       }
     ]
+  },
+  {
+    "name": "Formation Ward",
+    "isNationalWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 220,
+    "maintenance": 2,
+    "cityStrength": 4,
+    "civilopediaText": [
+      {
+        "text": "Defences planned before the calamity comes (one per clan). It opens the cheapest way through earthly calamities and, with essence, through heavenly tribulations."
+      }
+    ]
+  },
+  {
+    "name": "Stockpile Vault",
+    "isNationalWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 160,
+    "maintenance": 1,
+    "gold": 2,
+    "civilopediaText": [
+      {
+        "text": "Stores laid in for the calamity (one per clan): after an earthly calamity the land is rebuilt from the vault for 40 stones."
+      }
+    ]
   }
 ]

@@ -568,6 +568,7 @@
         "text": "A lower-grade blessed land opens",
         "uniques": [
           "[This Unit] gains the [Lower Grade Blessed Land] promotion",
+          "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
           "[This Unit] upgrades for free including special upgrades",
           "[+0]% weight to this choice for AI decisions",
@@ -579,6 +580,7 @@
         "text": "A middle-grade blessed land opens",
         "uniques": [
           "[This Unit] gains the [Middle Grade Blessed Land] promotion",
+          "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
           "[This Unit] upgrades for free including special upgrades",
           "[-30]% weight to this choice for AI decisions",
@@ -590,6 +592,7 @@
         "text": "An upper-grade blessed land opens",
         "uniques": [
           "[This Unit] gains the [Upper Grade Blessed Land] promotion",
+          "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
           "[This Unit] upgrades for free including special upgrades",
           "[-75]% weight to this choice for AI decisions",
@@ -601,6 +604,7 @@
         "text": "A super-grade blessed land opens",
         "uniques": [
           "[This Unit] gains the [Super Grade Blessed Land] promotion",
+          "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
           "[This Unit] upgrades for free including special upgrades",
           "[-96]% weight to this choice for AI decisions",
@@ -628,6 +632,7 @@
         "text": "A lower-grade blessed land opens",
         "uniques": [
           "[This Unit] gains the [Lower Grade Blessed Land] promotion",
+          "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
           "[This Unit] upgrades for free including special upgrades",
           "[+0]% weight to this choice for AI decisions",
@@ -639,6 +644,7 @@
         "text": "A middle-grade blessed land opens",
         "uniques": [
           "[This Unit] gains the [Middle Grade Blessed Land] promotion",
+          "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
           "[This Unit] upgrades for free including special upgrades",
           "[-60]% weight to this choice for AI decisions",
@@ -678,6 +684,166 @@
         "text": "Mourn the fallen",
         "uniques": [
           "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Earthly Calamity",
+    "text": "An earthly calamity strikes your immortal's blessed land: floods, fire, a swarm. How will it be met?",
+    "choices": [
+      {
+        "text": "Raise the formation ward",
+        "uniques": [
+          "Only available <if [Formation Ward] is constructed>",
+          "[This Unit] takes [10] damage",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Rebuild from the vault",
+        "uniques": [
+          "Only available <if [Stockpile Vault] is constructed>",
+          "Unavailable <when below [40] [Gold]>",
+          "Gain [-40] [Gold]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pour essence into the land",
+        "uniques": [
+          "Unavailable <when below [10] [Green Grape Immortal Essence]>",
+          "Instantly consumes [10] [Green Grape Immortal Essence]",
+          "[This Unit] takes [15] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Endure it",
+        "uniques": [
+          "Triggers a [Calamity Toll] event",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Calamity Toll",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "The land is ravaged",
+        "uniques": [
+          "[This Unit] gains the [Ravaged Land] status for [5] turn(s) <on [Quick] game speed>",
+          "[This Unit] gains the [Ravaged Land] status for [8] turn(s) <on [Standard] game speed>",
+          "[This Unit] gains the [Ravaged Land] status for [12] turn(s) <on [Epic] game speed>",
+          "[This Unit] gains the [Ravaged Land] status for [24] turn(s) <on [Marathon] game speed>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "The immortal is hurt",
+        "uniques": [
+          "[This Unit] takes [40] damage",
+          "[-40]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "It passes",
+        "uniques": [
+          "[-60]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Tribulation",
+    "text": "A heavenly tribulation gathers over your immortal: heaven itself tests whether it may go on living.",
+    "choices": [
+      {
+        "text": "Ward and essence together",
+        "uniques": [
+          "Only available <if [Formation Ward] is constructed>",
+          "Unavailable <when below [30] [Green Grape Immortal Essence]>",
+          "Instantly consumes [30] [Green Grape Immortal Essence]",
+          "[This Unit] takes [30] damage",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pour essence into the land",
+        "uniques": [
+          "Unavailable <when below [50] [Green Grape Immortal Essence]>",
+          "Instantly consumes [50] [Green Grape Immortal Essence]",
+          "[This Unit] takes [50] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Face it bare",
+        "uniques": [
+          "Triggers a [Tribulation Toll] event",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tribulation Toll",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "The tribulation kills it",
+        "uniques": [
+          "[This Unit] is destroyed",
+          "[-44]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "It survives, its land ravaged",
+        "uniques": [
+          "[This Unit] gains the [Ravaged Land] status for [7] turn(s) <on [Quick] game speed>",
+          "[This Unit] gains the [Ravaged Land] status for [10] turn(s) <on [Standard] game speed>",
+          "[This Unit] gains the [Ravaged Land] status for [15] turn(s) <on [Epic] game speed>",
+          "[This Unit] gains the [Ravaged Land] status for [30] turn(s) <on [Marathon] game speed>",
+          "[This Unit] takes [50] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "It survives",
+        "uniques": [
+          "[This Unit] takes [30] damage",
+          "[-33]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heaven's Will",
+    "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and luck runs thin.",
+    "choices": [
+      {
+        "text": "Lie low",
+        "uniques": [
+          "[-20]% Strength <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay heaven its due",
+        "uniques": [
+          "Unavailable <when below [30] [Green Grape Immortal Essence]>",
+          "Instantly consumes [30] [Green Grape Immortal Essence]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Defy heaven",
+        "uniques": [
+          "A [Thunder Crown Wolf] rebels",
+          "[2] [Bold Lightning Wolf]s rebel",
+          "[-30]% weight to this choice for AI decisions"
         ]
       }
     ]

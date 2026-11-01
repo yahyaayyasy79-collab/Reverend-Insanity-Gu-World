@@ -8,8 +8,8 @@ from __future__ import annotations
 
 import math
 
-from .glyphs import G, human, pips
-from .glyphs2 import aperture, ranked_gu_master
+from .glyphs import G, gu_beetle, human, pips
+from .glyphs2 import aperture, coin, octagon_array, ranked_gu_master, roof
 
 
 def _cloud(g: G, cx, cy, w, v=255):
@@ -126,9 +126,65 @@ def blessed_land(grade):
         g.poly([(46, 50), (60, 18), (74, 50)])                                          # peak
         g.line([(30, 50), (30, 32)], 4); g.circ(30, 28, 9)                              # tree
         _cloud(g, 26, 14, 26)
-        pips(g, grade, y=91)
+        if grade:
+            pips(g, grade, y=91)
         return g
     return draw
+
+
+def _hourglass(g: G, cx, cy, h, v=255):
+    w = h * 0.55
+    g.poly([(cx - w, cy - h), (cx + w, cy - h), (cx + 4, cy), (cx + w, cy + h), (cx - w, cy + h), (cx - 4, cy)], v)
+    g.line([(cx - w - 4, cy - h), (cx + w + 4, cy - h)], 5, v)
+    g.line([(cx - w - 4, cy + h), (cx + w + 4, cy + h)], 5, v)
+
+
+# ---- C2: calamities, tribulations, lifespan
+def lifespan_gu():
+    """A Gu curled in the lower bulb of an hourglass: a lifespan Gu holds years."""
+    g = G(); _hourglass(g, 50, 50, 38)
+    g.poly([(36, 20), (64, 20), (52, 44), (48, 44)], 0)                      # upper bulb, hollow
+    g.poly([(48, 56), (52, 56), (66, 84), (34, 84)], 0)                      # lower bulb, hollow
+    gu_beetle(g, 50, 74, 0.42, legs=False)
+    return g
+
+
+def formation_ward():
+    """A formation ring under a protective dome."""
+    g = G(); g.arc_band(50, 66, 44, 37, 0, 180); octagon_array(g, 50, 66, 26); return g
+
+
+def stockpile_vault():
+    """A storehouse with stacked stones before its door."""
+    g = G()
+    roof(g, 50, 30, 42, 20)
+    g.poly([(18, 34), (82, 34), (82, 66), (18, 66)])
+    g.poly([(42, 44), (58, 44), (58, 66), (42, 66)], 0)
+    for x, y in ((30, 80), (50, 80), (70, 80), (40, 70), (60, 70)):
+        coin(g, x, y, 9)
+    return g
+
+
+def calamity_countdown():
+    """An hourglass under a small storm cloud."""
+    g = G(); _hourglass(g, 50, 60, 30); _cloud(g, 50, 16, 46); return g
+
+
+def tribulation_countdown():
+    """A falling bolt inside a ring of time marks."""
+    g = G()
+    for k in range(12):
+        a = math.radians(90 - 30 * k)
+        g.line([(50 + 34 * math.cos(a), 50 - 34 * math.sin(a)), (50 + 44 * math.cos(a), 50 - 44 * math.sin(a))], 5)
+    g.bolt([56, 40, 60, 44], 16, 80, 7)
+    return g
+
+
+def ravaged_land():
+    """The floating blessed land split by a crack."""
+    g = blessed_land(0)()
+    g.line([(40, 44), (52, 56), (44, 66), (54, 84)], 5, 0)
+    return g
 
 
 ICONS3 = [
@@ -144,4 +200,10 @@ ICONS3 = [
     ("UnitPromotionIcons", "Ascension", ascension, "white"),
     *[("UnitPromotionIcons", f"{grade} Grade Blessed Land", blessed_land(n), "white")
       for n, grade in enumerate(("Lower", "Middle", "Upper", "Super"), start=1)],
+    ("ResourceIcons", "Lifespan Gu", lifespan_gu, "black"),
+    ("BuildingIcons", "Formation Ward", formation_ward, "black"),
+    ("BuildingIcons", "Stockpile Vault", stockpile_vault, "black"),
+    ("UnitPromotionIcons", "Calamity Countdown", calamity_countdown, "white"),
+    ("UnitPromotionIcons", "Tribulation Countdown", tribulation_countdown, "white"),
+    ("UnitPromotionIcons", "Ravaged Land", ravaged_land, "white"),
 ]

@@ -451,3 +451,21 @@
 * Autoplay (8 × 300 turns, Prince, Small): 0 crashes. At 40/20 qi every clan ascended but qi piled up unused; at
   60/30, 14 of 16 clans ascend (first immortal T190–283, 1.9 per clan by T300; grades lower 14, middle 12, upper 5)
   and human qi is the scarce one.
+
+## MOD_SPEC_2 C2 — calamities, tribulations, Heaven's Will, lifespan (2026-11-01)
+
+* Every blessed land carries two countdowns on its immortal (the user's decision: timed statuses): an **earthly
+  calamity** every 11–14 turns (higher grades sooner) and a **heavenly tribulation** every 60 (Standard; scaled per
+  speed). Prepared choices: **Formation Ward** (10 damage) and **Stockpile Vault** (40 stones), two new one-per-clan
+  buildings at Calamity Lore; pouring essence; or enduring it (silent die: the land lies **ravaged** for 8 turns, the
+  immortal takes 40 damage, or nothing). A tribulation faced bare kills one immortal in four.
+* **Lifespan Gu** stockpile: forests, jungles and swamps yield a few; a new immortal brings 5; each immortal burns one
+  every ten turns; in debt it cannot heal and loses 7 HP a turn. The heaven path's Gu is now the **Ten-Year Lifespan
+  Gu** (the stockpile took the plain name).
+* **Heaven's Will**: more than two immortals draw a civ-level event (lie low, pay 30 essence, or defy heaven and face
+  the wolves).
+* Designed icons for the new stockpile, buildings and statuses. `tools/lore_blocks.py` writes LORE_MAPPING's Phase C
+  unique blocks from `jsons/`.
+* Autoplay (8 × 320, Prince): 0 crashes. At one Lifespan Gu per five turns most immortals died in debt (0.3 per clan
+  at the end); at one per ten, 1.2 per clan at the end (peaks of 2–4), 15 debt turns per clan: lifespan caps the
+  number of immortals. The AI always builds the ward and takes the prepared choices.

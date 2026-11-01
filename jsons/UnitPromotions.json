@@ -3383,7 +3383,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Lifespan Gu] promotion <upon turn start> <for units without [Lifespan Gu]>",
+      "[This Unit] gains the [Ten-Year Lifespan Gu] promotion <upon turn start> <for units without [Ten-Year Lifespan Gu]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -4441,14 +4441,14 @@
     ]
   },
   {
-    "name": "Lifespan Gu",
+    "name": "Ten-Year Lifespan Gu",
     "uniques": [
       "[10] HP when healing",
       "[+10]% maintenance costs"
     ],
     "civilopediaText": [
       {
-        "text": "Lifespan Gu (寿蛊) adds a set number of years of life: ten, a hundred, more. The heaven path rules them."
+        "text": "A ten-year Lifespan Gu (十年寿蛊): lifespan Gu add a set number of years of life, ten, a hundred, more. The heaven path rules them."
       }
     ]
   },
@@ -4607,8 +4607,18 @@
   {
     "name": "Lower Grade Blessed Land",
     "uniques": [
-      "Instantly provides [1] [Green Grape Immortal Essence] <upon turn start>",
-      "Gain [2] [Gold] <upon turn start>"
+      "Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>",
+      "Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [21] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [42] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
     ],
     "civilopediaText": [
       {
@@ -4619,8 +4629,18 @@
   {
     "name": "Middle Grade Blessed Land",
     "uniques": [
-      "Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>",
-      "Gain [4] [Gold] <upon turn start>"
+      "Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>",
+      "Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [20] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [39] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
     ],
     "civilopediaText": [
       {
@@ -4631,8 +4651,18 @@
   {
     "name": "Upper Grade Blessed Land",
     "uniques": [
-      "Instantly provides [3] [Green Grape Immortal Essence] <upon turn start>",
-      "Gain [6] [Gold] <upon turn start>"
+      "Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>",
+      "Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "[This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [18] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [36] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
     ],
     "civilopediaText": [
       {
@@ -4643,12 +4673,55 @@
   {
     "name": "Super Grade Blessed Land",
     "uniques": [
-      "Instantly provides [5] [Green Grape Immortal Essence] <upon turn start>",
-      "Gain [10] [Gold] <upon turn start>"
+      "Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>",
+      "Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [16] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Calamity Countdown] status for [33] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
     ],
     "civilopediaText": [
       {
         "text": "A super-grade blessed land (特等福地), the foundation of a prodigy: 5 green grape essence and 10 stones a turn."
+      }
+    ]
+  },
+  {
+    "name": "Calamity Countdown",
+    "uniques": [
+      "Comment [When it runs out, the blessed land meets an earthly calamity]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ten aperture-years pass between earthly calamities (地灾). When this runs out the immortal's blessed land is struck; a bigger land runs faster and is struck sooner (11 to 14 turns on Standard)."
+      }
+    ]
+  },
+  {
+    "name": "Tribulation Countdown",
+    "uniques": [
+      "Comment [When it runs out, the immortal meets a heavenly tribulation]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A heavenly tribulation (天劫) comes every hundred aperture-years: 60 turns on Standard. Unprepared, one immortal in four dies of it."
+      }
+    ]
+  },
+  {
+    "name": "Ravaged Land",
+    "uniques": [
+      "Comment [The blessed land yields nothing until it heals]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A calamity has ravaged the blessed land: it yields no essence and no stones until the status runs out."
       }
     ]
   }

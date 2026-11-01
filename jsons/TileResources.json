@@ -249,5 +249,19 @@
         "text": "Rank-six immortal essence (青提仙元). It never refills by itself: only blessed lands make it."
       }
     ]
+  },
+  {
+    "name": "Lifespan Gu",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lifespan Gu (寿蛊) are made only by heaven and earth where life teems; nobody can refine one. Forests"
+      }
+    ]
   }
 ]

@@ -117,4 +117,8 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Ascension (MOD_SPEC_2 C1) | `civ addtech <civ> "Calamity Lore"`; `civ activatetrigger "Instantly provides [60] [Heaven Qi]"`, the same for `[Earth Qi]` and `[Human Qi]`; `unit add <civ> "Rank Five Gu Master"`, select it, `unit setxp 200`, buy Ascension: the popup offers balanced, hasty and not yet; success turns it into a Rank Six Gu Immortal with a blessed-land promotion, failure removes it |
 | Blessed land income | With an immortal: the green grape essence and stones rise each turn by its grade (1/2, 2/4, 3/6, 5/10) |
 | Qi income | After Three Qi the three qi appear in the resource overview and grow each turn (land, spring caves and hills, citizens and battle damage) |
+| Earthly calamity (C2) | With an immortal: `unit activatetrigger "Triggers a [Earthly Calamity] event"`; build a Formation Ward (`civ addtech <civ> "Calamity Lore"`) to see the ward choice; the immortal's Calamity Countdown status shows when the next one comes |
+| Heavenly tribulation | `unit activatetrigger "Triggers a [Heavenly Tribulation] event"`; "Face it bare" may kill the immortal |
+| Lifespan Gu debt | `civ activatetrigger "Instantly consumes [20] [Lifespan Gu]"`: the immortal stops healing and loses 7 HP a turn |
+| Heaven's Will | `civ activatetrigger "Triggers a [Heaven's Will] event"` |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

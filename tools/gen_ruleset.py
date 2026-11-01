@@ -174,7 +174,8 @@ GRADES = [("Lower", 1, 2), ("Middle", 2, 4), ("Upper", 3, 6), ("Super", 5, 10)] 
 
 def ascended(grade, weight, a, d):
     return {"text": f"{'An' if grade == 'Upper' else 'A'} {grade.lower()}-grade blessed land opens", "uniques": [
-        f"[This Unit] gains the [{grade} Grade Blessed Land] promotion", "Triggers a [Immortal Ascension] event",
+        f"[This Unit] gains the [{grade} Grade Blessed Land] promotion", f"Instantly provides [5] [{LIFESPAN}]",
+        "Triggers a [Immortal Ascension] event",
         "[This Unit] upgrades for free including special upgrades",
         w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>")]}
 
@@ -183,6 +184,55 @@ def collapse(weight, a, d):
     return {"text": "The aperture collapses", "uniques": [
         "Triggers a [Aperture Collapse] event", "[This Unit] is destroyed",
         w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>")]}
+
+
+# ---------------- MOD_SPEC_2 C2: calamities, tribulations, Heaven's Will, lifespan ----------------
+# A blessed land meets an earthly calamity every ten aperture-years and a heavenly tribulation every hundred (R V4/91):
+# timed statuses on the immortal (the user's decision) whose end throws the event (E7). Higher grades run faster, so
+# their calamities come sooner (R V4/44). Turns per speed scale like the event chances (R7).
+LIFESPAN = "Lifespan Gu"
+CALAMITY_TURNS = {"Lower": 14, "Middle": 13, "Upper": 12, "Super": 11}
+TRIBULATION_TURNS = 60
+RAVAGED = "Ravaged Land"
+
+
+def turns(base, m):
+    return max(2, round(base * m))
+
+
+def countdown(status, base, event):
+    return [f"[This Unit] gains the [{status}] status for [{turns(base, m)}] turn(s) <upon turn start> "
+            f"<for units without [{status}]> <on [{n}] game speed>" for n, m in SPEEDS] + [
+        f"Triggers a [{event}] event <upon losing the [{status}] status>"]
+
+
+def ravage(base):
+    return [f"[This Unit] gains the [{RAVAGED}] status for [{turns(base, m)}] turn(s) <on [{n}] game speed>"
+            for n, m in SPEEDS]
+
+
+def blessed_land(grade, essence, stones):
+    return {"name": f"{grade} Grade Blessed Land", "uniques": [
+        f"Instantly provides [{essence}] [{GREEN}] <upon turn start> <for units without [{RAVAGED}]>",
+        f"Gain [{stones}] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
+        + countdown("Calamity Countdown", CALAMITY_TURNS[grade], "Earthly Calamity")
+        + countdown("Tribulation Countdown", TRIBULATION_TURNS, "Heavenly Tribulation")}
+
+
+# Lifespan Gu (R V3/194, V4/298): made only by heaven and earth where life teems, never refined. Each immortal burns
+# one every ten turns; without any it cannot heal and wastes away in about fifteen turns (MOD_SPEC_2 tension target).
+# Autoplay (C2): at one every five turns and 20% per 10 forest or jungle tiles most immortals died in debt
+LIFESPAN_SOURCES = [u for t in ("Forest", "Jungle", "Marsh") for u in per_speed(
+    lambda m, t=t: f"Instantly provides [1] [{LIFESPAN}] <upon turn start> <for every [8] [Owned [{t}] Tiles]> "
+                   f"<with [{chance(15, m)}]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations>")]
+IMMORTAL_LIFE = [f"Instantly consumes [1] [{LIFESPAN}] <upon turn start> <every [{turns(10, m)}] turns> <on [{n}] game speed>"
+                 for n, m in SPEEDS] + [
+    f"Can only heal by pillaging <when below [1] [{LIFESPAN}]>",
+    f"[This Unit] takes [7] damage <upon turn start> <when below [1] [{LIFESPAN}]>"]
+
+
+def toll(text, effects, weight):
+    return {"text": text, "uniques": effects + [w(weight)]}
 
 
 # ---------------- ModOptions / Globals ----------------
@@ -225,7 +275,10 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "Triggers a [Blood Lake] event <upon discovering [Inheritance Lore] technology> <for [Gu Yue Clan] Civilizations>",
     # R6: a held (excavated) inheritance teaches the clan's Gu Masters
     "[+20]% XP gained from combat <with [Gu Inheritance]>",
-] + QI_SOURCES})
+] + QI_SOURCES + LIFESPAN_SOURCES + per_speed(
+    # Heaven's Will trims the strong (R V5/54): a clan with more than two immortals draws extra calamities
+    lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more "
+              f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>")})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -312,6 +365,8 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     # 6% x 1/5 = 1.2% per Gu Master per turn for a wild Gu; 1% x 1/2 per turn in foreign land for an inheritance
     # (1/8 gave 0.4 inheritances per game in autoplay; 1/2 aims at about 1.5).
     u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER]
+    if r["name"] == "Rank Six Gu Immortal":
+        u["uniques"] += IMMORTAL_LIFE  # MOD_SPEC_2 C2: every immortal burns Lifespan Gu
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      # R8: mortals live off the land, not off primeval stones (late-game AI bankruptcy, docs/AUTOPLAY.md round 8)
@@ -432,8 +487,11 @@ dump("UnitPromotions.json", [
         + [f"Unavailable <when below [{qi_cost(ASCEND['Balance the three qi'], m)}] [{q}]> <for [AI player] Civilizations> "
            f"<on [{n}] game speed>" for q in QI for n, m in SPEEDS]
         + ["Triggers a [Ascension] event", "[This Unit] loses the [Ascension] promotion <upon turn start>"]},
-] + [{"name": f"{g} Grade Blessed Land", "uniques": [f"Instantly provides [{e}] [{GREEN}] <upon turn start>",
-                                                      f"Gain [{st}] [Gold] <upon turn start>"]} for g, e, st in GRADES])
+] + [blessed_land(g, e, st) for g, e, st in GRADES] + [
+    {"name": "Calamity Countdown", "uniques": ["Comment [When it runs out, the blessed land meets an earthly calamity]"]},
+    {"name": "Tribulation Countdown", "uniques": ["Comment [When it runs out, the immortal meets a heavenly tribulation]"]},
+    {"name": RAVAGED, "uniques": ["Comment [The blessed land yields nothing until it heals]"]},
+])
 
 # ---------------- Events (13: the spec's 5, wild Gu and inheritances (R6), world conflicts (canon overhaul)) ----------------
 BAI = "<for [Bai Clan] Civilizations>"
@@ -614,6 +672,39 @@ dump("Events.json", [
      "choices": [{"text": "Enter the blessed land", "uniques": [w("+0")]}]},
     {"name": "Aperture Collapse", "text": "The three qi would not balance. The aperture collapsed, and your Gu Master "
                                           "with it.", "choices": [{"text": "Mourn the fallen", "uniques": [w("+0")]}]},
+    # MOD_SPEC_2 C2: prepared choices cost little (tension target: under 10% of the land's output); enduring a
+    # calamity unprepared costs about a third (the land lies ravaged half the time for most of a cycle) or the
+    # immortal's health
+    {"name": "Earthly Calamity", "text": "An earthly calamity strikes your immortal's blessed land: floods, fire, a "
+                                         "swarm. How will it be met?", "choices": [
+        toll("Raise the formation ward", ["Only available <if [Formation Ward] is constructed>", "[This Unit] takes [10] damage"], "+100"),
+        toll("Rebuild from the vault", ["Only available <if [Stockpile Vault] is constructed>", "Unavailable <when below [40] [Gold]>",
+                                        "Gain [-40] [Gold]"], "+50"),
+        toll("Pour essence into the land", [f"Unavailable <when below [10] [{GREEN}]>", f"Instantly consumes [10] [{GREEN}]",
+                                            "[This Unit] takes [15] damage"], "+0"),
+        toll("Endure it", ["Triggers a [Calamity Toll] event"], "-30")]},
+    {"name": "Calamity Toll", "presentation": "None", "choices": [   # 50 / 30 / 20
+        toll("The land is ravaged", ravage(8), "+0"),
+        toll("The immortal is hurt", ["[This Unit] takes [40] damage"], "-40"),
+        toll("It passes", [], "-60")]},
+    {"name": "Heavenly Tribulation", "text": "A heavenly tribulation gathers over your immortal: heaven itself tests "
+                                             "whether it may go on living.", "choices": [
+        toll("Ward and essence together", ["Only available <if [Formation Ward] is constructed>",
+                                           f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]",
+                                           "[This Unit] takes [30] damage"], "+100"),
+        toll("Pour essence into the land", [f"Unavailable <when below [50] [{GREEN}]>", f"Instantly consumes [50] [{GREEN}]",
+                                            "[This Unit] takes [50] damage"], "+0"),
+        toll("Face it bare", ["Triggers a [Tribulation Toll] event"], "-30")]},
+    {"name": "Tribulation Toll", "presentation": "None", "choices": [   # 25 / 45 / 30
+        toll("The tribulation kills it", ["[This Unit] is destroyed"], "-44"),
+        toll("It survives, its land ravaged", ravage(10) + ["[This Unit] takes [50] damage"], "+0"),
+        toll("It survives", ["[This Unit] takes [30] damage"], "-33")]},
+    # civ-level: no unit context
+    {"name": "Heaven's Will", "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and "
+                                      "luck runs thin.", "choices": [
+        toll("Lie low", ["[-20]% Strength <for [10] turns>"], "+0"),
+        toll("Pay heaven its due", [f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]"], "+50"),
+        toll("Defy heaven", ["A [Thunder Crown Wolf] rebels", "[2] [Bold Lightning Wolf]s rebel"], "-30")]},
 ])
 
 # ---------------- Buildings (12: 7 + 1 Wu unique + 2 national wonders + 2 world wonders) ----------------
@@ -657,6 +748,11 @@ dump("Buildings.json", [
     {"name": "Shang Clan City", "isWonder": True, "requiredTech": "Super Clan Commerce", "cost": 300, "gold": 5,
      "uniques": ["[+2 Gold] from all [Trading House] buildings",
                  "Receive [+50]% Gold from Barbarian encampments and pillaging Cities"]},
+    # MOD_SPEC_2 C2: calamity preparations (R V5/22, V5/70): one per clan opens the safer calamity choices
+    {"name": "Formation Ward", "isNationalWonder": True, "requiredTech": "Calamity Lore", "cost": 220, "maintenance": 2,
+     "cityStrength": 4},
+    {"name": "Stockpile Vault", "isNationalWonder": True, "requiredTech": "Calamity Lore", "cost": 160, "maintenance": 1,
+     "gold": 2},
 ])
 
 # ---------------- Policies (4 branches) ----------------
@@ -753,7 +849,7 @@ dump("TileResources.json", [
      "improvement": "Camp", "improvementStats": {"gold": 1}},
     # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
 ] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
-     for r in QI + [GREEN]])
+     for r in QI + [GREEN, LIFESPAN]])
 
 # ---------------- Terrains (Vanilla minus natural wonders and Fallout) ----------------
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))

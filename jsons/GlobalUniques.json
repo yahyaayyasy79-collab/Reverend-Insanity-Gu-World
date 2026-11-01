@@ -47,6 +47,22 @@
     "Instantly provides [1] [Earth Qi] <upon turn start> <for every [1] [Owned [Spring Cave] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>",
     "Instantly provides [1] [Earth Qi] <upon turn start> <for every [8] [Owned [Hill] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>",
     "Instantly provides [1] [Human Qi] <upon turn start> <for every [10] [[Population] in [in all cities] Cities]> <after discovering [Three Qi]> <for [Major] Civilizations>",
-    "Earn [5]% of the damage done to [All] units as [Human Qi] <after discovering [Three Qi]> <for [Major] Civilizations>"
+    "Earn [5]% of the damage done to [All] units as [Human Qi] <after discovering [Three Qi]> <for [Major] Civilizations>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Forest] Tiles]> <with [22]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Forest] Tiles]> <with [15]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Forest] Tiles]> <with [10]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Forest] Tiles]> <with [5]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Jungle] Tiles]> <with [22]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Jungle] Tiles]> <with [15]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Jungle] Tiles]> <with [10]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Jungle] Tiles]> <with [5]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [22]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [15]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [10]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [5]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>"
   ]
 }

@@ -169,7 +169,13 @@
       "[+15]% Strength <when above [9] [Green Grape Immortal Essence]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
-      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
+      "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
+      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>"
     ],
     "attackSound": "throw",
     "civilopediaText": [

@@ -31,7 +31,7 @@ MOD_SPEC_2 Phase A (its first reply was Gate + Phase A; MOD_SPEC_3's precedence 
 2026-10-18; MOD_SPEC_2 Phase A done and approved 2026-10-18 (CAPABILITIES.md "MOD_SPEC_2 Phase A"); B3 (docs/PATHS.md,
 47 paths) and B (LORE_MAPPING "Immortal arc") approved 2026-10-18 with the user's decisions; the C3 migration plan
 (PATHS.md, M1-M9, legacy bridge for saves) approved 2026-10-18 except two open questions (animations, path Gu); the test branch carries all 47 lines for the
-user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one canon mortal Gu per path, 47; research done, options in docs/CANON_OVERHAUL.md E); animations A.b (clan chains, 12 units). C3 core (M1-M6) done 2026-10-19: rank chain, clan chains, 47 paths tiers 1-2, legacy bridge, retargets, `Images.Units` atlas. M7 autoplay done (no change beyond noise, docs/AUTOPLAY.md); pushed, main fast-forwarded. Canon overhaul (docs/CANON_OVERHAUL.md) built 2026-10-19. MOD_SPEC_2 Phase C1 (ascension, three qi, Rank 5-6 eras, blessed lands as promotions) built 2026-11-01 (LORE_MAPPING "Phase C1"); next C2 (tribulations, Heaven's Will, lifespan).
+user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one canon mortal Gu per path, 47; research done, options in docs/CANON_OVERHAUL.md E); animations A.b (clan chains, 12 units). C3 core (M1-M6) done 2026-10-19: rank chain, clan chains, 47 paths tiers 1-2, legacy bridge, retargets, `Images.Units` atlas. M7 autoplay done (no change beyond noise, docs/AUTOPLAY.md); pushed, main fast-forwarded. Canon overhaul (docs/CANON_OVERHAUL.md) built 2026-10-19. MOD_SPEC_2 Phase C1 (ascension, three qi, Rank 5-6 eras, blessed lands as promotions) built 2026-11-01 (LORE_MAPPING "Phase C1"); C2 (calamity/tribulation countdowns on the immortal, Formation Ward, Stockpile Vault, Lifespan Gu, Heaven's Will) built 2026-11-01; next C3 (immortal Gu wonders, dao marks, killer moves).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -94,7 +94,7 @@ tools/check_all                          # self-tests, schema, uniques, refs, OF
 Single tools: `tools/check_schema.py`, `tools/lint_uniques.py`, `tools/check_refs.py`, `tools/unciv_ci.py [--pack]`,
 `tools/make_placeholders.py [--dry-run|--force|--report|--preview]`; all accept `--mod PATH` and `--quiet`.
 While designing, `printf '%s\n' "<unique>" | tools/unique_check.py` checks loose strings against uniques.md, and
-`tools/gen_ruleset.py` regenerates `jsons/` from `data/*.csv` (`--out DIR` for a throwaway variant, then
+`tools/gen_ruleset.py` regenerates `jsons/` from `data/*.csv` (then `tools/lore_blocks.py` rewrites LORE_MAPPING's Phase C unique blocks) (`--out DIR` for a throwaway variant, then
 `tools/check_all --mod DIR --no-self-test && tools/ladder_check.py DIR`); self-tests keep jsons/, data/ and
 `docs/LORE_MAPPING.md` in sync and run the ladder check.
 `tools/autoplay.py [--games N --turns T --out DIR]` plays headless AI-vs-AI games on the mod (needs javac); results
