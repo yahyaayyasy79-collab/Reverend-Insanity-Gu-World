@@ -93,6 +93,13 @@ rest of the list is what a player or the next session should know before trustin
     of the same grade its own land, so the land lives on the immortal: it shows among the unit's promotions and is
     lost with the unit. Its essence and stones arrive at turn start, not in the per-turn stat preview.
 
+13. **No ascension in foreign land (C3).** Unciv's free special upgrade fails in foreign land without open borders and
+    then crashes restoring the old unit [src UnitUpgradeManager.performUpgrade]; the Ascension promotion and its qi
+    choices are closed there. Walk the master home first.
+14. **The AI builds stat wonders first.** Star Eyes and Unravel Mystery go up in every autoplay game; Self Strength,
+    Woman's Heart, Bone Spike and Divert Disaster rarely or never (they help units, which the AI weighs low), so a
+    human can usually claim them.
+
 ## Not yet seen in a real game
 
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
@@ -121,4 +128,7 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Heavenly tribulation | `unit activatetrigger "Triggers a [Heavenly Tribulation] event"`; "Face it bare" may kill the immortal |
 | Lifespan Gu debt | `civ activatetrigger "Instantly consumes [20] [Lifespan Gu]"`: the immortal stops healing and loses 7 HP a turn |
 | Heaven's Will | `civ activatetrigger "Triggers a [Heaven's Will] event"` |
+| Immortal Gu wonders (C3) | `civ addtech <civ> "Immortal Gu Recipes"`; `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`; the ten Gu appear in the wonder list; on completion a city may lose 2 population to the birth's calamity; capture the city to seize the Gu |
+| Great Grandmaster and immortal move | With a Rank Six Gu Immortal holding a Grandmaster: `unit setxp 300`, buy `<Path> Great Grandmaster`; the move button costs 5 essence |
+| Dao marks | A Strength Master's strength rises 5% after Self Strength is built (unit's combat preview) |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

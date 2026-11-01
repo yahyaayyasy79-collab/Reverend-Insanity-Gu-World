@@ -493,6 +493,7 @@
       {
         "text": "Balance the three qi",
         "uniques": [
+          "Unavailable <in [Foreign Land] tiles>",
           "Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>",
           "Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>",
           "Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>",
@@ -524,6 +525,7 @@
       {
         "text": "Ascend in haste",
         "uniques": [
+          "Unavailable <in [Foreign Land] tiles>",
           "Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>",
           "Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>",
           "Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>",
@@ -570,6 +572,7 @@
           "[This Unit] gains the [Lower Grade Blessed Land] promotion",
           "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
+          "[This Unit] loses the [Ascension] promotion",
           "[This Unit] upgrades for free including special upgrades",
           "[+0]% weight to this choice for AI decisions",
           "[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>",
@@ -582,6 +585,7 @@
           "[This Unit] gains the [Middle Grade Blessed Land] promotion",
           "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
+          "[This Unit] loses the [Ascension] promotion",
           "[This Unit] upgrades for free including special upgrades",
           "[-30]% weight to this choice for AI decisions",
           "[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>",
@@ -594,6 +598,7 @@
           "[This Unit] gains the [Upper Grade Blessed Land] promotion",
           "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
+          "[This Unit] loses the [Ascension] promotion",
           "[This Unit] upgrades for free including special upgrades",
           "[-75]% weight to this choice for AI decisions",
           "[+100]% weight to this choice for AI decisions <for units with [Aptitude A]>",
@@ -606,6 +611,7 @@
           "[This Unit] gains the [Super Grade Blessed Land] promotion",
           "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
+          "[This Unit] loses the [Ascension] promotion",
           "[This Unit] upgrades for free including special upgrades",
           "[-96]% weight to this choice for AI decisions",
           "[+150]% weight to this choice for AI decisions <for units with [Aptitude A]>",
@@ -634,6 +640,7 @@
           "[This Unit] gains the [Lower Grade Blessed Land] promotion",
           "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
+          "[This Unit] loses the [Ascension] promotion",
           "[This Unit] upgrades for free including special upgrades",
           "[+0]% weight to this choice for AI decisions",
           "[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>",
@@ -646,6 +653,7 @@
           "[This Unit] gains the [Middle Grade Blessed Land] promotion",
           "Instantly provides [5] [Lifespan Gu]",
           "Triggers a [Immortal Ascension] event",
+          "[This Unit] loses the [Ascension] promotion",
           "[This Unit] upgrades for free including special upgrades",
           "[-60]% weight to this choice for AI decisions",
           "[+50]% weight to this choice for AI decisions <for units with [Aptitude A]>",
@@ -692,6 +700,13 @@
     "name": "Earthly Calamity",
     "text": "An earthly calamity strikes your immortal's blessed land: floods, fire, a swarm. How will it be met?",
     "choices": [
+      {
+        "text": "Divert the disaster",
+        "uniques": [
+          "Only available <if [Divert Disaster] is constructed>",
+          "[+300]% weight to this choice for AI decisions"
+        ]
+      },
       {
         "text": "Raise the formation ward",
         "uniques": [
@@ -761,6 +776,13 @@
     "text": "A heavenly tribulation gathers over your immortal: heaven itself tests whether it may go on living.",
     "choices": [
       {
+        "text": "Divert the disaster",
+        "uniques": [
+          "Only available <if [Divert Disaster] is constructed>",
+          "[+300]% weight to this choice for AI decisions"
+        ]
+      },
+      {
         "text": "Ward and essence together",
         "uniques": [
           "Only available <if [Formation Ward] is constructed>",
@@ -815,6 +837,26 @@
         "uniques": [
           "[This Unit] takes [30] damage",
           "[-33]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Immortal Gu Refinement",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "The Gu takes shape",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Its birth calls down a calamity",
+        "uniques": [
+          "[-2] population [in this city]",
+          "[2] [Bold Lightning Wolf]s rebel",
+          "[-67]% weight to this choice for AI decisions"
         ]
       }
     ]

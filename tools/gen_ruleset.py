@@ -176,6 +176,10 @@ def ascended(grade, weight, a, d):
     return {"text": f"{'An' if grade == 'Upper' else 'A'} {grade.lower()}-grade blessed land opens", "uniques": [
         f"[This Unit] gains the [{grade} Grade Blessed Land] promotion", f"Instantly provides [5] [{LIFESPAN}]",
         "Triggers a [Immortal Ascension] event",
+        # an upgrade copies the promotions and re-fires their direct effects on the new unit [src UnitManager.
+        # placeUnitNearTile]: the Ascension promotion would throw the event again on the immortal being placed, and a
+        # second collapse destroyed it mid-placement (autoplay crash, NullPointerException in performUpgrade)
+        "[This Unit] loses the [Ascension] promotion",
         "[This Unit] upgrades for free including special upgrades",
         w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>")]}
 
@@ -235,6 +239,16 @@ def toll(text, effects, weight):
     return {"text": text, "uniques": effects + [w(weight)]}
 
 
+DIVERT = toll("Divert the disaster", ["Only available <if [Divert Disaster] is constructed>"], "+300")
+
+# ---------------- MOD_SPEC_2 C3: immortal Gu (data/immortal_gu.csv) ----------------
+# World wonders (each immortal Gu is unique in the world, R V4/100): a recipe tech, essence on top of production,
+# kept on capture (Phase A2: conquest seizes the Gu), the Immortal Gu marker and its path's marker (dao marks,
+# tools/gen_paths.py). Never granted free (A3). Their completion rolls the refinement die (仙蛊成劫, R V5/54).
+IMMORTAL_GU = table("immortal_gu.csv")
+IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes"}
+
+
 # ---------------- ModOptions / Globals ----------------
 dump("ModOptions.json", {"isBaseRuleset": True,
                          "uniques": ["Disable religion", "Can only start games from the starting era"],
@@ -278,7 +292,11 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
 ] + QI_SOURCES + LIFESPAN_SOURCES + per_speed(
     # Heaven's Will trims the strong (R V5/54): a clan with more than two immortals draws extra calamities
     lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more "
-              f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>")})
+              f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    # C3: so does a clan holding more than two immortal Gu (MOD_SPEC_2 #10)
+    lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more "
+              f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>")
+    + [u for g in IMMORTAL_GU for u in items(g["global_effects"])]})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -481,12 +499,16 @@ dump("UnitPromotions.json", [
     # MOD_SPEC_2 C1: the ascension is bought like Refine Gu (E4: kept, self-removing); the human may try with the hasty
     # amount of qi, the AI only with the balanced one (it never wastes the XP on an attempt it would rush)
     {"name": "Ascension", "unitTypes": GM_TYPES, "uniques": [
-        "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>"]
+        "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>",
+        # an upgrade anywhere fails in foreign land without open borders, and Unciv then crashes restoring the old unit
+        # [src UnitUpgradeManager.performUpgrade, TileMap.placeUnitNearTile]: ascend at home (autoplay crash, C3)
+        "Unavailable <in [Foreign Land] tiles>"]
         + [f"Unavailable <when below [{qi_cost(ASCEND['Ascend in haste'], m)}] [{q}]> <on [{n}] game speed>"
            for q in QI for n, m in SPEEDS]
         + [f"Unavailable <when below [{qi_cost(ASCEND['Balance the three qi'], m)}] [{q}]> <for [AI player] Civilizations> "
            f"<on [{n}] game speed>" for q in QI for n, m in SPEEDS]
-        + ["Triggers a [Ascension] event", "[This Unit] loses the [Ascension] promotion <upon turn start>"]},
+        + ["Triggers a [Ascension] event <for [Rank Five Gu Master] units>",
+           "[This Unit] loses the [Ascension] promotion <upon turn start>"]},
 ] + [blessed_land(g, e, st) for g, e, st in GRADES] + [
     {"name": "Calamity Countdown", "uniques": ["Comment [When it runs out, the blessed land meets an earthly calamity]"]},
     {"name": "Tribulation Countdown", "uniques": ["Comment [When it runs out, the immortal meets a heavenly tribulation]"]},
@@ -655,7 +677,8 @@ dump("Events.json", [
     # MOD_SPEC_2 C1: crush the aperture, draw in and balance the three qi, survive (R V3/201, V5/346, V3/222)
     {"name": "Ascension", "text": "Your rank-five Gu Master is ready to crush the aperture and draw in the three qi. "
                                   "Balanced qi gives the best odds; haste costs less and risks everything.", "choices": [
-        {"text": text, "uniques": [f"Unavailable <when below [{qi_cost(a, m)}] [{q}]> <on [{n}] game speed>"
+        {"text": text, "uniques": ["Unavailable <in [Foreign Land] tiles>"] + [
+            f"Unavailable <when below [{qi_cost(a, m)}] [{q}]> <on [{n}] game speed>"
                                    for q in QI for n, m in SPEEDS]
             + [f"Instantly consumes [{qi_cost(a, m)}] [{q}] <on [{n}] game speed>" for q in QI for n, m in SPEEDS]
             + [f"Triggers a [{trial}] event", w(weight)]}
@@ -677,6 +700,7 @@ dump("Events.json", [
     # immortal's health
     {"name": "Earthly Calamity", "text": "An earthly calamity strikes your immortal's blessed land: floods, fire, a "
                                          "swarm. How will it be met?", "choices": [
+        DIVERT,
         toll("Raise the formation ward", ["Only available <if [Formation Ward] is constructed>", "[This Unit] takes [10] damage"], "+100"),
         toll("Rebuild from the vault", ["Only available <if [Stockpile Vault] is constructed>", "Unavailable <when below [40] [Gold]>",
                                         "Gain [-40] [Gold]"], "+50"),
@@ -689,6 +713,7 @@ dump("Events.json", [
         toll("It passes", [], "-60")]},
     {"name": "Heavenly Tribulation", "text": "A heavenly tribulation gathers over your immortal: heaven itself tests "
                                              "whether it may go on living.", "choices": [
+        DIVERT,
         toll("Ward and essence together", ["Only available <if [Formation Ward] is constructed>",
                                            f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]",
                                            "[This Unit] takes [30] damage"], "+100"),
@@ -699,6 +724,10 @@ dump("Events.json", [
         toll("The tribulation kills it", ["[This Unit] is destroyed"], "-44"),
         toll("It survives, its land ravaged", ravage(10) + ["[This Unit] takes [50] damage"], "+0"),
         toll("It survives", ["[This Unit] takes [30] damage"], "-33")]},
+    # C3: an immortal Gu's birth may call down its own calamity (R V5/54); civ-level, in the city that refined it
+    {"name": "Immortal Gu Refinement", "presentation": "None", "choices": [   # 75 / 25
+        toll("The Gu takes shape", [], "+0"),
+        toll("Its birth calls down a calamity", ["[-2] population [in this city]", "[2] [Bold Lightning Wolf]s rebel"], "-67")]},
     # civ-level: no unit context
     {"name": "Heaven's Will", "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and "
                                       "luck runs thin.", "choices": [
@@ -753,6 +782,12 @@ dump("Buildings.json", [
      "cityStrength": 4},
     {"name": "Stockpile Vault", "isNationalWonder": True, "requiredTech": "Calamity Lore", "cost": 160, "maintenance": 1,
      "gold": 2},
+] + [{"name": g["name"], "isWonder": True, "requiredTech": IMMORTAL_GU_RECIPES[g["rank"]], "cost": int(g["cost"]),
+      "uniques": [f"Costs [{g['essence']}] [{GREEN}]", "Never destroyed when the city is captured", "Immortal Gu",
+                  gen_paths.path_marker(g["path"]), "Triggers a [Immortal Gu Refinement] event"] + items(g["effects"])
+      # autoplay (C3): without it the AI built only the two stat wonders, after turn 275
+      + [w("+300")]}
+     for g in IMMORTAL_GU
 ])
 
 # ---------------- Policies (4 branches) ----------------

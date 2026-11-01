@@ -24,17 +24,22 @@ from common import REPO_ROOT  # noqa: E402
 DATA = REPO_ROOT / "data"
 DOC = REPO_ROOT / "docs" / "PATHS.md"
 
-# Tiers shipped so far: MOD_SPEC_3 C3 puts tiers 1-2 into Slice 1; tiers 3-4 and the immortal moves need the Gu
-# Immortal unit type and essence (MOD_SPEC_2 C1/C3).
-MAX_TIER = 2
+# Tiers shipped so far: MOD_SPEC_3 C3 put tiers 1-2 into Slice 1; MOD_SPEC_2 C3 adds the Great Grandmaster (rank six,
+# the immortal move); the Supreme Grandmaster waits for rank eight (C5).
+MAX_TIER = 3
 TIERS = ["Master", "Grandmaster", "Great Grandmaster", "Supreme Grandmaster"]
 TIERS_ZH = ["大师", "宗师", "大宗师", "无上大宗师"]
 TIERS_ID = ["Ahli", "Mahaguru", "Mahaguru Agung", "Mahaguru Tertinggi"]
 TIER_STRENGTH = [10, 15, 20, 25]
 # Grandmaster from rank 3: units whose required tech lies outside the Rank One-Two era [src BaseUnit.matchesSingleFilter:
 # a unit filter matches the era of the unit's required tech]
-TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", None, None]
+TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", "Only available <for [post-[Rank Five era]] units>",
+             None]
 MOVE_COST = "<costs [+15 Gold] stats> <requires [1] movement>"
+IMMORTAL_MOVE_COST = "<costs [5] [Green Grape Immortal Essence]> <requires [1] movement>"  # MOD_SPEC_2 #5
+# MOD_SPEC_2 #4: dao marks. Every immortal Gu carries its path's marker; a path's Master gains per mark of its own path
+# and loses per mark of a path it clashes with strongly (data/path_conflicts.csv at -25 or worse)
+DAO_MARK, DAO_CLASH, STRONG_CLASH = 5, -5, -25
 MARKER = "Path Master"  # filter marker on every Master (tools/unique_allowlist.txt)
 SIGNATURE_SHARE = 0.85  # MOD_SPEC_3: a signature clan keeps >=80% of its path promotions on its path
 TIER_WEIGHT = "[+400]% weight to this choice for AI decisions"
@@ -49,6 +54,7 @@ def table(name: str) -> list[dict]:
 
 
 PATHS = table("paths.csv")
+IMMORTAL_GU = table("immortal_gu.csv")  # MOD_SPEC_2 C3: their path markers are the dao marks
 FAMILIES = {r["family"]: r for r in table("path_families.csv")}
 STATUSES = table("path_statuses.csv")
 KEY = {p["key"]: p for p in PATHS}
@@ -103,6 +109,21 @@ def conflict_lines(p: dict) -> list[str]:
             for (a, b), v in pair_strength().items() if a == p["key"] and v]
 
 
+def path_marker(key: str) -> str:
+    return f"{KEY[key]['name']} Path"
+
+
+def dao_mark_lines(p: dict) -> list[str]:
+    marked = {g["path"] for g in IMMORTAL_GU}
+    out = [f"[+{DAO_MARK}]% Strength <for every [1] [[{path_marker(p['key'])}] Buildings]>"] if p["key"] in marked else []
+    for (a, b), v in pair_strength().items():
+        if v <= STRONG_CLASH and p["key"] in (a, b):
+            other = b if a == p["key"] else a
+            if other in marked:
+                out.append(f"[{DAO_CLASH}]% Strength <for every [1] [[{path_marker(other)}] Buildings]>")
+    return out
+
+
 def move_uniques(p: dict, immortal: bool = False) -> list[str]:
     name = p["immortal" if immortal else "mortal"]
     return [u.replace("{n}", name) for u in split(FAMILIES[p["family"]]["immortal_uniques" if immortal else "mortal_uniques"])]
@@ -142,9 +163,12 @@ def gu_promotions() -> list[dict]:
 def tier_uniques(p: dict, t: int) -> list[str]:
     u = [f"[+{TIER_STRENGTH[t]}]% Strength"]
     if t == 0:
-        u = [p["signature"]] + u + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER] + [grant(g) for g in GU_OF[p["key"]]]
+        u = ([p["signature"]] + u + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER] + [grant(g) for g in GU_OF[p["key"]]]
+             + dao_mark_lines(p))
     if t == 1:
         u.append(f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}")
+    if t == 2:
+        u.append(f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}")
     if TIER_GATE[t]:
         u.append(TIER_GATE[t])
     u.append(TIER_WEIGHT)
@@ -160,10 +184,24 @@ def pedia(p: dict, t: int) -> tuple[str, str]:
     if t == 0:
         return (f"{p['name']} path ({p['chinese']}), Master attainment ({TIERS_ZH[0]}): {p['hook']}.",
                 f"Jalur {p['name_id']} ({p['chinese']}), pencapaian {TIERS_ID[0]} ({TIERS_ZH[0]}): {p['hook_id']}.")
+    if t == 2:
+        return (f"{p['name']} path, Great Grandmaster attainment ({TIERS_ZH[2]}): where most rank-eight immortals end; a "
+                f"rank-six immortal that reaches it opens the immortal killer move {p['immortal']} (5 green grape essence).",
+                f"Jalur {p['name_id']}, pencapaian {TIERS_ID[2]} ({TIERS_ZH[2]}): tempat kebanyakan abadi tingkat delapan "
+                f"berhenti; abadi tingkat enam yang mencapainya membuka jurus pamungkas abadi {p['immortal_id']} "
+                f"(5 esensi anggur hijau).")
     return (f"{p['name']} path, Grandmaster attainment ({TIERS_ZH[1]}): deep enough to bend other paths' methods to "
             f"its own Gu. Opens the killer move {p['mortal']}.",
             f"Jalur {p['name_id']}, pencapaian {TIERS_ID[1]} ({TIERS_ZH[1]}): cukup dalam untuk meminjam cara jalur lain "
             f"dengan Gu sendiri. Membuka jurus pamungkas {p['mortal_id']}.")
+
+
+def immortal_move_pedia(p: dict) -> tuple[str, str]:
+    zh = f" ({p['immortal_zh']})" if p["immortal_zh"] else ""
+    f = FAMILIES[p["family"]]
+    return (f"{p['immortal']}{zh}: a {p['name'].lower()}-path immortal killer move for one turn: {f['immortal_text']}.",
+            f"{p['immortal_id']}{zh}: jurus pamungkas abadi jalur {p['name_id']} selama satu giliran: "
+            f"{f['immortal_text_id']}.")
 
 
 def move_pedia(p: dict) -> tuple[str, str]:
@@ -186,6 +224,9 @@ def promotions(unit_types: list[str]) -> list[dict]:
                 d["prerequisites"] = [tier_name(KEY[x], 0) for x in parents]
             out.append(d)
         out.append({"name": p["mortal"], "uniques": move_uniques(p), "civilopediaText": [{"text": move_pedia(p)[0]}]})
+        if MAX_TIER > 2:
+            out.append({"name": p["immortal"], "uniques": move_uniques(p, immortal=True),
+                        "civilopediaText": [{"text": immortal_move_pedia(p)[0]}]})
     out += [{"name": s["name"], "uniques": split(s["uniques"]), "civilopediaText": [{"text": s["pedia"]}]} for s in STATUSES]
     return out
 
@@ -197,6 +238,8 @@ def translations() -> list[tuple[str, str]]:
         for t in range(MAX_TIER):
             out += [(tier_name(p, t), tier_name_id(p, t)), pedia(p, t)]
         out += [(p["mortal"], p["mortal_id"]), move_pedia(p)]
+        if MAX_TIER > 2:
+            out += [(p["immortal"], p["immortal_id"]), immortal_move_pedia(p)]
     for s in STATUSES:
         out += [(s["name"], s["name_id"]), (s["pedia"], s["pedia_id"])]
     for g in (g for g in PATH_GU if new_gu(g)):
@@ -228,19 +271,22 @@ def doc_tables() -> dict[str, str]:
         m = p["mortal"] + (f" {p['mortal_zh']}" if p["mortal_zh"] else "")
         im = p["immortal"] + (f" {p['immortal_zh']}" if p["immortal_zh"] else "")
         moves.append(f"| {p['name']} | {p['family']} | {m} | {p['mortal_tag']} | {im} | {p['immortal_tag']} |")
-    uniq = [f"Tiers 1-{MAX_TIER} ship in Slice 1. Every Master also carries one hidden conflict line per later path "
-            "whose pair costs Strength (`[relativeAmount]% Strength` `<for units with [promotion]>` "
-            "`<hidden from users>`, values from data/path_conflicts.csv) and a visible comment line.", "",
-            "| Path | Master | Grandmaster | Mortal move status |", "|---|---|---|---|"]
+    uniq = [f"Tiers 1-2 ship in Slice 1, tier 3 (Great Grandmaster, rank six) in MOD_SPEC_2 C3. Every Master also carries "
+            "one hidden conflict line per later path whose pair costs Strength (`[relativeAmount]% Strength` "
+            "`<for units with [promotion]>` `<hidden from users>`, values from data/path_conflicts.csv), a visible "
+            "comment line and, where immortal Gu of its own or a strongly clashing path exist, its dao-mark lines.", "",
+            "| Path | Master | Grandmaster | Mortal move status | Great Grandmaster | Immortal move status |",
+            "|---|---|---|---|---|---|"]
     for p in PATHS:
         master = [u for u in tier_uniques(p, 0) if not CONFLICT.match(u)]
         cells = [" ".join(code(u) for u in master), " ".join(code(u) for u in tier_uniques(p, 1)),
-                 " ".join(code(u) for u in move_uniques(p))]
+                 " ".join(code(u) for u in move_uniques(p)), " ".join(code(u) for u in tier_uniques(p, 2)),
+                 " ".join(code(u) for u in move_uniques(p, immortal=True))]
         uniq.append(f"| {p['name']} | " + " | ".join(cells) + " |")
     uniq += ["", "| Status | Uniques |", "|---|---|"]
     uniq += [f"| {s['name']} | " + " ".join(code(u) for u in split(s["uniques"])) + " |" for s in STATUSES]
     gu = ["Granted at a turn start to a unit holding the path's Master (the line is in the Master's column above), once "
-          "the unit's rank reaches the Gu's (a rank-5 Gu at rank four until the immortal arc) and, for a food eater, "
+          "the unit's rank reaches the Gu's and, for a food eater, "
           "while that food is in surplus. Moonlight Gu, White Boar Gu and the Liquor Worm are the Slice 1 Gu.", "",
           "| Path | Gu | Chinese | Rank | Food | Uniques | Verdict | Source |", "|---|---|---|---|---|---|---|---|"]
     built = {d["name"]: d for d in gu_promotions()}

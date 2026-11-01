@@ -78,13 +78,23 @@ def main(argv: list[str]) -> int:
     # texture, which costs texture swaps on phones (Images-and-Audio.md, "Multiple texture atlases")
     tiles = args.mod / "Images.Units" / "TileSets" / UNITSET / "Units"
     written, kept, sheet = 0, [], []
+    # the path promotions (several hundred icons) get their own atlas, Paths.png: with the other icons they spilled into a
+    # second game texture (game2.png)
+    path_icons = {(folder, name) for folder, name, _, _ in pathart.icons()}
     for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3:
+        if (folder, name) in path_icons:
+            stale = images / folder / f"{name}.png"
+            if stale.exists() and ours(stale):
+                stale.unlink()
+            target = args.mod / "Images.Paths" / folder / f"{name}.png"
+        else:
+            target = images / folder / f"{name}.png"
         im = draw().image(INK[ink])
         circle = {"NationIcons": (30, 40, 90), "UnitPromotionIcons": (60, 110, 60), "TechIcons": (40, 90, 140),
                   "PolicyIcons": (120, 60, 120), "PolicyBranchIcons": (90, 40, 100), "CityStateIcons": (110, 90, 40)}.get(
             folder, (150, 40, 40) if ink == "white" else (214, 182, 96))
         sheet.append((name, im, circle))
-        if save(im, images / folder / f"{name}.png"):
+        if save(im, target):
             written += 1
         else:
             kept.append(f"{folder}/{name}")

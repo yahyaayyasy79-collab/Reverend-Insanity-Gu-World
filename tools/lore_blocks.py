@@ -29,6 +29,11 @@ SECTIONS = {
                                      "Heaven's Will"],
                      "Buildings.json": ["Formation Ward", "Stockpile Vault"],
                      "Globals": ["[Lifespan Gu]", "[Heaven's Will]"]},
+    "## Phase C3:": {"Buildings.json": ["Spring Autumn Cicada", "Fixed Immortal Travel", "Man as Before", "Unravel Mystery",
+                                        "Connect Luck", "Self Strength", "Woman's Heart", "Bone Spike", "Star Eyes",
+                                        "Divert Disaster"],
+                     "Events.json": ["Immortal Gu Refinement"],
+                     "Globals": ["appears <upon losing"]},
 }
 
 

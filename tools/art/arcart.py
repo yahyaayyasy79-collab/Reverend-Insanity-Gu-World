@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import math
 
-from .glyphs import G, gu_beetle, human, pips
+from .glyphs import G, fist, gu_beetle, human, pips
 from .glyphs2 import aperture, coin, octagon_array, ranked_gu_master, roof
 
 
@@ -187,6 +187,100 @@ def ravaged_land():
     return g
 
 
+
+# ---- C3: immortal Gu (world wonders, black) and the recipe tech
+def _halo(g: G):
+    g.arc_band(50, 50, 48, 44, 0, 360)
+
+
+def spring_autumn_cicada():
+    """A cicada with long folded wings inside a halo."""
+    g = G(); _halo(g)
+    g.ell(42, 22, 58, 70)                                                          # body
+    g.circ(50, 20, 8)                                                              # head
+    for side in (-1, 1):
+        g.poly([(50 + side * 6, 30), (50 + side * 26, 40), (50 + side * 20, 82), (50 + side * 4, 66)])   # wings
+        g.circ(50 + side * 6, 17, 3, 0)                                            # eyes
+    g.line([(50, 32), (50, 68)], 2, 0)
+    return g
+
+
+def fixed_immortal_travel():
+    """A Gu beetle leaving a curved trail of three steps toward a ring."""
+    g = G(); _halo(g)
+    gu_beetle(g, 34, 62, 0.9)
+    for k, (x, y) in enumerate(((52, 50), (62, 38), (70, 28))):
+        g.circ(x, y, 4 + k)
+    g.arc_band(72, 26, 13, 9, 0, 360)
+    return g
+
+
+def man_as_before():
+    """A person beside an hourglass."""
+    g = G(); _halo(g); human(g, 36, 20, 0.95); _hourglass(g, 66, 50, 22); return g
+
+
+def unravel_mystery():
+    """A key turning in a ring of knots."""
+    g = G(); _halo(g)
+    g.arc_band(36, 42, 16, 9, 0, 360)
+    g.line([(48, 52), (78, 82)], 7)
+    g.line([(66, 70), (74, 62)], 6); g.line([(72, 76), (80, 68)], 6)
+    return g
+
+
+def connect_luck():
+    """Two linked rings with a star between them."""
+    g = G(); _halo(g)
+    g.arc_band(38, 54, 20, 14, 0, 360); g.arc_band(62, 54, 20, 14, 0, 360)
+    from .pathart import _star
+    _star(g, 50, 24, 11)
+    return g
+
+
+def self_strength():
+    g = G(); _halo(g); fist(g, 50, 42, 1.1); return g
+
+
+def womans_heart():
+    from .pathart import _heart
+    g = G(); _halo(g); _heart(g, 50, 46, 26); g.poly([(50, 70), (56, 82), (50, 88), (44, 82)]); return g
+
+
+def bone_spike():
+    """Three bone spikes rising from a ridge."""
+    g = G(); _halo(g)
+    g.poly([(18, 74), (82, 74), (78, 82), (22, 82)])
+    for x, h in ((32, 34), (50, 18), (68, 34)):
+        g.poly([(x - 8, 74), (x, h), (x + 8, 74)])
+        g.circ(x, h + 4, 4)
+    return g
+
+
+def star_eyes():
+    """An eye whose pupil is a star."""
+    from .pathart import _star
+    g = G(); _halo(g)
+    g.poly([(14, 50), (32, 32), (68, 32), (86, 50), (68, 68), (32, 68)])
+    g.circ(50, 50, 15, 0)
+    _star(g, 50, 50, 12)
+    return g
+
+
+def divert_disaster():
+    """A shield turning a falling bolt aside."""
+    g = G(); _halo(g)
+    g.poly([(30, 44), (70, 44), (68, 66), (50, 82), (32, 66)])
+    g.bolt([28, 18, 30, 22], 12, 38, 4)
+    g.line([(70, 40), (84, 26)], 4)
+    return g
+
+
+def immortal_gu_recipes():
+    """A recipe scroll under a Gu with a halo."""
+    from .glyphs2 import scroll
+    g = G(); scroll(g, 50, 66, 34, 22); gu_beetle(g, 50, 28, 0.7); g.arc_band(50, 28, 22, 18, 20, 160); return g
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -206,4 +300,15 @@ ICONS3 = [
     ("UnitPromotionIcons", "Calamity Countdown", calamity_countdown, "white"),
     ("UnitPromotionIcons", "Tribulation Countdown", tribulation_countdown, "white"),
     ("UnitPromotionIcons", "Ravaged Land", ravaged_land, "white"),
+    ("BuildingIcons", "Spring Autumn Cicada", spring_autumn_cicada, "black"),
+    ("BuildingIcons", "Fixed Immortal Travel", fixed_immortal_travel, "black"),
+    ("BuildingIcons", "Man as Before", man_as_before, "black"),
+    ("BuildingIcons", "Unravel Mystery", unravel_mystery, "black"),
+    ("BuildingIcons", "Connect Luck", connect_luck, "black"),
+    ("BuildingIcons", "Self Strength", self_strength, "black"),
+    ("BuildingIcons", "Woman's Heart", womans_heart, "black"),
+    ("BuildingIcons", "Bone Spike", bone_spike, "black"),
+    ("BuildingIcons", "Star Eyes", star_eyes, "black"),
+    ("BuildingIcons", "Divert Disaster", divert_disaster, "black"),
+    ("TechIcons", "Immortal Gu Recipes", immortal_gu_recipes, "white"),
 ]

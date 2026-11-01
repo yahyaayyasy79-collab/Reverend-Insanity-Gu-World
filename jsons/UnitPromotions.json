@@ -367,6 +367,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [White Boar Gu] promotion <upon turn start> <for units without [White Boar Gu]> <for units without [White Jade Gu]>",
+      "[+5]% Strength <for every [1] [[Strength Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>"
@@ -400,6 +401,28 @@
     ]
   },
   {
+    "name": "Strength Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Strength path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Myriad Self (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Strength Grandmaster"
+    ]
+  },
+  {
     "name": "Self-Reliance",
     "uniques": [
       "[+25]% Strength"
@@ -407,6 +430,18 @@
     "civilopediaText": [
       {
         "text": "Self-Reliance (自力更生): a strength-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Myriad Self",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Myriad Self] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Myriad Self (万我): a strength-path immortal killer move for one turn: +50% Strength, heal 30 HP."
       }
     ]
   },
@@ -499,6 +534,28 @@
     ]
   },
   {
+    "name": "Transformation Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Transformation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ancient Sword Dragon (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Transformation Grandmaster"
+    ]
+  },
+  {
     "name": "Flying Bear Change",
     "uniques": [
       "[+25]% Strength"
@@ -506,6 +563,18 @@
     "civilopediaText": [
       {
         "text": "Flying Bear Change (飞熊变): a transformation-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Ancient Sword Dragon",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Ancient Sword Dragon] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ancient Sword Dragon (上古剑蛟): a transformation-path immortal killer move for one turn: +50% Strength, heal 30 HP."
       }
     ]
   },
@@ -565,6 +634,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Bone Spear Gu] promotion <upon turn start> <for units without [Bone Spear Gu]> <when above [1] [Wild Boar]> <with [25]% chance>",
+      "[+5]% Strength <for every [1] [[Bone Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -597,6 +667,28 @@
     ]
   },
   {
+    "name": "Bone Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Bone Spike Forest (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Bone Grandmaster"
+    ]
+  },
+  {
     "name": "Bone Spear",
     "uniques": [
       "[+25]% Strength"
@@ -604,6 +696,18 @@
     "civilopediaText": [
       {
         "text": "Bone Spear (骨枪): a bone-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spike Forest",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Bone Spike Forest] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone Spike Forest (骨刺林): a bone-path immortal killer move for one turn: +50% Strength, heal 30 HP."
       }
     ]
   },
@@ -694,6 +798,28 @@
     ]
   },
   {
+    "name": "Blood Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Blood Deity (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Blood Grandmaster"
+    ]
+  },
+  {
     "name": "Blood Skull",
     "uniques": [
       "[+25]% Strength"
@@ -701,6 +827,18 @@
     "civilopediaText": [
       {
         "text": "Blood Skull (血颅): a blood-path killer move for one turn: +25% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Blood Deity",
+    "uniques": [
+      "[+50]% Strength",
+      "[This Unit] heals [30] HP <upon gaining the [Blood Deity] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Deity (血神子): a blood-path immortal killer move for one turn: +50% Strength, heal 30 HP."
       }
     ]
   },
@@ -790,6 +928,28 @@
     ]
   },
   {
+    "name": "Sword Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Five Finger Fist Heart Sword (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Sword Grandmaster"
+    ]
+  },
+  {
     "name": "Sword Escape",
     "uniques": [
       "[+40]% Strength <when attacking>"
@@ -797,6 +957,17 @@
     "civilopediaText": [
       {
         "text": "Sword Escape (剑遁): a sword-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Five Finger Fist Heart Sword",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Five Finger Fist Heart Sword (五指拳心剑): a sword-path immortal killer move for one turn: +80% Strength when attacking."
       }
     ]
   },
@@ -885,6 +1056,28 @@
     ]
   },
   {
+    "name": "Blade Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blade path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Autumn Blade Sweep (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Blade Grandmaster"
+    ]
+  },
+  {
     "name": "Edge",
     "uniques": [
       "[+40]% Strength <when attacking>"
@@ -892,6 +1085,17 @@
     "civilopediaText": [
       {
         "text": "Edge (刃): a blade-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Autumn Blade Sweep",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Autumn Blade Sweep: a blade-path immortal killer move for one turn: +80% Strength when attacking."
       }
     ]
   },
@@ -947,6 +1151,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Bronze Skin Gu] promotion <upon turn start> <for units without [Bronze Skin Gu]>",
+      "[-5]% Strength <for every [1] [[Strength Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -979,6 +1184,28 @@
     ]
   },
   {
+    "name": "Metal Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Metal path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move City-Crushing Hammer (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Metal Grandmaster"
+    ]
+  },
+  {
     "name": "Iron Rain",
     "uniques": [
       "[+40]% Strength <when attacking>"
@@ -986,6 +1213,17 @@
     "civilopediaText": [
       {
         "text": "Iron Rain: a metal-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "City-Crushing Hammer",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "City-Crushing Hammer (碎城锤): a metal-path immortal killer move for one turn: +80% Strength when attacking."
       }
     ]
   },
@@ -1072,6 +1310,28 @@
     ]
   },
   {
+    "name": "Weapon Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Weapon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Hundred Weapons (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Weapon Grandmaster"
+    ]
+  },
+  {
     "name": "Weapon Array",
     "uniques": [
       "[+40]% Strength <when attacking>"
@@ -1079,6 +1339,17 @@
     "civilopediaText": [
       {
         "text": "Weapon Array: a weapon-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Hundred Weapons",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hundred Weapons: a weapon-path immortal killer move for one turn: +80% Strength when attacking."
       }
     ]
   },
@@ -1164,6 +1435,28 @@
     ]
   },
   {
+    "name": "Killing Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Killing path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Kill (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Killing Grandmaster"
+    ]
+  },
+  {
     "name": "Killing Intent",
     "uniques": [
       "[+40]% Strength <when attacking>"
@@ -1171,6 +1464,17 @@
     "civilopediaText": [
       {
         "text": "Killing Intent: a killing-path killer move for one turn: +40% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Kill",
+    "uniques": [
+      "[+80]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kill (杀): a killing-path immortal killer move for one turn: +80% Strength when attacking."
       }
     ]
   },
@@ -1255,6 +1559,28 @@
     ]
   },
   {
+    "name": "Fire Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nirvana Fire (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Fire Grandmaster"
+    ]
+  },
+  {
     "name": "Five-Finger Flame Chain",
     "uniques": [
       "[+20]% Strength",
@@ -1263,6 +1589,18 @@
     "civilopediaText": [
       {
         "text": "Five-Finger Flame Chain (五指炎链): a fire-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Nirvana Fire",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nirvana Fire (涅槃火): a fire-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1314,6 +1652,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Water Shield Gu] promotion <upon turn start> <for units without [Water Shield Gu]> <for [non-[Rank One Gu Master]] units>",
+      "[-5]% Strength <for every [1] [[Strength Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>",
       "[+23133]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>"
@@ -1347,6 +1686,28 @@
     ]
   },
   {
+    "name": "Water Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Worldly Wave Trace (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Water Grandmaster"
+    ]
+  },
+  {
     "name": "Stream Surge",
     "uniques": [
       "[+20]% Strength",
@@ -1355,6 +1716,18 @@
     "civilopediaText": [
       {
         "text": "Stream Surge: a water-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Worldly Wave Trace",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Worldly Wave Trace (浪迹天涯): a water-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1437,6 +1810,28 @@
     ]
   },
   {
+    "name": "Wood Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Verdant Renewal (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Wood Grandmaster"
+    ]
+  },
+  {
     "name": "Rooted Vigor",
     "uniques": [
       "[+20]% Strength",
@@ -1445,6 +1840,18 @@
     "civilopediaText": [
       {
         "text": "Rooted Vigor: a wood-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Verdant Renewal",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Verdant Renewal: a wood-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1526,6 +1933,28 @@
     ]
   },
   {
+    "name": "Earth Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Earthen Bulwark (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Earth Grandmaster"
+    ]
+  },
+  {
     "name": "Nine-Ren Mountain",
     "uniques": [
       "[+20]% Strength",
@@ -1534,6 +1963,18 @@
     "civilopediaText": [
       {
         "text": "Nine-Ren Mountain (为山九仞): a earth-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Earthen Bulwark",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earthen Bulwark: a earth-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1615,6 +2056,28 @@
     ]
   },
   {
+    "name": "Wind Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wind path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Wind-Rolled Dragon Whip (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Wind Grandmaster"
+    ]
+  },
+  {
     "name": "Gale Step",
     "uniques": [
       "[+20]% Strength",
@@ -1623,6 +2086,18 @@
     "civilopediaText": [
       {
         "text": "Gale Step: a wind-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Wind-Rolled Dragon Whip",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wind-Rolled Dragon Whip (风卷龙鞭): a wind-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1702,6 +2177,28 @@
     ]
   },
   {
+    "name": "Cloud Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cloud path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Rising Azure Cloud (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Cloud Grandmaster"
+    ]
+  },
+  {
     "name": "Cloud Stride",
     "uniques": [
       "[+20]% Strength",
@@ -1710,6 +2207,18 @@
     "civilopediaText": [
       {
         "text": "Cloud Stride: a cloud-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Rising Azure Cloud",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rising Azure Cloud (平步青云): a cloud-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1788,6 +2297,28 @@
     ]
   },
   {
+    "name": "Ice Snow Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Snow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Frozen Domain (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Ice Snow Grandmaster"
+    ]
+  },
+  {
     "name": "Frost Bind",
     "uniques": [
       "[+20]% Strength",
@@ -1796,6 +2327,18 @@
     "civilopediaText": [
       {
         "text": "Frost Bind: a ice snow-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Frozen Domain",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Frozen Domain: a ice snow-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1872,6 +2415,28 @@
     ]
   },
   {
+    "name": "Lightning Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightning path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Thunder Judgement (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Lightning Grandmaster"
+    ]
+  },
+  {
     "name": "Lightning Wings",
     "uniques": [
       "[+20]% Strength",
@@ -1880,6 +2445,18 @@
     "civilopediaText": [
       {
         "text": "Lightning Wings (雷翼): a lightning-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Judgement",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Thunder Judgement: a lightning-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -1924,6 +2501,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Poison Scorpion Gu] promotion <upon turn start> <for units without [Poison Scorpion Gu]> <for [non-[Rank One-Two era]] units>",
+      "[+5]% Strength <for every [1] [[Poison Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1956,6 +2534,28 @@
     ]
   },
   {
+    "name": "Poison Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Poison path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heart of Venom (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Poison Grandmaster"
+    ]
+  },
+  {
     "name": "Bee Net Sting",
     "uniques": [
       "[+20]% Strength",
@@ -1964,6 +2564,18 @@
     "civilopediaText": [
       {
         "text": "Bee Net Sting (蜂罗刺): a poison-path killer move for one turn: +20% Strength, 10 extra damage to the target."
+      }
+    ]
+  },
+  {
+    "name": "Heart of Venom",
+    "uniques": [
+      "[+40]% Strength",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heart of Venom: a poison-path immortal killer move for one turn: +40% Strength, 25 extra damage."
       }
     ]
   },
@@ -2038,6 +2650,28 @@
     ]
   },
   {
+    "name": "Light Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Light path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Saw-Wheel Light (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Light Grandmaster"
+    ]
+  },
+  {
     "name": "Glare",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2046,6 +2680,18 @@
     "civilopediaText": [
       {
         "text": "Glare: a light-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Saw-Wheel Light",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Saw-Wheel Light] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Saw-Wheel Light (锯轮光): a light-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2119,6 +2765,28 @@
     ]
   },
   {
+    "name": "Dark Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dark Limit (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Dark Grandmaster"
+    ]
+  },
+  {
     "name": "Shroud",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2127,6 +2795,18 @@
     "civilopediaText": [
       {
         "text": "Shroud: a dark-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Dark Limit",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Dark Limit] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Limit (暗渡): a dark-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2202,6 +2882,28 @@
     ]
   },
   {
+    "name": "Shadow Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Shadow Severance (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Shadow Grandmaster"
+    ]
+  },
+  {
     "name": "Shadow Step",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2210,6 +2912,18 @@
     "civilopediaText": [
       {
         "text": "Shadow Step: a shadow-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Severance",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Shadow Severance] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Shadow Severance: a shadow-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2250,6 +2964,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Star Dart Gu] promotion <upon turn start> <for units without [Star Dart Gu]>",
+      "[+5]% Strength <for every [1] [[Star Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2282,6 +2997,28 @@
     ]
   },
   {
+    "name": "Star Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nebula Millstone (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Star Grandmaster"
+    ]
+  },
+  {
     "name": "Star Snake Rope",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2290,6 +3027,18 @@
     "civilopediaText": [
       {
         "text": "Star Snake Rope (星蛇索): a star-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Nebula Millstone",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Nebula Millstone] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nebula Millstone (星云磨盘): a star-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2362,6 +3111,28 @@
     ]
   },
   {
+    "name": "Moon Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Peerless Crescent Moon Slash (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Moon Grandmaster"
+    ]
+  },
+  {
     "name": "Crescent Moon",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2370,6 +3141,18 @@
     "civilopediaText": [
       {
         "text": "Crescent Moon (偃月): a moon-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Peerless Crescent Moon Slash",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Peerless Crescent Moon Slash] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Peerless Crescent Moon Slash (无双偃月斩): a moon-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2440,6 +3223,28 @@
     ]
   },
   {
+    "name": "Sound Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sound path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Silence Beats Sound (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Sound Grandmaster"
+    ]
+  },
+  {
     "name": "Qin Strike",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2448,6 +3253,18 @@
     "civilopediaText": [
       {
         "text": "Qin Strike (琴): a sound-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Silence Beats Sound",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Silence Beats Sound] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Silence Beats Sound (此时无声胜有声): a sound-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2517,6 +3334,28 @@
     ]
   },
   {
+    "name": "Illusion Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illusion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Illusory Garden (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Illusion Grandmaster"
+    ]
+  },
+  {
     "name": "Mirage",
     "uniques": [
       "[+20]% Strength <when attacking>",
@@ -2525,6 +3364,18 @@
     "civilopediaText": [
       {
         "text": "Mirage: a illusion-path killer move for one turn: +2 movement now, +20% Strength when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Garden",
+    "uniques": [
+      "[+40]% Strength <when attacking>",
+      "[This Unit] gains [3] movement <upon gaining the [Illusory Garden] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illusory Garden: a illusion-path immortal killer move for one turn: +3 movement now, +40% Strength when attacking."
       }
     ]
   },
@@ -2557,6 +3408,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Clear Mind Gu] promotion <upon turn start> <for units without [Clear Mind Gu]> <for [post-[Rank Three era]] units>",
+      "[+5]% Strength <for every [1] [[Wisdom Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2589,6 +3441,28 @@
     ]
   },
   {
+    "name": "Wisdom Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wisdom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Mystery Unravelled (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Wisdom Grandmaster"
+    ]
+  },
+  {
     "name": "Deduction",
     "uniques": [
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
@@ -2596,6 +3470,18 @@
     "civilopediaText": [
       {
         "text": "Deduction: a wisdom-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Mystery Unravelled",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mystery Unravelled: a wisdom-path immortal killer move for one turn: Shaken target, +30% Strength."
       }
     ]
   },
@@ -2664,6 +3550,28 @@
     ]
   },
   {
+    "name": "Emotion Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Emotion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Regret (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Emotion Grandmaster"
+    ]
+  },
+  {
     "name": "Doting Mother",
     "uniques": [
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
@@ -2671,6 +3579,18 @@
     "civilopediaText": [
       {
         "text": "Doting Mother (慈母): a emotion-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Regret",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Regret (悔): a emotion-path immortal killer move for one turn: Shaken target, +30% Strength."
       }
     ]
   },
@@ -2740,6 +3660,28 @@
     ]
   },
   {
+    "name": "Enchantment Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enchantment path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Captivation (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Enchantment Grandmaster"
+    ]
+  },
+  {
     "name": "Charming Glance",
     "uniques": [
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
@@ -2747,6 +3689,18 @@
     "civilopediaText": [
       {
         "text": "Charming Glance: a enchantment-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Captivation",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Captivation: a enchantment-path immortal killer move for one turn: Shaken target, +30% Strength."
       }
     ]
   },
@@ -2811,6 +3765,28 @@
     ]
   },
   {
+    "name": "Soul Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Soul Search (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Soul Grandmaster"
+    ]
+  },
+  {
     "name": "Guts",
     "uniques": [
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
@@ -2818,6 +3794,18 @@
     "civilopediaText": [
       {
         "text": "Guts (胆识): a soul-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Soul Search",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul Search (搜魂): a soul-path immortal killer move for one turn: Shaken target, +30% Strength."
       }
     ]
   },
@@ -2882,6 +3870,28 @@
     ]
   },
   {
+    "name": "Dream Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dreamy Light Smoke (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Dream Grandmaster"
+    ]
+  },
+  {
     "name": "Waking Dream",
     "uniques": [
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
@@ -2889,6 +3899,18 @@
     "civilopediaText": [
       {
         "text": "Waking Dream: a dream-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Dreamy Light Smoke",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dreamy Light Smoke (梦里轻烟): a dream-path immortal killer move for one turn: Shaken target, +30% Strength."
       }
     ]
   },
@@ -2952,6 +3974,28 @@
     ]
   },
   {
+    "name": "Enslavement Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Enslavement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ambush on Eight Sides (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Enslavement Grandmaster"
+    ]
+  },
+  {
     "name": "Wolf Enslavement",
     "uniques": [
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
@@ -2959,6 +4003,18 @@
     "civilopediaText": [
       {
         "text": "Wolf Enslavement (驭狼): a enslavement-path killer move for one turn: the target is Shaken (-20% Strength) for 2 turns."
+      }
+    ]
+  },
+  {
+    "name": "Ambush on Eight Sides",
+    "uniques": [
+      "[+30]% Strength",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ambush on Eight Sides (八面埋伏): a enslavement-path immortal killer move for one turn: Shaken target, +30% Strength."
       }
     ]
   },
@@ -2989,6 +4045,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Man as Before Gu] promotion <upon turn start> <for units without [Man as Before Gu]> <for [post-[Rank Four era]] units>",
+      "[+5]% Strength <for every [1] [[Time Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3021,6 +4078,28 @@
     ]
   },
   {
+    "name": "Time Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Time path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Call of the Ancient (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Time Grandmaster"
+    ]
+  },
+  {
     "name": "Borrowed Moment",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3028,6 +4107,18 @@
     "civilopediaText": [
       {
         "text": "Borrowed Moment: a time-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Call of the Ancient",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Call of the Ancient (前有古人): a time-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3057,6 +4148,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Warp Gu] promotion <upon turn start> <for units without [Warp Gu]> <for [post-[Rank Four era]] units>",
+      "[+5]% Strength <for every [1] [[Space Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3089,6 +4181,28 @@
     ]
   },
   {
+    "name": "Space Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Space path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea and Sky Expands (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Space Grandmaster"
+    ]
+  },
+  {
     "name": "Folded Step",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3096,6 +4210,18 @@
     "civilopediaText": [
       {
         "text": "Folded Step: a space-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Sea and Sky Expands",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sea and Sky Expands (海阔天空): a space-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3154,6 +4280,28 @@
     ]
   },
   {
+    "name": "Rule Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rule path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move One Step Back (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Rule Grandmaster"
+    ]
+  },
+  {
     "name": "Bent Law",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3161,6 +4309,18 @@
     "civilopediaText": [
       {
         "text": "Bent Law: a rule-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "One Step Back",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One Step Back (退一步): a rule-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3222,6 +4382,28 @@
     ]
   },
   {
+    "name": "Phantom Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Phantom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Phantom Body (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Phantom Grandmaster"
+    ]
+  },
+  {
     "name": "Hollow Form",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3229,6 +4411,18 @@
     "civilopediaText": [
       {
         "text": "Hollow Form: a phantom-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Phantom Body",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Phantom Body: a phantom-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3289,6 +4483,28 @@
     ]
   },
   {
+    "name": "Restriction Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Restriction path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Absolute Ban (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Restriction Grandmaster"
+    ]
+  },
+  {
     "name": "Severing Essence",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3296,6 +4512,18 @@
     "civilopediaText": [
       {
         "text": "Severing Essence (断元): a restriction-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Absolute Ban",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Absolute Ban: a restriction-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3321,6 +4549,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Luck Inspection Gu] promotion <upon turn start> <for units without [Luck Inspection Gu]>",
+      "[+5]% Strength <for every [1] [[Luck Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3353,6 +4582,28 @@
     ]
   },
   {
+    "name": "Luck Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Luck path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Turn of Fortune (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Luck Grandmaster"
+    ]
+  },
+  {
     "name": "Fortune Rivalling Heaven",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3360,6 +4611,18 @@
     "civilopediaText": [
       {
         "text": "Fortune Rivalling Heaven (鸿运齐天): a luck-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Turn of Fortune",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Turn of Fortune: a luck-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3416,6 +4679,28 @@
     ]
   },
   {
+    "name": "Heaven Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Web Protection Veil (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Heaven Grandmaster"
+    ]
+  },
+  {
     "name": "Heaven's Rebuke",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3423,6 +4708,18 @@
     "civilopediaText": [
       {
         "text": "Heaven's Rebuke: a heaven-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Web Protection Veil",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Web Protection Veil (天网恢恢): a heaven-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3478,6 +4775,28 @@
     ]
   },
   {
+    "name": "Qi Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qi path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Qi Covers Mountains and Rivers (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Qi Grandmaster"
+    ]
+  },
+  {
     "name": "Exploding Qi Roar",
     "uniques": [
       "[1] additional attacks per turn"
@@ -3485,6 +4804,18 @@
     "civilopediaText": [
       {
         "text": "Exploding Qi Roar (爆气吼): a qi-path killer move for one turn: 1 additional attack this turn."
+      }
+    ]
+  },
+  {
+    "name": "Qi Covers Mountains and Rivers",
+    "uniques": [
+      "[1] additional attacks per turn",
+      "[+40]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qi Covers Mountains and Rivers (气盖山河): a qi-path immortal killer move for one turn: 1 additional attack, +40% Strength."
       }
     ]
   },
@@ -3539,6 +4870,28 @@
     ]
   },
   {
+    "name": "Refinement Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Refinement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Light Rotation (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Refinement Grandmaster"
+    ]
+  },
+  {
     "name": "Ink Transformation",
     "uniques": [
       "[+15]% Strength",
@@ -3547,6 +4900,18 @@
     "civilopediaText": [
       {
         "text": "Ink Transformation (墨化): a refinement-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Light Rotation",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Heavenly Light Rotation] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Light Rotation (天光轮转): a refinement-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3600,6 +4965,28 @@
     ]
   },
   {
+    "name": "Formation Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Grand Formation (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Formation Grandmaster"
+    ]
+  },
+  {
     "name": "Linked Formation",
     "uniques": [
       "[+15]% Strength",
@@ -3608,6 +4995,18 @@
     "civilopediaText": [
       {
         "text": "Linked Formation: a formation-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Grand Formation",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Grand Formation] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grand Formation: a formation-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3661,6 +5060,28 @@
     ]
   },
   {
+    "name": "Food Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Food path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Banquet of Immortals (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Food Grandmaster"
+    ]
+  },
+  {
     "name": "Eat Bitterness",
     "uniques": [
       "[+15]% Strength",
@@ -3669,6 +5090,18 @@
     "civilopediaText": [
       {
         "text": "Eat Bitterness (吃苦): a food-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Banquet of Immortals",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Banquet of Immortals] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Banquet of Immortals: a food-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3720,6 +5153,28 @@
     ]
   },
   {
+    "name": "Pill Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pill path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Life-Saving Pill (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Pill Grandmaster"
+    ]
+  },
+  {
     "name": "Recovery Pill",
     "uniques": [
       "[+15]% Strength",
@@ -3728,6 +5183,18 @@
     "civilopediaText": [
       {
         "text": "Recovery Pill: a pill-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Life-Saving Pill",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Life-Saving Pill] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Life-Saving Pill: a pill-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3778,6 +5245,28 @@
     ]
   },
   {
+    "name": "Information Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Information path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea Oath (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Information Grandmaster"
+    ]
+  },
+  {
     "name": "Mountain Pledge",
     "uniques": [
       "[+15]% Strength",
@@ -3786,6 +5275,18 @@
     "civilopediaText": [
       {
         "text": "Mountain Pledge (山盟): a information-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Sea Oath",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Sea Oath] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sea Oath (海誓): a information-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3834,6 +5335,28 @@
     ]
   },
   {
+    "name": "Human Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Human path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heroes Among People (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Human Grandmaster"
+    ]
+  },
+  {
     "name": "Hopes of the Crowd",
     "uniques": [
       "[+15]% Strength",
@@ -3842,6 +5365,18 @@
     "civilopediaText": [
       {
         "text": "Hopes of the Crowd (众望所归): a human-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Heroes Among People",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Heroes Among People] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heroes Among People (人中豪杰): a human-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3891,6 +5426,28 @@
     ]
   },
   {
+    "name": "Painting Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Painting path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Contented Lifestyle (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Painting Grandmaster"
+    ]
+  },
+  {
     "name": "Living Ink",
     "uniques": [
       "[+15]% Strength",
@@ -3899,6 +5456,18 @@
     "civilopediaText": [
       {
         "text": "Living Ink: a painting-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Contented Lifestyle",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Contented Lifestyle] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Contented Lifestyle (安居乐业): a painting-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -3947,6 +5516,28 @@
     ]
   },
   {
+    "name": "Theft Great Grandmaster",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+400]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Theft path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Great Thief Ghost Hand (5 green grape essence)."
+      }
+    ],
+    "prerequisites": [
+      "Theft Grandmaster"
+    ]
+  },
+  {
     "name": "Light Fingers",
     "uniques": [
       "[+15]% Strength",
@@ -3955,6 +5546,18 @@
     "civilopediaText": [
       {
         "text": "Light Fingers: a theft-path killer move for one turn: heal 40 HP, +15% Strength."
+      }
+    ]
+  },
+  {
+    "name": "Great Thief Ghost Hand",
+    "uniques": [
+      "[+30]% Strength",
+      "[This Unit] heals [80] HP <upon gaining the [Great Thief Ghost Hand] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Great Thief Ghost Hand (大盗鬼手): a theft-path immortal killer move for one turn: heal 80 HP, +30% Strength."
       }
     ]
   },
@@ -4571,6 +6174,7 @@
     ],
     "uniques": [
       "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>",
+      "Unavailable <in [Foreign Land] tiles>",
       "Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>",
       "Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>",
       "Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>",
@@ -4595,7 +6199,7 @@
       "Unavailable <when below [60] [Human Qi]> <for [AI player] Civilizations> <on [Standard] game speed>",
       "Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Epic] game speed>",
       "Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>",
-      "Triggers a [Ascension] event",
+      "Triggers a [Ascension] event <for [Rank Five Gu Master] units>",
       "[This Unit] loses the [Ascension] promotion <upon turn start>"
     ],
     "civilopediaText": [

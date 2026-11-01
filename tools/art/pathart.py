@@ -387,6 +387,28 @@ def move(key: str) -> G:
     return g
 
 
+def great_grandmaster(key: str) -> G:
+    """MOD_SPEC_2 C3: a double ring crowned by six points (rank six), the symbol inside."""
+    g = G(); g.arc_band(50, 50, 49, 45, 0, 360); g.arc_band(50, 50, 41, 38, 0, 360)
+    for k in range(6):
+        a = math.radians(90 + 60 * k)
+        g.poly(regular(50 + 44 * math.cos(a), 50 - 44 * math.sin(a), 6, 4))
+    place(g, symbol(key), 50, 50, 0.56)
+    return g
+
+
+def immortal_move(key: str) -> G:
+    """The immortal killer move: long and short rays inside a halo, the symbol at the centre."""
+    g = G(); g.arc_band(50, 50, 49, 46, 0, 360)
+    for k in range(16):
+        a = math.radians(k * 22.5)
+        r0 = 30 if k % 2 else 26
+        g.line([(50 + r0 * math.cos(a), 50 - r0 * math.sin(a)), (50 + 42 * math.cos(a), 50 - 42 * math.sin(a))],
+               2.5 if k % 2 else 4.5)
+    place(g, symbol(key), 50, 50, 0.48)
+    return g
+
+
 def path_gu(key: str) -> G:
     g = G()
     place(g, symbol(key), 42, 42, 0.74)
@@ -430,6 +452,9 @@ def icons() -> list[tuple[str, str, object, str]]:
         out += [("UnitPromotionIcons", gen_paths.tier_name(p, 0), (lambda k=k: master(k)), "white"),
                 ("UnitPromotionIcons", gen_paths.tier_name(p, 1), (lambda k=k: grandmaster(k)), "white"),
                 ("UnitPromotionIcons", p["mortal"], (lambda k=k: move(k)), "white")]
+        if gen_paths.MAX_TIER > 2:
+            out += [("UnitPromotionIcons", gen_paths.tier_name(p, 2), (lambda k=k: great_grandmaster(k)), "white"),
+                    ("UnitPromotionIcons", p["immortal"], (lambda k=k: immortal_move(k)), "white")]
     for gu in gen_paths.PATH_GU:
         if gen_paths.new_gu(gu):
             out.append(("UnitPromotionIcons", gu["name"], (lambda k=gu["path"]: path_gu(k)), "white"))

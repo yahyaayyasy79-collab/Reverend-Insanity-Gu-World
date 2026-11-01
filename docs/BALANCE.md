@@ -148,6 +148,12 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 2, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>` | 25 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -626,6 +632,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Hasty Ascension Trial › The aperture collapses | `[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +60 | tools/gen_ruleset.py `Events` |
 | Immortal Ascension › Enter the blessed land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Aperture Collapse › Mourn the fallen | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Divert the disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Raise the formation ward | `[This Unit] takes [10] damage` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Raise the formation ward | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Rebuild from the vault | `Unavailable <when below [40] [Gold]>` | 40 | tools/gen_ruleset.py `Events` |
@@ -644,6 +651,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Calamity Toll › The immortal is hurt | `[This Unit] takes [40] damage` | 40 | tools/gen_ruleset.py `Events` |
 | Calamity Toll › The immortal is hurt | `[-40]% weight to this choice for AI decisions` | -40 | tools/gen_ruleset.py `Events` |
 | Calamity Toll › It passes | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Divert the disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Ward and essence together | `Unavailable <when below [30] [Green Grape Immortal Essence]>` | 30 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Ward and essence together | `Instantly consumes [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Ward and essence together | `[This Unit] takes [30] damage` | 30 | tools/gen_ruleset.py `Events` |
@@ -662,6 +670,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Tribulation Toll › It survives, its land ravaged | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Tribulation Toll › It survives | `[This Unit] takes [30] damage` | 30 | tools/gen_ruleset.py `Events` |
 | Tribulation Toll › It survives | `[-33]% weight to this choice for AI decisions` | -33 | tools/gen_ruleset.py `Events` |
+| Immortal Gu Refinement › The Gu takes shape | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Immortal Gu Refinement › Its birth calls down a calamity | `[-2] population [in this city]` | -2 | tools/gen_ruleset.py `Events` |
+| Immortal Gu Refinement › Its birth calls down a calamity | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
+| Immortal Gu Refinement › Its birth calls down a calamity | `[-67]% weight to this choice for AI decisions` | -67 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Lie low | `[-20]% Strength <for [10] turns>` | -20, 10 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Lie low | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Pay heaven its due | `Unavailable <when below [30] [Green Grape Immortal Essence]>` | 30 | tools/gen_ruleset.py `Events` |
@@ -736,6 +748,44 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Stockpile Vault | cost | 160 | tools/gen_ruleset.py `Buildings` |
 | Stockpile Vault | maintenance | 1 | tools/gen_ruleset.py `Buildings` |
 | Stockpile Vault | gold | 2 | tools/gen_ruleset.py `Buildings` |
+| Spring Autumn Cicada | cost | 390 | tools/gen_ruleset.py `Buildings` |
+| Spring Autumn Cicada | `Costs [50] [Green Grape Immortal Essence]` | 50 | tools/gen_ruleset.py `Buildings` |
+| Spring Autumn Cicada | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Fixed Immortal Travel | cost | 360 | tools/gen_ruleset.py `Buildings` |
+| Fixed Immortal Travel | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Fixed Immortal Travel | `[+1] Movement <for [Rank Six Gu Immortal] units>` | +1 | tools/gen_ruleset.py `Buildings` |
+| Fixed Immortal Travel | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Man as Before | cost | 330 | tools/gen_ruleset.py `Buildings` |
+| Man as Before | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Man as Before | `[+20] HP when healing <for [Rank Six Gu Immortal] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Man as Before | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Unravel Mystery | cost | 330 | tools/gen_ruleset.py `Buildings` |
+| Unravel Mystery | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Unravel Mystery | `[+15]% [Science] [in all cities]` | +15 | tools/gen_ruleset.py `Buildings` |
+| Unravel Mystery | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Connect Luck | cost | 330 | tools/gen_ruleset.py `Buildings` |
+| Connect Luck | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Connect Luck | `[+10]% Strength <for [Rank Six Gu Immortal] units>` | +10 | tools/gen_ruleset.py `Buildings` |
+| Connect Luck | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Self Strength | cost | 360 | tools/gen_ruleset.py `Buildings` |
+| Self Strength | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Self Strength | `[+15]% Strength <for units with [Strength Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Self Strength | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Woman's Heart | cost | 330 | tools/gen_ruleset.py `Buildings` |
+| Woman's Heart | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Woman's Heart | `[+20]% Strength <vs [Wounded] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Woman's Heart | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Bone Spike | cost | 330 | tools/gen_ruleset.py `Buildings` |
+| Bone Spike | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Bone Spike | `[+20]% Strength <when defending> <for [Rank Six Gu Immortal] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Bone Spike | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Star Eyes | cost | 300 | tools/gen_ruleset.py `Buildings` |
+| Star Eyes | `Costs [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Star Eyes | `[+2] Sight <for [Rank Six Gu Immortal] units>` | +2 | tools/gen_ruleset.py `Buildings` |
+| Star Eyes | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Divert Disaster | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Divert Disaster | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Divert Disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 
 ### Techs.json
 
@@ -766,9 +816,9 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 8 (Three Qi) | techCost | 620 | data/tech_columns.csv `techCost` |
 | Column 8 (Three Qi) | buildingCost | 280 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 8 (Three Qi) | wonderCost | 450 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 9 (Calamity Lore) | techCost | 800 | data/tech_columns.csv `techCost` |
-| Column 9 (Calamity Lore) | buildingCost | 320 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 9 (Calamity Lore) | wonderCost | 500 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 9 (Calamity Lore, Immortal Gu Recipes) | techCost | 800 | data/tech_columns.csv `techCost` |
+| Column 9 (Calamity Lore, Immortal Gu Recipes) | buildingCost | 320 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 9 (Calamity Lore, Immortal Gu Recipes) | wonderCost | 500 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 10 (Dao Comprehension) | techCost | 950 | data/tech_columns.csv `techCost` |
 | Column 10 (Dao Comprehension) | buildingCost | 360 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 10 (Dao Comprehension) | wonderCost | 550 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
@@ -1018,6 +1068,7 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 |---|---|---|---|
 | every Master | `[+10]% Strength` | +10 | tools/gen_paths.py `TIER_STRENGTH` |
 | every Grandmaster | `[+15]% Strength` | +15 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Great Grandmaster | `[+20]% Strength` | +20 | tools/gen_paths.py `TIER_STRENGTH` |
 | every move | `<costs [+15 Gold] stats> <requires [1] movement>` | +15, 1 | tools/gen_paths.py `MOVE_COST` |
 | every tier | `[+400]% weight to this choice for AI decisions` | +400 | tools/gen_paths.py `TIER_WEIGHT` |
 | signature Masters | AI weight for the clan's signature path | +23133 (share 0.85) | tools/gen_paths.py `SIGNATURE_SHARE` |
@@ -1194,6 +1245,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-1018 numbers listed.
+1069 numbers listed.
 
 <!-- inventory:end -->

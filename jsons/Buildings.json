@@ -228,5 +228,203 @@
         "text": "Stores laid in for the calamity (one per clan): after an earthly calamity the land is rebuilt from the vault for 40 stones."
       }
     ]
+  },
+  {
+    "name": "Spring Autumn Cicada",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 390,
+    "uniques": [
+      "Costs [50] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Time Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spring Autumn Cicada (春秋蝉), rank six, time path: Red Lotus's vital Gu. When its owner loses an immortal, the will may return up the river of time: half the time a new Gu Immortal appears (without a blessed land). Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Fixed Immortal Travel",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 360,
+    "uniques": [
+      "Costs [40] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Space Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+1] Movement <for [Rank Six Gu Immortal] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fixed Immortal Travel (定仙游), rank six, space path: carries its holder to any place it remembers. Your rank-six immortals gain 1 movement. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Man as Before",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 330,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Time Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20] HP when healing <for [Rank Six Gu Immortal] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Man as Before (人如故), rank six, time path: returns a body to an earlier moment. Your rank-six immortals heal 20 more HP a turn. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Unravel Mystery",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 330,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wisdom Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+15]% [Science] [in all cities]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Unravel Mystery (解谜), rank six, wisdom path: solves trials and puzzles. +15% Science in all cities. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Connect Luck",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 330,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Luck Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+10]% Strength <for [Rank Six Gu Immortal] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Connect Luck (连运), rank six, luck path: links one's luck to others'. Your rank-six immortals fight 10% harder, and with Spring Autumn Cicada a fallen immortal returns more often. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Self Strength",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 360,
+    "uniques": [
+      "Costs [40] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Strength Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+15]% Strength <for units with [Strength Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Self Strength (我力), rank six, strength path: the core of Myriad Self. Every strength-path unit you own fights 15% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Woman's Heart",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 330,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Poison Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20]% Strength <vs [Wounded] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Woman's Heart (妇人心), rank six, poison path. Your units fight 20% harder against wounded units. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spike",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 330,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Bone Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20]% Strength <when defending> <for [Rank Six Gu Immortal] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone Spike (骨刺), rank six, bone path. Your rank-six immortals defend 20% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Star Eyes",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 300,
+    "uniques": [
+      "Costs [30] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Star Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+2] Sight <for [Rank Six Gu Immortal] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star Eyes (星眸), rank six, star path: one of the immortal Gu in Fang Yuan's hands. Your rank-six immortals see 2 tiles farther. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Divert Disaster",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [40] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Luck Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Divert Disaster (排难), rank six, luck path: weakens or turns aside calamities. Its owner's immortals may divert every earthly calamity and heavenly tribulation at no cost. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
   }
 ]

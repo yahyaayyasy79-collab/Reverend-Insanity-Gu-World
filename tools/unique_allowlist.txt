@@ -2,3 +2,12 @@
 # One exact string per line: no [brackets], no <conditionals>. lint_uniques.py warns if a marker is never
 # referenced by any filter parameter (Unciv would then flag it as untyped).
 Path Master
+Immortal Gu
+Bone Path
+Luck Path
+Poison Path
+Space Path
+Star Path
+Strength Path
+Time Path
+Wisdom Path

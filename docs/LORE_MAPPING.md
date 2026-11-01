@@ -1359,6 +1359,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 
 ```
 Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>
+Unavailable <in [Foreign Land] tiles>
 Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
 Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>
@@ -1383,7 +1384,7 @@ Unavailable <when below [40] [Human Qi]> <for [AI player] Civilizations> <on [Qu
 Unavailable <when below [60] [Human Qi]> <for [AI player] Civilizations> <on [Standard] game speed>
 Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Epic] game speed>
 Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>
-Triggers a [Ascension] event
+Triggers a [Ascension] event <for [Rank Five Gu Master] units>
 [This Unit] loses the [Ascension] promotion <upon turn start>
 ```
 
@@ -1460,6 +1461,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 * Balance the three qi
 
 ```
+Unavailable <in [Foreign Land] tiles>
 Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>
 Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>
@@ -1491,6 +1493,7 @@ Triggers a [Ascension Trial] event
 * Ascend in haste
 
 ```
+Unavailable <in [Foreign Land] tiles>
 Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
 Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>
@@ -1533,6 +1536,7 @@ Triggers a [Hasty Ascension Trial] event
 [This Unit] gains the [Lower Grade Blessed Land] promotion
 Instantly provides [5] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
+[This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
 [+0]% weight to this choice for AI decisions
 [+0]% weight to this choice for AI decisions <for units with [Aptitude A]>
@@ -1545,6 +1549,7 @@ Triggers a [Immortal Ascension] event
 [This Unit] gains the [Middle Grade Blessed Land] promotion
 Instantly provides [5] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
+[This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
 [-30]% weight to this choice for AI decisions
 [+0]% weight to this choice for AI decisions <for units with [Aptitude A]>
@@ -1557,6 +1562,7 @@ Triggers a [Immortal Ascension] event
 [This Unit] gains the [Upper Grade Blessed Land] promotion
 Instantly provides [5] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
+[This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
 [-75]% weight to this choice for AI decisions
 [+100]% weight to this choice for AI decisions <for units with [Aptitude A]>
@@ -1569,6 +1575,7 @@ Triggers a [Immortal Ascension] event
 [This Unit] gains the [Super Grade Blessed Land] promotion
 Instantly provides [5] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
+[This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
 [-96]% weight to this choice for AI decisions
 [+150]% weight to this choice for AI decisions <for units with [Aptitude A]>
@@ -1593,6 +1600,7 @@ Triggers a [Aperture Collapse] event
 [This Unit] gains the [Lower Grade Blessed Land] promotion
 Instantly provides [5] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
+[This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
 [+0]% weight to this choice for AI decisions
 [+0]% weight to this choice for AI decisions <for units with [Aptitude A]>
@@ -1605,6 +1613,7 @@ Triggers a [Immortal Ascension] event
 [This Unit] gains the [Middle Grade Blessed Land] promotion
 Instantly provides [5] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
+[This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
 [-60]% weight to this choice for AI decisions
 [+50]% weight to this choice for AI decisions <for units with [Aptitude A]>
@@ -1712,6 +1721,13 @@ Comment [The blessed land yields nothing until it heals]
 
 **Earthly Calamity** (popup)
 
+* Divert the disaster
+
+```
+Only available <if [Divert Disaster] is constructed>
+[+300]% weight to this choice for AI decisions
+```
+
 * Raise the formation ward
 
 ```
@@ -1771,6 +1787,13 @@ Triggers a [Calamity Toll] event
 ```
 
 **Heavenly Tribulation** (popup)
+
+* Divert the disaster
+
+```
+Only available <if [Divert Disaster] is constructed>
+[+300]% weight to this choice for AI decisions
+```
 
 * Ward and essence together
 
@@ -1881,4 +1904,186 @@ Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu
 Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
 Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+```
+
+
+## Phase C3: immortal Gu (rank six), dao marks, immortal moves (built 2026-11-01)
+
+MOD_SPEC_2 Phase C, third layer, for the ranks the game has so far (rank six; ranks 7–9 come with their eras in C5).
+
+* **Ten rank-six immortal Gu** (data/immortal_gu.csv), world wonders after **Immortal Gu Recipes** (Rank Six era,
+  column 9): production plus 30–50 green grape essence (`Costs`), kept by a captured city (Phase A2: conquest seizes
+  the Gu), never granted free (A3). Each carries the marker `Immortal Gu` and its path's marker (`Time Path`,
+  `Strength Path`, …; allowlisted). Completion rolls the **Immortal Gu Refinement** die (仙蛊成劫, R V5/54): one in
+  four births calls down a calamity on the city (2 population, two Bold Lightning Wolves). The plan's failed refinement
+  that removes the Gu is dropped: an event cannot tell which wonder it was born from, and `Remove` on the marker would
+  take every immortal Gu of the city.
+* Effects follow the "Immortal Gu" table above, adapted where it pointed at later layers: Unravel Mystery gives +15%
+  science until C4's inheritance trials; Divert Disaster adds a free "Divert the disaster" choice to every earthly
+  calamity and heavenly tribulation; Spring Autumn Cicada and Connect Luck's rebirth lines live in GlobalUniques,
+  gated on the wonder (a Gu Immortal reappears without a blessed land when one is lost: 50%, plus 25% with both).
+* **Dao marks** (MOD_SPEC_2 #4, Phase A1): a path's Master gets +5% strength per immortal Gu of its own path its clan
+  holds, and −5% per immortal Gu of a path it clashes with strongly (data/path_conflicts.csv at −25: earth–water,
+  earth–fire, strength–water, metal–strength, light–dark). Lines exist only for paths that have immortal Gu.
+* **Great Grandmaster** (大宗师), the third attainment tier of all 47 paths (docs/PATHS.md): rank six and up
+  (post-[Rank Five era] units), +20% strength, and the path's **immortal killer move**, a one-turn status button
+  that costs 5 green grape essence (MOD_SPEC_2 #5; human only, the AI never presses it). Three moves named after
+  immortal Gu were renamed because the Gu are now wonders: Bone Spike Forest, Heart of Venom, Mystery Unravelled.
+* **Heaven's Will** also strikes a clan holding more than two immortal Gu (MOD_SPEC_2 #10).
+* Art: the ten wonders, the recipe tech, 47 Great Grandmaster icons and 47 immortal-move icons. The path promotions
+  moved to their own atlas (`Images.Paths` → Paths.png).
+
+| Object | Chinese | Verdict | Role |
+|---|---|---|---|
+| Immortal Gu Recipes | 仙蛊方 | CANON | Tech: rank-six immortal Gu |
+| Ten immortal Gu | see the table above | CANON (Divert Disaster ADAPTED) | World wonders |
+| Immortal Gu Refinement | 仙蛊成劫 | CANON | Silent die on completion |
+| `<Path> Great Grandmaster` (47) | 大宗师 | CANON (tier), ADAPTED (numbers) | Promotions |
+| 47 immortal moves | docs/PATHS.md | see PATHS.md | One-turn statuses |
+
+Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers and moves are in docs/PATHS.md):
+
+**Spring Autumn Cicada** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 390, "civilopediaText": [{"text": "Spring Autumn Cicada (\u6625\u79cb\u8749), rank six, time path: Red Lotus's vital Gu. When its owner loses an immortal, the will may return up the river of time: half the time a new Gu Immortal appears (without a blessed land). Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [50] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Time Path
+Triggers a [Immortal Gu Refinement] event
+[+300]% weight to this choice for AI decisions
+```
+
+**Fixed Immortal Travel** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Fixed Immortal Travel (\u5b9a\u4ed9\u6e38), rank six, space path: carries its holder to any place it remembers. Your rank-six immortals gain 1 movement. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [40] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Space Path
+Triggers a [Immortal Gu Refinement] event
+[+1] Movement <for [Rank Six Gu Immortal] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Man as Before** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Man as Before (\u4eba\u5982\u6545), rank six, time path: returns a body to an earlier moment. Your rank-six immortals heal 20 more HP a turn. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [35] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Time Path
+Triggers a [Immortal Gu Refinement] event
+[+20] HP when healing <for [Rank Six Gu Immortal] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Unravel Mystery** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Unravel Mystery (\u89e3\u8c1c), rank six, wisdom path: solves trials and puzzles. +15% Science in all cities. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [35] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Wisdom Path
+Triggers a [Immortal Gu Refinement] event
+[+15]% [Science] [in all cities]
+[+300]% weight to this choice for AI decisions
+```
+
+**Connect Luck** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Connect Luck (\u8fde\u8fd0), rank six, luck path: links one's luck to others'. Your rank-six immortals fight 10% harder, and with Spring Autumn Cicada a fallen immortal returns more often. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [35] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Luck Path
+Triggers a [Immortal Gu Refinement] event
+[+10]% Strength <for [Rank Six Gu Immortal] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Self Strength** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Self Strength (\u6211\u529b), rank six, strength path: the core of Myriad Self. Every strength-path unit you own fights 15% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [40] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Strength Path
+Triggers a [Immortal Gu Refinement] event
+[+15]% Strength <for units with [Strength Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Woman's Heart** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Woman's Heart (\u5987\u4eba\u5fc3), rank six, poison path. Your units fight 20% harder against wounded units. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [35] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Poison Path
+Triggers a [Immortal Gu Refinement] event
+[+20]% Strength <vs [Wounded] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Bone Spike** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 330, "civilopediaText": [{"text": "Bone Spike (\u9aa8\u523a), rank six, bone path. Your rank-six immortals defend 20% harder. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [35] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Bone Path
+Triggers a [Immortal Gu Refinement] event
+[+20]% Strength <when defending> <for [Rank Six Gu Immortal] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Star Eyes** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 300, "civilopediaText": [{"text": "Star Eyes (\u661f\u7738), rank six, star path: one of the immortal Gu in Fang Yuan's hands. Your rank-six immortals see 2 tiles farther. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [30] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Star Path
+Triggers a [Immortal Gu Refinement] event
+[+2] Sight <for [Rank Six Gu Immortal] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Divert Disaster** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 340, "civilopediaText": [{"text": "Divert Disaster (\u6392\u96be), rank six, luck path: weakens or turns aside calamities. Its owner's immortals may divert every earthly calamity and heavenly tribulation at no cost. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+
+```
+Costs [40] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Luck Path
+Triggers a [Immortal Gu Refinement] event
+[+300]% weight to this choice for AI decisions
+```
+
+**Immortal Gu Refinement** (silent die)
+
+* The Gu takes shape
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+* Its birth calls down a calamity
+
+```
+[-2] population [in this city]
+[2] [Bold Lightning Wolf]s rebel
+[-67]% weight to this choice for AI decisions
+```
+
+**GlobalUniques**
+
+```
+Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>
+Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>
 ```

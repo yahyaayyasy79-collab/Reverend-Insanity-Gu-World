@@ -294,6 +294,18 @@
             "text": "Calamities (灾劫) come on a schedule and can be prepared for. Knowing them is the last preparation for the ascension: a rank-five master may now try it (the Ascension promotion)."
           }
         ]
+      },
+      {
+        "name": "Immortal Gu Recipes",
+        "row": 1,
+        "prerequisites": [
+          "Three Qi"
+        ],
+        "civilopediaText": [
+          {
+            "text": "An immortal Gu recipe (仙蛊方) is the plan for a Gu unique in the world; even a complete one costs a fortune. Opens the rank-six immortal Gu, each a world wonder bought with production and green grape essence."
+          }
+        ]
       }
     ]
   },

@@ -469,3 +469,22 @@
 * Autoplay (8 × 320, Prince): 0 crashes. At one Lifespan Gu per five turns most immortals died in debt (0.3 per clan
   at the end); at one per ten, 1.2 per clan at the end (peaks of 2–4), 15 debt turns per clan: lifespan caps the
   number of immortals. The AI always builds the ward and takes the prepared choices.
+
+## MOD_SPEC_2 C3 — immortal Gu (rank six), dao marks, immortal moves (2026-11-01)
+
+* **Crash fix (C1 and C2 builds):** an ascension that succeeded while the master stood in foreign land without open
+  borders crashed the game (Unciv cannot place the upgraded unit there and fails to restore the old one,
+  NullPointerException in `UnitUpgradeManager.performUpgrade`; 2 of 4 autoplay games). The Ascension promotion and
+  both qi choices are now closed in foreign land, and the promotion is dropped before the upgrade.
+* **Ten rank-six immortal Gu** as world wonders after **Immortal Gu Recipes**: Spring Autumn Cicada, Fixed Immortal
+  Travel, Man as Before, Unravel Mystery, Connect Luck, Self Strength, Woman's Heart, Bone Spike, Star Eyes, Divert
+  Disaster. Production plus green grape essence; a captured city keeps them; one birth in four calls down a calamity.
+* **Dao marks:** a path's Master gains 5% strength per immortal Gu of its path its clan owns and loses 5% per Gu of a
+  strongly clashing path.
+* **Great Grandmaster** tier for all 47 paths (rank six), +20% strength and the path's **immortal killer move** (5
+  essence). Three moves renamed because their Gu became wonders: Bone Spike Forest, Heart of Venom, Mystery Unravelled.
+* Heaven's Will also strikes clans with more than two immortal Gu; Divert Disaster opens a free way through every
+  calamity and tribulation.
+* Art: ten wonder icons, the recipe tech, 94 tier and move icons; path promotions moved to their own atlas (Paths.png).
+* Autoplay (8 × 330, Prince): 0 crashes; 3.9 immortal Gu built per game (Star Eyes and Unravel Mystery every game,
+  Man as Before 6 of 8, Spring Autumn Cicada 5, Fixed Immortal Travel 3, Connect Luck 1); 1.0 immortal per clan.
