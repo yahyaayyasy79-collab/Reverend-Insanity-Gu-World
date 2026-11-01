@@ -169,6 +169,10 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Earn [10]% of killed [Ancient Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -344,6 +348,19 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Dragon Palace | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[+20]% Strength <vs [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | movement | 2 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | strength | 190 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | cost | 650 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `[+25]% Strength <when defending>` | +25 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `[+2] Sight` | +2 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | movement | 2 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | strength | 70 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | cost | 300 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | `[-15]% Strength <if [Fate Gu] is constructed by anybody>` | -15 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | `[+100]% maintenance costs` | +100 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | strength | 28 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | cost | 120 | tools/gen_ruleset.py `Units` |
@@ -828,6 +845,15 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven's Will › Defy heaven | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Defy heaven | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Venerable Falls › Guard the true inheritance | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Fate War › Shatter Fate Gu | `[+20]% Strength <for [20] turns>` | +20, 20 | tools/gen_ruleset.py `Events` |
+| Fate War › Shatter Fate Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Fate War › Seize Fate Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Qi Tides › Shelter the cities | `[-25]% [Production] [in all cities] <for [5] turns>` | -25, 5 | tools/gen_ruleset.py `Events` |
+| Qi Tides › Shelter the cities | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Qi Tides › Ride the tide | `Instantly provides [10] [Heaven Qi]` | 10 | tools/gen_ruleset.py `Events` |
+| Qi Tides › Ride the tide | `Instantly provides [10] [Earth Qi]` | 10 | tools/gen_ruleset.py `Events` |
+| Qi Tides › Ride the tide | `[-20]% Strength <for [5] turns>` | -20, 5 | tools/gen_ruleset.py `Events` |
+| Qi Tides › Ride the tide | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › Nothing surfaces | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › The trial claims its seekers | `Only available <when number of [[Population] in [in capital] Cities] is more than [3]>` | 3 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › The trial claims its seekers | `[-2] population [in capital]` | -2 | tools/gen_ruleset.py `Events` |
@@ -860,6 +886,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Inheritance Trial › Hu Immortal Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Human Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › Blood Sea Inheritance: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
 | Inheritance Trial › Blood Sea Inheritance: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Blood Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › 88 True Yang Building: the trial is passed | `[-90]% weight to this choice for AI decisions` | -90 | tools/gen_ruleset.py `Events` |
+| Inheritance Trial › 88 True Yang Building: the trial is passed | `[+300]% weight to this choice for AI decisions <when number of [[Luck Master] Units] is more than [0]>` | +300, 0 | tools/gen_ruleset.py `Events` |
 | Inheritance Won › Begin the work | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Inheritance Lost › Bury the dead | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Desolate Beast Tide › Hunt it for its corpse | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
@@ -1064,6 +1092,15 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Human Qi Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
 | Human Qi Immortal Gu | `Instantly provides [3] [Human Qi] <upon turn start>` | 3 | tools/gen_ruleset.py `Buildings` |
 | Human Qi Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Gu | `[+30]% [Science] [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Gu | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [5] turns>` | 1, 5 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Derivation Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
+| Derivation Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Derivation Gu | `[+30]% Production when constructing [All] buildings [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
+| Derivation Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `Instantly provides [2] [Human Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `[+15]% Strength <for units with [Qi Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
@@ -1134,6 +1171,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Blood Sea Inheritance | `Earn [25]% of killed [Military] unit's [Cost] as [Human Qi]` | 25 | tools/gen_ruleset.py `Buildings` |
 | Blood Sea Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Blood Sea Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| 88 True Yang Building | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| 88 True Yang Building | `[+15]% [Gold] [in all cities]` | +15 | tools/gen_ruleset.py `Buildings` |
+| 88 True Yang Building | `[+15]% Strength <for units with [Luck Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
+| 88 True Yang Building | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| True Yang Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Venerable Ascension | cost | 900 | tools/gen_ruleset.py `Buildings` |
 | Venerable Ascension | `Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>` | 0 | tools/gen_ruleset.py `Buildings` |
 | Venerable Ascension | `Costs [120] [White Lychee Immortal Essence]` | 120 | tools/gen_ruleset.py `Buildings` |
@@ -1147,6 +1189,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | True Inheritance | `[+20]% Strength <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | True Inheritance | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | True Inheritance Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu | cost | 600 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu | `Costs [60] [Green Grape Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu | `[+15]% Strength <for [post-[Rank Five era]] units>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu | `[+2 Happiness]` | +2 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu | `[+500]% weight to this choice for AI decisions` | +500 | tools/gen_ruleset.py `Buildings` |
+| Shattered Fate | cost | 1 | tools/gen_ruleset.py `Buildings` |
+| Fate Seized | cost | 1 | tools/gen_ruleset.py `Buildings` |
 
 ### Techs.json
 
@@ -1189,9 +1238,12 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 12 (Dao Lord, Gu House Formation) | techCost | 1500 | data/tech_columns.csv `techCost` |
 | Column 12 (Dao Lord, Gu House Formation) | buildingCost | 480 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 12 (Dao Lord, Gu House Formation) | wonderCost | 700 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 13 (Dao Comprehension) | techCost | 1700 | data/tech_columns.csv `techCost` |
-| Column 13 (Dao Comprehension) | buildingCost | 520 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 13 (Dao Comprehension) | wonderCost | 750 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 13 (Rank Nine Immortal Gu Recipes) | techCost | 1700 | data/tech_columns.csv `techCost` |
+| Column 13 (Rank Nine Immortal Gu Recipes) | buildingCost | 520 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 13 (Rank Nine Immortal Gu Recipes) | wonderCost | 750 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 14 (Dao Comprehension) | techCost | 1900 | data/tech_columns.csv `techCost` |
+| Column 14 (Dao Comprehension) | buildingCost | 560 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 14 (Dao Comprehension) | wonderCost | 800 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 
 ### Policies.json
 
@@ -1343,11 +1395,22 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
 | Bai Clan | `[+15]% Strength <vs [Barbarians] units>` | +15 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+15]% Strength <vs [Immortal Zombie] units>` | +15 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>` | 1, 7, 1 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>` | 1, 10, 1 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>` | 1, 15, 1 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>` | 1, 30, 1 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `[+50]% Production when constructing [Gu House] units [in all cities]` | +50 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `[+10]% [Science] [in all cities]` | +10 | tools/gen_ruleset.py `Nations` |
 
 ### CityStateTypes.json
 
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
+| Immortal Sect (friendBonusUniques) | `[+2 Culture] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
+| Immortal Sect (allyBonusUniques) | `[+2 Culture] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
+| Immortal Sect (allyBonusUniques) | `[+15]% Strength <for [post-[Rank Five era]] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Refiner Tribe (friendBonusUniques) | `[+2 Science] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
 | Refiner Tribe (allyBonusUniques) | `[+2 Science] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
 | Refiner Tribe (allyBonusUniques) | `[+20]% XP gained from combat` | +20 | tools/gen_ruleset.py `Nations` |
@@ -1397,6 +1460,30 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Xiong Temperament | priorities.Righteous Path | 3 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | science | 8 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | aggressive | 4 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | declareWar | 4 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | diplomacy | 6 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | loyal | 7 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | `[+500]% weight to [Fate Gu] for AI decisions` | +500 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | declareWar | 6 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | expansion | 6 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | loyal | 5 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | gold | 7 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | aggressive | 5 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | declareWar | 5 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | commerce | 7 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | loyal | 3 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | production | 8 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | military | 5 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | declareWar | 4 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | diplomacy | 5 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | `[+200]% weight to [Gu House Formation] for AI decisions` | +200 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | aggressive | 4 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | production | 6 | tools/gen_ruleset.py `Nations` |
@@ -1620,6 +1707,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-1444 numbers listed.
+1531 numbers listed.
 
 <!-- inventory:end -->

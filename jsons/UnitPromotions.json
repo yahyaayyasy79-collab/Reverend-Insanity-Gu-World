@@ -4983,6 +4983,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Amplify Effect Gu] promotion <upon turn start> <for units without [Amplify Effect Gu]>",
+      "[+5]% Strength <for every [1] [[Rule Path] Buildings]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],

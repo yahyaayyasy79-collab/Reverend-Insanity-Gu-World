@@ -769,6 +769,47 @@
     ]
   },
   {
+    "name": "Wisdom Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Nine Immortal Gu Recipes",
+    "cost": 700,
+    "uniques": [
+      "Costs [60] [Yellow Apricot Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wisdom Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+30]% [Science] [in all cities]",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [5] turns>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wisdom Gu (智慧蛊), rank nine, wisdom path: its light speeds every deduction, at a cost in lifespan; second only to Fate Gu in the Heavenly Court's eyes. +30% science; burns a Lifespan Gu every five turns. Costs yellow apricot essence on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Derivation Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Nine Immortal Gu Recipes",
+    "cost": 700,
+    "uniques": [
+      "Costs [60] [Yellow Apricot Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Rule Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+30]% Production when constructing [All] buildings [in all cities]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Derivation Gu (衍化蛊), rank nine, rule path: derives new results from given inputs, the core of a Heavenly Court formation. Buildings are built 30% faster. Costs yellow apricot essence on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
     "name": "Primordial Origin Inheritance",
     "isWonder": true,
     "requiredTech": "Calamity Lore",
@@ -1217,6 +1258,38 @@
     ]
   },
   {
+    "name": "88 True Yang Building",
+    "isWonder": true,
+    "requiredTech": "Calamity Lore",
+    "cost": 420,
+    "uniques": [
+      "Only available <if [True Yang Seal] is constructed>",
+      "Never destroyed when the city is captured",
+      "[+15]% [Gold] [in all cities]",
+      "[+15]% Strength <for units with [Luck Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Giant Sun's tiered inheritance tower in the Imperial Court Blessed Land; only thick Huang Jin blood may enter. +15% stones; luck-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (八十八角真阳楼); a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "True Yang Seal",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The seal of the 88 True Yang Building: proof that the clan passed its trial. It unlocks building the inheritance; it cannot be built."
+      }
+    ]
+  },
+  {
     "name": "Venerable Ascension",
     "isWonder": true,
     "requiredTech": "Dao Lord",
@@ -1278,6 +1351,55 @@
     "civilopediaText": [
       {
         "text": "The seal a dead Venerable leaves its clan. It unlocks building the true inheritance."
+      }
+    ]
+  },
+  {
+    "name": "Fate Gu",
+    "isWonder": true,
+    "uniqueTo": "Heavenly Court",
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 600,
+    "uniques": [
+      "Costs [60] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Unavailable <if [Shattered Fate] is constructed by anybody>",
+      "[+15]% Strength <for [post-[Rank Five era]] units>",
+      "[+2 Happiness]",
+      "[+500]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fate Gu (宿命蛊), rank nine: it fixes every being's destiny. Only the Heavenly Court builds it; whoever conquers its city fights the Fate War. Immortals +15% strength; +2 happiness."
+      }
+    ]
+  },
+  {
+    "name": "Shattered Fate",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Proof that this clan shattered Fate Gu. It can never be rebuilt, and the qi tides sweep the world."
+      }
+    ]
+  },
+  {
+    "name": "Fate Seized",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Proof that this clan seized Fate Gu from the Heavenly Court and kept it."
       }
     ]
   }

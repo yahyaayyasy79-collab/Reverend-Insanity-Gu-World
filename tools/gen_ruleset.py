@@ -285,6 +285,8 @@ GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques)
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
     ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
     ("Dragon Palace", "Dream Token", 160, 3, ["[+20]% Strength <vs [post-[Rank Five era]] units>"]),
+    # C5c: the Heavenly Court's rank-nine Gu House around Fate Gu, which shrugs off calamities (R V4/356, V4/358)
+    ("Heaven Overseeing Tower", "Fate Gu", 190, 2, ["[+25]% Strength <when defending>", "[+2] Sight"]),
 ]
 
 
@@ -301,7 +303,16 @@ GROTTO = {"name": "Grotto-Heaven Aperture", "uniques": [
 IMMORTAL_GU = table("immortal_gu.csv")
 IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes", "7": "Rank Seven Immortal Gu Recipes",
                        "8": "Rank Eight Immortal Gu Recipes"}
-IMMORTAL_GU_ESSENCE = {"6": GREEN, "7": RED, "8": WHITE}
+IMMORTAL_GU_ESSENCE = {"6": GREEN, "7": RED, "8": WHITE, "9": APRICOT}
+IMMORTAL_GU_RECIPES["9"] = "Rank Nine Immortal Gu Recipes"
+
+# ---------------- MOD_SPEC_2 C5c: the arc's nations, Fate Gu, the Fate War ----------------
+# Fate Gu (R V5/720, V5/694; the user's Phase A decision): a wonder unique to the Heavenly Court and built by it. A rival
+# that conquers the city holding it fights the Fate War: shatter it (as Fang Yuan did, R V5/939: the qi tides follow and
+# it can never be rebuilt, B4) or seize it.
+HC, HJ, ZA, FANG = "Heavenly Court", "Huang Jin Family", "Zombie Alliance", "Fang Clan"
+ZOMBIE = "Immortal Zombie"
+FATE_WEAK = "[-15]% Strength <if [Fate Gu] is constructed by anybody>"  # a zombie's dead fate holds while Fate Gu stands
 
 # ---------------- MOD_SPEC_2 C4: inheritances, desolate beasts, the market ----------------
 # Inheritances (data/inheritances.csv; the user's Phase A decision): a trial die grants a seal that unlocks BUILDING
@@ -386,7 +397,12 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     # C5b: a Venerable's death (it never upgrades, so losing it means its death, E9)
     f"Remove [Venerable Ascension] [in all cities] <upon losing a [{VENERABLE}] unit>",
     f"Gain a free [True Inheritance Seal] [in capital] <upon losing a [{VENERABLE}] unit>",
-    f"Triggers a [Venerable Falls] event <upon losing a [{VENERABLE}] unit>"]})
+    f"Triggers a [Venerable Falls] event <upon losing a [{VENERABLE}] unit>",
+    # C5c
+    f"Triggers a [Fate War] event <upon conquering a city> <if [Fate Gu] is constructed> <if [Fate Seized] is not "
+    f"constructed> <for [non-[{HC}]] Civilizations>",
+] + per_speed(lambda m: f"Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> "
+                        f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>")})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -512,9 +528,14 @@ dump("Units.json", [
                                          "[This Unit] takes [3] damage <upon turn start>", "Can only heal by pillaging",
                                          f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs"]},
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
-      "attackSound": "throw", "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
+      "attackSound": "throw", **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
+      "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
                                           f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
+    {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore",
+     "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
+                                         "[+100]% maintenance costs"]},
+] + [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
@@ -860,6 +881,16 @@ dump("Events.json", [
     {"name": "Venerable Falls", "text": "Your Venerable's lifespan has run out. Its ascension is gone, so a new Venerable "
                                         "may rise anywhere; its true inheritance's seal lies in your capital.",
      "choices": [toll("Guard the true inheritance", [], "+0")]},
+    {"name": "Fate War", "text": "Fate Gu is in your hands. The Heavenly Court guarded it since Primordial Origin. Shatter "
+                                 "it and set every being's fate free, or keep it?", "choices": [
+        toll("Shatter Fate Gu", ["Remove [Fate Gu] [in all cities]", "Gain a free [Shattered Fate] [in capital]",
+                                 "[+20]% Strength <for [20] turns>"], "+50"),
+        toll("Seize Fate Gu", ["Gain a free [Fate Seized] [in capital]"], "+0")]},
+    # the qi tides after the Fate War (R V6/1, V6/13; B4): they hamper fighting and fling qi about
+    {"name": "Qi Tides", "text": "With Fate Gu shattered, tides of qi sweep the five regions.", "choices": [
+        toll("Shelter the cities", ["[-25]% [Production] [in all cities] <for [5] turns>"], "+0"),
+        toll("Ride the tide", ["Instantly provides [10] [Heaven Qi]", "Instantly provides [10] [Earth Qi]",
+                               "[-20]% Strength <for [5] turns>"], "+50")]},
     # C4: inheritance trial (silent die) and its two result popups
     {"name": "Inheritance Trial", "presentation": "None", "choices": [
         toll("Nothing surfaces", [], "+100"),
@@ -965,6 +996,13 @@ dump("Buildings.json", [
      "uniques": ["Only available <if [True Inheritance Seal] is constructed>", "Never destroyed when the city is captured",
                  "[+25]% XP gained from combat", "[+20]% Strength <for [post-[Rank Five era]] units>", w("+300")]},
     {"name": "True Inheritance Seal", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]}
+] + [
+    {"name": "Fate Gu", "isWonder": True, "uniqueTo": HC, "requiredTech": "Immortal Gu Recipes", "cost": 600,
+     "uniques": [f"Costs [60] [{GREEN}]", "Never destroyed when the city is captured", "Immortal Gu",
+                 "Unavailable <if [Shattered Fate] is constructed by anybody>", "[+15]% Strength <for [post-[Rank Five era]] units>",
+                 "[+2 Happiness]", w("+500")]},
+    {"name": "Shattered Fate", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]},
+    {"name": "Fate Seized", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]}
 ])
 
 # ---------------- Policies (4 branches) ----------------
@@ -1138,6 +1176,18 @@ VOICES = {
     "Xiong Clan": ("Xiong village. Count our Gu Masters before you call us weak.",
                    "You spent your strength on the wolves. We kept ours.",
                    "Even a bear has to sleep."),
+    "Heavenly Court": ("Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.",
+                       "You have strayed from your fate. The Court will set it right.",
+                       "Fate itself was broken here. Remember who broke it."),
+    "Huang Jin Family": ("The Huang Jin answer to no one on the plains. Speak plainly.",
+                         "The blood of Giant Sun does not ask permission.",
+                         "Scatter us if you can; one Huang Jin line always survives."),
+    "Zombie Alliance": ("The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.",
+                        "Your immortals will keep. Ours never age.",
+                        "Dead again. It was bound to happen."),
+    "Fang Clan": ("The Fang clan builds what lasts. What have you built?",
+                  "Our Gu Houses are already moving. You should have counted them.",
+                  "A fortress falls once. Our name will outlast it."),
     "Wu Clan": ("Wu Ji of the Wu clan. The Southern Border keeps me busy; state your purpose.",
                 "The righteous never strike without a reason. Here is ours.",
                 "Write it down: the Wu fell to you. Few will believe it."),
@@ -1177,6 +1227,24 @@ dump("Nations.json", [
     nation("Wu Clan", "Wu Ji", "Wu Temperament", [120, 20, 20], [250, 210, 120],
            ["Wu Yi Mountain", "Moon Bowl", "Golden Cloud Canyon", "Xuan Ming Mountain"],
            [RIGHTEOUS_START, "Start bias [Spirit Spring]", "Start bias [River]"]),
+    # C5c: the arc's majors (LORE_MAPPING "Nations"; B1, B2); all start righteous (D4; the Zombie Alliance shows a
+    # righteous face, R V4c242)
+    nation(HC, "Duke Long", "Heavenly Court Temperament", [235, 225, 180], [70, 60, 140],
+           ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"],
+           [RIGHTEOUS_START, f"[+15]% Strength <vs [{ZOMBIE}] units>", "Start bias [Hill]"]),
+    nation(HJ, "Huang Jin Patriarch", "Huang Jin Temperament", [200, 160, 40], [90, 40, 20],
+           ["Imperial Court", "Golden Tent", "Northern Plains Camp"],
+           [RIGHTEOUS_START, "[+15]% Strength <when defending>", "Start bias [Grassland]"]),
+    nation(ZA, "Zombie Alliance Elder", "Zombie Alliance Temperament", [60, 80, 70], [180, 220, 190],
+           ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"],
+           [RIGHTEOUS_START, "Start bias [Coast]",
+            f"Free [{ZOMBIE}] appears <upon losing a [{{post-[Rank Five era]}} {{non-[Advancing]}} {{non-[{ZOMBIE}]}}] unit>"]
+           + per_speed(lambda m: f"Instantly provides [1] [{LIFESPAN}] <upon turn start> <every [{turns(10, m)}] turns> "
+                                 f"<for every [1] [[post-[Rank Five era]] Units]>")),
+    nation(FANG, "Fang Clan Head", "Fang Temperament", [150, 110, 60], [240, 230, 200],
+           ["Fang Fortress", "Sand Gate", "Dune Workshop"],
+           [RIGHTEOUS_START, "[+50]% Production when constructing [Gu House] units [in all cities]",
+            "[+10]% [Science] [in all cities]", "Start bias [Desert]"]),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -1184,11 +1252,23 @@ dump("Nations.json", [
      "innerColor": [240, 240, 210], "cities": ["Qing Mao Foothills"]},
     {"name": "Jia Clan", "cityStateType": "Merchant Clan", "outerColor": [120, 90, 0], "innerColor": [255, 230, 120],
      "cities": ["Jia Village"]},
+    # C5c: four arc city-states (R V3/55, V4/55, V5/640)
+    {"name": "Lang Ya Sect", "cityStateType": "Refiner Tribe", "outerColor": [90, 60, 30], "innerColor": [230, 210, 160],
+     "cities": ["Lang Ya Blessed Land"]},
+    {"name": "Spirit Affinity House", "cityStateType": "Immortal Sect", "outerColor": [150, 90, 130],
+     "innerColor": [250, 240, 245], "cities": ["Spirit Affinity House"]},
+    {"name": "Combat Immortal Sect", "cityStateType": "Immortal Sect", "outerColor": [140, 30, 30],
+     "innerColor": [240, 220, 200], "cities": ["Combat Immortal Peak"]},
+    {"name": "Merman Imperial Court", "cityStateType": "Merchant Clan", "outerColor": [30, 90, 130],
+     "innerColor": [200, 240, 250], "cities": ["Merman Court"], "uniques": ["Start bias [Coast]"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},
 ])
 dump("CityStateTypes.json", [
+    # C5c: the ten great ancient sects' city-states
+    {"name": "Immortal Sect", "color": [150, 120, 200], "friendBonusUniques": ["[+2 Culture] [in capital]"],
+     "allyBonusUniques": ["[+2 Culture] [in capital]", "[+15]% Strength <for [post-[Rank Five era]] units>"]},
     {"name": "Refiner Tribe", "color": [180, 120, 60], "friendBonusUniques": ["[+2 Science] [in capital]"],
      "allyBonusUniques": ["[+2 Science] [in capital]", "[+20]% XP gained from combat"]},
     {"name": "Mortal Villages", "color": [150, 130, 80], "friendBonusUniques": ["[+2 Food] [in capital]"],
@@ -1216,6 +1296,13 @@ dump("Personalities.json", [
      "preferredVictoryType": "Southern Border Supremacy",
      "priorities": {"Strength Path": 10, "Righteous Path": 3},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
+    {"name": "Heavenly Court Temperament", "science": 8, "military": 6, "aggressive": 4, "declareWar": 4, "diplomacy": 6,
+     "loyal": 7, "uniques": ["[+500]% weight to [Fate Gu] for AI decisions"]},
+    {"name": "Huang Jin Temperament", "military": 7, "aggressive": 6, "declareWar": 6, "expansion": 6, "loyal": 5},
+    {"name": "Zombie Alliance Temperament", "gold": 7, "military": 6, "aggressive": 5, "declareWar": 5, "commerce": 7,
+     "loyal": 3},
+    {"name": "Fang Temperament", "production": 8, "science": 6, "military": 5, "declareWar": 4, "diplomacy": 5,
+     "uniques": ["[+200]% weight to [Gu House Formation] for AI decisions"]},
     {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
      "declareWar": 6, "diplomacy": 7,
      "preferredVictoryType": "Southern Border Supremacy",

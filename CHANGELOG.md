@@ -539,3 +539,18 @@
 * Art: the Venerable and the three Gu Houses in 3D, nine icons.
 * Autoplay: 8 × 500 (Small) and 8 × 450 (Qing Mao map), 0 crashes. Rank seven reached by 21 of 32 clans, rank eight by
   1; the AI does not reach a Venerable in 500 turns (it rarely buys a fourth path tier): the victory is a human's race.
+
+## MOD_SPEC_2 C5c — the arc's nations, Fate Gu, the Fate War (2026-11-01)
+
+* Four arc majors, all righteous at the start: **Heavenly Court** (Duke Long; builds **Fate Gu** and the **Heaven
+  Overseeing Tower**), **Huang Jin Family** (only it may pass the **88 True Yang Building** trial), **Zombie
+  Alliance** (fallen immortals rise as **Immortal Zombies**; its immortals do not age), **Fang Clan** (Gu Houses
+  +50% production). Four city-states: Lang Ya Sect, Spirit Affinity House, Combat Immortal Sect (new type Immortal
+  Sect), Merman Imperial Court.
+* **Fate War:** conquering Fate Gu's city lets a clan shatter it (never rebuilt; the **Qi Tides** then sweep the world)
+  or seize it.
+* Rank-nine immortal Gu **Wisdom Gu** and **Derivation Gu** after Rank Nine Immortal Gu Recipes.
+* Art: four nation emblems, the sect emblem, Fate Gu and its two markers, the zombie and the tower in 3D, three icons.
+* Autoplay (8 × 450, the four arc majors): 0 crashes; Fate Gu built in 5 of 8 games, immortal zombies in 4, rank seven
+  reached by 24 of 32 clans.
+* Not built: the twelve secret realms and the five-region map.

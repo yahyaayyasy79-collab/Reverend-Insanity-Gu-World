@@ -51,6 +51,12 @@ SECTIONS = {
                       "Events.json": ["Venerable Falls"],
                       "TileResources.json": ["Yellow Apricot Immortal Essence"],
                       "Globals": ["[Venerable] unit>"]},
+    "## Phase C5c:": {"Buildings.json": ["Fate Gu", "Shattered Fate", "Fate Seized", "Wisdom Gu", "Derivation Gu",
+                                         "88 True Yang Building"],
+                      "Units.json": ["Immortal Zombie", "Heaven Overseeing Tower"],
+                      "Nations.json": ["Heavenly Court", "Huang Jin Family", "Zombie Alliance", "Fang Clan"],
+                      "Events.json": ["Fate War", "Qi Tides"],
+                      "Globals": ["[Fate War]", "[Qi Tides]"]},
 }
 
 

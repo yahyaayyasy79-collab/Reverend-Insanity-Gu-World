@@ -513,6 +513,89 @@ def dragon_palace():
     g.circ(50, 14, 5)
     return g
 
+
+# ---- C5c: the arc's nations, Fate Gu, the Fate War
+def heavenly_court():
+    """A palace gate on clouds under a single eye of fate."""
+    g = G(); _cloud(g, 50, 80, 80)
+    roof(g, 50, 40, 36, 14); g.poly([(26, 42), (74, 42), (74, 70), (26, 70)]); g.poly([(42, 52), (58, 52), (58, 70), (42, 70)], 0)
+    g.ell(36, 8, 64, 26); g.circ(50, 17, 5, 0)
+    return g
+
+
+def huang_jin():
+    """A golden sun over the plains' horizon."""
+    g = G()
+    for k in range(12):
+        a = math.radians(30 * k)
+        g.line([(50 + 26 * math.cos(a), 46 - 26 * math.sin(a)), (50 + 40 * math.cos(a), 46 - 40 * math.sin(a))], 5)
+    g.circ(50, 46, 20); g.poly([(4, 82), (96, 82), (96, 90), (4, 90)])
+    return g
+
+
+def zombie_alliance():
+    """A skull above sea waves."""
+    from .glyphs2 import waves
+    g = G(); g.circ(50, 38, 26); g.poly([(36, 54), (64, 54), (60, 70), (40, 70)])
+    for x in (40, 60):
+        g.circ(x, 38, 7, 0)
+    g.poly([(47, 50), (53, 50), (50, 44)], 0)
+    waves(g, 50, 84, 40, n=2)
+    return g
+
+
+def fang_clan():
+    """A fortress tower on a dune."""
+    g = G(); g.ell(4, 70, 96, 110)
+    g.poly([(32, 72), (68, 72), (64, 24), (36, 24)])
+    for x in (36, 46, 56):
+        g.poly([(x, 24), (x + 8, 24), (x + 8, 14), (x, 14)])
+    g.poly([(45, 52), (55, 52), (55, 72), (45, 72)], 0)
+    return g
+
+
+def immortal_sect():
+    """Crossed swords over a halo: the ancient sects."""
+    g = G(); g.arc_band(50, 50, 44, 38, 0, 360)
+    g.line([(26, 74), (74, 26)], 6); g.line([(26, 26), (74, 74)], 6)
+    g.circ(50, 50, 10)
+    return g
+
+
+def fate_gu():
+    """A Gu whose shell is an eye, inside threads of fate."""
+    g = G()
+    for k in range(6):
+        a = math.radians(30 * k)
+        g.line([(50 + 46 * math.cos(a), 50 - 46 * math.sin(a)), (50 - 46 * math.cos(a), 50 + 46 * math.sin(a))], 2.5)
+    g.circ(50, 50, 30, 0); g.ell(24, 30, 76, 70); g.circ(50, 50, 10, 0); g.circ(50, 50, 5)
+    return g
+
+
+def shattered_fate():
+    g = fate_gu(); g.line([(30, 16), (46, 44), (40, 58), (62, 84)], 6, 0); return g
+
+
+def fate_seized():
+    g = fate_gu(); fist(g, 50, 70, 0.6); return g
+
+
+def immortal_zombie_icon():
+    """A stiff figure with arms forward and a dead halo."""
+    g = G(); human(g, 50, 18, 1.05, arms="forward")
+    g.arc_band(50, 18, 18, 14, 200, 340)
+    return g
+
+
+def heaven_overseeing_tower():
+    """A tall tower crowned with an eye."""
+    g = G()
+    for k, w in enumerate((30, 24, 18, 12)):
+        y = 90 - 18 * k
+        g.poly([(50 - w, y), (50 + w, y), (50 + w - 4, y - 14), (50 - w + 4, y - 14)])
+    g.ell(38, 6, 62, 22); g.circ(50, 14, 4, 0)
+    return g
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -571,6 +654,17 @@ ICONS3 = [
     ("TechIcons", "Dao Lord", dao_lord, "white"),
     ("TechIcons", "Gu House Formation", gu_house_formation, "white"),
     ("ResourceIcons", "Yellow Apricot Immortal Essence", yellow_apricot, "black"),
+    ("NationIcons", "Heavenly Court", heavenly_court, "white"),
+    ("NationIcons", "Huang Jin Family", huang_jin, "white"),
+    ("NationIcons", "Zombie Alliance", zombie_alliance, "white"),
+    ("NationIcons", "Fang Clan", fang_clan, "white"),
+    ("CityStateIcons", "Immortal Sect", immortal_sect, "white"),
+    ("BuildingIcons", "Fate Gu", fate_gu, "black"),
+    ("BuildingIcons", "Shattered Fate", shattered_fate, "black"),
+    ("BuildingIcons", "Fate Seized", fate_seized, "black"),
+    ("UnitIcons", "Immortal Zombie", immortal_zombie_icon, "white"),
+    ("UnitIcons", "Heaven Overseeing Tower", heaven_overseeing_tower, "white"),
+    ("TechIcons", "Rank Nine Immortal Gu Recipes", recipes_rank(9), "white"),
 ]
 
 
@@ -583,7 +677,7 @@ def rank78_gu_icons():
     import csv
     from common import REPO_ROOT
     with open(REPO_ROOT / "data" / "immortal_gu.csv", newline="", encoding="utf-8") as f:
-        rows = [r for r in csv.DictReader(f) if r["rank"] in ("7", "8")]
+        rows = [r for r in csv.DictReader(f) if r["rank"] in ("7", "8", "9")]
     return [("BuildingIcons", r["name"], immortal_gu_generic(r["path"], int(r["rank"])), "black") for r in rows]
 
 

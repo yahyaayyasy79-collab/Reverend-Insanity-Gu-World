@@ -1,5 +1,20 @@
 [
   {
+    "name": "Immortal Sect",
+    "color": [
+      150,
+      120,
+      200
+    ],
+    "friendBonusUniques": [
+      "[+2 Culture] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+2 Culture] [in capital]",
+      "[+15]% Strength <for [post-[Rank Five era]] units>"
+    ]
+  },
+  {
     "name": "Refiner Tribe",
     "color": [
       180,

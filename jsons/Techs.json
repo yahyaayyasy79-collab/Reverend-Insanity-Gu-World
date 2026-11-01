@@ -418,10 +418,31 @@
     "wonderCost": 750,
     "techs": [
       {
+        "name": "Rank Nine Immortal Gu Recipes",
+        "row": 1,
+        "prerequisites": [
+          "Dao Lord"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Recipes for rank-nine immortal Gu; fewer than ten exist at a time. They cost yellow apricot essence, which only a Venerable makes."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 14,
+    "era": "Rank Eight era",
+    "techCost": 1900,
+    "buildingCost": 560,
+    "wonderCost": 800,
+    "techs": [
+      {
         "name": "Dao Comprehension",
         "row": 2,
         "prerequisites": [
-          "Dao Lord",
+          "Rank Nine Immortal Gu Recipes",
           "Gu House Formation"
         ],
         "uniques": [

@@ -876,6 +876,52 @@
     ]
   },
   {
+    "name": "Heaven Overseeing Tower",
+    "unitType": "Gu House",
+    "movement": 2,
+    "strength": 190,
+    "cost": 650,
+    "requiredTech": "Gu House Formation",
+    "attackSound": "throw",
+    "uniqueTo": "Heavenly Court",
+    "uniques": [
+      "Only available <if [Fate Gu] is constructed>",
+      "Limited to [1] per Civilization",
+      "Costs [50] [White Lychee Immortal Essence]",
+      "[+500]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "[+25]% Strength <when defending>",
+      "[+2] Sight"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Heavenly Court's rank-nine Gu House (监天塔) around Fate Gu: it watches the world and shrugs off calamities. Needs Fate Gu."
+      }
+    ]
+  },
+  {
+    "name": "Immortal Zombie",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 70,
+    "cost": 300,
+    "requiredTech": "Calamity Lore",
+    "attackSound": "throw",
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Never appears as a Barbarian unit",
+      "Can only heal by pillaging",
+      "[-15]% Strength <if [Fate Gu] is constructed by anybody>",
+      "[+100]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An immortal turned zombie (仙僵): no ageing, a dead aperture, no healing except by pillage. When the Zombie Alliance loses an immortal, one rises. Weaker while Fate Gu stands."
+      }
+    ]
+  },
+  {
     "name": "Thunder Crown Wolf",
     "unitType": "Beast",
     "movement": 3,

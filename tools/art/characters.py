@@ -309,6 +309,26 @@ def gu_house(kind: str):
     return s
 
 
+def immortal_zombie():
+    """C5c: an immortal zombie: a grey stiff figure, arms forward, a broken dull halo."""
+    s = Scene()
+    cultivator(s, height=1.0, build=0.95, robe=True, bun=True, pose="cast")
+    s.add("torus", (0, 2.0, -0.05), 0.2, 0.02, mat="hide_pale")
+    s.add("sphere", (0.36, 1.45, 0.5), 0.1, mat="hide_dark")
+    return s
+
+
+def overseeing_tower():
+    """C5c: the Heaven Overseeing Tower: a tall tiered tower with an eye of fate on top."""
+    s = Scene()
+    for k, w in enumerate((0.42, 0.34, 0.26, 0.18)):
+        y = 0.16 + 0.34 * k
+        s.add("box", (0, y, 0), (w, 0.14, w), mat="robe")
+        s.add("ellipsoid", (0, y + 0.16, 0), (w * 1.25, 0.04, w * 1.25), mat="roof")
+    s.add("ellipsoid", (0, 1.62, 0), (0.18, 0.12, 0.08), mat="essence9")
+    return s
+
+
 def essence_frame(i, rank=1):
     s = Scene()
     s.add("sphere", (0, 0.9, 0), 0.12 + 0.12 * i, mat=ESSENCE[rank])
@@ -343,6 +363,8 @@ UNITS = {
     "Calamity Luck Altar": lambda: gu_house("altar"),
     "Myriad Year Flying Warship": lambda: gu_house("warship"),
     "Dragon Palace": lambda: gu_house("palace"),
+    "Immortal Zombie": immortal_zombie,
+    "Heaven Overseeing Tower": overseeing_tower,
 }
 
 # attack frames per unit name (Unciv plays them over the unit that takes damage)
@@ -369,7 +391,8 @@ ATTACKS = {
     "Rank Eight Gu Immortal": [lambda i=i: essence_frame(i, 8) for i in range(4)],
     "Venerable": [lambda i=i: essence_frame(i, 9) for i in range(4)],
     **{n: [lambda i=i: essence_frame(i, 8) for i in range(3)]
-       for n in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace")},
+       for n in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace", "Heaven Overseeing Tower")},
+    "Immortal Zombie": [lambda i=i: essence_frame(i, 5) for i in range(3)],
 }
 
 # portraits are single images (no civ tint): the robe takes the path's colour
@@ -383,5 +406,5 @@ PORTRAIT_ROBE = {"Clan Settler": (120, 92, 64), "Mortal Laborer": (140, 110, 80)
                  "Rank Five Gu Master": (110, 70, 150), "Rank Six Gu Immortal": (90, 140, 70),
                  "Rank Seven Gu Immortal": (140, 50, 45), "Rank Eight Gu Immortal": (200, 196, 182),
                  "Venerable": (200, 150, 50), "Calamity Luck Altar": (150, 120, 60), "Myriad Year Flying Warship": (120, 90, 60),
-                 "Dragon Palace": (60, 80, 120)}
+                 "Dragon Palace": (60, 80, 120), "Immortal Zombie": (90, 100, 95), "Heaven Overseeing Tower": (200, 190, 150)}
 PORTRAIT_TRIM = (225, 215, 190)

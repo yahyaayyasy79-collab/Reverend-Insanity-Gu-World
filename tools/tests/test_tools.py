@@ -368,7 +368,8 @@ class Autoplay(unittest.TestCase):
                                 "--jobs", "1", "--out", tmp, "--quiet"], capture_output=True, text=True, timeout=600)
             self.assertEqual(r.returncode, 0, r.stdout[-2000:] + r.stderr[-2000:])
             rows = [json.loads(line) for f in Path(tmp).glob("game-*.jsonl") for line in f.read_text().splitlines()]
-            self.assertEqual(sum(1 for x in rows if x["event"] == "turn" and x["major"]) // 4, 8)
+            # one row per major per turn; the number of majors grew with the arc's nations (C5c)
+            self.assertEqual(len({x["turn"] for x in rows if x["event"] == "turn" and x["major"]}), 8)
 
 
 class Translations(unittest.TestCase):

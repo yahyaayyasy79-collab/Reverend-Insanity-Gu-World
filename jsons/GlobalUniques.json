@@ -87,6 +87,11 @@
     "Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]",
     "Remove [Venerable Ascension] [in all cities] <upon losing a [Venerable] unit>",
     "Gain a free [True Inheritance Seal] [in capital] <upon losing a [Venerable] unit>",
-    "Triggers a [Venerable Falls] event <upon losing a [Venerable] unit>"
+    "Triggers a [Venerable Falls] event <upon losing a [Venerable] unit>",
+    "Triggers a [Fate War] event <upon conquering a city> <if [Fate Gu] is constructed> <if [Fate Seized] is not constructed> <for [non-[Heavenly Court]] Civilizations>",
+    "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>"
   ]
 }

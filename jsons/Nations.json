@@ -152,6 +152,156 @@
     ]
   },
   {
+    "name": "Heavenly Court",
+    "leaderName": "Duke Long",
+    "adjective": [
+      "Heavenly Court"
+    ],
+    "personality": "Heavenly Court Temperament",
+    "outerColor": [
+      235,
+      225,
+      180
+    ],
+    "innerColor": [
+      70,
+      60,
+      140
+    ],
+    "cities": [
+      "Heavenly Court",
+      "Tian Ti Mountain",
+      "Fate Pavilion",
+      "Central Continent Gate"
+    ],
+    "uniques": [
+      "Starts with [Righteous Path] adopted",
+      "[+15]% Strength <vs [Immortal Zombie] units>",
+      "Start bias [Hill]"
+    ],
+    "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.",
+    "declaringWar": "You have strayed from your fate. The Court will set it right.",
+    "defeated": "Fate itself was broken here. Remember who broke it.",
+    "civilopediaText": [
+      {
+        "text": "The Heavenly Court (天庭), founded by Primordial Origin: it guards and repairs Fate Gu and rules the Central Continent through the ancient sects. Only it builds Fate Gu."
+      }
+    ]
+  },
+  {
+    "name": "Huang Jin Family",
+    "leaderName": "Huang Jin Patriarch",
+    "adjective": [
+      "Huang Jin Family"
+    ],
+    "personality": "Huang Jin Temperament",
+    "outerColor": [
+      200,
+      160,
+      40
+    ],
+    "innerColor": [
+      90,
+      40,
+      20
+    ],
+    "cities": [
+      "Imperial Court",
+      "Golden Tent",
+      "Northern Plains Camp"
+    ],
+    "uniques": [
+      "Starts with [Righteous Path] adopted",
+      "[+15]% Strength <when defending>",
+      "Start bias [Grassland]"
+    ],
+    "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.",
+    "declaringWar": "The blood of Giant Sun does not ask permission.",
+    "defeated": "Scatter us if you can; one Huang Jin line always survives.",
+    "civilopediaText": [
+      {
+        "text": "The Huang Jin (黄金家族), every bloodline of Giant Sun on the Northern Plains. No Huang Jin line may be wiped out; only they may pass the 88 True Yang Building's trial."
+      }
+    ]
+  },
+  {
+    "name": "Zombie Alliance",
+    "leaderName": "Zombie Alliance Elder",
+    "adjective": [
+      "Zombie Alliance"
+    ],
+    "personality": "Zombie Alliance Temperament",
+    "outerColor": [
+      60,
+      80,
+      70
+    ],
+    "innerColor": [
+      180,
+      220,
+      190
+    ],
+    "cities": [
+      "Eastern Sea Hall",
+      "Bone Isle",
+      "Still Tide Harbour"
+    ],
+    "uniques": [
+      "Starts with [Righteous Path] adopted",
+      "Start bias [Coast]",
+      "Free [Immortal Zombie] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]} {non-[Immortal Zombie]}] unit>",
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>",
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>",
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>",
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>"
+    ],
+    "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.",
+    "declaringWar": "Your immortals will keep. Ours never age.",
+    "defeated": "Dead again. It was bound to happen.",
+    "civilopediaText": [
+      {
+        "text": "The Zombie Alliance (僵盟): immortal zombies with a righteous face and a secret master. Its immortals never age, and its fallen rise again as zombies."
+      }
+    ]
+  },
+  {
+    "name": "Fang Clan",
+    "leaderName": "Fang Clan Head",
+    "adjective": [
+      "Fang Clan"
+    ],
+    "personality": "Fang Temperament",
+    "outerColor": [
+      150,
+      110,
+      60
+    ],
+    "innerColor": [
+      240,
+      230,
+      200
+    ],
+    "cities": [
+      "Fang Fortress",
+      "Sand Gate",
+      "Dune Workshop"
+    ],
+    "uniques": [
+      "Starts with [Righteous Path] adopted",
+      "[+50]% Production when constructing [Gu House] units [in all cities]",
+      "[+10]% [Science] [in all cities]",
+      "Start bias [Desert]"
+    ],
+    "introduction": "The Fang clan builds what lasts. What have you built?",
+    "declaringWar": "Our Gu Houses are already moving. You should have counted them.",
+    "defeated": "A fortress falls once. Our name will outlast it.",
+    "civilopediaText": [
+      {
+        "text": "The Fang clan (房家), a righteous Western Desert power unrivalled at building Gu Houses. Gu Houses +50% production; +10% science."
+      }
+    ]
+  },
+  {
     "name": "Hairy Man Tribe",
     "cityStateType": "Refiner Tribe",
     "outerColor": [
@@ -214,6 +364,97 @@
     "civilopediaText": [
       {
         "text": "The merchant clan of Jia Village (贾家), whose caravans bring a market and a Gu shop up the mountain. Their best Gu go to the highest bidder."
+      }
+    ]
+  },
+  {
+    "name": "Lang Ya Sect",
+    "cityStateType": "Refiner Tribe",
+    "outerColor": [
+      90,
+      60,
+      30
+    ],
+    "innerColor": [
+      230,
+      210,
+      160
+    ],
+    "cities": [
+      "Lang Ya Blessed Land"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hairy-men refiners of the Lang Ya Blessed Land (琅琊派), whose land spirit trades Gu."
+      }
+    ]
+  },
+  {
+    "name": "Spirit Affinity House",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      150,
+      90,
+      130
+    ],
+    "innerColor": [
+      250,
+      240,
+      245
+    ],
+    "cities": [
+      "Spirit Affinity House"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spirit Affinity House (灵缘斋), one of the ten great ancient sects of the Central Continent."
+      }
+    ]
+  },
+  {
+    "name": "Combat Immortal Sect",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      140,
+      30,
+      30
+    ],
+    "innerColor": [
+      240,
+      220,
+      200
+    ],
+    "cities": [
+      "Combat Immortal Peak"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Combat Immortal Sect (战仙宗), one of the ten great ancient sects, famed for battle."
+      }
+    ]
+  },
+  {
+    "name": "Merman Imperial Court",
+    "cityStateType": "Merchant Clan",
+    "outerColor": [
+      30,
+      90,
+      130
+    ],
+    "innerColor": [
+      200,
+      240,
+      250
+    ],
+    "cities": [
+      "Merman Court"
+    ],
+    "uniques": [
+      "Start bias [Coast]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The merfolk's court in the Eastern Sea (鲛人王庭)."
       }
     ]
   },

@@ -2537,6 +2537,18 @@ Triggers a [Inheritance Won] event
 [+300]% weight to this choice for AI decisions <when number of [[Blood Master] Units] is more than [0]>
 ```
 
+* 88 True Yang Building: the trial is passed
+
+```
+Unavailable <if [88 True Yang Building] is constructed by anybody>
+Unavailable <if [True Yang Seal] is constructed>
+Only available <for [Huang Jin Family] Civilizations>
+Gain a free [True Yang Seal] [in capital]
+Triggers a [Inheritance Won] event
+[-90]% weight to this choice for AI decisions
+[+300]% weight to this choice for AI decisions <when number of [[Luck Master] Units] is more than [0]>
+```
+
 **Inheritance Won** (popup)
 
 * Begin the work
@@ -3171,4 +3183,200 @@ Cannot be traded
 Remove [Venerable Ascension] [in all cities] <upon losing a [Venerable] unit>
 Gain a free [True Inheritance Seal] [in capital] <upon losing a [Venerable] unit>
 Triggers a [Venerable Falls] event <upon losing a [Venerable] unit>
+```
+
+
+## Phase C5c: the arc's nations, Fate Gu, the Fate War (built 2026-11-01)
+
+MOD_SPEC_2 Phase C, last layer, from the "Nations", "Immortal Gu" and "Events" rows above.
+
+* **Four arc majors** (B1, B2), all starting righteous (D4): the **Heavenly Court** (Duke Long; +15% against immortal
+  zombies; the only builder of Fate Gu and of the Heaven Overseeing Tower), the **Huang Jin Family** (+15% defending;
+  the only clan that may pass the 88 True Yang Building's trial), the **Zombie Alliance** (a fallen immortal rises
+  as an **Immortal Zombie**; its immortals never age: one Lifespan Gu per immortal every ten turns offsets their
+  burn) and the **Fang Clan** (Gu Houses +50% production, +10% science). Leaders the novel never names carry their
+  title (Huang Jin Patriarch, Zombie Alliance Elder, Fang Clan Head). Voices in the mod's own words.
+* **Four city-states:** Lang Ya Sect (Refiner Tribe), Spirit Affinity House and Combat Immortal Sect (a new type,
+  Immortal Sect: friends get `[+2 Culture] [in capital]`, allies also `[+15]% Strength <for [post-[Rank Five era]] units>`),
+  Merman Imperial Court (Merchant Clan).
+* Personalities: the Court wants Fate Gu (`[+500]% weight to [Fate Gu] for AI decisions`), the Fang clan its Gu Houses
+  (`[+200]% weight to [Gu House Formation] for AI decisions`).
+* **Fate Gu** (rank nine, `uniqueTo` the Heavenly Court, after Immortal Gu Recipes; ADAPTED: the Court refines it
+  during the arc instead of holding it from the start): immortals +15%, +2 happiness; immortal zombies −15% while it
+  stands anywhere. A non-Court clan that conquers its city fights the **Fate War**: **shatter** it (removed for good:
+  the clan gains the marker Shattered Fate, Fate Gu becomes unbuildable, +20% strength for 20 turns) or **seize** it
+  (marker Fate Seized, no second popup). While Fate Gu lies shattered the **Qi Tides** sweep every clan (3% a turn):
+  shelter the cities (−25% production) or ride the tide (qi, −20% strength). B4: dream realms do not wait for it.
+* **Rank-nine immortal Gu:** Wisdom Gu and Derivation Gu after Rank Nine Immortal Gu Recipes, bought with yellow
+  apricot essence (only a Venerable makes it). **88 True Yang Building** joins the inheritances (Huang Jin only).
+* **Still not built:** the twelve secret realms and the five-region map (T3), dream realms, Treasure Yellow Heaven's
+  essence stones, the Shadow Sect events.
+
+Exact uniques (written by tools/lore_blocks.py from jsons/):
+
+**Fate Gu** (Buildings.json; {"isWonder": true, "uniqueTo": "Heavenly Court", "requiredTech": "Immortal Gu Recipes", "cost": 600, "civilopediaText": [{"text": "Fate Gu (\u5bbf\u547d\u86ca), rank nine: it fixes every being's destiny. Only the Heavenly Court builds it; whoever conquers its city fights the Fate War. Immortals +15% strength; +2 happiness."}]})
+
+```
+Costs [60] [Green Grape Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Unavailable <if [Shattered Fate] is constructed by anybody>
+[+15]% Strength <for [post-[Rank Five era]] units>
+[+2 Happiness]
+[+500]% weight to this choice for AI decisions
+```
+
+**Shattered Fate** (Buildings.json; {"isNationalWonder": true, "cost": 1, "civilopediaText": [{"text": "Proof that this clan shattered Fate Gu. It can never be rebuilt, and the qi tides sweep the world."}]})
+
+```
+Unbuildable
+Cannot be purchased
+```
+
+**Fate Seized** (Buildings.json; {"isNationalWonder": true, "cost": 1, "civilopediaText": [{"text": "Proof that this clan seized Fate Gu from the Heavenly Court and kept it."}]})
+
+```
+Unbuildable
+Cannot be purchased
+```
+
+**Wisdom Gu** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Nine Immortal Gu Recipes", "cost": 700, "civilopediaText": [{"text": "Wisdom Gu (\u667a\u6167\u86ca), rank nine, wisdom path: its light speeds every deduction, at a cost in lifespan; second only to Fate Gu in the Heavenly Court's eyes. +30% science; burns a Lifespan Gu every five turns. Costs yellow apricot essence on top of production; a captured city keeps it."}]})
+
+```
+Costs [60] [Yellow Apricot Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Wisdom Path
+Triggers a [Immortal Gu Refinement] event
+[+30]% [Science] [in all cities]
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [5] turns>
+[+300]% weight to this choice for AI decisions
+```
+
+**Derivation Gu** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Nine Immortal Gu Recipes", "cost": 700, "civilopediaText": [{"text": "Derivation Gu (\u884d\u5316\u86ca), rank nine, rule path: derives new results from given inputs, the core of a Heavenly Court formation. Buildings are built 30% faster. Costs yellow apricot essence on top of production; a captured city keeps it."}]})
+
+```
+Costs [60] [Yellow Apricot Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Rule Path
+Triggers a [Immortal Gu Refinement] event
+[+30]% Production when constructing [All] buildings [in all cities]
+[+300]% weight to this choice for AI decisions
+```
+
+**88 True Yang Building** (Buildings.json; {"isWonder": true, "requiredTech": "Calamity Lore", "cost": 420, "civilopediaText": [{"text": "Giant Sun's tiered inheritance tower in the Imperial Court Blessed Land; only thick Huang Jin blood may enter. +15% stones; luck-path units fight 15% harder. Built only by a clan holding its seal, which a trial grants (\u516b\u5341\u516b\u89d2\u771f\u9633\u697c); a captured city keeps it."}]})
+
+```
+Only available <if [True Yang Seal] is constructed>
+Never destroyed when the city is captured
+[+15]% [Gold] [in all cities]
+[+15]% Strength <for units with [Luck Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Immortal Zombie** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "An immortal turned zombie (\u4ed9\u50f5): no ageing, a dead aperture, no healing except by pillage. When the Zombie Alliance loses an immortal, one rises. Weaker while Fate Gu stands."}]})
+
+```
+Unbuildable
+Cannot be purchased
+Never appears as a Barbarian unit
+Can only heal by pillaging
+[-15]% Strength <if [Fate Gu] is constructed by anybody>
+[+100]% maintenance costs
+```
+
+**Heaven Overseeing Tower** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 190, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "uniqueTo": "Heavenly Court", "civilopediaText": [{"text": "The Heavenly Court's rank-nine Gu House (\u76d1\u5929\u5854) around Fate Gu: it watches the world and shrugs off calamities. Needs Fate Gu."}]})
+
+```
+Only available <if [Fate Gu] is constructed>
+Limited to [1] per Civilization
+Costs [50] [White Lychee Immortal Essence]
+[+500]% maintenance costs
+Never appears as a Barbarian unit
+[+25]% Strength <when defending>
+[+2] Sight
+```
+
+**Heavenly Court** (Nations.json; {"leaderName": "Duke Long", "adjective": ["Heavenly Court"], "personality": "Heavenly Court Temperament", "outerColor": [235, 225, 180], "innerColor": [70, 60, 140], "cities": ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"], "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.", "declaringWar": "You have strayed from your fate. The Court will set it right.", "defeated": "Fate itself was broken here. Remember who broke it.", "civilopediaText": [{"text": "The Heavenly Court (\u5929\u5ead), founded by Primordial Origin: it guards and repairs Fate Gu and rules the Central Continent through the ancient sects. Only it builds Fate Gu."}]})
+
+```
+Starts with [Righteous Path] adopted
+[+15]% Strength <vs [Immortal Zombie] units>
+Start bias [Hill]
+```
+
+**Huang Jin Family** (Nations.json; {"leaderName": "Huang Jin Patriarch", "adjective": ["Huang Jin Family"], "personality": "Huang Jin Temperament", "outerColor": [200, 160, 40], "innerColor": [90, 40, 20], "cities": ["Imperial Court", "Golden Tent", "Northern Plains Camp"], "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.", "declaringWar": "The blood of Giant Sun does not ask permission.", "defeated": "Scatter us if you can; one Huang Jin line always survives.", "civilopediaText": [{"text": "The Huang Jin (\u9ec4\u91d1\u5bb6\u65cf), every bloodline of Giant Sun on the Northern Plains. No Huang Jin line may be wiped out; only they may pass the 88 True Yang Building's trial."}]})
+
+```
+Starts with [Righteous Path] adopted
+[+15]% Strength <when defending>
+Start bias [Grassland]
+```
+
+**Zombie Alliance** (Nations.json; {"leaderName": "Zombie Alliance Elder", "adjective": ["Zombie Alliance"], "personality": "Zombie Alliance Temperament", "outerColor": [60, 80, 70], "innerColor": [180, 220, 190], "cities": ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"], "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.", "declaringWar": "Your immortals will keep. Ours never age.", "defeated": "Dead again. It was bound to happen.", "civilopediaText": [{"text": "The Zombie Alliance (\u50f5\u76df): immortal zombies with a righteous face and a secret master. Its immortals never age, and its fallen rise again as zombies."}]})
+
+```
+Starts with [Righteous Path] adopted
+Start bias [Coast]
+Free [Immortal Zombie] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]} {non-[Immortal Zombie]}] unit>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>
+```
+
+**Fang Clan** (Nations.json; {"leaderName": "Fang Clan Head", "adjective": ["Fang Clan"], "personality": "Fang Temperament", "outerColor": [150, 110, 60], "innerColor": [240, 230, 200], "cities": ["Fang Fortress", "Sand Gate", "Dune Workshop"], "introduction": "The Fang clan builds what lasts. What have you built?", "declaringWar": "Our Gu Houses are already moving. You should have counted them.", "defeated": "A fortress falls once. Our name will outlast it.", "civilopediaText": [{"text": "The Fang clan (\u623f\u5bb6), a righteous Western Desert power unrivalled at building Gu Houses. Gu Houses +50% production; +10% science."}]})
+
+```
+Starts with [Righteous Path] adopted
+[+50]% Production when constructing [Gu House] units [in all cities]
+[+10]% [Science] [in all cities]
+Start bias [Desert]
+```
+
+**Fate War** (popup)
+
+* Shatter Fate Gu
+
+```
+Remove [Fate Gu] [in all cities]
+Gain a free [Shattered Fate] [in capital]
+[+20]% Strength <for [20] turns>
+[+50]% weight to this choice for AI decisions
+```
+
+* Seize Fate Gu
+
+```
+Gain a free [Fate Seized] [in capital]
+[+0]% weight to this choice for AI decisions
+```
+
+**Qi Tides** (popup)
+
+* Shelter the cities
+
+```
+[-25]% [Production] [in all cities] <for [5] turns>
+[+0]% weight to this choice for AI decisions
+```
+
+* Ride the tide
+
+```
+Instantly provides [10] [Heaven Qi]
+Instantly provides [10] [Earth Qi]
+[-20]% Strength <for [5] turns>
+[+50]% weight to this choice for AI decisions
+```
+
+**GlobalUniques**
+
+```
+Triggers a [Fate War] event <upon conquering a city> <if [Fate Gu] is constructed> <if [Fate Seized] is not constructed> <for [non-[Heavenly Court]] Civilizations>
+Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```
