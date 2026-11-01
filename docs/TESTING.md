@@ -85,8 +85,8 @@ plays) [src `WorldScreenMenuPopup`, `ActivationTypes.Longpress`]; Enter on empty
 * **Civ names** are the nation names, written lowercase with dashes or in quotes: `gu-yue-clan`, `bai-clan`,
   `xiong-clan`, `wu-clan`, `heavenly-court`, `huang-jin-family`, `zombie-alliance`, `fang-clan` (or `"Gu Yue Clan"`).
   `<civ>` in a command is a placeholder, never typed as is (the user's report, 2026-11-01).
-* **Tech command:** the user's Android build lists `addtechnology`; the 4.22.8 source calls the key `addtech` with the
-  format text `addtechnology` [src ConsoleCivCommands]. Use the name the console's own list shows.
+* **Tech command:** `civ addtechnology <civName> <techName>` on 4.22.15 [src ConsoleCivCommands] (4.22.8 called the
+  key `addtech`). Use the name the console's own list shows.
 * `unit ...` commands act on the **selected unit**; `unit add` places on the **selected tile**; `civ activatetrigger`
   acts on the civ you play unless its first word is a civ name. Uniques and names with spaces go in quotes.
 
@@ -101,10 +101,18 @@ unit add gu-yue-clan "Rank Five Gu Master"
 unit setxp 300                      # select the new unit first, then buy Ascension on its promotion screen
 ```
 
+Dao marks (select one of your Gu Masters first; the tiers replace one another, the icon shows the stars):
+
+```
+unit addpromotion "Dao Marks III"           # +15% strength; see it on the unit's promotion list
+unit setxp 300                              # Dao Comprehension is automatic: a rank-three+ path Master shows it
+                                            # as a 20-turn status (Standard); when it runs out, the tier goes up
+```
+
 ```
 civ activatetrigger "Triggers a [Beast Tide] event"      # any Triggerable unique; validated against the ruleset
 unit activatetrigger "Triggers a [Refinement Attempt] event"  # same, with the selected unit as context (E2)
-civ activatetrigger "Instantly provides [100] [Immortal Essence Stone]"
+civ activatetrigger "Instantly provides [100] [Green Grape Immortal Essence]"
 civ addstat Gold 500          civ revealmap               civ addtechnology gu-yue-clan "<tech>"
 civ addpolicy gu-yue-clan "<policy>"                      unit add gu-yue-clan "<unit>"  (select a tile first)
 unit addpromotion "<promotion>"    unit setxp 100         city addbuilding "<building>"  city setpop 8
