@@ -40,7 +40,12 @@ SECTIONS = {
                                      "Treasure Yellow Heaven"],
                      "TileResources.json": ["Immortal Materials"],
                      "Globals": ["[Inheritance Trial]", "[Desolate Beast Tide]", "[Treasure Yellow Heaven]",
-                                 "[Immortal Materials]"]},
+                                 "[Immortal Materials]"]},    "## Phase C5a:": {"Buildings.json": ['Dragon Strength', 'Year Gu', 'Formation Flag', 'Divination Tortoise Shell', 'Dragon Centipede', 'Reputation Restriction', 'Calamity Beckoning', 'Change Soul', 'Dragon Breath', 'Heavenly Essence Treasure Imperial Lotus', 'Years Flow Like Water', 'Dream Token', 'Soul Beast Token', 'Treasure Light Gu', 'Advance Refinement Gu', 'Steal Life', 'Human Qi Immortal Gu'],
+                      "Units.json": ["Rank Seven Gu Immortal", "Rank Eight Gu Immortal", "Ancient Desolate Beast",
+                                     "Immemorial Desolate Beast"],
+                      "UnitPromotions.json": ["Tribulation Survivor", "Advancing", "Grotto-Heaven Aperture",
+                                              "Advance to Rank Seven", "Advance to Rank Eight"],
+                      "TileResources.json": ["Red Date Immortal Essence"]},
 }
 
 

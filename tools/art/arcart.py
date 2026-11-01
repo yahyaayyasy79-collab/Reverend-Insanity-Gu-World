@@ -333,6 +333,83 @@ def immortal_materials():
     g.circ(16, 86, 6); g.circ(84, 86, 6)
     return g
 
+
+# ---- C5: ranks seven and eight
+def rank_immortal(rank):
+    def draw():
+        g = rank_six_gu_immortal()
+        pips(g, rank, y=6)
+        return g
+    return draw
+
+
+def immortal_gu_generic(key, rank):
+    """A rank-seven or rank-eight immortal Gu: the path's symbol in a double halo, the rank in diamonds."""
+    from .pathart import place
+    def draw():
+        g = G(); g.arc_band(50, 46, 44, 40, 0, 360); g.arc_band(50, 46, 36, 34, 0, 360)
+        place(g, _path_symbol(key), 50, 46, 0.5)
+        pips(g, rank, y=94)
+        return g
+    return draw
+
+
+def red_date():
+    """A date fruit with its stem: rank-seven essence."""
+    g = G(); g.ell(30, 26, 70, 86); g.line([(50, 26), (56, 10)], 4); g.poly([(56, 14), (76, 8), (70, 22)])
+    g.ell(38, 38, 46, 58, 0)
+    return g
+
+
+def white_lychee():
+    """A round, bumpy lychee: rank-eight essence."""
+    g = G(); g.circ(50, 54, 32)
+    for k in range(10):
+        a = math.radians(36 * k)
+        g.circ(50 + 22 * math.cos(a), 54 - 22 * math.sin(a), 3, 0)
+    g.line([(50, 22), (54, 8)], 4)
+    return g
+
+
+def recipes_rank(rank):
+    def draw():
+        g = immortal_gu_recipes(); pips(g, rank, y=94); return g
+    return draw
+
+
+def grotto_heaven():
+    """A cave arch opening onto stars: the rank-eight aperture."""
+    from .pathart import _star
+    g = G()
+    g.arc_band(50, 66, 42, 30, 0, 180)
+    g.poly([(8, 66), (20, 66), (20, 92), (8, 92)]); g.poly([(80, 66), (92, 66), (92, 92), (80, 92)])
+    for x, y, r in ((50, 52, 10), (36, 70, 6), (64, 72, 6)):
+        _star(g, x, y, r)
+    return g
+
+
+def tribulation_survivor():
+    """A figure standing under a broken bolt."""
+    g = G(); human(g, 50, 30, 0.95, arms="raised")
+    g.bolt([20, 30, 24, 34], 4, 30, 4); g.bolt([70, 80, 74, 84], 4, 30, 4)
+    return g
+
+
+def advancing():
+    g = G()
+    for y in (30, 52, 74):
+        g.line([(24, y + 12), (50, y - 8), (76, y + 12)], 8)
+    return g
+
+
+def advance_to(rank):
+    def draw():
+        g = G(); g.arc_band(50, 50, 46, 40, 0, 360)
+        g.poly([(50, 14), (72, 40), (58, 40), (58, 72), (42, 72), (42, 40), (28, 40)])
+        pips(g, rank, y=84)
+        return g
+    return draw
+
 ICONS3 = [
     ("ResourceIcons", "Heaven Qi", heaven_qi, "black"),
     ("ResourceIcons", "Earth Qi", earth_qi, "black"),
@@ -365,7 +442,35 @@ ICONS3 = [
     ("TechIcons", "Immortal Gu Recipes", immortal_gu_recipes, "white"),
     ("UnitIcons", "Desolate Beast", desolate_beast_icon, "white"),
     ("ResourceIcons", "Immortal Materials", immortal_materials, "black"),
+    ("UnitIcons", "Rank Seven Gu Immortal", rank_immortal(7), "white"),
+    ("UnitIcons", "Rank Eight Gu Immortal", rank_immortal(8), "white"),
+    ("UnitIcons", "Ancient Desolate Beast", lambda: _beast_pips(2), "white"),
+    ("UnitIcons", "Immemorial Desolate Beast", lambda: _beast_pips(3), "white"),
+    ("TechIcons", "Red Date Essence", red_date, "white"),
+    ("TechIcons", "Rank Seven Immortal Gu Recipes", recipes_rank(7), "white"),
+    ("TechIcons", "Grotto-Heaven", grotto_heaven, "white"),
+    ("TechIcons", "Rank Eight Immortal Gu Recipes", recipes_rank(8), "white"),
+    ("ResourceIcons", "Red Date Immortal Essence", red_date, "black"),
+    ("ResourceIcons", "White Lychee Immortal Essence", white_lychee, "black"),
+    ("UnitPromotionIcons", "Tribulation Survivor", tribulation_survivor, "white"),
+    ("UnitPromotionIcons", "Advancing", advancing, "white"),
+    ("UnitPromotionIcons", "Grotto-Heaven Aperture", grotto_heaven, "white"),
+    ("UnitPromotionIcons", "Advance to Rank Seven", advance_to(7), "white"),
+    ("UnitPromotionIcons", "Advance to Rank Eight", advance_to(8), "white"),
 ]
+
+
+def _beast_pips(n):
+    g = desolate_beast_icon(); pips(g, n, y=95); return g
+
+
+def rank78_gu_icons():
+    """C5: the rank-seven and rank-eight immortal Gu (data/immortal_gu.csv), one generic design each."""
+    import csv
+    from common import REPO_ROOT
+    with open(REPO_ROOT / "data" / "immortal_gu.csv", newline="", encoding="utf-8") as f:
+        rows = [r for r in csv.DictReader(f) if r["rank"] in ("7", "8")]
+    return [("BuildingIcons", r["name"], immortal_gu_generic(r["path"], int(r["rank"])), "black") for r in rows]
 
 
 def inheritance_icons():

@@ -90,5 +90,41 @@
         "text": "Rank six (六转): the immortal threshold, green grape essence. An immortal's aperture is a blessed land that feeds it essence for as long as it lives."
       }
     ]
+  },
+  {
+    "name": "Rank Seven era",
+    "researchAgreementCost": 650,
+    "iconRGB": [
+      200,
+      60,
+      60
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 700,
+    "civilopediaText": [
+      {
+        "text": "Rank seven (七转): red date essence. Three hundred aperture-years of calamities lie behind every rank-seven immortal."
+      }
+    ]
+  },
+  {
+    "name": "Rank Eight era",
+    "researchAgreementCost": 750,
+    "iconRGB": [
+      240,
+      236,
+      222
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 800,
+    "civilopediaText": [
+      {
+        "text": "Rank eight (八转): white lychee essence. The aperture becomes a grotto-heaven, and the tribulations grow worse."
+      }
+    ]
   }
 ]

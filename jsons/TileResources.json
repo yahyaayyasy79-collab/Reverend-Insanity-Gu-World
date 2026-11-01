@@ -277,5 +277,33 @@
         "text": "Ranked materials (仙材) that refinement consumes. A slain desolate beast yields 20; Treasure Yellow Heaven buys them for essence."
       }
     ]
+  },
+  {
+    "name": "Red Date Immortal Essence",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rank-seven immortal essence (红枣仙元). Blessed lands of rank-seven immortals make it; rank-seven immortal Gu cost it."
+      }
+    ]
+  },
+  {
+    "name": "White Lychee Immortal Essence",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rank-eight immortal essence (白荔仙元), made by grotto-heavens; rank-eight immortal Gu cost it."
+      }
+    ]
   }
 ]

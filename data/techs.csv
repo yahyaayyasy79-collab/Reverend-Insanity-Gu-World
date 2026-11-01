@@ -16,5 +16,9 @@ Rank Four Cultivation,6,3,Killer Moves,
 Purple Crystal Essence,7,3,Rank Four Cultivation,
 Three Qi,8,2,Purple Crystal Essence|Super Clan Commerce|Beast Enslavement,
 Calamity Lore,9,2,Three Qi,
-Dao Comprehension,10,2,Calamity Lore,Can be continually researched
 Immortal Gu Recipes,9,1,Three Qi,
+Red Date Essence,10,2,Calamity Lore,
+Rank Seven Immortal Gu Recipes,10,1,Immortal Gu Recipes,
+Grotto-Heaven,11,2,Red Date Essence,
+Rank Eight Immortal Gu Recipes,11,1,Rank Seven Immortal Gu Recipes|Red Date Essence,
+Dao Comprehension,12,2,Grotto-Heaven|Rank Eight Immortal Gu Recipes,Can be continually researched

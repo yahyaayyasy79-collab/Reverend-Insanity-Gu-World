@@ -103,6 +103,10 @@ rest of the list is what a player or the next session should know before trustin
 15. **Secret realms are not in the game yet (C4).** The twelve natural wonders need the five-region map and tile art;
     inheritances surface anywhere instead of in their canon regions.
 
+16. **High immortals die young in autoplay (C5a).** Half the clans reach rank seven, but by turn 420 most of those
+    immortals are gone (lifespan debt, unprepared tribulations, wars) and rank eight rarely lasts. Canon-like, but a
+    lever if games feel thin at the top: tribulation odds, Lifespan Gu supply.
+
 ## Not yet seen in a real game
 
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
@@ -137,4 +141,5 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Inheritance trial (C4) | `civ addtech <civ> "Calamity Lore"`; `civ activatetrigger "Triggers a [Inheritance Trial] event"` a few times: a won trial puts a seal in the capital and the inheritance appears in the wonder list |
 | Desolate beast | `civ activatetrigger "Triggers a [Desolate Beast Tide] event"`, choose "Hunt it"; kill it for 20 Immortal Materials |
 | Treasure Yellow Heaven | `civ activatetrigger "Triggers a [Treasure Yellow Heaven] event"` |
+| Rank seven and eight (C5a) | With a Rank Six Gu Immortal: `unit addpromotion "Tribulation Survivor"`, `civ addtech <civ> "Red Date Essence"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, `unit setxp 400`, buy Advance to Rank Seven (at home) |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

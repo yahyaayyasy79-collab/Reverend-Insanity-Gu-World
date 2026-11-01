@@ -144,16 +144,16 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [15]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Standard] game speed>` | 1, 8, 15 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [10]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Epic] game speed>` | 1, 8, 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [5]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Marathon] game speed>` | 1, 8, 5 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 2, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 2, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>` | 25 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 2, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 2, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]}] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>` | 50 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Free [Rank Six Gu Immortal] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]}] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>` | 25 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than [30]> <after discovering [Calamity Lore]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 30, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -162,11 +162,13 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 0, 6 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
-| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 0, 6 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 0, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 0, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 0, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Earn [10]% of killed [Ancient Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]` | 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -263,6 +265,34 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Six Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | strength | 85 | data/gu_masters.csv `strength` |
+| Rank Seven Gu Immortal | cost | 330 | data/gu_masters.csv `cost` |
+| Rank Seven Gu Immortal | `[+350]% maintenance costs` | +350 | data/gu_masters.csv `maintenance` |
+| Rank Seven Gu Immortal | `[+15]% Strength <when above [9] [Red Date Immortal Essence]>` | +15, 9 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Seven Gu Immortal | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Seven Gu Immortal | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | strength | 115 | data/gu_masters.csv `strength` |
+| Rank Eight Gu Immortal | cost | 400 | data/gu_masters.csv `cost` |
+| Rank Eight Gu Immortal | `[+400]% maintenance costs` | +400 | data/gu_masters.csv `maintenance` |
+| Rank Eight Gu Immortal | `[+15]% Strength <when above [9] [White Lychee Immortal Essence]>` | +15, 9 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Eight Gu Immortal | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Eight Gu Immortal | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
 | Lightning Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | strength | 9 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | cost | 30 | tools/gen_ruleset.py `Units` |
@@ -277,6 +307,16 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Desolate Beast | cost | 200 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | `[+200]% maintenance costs` | +200 | tools/gen_ruleset.py `Units` |
+| Ancient Desolate Beast | movement | 3 | tools/gen_ruleset.py `Units` |
+| Ancient Desolate Beast | strength | 85 | tools/gen_ruleset.py `Units` |
+| Ancient Desolate Beast | cost | 300 | tools/gen_ruleset.py `Units` |
+| Ancient Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
+| Ancient Desolate Beast | `[+250]% maintenance costs` | +250 | tools/gen_ruleset.py `Units` |
+| Immemorial Desolate Beast | movement | 3 | tools/gen_ruleset.py `Units` |
+| Immemorial Desolate Beast | strength | 115 | tools/gen_ruleset.py `Units` |
+| Immemorial Desolate Beast | cost | 500 | tools/gen_ruleset.py `Units` |
+| Immemorial Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
+| Immemorial Desolate Beast | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | strength | 28 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | cost | 120 | tools/gen_ruleset.py `Units` |
@@ -373,7 +413,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Ascension | `Unavailable <when below [60] [Human Qi]> <for [AI player] Civilizations> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
-| Lower Grade Blessed Land | `Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 9 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 14 | tools/gen_ruleset.py `Promotions` |
@@ -383,7 +424,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
-| Middle Grade Blessed Land | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 4 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 9 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 13 | tools/gen_ruleset.py `Promotions` |
@@ -393,7 +435,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
-| Upper Grade Blessed Land | `Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 8 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 12 | tools/gen_ruleset.py `Promotions` |
@@ -403,7 +446,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
-| Super Grade Blessed Land | `Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 5 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 5 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 5 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 10 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 11 | tools/gen_ruleset.py `Promotions` |
@@ -413,6 +457,36 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 12 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 10 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [15] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>` | 15 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [30] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Tribulation Countdown] status for [34] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>` | 34 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Tribulation Countdown] status for [50] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 50 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Tribulation Countdown] status for [75] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 75 | tools/gen_ruleset.py `Promotions` |
+| Grotto-Heaven Aperture | `[This Unit] gains the [Tribulation Countdown] status for [150] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 150 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Unavailable <when below [40] [Green Grape Immortal Essence]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Unavailable <when below [60] [Green Grape Immortal Essence]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Unavailable <when below [90] [Green Grape Immortal Essence]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Unavailable <when below [180] [Green Grape Immortal Essence]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Instantly consumes [40] [Green Grape Immortal Essence] <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Instantly consumes [60] [Green Grape Immortal Essence] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Instantly consumes [90] [Green Grape Immortal Essence] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Unavailable <when below [60] [Red Date Immortal Essence]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Unavailable <when below [90] [Red Date Immortal Essence]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Unavailable <when below [180] [Red Date Immortal Essence]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Instantly consumes [40] [Red Date Immortal Essence] <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Instantly consumes [60] [Red Date Immortal Essence] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Instantly consumes [90] [Red Date Immortal Essence] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Instantly consumes [180] [Red Date Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
 
 ### Events.json
 
@@ -651,6 +725,9 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Immortal Ascension › Enter the blessed land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Aperture Collapse › Mourn the fallen | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Divert the disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Beckon it to the land's edge | `[This Unit] takes [5] damage` | 5 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Beckon it to the land's edge | `Instantly provides [10] [Immortal Materials]` | 10 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Beckon it to the land's edge | `[+150]% weight to this choice for AI decisions` | +150 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Raise the formation ward | `[This Unit] takes [10] damage` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Raise the formation ward | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Rebuild from the vault | `Unavailable <when below [40] [Gold]>` | 40 | tools/gen_ruleset.py `Events` |
@@ -658,6 +735,14 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Earthly Calamity › Rebuild from the vault | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Unavailable <when below [10] [Green Grape Immortal Essence]>` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Instantly consumes [10] [Green Grape Immortal Essence]` | 10 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[This Unit] takes [15] damage` | 15 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `Unavailable <when below [10] [Red Date Immortal Essence]>` | 10 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `Instantly consumes [10] [Red Date Immortal Essence]` | 10 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[This Unit] takes [15] damage` | 15 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `Unavailable <when below [10] [White Lychee Immortal Essence]>` | 10 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `Instantly consumes [10] [White Lychee Immortal Essence]` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `[This Unit] takes [15] damage` | 15 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Endure it | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
@@ -674,8 +759,24 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heavenly Tribulation › Ward and essence together | `Instantly consumes [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Ward and essence together | `[This Unit] takes [30] damage` | 30 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Ward and essence together | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `Unavailable <when below [30] [Red Date Immortal Essence]>` | 30 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `Instantly consumes [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `[This Unit] takes [30] damage` | 30 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `Unavailable <when below [30] [White Lychee Immortal Essence]>` | 30 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `Instantly consumes [30] [White Lychee Immortal Essence]` | 30 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `[This Unit] takes [30] damage` | 30 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Ward and essence together | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Unavailable <when below [50] [Green Grape Immortal Essence]>` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Instantly consumes [50] [Green Grape Immortal Essence]` | 50 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[This Unit] takes [50] damage` | 50 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `Unavailable <when below [50] [Red Date Immortal Essence]>` | 50 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `Instantly consumes [50] [Red Date Immortal Essence]` | 50 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[This Unit] takes [50] damage` | 50 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `Unavailable <when below [50] [White Lychee Immortal Essence]>` | 50 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `Instantly consumes [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `[This Unit] takes [50] damage` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Face it bare | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
@@ -756,6 +857,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Treasure Yellow Heaven › Sell essence for stones | `Instantly consumes [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Sell essence for stones | `Gain [200] [Gold]` | 200 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Sell essence for stones | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Appraise with treasure light | `Unavailable <when below [150] [Gold]>` | 150 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Appraise with treasure light | `Gain [-150] [Gold]` | -150 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Appraise with treasure light | `Instantly provides [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Appraise with treasure light | `[+150]% weight to this choice for AI decisions` | +150 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Leave the market | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
 
 ### Buildings.json
@@ -829,11 +934,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Spring Autumn Cicada | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Fixed Immortal Travel | `[+1] Movement <for [Rank Six Gu Immortal] units>` | +1 | tools/gen_ruleset.py `Buildings` |
+| Fixed Immortal Travel | `[+1] Movement <for [post-[Rank Five era]] units>` | +1 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Man as Before | `[+20] HP when healing <for [Rank Six Gu Immortal] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Man as Before | `[+20] HP when healing <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Unravel Mystery | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Unravel Mystery | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
@@ -841,7 +946,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Unravel Mystery | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Connect Luck | `[+10]% Strength <for [Rank Six Gu Immortal] units>` | +10 | tools/gen_ruleset.py `Buildings` |
+| Connect Luck | `[+10]% Strength <for [post-[Rank Five era]] units>` | +10 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Self Strength | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Self Strength | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
@@ -853,15 +958,84 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Woman's Heart | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Bone Spike | `[+20]% Strength <when defending> <for [Rank Six Gu Immortal] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Bone Spike | `[+20]% Strength <when defending> <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | cost | 300 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | `Costs [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
-| Star Eyes | `[+2] Sight <for [Rank Six Gu Immortal] units>` | +2 | tools/gen_ruleset.py `Buildings` |
+| Star Eyes | `[+2] Sight <for [post-[Rank Five era]] units>` | +2 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Dragon Strength | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Dragon Strength | `Costs [40] [Red Date Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Dragon Strength | `[+20]% Strength <for units with [Strength Master]>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Dragon Strength | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Year Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Year Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Year Gu | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [3] turns>` | 1, 3 | tools/gen_ruleset.py `Buildings` |
+| Year Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Formation Flag | cost | 400 | tools/gen_ruleset.py `Buildings` |
+| Formation Flag | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Formation Flag | `[+15]% Strength <when adjacent to a [Military] unit> <for [Military] units>` | +15 | tools/gen_ruleset.py `Buildings` |
+| Formation Flag | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Divination Tortoise Shell | cost | 400 | tools/gen_ruleset.py `Buildings` |
+| Divination Tortoise Shell | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Divination Tortoise Shell | `[+10]% [Science] [in all cities]` | +10 | tools/gen_ruleset.py `Buildings` |
+| Divination Tortoise Shell | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Dragon Centipede | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Dragon Centipede | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Dragon Centipede | `[+30]% Strength <vs [Beast] units>` | +30 | tools/gen_ruleset.py `Buildings` |
+| Dragon Centipede | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Reputation Restriction | cost | 360 | tools/gen_ruleset.py `Buildings` |
+| Reputation Restriction | `Costs [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Reputation Restriction | `Earn [20]% of killed [Beast] unit's [Cost] as [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Reputation Restriction | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Calamity Beckoning | cost | 360 | tools/gen_ruleset.py `Buildings` |
+| Calamity Beckoning | `Costs [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Calamity Beckoning | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Change Soul | cost | 360 | tools/gen_ruleset.py `Buildings` |
+| Change Soul | `Costs [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Change Soul | `[+20]% XP gained from combat <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Change Soul | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Dragon Breath | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Dragon Breath | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Dragon Breath | `[+20]% Strength <when attacking> <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Dragon Breath | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Essence Treasure Imperial Lotus | cost | 480 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Essence Treasure Imperial Lotus | `Costs [40] [White Lychee Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Essence Treasure Imperial Lotus | `Instantly provides [1] [White Lychee Immortal Essence] <upon turn start>` | 1 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Essence Treasure Imperial Lotus | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Essence Treasure Imperial Lotus | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Years Flow Like Water | cost | 440 | tools/gen_ruleset.py `Buildings` |
+| Years Flow Like Water | `Costs [40] [White Lychee Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Years Flow Like Water | `Instantly provides [2] [Lifespan Gu] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>` | 2, 5, 9 | tools/gen_ruleset.py `Buildings` |
+| Years Flow Like Water | `Instantly consumes [10] [Green Grape Immortal Essence] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>` | 10, 5, 9 | tools/gen_ruleset.py `Buildings` |
+| Years Flow Like Water | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Dream Token | cost | 440 | tools/gen_ruleset.py `Buildings` |
+| Dream Token | `Costs [40] [White Lychee Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Dream Token | `[+20]% Strength <vs [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
+| Dream Token | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Soul Beast Token | cost | 400 | tools/gen_ruleset.py `Buildings` |
+| Soul Beast Token | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Soul Beast Token | `[4] units cost no maintenance` | 4 | tools/gen_ruleset.py `Buildings` |
+| Soul Beast Token | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Treasure Light Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Treasure Light Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Treasure Light Gu | `[+10]% [Gold] [in all cities]` | +10 | tools/gen_ruleset.py `Buildings` |
+| Treasure Light Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Advance Refinement Gu | cost | 400 | tools/gen_ruleset.py `Buildings` |
+| Advance Refinement Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Advance Refinement Gu | `[+30]% Production when constructing [Immortal Gu] wonders [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
+| Advance Refinement Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Steal Life | cost | 400 | tools/gen_ruleset.py `Buildings` |
+| Steal Life | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Steal Life | `Heals [25] damage if it kills a unit <for [post-[Rank Five era]] units>` | 25 | tools/gen_ruleset.py `Buildings` |
+| Steal Life | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Human Qi Immortal Gu | cost | 400 | tools/gen_ruleset.py `Buildings` |
+| Human Qi Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Human Qi Immortal Gu | `Instantly provides [3] [Human Qi] <upon turn start>` | 3 | tools/gen_ruleset.py `Buildings` |
+| Human Qi Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `Instantly provides [2] [Human Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `[+15]% Strength <for units with [Qi Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
@@ -965,9 +1139,15 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 9 (Calamity Lore, Immortal Gu Recipes) | techCost | 800 | data/tech_columns.csv `techCost` |
 | Column 9 (Calamity Lore, Immortal Gu Recipes) | buildingCost | 320 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 9 (Calamity Lore, Immortal Gu Recipes) | wonderCost | 500 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 10 (Dao Comprehension) | techCost | 950 | data/tech_columns.csv `techCost` |
-| Column 10 (Dao Comprehension) | buildingCost | 360 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 10 (Dao Comprehension) | wonderCost | 550 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 10 (Red Date Essence, Rank Seven Immortal Gu Recipes) | techCost | 1100 | data/tech_columns.csv `techCost` |
+| Column 10 (Red Date Essence, Rank Seven Immortal Gu Recipes) | buildingCost | 400 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 10 (Red Date Essence, Rank Seven Immortal Gu Recipes) | wonderCost | 600 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 11 (Grotto-Heaven, Rank Eight Immortal Gu Recipes) | techCost | 1300 | data/tech_columns.csv `techCost` |
+| Column 11 (Grotto-Heaven, Rank Eight Immortal Gu Recipes) | buildingCost | 440 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 11 (Grotto-Heaven, Rank Eight Immortal Gu Recipes) | wonderCost | 650 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 12 (Dao Comprehension) | techCost | 1500 | data/tech_columns.csv `techCost` |
+| Column 12 (Dao Comprehension) | buildingCost | 480 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 12 (Dao Comprehension) | wonderCost | 700 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 
 ### Policies.json
 
@@ -1201,6 +1381,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Rank Five era | baseUnitBuyCost | 500 | tools/gen_ruleset.py `Eras` |
 | Rank Six era | researchAgreementCost | 550 | tools/gen_ruleset.py `Eras` |
 | Rank Six era | baseUnitBuyCost | 600 | tools/gen_ruleset.py `Eras` |
+| Rank Seven era | researchAgreementCost | 650 | tools/gen_ruleset.py `Eras` |
+| Rank Seven era | baseUnitBuyCost | 700 | tools/gen_ruleset.py `Eras` |
+| Rank Eight era | researchAgreementCost | 750 | tools/gen_ruleset.py `Eras` |
+| Rank Eight era | baseUnitBuyCost | 800 | tools/gen_ruleset.py `Eras` |
 
 ### UnitTypes.json
 
@@ -1215,6 +1399,7 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 | every Master | `[+10]% Strength` | +10 | tools/gen_paths.py `TIER_STRENGTH` |
 | every Grandmaster | `[+15]% Strength` | +15 | tools/gen_paths.py `TIER_STRENGTH` |
 | every Great Grandmaster | `[+20]% Strength` | +20 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Supreme Grandmaster | `[+25]% Strength` | +25 | tools/gen_paths.py `TIER_STRENGTH` |
 | every move | `<costs [+15 Gold] stats> <requires [1] movement>` | +15, 1 | tools/gen_paths.py `MOVE_COST` |
 | every tier | `[+400]% weight to this choice for AI decisions` | +400 | tools/gen_paths.py `TIER_WEIGHT` |
 | signature Masters | AI weight for the clan's signature path | +23133 (share 0.85) | tools/gen_paths.py `SIGNATURE_SHARE` |
@@ -1391,6 +1576,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-1215 numbers listed.
+1400 numbers listed.
 
 <!-- inventory:end -->

@@ -259,7 +259,7 @@
       "Immortal Gu",
       "Space Path",
       "Triggers a [Immortal Gu Refinement] event",
-      "[+1] Movement <for [Rank Six Gu Immortal] units>",
+      "[+1] Movement <for [post-[Rank Five era]] units>",
       "[+300]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -279,7 +279,7 @@
       "Immortal Gu",
       "Time Path",
       "Triggers a [Immortal Gu Refinement] event",
-      "[+20] HP when healing <for [Rank Six Gu Immortal] units>",
+      "[+20] HP when healing <for [post-[Rank Five era]] units>",
       "[+300]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -319,7 +319,7 @@
       "Immortal Gu",
       "Luck Path",
       "Triggers a [Immortal Gu Refinement] event",
-      "[+10]% Strength <for [Rank Six Gu Immortal] units>",
+      "[+10]% Strength <for [post-[Rank Five era]] units>",
       "[+300]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -379,7 +379,7 @@
       "Immortal Gu",
       "Bone Path",
       "Triggers a [Immortal Gu Refinement] event",
-      "[+20]% Strength <when defending> <for [Rank Six Gu Immortal] units>",
+      "[+20]% Strength <when defending> <for [post-[Rank Five era]] units>",
       "[+300]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -399,7 +399,7 @@
       "Immortal Gu",
       "Star Path",
       "Triggers a [Immortal Gu Refinement] event",
-      "[+2] Sight <for [Rank Six Gu Immortal] units>",
+      "[+2] Sight <for [post-[Rank Five era]] units>",
       "[+300]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -424,6 +424,347 @@
     "civilopediaText": [
       {
         "text": "Divert Disaster (排难), rank six, luck path: weakens or turns aside calamities. Its owner's immortals may divert every earthly calamity and heavenly tribulation at no cost. Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
+      }
+    ]
+  },
+  {
+    "name": "Dragon Strength",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [40] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Strength Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20]% Strength <for units with [Strength Master]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dragon Strength (龙力), rank seven, strength path: permanent dragon-grade strength. Strength-path units fight 20% harder. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Year Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Time Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [3] turns>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Year Gu (年蛊), rank seven, time path: stored years. A Lifespan Gu every three turns. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Formation Flag",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 400,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Formation Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+15]% Strength <when adjacent to a [Military] unit> <for [Military] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation Flag (阵旗), rank seven, formation path: stores a whole formation and plants it elsewhere. Military units fight 15% harder beside another. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Divination Tortoise Shell",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 400,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wisdom Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+10]% [Science] [in all cities]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Divination Tortoise Shell (卜卦龟背), rank seven, wisdom path: blocks every deduction about its owner. Heaven's Will cannot find its clan; +10% science. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Dragon Centipede",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Sword Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+30]% Strength <vs [Beast] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dragon Centipede (龙蜈), rank seven, sword path: the world's only one, a wild Gu that hunts ancient desolate beasts. +30% strength against beasts. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Reputation Restriction",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 360,
+    "uniques": [
+      "Costs [30] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Information Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "Earn [20]% of killed [Beast] unit's [Cost] as [Immortal Materials]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Reputation Restriction (名缰), rank seven, information path: a rope that binds even ancient desolate beasts. Slain beasts give immortal materials. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Calamity Beckoning",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 360,
+    "uniques": [
+      "Costs [30] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Luck Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Calamity Beckoning (招灾), rank seven, luck path: draws calamities onto oneself. Its owner's immortals may beckon an earthly calamity to the land's edge and keep what it leaves (10 immortal materials). Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Change Soul",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 360,
+    "uniques": [
+      "Costs [30] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Soul Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20]% XP gained from combat <for [post-[Rank Five era]] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Change Soul (换魂), rank seven, soul path. Your immortals gain 20% more XP in battle. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Dragon Breath",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Transformation Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20]% Strength <when attacking> <for [post-[Rank Five era]] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dragon Breath (龙息), rank seven, transformation path. Your immortals attack 20% harder. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Essence Treasure Imperial Lotus",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 480,
+    "uniques": [
+      "Costs [40] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wood Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "Instantly provides [1] [White Lychee Immortal Essence] <upon turn start>",
+      "Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Essence Treasure Imperial Lotus (天元宝皇莲), rank eight, wood path: Genesis Lotus's core Gu, the one essence source that is a Gu. 1 white lychee and 2 green grape essence a turn. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Years Flow Like Water",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 440,
+    "uniques": [
+      "Costs [40] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Time Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "Instantly provides [2] [Lifespan Gu] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>",
+      "Instantly consumes [10] [Green Grape Immortal Essence] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Years Flow Like Water (似水流年), rank eight, time path: turns immortal essence into years. Every five turns, 10 green grape essence become 2 Lifespan Gu. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Dream Token",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 440,
+    "uniques": [
+      "Costs [40] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Dream Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+20]% Strength <vs [post-[Rank Five era]] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream Token (如梦令), rank eight, dream path: enslaves even rank eights through their dreams. +20% strength against immortals. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Soul Beast Token",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 400,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Enslavement Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[4] units cost no maintenance",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul Beast Token (魂兽令), rank eight, enslavement path: commands soul beasts. Four units cost no upkeep. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Treasure Light Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Light Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+10]% [Gold] [in all cities]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Treasure Light Gu (宝光蛊), rank eight, light path: the light that prices goods at Treasure Yellow Heaven. +10% stones, and a better bargain in the market. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Advance Refinement Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 400,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Refinement Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+30]% Production when constructing [Immortal Gu] wonders [in all cities]",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Advance Refinement Gu (升炼蛊), rank eight, refinement path: raises other Gu's rank. Immortal Gu are built 30% faster. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Steal Life",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 400,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Theft Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "Heals [25] damage if it kills a unit <for [post-[Rank Five era]] units>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Steal Life (偷生), rank eight, theft path: Thieving Heaven's first Gu. An immortal that kills heals 25 HP. Costs essence of its rank on top of production; a captured city keeps it."
+      }
+    ]
+  },
+  {
+    "name": "Human Qi Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 400,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Qi Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "Instantly provides [3] [Human Qi] <upon turn start>",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Human Qi Immortal Gu (人气仙蛊), rank eight, qi path: one of the three qi as a Gu. 3 human qi a turn. Costs essence of its rank on top of production; a captured city keeps it."
       }
     ]
   },

@@ -1343,6 +1343,7 @@ Never appears as a Barbarian unit
 Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
 Unbuildable
 Cannot be purchased
+May upgrade to [Rank Seven Gu Immortal] through ruins-like effects
 [+15]% Strength <when above [9] [Green Grape Immortal Essence]>
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
@@ -1391,7 +1392,8 @@ Triggers a [Ascension] event <for [Rank Five Gu Master] units>
 **Lower Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A lower-grade blessed land (\u4e0b\u7b49\u798f\u5730), the most common: 1 green grape essence and 2 stones a turn."}]})
 
 ```
-Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
+Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
 Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1408,7 +1410,8 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 **Middle Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A middle-grade blessed land (\u4e2d\u7b49\u798f\u5730): 2 green grape essence and 4 stones a turn."}]})
 
 ```
-Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
+Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
 Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1425,7 +1428,8 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 **Upper Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "An upper-grade blessed land (\u4e0a\u7b49\u798f\u5730), rare: 3 green grape essence and 6 stones a turn."}]})
 
 ```
-Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
+Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
 Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1442,7 +1446,8 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 **Super Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A super-grade blessed land (\u7279\u7b49\u798f\u5730), the foundation of a prodigy: 5 green grape essence and 10 stones a turn."}]})
 
 ```
-Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
+Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>
 Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
@@ -1732,6 +1737,15 @@ Only available <if [Divert Disaster] is constructed>
 [+300]% weight to this choice for AI decisions
 ```
 
+* Beckon it to the land's edge
+
+```
+Only available <if [Calamity Beckoning] is constructed>
+[This Unit] takes [5] damage
+Instantly provides [10] [Immortal Materials]
+[+150]% weight to this choice for AI decisions
+```
+
 * Raise the formation ward
 
 ```
@@ -1752,8 +1766,29 @@ Gain [-40] [Gold]
 * Pour essence into the land
 
 ```
+Only available <for [Rank Six Gu Immortal] units>
 Unavailable <when below [10] [Green Grape Immortal Essence]>
 Instantly consumes [10] [Green Grape Immortal Essence]
+[This Unit] takes [15] damage
+[+0]% weight to this choice for AI decisions
+```
+
+* Pour essence into the land
+
+```
+Only available <for [Rank Seven Gu Immortal] units>
+Unavailable <when below [10] [Red Date Immortal Essence]>
+Instantly consumes [10] [Red Date Immortal Essence]
+[This Unit] takes [15] damage
+[+0]% weight to this choice for AI decisions
+```
+
+* Pour essence into the land
+
+```
+Only available <for [Rank Eight Gu Immortal] units>
+Unavailable <when below [10] [White Lychee Immortal Essence]>
+Instantly consumes [10] [White Lychee Immortal Essence]
 [This Unit] takes [15] damage
 [+0]% weight to this choice for AI decisions
 ```
@@ -1796,6 +1831,7 @@ Triggers a [Calamity Toll] event
 
 ```
 Only available <if [Divert Disaster] is constructed>
+[This Unit] gains the [Tribulation Survivor] promotion
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -1803,8 +1839,34 @@ Only available <if [Divert Disaster] is constructed>
 
 ```
 Only available <if [Formation Ward] is constructed>
+Only available <for [Rank Six Gu Immortal] units>
+[This Unit] gains the [Tribulation Survivor] promotion
 Unavailable <when below [30] [Green Grape Immortal Essence]>
 Instantly consumes [30] [Green Grape Immortal Essence]
+[This Unit] takes [30] damage
+[+100]% weight to this choice for AI decisions
+```
+
+* Ward and essence together
+
+```
+Only available <if [Formation Ward] is constructed>
+Only available <for [Rank Seven Gu Immortal] units>
+[This Unit] gains the [Tribulation Survivor] promotion
+Unavailable <when below [30] [Red Date Immortal Essence]>
+Instantly consumes [30] [Red Date Immortal Essence]
+[This Unit] takes [30] damage
+[+100]% weight to this choice for AI decisions
+```
+
+* Ward and essence together
+
+```
+Only available <if [Formation Ward] is constructed>
+Only available <for [Rank Eight Gu Immortal] units>
+[This Unit] gains the [Tribulation Survivor] promotion
+Unavailable <when below [30] [White Lychee Immortal Essence]>
+Instantly consumes [30] [White Lychee Immortal Essence]
 [This Unit] takes [30] damage
 [+100]% weight to this choice for AI decisions
 ```
@@ -1812,9 +1874,33 @@ Instantly consumes [30] [Green Grape Immortal Essence]
 * Pour essence into the land
 
 ```
+Only available <for [Rank Six Gu Immortal] units>
 Unavailable <when below [50] [Green Grape Immortal Essence]>
 Instantly consumes [50] [Green Grape Immortal Essence]
 [This Unit] takes [50] damage
+[This Unit] gains the [Tribulation Survivor] promotion
+[+0]% weight to this choice for AI decisions
+```
+
+* Pour essence into the land
+
+```
+Only available <for [Rank Seven Gu Immortal] units>
+Unavailable <when below [50] [Red Date Immortal Essence]>
+Instantly consumes [50] [Red Date Immortal Essence]
+[This Unit] takes [50] damage
+[This Unit] gains the [Tribulation Survivor] promotion
+[+0]% weight to this choice for AI decisions
+```
+
+* Pour essence into the land
+
+```
+Only available <for [Rank Eight Gu Immortal] units>
+Unavailable <when below [50] [White Lychee Immortal Essence]>
+Instantly consumes [50] [White Lychee Immortal Essence]
+[This Unit] takes [50] damage
+[This Unit] gains the [Tribulation Survivor] promotion
 [+0]% weight to this choice for AI decisions
 ```
 
@@ -1842,6 +1928,7 @@ Triggers a [Tribulation Toll] event
 [This Unit] gains the [Ravaged Land] status for [15] turn(s) <on [Epic] game speed>
 [This Unit] gains the [Ravaged Land] status for [30] turn(s) <on [Marathon] game speed>
 [This Unit] takes [50] damage
+[This Unit] gains the [Tribulation Survivor] promotion
 [+0]% weight to this choice for AI decisions
 ```
 
@@ -1849,6 +1936,7 @@ Triggers a [Tribulation Toll] event
 
 ```
 [This Unit] takes [30] damage
+[This Unit] gains the [Tribulation Survivor] promotion
 [-33]% weight to this choice for AI decisions
 ```
 
@@ -1904,14 +1992,14 @@ Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Ma
 Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [15]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Standard] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [10]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Epic] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <for every [8] [Owned [Marsh] Tiles]> <with [5]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations> <on [Marathon] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
-Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more than [2]> <if [Divination Tortoise Shell] is not constructed> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```
 
 
@@ -1970,7 +2058,7 @@ Never destroyed when the city is captured
 Immortal Gu
 Space Path
 Triggers a [Immortal Gu Refinement] event
-[+1] Movement <for [Rank Six Gu Immortal] units>
+[+1] Movement <for [post-[Rank Five era]] units>
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -1982,7 +2070,7 @@ Never destroyed when the city is captured
 Immortal Gu
 Time Path
 Triggers a [Immortal Gu Refinement] event
-[+20] HP when healing <for [Rank Six Gu Immortal] units>
+[+20] HP when healing <for [post-[Rank Five era]] units>
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -2006,7 +2094,7 @@ Never destroyed when the city is captured
 Immortal Gu
 Luck Path
 Triggers a [Immortal Gu Refinement] event
-[+10]% Strength <for [Rank Six Gu Immortal] units>
+[+10]% Strength <for [post-[Rank Five era]] units>
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -2042,7 +2130,7 @@ Never destroyed when the city is captured
 Immortal Gu
 Bone Path
 Triggers a [Immortal Gu Refinement] event
-[+20]% Strength <when defending> <for [Rank Six Gu Immortal] units>
+[+20]% Strength <when defending> <for [post-[Rank Five era]] units>
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -2054,7 +2142,7 @@ Never destroyed when the city is captured
 Immortal Gu
 Star Path
 Triggers a [Immortal Gu Refinement] event
-[+2] Sight <for [Rank Six Gu Immortal] units>
+[+2] Sight <for [post-[Rank Five era]] units>
 [+300]% weight to this choice for AI decisions
 ```
 
@@ -2088,8 +2176,8 @@ Triggers a [Immortal Gu Refinement] event
 **GlobalUniques**
 
 ```
-Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>
-Free [Rank Six Gu Immortal] appears <upon losing a [Rank Six Gu Immortal] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>
+Free [Rank Six Gu Immortal] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]}] unit> <if [Spring Autumn Cicada] is constructed> <with [50]% chance>
+Free [Rank Six Gu Immortal] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]}] unit> <if [Connect Luck] is constructed> <if [Spring Autumn Cicada] is constructed> <with [25]% chance>
 ```
 
 
@@ -2467,7 +2555,9 @@ Triggers a [Inheritance Won] event
 * Hunt it for its corpse
 
 ```
-A [Desolate Beast] rebels
+A [Desolate Beast] rebels <before the [Rank Seven era]>
+A [Ancient Desolate Beast] rebels <during the [Rank Seven era]>
+A [Immemorial Desolate Beast] rebels <starting from the [Rank Eight era]>
 [+50]% weight to this choice for AI decisions
 ```
 
@@ -2526,6 +2616,16 @@ Gain [200] [Gold]
 [+0]% weight to this choice for AI decisions
 ```
 
+* Appraise with treasure light
+
+```
+Only available <if [Treasure Light Gu] is constructed>
+Unavailable <when below [150] [Gold]>
+Gain [-150] [Gold]
+Instantly provides [35] [Green Grape Immortal Essence]
+[+150]% weight to this choice for AI decisions
+```
+
 * Leave the market
 
 ```
@@ -2550,9 +2650,384 @@ Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Thr
 Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
 Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
-Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>
-Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>
-Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>
-Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [6]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [4]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [3]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[post-[Rank Five era]] Units] is more than [0]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 Earn [10]% of killed [Desolate Beast] unit's [Cost] as [Immortal Materials]
+Earn [10]% of killed [Ancient Desolate Beast] unit's [Cost] as [Immortal Materials]
+Earn [10]% of killed [Immemorial Desolate Beast] unit's [Cost] as [Immortal Materials]
+```
+
+
+## Phase C5a: ranks seven and eight, grotto-heavens, rank 7–8 immortal Gu (built 2026-11-01)
+
+MOD_SPEC_2 Phase C, fifth layer, first half. The other half (C5b: the arc's nations, Fate Gu and the Fate War, Gu
+Houses, the Venerable and Eternal Life) follows.
+
+* **Eras Rank Seven** (red date, R V4/141) and **Rank Eight** (white lychee, R V5/613); techs Red Date Essence, Rank
+  Seven and Rank Eight Immortal Gu Recipes, Grotto-Heaven; Dao Comprehension moves to column 12.
+* **Climbing a rank** (R V4/177: three hundred aperture-years of calamities lie between rank six and seven): every
+  survived heavenly tribulation marks the immortal **Tribulation Survivor**; a kept promotion, **Advance to Rank
+  Seven** (or Eight), opens for a survivor at home after its tech, pays 60 essence of its current rank (scaled per
+  speed), drops the mark and upgrades the unit through the special upgrade (C1's route, with C3's crash guard). So each
+  rank waits for one more tribulation. The one-turn **Advancing** status keeps the upgrade from counting as a lost
+  immortal for Spring Autumn Cicada (E9: losing a unit also fires on upgrade).
+* **Rank Seven Gu Immortal** (strength 85) keeps its blessed land, which now makes **red date essence**; **Rank Eight
+  Gu Immortal** (115) trades the blessed land for a **Grotto-Heaven Aperture** (3 white lychee essence and 12 stones a
+  turn; calamities every 10 turns, tribulations every 50). Both burn Lifespan Gu like rank six.
+* **Seventeen rank-seven and rank-eight immortal Gu** (data/immortal_gu.csv), bought with red date or white lychee
+  essence, with the table's effects; Divination Tortoise Shell hides its clan from Heaven's Will, Calamity Beckoning
+  adds a profitable calamity choice, Treasure Light Gu a better market bargain. Every immortal-Gu effect that named
+  rank six now covers every immortal (post-[Rank Five era] units).
+* **Supreme Grandmaster** (无上大宗师), tier four of all 47 paths: rank eight, +25% strength; the space path's also
+  passes through impassable tiles (a permanent promotion, never a status).
+* **Ancient** (strength 85) and **Immemorial Desolate Beasts** (115) replace the desolate beast in the tides of the
+  Rank Seven and Rank Eight eras; their corpses give 30 and 50 immortal materials.
+* Art: both immortals and both beasts as 3D sprites with portraits and attack effects, 17 immortal Gu, four techs,
+  two essences, five promotions, 47 Supreme Grandmaster icons; the immortal tiers moved to their own atlas (Arc.png).
+
+Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers are in docs/PATHS.md):
+
+**Dragon Strength** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 420, "civilopediaText": [{"text": "Dragon Strength (\u9f99\u529b), rank seven, strength path: permanent dragon-grade strength. Strength-path units fight 20% harder. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [40] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Strength Path
+Triggers a [Immortal Gu Refinement] event
+[+20]% Strength <for units with [Strength Master]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Year Gu** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 380, "civilopediaText": [{"text": "Year Gu (\u5e74\u86ca), rank seven, time path: stored years. A Lifespan Gu every three turns. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Time Path
+Triggers a [Immortal Gu Refinement] event
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [3] turns>
+[+300]% weight to this choice for AI decisions
+```
+
+**Formation Flag** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 400, "civilopediaText": [{"text": "Formation Flag (\u9635\u65d7), rank seven, formation path: stores a whole formation and plants it elsewhere. Military units fight 15% harder beside another. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Formation Path
+Triggers a [Immortal Gu Refinement] event
+[+15]% Strength <when adjacent to a [Military] unit> <for [Military] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Divination Tortoise Shell** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 400, "civilopediaText": [{"text": "Divination Tortoise Shell (\u535c\u5366\u9f9f\u80cc), rank seven, wisdom path: blocks every deduction about its owner. Heaven's Will cannot find its clan; +10% science. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Wisdom Path
+Triggers a [Immortal Gu Refinement] event
+[+10]% [Science] [in all cities]
+[+300]% weight to this choice for AI decisions
+```
+
+**Dragon Centipede** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 380, "civilopediaText": [{"text": "Dragon Centipede (\u9f99\u8708), rank seven, sword path: the world's only one, a wild Gu that hunts ancient desolate beasts. +30% strength against beasts. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Sword Path
+Triggers a [Immortal Gu Refinement] event
+[+30]% Strength <vs [Beast] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Reputation Restriction** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Reputation Restriction (\u540d\u7f30), rank seven, information path: a rope that binds even ancient desolate beasts. Slain beasts give immortal materials. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [30] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Information Path
+Triggers a [Immortal Gu Refinement] event
+Earn [20]% of killed [Beast] unit's [Cost] as [Immortal Materials]
+[+300]% weight to this choice for AI decisions
+```
+
+**Calamity Beckoning** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Calamity Beckoning (\u62db\u707e), rank seven, luck path: draws calamities onto oneself. Its owner's immortals may beckon an earthly calamity to the land's edge and keep what it leaves (10 immortal materials). Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [30] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Luck Path
+Triggers a [Immortal Gu Refinement] event
+[+300]% weight to this choice for AI decisions
+```
+
+**Change Soul** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 360, "civilopediaText": [{"text": "Change Soul (\u6362\u9b42), rank seven, soul path. Your immortals gain 20% more XP in battle. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [30] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Soul Path
+Triggers a [Immortal Gu Refinement] event
+[+20]% XP gained from combat <for [post-[Rank Five era]] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Dragon Breath** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Seven Immortal Gu Recipes", "cost": 380, "civilopediaText": [{"text": "Dragon Breath (\u9f99\u606f), rank seven, transformation path. Your immortals attack 20% harder. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [Red Date Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Transformation Path
+Triggers a [Immortal Gu Refinement] event
+[+20]% Strength <when attacking> <for [post-[Rank Five era]] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Heavenly Essence Treasure Imperial Lotus** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 480, "civilopediaText": [{"text": "Heavenly Essence Treasure Imperial Lotus (\u5929\u5143\u5b9d\u7687\u83b2), rank eight, wood path: Genesis Lotus's core Gu, the one essence source that is a Gu. 1 white lychee and 2 green grape essence a turn. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [40] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Wood Path
+Triggers a [Immortal Gu Refinement] event
+Instantly provides [1] [White Lychee Immortal Essence] <upon turn start>
+Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>
+[+300]% weight to this choice for AI decisions
+```
+
+**Years Flow Like Water** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 440, "civilopediaText": [{"text": "Years Flow Like Water (\u4f3c\u6c34\u6d41\u5e74), rank eight, time path: turns immortal essence into years. Every five turns, 10 green grape essence become 2 Lifespan Gu. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [40] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Time Path
+Triggers a [Immortal Gu Refinement] event
+Instantly provides [2] [Lifespan Gu] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>
+Instantly consumes [10] [Green Grape Immortal Essence] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>
+[+300]% weight to this choice for AI decisions
+```
+
+**Dream Token** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 440, "civilopediaText": [{"text": "Dream Token (\u5982\u68a6\u4ee4), rank eight, dream path: enslaves even rank eights through their dreams. +20% strength against immortals. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [40] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Dream Path
+Triggers a [Immortal Gu Refinement] event
+[+20]% Strength <vs [post-[Rank Five era]] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Soul Beast Token** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 400, "civilopediaText": [{"text": "Soul Beast Token (\u9b42\u517d\u4ee4), rank eight, enslavement path: commands soul beasts. Four units cost no upkeep. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Enslavement Path
+Triggers a [Immortal Gu Refinement] event
+[4] units cost no maintenance
+[+300]% weight to this choice for AI decisions
+```
+
+**Treasure Light Gu** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 380, "civilopediaText": [{"text": "Treasure Light Gu (\u5b9d\u5149\u86ca), rank eight, light path: the light that prices goods at Treasure Yellow Heaven. +10% stones, and a better bargain in the market. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Light Path
+Triggers a [Immortal Gu Refinement] event
+[+10]% [Gold] [in all cities]
+[+300]% weight to this choice for AI decisions
+```
+
+**Advance Refinement Gu** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 400, "civilopediaText": [{"text": "Advance Refinement Gu (\u5347\u70bc\u86ca), rank eight, refinement path: raises other Gu's rank. Immortal Gu are built 30% faster. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Refinement Path
+Triggers a [Immortal Gu Refinement] event
+[+30]% Production when constructing [Immortal Gu] wonders [in all cities]
+[+300]% weight to this choice for AI decisions
+```
+
+**Steal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 400, "civilopediaText": [{"text": "Steal Life (\u5077\u751f), rank eight, theft path: Thieving Heaven's first Gu. An immortal that kills heals 25 HP. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Theft Path
+Triggers a [Immortal Gu Refinement] event
+Heals [25] damage if it kills a unit <for [post-[Rank Five era]] units>
+[+300]% weight to this choice for AI decisions
+```
+
+**Human Qi Immortal Gu** (Buildings.json; {"isWonder": true, "requiredTech": "Rank Eight Immortal Gu Recipes", "cost": 400, "civilopediaText": [{"text": "Human Qi Immortal Gu (\u4eba\u6c14\u4ed9\u86ca), rank eight, qi path: one of the three qi as a Gu. 3 human qi a turn. Costs essence of its rank on top of production; a captured city keeps it."}]})
+
+```
+Costs [35] [White Lychee Immortal Essence]
+Never destroyed when the city is captured
+Immortal Gu
+Qi Path
+Triggers a [Immortal Gu Refinement] event
+Instantly provides [3] [Human Qi] <upon turn start>
+[+300]% weight to this choice for AI decisions
+```
+
+**Rank Seven Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 85, "cost": 330, "requiredTech": "Red Date Essence", "attackSound": "throw", "civilopediaText": [{"text": "A rank-seven Gu Immortal (\u4e03\u8f6c\u86ca\u4ed9). Its blessed land makes red date essence; with more than nine of it in store it fights harder."}]})
+
+```
+[+350]% maintenance costs
+Never appears as a Barbarian unit
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Unbuildable
+Cannot be purchased
+May upgrade to [Rank Eight Gu Immortal] through ruins-like effects
+[+15]% Strength <when above [9] [Red Date Immortal Essence]>
+[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
+Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
+Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Can only heal by pillaging <when below [1] [Lifespan Gu]>
+[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
+```
+
+**Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 115, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "throw", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
+
+```
+[+400]% maintenance costs
+Never appears as a Barbarian unit
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Unbuildable
+Cannot be purchased
+[+15]% Strength <when above [9] [White Lychee Immortal Essence]>
+[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
+Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
+Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Can only heal by pillaging <when below [1] [Lifespan Gu]>
+[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
+```
+
+**Ancient Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 85, "cost": 300, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An ancient desolate beast (\u4e0a\u53e4\u8352\u517d), about rank seven. Beast tides bring it in the Rank Seven era; its corpse yields 30 immortal materials."}]})
+
+```
+Unbuildable
+[+15]% Strength <when defending>
+[+250]% maintenance costs
+```
+
+**Immemorial Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An immemorial desolate beast (\u592a\u53e4\u8352\u517d), about rank eight; one killed a rank-seven immortal of the Heavenly Court. Its corpse yields 50 immortal materials."}]})
+
+```
+Unbuildable
+[+15]% Strength <when defending>
+[+300]% maintenance costs
+```
+
+**Tribulation Survivor** (UnitPromotions.json; {"civilopediaText": [{"text": "This immortal came through a heavenly tribulation and may climb to the next rank."}]})
+
+```
+Comment [Survived a heavenly tribulation: may climb to the next rank]
+```
+
+**Advancing** (UnitPromotions.json; {"civilopediaText": [{"text": "A one-turn mark while the immortal climbs a rank."}]})
+
+```
+Comment [Climbing to the next rank]
+```
+
+**Grotto-Heaven Aperture** (UnitPromotions.json; {"civilopediaText": [{"text": "A grotto-heaven (\u6d1e\u5929): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50."}]})
+
+```
+Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
+Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>
+[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
+[This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
+[This Unit] gains the [Calamity Countdown] status for [15] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
+[This Unit] gains the [Calamity Countdown] status for [30] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>
+Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>
+[This Unit] gains the [Tribulation Countdown] status for [34] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [50] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [75] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [150] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>
+Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
+```
+
+**Advance to Rank Seven** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank seven: needs a survived heavenly tribulation and 60 green grape essence, at home."}]})
+
+```
+Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>
+Unavailable <in [Foreign Land] tiles>
+Unavailable <when below [40] [Green Grape Immortal Essence]> <on [Quick] game speed>
+Unavailable <when below [60] [Green Grape Immortal Essence]> <on [Standard] game speed>
+Unavailable <when below [90] [Green Grape Immortal Essence]> <on [Epic] game speed>
+Unavailable <when below [180] [Green Grape Immortal Essence]> <on [Marathon] game speed>
+Instantly consumes [40] [Green Grape Immortal Essence] <on [Quick] game speed>
+Instantly consumes [60] [Green Grape Immortal Essence] <on [Standard] game speed>
+Instantly consumes [90] [Green Grape Immortal Essence] <on [Epic] game speed>
+Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game speed>
+[This Unit] loses the [Tribulation Survivor] promotion
+[This Unit] loses the [Advance to Rank Seven] promotion
+[This Unit] gains the [Advancing] status for [1] turn(s)
+[This Unit] upgrades for free including special upgrades
+[+200]% weight to this choice for AI decisions
+```
+
+**Advance to Rank Eight** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank eight: needs another survived tribulation and 60 red date essence, at home. The blessed land becomes a grotto-heaven."}]})
+
+```
+Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>
+Unavailable <in [Foreign Land] tiles>
+Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>
+Unavailable <when below [60] [Red Date Immortal Essence]> <on [Standard] game speed>
+Unavailable <when below [90] [Red Date Immortal Essence]> <on [Epic] game speed>
+Unavailable <when below [180] [Red Date Immortal Essence]> <on [Marathon] game speed>
+Instantly consumes [40] [Red Date Immortal Essence] <on [Quick] game speed>
+Instantly consumes [60] [Red Date Immortal Essence] <on [Standard] game speed>
+Instantly consumes [90] [Red Date Immortal Essence] <on [Epic] game speed>
+Instantly consumes [180] [Red Date Immortal Essence] <on [Marathon] game speed>
+[This Unit] loses the [Tribulation Survivor] promotion
+[This Unit] loses the [Advance to Rank Eight] promotion
+[This Unit] gains the [Advancing] status for [1] turn(s)
+[This Unit] loses the [Lower Grade Blessed Land] promotion
+[This Unit] loses the [Middle Grade Blessed Land] promotion
+[This Unit] loses the [Upper Grade Blessed Land] promotion
+[This Unit] loses the [Super Grade Blessed Land] promotion
+[This Unit] gains the [Grotto-Heaven Aperture] promotion
+[This Unit] upgrades for free including special upgrades
+[+200]% weight to this choice for AI decisions
+```
+
+**Red Date Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-seven immortal essence (\u7ea2\u67a3\u4ed9\u5143). Blessed lands of rank-seven immortals make it; rank-seven immortal Gu cost it."}]})
+
+```
+Stockpiled
+Cannot be traded
 ```

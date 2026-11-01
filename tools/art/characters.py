@@ -7,7 +7,8 @@ import math
 
 from .render3d import Scene
 
-ESSENCE = {1: "essence1", 2: "essence2", 3: "essence3", 4: "essence4", 5: "essence5", 6: "essence6"}
+ESSENCE = {1: "essence1", 2: "essence2", 3: "essence3", 4: "essence4", 5: "essence5", 6: "essence6", 7: "essence7",
+           8: "essence8"}
 
 
 def _arm(s: Scene, side, shoulder, elbow, hand, r_upper=0.075, r_fore=0.065, sleeve=None, hand_r=0.07):
@@ -237,38 +238,41 @@ def wind_frame(i, rank):
     return s
 
 
-def desolate_beast():
-    """MOD_SPEC_2 C4: a desolate beast (荒兽): a hill-shouldered horned brute, dark hide, ember eyes, bone plates."""
+def desolate_beast(k=1.35, hide="hide", dark="hide_dark"):
+    """MOD_SPEC_2 C4: a desolate beast (荒兽): a hill-shouldered horned brute, dark hide, ember eyes, bone plates (C5: the
+    ancient one larger and red, the immemorial one larger still and pale)."""
     s = Scene()
-    k = 1.35
-    s.add("ellipsoid", (0, 0.62 * k, -0.1 * k), (0.32 * k, 0.3 * k, 0.55 * k), mat="hide")                      # body
-    s.add("ellipsoid", (0, 0.72 * k, 0.32 * k), (0.34 * k, 0.34 * k, 0.3 * k), mat="hide", blend=0.12 * k)      # hump
-    s.add("sphere", (0, 0.72 * k, 0.66 * k), 0.19 * k, mat="hide", blend=0.08 * k)                              # head
-    s.add("cone", (0, 0.66 * k, 0.76 * k), (0, 0.6 * k, 0.98 * k), 0.12 * k, 0.07 * k, mat="hide_dark", blend=0.04 * k)
+    s.add("ellipsoid", (0, 0.62 * k, -0.1 * k), (0.32 * k, 0.3 * k, 0.55 * k), mat=hide)                      # body
+    s.add("ellipsoid", (0, 0.72 * k, 0.32 * k), (0.34 * k, 0.34 * k, 0.3 * k), mat=hide, blend=0.12 * k)      # hump
+    s.add("sphere", (0, 0.72 * k, 0.66 * k), 0.19 * k, mat=hide, blend=0.08 * k)                              # head
+    s.add("cone", (0, 0.66 * k, 0.76 * k), (0, 0.6 * k, 0.98 * k), 0.12 * k, 0.07 * k, mat=dark, blend=0.04 * k)
     for side in (-1, 1):
         s.add("cone", (side * 0.12 * k, 0.84 * k, 0.6 * k), (side * 0.42 * k, 1.12 * k, 0.5 * k), 0.06 * k, 0.012, mat="bone")  # horns
         s.add("sphere", (side * 0.09 * k, 0.78 * k, 0.8 * k), 0.03 * k, mat="ember")
         for z in (0.3, -0.45):
             top = (side * 0.2 * k, 0.55 * k, z * k)
             paw = (side * 0.22 * k, 0.05, (z + 0.04) * k)
-            s.add("capsule", top, paw, 0.1 * k, mat="hide_dark", blend=0.05 * k)
+            s.add("capsule", top, paw, 0.1 * k, mat=dark, blend=0.05 * k)
     for i in range(4):                                                                                           # spine plates
         z = 0.35 - 0.25 * i
         s.add("cone", (0, 0.92 * k, z * k), (0, 1.15 * k, (z - 0.08) * k), 0.07 * k, 0.01, mat="bone")
-    s.add("cone", (0, 0.62 * k, -0.62 * k), (0, 0.4 * k, -1.0 * k), 0.12 * k, 0.04 * k, mat="hide", blend=0.05 * k)
+    s.add("cone", (0, 0.62 * k, -0.62 * k), (0, 0.4 * k, -1.0 * k), 0.12 * k, 0.04 * k, mat=hide, blend=0.05 * k)
     return s
 
 
-def gu_immortal():
-    """MOD_SPEC_2 C1: a rank-six Gu Immortal standing on a cloud, a halo of green grape essence behind the head and an
-    essence orb over the palm."""
+def gu_immortal(rank=6):
+    """MOD_SPEC_2 C1: a Gu Immortal standing on a cloud, a halo of its rank's essence over the head and an essence orb
+    over the palm (rank six green grape; C5: rank seven red date, rank eight white lychee with a second halo)."""
+    mat = ESSENCE[rank]
     s = Scene()
     cultivator(s, height=1.04, build=1.0, robe=True, bun=True, pose="cast")
     for x, y, z, r in ((-0.55, 0.08, 0.15, 0.24), (-0.22, 0.12, 0.3, 0.3), (0.18, 0.1, 0.32, 0.3), (0.55, 0.06, 0.12, 0.24),
                        (0.0, 0.05, -0.25, 0.32)):
         s.add("sphere", (x, y, z), r, mat="cloud", blend=0.1)
-    s.add("torus", (0, 2.02, -0.05), 0.2, 0.022, mat="essence6")
-    s.add("sphere", (0.36, 1.45, 0.5), 0.13, mat="essence6")
+    s.add("torus", (0, 2.02, -0.05), 0.2, 0.022, mat=mat)
+    if rank >= 8:
+        s.add("torus", (0, 2.12, -0.05), 0.27, 0.018, mat=mat)
+    s.add("sphere", (0.36, 1.45, 0.5), 0.13 + 0.01 * (rank - 6), mat=mat)
     return s
 
 
@@ -298,6 +302,10 @@ UNITS = {
     "Bold Lightning Wolf": lambda: wolf(1.05, mane=True),
     "Thunder Crown Wolf": lambda: wolf(1.25, mane=True, crown=True),
     "Desolate Beast": desolate_beast,
+    "Ancient Desolate Beast": lambda: desolate_beast(1.5, "hide_red", "hide_dark"),
+    "Immemorial Desolate Beast": lambda: desolate_beast(1.65, "hide_pale", "hide_red"),
+    "Rank Seven Gu Immortal": lambda: gu_immortal(7),
+    "Rank Eight Gu Immortal": lambda: gu_immortal(8),
 }
 
 # attack frames per unit name (Unciv plays them over the unit that takes damage)
@@ -318,6 +326,10 @@ ATTACKS = {
     "Bold Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Thunder Crown Wolf": [lambda i=i: lightning_frame(i, crown=True) for i in range(4)],
     "Desolate Beast": [lambda i=i: essence_frame(i, 5) for i in range(3)],
+    "Ancient Desolate Beast": [lambda i=i: essence_frame(i, 7) for i in range(3)],
+    "Immemorial Desolate Beast": [lambda i=i: essence_frame(i, 8) for i in range(3)],
+    "Rank Seven Gu Immortal": [lambda i=i: essence_frame(i, 7) for i in range(4)],
+    "Rank Eight Gu Immortal": [lambda i=i: essence_frame(i, 8) for i in range(4)],
 }
 
 # portraits are single images (no civ tint): the robe takes the path's colour
@@ -328,5 +340,6 @@ PORTRAIT_ROBE = {"Clan Settler": (120, 92, 64), "Mortal Laborer": (140, 110, 80)
                  **{f"Rank {w} {who}Gu Master": col for w in ("Two", "Three", "Four")
                     for who, col in (("", (90, 90, 100)), ("Gu Yue ", (40, 60, 130)), ("Bai ", (40, 110, 150)),
                                      ("Xiong ", (110, 60, 30)), ("Wu ", (60, 120, 95)))},
-                 "Rank Five Gu Master": (110, 70, 150), "Rank Six Gu Immortal": (90, 140, 70)}
+                 "Rank Five Gu Master": (110, 70, 150), "Rank Six Gu Immortal": (90, 140, 70),
+                 "Rank Seven Gu Immortal": (140, 50, 45), "Rank Eight Gu Immortal": (200, 196, 182)}
 PORTRAIT_TRIM = (225, 215, 190)

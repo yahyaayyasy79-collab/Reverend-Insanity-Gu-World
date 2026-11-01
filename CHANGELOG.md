@@ -502,3 +502,23 @@
 * Not built yet: the 12 secret realms (they need the five-region map) and the 88 True Yang Building (Huang Jin, C5).
 * Autoplay (8 × 330, Prince): 0 crashes; per clan 1.5 seals won, 0.44 inheritances built (1.75 per game), 1.1
   immortal Gu, 24 immortal materials, 1.4 immortals at the end; 5 of 32 clans in debt at the end.
+
+## MOD_SPEC_2 C5a — ranks seven and eight, grotto-heavens, rank 7–8 immortal Gu (2026-11-01)
+
+* Eras **Rank Seven** and **Rank Eight**; techs Red Date Essence, Rank Seven and Rank Eight Immortal Gu Recipes,
+  Grotto-Heaven (Dao Comprehension moves to column 12).
+* **Rank Seven Gu Immortal** (85) and **Rank Eight Gu Immortal** (115): an immortal that survived a heavenly
+  tribulation (**Tribulation Survivor**) may buy **Advance to Rank Seven/Eight** at home for 60 essence of its rank.
+  The rank-seven blessed land makes **red date essence**; at rank eight it becomes a **Grotto-Heaven Aperture**
+  (**white lychee essence**, 12 stones, faster calamities). Calamity and tribulation choices pour the immortal's own
+  rank of essence.
+* **Seventeen rank-seven and rank-eight immortal Gu** (Dragon Strength, Year Gu, Formation Flag, Divination Tortoise
+  Shell, Dragon Centipede, Reputation Restriction, Calamity Beckoning, Change Soul, Dragon Breath, Heavenly Essence
+  Treasure Imperial Lotus, Years Flow Like Water, Dream Token, Soul Beast Token, Treasure Light Gu, Advance Refinement
+  Gu, Steal Life, Human Qi Immortal Gu); immortal-Gu effects now cover every immortal rank.
+* **Supreme Grandmaster** tier for the 47 paths (rank eight, +25%; space walks through impassable tiles).
+* **Ancient** and **Immemorial Desolate Beasts** in the later eras' tides.
+* Art: both immortals and both beasts in 3D, 17 immortal Gu, techs, essences, promotions, 47 Supreme Grandmaster
+  icons; a fourth atlas (Arc.png) for the immortal tiers.
+* Autoplay (8 × 420, Prince): 0 crashes; rank seven reached by 15 of 32 clans (first at T255), rank eight by 2 (T322);
+  at T420, 1.1 rank-six and 0.19 rank-seven immortals per clan, 2.2 immortal Gu; 9 of 32 clans in debt.

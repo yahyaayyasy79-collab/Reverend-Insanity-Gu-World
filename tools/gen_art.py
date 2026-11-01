@@ -81,12 +81,18 @@ def main(argv: list[str]) -> int:
     # the path promotions (several hundred icons) get their own atlas, Paths.png: with the other icons they spilled into a
     # second game texture (game2.png)
     path_icons = {(folder, name) for folder, name, _, _ in pathart.icons()}
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons():
+    # the immortal tiers and moves (MOD_SPEC_2 C3/C5) overflowed Paths.png in turn: a third atlas, Arc.png
+    import gen_paths
+    arc_names = {m for p in gen_paths.PATHS for m in (p["immortal"], gen_paths.tier_name(p, 2), gen_paths.tier_name(p, 3))}
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons():
         if (folder, name) in path_icons:
             stale = images / folder / f"{name}.png"
             if stale.exists() and ours(stale):
                 stale.unlink()
-            target = args.mod / "Images.Paths" / folder / f"{name}.png"
+            target = args.mod / ("Images.Arc" if name in arc_names else "Images.Paths") / folder / f"{name}.png"
+            other = args.mod / ("Images.Paths" if name in arc_names else "Images.Arc") / folder / f"{name}.png"
+            if other.exists() and ours(other):
+                other.unlink()
         else:
             target = images / folder / f"{name}.png"
         im = draw().image(INK[ink])
@@ -112,7 +118,7 @@ def main(argv: list[str]) -> int:
     # UI portraits, and per-unit attack effects (played over the unit that takes the damage)
     units = tiles
     for name, build in characters.UNITS.items():
-        wolf = "Wolf" in name or name == "Desolate Beast"
+        wolf = "Wolf" in name or "Desolate Beast" in name
         frame = dict(size=(128, 110), scale=3.4 if wolf else 4.4, center=(0.0, 0.7 if wolf else 0.95))
         out = render3d.render(build(), **frame)
         for suffix, key in (("", "base"), ("-1", "layer1"), ("-2", "layer2")):

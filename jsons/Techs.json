@@ -311,16 +311,84 @@
   },
   {
     "columnNumber": 10,
-    "era": "Rank Six era",
-    "techCost": 950,
-    "buildingCost": 360,
-    "wonderCost": 550,
+    "era": "Rank Seven era",
+    "techCost": 1100,
+    "buildingCost": 400,
+    "wonderCost": 600,
+    "techs": [
+      {
+        "name": "Red Date Essence",
+        "row": 2,
+        "prerequisites": [
+          "Calamity Lore"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Rank-seven essence (红枣仙元). An immortal that has survived a heavenly tribulation may climb to rank seven for 60 green grape essence."
+          }
+        ]
+      },
+      {
+        "name": "Rank Seven Immortal Gu Recipes",
+        "row": 1,
+        "prerequisites": [
+          "Immortal Gu Recipes"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Recipes for rank-seven immortal Gu, bought with red date essence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 11,
+    "era": "Rank Eight era",
+    "techCost": 1300,
+    "buildingCost": 440,
+    "wonderCost": 650,
+    "techs": [
+      {
+        "name": "Grotto-Heaven",
+        "row": 2,
+        "prerequisites": [
+          "Red Date Essence"
+        ],
+        "civilopediaText": [
+          {
+            "text": "The rank-eight aperture (洞天). A rank-seven immortal that has survived another tribulation may climb to rank eight for 60 red date essence; its blessed land becomes a grotto-heaven."
+          }
+        ]
+      },
+      {
+        "name": "Rank Eight Immortal Gu Recipes",
+        "row": 1,
+        "prerequisites": [
+          "Rank Seven Immortal Gu Recipes",
+          "Red Date Essence"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Recipes for rank-eight immortal Gu, bought with white lychee essence."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 12,
+    "era": "Rank Eight era",
+    "techCost": 1500,
+    "buildingCost": 480,
+    "wonderCost": 700,
     "techs": [
       {
         "name": "Dao Comprehension",
         "row": 2,
         "prerequisites": [
-          "Calamity Lore"
+          "Grotto-Heaven",
+          "Rank Eight Immortal Gu Recipes"
         ],
         "uniques": [
           "Can be continually researched"

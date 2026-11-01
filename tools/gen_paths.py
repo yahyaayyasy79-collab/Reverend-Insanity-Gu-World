@@ -24,9 +24,9 @@ from common import REPO_ROOT  # noqa: E402
 DATA = REPO_ROOT / "data"
 DOC = REPO_ROOT / "docs" / "PATHS.md"
 
-# Tiers shipped so far: MOD_SPEC_3 C3 put tiers 1-2 into Slice 1; MOD_SPEC_2 C3 adds the Great Grandmaster (rank six,
-# the immortal move); the Supreme Grandmaster waits for rank eight (C5).
-MAX_TIER = 3
+# Tiers: MOD_SPEC_3 C3 put tiers 1-2 into Slice 1; MOD_SPEC_2 C3 added the Great Grandmaster (rank six, the immortal
+# move) and C5 the Supreme Grandmaster (rank eight).
+MAX_TIER = 4
 TIERS = ["Master", "Grandmaster", "Great Grandmaster", "Supreme Grandmaster"]
 TIERS_ZH = ["大师", "宗师", "大宗师", "无上大宗师"]
 TIERS_ID = ["Ahli", "Mahaguru", "Mahaguru Agung", "Mahaguru Tertinggi"]
@@ -34,7 +34,9 @@ TIER_STRENGTH = [10, 15, 20, 25]
 # Grandmaster from rank 3: units whose required tech lies outside the Rank One-Two era [src BaseUnit.matchesSingleFilter:
 # a unit filter matches the era of the unit's required tech]
 TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", "Only available <for [post-[Rank Five era]] units>",
-             None]
+             "Only available <for [post-[Rank Seven era]] units>"]
+# PATHS.md: the space path's Supreme Grandmaster walks through anything (a permanent promotion: the unique is cached)
+SUPREME_EXTRA = {"space": ["Can pass through impassable tiles"]}
 MOVE_COST = "<costs [+15 Gold] stats> <requires [1] movement>"
 IMMORTAL_MOVE_COST = "<costs [5] [Green Grape Immortal Essence]> <requires [1] movement>"  # MOD_SPEC_2 #5
 # MOD_SPEC_2 #4: dao marks. Every immortal Gu carries its path's marker; a path's Master gains per mark of its own path
@@ -169,6 +171,8 @@ def tier_uniques(p: dict, t: int) -> list[str]:
         u.append(f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}")
     if t == 2:
         u.append(f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}")
+    if t == 3:
+        u += SUPREME_EXTRA.get(p["key"], [])
     if TIER_GATE[t]:
         u.append(TIER_GATE[t])
     u.append(TIER_WEIGHT)
@@ -184,6 +188,11 @@ def pedia(p: dict, t: int) -> tuple[str, str]:
     if t == 0:
         return (f"{p['name']} path ({p['chinese']}), Master attainment ({TIERS_ZH[0]}): {p['hook']}.",
                 f"Jalur {p['name_id']} ({p['chinese']}), pencapaian {TIERS_ID[0]} ({TIERS_ZH[0]}): {p['hook_id']}.")
+    if t == 3:
+        return (f"{p['name']} path, Supreme Grandmaster attainment ({TIERS_ZH[3]}): it raises the path's ceiling; all "
+                f"ten Venerables reached it. Rank eight and up.",
+                f"Jalur {p['name_id']}, pencapaian {TIERS_ID[3]} ({TIERS_ZH[3]}): menaikkan batas jalur itu; kesepuluh "
+                f"Yang Mulia mencapainya. Tingkat delapan ke atas.")
     if t == 2:
         return (f"{p['name']} path, Great Grandmaster attainment ({TIERS_ZH[2]}): where most rank-eight immortals end; a "
                 f"rank-six immortal that reaches it opens the immortal killer move {p['immortal']} (5 green grape essence).",
@@ -271,17 +280,17 @@ def doc_tables() -> dict[str, str]:
         m = p["mortal"] + (f" {p['mortal_zh']}" if p["mortal_zh"] else "")
         im = p["immortal"] + (f" {p['immortal_zh']}" if p["immortal_zh"] else "")
         moves.append(f"| {p['name']} | {p['family']} | {m} | {p['mortal_tag']} | {im} | {p['immortal_tag']} |")
-    uniq = [f"Tiers 1-2 ship in Slice 1, tier 3 (Great Grandmaster, rank six) in MOD_SPEC_2 C3. Every Master also carries "
+    uniq = [f"Tiers 1-2 ship in Slice 1, tier 3 (Great Grandmaster, rank six) in MOD_SPEC_2 C3, tier 4 (Supreme Grandmaster, rank eight) in C5. Every Master also carries "
             "one hidden conflict line per later path whose pair costs Strength (`[relativeAmount]% Strength` "
             "`<for units with [promotion]>` `<hidden from users>`, values from data/path_conflicts.csv), a visible "
             "comment line and, where immortal Gu of its own or a strongly clashing path exist, its dao-mark lines.", "",
-            "| Path | Master | Grandmaster | Mortal move status | Great Grandmaster | Immortal move status |",
-            "|---|---|---|---|---|---|"]
+            "| Path | Master | Grandmaster | Mortal move status | Great Grandmaster | Immortal move status | Supreme Grandmaster |",
+            "|---|---|---|---|---|---|---|"]
     for p in PATHS:
         master = [u for u in tier_uniques(p, 0) if not CONFLICT.match(u)]
         cells = [" ".join(code(u) for u in master), " ".join(code(u) for u in tier_uniques(p, 1)),
                  " ".join(code(u) for u in move_uniques(p)), " ".join(code(u) for u in tier_uniques(p, 2)),
-                 " ".join(code(u) for u in move_uniques(p, immortal=True))]
+                 " ".join(code(u) for u in move_uniques(p, immortal=True)), " ".join(code(u) for u in tier_uniques(p, 3))]
         uniq.append(f"| {p['name']} | " + " | ".join(cells) + " |")
     uniq += ["", "| Status | Uniques |", "|---|---|"]
     uniq += [f"| {s['name']} | " + " ".join(code(u) for u in split(s["uniques"])) + " |" for s in STATUSES]

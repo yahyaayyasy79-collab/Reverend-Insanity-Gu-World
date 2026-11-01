@@ -11,3 +11,15 @@ Star Path
 Strength Path
 Time Path
 Wisdom Path
+Dream Path
+Enslavement Path
+Formation Path
+Information Path
+Light Path
+Qi Path
+Refinement Path
+Soul Path
+Sword Path
+Theft Path
+Transformation Path
+Wood Path

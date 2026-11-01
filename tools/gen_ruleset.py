@@ -92,6 +92,7 @@ def dump(name, obj):
 
 E12, E3, E4 = "Rank One-Two era", "Rank Three era", "Rank Four era"
 E5, E6 = "Rank Five era", "Rank Six era"  # MOD_SPEC_2 C1
+E7, E8 = "Rank Seven era", "Rank Eight era"  # MOD_SPEC_2 C5
 GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]  # the last two only carry the hidden legacy units
 # C3 (MOD_SPEC_3): the path is a promotion now, not the unit type. The refinement ladder keys on the two Slice 1 paths
 # that have Gu; a unit holding both Masters (only a human can) climbs the Moon ladder.
@@ -151,6 +152,9 @@ def die_weights(p_standard, m):
 # has more turns per era, R7), one line per speed.
 QI = ["Heaven Qi", "Earth Qi", "Human Qi"]
 GREEN = "Green Grape Immortal Essence"
+RED, WHITE = "Red Date Immortal Essence", "White Lychee Immortal Essence"  # C5: ranks seven and eight (R V4/141, V5/613)
+IMMORTALS = {"Rank Six Gu Immortal": GREEN, "Rank Seven Gu Immortal": RED, "Rank Eight Gu Immortal": WHITE}
+IMMORTAL = "post-[Rank Five era]"  # unit filter: every Gu Immortal (their required techs lie after the Rank Five era)
 THREE_QI = "<after discovering [Three Qi]> <for [Major] Civilizations>"
 QI_SOURCES = [
     f"Instantly provides [1] [Heaven Qi] <upon turn start> <for every [15] [Owned [Land] Tiles]> {THREE_QI}",
@@ -216,8 +220,10 @@ def ravage(base):
 
 
 def blessed_land(grade, essence, stones):
+    # C5: the blessed land makes the essence of its immortal's rank (rank seven: red date)
     return {"name": f"{grade} Grade Blessed Land", "uniques": [
-        f"Instantly provides [{essence}] [{GREEN}] <upon turn start> <for units without [{RAVAGED}]>",
+        f"Instantly provides [{essence}] [{e}] <upon turn start> <for units without [{RAVAGED}]> <for [{u}] units>"
+        for u, e in list(IMMORTALS.items())[:2]] + [
         f"Gain [{stones}] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
         + countdown("Calamity Countdown", CALAMITY_TURNS[grade], "Earthly Calamity")
         + countdown("Tribulation Countdown", TRIBULATION_TURNS, "Heavenly Tribulation")}
@@ -240,13 +246,47 @@ def toll(text, effects, weight):
 
 
 DIVERT = toll("Divert the disaster", ["Only available <if [Divert Disaster] is constructed>"], "+300")
+SURVIVOR = "Tribulation Survivor"  # C5: surviving a heavenly tribulation opens the next rank (300 aperture-years, R V4/177)
+SURVIVED = f"[This Unit] gains the [{SURVIVOR}] promotion"
+
+# ---------------- MOD_SPEC_2 C5: ranks seven and eight ----------------
+# An immortal climbs a rank after surviving a heavenly tribulation and gathering its rank's essence (R V4/177): a kept
+# promotion (E4) whose purchase pays the essence and upgrades the unit through the special upgrade (C1's route).
+# Statuses and the foreign-land guard as for the ascension (C3 crash fix); the Advancing status keeps the upgrade from
+# counting as a lost immortal for Spring Autumn Cicada [src: losing a unit also fires on upgrade, E9].
+ADVANCE = {"Rank Seven": ("Rank Six Gu Immortal", "Red Date Essence", GREEN), "Rank Eight": ("Rank Seven Gu Immortal", "Grotto-Heaven", RED)}
+ADVANCE_COST = 60
+
+
+def advance(target):
+    unit, tech, essence = ADVANCE[target]
+    name = f"Advance to {target}"
+    extra = ([f"[This Unit] loses the [{g} Grade Blessed Land] promotion" for g, _, _ in GRADES]
+             + ["[This Unit] gains the [Grotto-Heaven Aperture] promotion"]) if target == "Rank Eight" else []
+    return {"name": name, "unitTypes": GM_TYPES, "uniques": [
+        f"Only available <for [{unit}] units> <after discovering [{tech}]> <for units with [{SURVIVOR}]>",
+        "Unavailable <in [Foreign Land] tiles>"]
+        + [f"Unavailable <when below [{qi_cost(ADVANCE_COST, m)}] [{essence}]> <on [{n}] game speed>" for n, m in SPEEDS]
+        + [f"Instantly consumes [{qi_cost(ADVANCE_COST, m)}] [{essence}] <on [{n}] game speed>" for n, m in SPEEDS]
+        + [f"[This Unit] loses the [{SURVIVOR}] promotion", f"[This Unit] loses the [{name}] promotion",
+           "[This Unit] gains the [Advancing] status for [1] turn(s)"] + extra
+        + ["[This Unit] upgrades for free including special upgrades", w("+200")]}
+
+
+# the rank-eight aperture: a grotto-heaven (R V5/745) makes white lychee essence; its calamities come faster
+GROTTO = {"name": "Grotto-Heaven Aperture", "uniques": [
+    f"Instantly provides [3] [{WHITE}] <upon turn start> <for units without [{RAVAGED}]>",
+    f"Gain [12] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
+    + countdown("Calamity Countdown", 10, "Earthly Calamity") + countdown("Tribulation Countdown", 50, "Heavenly Tribulation")}
 
 # ---------------- MOD_SPEC_2 C3: immortal Gu (data/immortal_gu.csv) ----------------
 # World wonders (each immortal Gu is unique in the world, R V4/100): a recipe tech, essence on top of production,
 # kept on capture (Phase A2: conquest seizes the Gu), the Immortal Gu marker and its path's marker (dao marks,
 # tools/gen_paths.py). Never granted free (A3). Their completion rolls the refinement die (仙蛊成劫, R V5/54).
 IMMORTAL_GU = table("immortal_gu.csv")
-IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes"}
+IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes", "7": "Rank Seven Immortal Gu Recipes",
+                       "8": "Rank Eight Immortal Gu Recipes"}
+IMMORTAL_GU_ESSENCE = {"6": GREEN, "7": RED, "8": WHITE}
 
 # ---------------- MOD_SPEC_2 C4: inheritances, desolate beasts, the market ----------------
 # Inheritances (data/inheritances.csv; the user's Phase A decision): a trial die grants a seal that unlocks BUILDING
@@ -255,6 +295,7 @@ IMMORTAL_GU_RECIPES = {"6": "Immortal Gu Recipes"}
 INHERITANCES = table("inheritances.csv")
 MATERIALS = "Immortal Materials"
 DESOLATE = "Desolate Beast"
+ANCIENT, IMMEMORIAL = "Ancient Desolate Beast", "Immemorial Desolate Beast"  # C5: about ranks seven and eight (R V5/14)
 
 
 def path_master(key):
@@ -310,21 +351,23 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "[+20]% XP gained from combat <with [Gu Inheritance]>",
 ] + QI_SOURCES + LIFESPAN_SOURCES + per_speed(
     # Heaven's Will trims the strong (R V5/54): a clan with more than two immortals draws extra calamities
-    lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] is more "
-              f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[{IMMORTAL}] Units] is more "
+              f"than [2]> <if [Divination Tortoise Shell] is not constructed> <with [{chance(3, m)}]% chance> "
+              f"<for [Major] Civilizations>") + per_speed(
     # C3: so does a clan holding more than two immortal Gu (MOD_SPEC_2 #10)
     lambda m: f"Triggers a [Heaven's Will] event <upon turn start> <when number of [[Immortal Gu] Buildings] is more "
-              f"than [2]> <with [{chance(3, m)}]% chance> <for [Major] Civilizations>")
+              f"than [2]> <if [Divination Tortoise Shell] is not constructed> <with [{chance(3, m)}]% chance> "
+              f"<for [Major] Civilizations>")
     + [u for g in IMMORTAL_GU for u in items(g["global_effects"])] + per_speed(
     # C4: a clan holding enough land hears of a Venerable's inheritance now and then
     lambda m: f"Triggers a [Inheritance Trial] event <upon turn start> <when number of [Owned [Land] Tiles] is more than "
               f"[30]> <after discovering [Calamity Lore]> <with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
     lambda m: f"Triggers a [Desolate Beast Tide] event <upon turn start> <after discovering [Three Qi]> "
               f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
-    lambda m: f"Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[Rank Six Gu Immortal] Units] "
+    lambda m: f"Triggers a [Treasure Yellow Heaven] event <upon turn start> <when number of [[{IMMORTAL}] Units] "
               f"is more than [0]> <with [{chance(4, m)}]% chance> <for [Major] Civilizations>") + [
     # a desolate beast's corpse is a heap of immortal materials (R V5/734)
-    f"Earn [10]% of killed [{DESOLATE}] unit's [Cost] as [{MATERIALS}]"]})
+] + [f"Earn [10]% of killed [{b}] unit's [Cost] as [{MATERIALS}]" for b in (DESOLATE, ANCIENT, IMMEMORIAL)]})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -340,6 +383,11 @@ dump("Eras.json", [
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 500},
     {"name": E6, "researchAgreementCost": 550, "iconRGB": [160, 215, 100], "startingSettlerUnit": "Clan Settler",
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 600},
+    # C5: red date (rank seven) and white lychee (rank eight)
+    {"name": E7, "researchAgreementCost": 650, "iconRGB": [200, 60, 60], "startingSettlerUnit": "Clan Settler",
+     "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 700},
+    {"name": E8, "researchAgreementCost": 750, "iconRGB": [240, 236, 222], "startingSettlerUnit": "Clan Settler",
+     "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 800},
 ])
 
 
@@ -411,7 +459,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     # 6% x 1/5 = 1.2% per Gu Master per turn for a wild Gu; 1% x 1/2 per turn in foreign land for an inheritance
     # (1/8 gave 0.4 inheritances per game in autoplay; 1/2 aims at about 1.5).
     u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER]
-    if r["name"] == "Rank Six Gu Immortal":
+    if r["name"] in IMMORTALS:
         u["uniques"] += IMMORTAL_LIFE  # MOD_SPEC_2 C2: every immortal burns Lifespan Gu
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
@@ -435,6 +483,10 @@ dump("Units.json", [
     # C4: a desolate beast (荒兽), about a rank-six immortal (R V5/14); only events bring one
     {"name": DESOLATE, "unitType": "Beast", "movement": 3, "strength": 62, "cost": 200, "attackSound": "shot",
      "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+200]% maintenance costs"]},
+    {"name": ANCIENT, "unitType": "Beast", "movement": 3, "strength": 85, "cost": 300, "attackSound": "shot",
+     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+250]% maintenance costs"]},
+    {"name": IMMEMORIAL, "unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot",
+     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+300]% maintenance costs"]},
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
@@ -544,6 +596,10 @@ dump("UnitPromotions.json", [
     {"name": "Calamity Countdown", "uniques": ["Comment [When it runs out, the blessed land meets an earthly calamity]"]},
     {"name": "Tribulation Countdown", "uniques": ["Comment [When it runs out, the immortal meets a heavenly tribulation]"]},
     {"name": RAVAGED, "uniques": ["Comment [The blessed land yields nothing until it heals]"]},
+    # C5
+    {"name": SURVIVOR, "uniques": ["Comment [Survived a heavenly tribulation: may climb to the next rank]"]},
+    {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
+    GROTTO, advance("Rank Seven"), advance("Rank Eight"),
 ])
 
 # ---------------- Events (13: the spec's 5, wild Gu and inheritances (R6), world conflicts (canon overhaul)) ----------------
@@ -732,11 +788,15 @@ dump("Events.json", [
     {"name": "Earthly Calamity", "text": "An earthly calamity strikes your immortal's blessed land: floods, fire, a "
                                          "swarm. How will it be met?", "choices": [
         DIVERT,
+        toll("Beckon it to the land's edge", ["Only available <if [Calamity Beckoning] is constructed>", "[This Unit] takes [5] damage",
+                                              f"Instantly provides [10] [{MATERIALS}]"], "+150"),
         toll("Raise the formation ward", ["Only available <if [Formation Ward] is constructed>", "[This Unit] takes [10] damage"], "+100"),
         toll("Rebuild from the vault", ["Only available <if [Stockpile Vault] is constructed>", "Unavailable <when below [40] [Gold]>",
                                         "Gain [-40] [Gold]"], "+50"),
-        toll("Pour essence into the land", [f"Unavailable <when below [10] [{GREEN}]>", f"Instantly consumes [10] [{GREEN}]",
-                                            "[This Unit] takes [15] damage"], "+0"),
+        # C5: each rank pours its own essence (autoplay: rank-seven immortals made no green grape and faced bare)
+        *[toll("Pour essence into the land", [f"Only available <for [{u}] units>", f"Unavailable <when below [10] [{e}]>",
+                                              f"Instantly consumes [10] [{e}]", "[This Unit] takes [15] damage"], "+0")
+          for u, e in IMMORTALS.items()],
         toll("Endure it", ["Triggers a [Calamity Toll] event"], "-30")]},
     {"name": "Calamity Toll", "presentation": "None", "choices": [   # 50 / 30 / 20
         toll("The land is ravaged", ravage(8), "+0"),
@@ -744,17 +804,18 @@ dump("Events.json", [
         toll("It passes", [], "-60")]},
     {"name": "Heavenly Tribulation", "text": "A heavenly tribulation gathers over your immortal: heaven itself tests "
                                              "whether it may go on living.", "choices": [
-        DIVERT,
-        toll("Ward and essence together", ["Only available <if [Formation Ward] is constructed>",
-                                           f"Unavailable <when below [30] [{GREEN}]>", f"Instantly consumes [30] [{GREEN}]",
-                                           "[This Unit] takes [30] damage"], "+100"),
-        toll("Pour essence into the land", [f"Unavailable <when below [50] [{GREEN}]>", f"Instantly consumes [50] [{GREEN}]",
-                                            "[This Unit] takes [50] damage"], "+0"),
+        toll("Divert the disaster", ["Only available <if [Divert Disaster] is constructed>", SURVIVED], "+300"),
+        *[toll("Ward and essence together", ["Only available <if [Formation Ward] is constructed>", f"Only available <for [{u}] units>",
+                                             SURVIVED, f"Unavailable <when below [30] [{e}]>", f"Instantly consumes [30] [{e}]",
+                                             "[This Unit] takes [30] damage"], "+100") for u, e in IMMORTALS.items()],
+        *[toll("Pour essence into the land", [f"Only available <for [{u}] units>", f"Unavailable <when below [50] [{e}]>",
+                                              f"Instantly consumes [50] [{e}]", "[This Unit] takes [50] damage", SURVIVED], "+0")
+          for u, e in IMMORTALS.items()],
         toll("Face it bare", ["Triggers a [Tribulation Toll] event"], "-30")]},
     {"name": "Tribulation Toll", "presentation": "None", "choices": [   # 25 / 45 / 30
         toll("The tribulation kills it", ["[This Unit] is destroyed"], "-44"),
-        toll("It survives, its land ravaged", ravage(10) + ["[This Unit] takes [50] damage"], "+0"),
-        toll("It survives", ["[This Unit] takes [30] damage"], "-33")]},
+        toll("It survives, its land ravaged", ravage(10) + ["[This Unit] takes [50] damage", SURVIVED], "+0"),
+        toll("It survives", ["[This Unit] takes [30] damage", SURVIVED], "-33")]},
     # C3: an immortal Gu's birth may call down its own calamity (R V5/54); civ-level, in the city that refined it
     {"name": "Immortal Gu Refinement", "presentation": "None", "choices": [   # 75 / 25
         toll("The Gu takes shape", [], "+0"),
@@ -779,7 +840,8 @@ dump("Events.json", [
     # C4: under Heaven's Will even gentle beasts turn frenzied (R V4/359); a desolate beast is about a rank-six immortal
     # (R V5/14) and its corpse is immortal materials
     {"name": "Desolate Beast Tide", "text": "A desolate beast has come down from the wild into your land.", "choices": [
-        toll("Hunt it for its corpse", [f"A [{DESOLATE}] rebels"], "+50"),
+        toll("Hunt it for its corpse", [f"A [{DESOLATE}] rebels <before the [{E7}]>", f"A [{ANCIENT}] rebels <during the [{E7}]>",
+                                         f"A [{IMMEMORIAL}] rebels <starting from the [{E8}]>"], "+50"),
         toll("Turn it aside with the formation ward", ["Only available <if [Formation Ward] is constructed>",
                                                        "Unavailable <when below [80] [Gold]>", "Gain [-80] [Gold]"], "+0"),
         toll("Let it rampage", ["[-30]% [Production] [in all cities] <for [5] turns>"], "-30")]},
@@ -794,6 +856,9 @@ dump("Events.json", [
                                          f"Instantly provides [25] [{GREEN}]"], "+100"),
         toll("Sell essence for stones", [f"Unavailable <when below [40] [{GREEN}]>", f"Instantly consumes [40] [{GREEN}]",
                                          "Gain [200] [Gold]"], "+0"),
+        toll("Appraise with treasure light", ["Only available <if [Treasure Light Gu] is constructed>",
+                                              "Unavailable <when below [150] [Gold]>", "Gain [-150] [Gold]",
+                                              f"Instantly provides [35] [{GREEN}]"], "+150"),
         toll("Leave the market", [], "-50")]},
 ])
 
@@ -844,7 +909,7 @@ dump("Buildings.json", [
     {"name": "Stockpile Vault", "isNationalWonder": True, "requiredTech": "Calamity Lore", "cost": 160, "maintenance": 1,
      "gold": 2},
 ] + [{"name": g["name"], "isWonder": True, "requiredTech": IMMORTAL_GU_RECIPES[g["rank"]], "cost": int(g["cost"]),
-      "uniques": [f"Costs [{g['essence']}] [{GREEN}]", "Never destroyed when the city is captured", "Immortal Gu",
+      "uniques": [f"Costs [{g['essence']}] [{IMMORTAL_GU_ESSENCE[g['rank']]}]", "Never destroyed when the city is captured", "Immortal Gu",
                   gen_paths.path_marker(g["path"]), "Triggers a [Immortal Gu Refinement] event"] + items(g["effects"])
       # autoplay (C3): without it the AI built only the two stat wonders, after turn 275
       + [w("+300")]}
@@ -951,7 +1016,7 @@ dump("TileResources.json", [
      "improvement": "Camp", "improvementStats": {"gold": 1}},
     # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
 ] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
-     for r in QI + [GREEN, LIFESPAN, MATERIALS]])
+     for r in QI + [GREEN, LIFESPAN, MATERIALS, RED, WHITE]])
 
 # ---------------- Terrains (Vanilla minus natural wonders and Fallout) ----------------
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))

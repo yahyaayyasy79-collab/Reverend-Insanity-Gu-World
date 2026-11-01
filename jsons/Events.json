@@ -708,6 +708,15 @@
         ]
       },
       {
+        "text": "Beckon it to the land's edge",
+        "uniques": [
+          "Only available <if [Calamity Beckoning] is constructed>",
+          "[This Unit] takes [5] damage",
+          "Instantly provides [10] [Immortal Materials]",
+          "[+150]% weight to this choice for AI decisions"
+        ]
+      },
+      {
         "text": "Raise the formation ward",
         "uniques": [
           "Only available <if [Formation Ward] is constructed>",
@@ -727,8 +736,29 @@
       {
         "text": "Pour essence into the land",
         "uniques": [
+          "Only available <for [Rank Six Gu Immortal] units>",
           "Unavailable <when below [10] [Green Grape Immortal Essence]>",
           "Instantly consumes [10] [Green Grape Immortal Essence]",
+          "[This Unit] takes [15] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pour essence into the land",
+        "uniques": [
+          "Only available <for [Rank Seven Gu Immortal] units>",
+          "Unavailable <when below [10] [Red Date Immortal Essence]>",
+          "Instantly consumes [10] [Red Date Immortal Essence]",
+          "[This Unit] takes [15] damage",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pour essence into the land",
+        "uniques": [
+          "Only available <for [Rank Eight Gu Immortal] units>",
+          "Unavailable <when below [10] [White Lychee Immortal Essence]>",
+          "Instantly consumes [10] [White Lychee Immortal Essence]",
           "[This Unit] takes [15] damage",
           "[+0]% weight to this choice for AI decisions"
         ]
@@ -779,6 +809,7 @@
         "text": "Divert the disaster",
         "uniques": [
           "Only available <if [Divert Disaster] is constructed>",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
           "[+300]% weight to this choice for AI decisions"
         ]
       },
@@ -786,6 +817,8 @@
         "text": "Ward and essence together",
         "uniques": [
           "Only available <if [Formation Ward] is constructed>",
+          "Only available <for [Rank Six Gu Immortal] units>",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
           "Unavailable <when below [30] [Green Grape Immortal Essence]>",
           "Instantly consumes [30] [Green Grape Immortal Essence]",
           "[This Unit] takes [30] damage",
@@ -793,11 +826,59 @@
         ]
       },
       {
+        "text": "Ward and essence together",
+        "uniques": [
+          "Only available <if [Formation Ward] is constructed>",
+          "Only available <for [Rank Seven Gu Immortal] units>",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
+          "Unavailable <when below [30] [Red Date Immortal Essence]>",
+          "Instantly consumes [30] [Red Date Immortal Essence]",
+          "[This Unit] takes [30] damage",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Ward and essence together",
+        "uniques": [
+          "Only available <if [Formation Ward] is constructed>",
+          "Only available <for [Rank Eight Gu Immortal] units>",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
+          "Unavailable <when below [30] [White Lychee Immortal Essence]>",
+          "Instantly consumes [30] [White Lychee Immortal Essence]",
+          "[This Unit] takes [30] damage",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
         "text": "Pour essence into the land",
         "uniques": [
+          "Only available <for [Rank Six Gu Immortal] units>",
           "Unavailable <when below [50] [Green Grape Immortal Essence]>",
           "Instantly consumes [50] [Green Grape Immortal Essence]",
           "[This Unit] takes [50] damage",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pour essence into the land",
+        "uniques": [
+          "Only available <for [Rank Seven Gu Immortal] units>",
+          "Unavailable <when below [50] [Red Date Immortal Essence]>",
+          "Instantly consumes [50] [Red Date Immortal Essence]",
+          "[This Unit] takes [50] damage",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pour essence into the land",
+        "uniques": [
+          "Only available <for [Rank Eight Gu Immortal] units>",
+          "Unavailable <when below [50] [White Lychee Immortal Essence]>",
+          "Instantly consumes [50] [White Lychee Immortal Essence]",
+          "[This Unit] takes [50] damage",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
           "[+0]% weight to this choice for AI decisions"
         ]
       },
@@ -829,6 +910,7 @@
           "[This Unit] gains the [Ravaged Land] status for [15] turn(s) <on [Epic] game speed>",
           "[This Unit] gains the [Ravaged Land] status for [30] turn(s) <on [Marathon] game speed>",
           "[This Unit] takes [50] damage",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
           "[+0]% weight to this choice for AI decisions"
         ]
       },
@@ -836,6 +918,7 @@
         "text": "It survives",
         "uniques": [
           "[This Unit] takes [30] damage",
+          "[This Unit] gains the [Tribulation Survivor] promotion",
           "[-33]% weight to this choice for AI decisions"
         ]
       }
@@ -1097,7 +1180,9 @@
       {
         "text": "Hunt it for its corpse",
         "uniques": [
-          "A [Desolate Beast] rebels",
+          "A [Desolate Beast] rebels <before the [Rank Seven era]>",
+          "A [Ancient Desolate Beast] rebels <during the [Rank Seven era]>",
+          "A [Immemorial Desolate Beast] rebels <starting from the [Rank Eight era]>",
           "[+50]% weight to this choice for AI decisions"
         ]
       },
@@ -1158,6 +1243,16 @@
           "Instantly consumes [40] [Green Grape Immortal Essence]",
           "Gain [200] [Gold]",
           "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Appraise with treasure light",
+        "uniques": [
+          "Only available <if [Treasure Light Gu] is constructed>",
+          "Unavailable <when below [150] [Gold]>",
+          "Gain [-150] [Gold]",
+          "Instantly provides [35] [Green Grape Immortal Essence]",
+          "[+150]% weight to this choice for AI decisions"
         ]
       },
       {

@@ -8,4 +8,6 @@ column,era,techCost,buildingCost,wonderCost
 7,Rank Five era,480,240,400
 8,Rank Five era,620,280,450
 9,Rank Six era,800,320,500
-10,Rank Six era,950,360,550
+10,Rank Seven era,1100,400,600
+11,Rank Eight era,1300,440,650
+12,Rank Eight era,1500,480,700
