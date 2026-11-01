@@ -617,3 +617,10 @@
 * Tiles drawn for the five walls (HexaRealm, FantasyHex). `tools/make_map.py` builds and checks both maps.
 * Autoplay 6 × 400 with all eight majors: 0 crashes; fixes from the runs: the Fang clan's oasis start, bigger Eastern
   Sea islands.
+
+## Balance: path halls without upkeep (2026-11-01)
+
+* The AI built a path hall in every city, and their upkeep (2 stones each) drove the clans into debt: on the Five
+  Regions map 44 of 48 clans spent 20+ turns in the red. A/B (4 clans, Prince, 6 × 320): 12 of 24 clans 20+ turns red
+  with hall upkeep, 4 of 24 without; mean stones per turn −5.5 against +5.4. Halls now cost no upkeep (BALANCE.md).
+* Slice 1's Strength branch now also excludes the Water and Metal branches (the clash worked one way only).

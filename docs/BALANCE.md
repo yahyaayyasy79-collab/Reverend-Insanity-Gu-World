@@ -71,6 +71,14 @@ Not fixed, because each needs either a human game or the user's taste:
 
 ## Part 2 — inventory
 
+## Path halls and the debt regression (2026-11-01)
+
+After the 47 path branches and halls, 44 of 48 clans on the Five Regions map spent 20+ turns in the red. A/B on the
+Slice 1 setup (four clans, Prince, 6 × 320): with halls at 2 stones upkeep, 12 of 24 clans 20+ turns in the red, 8 in
+debt at the end, mean stones per turn −5.5; with no hall upkeep, 4 of 24, 2, +5.4. Halls now cost no upkeep. Unciv
+disbands military units once the treasury is at −200 or below [src TurnManager.endTurn], so a broke clan also loses
+its army.
+
 <!-- inventory:start (tools/gen_balance.py) -->
 
 Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it is stale. Edit the source in the last column, regenerate (`tools/gen_ruleset.py && tools/gen_balance.py`), run `tools/check_all`.
@@ -1344,145 +1352,98 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Shattered Fate | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Fate Seized | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | cost | 90 | tools/gen_ruleset.py `Buildings` |
-| Strength Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Transformation Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Bone Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Blood Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Sword Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Blade Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Metal Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Weapon Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Killing Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Fire Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Water Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Wood Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Earth Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Wind Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Cloud Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Ice Snow Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Lightning Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
-| Poison Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Light Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Dark Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Shadow Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Star Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | cost | 90 | tools/gen_ruleset.py `Buildings` |
-| Moon Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Sound Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Illusion Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Wisdom Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Emotion Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Enchantment Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Soul Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Dream Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
-| Enslavement Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Time Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Space Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Rule Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Phantom Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Restriction Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Luck Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Heaven Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Qi Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Refinement Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Formation Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Food Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Pill Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Information Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Human Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Painting Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
-| Theft Hall | maintenance | 2 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
 
 ### Techs.json
@@ -2312,6 +2273,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2136 numbers listed.
+2089 numbers listed.
 
 <!-- inventory:end -->

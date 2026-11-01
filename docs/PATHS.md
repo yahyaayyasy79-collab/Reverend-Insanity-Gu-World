@@ -480,7 +480,7 @@ paths that have none.
 
 Slice 1's Moon and Strength branches stay as they are; every other canonical path gets a branch (opener + three
 policies + completion, from its family) and every path a hall whose newly trained Gu Masters hold its Master. Paths
-whose dao marks clash strongly exclude each other's branch. Eras by family: A–C Rank Three, D–E Rank Four, F–G Rank Five.
+whose dao marks clash strongly exclude each other's branch (Slice 1's Strength branch also carries `Only available <before adopting [Water Path]>` and `Only available <before adopting [Metal Path]>`). Eras by family: A–C Rank Three, D–E Rank Four, F–G Rank Five.
 
 <!-- branches:start (tools/gen_paths.py) -->
 | Branch | Era | Opener | Policies (Lineage, Insight, Doctrine) | Complete | Hall |

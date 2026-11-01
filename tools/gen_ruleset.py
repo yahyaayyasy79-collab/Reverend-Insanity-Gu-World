@@ -1179,6 +1179,8 @@ dump("Policies.json", [
         {"name": "Moon Path Complete", "uniques": ["New [Gu Master] units start with [10] XP [in all cities]"]}]},
     {"name": "Strength Path", "era": E12, "priorities": {"Southern Border Supremacy": 5, "Endurance": 5}, "uniques": [
         "Only available <before adopting [Moon Path]>",
+        # the 47-branch update: strength's dao marks clash strongly with water and metal (docs/PATHS.md), both ways
+        "Only available <before adopting [Water Path]>", "Only available <before adopting [Metal Path]>",
         "Provides [2] [Wild Boar]",
         "[+5]% Strength <for [Strength Master] units> <for every [Adopted [[Strength Path] branch] Policies]>"], "policies": [
         {"name": "Boar Strength", "row": 1, "column": 1, "uniques": ["[+15]% Strength <for units with [White Boar Gu]>",

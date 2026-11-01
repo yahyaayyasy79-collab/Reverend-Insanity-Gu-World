@@ -344,7 +344,9 @@ def halls() -> list[dict]:
     out = []
     for p in PATHS:
         era = era_of_branch(p)
-        out.append({"name": hall_name(p), "requiredTech": ERA_TECH[era], "cost": ERA_COST[era], "maintenance": 2,
+        # no upkeep: the AI builds a hall in every city, and at 2 stones each 12 of 24 Slice 1 clans spent 20+ turns in
+        # the red against 4 of 24 without it (autoplay A/B, 6 x 320, Prince)
+        out.append({"name": hall_name(p), "requiredTech": ERA_TECH[era], "cost": ERA_COST[era],
                     "culture": 1, "uniques": [f"Only available <after adopting [{branch_name(p)}]>",
                                               f"All newly-trained [Gu Master] units [in this city] receive the [{tier_name(p, 0)}] promotion"],
                     "civilopediaText": [{"text": hall_pedia(p)[0]}]})

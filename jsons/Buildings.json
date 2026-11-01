@@ -1405,7 +1405,6 @@
     "name": "Strength Hall",
     "requiredTech": "Rank Two Cultivation",
     "cost": 90,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Strength Path]>",
@@ -1421,7 +1420,6 @@
     "name": "Transformation Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Transformation Path]>",
@@ -1437,7 +1435,6 @@
     "name": "Bone Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Bone Path]>",
@@ -1453,7 +1450,6 @@
     "name": "Blood Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Blood Path]>",
@@ -1469,7 +1465,6 @@
     "name": "Sword Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Sword Path]>",
@@ -1485,7 +1480,6 @@
     "name": "Blade Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Blade Path]>",
@@ -1501,7 +1495,6 @@
     "name": "Metal Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Metal Path]>",
@@ -1517,7 +1510,6 @@
     "name": "Weapon Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Weapon Path]>",
@@ -1533,7 +1525,6 @@
     "name": "Killing Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Killing Path]>",
@@ -1549,7 +1540,6 @@
     "name": "Fire Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Fire Path]>",
@@ -1565,7 +1555,6 @@
     "name": "Water Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Water Path]>",
@@ -1581,7 +1570,6 @@
     "name": "Wood Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Wood Path]>",
@@ -1597,7 +1585,6 @@
     "name": "Earth Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Earth Path]>",
@@ -1613,7 +1600,6 @@
     "name": "Wind Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Wind Path]>",
@@ -1629,7 +1615,6 @@
     "name": "Cloud Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Cloud Path]>",
@@ -1645,7 +1630,6 @@
     "name": "Ice Snow Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Ice Snow Path]>",
@@ -1661,7 +1645,6 @@
     "name": "Lightning Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Lightning Path]>",
@@ -1677,7 +1660,6 @@
     "name": "Poison Hall",
     "requiredTech": "Rank Three Cultivation",
     "cost": 120,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Poison Path]>",
@@ -1693,7 +1675,6 @@
     "name": "Light Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Light Path]>",
@@ -1709,7 +1690,6 @@
     "name": "Dark Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Dark Path]>",
@@ -1725,7 +1705,6 @@
     "name": "Shadow Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Shadow Path]>",
@@ -1741,7 +1720,6 @@
     "name": "Star Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Star Path]>",
@@ -1757,7 +1735,6 @@
     "name": "Moon Hall",
     "requiredTech": "Rank Two Cultivation",
     "cost": 90,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Moon Path]>",
@@ -1773,7 +1750,6 @@
     "name": "Sound Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Sound Path]>",
@@ -1789,7 +1765,6 @@
     "name": "Illusion Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Illusion Path]>",
@@ -1805,7 +1780,6 @@
     "name": "Wisdom Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Wisdom Path]>",
@@ -1821,7 +1795,6 @@
     "name": "Emotion Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Emotion Path]>",
@@ -1837,7 +1810,6 @@
     "name": "Enchantment Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Enchantment Path]>",
@@ -1853,7 +1825,6 @@
     "name": "Soul Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Soul Path]>",
@@ -1869,7 +1840,6 @@
     "name": "Dream Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Dream Path]>",
@@ -1885,7 +1855,6 @@
     "name": "Enslavement Hall",
     "requiredTech": "Rank Four Cultivation",
     "cost": 170,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Enslavement Path]>",
@@ -1901,7 +1870,6 @@
     "name": "Time Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Time Path]>",
@@ -1917,7 +1885,6 @@
     "name": "Space Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Space Path]>",
@@ -1933,7 +1900,6 @@
     "name": "Rule Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Rule Path]>",
@@ -1949,7 +1915,6 @@
     "name": "Phantom Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Phantom Path]>",
@@ -1965,7 +1930,6 @@
     "name": "Restriction Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Restriction Path]>",
@@ -1981,7 +1945,6 @@
     "name": "Luck Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Luck Path]>",
@@ -1997,7 +1960,6 @@
     "name": "Heaven Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Heaven Path]>",
@@ -2013,7 +1975,6 @@
     "name": "Qi Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Qi Path]>",
@@ -2029,7 +1990,6 @@
     "name": "Refinement Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Refinement Path]>",
@@ -2045,7 +2005,6 @@
     "name": "Formation Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Formation Path]>",
@@ -2061,7 +2020,6 @@
     "name": "Food Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Food Path]>",
@@ -2077,7 +2035,6 @@
     "name": "Pill Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Pill Path]>",
@@ -2093,7 +2050,6 @@
     "name": "Information Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Information Path]>",
@@ -2109,7 +2065,6 @@
     "name": "Human Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Human Path]>",
@@ -2125,7 +2080,6 @@
     "name": "Painting Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Painting Path]>",
@@ -2141,7 +2095,6 @@
     "name": "Theft Hall",
     "requiredTech": "Purple Crystal Essence",
     "cost": 240,
-    "maintenance": 2,
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Theft Path]>",
