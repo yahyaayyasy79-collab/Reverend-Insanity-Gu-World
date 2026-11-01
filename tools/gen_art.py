@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, characters, glyphs, glyphs2, pathart, render3d  # noqa: E402
+from art import anims, arcart, characters, glyphs, glyphs2, pathart, render3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -78,7 +78,7 @@ def main(argv: list[str]) -> int:
     # texture, which costs texture swaps on phones (Images-and-Audio.md, "Multiple texture atlases")
     tiles = args.mod / "Images.Units" / "TileSets" / UNITSET / "Units"
     written, kept, sheet = 0, [], []
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons():
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3:
         im = draw().image(INK[ink])
         circle = {"NationIcons": (30, 40, 90), "UnitPromotionIcons": (60, 110, 60), "TechIcons": (40, 90, 140),
                   "PolicyIcons": (120, 60, 120), "PolicyBranchIcons": (90, 40, 100), "CityStateIcons": (110, 90, 40)}.get(
@@ -113,7 +113,8 @@ def main(argv: list[str]) -> int:
                            else (1.5, (0.0, 1.5)))
         portrait = render3d.render(build(), size=(128, 128), scale=pscale * (1.12 if name == "Thunder Crown Wolf" else 1.0),
                                    center=pcenter, yaw=30, elevation=12, shadow=False, layers=False, mats=mats)
-        written += save(portrait["base"], images / "UnitPortraits" / f"{name}.png")
+        # portraits share the Units atlas: with the icons they spilled into a second game texture (game2.png)
+        written += save(portrait["base"], args.mod / "Images.Units" / "UnitPortraits" / f"{name}.png")
         for n, effect in enumerate(characters.ATTACKS.get(name, []), start=1):
             fx = render3d.render(effect(), **frame, shadow=False, layers=False, glow=1.2)
             written += save(fx["base"], units / f"{name}-attack-{n}.png")

@@ -66,7 +66,7 @@ def applies(u: str, s: dict) -> bool:
 
 def closed(uniques: list[str], s: dict) -> bool:
     return any(applies(u, s) for u in uniques if u.startswith("Unavailable") and " HP>" not in u
-               and "Gold]> <during" not in u)
+               and "Gold]> <during" not in u and "Gold]> <starting from" not in u)
 
 
 def fire(uniques: list[str], s: dict) -> tuple[list[str], set[str]]:

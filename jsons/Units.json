@@ -122,10 +122,59 @@
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
+    "upgradesTo": "Rank Five Gu Master",
     "attackSound": "throw",
     "civilopediaText": [
       {
         "text": "A rank-four Gu Master (四转): yellow-gold essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
+      }
+    ]
+  },
+  {
+    "name": "Rank Five Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 44,
+    "cost": 190,
+    "requiredTech": "Purple Crystal Essence",
+    "uniques": [
+      "[+225]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "May upgrade to [Rank Six Gu Immortal] through ruins-like effects",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A rank-five Gu Master (五转): the strongest a mortal gets. It cannot be upgraded with stones; it can only ascend, through the Ascension promotion, and the ascension may kill it."
+      }
+    ]
+  },
+  {
+    "name": "Rank Six Gu Immortal",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 60,
+    "cost": 260,
+    "requiredTech": "Calamity Lore",
+    "uniques": [
+      "[+300]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Unbuildable",
+      "Cannot be purchased",
+      "[+15]% Strength <when above [9] [Green Grape Immortal Essence]>",
+      "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
+      "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
+      "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
+    ],
+    "attackSound": "throw",
+    "civilopediaText": [
+      {
+        "text": "A rank-six Gu Immortal (六转蛊仙). Only the ascension makes one. Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."
       }
     ]
   },
@@ -194,6 +243,7 @@
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
+    "upgradesTo": "Rank Five Gu Master",
     "attackSound": "whoosh",
     "uniqueTo": "Gu Yue Clan",
     "replaces": "Rank Four Gu Master",
@@ -268,6 +318,7 @@
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
+    "upgradesTo": "Rank Five Gu Master",
     "attackSound": "whoosh",
     "uniqueTo": "Bai Clan",
     "replaces": "Rank Four Gu Master",
@@ -342,6 +393,7 @@
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
+    "upgradesTo": "Rank Five Gu Master",
     "attackSound": "nonmetalhit",
     "uniqueTo": "Xiong Clan",
     "replaces": "Rank Four Gu Master",
@@ -416,6 +468,7 @@
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>"
     ],
+    "upgradesTo": "Rank Five Gu Master",
     "attackSound": "whoosh",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Four Gu Master",

@@ -41,7 +41,7 @@ three-band toon shading, rim light, specular on metal and jade, outlines, glow o
   into its own atlas, `Units.png`, so the icons keep `game.png` to one page), 128x110, three-quarter
   view with a ground shadow, plus `<unit>-1.png` (robe, tinted with the clan's inner colour) and `<unit>-2.png`
   (sash, collar, banner: the outer colour) [src `TileLayerUnitSprite`, `getLayeredImageColored`].
-* **Portraits** `Images/UnitPortraits/<unit>.png`, 128x128, head and shoulders, robe in the path's colour; Unciv uses
+* **Portraits** `Images.Units/UnitPortraits/<unit>.png` (the Units atlas), 128x128, head and shoulders, robe in the path's colour; Unciv uses
   them everywhere except the world map [docs Images-and-Audio.md].
 * **Attack effects** `<unit>-attack-<n>.png`, chosen by the attacker's unit name: rank-one essence burst; Moon: one,
   two or three moon blades by rank; Strength: an essence boar charge and shock rings in the rank's essence colour;

@@ -661,7 +661,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Blood Skull Gu] promotion <upon turn start> <for units without [Blood Skull Gu]> <for [Rank Four era] units> <when above [1] [Wild Boar]> <with [25]% chance>",
+      "[This Unit] gains the [Blood Skull Gu] promotion <upon turn start> <for units without [Blood Skull Gu]> <for [post-[Rank Three era]] units> <when above [1] [Wild Boar]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -852,7 +852,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Sole Blade Gu] promotion <upon turn start> <for units without [Sole Blade Gu]> <for [Rank Four era] units> <when above [1] [Jade]> <with [25]% chance>",
+      "[This Unit] gains the [Sole Blade Gu] promotion <upon turn start> <for units without [Sole Blade Gu]> <for [post-[Rank Three era]] units> <when above [1] [Jade]> <with [25]% chance>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -1669,7 +1669,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Flying Cloud Gu] promotion <upon turn start> <for units without [Flying Cloud Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Flying Cloud Gu] promotion <upon turn start> <for units without [Flying Cloud Gu]> <for [post-[Rank Three era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2167,7 +2167,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Overlapping Shadow Gu] promotion <upon turn start> <for units without [Overlapping Shadow Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Overlapping Shadow Gu] promotion <upon turn start> <for units without [Overlapping Shadow Gu]> <for [post-[Rank Three era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -2407,7 +2407,7 @@
       "[-5]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Heaven Earth Magnificent Sound Gu] promotion <upon turn start> <for units without [Heaven Earth Magnificent Sound Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Heaven Earth Magnificent Sound Gu] promotion <upon turn start> <for units without [Heaven Earth Magnificent Sound Gu]> <for [post-[Rank Four era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2556,7 +2556,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Clear Mind Gu] promotion <upon turn start> <for units without [Clear Mind Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Clear Mind Gu] promotion <upon turn start> <for units without [Clear Mind Gu]> <for [post-[Rank Three era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2629,7 +2629,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Emotion Poetry Gu] promotion <upon turn start> <for units without [Emotion Poetry Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Emotion Poetry Gu] promotion <upon turn start> <for units without [Emotion Poetry Gu]> <for [post-[Rank Three era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
@@ -2849,7 +2849,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Dream Pillow Gu] promotion <upon turn start> <for units without [Dream Pillow Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Dream Pillow Gu] promotion <upon turn start> <for units without [Dream Pillow Gu]> <for [post-[Rank Four era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -2988,7 +2988,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Man as Before Gu] promotion <upon turn start> <for units without [Man as Before Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Man as Before Gu] promotion <upon turn start> <for units without [Man as Before Gu]> <for [post-[Rank Four era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -3056,7 +3056,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [Warp Gu] promotion <upon turn start> <for units without [Warp Gu]> <for [Rank Four era] units>",
+      "[This Unit] gains the [Warp Gu] promotion <upon turn start> <for units without [Warp Gu]> <for [post-[Rank Four era]] units>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
@@ -4559,6 +4559,96 @@
     "civilopediaText": [
       {
         "text": "Plunder Gu (强取蛊) tears a Gu away from an enemy while its user stands still; the odds are low, and failure strikes back."
+      }
+    ]
+  },
+  {
+    "name": "Ascension",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>",
+      "Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>",
+      "Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>",
+      "Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>",
+      "Unavailable <when below [90] [Heaven Qi]> <on [Marathon] game speed>",
+      "Unavailable <when below [20] [Earth Qi]> <on [Quick] game speed>",
+      "Unavailable <when below [30] [Earth Qi]> <on [Standard] game speed>",
+      "Unavailable <when below [45] [Earth Qi]> <on [Epic] game speed>",
+      "Unavailable <when below [90] [Earth Qi]> <on [Marathon] game speed>",
+      "Unavailable <when below [20] [Human Qi]> <on [Quick] game speed>",
+      "Unavailable <when below [30] [Human Qi]> <on [Standard] game speed>",
+      "Unavailable <when below [45] [Human Qi]> <on [Epic] game speed>",
+      "Unavailable <when below [90] [Human Qi]> <on [Marathon] game speed>",
+      "Unavailable <when below [40] [Heaven Qi]> <for [AI player] Civilizations> <on [Quick] game speed>",
+      "Unavailable <when below [60] [Heaven Qi]> <for [AI player] Civilizations> <on [Standard] game speed>",
+      "Unavailable <when below [90] [Heaven Qi]> <for [AI player] Civilizations> <on [Epic] game speed>",
+      "Unavailable <when below [180] [Heaven Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>",
+      "Unavailable <when below [40] [Earth Qi]> <for [AI player] Civilizations> <on [Quick] game speed>",
+      "Unavailable <when below [60] [Earth Qi]> <for [AI player] Civilizations> <on [Standard] game speed>",
+      "Unavailable <when below [90] [Earth Qi]> <for [AI player] Civilizations> <on [Epic] game speed>",
+      "Unavailable <when below [180] [Earth Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>",
+      "Unavailable <when below [40] [Human Qi]> <for [AI player] Civilizations> <on [Quick] game speed>",
+      "Unavailable <when below [60] [Human Qi]> <for [AI player] Civilizations> <on [Standard] game speed>",
+      "Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Epic] game speed>",
+      "Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>",
+      "Triggers a [Ascension] event",
+      "[This Unit] loses the [Ascension] promotion <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Crush the aperture, draw in the three qi and survive the calamity (升仙). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master."
+      }
+    ]
+  },
+  {
+    "name": "Lower Grade Blessed Land",
+    "uniques": [
+      "Instantly provides [1] [Green Grape Immortal Essence] <upon turn start>",
+      "Gain [2] [Gold] <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A lower-grade blessed land (下等福地), the most common: 1 green grape essence and 2 stones a turn."
+      }
+    ]
+  },
+  {
+    "name": "Middle Grade Blessed Land",
+    "uniques": [
+      "Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>",
+      "Gain [4] [Gold] <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A middle-grade blessed land (中等福地): 2 green grape essence and 4 stones a turn."
+      }
+    ]
+  },
+  {
+    "name": "Upper Grade Blessed Land",
+    "uniques": [
+      "Instantly provides [3] [Green Grape Immortal Essence] <upon turn start>",
+      "Gain [6] [Gold] <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "An upper-grade blessed land (上等福地), rare: 3 green grape essence and 6 stones a turn."
+      }
+    ]
+  },
+  {
+    "name": "Super Grade Blessed Land",
+    "uniques": [
+      "Instantly provides [5] [Green Grape Immortal Essence] <upon turn start>",
+      "Gain [10] [Gold] <upon turn start>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A super-grade blessed land (特等福地), the foundation of a prodigy: 5 green grape essence and 10 stones a turn."
       }
     ]
   }

@@ -42,6 +42,11 @@
     "Triggers a [Clan Contest] event <upon turn start> <after turn number [180]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
     "Triggers a [Collusion Exposed] event <upon conquering a city> <after adopting [Righteous Path]> <with [25]% chance> <for [Major] Civilizations>",
     "Triggers a [Blood Lake] event <upon discovering [Inheritance Lore] technology> <for [Gu Yue Clan] Civilizations>",
-    "[+20]% XP gained from combat <with [Gu Inheritance]>"
+    "[+20]% XP gained from combat <with [Gu Inheritance]>",
+    "Instantly provides [1] [Heaven Qi] <upon turn start> <for every [15] [Owned [Land] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>",
+    "Instantly provides [1] [Earth Qi] <upon turn start> <for every [1] [Owned [Spring Cave] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>",
+    "Instantly provides [1] [Earth Qi] <upon turn start> <for every [8] [Owned [Hill] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>",
+    "Instantly provides [1] [Human Qi] <upon turn start> <for every [10] [[Population] in [in all cities] Cities]> <after discovering [Three Qi]> <for [Major] Civilizations>",
+    "Earn [5]% of the damage done to [All] units as [Human Qi] <after discovering [Three Qi]> <for [Major] Civilizations>"
   ]
 }

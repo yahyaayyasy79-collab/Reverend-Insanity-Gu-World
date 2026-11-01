@@ -89,6 +89,10 @@ rest of the list is what a player or the next session should know before trustin
 10. **A Rank One may hold a path (C3).** It climbs that path's first rung only; the fusions wait for rank two. An
    unpathed D-grade Rank One still loses the Gu Yue emblem at once (canon), a D-grade Moon Master keeps it.
 
+12. **A blessed land is a promotion, not a building (C1).** The free-building unique cannot give a second immortal
+    of the same grade its own land, so the land lives on the immortal: it shows among the unit's promotions and is
+    lost with the unit. Its essence and stones arrive at turn start, not in the per-turn stat preview.
+
 ## Not yet seen in a real game
 
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
@@ -110,4 +114,7 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Hunger meter (E7) | Trade or pillage away all Moon Orchid as Gu Yue; Moonlight Gu holders weaken at once and about half lose the Gu two turns later |
 | Moon blade before melee | Attack a unit with a Moon Master: two damage numbers (blade, then melee); against a city only one |
 | Indonesian text | Options → Language → Bahasa Indonesia; every name, event and Civilopedia page should be translated |
+| Ascension (MOD_SPEC_2 C1) | `civ addtech <civ> "Calamity Lore"`; `civ activatetrigger "Instantly provides [60] [Heaven Qi]"`, the same for `[Earth Qi]` and `[Human Qi]`; `unit add <civ> "Rank Five Gu Master"`, select it, `unit setxp 200`, buy Ascension: the popup offers balanced, hasty and not yet; success turns it into a Rank Six Gu Immortal with a blessed-land promotion, failure removes it |
+| Blessed land income | With an immortal: the green grape essence and stones rise each turn by its grade (1/2, 2/4, 3/6, 5/10) |
+| Qi income | After Three Qi the three qi appear in the resource overview and grow each turn (land, spring caves and hills, citizens and battle damage) |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

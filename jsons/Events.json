@@ -47,10 +47,10 @@
         "uniques": [
           "Only available <if [Refinement Chamber] is constructed> <when above [80] [Gold]>",
           "Unavailable <when below [140] [Gold]> <during the [Rank Three era]>",
-          "Unavailable <when below [200] [Gold]> <during the [Rank Four era]>",
+          "Unavailable <when below [200] [Gold]> <starting from the [Rank Four era]>",
           "Gain [-40] [Gold] <during the [Rank One-Two era]>",
           "Gain [-70] [Gold] <during the [Rank Three era]>",
-          "Gain [-100] [Gold] <during the [Rank Four era]>",
+          "Gain [-100] [Gold] <starting from the [Rank Four era]>",
           "Unavailable <for units with [Killer Move]>",
           "Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]>",
           "Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]>",
@@ -146,7 +146,7 @@
           "[2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>",
           "[3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>",
           "A [Bold Lightning Wolf] rebels <starting from the [Rank Three era]>",
-          "A [Thunder Crown Wolf] rebels <during the [Rank Four era]>",
+          "A [Thunder Crown Wolf] rebels <starting from the [Rank Four era]>",
           "[+0]% weight to this choice for AI decisions"
         ]
       },
@@ -155,10 +155,10 @@
         "uniques": [
           "Only available <when above [60] [Gold]>",
           "Unavailable <when below [100] [Gold]> <during the [Rank Three era]>",
-          "Unavailable <when below [150] [Gold]> <during the [Rank Four era]>",
+          "Unavailable <when below [150] [Gold]> <starting from the [Rank Four era]>",
           "Gain [-60] [Gold] <during the [Rank One-Two era]>",
           "Gain [-100] [Gold] <during the [Rank Three era]>",
-          "Gain [-150] [Gold] <during the [Rank Four era]>",
+          "Gain [-150] [Gold] <starting from the [Rank Four era]>",
           "[+0]% weight to this choice for AI decisions"
         ]
       },
@@ -174,7 +174,7 @@
         "uniques": [
           "Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>",
           "Gain [-40] [Gold] <during the [Rank Three era]>",
-          "Gain [-70] [Gold] <during the [Rank Four era]>",
+          "Gain [-70] [Gold] <starting from the [Rank Four era]>",
           "[-20]% [Production] <for [5] turns>",
           "[+50]% weight to this choice for AI decisions"
         ]
@@ -481,6 +481,202 @@
         "uniques": [
           "Gain [60] [Gold]",
           "[This Unit] gains [30] XP",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ascension",
+    "text": "Your rank-five Gu Master is ready to crush the aperture and draw in the three qi. Balanced qi gives the best odds; haste costs less and risks everything.",
+    "choices": [
+      {
+        "text": "Balance the three qi",
+        "uniques": [
+          "Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>",
+          "Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>",
+          "Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>",
+          "Unavailable <when below [180] [Heaven Qi]> <on [Marathon] game speed>",
+          "Unavailable <when below [40] [Earth Qi]> <on [Quick] game speed>",
+          "Unavailable <when below [60] [Earth Qi]> <on [Standard] game speed>",
+          "Unavailable <when below [90] [Earth Qi]> <on [Epic] game speed>",
+          "Unavailable <when below [180] [Earth Qi]> <on [Marathon] game speed>",
+          "Unavailable <when below [40] [Human Qi]> <on [Quick] game speed>",
+          "Unavailable <when below [60] [Human Qi]> <on [Standard] game speed>",
+          "Unavailable <when below [90] [Human Qi]> <on [Epic] game speed>",
+          "Unavailable <when below [180] [Human Qi]> <on [Marathon] game speed>",
+          "Instantly consumes [40] [Heaven Qi] <on [Quick] game speed>",
+          "Instantly consumes [60] [Heaven Qi] <on [Standard] game speed>",
+          "Instantly consumes [90] [Heaven Qi] <on [Epic] game speed>",
+          "Instantly consumes [180] [Heaven Qi] <on [Marathon] game speed>",
+          "Instantly consumes [40] [Earth Qi] <on [Quick] game speed>",
+          "Instantly consumes [60] [Earth Qi] <on [Standard] game speed>",
+          "Instantly consumes [90] [Earth Qi] <on [Epic] game speed>",
+          "Instantly consumes [180] [Earth Qi] <on [Marathon] game speed>",
+          "Instantly consumes [40] [Human Qi] <on [Quick] game speed>",
+          "Instantly consumes [60] [Human Qi] <on [Standard] game speed>",
+          "Instantly consumes [90] [Human Qi] <on [Epic] game speed>",
+          "Instantly consumes [180] [Human Qi] <on [Marathon] game speed>",
+          "Triggers a [Ascension Trial] event",
+          "[+200]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Ascend in haste",
+        "uniques": [
+          "Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>",
+          "Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>",
+          "Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>",
+          "Unavailable <when below [90] [Heaven Qi]> <on [Marathon] game speed>",
+          "Unavailable <when below [20] [Earth Qi]> <on [Quick] game speed>",
+          "Unavailable <when below [30] [Earth Qi]> <on [Standard] game speed>",
+          "Unavailable <when below [45] [Earth Qi]> <on [Epic] game speed>",
+          "Unavailable <when below [90] [Earth Qi]> <on [Marathon] game speed>",
+          "Unavailable <when below [20] [Human Qi]> <on [Quick] game speed>",
+          "Unavailable <when below [30] [Human Qi]> <on [Standard] game speed>",
+          "Unavailable <when below [45] [Human Qi]> <on [Epic] game speed>",
+          "Unavailable <when below [90] [Human Qi]> <on [Marathon] game speed>",
+          "Instantly consumes [20] [Heaven Qi] <on [Quick] game speed>",
+          "Instantly consumes [30] [Heaven Qi] <on [Standard] game speed>",
+          "Instantly consumes [45] [Heaven Qi] <on [Epic] game speed>",
+          "Instantly consumes [90] [Heaven Qi] <on [Marathon] game speed>",
+          "Instantly consumes [20] [Earth Qi] <on [Quick] game speed>",
+          "Instantly consumes [30] [Earth Qi] <on [Standard] game speed>",
+          "Instantly consumes [45] [Earth Qi] <on [Epic] game speed>",
+          "Instantly consumes [90] [Earth Qi] <on [Marathon] game speed>",
+          "Instantly consumes [20] [Human Qi] <on [Quick] game speed>",
+          "Instantly consumes [30] [Human Qi] <on [Standard] game speed>",
+          "Instantly consumes [45] [Human Qi] <on [Epic] game speed>",
+          "Instantly consumes [90] [Human Qi] <on [Marathon] game speed>",
+          "Triggers a [Hasty Ascension Trial] event",
+          "[-80]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Not yet",
+        "uniques": [
+          "[-100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ascension Trial",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "A lower-grade blessed land opens",
+        "uniques": [
+          "[This Unit] gains the [Lower Grade Blessed Land] promotion",
+          "Triggers a [Immortal Ascension] event",
+          "[This Unit] upgrades for free including special upgrades",
+          "[+0]% weight to this choice for AI decisions",
+          "[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      },
+      {
+        "text": "A middle-grade blessed land opens",
+        "uniques": [
+          "[This Unit] gains the [Middle Grade Blessed Land] promotion",
+          "Triggers a [Immortal Ascension] event",
+          "[This Unit] upgrades for free including special upgrades",
+          "[-30]% weight to this choice for AI decisions",
+          "[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      },
+      {
+        "text": "An upper-grade blessed land opens",
+        "uniques": [
+          "[This Unit] gains the [Upper Grade Blessed Land] promotion",
+          "Triggers a [Immortal Ascension] event",
+          "[This Unit] upgrades for free including special upgrades",
+          "[-75]% weight to this choice for AI decisions",
+          "[+100]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      },
+      {
+        "text": "A super-grade blessed land opens",
+        "uniques": [
+          "[This Unit] gains the [Super Grade Blessed Land] promotion",
+          "Triggers a [Immortal Ascension] event",
+          "[This Unit] upgrades for free including special upgrades",
+          "[-96]% weight to this choice for AI decisions",
+          "[+150]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[-100]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      },
+      {
+        "text": "The aperture collapses",
+        "uniques": [
+          "Triggers a [Aperture Collapse] event",
+          "[This Unit] is destroyed",
+          "[-50]% weight to this choice for AI decisions",
+          "[-50]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hasty Ascension Trial",
+    "presentation": "None",
+    "choices": [
+      {
+        "text": "A lower-grade blessed land opens",
+        "uniques": [
+          "[This Unit] gains the [Lower Grade Blessed Land] promotion",
+          "Triggers a [Immortal Ascension] event",
+          "[This Unit] upgrades for free including special upgrades",
+          "[+0]% weight to this choice for AI decisions",
+          "[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      },
+      {
+        "text": "A middle-grade blessed land opens",
+        "uniques": [
+          "[This Unit] gains the [Middle Grade Blessed Land] promotion",
+          "Triggers a [Immortal Ascension] event",
+          "[This Unit] upgrades for free including special upgrades",
+          "[-60]% weight to this choice for AI decisions",
+          "[+50]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      },
+      {
+        "text": "The aperture collapses",
+        "uniques": [
+          "Triggers a [Aperture Collapse] event",
+          "[This Unit] is destroyed",
+          "[+40]% weight to this choice for AI decisions",
+          "[-40]% weight to this choice for AI decisions <for units with [Aptitude A]>",
+          "[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Immortal Ascension",
+    "text": "The calamity passes. Your Gu Master is a Gu Immortal now, and its aperture has become a blessed land (its grade is shown among the immortal's promotions).",
+    "choices": [
+      {
+        "text": "Enter the blessed land",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Aperture Collapse",
+    "text": "The three qi would not balance. The aperture collapsed, and your Gu Master with it.",
+    "choices": [
+      {
+        "text": "Mourn the fallen",
+        "uniques": [
           "[+0]% weight to this choice for AI decisions"
         ]
       }

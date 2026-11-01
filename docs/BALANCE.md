@@ -127,6 +127,11 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Clan Contest] event <upon turn start> <after turn number [180]> <when not at war> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 180, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Collusion Exposed] event <upon conquering a city> <after adopting [Righteous Path]> <with [25]% chance> <for [Major] Civilizations>` | 25 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+20]% XP gained from combat <with [Gu Inheritance]>` | +20 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Instantly provides [1] [Heaven Qi] <upon turn start> <for every [15] [Owned [Land] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>` | 1, 15 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Instantly provides [1] [Earth Qi] <upon turn start> <for every [1] [Owned [Spring Cave] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>` | 1, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Instantly provides [1] [Earth Qi] <upon turn start> <for every [8] [Owned [Hill] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>` | 1, 8 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Instantly provides [1] [Human Qi] <upon turn start> <for every [10] [[Population] in [in all cities] Cities]> <after discovering [Three Qi]> <for [Major] Civilizations>` | 1, 10 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Earn [5]% of the damage done to [All] units as [Human Qi] <after discovering [Three Qi]> <for [Major] Civilizations>` | 5 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -202,6 +207,21 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Four Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
 | Rank Four Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
 | Rank Four Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Five Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Five Gu Master | strength | 44 | data/gu_masters.csv `strength` |
+| Rank Five Gu Master | cost | 190 | data/gu_masters.csv `cost` |
+| Rank Five Gu Master | `[+225]% maintenance costs` | +225 | data/gu_masters.csv `maintenance` |
+| Rank Five Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Five Gu Master | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Five Gu Master | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
+| Rank Six Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | strength | 60 | data/gu_masters.csv `strength` |
+| Rank Six Gu Immortal | cost | 260 | data/gu_masters.csv `cost` |
+| Rank Six Gu Immortal | `[+300]% maintenance costs` | +300 | data/gu_masters.csv `maintenance` |
+| Rank Six Gu Immortal | `[+15]% Strength <when above [9] [Green Grape Immortal Essence]>` | +15, 9 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
+| Rank Six Gu Immortal | `Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>` | 6 | tools/gen_ruleset.py `WILD_GU_TRIGGER` |
+| Rank Six Gu Immortal | `Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` | 1 | tools/gen_ruleset.py `INHERITANCE_TRIGGER` |
 | Lightning Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | strength | 9 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | cost | 30 | tools/gen_ruleset.py `Units` |
@@ -283,6 +303,38 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bear Strength Gu | `[+10]% maintenance costs` | +10 | tools/gen_ruleset.py `Promotions` |
 | Stream Gu | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
 | Stream Gu | `[+10]% maintenance costs` | +10 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [90] [Heaven Qi]> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [20] [Earth Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [30] [Earth Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [45] [Earth Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [90] [Earth Qi]> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [20] [Human Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [30] [Human Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [45] [Human Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [90] [Human Qi]> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [40] [Heaven Qi]> <for [AI player] Civilizations> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [60] [Heaven Qi]> <for [AI player] Civilizations> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [90] [Heaven Qi]> <for [AI player] Civilizations> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [180] [Heaven Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [40] [Earth Qi]> <for [AI player] Civilizations> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [60] [Earth Qi]> <for [AI player] Civilizations> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [90] [Earth Qi]> <for [AI player] Civilizations> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [180] [Earth Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [40] [Human Qi]> <for [AI player] Civilizations> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [60] [Human Qi]> <for [AI player] Civilizations> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascension | `Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `Instantly provides [1] [Green Grape Immortal Essence] <upon turn start>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `Gain [2] [Gold] <upon turn start>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `Gain [4] [Gold] <upon turn start>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `Instantly provides [3] [Green Grape Immortal Essence] <upon turn start>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `Gain [6] [Gold] <upon turn start>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `Instantly provides [5] [Green Grape Immortal Essence] <upon turn start>` | 5 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `Gain [10] [Gold] <upon turn start>` | 10 | tools/gen_ruleset.py `Promotions` |
 
 ### Events.json
 
@@ -299,10 +351,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Aptitude Awakening › Grade D aptitude | `[-25]% weight to this choice for AI decisions <if [Awakening Grounds] is constructed>` | -25 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Only available <if [Refinement Chamber] is constructed> <when above [80] [Gold]>` | 80 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Unavailable <when below [140] [Gold]> <during the [Rank Three era]>` | 140 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Refine carefully | `Unavailable <when below [200] [Gold]> <during the [Rank Four era]>` | 200 | tools/gen_ruleset.py `Events` |
+| Refinement Attempt › Refine carefully | `Unavailable <when below [200] [Gold]> <starting from the [Rank Four era]>` | 200 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Gain [-40] [Gold] <during the [Rank One-Two era]>` | -40 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Gain [-70] [Gold] <during the [Rank Three era]>` | -70 | tools/gen_ruleset.py `Events` |
-| Refinement Attempt › Refine carefully | `Gain [-100] [Gold] <during the [Rank Four era]>` | -100 | tools/gen_ruleset.py `Events` |
+| Refinement Attempt › Refine carefully | `Gain [-100] [Gold] <starting from the [Rank Four era]>` | -100 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `[This Unit] gains the [Killer Move] promotion <for units with [Moon Master]> <for units with [Moon Raiment]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
 | Refinement Attempt › Refine carefully | `[This Unit] gains the [Killer Move] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <for units without [Killer Move]> <after discovering [Killer Moves]> <with [85]% chance>` | 85 | tools/gen_ruleset.py `ladder()` arguments |
 | Refinement Attempt › Refine carefully | `[This Unit] gains the [White Jade Gu] promotion <for units with [Strength Master]> <for units without [Moon Master]> <for [non-[Rank One Gu Master]] units> <for units with [White Boar Gu]> <for units with [Jade Skin Gu]> <when above [0] [Jade]> <when above [0] [Wild Boar]> <for units without [Killer Move]> <with [90]% chance>` | 90 | tools/gen_ruleset.py `ladder()` arguments |
@@ -342,16 +394,16 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Beast Tide › Meet the wolves in the field | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `Only available <when above [60] [Gold]>` | 60 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `Unavailable <when below [100] [Gold]> <during the [Rank Three era]>` | 100 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Hire demonic Gu Masters to thin the pack | `Unavailable <when below [150] [Gold]> <during the [Rank Four era]>` | 150 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Hire demonic Gu Masters to thin the pack | `Unavailable <when below [150] [Gold]> <starting from the [Rank Four era]>` | 150 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `Gain [-60] [Gold] <during the [Rank One-Two era]>` | -60 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `Gain [-100] [Gold] <during the [Rank Three era]>` | -100 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Hire demonic Gu Masters to thin the pack | `Gain [-150] [Gold] <during the [Rank Four era]>` | -150 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Hire demonic Gu Masters to thin the pack | `Gain [-150] [Gold] <starting from the [Rank Four era]>` | -150 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Hire demonic Gu Masters to thin the pack | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Abandon the outer fields | `[-50]% growth [in all cities] <for [10] turns>` | -50, 10 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Abandon the outer fields | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Man the stockade walls | `Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>` | 70 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Man the stockade walls | `Gain [-40] [Gold] <during the [Rank Three era]>` | -40 | tools/gen_ruleset.py `Events` |
-| Beast Tide › Man the stockade walls | `Gain [-70] [Gold] <during the [Rank Four era]>` | -70 | tools/gen_ruleset.py `Events` |
+| Beast Tide › Man the stockade walls | `Gain [-70] [Gold] <starting from the [Rank Four era]>` | -70 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Man the stockade walls | `[-20]% [Production] <for [5] turns>` | -20, 5 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Man the stockade walls | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Beast Tide › Call the clans' alliance | `Only available <when number of [Known [Major] Civilizations] is more than [1]> <when not at war>` | 1 | tools/gen_ruleset.py `Events` |
@@ -437,6 +489,83 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Buried Inheritance › Strip it and vanish | `Gain [60] [Gold]` | 60 | tools/gen_ruleset.py `Events` |
 | Buried Inheritance › Strip it and vanish | `[This Unit] gains [30] XP` | 30 | tools/gen_ruleset.py `Events` |
 | Buried Inheritance › Strip it and vanish | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [180] [Heaven Qi]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [40] [Earth Qi]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [60] [Earth Qi]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [90] [Earth Qi]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [180] [Earth Qi]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [40] [Human Qi]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [60] [Human Qi]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [90] [Human Qi]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Unavailable <when below [180] [Human Qi]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [40] [Heaven Qi] <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [60] [Heaven Qi] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [90] [Heaven Qi] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [180] [Heaven Qi] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [40] [Earth Qi] <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [60] [Earth Qi] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [90] [Earth Qi] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [180] [Earth Qi] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [40] [Human Qi] <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [60] [Human Qi] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [90] [Human Qi] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `Instantly consumes [180] [Human Qi] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Ascension › Balance the three qi | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [90] [Heaven Qi]> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [20] [Earth Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [30] [Earth Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [45] [Earth Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [90] [Earth Qi]> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [20] [Human Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [30] [Human Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [45] [Human Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Unavailable <when below [90] [Human Qi]> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [20] [Heaven Qi] <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [30] [Heaven Qi] <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [45] [Heaven Qi] <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [90] [Heaven Qi] <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [20] [Earth Qi] <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [30] [Earth Qi] <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [45] [Earth Qi] <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [90] [Earth Qi] <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [20] [Human Qi] <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [30] [Human Qi] <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [45] [Human Qi] <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `Instantly consumes [90] [Human Qi] <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Ascension › Ascend in haste | `[-80]% weight to this choice for AI decisions` | -80 | tools/gen_ruleset.py `Events` |
+| Ascension › Not yet | `[-100]% weight to this choice for AI decisions` | -100 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +0 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A middle-grade blessed land opens | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A middle-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A middle-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +0 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › An upper-grade blessed land opens | `[-75]% weight to this choice for AI decisions` | -75 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › An upper-grade blessed land opens | `[+100]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +100 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › An upper-grade blessed land opens | `[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>` | -50 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A super-grade blessed land opens | `[-96]% weight to this choice for AI decisions` | -96 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A super-grade blessed land opens | `[+150]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +150 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A super-grade blessed land opens | `[-100]% weight to this choice for AI decisions <for units with [Aptitude D]>` | -100 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › The aperture collapses | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › The aperture collapses | `[-50]% weight to this choice for AI decisions <for units with [Aptitude A]>` | -50 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › The aperture collapses | `[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +100 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +0 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A middle-grade blessed land opens | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A middle-grade blessed land opens | `[+50]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +50 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A middle-grade blessed land opens | `[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>` | -50 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › The aperture collapses | `[+40]% weight to this choice for AI decisions` | +40 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › The aperture collapses | `[-40]% weight to this choice for AI decisions <for units with [Aptitude A]>` | -40 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › The aperture collapses | `[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +60 | tools/gen_ruleset.py `Events` |
+| Immortal Ascension › Enter the blessed land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Aperture Collapse › Mourn the fallen | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 
 ### Buildings.json
 
@@ -522,9 +651,18 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 6 (Super Clan Commerce, Beast Enslavement, Rank Four Cultivation) | buildingCost | 160 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 6 (Super Clan Commerce, Beast Enslavement, Rank Four Cultivation) | wonderCost | 300 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Beast Enslavement | `When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>` | 10, 4 | data/techs.csv `uniques` |
-| Column 7 (Dao Comprehension) | techCost | 350 | data/tech_columns.csv `techCost` |
-| Column 7 (Dao Comprehension) | buildingCost | 200 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Column 7 (Dao Comprehension) | wonderCost | 350 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 7 (Purple Crystal Essence) | techCost | 480 | data/tech_columns.csv `techCost` |
+| Column 7 (Purple Crystal Essence) | buildingCost | 240 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 7 (Purple Crystal Essence) | wonderCost | 400 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 8 (Three Qi) | techCost | 620 | data/tech_columns.csv `techCost` |
+| Column 8 (Three Qi) | buildingCost | 280 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 8 (Three Qi) | wonderCost | 450 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 9 (Calamity Lore) | techCost | 800 | data/tech_columns.csv `techCost` |
+| Column 9 (Calamity Lore) | buildingCost | 320 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 9 (Calamity Lore) | wonderCost | 500 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 10 (Dao Comprehension) | techCost | 950 | data/tech_columns.csv `techCost` |
+| Column 10 (Dao Comprehension) | buildingCost | 360 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
+| Column 10 (Dao Comprehension) | wonderCost | 550 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 
 ### Policies.json
 
@@ -754,6 +892,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Rank Three era | baseUnitBuyCost | 300 | tools/gen_ruleset.py `Eras` |
 | Rank Four era | researchAgreementCost | 350 | tools/gen_ruleset.py `Eras` |
 | Rank Four era | baseUnitBuyCost | 400 | tools/gen_ruleset.py `Eras` |
+| Rank Five era | researchAgreementCost | 450 | tools/gen_ruleset.py `Eras` |
+| Rank Five era | baseUnitBuyCost | 500 | tools/gen_ruleset.py `Eras` |
+| Rank Six era | researchAgreementCost | 550 | tools/gen_ruleset.py `Eras` |
+| Rank Six era | baseUnitBuyCost | 600 | tools/gen_ruleset.py `Eras` |
 
 ### UnitTypes.json
 
@@ -943,6 +1085,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-767 numbers listed.
+909 numbers listed.
 
 <!-- inventory:end -->

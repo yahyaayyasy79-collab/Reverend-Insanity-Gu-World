@@ -57,10 +57,10 @@ KEY = {p["key"]: p for p in PATHS}
 PATH_GU = table("path_gu.csv")
 GU_OF = {p["key"]: [g for g in PATH_GU if g["path"] == p["key"]] for p in PATHS}
 assert all(GU_OF.values()), "every path needs its Gu (data/path_gu.csv)"
-# a Gu of rank r needs a unit of rank r (the rank-5 Gu wait at rank four until the immortal arc; ADAPTED); a unit's
-# era is its required tech's era [src BaseUnit.matchesFilter]
+# a Gu of rank r needs a unit of rank r or higher; a unit's era is its required tech's era [src BaseUnit.matchesFilter].
+# Since MOD_SPEC_2 C1 the rank-5 Gu wait for the Rank Five Gu Master (they waited at rank four before).
 RANK_GATE = {1: "", 2: "<for [non-[Rank One Gu Master]] units>", 3: "<for [non-[Rank One-Two era]] units>",
-             4: "<for [Rank Four era] units>", 5: "<for [Rank Four era] units>"}
+             4: "<for [post-[Rank Three era]] units>", 5: "<for [post-[Rank Four era]] units>"}
 assert len({p["signature"] for p in PATHS}) == len(PATHS), "two paths share a signature unique"
 ROOTS = sum(1 for p in PATHS if not p["parent"])
 SIGNATURE_WEIGHT = round((SIGNATURE_SHARE / (1 - SIGNATURE_SHARE) * (ROOTS - 1) - 1) * 100)

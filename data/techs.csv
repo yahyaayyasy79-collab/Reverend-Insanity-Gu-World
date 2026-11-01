@@ -13,4 +13,7 @@ Killer Moves,5,3,Rank Three Cultivation,
 Super Clan Commerce,6,1,Merchant Caravans,
 Beast Enslavement,6,2,Inheritance Lore|Killer Moves,"When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>"
 Rank Four Cultivation,6,3,Killer Moves,
-Dao Comprehension,7,2,Super Clan Commerce|Beast Enslavement|Rank Four Cultivation,Can be continually researched
+Purple Crystal Essence,7,3,Rank Four Cultivation,
+Three Qi,8,2,Purple Crystal Essence|Super Clan Commerce|Beast Enslavement,
+Calamity Lore,9,2,Three Qi,
+Dao Comprehension,10,2,Calamity Lore,Can be continually researched

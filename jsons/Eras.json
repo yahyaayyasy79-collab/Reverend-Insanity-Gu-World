@@ -54,5 +54,41 @@
         "text": "Rank four (四转): yellow-gold essence. On Qing Mao such a master leads a clan; his upkeep decides whether the clan survives him."
       }
     ]
+  },
+  {
+    "name": "Rank Five era",
+    "researchAgreementCost": 450,
+    "iconRGB": [
+      170,
+      110,
+      230
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 500,
+    "civilopediaText": [
+      {
+        "text": "Rank five (五转): purple crystal essence, the peak of mortal cultivation. Many masters stop here for good; the next step is the ascension, and it can kill."
+      }
+    ]
+  },
+  {
+    "name": "Rank Six era",
+    "researchAgreementCost": 550,
+    "iconRGB": [
+      160,
+      215,
+      100
+    ],
+    "startingSettlerUnit": "Clan Settler",
+    "startingWorkerUnit": "Mortal Laborer",
+    "startingMilitaryUnit": "Rank One Gu Master",
+    "baseUnitBuyCost": 600,
+    "civilopediaText": [
+      {
+        "text": "Rank six (六转): the immortal threshold, green grape essence. An immortal's aperture is a blessed land that feeds it essence for as long as it lives."
+      }
+    ]
   }
 ]

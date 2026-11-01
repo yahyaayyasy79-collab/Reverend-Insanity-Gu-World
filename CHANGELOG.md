@@ -430,3 +430,24 @@
   strength (3 of 12 games with a war, 2 cities taken). Bai is the canon aggressor: declareWar 9, aggressive 8,
   domination preferred.
 * `docs/TESTING.md`: how to pick the map on Android; `docs/KNOWN_ISSUES.md` item 11.
+
+## MOD_SPEC_2 C1 — ascension, the three qi, Rank 5–6 eras (2026-11-01)
+
+* Eras **Rank Five** (purple crystal) and **Rank Six** (green grape); techs Purple Crystal Essence, Three Qi and
+  Calamity Lore; Dao Comprehension moves to the end of the tree (column 10, about 4,500 science in all).
+* **Rank Five Gu Master** (strength 44): no Upgrade button; it can only ascend. **Rank Six Gu Immortal** (strength
+  60, +15% with more than 9 green grape essence): made only by the ascension.
+* Stockpiles **Heaven Qi** (land), **Earth Qi** (spring caves, hills), **Human Qi** (citizens, 5% of battle damage),
+  **Green Grape Immortal Essence** (only blessed lands make it).
+* **Ascension**: a kept promotion (Calamity Lore, rank five) opens a popup: balance the three qi (60 each, 80%),
+  ascend in haste (30 each, 50%) or not yet; aptitude A raises and D lowers the odds; failure kills the master. Costs
+  scale with the game speed. Success gives the immortal a **blessed land** promotion: lower, middle, upper or super
+  grade, 1/2/3/5 essence and 2/4/6/10 stones a turn (a promotion, not a building: docs/KNOWN_ISSUES.md item 12).
+* Rank-5 path Gu wait for the Rank Five Gu Master; Rank Four era costs (careful refinement, Beast Tide) now hold in
+  every later era.
+* Art: icons for the three qi, the essence, the three techs, the ascension and the four grades; 3D map sprites,
+  portraits and attack effects for both new units (the immortal stands on a cloud under a green halo). Portraits moved
+  to the Units atlas (the icons had spilled into a second texture).
+* Autoplay (8 × 300 turns, Prince, Small): 0 crashes. At 40/20 qi every clan ascended but qi piled up unused; at
+  60/30, 14 of 16 clans ascend (first immortal T190–283, 1.9 per clan by T300; grades lower 14, middle 12, upper 5)
+  and human qi is the scarce one.

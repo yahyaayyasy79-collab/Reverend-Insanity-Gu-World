@@ -193,5 +193,61 @@
         "text": "Pelts of Southern Border beasts, sold by caravans. The only comfort the mountain offers for free, once someone has killed for it."
       }
     ]
+  },
+  {
+    "name": "Heaven Qi",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven qi (天气) falls on the land a clan holds: 1 a turn for every 15 land tiles."
+      }
+    ]
+  },
+  {
+    "name": "Earth Qi",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth qi (地气) rises from spring caves and hills: 1 a turn per spring cave and per 8 hills."
+      }
+    ]
+  },
+  {
+    "name": "Human Qi",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Human qi (人气) is gathered through people and deeds: 1 a turn per 10 citizens, and 5% of the damage your units deal."
+      }
+    ]
+  },
+  {
+    "name": "Green Grape Immortal Essence",
+    "resourceType": "Strategic",
+    "terrainsCanBeFoundOn": [],
+    "uniques": [
+      "Stockpiled",
+      "Cannot be traded"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rank-six immortal essence (青提仙元). It never refills by itself: only blessed lands make it."
+      }
+    ]
   }
 ]

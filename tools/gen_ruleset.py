@@ -91,6 +91,7 @@ def dump(name, obj):
 
 
 E12, E3, E4 = "Rank One-Two era", "Rank Three era", "Rank Four era"
+E5, E6 = "Rank Five era", "Rank Six era"  # MOD_SPEC_2 C1
 GM_TYPES = ["Gu Master", "Moon Gu Master", "Strength Gu Master"]  # the last two only carry the hidden legacy units
 # C3 (MOD_SPEC_3): the path is a promotion now, not the unit type. The refinement ladder keys on the two Slice 1 paths
 # that have Gu; a unit holding both Masters (only a human can) climbs the Moon ladder.
@@ -144,6 +145,46 @@ def die_weights(p_standard, m):
     return round(100 * ((1 / (p_standard / m) - 1) / nothing - 1))
 
 
+# ---------------- MOD_SPEC_2 C1: ascension (docs/LORE_MAPPING.md "Phase C1: ascension") ----------------
+# The three qi of ascension (R V5/346) are stockpiles fed by the land, the springs and the people; the ascension
+# spends them. Income is per turn and the same on every speed; the costs scale with the speed instead (a slower speed
+# has more turns per era, R7), one line per speed.
+QI = ["Heaven Qi", "Earth Qi", "Human Qi"]
+GREEN = "Green Grape Immortal Essence"
+THREE_QI = "<after discovering [Three Qi]> <for [Major] Civilizations>"
+QI_SOURCES = [
+    f"Instantly provides [1] [Heaven Qi] <upon turn start> <for every [15] [Owned [Land] Tiles]> {THREE_QI}",
+    f"Instantly provides [1] [Earth Qi] <upon turn start> <for every [1] [Owned [Spring Cave] Tiles]> {THREE_QI}",
+    f"Instantly provides [1] [Earth Qi] <upon turn start> <for every [8] [Owned [Hill] Tiles]> {THREE_QI}",
+    f"Instantly provides [1] [Human Qi] <upon turn start> <for every [10] [[Population] in [in all cities] Cities]> {THREE_QI}",
+    # human qi is what a master gathers through deeds (R V5/468): battle feeds it
+    f"Earn [5]% of the damage done to [All] units as [Human Qi] {THREE_QI}",
+]
+ASCEND = {"Balance the three qi": 60, "Ascend in haste": 30}  # qi of each kind, Standard speed
+
+
+def qi_cost(amount, m):
+    return max(1, round(amount * m))
+
+
+# a die outcome: the immortal's blessed land (a promotion: the aperture belongs to the immortal and dies with it) and
+# the upgrade, or the collapse. Aptitude is the foundation canon names (R V4/290): grade A raises the odds, D lowers them
+GRADES = [("Lower", 1, 2), ("Middle", 2, 4), ("Upper", 3, 6), ("Super", 5, 10)]  # essence, stones per turn
+
+
+def ascended(grade, weight, a, d):
+    return {"text": f"{'An' if grade == 'Upper' else 'A'} {grade.lower()}-grade blessed land opens", "uniques": [
+        f"[This Unit] gains the [{grade} Grade Blessed Land] promotion", "Triggers a [Immortal Ascension] event",
+        "[This Unit] upgrades for free including special upgrades",
+        w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>")]}
+
+
+def collapse(weight, a, d):
+    return {"text": "The aperture collapses", "uniques": [
+        "Triggers a [Aperture Collapse] event", "[This Unit] is destroyed",
+        w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>")]}
+
+
 # ---------------- ModOptions / Globals ----------------
 dump("ModOptions.json", {"isBaseRuleset": True,
                          "uniques": ["Disable religion", "Can only start games from the starting era"],
@@ -184,7 +225,7 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     "Triggers a [Blood Lake] event <upon discovering [Inheritance Lore] technology> <for [Gu Yue Clan] Civilizations>",
     # R6: a held (excavated) inheritance teaches the clan's Gu Masters
     "[+20]% XP gained from combat <with [Gu Inheritance]>",
-]})
+] + QI_SOURCES})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -195,6 +236,11 @@ dump("Eras.json", [
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 300},
     {"name": E4, "researchAgreementCost": 350, "iconRGB": [230, 190, 60], "startingSettlerUnit": "Clan Settler",
      "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 400},
+    # MOD_SPEC_2 C1: purple crystal (rank five, R V2/180) and green grape (rank six, R V3/232)
+    {"name": E5, "researchAgreementCost": 450, "iconRGB": [170, 110, 230], "startingSettlerUnit": "Clan Settler",
+     "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 500},
+    {"name": E6, "researchAgreementCost": 550, "iconRGB": [160, 215, 100], "startingSettlerUnit": "Clan Settler",
+     "startingWorkerUnit": "Mortal Laborer", "startingMilitaryUnit": "Rank One Gu Master", "baseUnitBuyCost": 600},
 ])
 
 
@@ -376,7 +422,18 @@ dump("UnitPromotions.json", [
 ] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
      for food, status in HUNGER.items()]
     # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
-    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions())
+    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions() + [
+    # MOD_SPEC_2 C1: the ascension is bought like Refine Gu (E4: kept, self-removing); the human may try with the hasty
+    # amount of qi, the AI only with the balanced one (it never wastes the XP on an attempt it would rush)
+    {"name": "Ascension", "unitTypes": GM_TYPES, "uniques": [
+        "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>"]
+        + [f"Unavailable <when below [{qi_cost(ASCEND['Ascend in haste'], m)}] [{q}]> <on [{n}] game speed>"
+           for q in QI for n, m in SPEEDS]
+        + [f"Unavailable <when below [{qi_cost(ASCEND['Balance the three qi'], m)}] [{q}]> <for [AI player] Civilizations> "
+           f"<on [{n}] game speed>" for q in QI for n, m in SPEEDS]
+        + ["Triggers a [Ascension] event", "[This Unit] loses the [Ascension] promotion <upon turn start>"]},
+] + [{"name": f"{g} Grade Blessed Land", "uniques": [f"Instantly provides [{e}] [{GREEN}] <upon turn start>",
+                                                      f"Gain [{st}] [Gold] <upon turn start>"]} for g, e, st in GRADES])
 
 # ---------------- Events (13: the spec's 5, wild Gu and inheritances (R6), world conflicts (canon overhaul)) ----------------
 BAI = "<for [Bai Clan] Civilizations>"
@@ -397,9 +454,9 @@ dump("Events.json", [
         {"text": "Refine carefully", "uniques":
             ["Only available <if [Refinement Chamber] is constructed> <when above [80] [Gold]>",
              f"Unavailable <when below [140] [Gold]> <during the [{E3}]>",
-             f"Unavailable <when below [200] [Gold]> <during the [{E4}]>",
+             f"Unavailable <when below [200] [Gold]> <starting from the [{E4}]>",
              f"Gain [-40] [Gold] <during the [{E12}]>", f"Gain [-70] [Gold] <during the [{E3}]>",
-             f"Gain [-100] [Gold] <during the [{E4}]>"]
+             f"Gain [-100] [Gold] <starting from the [{E4}]>"]
             + LADDER_DEAD + RO_DEAD + ladder(85, 70, 90) + [w("+50"), w("-60", "<when below [150] [Gold]>")]},
         {"text": "Refine recklessly", "uniques": LADDER_DEAD + RO_DEAD + ["Unavailable <when below [31] HP>"]
             + ladder(50, 40, 60) + ["[This Unit] takes [30] damage", w("+0"), w("-90", "<when below [50] HP>")]},
@@ -414,14 +471,14 @@ dump("Events.json", [
             f"[2] [Lightning Wolf]s rebel <during the [{E12}]>",
             f"[3] [Lightning Wolf]s rebel <starting from the [{E3}]>",
             f"A [Bold Lightning Wolf] rebels <starting from the [{E3}]>",
-            f"A [Thunder Crown Wolf] rebels <during the [{E4}]>",
+            f"A [Thunder Crown Wolf] rebels <starting from the [{E4}]>",
             w("+0")]},
         {"text": "Hire demonic Gu Masters to thin the pack", "uniques": [
             "Only available <when above [60] [Gold]>",
             f"Unavailable <when below [100] [Gold]> <during the [{E3}]>",
-            f"Unavailable <when below [150] [Gold]> <during the [{E4}]>",
+            f"Unavailable <when below [150] [Gold]> <starting from the [{E4}]>",
             f"Gain [-60] [Gold] <during the [{E12}]>", f"Gain [-100] [Gold] <during the [{E3}]>",
-            f"Gain [-150] [Gold] <during the [{E4}]>",
+            f"Gain [-150] [Gold] <starting from the [{E4}]>",
             w("+0")]},
         # R7: was "[-1] population [in all cities]": free in cities at population 1 (losses stop at 1 [src]) and the
         # largest drain on every clan (autoplay: capitals at 1.8-4 by turn 320, 8.4 without population choices).
@@ -429,7 +486,7 @@ dump("Events.json", [
         {"text": "Abandon the outer fields", "uniques": ["[-50]% growth [in all cities] <for [10] turns>", w("-30")]},
         {"text": "Man the stockade walls", "uniques": [
             "Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>",
-            f"Gain [-40] [Gold] <during the [{E3}]>", f"Gain [-70] [Gold] <during the [{E4}]>",
+            f"Gain [-40] [Gold] <during the [{E3}]>", f"Gain [-70] [Gold] <starting from the [{E4}]>",
             "[-20]% [Production] <for [5] turns>", w("+50")]},
         # C3: canon answers a wolf tide with an alliance of the clans and a split of the spoils (R V1c124, V1c127,
         # V1c179); the wolves still come, the clan fights them stronger and pays its share. Not while at war.
@@ -537,6 +594,26 @@ dump("Events.json", [
             "[This Unit] gains [20] XP", w("+100")]},
         {"text": "Strip it and vanish", "uniques": ["Gain [60] [Gold]", "[This Unit] gains [30] XP", w("+0")]},
     ]},
+    # MOD_SPEC_2 C1: crush the aperture, draw in and balance the three qi, survive (R V3/201, V5/346, V3/222)
+    {"name": "Ascension", "text": "Your rank-five Gu Master is ready to crush the aperture and draw in the three qi. "
+                                  "Balanced qi gives the best odds; haste costs less and risks everything.", "choices": [
+        {"text": text, "uniques": [f"Unavailable <when below [{qi_cost(a, m)}] [{q}]> <on [{n}] game speed>"
+                                   for q in QI for n, m in SPEEDS]
+            + [f"Instantly consumes [{qi_cost(a, m)}] [{q}] <on [{n}] game speed>" for q in QI for n, m in SPEEDS]
+            + [f"Triggers a [{trial}] event", w(weight)]}
+        for (text, a), (trial, weight) in zip(ASCEND.items(), (("Ascension Trial", "+200"), ("Hasty Ascension Trial", "-80")))
+    ] + [{"text": "Not yet", "uniques": [w("-100")]}]},
+    # silent dice: balanced qi succeeds 80% (lower 40, middle 28, upper 10, super 2); haste 50% (lower 36, middle 14)
+    {"name": "Ascension Trial", "presentation": "None", "choices": [
+        ascended("Lower", "+0", "+0", "+0"), ascended("Middle", "-30", "+0", "+0"),
+        ascended("Upper", "-75", "+100", "-50"), ascended("Super", "-96", "+150", "-100"), collapse("-50", "-50", "+100")]},
+    {"name": "Hasty Ascension Trial", "presentation": "None", "choices": [
+        ascended("Lower", "+0", "+0", "+0"), ascended("Middle", "-60", "+50", "-50"), collapse("+40", "-40", "+60")]},
+    {"name": "Immortal Ascension", "text": "The calamity passes. Your Gu Master is a Gu Immortal now, and its aperture "
+                                           "has become a blessed land (its grade is shown among the immortal's promotions).",
+     "choices": [{"text": "Enter the blessed land", "uniques": [w("+0")]}]},
+    {"name": "Aperture Collapse", "text": "The three qi would not balance. The aperture collapsed, and your Gu Master "
+                                          "with it.", "choices": [{"text": "Mourn the fallen", "uniques": [w("+0")]}]},
 ])
 
 # ---------------- Buildings (12: 7 + 1 Wu unique + 2 national wonders + 2 world wonders) ----------------
@@ -674,7 +751,9 @@ dump("TileResources.json", [
      "uniques": ["Doesn't generate naturally", "Cannot be traded"]},
     {"name": "Furs", "resourceType": "Luxury", "terrainsCanBeFoundOn": ["Forest", "Tundra", "Jungle"], "gold": 2,
      "improvement": "Camp", "improvementStats": {"gold": 1}},
-])
+    # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
+] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
+     for r in QI + [GREEN]])
 
 # ---------------- Terrains (Vanilla minus natural wonders and Fallout) ----------------
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))

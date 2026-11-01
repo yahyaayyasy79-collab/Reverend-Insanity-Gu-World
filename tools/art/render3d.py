@@ -142,6 +142,8 @@ DEFAULT_MATS = {
     "eye": Mat((255, 240, 160), emissive=True), "moon": Mat((210, 230, 255), emissive=True),
     "essence1": Mat((110, 220, 150), emissive=True), "essence2": Mat((240, 90, 70), emissive=True),
     "essence3": Mat((235, 240, 255), emissive=True), "essence4": Mat((255, 214, 90), emissive=True),
+    "essence5": Mat((190, 120, 255), emissive=True), "essence6": Mat((170, 235, 110), emissive=True),
+    "cloud": Mat((236, 240, 248)),
     "volt": Mat((150, 210, 255), emissive=True), "volt_gold": Mat((255, 236, 120), emissive=True),
     "earth": Mat((200, 140, 70)), "shadow": Mat((0, 0, 0)), "water": Mat((110, 190, 255), emissive=True), "wind": Mat((205, 245, 215), emissive=True),
 }

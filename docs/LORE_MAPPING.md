@@ -182,7 +182,7 @@ Demonic; personalities set the rest.
 |---|---|---|---|---|---|
 | Rank One-Two era | 一转、二转 | ADAPTED | Newly awakened youths at ranks one and two, on green-copper and then red-iron essence.<br>*Note: Chinese colours verified (青铜/赤铁/白银/黄金). English varies: the fan translation (ch26) says green copper / red iron / white silver; the fan wiki says Red Steel and Yellow Golden. We use red iron and yellow gold.* | Opening era (tech columns 1-3): founding villages, aptitude rolls, first refinements, and the path choice. All four policy branches open here so every AI commits to a path early (P1, P2, P4, P5).<br>*Fields:* startingSettlerUnit Clan Settler x1; startingWorkerUnit Mortal Laborer x1; startingMilitaryUnit Rank One Gu Master; startingGold 50; baseUnitBuyCost 200; researchAgreementCost 150; iconRGB [72,140,100]; tech costs 20/40/65 | — |
 | Rank Three era | 三转 | ADAPTED | Rank-three Gu Masters on white-silver essence, the elders a mountain clan leans on.<br>*Note: Chinese colours verified (青铜/赤铁/白银/黄金). English varies: the fan translation (ch26) says green copper / red iron / white silver; the fan wiki says Red Steel and Yellow Golden. We use red iron and yellow gold.* | Mid era (columns 4-5): rank-3 path units, formations, caravans, killer moves. Beast Tides add a Bold Lightning Wolf and careful refinement costs 70 (P2, P3, P4).<br>*Fields:* iconRGB [205,205,215]; tech costs 120/170; researchAgreementCost 250; baseUnitBuyCost 300 (later-era starts are disabled by ModOptions, so the kit fields are placeholders) | — |
-| Rank Four era | 四转 | ADAPTED | Rank-four Gu Masters on yellow-gold essence, rare and decisive in a mountain clan.<br>*Note: Chinese colours verified (青铜/赤铁/白银/黄金). English varies: the fan translation (ch26) says green copper / red iron / white silver; the fan wiki says Red Steel and Yellow Golden. We use red iron and yellow gold.* | Late Slice-1 era (columns 6-7): rank-4 elites with the heaviest upkeep, beast enslavement and super-clan trade. Tides add a Thunder Crown Wolf and careful refinement costs 100 (P1, P3).<br>*Fields:* iconRGB [230,190,60]; tech costs 250/350; researchAgreementCost 350; baseUnitBuyCost 400 | — |
+| Rank Four era | 四转 | ADAPTED | Rank-four Gu Masters on yellow-gold essence, rare and decisive in a mountain clan.<br>*Note: Chinese colours verified (青铜/赤铁/白银/黄金). English varies: the fan translation (ch26) says green copper / red iron / white silver; the fan wiki says Red Steel and Yellow Golden. We use red iron and yellow gold.* | Late Slice-1 era (column 6; column 7 opened the Rank Five era in C1): rank-4 elites with the heaviest upkeep, beast enslavement and super-clan trade. Tides add a Thunder Crown Wolf and careful refinement costs 100 (P1, P3).<br>*Fields:* iconRGB [230,190,60]; tech cost 250 (column 7, 350, moved to the Rank Five era in C1); researchAgreementCost 350; baseUnitBuyCost 400 | — |
 
 ### Techs
 
@@ -202,7 +202,7 @@ Demonic; personalities set the rest.
 | Super Clan Commerce | 超级家族 | ADAPTED | The great Southern Border clans run trade cities; the Shang clan's is the region's market.<br>*Note: Verified: super clans are canon (vol.1 ch182, vol.3 ch2); Shang Clan City is the region's trade centre (vol.2 ch30).* | Shang Clan City wonder (P1).<br>*Fields:* Rank Four era, column 6, row 1, cost 250, prerequisites [Merchant Caravans] | — |
 | Beast Enslavement | 奴道 | ADAPTED **[VERIFY]** | Enslavement-path Gu Masters bind wild beasts to their will.<br>*[VERIFY] Enslavement path as a named path, and beast armies in the Southern Border arc, are from memory. Recruiting units that are uniqueTo Barbarians needs an in-game test.* | A defeated Beast joins you with +10 stones, but only while stone income is above +4 per turn, and only after a melee kill [src BattleUnitCapture] (every Gu Master fights in melee since round 5c). Recruits eat stones (wolf +50%, king +100%, Thunder Crown +200%), so a tide becomes an army you must feed (P3, P1). A teaser for a later Enslavement path.<br>*Fields:* Rank Four era, column 6, row 2, cost 250, prerequisites [Inheritance Lore, Killer Moves] | `When defeating a [Beast] unit, earn [10] Gold and recruit it <when number of [[Gold] Per Turn] is more than [4]>` |
 | Rank Four Cultivation | — | ADAPTED | The breakthrough to rank four. | Rank Four path units, the heaviest upkeep in Slice 1 (P1, P4).<br>*Fields:* Rank Four era, column 6, row 3, cost 250, prerequisites [Killer Moves] | — |
-| Dao Comprehension | 悟道 | ADAPTED | Insight into the Great Dao has no end. | Final repeatable tech (§7) and score sink; Slice 2 hooks rank five here.<br>*Fields:* Rank Four era, column 7, row 2, cost 350, prerequisites [Super Clan Commerce, Beast Enslavement, Rank Four Cultivation]; whole tree about 2,100 science | `Can be continually researched` |
+| Dao Comprehension | 悟道 | ADAPTED | Insight into the Great Dao has no end. | Final repeatable tech (§7) and score sink.<br>*Fields:* since C1 Rank Six era, column 10, row 2, cost 950, prerequisite [Calamity Lore] (was Rank Four era, column 7, cost 350); Slice 1's tree is about 2,100 science, the C1 tree about 4,500 | `Can be continually researched` |
 
 ### Units
 
@@ -596,10 +596,10 @@ Presentation **Alert**. Fired by the Refine Gu promotion on purchase, or by the 
 ```
 Only available <if [Refinement Chamber] is constructed> <when above [80] [Gold]>
 Unavailable <when below [140] [Gold]> <during the [Rank Three era]>
-Unavailable <when below [200] [Gold]> <during the [Rank Four era]>
+Unavailable <when below [200] [Gold]> <starting from the [Rank Four era]>
 Gain [-40] [Gold] <during the [Rank One-Two era]>
 Gain [-70] [Gold] <during the [Rank Three era]>
-Gain [-100] [Gold] <during the [Rank Four era]>
+Gain [-100] [Gold] <starting from the [Rank Four era]>
 Unavailable <for units with [Killer Move]>
 Unavailable <for units with [Moon Master]> <for units with [Moon Raiment]> <before discovering [Killer Moves]>
 Unavailable <for units with [Strength Master]> <for units without [Moon Master]> <for units with [White Jade Gu]> <before discovering [Killer Moves]>
@@ -687,7 +687,7 @@ Presentation **Alert**. Fired by GlobalUniques for every major (3% per turn afte
 [2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>
 [3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>
 A [Bold Lightning Wolf] rebels <starting from the [Rank Three era]>
-A [Thunder Crown Wolf] rebels <during the [Rank Four era]>
+A [Thunder Crown Wolf] rebels <starting from the [Rank Four era]>
 ```
 
 **2. Hire demonic Gu Masters to thin the pack** — AI weight 1, 18% when every choice is open and no conditional weight applies
@@ -695,10 +695,10 @@ A [Thunder Crown Wolf] rebels <during the [Rank Four era]>
 ```
 Only available <when above [60] [Gold]>
 Unavailable <when below [100] [Gold]> <during the [Rank Three era]>
-Unavailable <when below [150] [Gold]> <during the [Rank Four era]>
+Unavailable <when below [150] [Gold]> <starting from the [Rank Four era]>
 Gain [-60] [Gold] <during the [Rank One-Two era]>
 Gain [-100] [Gold] <during the [Rank Three era]>
-Gain [-150] [Gold] <during the [Rank Four era]>
+Gain [-150] [Gold] <starting from the [Rank Four era]>
 ```
 
 **3. Abandon the outer fields** — AI weight 0.7, 13% when every choice is open and no conditional weight applies.
@@ -713,7 +713,7 @@ Round 7: was `-1 population in all cities`, which cost nothing at population 1 a
 ```
 Only available <if [Stockade Wall] is constructed> <when above [70] [Gold]>
 Gain [-40] [Gold] <during the [Rank Three era]>
-Gain [-70] [Gold] <during the [Rank Four era]>
+Gain [-70] [Gold] <starting from the [Rank Four era]>
 [-20]% [Production] <for [5] turns>
 ```
 
@@ -1281,3 +1281,330 @@ dominate another (MOD_SPEC_2 tension targets).
 
 Eternal Life (MOD_SPEC_3): milestones `Build [building]` (Eternal Life) after Venerable Ascension; the Venerable races
 its own lifespan. Domination (Slice 1) stays.
+
+## Phase C1: ascension, essence, Rank 5–6 eras (built 2026-11-01)
+
+MOD_SPEC_2 Phase C, first layer, from the rows above (Eras and techs, Stockpiles, Units, Buildings and wonders,
+Events). What changed against the plan, and why:
+
+* **Blessed lands are promotions on the immortal, not free buildings.** `Gain a free [buildingName] [cityFilter]`
+  adds nothing to a city that already holds the building [src UniqueTriggerActivation GainFreeBuildings], so a
+  second immortal of the same grade would get no land, and the building could not follow its owner. Canon puts the
+  blessed land *inside* the immortal's aperture (R V4/290): as a promotion it belongs to the unit, every immortal has
+  its own, the grade shows on the unit, and the land dies with it. C2's tribulations hit it on the unit (the user's
+  decision: a timed status on the ascended unit). Verdict ADAPTED (mechanic), CANON (grades and their ratio 1:2:3:5).
+* **Qi income is flat per turn; the ascension's cost scales with the game speed** (one line per speed, R7), so a
+  Marathon game does not ascend three times as often per era.
+* **The AI only tries the balanced ascension.** The promotion opens at the hasty amount for a human and at the
+  balanced amount for the AI (<for [AI player] Civilizations>), so the AI never spends XP on an attempt it would
+  rush (E4); its event weights still let it rush one time in sixteen.
+* **Calamity Lore unlocks the ascension** (knowing the calamities is the last preparation, ADAPTED); C2 adds its
+  preparation buildings. Dao Comprehension, the repeatable tech, moves to the end of the tree (column 10).
+* **Rank-5 path Gu wait for the Rank Five Gu Master** (<for [post-[Rank Four era]] units>; they waited at rank four
+  before). Rank-4 Gu go to any unit of rank four or higher (<for [post-[Rank Three era]] units>).
+* **The careful-refinement and Beast Tide costs of the Rank Four era now hold in every later era**
+  (<starting from the [Rank Four era]>), or they would fall back to free.
+
+| Object | Chinese | Verdict | Role | Numbers |
+|---|---|---|---|---|
+| Rank Five era, Rank Six era | 五转 / 六转 | CANON | Eras 4 and 5 (purple crystal, green grape) | columns 7–8 (480, 620), 9–10 (800, 950) |
+| Purple Crystal Essence | 紫晶真元 | CANON | Opens the Rank Five Gu Master | column 7, after Rank Four Cultivation |
+| Three Qi | 三气 | CANON | Starts the three qi stockpiles | column 8 |
+| Calamity Lore | 灾劫 | ADAPTED | Opens the Ascension promotion | column 9 |
+| Rank Five Gu Master | 五转蛊师 | CANON | Peak mortal; no Upgrade button (no `upgradesTo`), only the ascension's special upgrade | strength 44, cost 190, upkeep +225% |
+| Rank Six Gu Immortal | 六转蛊仙 | CANON | Only made by the ascension (`Unbuildable`, `Cannot be purchased`); +15% strength with more than 9 essence | strength 60, upkeep +300% |
+| Heaven / Earth / Human Qi | 天气 / 地气 / 人气 | CANON | Stockpiles; land, springs and hills, people and battle | 1 per 15 land tiles; 1 per spring cave and per 8 hills; 1 per 10 citizens and 5% of damage dealt |
+| Green Grape Immortal Essence | 青提仙元 | CANON | Stockpile; only blessed lands make it | — |
+| Ascension (promotion) | 升仙 | ADAPTED | E4 kept promotion; opens the Ascension popup | 30 of each qi (human), 60 (AI), Standard speed |
+| Ascension (event) | 升仙 | CANON | Balanced (60 each, 80% success) or hasty (30 each, 50%) or not yet | — |
+| Ascension Trial, Hasty Ascension Trial | — | ADAPTED | Silent dice: grade or collapse; aptitude A raises, D lowers the odds (canon foundation) | balanced: lower 40, middle 28, upper 10, super 2, collapse 20 (%); hasty: lower 36, middle 14, collapse 50 |
+| Lower / Middle / Upper / Super Grade Blessed Land | 下等 / 中等 / 上等 / 特等福地 | CANON | Promotion on the immortal | 1 / 2 / 3 / 5 essence and 2 / 4 / 6 / 10 stones a turn |
+| Immortal Ascension, Aperture Collapse | — | INVENTED | Result popups | — |
+
+Exact uniques (generated by tools/gen_ruleset.py; Earth Qi, Human Qi and the essence share the Heaven Qi lines):
+
+**Rank Five Gu Master** (Units.json)
+
+```
+[+225]% maintenance costs
+Never appears as a Barbarian unit
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+May upgrade to [Rank Six Gu Immortal] through ruins-like effects
+[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
+Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
+Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+```
+
+**Rank Six Gu Immortal** (Units.json)
+
+```
+[+300]% maintenance costs
+Never appears as a Barbarian unit
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Unbuildable
+Cannot be purchased
+[+15]% Strength <when above [9] [Green Grape Immortal Essence]>
+[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
+Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
+Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>
+```
+
+**Ascension** (UnitPromotions.json)
+
+```
+Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>
+Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
+Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
+Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>
+Unavailable <when below [90] [Heaven Qi]> <on [Marathon] game speed>
+Unavailable <when below [20] [Earth Qi]> <on [Quick] game speed>
+Unavailable <when below [30] [Earth Qi]> <on [Standard] game speed>
+Unavailable <when below [45] [Earth Qi]> <on [Epic] game speed>
+Unavailable <when below [90] [Earth Qi]> <on [Marathon] game speed>
+Unavailable <when below [20] [Human Qi]> <on [Quick] game speed>
+Unavailable <when below [30] [Human Qi]> <on [Standard] game speed>
+Unavailable <when below [45] [Human Qi]> <on [Epic] game speed>
+Unavailable <when below [90] [Human Qi]> <on [Marathon] game speed>
+Unavailable <when below [40] [Heaven Qi]> <for [AI player] Civilizations> <on [Quick] game speed>
+Unavailable <when below [60] [Heaven Qi]> <for [AI player] Civilizations> <on [Standard] game speed>
+Unavailable <when below [90] [Heaven Qi]> <for [AI player] Civilizations> <on [Epic] game speed>
+Unavailable <when below [180] [Heaven Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>
+Unavailable <when below [40] [Earth Qi]> <for [AI player] Civilizations> <on [Quick] game speed>
+Unavailable <when below [60] [Earth Qi]> <for [AI player] Civilizations> <on [Standard] game speed>
+Unavailable <when below [90] [Earth Qi]> <for [AI player] Civilizations> <on [Epic] game speed>
+Unavailable <when below [180] [Earth Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>
+Unavailable <when below [40] [Human Qi]> <for [AI player] Civilizations> <on [Quick] game speed>
+Unavailable <when below [60] [Human Qi]> <for [AI player] Civilizations> <on [Standard] game speed>
+Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Epic] game speed>
+Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>
+Triggers a [Ascension] event
+[This Unit] loses the [Ascension] promotion <upon turn start>
+```
+
+**Lower Grade Blessed Land** (UnitPromotions.json)
+
+```
+Instantly provides [1] [Green Grape Immortal Essence] <upon turn start>
+Gain [2] [Gold] <upon turn start>
+```
+
+**Middle Grade Blessed Land** (UnitPromotions.json)
+
+```
+Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>
+Gain [4] [Gold] <upon turn start>
+```
+
+**Upper Grade Blessed Land** (UnitPromotions.json)
+
+```
+Instantly provides [3] [Green Grape Immortal Essence] <upon turn start>
+Gain [6] [Gold] <upon turn start>
+```
+
+**Super Grade Blessed Land** (UnitPromotions.json)
+
+```
+Instantly provides [5] [Green Grape Immortal Essence] <upon turn start>
+Gain [10] [Gold] <upon turn start>
+```
+
+**Ascension** (popup)
+
+* Balance the three qi
+
+```
+Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>
+Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>
+Unavailable <when below [90] [Heaven Qi]> <on [Epic] game speed>
+Unavailable <when below [180] [Heaven Qi]> <on [Marathon] game speed>
+Unavailable <when below [40] [Earth Qi]> <on [Quick] game speed>
+Unavailable <when below [60] [Earth Qi]> <on [Standard] game speed>
+Unavailable <when below [90] [Earth Qi]> <on [Epic] game speed>
+Unavailable <when below [180] [Earth Qi]> <on [Marathon] game speed>
+Unavailable <when below [40] [Human Qi]> <on [Quick] game speed>
+Unavailable <when below [60] [Human Qi]> <on [Standard] game speed>
+Unavailable <when below [90] [Human Qi]> <on [Epic] game speed>
+Unavailable <when below [180] [Human Qi]> <on [Marathon] game speed>
+Instantly consumes [40] [Heaven Qi] <on [Quick] game speed>
+Instantly consumes [60] [Heaven Qi] <on [Standard] game speed>
+Instantly consumes [90] [Heaven Qi] <on [Epic] game speed>
+Instantly consumes [180] [Heaven Qi] <on [Marathon] game speed>
+Instantly consumes [40] [Earth Qi] <on [Quick] game speed>
+Instantly consumes [60] [Earth Qi] <on [Standard] game speed>
+Instantly consumes [90] [Earth Qi] <on [Epic] game speed>
+Instantly consumes [180] [Earth Qi] <on [Marathon] game speed>
+Instantly consumes [40] [Human Qi] <on [Quick] game speed>
+Instantly consumes [60] [Human Qi] <on [Standard] game speed>
+Instantly consumes [90] [Human Qi] <on [Epic] game speed>
+Instantly consumes [180] [Human Qi] <on [Marathon] game speed>
+Triggers a [Ascension Trial] event
+[+200]% weight to this choice for AI decisions
+```
+
+* Ascend in haste
+
+```
+Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
+Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
+Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>
+Unavailable <when below [90] [Heaven Qi]> <on [Marathon] game speed>
+Unavailable <when below [20] [Earth Qi]> <on [Quick] game speed>
+Unavailable <when below [30] [Earth Qi]> <on [Standard] game speed>
+Unavailable <when below [45] [Earth Qi]> <on [Epic] game speed>
+Unavailable <when below [90] [Earth Qi]> <on [Marathon] game speed>
+Unavailable <when below [20] [Human Qi]> <on [Quick] game speed>
+Unavailable <when below [30] [Human Qi]> <on [Standard] game speed>
+Unavailable <when below [45] [Human Qi]> <on [Epic] game speed>
+Unavailable <when below [90] [Human Qi]> <on [Marathon] game speed>
+Instantly consumes [20] [Heaven Qi] <on [Quick] game speed>
+Instantly consumes [30] [Heaven Qi] <on [Standard] game speed>
+Instantly consumes [45] [Heaven Qi] <on [Epic] game speed>
+Instantly consumes [90] [Heaven Qi] <on [Marathon] game speed>
+Instantly consumes [20] [Earth Qi] <on [Quick] game speed>
+Instantly consumes [30] [Earth Qi] <on [Standard] game speed>
+Instantly consumes [45] [Earth Qi] <on [Epic] game speed>
+Instantly consumes [90] [Earth Qi] <on [Marathon] game speed>
+Instantly consumes [20] [Human Qi] <on [Quick] game speed>
+Instantly consumes [30] [Human Qi] <on [Standard] game speed>
+Instantly consumes [45] [Human Qi] <on [Epic] game speed>
+Instantly consumes [90] [Human Qi] <on [Marathon] game speed>
+Triggers a [Hasty Ascension Trial] event
+[-80]% weight to this choice for AI decisions
+```
+
+* Not yet
+
+```
+[-100]% weight to this choice for AI decisions
+```
+
+**Ascension Trial** (silent die)
+
+* A lower-grade blessed land opens
+
+```
+[This Unit] gains the [Lower Grade Blessed Land] promotion
+Triggers a [Immortal Ascension] event
+[This Unit] upgrades for free including special upgrades
+[+0]% weight to this choice for AI decisions
+[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+* A middle-grade blessed land opens
+
+```
+[This Unit] gains the [Middle Grade Blessed Land] promotion
+Triggers a [Immortal Ascension] event
+[This Unit] upgrades for free including special upgrades
+[-30]% weight to this choice for AI decisions
+[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+* An upper-grade blessed land opens
+
+```
+[This Unit] gains the [Upper Grade Blessed Land] promotion
+Triggers a [Immortal Ascension] event
+[This Unit] upgrades for free including special upgrades
+[-75]% weight to this choice for AI decisions
+[+100]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+* A super-grade blessed land opens
+
+```
+[This Unit] gains the [Super Grade Blessed Land] promotion
+Triggers a [Immortal Ascension] event
+[This Unit] upgrades for free including special upgrades
+[-96]% weight to this choice for AI decisions
+[+150]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[-100]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+* The aperture collapses
+
+```
+Triggers a [Aperture Collapse] event
+[This Unit] is destroyed
+[-50]% weight to this choice for AI decisions
+[-50]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+**Hasty Ascension Trial** (silent die)
+
+* A lower-grade blessed land opens
+
+```
+[This Unit] gains the [Lower Grade Blessed Land] promotion
+Triggers a [Immortal Ascension] event
+[This Unit] upgrades for free including special upgrades
+[+0]% weight to this choice for AI decisions
+[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+* A middle-grade blessed land opens
+
+```
+[This Unit] gains the [Middle Grade Blessed Land] promotion
+Triggers a [Immortal Ascension] event
+[This Unit] upgrades for free including special upgrades
+[-60]% weight to this choice for AI decisions
+[+50]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+* The aperture collapses
+
+```
+Triggers a [Aperture Collapse] event
+[This Unit] is destroyed
+[+40]% weight to this choice for AI decisions
+[-40]% weight to this choice for AI decisions <for units with [Aptitude A]>
+[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>
+```
+
+**Immortal Ascension** (popup)
+
+* Enter the blessed land
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+**Aperture Collapse** (popup)
+
+* Mourn the fallen
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+**Heaven Qi** (TileResources.json)
+
+```
+Stockpiled
+Cannot be traded
+```
+
+**Green Grape Immortal Essence** (TileResources.json)
+
+```
+Stockpiled
+Cannot be traded
+```
+
+**GlobalUniques: qi sources**
+
+```
+Instantly provides [1] [Heaven Qi] <upon turn start> <for every [15] [Owned [Land] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>
+Instantly provides [1] [Earth Qi] <upon turn start> <for every [1] [Owned [Spring Cave] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>
+Instantly provides [1] [Earth Qi] <upon turn start> <for every [8] [Owned [Hill] Tiles]> <after discovering [Three Qi]> <for [Major] Civilizations>
+Instantly provides [1] [Human Qi] <upon turn start> <for every [10] [[Population] in [in all cities] Cities]> <after discovering [Three Qi]> <for [Major] Civilizations>
+Earn [5]% of the damage done to [All] units as [Human Qi] <after discovering [Three Qi]> <for [Major] Civilizations>
+```

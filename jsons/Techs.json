@@ -234,18 +234,81 @@
   },
   {
     "columnNumber": 7,
-    "era": "Rank Four era",
-    "techCost": 350,
-    "buildingCost": 200,
-    "wonderCost": 350,
+    "era": "Rank Five era",
+    "techCost": 480,
+    "buildingCost": 240,
+    "wonderCost": 400,
+    "techs": [
+      {
+        "name": "Purple Crystal Essence",
+        "row": 3,
+        "prerequisites": [
+          "Rank Four Cultivation"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Rank five essence (紫晶真元) condenses like crystal. Opens the Rank Five Gu Master."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 8,
+    "era": "Rank Five era",
+    "techCost": 620,
+    "buildingCost": 280,
+    "wonderCost": 450,
+    "techs": [
+      {
+        "name": "Three Qi",
+        "row": 2,
+        "prerequisites": [
+          "Purple Crystal Essence",
+          "Super Clan Commerce",
+          "Beast Enslavement"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Heaven, earth and human qi (天气, 地气, 人气) must meet in balance for a mortal to become an immortal. From now on your land gathers heaven qi, your springs and hills earth qi, and your people and battles human qi."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 9,
+    "era": "Rank Six era",
+    "techCost": 800,
+    "buildingCost": 320,
+    "wonderCost": 500,
+    "techs": [
+      {
+        "name": "Calamity Lore",
+        "row": 2,
+        "prerequisites": [
+          "Three Qi"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Calamities (灾劫) come on a schedule and can be prepared for. Knowing them is the last preparation for the ascension: a rank-five master may now try it (the Ascension promotion)."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "columnNumber": 10,
+    "era": "Rank Six era",
+    "techCost": 950,
+    "buildingCost": 360,
+    "wonderCost": 550,
     "techs": [
       {
         "name": "Dao Comprehension",
         "row": 2,
         "prerequisites": [
-          "Super Clan Commerce",
-          "Beast Enslavement",
-          "Rank Four Cultivation"
+          "Calamity Lore"
         ],
         "uniques": [
           "Can be continually researched"
