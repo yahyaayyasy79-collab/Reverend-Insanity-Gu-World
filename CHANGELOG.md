@@ -554,3 +554,14 @@
 * Autoplay (8 × 450, the four arc majors): 0 crashes; Fate Gu built in 5 of 8 games, immortal zombies in 4, rank seven
   reached by 24 of 32 clans.
 * Not built: the twelve secret realms and the five-region map.
+
+## Path policy branches and halls (2026-11-01)
+
+* The user asked for every canonical path as a policy branch: 45 new branches (Slice 1's Moon and Strength stay),
+  each an opener (+5% strength for the path's Masters per adopted policy of the branch), three policies and a
+  completion bonus from the path's family; eras by family (Rank Three to Rank Five). Strongly clashing paths exclude
+  each other's branch (earth–water, earth–fire, strength–water, metal–strength, light–dark).
+* 47 **path halls** (one per path, unlocked by its branch): every Gu Master trained in that city starts as the path's
+  Master.
+* Art: 45 branch banners, 135 policy icons, 47 halls, in a fifth atlas (Policies.png). Text in EN and ID; the tables
+  are in docs/PATHS.md ("Policy branches and halls").

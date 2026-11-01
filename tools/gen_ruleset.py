@@ -1003,6 +1003,7 @@ dump("Buildings.json", [
                  "[+2 Happiness]", w("+500")]},
     {"name": "Shattered Fate", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]},
     {"name": "Fate Seized", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]}
+] + gen_paths.halls() + [
 ])
 
 # ---------------- Policies (4 branches) ----------------
@@ -1064,7 +1065,7 @@ dump("Policies.json", [
         {"name": "Unyielding Body", "row": 2, "column": 2, "requires": ["Boar Strength"],
          "uniques": ["Heals [10] damage if it kills a unit"]},
         {"name": "Strength Path Complete", "uniques": ["[1] Movement <for [Strength Master] units>"]}]},
-])
+] + gen_paths.policy_branches())  # the other 45 canonical paths (the user, 2026-11-01)
 
 # ---------------- Resources (7: Spirit Spring, 4 strategic Gu foods, Gu Inheritance, 1 luxury) ----------------
 DEP = {"minorDepositAmount": {"sparse": 1, "default": 1, "abundant": 2},

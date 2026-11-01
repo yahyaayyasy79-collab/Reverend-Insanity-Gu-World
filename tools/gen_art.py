@@ -81,11 +81,15 @@ def main(argv: list[str]) -> int:
     # the path promotions (several hundred icons) get their own atlas, Paths.png: with the other icons they spilled into a
     # second game texture (game2.png)
     path_icons = {(folder, name) for folder, name, _, _ in pathart.icons()}
+    # the path branches, their policies and halls (2026-11-01) get a fifth atlas, Policies.png
+    policy_icons = {(folder, name) for folder, name, _, _ in pathart.policy_icons()}
     # the immortal tiers and moves (MOD_SPEC_2 C3/C5) overflowed Paths.png in turn: a third atlas, Arc.png
     import gen_paths
     arc_names = {m for p in gen_paths.PATHS for m in (p["immortal"], gen_paths.tier_name(p, 2), gen_paths.tier_name(p, 3))}
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons():
-        if (folder, name) in path_icons:
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons() + pathart.policy_icons():
+        if (folder, name) in policy_icons:
+            target = args.mod / "Images.Policies" / folder / f"{name}.png"
+        elif (folder, name) in path_icons:
             stale = images / folder / f"{name}.png"
             if stale.exists() and ours(stale):
                 stale.unlink()

@@ -1402,5 +1402,757 @@
         "text": "Proof that this clan seized Fate Gu from the Heavenly Court and kept it."
       }
     ]
+  },
+  {
+    "name": "Strength Hall",
+    "requiredTech": "Rank Two Cultivation",
+    "cost": 90,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Strength Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Strength Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's strength-path hall: every Gu Master trained in this city starts as a Strength Master. Needs the Strength Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Transformation Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Transformation Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Transformation Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's transformation-path hall: every Gu Master trained in this city starts as a Transformation Master. Needs the Transformation Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Bone Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Bone Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Bone Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's bone-path hall: every Gu Master trained in this city starts as a Bone Master. Needs the Bone Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Blood Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Blood Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Blood Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's blood-path hall: every Gu Master trained in this city starts as a Blood Master. Needs the Blood Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Sword Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Sword Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Sword Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's sword-path hall: every Gu Master trained in this city starts as a Sword Master. Needs the Sword Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Blade Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Blade Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Blade Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's blade-path hall: every Gu Master trained in this city starts as a Blade Master. Needs the Blade Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Metal Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Metal Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Metal Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's metal-path hall: every Gu Master trained in this city starts as a Metal Master. Needs the Metal Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Weapon Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Weapon Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Weapon Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's weapon-path hall: every Gu Master trained in this city starts as a Weapon Master. Needs the Weapon Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Killing Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Killing Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Killing Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's killing-path hall: every Gu Master trained in this city starts as a Killing Master. Needs the Killing Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Fire Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Fire Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Fire Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's fire-path hall: every Gu Master trained in this city starts as a Fire Master. Needs the Fire Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Water Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Water Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Water Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's water-path hall: every Gu Master trained in this city starts as a Water Master. Needs the Water Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Wood Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Wood Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Wood Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's wood-path hall: every Gu Master trained in this city starts as a Wood Master. Needs the Wood Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Earth Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Earth Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Earth Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's earth-path hall: every Gu Master trained in this city starts as a Earth Master. Needs the Earth Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Wind Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Wind Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Wind Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's wind-path hall: every Gu Master trained in this city starts as a Wind Master. Needs the Wind Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Cloud Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Cloud Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Cloud Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's cloud-path hall: every Gu Master trained in this city starts as a Cloud Master. Needs the Cloud Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Ice Snow Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Ice Snow Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Ice Snow Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's ice snow-path hall: every Gu Master trained in this city starts as a Ice Snow Master. Needs the Ice Snow Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Lightning Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Lightning Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's lightning-path hall: every Gu Master trained in this city starts as a Lightning Master. Needs the Lightning Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Poison Hall",
+    "requiredTech": "Rank Three Cultivation",
+    "cost": 120,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Poison Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Poison Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's poison-path hall: every Gu Master trained in this city starts as a Poison Master. Needs the Poison Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Light Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Light Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Light Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's light-path hall: every Gu Master trained in this city starts as a Light Master. Needs the Light Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Dark Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Dark Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Dark Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's dark-path hall: every Gu Master trained in this city starts as a Dark Master. Needs the Dark Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Shadow Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Shadow Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Shadow Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's shadow-path hall: every Gu Master trained in this city starts as a Shadow Master. Needs the Shadow Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Star Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Star Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Star Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's star-path hall: every Gu Master trained in this city starts as a Star Master. Needs the Star Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Moon Hall",
+    "requiredTech": "Rank Two Cultivation",
+    "cost": 90,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Moon Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Moon Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's moon-path hall: every Gu Master trained in this city starts as a Moon Master. Needs the Moon Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Sound Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Sound Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Sound Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's sound-path hall: every Gu Master trained in this city starts as a Sound Master. Needs the Sound Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Illusion Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Illusion Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Illusion Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's illusion-path hall: every Gu Master trained in this city starts as a Illusion Master. Needs the Illusion Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Wisdom Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Wisdom Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Wisdom Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's wisdom-path hall: every Gu Master trained in this city starts as a Wisdom Master. Needs the Wisdom Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Emotion Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Emotion Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Emotion Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's emotion-path hall: every Gu Master trained in this city starts as a Emotion Master. Needs the Emotion Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Enchantment Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Enchantment Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Enchantment Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's enchantment-path hall: every Gu Master trained in this city starts as a Enchantment Master. Needs the Enchantment Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Soul Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Soul Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Soul Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's soul-path hall: every Gu Master trained in this city starts as a Soul Master. Needs the Soul Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Dream Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Dream Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Dream Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's dream-path hall: every Gu Master trained in this city starts as a Dream Master. Needs the Dream Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Enslavement Hall",
+    "requiredTech": "Rank Four Cultivation",
+    "cost": 170,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Enslavement Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Enslavement Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's enslavement-path hall: every Gu Master trained in this city starts as a Enslavement Master. Needs the Enslavement Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Time Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Time Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Time Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's time-path hall: every Gu Master trained in this city starts as a Time Master. Needs the Time Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Space Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Space Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Space Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's space-path hall: every Gu Master trained in this city starts as a Space Master. Needs the Space Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Rule Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Rule Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Rule Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's rule-path hall: every Gu Master trained in this city starts as a Rule Master. Needs the Rule Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Phantom Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Phantom Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Phantom Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's phantom-path hall: every Gu Master trained in this city starts as a Phantom Master. Needs the Phantom Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Restriction Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Restriction Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Restriction Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's restriction-path hall: every Gu Master trained in this city starts as a Restriction Master. Needs the Restriction Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Luck Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Luck Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Luck Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's luck-path hall: every Gu Master trained in this city starts as a Luck Master. Needs the Luck Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Heaven Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Heaven Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Heaven Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's heaven-path hall: every Gu Master trained in this city starts as a Heaven Master. Needs the Heaven Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Qi Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Qi Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Qi Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's qi-path hall: every Gu Master trained in this city starts as a Qi Master. Needs the Qi Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Refinement Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Refinement Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Refinement Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's refinement-path hall: every Gu Master trained in this city starts as a Refinement Master. Needs the Refinement Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Formation Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Formation Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Formation Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's formation-path hall: every Gu Master trained in this city starts as a Formation Master. Needs the Formation Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Food Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Food Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Food Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's food-path hall: every Gu Master trained in this city starts as a Food Master. Needs the Food Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Pill Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Pill Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Pill Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's pill-path hall: every Gu Master trained in this city starts as a Pill Master. Needs the Pill Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Information Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Information Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Information Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's information-path hall: every Gu Master trained in this city starts as a Information Master. Needs the Information Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Human Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Human Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Human Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's human-path hall: every Gu Master trained in this city starts as a Human Master. Needs the Human Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Painting Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Painting Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Painting Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's painting-path hall: every Gu Master trained in this city starts as a Painting Master. Needs the Painting Path policy branch."
+      }
+    ]
+  },
+  {
+    "name": "Theft Hall",
+    "requiredTech": "Purple Crystal Essence",
+    "cost": 240,
+    "maintenance": 2,
+    "culture": 1,
+    "uniques": [
+      "Only available <after adopting [Theft Path]>",
+      "All newly-trained [Gu Master] units [in this city] receive the [Theft Master] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The clan's theft-path hall: every Gu Master trained in this city starts as a Theft Master. Needs the Theft Path policy branch."
+      }
+    ]
   }
 ]

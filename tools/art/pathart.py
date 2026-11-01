@@ -478,3 +478,46 @@ def icons() -> list[tuple[str, str, object, str]]:
     for s in gen_paths.STATUSES:
         out.append(("UnitPromotionIcons", s["name"], (lambda n=s["name"]: status(n)), "white"))
     return out
+
+
+# ---- policy branches and halls (2026-11-01: all 47 paths)
+def branch_icon(key: str) -> G:
+    """A policy branch: the symbol on a banner."""
+    g = G()
+    g.poly([(18, 8), (82, 8), (82, 80), (50, 94), (18, 80)])
+    inner = G(); place(inner, symbol(key), 50, 46, 0.56)
+    g.paste(inner, 0)
+    return g
+
+
+def member_icon(key: str, n: int) -> G:
+    """A branch policy: the symbol with n bars beneath."""
+    g = G(); place(g, symbol(key), 50, 40, 0.62)
+    for k in range(n):
+        x = 50 + (k - (n - 1) / 2) * 16
+        g.poly([(x - 6, 80), (x + 6, 80), (x + 6, 92), (x - 6, 92)])
+    return g
+
+
+def hall_icon(key: str) -> G:
+    """A path hall: a roof over the symbol."""
+    from .glyphs2 import roof
+    g = G(); roof(g, 50, 26, 44, 18)
+    g.poly([(20, 30), (80, 30), (80, 92), (20, 92)])
+    inner = G(); place(inner, symbol(key), 50, 62, 0.48)
+    g.paste(inner, 0)
+    return g
+
+
+def policy_icons() -> list[tuple[str, str, object, str]]:
+    import gen_paths
+    out = []
+    for p in gen_paths.PATHS:
+        k = p["key"]
+        out.append(("BuildingIcons", gen_paths.hall_name(p), (lambda k=k: hall_icon(k)), "black"))
+        if k in gen_paths.SLICE1_BRANCHES:
+            continue
+        out.append(("PolicyBranchIcons", gen_paths.branch_name(p), (lambda k=k: branch_icon(k)), "white"))
+        for n, (name, _) in enumerate(gen_paths.member_names(p), start=1):
+            out.append(("PolicyIcons", name, (lambda k=k, n=n: member_icon(k, n)), "white"))
+    return out

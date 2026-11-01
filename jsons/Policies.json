@@ -306,5 +306,3208 @@
         "text": "The strength path (力道): Gu that add raw might to the body itself. It hits hardest and eats the most."
       }
     ]
+  },
+  {
+    "name": "Transformation Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Transformation Master] units> <for every [Adopted [[Transformation Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The transformation path (变化道) as a clan's tradition (Body & Beast): its Masters grow with every policy of the branch, and it opens the Transformation Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Transformation Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when defending> <for [Transformation Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Transformation Path: its Masters defend 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Transformation Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Transformation Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Transformation Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Transformation Lineage"
+        ],
+        "uniques": [
+          "Heals [15] damage if it kills a unit <for [Transformation Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Transformation Path: its Masters heal 15 HP when they kill."
+          }
+        ]
+      },
+      {
+        "name": "Transformation Path Complete",
+        "uniques": [
+          "[+10] HP when healing <for [Transformation Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters heal 10 HP more."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bone Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Bone Master] units> <for every [Adopted [[Bone Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The bone path (骨道) as a clan's tradition (Body & Beast): its Masters grow with every policy of the branch, and it opens the Bone Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Bone Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when defending> <for [Bone Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Bone Path: its Masters defend 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Bone Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Bone Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Bone Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Bone Lineage"
+        ],
+        "uniques": [
+          "Heals [15] damage if it kills a unit <for [Bone Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Bone Path: its Masters heal 15 HP when they kill."
+          }
+        ]
+      },
+      {
+        "name": "Bone Path Complete",
+        "uniques": [
+          "[+10] HP when healing <for [Bone Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters heal 10 HP more."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blood Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Blood Master] units> <for every [Adopted [[Blood Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The blood path (血道) as a clan's tradition (Body & Beast): its Masters grow with every policy of the branch, and it opens the Blood Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Blood Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when defending> <for [Blood Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Blood Path: its Masters defend 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Blood Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Blood Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Blood Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Blood Lineage"
+        ],
+        "uniques": [
+          "Heals [15] damage if it kills a unit <for [Blood Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Blood Path: its Masters heal 15 HP when they kill."
+          }
+        ]
+      },
+      {
+        "name": "Blood Path Complete",
+        "uniques": [
+          "[+10] HP when healing <for [Blood Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters heal 10 HP more."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sword Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Sword Master] units> <for every [Adopted [[Sword Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The sword path (剑道) as a clan's tradition (Edge & War): its Masters grow with every policy of the branch, and it opens the Sword Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Sword Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Sword Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Sword Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Sword Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+10]% Production when constructing [Military] units [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Sword Path: military units are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Sword Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Sword Lineage"
+        ],
+        "uniques": [
+          "[1] Movement <for [Sword Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Sword Path: its Masters move 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Sword Path Complete",
+        "uniques": [
+          "[+15]% Strength <vs cities> <for [Sword Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters fight 15% harder against cities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blade Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Blade Master] units> <for every [Adopted [[Blade Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The blade path (刀道) as a clan's tradition (Edge & War): its Masters grow with every policy of the branch, and it opens the Blade Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Blade Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Blade Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Blade Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Blade Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+10]% Production when constructing [Military] units [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Blade Path: military units are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Blade Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Blade Lineage"
+        ],
+        "uniques": [
+          "[1] Movement <for [Blade Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Blade Path: its Masters move 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Blade Path Complete",
+        "uniques": [
+          "[+15]% Strength <vs cities> <for [Blade Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters fight 15% harder against cities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Metal Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Metal Master] units> <for every [Adopted [[Metal Path] branch] Policies]>",
+      "Only available <before adopting [Strength Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The metal path (金道) as a clan's tradition (Edge & War): its Masters grow with every policy of the branch, and it opens the Metal Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Metal Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Metal Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Metal Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Metal Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+10]% Production when constructing [Military] units [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Metal Path: military units are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Metal Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Metal Lineage"
+        ],
+        "uniques": [
+          "[1] Movement <for [Metal Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Metal Path: its Masters move 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Metal Path Complete",
+        "uniques": [
+          "[+15]% Strength <vs cities> <for [Metal Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters fight 15% harder against cities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Weapon Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Weapon Master] units> <for every [Adopted [[Weapon Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The weapon path (兵道) as a clan's tradition (Edge & War): its Masters grow with every policy of the branch, and it opens the Weapon Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Weapon Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Weapon Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Weapon Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Weapon Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+10]% Production when constructing [Military] units [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Weapon Path: military units are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Weapon Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Weapon Lineage"
+        ],
+        "uniques": [
+          "[1] Movement <for [Weapon Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Weapon Path: its Masters move 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Weapon Path Complete",
+        "uniques": [
+          "[+15]% Strength <vs cities> <for [Weapon Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters fight 15% harder against cities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Killing Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Killing Master] units> <for every [Adopted [[Killing Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The killing path (杀道) as a clan's tradition (Edge & War): its Masters grow with every policy of the branch, and it opens the Killing Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Killing Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Killing Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Killing Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Killing Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+10]% Production when constructing [Military] units [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Killing Path: military units are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Killing Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Killing Lineage"
+        ],
+        "uniques": [
+          "[1] Movement <for [Killing Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Killing Path: its Masters move 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Killing Path Complete",
+        "uniques": [
+          "[+15]% Strength <vs cities> <for [Killing Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters fight 15% harder against cities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fire Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Fire Master] units> <for every [Adopted [[Fire Path] branch] Policies]>",
+      "Only available <before adopting [Earth Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The fire path (炎道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Fire Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Fire Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Fire Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Fire Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Fire Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Fire Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Fire Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Fire Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Fire Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Fire Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Fire Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Water Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Water Master] units> <for every [Adopted [[Water Path] branch] Policies]>",
+      "Only available <before adopting [Strength Path]>",
+      "Only available <before adopting [Earth Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The water path (水道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Water Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Water Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Water Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Water Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Water Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Water Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Water Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Water Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Water Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Water Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Water Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wood Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Wood Master] units> <for every [Adopted [[Wood Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The wood path (木道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Wood Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Wood Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Wood Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wood Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Wood Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wood Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Wood Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Wood Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Wood Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wood Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Wood Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Earth Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Earth Master] units> <for every [Adopted [[Earth Path] branch] Policies]>",
+      "Only available <before adopting [Fire Path]>",
+      "Only available <before adopting [Water Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The earth path (土道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Earth Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Earth Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Earth Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Earth Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Earth Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Earth Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Earth Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Earth Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Earth Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Earth Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Earth Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wind Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Wind Master] units> <for every [Adopted [[Wind Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The wind path (风道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Wind Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Wind Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Wind Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wind Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Wind Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wind Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Wind Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Wind Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Wind Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wind Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Wind Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cloud Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Cloud Master] units> <for every [Adopted [[Cloud Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The cloud path (云道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Cloud Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Cloud Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Cloud Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Cloud Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Cloud Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Cloud Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Cloud Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Cloud Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Cloud Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Cloud Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Cloud Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ice Snow Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Ice Snow Master] units> <for every [Adopted [[Ice Snow Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The ice snow path (冰雪道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Ice Snow Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Ice Snow Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Ice Snow Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Ice Snow Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Ice Snow Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Ice Snow Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Ice Snow Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Ice Snow Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Ice Snow Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Ice Snow Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Ice Snow Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lightning Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Lightning Master] units> <for every [Adopted [[Lightning Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The lightning path (雷道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Lightning Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Lightning Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Lightning Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Lightning Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Lightning Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Lightning Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Lightning Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Lightning Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Lightning Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Lightning Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Lightning Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poison Path",
+    "era": "Rank Three era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Poison Master] units> <for every [Adopted [[Poison Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The poison path (毒道) as a clan's tradition (Five Phases & Weather): its Masters grow with every policy of the branch, and it opens the Poison Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Poison Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Poison Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Poison Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Poison Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Poison Path: +1 food in every city."
+          }
+        ]
+      },
+      {
+        "name": "Poison Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Poison Lineage"
+        ],
+        "uniques": [
+          "[+10] HP when healing <for [Poison Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Poison Path: its Masters heal 10 HP more."
+          }
+        ]
+      },
+      {
+        "name": "Poison Path Complete",
+        "uniques": [
+          "[+10]% [Food] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% food."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Light Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Light Master] units> <for every [Adopted [[Light Path] branch] Policies]>",
+      "Only available <before adopting [Dark Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The light path (光道) as a clan's tradition (Sky & Shade): its Masters grow with every policy of the branch, and it opens the Light Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Light Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[1] Sight <for [Light Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Light Path: its Masters see 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Light Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Culture] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Light Path: +1 culture in every city."
+          }
+        ]
+      },
+      {
+        "name": "Light Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Light Lineage"
+        ],
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Light Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Light Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Light Path Complete",
+        "uniques": [
+          "[1] Movement <for [Light Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters move 1 tile farther."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dark Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Dark Master] units> <for every [Adopted [[Dark Path] branch] Policies]>",
+      "Only available <before adopting [Light Path]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The dark path (暗道) as a clan's tradition (Sky & Shade): its Masters grow with every policy of the branch, and it opens the Dark Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Dark Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[1] Sight <for [Dark Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Dark Path: its Masters see 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Dark Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Culture] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Dark Path: +1 culture in every city."
+          }
+        ]
+      },
+      {
+        "name": "Dark Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Dark Lineage"
+        ],
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Dark Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Dark Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Dark Path Complete",
+        "uniques": [
+          "[1] Movement <for [Dark Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters move 1 tile farther."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shadow Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Shadow Master] units> <for every [Adopted [[Shadow Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The shadow path (影道) as a clan's tradition (Sky & Shade): its Masters grow with every policy of the branch, and it opens the Shadow Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Shadow Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[1] Sight <for [Shadow Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Shadow Path: its Masters see 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Shadow Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Culture] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Shadow Path: +1 culture in every city."
+          }
+        ]
+      },
+      {
+        "name": "Shadow Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Shadow Lineage"
+        ],
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Shadow Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Shadow Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Shadow Path Complete",
+        "uniques": [
+          "[1] Movement <for [Shadow Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters move 1 tile farther."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Star Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Star Master] units> <for every [Adopted [[Star Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The star path (星道) as a clan's tradition (Sky & Shade): its Masters grow with every policy of the branch, and it opens the Star Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Star Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[1] Sight <for [Star Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Star Path: its Masters see 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Star Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Culture] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Star Path: +1 culture in every city."
+          }
+        ]
+      },
+      {
+        "name": "Star Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Star Lineage"
+        ],
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Star Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Star Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Star Path Complete",
+        "uniques": [
+          "[1] Movement <for [Star Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters move 1 tile farther."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sound Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Sound Master] units> <for every [Adopted [[Sound Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The sound path (音道) as a clan's tradition (Sky & Shade): its Masters grow with every policy of the branch, and it opens the Sound Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Sound Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[1] Sight <for [Sound Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Sound Path: its Masters see 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Sound Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Culture] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Sound Path: +1 culture in every city."
+          }
+        ]
+      },
+      {
+        "name": "Sound Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Sound Lineage"
+        ],
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Sound Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Sound Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Sound Path Complete",
+        "uniques": [
+          "[1] Movement <for [Sound Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters move 1 tile farther."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Illusion Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Illusion Master] units> <for every [Adopted [[Illusion Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The illusion path (幻道) as a clan's tradition (Sky & Shade): its Masters grow with every policy of the branch, and it opens the Illusion Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Illusion Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[1] Sight <for [Illusion Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Illusion Path: its Masters see 1 tile farther."
+          }
+        ]
+      },
+      {
+        "name": "Illusion Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Culture] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Illusion Path: +1 culture in every city."
+          }
+        ]
+      },
+      {
+        "name": "Illusion Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Illusion Lineage"
+        ],
+        "uniques": [
+          "[+15]% Strength <when attacking> <for [Illusion Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Illusion Path: its Masters attack 15% harder."
+          }
+        ]
+      },
+      {
+        "name": "Illusion Path Complete",
+        "uniques": [
+          "[1] Movement <for [Illusion Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: its Masters move 1 tile farther."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wisdom Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Wisdom Master] units> <for every [Adopted [[Wisdom Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The wisdom path (智道) as a clan's tradition (Mind & Spirit): its Masters grow with every policy of the branch, and it opens the Wisdom Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Wisdom Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% XP gained from combat <for [Wisdom Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wisdom Path: its Masters gain 15% more XP."
+          }
+        ]
+      },
+      {
+        "name": "Wisdom Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wisdom Path: +1 science in every city."
+          }
+        ]
+      },
+      {
+        "name": "Wisdom Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Wisdom Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Wisdom Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Wisdom Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Wisdom Path Complete",
+        "uniques": [
+          "[+10]% [Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Emotion Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Emotion Master] units> <for every [Adopted [[Emotion Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The emotion path (情道) as a clan's tradition (Mind & Spirit): its Masters grow with every policy of the branch, and it opens the Emotion Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Emotion Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% XP gained from combat <for [Emotion Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Emotion Path: its Masters gain 15% more XP."
+          }
+        ]
+      },
+      {
+        "name": "Emotion Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Emotion Path: +1 science in every city."
+          }
+        ]
+      },
+      {
+        "name": "Emotion Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Emotion Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Emotion Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Emotion Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Emotion Path Complete",
+        "uniques": [
+          "[+10]% [Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Enchantment Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Enchantment Master] units> <for every [Adopted [[Enchantment Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The enchantment path (魅道) as a clan's tradition (Mind & Spirit): its Masters grow with every policy of the branch, and it opens the Enchantment Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Enchantment Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% XP gained from combat <for [Enchantment Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Enchantment Path: its Masters gain 15% more XP."
+          }
+        ]
+      },
+      {
+        "name": "Enchantment Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Enchantment Path: +1 science in every city."
+          }
+        ]
+      },
+      {
+        "name": "Enchantment Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Enchantment Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Enchantment Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Enchantment Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Enchantment Path Complete",
+        "uniques": [
+          "[+10]% [Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Soul Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Soul Master] units> <for every [Adopted [[Soul Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The soul path (魂道) as a clan's tradition (Mind & Spirit): its Masters grow with every policy of the branch, and it opens the Soul Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Soul Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% XP gained from combat <for [Soul Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Soul Path: its Masters gain 15% more XP."
+          }
+        ]
+      },
+      {
+        "name": "Soul Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Soul Path: +1 science in every city."
+          }
+        ]
+      },
+      {
+        "name": "Soul Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Soul Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Soul Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Soul Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Soul Path Complete",
+        "uniques": [
+          "[+10]% [Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dream Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Dream Master] units> <for every [Adopted [[Dream Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The dream path (梦道) as a clan's tradition (Mind & Spirit): its Masters grow with every policy of the branch, and it opens the Dream Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Dream Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% XP gained from combat <for [Dream Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Dream Path: its Masters gain 15% more XP."
+          }
+        ]
+      },
+      {
+        "name": "Dream Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Dream Path: +1 science in every city."
+          }
+        ]
+      },
+      {
+        "name": "Dream Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Dream Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Dream Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Dream Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Dream Path Complete",
+        "uniques": [
+          "[+10]% [Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Enslavement Path",
+    "era": "Rank Four era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Enslavement Master] units> <for every [Adopted [[Enslavement Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The enslavement path (奴道) as a clan's tradition (Mind & Spirit): its Masters grow with every policy of the branch, and it opens the Enslavement Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Enslavement Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+15]% XP gained from combat <for [Enslavement Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Enslavement Path: its Masters gain 15% more XP."
+          }
+        ]
+      },
+      {
+        "name": "Enslavement Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Enslavement Path: +1 science in every city."
+          }
+        ]
+      },
+      {
+        "name": "Enslavement Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Enslavement Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Enslavement Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Enslavement Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Enslavement Path Complete",
+        "uniques": [
+          "[+10]% [Science] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% science."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Time Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Time Master] units> <for every [Adopted [[Time Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The time path (宙道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Time Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Time Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Time Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Time Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Time Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Time Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Time Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Time Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Time Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Time Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Space Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Space Master] units> <for every [Adopted [[Space Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The space path (宇道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Space Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Space Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Space Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Space Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Space Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Space Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Space Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Space Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Space Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Space Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rule Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Rule Master] units> <for every [Adopted [[Rule Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The rule path (律道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Rule Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Rule Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Rule Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Rule Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Rule Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Rule Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Rule Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Rule Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Rule Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Rule Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phantom Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Phantom Master] units> <for every [Adopted [[Phantom Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The phantom path (虚道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Phantom Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Phantom Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Phantom Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Phantom Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Phantom Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Phantom Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Phantom Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Phantom Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Phantom Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Phantom Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Restriction Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Restriction Master] units> <for every [Adopted [[Restriction Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The restriction path (禁道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Restriction Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Restriction Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Restriction Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Restriction Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Restriction Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Restriction Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Restriction Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Restriction Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Restriction Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Restriction Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Luck Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Luck Master] units> <for every [Adopted [[Luck Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The luck path (运道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Luck Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Luck Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Luck Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Luck Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Luck Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Luck Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Luck Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Luck Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Luck Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Luck Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Heaven Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Heaven Master] units> <for every [Adopted [[Heaven Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The heaven path (天道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Heaven Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Heaven Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Heaven Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Heaven Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Heaven Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Heaven Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Heaven Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Heaven Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Heaven Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Heaven Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Qi Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Qi Master] units> <for every [Adopted [[Qi Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The qi path (气道) as a clan's tradition (Law & Cosmos): its Masters grow with every policy of the branch, and it opens the Qi Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Qi Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Strength <for [Qi Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Qi Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Qi Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Qi Path: +1 stone in every city."
+          }
+        ]
+      },
+      {
+        "name": "Qi Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Qi Lineage"
+        ],
+        "uniques": [
+          "[+1 Happiness]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Qi Path: +1 happiness."
+          }
+        ]
+      },
+      {
+        "name": "Qi Path Complete",
+        "uniques": [
+          "[+10]% [Gold] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% stones."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Refinement Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Refinement Master] units> <for every [Adopted [[Refinement Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The refinement path (炼道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Refinement Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Refinement Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Refinement Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Refinement Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Refinement Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Refinement Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Refinement Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Refinement Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Refinement Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Refinement Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Formation Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Formation Master] units> <for every [Adopted [[Formation Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The formation path (阵道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Formation Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Formation Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Formation Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Formation Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Formation Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Formation Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Formation Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Formation Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Formation Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Formation Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Food Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Food Master] units> <for every [Adopted [[Food Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The food path (食道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Food Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Food Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Food Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Food Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Food Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Food Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Food Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Food Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Food Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Food Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pill Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Pill Master] units> <for every [Adopted [[Pill Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The pill path (丹道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Pill Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Pill Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Pill Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Pill Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Pill Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Pill Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Pill Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Pill Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Pill Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Pill Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Information Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Information Master] units> <for every [Adopted [[Information Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The information path (信道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Information Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Information Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Information Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Information Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Information Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Information Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Information Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Information Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Information Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Information Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Human Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Human Master] units> <for every [Adopted [[Human Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The human path (人道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Human Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Human Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Human Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Human Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Human Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Human Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Human Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Human Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Human Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Human Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Painting Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Painting Master] units> <for every [Adopted [[Painting Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The painting path (画道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Painting Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Painting Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Painting Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Painting Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Painting Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Painting Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Painting Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Painting Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Painting Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Painting Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Theft Path",
+    "era": "Rank Five era",
+    "priorities": {
+      "Southern Border Supremacy": 3,
+      "Endurance": 3
+    },
+    "uniques": [
+      "[+5]% Strength <for [Theft Master] units> <for every [Adopted [[Theft Path] branch] Policies]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The theft path (偷道) as a clan's tradition (Craft & Society): its Masters grow with every policy of the branch, and it opens the Theft Hall."
+      }
+    ],
+    "policies": [
+      {
+        "name": "Theft Lineage",
+        "row": 1,
+        "column": 1,
+        "uniques": [
+          "[+10]% Production when constructing [All] wonders [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Theft Path: wonders are built 10% faster."
+          }
+        ]
+      },
+      {
+        "name": "Theft Insight",
+        "row": 1,
+        "column": 3,
+        "uniques": [
+          "[+1 Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Theft Path: +1 production in every city."
+          }
+        ]
+      },
+      {
+        "name": "Theft Doctrine",
+        "row": 2,
+        "column": 2,
+        "requires": [
+          "Theft Lineage"
+        ],
+        "uniques": [
+          "[+10]% Strength <for [Theft Master] units>"
+        ],
+        "civilopediaText": [
+          {
+            "text": "A policy of the Theft Path: its Masters fight 10% harder."
+          }
+        ]
+      },
+      {
+        "name": "Theft Path Complete",
+        "uniques": [
+          "[+10]% [Production] [in all cities]"
+        ],
+        "civilopediaText": [
+          {
+            "text": "Completing the branch: +10% production."
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -241,6 +241,143 @@ def promotions(unit_types: list[str]) -> list[dict]:
     return out
 
 
+# ---------------- policy branches and halls (the user, 2026-11-01: "semua 47 jalur") ----------------
+# One policy branch per canonical path beside Slice 1's Moon and Strength branches (kept as they are): an opener that
+# grows the path's Masters with every adopted policy of the branch, three policies and a completion bonus from the
+# path's family, and a hall building (unlocked by the opener) whose newly trained Gu Masters hold the path's Master.
+# Paths whose dao marks clash strongly (data/path_conflicts.csv at -25) exclude each other's branch.
+SLICE1_BRANCHES = {"moon", "strength"}
+FAMILY_ERA = {"A": "Rank Three era", "B": "Rank Three era", "C": "Rank Three era", "D": "Rank Four era",
+              "E": "Rank Four era", "F": "Rank Five era", "G": "Rank Five era"}
+ERA_TECH = {"Rank One-Two era": "Rank Two Cultivation", "Rank Three era": "Rank Three Cultivation",
+            "Rank Four era": "Rank Four Cultivation", "Rank Five era": "Purple Crystal Essence"}
+ERA_COST = {"Rank One-Two era": 90, "Rank Three era": 120, "Rank Four era": 170, "Rank Five era": 240}
+# (policy 1, policy 2, policy 3, completion); {m} is the path's Master
+FAMILY_POLICIES = {
+    "A": ("[+15]% Strength <when defending> <for [{m}] units>", "[+1 Production] [in all cities]",
+          "Heals [15] damage if it kills a unit <for [{m}] units>", "[+10] HP when healing <for [{m}] units>"),
+    "B": ("[+15]% Strength <when attacking> <for [{m}] units>", "[+10]% Production when constructing [Military] units [in all cities]",
+          "[1] Movement <for [{m}] units>", "[+15]% Strength <vs cities> <for [{m}] units>"),
+    "C": ("[+10]% Strength <for [{m}] units>", "[+1 Food] [in all cities]", "[+10] HP when healing <for [{m}] units>",
+          "[+10]% [Food] [in all cities]"),
+    "D": ("[1] Sight <for [{m}] units>", "[+1 Culture] [in all cities]", "[+15]% Strength <when attacking> <for [{m}] units>",
+          "[1] Movement <for [{m}] units>"),
+    "E": ("[+15]% XP gained from combat <for [{m}] units>", "[+1 Science] [in all cities]", "[+10]% Strength <for [{m}] units>",
+          "[+10]% [Science] [in all cities]"),
+    "F": ("[+10]% Strength <for [{m}] units>", "[+1 Gold] [in all cities]", "[+1 Happiness]", "[+10]% [Gold] [in all cities]"),
+    "G": ("[+10]% Production when constructing [All] wonders [in all cities]", "[+1 Production] [in all cities]",
+          "[+10]% Strength <for [{m}] units>", "[+10]% [Production] [in all cities]"),
+}
+MEMBER_NAMES = [("Lineage", "Garis Keturunan"), ("Insight", "Wawasan"), ("Doctrine", "Doktrin")]
+# what each of the four family policies does, in words (EN, ID), for the civilopedia
+FAMILY_POLICY_TEXT = {
+    "A": [("its Masters defend 15% harder", "para Ahlinya bertahan 15% lebih kuat"), ("+1 production in every city", "+1 produksi di setiap kota"),
+          ("its Masters heal 15 HP when they kill", "para Ahlinya pulih 15 HP saat membunuh"), ("its Masters heal 10 HP more", "para Ahlinya pulih 10 HP lebih banyak")],
+    "B": [("its Masters attack 15% harder", "para Ahlinya menyerang 15% lebih kuat"), ("military units are built 10% faster", "unit militer dibangun 10% lebih cepat"),
+          ("its Masters move 1 tile farther", "para Ahlinya bergerak 1 petak lebih jauh"), ("its Masters fight 15% harder against cities", "para Ahlinya bertarung 15% lebih kuat melawan kota")],
+    "C": [("its Masters fight 10% harder", "para Ahlinya bertarung 10% lebih kuat"), ("+1 food in every city", "+1 makanan di setiap kota"),
+          ("its Masters heal 10 HP more", "para Ahlinya pulih 10 HP lebih banyak"), ("+10% food", "+10% makanan")],
+    "D": [("its Masters see 1 tile farther", "para Ahlinya melihat 1 petak lebih jauh"), ("+1 culture in every city", "+1 budaya di setiap kota"),
+          ("its Masters attack 15% harder", "para Ahlinya menyerang 15% lebih kuat"), ("its Masters move 1 tile farther", "para Ahlinya bergerak 1 petak lebih jauh")],
+    "E": [("its Masters gain 15% more XP", "para Ahlinya mendapat 15% XP lebih banyak"), ("+1 science in every city", "+1 sains di setiap kota"),
+          ("its Masters fight 10% harder", "para Ahlinya bertarung 10% lebih kuat"), ("+10% science", "+10% sains")],
+    "F": [("its Masters fight 10% harder", "para Ahlinya bertarung 10% lebih kuat"), ("+1 stone in every city", "+1 batu di setiap kota"),
+          ("+1 happiness", "+1 kebahagiaan"), ("+10% stones", "+10% batu")],
+    "G": [("wonders are built 10% faster", "keajaiban dibangun 10% lebih cepat"), ("+1 production in every city", "+1 produksi di setiap kota"),
+          ("its Masters fight 10% harder", "para Ahlinya bertarung 10% lebih kuat"), ("+10% production", "+10% produksi")],
+}
+
+
+def member_pedia(p: dict, i: int) -> tuple[str, str]:
+    en, idn = FAMILY_POLICY_TEXT[p["family"]][i]
+    what = ("Completing the branch: " if i == 3 else f"A policy of the {branch_name(p)}: ")
+    what_id = ("Menuntaskan cabang ini: " if i == 3 else f"Kebijakan cabang Jalur {p['name_id']}: ")
+    return what + en + ".", what_id + idn + "."
+FAMILY_TEXT = {k: (r["name"], r["name_id"]) for k, r in FAMILIES.items()}
+
+
+def branch_name(p: dict) -> str:
+    return f"{p['name']} Path"
+
+
+def hall_name(p: dict) -> str:
+    return f"{p['name']} Hall"
+
+
+def member_names(p: dict) -> list[tuple[str, str]]:
+    return [(f"{p['name']} {en}", f"{idn} {p['name_id']}") for en, idn in MEMBER_NAMES]
+
+
+def clashes(p: dict) -> list[str]:
+    return [b if a == p["key"] else a for (a, b), v in pair_strength().items() if v <= STRONG_CLASH and p["key"] in (a, b)]
+
+
+def policy_branches() -> list[dict]:
+    out = []
+    for p in PATHS:
+        if p["key"] in SLICE1_BRANCHES:
+            continue
+        m = tier_name(p, 0)
+        f = FAMILY_POLICIES[p["family"]]
+        names = [n for n, _ in member_names(p)]
+        out.append({
+            "name": branch_name(p), "era": FAMILY_ERA[p["family"]],
+            "priorities": {"Southern Border Supremacy": 3, "Endurance": 3},
+            "uniques": [f"[+5]% Strength <for [{m}] units> <for every [Adopted [[{branch_name(p)}] branch] Policies]>"]
+            + [f"Only available <before adopting [{branch_name(KEY[c])}]>" for c in clashes(p)],
+            "civilopediaText": [{"text": branch_pedia(p)[0]}],
+            "policies": [
+                {"name": names[0], "row": 1, "column": 1, "uniques": [f[0].format(m=m)]},
+                {"name": names[1], "row": 1, "column": 3, "uniques": [f[1].format(m=m)]},
+                {"name": names[2], "row": 2, "column": 2, "requires": [names[0]], "uniques": [f[2].format(m=m)]},
+                {"name": f"{branch_name(p)} Complete", "uniques": [f[3].format(m=m)]}]})
+        for i, pol in enumerate(out[-1]["policies"]):
+            pol["civilopediaText"] = [{"text": member_pedia(p, i)[0]}]
+    return out
+
+
+def era_of_branch(p: dict) -> str:
+    return "Rank One-Two era" if p["key"] in SLICE1_BRANCHES else FAMILY_ERA[p["family"]]
+
+
+def halls() -> list[dict]:
+    out = []
+    for p in PATHS:
+        era = era_of_branch(p)
+        out.append({"name": hall_name(p), "requiredTech": ERA_TECH[era], "cost": ERA_COST[era], "maintenance": 2,
+                    "culture": 1, "uniques": [f"Only available <after adopting [{branch_name(p)}]>",
+                                              f"All newly-trained [Gu Master] units [in this city] receive the [{tier_name(p, 0)}] promotion"],
+                    "civilopediaText": [{"text": hall_pedia(p)[0]}]})
+    return out
+
+
+def branch_pedia(p: dict) -> tuple[str, str]:
+    fam, fam_id = FAMILY_TEXT[p["family"]]
+    return (f"The {p['name'].lower()} path ({p['chinese']}) as a clan's tradition ({fam}): its Masters grow with every "
+            f"policy of the branch, and it opens the {hall_name(p)}.",
+            f"Jalur {p['name_id']} ({p['chinese']}) sebagai tradisi klan ({fam_id}): para Ahlinya menguat dengan setiap "
+            f"kebijakan cabang ini, dan cabang ini membuka Aula Jalur {p['name_id']}.")
+
+
+def hall_pedia(p: dict) -> tuple[str, str]:
+    return (f"The clan's {p['name'].lower()}-path hall: every Gu Master trained in this city starts as a "
+            f"{tier_name(p, 0)}. Needs the {branch_name(p)} policy branch.",
+            f"Aula jalur {p['name_id']} milik klan: setiap Gu Master yang dilatih di kota ini langsung menjadi "
+            f"{tier_name_id(p, 0)}. Butuh cabang kebijakan Jalur {p['name_id']}.")
+
+
+def policy_translations() -> list[tuple[str, str]]:
+    out = []
+    for p in PATHS:
+        out += [(hall_name(p), f"Aula Jalur {p['name_id']}"), hall_pedia(p)]
+        if p["key"] in SLICE1_BRANCHES:
+            continue
+        out += [(branch_name(p), f"Jalur {p['name_id']}"), branch_pedia(p),
+                (f"{branch_name(p)} Complete", f"Jalur {p['name_id']} Tuntas")] + member_names(p) + [
+            member_pedia(p, i) for i in range(4)]
+    return out
+
+
 def translations() -> list[tuple[str, str]]:
     """(English, Indonesian) for every name and civilopedia text this module writes."""
     out = [(COMMENT, "Setiap jalur lain yang dipegang unit ini memotong Kekuatan: jejak dao saling mengganggu")]
@@ -254,7 +391,7 @@ def translations() -> list[tuple[str, str]]:
         out += [(s["name"], s["name_id"]), (s["pedia"], s["pedia_id"])]
     for g in (g for g in PATH_GU if new_gu(g)):
         out += [(g["name"], g["name_id"]), (g["pedia"], g["pedia_id"])]
-    return out
+    return out + policy_translations()
 
 
 # ---------------- docs/PATHS.md tables ----------------
@@ -304,8 +441,20 @@ def doc_tables() -> dict[str, str]:
         uniques = " ".join(code(u) for u in built[g["name"]]["uniques"]) if g["name"] in built else "Slice 1 Gu"
         gu.append(f"| {KEY[g['path']]['name']} | {g['name']} | {g['chinese'] or '—'} | {g['rank']} | {g['food'] or 'stones'} "
                   f"| {uniques} | {g['verdict']} | {g['source']} |")
+    br = ["| Branch | Era | Opener | Policies (Lineage, Insight, Doctrine) | Complete | Hall |", "|---|---|---|---|---|---|"]
+    halls_by = {h["name"]: h for h in halls()}
+    for d in policy_branches():
+        pol = d["policies"]
+        key = next(p for p in PATHS if branch_name(p) == d["name"])
+        hall = halls_by[hall_name(key)]
+        br.append(f"| {d['name']} | {d['era']} | " + " ".join(code(u) for u in d["uniques"]) + " | "
+                  + " ".join(code(u) for x in pol[:3] for u in x["uniques"]) + " | " + code(pol[3]["uniques"][0]) + " | "
+                  + " ".join(code(u) for u in hall["uniques"]) + " |")
+    for name in ("Moon", "Strength"):
+        h = halls_by[f"{name} Hall"]
+        br.append(f"| {name} Path (Slice 1) | Rank One-Two era | see LORE_MAPPING | — | — | " + " ".join(code(u) for u in h["uniques"]) + " |")
     return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
-            "gu": "\n".join(gu)}
+            "gu": "\n".join(gu), "branches": "\n".join(br)}
 
 
 def splice(text: str, tables: dict[str, str]) -> str:
