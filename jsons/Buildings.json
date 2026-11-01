@@ -1293,16 +1293,15 @@
     "name": "Venerable Ascension",
     "isWonder": true,
     "requiredTech": "Dao Lord",
-    "cost": 900,
+    "cost": 700,
     "uniques": [
-      "Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>",
-      "Costs [120] [White Lychee Immortal Essence]",
-      "Free [Venerable] appears",
-      "[+500]% weight to this choice for AI decisions"
+      "Unbuildable",
+      "Cannot be purchased",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]"
     ],
     "civilopediaText": [
       {
-        "text": "Rank nine (成尊): a rank-eight immortal of supreme attainment in some path breaks the three blockades. Built with white lychee essence, it brings forth a Venerable. When the Venerable dies the ascension is removed and the race reopens."
+        "text": "Rank nine (成尊): a rank-eight immortal of supreme attainment in some path breaks the three blockades. It marks the one Venerable in the world: a rank-eight immortal gains it by its Ascend to Venerable promotion. When the Venerable dies it is removed and the race reopens."
       }
     ]
   },
@@ -1312,13 +1311,12 @@
     "requiredTech": "Dao Lord",
     "cost": 1200,
     "uniques": [
-      "Only available <when number of [[Venerable] Units] is more than [0]>",
-      "Costs [150] [Yellow Apricot Immortal Essence]",
-      "[+1000]% weight to this choice for AI decisions"
+      "Unbuildable",
+      "Cannot be purchased"
     ],
     "civilopediaText": [
       {
-        "text": "Eternal life (永生), Fang Yuan's goal, beyond any Venerable. Only a clan with a living Venerable can build it, with its yellow apricot essence, before its lifespan runs out. Building it wins the game."
+        "text": "Eternal life (永生), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence) before its lifespan runs out; it wins the game."
       }
     ]
   },

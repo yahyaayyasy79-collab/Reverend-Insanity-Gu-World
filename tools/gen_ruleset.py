@@ -209,9 +209,9 @@ def turns(base, m):
     return max(2, round(base * m))
 
 
-def countdown(status, base, event):
+def countdown(status, base, event, extra=""):
     return [f"[This Unit] gains the [{status}] status for [{turns(base, m)}] turn(s) <upon turn start> "
-            f"<for units without [{status}]> <on [{n}] game speed>" for n, m in SPEEDS] + [
+            f"<for units without [{status}]>{extra} <on [{n}] game speed>" for n, m in SPEEDS] + [
         f"Triggers a [{event}] event <upon losing the [{status}] status>"]
 
 
@@ -227,7 +227,9 @@ def blessed_land(grade, essence, stones):
         for u, e in list(IMMORTALS.items())[:2]] + [
         f"Gain [{stones}] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
         + countdown("Calamity Countdown", CALAMITY_TURNS[grade], "Earthly Calamity")
-        + countdown("Tribulation Countdown", TRIBULATION_TURNS, "Heavenly Tribulation")}
+        # Phase D: heavenly tribulations every 100 aperture-years at rank six, every 50 at rank seven (R V4/91, V4/177)
+        + countdown("Tribulation Countdown", TRIBULATION_TURNS, "Heavenly Tribulation", " <for [Rank Six Gu Immortal] units>")
+        + countdown("Tribulation Countdown", TRIBULATION_TURNS // 2, "Heavenly Tribulation", " <for [Rank Seven Gu Immortal] units>")[:-1]}
 
 
 # Lifespan Gu (R V3/194, V4/298): made only by heaven and earth where life teems, never refined. Each immortal burns
@@ -239,7 +241,11 @@ LIFESPAN_SOURCES = [u for t in ("Forest", "Jungle", "Marsh") for u in per_speed(
 IMMORTAL_LIFE = [f"Instantly consumes [1] [{LIFESPAN}] <upon turn start> <every [{turns(10, m)}] turns> <on [{n}] game speed>"
                  for n, m in SPEEDS] + [
     f"Can only heal by pillaging <when below [1] [{LIFESPAN}]>",
-    f"[This Unit] takes [7] damage <upon turn start> <when below [1] [{LIFESPAN}]>"]
+    f"[This Unit] takes [7] damage <upon turn start> <when below [1] [{LIFESPAN}]>",
+    # Phase D: an immortal cultivates wherever it stands (its aperture is its own academy); in autoplay the AI's
+    # immortals lacked the XP for the Great and Supreme Grandmaster tiers and never reached a Venerable
+    "[This Unit] gains [3] XP <upon turn start>",
+    "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"]  # a grotto-heaven: faster insight
 
 
 def toll(text, effects, weight):
@@ -555,6 +561,7 @@ dump("Units.json", [
                                          "Can pass through impassable tiles", "May capture killed [Military] units",
                                          "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
                                          "[+50]% Strength <vs cities>", "Destroys tile improvements when attacking",
+                                         "[This Unit] gains [5] XP <upon turn start>",
                                          f"[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [{APRICOT}]> <requires [1] movement>"]
      # a Venerable buys time only with slaughter: every kill restores some of its burning life
      + ["Heals [10] damage if it kills a unit"] + countdown("Chaos Countdown", 25, "Chaos Calamity")},
@@ -684,6 +691,21 @@ dump("UnitPromotions.json", [
     {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),
     {"name": "Venerable Killer Move", "uniques": ["[+100]% Strength"]},
+    # the arc's victory: the Venerable spends its yellow apricot essence on eternal life before its lifespan runs out
+    {"name": "Seek Eternal Life", "unitTypes": GM_TYPES, "uniques": [
+        f"Only available <for [{VENERABLE}] units>", "Unavailable <if [Eternal Life] is constructed by anybody>"]
+        + [f"Unavailable <when below [{qi_cost(150, m)}] [{APRICOT}]> <on [{n}] game speed>" for n, m in SPEEDS]
+        + [f"Instantly consumes [{qi_cost(150, m)}] [{APRICOT}] <on [{n}] game speed>" for n, m in SPEEDS]
+        + ["Gain a free [Eternal Life] [in capital]", "[This Unit] loses the [Seek Eternal Life] promotion", w("+1000")]},
+    {"name": "Ascend to Venerable", "unitTypes": GM_TYPES, "uniques": [
+        f"Only available <for [{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] units> <after discovering [Dao Lord]>",
+        "Unavailable <if [Venerable Ascension] is constructed by anybody>", "Unavailable <in [Foreign Land] tiles>",
+        "Unavailable <in [Water] tiles>"]
+        + [f"Unavailable <when below [{qi_cost(60, m)}] [{WHITE}]> <on [{n}] game speed>" for n, m in SPEEDS]
+        + [f"Instantly consumes [{qi_cost(60, m)}] [{WHITE}] <on [{n}] game speed>" for n, m in SPEEDS]
+        + ["Gain a free [Venerable Ascension] [in capital]", "[This Unit] loses the [Ascend to Venerable] promotion",
+           "[This Unit] gains the [Advancing] status for [1] turn(s)", "[This Unit] upgrades for free including special upgrades",
+           w("+500")]},
 ] + [{"name": r["promotion"], "uniques": [r["promotion_effect"]]} for r in REALMS] + [
     {"name": "Chaos Countdown", "uniques": ["Comment [When it runs out, a chaos calamity falls on the Venerable]"]},
 ])
@@ -881,8 +903,8 @@ dump("Events.json", [
                                         "Gain [-40] [Gold]"], "+50"),
         # C5: each rank pours its own essence (autoplay: rank-seven immortals made no green grape and faced bare)
         *[toll("Pour essence into the land", [f"Only available <for [{u}] units>", f"Unavailable <when below [10] [{e}]>",
-                                              f"Instantly consumes [10] [{e}]", "[This Unit] takes [15] damage"], "+0")
-          for u, e in IMMORTALS.items()],
+                                              f"Instantly consumes [10] [{e}]", "[This Unit] takes [15] damage"], "-60")
+          for u, e in IMMORTALS.items()],  # Phase D: the AI poured away the white lychee its Venerable needed
         toll("Endure it", ["Triggers a [Calamity Toll] event"], "-30")]},
     {"name": "Calamity Toll", "presentation": "None", "choices": [   # 50 / 30 / 20
         toll("The land is ravaged", ravage(8), "+0"),
@@ -895,7 +917,7 @@ dump("Events.json", [
                                              SURVIVED, f"Unavailable <when below [30] [{e}]>", f"Instantly consumes [30] [{e}]",
                                              "[This Unit] takes [30] damage"], "+100") for u, e in IMMORTALS.items()],
         *[toll("Pour essence into the land", [f"Only available <for [{u}] units>", f"Unavailable <when below [50] [{e}]>",
-                                              f"Instantly consumes [50] [{e}]", "[This Unit] takes [50] damage", SURVIVED], "+0")
+                                              f"Instantly consumes [50] [{e}]", "[This Unit] takes [50] damage", SURVIVED], "-60")
           for u, e in IMMORTALS.items()],
         toll("Face it bare", ["Triggers a [Tribulation Toll] event"], "-30")]},
     {"name": "Tribulation Toll", "presentation": "None", "choices": [   # 25 / 45 / 30
@@ -1040,12 +1062,18 @@ dump("Buildings.json", [
     # the seal is a free grant: it need not be seizable (Phase A3), it only unlocks building the inheritance
     {"name": i["seal"], "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]})
 ] + [
-    {"name": "Venerable Ascension", "isWonder": True, "requiredTech": "Dao Lord", "cost": 900,
-     "uniques": [f"Only available <when number of [[{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] Units] is more than [0]>",
-                 f"Costs [120] [{WHITE}]", f"Free [{VENERABLE}] appears", w("+500")]},
+    # Phase D: the AI never queued this wonder even with every condition met (probe: available, only the essence
+    # missing; autoplay: 625 white lychee and no build in 110 turns). The immortal now becomes the Venerable through a
+    # promotion (canon: the immortal itself ascends); the wonder is only the one-Venerable-in-the-world marker, granted
+    # free by that promotion and removed when the Venerable dies
+    {"name": "Venerable Ascension", "isWonder": True, "requiredTech": "Dao Lord", "cost": 700,
+     # safe [src CivConstructions.addFreeBuildings]: the grant is a one-time trigger of a promotion that removes itself,
+     # and only standing (non-trigger) grants are re-applied each turn
+     "uniques": ["Unbuildable", "Cannot be purchased",
+                 "Suppress warning [is both granted free and could possibly be removed by triggers]"]},
+    # Phase D: granted by the Venerable's own promotion (the AI never queues these wonders); unbuildable
     {"name": "Eternal Life", "isWonder": True, "requiredTech": "Dao Lord", "cost": 1200,
-     "uniques": [f"Only available <when number of [[{VENERABLE}] Units] is more than [0]>", f"Costs [150] [{APRICOT}]",
-                 w("+1000")]},
+     "uniques": ["Unbuildable", "Cannot be purchased"]},
     {"name": "True Inheritance", "isWonder": True, "requiredTech": "Dao Lord", "cost": 600,
      "uniques": ["Only available <if [True Inheritance Seal] is constructed>", "Never destroyed when the city is captured",
                  "[+25]% XP gained from combat", "[+20]% Strength <for [post-[Rank Five era]] units>", w("+300")]},

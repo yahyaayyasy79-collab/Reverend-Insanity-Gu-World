@@ -110,8 +110,9 @@ rest of the list is what a player or the next session should know before trustin
 17. **No upgrade at sea (C5b).** Unciv places an upgraded unit before copying its promotions, so a Water Master
     standing on open water could not be placed and the game crashed restoring it. Ascension and rank advancement are
     closed on water, and every clan can embark land units from the start.
-18. **The AI does not reach a Venerable** in 500-turn autoplay games: it reaches rank eight rarely and seldom buys
-    the fourth path tier. Eternal Life is a human's race; the AI still contests it by conquest.
+18. **The AI reaches a Venerable late and rarely** (Phase D): in 8-game batches of 500–550 turns, one or two AI clans
+    become Venerables (T342–T494) and one won Eternal Life (T373). The AI never queues the two wonders, so both are
+    promotions (Ascend to Venerable, Seek Eternal Life) and the wonders only markers.
 
 ## Not yet seen in a real game
 
@@ -148,7 +149,7 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Desolate beast | `civ activatetrigger "Triggers a [Desolate Beast Tide] event"`, choose "Hunt it"; kill it for 20 Immortal Materials |
 | Treasure Yellow Heaven | `civ activatetrigger "Triggers a [Treasure Yellow Heaven] event"` |
 | Rank seven and eight (C5a) | With a Rank Six Gu Immortal: `unit addpromotion "Tribulation Survivor"`, `civ addtechnology gu-yue-clan "Red Date Essence"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, `unit setxp 400`, buy Advance to Rank Seven (at home) |
-| Venerable and Eternal Life (C5b) | With a Rank Eight Gu Immortal holding a Supreme Grandmaster: `civ addtechnology gu-yue-clan "Dao Lord"`, `civ activatetrigger "Instantly provides [120] [White Lychee Immortal Essence]"`, build Venerable Ascension; the Venerable appears; Eternal Life needs 150 yellow apricot essence (`civ activatetrigger "Instantly provides [150] [Yellow Apricot Immortal Essence]"`) and wins |
+| Venerable and Eternal Life (C5b, Phase D) | Select a Rank Eight Gu Immortal at home: `unit addpromotion "Fire Supreme Grandmaster"` (any path's), `civ addtechnology gu-yue-clan "Dao Lord"`, `civ activatetrigger "Instantly provides [60] [White Lychee Immortal Essence]"`, `unit setxp 500`, buy Ascend to Venerable: the immortal becomes the Venerable; then `civ activatetrigger "Instantly provides [150] [Yellow Apricot Immortal Essence]"` and buy Seek Eternal Life on the Venerable: you win |
 | Gu Houses | `civ addtechnology gu-yue-clan "Gu House Formation"`; build Connect Luck, then the Calamity Luck Altar |
 | Arc nations (C5c) | New game: pick the Heavenly Court, Huang Jin Family, Zombie Alliance or Fang Clan; leaders speak their own lines |
 | Fate Gu and the Fate War | As the Heavenly Court: `civ addtechnology heavenly-court "Immortal Gu Recipes"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, build Fate Gu; as another clan capture that city: the Fate War popup; shatter it and the Qi Tides follow (`civ activatetrigger "Triggers a [Qi Tides] event"`) |

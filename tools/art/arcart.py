@@ -693,7 +693,16 @@ ICONS3 = [
     ("TechIcons", "Venerable Dominion", venerable_dominion, "white"),
     ("UnitPromotionIcons", "Venerable Killer Move", venerable_killer_move, "white"),
     ("UnitPromotionIcons", "Chaos Countdown", chaos_countdown, "white"),
+    ("UnitPromotionIcons", "Ascend to Venerable", venerable_dominion, "white"),
+    ("UnitPromotionIcons", "Seek Eternal Life", lambda: _eternal_white(), "white"),
 ]
+
+
+def _eternal_white():
+    g = G()
+    g.arc_band(30, 50, 22, 14, 0, 360); g.arc_band(70, 50, 22, 14, 0, 360)
+    g.circ(50, 50, 9, 0); human(g, 50, 36, 0.45)
+    return g
 
 
 def _beast_pips(n):

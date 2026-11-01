@@ -176,7 +176,9 @@
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
-      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>"
+      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
+      "[This Unit] gains [3] XP <upon turn start>",
+      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -208,7 +210,9 @@
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
-      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>"
+      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
+      "[This Unit] gains [3] XP <upon turn start>",
+      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -230,6 +234,7 @@
       "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
       "Unbuildable",
       "Cannot be purchased",
+      "May upgrade to [Venerable] through ruins-like effects",
       "[+15]% Strength <when above [9] [White Lychee Immortal Essence]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
@@ -239,7 +244,9 @@
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
-      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>"
+      "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
+      "[This Unit] gains [3] XP <upon turn start>",
+      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -810,6 +817,7 @@
       "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[+50]% Strength <vs cities>",
       "Destroys tile improvements when attacking",
+      "[This Unit] gains [5] XP <upon turn start>",
       "[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>",
       "Heals [10] damage if it kills a unit",
       "[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>",

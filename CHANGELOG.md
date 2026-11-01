@@ -585,3 +585,15 @@
   inside. Random maps now place about five (Small) to twelve (Huge). Tiles drawn for HexaRealm and FantasyHex.
 * **Dream Realm** event (Rank Seven era on, until Fate Gu is shattered) and **Shadow Sect Envoy** event.
 * Autoplay (4 × 250, Medium maps): 0 crashes. Still not built: the five-region map with its region walls.
+
+## Phase D (first round): the AI reaches rank nine (2026-11-01)
+
+* A headless probe found the Venerable Ascension available but never queued by the AI (one AI clan held 625 white
+  lychee essence for 110 turns). The immortal now **ascends itself** through the **Ascend to Venerable** promotion
+  (rank eight + a Supreme Grandmaster, at home, 60 white lychee), and the Venerable wins through **Seek Eternal Life**
+  (150 yellow apricot); both wonders are now unbuildable markers granted by those promotions.
+* Canon pacing: heavenly tribulations every 30 turns at rank seven (60 at rank six); immortals cultivate 3 XP a turn
+  (rank eight 8, the Venerable 5); the AI pours essence into calamities less often.
+* Autoplay 8 × 550: rank eight reached by 5 clans, an AI Bai Clan became a Venerable at T342 and won Eternal Life at
+  T373 (an earlier 8 × 500 batch: two AI Venerables, one died and left a true inheritance). 0 crashes.
+* Docs: working developer-console commands (`civ addtechnology`, civ names like `gu-yue-clan`).

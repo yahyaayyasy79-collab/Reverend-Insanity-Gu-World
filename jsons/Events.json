@@ -742,7 +742,7 @@
           "Unavailable <when below [10] [Green Grape Immortal Essence]>",
           "Instantly consumes [10] [Green Grape Immortal Essence]",
           "[This Unit] takes [15] damage",
-          "[+0]% weight to this choice for AI decisions"
+          "[-60]% weight to this choice for AI decisions"
         ]
       },
       {
@@ -752,7 +752,7 @@
           "Unavailable <when below [10] [Red Date Immortal Essence]>",
           "Instantly consumes [10] [Red Date Immortal Essence]",
           "[This Unit] takes [15] damage",
-          "[+0]% weight to this choice for AI decisions"
+          "[-60]% weight to this choice for AI decisions"
         ]
       },
       {
@@ -762,7 +762,7 @@
           "Unavailable <when below [10] [White Lychee Immortal Essence]>",
           "Instantly consumes [10] [White Lychee Immortal Essence]",
           "[This Unit] takes [15] damage",
-          "[+0]% weight to this choice for AI decisions"
+          "[-60]% weight to this choice for AI decisions"
         ]
       },
       {
@@ -859,7 +859,7 @@
           "Instantly consumes [50] [Green Grape Immortal Essence]",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
-          "[+0]% weight to this choice for AI decisions"
+          "[-60]% weight to this choice for AI decisions"
         ]
       },
       {
@@ -870,7 +870,7 @@
           "Instantly consumes [50] [Red Date Immortal Essence]",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
-          "[+0]% weight to this choice for AI decisions"
+          "[-60]% weight to this choice for AI decisions"
         ]
       },
       {
@@ -881,7 +881,7 @@
           "Instantly consumes [50] [White Lychee Immortal Essence]",
           "[This Unit] takes [50] damage",
           "[This Unit] gains the [Tribulation Survivor] promotion",
-          "[+0]% weight to this choice for AI decisions"
+          "[-60]% weight to this choice for AI decisions"
         ]
       },
       {

@@ -288,6 +288,8 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Six Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
+| Rank Six Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Seven Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | strength | 85 | data/gu_masters.csv `strength` |
 | Rank Seven Gu Immortal | cost | 330 | data/gu_masters.csv `cost` |
@@ -302,6 +304,8 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
+| Rank Seven Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Eight Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | strength | 115 | data/gu_masters.csv `strength` |
 | Rank Eight Gu Immortal | cost | 400 | data/gu_masters.csv `cost` |
@@ -316,6 +320,8 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
+| Rank Eight Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Lightning Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | strength | 9 | tools/gen_ruleset.py `Units` |
 | Lightning Wolf | cost | 30 | tools/gen_ruleset.py `Units` |
@@ -350,6 +356,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Venerable | `[2] additional attacks per turn` | 2 | tools/gen_ruleset.py `Units` |
 | Venerable | `[-25]% Strength for enemy [Military] units in adjacent [All] tiles` | -25 | tools/gen_ruleset.py `Units` |
 | Venerable | `[+50]% Strength <vs cities>` | +50 | tools/gen_ruleset.py `Units` |
+| Venerable | `[This Unit] gains [5] XP <upon turn start>` | 5 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>` | 1, 20, 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `Heals [10] damage if it kills a unit` | 10 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>` | 17 | tools/gen_ruleset.py `Units` |
@@ -492,10 +499,14 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 14 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [21] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>` | 21 | tools/gen_ruleset.py `Promotions` |
 | Lower Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [42] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>` | 42 | tools/gen_ruleset.py `Promotions` |
-| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
-| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
-| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
-| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Lower Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 4 | tools/gen_ruleset.py `Promotions` |
@@ -503,10 +514,14 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 13 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [20] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
 | Middle Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [39] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>` | 39 | tools/gen_ruleset.py `Promotions` |
-| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
-| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
-| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
-| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Middle Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 6 | tools/gen_ruleset.py `Promotions` |
@@ -514,10 +529,14 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [18] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>` | 18 | tools/gen_ruleset.py `Promotions` |
 | Upper Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [36] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>` | 36 | tools/gen_ruleset.py `Promotions` |
-| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
-| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
-| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
-| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Upper Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>` | 5 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units>` | 5 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 10 | tools/gen_ruleset.py `Promotions` |
@@ -525,10 +544,14 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>` | 11 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [16] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>` | 16 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Calamity Countdown] status for [33] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>` | 33 | tools/gen_ruleset.py `Promotions` |
-| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
-| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
-| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
-| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Promotions` |
@@ -560,6 +583,25 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Advance to Rank Eight | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
 | Venerable Killer Move | `[+100]% Strength` | +100 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [100] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>` | 100 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [150] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>` | 150 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [225] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>` | 225 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>` | 450 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [100] [Yellow Apricot Immortal Essence] <on [Quick] game speed>` | 100 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [150] [Yellow Apricot Immortal Essence] <on [Standard] game speed>` | 150 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [225] [Yellow Apricot Immortal Essence] <on [Epic] game speed>` | 225 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>` | 450 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `[+1000]% weight to this choice for AI decisions` | +1000 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Unavailable <when below [60] [White Lychee Immortal Essence]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Unavailable <when below [90] [White Lychee Immortal Essence]> <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Unavailable <when below [180] [White Lychee Immortal Essence]> <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Instantly consumes [40] [White Lychee Immortal Essence] <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Instantly consumes [60] [White Lychee Immortal Essence] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Instantly consumes [90] [White Lychee Immortal Essence] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `[+500]% weight to this choice for AI decisions` | +500 | tools/gen_ruleset.py `Promotions` |
 | Soul Tempered | `[+15]% XP gained from combat` | +15 | tools/gen_ruleset.py `Promotions` |
 | Soul Loosened | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
 | Reverse Flow Seal | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Promotions` |
@@ -821,15 +863,15 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Earthly Calamity › Pour essence into the land | `Unavailable <when below [10] [Green Grape Immortal Essence]>` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Instantly consumes [10] [Green Grape Immortal Essence]` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `[This Unit] takes [15] damage` | 15 | tools/gen_ruleset.py `Events` |
-| Earthly Calamity › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Unavailable <when below [10] [Red Date Immortal Essence]>` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Instantly consumes [10] [Red Date Immortal Essence]` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `[This Unit] takes [15] damage` | 15 | tools/gen_ruleset.py `Events` |
-| Earthly Calamity › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Unavailable <when below [10] [White Lychee Immortal Essence]>` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `Instantly consumes [10] [White Lychee Immortal Essence]` | 10 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Pour essence into the land | `[This Unit] takes [15] damage` | 15 | tools/gen_ruleset.py `Events` |
-| Earthly Calamity › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Earthly Calamity › Pour essence into the land | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Endure it | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Calamity Toll › The land is ravaged | `[This Unit] gains the [Ravaged Land] status for [5] turn(s) <on [Quick] game speed>` | 5 | tools/gen_ruleset.py `Events` |
 | Calamity Toll › The land is ravaged | `[This Unit] gains the [Ravaged Land] status for [8] turn(s) <on [Standard] game speed>` | 8 | tools/gen_ruleset.py `Events` |
@@ -855,15 +897,15 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heavenly Tribulation › Pour essence into the land | `Unavailable <when below [50] [Green Grape Immortal Essence]>` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Instantly consumes [50] [Green Grape Immortal Essence]` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `[This Unit] takes [50] damage` | 50 | tools/gen_ruleset.py `Events` |
-| Heavenly Tribulation › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Unavailable <when below [50] [Red Date Immortal Essence]>` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Instantly consumes [50] [Red Date Immortal Essence]` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `[This Unit] takes [50] damage` | 50 | tools/gen_ruleset.py `Events` |
-| Heavenly Tribulation › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Unavailable <when below [50] [White Lychee Immortal Essence]>` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `Instantly consumes [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Pour essence into the land | `[This Unit] takes [50] damage` | 50 | tools/gen_ruleset.py `Events` |
-| Heavenly Tribulation › Pour essence into the land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Heavenly Tribulation › Pour essence into the land | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Heavenly Tribulation › Face it bare | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Tribulation Toll › The tribulation kills it | `[-44]% weight to this choice for AI decisions` | -44 | tools/gen_ruleset.py `Events` |
 | Tribulation Toll › It survives, its land ravaged | `[This Unit] gains the [Ravaged Land] status for [7] turn(s) <on [Quick] game speed>` | 7 | tools/gen_ruleset.py `Events` |
@@ -1244,14 +1286,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | 88 True Yang Building | `[+15]% Strength <for units with [Luck Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
 | 88 True Yang Building | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | True Yang Seal | cost | 1 | tools/gen_ruleset.py `Buildings` |
-| Venerable Ascension | cost | 900 | tools/gen_ruleset.py `Buildings` |
-| Venerable Ascension | `Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>` | 0 | tools/gen_ruleset.py `Buildings` |
-| Venerable Ascension | `Costs [120] [White Lychee Immortal Essence]` | 120 | tools/gen_ruleset.py `Buildings` |
-| Venerable Ascension | `[+500]% weight to this choice for AI decisions` | +500 | tools/gen_ruleset.py `Buildings` |
+| Venerable Ascension | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Eternal Life | cost | 1200 | tools/gen_ruleset.py `Buildings` |
-| Eternal Life | `Only available <when number of [[Venerable] Units] is more than [0]>` | 0 | tools/gen_ruleset.py `Buildings` |
-| Eternal Life | `Costs [150] [Yellow Apricot Immortal Essence]` | 150 | tools/gen_ruleset.py `Buildings` |
-| Eternal Life | `[+1000]% weight to this choice for AI decisions` | +1000 | tools/gen_ruleset.py `Buildings` |
 | True Inheritance | cost | 600 | tools/gen_ruleset.py `Buildings` |
 | True Inheritance | `[+25]% XP gained from combat` | +25 | tools/gen_ruleset.py `Buildings` |
 | True Inheritance | `[+20]% Strength <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
@@ -2233,6 +2269,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2057 numbers listed.
+2093 numbers listed.
 
 <!-- inventory:end -->

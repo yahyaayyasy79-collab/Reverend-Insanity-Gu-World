@@ -1354,6 +1354,8 @@ Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [E
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
+[This Unit] gains [3] XP <upon turn start>
+[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 ```
 
 **Ascension** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Crush the aperture, draw in the three qi and survive the calamity (\u5347\u4ed9). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master."}]})
@@ -1401,11 +1403,15 @@ Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [21] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
 [This Unit] gains the [Calamity Countdown] status for [42] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>
 Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>
-[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>
 Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
+[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
 **Middle Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A middle-grade blessed land (\u4e2d\u7b49\u798f\u5730): 2 green grape essence and 4 stones a turn."}]})
@@ -1419,11 +1425,15 @@ Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [20] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
 [This Unit] gains the [Calamity Countdown] status for [39] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>
 Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>
-[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>
 Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
+[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
 **Upper Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "An upper-grade blessed land (\u4e0a\u7b49\u798f\u5730), rare: 3 green grape essence and 6 stones a turn."}]})
@@ -1437,11 +1447,15 @@ Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [18] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
 [This Unit] gains the [Calamity Countdown] status for [36] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>
 Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>
-[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>
 Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
+[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
 **Super Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A super-grade blessed land (\u7279\u7b49\u798f\u5730), the foundation of a prodigy: 5 green grape essence and 10 stones a turn."}]})
@@ -1455,11 +1469,15 @@ Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [16] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
 [This Unit] gains the [Calamity Countdown] status for [33] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>
 Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>
-[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>
-[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>
 Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
+[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>
+[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
 **Ascension** (popup)
@@ -1773,7 +1791,7 @@ Only available <for [Rank Six Gu Immortal] units>
 Unavailable <when below [10] [Green Grape Immortal Essence]>
 Instantly consumes [10] [Green Grape Immortal Essence]
 [This Unit] takes [15] damage
-[+0]% weight to this choice for AI decisions
+[-60]% weight to this choice for AI decisions
 ```
 
 * Pour essence into the land
@@ -1783,7 +1801,7 @@ Only available <for [Rank Seven Gu Immortal] units>
 Unavailable <when below [10] [Red Date Immortal Essence]>
 Instantly consumes [10] [Red Date Immortal Essence]
 [This Unit] takes [15] damage
-[+0]% weight to this choice for AI decisions
+[-60]% weight to this choice for AI decisions
 ```
 
 * Pour essence into the land
@@ -1793,7 +1811,7 @@ Only available <for [Rank Eight Gu Immortal] units>
 Unavailable <when below [10] [White Lychee Immortal Essence]>
 Instantly consumes [10] [White Lychee Immortal Essence]
 [This Unit] takes [15] damage
-[+0]% weight to this choice for AI decisions
+[-60]% weight to this choice for AI decisions
 ```
 
 * Endure it
@@ -1882,7 +1900,7 @@ Unavailable <when below [50] [Green Grape Immortal Essence]>
 Instantly consumes [50] [Green Grape Immortal Essence]
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
-[+0]% weight to this choice for AI decisions
+[-60]% weight to this choice for AI decisions
 ```
 
 * Pour essence into the land
@@ -1893,7 +1911,7 @@ Unavailable <when below [50] [Red Date Immortal Essence]>
 Instantly consumes [50] [Red Date Immortal Essence]
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
-[+0]% weight to this choice for AI decisions
+[-60]% weight to this choice for AI decisions
 ```
 
 * Pour essence into the land
@@ -1904,7 +1922,7 @@ Unavailable <when below [50] [White Lychee Immortal Essence]>
 Instantly consumes [50] [White Lychee Immortal Essence]
 [This Unit] takes [50] damage
 [This Unit] gains the [Tribulation Survivor] promotion
-[+0]% weight to this choice for AI decisions
+[-60]% weight to this choice for AI decisions
 ```
 
 * Face it bare
@@ -2929,6 +2947,8 @@ Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [E
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
+[This Unit] gains [3] XP <upon turn start>
+[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 ```
 
 **Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 115, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "throw", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
@@ -2939,6 +2959,7 @@ Never appears as a Barbarian unit
 Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
 Unbuildable
 Cannot be purchased
+May upgrade to [Venerable] through ruins-like effects
 [+15]% Strength <when above [9] [White Lychee Immortal Essence]>
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
@@ -2949,6 +2970,8 @@ Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [E
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
+[This Unit] gains [3] XP <upon turn start>
+[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 ```
 
 **Ancient Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 85, "cost": 300, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An ancient desolate beast (\u4e0a\u53e4\u8352\u517d), about rank seven. Beast tides bring it in the Rank Seven era; its corpse yields 30 immortal materials."}]})
@@ -3083,21 +3106,19 @@ MOD_SPEC_2 Phase C, fifth layer, second half; the arc's victory (MOD_SPEC_3: Ete
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Venerable Ascension** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 900, "civilopediaText": [{"text": "Rank nine (\u6210\u5c0a): a rank-eight immortal of supreme attainment in some path breaks the three blockades. Built with white lychee essence, it brings forth a Venerable. When the Venerable dies the ascension is removed and the race reopens."}]})
+**Venerable Ascension** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 700, "civilopediaText": [{"text": "Rank nine (\u6210\u5c0a): a rank-eight immortal of supreme attainment in some path breaks the three blockades. It marks the one Venerable in the world: a rank-eight immortal gains it by its Ascend to Venerable promotion. When the Venerable dies it is removed and the race reopens."}]})
 
 ```
-Only available <when number of [[{Rank Eight Gu Immortal} {Supreme Attainment}] Units] is more than [0]>
-Costs [120] [White Lychee Immortal Essence]
-Free [Venerable] appears
-[+500]% weight to this choice for AI decisions
+Unbuildable
+Cannot be purchased
+Suppress warning [is both granted free and could possibly be removed by triggers]
 ```
 
-**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. Only a clan with a living Venerable can build it, with its yellow apricot essence, before its lifespan runs out. Building it wins the game."}]})
+**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence) before its lifespan runs out; it wins the game."}]})
 
 ```
-Only available <when number of [[Venerable] Units] is more than [0]>
-Costs [150] [Yellow Apricot Immortal Essence]
-[+1000]% weight to this choice for AI decisions
+Unbuildable
+Cannot be purchased
 ```
 
 **True Inheritance** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 600, "civilopediaText": [{"text": "A dead Venerable's true inheritance (\u771f\u4f20), which others fight over. Built by the clan holding its seal; a conqueror takes it. +25% battle XP; immortals fight 20% harder."}]})
@@ -3136,6 +3157,7 @@ May capture killed [Military] units
 [-25]% Strength for enemy [Military] units in adjacent [All] tiles
 [+50]% Strength <vs cities>
 Destroys tile improvements when attacking
+[This Unit] gains [5] XP <upon turn start>
 [This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>
 Heals [10] damage if it kills a unit
 [This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>
@@ -3412,6 +3434,15 @@ outside the world is the rank-nine trial (R V6/280).
   against cities, burns improvements; a human-only killer move doubles its strength for a turn (20 yellow apricot).
   It loses 3 HP a turn and heals only by killing (10 HP a kill): a Venerable buys time with slaughter.
 * **Chaos calamity** every 25 turns on the Venerable: 40 yellow apricot essence, or 25 HP.
+* **Phase D (autoplay):** the AI never queued the Venerable Ascension or Eternal Life wonders, even with every condition
+  met (a headless probe showed the wonder available, only the essence missing; one AI clan sat on 625 white lychee
+  essence for 110 turns). Both became promotions the AI buys (E4): **Ascend to Venerable** (a rank-eight immortal of
+  supreme attainment, at home, 60 white lychee) upgrades the immortal itself into the Venerable (canon: the immortal
+  ascends) and grants the Venerable Ascension as the one-in-the-world marker; **Seek Eternal Life** (the Venerable,
+  150 yellow apricot) grants the Eternal Life wonder, which wins. Both wonders are now unbuildable markers. Also:
+  heavenly tribulations every 30 turns at rank seven (canon: every 50 years against 100 at rank six), immortals
+  cultivate 3 XP a turn (rank eight 8, the Venerable 5), essence pouring weighted down for the AI. Autoplay 8 × 550:
+  an AI Bai Clan became a Venerable at T342 and won Eternal Life at T373.
 * **The world's dread** while a Venerable lives: every other clan −10% strength and −2 happiness, the **Venerable's
   Shadow** event (4% a turn: tribute, hide the clan's Gu, or defy and lose population), every clan loses a Lifespan
   Gu each ten turns; the Venerable's own clan +20% production and +3 happiness.
@@ -3437,6 +3468,7 @@ May capture killed [Military] units
 [-25]% Strength for enemy [Military] units in adjacent [All] tiles
 [+50]% Strength <vs cities>
 Destroys tile improvements when attacking
+[This Unit] gains [5] XP <upon turn start>
 [This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [Yellow Apricot Immortal Essence]> <requires [1] movement>
 Heals [10] damage if it kills a unit
 [This Unit] gains the [Chaos Countdown] status for [17] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Quick] game speed>
@@ -3456,6 +3488,46 @@ Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 
 ```
 Comment [When it runs out, a chaos calamity falls on the Venerable]
+```
+
+**Ascend to Venerable** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (60 white lychee essence, at home). Only one Venerable lives in the world at a time."}]})
+
+```
+Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>
+Unavailable <if [Venerable Ascension] is constructed by anybody>
+Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Water] tiles>
+Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>
+Unavailable <when below [60] [White Lychee Immortal Essence]> <on [Standard] game speed>
+Unavailable <when below [90] [White Lychee Immortal Essence]> <on [Epic] game speed>
+Unavailable <when below [180] [White Lychee Immortal Essence]> <on [Marathon] game speed>
+Instantly consumes [40] [White Lychee Immortal Essence] <on [Quick] game speed>
+Instantly consumes [60] [White Lychee Immortal Essence] <on [Standard] game speed>
+Instantly consumes [90] [White Lychee Immortal Essence] <on [Epic] game speed>
+Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>
+Gain a free [Venerable Ascension] [in capital]
+[This Unit] loses the [Ascend to Venerable] promotion
+[This Unit] gains the [Advancing] status for [1] turn(s)
+[This Unit] upgrades for free including special upgrades
+[+500]% weight to this choice for AI decisions
+```
+
+**Seek Eternal Life** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "The Venerable spends 150 yellow apricot essence on eternal life, Fang Yuan's goal: its clan wins the game."}]})
+
+```
+Only available <for [Venerable] units>
+Unavailable <if [Eternal Life] is constructed by anybody>
+Unavailable <when below [100] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>
+Unavailable <when below [150] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>
+Unavailable <when below [225] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>
+Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>
+Instantly consumes [100] [Yellow Apricot Immortal Essence] <on [Quick] game speed>
+Instantly consumes [150] [Yellow Apricot Immortal Essence] <on [Standard] game speed>
+Instantly consumes [225] [Yellow Apricot Immortal Essence] <on [Epic] game speed>
+Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>
+Gain a free [Eternal Life] [in capital]
+[This Unit] loses the [Seek Eternal Life] promotion
+[+1000]% weight to this choice for AI decisions
 ```
 
 **Venerable's Shadow** (popup)

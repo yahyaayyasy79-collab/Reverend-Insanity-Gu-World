@@ -58,7 +58,8 @@ SECTIONS = {
                       "Events.json": ["Fate War", "Qi Tides"],
                       "Globals": ["[Fate War]", "[Qi Tides]"]},
     "## Rank Nine era:": {"Units.json": ["Venerable"],
-                          "UnitPromotions.json": ["Venerable Killer Move", "Chaos Countdown"],
+                          "UnitPromotions.json": ["Venerable Killer Move", "Chaos Countdown", "Ascend to Venerable",
+                                                  "Seek Eternal Life"],
                           "Events.json": ["Venerable's Shadow", "Chaos Calamity"],
                           "Globals": ["[Venerable Ascension] is", "[Venerable's Shadow]"]},
     "## Secret realms, dream realms, the Shadow Sect:": {

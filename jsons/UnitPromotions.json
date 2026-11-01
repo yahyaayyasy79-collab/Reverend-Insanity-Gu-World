@@ -7269,11 +7269,15 @@
       "[This Unit] gains the [Calamity Countdown] status for [21] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [42] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
       "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
-      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
-      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {
@@ -7292,11 +7296,15 @@
       "[This Unit] gains the [Calamity Countdown] status for [20] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [39] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
       "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
-      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
-      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {
@@ -7315,11 +7323,15 @@
       "[This Unit] gains the [Calamity Countdown] status for [18] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [36] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
       "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
-      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
-      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {
@@ -7338,11 +7350,15 @@
       "[This Unit] gains the [Calamity Countdown] status for [16] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [33] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Marathon] game speed>",
       "Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status>",
-      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Quick] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Standard] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Epic] game speed>",
-      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <on [Marathon] game speed>",
-      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>"
+      "[This Unit] gains the [Tribulation Countdown] status for [40] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [60] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [180] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Six Gu Immortal] units> <on [Marathon] game speed>",
+      "Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>",
+      "[This Unit] gains the [Tribulation Countdown] status for [20] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {
@@ -7502,6 +7518,66 @@
     "civilopediaText": [
       {
         "text": "A Venerable's killer move for one turn: double strength. Costs 20 yellow apricot essence."
+      }
+    ]
+  },
+  {
+    "name": "Seek Eternal Life",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [Venerable] units>",
+      "Unavailable <if [Eternal Life] is constructed by anybody>",
+      "Unavailable <when below [100] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>",
+      "Unavailable <when below [150] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>",
+      "Unavailable <when below [225] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>",
+      "Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>",
+      "Instantly consumes [100] [Yellow Apricot Immortal Essence] <on [Quick] game speed>",
+      "Instantly consumes [150] [Yellow Apricot Immortal Essence] <on [Standard] game speed>",
+      "Instantly consumes [225] [Yellow Apricot Immortal Essence] <on [Epic] game speed>",
+      "Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>",
+      "Gain a free [Eternal Life] [in capital]",
+      "[This Unit] loses the [Seek Eternal Life] promotion",
+      "[+1000]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Venerable spends 150 yellow apricot essence on eternal life, Fang Yuan's goal: its clan wins the game."
+      }
+    ]
+  },
+  {
+    "name": "Ascend to Venerable",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>",
+      "Unavailable <if [Venerable Ascension] is constructed by anybody>",
+      "Unavailable <in [Foreign Land] tiles>",
+      "Unavailable <in [Water] tiles>",
+      "Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>",
+      "Unavailable <when below [60] [White Lychee Immortal Essence]> <on [Standard] game speed>",
+      "Unavailable <when below [90] [White Lychee Immortal Essence]> <on [Epic] game speed>",
+      "Unavailable <when below [180] [White Lychee Immortal Essence]> <on [Marathon] game speed>",
+      "Instantly consumes [40] [White Lychee Immortal Essence] <on [Quick] game speed>",
+      "Instantly consumes [60] [White Lychee Immortal Essence] <on [Standard] game speed>",
+      "Instantly consumes [90] [White Lychee Immortal Essence] <on [Epic] game speed>",
+      "Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>",
+      "Gain a free [Venerable Ascension] [in capital]",
+      "[This Unit] loses the [Ascend to Venerable] promotion",
+      "[This Unit] gains the [Advancing] status for [1] turn(s)",
+      "[This Unit] upgrades for free including special upgrades",
+      "[+500]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (60 white lychee essence, at home). Only one Venerable lives in the world at a time."
       }
     ]
   },
