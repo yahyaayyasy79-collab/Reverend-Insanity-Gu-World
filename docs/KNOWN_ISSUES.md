@@ -120,38 +120,38 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 
 | What | How to reach it |
 |---|---|
-| 3D sprites, clan colours, portraits | Start a game; `unit add <civ> "Rank Four Gu Yue Gu Master"` next to `"Rank Four Bai Gu Master"`, `"Rank Four Xiong Gu Master"` and `"Rank Four Gu Master"` |
+| 3D sprites, clan colours, portraits | Start a game; `unit add gu-yue-clan "Rank Four Gu Yue Gu Master"` next to `"Rank Four Bai Gu Master"`, `"Rank Four Xiong Gu Master"` and `"Rank Four Gu Master"` |
 | Attack effects per clan chain | Put those units next to a wolf (`unit add Barbarians "Lightning Wolf"`) and attack |
 | 47 path lines on the promotion screen (C3) | Select a Gu Master: `unit setxp 200`; every Master shows; a Grandmaster only after its Master, on a rank-three or higher unit |
-| Camp change (Collusion Exposed, Blood Lake) | As Gu Yue: `civ addtech "Gu Yue Clan" "Inheritance Lore"` fires Blood Lake; choice 3 swaps Righteous for Demonic and marks every military unit with Demonic Infamy |
+| Camp change (Collusion Exposed, Blood Lake) | As Gu Yue: `civ addtechnology gu-yue-clan "Inheritance Lore"` fires Blood Lake; choice 3 swaps Righteous for Demonic and marks every military unit with Demonic Infamy |
 | Clan voices | Meet a clan (diplomacy screen) and declare war: the canon lines show in EN and ID |
 | Path Gu (D2) | Select a rank-three Gu Master: `unit addpromotion "Fire Master"`, end the turn: it holds the Fiery Claw Gu; the Moon Master's Moonlight Gu needs a spare Moon Orchid |
 | Path moves (Grandmaster) | With a Grandmaster: the move button costs 15 stones and 1 movement and gives its status for the turn |
-| Legacy bridge (old saves) | `unit add <civ> "Rank Two Moon Gu Master"`, end the turn: it becomes Rank Two Gu Master (Gu Yue: its clan unit) holding Moon Master, promotions kept |
+| Legacy bridge (old saves) | `unit add gu-yue-clan "Rank Two Moon Gu Master"`, end the turn: it becomes Rank Two Gu Master (Gu Yue: its clan unit) holding Moon Master, promotions kept |
 | Primeval-stone icon in the top bar and in texts | Any game; the stone replaces the gold coin in the stats bar, the city screen and notifications |
 | Wild Gu popup | Select a Gu Master: `unit activatetrigger "Triggers a [Wild Gu Caught] event"` (have Jade or Wild Boar) |
-| Buried inheritance, tile steal | Gu Master on a resource-free land tile beside a rival's border: `unit activatetrigger "Triggers a [Buried Inheritance] event"`; then `civ addtech <civ> "Inheritance Lore"` to build the Inheritance Dig |
+| Buried inheritance, tile steal | Gu Master on a resource-free land tile beside a rival's border: `unit activatetrigger "Triggers a [Buried Inheritance] event"`; then `civ addtechnology gu-yue-clan "Inheritance Lore"` to build the Inheritance Dig |
 | Hunger meter (E7) | Trade or pillage away all Moon Orchid as Gu Yue; Moonlight Gu holders weaken at once and about half lose the Gu two turns later |
 | Moon blade before melee | Attack a unit with a Moon Master: two damage numbers (blade, then melee); against a city only one |
 | Indonesian text | Options → Language → Bahasa Indonesia; every name, event and Civilopedia page should be translated |
-| Ascension (MOD_SPEC_2 C1) | `civ addtech <civ> "Calamity Lore"`; `civ activatetrigger "Instantly provides [60] [Heaven Qi]"`, the same for `[Earth Qi]` and `[Human Qi]`; `unit add <civ> "Rank Five Gu Master"`, select it, `unit setxp 200`, buy Ascension: the popup offers balanced, hasty and not yet; success turns it into a Rank Six Gu Immortal with a blessed-land promotion, failure removes it |
+| Ascension (MOD_SPEC_2 C1) | `civ addtechnology gu-yue-clan "Calamity Lore"`; `civ activatetrigger "Instantly provides [60] [Heaven Qi]"`, the same for `[Earth Qi]` and `[Human Qi]`; `unit add gu-yue-clan "Rank Five Gu Master"`, select it, `unit setxp 200`, buy Ascension: the popup offers balanced, hasty and not yet; success turns it into a Rank Six Gu Immortal with a blessed-land promotion, failure removes it |
 | Blessed land income | With an immortal: the green grape essence and stones rise each turn by its grade (1/2, 2/4, 3/6, 5/10) |
 | Qi income | After Three Qi the three qi appear in the resource overview and grow each turn (land, spring caves and hills, citizens and battle damage) |
-| Earthly calamity (C2) | With an immortal: `unit activatetrigger "Triggers a [Earthly Calamity] event"`; build a Formation Ward (`civ addtech <civ> "Calamity Lore"`) to see the ward choice; the immortal's Calamity Countdown status shows when the next one comes |
+| Earthly calamity (C2) | With an immortal: `unit activatetrigger "Triggers a [Earthly Calamity] event"`; build a Formation Ward (`civ addtechnology gu-yue-clan "Calamity Lore"`) to see the ward choice; the immortal's Calamity Countdown status shows when the next one comes |
 | Heavenly tribulation | `unit activatetrigger "Triggers a [Heavenly Tribulation] event"`; "Face it bare" may kill the immortal |
 | Lifespan Gu debt | `civ activatetrigger "Instantly consumes [20] [Lifespan Gu]"`: the immortal stops healing and loses 7 HP a turn |
 | Heaven's Will | `civ activatetrigger "Triggers a [Heaven's Will] event"` |
-| Immortal Gu wonders (C3) | `civ addtech <civ> "Immortal Gu Recipes"`; `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`; the ten Gu appear in the wonder list; on completion a city may lose 2 population to the birth's calamity; capture the city to seize the Gu |
+| Immortal Gu wonders (C3) | `civ addtechnology gu-yue-clan "Immortal Gu Recipes"`; `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`; the ten Gu appear in the wonder list; on completion a city may lose 2 population to the birth's calamity; capture the city to seize the Gu |
 | Great Grandmaster and immortal move | With a Rank Six Gu Immortal holding a Grandmaster: `unit setxp 300`, buy `<Path> Great Grandmaster`; the move button costs 5 essence |
 | Dao marks | A Strength Master's strength rises 5% after Self Strength is built (unit's combat preview) |
-| Inheritance trial (C4) | `civ addtech <civ> "Calamity Lore"`; `civ activatetrigger "Triggers a [Inheritance Trial] event"` a few times: a won trial puts a seal in the capital and the inheritance appears in the wonder list |
+| Inheritance trial (C4) | `civ addtechnology gu-yue-clan "Calamity Lore"`; `civ activatetrigger "Triggers a [Inheritance Trial] event"` a few times: a won trial puts a seal in the capital and the inheritance appears in the wonder list |
 | Desolate beast | `civ activatetrigger "Triggers a [Desolate Beast Tide] event"`, choose "Hunt it"; kill it for 20 Immortal Materials |
 | Treasure Yellow Heaven | `civ activatetrigger "Triggers a [Treasure Yellow Heaven] event"` |
-| Rank seven and eight (C5a) | With a Rank Six Gu Immortal: `unit addpromotion "Tribulation Survivor"`, `civ addtech <civ> "Red Date Essence"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, `unit setxp 400`, buy Advance to Rank Seven (at home) |
-| Venerable and Eternal Life (C5b) | With a Rank Eight Gu Immortal holding a Supreme Grandmaster: `civ addtech <civ> "Dao Lord"`, `civ activatetrigger "Instantly provides [120] [White Lychee Immortal Essence]"`, build Venerable Ascension; the Venerable appears; Eternal Life needs 150 yellow apricot essence (`civ activatetrigger "Instantly provides [150] [Yellow Apricot Immortal Essence]"`) and wins |
-| Gu Houses | `civ addtech <civ> "Gu House Formation"`; build Connect Luck, then the Calamity Luck Altar |
+| Rank seven and eight (C5a) | With a Rank Six Gu Immortal: `unit addpromotion "Tribulation Survivor"`, `civ addtechnology gu-yue-clan "Red Date Essence"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, `unit setxp 400`, buy Advance to Rank Seven (at home) |
+| Venerable and Eternal Life (C5b) | With a Rank Eight Gu Immortal holding a Supreme Grandmaster: `civ addtechnology gu-yue-clan "Dao Lord"`, `civ activatetrigger "Instantly provides [120] [White Lychee Immortal Essence]"`, build Venerable Ascension; the Venerable appears; Eternal Life needs 150 yellow apricot essence (`civ activatetrigger "Instantly provides [150] [Yellow Apricot Immortal Essence]"`) and wins |
+| Gu Houses | `civ addtechnology gu-yue-clan "Gu House Formation"`; build Connect Luck, then the Calamity Luck Altar |
 | Arc nations (C5c) | New game: pick the Heavenly Court, Huang Jin Family, Zombie Alliance or Fang Clan; leaders speak their own lines |
-| Fate Gu and the Fate War | As the Heavenly Court: `civ addtech "Heavenly Court" "Immortal Gu Recipes"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, build Fate Gu; as another clan capture that city: the Fate War popup; shatter it and the Qi Tides follow (`civ activatetrigger "Triggers a [Qi Tides] event"`) |
+| Fate Gu and the Fate War | As the Heavenly Court: `civ addtechnology heavenly-court "Immortal Gu Recipes"`, `civ activatetrigger "Instantly provides [60] [Green Grape Immortal Essence]"`, build Fate Gu; as another clan capture that city: the Fate War popup; shatter it and the Qi Tides follow (`civ activatetrigger "Triggers a [Qi Tides] event"`) |
 | Immortal zombie | As the Zombie Alliance with an immortal: `unit remove` on it (or lose it in battle): an Immortal Zombie appears |
 | Path branches and halls | Policies screen: 47 path branches by era; adopt one, build its hall, train a Gu Master there: it starts as that path's Master |
 | Rank nine dread | With a Venerable alive (see above), the other clans show -10% strength; `civ activatetrigger "Triggers a [Venerable's Shadow] event"` |

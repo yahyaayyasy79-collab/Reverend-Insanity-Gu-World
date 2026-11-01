@@ -72,14 +72,33 @@ behaviour, not for syntax.
 
 Open with the backtick key on the world screen (desktop) or **long-press** the ☰ menu icon (top left) → "Developer
 Console" (mobile; a normal tap opens the menu without that button, and the console is off when more than one human
-plays) [src `WorldScreenMenuPopup`, `ActivationTypes.Longpress`]; Enter on empty input lists commands. Names with spaces: `"Quoted Name"` or `dashed-name`.
+plays) [src `WorldScreenMenuPopup`, `ActivationTypes.Longpress`]; Enter on empty input lists commands.
+
+* **Civ names** are the nation names, written lowercase with dashes or in quotes: `gu-yue-clan`, `bai-clan`,
+  `xiong-clan`, `wu-clan`, `heavenly-court`, `huang-jin-family`, `zombie-alliance`, `fang-clan` (or `"Gu Yue Clan"`).
+  `<civ>` in a command is a placeholder, never typed as is (the user's report, 2026-11-01).
+* **Tech command:** the user's Android build lists `addtechnology`; the 4.22.8 source calls the key `addtech` with the
+  format text `addtechnology` [src ConsoleCivCommands]. Use the name the console's own list shows.
+* `unit ...` commands act on the **selected unit**; `unit add` places on the **selected tile**; `civ activatetrigger`
+  acts on the civ you play unless its first word is a civ name. Uniques and names with spaces go in quotes.
+
+Quick start for the immortal arc (as Gu Yue; select one of your own land tiles first):
+
+```
+civ addtechnology gu-yue-clan "Calamity Lore"
+civ activatetrigger "Instantly provides [60] [Heaven Qi]"
+civ activatetrigger "Instantly provides [60] [Earth Qi]"
+civ activatetrigger "Instantly provides [60] [Human Qi]"
+unit add gu-yue-clan "Rank Five Gu Master"
+unit setxp 300                      # select the new unit first, then buy Ascension on its promotion screen
+```
 
 ```
 civ activatetrigger "Triggers a [Beast Tide] event"      # any Triggerable unique; validated against the ruleset
 unit activatetrigger "Triggers a [Refinement Attempt] event"  # same, with the selected unit as context (E2)
 civ activatetrigger "Instantly provides [100] [Immortal Essence Stone]"
-civ addstat Gold 500          civ revealmap               civ addtech <civ> "<tech>"   (not "addtechnology")
-civ addpolicy <civ> "<policy>"                            unit add <civ> "<unit>"      (select a tile first)
+civ addstat Gold 500          civ revealmap               civ addtechnology gu-yue-clan "<tech>"
+civ addpolicy gu-yue-clan "<policy>"                      unit add gu-yue-clan "<unit>"  (select a tile first)
 unit addpromotion "<promotion>"    unit setxp 100         city addbuilding "<building>"  city setpop 8
 civ checkcountable "[[Gu Master] Units]"                  unit checkfilter "<mapUnitFilter>"
 ```
