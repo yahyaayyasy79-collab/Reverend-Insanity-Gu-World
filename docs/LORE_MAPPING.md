@@ -1384,6 +1384,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
+Can pass through impassable tiles
 ```
 
 **Ascension** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Crush the aperture, draw in the three qi and survive the calamity (\u5347\u4ed9). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master."}]})
@@ -3036,6 +3037,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
+Can pass through impassable tiles
 ```
 
 **Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 115, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "throw", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
@@ -3073,6 +3075,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
+Can pass through impassable tiles
 ```
 
 **Ancient Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 85, "cost": 300, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An ancient desolate beast (\u4e0a\u53e4\u8352\u517d), about rank seven. Beast tides bring it in the Rank Seven era; its corpse yields 30 immortal materials."}]})
@@ -3289,6 +3292,7 @@ Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 ```
 Only available <if [Connect Luck] is constructed>
 Limited to [1] per Civilization
+Can pass through impassable tiles
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3300,6 +3304,7 @@ Never appears as a Barbarian unit
 ```
 Only available <if [Years Flow Like Water] is constructed>
 Limited to [1] per Civilization
+Can pass through impassable tiles
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3311,6 +3316,7 @@ Ignores terrain cost
 ```
 Only available <if [Dream Token] is constructed>
 Limited to [1] per Civilization
+Can pass through impassable tiles
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3438,6 +3444,7 @@ Cannot be purchased
 Never appears as a Barbarian unit
 Can only heal by pillaging
 [-15]% Strength <if [Fate Gu] is constructed by anybody>
+Can pass through impassable tiles
 [+100]% maintenance costs
 ```
 
@@ -3446,6 +3453,7 @@ Can only heal by pillaging
 ```
 Only available <if [Fate Gu] is constructed>
 Limited to [1] per Civilization
+Can pass through impassable tiles
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3817,6 +3825,71 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
+Can pass through impassable tiles
+```
+
+
+## The Five Regions map: (T3; built 2026-11-01)
+
+`maps/Five Regions` (60 × 40, built by `tools/make_map.py` through Unciv's own serializer, reproducible): the Central
+Continent in the middle, the Northern Plains, the Western Desert, the Eastern Sea and the Southern Border around it.
+
+* **Region walls** (界壁, R V5/22, V4/61, V4/279) as five impassable land terrains between the regions: Miasma (south),
+  Licorice (north), Azure Water (east), Raging Flame (west), Sage (centre). Mortals cannot cross; every immortal unit
+  (ranks six to eight, the Venerable, the immortal zombie, the Gu Houses) carries "Can pass through impassable tiles"
+  (permanent: it is cached, never on a status) and takes 20–30 damage if it stops inside. So each region plays its
+  own mortal game and the regions meet when their immortals do (canon: only immortals cross the walls). The walls do
+  not fade after the Fate War (no unique changes terrain); the qi tides stand for it.
+* **Starts in canon regions:** Gu Yue, Bai, Xiong and Wu with the Hairy Men, the foothill villages and the Jia clan on
+  the Southern Border; Huang Jin on the Northern Plains; the Fang clan on a desert oasis (autoplay: on bare desert its
+  settler never founded a city); the Zombie Alliance and the merfolk on Eastern Sea islands; the Heavenly Court and
+  three sects in the centre.
+* **Secret realms in their regions:** Hu Immortal Blessed Land, Dang Hun Mountain, Tian Ti Mountain, Luo Po Valley,
+  Door of Life and Death (Southern Border, volume 2); Imperial Court Blessed Land, Crazed Demon Cave, Book Mountain,
+  Reverse Flow River (Northern Plains, volume 3); Dragon Whale Paradise (Eastern Sea); Lang Ya Blessed Land and the
+  River of Time in the centre (ADAPTED: one floats, the other lies outside the regions).
+* Autoplay 6 × 400 with all eight majors: 0 crashes, every arc major alive, the Southern Border clans fight each other.
+
+Exact uniques (written by tools/lore_blocks.py from jsons/):
+
+**Miasma Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [90, 130, 70], "civilopediaText": [{"text": "The region wall of the Southern Border (\u7634\u6c14\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 25 damage. Found on the Five Regions map."}]})
+
+```
+Units ending their turn on this terrain take [25] damage
+Has an elevation of [3] for visibility calculations
+Considered [Undesirable] when determining start locations
+```
+
+**Licorice Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [200, 180, 120], "civilopediaText": [{"text": "The region wall of the Northern Plains (\u7518\u8349\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."}]})
+
+```
+Units ending their turn on this terrain take [20] damage
+Has an elevation of [3] for visibility calculations
+Considered [Undesirable] when determining start locations
+```
+
+**Azure Water Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [60, 120, 190], "civilopediaText": [{"text": "The region wall of the Eastern Sea (\u82cd\u6c34\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."}]})
+
+```
+Units ending their turn on this terrain take [20] damage
+Has an elevation of [3] for visibility calculations
+Considered [Undesirable] when determining start locations
+```
+
+**Raging Flame Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [220, 90, 40], "civilopediaText": [{"text": "The region wall of the Western Desert (\u72c2\u708e\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 30 damage. Found on the Five Regions map."}]})
+
+```
+Units ending their turn on this terrain take [30] damage
+Has an elevation of [3] for visibility calculations
+Considered [Undesirable] when determining start locations
+```
+
+**Sage Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [235, 230, 210], "civilopediaText": [{"text": "The region wall of the Central Continent (\u5723\u8d24\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."}]})
+
+```
+Units ending their turn on this terrain take [20] damage
+Has an elevation of [3] for visibility calculations
+Considered [Undesirable] when determining start locations
 ```
 
 

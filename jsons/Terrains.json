@@ -771,5 +771,110 @@
         "text": "Hu Immortal Blessed Land (狐仙福地), a secret realm of heaven and earth. A rank-six aperture on Tian Ti Mountain, won by the first to climb Dang Hun Mountain. +3 happiness; units beside it move 1 tile farther."
       }
     ]
+  },
+  {
+    "name": "Miasma Wall",
+    "type": "Land",
+    "impassable": true,
+    "defenceBonus": 0.5,
+    "RGB": [
+      90,
+      130,
+      70
+    ],
+    "uniques": [
+      "Units ending their turn on this terrain take [25] damage",
+      "Has an elevation of [3] for visibility calculations",
+      "Considered [Undesirable] when determining start locations"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The region wall of the Southern Border (瘴气界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 25 damage. Found on the Five Regions map."
+      }
+    ]
+  },
+  {
+    "name": "Licorice Wall",
+    "type": "Land",
+    "impassable": true,
+    "defenceBonus": 0.5,
+    "RGB": [
+      200,
+      180,
+      120
+    ],
+    "uniques": [
+      "Units ending their turn on this terrain take [20] damage",
+      "Has an elevation of [3] for visibility calculations",
+      "Considered [Undesirable] when determining start locations"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The region wall of the Northern Plains (甘草界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."
+      }
+    ]
+  },
+  {
+    "name": "Azure Water Wall",
+    "type": "Land",
+    "impassable": true,
+    "defenceBonus": 0.5,
+    "RGB": [
+      60,
+      120,
+      190
+    ],
+    "uniques": [
+      "Units ending their turn on this terrain take [20] damage",
+      "Has an elevation of [3] for visibility calculations",
+      "Considered [Undesirable] when determining start locations"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The region wall of the Eastern Sea (苍水界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."
+      }
+    ]
+  },
+  {
+    "name": "Raging Flame Wall",
+    "type": "Land",
+    "impassable": true,
+    "defenceBonus": 0.5,
+    "RGB": [
+      220,
+      90,
+      40
+    ],
+    "uniques": [
+      "Units ending their turn on this terrain take [30] damage",
+      "Has an elevation of [3] for visibility calculations",
+      "Considered [Undesirable] when determining start locations"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The region wall of the Western Desert (狂炎界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 30 damage. Found on the Five Regions map."
+      }
+    ]
+  },
+  {
+    "name": "Sage Wall",
+    "type": "Land",
+    "impassable": true,
+    "defenceBonus": 0.5,
+    "RGB": [
+      235,
+      230,
+      210
+    ],
+    "uniques": [
+      "Units ending their turn on this terrain take [20] damage",
+      "Has an elevation of [3] for visibility calculations",
+      "Considered [Undesirable] when determining start locations"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The region wall of the Central Continent (圣贤界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."
+      }
+    ]
   }
 ]

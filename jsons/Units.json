@@ -262,7 +262,8 @@
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
-      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"
+      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
+      "Can pass through impassable tiles"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -310,7 +311,8 @@
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
-      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"
+      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
+      "Can pass through impassable tiles"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -358,7 +360,8 @@
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
-      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"
+      "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
+      "Can pass through impassable tiles"
     ],
     "attackSound": "throw",
     "civilopediaText": [
@@ -1137,6 +1140,7 @@
     "uniques": [
       "Only available <if [Connect Luck] is constructed>",
       "Limited to [1] per Civilization",
+      "Can pass through impassable tiles",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1159,6 +1163,7 @@
     "uniques": [
       "Only available <if [Years Flow Like Water] is constructed>",
       "Limited to [1] per Civilization",
+      "Can pass through impassable tiles",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1181,6 +1186,7 @@
     "uniques": [
       "Only available <if [Dream Token] is constructed>",
       "Limited to [1] per Civilization",
+      "Can pass through impassable tiles",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1204,6 +1210,7 @@
     "uniques": [
       "Only available <if [Fate Gu] is constructed>",
       "Limited to [1] per Civilization",
+      "Can pass through impassable tiles",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1230,6 +1237,7 @@
       "Never appears as a Barbarian unit",
       "Can only heal by pillaging",
       "[-15]% Strength <if [Fate Gu] is constructed by anybody>",
+      "Can pass through impassable tiles",
       "[+100]% maintenance costs"
     ],
     "civilopediaText": [

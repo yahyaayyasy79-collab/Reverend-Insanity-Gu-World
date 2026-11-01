@@ -143,3 +143,56 @@ def promotion_icon(name: str) -> G:
     g.poly([(x * 0.8 + 10, y * 0.8 + 10) for x, y in pts], 0)
     human(g, 50, 22, 0.85, arms="raised")
     return g
+
+
+# ---- the five region walls (界壁): a towering barrier in each region's colour
+def _wall(base, accent, motif):
+    def scene(d, w, h):
+        d.rectangle([w * 0.05, h * 0.18, w * 0.95, h * 0.86], fill=base)
+        for k in range(5):   # the wall's rising ridge
+            x = 0.12 + 0.19 * k
+            d.polygon([(w * (x - 0.1), h * 0.3), (w * x, h * 0.06), (w * (x + 0.1), h * 0.3)], fill=base)
+        motif(d, w, h, accent)
+    return scene
+
+
+def _miasma(d, w, h, a):
+    for k in range(4):
+        d.ellipse([w * (0.1 + 0.2 * k), h * 0.45, w * (0.3 + 0.2 * k), h * 0.62], fill=a)
+
+
+def _licorice(d, w, h, a):
+    for k in range(6):
+        x = 0.15 + 0.14 * k
+        d.line([(w * x, h * 0.75), (w * (x + 0.05), h * 0.38)], fill=a, width=S * 3)
+
+
+def _azure(d, w, h, a):
+    for k in range(3):
+        y = 0.42 + 0.14 * k
+        d.arc([w * 0.08, h * (y - 0.08), w * 0.92, h * (y + 0.08)], 0, 180, fill=a, width=S * 3)
+
+
+def _flame(d, w, h, a):
+    for k in range(4):
+        x = 0.2 + 0.2 * k
+        d.polygon([(w * (x - 0.07), h * 0.75), (w * x, h * 0.35), (w * (x + 0.07), h * 0.75)], fill=a)
+
+
+def _sage(d, w, h, a):
+    for k in range(3):
+        y = 0.4 + 0.13 * k
+        d.line([(w * 0.2, h * y), (w * 0.8, h * y)], fill=a, width=S * 2)
+
+
+WALLS = {"Miasma Wall": _wall((60, 90, 50), (150, 190, 110), _miasma),
+         "Licorice Wall": _wall((150, 120, 80), (220, 200, 140), _licorice),
+         "Azure Water Wall": _wall((30, 70, 140), (140, 200, 250), _azure),
+         "Raging Flame Wall": _wall((120, 40, 20), (250, 150, 40), _flame),
+         "Sage Wall": _wall((200, 196, 180), (120, 110, 90), _sage)}
+
+
+def wall_tile(name: str) -> dict[str, Image.Image]:
+    im, d, w, h = _base(rim=(70, 70, 70), field=(90, 90, 90))
+    WALLS[name](d, w, h)
+    return {"HexaRealm": im.resize((64, 56), Image.LANCZOS), "FantasyHex": im.resize((32, 28), Image.LANCZOS)}

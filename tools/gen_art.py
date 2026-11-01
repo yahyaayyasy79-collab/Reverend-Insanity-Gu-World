@@ -142,6 +142,9 @@ def main(argv: list[str]) -> int:
     for name in realms.SCENES:
         for tileset, im in realms.tile(name).items():
             written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
+    for name in realms.WALLS:   # the five region walls (Five Regions map)
+        for tileset, im in realms.wall_tile(name).items():
+            written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
     if args.sheet:
         contact_sheet(sheet, args.sheet)
     if not args.quiet:

@@ -608,3 +608,12 @@
   Rank seven needs tier II, rank eight III, the Venerable IV. The immortal-Gu dao-mark bonus on the path Masters stays.
 * Autoplay 8 × 520: hundreds of Gu Masters at tier II by T200, immortals at III–V; rank seven by 26 of 32 clans, one AI
   Venerable; 0 crashes.
+
+## The Five Regions map (2026-11-01)
+
+* `maps/Five Regions`: the immortal arc's world, 60 × 40, five regions sealed by five **region walls** (Miasma,
+  Licorice, Azure Water, Raging Flame, Sage) that mortals cannot cross and immortals can (immortal units now pass
+  through impassable tiles). Every nation starts in its canon region; the twelve secret realms stand in theirs.
+* Tiles drawn for the five walls (HexaRealm, FantasyHex). `tools/make_map.py` builds and checks both maps.
+* Autoplay 6 × 400 with all eight majors: 0 crashes; fixes from the runs: the Fang clan's oasis start, bigger Eastern
+  Sea islands.

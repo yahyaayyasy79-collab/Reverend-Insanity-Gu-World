@@ -594,7 +594,7 @@ CityStateIcons/Refiner Tribe
   index: -1
 EmojiIcons/Gold
   rotate: false
-  xy: 544, 154
+  xy: 868, 522
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -1089,170 +1089,240 @@ TechIcons/Wine Brewing
   orig: 100, 100
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Book Mountain
-  rotate: false
-  xy: 652, 284
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/Crazed Demon Cave
-  rotate: false
-  xy: 760, 392
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/Dang Hun Mountain
+TileSets/FantasyHex/Tiles/Azure Water Wall
   rotate: false
   xy: 4, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Door of Life and Death
-  rotate: false
-  xy: 76, 68
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/Dragon Whale Paradise
-  rotate: false
-  xy: 1948, 1948
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/Hu Immortal Blessed Land
-  rotate: false
-  xy: 868, 544
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/FantasyHex/Tiles/Imperial Court Blessed Land
+TileSets/FantasyHex/Tiles/Book Mountain
   rotate: false
   xy: 976, 652
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Lang Ya Blessed Land
+TileSets/FantasyHex/Tiles/Crazed Demon Cave
   rotate: false
   xy: 1084, 760
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Luo Po Valley
+TileSets/FantasyHex/Tiles/Dang Hun Mountain
   rotate: false
   xy: 1192, 868
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Reverse Flow River
+TileSets/FantasyHex/Tiles/Door of Life and Death
   rotate: false
   xy: 1300, 976
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/River of Time
+TileSets/FantasyHex/Tiles/Dragon Whale Paradise
   rotate: false
   xy: 1408, 1084
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/FantasyHex/Tiles/Tian Ti Mountain
+TileSets/FantasyHex/Tiles/Hu Immortal Blessed Land
   rotate: false
   xy: 1516, 1192
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Book Mountain
+TileSets/FantasyHex/Tiles/Imperial Court Blessed Land
+  rotate: false
+  xy: 1624, 1300
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Lang Ya Blessed Land
+  rotate: false
+  xy: 1732, 1408
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Licorice Wall
+  rotate: false
+  xy: 1840, 1516
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Luo Po Valley
+  rotate: false
+  xy: 544, 112
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Miasma Wall
+  rotate: false
+  xy: 652, 220
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Raging Flame Wall
+  rotate: false
+  xy: 760, 328
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Reverse Flow River
+  rotate: false
+  xy: 148, 68
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/River of Time
+  rotate: false
+  xy: 1948, 1884
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Sage Wall
+  rotate: false
+  xy: 868, 486
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/FantasyHex/Tiles/Tian Ti Mountain
+  rotate: false
+  xy: 44, 4
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Azure Water Wall
   rotate: false
   xy: 4, 40
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Crazed Demon Cave
+TileSets/HexaRealm/Tiles/Book Mountain
   rotate: false
   xy: 1948, 1984
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Dang Hun Mountain
+TileSets/HexaRealm/Tiles/Crazed Demon Cave
   rotate: false
   xy: 868, 580
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Door of Life and Death
+TileSets/HexaRealm/Tiles/Dang Hun Mountain
   rotate: false
   xy: 976, 688
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Dragon Whale Paradise
+TileSets/HexaRealm/Tiles/Door of Life and Death
   rotate: false
   xy: 1084, 796
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Hu Immortal Blessed Land
+TileSets/HexaRealm/Tiles/Dragon Whale Paradise
   rotate: false
   xy: 1192, 904
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Imperial Court Blessed Land
+TileSets/HexaRealm/Tiles/Hu Immortal Blessed Land
   rotate: false
   xy: 1300, 1012
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Lang Ya Blessed Land
+TileSets/HexaRealm/Tiles/Imperial Court Blessed Land
   rotate: false
   xy: 1408, 1120
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Luo Po Valley
+TileSets/HexaRealm/Tiles/Lang Ya Blessed Land
   rotate: false
   xy: 1516, 1228
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Reverse Flow River
+TileSets/HexaRealm/Tiles/Licorice Wall
   rotate: false
   xy: 1624, 1336
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/River of Time
+TileSets/HexaRealm/Tiles/Luo Po Valley
   rotate: false
   xy: 1732, 1444
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Tiles/Tian Ti Mountain
+TileSets/HexaRealm/Tiles/Miasma Wall
   rotate: false
   xy: 1840, 1552
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Raging Flame Wall
+  rotate: false
+  xy: 544, 148
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Reverse Flow River
+  rotate: false
+  xy: 652, 256
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/River of Time
+  rotate: false
+  xy: 760, 364
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Sage Wall
+  rotate: false
+  xy: 76, 40
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Tiles/Tian Ti Mountain
+  rotate: false
+  xy: 1948, 1920
   size: 64, 56
   orig: 64, 56
   offset: 0, 0

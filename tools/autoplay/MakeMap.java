@@ -1,12 +1,12 @@
 // Builds a map file with Unciv's own classes, so the saved JSON is exactly what the game loads
 // [src MapSaver.mapToSavedString, TileMap(width, height, ruleset)]. Driven by tools/make_map.py.
 //
-//   java -cp <jar>:<classes> MakeMap <mods dir parent> <mod name> <spec file> <out file>
+//   java -cp <jar>:<classes> MakeMap <mods dir parent> <mod name> <spec file> <out file> [map name]
 //
 // Spec lines (tab-separated):
 //   size <width> <height>
 //   tile <column> <row> <base terrain> <features, '+'-joined or -> <resource or -> <amount> <improvement or ->
-//        <rivers: 'b' bottom, 'r' bottom right, 'l' bottom left, any combination, or ->
+//        <rivers: 'b' bottom, 'r' bottom right, 'l' bottom left, any combination, or -> [natural wonder]
 //   start <column> <row> <nation>
 import com.badlogic.gdx.Gdx;
 import com.unciv.UncivGame;
@@ -42,7 +42,7 @@ public class MakeMap {
         TileMap map = new TileMap(w, h, ruleset, false);
         map.getMapParameters().setShape(MapShape.rectangular);
         map.getMapParameters().setMapSize(new MapSize(w, h));
-        map.getMapParameters().setName("Qing Mao Mountain");
+        map.getMapParameters().setName(args.length > 4 ? args[4] : "Qing Mao Mountain");
         map.getMapParameters().setBaseRuleset(modName);
         map.getMapParameters().setSeed(1L);  // a fixed seed keeps the file reproducible (tools/make_map.py --check)
         Map<String, Tile> byColRow = new HashMap<>();
@@ -62,6 +62,7 @@ public class MakeMap {
                 t.setHasBottomRiver(p[8].contains("b"));
                 t.setHasBottomRightRiver(p[8].contains("r"));
                 t.setHasBottomLeftRiver(p[8].contains("l"));
+                if (p.length > 9 && !p[9].equals("-")) t.setNaturalWonder(p[9]);
                 tiles++;
             } else if (p[0].equals("start")) {
                 Tile t = byColRow.get(p[1] + "," + p[2]);

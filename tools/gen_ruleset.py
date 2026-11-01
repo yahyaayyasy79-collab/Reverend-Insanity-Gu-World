@@ -559,6 +559,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER] + DAO_LINES
     if r["name"] in IMMORTALS:
         u["uniques"] += IMMORTAL_LIFE  # MOD_SPEC_2 C2: every immortal burns Lifespan Gu
+        u["uniques"].append("Can pass through impassable tiles")  # immortals cross mountains and the region walls
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      # R8: mortals live off the land, not off primeval stones (late-game AI bankruptcy, docs/AUTOPLAY.md round 8)
@@ -603,10 +604,12 @@ dump("Units.json", [
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
       "attackSound": "throw", **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
+                  "Can pass through impassable tiles",
                                           f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore",
      "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
+                                         "Can pass through impassable tiles",
                                          "[+100]% maintenance costs"]},
 ] + [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
@@ -1243,6 +1246,16 @@ def realm(r):
 
 
 ter += [realm(r) for r in REALMS]
+# the five regions' walls (界壁, R V5/22, V4/61, V4/279; T3 of docs/CANON_OVERHAUL.md), only on the Five Regions map:
+# impassable to mortals; immortals cross them ("Can pass through impassable tiles") but suffer if they stop inside
+REGION_WALLS = {"Miasma Wall": ((90, 130, 70), 25), "Licorice Wall": ((200, 180, 120), 20),
+                "Azure Water Wall": ((60, 120, 190), 20), "Raging Flame Wall": ((220, 90, 40), 30),
+                "Sage Wall": ((235, 230, 210), 20)}
+ter += [{"name": n, "type": "Land", "impassable": True, "defenceBonus": 0.5, "RGB": list(rgb),
+         "uniques": [f"Units ending their turn on this terrain take [{dmg}] damage",
+                     "Has an elevation of [3] for visibility calculations",
+                     "Considered [Undesirable] when determining start locations"]}
+        for n, (rgb, dmg) in REGION_WALLS.items()]
 dump("Terrains.json", ter)
 
 # ---------------- Improvements ----------------

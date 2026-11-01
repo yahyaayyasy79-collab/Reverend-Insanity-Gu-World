@@ -65,6 +65,8 @@ SECTIONS = {
     "## Dao marks:": {"UnitPromotions.json": ["Dao Comprehension", "Dao Marks I", "Dao Marks II", "Dao Marks III",
                                               "Dao Marks IV", "Dao Marks V"],
                       "Units.json": ["Rank Six Gu Immortal"]},
+    "## The Five Regions map:": {"Terrains.json": ["Miasma Wall", "Licorice Wall", "Azure Water Wall", "Raging Flame Wall",
+                                                 "Sage Wall"]},
     "## Secret realms, dream realms, the Shadow Sect:": {
         "Terrains.json": ['Dang Hun Mountain', 'Luo Po Valley', 'Reverse Flow River', 'River of Time', 'Door of Life and Death', 'Book Mountain', 'Crazed Demon Cave', 'Dragon Whale Paradise', 'Tian Ti Mountain', 'Lang Ya Blessed Land', 'Imperial Court Blessed Land', 'Hu Immortal Blessed Land'],
         "UnitPromotions.json": ['Soul Tempered', 'Soul Loosened', 'Reverse Flow Seal', 'Time Touched', 'Life and Death Glimpse', 'Ink Wisdom', 'Demon Sound Steeled', 'Whale Blessing', 'Heavenly Stair', 'Lang Ya Craft', 'Imperial Shelter', 'Fox Spirit Favor'],

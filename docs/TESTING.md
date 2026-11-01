@@ -46,6 +46,14 @@ Never commit `Atlases.json` without the atlas it lists (validation error that bl
 * Never press "Autoupdate mod uniques", "Delete [mod]" or "Update [mod]" on the development checkout: the first
   rewrites generated JSON, the others may follow a symlink and wipe the checkout.
 
+## The Five Regions map
+
+The immortal arc's world: New game → Map type **Custom** → **Five Regions**, with "Select players from starting
+locations" on. The Central Continent (Heavenly Court and three sects), the Northern Plains (Huang Jin), the Western
+Desert (Fang Clan), the Eastern Sea (Zombie Alliance and the merfolk on islands) and the Southern Border (Gu Yue,
+Bai, Xiong, Wu and three city-states) are sealed by region walls: mortals stay in their region until their clans raise
+immortals, which cross the walls. Twelve secret realms stand in their canon regions.
+
 ## The Qing Mao Mountain map
 
 New Game → choose the mod as base ruleset → **Map Type: Custom** (the premade maps of the selected mods are listed)
