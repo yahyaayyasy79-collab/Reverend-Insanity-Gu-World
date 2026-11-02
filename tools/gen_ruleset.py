@@ -742,7 +742,13 @@ def ladder(base, fusion, tusk):
 
 
 # ---------------- Promotions (Gu from data/gu.csv) ----------------
-dump("UnitPromotions.json", [
+def with_combos(promotions):
+    """Phase D: each combination killer move's button on its first Gu, and the moves' one-turn statuses (tools/gu_combos.py)."""
+    gen_paths.GCO.attach(promotions)
+    return promotions + gen_paths.GCO.statuses()
+
+
+dump("UnitPromotions.json", with_combos([
     {"name": "Aptitude A", "uniques": ["[+15]% Strength", "[-20]% maintenance costs", "[+25]% XP gained from combat"]},
     {"name": "Aptitude B", "uniques": ["[+5]% Strength", "[-10]% maintenance costs", "[+10]% XP gained from combat"]},
     {"name": "Aptitude C", "uniques": []},
@@ -825,7 +831,7 @@ dump("UnitPromotions.json", [
            w("+500")]},
 ] + [{"name": r["promotion"], "uniques": [r["promotion_effect"]]} for r in REALMS] + [
     {"name": "Chaos Countdown", "uniques": ["Comment [When it runs out, a chaos calamity falls on the Venerable]"]},
-])
+]))
 
 # ---------------- Events (13: the spec's 5, wild Gu and inheritances (R6), world conflicts (canon overhaul)) ----------------
 BAI = "<for [Bai Clan] Civilizations>"

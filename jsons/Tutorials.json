@@ -1169,5 +1169,143 @@
         "text": "Weighted: Earth or starlight presses down: 1 movement less and 15% weaker when defending."
       }
     ]
+  },
+  {
+    "name": "Gu World: Combination Killer Moves",
+    "civilopediaText": [
+      {
+        "text": "Combination killer moves",
+        "header": 2
+      },
+      {
+        "text": "42 killer moves need two Gu on the same unit. When a unit holds both, a button appears among its actions: one turn of power for stones (immortal moves: immortal essence) and one movement. Only you press these buttons; the AI never does. Each move's rank is its strongest Gu's rank, and its power grows with it."
+      },
+      {
+        "text": "Iron Stone Bastion (rank 1): Iron Skin Gu + Stone Skin Gu. +20% when defending; heals 8 HP at once. Cost 15 stones."
+      },
+      {
+        "text": "Earth Listening Ambush (rank 2): Earth Communication Ear Grass + Stealth Scales Gu. +18% when attacking; each hit deals 10 more damage. Cost 20 stones."
+      },
+      {
+        "text": "Ice Blade Storm (rank 2): Ice Knife Gu + Whirlwind Gu. +18% when attacking; each hit deals 10 more damage. Cost 20 stones."
+      },
+      {
+        "text": "Twin Wheel Gale (rank 2): Clear Wind Wheel Gu + Jade Wind Wheel Gu. +2 movement at once; +14% when attacking. Cost 20 stones."
+      },
+      {
+        "text": "Bleeding Moon (rank 3): Moonglow Gu + Blood Moon Gu. its hits leave the enemy Bleeding for 2 turns; +15% when attacking. Cost 25 stones."
+      },
+      {
+        "text": "Blinding Palm (rank 3): Flash Gu + Hand Blade Gu. its hits leave the enemy Blinded for 2 turns; +15% when attacking. Cost 25 stones."
+      },
+      {
+        "text": "Eight Beast Phantoms (rank 3): Self-Reliance Gu + Strength Qi Gu. +22% when attacking; each hit deals 13 more damage. Cost 25 stones."
+      },
+      {
+        "text": "Golden Saw Tide (rank 3): Chainsaw Golden Centipede + Living Steel Gu. +22% when attacking; each hit deals 13 more damage. Cost 25 stones."
+      },
+      {
+        "text": "Ice Coffin Prison (rank 3): Blue Bird Ice Coffin Gu + Water Prison Gu. its hits leave the enemy Frozen for 2 turns; +15% when attacking. Cost 25 stones."
+      },
+      {
+        "text": "Splendid Star Armour (rank 3): Star Dart Gu + Starlight Firefly Gu. +30% when defending; heals 14 HP at once. Cost 25 stones."
+      },
+      {
+        "text": "Bone Spear Rain (rank 4): Bone Wings Gu + Spiral Bone Spear Gu. +26% when attacking; each hit deals 16 more damage. Cost 30 stones."
+      },
+      {
+        "text": "Grass Army Ambush (rank 4): Grass Puppet Gu + Grass Tree Army Gu. enemy soldiers beside it fight 14% weaker; +13% strength. Cost 30 stones."
+      },
+      {
+        "text": "Molten Serpent Coil (rank 4): Fiery Snake Gu + Lava Explosion Gu. its hits leave the enemy Burning for 3 turns; +18% when attacking. Cost 30 stones."
+      },
+      {
+        "text": "Myriad Star Fireflies (rank 4): Starlight Firefly Gu + Clear Mind Gu. enemy soldiers beside it fight 14% weaker; +13% strength. Cost 30 stones."
+      },
+      {
+        "text": "Nine Cloud Ring (rank 4): Yin Yang Dual Cloud Gu + Flying Cloud Gu. +35% when defending; heals 17 HP at once. Cost 30 stones."
+      },
+      {
+        "text": "Four Arm Earth King (rank 5): Earth Overlord Gu + Brute Force Longhorn Beetle Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+      },
+      {
+        "text": "Limitless Search Lock (rank 5): Search Lock Gu + Warp Gu. its hits leave the enemy Entangled for 3 turns; +21% when attacking. Cost 35 stones."
+      },
+      {
+        "text": "My Glorious Spear (rank 5): Extreme Light Gu + Little Light Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+      },
+      {
+        "text": "One Song of Yang Pass (rank 5): Heaven Earth Magnificent Sound Gu + Tiger Roar Gu. enemy soldiers beside it fight 16% weaker; +15% strength. Cost 35 stones."
+      },
+      {
+        "text": "Sealed Moonshadow (rank 5): Moonshadow Gu + Search Lock Gu. its hits leave the enemy Sealed for 3 turns; +21% when attacking. Cost 35 stones."
+      },
+      {
+        "text": "Six Arm Heavenly Corpse King (rank 5): Asura Zombie Gu + Roaming Zombie Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+      },
+      {
+        "text": "Soul Fire Burst (rank 5): Ghost Fire Gu + Soul Explosion Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+      },
+      {
+        "text": "Spiral Drill Star Spear (rank 5): Spiral Bone Spear Gu + Star River Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+      },
+      {
+        "text": "Ten Thousand Poisons (rank 5): Love Life Separation + Jade Sky Gu. its hits leave the enemy Poisoned for 3 turns; +21% when attacking. Cost 35 stones."
+      },
+      {
+        "text": "Thunder Wing Dive (rank 5): Lightning Wings Gu + Thunder Hammer Gu. +2 movement at once; +23% when attacking. Cost 35 stones."
+      },
+      {
+        "text": "Unravel Dream (rank 5): Dream Butterfly Gu + Dream Pillow Gu. 55% more XP from combat; heals 15 HP at once. Cost 35 stones."
+      },
+      {
+        "text": "Blood Healing Lake (rank 6): Blood Asset Immortal Gu + Blood Moon Gu. heals 45 HP at once; +17% strength. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Blood Torrent (rank 6): Blood Asset Immortal Gu + Blood Skull Gu. +34% when attacking; each hit deals 22 more damage. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Dark Arrow Rain (rank 6): Dark Arrow Immortal Gu + Shadow Follower Gu. +34% when attacking; each hit deals 22 more damage. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Flying Bear Transformation (rank 6): Change Form Immortal Gu + Flying Bear Strength Immortal Gu. +34% when attacking; each hit deals 22 more damage. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Ghost Official Garment (rank 6): Cleanse Soul Immortal Gu + Soul Search Gu. +45% when defending; heals 23 HP at once. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Silent Gong (rank 6): Heavenly Gong Immortal Gu + Keep Silent Gu. enemy soldiers beside it fight 18% weaker; +17% strength. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Ghostly Concealment (rank 7): Great Thief Immortal Gu + Plunder Gu. takes 55% of a slain soldier's cost as stones; each hit deals 25 more damage. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "One Sword Unrestrained (rank 7): Sword Escape Immortal Gu + Sword Shadow Gu. +2 movement at once; +29% when attacking. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Reverse Flow Protection Seal (rank 7): Perseverance Immortal Gu + Pulling Water Immortal Gu. +50% when defending; heals 26 HP at once. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Sword Marks Targeting Death (rank 7): Flying Sword Immortal Gu + Sword Qi Gu. its hits leave the enemy Doomed for 3 turns; +27% when attacking. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Eight Winds Dominion (rank 8): Eight-Faced Prestige Wind Immortal Gu + Jade Wind Wheel Gu. enemy soldiers beside it fight 22% weaker; +21% strength. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Five Restriction Profound Light Qi (rank 8): Region Immortal Gu + Limit Immortal Gu. its hits leave the enemy Sealed for 4 turns; +30% when attacking. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heaven Envies Heroic Geniuses (rank 8): Heaven's Envy Immortal Gu + Heavenly Secret Immortal Gu. enemy soldiers beside it fight 22% weaker; +21% strength. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heavenly Net (rank 9): Heavenly Web Immortal Gu + Fixed Space Immortal Gu. its hits leave the enemy Entangled for 4 turns; +33% when attacking. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Love and Regret (rank 9): Love Gu + Regret Immortal Gu. its hits leave the enemy Charmed for 4 turns; +33% when attacking. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Sun Descends (rank 9): Light Gu + Fire Gu. +46% when attacking; each hit deals 31 more damage. Cost 3 Yellow Apricot Immortal Essence."
+      }
+    ]
   }
 ]

@@ -368,6 +368,31 @@ def gu_awaken(name, key, rank, form):
     return _norm(x, 0.6 + 0.03 * rank, 1.0 + 0.12 * rank)
 
 
+def combo_strike(name, key_a, key_b, rank):
+    """A combination killer move: a rising swell, the first Gu's path strike, then the second's on top a beat later;
+    immortal moves (rank 6+) add a deep drop and a dao bell."""
+    import zlib
+    rng = np.random.default_rng(zlib.crc32(name.encode()))
+    swell = 0.18 + 0.03 * min(rank, 6)
+    rise = render([N(200, 3000, swell, 0.02, 0.6, lo2=600, hi2=7000)], extra=swell)[: int(SR * swell)]
+    rise *= np.linspace(0, 1, len(rise)) ** 2
+    tier = 2 if rank <= 3 else 3 if rank <= 5 else 4
+    a, b = path_hit(key_a, tier), path_hit(key_b, tier)
+    pitch = float(rng.uniform(0.9, 1.12))
+    b = np.interp(np.arange(0, len(b) - 1, pitch), np.arange(len(b)), b)
+    off = int(SR * 0.11)
+    hit = np.zeros(max(len(a), off + len(b)))
+    hit[: len(a)] += a
+    hit[off: off + len(b)] += 0.85 * b
+    if rank >= 6:
+        drop = render([T(80, 0.01, 0.5, 0.8, f2=28)])
+        hit[: len(drop)] += 0.6 * drop[: len(hit)]
+        bell = dao_bell(min(5, rank - 4))
+        hit = np.concatenate([hit, np.zeros(max(0, off + len(bell) - len(hit)))])
+        hit[off: off + len(bell)] += 0.5 * bell
+    return _norm(np.concatenate([rise, hit]), 0.9 if rank >= 6 else 0.85, 2.4 if rank >= 6 else 1.8)
+
+
 # ---------------------------------------------------------------- names and files
 import sys as _sys  # noqa: E402
 _sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -389,6 +414,11 @@ def all_sounds():
     import gu_catalog
     for r in gu_catalog.ROWS:
         out[gu_catalog.sound(r["name"])] = (lambda r=r: gu_awaken(r["name"], r["path"], int(r["rank"]), r["form"]))
+    import gu_combos
+    info = gu_combos.gu_info()
+    for r in gu_combos.ROWS:
+        out[gu_combos.sound(r["name"])] = (lambda r=r: combo_strike(r["name"], info[r["gu_a"]][1], info[r["gu_b"]][1],
+                                                                  gu_combos.rank(r)))
     return out
 
 

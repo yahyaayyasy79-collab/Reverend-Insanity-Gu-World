@@ -23,6 +23,7 @@ from common import REPO_ROOT  # noqa: E402
 import path_powers as PP  # noqa: E402  (power scaling: data/path_powers.csv)
 import sound_names as sfx  # noqa: E402  (sound file names; tools/art/sfx.py synthesizes the files)
 import gu_catalog as GC  # noqa: E402  (Phase D: the Gu catalog, data/gu_catalog.csv)
+import gu_combos as GCO  # noqa: E402  (Phase D: combination killer moves, data/gu_combos.csv)
 
 DATA = REPO_ROOT / "data"
 DOC = REPO_ROOT / "docs" / "PATHS.md"
@@ -442,7 +443,7 @@ def translations() -> list[tuple[str, str]]:
     from gu_rules import hunger_translations, stone_comment
     out += hunger_translations(all_food_gu())
     out += [stone_comment(u) for u in sorted({int(g["upkeep"] or 0) for g in PATH_GU if new_gu(g) and not g["food"]} | {10})]
-    return out + GC.translations() + policy_translations() + tutorial_translations()
+    return out + GC.translations() + GCO.translations() + policy_translations() + tutorial_translations()
 
 
 # ---------------- Tutorials (Civilopedia > Tutorials): the power-scaling pages (Phase D) ----------------
@@ -691,6 +692,7 @@ def _tutorial_specs() -> list[tuple[str, str, list]]:
     out += [(f"Gu World: {f['name'].replace('&', 'and')} Paths", f"Dunia Gu: Jalur {f['name_id'].replace('&', 'dan')}",
              _lines_family(k)) for k, f in FAMILIES.items()]
     out.append(("Gu World: Statuses", "Dunia Gu: Status", _lines_statuses()))
+    out.append(("Gu World: Combination Killer Moves", "Dunia Gu: Jurus Pamungkas Kombinasi", GCO.tutorial_lines()))
     return out
 
 
@@ -781,7 +783,7 @@ def doc_tables() -> dict[str, str]:
                   + " ".join(code(u) for x in st for u in x["uniques"]) + " |")
     return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
             "gu": "\n".join(gu), "branches": "\n".join(br), "powers": "\n".join(pw), "hunger": "\n".join(hu),
-            "catalog": "\n".join(GC.doc_table())}
+            "catalog": "\n".join(GC.doc_table()), "combos": "\n".join(GCO.doc_table())}
 
 
 def splice(text: str, tables: dict[str, str]) -> str:

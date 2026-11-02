@@ -801,3 +801,15 @@ minor clans plus wild factions.
   relies on its dao marks and comprehension, which the Power Scaling tutorial now explains.
 * **Autoplay A/B** (6 × 300, Five Regions): the AI keeps the same number of immortals, captures and survivors as
   before (docs/AUTOPLAY.md).
+
+## Phase D — combination killer moves: 42 moves made of two Gu (2026-11-02)
+
+* **42 moves.** 22 come from canon killer moves; where a canon component is missing or is a wonder here, its
+  components are adapted. The other 20 are invented pairings of catalog Gu.
+* **How one is used.** When a unit holds both Gu, a button appears among its actions. Pressing it costs stones, or
+  three immortal essence for moves of rank 6+, plus 1 movement.
+* **What it does.** One turn of power, set by the move's kind (assault, bind, ward, heal, mobility, aura, plunder,
+  insight) and growing with its strongest Gu's rank. Cross-path pairs reward mixing paths on one cultivator.
+* **Human-only.** The AI never presses custom buttons.
+* **Art, sound and docs.** Every move has a designed icon, its own sound (451 .ogg in all) and a civilopedia entry in
+  EN and ID. A Tutorial page lists every move. The table is in docs/PATHS.md.

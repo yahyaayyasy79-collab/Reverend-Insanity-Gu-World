@@ -149,6 +149,10 @@ rest of the list is what a player or the next session should know before trustin
 
 ## Not yet seen in a real game
 
+* **Combination killer moves (Phase D).** A move's button should appear only on a unit that holds both of its Gu. This
+  rests on [src UnitActionsFromUniques]: an action's conditionals must apply. Check it in game: give one unit Ice
+  Knife Gu, then Whirlwind Gu, and look for the Ice Blade Storm button.
+
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
 "Developer console".
 

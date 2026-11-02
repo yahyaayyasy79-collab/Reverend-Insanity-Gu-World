@@ -322,3 +322,35 @@ def icons() -> list[tuple[str, str, object, str]]:
     import gu_catalog
     return [("UnitPromotionIcons", r["name"], (lambda r=r: gu_icon(r["form"], r["path"], int(r["rank"]))), "white")
             for r in gu_catalog.ROWS]
+
+
+# ---------------------------------------------------------------- combination killer moves (tools/gu_combos.py)
+KIND_MARK = {"assault": 8, "bind": 6, "ward": 4, "heal": 5, "mobility": 3, "aura": 12, "plunder": 7, "insight": 9}
+
+
+def combo_icon(path_a: str, path_b: str, kind: str, rank: int) -> G:
+    """Two path symbols crossing inside a burst: the burst's ray count tells the kind, a halo marks an immortal move."""
+    g = G()
+    n = KIND_MARK[kind] * 2
+    for k in range(n):
+        a = math.radians(90 + 360 * k / n)
+        r0, r1 = (38, 48) if k % 2 == 0 else (40, 45)
+        g.line([(50 + r0 * math.cos(a), 50 - r0 * math.sin(a)), (50 + r1 * math.cos(a), 50 - r1 * math.sin(a))],
+               4 if k % 2 == 0 else 2.5)
+    if rank >= 6:
+        g.arc_band(50, 50, 50, 47, 0, 360)
+    disc = G(); disc.circ(50, 50, 33)
+    g.paste(disc, 0)
+    for cx, cy, key in ((37, 39, path_a), (63, 61, path_b)):
+        cut = G(); cut.circ(50, 50, 50)
+        place(g, cut, cx, cy, 0.56, 0)
+        place(g, symbol(key), cx, cy, 0.5)
+    return g
+
+
+def combo_icons() -> list[tuple[str, str, object, str]]:
+    import gu_combos
+    info = gu_combos.gu_info()
+    return [("UnitPromotionIcons", r["name"],
+             (lambda r=r: combo_icon(info[r["gu_a"]][1], info[r["gu_b"]][1], r["kind"], gu_combos.rank(r))), "white")
+            for r in gu_combos.ROWS]

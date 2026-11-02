@@ -4509,3 +4509,29 @@ kekuatannya mengandalkan dao dan pemahaman"; decided: full rebuild, base about 4
 * **Tutorial.** The "Power Scaling" page says this and prints every number from the constants.
 * **Evidence.** In autoplay the AI is no weaker than before: docs/AUTOPLAY.md "Phase D: power rebuild".
 
+## Phase D: combination killer moves (the user, 2026-11-02)
+
+The user: "kalo bisa jurus pamungkas itu terdiri dari gu² kombinasi hasil kreatifitas pemain (jikalau memungkinkan)";
+decided: about 40 curated combinations.
+
+* **What was built.** There are 42 moves (`data/gu_combos.csv`, `tools/gu_combos.py`).
+  * 22 are canon killer moves from docs/GU_RESEARCH.md. Where a canon component is missing or is a wonder here, its
+    components are ADAPTED.
+  * 20 are INVENTED pairings of catalog Gu.
+* **How a move works.** A move needs two Gu on the same unit. Its button sits on the first Gu's promotion and shows
+  only to a unit that also holds the second, because an action's conditionals must apply
+  [src UnitActionsFromUniques, test in game]. Pressing it gives a one-turn status:
+  * the move's rank is its stronger Gu's rank;
+  * its kind sets the effect (assault, bind, ward, heal, mobility, aura, plunder, insight), and the effect grows with
+    the rank;
+  * it costs 10+5×rank stones and one movement, or three of the rank's immortal essence for moves of rank 6+.
+* **The player's creativity.** Many pairs cross two paths, so a player builds them by mixing paths on one cultivator
+  (accepting the dao-mark clash). A free-form combination, where any two Gu would make a move, is not possible:
+  Unciv cannot create a unit action from the promotions a unit happens to hold. So the moves are curated.
+* **AI.** The AI never presses custom buttons. These moves are the human's optional power (MOD_SPEC rule 7).
+* **Art and sound.** Each move has a designed icon (`tools/art/guart.py` `combo_icon`: both paths' symbols inside a
+  burst whose ray count tells the kind, with a halo for immortal moves) and its own sound (`tools/art/sfx.py`
+  `combo_strike`).
+* **Docs.** Tables are in docs/PATHS.md "Combination killer moves". The Tutorial page "Combination Killer Moves" lists
+  every move with its Gu and cost.
+

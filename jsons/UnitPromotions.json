@@ -8168,7 +8168,8 @@
     "uniques": [
       "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
-      "[+10]% maintenance costs"
+      "[+10]% maintenance costs",
+      "[This Unit] gains the [Splendid Star Armour] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Starlight Firefly Gu]> <for units without [Splendid Star Armour]>"
     ],
     "civilopediaText": [
       {
@@ -8181,7 +8182,8 @@
     "uniques": [
       "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+20]% Strength <when attacking>",
-      "[+10]% maintenance costs"
+      "[+10]% maintenance costs",
+      "[This Unit] gains the [One Song of Yang Pass] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Tiger Roar Gu]> <for units without [One Song of Yang Pass]>"
     ],
     "civilopediaText": [
       {
@@ -8984,7 +8986,8 @@
       "[+2]% maintenance costs",
       "[+12]% Strength <when defending>",
       "Play [gu-iron-skin-gu] sound <upon gaining the [Iron Skin Gu] promotion>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Iron Stone Bastion] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement> <for units with [Stone Skin Gu]> <for units without [Iron Stone Bastion]>"
     ],
     "civilopediaText": [
       {
@@ -9102,7 +9105,8 @@
       "[Target Unit] gains the [Blinded] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[+3]% Strength <when attacking>",
       "Play [gu-flash-gu] sound <upon gaining the [Flash Gu] promotion>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Blinding Palm] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Hand Blade Gu]> <for units without [Blinding Palm]>"
     ],
     "civilopediaText": [
       {
@@ -9125,7 +9129,8 @@
       "[+2]% maintenance costs",
       "[-3]% Strength for enemy [Military] units in adjacent [All] tiles",
       "Play [gu-grass-puppet-gu] sound <upon gaining the [Grass Puppet Gu] promotion>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Grass Army Ambush] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Grass Tree Army Gu]> <for units without [Grass Army Ambush]>"
     ],
     "civilopediaText": [
       {
@@ -9149,7 +9154,8 @@
       "[+1] Movement",
       "[+2]% Strength",
       "Play [gu-clear-wind-wheel-gu] sound <upon gaining the [Clear Wind Wheel Gu] promotion>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Twin Wheel Gale] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Jade Wind Wheel Gu]> <for units without [Twin Wheel Gale]>"
     ],
     "civilopediaText": [
       {
@@ -9204,7 +9210,8 @@
       "[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonglow Gu Hunger 20%]> <for units without [Moonglow Gu Hunger 40%]> <for units without [Moonglow Gu Hunger 60%]> <for units without [Moonglow Gu Hunger 80%]> <for units without [Moonglow Gu Hunger 100%]>",
       "Play [gu-moonglow-gu] sound <upon gaining the [Moonglow Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Bleeding Moon] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Blood Moon Gu]> <for units without [Bleeding Moon]>"
     ],
     "civilopediaText": [
       {
@@ -9253,7 +9260,8 @@
       "[+16]% Strength <when attacking>",
       "Play [gu-ice-knife-gu] sound <upon gaining the [Ice Knife Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Ice Blade Storm] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Whirlwind Gu]> <for units without [Ice Blade Storm]>"
     ],
     "civilopediaText": [
       {
@@ -9327,7 +9335,8 @@
       "[+3]% Strength",
       "Play [gu-earth-communication-ear-grass] sound <upon gaining the [Earth Communication Ear Grass] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Earth Listening Ambush] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Stealth Scales Gu]> <for units without [Earth Listening Ambush]>"
     ],
     "civilopediaText": [
       {
@@ -9351,7 +9360,8 @@
       "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
       "Play [gu-spiral-bone-spear-gu] sound <upon gaining the [Spiral Bone Spear Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Spiral Drill Star Spear] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Star River Gu]> <for units without [Spiral Drill Star Spear]>"
     ],
     "civilopediaText": [
       {
@@ -9472,7 +9482,8 @@
       "[+4]% Strength <when attacking>",
       "Play [gu-love-life-separation] sound <upon gaining the [Love Life Separation] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Ten Thousand Poisons] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Jade Sky Gu]> <for units without [Ten Thousand Poisons]>"
     ],
     "civilopediaText": [
       {
@@ -9496,7 +9507,8 @@
       "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
       "Play [gu-ghost-fire-gu] sound <upon gaining the [Ghost Fire Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Soul Fire Burst] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Soul Explosion Gu]> <for units without [Soul Fire Burst]>"
     ],
     "civilopediaText": [
       {
@@ -9570,7 +9582,8 @@
       "[+5]% Strength <when attacking>",
       "Play [gu-blue-bird-ice-coffin-gu] sound <upon gaining the [Blue Bird Ice Coffin Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Ice Coffin Prison] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Water Prison Gu]> <for units without [Ice Coffin Prison]>"
     ],
     "civilopediaText": [
       {
@@ -9595,7 +9608,8 @@
       "[+4]% Strength",
       "Play [gu-lightning-wings-gu] sound <upon gaining the [Lightning Wings Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Thunder Wing Dive] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Thunder Hammer Gu]> <for units without [Thunder Wing Dive]>"
     ],
     "civilopediaText": [
       {
@@ -9693,7 +9707,8 @@
       "[+4]% Strength",
       "Play [gu-starlight-firefly-gu] sound <upon gaining the [Starlight Firefly Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Myriad Star Fireflies] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Clear Mind Gu]> <for units without [Myriad Star Fireflies]>"
     ],
     "civilopediaText": [
       {
@@ -9717,7 +9732,8 @@
       "[+13] HP when healing",
       "Play [gu-self-reliance-gu] sound <upon gaining the [Self-Reliance Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Eight Beast Phantoms] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Strength Qi Gu]> <for units without [Eight Beast Phantoms]>"
     ],
     "civilopediaText": [
       {
@@ -9774,7 +9790,8 @@
       "[+20]% Strength <when attacking>",
       "Play [gu-chainsaw-golden-centipede] sound <upon gaining the [Chainsaw Golden Centipede] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Golden Saw Tide] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Living Steel Gu]> <for units without [Golden Saw Tide]>"
     ],
     "civilopediaText": [
       {
@@ -9847,7 +9864,8 @@
       "[+4]% Strength",
       "Play [gu-yin-yang-dual-cloud-gu] sound <upon gaining the [Yin Yang Dual Cloud Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Nine Cloud Ring] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Flying Cloud Gu]> <for units without [Nine Cloud Ring]>"
     ],
     "civilopediaText": [
       {
@@ -9994,7 +10012,8 @@
       "[+5]% Strength",
       "Play [gu-bone-wings-gu] sound <upon gaining the [Bone Wings Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Bone Spear Rain] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Spiral Bone Spear Gu]> <for units without [Bone Spear Rain]>"
     ],
     "civilopediaText": [
       {
@@ -10068,7 +10087,8 @@
       "[+6]% Strength <when attacking>",
       "Play [gu-fiery-snake-gu] sound <upon gaining the [Fiery Snake Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Molten Serpent Coil] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Lava Explosion Gu]> <for units without [Molten Serpent Coil]>"
     ],
     "civilopediaText": [
       {
@@ -10238,7 +10258,8 @@
       "[+6]% Strength <when attacking>",
       "Play [gu-moonshadow-gu] sound <upon gaining the [Moonshadow Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Sealed Moonshadow] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Search Lock Gu]> <for units without [Sealed Moonshadow]>"
     ],
     "civilopediaText": [
       {
@@ -10433,7 +10454,8 @@
       "[+20]% Strength",
       "Play [gu-earth-overlord-gu] sound <upon gaining the [Earth Overlord Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Four Arm Earth King] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Brute Force Longhorn Beetle Gu]> <for units without [Four Arm Earth King]>"
     ],
     "civilopediaText": [
       {
@@ -10457,7 +10479,8 @@
       "[+28]% Strength <when attacking>",
       "Play [gu-extreme-light-gu] sound <upon gaining the [Extreme Light Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [My Glorious Spear] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Little Light Gu]> <for units without [My Glorious Spear]>"
     ],
     "civilopediaText": [
       {
@@ -10701,7 +10724,8 @@
       "[+20]% Strength",
       "Play [gu-asura-zombie-gu] sound <upon gaining the [Asura Zombie Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Six Arm Heavenly Corpse King] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units without [Six Arm Heavenly Corpse King]>"
     ],
     "civilopediaText": [
       {
@@ -10726,7 +10750,8 @@
       "[+7]% Strength <when attacking>",
       "Play [gu-search-lock-gu] sound <upon gaining the [Search Lock Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Limitless Search Lock] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Warp Gu]> <for units without [Limitless Search Lock]>"
     ],
     "civilopediaText": [
       {
@@ -10750,7 +10775,8 @@
       "[+35]% XP gained from combat",
       "Play [gu-dream-butterfly-gu] sound <upon gaining the [Dream Butterfly Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Unravel Dream] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units without [Unravel Dream]>"
     ],
     "civilopediaText": [
       {
@@ -10865,7 +10891,8 @@
       "[+23]% Strength <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-change-form-immortal-gu] sound <upon gaining the [Change Form Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Flying Bear Transformation] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Flying Bear Strength Immortal Gu]> <for units without [Flying Bear Transformation]>"
     ],
     "civilopediaText": [
       {
@@ -10888,7 +10915,9 @@
       "[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-blood-asset-immortal-gu] sound <upon gaining the [Blood Asset Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Blood Torrent] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Skull Gu]> <for units without [Blood Torrent]>",
+      "[This Unit] gains the [Blood Healing Lake] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Moon Gu]> <for units without [Blood Healing Lake]>"
     ],
     "civilopediaText": [
       {
@@ -10912,7 +10941,8 @@
       "Heals [17] damage if it kills a unit <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-cleanse-soul-immortal-gu] sound <upon gaining the [Cleanse Soul Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Ghost Official Garment] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Soul Search Gu]> <for units without [Ghost Official Garment]>"
     ],
     "civilopediaText": [
       {
@@ -10935,7 +10965,8 @@
       "[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-dark-arrow-immortal-gu] sound <upon gaining the [Dark Arrow Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Dark Arrow Rain] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units without [Dark Arrow Rain]>"
     ],
     "civilopediaText": [
       {
@@ -10958,7 +10989,8 @@
       "[-8]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-heavenly-gong-immortal-gu] sound <upon gaining the [Heavenly Gong Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Silent Gong] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Keep Silent Gu]> <for units without [Silent Gong]>"
     ],
     "civilopediaText": [
       {
@@ -11100,7 +11132,8 @@
       "[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-flying-sword-immortal-gu] sound <upon gaining the [Flying Sword Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Sword Marks Targeting Death] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Qi Gu]> <for units without [Sword Marks Targeting Death]>"
     ],
     "civilopediaText": [
       {
@@ -11124,7 +11157,8 @@
       "[+8]% Strength <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-sword-escape-immortal-gu] sound <upon gaining the [Sword Escape Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [One Sword Unrestrained] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units without [One Sword Unrestrained]>"
     ],
     "civilopediaText": [
       {
@@ -11170,7 +11204,8 @@
       "Earn [45]% of killed [Military] unit's [Cost] as [Gold] <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-great-thief-immortal-gu] sound <upon gaining the [Great Thief Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Ghostly Concealment] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Plunder Gu]> <for units without [Ghostly Concealment]>"
     ],
     "civilopediaText": [
       {
@@ -11216,7 +11251,8 @@
       "[+36]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-perseverance-immortal-gu] sound <upon gaining the [Perseverance Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Reverse Flow Protection Seal] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Pulling Water Immortal Gu]> <for units without [Reverse Flow Protection Seal]>"
     ],
     "civilopediaText": [
       {
@@ -11333,7 +11369,8 @@
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [White Lychee Immortal Essence]>",
       "Play [gu-region-immortal-gu] sound <upon gaining the [Region Immortal Gu] promotion>",
       "Only available <for [post-[Rank Seven era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Five Restriction Profound Light Qi] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Limit Immortal Gu]> <for units without [Five Restriction Profound Light Qi]>"
     ],
     "civilopediaText": [
       {
@@ -11427,7 +11464,8 @@
       "[+40]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
       "Play [gu-eight-faced-prestige-wind-immortal-gu] sound <upon gaining the [Eight-Faced Prestige Wind Immortal Gu] promotion>",
       "Only available <for [post-[Rank Seven era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Eight Winds Dominion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Jade Wind Wheel Gu]> <for units without [Eight Winds Dominion]>"
     ],
     "civilopediaText": [
       {
@@ -11499,7 +11537,8 @@
       "[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
       "Play [gu-heaven-s-envy-immortal-gu] sound <upon gaining the [Heaven's Envy Immortal Gu] promotion>",
       "Only available <for [post-[Rank Seven era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Heaven Envies Heroic Geniuses] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Heavenly Secret Immortal Gu]> <for units without [Heaven Envies Heroic Geniuses]>"
     ],
     "civilopediaText": [
       {
@@ -11545,7 +11584,8 @@
       "[+44]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
       "Play [gu-light-gu] sound <upon gaining the [Light Gu] promotion>",
       "Only available <for [post-[Rank Eight era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Sun Descends] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fire Gu]> <for units without [Sun Descends]>"
     ],
     "civilopediaText": [
       {
@@ -11592,7 +11632,8 @@
       "Heals [23] damage if it kills a unit <when above [0] [Yellow Apricot Immortal Essence]>",
       "Play [gu-love-gu] sound <upon gaining the [Love Gu] promotion>",
       "Only available <for [post-[Rank Eight era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Love and Regret] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Regret Immortal Gu]> <for units without [Love and Regret]>"
     ],
     "civilopediaText": [
       {
@@ -11616,7 +11657,8 @@
       "[+11]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
       "Play [gu-heavenly-web-immortal-gu] sound <upon gaining the [Heavenly Web Immortal Gu] promotion>",
       "Only available <for [post-[Rank Eight era]] units>",
-      "[+100]% weight to this choice for AI decisions"
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Heavenly Net] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fixed Space Immortal Gu]> <for units without [Heavenly Net]>"
     ],
     "civilopediaText": [
       {
@@ -12368,6 +12410,552 @@
     "civilopediaText": [
       {
         "text": "Every 25 turns on Standard a chaos calamity (混沌大难) falls on the Venerable: 40 yellow apricot essence and 10 HP, or 25 HP of its burning life."
+      }
+    ]
+  },
+  {
+    "name": "Four Arm Earth King",
+    "uniques": [
+      "[+30]% Strength <when attacking>",
+      "[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-four-arm-earth-king] sound <upon gaining the [Four Arm Earth King] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Four Arm Earth King (四臂地王), a rank-5 combination killer move (assault): grows a second pair of arms and pounds with the earth's strength. Needs Earth Overlord Gu and Brute Force Longhorn Beetle Gu on the same unit; the button is on Earth Overlord Gu. For one turn: +30% when attacking; each hit deals 19 more damage. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Eight Beast Phantoms",
+    "uniques": [
+      "[+22]% Strength <when attacking>",
+      "[Target Unit] takes [13] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-eight-beast-phantoms] sound <upon gaining the [Eight Beast Phantoms] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eight Beast Phantoms (八大兽影), a rank-3 combination killer move (assault): eight beast phantoms charge out of the user's strength. Needs Self-Reliance Gu and Strength Qi Gu on the same unit; the button is on Self-Reliance Gu. For one turn: +22% when attacking; each hit deals 13 more damage. Costs 25 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Reverse Flow Protection Seal",
+    "uniques": [
+      "[+50]% Strength <when defending>",
+      "[This Unit] heals [26] HP <upon gaining the [Reverse Flow Protection Seal] status>",
+      "Play [combo-reverse-flow-protection-seal] sound <upon gaining the [Reverse Flow Protection Seal] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Reverse Flow Protection Seal (逆流护身印), a rank-7 combination killer move (ward): a seal that turns blows back like a river reversing. Needs Perseverance Immortal Gu and Pulling Water Immortal Gu on the same unit; the button is on Perseverance Immortal Gu. For one turn: +50% when defending; heals 26 HP at once. Costs 3 Red Date Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Spiral Drill Star Spear",
+    "uniques": [
+      "[+30]% Strength <when attacking>",
+      "[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-spiral-drill-star-spear] sound <upon gaining the [Spiral Drill Star Spear] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spiral Drill Star Spear (螺旋钻星枪), a rank-5 combination killer move (assault): a bone spear wrapped in a river of stars drills through armour. Needs Spiral Bone Spear Gu and Star River Gu on the same unit; the button is on Spiral Bone Spear Gu. For one turn: +30% when attacking; each hit deals 19 more damage. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Myriad Star Fireflies",
+    "uniques": [
+      "[-14]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+13]% Strength",
+      "Play [combo-myriad-star-fireflies] sound <upon gaining the [Myriad Star Fireflies] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Myriad Star Fireflies (万星飞萤), a rank-4 combination killer move (aura): clouds of starlit fireflies carry thoughts that confuse the enemy. Needs Starlight Firefly Gu and Clear Mind Gu on the same unit; the button is on Starlight Firefly Gu. For one turn: enemy soldiers beside it fight 14% weaker; +13% strength. Costs 30 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Blood Torrent",
+    "uniques": [
+      "[+34]% Strength <when attacking>",
+      "[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-blood-torrent] sound <upon gaining the [Blood Torrent] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Torrent (血漂流), a rank-6 combination killer move (assault): a torrent of blood sweeps the battlefield. Needs Blood Asset Immortal Gu and Blood Skull Gu on the same unit; the button is on Blood Asset Immortal Gu. For one turn: +34% when attacking; each hit deals 22 more damage. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Blood Healing Lake",
+    "uniques": [
+      "[This Unit] heals [45] HP <upon gaining the [Blood Healing Lake] status>",
+      "[+17]% Strength",
+      "Play [combo-blood-healing-lake] sound <upon gaining the [Blood Healing Lake] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Healing Lake (血愈湖), a rank-6 combination killer move (heal): a lake of blood knits its master's wounds. Needs Blood Asset Immortal Gu and Blood Moon Gu on the same unit; the button is on Blood Asset Immortal Gu. For one turn: heals 45 HP at once; +17% strength. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Sword Marks Targeting Death",
+    "uniques": [
+      "[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+27]% Strength <when attacking>",
+      "Play [combo-sword-marks-targeting-death] sound <upon gaining the [Sword Marks Targeting Death] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword Marks Targeting Death (剑痕索命), a rank-7 combination killer move (bind): sword dao marks burned into the target hunt it until it dies. Needs Flying Sword Immortal Gu and Sword Qi Gu on the same unit; the button is on Flying Sword Immortal Gu. For one turn: its hits leave the enemy Doomed for 3 turns; +27% when attacking. Costs 3 Red Date Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "One Sword Unrestrained",
+    "uniques": [
+      "[This Unit] gains [2] movement <upon gaining the [One Sword Unrestrained] status>",
+      "[+29]% Strength <when attacking>",
+      "Play [combo-one-sword-unrestrained] sound <upon gaining the [One Sword Unrestrained] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One Sword Unrestrained (一剑纵横), a rank-7 combination killer move (mobility): one sword crosses the field at will. Needs Sword Escape Immortal Gu and Sword Shadow Gu on the same unit; the button is on Sword Escape Immortal Gu. For one turn: +2 movement at once; +29% when attacking. Costs 3 Red Date Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Flying Bear Transformation",
+    "uniques": [
+      "[+34]% Strength <when attacking>",
+      "[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-flying-bear-transformation] sound <upon gaining the [Flying Bear Transformation] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bear Transformation (飞熊变), a rank-6 combination killer move (assault): the user becomes a flying bear. Needs Change Form Immortal Gu and Flying Bear Strength Immortal Gu on the same unit; the button is on Change Form Immortal Gu. For one turn: +34% when attacking; each hit deals 22 more damage. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Ghost Official Garment",
+    "uniques": [
+      "[+45]% Strength <when defending>",
+      "[This Unit] heals [23] HP <upon gaining the [Ghost Official Garment] status>",
+      "Play [combo-ghost-official-garment] sound <upon gaining the [Ghost Official Garment] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ghost Official Garment (鬼官衣), a rank-6 combination killer move (ward): a robe of ghost officials shields the soul. Needs Cleanse Soul Immortal Gu and Soul Search Gu on the same unit; the button is on Cleanse Soul Immortal Gu. For one turn: +45% when defending; heals 23 HP at once. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Ghostly Concealment",
+    "uniques": [
+      "Earn [55]% of killed [Military] unit's [Cost] as [Gold]",
+      "[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-ghostly-concealment] sound <upon gaining the [Ghostly Concealment] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ghostly Concealment (鬼不觉), a rank-7 combination killer move (plunder): a hand no one feels takes from the enemy as it strikes. Needs Great Thief Immortal Gu and Plunder Gu on the same unit; the button is on Great Thief Immortal Gu. For one turn: takes 55% of a slain soldier's cost as stones; each hit deals 25 more damage. Costs 3 Red Date Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Five Restriction Profound Light Qi",
+    "uniques": [
+      "[Target Unit] gains the [Sealed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+30]% Strength <when attacking>",
+      "Play [combo-five-restriction-profound-light-qi] sound <upon gaining the [Five Restriction Profound Light Qi] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Five Restriction Profound Light Qi (五禁玄光气), a rank-8 combination killer move (bind): five restrictions of profound light seal what they touch. Needs Region Immortal Gu and Limit Immortal Gu on the same unit; the button is on Region Immortal Gu. For one turn: its hits leave the enemy Sealed for 4 turns; +30% when attacking. Costs 3 White Lychee Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Limitless Search Lock",
+    "uniques": [
+      "[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+21]% Strength <when attacking>",
+      "Play [combo-limitless-search-lock] sound <upon gaining the [Limitless Search Lock] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Limitless Search Lock (无极搜锁), a rank-5 combination killer move (bind): locks the target in place wherever it runs. Needs Search Lock Gu and Warp Gu on the same unit; the button is on Search Lock Gu. For one turn: its hits leave the enemy Entangled for 3 turns; +21% when attacking. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Ice Blade Storm",
+    "uniques": [
+      "[+18]% Strength <when attacking>",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-ice-blade-storm] sound <upon gaining the [Ice Blade Storm] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Blade Storm (冰刃风暴), a rank-2 combination killer move (assault): ice knives spun into a storm. Needs Ice Knife Gu and Whirlwind Gu on the same unit; the button is on Ice Knife Gu. For one turn: +18% when attacking; each hit deals 10 more damage. Costs 20 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Heaven Envies Heroic Geniuses",
+    "uniques": [
+      "[-22]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+21]% Strength",
+      "Play [combo-heaven-envies-heroic-geniuses] sound <upon gaining the [Heaven Envies Heroic Geniuses] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven Envies Heroic Geniuses (天妒英才), a rank-8 combination killer move (aura): heaven itself turns against the enemy's best. Needs Heaven's Envy Immortal Gu and Heavenly Secret Immortal Gu on the same unit; the button is on Heaven's Envy Immortal Gu. For one turn: enemy soldiers beside it fight 22% weaker; +21% strength. Costs 3 White Lychee Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "My Glorious Spear",
+    "uniques": [
+      "[+30]% Strength <when attacking>",
+      "[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-my-glorious-spear] sound <upon gaining the [My Glorious Spear] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "My Glorious Spear (荣耀吾枪), a rank-5 combination killer move (assault): a spear of pure light thrown with all the user's pride. Needs Extreme Light Gu and Little Light Gu on the same unit; the button is on Extreme Light Gu. For one turn: +30% when attacking; each hit deals 19 more damage. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Nine Cloud Ring",
+    "uniques": [
+      "[+35]% Strength <when defending>",
+      "[This Unit] heals [17] HP <upon gaining the [Nine Cloud Ring] status>",
+      "Play [combo-nine-cloud-ring] sound <upon gaining the [Nine Cloud Ring] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nine Cloud Ring (九云环), a rank-4 combination killer move (ward): nine rings of cloud wrap the user. Needs Yin Yang Dual Cloud Gu and Flying Cloud Gu on the same unit; the button is on Yin Yang Dual Cloud Gu. For one turn: +35% when defending; heals 17 HP at once. Costs 30 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Six Arm Heavenly Corpse King",
+    "uniques": [
+      "[+30]% Strength <when attacking>",
+      "[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-six-arm-heavenly-corpse-king] sound <upon gaining the [Six Arm Heavenly Corpse King] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Six Arm Heavenly Corpse King (六臂天尸王), a rank-5 combination killer move (assault): a six-armed corpse king that feels no pain. Needs Asura Zombie Gu and Roaming Zombie Gu on the same unit; the button is on Asura Zombie Gu. For one turn: +30% when attacking; each hit deals 19 more damage. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Unravel Dream",
+    "uniques": [
+      "[+55]% XP gained from combat",
+      "[This Unit] heals [15] HP <upon gaining the [Unravel Dream] status>",
+      "Play [combo-unravel-dream] sound <upon gaining the [Unravel Dream] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Unravel Dream (解梦), a rank-5 combination killer move (insight): walks into a dream and comes out wiser. Needs Dream Butterfly Gu and Dream Pillow Gu on the same unit; the button is on Dream Butterfly Gu. For one turn: 55% more XP from combat; heals 15 HP at once. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "One Song of Yang Pass",
+    "uniques": [
+      "[-16]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+15]% Strength",
+      "Play [combo-one-song-of-yang-pass] sound <upon gaining the [One Song of Yang Pass] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One Song of Yang Pass (一曲阳关), a rank-5 combination killer move (aura): a song that breaks the enemy's spirit. Needs Heaven Earth Magnificent Sound Gu and Tiger Roar Gu on the same unit; the button is on Heaven Earth Magnificent Sound Gu. For one turn: enemy soldiers beside it fight 16% weaker; +15% strength. Costs 35 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Splendid Star Armour",
+    "uniques": [
+      "[+30]% Strength <when defending>",
+      "[This Unit] heals [14] HP <upon gaining the [Splendid Star Armour] status>",
+      "Play [combo-splendid-star-armour] sound <upon gaining the [Splendid Star Armour] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Splendid Star Armour (灿烂星甲), a rank-3 combination killer move (ward): armour of countless stars. Needs Star Dart Gu and Starlight Firefly Gu on the same unit; the button is on Star Dart Gu. For one turn: +30% when defending; heals 14 HP at once. Costs 25 stones and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Bleeding Moon",
+    "uniques": [
+      "[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+15]% Strength <when attacking>",
+      "Play [combo-bleeding-moon] sound <upon gaining the [Bleeding Moon] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bleeding Moon, a rank-3 combination killer move (bind): two moon blades, one bright and one red. Needs Moonglow Gu and Blood Moon Gu on the same unit; the button is on Moonglow Gu. For one turn: its hits leave the enemy Bleeding for 2 turns; +15% when attacking. Costs 25 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Ice Coffin Prison",
+    "uniques": [
+      "[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+15]% Strength <when attacking>",
+      "Play [combo-ice-coffin-prison] sound <upon gaining the [Ice Coffin Prison] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Coffin Prison, a rank-3 combination killer move (bind): water traps the target and ice seals it. Needs Blue Bird Ice Coffin Gu and Water Prison Gu on the same unit; the button is on Blue Bird Ice Coffin Gu. For one turn: its hits leave the enemy Frozen for 2 turns; +15% when attacking. Costs 25 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Wing Dive",
+    "uniques": [
+      "[This Unit] gains [2] movement <upon gaining the [Thunder Wing Dive] status>",
+      "[+23]% Strength <when attacking>",
+      "Play [combo-thunder-wing-dive] sound <upon gaining the [Thunder Wing Dive] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Thunder Wing Dive, a rank-5 combination killer move (mobility): a dive from the sky behind a hammer of thunder. Needs Lightning Wings Gu and Thunder Hammer Gu on the same unit; the button is on Lightning Wings Gu. For one turn: +2 movement at once; +23% when attacking. Costs 35 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Molten Serpent Coil",
+    "uniques": [
+      "[Target Unit] gains the [Burning] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+18]% Strength <when attacking>",
+      "Play [combo-molten-serpent-coil] sound <upon gaining the [Molten Serpent Coil] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Molten Serpent Coil, a rank-4 combination killer move (bind): fire snakes coil the target and burst into lava. Needs Fiery Snake Gu and Lava Explosion Gu on the same unit; the button is on Fiery Snake Gu. For one turn: its hits leave the enemy Burning for 3 turns; +18% when attacking. Costs 30 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Ten Thousand Poisons",
+    "uniques": [
+      "[Target Unit] gains the [Poisoned] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+21]% Strength <when attacking>",
+      "Play [combo-ten-thousand-poisons] sound <upon gaining the [Ten Thousand Poisons] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ten Thousand Poisons, a rank-5 combination killer move (bind): two poisons that feed each other. Needs Love Life Separation and Jade Sky Gu on the same unit; the button is on Love Life Separation. For one turn: its hits leave the enemy Poisoned for 3 turns; +21% when attacking. Costs 35 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spear Rain",
+    "uniques": [
+      "[+26]% Strength <when attacking>",
+      "[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-bone-spear-rain] sound <upon gaining the [Bone Spear Rain] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone Spear Rain, a rank-4 combination killer move (assault): bone spears rain from the air. Needs Bone Wings Gu and Spiral Bone Spear Gu on the same unit; the button is on Bone Wings Gu. For one turn: +26% when attacking; each hit deals 16 more damage. Costs 30 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Iron Stone Bastion",
+    "uniques": [
+      "[+20]% Strength <when defending>",
+      "[This Unit] heals [8] HP <upon gaining the [Iron Stone Bastion] status>",
+      "Play [combo-iron-stone-bastion] sound <upon gaining the [Iron Stone Bastion] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Iron Stone Bastion, a rank-1 combination killer move (ward): skin of iron over skin of stone. Needs Iron Skin Gu and Stone Skin Gu on the same unit; the button is on Iron Skin Gu. For one turn: +20% when defending; heals 8 HP at once. Costs 15 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Golden Saw Tide",
+    "uniques": [
+      "[+22]% Strength <when attacking>",
+      "[Target Unit] takes [13] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-golden-saw-tide] sound <upon gaining the [Golden Saw Tide] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Golden Saw Tide, a rank-3 combination killer move (assault): the centipede is mended as it bites and never dulls. Needs Chainsaw Golden Centipede and Living Steel Gu on the same unit; the button is on Chainsaw Golden Centipede. For one turn: +22% when attacking; each hit deals 13 more damage. Costs 25 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Twin Wheel Gale",
+    "uniques": [
+      "[This Unit] gains [2] movement <upon gaining the [Twin Wheel Gale] status>",
+      "[+14]% Strength <when attacking>",
+      "Play [combo-twin-wheel-gale] sound <upon gaining the [Twin Wheel Gale] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Twin Wheel Gale, a rank-2 combination killer move (mobility): two wind wheels carry the user like a gale. Needs Clear Wind Wheel Gu and Jade Wind Wheel Gu on the same unit; the button is on Clear Wind Wheel Gu. For one turn: +2 movement at once; +14% when attacking. Costs 20 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Grass Army Ambush",
+    "uniques": [
+      "[-14]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+13]% Strength",
+      "Play [combo-grass-army-ambush] sound <upon gaining the [Grass Army Ambush] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grass Army Ambush, a rank-4 combination killer move (aura): the grass itself rises against the enemy. Needs Grass Puppet Gu and Grass Tree Army Gu on the same unit; the button is on Grass Puppet Gu. For one turn: enemy soldiers beside it fight 14% weaker; +13% strength. Costs 30 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Earth Listening Ambush",
+    "uniques": [
+      "[+18]% Strength <when attacking>",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-earth-listening-ambush] sound <upon gaining the [Earth Listening Ambush] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth Listening Ambush, a rank-2 combination killer move (assault): hears the enemy coming and strikes unseen. Needs Earth Communication Ear Grass and Stealth Scales Gu on the same unit; the button is on Earth Communication Ear Grass. For one turn: +18% when attacking; each hit deals 10 more damage. Costs 20 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Soul Fire Burst",
+    "uniques": [
+      "[+30]% Strength <when attacking>",
+      "[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-soul-fire-burst] sound <upon gaining the [Soul Fire Burst] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul Fire Burst, a rank-5 combination killer move (assault): ghost fire sets off a soul bomb. Needs Ghost Fire Gu and Soul Explosion Gu on the same unit; the button is on Ghost Fire Gu. For one turn: +30% when attacking; each hit deals 19 more damage. Costs 35 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Blinding Palm",
+    "uniques": [
+      "[Target Unit] gains the [Blinded] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+15]% Strength <when attacking>",
+      "Play [combo-blinding-palm] sound <upon gaining the [Blinding Palm] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blinding Palm, a rank-3 combination killer move (bind): a flash, then the blade of the hand. Needs Flash Gu and Hand Blade Gu on the same unit; the button is on Flash Gu. For one turn: its hits leave the enemy Blinded for 2 turns; +15% when attacking. Costs 25 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Sealed Moonshadow",
+    "uniques": [
+      "[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+21]% Strength <when attacking>",
+      "Play [combo-sealed-moonshadow] sound <upon gaining the [Sealed Moonshadow] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sealed Moonshadow, a rank-5 combination killer move (bind): the moon's shadow locks the enemy's essence. Needs Moonshadow Gu and Search Lock Gu on the same unit; the button is on Moonshadow Gu. For one turn: its hits leave the enemy Sealed for 3 turns; +21% when attacking. Costs 35 stones and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Silent Gong",
+    "uniques": [
+      "[-18]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+17]% Strength",
+      "Play [combo-silent-gong] sound <upon gaining the [Silent Gong] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Silent Gong, a rank-6 combination killer move (aura): the gong strikes and then no sound remains. Needs Heavenly Gong Immortal Gu and Keep Silent Gu on the same unit; the button is on Heavenly Gong Immortal Gu. For one turn: enemy soldiers beside it fight 18% weaker; +17% strength. Costs 3 Green Grape Immortal Essence and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Dark Arrow Rain",
+    "uniques": [
+      "[+34]% Strength <when attacking>",
+      "[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-dark-arrow-rain] sound <upon gaining the [Dark Arrow Rain] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Arrow Rain, a rank-6 combination killer move (assault): dark arrows fall from every shadow. Needs Dark Arrow Immortal Gu and Shadow Follower Gu on the same unit; the button is on Dark Arrow Immortal Gu. For one turn: +34% when attacking; each hit deals 22 more damage. Costs 3 Green Grape Immortal Essence and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Eight Winds Dominion",
+    "uniques": [
+      "[-22]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+21]% Strength",
+      "Play [combo-eight-winds-dominion] sound <upon gaining the [Eight Winds Dominion] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eight Winds Dominion, a rank-8 combination killer move (aura): winds from eight sides bow the enemy. Needs Eight-Faced Prestige Wind Immortal Gu and Jade Wind Wheel Gu on the same unit; the button is on Eight-Faced Prestige Wind Immortal Gu. For one turn: enemy soldiers beside it fight 22% weaker; +21% strength. Costs 3 White Lychee Immortal Essence and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Sun Descends",
+    "uniques": [
+      "[+46]% Strength <when attacking>",
+      "[Target Unit] takes [31] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [combo-sun-descends] sound <upon gaining the [Sun Descends] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sun Descends, a rank-9 combination killer move (assault): the sun's light and fire fall together. Needs Light Gu and Fire Gu on the same unit; the button is on Light Gu. For one turn: +46% when attacking; each hit deals 31 more damage. Costs 3 Yellow Apricot Immortal Essence and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Net",
+    "uniques": [
+      "[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+33]% Strength <when attacking>",
+      "Play [combo-heavenly-net] sound <upon gaining the [Heavenly Net] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Net, a rank-9 combination killer move (bind): a web from heaven pinned in fixed space. Needs Heavenly Web Immortal Gu and Fixed Space Immortal Gu on the same unit; the button is on Heavenly Web Immortal Gu. For one turn: its hits leave the enemy Entangled for 4 turns; +33% when attacking. Costs 3 Yellow Apricot Immortal Essence and 1 movement. Invented for the mod."
+      }
+    ]
+  },
+  {
+    "name": "Love and Regret",
+    "uniques": [
+      "[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+33]% Strength <when attacking>",
+      "Play [combo-love-and-regret] sound <upon gaining the [Love and Regret] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Love and Regret, a rank-9 combination killer move (bind): love first, regret after. Needs Love Gu and Regret Immortal Gu on the same unit; the button is on Love Gu. For one turn: its hits leave the enemy Charmed for 4 turns; +33% when attacking. Costs 3 Yellow Apricot Immortal Essence and 1 movement. Invented for the mod."
       }
     ]
   }
