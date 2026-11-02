@@ -146,17 +146,24 @@ The user asked for the units and the mod's own terrain to be "100x better".
   * immortals: ribbons of their rank's essence, on top of the cloud and halos they already had.
 
   The strength path (bare-chested) keeps its own build. Before this, ranks 1-5 differed only by the colour of the orb.
-* **The twelve secret realms and the five region walls are small 3D dioramas** (`tools/art/terrain3d.py`). The flat
-  clip art is replaced by a scene of primitives rendered from a 36° three-quarter view, with a soft shadow, on a
-  painted hex of its ground (grass, plains, ocean, rock, ash, swamp), then reduced to HexaRealm's 64 × 56 and
-  FantasyHex's 32 × 28. Examples:
-  * Dang Hun's violet soul rings;
-  * the river climbing Reverse Flow's hill;
-  * the golden river of time with its hourglass;
-  * the white and black Door of Life and Death;
-  * the whale with dragon horns;
-  * Tian Ti's spiral stair through a cloud ring;
-  * Lang Ya's floating island and furnace;
-  * the walls: a breaking water curtain, layered flames, toxic fog with dead trees, giant tangled roots, and
-    rune-cut stone.
+* **The twelve secret realms and the five region walls are pixel-art dioramas** (`tools/art/pixeltiles.py`, redrawn
+  2026-11-02 at the user's request; the 3D renders before them blurred when reduced). They follow the two tilesets'
+  own style: a three-quarter top view on a hexagonal grass frame whose lower sides show the slab (a dark green band
+  and a black edge on HexaRealm, brown earth on FantasyHex), with the hex rows and frame colours of their Grassland.
+  * Each tile is drawn natively at both sizes, HexaRealm 64 × 56 and FantasyHex 32 × 28, from one scene written in
+    HexaRealm pixels; nothing is scaled down. Tall subjects (peaks, gates, walls) rise above the hex in a taller
+    image (64 × 60 to 64 × 70), as HexaRealm's own Mountain (64 × 64) does: the engine sizes a tile image by its
+    width and lets the extra height stand above the hex [src TileLayer.setHexagonSize].
+  * Shapes take five-tone ramps (a darker same-hue outline, shadow, mid, light, highlight), are lit from the top
+    left and drop a shadow to the bottom right. Mountains are heightfields rendered front to back like a voxel
+    landscape, so ridges, gullies, cliff faces and snow come from real slopes; at 32 × 28 their tones are flat (no
+    dither) so they stay legible.
+  * Realms: Dang Hun's massif in a ring of soul light; Luo Po's V-shaped gorge with a pale whirlwind; Reverse Flow's
+    river climbing a terraced hill to a spout; the golden ring river of time around an hourglass; the white and
+    black Door of Life and Death; stacked books under an open book; Crazed Demon Cave's crimson crag with a red-eyed
+    mouth; Dragon Whale Paradise as an atoll whose lagoon holds the horned whale; Tian Ti's stair to a summit gate;
+    Lang Ya's island over a sea of cloud; the Imperial Court's golden tent; Hu Immortal's shrine, peach blossoms
+    and white fox.
+  * Walls: a water curtain with foam, a rampart of fire, a poison fog bank with dead trees, tangled licorice roots,
+    and a stepped stone rampart with jade runes.
 

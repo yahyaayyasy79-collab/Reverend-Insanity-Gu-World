@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, arcart, characters, glyphs, glyphs2, guart, pathart, realms, render3d, terrain3d  # noqa: E402
+from art import anims, arcart, characters, glyphs, glyphs2, guart, pathart, pixeltiles, render3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -145,12 +145,10 @@ def main(argv: list[str]) -> int:
         for n, effect in enumerate(characters.ATTACKS.get(name, []), start=1):
             fx = render3d.render(effect(), **frame, shadow=False, layers=False, glow=1.2)
             written += save(fx["base"], units / f"{name}-attack-{n}.png")
-    # the secret realms' natural-wonder tiles for the default tileset and its fallback (MOD_SPEC_2 #13)
-    for name in realms.SCENES:
-        for tileset, im in terrain3d.tile(name).items():   # 3D dioramas since the 2026-11-02 art pass
-            written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
-    for name in realms.WALLS:   # the five region walls (Five Regions map)
-        for tileset, im in terrain3d.tile(name).items():
+    # the secret realms' natural-wonder tiles (MOD_SPEC_2 #13) and the five region walls (Five Regions map), drawn as
+    # pixel-art dioramas natively for the default tileset and its fallback (the user, 2026-11-02)
+    for name in {**pixeltiles.REALMS, **pixeltiles.WALLS}:
+        for tileset, im in pixeltiles.tile(name).items():
             written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
     # Phase D: the attack sounds (tools/art/sfx.py: rank body, path x attainment tier, dao marks, killer moves)
     # the Ink Night art pass (the user chose style D, 2026-11-02): full-colour portraits for every icon, backgrounds,

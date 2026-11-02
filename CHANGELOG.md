@@ -873,3 +873,19 @@ You picked style D (Ink Night) from four candidates, with the full package.
   * immortals: essence ribbons.
 * **The 12 secret realms and 5 region walls are 3D dioramas** on painted hexes, sized to match HexaRealm and
   FantasyHex.
+
+## Phase D — the mod's terrain redrawn as pixel art (2026-11-02)
+
+You asked for the mod's own terrain only, in the style of the HexaRealm (64 × 56) and FantasyHex (32 × 28) tiles:
+pixel dioramas seen from a three-quarter top view, on a hexagonal grass frame, with details that stay readable small.
+
+* **The 12 secret realms and 5 region walls are redrawn as pixel art** (`tools/art/pixeltiles.py`). They replace the
+  3D renders, which blurred when reduced.
+  * Each tile is drawn natively at both sizes; nothing is scaled down.
+  * Every tile sits on the tilesets' own grass frame: the same hex rows, grass, side band and slab edge as their
+    Grassland.
+  * Peaks, gates and walls rise above the hex in taller images, like HexaRealm's own Mountain.
+  * Mountains are rendered from heightfields, so they get real ridges, cliff faces and snow.
+  * Dragon Whale Paradise is now an atoll: a grass ring around the lagoon where the whale surfaces.
+* **What to check in game:** the 17 tiles on HexaRealm and on FantasyHex, and how the tall tiles overlap the tile
+  above them.

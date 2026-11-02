@@ -99,8 +99,9 @@ in LORE_MAPPING.md.
   illustrations, unit type icons (`tools/art/portrait.py`, `inkpass.py`); policies stay flat (engine tints them);
   generated image sources git-ignored, atlases committed; regenerate with tools/gen_art.py before packing.
   Second pass (user: units and the mod's terrain "100x better"; victory tab showed only the empty disc): layered
-  victory scenes (`tools/art/victories.py`), rank regalia + larger map units, 3D diorama realm/wall tiles
-  (`tools/art/terrain3d.py`).
+  victory scenes (`tools/art/victories.py`), rank regalia + larger map units. Third pass (user: the mod's terrain only,
+  "like HexaRealm 64x56 and FantasyHex 32x28"): realm/wall tiles as pixel-art dioramas on the tilesets' grass frame,
+  drawn natively at both sizes (`tools/art/pixeltiles.py`; tall subjects rise above the hex in taller images).
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.
