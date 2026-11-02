@@ -154,6 +154,19 @@ rest of the list is what a player or the next session should know before trustin
 
     So only one bearer is ever awake.
 
+23. **The rank upgrade button follows Unciv's own rules (the user asked, 2026-11-02).** A Gu Master shows
+    "Upgrade to Rank Four" only while it stands on a tile its own clan owns; outside the borders, in an ally's land or
+    at sea the button is absent [src UnitActionsUpgrade.getUpgradeActions].
+
+    Inside the borders the button is shown but disabled when any of these holds:
+    * the clan lacks the stones: rank 3→4 costs 100 on Standard, 65 Quick, 150 Epic, 300 Marathon (10 + 2 × the
+      cost difference, × speed; the Refinement path's Master cuts it by 30%);
+    * the unit has no movement left this turn;
+    * the unit is embarked [src UnitUpgradeManager.canPerformUpgrade].
+
+    Nothing in the mod blocks the upgrade: rank units carry no upgrade conditions. The Rank Four Cultivation tech is
+    the only requirement that hides it for every unit at once.
+
 ## Not yet seen in a real game
 
 * **Combination killer moves (Phase D).** A move's button should appear only on a unit that holds both of its Gu. This

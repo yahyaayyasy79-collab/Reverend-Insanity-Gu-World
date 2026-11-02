@@ -837,3 +837,10 @@ minor clans plus wild factions.
 * **Path halls still wait for their family's tech.**
 * **Autoplay A/B** (6 × 300, Five Regions): the AI keeps as many immortals and adopts as many policies as before. More
   war turns, within the noise (docs/AUTOPLAY.md).
+
+## Phase D — fix: civilopedia and Tutorial tier numbers after the power rebuild (2026-11-02)
+
+* **Wrong tier numbers fixed.** The Masters' civilopedia text and the per-family Tutorial pages still printed the old
+  +10/15/20/25%. They now print the real +20/25/30/35% straight from `TIER_STRENGTH`.
+* **Rank upgrade button explained.** KNOWN_ISSUES 23 says when it shows: own territory, enough stones, movement left,
+  and not embarked.

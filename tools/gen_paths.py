@@ -220,8 +220,8 @@ def pedia(p: dict, t: int) -> tuple[str, str]:
     pw = POWERS[p["key"]]
     if t == 0:
         sig, hit = PP.describe(p["signature"]), PP.hit_summary(pw)
-        return (f"{en} +10% strength. Signature: {sig[0]}. Hit: {hit[0]}.",
-                f"{idt} +10% kekuatan. Ciri khas: {sig[1]}. Serangan: {hit[1]}.")
+        return (f"{en} +{TIER_STRENGTH[0]}% strength. Signature: {sig[0]}. Hit: {hit[0]}.",
+                f"{idt} +{TIER_STRENGTH[0]}% kekuatan. Ciri khas: {sig[1]}. Serangan: {hit[1]}.")
     label = {1: ("unlocks", "membuka"), 2: ("adds", "menambah"), 3: ("peak", "puncak")}[t]
     eff = PP.describe_all(PP.cell(pw, ("gm", "ggm", "sup")[t - 1]))
     return (f"{en} +{TIER_STRENGTH[t]}% strength; {label[0]}: {eff[0]}.",
@@ -549,15 +549,15 @@ def _lines_family(k: str) -> list[tuple[str, str, dict]]:
         sig, hit = PP.describe(p["signature"]), PP.hit_summary(pw)
         gm, ggm, sup = (PP.describe_all(PP.cell(pw, c)) for c in ("gm", "ggm", "sup"))
         mb, ib = PP.describe(PP.move_burst(pw, False)), PP.describe(PP.move_burst(pw, True))
-        f = FAMILIES[k]
+        f, T = FAMILIES[k], TIER_STRENGTH
         L += [(f"{p['name']} path ({p['chinese']})", f"Jalur {p['name_id']} ({p['chinese']})", {"header": 3}),
               (f"Signature: {sig[0]}.", f"Ciri khas: {sig[1]}.", {}),
-              (f"Master, +10%: {hit[0]}.", f"Ahli, +10%: {hit[1]}.", {}),
-              (f"Grandmaster, +15%: {gm[0]}. Killer move {p['mortal']}: {f['mortal_text']}; {mb[0]}.",
-               f"Mahaguru, +15%: {gm[1]}. Jurus pamungkas {p['mortal_id']}: {f['mortal_text_id']}; {mb[1]}.", {}),
-              (f"Great Grandmaster, +20%: {ggm[0]}. Immortal move {p['immortal']}: {f['immortal_text']}; {ib[0]}.",
-               f"Mahaguru Agung, +20%: {ggm[1]}. Jurus abadi {p['immortal_id']}: {f['immortal_text_id']}; {ib[1]}.", {}),
-              (f"Supreme Grandmaster, +25%: {sup[0]}.", f"Mahaguru Tertinggi, +25%: {sup[1]}.", {})]
+              (f"Master, +{T[0]}%: {hit[0]}.", f"Ahli, +{T[0]}%: {hit[1]}.", {}),
+              (f"Grandmaster, +{T[1]}%: {gm[0]}. Killer move {p['mortal']}: {f['mortal_text']}; {mb[0]}.",
+               f"Mahaguru, +{T[1]}%: {gm[1]}. Jurus pamungkas {p['mortal_id']}: {f['mortal_text_id']}; {mb[1]}.", {}),
+              (f"Great Grandmaster, +{T[2]}%: {ggm[0]}. Immortal move {p['immortal']}: {f['immortal_text']}; {ib[0]}.",
+               f"Mahaguru Agung, +{T[2]}%: {ggm[1]}. Jurus abadi {p['immortal_id']}: {f['immortal_text_id']}; {ib[1]}.", {}),
+              (f"Supreme Grandmaster, +{T[3]}%: {sup[0]}.", f"Mahaguru Tertinggi, +{T[3]}%: {sup[1]}.", {})]
     return L
 
 
