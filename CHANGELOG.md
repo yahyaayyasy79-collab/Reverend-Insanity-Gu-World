@@ -735,3 +735,18 @@
   * rank 9: four rings, a crown and a ground shockwave.
 
   The higher the rank, the more frames.
+
+## Phase D — regional conflict, part 1: lone and demonic Gu Masters (2026-11-02)
+
+The user found three regions (north, west, north-east) with one clan or none, so nothing fought there. They chose
+minor clans plus wild factions.
+
+* **Three barbarian Gu Masters.** Barbarian camps send them once every clan knows the tech:
+  * **Lone Gu Master**: strength 14, rank two, stronger when defending.
+  * **Demonic Gu Master**: strength 22, rank three, stronger when attacking, heals on a kill.
+  * **Demonic Elder**: strength 44, rank five, also weakens enemies beside him.
+* **Demonic Den**, a second camp kind. The Five Regions map places dens: north 2, west 2, east 1, centre 2.
+* **Events.** In *Demonic Raid* (from T60 on Standard), you fight the raiders or pay 80 stones. In *Wandering Gu
+  Master* (from T30), you hire him, send him away, or rob him. Both have per-speed chances and AI weights.
+* Designed art for all of it: 3D map sprites, portraits, rank strikes, unit icons and the den icon. Civilopedia
+  EN/ID, Indonesian names, and the LORE_MAPPING section "Phase D: regional conflict".

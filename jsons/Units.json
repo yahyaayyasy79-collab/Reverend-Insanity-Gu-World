@@ -1268,5 +1268,62 @@
         "text": "A king of ten thousand beasts (雷冠头狼), as big as a hill, its head fur bristling up into a crown. When one comes down the mountain, the village either holds or ceases to exist."
       }
     ]
+  },
+  {
+    "name": "Lone Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 14,
+    "cost": 60,
+    "requiredTech": "Rank Two Cultivation",
+    "attackSound": "gu-rank-2",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "[+20]% Strength <when defending>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A lone Gu Master (散修) with no clan behind him: he lives by his own Gu and his wits, and robs as readily as he trades. Strength 14, 20% stronger when defending. Barbarian camps send him out once every clan knows Rank Two Cultivation; the Wandering Gu Master event may bring one to your door."
+      }
+    ]
+  },
+  {
+    "name": "Demonic Gu Master",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 22,
+    "cost": 95,
+    "requiredTech": "Rank Three Cultivation",
+    "attackSound": "gu-rank-3",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "Heals [15] damage if it kills a unit"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A demonic-path Gu Master (魔道蛊师): he takes what he wants and kills for Gu. Strength 22, 20% stronger when attacking, heals 15 HP per kill. He raids from Demonic Dens and in the Demonic Raid event."
+      }
+    ]
+  },
+  {
+    "name": "Demonic Elder",
+    "unitType": "Gu Master",
+    "movement": 2,
+    "strength": 44,
+    "cost": 190,
+    "requiredTech": "Purple Crystal Essence",
+    "attackSound": "gu-rank-5",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "[+20]% Strength <when attacking>",
+      "Heals [20] damage if it kills a unit",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A demonic elder (魔道长老) of rank five, who leads the raids. Strength 44, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."
+      }
+    ]
   }
 ]

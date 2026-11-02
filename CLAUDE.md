@@ -79,6 +79,11 @@ in LORE_MAPPING.md.
   one, not a placeholder).
 * Saves: Unciv deletes units missing from the ruleset on load [src BackwardCompatibility.removeUnitsAndPromotions];
   never remove a unit a running game may hold without a legacy bridge.
+* Phase D asks (user, 2026-11-02): conflict in every region = minor clans (2-3 canon city-states per region) + lone
+  and demonic Gu Master barbarians; power = full rebuild (rank base strength ~-40%, Gu, dao and comprehension carry
+  it; canon unique immortal Gu stay wonders, common immortal Gu 6-9 held by units); combos = ~40 curated killer
+  moves (unit actions gated by two held Gu, human-only); ~100 more Gu, canon first, the rest ADAPTED. These answers
+  approve exceeding the MOD_SPEC_2 caps (city-states, killer moves).
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.

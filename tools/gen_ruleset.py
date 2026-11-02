@@ -489,7 +489,12 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     lambda m: f"Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [{E6}]> "
               f"<with [{chance(1, m)}]% chance> <for [Major] Civilizations>") + per_speed(lambda m: f"Triggers a [Venerable's Shadow] event <upon turn start> {VEN_ELSEWHERE} "
                         f"<with [{chance(4, m)}]% chance> <for [Major] Civilizations>") + per_speed(lambda m: f"Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> "
-                        f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>")})
+                        f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    # Phase D: demonic raids and lone Gu Masters reach every clan in every region
+    lambda m: f"Triggers a [Demonic Raid] event <upon turn start> <after turn number [{turn_gate(60, m)}]> "
+              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    lambda m: f"Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
+              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>")})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -655,6 +660,20 @@ dump("Units.json", [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
      "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "[+20]% Strength bonus for [Beast] units within [2] tiles", "[+200]% maintenance costs"]},
+] + [
+    # Phase D (the user, 2026-11-02: "buat konflik ... dengan gu master penyendiri maupun gu master iblis"): lone and
+    # demonic Gu Masters prey on every region. Camps (Beast Lairs, Demonic Dens) spawn any military unit the barbarians
+    # can build once every clan knows its tech [src BarbarianManager.chooseBarbarianUnit, updateBarbarianTech], and the
+    # Demonic Raid and Wandering Gu Master events bring them to a clan's door
+    {"name": n, "unitType": "Gu Master", "movement": 2, "strength": st, "cost": cost, "requiredTech": tech,
+     "attackSound": sfx.rank_sound(rank), "uniqueTo": "Barbarians", "uniques": extra}
+    for n, st, cost, tech, rank, extra in (
+        ("Lone Gu Master", 14, 60, "Rank Two Cultivation", 2, ["[+20]% Strength <when defending>"]),
+        ("Demonic Gu Master", 22, 95, "Rank Three Cultivation", 3,
+         ["[+20]% Strength <when attacking>", "Heals [15] damage if it kills a unit"]),
+        ("Demonic Elder", 44, 190, "Purple Crystal Essence", 5,
+         ["[+20]% Strength <when attacking>", "Heals [20] damage if it kills a unit",
+          "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"]))
 ])
 
 # ---------------- R2 T4: refinement ladder with the canon recipes ----------------
@@ -1033,6 +1052,18 @@ dump("Events.json", [
                                     "the soul, and pours attainment into whoever survives it.", "choices": [
         toll("Enter the dream", ["[+50]% XP gained from combat <for [10] turns>", "[-10]% Strength <for [10] turns>"], "+50"),
         toll("Leave it to fade", [], "+0")]},
+    # Phase D: demonic Gu Masters raid a clan (the rebels belong to the barbarians and spawn near its capital)
+    {"name": "Demonic Raid", "text": "Demonic Gu Masters raid your lands, hunting Gu, primeval stones and captives.", "choices": [
+        toll("Meet them in battle", ["[2] [Demonic Gu Master]s rebel <before discovering [Purple Crystal Essence]>",
+                                     "A [Demonic Elder] rebels <after discovering [Purple Crystal Essence]>",
+                                     "[2] [Demonic Gu Master]s rebel <after discovering [Purple Crystal Essence]>"], "+100"),
+        toll("Pay them off", ["Unavailable <when below [80] [Gold]>", "Gain [-80] [Gold]"], "-30")]},
+    # a lone Gu Master (散修) asks to serve; robbing him makes an enemy
+    {"name": "Wandering Gu Master", "text": "A lone Gu Master wanders into your village and offers his service for "
+                                            "primeval stones.", "choices": [
+        toll("Hire him", ["Unavailable <when below [60] [Gold]>", "Gain [-60] [Gold]", "Free [Rank Two Gu Master] appears"], "+50"),
+        toll("Send him on his way", [], "+0"),
+        toll("Rob him", ["Gain [40] [Gold]", "A [Lone Gu Master] rebels"], "-20")]},
     {"name": "Shadow Sect Envoy", "text": "An envoy of the Shadow Sect offers essence for a favour no one may ever learn of.",
      "choices": [
         toll("Accept their help", [f"Instantly provides [30] [{GREEN}]",
@@ -1325,6 +1356,9 @@ imp = [
     {"name": "Road", "techRequired": "Spirit Spring Lore", "terrainsCanBeBuiltOn": ["Land"], "turnsToBuild": 4,
      "uniques": ["Can be built outside your borders", "Costs [1] [Gold] per turn when in your territory"]},
     {"name": "Beast Lair", "terrainsCanBeBuiltOn": ["Land"],
+     "uniques": ["Unpillagable", "Unbuildable", "Excluded from map editor", "Marks a barbarian camp"]},
+    # Phase D: a demonic Gu Masters' den; new camps pick a Beast Lair or a Demonic Den at random [src createNewCamp]
+    {"name": "Demonic Den", "terrainsCanBeBuiltOn": ["Land"],
      "uniques": ["Unpillagable", "Unbuildable", "Excluded from map editor", "Marks a barbarian camp"]},
     {"name": "Inheritance Dig", "techRequired": "Inheritance Lore", "turnsToBuild": 5,
      "uniques": ["Can only be built to improve a resource", "Does not need removal of [Forest]", "Does not need removal of [Jungle]"]},

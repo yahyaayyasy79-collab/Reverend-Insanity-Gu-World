@@ -119,6 +119,37 @@ def gu_master(rank: int, path: str | None):
     return s
 
 
+def lone_gu_master():
+    """Phase D: a lone Gu Master (散修) on the road: a wide straw hat, a staff, a gourd at the hip, a red-iron orb."""
+    s = Scene()
+    cultivator(s, height=1.0, build=0.95, robe=True, bun=False, pose="cast")
+    s.add("ellipsoid", (0, 1.86, 0.0), (0.36, 0.035, 0.36), mat="straw")                       # straw hat brim
+    s.add("cone", (0, 1.86, 0.0), (0, 2.02, 0.0), 0.16, 0.02, mat="straw", blend=0.02)           # and crown
+    s.add("capsule", (-0.42, 0.02, 0.12), (-0.38, 1.7, 0.16), 0.03, mat="wood")               # staff
+    s.add("sphere", (0.26, 0.86, 0.12), 0.08, mat="leather")                                   # gourd
+    s.add("sphere", (0.26, 0.98, 0.12), 0.055, mat="leather", blend=0.02)
+    s.add("sphere", (0.36, 1.45, 0.5), 0.1, mat=ESSENCE[2])
+    s.add("torus", (0, 0.02, 0), 0.5, 0.018, mat=ESSENCE[2])
+    return s
+
+
+def demonic_gu_master(rank=3):
+    """Phase D: a demonic-path Gu Master (魔道蛊师): a hooded robe, bone horns, an ember orb and, for an elder, a blood
+    halo and a skull staff."""
+    s = Scene()
+    cultivator(s, height=1.0 + 0.03 * (rank - 3), build=1.0 + 0.06 * (rank - 3), robe=True, bun=False, pose="cast")
+    s.add("ellipsoid", (0, 1.76, -0.04), (0.2, 0.2, 0.2), mat="hide_dark", blend=0.03)        # hood
+    for side in (-1, 1):                                                                       # bone horns
+        s.add("cone", (0.1 * side, 1.9, 0.0), (0.2 * side, 2.12, -0.06), 0.035, 0.008, mat="bone")
+    s.add("sphere", (0.36, 1.45, 0.5), 0.1 + 0.02 * (rank - 3), mat="ember")
+    s.add("torus", (0, 0.02, 0), 0.46 + 0.04 * rank, 0.02, mat=ESSENCE[7])                   # a blood-red ring
+    if rank >= 5:
+        s.add("torus", (0, 1.95, -0.1), 0.24, 0.02, mat=ESSENCE[7])                          # blood halo
+        s.add("capsule", (-0.42, 0.02, 0.12), (-0.38, 1.85, 0.16), 0.035, mat="wood")         # staff
+        s.add("sphere", (-0.38, 1.92, 0.16), 0.08, mat="bone")                                # skull
+    return s
+
+
 def clan_settler():
     s = Scene()
     cultivator(s, height=1.0, build=1.0, robe=True, bun=True, pose="ready", sash=True)
@@ -404,6 +435,9 @@ UNITS = {
     "Rank Seven Gu Immortal": lambda: gu_immortal(7),
     "Rank Eight Gu Immortal": lambda: gu_immortal(8),
     "Venerable": lambda: gu_immortal(9),
+    "Lone Gu Master": lone_gu_master,
+    "Demonic Gu Master": lambda: demonic_gu_master(3),
+    "Demonic Elder": lambda: demonic_gu_master(5),
     "Calamity Luck Altar": lambda: gu_house("altar"),
     "Myriad Year Flying Warship": lambda: gu_house("warship"),
     "Dragon Palace": lambda: gu_house("palace"),
@@ -437,6 +471,9 @@ ATTACKS = {
     **{n: [lambda i=i: strike_frame(i, 8) for i in range(STRIKE_FRAMES[8])]
        for n in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace", "Heaven Overseeing Tower")},
     "Immortal Zombie": [lambda i=i: strike_frame(i, 6) for i in range(STRIKE_FRAMES[6])],
+    "Lone Gu Master": [lambda i=i: strike_frame(i, 2) for i in range(STRIKE_FRAMES[2])],
+    "Demonic Gu Master": [lambda i=i: strike_frame(i, 3) for i in range(STRIKE_FRAMES[3])],
+    "Demonic Elder": [lambda i=i: strike_frame(i, 5) for i in range(STRIKE_FRAMES[5])],
 }
 
 # portraits are single images (no civ tint): the robe takes the path's colour
@@ -450,5 +487,6 @@ PORTRAIT_ROBE = {"Clan Settler": (120, 92, 64), "Mortal Laborer": (140, 110, 80)
                  "Rank Five Gu Master": (110, 70, 150), "Rank Six Gu Immortal": (90, 140, 70),
                  "Rank Seven Gu Immortal": (140, 50, 45), "Rank Eight Gu Immortal": (200, 196, 182),
                  "Venerable": (200, 150, 50), "Calamity Luck Altar": (150, 120, 60), "Myriad Year Flying Warship": (120, 90, 60),
-                 "Dragon Palace": (60, 80, 120), "Immortal Zombie": (90, 100, 95), "Heaven Overseeing Tower": (200, 190, 150)}
+                 "Dragon Palace": (60, 80, 120), "Immortal Zombie": (90, 100, 95), "Heaven Overseeing Tower": (200, 190, 150),
+                 "Lone Gu Master": (120, 110, 90), "Demonic Gu Master": (70, 30, 40), "Demonic Elder": (60, 20, 30)}
 PORTRAIT_TRIM = (225, 215, 190)

@@ -266,6 +266,48 @@ def beast_lair():
     return g
 
 
+def demonic_den():
+    """Phase D: a demonic Gu Masters' den: a cave mouth crowned with horns, a skull on a stake, a blood moon."""
+    g = G()
+    g.poly([(4, 92), (16, 50), (32, 30), (50, 24), (68, 30), (84, 50), (96, 92)])          # rock
+    g.arc_band(50, 92, 34, 30, 0, 180, 0)                                               # den mouth
+    for side in (-1, 1):                                                                # horns on the rock
+        g.poly([(50 + side * 12, 28), (50 + side * 30, 4), (50 + side * 20, 30)])
+    g.circ(84, 16, 9)                                                                   # blood moon
+    g.circ(87, 13, 8, 0)
+    g.line([(20, 96), (20, 62)], 3)                                                     # stake
+    g.circ(20, 58, 7)                                                                   # skull
+    for x in (17, 23):
+        g.circ(x, 57, 1.8, 0)
+    return g
+
+
+def lone_gu_master_icon():
+    """Phase D: a lone Gu Master: a wide straw hat over the robe, a staff with a hanging gourd."""
+    g = G(); human(g, 44, 10, 1.2, arms="forward")
+    g.poly([(14, 24), (44, 4), (74, 24), (60, 27), (28, 27)])                          # straw hat
+    g.line([(76, 8), (76, 96)], 4)                                                     # staff
+    g.circ(84, 30, 6); g.circ(84, 42, 8); g.line([(76, 24), (84, 25)], 2)             # gourd
+    pips(g, 2); return g
+
+
+def demonic_gu_master_icon(rank):
+    """Phase D: a demonic Gu Master: horned hood, a burning essence orb; the elder adds a dark halo and a skull."""
+    g = G()
+    if rank >= 5:
+        g.arc_band(42, 22, 22, 17, 0, 360)                                             # dark halo
+    human(g, 42, 10, 1.2, arms="raised")
+    for side in (-1, 1):                                                               # bone horns
+        g.poly([(42 + side * 5, 14), (42 + side * 20, -2), (42 + side * 11, 16)])
+    flame(g, 78, 30, 26)                                                               # burning orb
+    g.circ(78, 24, 5, 0)
+    if rank >= 5:
+        g.line([(16, 40), (16, 96)], 4); g.circ(16, 36, 7)                             # skull staff
+        for x in (13, 19):
+            g.circ(x, 35, 1.8, 0)
+    pips(g, rank); return g
+
+
 def inheritance_site():
     g = G()
     g.poly([(30, 22), (70, 22), (74, 84), (26, 84)]); g.ell(30, 12, 70, 32)           # stele
@@ -709,6 +751,10 @@ ICONS2 = [
     ("ResourceIcons", "Wild Boar", wild_boar, "black"),
     ("ImprovementIcons", "Spring Cave", spring_cave, "black"),
     ("ImprovementIcons", "Beast Lair", beast_lair, "black"),
+    ("ImprovementIcons", "Demonic Den", demonic_den, "black"),
+    ("UnitIcons", "Lone Gu Master", lone_gu_master_icon, "white"),
+    ("UnitIcons", "Demonic Gu Master", lambda: demonic_gu_master_icon(3), "white"),
+    ("UnitIcons", "Demonic Elder", lambda: demonic_gu_master_icon(5), "white"),
     ("ImprovementIcons", "Inheritance Site", inheritance_site, "black"),
     ("BuildingIcons", "Flower Wine Monk Inheritance", flower_wine_monk_inheritance, "black"),
     ("BuildingIcons", "Stockade Wall", stockade_wall, "black"),

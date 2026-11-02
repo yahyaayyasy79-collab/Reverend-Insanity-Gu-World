@@ -72,6 +72,11 @@ SECTIONS = {
         "UnitPromotions.json": ['Soul Tempered', 'Soul Loosened', 'Reverse Flow Seal', 'Time Touched', 'Life and Death Glimpse', 'Ink Wisdom', 'Demon Sound Steeled', 'Whale Blessing', 'Heavenly Stair', 'Lang Ya Craft', 'Imperial Shelter', 'Fox Spirit Favor'],
         "Events.json": ["Dream Realm", "Shadow Sect Envoy"],
         "Globals": ["[Dream Realm]", "[Shadow Sect Envoy]"]},
+    "## Phase D: regional conflict": {
+        "Units.json": ["Lone Gu Master", "Demonic Gu Master", "Demonic Elder"],
+        "TileImprovements.json": ["Demonic Den"],
+        "Events.json": ["Demonic Raid", "Wandering Gu Master"],
+        "Globals": ["[Demonic Raid]", "[Wandering Gu Master]"]},
 }
 
 

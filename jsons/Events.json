@@ -1053,6 +1053,58 @@
     ]
   },
   {
+    "name": "Demonic Raid",
+    "text": "Demonic Gu Masters raid your lands, hunting Gu, primeval stones and captives.",
+    "choices": [
+      {
+        "text": "Meet them in battle",
+        "uniques": [
+          "[2] [Demonic Gu Master]s rebel <before discovering [Purple Crystal Essence]>",
+          "A [Demonic Elder] rebels <after discovering [Purple Crystal Essence]>",
+          "[2] [Demonic Gu Master]s rebel <after discovering [Purple Crystal Essence]>",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay them off",
+        "uniques": [
+          "Unavailable <when below [80] [Gold]>",
+          "Gain [-80] [Gold]",
+          "[-30]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wandering Gu Master",
+    "text": "A lone Gu Master wanders into your village and offers his service for primeval stones.",
+    "choices": [
+      {
+        "text": "Hire him",
+        "uniques": [
+          "Unavailable <when below [60] [Gold]>",
+          "Gain [-60] [Gold]",
+          "Free [Rank Two Gu Master] appears",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Send him on his way",
+        "uniques": [
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Rob him",
+        "uniques": [
+          "Gain [40] [Gold]",
+          "A [Lone Gu Master] rebels",
+          "[-20]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Shadow Sect Envoy",
     "text": "An envoy of the Shadow Sect offers essence for a favour no one may ever learn of.",
     "choices": [

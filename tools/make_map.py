@@ -156,14 +156,17 @@ FIVE_REALMS = {  # realm: (region, column, row)
 RICHES = {  # region: [(resource or improvement, count)]
     "south": [("Spirit Spring", 6), ("Jade", 3), ("Wild Boar", 4), ("Moon Orchid", 2), ("Furs", 2),
               ("Inheritance Site", 3), ("Beast Lair", 2)],
+    # Phase D (the user: conflict in every region): demonic dens where one clan stood alone
     "central": [("Spirit Spring", 4), ("Jade", 2), ("Wild Boar", 2), ("Moon Orchid", 1), ("Inheritance Site", 2),
-                ("Beast Lair", 1)],
+                ("Beast Lair", 1), ("Demonic Den", 2)],
     "north": [("Spirit Spring", 5), ("Jade", 3), ("Wild Boar", 3), ("Furs", 4), ("Inheritance Site", 2),
-              ("Beast Lair", 1)],
-    "west": [("Spirit Spring", 3), ("Jade", 3), ("Wild Boar", 1), ("Inheritance Site", 2), ("Beast Lair", 1)],
-    "east": [("Spirit Spring", 1), ("Jade", 1), ("Wild Boar", 2), ("Moon Orchid", 1), ("Inheritance Site", 1)],
+              ("Beast Lair", 1), ("Demonic Den", 2)],
+    "west": [("Spirit Spring", 3), ("Jade", 3), ("Wild Boar", 1), ("Inheritance Site", 2), ("Beast Lair", 1),
+             ("Demonic Den", 2)],
+    "east": [("Spirit Spring", 1), ("Jade", 1), ("Wild Boar", 2), ("Moon Orchid", 1), ("Inheritance Site", 1),
+             ("Demonic Den", 1)],
 }
-IMPROVEMENT_SITES = {"Inheritance Site", "Beast Lair"}
+IMPROVEMENT_SITES = {"Inheritance Site", "Beast Lair", "Demonic Den"}
 
 
 def scatter_riches(tiles, reg, wall, taken, starts):
@@ -188,7 +191,7 @@ def scatter_riches(tiles, reg, wall, taken, starts):
                     t[1] = ["Jungle"]
                 elif what == "Jade":
                     t[1] = ["Hill"]
-                elif what in ("Wild Boar", "Beast Lair"):
+                elif what in ("Wild Boar", "Beast Lair", "Demonic Den"):
                     t[1] = ["Jungle"] if "Jungle" in t[1] else ["Forest"]
                 elif what == "Spirit Spring":
                     t[1] = [f for f in t[1] if f == "Hill"]

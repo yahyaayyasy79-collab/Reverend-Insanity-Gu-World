@@ -4219,3 +4219,108 @@ lapar dan apa makanan gu tersebut".
   comment (a Gu food and its hunger rate, or primeval stones and the upkeep it adds); the Tutorial page "Gu World: Gu
   Hunger and Food" lists every Gu. The four per-food statuses of R3 stay defined, unused, for old saves.
 
+## Phase D: regional conflict (the user, 2026-11-02)
+
+The user: "konflik di barat, utara dan timur laut tidak ada ... buat konflik di 4 daerah tersebut berperang antar klan
+ataupun dengan gu master penyendiri maupun gu master iblis"; decided: minor clans (city-states) and wild factions.
+
+* **Lone Gu Masters** (散修) and **demonic Gu Masters** (魔道蛊师) are canon everywhere in the novel: rogue cultivators
+  without a clan and demonic-path cultivators who rob and kill for Gu (ADAPTED as barbarian units). Lone Gu Master
+  (strength 14, rank two), Demonic Gu Master (22, rank three), Demonic Elder (44, rank five); camps spawn them once
+  every clan knows the tech [src BarbarianManager]. The **Demonic Den** is a second camp kind: new camps pick a Beast
+  Lair or a Demonic Den at random [src createNewCamp], and the Five Regions map places dens in the regions that had a
+  single clan (north 2, west 2, east 1, centre 2).
+* **Demonic Raid** (from T60 on Standard, 2% a turn per clan): fight (two Demonic Gu Masters, or an elder and two
+  after Purple Crystal Essence, spawn near the capital as barbarians) or pay 80 stones. **Wandering Gu Master** (from
+  T30, 2%): hire him for 60 stones (a free Rank Two Gu Master), send him away, or rob him (40 stones, he turns rogue).
+* Minor clans per region follow once the faction research is in (canon names, checked against the novel).
+
+
+Exact uniques (written by tools/lore_blocks.py from jsons/):
+
+**Lone Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 14, "cost": 60, "requiredTech": "Rank Two Cultivation", "attackSound": "gu-rank-2", "uniqueTo": "Barbarians"})
+
+```
+[+20]% Strength <when defending>
+```
+
+**Demonic Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 22, "cost": 95, "requiredTech": "Rank Three Cultivation", "attackSound": "gu-rank-3", "uniqueTo": "Barbarians"})
+
+```
+[+20]% Strength <when attacking>
+Heals [15] damage if it kills a unit
+```
+
+**Demonic Elder** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "uniqueTo": "Barbarians"})
+
+```
+[+20]% Strength <when attacking>
+Heals [20] damage if it kills a unit
+[-10]% Strength for enemy [Military] units in adjacent [All] tiles
+```
+
+**Demonic Den** (TileImprovements.json; {"terrainsCanBeBuiltOn": ["Land"]})
+
+```
+Unpillagable
+Unbuildable
+Excluded from map editor
+Marks a barbarian camp
+```
+
+**Demonic Raid** (popup)
+
+* Meet them in battle
+
+```
+[2] [Demonic Gu Master]s rebel <before discovering [Purple Crystal Essence]>
+A [Demonic Elder] rebels <after discovering [Purple Crystal Essence]>
+[2] [Demonic Gu Master]s rebel <after discovering [Purple Crystal Essence]>
+[+100]% weight to this choice for AI decisions
+```
+
+* Pay them off
+
+```
+Unavailable <when below [80] [Gold]>
+Gain [-80] [Gold]
+[-30]% weight to this choice for AI decisions
+```
+
+**Wandering Gu Master** (popup)
+
+* Hire him
+
+```
+Unavailable <when below [60] [Gold]>
+Gain [-60] [Gold]
+Free [Rank Two Gu Master] appears
+[+50]% weight to this choice for AI decisions
+```
+
+* Send him on his way
+
+```
+[+0]% weight to this choice for AI decisions
+```
+
+* Rob him
+
+```
+Gain [40] [Gold]
+A [Lone Gu Master] rebels
+[-20]% weight to this choice for AI decisions
+```
+
+**GlobalUniques**
+
+```
+Triggers a [Demonic Raid] event <upon turn start> <after turn number [40]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Demonic Raid] event <upon turn start> <after turn number [60]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Demonic Raid] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Demonic Raid] event <upon turn start> <after turn number [180]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [20]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>
+Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
+Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
+Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+```

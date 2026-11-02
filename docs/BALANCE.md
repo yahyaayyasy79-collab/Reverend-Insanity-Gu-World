@@ -234,6 +234,14 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Demonic Raid] event <upon turn start> <after turn number [40]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 40, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Demonic Raid] event <upon turn start> <after turn number [60]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 60, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Demonic Raid] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 90, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Demonic Raid] event <upon turn start> <after turn number [180]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 180, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [20]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 20, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 90, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -484,6 +492,21 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Thunder Crown Wolf | cost | 120 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | `[+20]% Strength bonus for [Beast] units within [2] tiles` | +20, 2 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | `[+200]% maintenance costs` | +200 | tools/gen_ruleset.py `Units` |
+| Lone Gu Master | movement | 2 | tools/gen_ruleset.py `Units` |
+| Lone Gu Master | strength | 14 | tools/gen_ruleset.py `Units` |
+| Lone Gu Master | cost | 60 | tools/gen_ruleset.py `Units` |
+| Lone Gu Master | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Units` |
+| Demonic Gu Master | movement | 2 | tools/gen_ruleset.py `Units` |
+| Demonic Gu Master | strength | 22 | tools/gen_ruleset.py `Units` |
+| Demonic Gu Master | cost | 95 | tools/gen_ruleset.py `Units` |
+| Demonic Gu Master | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Units` |
+| Demonic Gu Master | `Heals [15] damage if it kills a unit` | 15 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | movement | 2 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | strength | 44 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | cost | 190 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | `Heals [20] damage if it kills a unit` | 20 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles` | -10 | tools/gen_ruleset.py `Units` |
 
 ### UnitPromotions.json
 
@@ -1059,6 +1082,18 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dream Realm › Enter the dream | `[-10]% Strength <for [10] turns>` | -10, 10 | tools/gen_ruleset.py `Events` |
 | Dream Realm › Enter the dream | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Dream Realm › Leave it to fade | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Demonic Raid › Meet them in battle | `[2] [Demonic Gu Master]s rebel <before discovering [Purple Crystal Essence]>` | 2 | tools/gen_ruleset.py `Events` |
+| Demonic Raid › Meet them in battle | `[2] [Demonic Gu Master]s rebel <after discovering [Purple Crystal Essence]>` | 2 | tools/gen_ruleset.py `Events` |
+| Demonic Raid › Meet them in battle | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Demonic Raid › Pay them off | `Unavailable <when below [80] [Gold]>` | 80 | tools/gen_ruleset.py `Events` |
+| Demonic Raid › Pay them off | `Gain [-80] [Gold]` | -80 | tools/gen_ruleset.py `Events` |
+| Demonic Raid › Pay them off | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
+| Wandering Gu Master › Hire him | `Unavailable <when below [60] [Gold]>` | 60 | tools/gen_ruleset.py `Events` |
+| Wandering Gu Master › Hire him | `Gain [-60] [Gold]` | -60 | tools/gen_ruleset.py `Events` |
+| Wandering Gu Master › Hire him | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Wandering Gu Master › Send him on his way | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Wandering Gu Master › Rob him | `Gain [40] [Gold]` | 40 | tools/gen_ruleset.py `Events` |
+| Wandering Gu Master › Rob him | `[-20]% weight to this choice for AI decisions` | -20 | tools/gen_ruleset.py `Events` |
 | Shadow Sect Envoy › Accept their help | `Instantly provides [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Events` |
 | Shadow Sect Envoy › Accept their help | `Triggers a [Collusion Exposed] event <after adopting [Righteous Path]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Events` |
 | Shadow Sect Envoy › Accept their help | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
@@ -2368,6 +2403,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2151 numbers listed.
+2186 numbers listed.
 
 <!-- inventory:end -->

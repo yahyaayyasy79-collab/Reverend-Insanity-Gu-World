@@ -111,6 +111,23 @@
     ]
   },
   {
+    "name": "Demonic Den",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Unpillagable",
+      "Unbuildable",
+      "Excluded from map editor",
+      "Marks a barbarian camp"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A den of demonic Gu Masters (魔窟). Raiders keep coming out of it until someone clears it, in every region of the world."
+      }
+    ]
+  },
+  {
     "name": "Inheritance Dig",
     "techRequired": "Inheritance Lore",
     "turnsToBuild": 5,

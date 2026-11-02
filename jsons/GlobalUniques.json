@@ -110,6 +110,14 @@
     "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
     "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
     "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
-    "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>"
+    "Triggers a [Qi Tides] event <upon turn start> <if [Shattered Fate] is constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Demonic Raid] event <upon turn start> <after turn number [40]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Demonic Raid] event <upon turn start> <after turn number [60]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Demonic Raid] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Demonic Raid] event <upon turn start> <after turn number [180]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [20]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
+    "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
+    "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
+    "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>"
   ]
 }
