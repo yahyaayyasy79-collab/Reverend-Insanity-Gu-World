@@ -213,17 +213,22 @@ def bearer_pedia(g: dict) -> tuple[str, str]:
     from gen_paths import KEY, tier_name, tier_name_id
     p, r, eff = KEY[g["path"]], int(g["rank"]), effects(g)
     en = (f"The one immortal who carries {g['name']}, a rank-{r} {p['name']} path immortal Gu. There is only one in the "
-          f"world: the clan that owns the wonder lets one {tier_name(p, 0)} of rank {r} or higher carry it. "
+          f"world: the clan that owns the wonder lets one immortal of rank {r} or higher carry it; its combination "
+          f"moves need the comprehension of the {p['name']} path. "
           + "; ".join(e[1] for e in eff).capitalize() + ". It sleeps without " + ESSENCE[r] + " or the wonder.")
     idn = (f"Satu-satunya abadi yang membawa {g['name_id']}, Gu abadi jalur {p['name_id']} tingkat {r}. Di dunia hanya ada "
-           f"satu: klan pemilik keajaiban mengizinkan satu {tier_name_id(p, 0)} tingkat {r} atau lebih membawanya. "
+           f"satu: klan pemilik keajaiban mengizinkan satu abadi tingkat {r} atau lebih membawanya; jurus kombinasinya "
+           f"butuh pemahaman jalur {p['name_id']}. "
            + "; ".join(e[2] for e in eff).capitalize() + ". Ia tertidur tanpa " + ESSENCE_ID[r] + " atau keajaibannya.")
     return en, idn
 
 
 def bearers(unit_types: list[str]) -> list[dict]:
     from gen_paths import KEY, tier_name
-    return [{"name": bearer(g["name"]), "unitTypes": unit_types, "prerequisites": [tier_name(KEY[g["path"]], 0)],
+    # no path prerequisite: any immortal with the essence may carry an immortal Gu (autoplay: with the path's Master
+    # required, the AI's one-path units matched their clan's wonders in 3 bearers over 4 games of 400 turns);
+    # comprehension of the path gates the Gu's combination moves instead (tools/gu_combos.py)
+    return [{"name": bearer(g["name"]), "unitTypes": unit_types,
              "uniques": bearer_lines(g), "civilopediaText": [{"text": bearer_pedia(g)[0]}]} for g in all_immortal()]
 
 
@@ -243,7 +248,7 @@ def wonders(recipe: dict, marker) -> list[dict]:
         out.append({"name": row["name"], "isWonder": True, "requiredTech": recipe[str(r)], "cost": WONDER_COST[r],
                     "uniques": [f"Costs [{WONDER_ESSENCE[r]}] [{ESSENCE[r]}]", "Never destroyed when the city is captured",
                                 "Immortal Gu", marker(row["path"]), "Triggers a [Immortal Gu Refinement] event",
-                                "[+100]% weight to this choice for AI decisions"],
+                                "[+300]% weight to this choice for AI decisions"],  # as the canon wonders (C3)
                     "civilopediaText": [{"text": wonder_pedia(row)[0]}]})
     return out
 

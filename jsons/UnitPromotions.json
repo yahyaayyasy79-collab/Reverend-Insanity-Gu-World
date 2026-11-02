@@ -10953,9 +10953,6 @@
       "Moon Gu Master",
       "Strength Gu Master"
     ],
-    "prerequisites": [
-      "Star Master"
-    ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Star Mark Immortal Gu]",
       "[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Star Mark Immortal Gu] is constructed>",
@@ -10969,7 +10966,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Star Mark Immortal Gu, a rank-6 Star path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Star Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Star Mark Immortal Gu, a rank-6 Star path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Star path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -10979,9 +10976,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Strength Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Pulling Water Immortal Gu]",
@@ -10996,7 +10990,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Pulling Water Immortal Gu, a rank-6 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Strength Master of rank 6 or higher carry it. 32% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Pulling Water Immortal Gu, a rank-6 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Strength path. 32% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11006,9 +11000,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Food Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Snack Immortal Gu]",
@@ -11023,7 +11014,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Snack Immortal Gu, a rank-6 Food path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Food Master of rank 6 or higher carry it. Its unit costs 16% less upkeep. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Snack Immortal Gu, a rank-6 Food path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Food path. Its unit costs 16% less upkeep. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11033,9 +11024,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Strength Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Flying Bear Strength Immortal Gu]",
@@ -11050,7 +11038,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Flying Bear Strength Immortal Gu, a rank-6 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Strength Master of rank 6 or higher carry it. 32% stronger when attacking. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Flying Bear Strength Immortal Gu, a rank-6 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Strength path. 32% stronger when attacking. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11060,9 +11048,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Transformation Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Change Form Immortal Gu]",
@@ -11078,7 +11063,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Change Form Immortal Gu, a rank-6 Transformation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Transformation Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Change Form Immortal Gu, a rank-6 Transformation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Transformation path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11088,9 +11073,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Blood Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Blood Asset Immortal Gu]",
@@ -11107,7 +11089,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Blood Asset Immortal Gu, a rank-6 Blood path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Blood Master of rank 6 or higher carry it. Each hit deals 14 more damage. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Blood Asset Immortal Gu, a rank-6 Blood path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Blood path. Each hit deals 14 more damage. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11117,9 +11099,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Soul Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Cleanse Soul Immortal Gu]",
@@ -11136,7 +11115,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Cleanse Soul Immortal Gu, a rank-6 Soul path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Soul Master of rank 6 or higher carry it. Heals 22 hp more a turn; heals 17 hp after a kill. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Cleanse Soul Immortal Gu, a rank-6 Soul path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Soul path. Heals 22 hp more a turn; heals 17 hp after a kill. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11146,9 +11125,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Dark Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dark Arrow Immortal Gu]",
@@ -11164,7 +11140,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Dark Arrow Immortal Gu, a rank-6 Dark path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Dark Master of rank 6 or higher carry it. Each hit deals 14 more damage. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Dark Arrow Immortal Gu, a rank-6 Dark path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Dark path. Each hit deals 14 more damage. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11174,9 +11150,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Sound Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Heavenly Gong Immortal Gu]",
@@ -11192,7 +11165,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Heavenly Gong Immortal Gu, a rank-6 Sound path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Sound Master of rank 6 or higher carry it. Enemy soldiers beside it fight 8% weaker. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Heavenly Gong Immortal Gu, a rank-6 Sound path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Sound path. Enemy soldiers beside it fight 8% weaker. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11202,9 +11175,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Ice Snow Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Ice Soul Immortal Gu]",
@@ -11220,7 +11190,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Ice Soul Immortal Gu, a rank-6 Ice Snow path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Ice Snow Master of rank 6 or higher carry it. Its hits leave the enemy frozen for 3 turn(s); 8% stronger when attacking. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Ice Soul Immortal Gu, a rank-6 Ice Snow path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Ice Snow path. Its hits leave the enemy frozen for 3 turn(s); 8% stronger when attacking. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11230,9 +11200,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Cloud Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Rising Azure Cloud Immortal Gu]",
@@ -11248,7 +11215,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Rising Azure Cloud Immortal Gu, a rank-6 Cloud path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Cloud Master of rank 6 or higher carry it. +1 movement; 7% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Rising Azure Cloud Immortal Gu, a rank-6 Cloud path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Cloud path. +1 movement; 7% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11258,9 +11225,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Luck Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dog Shit Luck Immortal Gu]",
@@ -11276,7 +11240,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Dog Shit Luck Immortal Gu, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Luck Master of rank 6 or higher carry it. Unseen except from an adjacent tile; 14% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Dog Shit Luck Immortal Gu, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Luck path. Unseen except from an adjacent tile; 14% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11286,9 +11250,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Phantom Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Flying Bear Phantom Immortal Gu]",
@@ -11303,7 +11264,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Flying Bear Phantom Immortal Gu, a rank-6 Phantom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Phantom Master of rank 6 or higher carry it. 32% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Flying Bear Phantom Immortal Gu, a rank-6 Phantom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Phantom path. 32% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11313,9 +11274,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Shadow Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Split Shadow Immortal Gu]",
@@ -11331,7 +11289,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Split Shadow Immortal Gu, a rank-6 Shadow path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Shadow Master of rank 6 or higher carry it. Unseen except from an adjacent tile; 14% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Split Shadow Immortal Gu, a rank-6 Shadow path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Shadow path. Unseen except from an adjacent tile; 14% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -11341,9 +11299,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Sword Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Flying Sword Immortal Gu]",
@@ -11359,7 +11314,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Flying Sword Immortal Gu, a rank-7 Sword path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Sword Master of rank 7 or higher carry it. Each hit deals 16 more damage. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Flying Sword Immortal Gu, a rank-7 Sword path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Sword path. Each hit deals 16 more damage. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11369,9 +11324,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Sword Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Sword Escape Immortal Gu]",
@@ -11388,7 +11340,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Sword Escape Immortal Gu, a rank-7 Sword path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Sword Master of rank 7 or higher carry it. +2 movement; 8% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Sword Escape Immortal Gu, a rank-7 Sword path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Sword path. +2 movement; 8% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11398,9 +11350,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Blade Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Edge Immortal Gu]",
@@ -11415,7 +11364,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Edge Immortal Gu, a rank-7 Blade path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Blade Master of rank 7 or higher carry it. 36% stronger when attacking. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Edge Immortal Gu, a rank-7 Blade path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Blade path. 36% stronger when attacking. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11425,9 +11374,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Theft Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Great Thief Immortal Gu]",
@@ -11443,7 +11389,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Great Thief Immortal Gu, a rank-7 Theft path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Theft Master of rank 7 or higher carry it. Takes 45% of a slain soldier's cost as stones. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Great Thief Immortal Gu, a rank-7 Theft path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Theft path. Takes 45% of a slain soldier's cost as stones. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11453,9 +11399,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Moon Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Crescent Moon Immortal Gu]",
@@ -11470,7 +11413,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Crescent Moon Immortal Gu, a rank-7 Moon path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Moon Master of rank 7 or higher carry it. 36% stronger when attacking. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Crescent Moon Immortal Gu, a rank-7 Moon path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Moon path. 36% stronger when attacking. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11480,9 +11423,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Human Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Perseverance Immortal Gu]",
@@ -11498,7 +11438,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Perseverance Immortal Gu, a rank-7 Human path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Human Master of rank 7 or higher carry it. 36% stronger when defending. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Perseverance Immortal Gu, a rank-7 Human path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Human path. 36% stronger when defending. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11508,9 +11448,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Qi Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Qi Escape Immortal Gu]",
@@ -11526,7 +11463,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Qi Escape Immortal Gu, a rank-7 Qi path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Qi Master of rank 7 or higher carry it. +2 movement; 8% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Qi Escape Immortal Gu, a rank-7 Qi path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Qi path. +2 movement; 8% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11536,9 +11473,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Strength Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Expend Strength Immortal Gu]",
@@ -11553,7 +11487,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Expend Strength Immortal Gu, a rank-7 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Strength Master of rank 7 or higher carry it. Enemy soldiers beside it fight 9% weaker. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Expend Strength Immortal Gu, a rank-7 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Strength path. Enemy soldiers beside it fight 9% weaker. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11563,9 +11497,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Space Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Fixed Space Immortal Gu]",
@@ -11581,7 +11512,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Fixed Space Immortal Gu, a rank-7 Space path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Space Master of rank 7 or higher carry it. Its hits leave the enemy entangled for 3 turn(s); 9% stronger when attacking. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Fixed Space Immortal Gu, a rank-7 Space path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Space path. Its hits leave the enemy entangled for 3 turn(s); 9% stronger when attacking. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11591,9 +11522,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Rule Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Limit Immortal Gu]",
@@ -11608,7 +11536,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Limit Immortal Gu, a rank-7 Rule path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Rule Master of rank 7 or higher carry it. Enemy soldiers beside it fight 9% weaker. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Limit Immortal Gu, a rank-7 Rule path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Rule path. Enemy soldiers beside it fight 9% weaker. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -11618,9 +11546,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Rule Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Region Immortal Gu]",
@@ -11636,7 +11561,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Region Immortal Gu, a rank-8 Rule path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Rule Master of rank 8 or higher carry it. Enemy soldiers beside it fight 10% weaker. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Region Immortal Gu, a rank-8 Rule path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Rule path. Enemy soldiers beside it fight 10% weaker. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11646,9 +11571,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wisdom Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Wisdom Sword Immortal Gu]",
@@ -11663,7 +11585,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Wisdom Sword Immortal Gu, a rank-8 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wisdom Master of rank 8 or higher carry it. Each hit deals 18 more damage. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Wisdom Sword Immortal Gu, a rank-8 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Wisdom path. Each hit deals 18 more damage. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11673,9 +11595,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Emotion Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Regret Immortal Gu]",
@@ -11691,7 +11610,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Regret Immortal Gu, a rank-8 Emotion path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Emotion Master of rank 8 or higher carry it. Its hits leave the enemy charmed for 3 turn(s); 10% stronger when attacking. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Regret Immortal Gu, a rank-8 Emotion path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Emotion path. Its hits leave the enemy charmed for 3 turn(s); 10% stronger when attacking. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11701,9 +11620,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wisdom Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Attitude Immortal Gu]",
@@ -11719,7 +11635,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Attitude Immortal Gu, a rank-8 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wisdom Master of rank 8 or higher carry it. Unseen except from an adjacent tile; 18% stronger when defending. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Attitude Immortal Gu, a rank-8 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Wisdom path. Unseen except from an adjacent tile; 18% stronger when defending. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11729,9 +11645,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wind Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Eight-Faced Prestige Wind Immortal Gu]",
@@ -11747,7 +11660,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Eight-Faced Prestige Wind Immortal Gu, a rank-8 Wind path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wind Master of rank 8 or higher carry it. 40% stronger when attacking. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Eight-Faced Prestige Wind Immortal Gu, a rank-8 Wind path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Wind path. 40% stronger when attacking. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11757,9 +11670,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Refinement Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Water Refinement Immortal Gu]",
@@ -11775,7 +11685,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Water Refinement Immortal Gu, a rank-8 Refinement path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Refinement Master of rank 8 or higher carry it. Heals 28 hp more a turn; heals 21 hp after a kill. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Water Refinement Immortal Gu, a rank-8 Refinement path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Refinement path. Heals 28 hp more a turn; heals 21 hp after a kill. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11785,9 +11695,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Heaven Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Heavenly Secret Immortal Gu]",
@@ -11803,7 +11710,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Heavenly Secret Immortal Gu, a rank-8 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Heaven Master of rank 8 or higher carry it. +2 sight; 9% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Heavenly Secret Immortal Gu, a rank-8 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Heaven path. +2 sight; 9% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11813,9 +11720,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Heaven Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Heaven's Envy Immortal Gu]",
@@ -11832,7 +11736,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Heaven's Envy Immortal Gu, a rank-8 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Heaven Master of rank 8 or higher carry it. Its hits leave the enemy doomed for 3 turn(s); 10% stronger when attacking. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Heaven's Envy Immortal Gu, a rank-8 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Heaven path. Its hits leave the enemy doomed for 3 turn(s); 10% stronger when attacking. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11842,9 +11746,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Killing Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Kill Immortal Gu]",
@@ -11859,7 +11760,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Kill Immortal Gu, a rank-8 Killing path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Killing Master of rank 8 or higher carry it. Each hit deals 18 more damage. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Kill Immortal Gu, a rank-8 Killing path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Killing path. Each hit deals 18 more damage. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -11869,9 +11770,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Light Master"
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Light Gu]",
@@ -11887,7 +11785,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Light Gu, a rank-9 Light path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Light Master of rank 9 or higher carry it. 44% stronger when attacking. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+        "text": "The one immortal who carries Light Gu, a rank-9 Light path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Light path. 44% stronger when attacking. It sleeps without Yellow Apricot Immortal Essence or the wonder."
       }
     ]
   },
@@ -11897,9 +11795,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Fire Master"
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Fire Gu]",
@@ -11914,7 +11809,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Fire Gu, a rank-9 Fire path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Fire Master of rank 9 or higher carry it. Each hit deals 20 more damage. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+        "text": "The one immortal who carries Fire Gu, a rank-9 Fire path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Fire path. Each hit deals 20 more damage. It sleeps without Yellow Apricot Immortal Essence or the wonder."
       }
     ]
   },
@@ -11924,9 +11819,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Emotion Master"
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Love Gu]",
@@ -11943,7 +11835,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Love Gu, a rank-9 Emotion path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Emotion Master of rank 9 or higher carry it. Heals 31 hp more a turn; heals 23 hp after a kill. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+        "text": "The one immortal who carries Love Gu, a rank-9 Emotion path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Emotion path. Heals 31 hp more a turn; heals 23 hp after a kill. It sleeps without Yellow Apricot Immortal Essence or the wonder."
       }
     ]
   },
@@ -11953,9 +11845,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Heaven Master"
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Heavenly Web Immortal Gu]",
@@ -11972,7 +11861,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Heavenly Web Immortal Gu, a rank-9 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Heaven Master of rank 9 or higher carry it. Its hits leave the enemy entangled for 4 turn(s); 11% stronger when attacking. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+        "text": "The one immortal who carries Heavenly Web Immortal Gu, a rank-9 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Heaven path. Its hits leave the enemy entangled for 4 turn(s); 11% stronger when attacking. It sleeps without Yellow Apricot Immortal Essence or the wonder."
       }
     ]
   },
@@ -11982,9 +11871,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Time Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Spring Autumn Cicada]",
@@ -11999,7 +11885,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Spring Autumn Cicada, a rank-6 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Time Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Spring Autumn Cicada, a rank-6 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Time path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12009,9 +11895,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Space Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Fixed Immortal Travel]",
@@ -12026,7 +11909,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Fixed Immortal Travel, a rank-6 Space path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Space Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Fixed Immortal Travel, a rank-6 Space path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Space path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12036,9 +11919,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Time Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Man as Before]",
@@ -12053,7 +11933,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Man as Before, a rank-6 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Time Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Man as Before, a rank-6 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Time path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12063,9 +11943,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wisdom Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Unravel Mystery]",
@@ -12080,7 +11957,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Unravel Mystery, a rank-6 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wisdom Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Unravel Mystery, a rank-6 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Wisdom path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12090,9 +11967,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Luck Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Connect Luck]",
@@ -12107,7 +11981,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Connect Luck, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Luck Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Connect Luck, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Luck path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12117,9 +11991,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Strength Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Self Strength]",
@@ -12134,7 +12005,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Self Strength, a rank-6 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Strength Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Self Strength, a rank-6 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Strength path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12144,9 +12015,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Poison Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Woman's Heart]",
@@ -12161,7 +12029,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Woman's Heart, a rank-6 Poison path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Poison Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Woman's Heart, a rank-6 Poison path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Poison path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12171,9 +12039,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Bone Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Bone Spike]",
@@ -12188,7 +12053,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Bone Spike, a rank-6 Bone path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Bone Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Bone Spike, a rank-6 Bone path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Bone path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12198,9 +12063,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Star Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Star Eyes]",
@@ -12215,7 +12077,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Star Eyes, a rank-6 Star path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Star Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Star Eyes, a rank-6 Star path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Star path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12225,9 +12087,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Luck Master"
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Divert Disaster]",
@@ -12242,7 +12101,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Divert Disaster, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Luck Master of rank 6 or higher carry it. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+        "text": "The one immortal who carries Divert Disaster, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Luck path. 23% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -12252,9 +12111,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Strength Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dragon Strength]",
@@ -12269,7 +12125,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Dragon Strength, a rank-7 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Strength Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Dragon Strength, a rank-7 Strength path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Strength path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12279,9 +12135,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Time Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Year Gu]",
@@ -12296,7 +12149,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Year Gu, a rank-7 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Time Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Year Gu, a rank-7 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Time path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12306,9 +12159,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Formation Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Formation Flag]",
@@ -12323,7 +12173,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Formation Flag, a rank-7 Formation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Formation Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Formation Flag, a rank-7 Formation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Formation path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12333,9 +12183,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wisdom Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Divination Tortoise Shell]",
@@ -12350,7 +12197,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Divination Tortoise Shell, a rank-7 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wisdom Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Divination Tortoise Shell, a rank-7 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Wisdom path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12360,9 +12207,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Sword Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dragon Centipede]",
@@ -12377,7 +12221,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Dragon Centipede, a rank-7 Sword path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Sword Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Dragon Centipede, a rank-7 Sword path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Sword path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12387,9 +12231,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Information Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Reputation Restriction]",
@@ -12404,7 +12245,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Reputation Restriction, a rank-7 Information path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Information Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Reputation Restriction, a rank-7 Information path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Information path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12414,9 +12255,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Luck Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Calamity Beckoning]",
@@ -12431,7 +12269,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Calamity Beckoning, a rank-7 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Luck Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Calamity Beckoning, a rank-7 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Luck path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12441,9 +12279,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Soul Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Change Soul]",
@@ -12458,7 +12293,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Change Soul, a rank-7 Soul path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Soul Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Change Soul, a rank-7 Soul path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Soul path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12468,9 +12303,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Transformation Master"
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dragon Breath]",
@@ -12485,7 +12317,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Dragon Breath, a rank-7 Transformation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Transformation Master of rank 7 or higher carry it. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
+        "text": "The one immortal who carries Dragon Breath, a rank-7 Transformation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 7 or higher carry it; its combination moves need the comprehension of the Transformation path. 26% stronger. It sleeps without Red Date Immortal Essence or the wonder."
       }
     ]
   },
@@ -12495,9 +12327,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wood Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Heavenly Essence Treasure Imperial Lotus]",
@@ -12512,7 +12341,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Heavenly Essence Treasure Imperial Lotus, a rank-8 Wood path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wood Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Heavenly Essence Treasure Imperial Lotus, a rank-8 Wood path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Wood path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12522,9 +12351,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Time Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Years Flow Like Water]",
@@ -12539,7 +12365,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Years Flow Like Water, a rank-8 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Time Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Years Flow Like Water, a rank-8 Time path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Time path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12549,9 +12375,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Dream Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dream Token]",
@@ -12566,7 +12389,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Dream Token, a rank-8 Dream path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Dream Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Dream Token, a rank-8 Dream path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Dream path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12576,9 +12399,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Enslavement Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Soul Beast Token]",
@@ -12593,7 +12413,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Soul Beast Token, a rank-8 Enslavement path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Enslavement Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Soul Beast Token, a rank-8 Enslavement path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Enslavement path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12603,9 +12423,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Light Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Treasure Light Gu]",
@@ -12620,7 +12437,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Treasure Light Gu, a rank-8 Light path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Light Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Treasure Light Gu, a rank-8 Light path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Light path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12630,9 +12447,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Refinement Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Advance Refinement Gu]",
@@ -12647,7 +12461,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Advance Refinement Gu, a rank-8 Refinement path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Refinement Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Advance Refinement Gu, a rank-8 Refinement path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Refinement path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12657,9 +12471,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Theft Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Steal Life]",
@@ -12674,7 +12485,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Steal Life, a rank-8 Theft path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Theft Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Steal Life, a rank-8 Theft path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Theft path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12684,9 +12495,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Qi Master"
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Human Qi Immortal Gu]",
@@ -12701,7 +12509,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Human Qi Immortal Gu, a rank-8 Qi path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Qi Master of rank 8 or higher carry it. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
+        "text": "The one immortal who carries Human Qi Immortal Gu, a rank-8 Qi path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 8 or higher carry it; its combination moves need the comprehension of the Qi path. 29% stronger. It sleeps without White Lychee Immortal Essence or the wonder."
       }
     ]
   },
@@ -12711,9 +12519,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Wisdom Master"
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Wisdom Gu]",
@@ -12728,7 +12533,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Wisdom Gu, a rank-9 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Wisdom Master of rank 9 or higher carry it. 32% stronger. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+        "text": "The one immortal who carries Wisdom Gu, a rank-9 Wisdom path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Wisdom path. 32% stronger. It sleeps without Yellow Apricot Immortal Essence or the wonder."
       }
     ]
   },
@@ -12738,9 +12543,6 @@
       "Gu Master",
       "Moon Gu Master",
       "Strength Gu Master"
-    ],
-    "prerequisites": [
-      "Rule Master"
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Derivation Gu]",
@@ -12755,7 +12557,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "The one immortal who carries Derivation Gu, a rank-9 Rule path immortal Gu. There is only one in the world: the clan that owns the wonder lets one Rule Master of rank 9 or higher carry it. 32% stronger. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+        "text": "The one immortal who carries Derivation Gu, a rank-9 Rule path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Rule path. 32% stronger. It sleeps without Yellow Apricot Immortal Essence or the wonder."
       }
     ]
   },

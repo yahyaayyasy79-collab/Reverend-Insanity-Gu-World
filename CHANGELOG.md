@@ -827,3 +827,6 @@ minor clans plus wild factions.
 * **New art and sound:** 37 wonder icons, 66 bearer icons, 132 more move icons, and sounds for bearers and moves
   (612 .ogg).
 * Kill Immortal Gu is rank 8 (the user). numpy is in `tools/requirements.txt`.
+* **A bearer needs only the Gu's rank, not its path.** The path's comprehension gates the moves instead. Autoplay
+  4 × 400 turns: 2-16 bearers per game, and never two bearers of one Gu. The catalog wonders now weigh +300% for the
+  AI, the same as the canon ones (docs/AUTOPLAY.md).

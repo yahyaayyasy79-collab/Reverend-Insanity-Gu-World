@@ -411,6 +411,21 @@ and the immortals fell by a fifth. The final variant also scales the rogues: the
 comprehension, so they keep 80%. It matches the base within the noise. City strength (E8) needs no retune, because
 conquest is unchanged.
 
+## Phase D: one-of-a-kind immortal Gu (2026-11-02)
+
+Five Regions, 4 games × 400 turns, Prince. The question: does the AI build the immortal Gu wonders and raise their
+bearers, and does each Gu ever have two bearers at once?
+
+| Run | Wonders built (canon / catalog) | Bearers at T400 per game | Most bearers of one Gu |
+|---|---|---|---|
+| Bearer needs the path's Master; catalog wonders at AI weight +100% | 10-16 / 0 | 0, 2, 1, 0 | 1 |
+| No path prerequisite; catalog wonders at +300% (final) | 7-13 / 0-4 | 9, 9, 2, 16 | 1 |
+
+The AI's units each walk one path, so they rarely matched their clan's wonders: only 3 bearers came up in four games.
+Canon lets any immortal with the essence use an immortal Gu, so the bearer now needs only the rank. The path's
+comprehension still gates the Gu's combination moves, which only a human presses anyway. Uniqueness held in every
+game: never two bearers of one Gu.
+
 ## Re-run
 
 ```

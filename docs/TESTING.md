@@ -151,8 +151,10 @@ unit addpromotion "Ice Snow Grandmaster"
 unit addpromotion "Wind Grandmaster"        # now the Ice Blade Storm button shows (20 stones, 1 movement)
 # one-of-a-kind immortal Gu: give your capital the wonder, then let one immortal carry it
 city addbuilding "Star Mark Immortal Gu"    # (or build it: Immortal Gu Recipes)
-unit addpromotion "Star Master"             # on a Rank Six Gu Immortal; the Star Mark Immortal Gu Bearer
-                                            # promotion appears; a second unit of yours can no longer take it
+unit setxp 300                              # on a Rank Six Gu Immortal: the Star Mark Immortal Gu Bearer promotion
+                                            # appears; once taken, a second unit of yours can no longer take it
+unit addpromotion "Star Grandmaster"        # with Star Master and Star Great Grandmaster too: the Star Mark
+unit addpromotion "Star Great Grandmaster"  # Resonance button shows (3 green grape essence)
 ```
 
 

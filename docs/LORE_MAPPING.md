@@ -4544,7 +4544,7 @@ sesuai pemahaman jalur tersebut"; "Kill rank 8 oke".
   immortal Gu are no longer promotions any immortal can buy: each is a world wonder now, refined in a city like the
   29 canon wonders, never destroyed and seized with its city.
 * **Its bearer.** Every immortal Gu wonder, all 66, has a bearer promotion. Only a unit of the clan that owns the
-  wonder can take it, and only one unit at a time. It also needs that path's Master and the Gu's rank. The Gu works
+  wonder can take it, and only one unit at a time. It needs the Gu's rank, not the path: any immortal with the essence may carry an immortal Gu, and the path's comprehension gates its moves instead. The Gu works
   only while the clan owns the wonder and has the rank's immortal essence. The engine counts units per clan only, so a
   bearer whose clan lost the wonder keeps the promotion, asleep, while the new owner may raise its own bearer
   (KNOWN_ISSUES).
