@@ -355,6 +355,39 @@ One crash in about 30 games on this code: a free upgrade in the ascension chain 
 restore the Gu Master (NullPointerException in UnitUpgradeManager.performUpgrade); the harness now records where every
 Gu Master stood, so the next occurrence names the tile (KNOWN_ISSUES 20).
 
+## Phase D: regional conflict (2026-11-02)
+
+The user found no conflict outside the Southern Border. The Five Regions map was played 4 games × 200 turns (Prince,
+Small, every city-state), before and after each change. The harness now records two more things: the city-states each
+major is at war with (`csWars`), and the barbarian units within 4 tiles of a clan's city (`barbNear`).
+
+| Run | Arc majors' turns at war with a major | Arc majors' turns at war with a city-state | City-states conquered |
+|---|---|---|---|
+| Wild factions only (seeds 21-24) | 0 | 70 | 2 |
+| + warlike arc temperaments, raids on minor clans (21-24) | 0 | 194 | 3 |
+| same (31-34) | 0 | 231 | 4 |
+| + Eastern Sea raids (31-34, final) | 0 | 17 | 0 |
+
+AI randomness is not tied to the seed, so the last two rows show how wide the noise is.
+
+The share of turns (T40+) with raiders near a city, final run:
+
+| Region | Clans and share of turns |
+|---|---|
+| North | Huang Jin 89%, Ge 55%, Man 39%, Lang Ya 38% |
+| West | Fang 81%, Mo 55%, Xiao 37%, Lan 31% |
+| Centre | Heavenly Court 64%, Spirit Affinity 39%, Immortal Crane 31%, Combat Immortal 30% |
+| South | Gu Yue 69%, Wu 67%, Xiong 40%, Bai 34% |
+| East | Song 41%, Zombie Alliance 12%, Xia 9%, Merman court 8% |
+
+**Verdict.** Every region now has fighting.
+* **North, west and centre:** raiders stand near a clan's cities half the turns or more.
+* **Minor clans:** the warlike majors sometimes swallow one. Huang Jin took the Man Tribe in 4 of 12 games.
+* **Arc majors:** they still never declare war on each other. The region walls keep them apart, and the AI declares
+  war only when happiness is above 0, it has 4 soldiers and one per city, and its population is 12 or more [src].
+* **Eastern Sea:** it stays the quietest. On its small islands a raider spawns beside a city and dies within a turn or
+  two. Four times the raid rate only moved it from 7% to 12%.
+
 ## Re-run
 
 ```

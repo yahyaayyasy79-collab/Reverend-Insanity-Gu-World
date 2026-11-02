@@ -3482,6 +3482,7 @@ Never appears as a Barbarian unit
 Starts with [Righteous Path] adopted
 [+15]% Strength <vs [Immortal Zombie] units>
 Start bias [Hill]
+[+25]% Strength <vs [Barbarian] units>
 ```
 
 **Huang Jin Family** (Nations.json; {"leaderName": "Huang Jin Patriarch", "adjective": ["Huang Jin Family"], "personality": "Huang Jin Temperament", "outerColor": [200, 160, 40], "innerColor": [90, 40, 20], "cities": ["Imperial Court", "Golden Tent", "Northern Plains Camp"], "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.", "declaringWar": "The blood of Giant Sun does not ask permission.", "defeated": "Scatter us if you can; one Huang Jin line always survives.", "civilopediaText": [{"text": "The Huang Jin (\u9ec4\u91d1\u5bb6\u65cf), every bloodline of Giant Sun on the Northern Plains. No Huang Jin line may be wiped out; only they may pass the 88 True Yang Building's trial."}]})
@@ -3502,6 +3503,10 @@ Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for ev
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>
 ```
 
 **Fang Clan** (Nations.json; {"leaderName": "Fang Clan Head", "adjective": ["Fang Clan"], "personality": "Fang Temperament", "outerColor": [150, 110, 60], "innerColor": [240, 230, 200], "cities": ["Fang Fortress", "Sand Gate", "Dune Workshop"], "introduction": "The Fang clan builds what lasts. What have you built?", "declaringWar": "Our Gu Houses are already moving. You should have counted them.", "defeated": "A fortress falls once. Our name will outlast it.", "civilopediaText": [{"text": "The Fang clan (\u623f\u5bb6), a righteous Western Desert power unrivalled at building Gu Houses. Gu Houses +50% production; +10% science."}]})
@@ -4233,25 +4238,56 @@ ataupun dengan gu master penyendiri maupun gu master iblis"; decided: minor clan
 * **Demonic Raid** (from T60 on Standard, 2% a turn per clan): fight (two Demonic Gu Masters, or an elder and two
   after Purple Crystal Essence, spawn near the capital as barbarians) or pay 80 stones. **Wandering Gu Master** (from
   T30, 2%): hire him for 60 stones (a free Rank Two Gu Master), send him away, or rob him (40 stones, he turns rogue).
-* Minor clans per region follow once the faction research is in (canon names, checked against the novel).
+* **Minor clans** (city-states), every name found in the raw Chinese text (R) and on the fan wiki (W) by the faction
+  research of 2026-11-02:
+
+  | Region | City-state | Chinese | Source | Type | Verdict |
+  |---|---|---|---|---|---|
+  | Northern Plains | Man Tribe (Red Flame Valley) | 蛮家 | R ch442-443; W | Battle Tribe, Hostile: swallows small tribes | CANON |
+  | Northern Plains | Ge Tribe | 葛家 | R ch426, 440, 455; W | Mortal Villages, Friendly: poor, bullied by the Man | CANON (camp name INVENTED) |
+  | Northern Plains | Lang Ya Sect (moved from the centre) | 琅琊派 | R ch461, 464 ("外界北原才一天"); W | Refiner Tribe | CANON |
+  | Western Desert | Lan Clan (Zhou Xi Oasis) | 兰家 | R ch694; W | Refiner Tribe | CANON |
+  | Western Desert | Mo Clan (Sand Wolf City) | 莫家 / 沙狼城 | R ch675, 1973; W | Battle Tribe | CANON |
+  | Western Desert | Xiao Clan (Silk Corridor) | 萧家 / 万里丝廊 | R ch837, 908; W | Merchant Clan: richest traders | CANON (city ADAPTED from their Gu House) |
+  | Eastern Sea | Song Clan (Heavy Water Blessed Land) | 宋家 / 重水福地 | R ch893, 899, 2102; W | Immortal Sect | CANON |
+  | Eastern Sea | Xia Clan | 夏家 | R ch1981-1985; W | Battle Tribe: weakest, borders the Merman court | CANON (harbour name INVENTED) |
+  | Central Continent | Immortal Crane Sect (Fei He Mountain) | 仙鹤门 | R ch193; W | Immortal Sect: hunts demonic Gu Masters | CANON |
+
+  **Battle Tribe** is a fifth city-state type: its friends get a Gu Master every ~20 turns
+  (`Provides military units every ≈[20] turns`), its ally every ~17 (`Provides military units every ≈[17] turns`),
+  Vanilla's Militaristic numbers, so the region's majors are armed by their minor clans. Unciv has no unique that makes a civ
+  declare war; wars come from the AI majors, the alliances the clans pull them into, the dens and the raids.
+  Lang Ya was placed in the centre in C5c; the raw text puts it in the Northern Plains, so the sect and its blessed
+  land moved north (a correction of my own mistake, not a user decision).
+* **Why the arc majors still never fight each other** (autoplay, docs/AUTOPLAY.md "Phase D"): the region walls keep
+  them apart, and the AI declares war only with happiness above 0, at least 4 soldiers and one per city, and 12
+  population [src DiplomacyAutomation.declareWar]; the arc majors miss one of these most turns. So the regions' fights
+  come from three canon sources instead:
+  * the arc majors' temperaments turn warlike (Huang Jin aggressive 8 and declareWar 8: the plains tribes swallow
+    small tribes, R ch443; Fang 6/7: the desert's clans gang up on rivals, R ch1775; Zombie Alliance 7/7; the Court
+    5/5), so they attack the minor clans beside them;
+  * demonic Gu Masters prey on every minor clan (1% a turn from T40), four times as often on the Eastern Sea
+    (Song, Xia, the Merman court, and the Zombie Alliance itself; R ch1650: the sea's lone and demonic cultivators are
+    the most numerous and the strongest), and the sea has two dens;
+  * the Heavenly Court's Demon Extermination List (诛魔榜, R ch700, ch710) makes it 25% stronger against barbarians.
 
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Lone Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 14, "cost": 60, "requiredTech": "Rank Two Cultivation", "attackSound": "gu-rank-2", "uniqueTo": "Barbarians"})
+**Lone Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 14, "cost": 60, "requiredTech": "Rank Two Cultivation", "attackSound": "gu-rank-2", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A lone Gu Master (\u6563\u4fee) with no clan behind him: he lives by his own Gu and his wits, and robs as readily as he trades. Strength 14, 20% stronger when defending. Barbarian camps send him out once every clan knows Rank Two Cultivation; the Wandering Gu Master event may bring one to your door."}]})
 
 ```
 [+20]% Strength <when defending>
 ```
 
-**Demonic Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 22, "cost": 95, "requiredTech": "Rank Three Cultivation", "attackSound": "gu-rank-3", "uniqueTo": "Barbarians"})
+**Demonic Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 22, "cost": 95, "requiredTech": "Rank Three Cultivation", "attackSound": "gu-rank-3", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A demonic-path Gu Master (\u9b54\u9053\u86ca\u5e08): he takes what he wants and kills for Gu. Strength 22, 20% stronger when attacking, heals 15 HP per kill. He raids from Demonic Dens and in the Demonic Raid event."}]})
 
 ```
 [+20]% Strength <when attacking>
 Heals [15] damage if it kills a unit
 ```
 
-**Demonic Elder** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "uniqueTo": "Barbarians"})
+**Demonic Elder** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A demonic elder (\u9b54\u9053\u957f\u8001) of rank five, who leads the raids. Strength 44, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."}]})
 
 ```
 [+20]% Strength <when attacking>
@@ -4259,7 +4295,7 @@ Heals [20] damage if it kills a unit
 [-10]% Strength for enemy [Military] units in adjacent [All] tiles
 ```
 
-**Demonic Den** (TileImprovements.json; {"terrainsCanBeBuiltOn": ["Land"]})
+**Demonic Den** (TileImprovements.json; {"terrainsCanBeBuiltOn": ["Land"], "civilopediaText": [{"text": "A den of demonic Gu Masters (\u9b54\u7a9f). Raiders keep coming out of it until someone clears it, in every region of the world."}]})
 
 ```
 Unpillagable
@@ -4323,4 +4359,105 @@ Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [20]
 Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>
 Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>
 Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Quick] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Standard] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Epic] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Marathon] game speed>
+```
+
+**Battle Tribe** (CityStateTypes.json; {"color": [200, 60, 40], "friendBonusUniques": ["Provides military units every \u2248[20] turns"], "allyBonusUniques": ["Provides military units every \u2248[17] turns"]})
+
+```
+
+```
+
+**Man Tribe** (Nations.json; {"cityStateType": "Battle Tribe", "personality": "Hostile", "outerColor": [150, 40, 20], "innerColor": [255, 200, 120], "cities": ["Red Flame Valley"], "civilopediaText": [{"text": "The Man Tribe (\u86ee\u5bb6), a large Northern Plains tribe that holds Red Flame Valley, a shelter from the great blizzards. It has swallowed many small tribes and bullies the rest. A Battle Tribe: its friends receive Gu Masters."}]})
+
+```
+
+```
+
+**Ge Tribe** (Nations.json; {"cityStateType": "Mortal Villages", "personality": "Friendly", "outerColor": [90, 110, 60], "innerColor": [235, 240, 200], "cities": ["Ge Tribe Camp"], "civilopediaText": [{"text": "The Ge Tribe (\u845b\u5bb6), a poor, small Northern Plains tribe, too small to enter the Imperial Court contest on its own. It looks for a strong friend."}]})
+
+```
+
+```
+
+**Lan Clan** (Nations.json; {"cityStateType": "Refiner Tribe", "outerColor": [70, 120, 150], "innerColor": [230, 245, 250], "cities": ["Zhou Xi Oasis"], "civilopediaText": [{"text": "The Lan Clan (\u5170\u5bb6) rules Zhou Xi Oasis in the Western Desert and forbids anyone to fly over it."}]})
+
+```
+
+```
+
+**Mo Clan** (Nations.json; {"cityStateType": "Battle Tribe", "outerColor": [110, 80, 50], "innerColor": [240, 220, 170], "cities": ["Sand Wolf City"], "civilopediaText": [{"text": "The Mo Clan (\u83ab\u5bb6), a super force of the Western Desert based at Sand Wolf City. A Battle Tribe: its friends receive Gu Masters."}]})
+
+```
+
+```
+
+**Xiao Clan** (Nations.json; {"cityStateType": "Merchant Clan", "outerColor": [170, 120, 30], "innerColor": [255, 245, 210], "cities": ["Silk Corridor"], "civilopediaText": [{"text": "The Xiao Clan (\u8427\u5bb6), the richest traders of the Western Desert, whose caravans run the Silk Corridor."}]})
+
+```
+
+```
+
+**Song Clan** (Nations.json; {"cityStateType": "Immortal Sect", "outerColor": [20, 60, 120], "innerColor": [210, 230, 255], "cities": ["Heavy Water Blessed Land"], "civilopediaText": [{"text": "The Song Clan (\u5b8b\u5bb6), one of the Eastern Sea's ten great righteous houses, light and water path, seated in Heavy Water Blessed Land."}]})
+
+```
+Start bias [Coast]
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>
+```
+
+**Xia Clan** (Nations.json; {"cityStateType": "Battle Tribe", "outerColor": [40, 110, 110], "innerColor": [220, 250, 240], "cities": ["Xia Harbour"], "civilopediaText": [{"text": "The Xia Clan (\u590f\u5bb6), the weakest water-path clan on the far edge of the Eastern Sea, always at odds with its neighbours and with the Merman Imperial Court. A Battle Tribe: its friends receive Gu Masters."}]})
+
+```
+Start bias [Coast]
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>
+```
+
+**Immortal Crane Sect** (Nations.json; {"cityStateType": "Immortal Sect", "outerColor": [230, 230, 235], "innerColor": [170, 30, 40], "cities": ["Fei He Mountain"], "civilopediaText": [{"text": "The Immortal Crane Sect (\u4ed9\u9e64\u95e8), one of the ten great ancient sects, seated on Fei He Mountain. The Gu Yue founder came from it, and it hunts demonic Gu Masters."}]})
+
+```
+
+```
+
+**Merman Imperial Court** (Nations.json; {"cityStateType": "Merchant Clan", "outerColor": [30, 90, 130], "innerColor": [200, 240, 250], "cities": ["Merman Court"], "civilopediaText": [{"text": "The merfolk's court in the Eastern Sea (\u9c9b\u4eba\u738b\u5ead)."}]})
+
+```
+Start bias [Coast]
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>
+```
+
+**Zombie Alliance** (Nations.json; {"leaderName": "Zombie Alliance Elder", "adjective": ["Zombie Alliance"], "personality": "Zombie Alliance Temperament", "outerColor": [60, 80, 70], "innerColor": [180, 220, 190], "cities": ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"], "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.", "declaringWar": "Your immortals will keep. Ours never age.", "defeated": "Dead again. It was bound to happen.", "civilopediaText": [{"text": "The Zombie Alliance (\u50f5\u76df): immortal zombies with a righteous face and a secret master. Its immortals never age but their blessed lands make no essence (plunder and trade must feed them), and its fallen rise again as zombies."}]})
+
+```
+Starts with [Righteous Path] adopted
+Start bias [Coast]
+Free [Immortal Zombie] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]} {non-[Immortal Zombie]}] unit>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>
+Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>
+A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>
+```
+
+**Heavenly Court** (Nations.json; {"leaderName": "Duke Long", "adjective": ["Heavenly Court"], "personality": "Heavenly Court Temperament", "outerColor": [235, 225, 180], "innerColor": [70, 60, 140], "cities": ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"], "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.", "declaringWar": "You have strayed from your fate. The Court will set it right.", "defeated": "Fate itself was broken here. Remember who broke it.", "civilopediaText": [{"text": "The Heavenly Court (\u5929\u5ead), founded by Primordial Origin: it guards and repairs Fate Gu and rules the Central Continent through the ancient sects. Only it builds Fate Gu."}]})
+
+```
+Starts with [Righteous Path] adopted
+[+15]% Strength <vs [Immortal Zombie] units>
+Start bias [Hill]
+[+25]% Strength <vs [Barbarian] units>
 ```

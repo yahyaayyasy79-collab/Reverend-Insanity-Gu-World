@@ -118,6 +118,10 @@
     "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [20]> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>",
     "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>",
     "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>",
-    "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>"
+    "Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>",
+    "A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Quick] game speed>",
+    "A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Standard] game speed>",
+    "A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Epic] game speed>",
+    "A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Marathon] game speed>"
   ]
 }

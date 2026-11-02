@@ -242,6 +242,10 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 90, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Quick] game speed>` | 27, 1, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Standard] game speed>` | 40, 1, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Epic] game speed>` | 60, 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Marathon] game speed>` | 120, 3, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 
 ### Difficulties.json
 
@@ -2071,13 +2075,30 @@ The path promotions and their statuses are listed under 'Paths' below.
 |---|---|---|---|
 | Bai Clan | `[+15]% Strength <vs [Barbarians] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+15]% Strength <vs [Immortal Zombie] units>` | +15 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+25]% Strength <vs [Barbarian] units>` | +25 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>` | 1, 7, 1 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>` | 1, 10, 1 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>` | 1, 15, 1 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>` | 1, 30, 1 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
 | Fang Clan | `[+50]% Production when constructing [Gu House] units [in all cities]` | +50 | tools/gen_ruleset.py `Nations` |
 | Fang Clan | `[+10]% [Science] [in all cities]` | +10 | tools/gen_ruleset.py `Nations` |
+| Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
+| Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
+| Song Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Song Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Song Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
+| Song Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
+| Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
+| Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
 
 ### CityStateTypes.json
 
@@ -2095,6 +2116,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Merchant Clan (friendBonusUniques) | `[+2 Gold] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
 | Merchant Clan (allyBonusUniques) | `[+3 Gold] [in capital]` | +3 | tools/gen_ruleset.py `Nations` |
 | Merchant Clan (allyBonusUniques) | `[+10]% [Gold]` | +10 | tools/gen_ruleset.py `Nations` |
+| Battle Tribe (friendBonusUniques) | `Provides military units every ≈[20] turns` | 20 | tools/gen_ruleset.py `Nations` |
+| Battle Tribe (allyBonusUniques) | `Provides military units every ≈[17] turns` | 17 | tools/gen_ruleset.py `Nations` |
 
 ### Personalities.json
 
@@ -2136,27 +2159,28 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Xiong Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court Temperament | science | 8 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | aggressive | 4 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | declareWar | 4 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | aggressive | 5 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | declareWar | 5 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court Temperament | diplomacy | 6 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court Temperament | loyal | 7 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court Temperament | `[+500]% weight to [Fate Gu] for AI decisions` | +500 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | declareWar | 6 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | expansion | 6 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | military | 8 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | aggressive | 8 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | declareWar | 8 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | expansion | 7 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Temperament | loyal | 5 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance Temperament | gold | 7 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | aggressive | 5 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | declareWar | 5 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | aggressive | 7 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | declareWar | 7 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance Temperament | commerce | 7 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance Temperament | loyal | 3 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | production | 8 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
-| Fang Temperament | military | 5 | tools/gen_ruleset.py `Nations` |
-| Fang Temperament | declareWar | 4 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | declareWar | 7 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | diplomacy | 5 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | `[+200]% weight to [Gu House Formation] for AI decisions` | +200 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
@@ -2403,6 +2427,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2186 numbers listed.
+2210 numbers listed.
 
 <!-- inventory:end -->

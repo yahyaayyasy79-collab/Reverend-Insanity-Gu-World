@@ -177,7 +177,8 @@
     "uniques": [
       "Starts with [Righteous Path] adopted",
       "[+15]% Strength <vs [Immortal Zombie] units>",
-      "Start bias [Hill]"
+      "Start bias [Hill]",
+      "[+25]% Strength <vs [Barbarian] units>"
     ],
     "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.",
     "declaringWar": "You have strayed from your fate. The Court will set it right.",
@@ -253,7 +254,11 @@
       "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>",
       "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>",
       "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>",
-      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>"
+      "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [30] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Marathon] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>"
     ],
     "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.",
     "declaringWar": "Your immortals will keep. Ours never age.",
@@ -450,11 +455,207 @@
       "Merman Court"
     ],
     "uniques": [
-      "Start bias [Coast]"
+      "Start bias [Coast]",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {
         "text": "The merfolk's court in the Eastern Sea (鲛人王庭)."
+      }
+    ]
+  },
+  {
+    "name": "Man Tribe",
+    "cityStateType": "Battle Tribe",
+    "personality": "Hostile",
+    "outerColor": [
+      150,
+      40,
+      20
+    ],
+    "innerColor": [
+      255,
+      200,
+      120
+    ],
+    "cities": [
+      "Red Flame Valley"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Man Tribe (蛮家), a large Northern Plains tribe that holds Red Flame Valley, a shelter from the great blizzards. It has swallowed many small tribes and bullies the rest. A Battle Tribe: its friends receive Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Ge Tribe",
+    "cityStateType": "Mortal Villages",
+    "personality": "Friendly",
+    "outerColor": [
+      90,
+      110,
+      60
+    ],
+    "innerColor": [
+      235,
+      240,
+      200
+    ],
+    "cities": [
+      "Ge Tribe Camp"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Ge Tribe (葛家), a poor, small Northern Plains tribe, too small to enter the Imperial Court contest on its own. It looks for a strong friend."
+      }
+    ]
+  },
+  {
+    "name": "Lan Clan",
+    "cityStateType": "Refiner Tribe",
+    "outerColor": [
+      70,
+      120,
+      150
+    ],
+    "innerColor": [
+      230,
+      245,
+      250
+    ],
+    "cities": [
+      "Zhou Xi Oasis"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Lan Clan (兰家) rules Zhou Xi Oasis in the Western Desert and forbids anyone to fly over it."
+      }
+    ]
+  },
+  {
+    "name": "Mo Clan",
+    "cityStateType": "Battle Tribe",
+    "outerColor": [
+      110,
+      80,
+      50
+    ],
+    "innerColor": [
+      240,
+      220,
+      170
+    ],
+    "cities": [
+      "Sand Wolf City"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Mo Clan (莫家), a super force of the Western Desert based at Sand Wolf City. A Battle Tribe: its friends receive Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Xiao Clan",
+    "cityStateType": "Merchant Clan",
+    "outerColor": [
+      170,
+      120,
+      30
+    ],
+    "innerColor": [
+      255,
+      245,
+      210
+    ],
+    "cities": [
+      "Silk Corridor"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Xiao Clan (萧家), the richest traders of the Western Desert, whose caravans run the Silk Corridor."
+      }
+    ]
+  },
+  {
+    "name": "Song Clan",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      20,
+      60,
+      120
+    ],
+    "innerColor": [
+      210,
+      230,
+      255
+    ],
+    "cities": [
+      "Heavy Water Blessed Land"
+    ],
+    "uniques": [
+      "Start bias [Coast]",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Song Clan (宋家), one of the Eastern Sea's ten great righteous houses, light and water path, seated in Heavy Water Blessed Land."
+      }
+    ]
+  },
+  {
+    "name": "Xia Clan",
+    "cityStateType": "Battle Tribe",
+    "outerColor": [
+      40,
+      110,
+      110
+    ],
+    "innerColor": [
+      220,
+      250,
+      240
+    ],
+    "cities": [
+      "Xia Harbour"
+    ],
+    "uniques": [
+      "Start bias [Coast]",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Xia Clan (夏家), the weakest water-path clan on the far edge of the Eastern Sea, always at odds with its neighbours and with the Merman Imperial Court. A Battle Tribe: its friends receive Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Immortal Crane Sect",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      230,
+      230,
+      235
+    ],
+    "innerColor": [
+      170,
+      30,
+      40
+    ],
+    "cities": [
+      "Fei He Mountain"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Immortal Crane Sect (仙鹤门), one of the ten great ancient sects, seated on Fei He Mountain. The Gu Yue founder came from it, and it hunts demonic Gu Masters."
       }
     ]
   },

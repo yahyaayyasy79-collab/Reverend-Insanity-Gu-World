@@ -139,6 +139,14 @@ rest of the list is what a player or the next session should know before trustin
     in the clan's own land. The harness now records where every Gu Master stood before each turn, so the next
     occurrence names the tile. If it happens in your game, reload the autosave: the AI's choices differ on a reload.
 
+21. **The arc majors never declare war on each other (Phase D, 2026-11-02).** Each sits alone behind its region's
+    walls. The AI declares war only with happiness above 0, 4 soldiers and one per city, and 12 population
+    [src DiplomacyAutomation.declareWar], and no unique can make a civ declare war.
+    * **What the regions get instead:** warlike temperaments, so the majors attack their minor clans; raids on every
+      minor clan; and the dens.
+    * **The Eastern Sea stays the calmest.** Its raiders spawn on small islands and die within a turn or two
+      (`docs/AUTOPLAY.md` "Phase D: regional conflict").
+
 ## Not yet seen in a real game
 
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,

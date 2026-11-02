@@ -422,6 +422,17 @@ def refiner_tribe():
     return g
 
 
+def battle_tribe():
+    """Phase D: a warlike tribe: two crossed spears over a round hide shield."""
+    g = G()
+    for a, b in (((14, 92), (82, 10)), ((86, 92), (18, 10))):
+        g.line([a, b], 5)
+        dx, dy = (b[0] - a[0]) / 10, (b[1] - a[1]) / 10
+        g.poly([(b[0] + dx * 1.4, b[1] + dy * 1.4), (b[0] - dy * 0.6, b[1] + dx * 0.6), (b[0] + dy * 0.6, b[1] - dx * 0.6)])
+    g.circ(50, 60, 27, 0); g.circ(50, 60, 24); g.circ(50, 60, 17, 0); g.circ(50, 60, 8)              # shield
+    return g
+
+
 def bai_clan():
     g = G()
     g.poly([(8, 88), (40, 20), (56, 50), (66, 36), (92, 88)])                           # mountain
@@ -768,6 +779,7 @@ ICONS2 = [
     ("CityStateIcons", "Merchant Clan", merchant_clan, "white"),
     ("CityStateIcons", "Mortal Villages", mortal_villages, "white"),
     ("CityStateIcons", "Refiner Tribe", refiner_tribe, "white"),
+    ("CityStateIcons", "Battle Tribe", battle_tribe, "white"),
     ("NationIcons", "Bai Clan", bai_clan, "white"),
     ("NationIcons", "Xiong Clan", xiong_clan, "white"),
     ("NationIcons", "Wu Clan", wu_clan, "white"),

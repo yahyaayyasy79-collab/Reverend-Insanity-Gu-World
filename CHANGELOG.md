@@ -750,3 +750,22 @@ minor clans plus wild factions.
   Master* (from T30), you hire him, send him away, or rob him. Both have per-speed chances and AI weights.
 * Designed art for all of it: 3D map sprites, portraits, rank strikes, unit icons and the den icon. Civilopedia
   EN/ID, Indonesian names, and the LORE_MAPPING section "Phase D: regional conflict".
+
+## Phase D — regional conflict, part 2: minor clans in every region (2026-11-02)
+
+* **8 canon minor clans (city-states).** Every name was checked in the raw text.
+  * North: the Man Tribe (hostile, swallows small tribes) and the Ge Tribe (friendly, poor).
+  * West: the Lan, Mo and Xiao clans.
+  * Eastern Sea: the Song and Xia clans.
+  * Centre: the Immortal Crane Sect.
+* **Lang Ya Sect moved to the Northern Plains.** The raw text places it there; C5c had put it in the centre. Its blessed
+  land moved north with it. The Five Regions map now has 23 starts.
+* **Battle Tribe, a new city-state type.** Its friends get a Gu Master every ~20 turns, its ally every ~17.
+* **Conflict.** In autoplay the four arc majors never went to war, so three changes:
+  * warlike temperaments for Huang Jin, Fang, the Zombie Alliance and the Heavenly Court;
+  * demonic Gu Masters raid every minor clan from T40, four times as often on the Eastern Sea, which also gets a
+    second den;
+  * the Heavenly Court's Demon Extermination List: +25% against barbarians.
+
+  Results are in docs/AUTOPLAY.md, and KNOWN_ISSUES 21 explains why the majors still don't fight each other.
+* **Autoplay harness** records the city-states each major fights and the raiders near each clan's cities.

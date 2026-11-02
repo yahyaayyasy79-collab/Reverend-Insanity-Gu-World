@@ -76,7 +76,10 @@ SECTIONS = {
         "Units.json": ["Lone Gu Master", "Demonic Gu Master", "Demonic Elder"],
         "TileImprovements.json": ["Demonic Den"],
         "Events.json": ["Demonic Raid", "Wandering Gu Master"],
-        "Globals": ["[Demonic Raid]", "[Wandering Gu Master]"]},
+        "Globals": ["[Demonic Raid]", "[Wandering Gu Master]", "[Demonic Gu Master] rebels"],
+        "CityStateTypes.json": ["Battle Tribe"],
+        "Nations.json": ["Man Tribe", "Ge Tribe", "Lan Clan", "Mo Clan", "Xiao Clan", "Song Clan", "Xia Clan",
+                         "Immortal Crane Sect", "Merman Imperial Court", "Zombie Alliance", "Heavenly Court"]},
 }
 
 

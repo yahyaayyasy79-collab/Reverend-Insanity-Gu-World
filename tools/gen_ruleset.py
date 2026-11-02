@@ -494,7 +494,10 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     lambda m: f"Triggers a [Demonic Raid] event <upon turn start> <after turn number [{turn_gate(60, m)}]> "
               f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
     lambda m: f"Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
-              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>")})
+              f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    # demonic Gu Masters prey on the small clans of every region (faction research: R ch443, ch704, ch1650)
+    lambda m: f"A [Demonic Gu Master] rebels <upon turn start> <after turn number [{turn_gate(40, m)}]> "
+              f"<every [{max(1, round(m))}] turns> <with [1]% chance> <for [City-States] Civilizations>")})
 
 # ---------------- Eras (iconRGB = essence colours: green copper / white silver / yellow gold, verified) ----------------
 dump("Eras.json", [
@@ -1445,6 +1448,9 @@ def emblem(gu, extra=""):
             f"<in cities with a [Gu Academy]>" + (f" {extra}" if extra else ""))
 
 
+EAST_SEA_RAIDS = per_speed(  # Phase D: the Eastern Sea has the most and strongest lone and demonic cultivators (R ch1650)
+    lambda m: f"A [Demonic Gu Master] rebels <upon turn start> <after turn number [{turn_gate(40, m)}]> "
+              f"<every [{max(1, round(m))}] turns> <with [4]% chance>")
 dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
            ["Gu Yue Village", "Alliance Slope", "Spear Bamboo Grove", "Stone Forest"],
@@ -1468,7 +1474,9 @@ dump("Nations.json", [
     # righteous face, R V4c242)
     nation(HC, "Duke Long", "Heavenly Court Temperament", [235, 225, 180], [70, 60, 140],
            ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"],
-           [RIGHTEOUS_START, f"[+15]% Strength <vs [{ZOMBIE}] units>", "Start bias [Hill]"]),
+           [RIGHTEOUS_START, f"[+15]% Strength <vs [{ZOMBIE}] units>", "Start bias [Hill]",
+            # Phase D: the Demon Extermination List (诛魔榜, R ch700, ch710)
+            "[+25]% Strength <vs [Barbarian] units>"]),
     nation(HJ, "Huang Jin Patriarch", "Huang Jin Temperament", [200, 160, 40], [90, 40, 20],
            ["Imperial Court", "Golden Tent", "Northern Plains Camp"],
            [RIGHTEOUS_START, "[+15]% Strength <when defending>", "Start bias [Grassland]"]),
@@ -1477,7 +1485,8 @@ dump("Nations.json", [
            [RIGHTEOUS_START, "Start bias [Coast]",
             f"Free [{ZOMBIE}] appears <upon losing a [{{post-[Rank Five era]}} {{non-[Advancing]}} {{non-[{ZOMBIE}]}}] unit>"]
            + per_speed(lambda m: f"Instantly provides [1] [{LIFESPAN}] <upon turn start> <every [{turns(10, m)}] turns> "
-                                 f"<for every [1] [[post-[Rank Five era]] Units]>")),
+                                 f"<for every [1] [[post-[Rank Five era]] Units]>")
+           + EAST_SEA_RAIDS),
     nation(FANG, "Fang Clan Head", "Fang Temperament", [150, 110, 60], [240, 230, 200],
            ["Fang Fortress", "Sand Gate", "Dune Workshop"],
            [RIGHTEOUS_START, "[+50]% Production when constructing [Gu House] units [in all cities]",
@@ -1497,7 +1506,24 @@ dump("Nations.json", [
     {"name": "Combat Immortal Sect", "cityStateType": "Immortal Sect", "outerColor": [140, 30, 30],
      "innerColor": [240, 220, 200], "cities": ["Combat Immortal Peak"]},
     {"name": "Merman Imperial Court", "cityStateType": "Merchant Clan", "outerColor": [30, 90, 130],
-     "innerColor": [200, 240, 250], "cities": ["Merman Court"], "uniques": ["Start bias [Coast]"]},
+     "innerColor": [200, 240, 250], "cities": ["Merman Court"], "uniques": ["Start bias [Coast]"] + EAST_SEA_RAIDS},
+    # Phase D (the user: conflict in every region; faction research R, see LORE_MAPPING "Phase D: regional conflict")
+    {"name": "Man Tribe", "cityStateType": "Battle Tribe", "personality": "Hostile", "outerColor": [150, 40, 20],
+     "innerColor": [255, 200, 120], "cities": ["Red Flame Valley"]},
+    {"name": "Ge Tribe", "cityStateType": "Mortal Villages", "personality": "Friendly", "outerColor": [90, 110, 60],
+     "innerColor": [235, 240, 200], "cities": ["Ge Tribe Camp"]},
+    {"name": "Lan Clan", "cityStateType": "Refiner Tribe", "outerColor": [70, 120, 150], "innerColor": [230, 245, 250],
+     "cities": ["Zhou Xi Oasis"]},
+    {"name": "Mo Clan", "cityStateType": "Battle Tribe", "outerColor": [110, 80, 50], "innerColor": [240, 220, 170],
+     "cities": ["Sand Wolf City"]},
+    {"name": "Xiao Clan", "cityStateType": "Merchant Clan", "outerColor": [170, 120, 30], "innerColor": [255, 245, 210],
+     "cities": ["Silk Corridor"]},
+    {"name": "Song Clan", "cityStateType": "Immortal Sect", "outerColor": [20, 60, 120], "innerColor": [210, 230, 255],
+     "cities": ["Heavy Water Blessed Land"], "uniques": ["Start bias [Coast]"] + EAST_SEA_RAIDS},
+    {"name": "Xia Clan", "cityStateType": "Battle Tribe", "outerColor": [40, 110, 110], "innerColor": [220, 250, 240],
+     "cities": ["Xia Harbour"], "uniques": ["Start bias [Coast]"] + EAST_SEA_RAIDS},
+    {"name": "Immortal Crane Sect", "cityStateType": "Immortal Sect", "outerColor": [230, 230, 235],
+     "innerColor": [170, 30, 40], "cities": ["Fei He Mountain"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},
@@ -1515,6 +1541,9 @@ dump("CityStateTypes.json", [
     {"name": "Merchant Clan", "color": [255, 216, 0], "friendBonusUniques": ["[+2 Gold] [in capital]"],
      "allyBonusUniques": ["[+3 Gold] [in capital]", "[+10]% [Gold]",
                           "All newly-trained [Gu Master] units [in all cities] receive the [Black Boar Gu] promotion <when above [0] [Wild Boar]>"]},
+    # Phase D: warlike tribes and clans send Gu Masters to their friends (Vanilla's Militaristic numbers)
+    {"name": "Battle Tribe", "color": [200, 60, 40], "friendBonusUniques": ["Provides military units every ≈[20] turns"],
+     "allyBonusUniques": ["Provides military units every ≈[17] turns"]},
 ])
 dump("Personalities.json", [
     # C4 (conflicts research M6): Gu Yue the declining overlord that brokers alliances and lives off caravans; Bai the
@@ -1533,12 +1562,16 @@ dump("Personalities.json", [
      "preferredVictoryType": "Southern Border Supremacy",
      "priorities": {"Strength Path": 10, "Righteous Path": 3},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
-    {"name": "Heavenly Court Temperament", "science": 8, "military": 6, "aggressive": 4, "declareWar": 4, "diplomacy": 6,
+    # Phase D (the user: no conflict outside the south; autoplay 4 x 200: the four arc majors never went to war):
+    # the Northern Plains tribes swallow small tribes (R ch443), the desert's clans gang up on rivals (R ch1775),
+    # the Eastern Sea's lone and demonic immortals are the strongest (R ch1650); the Court hunts demons
+    {"name": "Heavenly Court Temperament", "science": 8, "military": 7, "aggressive": 5, "declareWar": 5, "diplomacy": 6,
      "loyal": 7, "uniques": ["[+500]% weight to [Fate Gu] for AI decisions"]},
-    {"name": "Huang Jin Temperament", "military": 7, "aggressive": 6, "declareWar": 6, "expansion": 6, "loyal": 5},
-    {"name": "Zombie Alliance Temperament", "gold": 7, "military": 6, "aggressive": 5, "declareWar": 5, "commerce": 7,
+    {"name": "Huang Jin Temperament", "military": 8, "aggressive": 8, "declareWar": 8, "expansion": 7, "loyal": 5},
+    {"name": "Zombie Alliance Temperament", "gold": 7, "military": 7, "aggressive": 7, "declareWar": 7, "commerce": 7,
      "loyal": 3},
-    {"name": "Fang Temperament", "production": 8, "science": 6, "military": 5, "declareWar": 4, "diplomacy": 5,
+    {"name": "Fang Temperament", "production": 8, "science": 6, "military": 7, "aggressive": 6, "declareWar": 7,
+     "diplomacy": 5,
      "uniques": ["[+200]% weight to [Gu House Formation] for AI decisions"]},
     {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
      "declareWar": 6, "diplomacy": 7,

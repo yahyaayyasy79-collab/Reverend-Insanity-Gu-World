@@ -141,13 +141,17 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     "Wu Clan": ("south", 36, 34), "Hairy Man Tribe": ("south", 16, 35), "Foothill Villages": ("south", 31, 37),
     "Jia Clan": ("south", 41, 37), "Huang Jin Family": ("north", 30, 3), "Zombie Alliance": ("east", 52, 20),
     "Merman Imperial Court": ("east", 55, 11), "Fang Clan": ("west", 6, 20), "Heavenly Court": ("central", 30, 18),
-    "Lang Ya Sect": ("central", 22, 15), "Spirit Affinity House": ("central", 37, 15),
-    "Combat Immortal Sect": ("central", 30, 24)}
+    "Lang Ya Sect": ("north", 46, 8), "Spirit Affinity House": ("central", 37, 15),
+    "Combat Immortal Sect": ("central", 30, 24),
+    # Phase D: minor clans in every region (faction research R; Lang Ya is a Northern Plains sect, R ch461/464)
+    "Man Tribe": ("north", 20, 8), "Ge Tribe": ("north", 11, 6), "Lan Clan": ("west", 5, 11),
+    "Xiao Clan": ("west", 12, 15), "Mo Clan": ("west", 6, 29), "Song Clan": ("east", 50, 29),
+    "Xia Clan": ("east", 57, 24), "Immortal Crane Sect": ("central", 21, 16)}
 FIVE_REALMS = {  # realm: (region, column, row)
     "Hu Immortal Blessed Land": ("south", 20, 31), "Dang Hun Mountain": ("south", 19, 33), "Tian Ti Mountain": ("south", 33, 30),
     "Luo Po Valley": ("south", 44, 33), "Door of Life and Death": ("south", 12, 37), "Imperial Court Blessed Land": ("north", 24, 4),
     "Crazed Demon Cave": ("north", 38, 2), "Book Mountain": ("north", 16, 5), "Reverse Flow River": ("north", 44, 5),
-    "Dragon Whale Paradise": ("east", 56, 28), "Lang Ya Blessed Land": ("central", 25, 21), "River of Time": ("central", 35, 21)}
+    "Dragon Whale Paradise": ("east", 56, 28), "Lang Ya Blessed Land": ("north", 40, 9), "River of Time": ("central", 35, 21)}
 
 
 # Each region's riches beyond the start rings (autoplay 6 × 400: with nothing but the start ring's spring, 42 of 48

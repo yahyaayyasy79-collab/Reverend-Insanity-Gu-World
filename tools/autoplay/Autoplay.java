@@ -216,6 +216,7 @@ public class Autoplay {
                                             List<String> strategic, Set<String> fusions, List<String> buildings) {
         Map<Integer, UnitState> now = new HashMap<>();
         int barbUnits = 0;
+        Map<String, Integer> barbByName = new TreeMap<>();   // Phase D: lone and demonic Gu Masters
         // strategic deposits per owner: [owned tiles, improved and not pillaged], plus unowned ones on the map
         Map<String, Map<String, int[]>> deposits = new HashMap<>();
         Map<String, Integer> pillaged = new HashMap<>();
@@ -232,8 +233,15 @@ public class Autoplay {
         }
         Map<String, Object> unowned = new LinkedHashMap<>();
         for (Map.Entry<String, int[]> e : deposits.getOrDefault("", Map.of()).entrySet()) unowned.put(e.getKey(), e.getValue()[0]);
+        List<MapUnit> barbList = new ArrayList<>();   // Phase D: raiders near each clan's cities
+        for (Civilization b : gi.getCivilizations())
+            if (b.isBarbarian()) barbList.addAll(kotlin.sequences.SequencesKt.toList(b.getUnits().getCivUnits()));
         for (Civilization c : gi.getCivilizations()) {
-            if (c.isBarbarian()) { barbUnits = c.getUnits().getCivUnitsSize(); continue; }
+            if (c.isBarbarian()) {
+                barbUnits = c.getUnits().getCivUnitsSize();
+                for (MapUnit u : kotlin.sequences.SequencesKt.toList(c.getUnits().getCivUnits())) barbByName.merge(u.getName(), 1, Integer::sum);
+                continue;
+            }
             if (c.isSpectator()) continue;
             boolean major = c.isMajorCiv();
             Map<String, Object> rec = new LinkedHashMap<>();
@@ -251,6 +259,11 @@ public class Autoplay {
                 if (city.getFoundingCivObject() != null && city.getFoundingCivObject() != c) captured++;
             }
             rec.put("cities", c.getCities().size()); rec.put("pop", pop); rec.put("capturedCities", captured);
+            int barbNear = 0;
+            for (MapUnit u : barbList)
+                for (City city : c.getCities())
+                    if (u.getCurrentTile().aerialDistanceTo(city.getCenterTile()) <= 4) { barbNear++; break; }
+            rec.put("barbNear", barbNear);
             rec.put("capitalPop", capitalPop); rec.put("popOneCities", popOneCities);
             rec.put("pillagedTiles", pillaged.getOrDefault(c.getCivName(), 0));
             if (!major) { out.println(obj(rec)); continue; }
@@ -326,11 +339,12 @@ public class Autoplay {
             rec.put("guHeld", held); rec.put("guHeldInDeficit", heldShort); rec.put("guLostOther", otherLoss);
 
             int trades = 0, resOut = 0, resIn = 0, gptOut = 0, gptIn = 0;
-            List<String> wars = new ArrayList<>(), allies = new ArrayList<>();
+            List<String> wars = new ArrayList<>(), allies = new ArrayList<>(), csWars = new ArrayList<>();
             for (Map.Entry<String, DiplomacyManager> e : c.getDiplomacy().entrySet()) {
                 DiplomacyManager dm = e.getValue();
                 Civilization other = dm.getOtherCiv();
                 if (other.isMajorCiv() && c.isAtWarWith(other)) wars.add(other.getCivName());
+                if (other.isCityState() && c.isAtWarWith(other)) csWars.add(other.getCivName());
                 if (other.isCityState() && other.getAllyCiv() == c)
                     allies.add(other.getCivName());
                 for (Trade t : dm.getTrades()) {
@@ -348,12 +362,12 @@ public class Autoplay {
                 }
             }
             rec.put("trades", trades); rec.put("resOut", resOut); rec.put("resIn", resIn);
-            rec.put("gptOut", gptOut); rec.put("gptIn", gptIn); rec.put("wars", wars); rec.put("csAllies", allies);
+            rec.put("gptOut", gptOut); rec.put("gptIn", gptIn); rec.put("wars", wars); rec.put("csWars", csWars); rec.put("csAllies", allies);
             out.println(obj(rec));
         }
-        final int bu = barbUnits; final int turn = gi.getTurns();
+        final int bu = barbUnits; final int turn = gi.getTurns(); final Map<String, Integer> barbByNameF = barbByName;
         out.println(obj(new LinkedHashMap<String, Object>() {{ put("event", "barbarians"); put("turn", turn); put("units", bu);
-            put("unownedDeposits", unowned); }}));
+            put("byName", barbByNameF); put("unownedDeposits", unowned); }}));
         return now;
     }
 }
