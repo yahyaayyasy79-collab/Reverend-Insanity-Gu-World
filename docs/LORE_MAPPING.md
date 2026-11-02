@@ -1323,7 +1323,7 @@ Events). What changed against the plan, and why:
 
 Exact uniques (written by tools/lore_blocks.py from jsons/; Earth Qi, Human Qi and the essence share the Heaven Qi lines):
 
-**Rank Five Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "civilopediaText": [{"text": "A rank-five Gu Master (\u4e94\u8f6c): the strongest a mortal gets. It cannot be upgraded with stones; it can only ascend, through the Ascension promotion, and the ascension may kill it."}]})
+**Rank Five Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 29, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "civilopediaText": [{"text": "A rank-five Gu Master (\u4e94\u8f6c): the strongest a mortal gets. It cannot be upgraded with stones; it can only ascend, through the Ascension promotion, and the ascension may kill it."}]})
 
 ```
 [+225]% maintenance costs
@@ -1349,7 +1349,7 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 ```
 
-**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 36, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
 
 ```
 [+300]% maintenance costs
@@ -3010,7 +3010,7 @@ Instantly provides [3] [Human Qi] <upon turn start>
 [+300]% weight to this choice for AI decisions
 ```
 
-**Rank Seven Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 85, "cost": 330, "requiredTech": "Red Date Essence", "attackSound": "gu-rank-7", "civilopediaText": [{"text": "A rank-seven Gu Immortal (\u4e03\u8f6c\u86ca\u4ed9). Its blessed land makes red date essence; with more than nine of it in store it fights harder."}]})
+**Rank Seven Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 51, "cost": 330, "requiredTech": "Red Date Essence", "attackSound": "gu-rank-7", "civilopediaText": [{"text": "A rank-seven Gu Immortal (\u4e03\u8f6c\u86ca\u4ed9). Its blessed land makes red date essence; with more than nine of it in store it fights harder."}]})
 
 ```
 [+350]% maintenance costs
@@ -3048,7 +3048,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 ```
 
-**Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 115, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
+**Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 69, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
 
 ```
 [+400]% maintenance costs
@@ -3255,7 +3255,7 @@ Unbuildable
 Cannot be purchased
 ```
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "gu-rank-9", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 168, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "gu-rank-9", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 168; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3451,7 +3451,7 @@ Never destroyed when the city is captured
 [+300]% weight to this choice for AI decisions
 ```
 
-**Immortal Zombie** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "An immortal turned zombie (\u4ed9\u50f5): no ageing, a dead aperture, no healing except by pillage. When the Zombie Alliance loses an immortal, one rises. Weaker while Fate Gu stands."}]})
+**Immortal Zombie** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 42, "cost": 300, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "An immortal turned zombie (\u4ed9\u50f5): no ageing, a dead aperture, no healing except by pillage. When the Zombie Alliance loses an immortal, one rises. Weaker while Fate Gu stands."}]})
 
 ```
 Unbuildable
@@ -3596,7 +3596,7 @@ outside the world is the rank-nine trial (R V6/280).
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "gu-rank-9", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 168, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "gu-rank-9", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 168; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3762,7 +3762,7 @@ Triggers a [Venerable's Shadow] event <upon turn start> <if [Venerable Ascension
 Until now dao marks (道痕) were only a hidden line on each path's Master (MOD_SPEC_2 #4: +5% strength per immortal Gu
 of its own path, −5% per immortal Gu of a strongly clashing path). They stay, and dao marks become visible on the unit:
 
-* **Dao Marks I–V**, five promotion tiers that replace one another: +5%, +10%, +15%, +20% (heal +10), +30% (heal +15).
+* **Dao Marks I–V**, five promotion tiers that replace one another: +10%, +20%, +30%, +40% (heal +10), +55% (heal +15) since the Phase D power rebuild (were +5% to +30%).
   Unciv draws I–III as stars on one icon; IV and V have their own.
 * **Growth:** a path's Master of rank three or more holds the **Dao Comprehension** status (20 turns on Standard);
   when it runs out the marks grow one tier (E7). An immortal also takes a tier from every immortal it kills (absorbing
@@ -3782,48 +3782,48 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; every non-legacy Gu 
 Comment [When it runs out, the unit's dao marks grow by one tier]
 ```
 
-**Dao Marks I** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier I: +5% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
-
-```
-[+5]% Strength
-Play [dao-1] sound <upon damaging a [Military] unit> <when attacking>
-```
-
-**Dao Marks II** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier II: +10% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks I** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier I: +10% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
 [+10]% Strength
+Play [dao-1] sound <upon damaging a [Military] unit> <when attacking>
+```
+
+**Dao Marks II** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier II: +20% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+
+```
+[+20]% Strength
 [This Unit] loses the [Dao Marks I] promotion
 Play [dao-2] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
-**Dao Marks III** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier III: +15% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks III** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier III: +30% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
-[+15]% Strength
+[+30]% Strength
 [This Unit] loses the [Dao Marks II] promotion
 Play [dao-3] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
-**Dao Marks IV** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks IV** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier IV: +40% strength, heals 10 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
-[+20]% Strength
+[+40]% Strength
 [+10] HP when healing
 [This Unit] loses the [Dao Marks III] promotion
 Play [dao-4] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
-**Dao Marks V** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier V: +30% strength, heals 15 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
+**Dao Marks V** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier V: +55% strength, heals 15 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
 
 ```
-[+30]% Strength
+[+55]% Strength
 [+15] HP when healing
 [This Unit] loses the [Dao Marks IV] promotion
 Play [dao-5] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
-**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 36, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
 
 ```
 [+300]% maintenance costs
@@ -4274,20 +4274,20 @@ ataupun dengan gu master penyendiri maupun gu master iblis"; decided: minor clan
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Lone Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 14, "cost": 60, "requiredTech": "Rank Two Cultivation", "attackSound": "gu-rank-2", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A lone Gu Master (\u6563\u4fee) with no clan behind him: he lives by his own Gu and his wits, and robs as readily as he trades. Strength 14, 20% stronger when defending. Barbarian camps send him out once every clan knows Rank Two Cultivation; the Wandering Gu Master event may bring one to your door."}]})
+**Lone Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 11, "cost": 60, "requiredTech": "Rank Two Cultivation", "attackSound": "gu-rank-2", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A lone Gu Master (\u6563\u4fee) with no clan behind him: he lives by his own Gu and his wits, and robs as readily as he trades. Strength 11, 20% stronger when defending. Barbarian camps send him out once every clan knows Rank Two Cultivation; the Wandering Gu Master event may bring one to your door."}]})
 
 ```
 [+20]% Strength <when defending>
 ```
 
-**Demonic Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 22, "cost": 95, "requiredTech": "Rank Three Cultivation", "attackSound": "gu-rank-3", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A demonic-path Gu Master (\u9b54\u9053\u86ca\u5e08): he takes what he wants and kills for Gu. Strength 22, 20% stronger when attacking, heals 15 HP per kill. He raids from Demonic Dens and in the Demonic Raid event."}]})
+**Demonic Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 18, "cost": 95, "requiredTech": "Rank Three Cultivation", "attackSound": "gu-rank-3", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A demonic-path Gu Master (\u9b54\u9053\u86ca\u5e08): he takes what he wants and kills for Gu. Strength 18, 20% stronger when attacking, heals 15 HP per kill. He raids from Demonic Dens and in the Demonic Raid event."}]})
 
 ```
 [+20]% Strength <when attacking>
 Heals [15] damage if it kills a unit
 ```
 
-**Demonic Elder** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A demonic elder (\u9b54\u9053\u957f\u8001) of rank five, who leads the raids. Strength 44, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."}]})
+**Demonic Elder** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 35, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "A demonic elder (\u9b54\u9053\u957f\u8001) of rank five, who leads the raids. Strength 35, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."}]})
 
 ```
 [+20]% Strength <when attacking>
@@ -4462,6 +4462,7 @@ Start bias [Hill]
 [+25]% Strength <vs [Barbarian] units>
 ```
 
+
 ## Phase D: Gu catalog (the user, 2026-11-02)
 
 The user: "Gu yang cuma sampe rank 4 dan terbatas ... minimal buat gu itu sampe Rank 9" and "buat gu tambahan sekitaran
@@ -4487,4 +4488,24 @@ The user: "Gu yang cuma sampe rank 4 dan terbatas ... minimal buat gu itu sampe 
   centipede, gong, web...), its path's badge, and its rank shown as diamonds, or a halo with stars for immortals. Each
   also has its own refinement sound (`tools/art/sfx.py` `gu_awaken`): its voice (wings, clicks, chime, metal or flow),
   then its path's strike at its own pitch, with a dao bell for immortals.
+
+## Phase D: power rebuild (the user, 2026-11-02)
+
+The user: "kekuatan gu abadi maupun master tergantung gu, tapi kalo bertarung tanpa gu bisa tapi tetap bertarung tapi
+kekuatannya mengandalkan dao dan pemahaman"; decided: full rebuild, base about 40% lower.
+
+* **Body.** A cultivator's base strength (`tools/path_powers.py` `body_strength`) is 75% of the table value at ranks
+  1-2, 65% at ranks 3-5, 60% at ranks 6-9 and for the Venerable (168) and the Immortal Zombie.
+  `data/gu_masters.csv` keeps the full numbers.
+* **Rogues.** Lone and demonic Gu Masters keep 80%: they carry Gu but no clan's comprehension.
+* **Beasts** are unchanged: the wolf tides are meant to be dangerous.
+* **What carries the power now:**
+  * comprehension, the path tiers: +20/25/30/35%, +110% at the top;
+  * dao marks: +10/20/30/40/55%;
+  * Gu: the path Gu, the 113 catalog Gu (attack Gu +12% at rank one to +44% at rank nine) and the immortal Gu
+    wonders.
+
+  A cultivator without Gu still fights on its dao marks and comprehension.
+* **Tutorial.** The "Power Scaling" page says this and prints every number from the constants.
+* **Evidence.** In autoplay the AI is no weaker than before: docs/AUTOPLAY.md "Phase D: power rebuild".
 

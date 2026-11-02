@@ -277,8 +277,8 @@ DIVERT = toll("Divert the disaster", ["Only available <if [Divert Disaster] is c
 # a tier from every immortal it kills and from every heavenly tribulation it survives. Mortals hold at most tier II;
 # rank seven needs II, rank eight III, the Venerable IV (canon: a Venerable holds hundreds of thousands, R V6/119).
 DAO = ["Dao Marks I", "Dao Marks II", "Dao Marks III", "Dao Marks IV", "Dao Marks V"]
-DAO_EFFECTS = [["[+5]% Strength"], ["[+10]% Strength"], ["[+15]% Strength"], ["[+20]% Strength", "[+10] HP when healing"],
-               ["[+30]% Strength", "[+15] HP when healing"]]
+DAO_EFFECTS = [["[+10]% Strength"], ["[+20]% Strength"], ["[+30]% Strength"], ["[+40]% Strength", "[+10] HP when healing"],
+               ["[+55]% Strength", "[+15] HP when healing"]]  # Phase D power rebuild (was 5/10/15/20/30)
 IMMORTAL_ONLY = "<for [post-[Rank Five era]] units>"
 
 
@@ -581,6 +581,8 @@ def rank_attack_sound(name, fallback):
 
 for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     u["attackSound"] = rank_attack_sound(r["name"], r["attackSound"])  # R5 had one built-in sound per path
+    # Phase D power rebuild: the body alone is weaker; Gu, dao marks and comprehension carry the rest (path_powers.py)
+    u["strength"] = gen_paths.PP.body_strength(int(r["strength"]), RANK_WORD[r["name"].split()[1]])
     if r["uniqueTo"]:
         # C3 (the user's choice A.b): a signature clan keeps its path's look and attack effect through its own chain,
         # since Unciv picks attack animations by unit name or type only [src BattleTableHelpers.getAttackAnimationLocation]
@@ -655,7 +657,7 @@ dump("Units.json", [
                   "Can pass through impassable tiles",
                                           f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
-    {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore",
+    {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": gen_paths.PP.body_strength(70, 6), "cost": 300, "requiredTech": "Calamity Lore",
      "attackSound": sfx.rank_sound(6), "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
                                          "Can pass through impassable tiles",
                                          "[+100]% maintenance costs"]},
@@ -668,7 +670,8 @@ dump("Units.json", [
     # demonic Gu Masters prey on every region. Camps (Beast Lairs, Demonic Dens) spawn any military unit the barbarians
     # can build once every clan knows its tech [src BarbarianManager.chooseBarbarianUnit, updateBarbarianTech], and the
     # Demonic Raid and Wandering Gu Master events bring them to a clan's door
-    {"name": n, "unitType": "Gu Master", "movement": 2, "strength": st, "cost": cost, "requiredTech": tech,
+    {"name": n, "unitType": "Gu Master", "movement": 2, "strength": round(st * gen_paths.PP.ROGUE_SHARE), "cost": cost,
+     "requiredTech": tech,
      "attackSound": sfx.rank_sound(rank), "uniqueTo": "Barbarians", "uniques": extra}
     for n, st, cost, tech, rank, extra in (
         ("Lone Gu Master", 14, 60, "Rank Two Cultivation", 2, ["[+20]% Strength <when defending>"]),
@@ -1590,8 +1593,8 @@ for _n, _g in (("Ascension", 6), ("Advance to Rank Seven", 7), ("Advance to Rank
     assert f"brings {LS.GRANT[_g]} Lifespan Gu" in PEDIA[("UnitPromotions.json", _n)], f"civilopedia {_n}: lifespan grant"
 assert f"brings {LS.GRANT[9]} Lifespan Gu" in PEDIA[("Units.json", VENERABLE)], "civilopedia Venerable: lifespan grant"
 # Phase D: the power-scaling pages in Civilopedia > Tutorials (tools/gen_paths.py, tools/path_powers.py)
-assert [x[0] for x in DAO_EFFECTS] == ["[+5]% Strength", "[+10]% Strength", "[+15]% Strength", "[+20]% Strength",
-                                       "[+30]% Strength"] and DAO == gen_paths.PP.DAO_TIERS, "update tools/path_powers.py"
+assert [x[0] for x in DAO_EFFECTS] == [f"[{v[:-1]}]% Strength" for v in (d.split()[0] for d in gen_paths.PP.DAO_STRENGTH[0])] \
+    and DAO == gen_paths.PP.DAO_TIERS, "update tools/path_powers.py"
 dump("Tutorials.json", gen_paths.tutorials())
 dump("VictoryTypes.json", [
     {"name": "Southern Border Supremacy", "milestones": ["Capture all capitals"]},

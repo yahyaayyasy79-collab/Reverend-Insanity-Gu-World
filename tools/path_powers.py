@@ -19,10 +19,24 @@ from __future__ import annotations
 import re
 
 DAO_TIERS = ["Dao Marks I", "Dao Marks II", "Dao Marks III", "Dao Marks IV", "Dao Marks V"]  # gen_ruleset.DAO
-VENERABLE_STRENGTH = 280  # gen_ruleset asserts the Venerable unit's strength
+# Phase D power rebuild (the user, 2026-11-02: "kekuatan gu abadi maupun master tergantung gu, tapi kalo bertarung
+# tanpa gu ... mengandalkan dao dan pemahaman"): a cultivator's own body is worth about 40% less (ranks 1-2 lose 25%,
+# so the first wolves stay beatable); the Gu, the dao marks and the path's attainment (comprehension) carry the rest.
+# data/gu_masters.csv keeps the full numbers; gen_ruleset writes the scaled ones.
+BASE_SHARE = {1: 0.75, 2: 0.75, 3: 0.65, 4: 0.65, 5: 0.65}  # every other rank: DEFAULT_SHARE
+DEFAULT_SHARE = 0.6
+ROGUE_SHARE = 0.8  # lone and demonic Gu Masters carry Gu but no clan's comprehension (barbarians)
+
+
+def body_strength(strength: int, rank: int) -> int:
+    """A cultivator's strength without Gu, dao marks or comprehension."""
+    return max(1, round(strength * BASE_SHARE.get(rank, DEFAULT_SHARE)))
+
+
+VENERABLE_STRENGTH = body_strength(280, 9)  # gen_ruleset asserts the Venerable unit's strength
 # Dao Marks I..V themselves (tools/gen_ruleset.py DAO_EFFECTS, asserted there), for the Tutorial page
-DAO_STRENGTH = (["+5%", "+10%", "+15%", "+20% and +10 HP healing", "+30% and +15 HP healing"],
-                ["+5%", "+10%", "+15%", "+20% dan +10 HP pemulihan", "+30% dan +15 HP pemulihan"])
+DAO_STRENGTH = (["+10%", "+20%", "+30%", "+40% and +10 HP healing", "+55% and +15 HP healing"],
+                ["+10%", "+20%", "+30%", "+40% dan +10 HP pemulihan", "+55% dan +15 HP pemulihan"])
 # the hit's amount with no dao marks, then with dao marks I..V
 SCALE = {"dmg": [4, 5, 6, 8, 10, 12], "dur": [2, 2, 2, 3, 3, 4], "heal": [5, 6, 8, 10, 12, 15], "xp": [2, 3, 4, 5, 6, 8],
          "earn": [10, 15, 20, 25, 30, 40], "movegain": [1, 1, 1, 1, 2, 2], "moveloss": [1, 1, 1, 1, 2, 2]}

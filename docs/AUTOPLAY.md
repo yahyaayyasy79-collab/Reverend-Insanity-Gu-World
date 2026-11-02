@@ -388,6 +388,29 @@ The share of turns (T40+) with raiders near a city, final run:
 * **Eastern Sea:** it stays the quietest. On its small islands a raider spawns beside a city and dies within a turn or
   two. Four times the raid rate only moved it from 7% to 12%.
 
+## Phase D: power rebuild (2026-11-02)
+
+The user wanted power to depend on Gu, with dao marks and comprehension carrying a Gu-less fighter. The changes:
+
+* **The body alone is weaker.** A cultivator's base strength is 75% of its old value at ranks 1-2, 65% at ranks 3-5
+  and 60% at ranks 6-9 (`tools/path_powers.py` `body_strength`).
+* **Comprehension.** The path tiers go from +10/15/20/25% to +20/25/30/35%.
+* **Dao marks.** They go from +5/10/15/20/30% to +10/20/30/40/55%.
+* **Catalog Gu.** Attack and defence Gu get 8+4×rank %, strength Gu 5+3×rank %.
+
+All runs were Five Regions, 6 games × 300 turns on Prince. "Base" is the commit before the change.
+
+| Run | Majors alive | Cities captured | Immortals at T300 | Soldiers at T300 | Barbarians at T300 | Major-turns in the red |
+|---|---|---|---|---|---|---|
+| Base | 7.2 | 1.7 | 19.8 | 104 | 40 | 173 |
+| Body cut only for clan cultivators | 7.0 | 2.7 | 15.5 | 87 | 77 | 138 |
+| + rogues at 80%, ranks 3-5 at 65% (final) | 7.2 | 2.0 | 20.0 | 97 | 35 | 128 |
+
+The first variant cut only the clans' cultivators. The barbarian Gu Masters kept their full strength, so they doubled
+and the immortals fell by a fifth. The final variant also scales the rogues: they carry Gu but no clan's
+comprehension, so they keep 80%. It matches the base within the noise. City strength (E8) needs no retune, because
+conquest is unchanged.
+
 ## Re-run
 
 ```

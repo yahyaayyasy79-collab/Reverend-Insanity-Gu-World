@@ -294,7 +294,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Mortal Laborer | cost | 45 | tools/gen_ruleset.py `Units` |
 | Mortal Laborer | `[-100]% maintenance costs` | -100 | tools/gen_ruleset.py `Units` |
 | Rank One Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank One Gu Master | strength | 8 | data/gu_masters.csv `strength` |
+| Rank One Gu Master | strength | 6 | data/gu_masters.csv `strength` |
 | Rank One Gu Master | cost | 35 | data/gu_masters.csv `cost` |
 | Rank One Gu Master | `[+50]% maintenance costs` | +50 | data/gu_masters.csv `maintenance` |
 | Rank One Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
@@ -305,7 +305,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank One Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank One Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Two Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Two Gu Master | strength | 14 | data/gu_masters.csv `strength` |
+| Rank Two Gu Master | strength | 10 | data/gu_masters.csv `strength` |
 | Rank Two Gu Master | cost | 60 | data/gu_masters.csv `cost` |
 | Rank Two Gu Master | `[+100]% maintenance costs` | +100 | data/gu_masters.csv `maintenance` |
 | Rank Two Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
@@ -316,7 +316,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Two Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Two Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Three Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Three Gu Master | strength | 22 | data/gu_masters.csv `strength` |
+| Rank Three Gu Master | strength | 14 | data/gu_masters.csv `strength` |
 | Rank Three Gu Master | cost | 95 | data/gu_masters.csv `cost` |
 | Rank Three Gu Master | `[+125]% maintenance costs` | +125 | data/gu_masters.csv `maintenance` |
 | Rank Three Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
@@ -327,7 +327,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Three Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Three Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Four Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Four Gu Master | strength | 32 | data/gu_masters.csv `strength` |
+| Rank Four Gu Master | strength | 21 | data/gu_masters.csv `strength` |
 | Rank Four Gu Master | cost | 140 | data/gu_masters.csv `cost` |
 | Rank Four Gu Master | `[+175]% maintenance costs` | +175 | data/gu_masters.csv `maintenance` |
 | Rank Four Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
@@ -338,7 +338,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Four Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Four Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Five Gu Master | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Five Gu Master | strength | 44 | data/gu_masters.csv `strength` |
+| Rank Five Gu Master | strength | 29 | data/gu_masters.csv `strength` |
 | Rank Five Gu Master | cost | 190 | data/gu_masters.csv `cost` |
 | Rank Five Gu Master | `[+225]% maintenance costs` | +225 | data/gu_masters.csv `maintenance` |
 | Rank Five Gu Master | `[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>` | 2 | data/gu_masters.csv `cultivationXP` |
@@ -349,7 +349,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Five Gu Master | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Five Gu Master | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Six Gu Immortal | strength | 60 | data/gu_masters.csv `strength` |
+| Rank Six Gu Immortal | strength | 36 | data/gu_masters.csv `strength` |
 | Rank Six Gu Immortal | cost | 260 | data/gu_masters.csv `cost` |
 | Rank Six Gu Immortal | `[+300]% maintenance costs` | +300 | data/gu_masters.csv `maintenance` |
 | Rank Six Gu Immortal | `[+15]% Strength <when above [9] [Green Grape Immortal Essence]>` | +15, 9 | tools/gen_ruleset.py `gm()` |
@@ -369,7 +369,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Six Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
 | Rank Six Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Seven Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Seven Gu Immortal | strength | 85 | data/gu_masters.csv `strength` |
+| Rank Seven Gu Immortal | strength | 51 | data/gu_masters.csv `strength` |
 | Rank Seven Gu Immortal | cost | 330 | data/gu_masters.csv `cost` |
 | Rank Seven Gu Immortal | `[+350]% maintenance costs` | +350 | data/gu_masters.csv `maintenance` |
 | Rank Seven Gu Immortal | `[+15]% Strength <when above [9] [Red Date Immortal Essence]>` | +15, 9 | tools/gen_ruleset.py `gm()` |
@@ -389,7 +389,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Seven Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
 | Rank Seven Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Eight Gu Immortal | movement | 2 | tools/gen_ruleset.py `gm()` |
-| Rank Eight Gu Immortal | strength | 115 | data/gu_masters.csv `strength` |
+| Rank Eight Gu Immortal | strength | 69 | data/gu_masters.csv `strength` |
 | Rank Eight Gu Immortal | cost | 400 | data/gu_masters.csv `cost` |
 | Rank Eight Gu Immortal | `[+400]% maintenance costs` | +400 | data/gu_masters.csv `maintenance` |
 | Rank Eight Gu Immortal | `[+15]% Strength <when above [9] [White Lychee Immortal Essence]>` | +15, 9 | tools/gen_ruleset.py `gm()` |
@@ -433,7 +433,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Immemorial Desolate Beast | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
 | Venerable | movement | 5 | tools/gen_ruleset.py `Units` |
-| Venerable | strength | 280 | tools/gen_ruleset.py `Units` |
+| Venerable | strength | 168 | tools/gen_ruleset.py `Units` |
 | Venerable | cost | 1000 | tools/gen_ruleset.py `Units` |
 | Venerable | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Quick] game speed>` | 1, 20 | tools/gen_ruleset.py `Units` |
@@ -487,7 +487,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Heaven Overseeing Tower | `[+25]% Strength <when defending>` | +25 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[+2] Sight` | +2 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | movement | 2 | tools/gen_ruleset.py `Units` |
-| Immortal Zombie | strength | 70 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | strength | 42 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | cost | 300 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[-15]% Strength <if [Fate Gu] is constructed by anybody>` | -15 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[+100]% maintenance costs` | +100 | tools/gen_ruleset.py `Units` |
@@ -497,16 +497,16 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Thunder Crown Wolf | `[+20]% Strength bonus for [Beast] units within [2] tiles` | +20, 2 | tools/gen_ruleset.py `Units` |
 | Thunder Crown Wolf | `[+200]% maintenance costs` | +200 | tools/gen_ruleset.py `Units` |
 | Lone Gu Master | movement | 2 | tools/gen_ruleset.py `Units` |
-| Lone Gu Master | strength | 14 | tools/gen_ruleset.py `Units` |
+| Lone Gu Master | strength | 11 | tools/gen_ruleset.py `Units` |
 | Lone Gu Master | cost | 60 | tools/gen_ruleset.py `Units` |
 | Lone Gu Master | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Units` |
 | Demonic Gu Master | movement | 2 | tools/gen_ruleset.py `Units` |
-| Demonic Gu Master | strength | 22 | tools/gen_ruleset.py `Units` |
+| Demonic Gu Master | strength | 18 | tools/gen_ruleset.py `Units` |
 | Demonic Gu Master | cost | 95 | tools/gen_ruleset.py `Units` |
 | Demonic Gu Master | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Units` |
 | Demonic Gu Master | `Heals [15] damage if it kills a unit` | 15 | tools/gen_ruleset.py `Units` |
 | Demonic Elder | movement | 2 | tools/gen_ruleset.py `Units` |
-| Demonic Elder | strength | 44 | tools/gen_ruleset.py `Units` |
+| Demonic Elder | strength | 35 | tools/gen_ruleset.py `Units` |
 | Demonic Elder | cost | 190 | tools/gen_ruleset.py `Units` |
 | Demonic Elder | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Units` |
 | Demonic Elder | `Heals [20] damage if it kills a unit` | 20 | tools/gen_ruleset.py `Units` |
@@ -604,16 +604,16 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Stream Gu | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
 | Stream Gu | `[+10]% maintenance costs` | +10 | tools/gen_ruleset.py `Promotions` |
 | Jin Strength Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
-| Jin Strength Gu | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Jin Strength Gu | `[+8]% Strength` | +8 | tools/gen_ruleset.py `Promotions` |
 | Jin Strength Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Brute Force Longhorn Beetle Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
-| Brute Force Longhorn Beetle Gu | `[+8]% Strength <when attacking>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Brute Force Longhorn Beetle Gu | `[+12]% Strength <when attacking>` | +12 | tools/gen_ruleset.py `Promotions` |
 | Brute Force Longhorn Beetle Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Stone Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
-| Stone Skin Gu | `[+8]% Strength <when defending>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Stone Skin Gu | `[+12]% Strength <when defending>` | +12 | tools/gen_ruleset.py `Promotions` |
 | Stone Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Iron Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
-| Iron Skin Gu | `[+8]% Strength <when defending>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Iron Skin Gu | `[+12]% Strength <when defending>` | +12 | tools/gen_ruleset.py `Promotions` |
 | Iron Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Stealth Stone Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
 | Stealth Stone Gu | `[+4]% Strength <when defending>` | +4 | tools/gen_ruleset.py `Promotions` |
@@ -640,9 +640,9 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Clear Wind Wheel Gu | `[+2]% Strength` | +2 | tools/gen_ruleset.py `Promotions` |
 | Clear Wind Wheel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Jade Wind Wheel Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
-| Jade Wind Wheel Gu | `[+11]% Strength <when attacking>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Jade Wind Wheel Gu | `[+16]% Strength <when attacking>` | +16 | tools/gen_ruleset.py `Promotions` |
 | Jade Wind Wheel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Moonglow Gu | `[+11]% Strength <when attacking> <when above [-1] [Moon Orchid]>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[+16]% Strength <when attacking> <when above [-1] [Moon Orchid]>` | +16 | tools/gen_ruleset.py `Promotions` |
 | Moonglow Gu | `Consumes [1] [Moon Orchid]` | 1 | tools/gen_ruleset.py `Promotions` |
 | Moonglow Gu | `[This Unit] loses the [Moonglow Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Promotions` |
 | Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]>` | 2 | tools/gen_ruleset.py `Promotions` |
@@ -656,7 +656,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Stealth Scales Gu | `[+6]% Strength <when defending>` | +6 | tools/gen_ruleset.py `Promotions` |
 | Stealth Scales Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Ice Knife Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
-| Ice Knife Gu | `[+11]% Strength <when attacking>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Ice Knife Gu | `[+16]% Strength <when attacking>` | +16 | tools/gen_ruleset.py `Promotions` |
 | Ice Knife Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Icicle Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Icicle Gu | `[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
@@ -676,7 +676,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Plasma Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Plasma Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Water Drill Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
-| Water Drill Gu | `[+11]% Strength <when attacking>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Water Drill Gu | `[+16]% Strength <when attacking>` | +16 | tools/gen_ruleset.py `Promotions` |
 | Water Drill Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Living Steel Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Living Steel Gu | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
@@ -736,13 +736,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Seven Fragrances Liquor Worm Hunger 14%]> <for units without [Seven Fragrances Liquor Worm Hunger 29%]> <for units without [Seven Fragrances Liquor Worm Hunger 43%]> <for units without [Seven Fragrances Liquor Worm Hunger 57%]> <for units without [Seven Fragrances Liquor Worm Hunger 71%]> <for units without [Seven Fragrances Liquor Worm Hunger 86%]> <for units without [Seven Fragrances Liquor Worm Hunger 100%]>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Seven Fragrances Liquor Worm | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Chainsaw Golden Centipede | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
-| Chainsaw Golden Centipede | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Chainsaw Golden Centipede | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Chainsaw Golden Centipede | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Flying Bone Shield Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
-| Flying Bone Shield Gu | `[+14]% Strength <when defending>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Flying Bone Shield Gu | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Flying Bone Shield Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Hand Blade Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
-| Hand Blade Gu | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Hand Blade Gu | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Hand Blade Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Dual Cloud Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Dual Cloud Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
@@ -752,7 +752,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Poison Vow Gu | `[-5]% Strength for enemy [Military] units in adjacent [All] tiles` | -5 | tools/gen_ruleset.py `Promotions` |
 | Poison Vow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Iron Rod Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
-| Iron Rod Gu | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Iron Rod Gu | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Iron Rod Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Gentle Feelings Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Gentle Feelings Gu | `[Target Unit] gains the [Charmed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
@@ -769,7 +769,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bone Wings Gu | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
 | Bone Wings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Impermanence Bone Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
-| Impermanence Bone Gu | `[+11]% Strength` | +11 | tools/gen_ruleset.py `Promotions` |
+| Impermanence Bone Gu | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
 | Impermanence Bone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Golden Breeze Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Golden Breeze Gu | `[+16] HP when healing` | +16 | tools/gen_ruleset.py `Promotions` |
@@ -780,7 +780,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fiery Snake Gu | `[+6]% Strength <when attacking>` | +6 | tools/gen_ruleset.py `Promotions` |
 | Fiery Snake Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Water Curtain Skyflower Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
-| Water Curtain Skyflower Gu | `[+17]% Strength <when defending>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Water Curtain Skyflower Gu | `[+24]% Strength <when defending>` | +24 | tools/gen_ruleset.py `Promotions` |
 | Water Curtain Skyflower Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Instant Success Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Instant Success Gu | `[+30]% XP gained from combat` | +30 | tools/gen_ruleset.py `Promotions` |
@@ -795,7 +795,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Tiger Roar Gu | `[-6]% Strength for enemy [Military] units in adjacent [All] tiles` | -6 | tools/gen_ruleset.py `Promotions` |
 | Tiger Roar Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Grass Tree Army Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
-| Grass Tree Army Gu | `[+17]% Strength <when defending>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Grass Tree Army Gu | `[+24]% Strength <when defending>` | +24 | tools/gen_ruleset.py `Promotions` |
 | Grass Tree Army Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Moonshadow Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Moonshadow Gu | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
@@ -816,7 +816,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Play Phantom Gu | `[+10]% Strength <when defending>` | +10 | tools/gen_ruleset.py `Promotions` |
 | Play Phantom Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Array Stone Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
-| Array Stone Gu | `[+17]% Strength <when defending>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Array Stone Gu | `[+24]% Strength <when defending>` | +24 | tools/gen_ruleset.py `Promotions` |
 | Array Stone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Ink Beast Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Ink Beast Gu | `[-6]% Strength for enemy [Military] units in adjacent [All] tiles` | -6 | tools/gen_ruleset.py `Promotions` |
@@ -825,16 +825,16 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Blood Guillotine | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Blood Guillotine | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Earth Overlord Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
-| Earth Overlord Gu | `[+13]% Strength` | +13 | tools/gen_ruleset.py `Promotions` |
+| Earth Overlord Gu | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Earth Overlord Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Extreme Light Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
-| Extreme Light Gu | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Extreme Light Gu | `[+28]% Strength <when attacking>` | +28 | tools/gen_ruleset.py `Promotions` |
 | Extreme Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Star River Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Star River Gu | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Star River Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Thunder Hammer Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
-| Thunder Hammer Gu | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Thunder Hammer Gu | `[+28]% Strength <when attacking>` | +28 | tools/gen_ruleset.py `Promotions` |
 | Thunder Hammer Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Flash Bug Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Flash Bug Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
@@ -849,7 +849,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Jade Sky Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
 | Jade Sky Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Fire Cape Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
-| Fire Cape Gu | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Fire Cape Gu | `[+28]% Strength <when defending>` | +28 | tools/gen_ruleset.py `Promotions` |
 | Fire Cape Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Flying Snow Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Flying Snow Gu | `[-7]% Strength for enemy [Military] units in adjacent [All] tiles` | -7 | tools/gen_ruleset.py `Promotions` |
@@ -862,7 +862,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Soul Explosion Gu | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Soul Explosion Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Asura Zombie Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
-| Asura Zombie Gu | `[+13]% Strength` | +13 | tools/gen_ruleset.py `Promotions` |
+| Asura Zombie Gu | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Asura Zombie Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Search Lock Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Search Lock Gu | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
@@ -871,15 +871,15 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dream Butterfly Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[+35]% XP gained from combat` | +35 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Star Mark Immortal Gu | `[+15]% Strength <when above [0] [Green Grape Immortal Essence]>` | +15, 0 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Pulling Water Immortal Gu | `[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
 | Pulling Water Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Snack Immortal Gu | `[-16]% maintenance costs <when above [0] [Green Grape Immortal Essence]>` | -16, 0 | tools/gen_ruleset.py `Promotions` |
 | Snack Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flying Bear Strength Immortal Gu | `[+23]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu | `[+32]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
 | Flying Bear Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Change Form Immortal Gu | `[+15]% Strength <when above [0] [Green Grape Immortal Essence]>` | +15, 0 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
 | Change Form Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Blood Asset Immortal Gu | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
 | Blood Asset Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -899,7 +899,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dog Shit Luck Immortal Gu | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
 | Dog Shit Luck Immortal Gu | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
 | Dog Shit Luck Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flying Bear Phantom Immortal Gu | `[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
 | Flying Bear Phantom Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Split Shadow Immortal Gu | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
 | Split Shadow Immortal Gu | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
@@ -909,13 +909,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Sword Escape Immortal Gu | `[+2] Movement <when above [0] [Red Date Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
 | Sword Escape Immortal Gu | `[+8]% Strength <when above [0] [Red Date Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
 | Sword Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Edge Immortal Gu | `[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu | `[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
 | Edge Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Great Thief Immortal Gu | `Earn [45]% of killed [Military] unit's [Cost] as [Gold] <when above [0] [Red Date Immortal Essence]>` | 45, 0 | tools/gen_ruleset.py `Promotions` |
 | Great Thief Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Crescent Moon Immortal Gu | `[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu | `[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
 | Crescent Moon Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Perseverance Immortal Gu | `[+26]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu | `[+36]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
 | Perseverance Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Qi Escape Immortal Gu | `[+2] Movement <when above [0] [Red Date Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
 | Qi Escape Immortal Gu | `[+8]% Strength <when above [0] [Red Date Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
@@ -937,7 +937,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Attitude Immortal Gu | `Invisible to non-adjacent units <when above [0] [White Lychee Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
 | Attitude Immortal Gu | `[+18]% Strength <when defending> <when above [0] [White Lychee Immortal Essence]>` | +18, 0 | tools/gen_ruleset.py `Promotions` |
 | Attitude Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Eight-Faced Prestige Wind Immortal Gu | `[+29]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu | `[+40]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +40, 0 | tools/gen_ruleset.py `Promotions` |
 | Eight-Faced Prestige Wind Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Water Refinement Immortal Gu | `[+28] HP when healing <when above [0] [White Lychee Immortal Essence]>` | +28, 0 | tools/gen_ruleset.py `Promotions` |
 | Water Refinement Immortal Gu | `Heals [21] damage if it kills a unit <when above [0] [White Lychee Immortal Essence]>` | 21, 0 | tools/gen_ruleset.py `Promotions` |
@@ -950,7 +950,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven's Envy Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Kill Immortal Gu | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
 | Kill Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Light Gu | `[+32]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Light Gu | `[+44]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | +44, 0 | tools/gen_ruleset.py `Promotions` |
 | Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Fire Gu | `[Target Unit] takes [20] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | 20, 0 | tools/gen_ruleset.py `Promotions` |
 | Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -1052,12 +1052,12 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
-| Dao Marks I | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
-| Dao Marks II | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
-| Dao Marks III | `[+15]% Strength` | +15 | tools/gen_ruleset.py `Promotions` |
-| Dao Marks IV | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks I | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks II | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks III | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks IV | `[+40]% Strength` | +40 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks IV | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
-| Dao Marks V | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
+| Dao Marks V | `[+55]% Strength` | +55 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks V | `[+15] HP when healing` | +15 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Grotto-Heaven Aperture | `Instantly consumes [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Zombie Alliance] Civilizations>` | 3 | tools/gen_ruleset.py `Promotions` |
@@ -2585,10 +2585,10 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
-| every Master | `[+10]% Strength` | +10 | tools/gen_paths.py `TIER_STRENGTH` |
-| every Grandmaster | `[+15]% Strength` | +15 | tools/gen_paths.py `TIER_STRENGTH` |
-| every Great Grandmaster | `[+20]% Strength` | +20 | tools/gen_paths.py `TIER_STRENGTH` |
-| every Supreme Grandmaster | `[+25]% Strength` | +25 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Master | `[+20]% Strength` | +20 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Grandmaster | `[+25]% Strength` | +25 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Great Grandmaster | `[+30]% Strength` | +30 | tools/gen_paths.py `TIER_STRENGTH` |
+| every Supreme Grandmaster | `[+35]% Strength` | +35 | tools/gen_paths.py `TIER_STRENGTH` |
 | every move | `<costs [+15 Gold] stats> <requires [1] movement>` | +15, 1 | tools/gen_paths.py `MOVE_COST` |
 | every tier | `[+400]% weight to this choice for AI decisions` | +400 | tools/gen_paths.py `TIER_WEIGHT` |
 | signature Masters | AI weight for the clan's signature path | +23133 (share 0.85) | tools/gen_paths.py `SIGNATURE_SHARE` |

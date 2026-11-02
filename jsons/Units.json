@@ -42,7 +42,7 @@
     "name": "Rank One Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 8,
+    "strength": 6,
     "cost": 35,
     "requiredTech": "Aperture Awakening",
     "uniques": [
@@ -79,7 +79,7 @@
     "name": "Rank Two Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -116,7 +116,7 @@
     "name": "Rank Three Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 14,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -153,7 +153,7 @@
     "name": "Rank Four Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 32,
+    "strength": 21,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -190,7 +190,7 @@
     "name": "Rank Five Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 44,
+    "strength": 29,
     "cost": 190,
     "requiredTech": "Purple Crystal Essence",
     "uniques": [
@@ -227,7 +227,7 @@
     "name": "Rank Six Gu Immortal",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 60,
+    "strength": 36,
     "cost": 260,
     "requiredTech": "Calamity Lore",
     "uniques": [
@@ -276,7 +276,7 @@
     "name": "Rank Seven Gu Immortal",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 85,
+    "strength": 51,
     "cost": 330,
     "requiredTech": "Red Date Essence",
     "uniques": [
@@ -325,7 +325,7 @@
     "name": "Rank Eight Gu Immortal",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 115,
+    "strength": 69,
     "cost": 400,
     "requiredTech": "Grotto-Heaven",
     "uniques": [
@@ -374,7 +374,7 @@
     "name": "Rank Two Gu Yue Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -413,7 +413,7 @@
     "name": "Rank Three Gu Yue Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 14,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -452,7 +452,7 @@
     "name": "Rank Four Gu Yue Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 32,
+    "strength": 21,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -491,7 +491,7 @@
     "name": "Rank Two Bai Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -530,7 +530,7 @@
     "name": "Rank Three Bai Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 14,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -569,7 +569,7 @@
     "name": "Rank Four Bai Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 32,
+    "strength": 21,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -608,7 +608,7 @@
     "name": "Rank Two Xiong Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -647,7 +647,7 @@
     "name": "Rank Three Xiong Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 14,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -686,7 +686,7 @@
     "name": "Rank Four Xiong Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 32,
+    "strength": 21,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -725,7 +725,7 @@
     "name": "Rank Two Wu Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -764,7 +764,7 @@
     "name": "Rank Three Wu Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 14,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -803,7 +803,7 @@
     "name": "Rank Four Wu Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 32,
+    "strength": 21,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -842,7 +842,7 @@
     "name": "Rank Two Strength Gu Master",
     "unitType": "Strength Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -866,7 +866,7 @@
     "name": "Rank Three Strength Gu Master",
     "unitType": "Strength Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 14,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -890,7 +890,7 @@
     "name": "Rank Four Strength Gu Master",
     "unitType": "Strength Gu Master",
     "movement": 2,
-    "strength": 32,
+    "strength": 21,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -914,7 +914,7 @@
     "name": "Rank Two Moon Gu Master",
     "unitType": "Moon Gu Master",
     "movement": 2,
-    "strength": 13,
+    "strength": 10,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "uniques": [
@@ -938,7 +938,7 @@
     "name": "Rank Three Moon Gu Master",
     "unitType": "Moon Gu Master",
     "movement": 2,
-    "strength": 20,
+    "strength": 13,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "uniques": [
@@ -962,7 +962,7 @@
     "name": "Rank Four Moon Gu Master",
     "unitType": "Moon Gu Master",
     "movement": 2,
-    "strength": 29,
+    "strength": 19,
     "cost": 140,
     "requiredTech": "Rank Four Cultivation",
     "uniques": [
@@ -1079,7 +1079,7 @@
     "name": "Venerable",
     "unitType": "Gu Master",
     "movement": 5,
-    "strength": 280,
+    "strength": 168,
     "cost": 1000,
     "requiredTech": "Dao Lord",
     "attackSound": "gu-rank-9",
@@ -1129,7 +1129,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."
+        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 168; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."
       }
     ]
   },
@@ -1231,7 +1231,7 @@
     "name": "Immortal Zombie",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 70,
+    "strength": 42,
     "cost": 300,
     "requiredTech": "Calamity Lore",
     "attackSound": "gu-rank-6",
@@ -1273,7 +1273,7 @@
     "name": "Lone Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 14,
+    "strength": 11,
     "cost": 60,
     "requiredTech": "Rank Two Cultivation",
     "attackSound": "gu-rank-2",
@@ -1283,7 +1283,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A lone Gu Master (散修) with no clan behind him: he lives by his own Gu and his wits, and robs as readily as he trades. Strength 14, 20% stronger when defending. Barbarian camps send him out once every clan knows Rank Two Cultivation; the Wandering Gu Master event may bring one to your door."
+        "text": "A lone Gu Master (散修) with no clan behind him: he lives by his own Gu and his wits, and robs as readily as he trades. Strength 11, 20% stronger when defending. Barbarian camps send him out once every clan knows Rank Two Cultivation; the Wandering Gu Master event may bring one to your door."
       }
     ]
   },
@@ -1291,7 +1291,7 @@
     "name": "Demonic Gu Master",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 22,
+    "strength": 18,
     "cost": 95,
     "requiredTech": "Rank Three Cultivation",
     "attackSound": "gu-rank-3",
@@ -1302,7 +1302,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A demonic-path Gu Master (魔道蛊师): he takes what he wants and kills for Gu. Strength 22, 20% stronger when attacking, heals 15 HP per kill. He raids from Demonic Dens and in the Demonic Raid event."
+        "text": "A demonic-path Gu Master (魔道蛊师): he takes what he wants and kills for Gu. Strength 18, 20% stronger when attacking, heals 15 HP per kill. He raids from Demonic Dens and in the Demonic Raid event."
       }
     ]
   },
@@ -1310,7 +1310,7 @@
     "name": "Demonic Elder",
     "unitType": "Gu Master",
     "movement": 2,
-    "strength": 44,
+    "strength": 35,
     "cost": 190,
     "requiredTech": "Purple Crystal Essence",
     "attackSound": "gu-rank-5",
@@ -1322,7 +1322,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A demonic elder (魔道长老) of rank five, who leads the raids. Strength 44, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."
+        "text": "A demonic elder (魔道长老) of rank five, who leads the raids. Strength 35, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."
       }
     ]
   }

@@ -50,13 +50,13 @@ def effects(row: dict) -> list[tuple[str, str, str]]:
     """(unique, English, Indonesian) per effect; magnitudes grow with the rank."""
     r, role = int(row["rank"]), row["role"].split(":")[0]
     if role == "str":
-        n = 3 + 2 * r
+        n = 5 + 3 * r
         return [(f"[+{n}]% Strength", f"{n}% stronger", f"{n}% lebih kuat")]
     if role == "atk":
-        n = 5 + 3 * r
+        n = 8 + 4 * r
         return [(f"[+{n}]% Strength <when attacking>", f"{n}% stronger when attacking", f"{n}% lebih kuat saat menyerang")]
     if role == "def":
-        n = 5 + 3 * r
+        n = 8 + 4 * r
         return [(f"[+{n}]% Strength <when defending>", f"{n}% stronger when defending", f"{n}% lebih kuat saat bertahan")]
     if role == "dmg":
         n = 2 + 2 * r

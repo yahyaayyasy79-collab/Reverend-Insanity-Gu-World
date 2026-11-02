@@ -33,7 +33,7 @@ MAX_TIER = 4
 TIERS = ["Master", "Grandmaster", "Great Grandmaster", "Supreme Grandmaster"]
 TIERS_ZH = ["大师", "宗师", "大宗师", "无上大宗师"]
 TIERS_ID = ["Ahli", "Mahaguru", "Mahaguru Agung", "Mahaguru Tertinggi"]
-TIER_STRENGTH = [10, 15, 20, 25]
+TIER_STRENGTH = [20, 25, 30, 35]  # Phase D power rebuild: comprehension carries more (was 10/15/20/25)
 # Grandmaster from rank 3: units whose required tech lies outside the Rank One-Two era [src BaseUnit.matchesSingleFilter:
 # a unit filter matches the era of the unit's required tech]
 TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", "Only available <for [post-[Rank Five era]] units>",
@@ -446,6 +446,7 @@ def translations() -> list[tuple[str, str]]:
 
 
 # ---------------- Tutorials (Civilopedia > Tutorials): the power-scaling pages (Phase D) ----------------
+RANKS = {"One": 1, "Two": 2, "Three": 3, "Four": 4, "Five": 5, "Six": 6, "Seven": 7, "Eight": 8}
 NUM_ID = {"One": "Satu", "Two": "Dua", "Three": "Tiga", "Four": "Empat", "Five": "Lima", "Six": "Enam", "Seven": "Tujuh",
           "Eight": "Delapan"}
 
@@ -456,27 +457,32 @@ def rank_strengths() -> list[tuple[str, str, int]]:
     out = []
     for r in rows:
         word = r["name"].split()[1]
-        out.append((f"Rank {word}", f"Tingkat {NUM_ID[word]}", int(r["strength"])))
+        out.append((f"Rank {word}", f"Tingkat {NUM_ID[word]}", PP.body_strength(int(r["strength"]), RANKS[word])))
     return out + [("the Venerable", "Yang Mulia", PP.VENERABLE_STRENGTH)]
 
 
 def _lines_power() -> list[tuple[str, str, dict]]:
     ranks = rank_strengths()
     fire = POWERS["fire"]
-    d = PP.DAO_STRENGTH
+    d, T = PP.DAO_STRENGTH, TIER_STRENGTH
     L = [("The five layers of power", "Lima lapis kekuatan", {"header": 2}),
-         ("1. Rank. Base strength: " + ", ".join(f"{e} {v}" for e, _, v in ranks) + ". Clan Masters of a rank have the "
-          "same strength.",
-          "1. Tingkat. Kekuatan dasar: " + ", ".join(f"{i} {v}" for _, i, v in ranks) + ". Gu Master klan pada tingkat "
+         ("A cultivator's body alone is weak: most of its power comes from its Gu, its dao marks and its comprehension of "
+          "its path. One who fights without Gu still fights, on dao marks and comprehension alone.",
+          "Tubuh seorang kultivator saja lemah: sebagian besar kekuatannya datang dari Gu, jejak dao, dan pemahamannya "
+          "atas jalurnya. Yang bertarung tanpa Gu tetap bisa bertarung, hanya dengan jejak dao dan pemahaman.", {}),
+         ("1. Rank. The body's strength: " + ", ".join(f"{e} {v}" for e, _, v in ranks) + ". Clan Masters of a rank "
+          "have the same strength.",
+          "1. Tingkat. Kekuatan tubuh: " + ", ".join(f"{i} {v}" for _, i, v in ranks) + ". Gu Master klan pada tingkat "
           "yang sama punya kekuatan yang sama.", {}),
-         ("2. Path attainment (comprehension). Four tiers stack: Master +10% at any rank, Grandmaster +15% from rank "
-          "three, Great Grandmaster +20% from rank six, Supreme Grandmaster +25% from rank eight: +70% at the top. Each "
+         (f"2. Path attainment (comprehension). Four tiers stack: Master +{T[0]}% at any rank, Grandmaster +{T[1]}% from "
+          f"rank three, Great Grandmaster +{T[2]}% from rank six, Supreme Grandmaster +{T[3]}% from rank eight: "
+          f"+{sum(T)}% at the top. Each "
           "tier opens a new kind of power: the Master the path's hit on every attack it makes, the Grandmaster a second effect and "
           "the mortal killer move, the Great Grandmaster a domain or a new art and the immortal killer move, the Supreme "
           "Grandmaster the path's peak.",
-          "2. Pencapaian jalur (pemahaman). Empat tingkat bertumpuk: Ahli +10% di tingkat mana pun, Mahaguru +15% sejak "
-          "tingkat tiga, Mahaguru Agung +20% sejak tingkat enam, Mahaguru Tertinggi +25% sejak tingkat delapan: +70% di "
-          "puncak. Tiap tingkat membuka jenis kekuatan baru: Ahli membuka serangan khas jalur pada setiap serangan, "
+          f"2. Pencapaian jalur (pemahaman). Empat tingkat bertumpuk: Ahli +{T[0]}% di tingkat mana pun, Mahaguru +{T[1]}% "
+          f"sejak tingkat tiga, Mahaguru Agung +{T[2]}% sejak tingkat enam, Mahaguru Tertinggi +{T[3]}% sejak tingkat "
+          f"delapan: +{sum(T)}% di puncak. Tiap tingkat membuka jenis kekuatan baru: Ahli membuka serangan khas jalur pada setiap serangan, "
           "Mahaguru efek kedua dan jurus pamungkas fana, Mahaguru Agung sebuah domain atau seni baru dan jurus pamungkas "
           "abadi, Mahaguru Tertinggi puncak jalur itu.", {}),
          ("3. Dao marks, the quantity of dao. Tiers I to V give " + ", ".join(d[0]) + ". Every tier also raises the "
@@ -498,10 +504,18 @@ def _lines_power() -> list[tuple[str, str, dict]]:
           "seorang abadi juga mendapat satu dari setiap abadi yang dibunuhnya dan setiap kesengsaraan langit yang "
           "dilaluinya. Manusia fana berhenti di tingkat II. Tingkat tujuh butuh tingkat II, tingkat delapan III, Yang "
           "Mulia IV.", {}),
-         ("4. Gu. Each path's Gu comes with its Master. Every immortal Gu of your own path that your clan owns adds 5% "
+         (f"4. Gu. Each path's Gu comes with its Master. A Master refines more with XP: {len(GC.ROWS)} catalog Gu of "
+          "ranks 1 to 9, each waiting for a unit of its rank; a Gu's effect grows with its rank (a rank-one attack Gu "
+          f"+{GC.effects({'rank': '1', 'role': 'atk'})[0][1].split('%')[0]}%, a rank-nine one "
+          f"+{GC.effects({'rank': '9', 'role': 'atk'})[0][1].split('%')[0]}%). Immortal Gu sleep while the clan has no "
+          "immortal essence of their rank. Every immortal Gu wonder of your own path that your clan owns adds 5% "
           "strength; one of a strongly clashing path takes 5% away.",
-          "4. Gu. Gu tiap jalur datang bersama Ahlinya. Setiap Gu abadi dari jalurmu sendiri yang dimiliki klanmu "
-          "menambah 5% kekuatan; Gu dari jalur yang sangat bertentangan mengurangi 5%.", {}),
+          f"4. Gu. Gu tiap jalur datang bersama Ahlinya. Seorang Ahli memurnikan lebih banyak dengan XP: {len(GC.ROWS)} "
+          "Gu katalog tingkat 1 sampai 9, masing-masing menunggu unit setingkatnya; efek Gu tumbuh dengan tingkatnya "
+          f"(Gu serang tingkat satu +{GC.effects({'rank': '1', 'role': 'atk'})[0][1].split('%')[0]}%, tingkat sembilan "
+          f"+{GC.effects({'rank': '9', 'role': 'atk'})[0][1].split('%')[0]}%). Gu abadi tertidur bila klan tak punya "
+          "esensi abadi setingkatnya. Setiap keajaiban Gu abadi dari jalurmu sendiri yang dimiliki klanmu menambah 5% "
+          "kekuatan; dari jalur yang sangat bertentangan mengurangi 5%.", {}),
          ("5. Conflicts. A second path whose dao marks clash with the first costs 5% to 25% strength.",
           "5. Pertentangan. Jalur kedua yang jejak daonya berbenturan dengan jalur pertama memotong 5% sampai 25% "
           "kekuatan.", {}),
@@ -517,10 +531,10 @@ def _lines_power() -> list[tuple[str, str, dict]]:
     hit = PP.describe(PP.attack_only(fire["hit"]).replace("{n}", str(PP.amounts(fire)[3])))
     gm, ggm = PP.describe_all(PP.cell(fire, "gm")), PP.describe_all(PP.cell(fire, "ggm"))
     L += [("Example", "Contoh", {"header": 3}),
-          (f"A Rank Six fire-path Great Grandmaster with Dao Marks III: strength {ex}, +45% from attainment and +15% from "
-           f"dao marks. {hit[0][0].upper() + hit[0][1:]}; {gm[0]}; {ggm[0]}.",
-           f"Gu Abadi tingkat enam jalur api, Mahaguru Agung, dengan Jejak Dao III: kekuatan {ex}, +45% dari pencapaian dan "
-           f"+15% dari jejak dao. {hit[1][0].upper() + hit[1][1:]}; {gm[1]}; {ggm[1]}.", {})]
+          (f"A Rank Six fire-path Great Grandmaster with Dao Marks III: strength {ex}, +{sum(T[:3])}% from attainment "
+           f"and {d[0][2]} from dao marks. {hit[0][0].upper() + hit[0][1:]}; {gm[0]}; {ggm[0]}.",
+           f"Gu Abadi tingkat enam jalur api, Mahaguru Agung, dengan Jejak Dao III: kekuatan {ex}, +{sum(T[:3])}% dari "
+           f"pencapaian dan {d[1][2]} dari jejak dao. {hit[1][0].upper() + hit[1][1:]}; {gm[1]}; {ggm[1]}.", {})]
     return L
 
 

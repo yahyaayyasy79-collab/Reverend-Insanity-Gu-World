@@ -789,3 +789,15 @@ minor clans plus wild factions.
 * **A refinement sound for every Gu** (`gu_awaken`): 113 more .ogg files, 409 in all.
 * **Records:** the catalog table is in docs/PATHS.md, the research verdicts and canon killer moves in
   docs/GU_RESEARCH.md, the summary in LORE_MAPPING.
+
+## Phase D — power rebuild: Gu, dao and comprehension carry the power (2026-11-02)
+
+* **A cultivator's body alone is weaker.** Its base strength drops to 75% at ranks 1-2, 65% at ranks 3-5 and 60% at
+  ranks 6-9. The Venerable goes from 280 to 168.
+* **Lone and demonic Gu Masters keep 80%**; beasts are unchanged.
+* **Comprehension** (path tiers) goes to +20/25/30/35%.
+* **Dao marks** go to +10/20/30/40/55%.
+* **Catalog Gu** get stronger, for example attack Gu from +12% at rank one to +44% at rank nine. A Gu-less fighter
+  relies on its dao marks and comprehension, which the Power Scaling tutorial now explains.
+* **Autoplay A/B** (6 × 300, Five Regions): the AI keeps the same number of immortals, captures and survivors as
+  before (docs/AUTOPLAY.md).

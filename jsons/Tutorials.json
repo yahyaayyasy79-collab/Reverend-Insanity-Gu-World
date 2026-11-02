@@ -7,19 +7,22 @@
         "header": 2
       },
       {
-        "text": "1. Rank. Base strength: Rank One 8, Rank Two 14, Rank Three 22, Rank Four 32, Rank Five 44, Rank Six 60, Rank Seven 85, Rank Eight 115, the Venerable 280. Clan Masters of a rank have the same strength."
+        "text": "A cultivator's body alone is weak: most of its power comes from its Gu, its dao marks and its comprehension of its path. One who fights without Gu still fights, on dao marks and comprehension alone."
       },
       {
-        "text": "2. Path attainment (comprehension). Four tiers stack: Master +10% at any rank, Grandmaster +15% from rank three, Great Grandmaster +20% from rank six, Supreme Grandmaster +25% from rank eight: +70% at the top. Each tier opens a new kind of power: the Master the path's hit on every attack it makes, the Grandmaster a second effect and the mortal killer move, the Great Grandmaster a domain or a new art and the immortal killer move, the Supreme Grandmaster the path's peak."
+        "text": "1. Rank. The body's strength: Rank One 6, Rank Two 10, Rank Three 14, Rank Four 21, Rank Five 29, Rank Six 36, Rank Seven 51, Rank Eight 69, the Venerable 168. Clan Masters of a rank have the same strength."
       },
       {
-        "text": "3. Dao marks, the quantity of dao. Tiers I to V give +5%, +10%, +15%, +20% and +10 HP healing, +30% and +15 HP healing. Every tier also raises the path's hit: extra damage 4/5/6/8/10/12, status turns 2/2/2/3/3/4, healing 5/6/8/10/12/15, XP 2/3/4/5/6/8, stolen stones 10/15/20/25/30/40%, movement 1/1/1/1/2/2 (no marks, then I to V; a path may multiply them). The Master's promotion lists what each tier adds."
+        "text": "2. Path attainment (comprehension). Four tiers stack: Master +20% at any rank, Grandmaster +25% from rank three, Great Grandmaster +30% from rank six, Supreme Grandmaster +35% from rank eight: +110% at the top. Each tier opens a new kind of power: the Master the path's hit on every attack it makes, the Grandmaster a second effect and the mortal killer move, the Great Grandmaster a domain or a new art and the immortal killer move, the Supreme Grandmaster the path's peak."
+      },
+      {
+        "text": "3. Dao marks, the quantity of dao. Tiers I to V give +10%, +20%, +30%, +40% and +10 HP healing, +55% and +15 HP healing. Every tier also raises the path's hit: extra damage 4/5/6/8/10/12, status turns 2/2/2/3/3/4, healing 5/6/8/10/12/15, XP 2/3/4/5/6/8, stolen stones 10/15/20/25/30/40%, movement 1/1/1/1/2/2 (no marks, then I to V; a path may multiply them). The Master's promotion lists what each tier adds."
       },
       {
         "text": "Dao marks grow one tier every 20 turns on Standard for a path Master of rank three or more; an immortal also gains one for every immortal it kills and every heavenly tribulation it survives. Mortals stop at tier II. Rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       },
       {
-        "text": "4. Gu. Each path's Gu comes with its Master. Every immortal Gu of your own path that your clan owns adds 5% strength; one of a strongly clashing path takes 5% away."
+        "text": "4. Gu. Each path's Gu comes with its Master. A Master refines more with XP: 113 catalog Gu of ranks 1 to 9, each waiting for a unit of its rank; a Gu's effect grows with its rank (a rank-one attack Gu +12%, a rank-nine one +44%). Immortal Gu sleep while the clan has no immortal essence of their rank. Every immortal Gu wonder of your own path that your clan owns adds 5% strength; one of a strongly clashing path takes 5% away."
       },
       {
         "text": "5. Conflicts. A second path whose dao marks clash with the first costs 5% to 25% strength."
@@ -36,7 +39,7 @@
         "header": 3
       },
       {
-        "text": "A Rank Six fire-path Great Grandmaster with Dao Marks III: strength 60, +45% from attainment and +15% from dao marks. Each attack inflicts Burning for 3 turns; each attack deals 6 extra damage; domain: enemies beside it fight 10% weaker."
+        "text": "A Rank Six fire-path Great Grandmaster with Dao Marks III: strength 36, +75% from attainment and +30% from dao marks. Each attack inflicts Burning for 3 turns; each attack deals 6 extra damage; domain: enemies beside it fight 10% weaker."
       }
     ]
   },
@@ -102,7 +105,7 @@
         "header": 3
       },
       {
-        "text": "An immortal outclasses any mortal army: strength 60, 85 and 115 at ranks six to eight against 44 at rank five, before its path, and it crosses the region walls. That is the reward for a long, hard climb: ascension needs a rank-five Master, the three qi and luck, and every rank above needs a survived tribulation, dao marks and essence."
+        "text": "An immortal outclasses any mortal army: strength 36, 51 and 69 at ranks six to eight against 29 at rank five, before its path, and it crosses the region walls. That is the reward for a long, hard climb: ascension needs a rank-five Master, the three qi and luck, and every rank above needs a survived tribulation, dao marks and essence."
       }
     ]
   },

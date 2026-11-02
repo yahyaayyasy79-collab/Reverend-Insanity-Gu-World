@@ -652,7 +652,7 @@
     ],
     "uniques": [
       "No damage penalty for wounded units",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Guard Broken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Guard Broken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Guard Broken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -725,7 +725,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Self-Reliance] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-strength-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Strength Great Grandmaster]>",
@@ -734,7 +734,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Strength path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Self-Reliance. +15% strength; unlocks: each attack takes 1 movement from the target."
+        "text": "Strength path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Self-Reliance. +25% strength; unlocks: each attack takes 1 movement from the target."
       }
     ],
     "prerequisites": [
@@ -749,7 +749,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-strength-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Strength Supreme Grandmaster]>",
@@ -758,7 +758,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Strength path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Myriad Self (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Strength path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Myriad Self (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -773,7 +773,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[1] additional attacks per turn",
       "Supreme Attainment",
       "Play [path-strength-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -782,7 +782,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Strength path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: 1 more attack per turn."
+        "text": "Strength path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 1 more attack per turn."
       }
     ],
     "prerequisites": [
@@ -825,7 +825,7 @@
     ],
     "uniques": [
       "Double movement in [Forest]",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [4] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [2] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -898,7 +898,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[1] Movement",
       "[This Unit] gains the [Flying Bear Change] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-transformation-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Transformation Great Grandmaster]>",
@@ -907,7 +907,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Transformation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Flying Bear Change. +15% strength; unlocks: +1 movement."
+        "text": "Transformation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Flying Bear Change. +25% strength; unlocks: +1 movement."
       }
     ],
     "prerequisites": [
@@ -922,7 +922,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Can move after attacking",
       "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-transformation-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Transformation Supreme Grandmaster]>",
@@ -931,7 +931,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Transformation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ancient Sword Dragon (5 green grape essence). +20% strength; adds: can move after attacking."
+        "text": "Transformation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ancient Sword Dragon (5 green grape essence). +30% strength; adds: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -946,7 +946,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "Double movement in [Jungle]",
       "Double movement in [Hill]",
       "[+20]% Strength",
@@ -957,7 +957,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Transformation path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: double movement in jungle; double movement in hills; +20% strength."
+        "text": "Transformation path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: double movement in jungle; double movement in hills; +20% strength."
       }
     ],
     "prerequisites": [
@@ -1000,7 +1000,7 @@
     ],
     "uniques": [
       "[+20]% Strength <when defending>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Bleeding] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Bleeding] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -1070,7 +1070,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] takes [6] damage <upon entering combat>",
       "[This Unit] gains the [Bone Spear] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-bone-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Bone Great Grandmaster]>",
@@ -1079,7 +1079,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bone path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bone Spear. +15% strength; unlocks: whoever fights it takes 6 damage."
+        "text": "Bone path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bone Spear. +25% strength; unlocks: whoever fights it takes 6 damage."
       }
     ],
     "prerequisites": [
@@ -1094,7 +1094,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-bone-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Bone Supreme Grandmaster]>",
@@ -1103,7 +1103,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bone path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Bone Spike Forest (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Bone path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Bone Spike Forest (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -1118,7 +1118,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+40]% Strength <when defending>",
       "Supreme Attainment",
       "Play [path-bone-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -1127,7 +1127,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bone path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +40% strength when defending."
+        "text": "Bone path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +40% strength when defending."
       }
     ],
     "prerequisites": [
@@ -1170,7 +1170,7 @@
     ],
     "uniques": [
       "Heals [20] damage if it kills a unit",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] heals [8] HP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] heals [1] HP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[This Unit] heals [4] HP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -1240,7 +1240,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Blood Skull] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-blood-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blood Great Grandmaster]>",
@@ -1249,7 +1249,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Blood Skull. +15% strength; unlocks: each attack inflicts Bleeding for 2 turns."
+        "text": "Blood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Blood Skull. +25% strength; unlocks: each attack inflicts Bleeding for 2 turns."
       }
     ],
     "prerequisites": [
@@ -1264,7 +1264,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+20]% Strength <when below [50] HP>",
       "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-blood-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blood Supreme Grandmaster]>",
@@ -1273,7 +1273,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Blood Deity (5 green grape essence). +20% strength; adds: +20% strength below 50 HP."
+        "text": "Blood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Blood Deity (5 green grape essence). +30% strength; adds: +20% strength below 50 HP."
       }
     ],
     "prerequisites": [
@@ -1288,7 +1288,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "Heals [40] damage if it kills a unit",
       "Supreme Attainment",
       "Play [path-blood-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -1297,7 +1297,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blood path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: heals 40 HP per kill."
+        "text": "Blood path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: heals 40 HP per kill."
       }
     ],
     "prerequisites": [
@@ -1340,7 +1340,7 @@
     ],
     "uniques": [
       "[+25]% Strength <when attacking>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [4] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [2] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -1410,7 +1410,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Before engaging in combat performs an extra ranged attack with [25]% of melee combat strength",
       "[This Unit] gains the [Sword Escape] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-sword-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sword Great Grandmaster]>",
@@ -1419,7 +1419,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sword path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Sword Escape. +15% strength; unlocks: strikes first from range at 25% strength."
+        "text": "Sword path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Sword Escape. +25% strength; unlocks: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -1434,7 +1434,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-sword-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sword Supreme Grandmaster]>",
@@ -1443,7 +1443,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sword path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Five Finger Fist Heart Sword (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Sword path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Five Finger Fist Heart Sword (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -1458,7 +1458,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+50]% Strength <when attacking>",
       "Supreme Attainment",
       "Play [path-sword-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -1467,7 +1467,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sword path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +50% strength when attacking."
+        "text": "Sword path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +50% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -1509,7 +1509,7 @@
     ],
     "uniques": [
       "[+50]% to Flank Attack bonuses",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Bleeding] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Bleeding] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -1575,7 +1575,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when attacking>",
       "[This Unit] gains the [Edge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-blade-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blade Great Grandmaster]>",
@@ -1584,7 +1584,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blade path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Edge. +15% strength; unlocks: +15% strength when attacking."
+        "text": "Blade path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Edge. +25% strength; unlocks: +15% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -1599,7 +1599,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Heals [15] damage if it kills a unit",
       "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-blade-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blade Supreme Grandmaster]>",
@@ -1608,7 +1608,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blade path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Autumn Blade Sweep (5 green grape essence). +20% strength; adds: heals 15 HP per kill."
+        "text": "Blade path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Autumn Blade Sweep (5 green grape essence). +30% strength; adds: heals 15 HP per kill."
       }
     ],
     "prerequisites": [
@@ -1623,7 +1623,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+100]% to Flank Attack bonuses",
       "Supreme Attainment",
       "Play [path-blade-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -1632,7 +1632,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blade path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: flanking bonus +100%."
+        "text": "Blade path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: flanking bonus +100%."
       }
     ],
     "prerequisites": [
@@ -1674,7 +1674,7 @@
     ],
     "uniques": [
       "[+30]% Strength <vs cities>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Guard Broken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Guard Broken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Guard Broken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -1740,7 +1740,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+20]% Strength <when defending>",
       "[This Unit] gains the [Iron Rain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-metal-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Metal Great Grandmaster]>",
@@ -1749,7 +1749,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Metal path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Iron Rain. +15% strength; unlocks: +20% strength when defending."
+        "text": "Metal path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Iron Rain. +25% strength; unlocks: +20% strength when defending."
       }
     ],
     "prerequisites": [
@@ -1764,7 +1764,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Destroys tile improvements when attacking",
       "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-metal-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Metal Supreme Grandmaster]>",
@@ -1773,7 +1773,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Metal path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move City-Crushing Hammer (5 green grape essence). +20% strength; adds: destroys improvements when attacking."
+        "text": "Metal path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move City-Crushing Hammer (5 green grape essence). +30% strength; adds: destroys improvements when attacking."
       }
     ],
     "prerequisites": [
@@ -1788,7 +1788,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+60]% Strength <vs cities>",
       "Supreme Attainment",
       "Play [path-metal-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -1797,7 +1797,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Metal path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +60% strength against villages."
+        "text": "Metal path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +60% strength against villages."
       }
     ],
     "prerequisites": [
@@ -1839,7 +1839,7 @@
     ],
     "uniques": [
       "[+20]% Strength <when adjacent to a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -1905,7 +1905,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Before engaging in combat performs an extra ranged attack with [25]% of melee combat strength",
       "[This Unit] gains the [Weapon Array] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-weapon-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Weapon Great Grandmaster]>",
@@ -1914,7 +1914,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Weapon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Weapon Array. +15% strength; unlocks: strikes first from range at 25% strength."
+        "text": "Weapon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Weapon Array. +25% strength; unlocks: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -1929,7 +1929,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+15]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-weapon-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Weapon Supreme Grandmaster]>",
@@ -1938,7 +1938,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Weapon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Hundred Weapons (5 green grape essence). +20% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
+        "text": "Weapon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Hundred Weapons (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -1953,7 +1953,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+40]% Strength <when adjacent to a [Military] unit>",
       "Supreme Attainment",
       "Play [path-weapon-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -1962,7 +1962,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Weapon path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +40% strength beside a soldier."
+        "text": "Weapon path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +40% strength beside a soldier."
       }
     ],
     "prerequisites": [
@@ -2004,7 +2004,7 @@
     ],
     "uniques": [
       "[This Unit] gains [1] movement <upon defeating a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [5] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -2069,7 +2069,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Heals [15] damage if it kills a unit",
       "[This Unit] gains the [Killing Intent] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-killing-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Killing Great Grandmaster]>",
@@ -2078,7 +2078,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Killing path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Killing Intent. +15% strength; unlocks: heals 15 HP per kill."
+        "text": "Killing path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Killing Intent. +25% strength; unlocks: heals 15 HP per kill."
       }
     ],
     "prerequisites": [
@@ -2093,7 +2093,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Kill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-killing-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Killing Supreme Grandmaster]>",
@@ -2102,7 +2102,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Killing path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Kill (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Killing path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Kill (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -2117,7 +2117,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[This Unit] gains [2] movement <upon defeating a [Military] unit>",
       "Supreme Attainment",
       "Play [path-killing-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -2126,7 +2126,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Killing path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: 2 movement per kill."
+        "text": "Killing path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 2 movement per kill."
       }
     ],
     "prerequisites": [
@@ -2168,7 +2168,7 @@
     ],
     "uniques": [
       "Destroys tile improvements when attacking",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Burning] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Burning] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Burning] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -2230,7 +2230,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Five-Finger Flame Chain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-fire-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Fire Great Grandmaster]>",
@@ -2239,7 +2239,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Fire path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Five-Finger Flame Chain. +15% strength; unlocks: each attack deals 6 extra damage."
+        "text": "Fire path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Five-Finger Flame Chain. +25% strength; unlocks: each attack deals 6 extra damage."
       }
     ],
     "prerequisites": [
@@ -2254,7 +2254,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-fire-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Fire Supreme Grandmaster]>",
@@ -2263,7 +2263,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Fire path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nirvana Fire (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Fire path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nirvana Fire (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -2278,7 +2278,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>",
       "Supreme Attainment",
       "Play [path-fire-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -2287,7 +2287,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Fire path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: each attack deals 12 extra damage."
+        "text": "Fire path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: each attack deals 12 extra damage."
       }
     ],
     "prerequisites": [
@@ -2331,7 +2331,7 @@
     ],
     "uniques": [
       "May travel on Water tiles without embarking",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks V]>",
@@ -2393,7 +2393,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[This Unit] heals [10] HP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Stream Surge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-water-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Water Great Grandmaster]>",
@@ -2402,7 +2402,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Water path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Stream Surge. +15% strength; unlocks: heals 10 HP with each attack."
+        "text": "Water path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Stream Surge. +25% strength; unlocks: heals 10 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -2417,7 +2417,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "All adjacent units heal [10] HP when healing",
       "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-water-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Water Supreme Grandmaster]>",
@@ -2426,7 +2426,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Water path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Worldly Wave Trace (5 green grape essence). +20% strength; adds: domain: units beside it heal 10 HP more."
+        "text": "Water path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Worldly Wave Trace (5 green grape essence). +30% strength; adds: domain: units beside it heal 10 HP more."
       }
     ],
     "prerequisites": [
@@ -2441,7 +2441,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] loses [2] movement <upon damaging a [Military] unit> <when attacking>",
       "Supreme Attainment",
       "Play [path-water-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -2450,7 +2450,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Water path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: each attack takes 2 movement from the target."
+        "text": "Water path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: each attack takes 2 movement from the target."
       }
     ],
     "prerequisites": [
@@ -2494,7 +2494,7 @@
     ],
     "uniques": [
       "[15] HP when healing",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Entangled] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -2555,7 +2555,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[This Unit] heals [10] HP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Rooted Vigor] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-wood-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wood Great Grandmaster]>",
@@ -2564,7 +2564,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Rooted Vigor. +15% strength; unlocks: heals 10 HP with each attack."
+        "text": "Wood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Rooted Vigor. +25% strength; unlocks: heals 10 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -2579,7 +2579,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "All adjacent units heal [10] HP when healing",
       "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-wood-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wood Supreme Grandmaster]>",
@@ -2588,7 +2588,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Verdant Renewal (5 green grape essence). +20% strength; adds: domain: units beside it heal 10 HP more."
+        "text": "Wood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Verdant Renewal (5 green grape essence). +30% strength; adds: domain: units beside it heal 10 HP more."
       }
     ],
     "prerequisites": [
@@ -2603,7 +2603,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[30] HP when healing",
       "Supreme Attainment",
       "Play [path-wood-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -2612,7 +2612,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wood path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +30 HP when healing."
+        "text": "Wood path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +30 HP when healing."
       }
     ],
     "prerequisites": [
@@ -2656,7 +2656,7 @@
     ],
     "uniques": [
       "[+25]% Strength <when fighting in [Hill] tiles>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Weighted] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Weighted] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Weighted] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -2715,7 +2715,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when defending>",
       "[This Unit] gains the [Nine-Ren Mountain] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-earth-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Earth Great Grandmaster]>",
@@ -2724,7 +2724,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Earth path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Nine-Ren Mountain. +15% strength; unlocks: +15% strength when defending."
+        "text": "Earth path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Nine-Ren Mountain. +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -2739,7 +2739,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+15]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-earth-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Earth Supreme Grandmaster]>",
@@ -2748,7 +2748,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Earth path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Earthen Bulwark (5 green grape essence). +20% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
+        "text": "Earth path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Earthen Bulwark (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -2763,7 +2763,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+50]% Strength <when fighting in [Hill] tiles>",
       "Supreme Attainment",
       "Play [path-earth-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -2772,7 +2772,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Earth path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +50% strength on hills."
+        "text": "Earth path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +50% strength on hills."
       }
     ],
     "prerequisites": [
@@ -2816,7 +2816,7 @@
     ],
     "uniques": [
       "[1] Movement",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks V]>",
@@ -2874,7 +2874,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Can move after attacking",
       "[This Unit] gains the [Gale Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-wind-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wind Great Grandmaster]>",
@@ -2883,7 +2883,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wind path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Gale Step. +15% strength; unlocks: can move after attacking."
+        "text": "Wind path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Gale Step. +25% strength; unlocks: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -2898,7 +2898,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-wind-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wind Supreme Grandmaster]>",
@@ -2907,7 +2907,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wind path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Wind-Rolled Dragon Whip (5 green grape essence). +20% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Wind path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Wind-Rolled Dragon Whip (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -2922,7 +2922,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[2] Movement",
       "Supreme Attainment",
       "Play [path-wind-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -2931,7 +2931,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wind path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +2 movement."
+        "text": "Wind path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +2 movement."
       }
     ],
     "prerequisites": [
@@ -2975,7 +2975,7 @@
     ],
     "uniques": [
       "Ignores terrain cost",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Blinded] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Blinded] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Blinded] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -3032,7 +3032,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+20]% Strength <when defending>",
       "[This Unit] gains the [Cloud Stride] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-cloud-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Cloud Great Grandmaster]>",
@@ -3041,7 +3041,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Cloud path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Cloud Stride. +15% strength; unlocks: +20% strength when defending."
+        "text": "Cloud path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Cloud Stride. +25% strength; unlocks: +20% strength when defending."
       }
     ],
     "prerequisites": [
@@ -3056,7 +3056,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-cloud-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Cloud Supreme Grandmaster]>",
@@ -3065,7 +3065,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Cloud path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Rising Azure Cloud (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Cloud path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Rising Azure Cloud (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -3080,7 +3080,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[1] Movement",
       "Ignores Zone of Control",
       "Supreme Attainment",
@@ -3090,7 +3090,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Cloud path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +1 movement; ignores zones of control."
+        "text": "Cloud path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +1 movement; ignores zones of control."
       }
     ],
     "prerequisites": [
@@ -3134,7 +3134,7 @@
     ],
     "uniques": [
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -3190,7 +3190,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when defending>",
       "[This Unit] gains the [Frost Bind] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-ice-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Ice Snow Great Grandmaster]>",
@@ -3199,7 +3199,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Ice Snow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Frost Bind. +15% strength; unlocks: +15% strength when defending."
+        "text": "Ice Snow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Frost Bind. +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -3214,7 +3214,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-ice-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Ice Snow Supreme Grandmaster]>",
@@ -3223,7 +3223,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Ice Snow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Frozen Domain (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Ice Snow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Frozen Domain (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -3238,7 +3238,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] loses [2] movement <upon damaging a [Military] unit> <when attacking>",
       "Supreme Attainment",
       "Play [path-ice-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -3247,7 +3247,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Ice Snow path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: each attack takes 2 movement from the target."
+        "text": "Ice Snow path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: each attack takes 2 movement from the target."
       }
     ],
     "prerequisites": [
@@ -3291,7 +3291,7 @@
     ],
     "uniques": [
       "[+30]% Strength <when above [1] movement>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Shocked] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Shocked] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Shocked] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -3345,7 +3345,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[1] Movement",
       "[This Unit] gains the [Lightning Wings] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-lightning-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Lightning Great Grandmaster]>",
@@ -3354,7 +3354,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Lightning path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Lightning Wings. +15% strength; unlocks: +1 movement."
+        "text": "Lightning path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Lightning Wings. +25% strength; unlocks: +1 movement."
       }
     ],
     "prerequisites": [
@@ -3369,7 +3369,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Can move after attacking",
       "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-lightning-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Lightning Supreme Grandmaster]>",
@@ -3378,7 +3378,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Lightning path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Thunder Judgement (5 green grape essence). +20% strength; adds: can move after attacking."
+        "text": "Lightning path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Thunder Judgement (5 green grape essence). +30% strength; adds: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -3393,7 +3393,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+60]% Strength <when above [1] movement>",
       "Supreme Attainment",
       "Play [path-lightning-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -3402,7 +3402,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Lightning path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +60% strength with more than 1 movement left."
+        "text": "Lightning path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +60% strength with more than 1 movement left."
       }
     ],
     "prerequisites": [
@@ -3446,7 +3446,7 @@
     ],
     "uniques": [
       "[Target Unit] gains the [Poisoned] status for [3] turn(s) <upon damaging a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [5] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -3503,7 +3503,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] gains the [Guard Broken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Bee Net Sting] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-poison-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Poison Great Grandmaster]>",
@@ -3512,7 +3512,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Poison path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bee Net Sting. +15% strength; unlocks: each attack inflicts Guard Broken for 2 turns."
+        "text": "Poison path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bee Net Sting. +25% strength; unlocks: each attack inflicts Guard Broken for 2 turns."
       }
     ],
     "prerequisites": [
@@ -3527,7 +3527,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-poison-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Poison Supreme Grandmaster]>",
@@ -3536,7 +3536,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Poison path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heart of Venom (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Poison path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heart of Venom (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -3551,7 +3551,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] gains the [Poisoned] status for [6] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "Supreme Attainment",
       "Play [path-poison-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -3560,7 +3560,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Poison path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: each attack inflicts Poisoned for 6 turns."
+        "text": "Poison path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: each attack inflicts Poisoned for 6 turns."
       }
     ],
     "prerequisites": [
@@ -3604,7 +3604,7 @@
     ],
     "uniques": [
       "Can move after attacking",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Blinded] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Blinded] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Blinded] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -3657,7 +3657,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[2] Sight",
       "[This Unit] gains the [Glare] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-light-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Light Great Grandmaster]>",
@@ -3666,7 +3666,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Light path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Glare. +15% strength; unlocks: +2 sight."
+        "text": "Light path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Glare. +25% strength; unlocks: +2 sight."
       }
     ],
     "prerequisites": [
@@ -3681,7 +3681,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Before engaging in combat performs an extra ranged attack with [30]% of melee combat strength",
       "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-light-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Light Supreme Grandmaster]>",
@@ -3690,7 +3690,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Light path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Saw-Wheel Light (5 green grape essence). +20% strength; adds: strikes first from range at 30% strength."
+        "text": "Light path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Saw-Wheel Light (5 green grape essence). +30% strength; adds: strikes first from range at 30% strength."
       }
     ],
     "prerequisites": [
@@ -3705,7 +3705,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[1] additional attacks per turn",
       "Supreme Attainment",
       "Play [path-light-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -3714,7 +3714,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Light path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: 1 more attack per turn."
+        "text": "Light path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 1 more attack per turn."
       }
     ],
     "prerequisites": [
@@ -3758,7 +3758,7 @@
     ],
     "uniques": [
       "Invisible to others",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Shaken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Shaken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -3810,7 +3810,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Shroud] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-dark-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dark Great Grandmaster]>",
@@ -3819,7 +3819,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dark path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shroud. +15% strength; unlocks: each attack takes 1 movement from the target."
+        "text": "Dark path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shroud. +25% strength; unlocks: each attack takes 1 movement from the target."
       }
     ],
     "prerequisites": [
@@ -3834,7 +3834,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-dark-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dark Supreme Grandmaster]>",
@@ -3843,7 +3843,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dark path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dark Limit (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Dark path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dark Limit (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -3858,7 +3858,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+40]% Strength <when attacking>",
       "Supreme Attainment",
       "Play [path-dark-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -3867,7 +3867,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dark path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +40% strength when attacking."
+        "text": "Dark path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +40% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -3911,7 +3911,7 @@
     ],
     "uniques": [
       "[+30]% Strength <vs [Wounded] units>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [4] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [2] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -3966,7 +3966,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Can move after attacking",
       "[This Unit] gains the [Shadow Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-shadow-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Shadow Great Grandmaster]>",
@@ -3975,7 +3975,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Shadow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shadow Step. +15% strength; unlocks: can move after attacking."
+        "text": "Shadow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shadow Step. +25% strength; unlocks: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -3990,7 +3990,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Invisible to others",
       "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-shadow-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Shadow Supreme Grandmaster]>",
@@ -3999,7 +3999,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Shadow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Shadow Severance (5 green grape essence). +20% strength; adds: invisible to others."
+        "text": "Shadow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Shadow Severance (5 green grape essence). +30% strength; adds: invisible to others."
       }
     ],
     "prerequisites": [
@@ -4014,7 +4014,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+60]% Strength <vs [Wounded] units>",
       "Supreme Attainment",
       "Play [path-shadow-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -4023,7 +4023,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Shadow path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +60% strength against wounded units."
+        "text": "Shadow path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +60% strength against wounded units."
       }
     ],
     "prerequisites": [
@@ -4067,7 +4067,7 @@
     ],
     "uniques": [
       "[2] Sight",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -4120,7 +4120,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] gains the [Weighted] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Star Snake Rope] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-star-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Star Great Grandmaster]>",
@@ -4129,7 +4129,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Star path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Star Snake Rope. +15% strength; unlocks: each attack inflicts Weighted for 2 turns."
+        "text": "Star path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Star Snake Rope. +25% strength; unlocks: each attack inflicts Weighted for 2 turns."
       }
     ],
     "prerequisites": [
@@ -4144,7 +4144,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
       "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-star-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Star Supreme Grandmaster]>",
@@ -4153,7 +4153,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Star path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nebula Millstone (5 green grape essence). +20% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Star path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nebula Millstone (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -4168,7 +4168,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[4] Sight",
       "Supreme Attainment",
       "Play [path-star-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -4177,7 +4177,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Star path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +4 sight."
+        "text": "Star path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +4 sight."
       }
     ],
     "prerequisites": [
@@ -4221,7 +4221,7 @@
     ],
     "uniques": [
       "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [4] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [2] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -4273,7 +4273,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when attacking>",
       "[This Unit] gains the [Crescent Moon] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-moon-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Moon Great Grandmaster]>",
@@ -4282,7 +4282,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Moon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Crescent Moon. +15% strength; unlocks: +15% strength when attacking."
+        "text": "Moon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Crescent Moon. +25% strength; unlocks: +15% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -4297,7 +4297,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-moon-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Moon Supreme Grandmaster]>",
@@ -4306,7 +4306,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Moon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Peerless Crescent Moon Slash (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Moon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Peerless Crescent Moon Slash (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -4321,7 +4321,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[1] additional attacks per turn",
       "Supreme Attainment",
       "Play [path-moon-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -4330,7 +4330,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Moon path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: 1 more attack per turn."
+        "text": "Moon path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 1 more attack per turn."
       }
     ],
     "prerequisites": [
@@ -4374,7 +4374,7 @@
     ],
     "uniques": [
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -4422,7 +4422,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Qin Strike] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-sound-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sound Great Grandmaster]>",
@@ -4431,7 +4431,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sound path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Qin Strike. +15% strength; unlocks: each attack takes 1 movement from the target."
+        "text": "Sound path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Qin Strike. +25% strength; unlocks: each attack takes 1 movement from the target."
       }
     ],
     "prerequisites": [
@@ -4446,7 +4446,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Before engaging in combat performs an extra ranged attack with [25]% of melee combat strength",
       "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-sound-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sound Supreme Grandmaster]>",
@@ -4455,7 +4455,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sound path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Silence Beats Sound (5 green grape essence). +20% strength; adds: strikes first from range at 25% strength."
+        "text": "Sound path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Silence Beats Sound (5 green grape essence). +30% strength; adds: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -4470,7 +4470,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[-20]% Strength for enemy [Military] units in adjacent [All] tiles",
       "Supreme Attainment",
       "Play [path-sound-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -4479,7 +4479,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Sound path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: domain: enemies beside it fight 20% weaker."
+        "text": "Sound path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: domain: enemies beside it fight 20% weaker."
       }
     ],
     "prerequisites": [
@@ -4523,7 +4523,7 @@
     ],
     "uniques": [
       "Withdraws before melee combat",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks V]>",
@@ -4569,7 +4569,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+25]% Strength <when defending>",
       "[This Unit] gains the [Mirage] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-illusion-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Illusion Great Grandmaster]>",
@@ -4578,7 +4578,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Illusion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mirage. +15% strength; unlocks: +25% strength when defending."
+        "text": "Illusion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mirage. +25% strength; unlocks: +25% strength when defending."
       }
     ],
     "prerequisites": [
@@ -4593,7 +4593,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Invisible to others",
       "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-illusion-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Illusion Supreme Grandmaster]>",
@@ -4602,7 +4602,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Illusion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Illusory Garden (5 green grape essence). +20% strength; adds: invisible to others."
+        "text": "Illusion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Illusory Garden (5 green grape essence). +30% strength; adds: invisible to others."
       }
     ],
     "prerequisites": [
@@ -4617,7 +4617,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] gains the [Dazed] status for [2] turn(s) <upon entering combat>",
       "Supreme Attainment",
       "Play [path-illusion-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -4626,7 +4626,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Illusion path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: whoever fights it suffers Dazed for 2 turns."
+        "text": "Illusion path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: whoever fights it suffers Dazed for 2 turns."
       }
     ],
     "prerequisites": [
@@ -4670,7 +4670,7 @@
     ],
     "uniques": [
       "Can see invisible [All] units",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] gains [3] XP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains [1] XP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[This Unit] gains [3] XP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -4715,7 +4715,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+30]% XP gained from combat",
       "[This Unit] gains the [Deduction] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-wisdom-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wisdom Great Grandmaster]>",
@@ -4724,7 +4724,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wisdom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Deduction. +15% strength; unlocks: +30% battle XP."
+        "text": "Wisdom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Deduction. +25% strength; unlocks: +30% battle XP."
       }
     ],
     "prerequisites": [
@@ -4739,7 +4739,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
       "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-wisdom-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wisdom Supreme Grandmaster]>",
@@ -4748,7 +4748,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wisdom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Mystery Unravelled (5 green grape essence). +20% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Wisdom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Mystery Unravelled (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -4763,7 +4763,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+25]% Strength",
       "[2] Sight",
       "Supreme Attainment",
@@ -4773,7 +4773,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wisdom path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +25% strength; +2 sight."
+        "text": "Wisdom path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +25% strength; +2 sight."
       }
     ],
     "prerequisites": [
@@ -4816,7 +4816,7 @@
     ],
     "uniques": [
       "[+25]% Strength <when below [50] HP>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Shaken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Shaken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -4862,7 +4862,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when below [75] HP>",
       "[This Unit] gains the [Doting Mother] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-emotion-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Emotion Great Grandmaster]>",
@@ -4871,7 +4871,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Emotion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Doting Mother. +15% strength; unlocks: +15% strength below 75 HP."
+        "text": "Emotion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Doting Mother. +25% strength; unlocks: +15% strength below 75 HP."
       }
     ],
     "prerequisites": [
@@ -4886,7 +4886,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Regret] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-emotion-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Emotion Supreme Grandmaster]>",
@@ -4895,7 +4895,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Emotion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Regret (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Emotion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Regret (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -4910,7 +4910,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+50]% Strength <when below [50] HP>",
       "Supreme Attainment",
       "Play [path-emotion-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -4919,7 +4919,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Emotion path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +50% strength below 50 HP."
+        "text": "Emotion path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +50% strength below 50 HP."
       }
     ],
     "prerequisites": [
@@ -4962,7 +4962,7 @@
     ],
     "uniques": [
       "[Target Unit] gains the [Charmed] status for [1] turn(s) <upon damaging a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks V]>",
@@ -5008,7 +5008,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Charming Glance] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-enchantment-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enchantment Great Grandmaster]>",
@@ -5017,7 +5017,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Charming Glance. +15% strength; unlocks: each attack inflicts Shaken for 2 turns."
+        "text": "Enchantment path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Charming Glance. +25% strength; unlocks: each attack inflicts Shaken for 2 turns."
       }
     ],
     "prerequisites": [
@@ -5032,7 +5032,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-enchantment-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enchantment Supreme Grandmaster]>",
@@ -5041,7 +5041,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Captivation (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Enchantment path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Captivation (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -5056,7 +5056,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "May capture killed [Military] units",
       "Supreme Attainment",
       "Play [path-enchantment-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5065,7 +5065,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: captures slain soldier units."
+        "text": "Enchantment path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: captures slain soldier units."
       }
     ],
     "prerequisites": [
@@ -5108,7 +5108,7 @@
     ],
     "uniques": [
       "[This Unit] gains [10] XP <upon defeating a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Soul-Torn] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Soul-Torn] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Soul-Torn] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -5151,7 +5151,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[This Unit] heals [10] HP <upon defeating a [Military] unit>",
       "[This Unit] gains the [Guts] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-soul-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Soul Great Grandmaster]>",
@@ -5160,7 +5160,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Soul path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Guts. +15% strength; unlocks: heals 10 HP per kill."
+        "text": "Soul path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Guts. +25% strength; unlocks: heals 10 HP per kill."
       }
     ],
     "prerequisites": [
@@ -5175,7 +5175,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-soul-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Soul Supreme Grandmaster]>",
@@ -5184,7 +5184,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Soul path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Soul Search (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Soul path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Soul Search (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -5199,7 +5199,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[This Unit] gains [20] XP <upon defeating a [Military] unit>",
       "Supreme Attainment",
       "Play [path-soul-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5208,7 +5208,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Soul path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: 20 XP per kill."
+        "text": "Soul path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 20 XP per kill."
       }
     ],
     "prerequisites": [
@@ -5251,7 +5251,7 @@
     ],
     "uniques": [
       "[+50]% XP gained from combat",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -5294,7 +5294,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[Target Unit] gains the [Soul-Torn] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Waking Dream] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-dream-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dream Great Grandmaster]>",
@@ -5303,7 +5303,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dream path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Waking Dream. +15% strength; unlocks: each attack inflicts Soul-Torn for 2 turns."
+        "text": "Dream path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Waking Dream. +25% strength; unlocks: each attack inflicts Soul-Torn for 2 turns."
       }
     ],
     "prerequisites": [
@@ -5318,7 +5318,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-dream-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dream Supreme Grandmaster]>",
@@ -5327,7 +5327,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dream path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dreamy Light Smoke (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Dream path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dreamy Light Smoke (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -5342,7 +5342,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+100]% XP gained from combat",
       "Supreme Attainment",
       "Play [path-dream-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5351,7 +5351,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dream path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +100% battle XP."
+        "text": "Dream path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +100% battle XP."
       }
     ],
     "prerequisites": [
@@ -5394,7 +5394,7 @@
     ],
     "uniques": [
       "May capture killed [Barbarians] units",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Shaken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Shaken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -5436,7 +5436,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength bonus for [Beast] units within [2] tiles",
       "[This Unit] gains the [Wolf Enslavement] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-enslavement-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enslavement Great Grandmaster]>",
@@ -5445,7 +5445,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enslavement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Wolf Enslavement. +15% strength; unlocks: domain: own beasts within a 2-tile radius fight 15% harder."
+        "text": "Enslavement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Wolf Enslavement. +25% strength; unlocks: domain: own beasts within a 2-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -5460,7 +5460,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+20]% Strength <vs [Beast] units>",
       "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-enslavement-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enslavement Supreme Grandmaster]>",
@@ -5469,7 +5469,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enslavement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ambush on Eight Sides (5 green grape essence). +20% strength; adds: +20% strength against beast units."
+        "text": "Enslavement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ambush on Eight Sides (5 green grape essence). +30% strength; adds: +20% strength against beast units."
       }
     ],
     "prerequisites": [
@@ -5484,7 +5484,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "May capture killed [Military] units",
       "Supreme Attainment",
       "Play [path-enslavement-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5493,7 +5493,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Enslavement path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: captures slain soldier units."
+        "text": "Enslavement path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: captures slain soldier units."
       }
     ],
     "prerequisites": [
@@ -5536,7 +5536,7 @@
     ],
     "uniques": [
       "[1] additional attacks per turn",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Aged] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Aged] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Aged] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -5577,7 +5577,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[This Unit] heals [10] HP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Borrowed Moment] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-time-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Time Great Grandmaster]>",
@@ -5586,7 +5586,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Time path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Borrowed Moment. +15% strength; unlocks: heals 10 HP with each attack."
+        "text": "Time path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Borrowed Moment. +25% strength; unlocks: heals 10 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -5601,7 +5601,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[1] Movement",
       "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-time-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Time Supreme Grandmaster]>",
@@ -5610,7 +5610,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Time path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Call of the Ancient (5 green grape essence). +20% strength; adds: +1 movement."
+        "text": "Time path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Call of the Ancient (5 green grape essence). +30% strength; adds: +1 movement."
       }
     ],
     "prerequisites": [
@@ -5625,7 +5625,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[1] additional attacks per turn",
       "Supreme Attainment",
       "Play [path-time-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5634,7 +5634,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Time path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: 1 more attack per turn."
+        "text": "Time path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 1 more attack per turn."
       }
     ],
     "prerequisites": [
@@ -5677,7 +5677,7 @@
     ],
     "uniques": [
       "All tiles cost 1 movement",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks V]>",
@@ -5716,7 +5716,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Can move after attacking",
       "[This Unit] gains the [Folded Step] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-space-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Space Great Grandmaster]>",
@@ -5725,7 +5725,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Space path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Folded Step. +15% strength; unlocks: can move after attacking."
+        "text": "Space path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Folded Step. +25% strength; unlocks: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -5740,7 +5740,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Withdraws before melee combat",
       "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-space-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Space Supreme Grandmaster]>",
@@ -5749,7 +5749,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Space path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea and Sky Expands (5 green grape essence). +20% strength; adds: slips away from melee."
+        "text": "Space path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea and Sky Expands (5 green grape essence). +30% strength; adds: slips away from melee."
       }
     ],
     "prerequisites": [
@@ -5764,7 +5764,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[2] Movement",
       "Can pass through impassable tiles",
       "Supreme Attainment",
@@ -5774,7 +5774,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Space path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +2 movement."
+        "text": "Space path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +2 movement."
       }
     ],
     "prerequisites": [
@@ -5817,7 +5817,7 @@
     ],
     "uniques": [
       "Ignores Zone of Control",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -5854,7 +5854,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+20]% Strength <when defending>",
       "[This Unit] gains the [Bent Law] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-rule-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Rule Great Grandmaster]>",
@@ -5863,7 +5863,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Rule path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bent Law. +15% strength; unlocks: +20% strength when defending."
+        "text": "Rule path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bent Law. +25% strength; unlocks: +20% strength when defending."
       }
     ],
     "prerequisites": [
@@ -5878,7 +5878,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-rule-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Rule Supreme Grandmaster]>",
@@ -5887,7 +5887,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Rule path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move One Step Back (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Rule path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move One Step Back (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -5902,7 +5902,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon entering combat>",
       "Supreme Attainment",
       "Play [path-rule-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5911,7 +5911,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Rule path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: whoever fights it suffers Sealed for 2 turns."
+        "text": "Rule path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: whoever fights it suffers Sealed for 2 turns."
       }
     ],
     "prerequisites": [
@@ -5954,7 +5954,7 @@
     ],
     "uniques": [
       "[This Unit] gains the [Phantom Veil] status for [1] turn(s) <upon losing at least [30] HP in a single attack>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -5995,7 +5995,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Withdraws before melee combat",
       "[This Unit] gains the [Hollow Form] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-phantom-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Phantom Great Grandmaster]>",
@@ -6004,7 +6004,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Phantom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hollow Form. +15% strength; unlocks: slips away from melee."
+        "text": "Phantom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hollow Form. +25% strength; unlocks: slips away from melee."
       }
     ],
     "prerequisites": [
@@ -6019,7 +6019,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Invisible to others",
       "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-phantom-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Phantom Supreme Grandmaster]>",
@@ -6028,7 +6028,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Phantom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Phantom Body (5 green grape essence). +20% strength; adds: invisible to others."
+        "text": "Phantom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Phantom Body (5 green grape essence). +30% strength; adds: invisible to others."
       }
     ],
     "prerequisites": [
@@ -6043,7 +6043,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+60]% Strength <when defending>",
       "Supreme Attainment",
       "Play [path-phantom-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6052,7 +6052,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Phantom path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +60% strength when defending."
+        "text": "Phantom path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +60% strength when defending."
       }
     ],
     "prerequisites": [
@@ -6095,7 +6095,7 @@
     ],
     "uniques": [
       "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
       "[Target Unit] loses [1] movement <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks V]>",
@@ -6132,7 +6132,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when defending>",
       "[This Unit] gains the [Severing Essence] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-restriction-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Restriction Great Grandmaster]>",
@@ -6141,7 +6141,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Restriction path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Severing Essence. +15% strength; unlocks: +15% strength when defending."
+        "text": "Restriction path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Severing Essence. +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -6156,7 +6156,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-restriction-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Restriction Supreme Grandmaster]>",
@@ -6165,7 +6165,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Restriction path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Absolute Ban (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Restriction path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Absolute Ban (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -6180,7 +6180,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[Target Unit] gains the [Sealed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "Supreme Attainment",
       "Play [path-restriction-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6189,7 +6189,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Restriction path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: each attack inflicts Sealed for 4 turns."
+        "text": "Restriction path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: each attack inflicts Sealed for 4 turns."
       }
     ],
     "prerequisites": [
@@ -6232,7 +6232,7 @@
     ],
     "uniques": [
       "[+30]% Strength <with [50]% chance>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Doomed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking> <with [50]% chance>",
       "[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <with [50]% chance> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <with [50]% chance> <for units with [Dao Marks IV]>",
@@ -6268,7 +6268,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Earn [20]% of the damage done to [Military] units as [Gold]",
       "[This Unit] gains the [Fortune Rivalling Heaven] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-luck-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Luck Great Grandmaster]>",
@@ -6277,7 +6277,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Luck path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Fortune Rivalling Heaven. +15% strength; unlocks: earns stones worth 20% of the damage it deals."
+        "text": "Luck path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Fortune Rivalling Heaven. +25% strength; unlocks: earns stones worth 20% of the damage it deals."
       }
     ],
     "prerequisites": [
@@ -6292,7 +6292,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-luck-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Luck Supreme Grandmaster]>",
@@ -6301,7 +6301,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Luck path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Turn of Fortune (5 green grape essence). +20% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Luck path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Turn of Fortune (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -6316,7 +6316,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+60]% Strength <with [50]% chance>",
       "Supreme Attainment",
       "Play [path-luck-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6325,7 +6325,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Luck path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +60% strength in 50% of fights."
+        "text": "Luck path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +60% strength in 50% of fights."
       }
     ],
     "prerequisites": [
@@ -6368,7 +6368,7 @@
     ],
     "uniques": [
       "[+25]% Strength <when fighting units from a Civilization with more Cities than you>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Doomed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -6402,7 +6402,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[2] Sight",
       "[This Unit] gains the [Heaven's Rebuke] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-heaven-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Heaven Great Grandmaster]>",
@@ -6411,7 +6411,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Heaven path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Heaven's Rebuke. +15% strength; unlocks: +2 sight."
+        "text": "Heaven path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Heaven's Rebuke. +25% strength; unlocks: +2 sight."
       }
     ],
     "prerequisites": [
@@ -6426,7 +6426,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-heaven-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Heaven Supreme Grandmaster]>",
@@ -6435,7 +6435,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Heaven path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Web Protection Veil (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Heaven path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Web Protection Veil (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -6450,7 +6450,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+50]% Strength <when fighting units from a Civilization with more Cities than you>",
       "Supreme Attainment",
       "Play [path-heaven-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6459,7 +6459,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Heaven path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +50% strength against clans with more villages."
+        "text": "Heaven path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +50% strength against clans with more villages."
       }
     ],
     "prerequisites": [
@@ -6502,7 +6502,7 @@
     ],
     "uniques": [
       "[+3] Strength",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -6538,7 +6538,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "Before engaging in combat performs an extra ranged attack with [25]% of melee combat strength",
       "[This Unit] gains the [Exploding Qi Roar] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-qi-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Qi Great Grandmaster]>",
@@ -6547,7 +6547,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Qi path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Exploding Qi Roar. +15% strength; unlocks: strikes first from range at 25% strength."
+        "text": "Qi path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Exploding Qi Roar. +25% strength; unlocks: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -6562,7 +6562,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-qi-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Qi Supreme Grandmaster]>",
@@ -6571,7 +6571,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Qi path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Qi Covers Mountains and Rivers (5 green grape essence). +20% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Qi path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Qi Covers Mountains and Rivers (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -6586,7 +6586,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+6] Strength",
       "Supreme Attainment",
       "Play [path-qi-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6595,7 +6595,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Qi path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +6 flat strength."
+        "text": "Qi path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +6 flat strength."
       }
     ],
     "prerequisites": [
@@ -6638,7 +6638,7 @@
     ],
     "uniques": [
       "[-30]% Gold cost of upgrading",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] takes [3] damage <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[Target Unit] takes [1] damage <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -6673,7 +6673,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+20]% XP gained from combat",
       "[This Unit] gains the [Ink Transformation] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-refinement-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Refinement Great Grandmaster]>",
@@ -6682,7 +6682,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Refinement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Ink Transformation. +15% strength; unlocks: +20% battle XP."
+        "text": "Refinement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Ink Transformation. +25% strength; unlocks: +20% battle XP."
       }
     ],
     "prerequisites": [
@@ -6697,7 +6697,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-refinement-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Refinement Supreme Grandmaster]>",
@@ -6706,7 +6706,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Refinement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Light Rotation (5 green grape essence). +20% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Refinement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Light Rotation (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -6721,7 +6721,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[-60]% Gold cost of upgrading",
       "[+20]% Strength",
       "Supreme Attainment",
@@ -6731,7 +6731,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Refinement path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: upgrades cost 60% fewer stones; +20% strength."
+        "text": "Refinement path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: upgrades cost 60% fewer stones; +20% strength."
       }
     ],
     "prerequisites": [
@@ -6775,7 +6775,7 @@
     ],
     "uniques": [
       "[+15]% Strength bonus for [Military] units within [1] tiles",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Entangled] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -6807,7 +6807,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when defending>",
       "[This Unit] gains the [Linked Formation] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-formation-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Formation Great Grandmaster]>",
@@ -6816,7 +6816,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Formation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Linked Formation. +15% strength; unlocks: +15% strength when defending."
+        "text": "Formation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Linked Formation. +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -6831,7 +6831,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
       "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-formation-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Formation Supreme Grandmaster]>",
@@ -6840,7 +6840,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Formation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Grand Formation (5 green grape essence). +20% strength; adds: domain: own soldiers within a 2-tile radius fight 15% harder."
+        "text": "Formation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Grand Formation (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -6855,7 +6855,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+30]% Strength bonus for [Military] units within [1] tiles",
       "Supreme Attainment",
       "Play [path-formation-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6864,7 +6864,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Formation path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: domain: own soldiers within a 1-tile radius fight 30% harder."
+        "text": "Formation path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: domain: own soldiers within a 1-tile radius fight 30% harder."
       }
     ],
     "prerequisites": [
@@ -6908,7 +6908,7 @@
     ],
     "uniques": [
       "[-25]% maintenance costs",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] heals [5] HP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] heals [1] HP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[This Unit] heals [3] HP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -6941,7 +6941,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[10] HP when healing",
       "[This Unit] gains the [Eat Bitterness] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-food-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Food Great Grandmaster]>",
@@ -6950,7 +6950,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Food path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Eat Bitterness. +15% strength; unlocks: +10 HP when healing."
+        "text": "Food path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Eat Bitterness. +25% strength; unlocks: +10 HP when healing."
       }
     ],
     "prerequisites": [
@@ -6965,7 +6965,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "All adjacent units heal [10] HP when healing",
       "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-food-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Food Supreme Grandmaster]>",
@@ -6974,7 +6974,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Food path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Banquet of Immortals (5 green grape essence). +20% strength; adds: domain: units beside it heal 10 HP more."
+        "text": "Food path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Banquet of Immortals (5 green grape essence). +30% strength; adds: domain: units beside it heal 10 HP more."
       }
     ],
     "prerequisites": [
@@ -6989,7 +6989,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[-50]% maintenance costs",
       "Supreme Attainment",
       "Play [path-food-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -6998,7 +6998,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Food path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: upkeep 50% lower."
+        "text": "Food path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: upkeep 50% lower."
       }
     ],
     "prerequisites": [
@@ -7042,7 +7042,7 @@
     ],
     "uniques": [
       "Unit will heal every turn, even if it performs an action",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] heals [6] HP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] heals [2] HP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[This Unit] heals [4] HP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -7073,7 +7073,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[15] HP when healing",
       "[This Unit] gains the [Recovery Pill] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-pill-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Pill Great Grandmaster]>",
@@ -7082,7 +7082,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Pill path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Recovery Pill. +15% strength; unlocks: +15 HP when healing."
+        "text": "Pill path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Recovery Pill. +25% strength; unlocks: +15 HP when healing."
       }
     ],
     "prerequisites": [
@@ -7097,7 +7097,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "All adjacent units heal [15] HP when healing",
       "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-pill-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Pill Supreme Grandmaster]>",
@@ -7106,7 +7106,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Pill path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Life-Saving Pill (5 green grape essence). +20% strength; adds: domain: units beside it heal 15 HP more."
+        "text": "Pill path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Life-Saving Pill (5 green grape essence). +30% strength; adds: domain: units beside it heal 15 HP more."
       }
     ],
     "prerequisites": [
@@ -7121,7 +7121,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "All healing effects doubled",
       "Supreme Attainment",
       "Play [path-pill-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -7130,7 +7130,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Pill path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: all healing doubled."
+        "text": "Pill path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: all healing doubled."
       }
     ],
     "prerequisites": [
@@ -7174,7 +7174,7 @@
     ],
     "uniques": [
       "Can see over obstacles",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Guard Broken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Guard Broken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Guard Broken] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -7203,7 +7203,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[2] Sight",
       "[This Unit] gains the [Mountain Pledge] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-information-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Information Great Grandmaster]>",
@@ -7212,7 +7212,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Information path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mountain Pledge. +15% strength; unlocks: +2 sight."
+        "text": "Information path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mountain Pledge. +25% strength; unlocks: +2 sight."
       }
     ],
     "prerequisites": [
@@ -7227,7 +7227,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
       "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-information-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Information Supreme Grandmaster]>",
@@ -7236,7 +7236,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Information path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea Oath (5 green grape essence). +20% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Information path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea Oath (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -7251,7 +7251,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "Can see invisible [All] units",
       "[3] Sight",
       "Supreme Attainment",
@@ -7261,7 +7261,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Information path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: sees invisible units; +3 sight."
+        "text": "Information path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: sees invisible units; +3 sight."
       }
     ],
     "prerequisites": [
@@ -7305,7 +7305,7 @@
     ],
     "uniques": [
       "All adjacent units heal [10] HP when healing",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] gains [2] XP <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains [1] XP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks I]>",
       "[This Unit] gains [2] XP <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks II]>",
@@ -7333,7 +7333,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Hopes of the Crowd] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-human-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Human Great Grandmaster]>",
@@ -7342,7 +7342,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Human path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hopes of the Crowd. +15% strength; unlocks: domain: own soldiers within a 1-tile radius fight 15% harder."
+        "text": "Human path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hopes of the Crowd. +25% strength; unlocks: domain: own soldiers within a 1-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -7357,7 +7357,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
       "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-human-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Human Supreme Grandmaster]>",
@@ -7366,7 +7366,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Human path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heroes Among People (5 green grape essence). +20% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Human path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heroes Among People (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -7381,7 +7381,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "All adjacent units heal [25] HP when healing",
       "Supreme Attainment",
       "Play [path-human-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -7390,7 +7390,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Human path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: domain: units beside it heal 25 HP more."
+        "text": "Human path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: domain: units beside it heal 25 HP more."
       }
     ],
     "prerequisites": [
@@ -7434,7 +7434,7 @@
     ],
     "uniques": [
       "[+20]% Strength <when fighting in [Friendly Land] tiles>",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
       "[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks III]>",
       "[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <for units with [Dao Marks IV]>",
@@ -7461,7 +7461,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[+15]% Strength <when defending>",
       "[This Unit] gains the [Living Ink] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-painting-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Painting Great Grandmaster]>",
@@ -7470,7 +7470,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Painting path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Living Ink. +15% strength; unlocks: +15% strength when defending."
+        "text": "Painting path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Living Ink. +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -7485,7 +7485,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
       "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-painting-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Painting Supreme Grandmaster]>",
@@ -7494,7 +7494,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Painting path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Contented Lifestyle (5 green grape essence). +20% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Painting path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Contented Lifestyle (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -7509,7 +7509,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "[+40]% Strength <when fighting in [Friendly Land] tiles>",
       "Supreme Attainment",
       "Play [path-painting-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -7518,7 +7518,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Painting path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: +40% strength on its own land."
+        "text": "Painting path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +40% strength on its own land."
       }
     ],
     "prerequisites": [
@@ -7562,7 +7562,7 @@
     ],
     "uniques": [
       "Earn [50]% of killed [Military] unit's [Cost] as [Gold]",
-      "[+10]% Strength",
+      "[+20]% Strength",
       "Earn [10]% of the damage done to [Military] units as [Gold]",
       "Earn [5]% of the damage done to [Military] units as [Gold] <for units with [Dao Marks I]>",
       "Earn [10]% of the damage done to [Military] units as [Gold] <for units with [Dao Marks II]>",
@@ -7591,7 +7591,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+15]% Strength",
+      "[+25]% Strength",
       "[This Unit] gains [1] movement <upon damaging a [Military] unit> <when attacking>",
       "[This Unit] gains the [Light Fingers] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement>",
       "Play [path-theft-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Theft Great Grandmaster]>",
@@ -7600,7 +7600,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Theft path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Light Fingers. +15% strength; unlocks: gains 1 movement with each attack."
+        "text": "Theft path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Light Fingers. +25% strength; unlocks: gains 1 movement with each attack."
       }
     ],
     "prerequisites": [
@@ -7615,7 +7615,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+20]% Strength",
+      "[+30]% Strength",
       "Withdraws before melee combat",
       "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
       "Play [path-theft-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Theft Supreme Grandmaster]>",
@@ -7624,7 +7624,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Theft path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Great Thief Ghost Hand (5 green grape essence). +20% strength; adds: slips away from melee."
+        "text": "Theft path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Great Thief Ghost Hand (5 green grape essence). +30% strength; adds: slips away from melee."
       }
     ],
     "prerequisites": [
@@ -7639,7 +7639,7 @@
       "Strength Gu Master"
     ],
     "uniques": [
-      "[+25]% Strength",
+      "[+35]% Strength",
       "Earn [100]% of killed [Military] unit's [Cost] as [Gold]",
       "Supreme Attainment",
       "Play [path-theft-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -7648,7 +7648,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Theft path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +25% strength; peak: earns stones worth 100% of each slain soldier's cost."
+        "text": "Theft path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: earns stones worth 100% of each slain soldier's cost."
       }
     ],
     "prerequisites": [
@@ -8913,13 +8913,13 @@
     "uniques": [
       "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+2]% maintenance costs",
-      "[+5]% Strength",
+      "[+8]% Strength",
       "Play [gu-jin-strength-gu] sound <upon gaining the [Jin Strength Gu] promotion>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Jin Strength Gu (斤力蛊), a rank-1 Strength path Gu: adds one jin of strength to the body for good. 5% stronger. Refined with XP by a Strength Master of rank 1 or higher."
+        "text": "Jin Strength Gu (斤力蛊), a rank-1 Strength path Gu: adds one jin of strength to the body for good. 8% stronger. Refined with XP by a Strength Master of rank 1 or higher."
       }
     ]
   },
@@ -8936,13 +8936,13 @@
     "uniques": [
       "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+2]% maintenance costs",
-      "[+8]% Strength <when attacking>",
+      "[+12]% Strength <when attacking>",
       "Play [gu-brute-force-longhorn-beetle-gu] sound <upon gaining the [Brute Force Longhorn Beetle Gu] promotion>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Brute Force Longhorn Beetle Gu (蛮力天牛蛊), a rank-1 Strength path Gu: lends the strength of an ox for a single burst. 8% stronger when attacking. Refined with XP by a Strength Master of rank 1 or higher."
+        "text": "Brute Force Longhorn Beetle Gu (蛮力天牛蛊), a rank-1 Strength path Gu: lends the strength of an ox for a single burst. 12% stronger when attacking. Refined with XP by a Strength Master of rank 1 or higher."
       }
     ]
   },
@@ -8959,13 +8959,13 @@
     "uniques": [
       "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+2]% maintenance costs",
-      "[+8]% Strength <when defending>",
+      "[+12]% Strength <when defending>",
       "Play [gu-stone-skin-gu] sound <upon gaining the [Stone Skin Gu] promotion>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Stone Skin Gu (石皮蛊), a rank-1 Earth path Gu: turns the skin to stone. 8% stronger when defending. Refined with XP by a Earth Master of rank 1 or higher."
+        "text": "Stone Skin Gu (石皮蛊), a rank-1 Earth path Gu: turns the skin to stone. 12% stronger when defending. Refined with XP by a Earth Master of rank 1 or higher."
       }
     ]
   },
@@ -8982,13 +8982,13 @@
     "uniques": [
       "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+2]% maintenance costs",
-      "[+8]% Strength <when defending>",
+      "[+12]% Strength <when defending>",
       "Play [gu-iron-skin-gu] sound <upon gaining the [Iron Skin Gu] promotion>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Iron Skin Gu (铁皮蛊), a rank-1 Metal path Gu: hardens the skin like iron. 8% stronger when defending. Refined with XP by a Metal Master of rank 1 or higher."
+        "text": "Iron Skin Gu (铁皮蛊), a rank-1 Metal path Gu: hardens the skin like iron. 12% stronger when defending. Refined with XP by a Metal Master of rank 1 or higher."
       }
     ]
   },
@@ -9170,14 +9170,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+3]% maintenance costs",
-      "[+11]% Strength <when attacking>",
+      "[+16]% Strength <when attacking>",
       "Play [gu-jade-wind-wheel-gu] sound <upon gaining the [Jade Wind Wheel Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Jade Wind Wheel Gu (碧风轮蛊), a rank-2 Wind path Gu: two green whirlwinds on the arms quicken every strike. 11% stronger when attacking. Refined with XP by a Wind Master of rank 2 or higher."
+        "text": "Jade Wind Wheel Gu (碧风轮蛊), a rank-2 Wind path Gu: two green whirlwinds on the arms quicken every strike. 16% stronger when attacking. Refined with XP by a Wind Master of rank 2 or higher."
       }
     ]
   },
@@ -9193,7 +9193,7 @@
     ],
     "uniques": [
       "Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]",
-      "[+11]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
+      "[+16]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
       "Consumes [1] [Moon Orchid]",
       "[This Unit] loses the [Moonglow Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]> <with [50]% chance>",
       "[This Unit] gains the [Moonglow Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]>",
@@ -9208,7 +9208,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Moonglow Gu (月芒蛊), a rank-2 Moon path Gu: a moon blade three times as strong as Moonlight Gu's. 11% stronger when attacking. Refined with XP by a Moon Master of rank 2 or higher."
+        "text": "Moonglow Gu (月芒蛊), a rank-2 Moon path Gu: a moon blade three times as strong as Moonlight Gu's. 16% stronger when attacking. Refined with XP by a Moon Master of rank 2 or higher."
       }
     ]
   },
@@ -9250,14 +9250,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+3]% maintenance costs",
-      "[+11]% Strength <when attacking>",
+      "[+16]% Strength <when attacking>",
       "Play [gu-ice-knife-gu] sound <upon gaining the [Ice Knife Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Ice Knife Gu (冰刀蛊), a rank-2 Ice Snow path Gu: forms a knife of ice. 11% stronger when attacking. Refined with XP by a Ice Snow Master of rank 2 or higher."
+        "text": "Ice Knife Gu (冰刀蛊), a rank-2 Ice Snow path Gu: forms a knife of ice. 16% stronger when attacking. Refined with XP by a Ice Snow Master of rank 2 or higher."
       }
     ]
   },
@@ -9396,14 +9396,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+3]% maintenance costs",
-      "[+11]% Strength <when attacking>",
+      "[+16]% Strength <when attacking>",
       "Play [gu-water-drill-gu] sound <upon gaining the [Water Drill Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Water Drill Gu (水钻蛊), a rank-2 Water path Gu: a drill of water that pierces armour. 11% stronger when attacking. Refined with XP by a Water Master of rank 2 or higher."
+        "text": "Water Drill Gu (水钻蛊), a rank-2 Water path Gu: a drill of water that pierces armour. 16% stronger when attacking. Refined with XP by a Water Master of rank 2 or higher."
       }
     ]
   },
@@ -9771,14 +9771,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+4]% maintenance costs",
-      "[+14]% Strength <when attacking>",
+      "[+20]% Strength <when attacking>",
       "Play [gu-chainsaw-golden-centipede] sound <upon gaining the [Chainsaw Golden Centipede] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Chainsaw Golden Centipede (锯齿金蜈), a rank-3 Metal path Gu: a saw-toothed centipede that grinds through defences. 14% stronger when attacking. Refined with XP by a Metal Master of rank 3 or higher."
+        "text": "Chainsaw Golden Centipede (锯齿金蜈), a rank-3 Metal path Gu: a saw-toothed centipede that grinds through defences. 20% stronger when attacking. Refined with XP by a Metal Master of rank 3 or higher."
       }
     ]
   },
@@ -9795,14 +9795,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+4]% maintenance costs",
-      "[+14]% Strength <when defending>",
+      "[+20]% Strength <when defending>",
       "Play [gu-flying-bone-shield-gu] sound <upon gaining the [Flying Bone Shield Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Flying Bone Shield Gu (飞骨盾蛊), a rank-3 Bone path Gu: bone shields fly around its master. 14% stronger when defending. Refined with XP by a Bone Master of rank 3 or higher."
+        "text": "Flying Bone Shield Gu (飞骨盾蛊), a rank-3 Bone path Gu: bone shields fly around its master. 20% stronger when defending. Refined with XP by a Bone Master of rank 3 or higher."
       }
     ]
   },
@@ -9819,14 +9819,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+4]% maintenance costs",
-      "[+14]% Strength <when attacking>",
+      "[+20]% Strength <when attacking>",
       "Play [gu-hand-blade-gu] sound <upon gaining the [Hand Blade Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Hand Blade Gu (手刃蛊), a rank-3 Blade path Gu: turns the edges of the palms into blades. 14% stronger when attacking. Refined with XP by a Blade Master of rank 3 or higher."
+        "text": "Hand Blade Gu (手刃蛊), a rank-3 Blade path Gu: turns the edges of the palms into blades. 20% stronger when attacking. Refined with XP by a Blade Master of rank 3 or higher."
       }
     ]
   },
@@ -9892,14 +9892,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+4]% maintenance costs",
-      "[+14]% Strength <when attacking>",
+      "[+20]% Strength <when attacking>",
       "Play [gu-iron-rod-gu] sound <upon gaining the [Iron Rod Gu] promotion>",
       "Only available <for [non-[Rank One-Two era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Iron Rod Gu (铁棒蛊), a rank-3 Weapon path Gu: becomes an iron rod in its master's hand. 14% stronger when attacking. Refined with XP by a Weapon Master of rank 3 or higher."
+        "text": "Iron Rod Gu (铁棒蛊), a rank-3 Weapon path Gu: becomes an iron rod in its master's hand. 20% stronger when attacking. Refined with XP by a Weapon Master of rank 3 or higher."
       }
     ]
   },
@@ -10015,14 +10015,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+5]% maintenance costs",
-      "[+11]% Strength",
+      "[+17]% Strength",
       "Play [gu-impermanence-bone-gu] sound <upon gaining the [Impermanence Bone Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Impermanence Bone Gu (无常骨蛊), a rank-4 Bone path Gu: a body strong enough to carry a stronger soul. 11% stronger. Refined with XP by a Bone Master of rank 4 or higher."
+        "text": "Impermanence Bone Gu (无常骨蛊), a rank-4 Bone path Gu: a body strong enough to carry a stronger soul. 17% stronger. Refined with XP by a Bone Master of rank 4 or higher."
       }
     ]
   },
@@ -10089,14 +10089,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+5]% maintenance costs",
-      "[+17]% Strength <when defending>",
+      "[+24]% Strength <when defending>",
       "Play [gu-water-curtain-skyflower-gu] sound <upon gaining the [Water Curtain Skyflower Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Water Curtain Skyflower Gu (水幕天华蛊), a rank-4 Water path Gu: a great sphere of water that stops even rank-five blows. 17% stronger when defending. Refined with XP by a Water Master of rank 4 or higher."
+        "text": "Water Curtain Skyflower Gu (水幕天华蛊), a rank-4 Water path Gu: a great sphere of water that stops even rank-five blows. 24% stronger when defending. Refined with XP by a Water Master of rank 4 or higher."
       }
     ]
   },
@@ -10210,14 +10210,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+5]% maintenance costs",
-      "[+17]% Strength <when defending>",
+      "[+24]% Strength <when defending>",
       "Play [gu-grass-tree-army-gu] sound <upon gaining the [Grass Tree Army Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Grass Tree Army Gu (草木皆兵蛊), a rank-4 Wood path Gu: turns grass and trees into soldiers. 17% stronger when defending. Refined with XP by a Wood Master of rank 4 or higher."
+        "text": "Grass Tree Army Gu (草木皆兵蛊), a rank-4 Wood path Gu: turns grass and trees into soldiers. 24% stronger when defending. Refined with XP by a Wood Master of rank 4 or higher."
       }
     ]
   },
@@ -10358,14 +10358,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+5]% maintenance costs",
-      "[+17]% Strength <when defending>",
+      "[+24]% Strength <when defending>",
       "Play [gu-array-stone-gu] sound <upon gaining the [Array Stone Gu] promotion>",
       "Only available <for [post-[Rank Three era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Array Stone Gu, a rank-4 Formation path Gu: plants stones that form a small defensive array. 17% stronger when defending. Refined with XP by a Formation Master of rank 4 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+        "text": "Array Stone Gu, a rank-4 Formation path Gu: plants stones that form a small defensive array. 24% stronger when defending. Refined with XP by a Formation Master of rank 4 or higher. Invented for the mod: the novel names no Gu of this path at this level."
       }
     ]
   },
@@ -10430,14 +10430,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+6]% maintenance costs",
-      "[+13]% Strength",
+      "[+20]% Strength",
       "Play [gu-earth-overlord-gu] sound <upon gaining the [Earth Overlord Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Earth Overlord Gu (土霸王蛊), a rank-5 Strength path Gu: draws endless strength from the ground. 13% stronger. Refined with XP by a Strength Master of rank 5 or higher."
+        "text": "Earth Overlord Gu (土霸王蛊), a rank-5 Strength path Gu: draws endless strength from the ground. 20% stronger. Refined with XP by a Strength Master of rank 5 or higher."
       }
     ]
   },
@@ -10454,14 +10454,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+6]% maintenance costs",
-      "[+20]% Strength <when attacking>",
+      "[+28]% Strength <when attacking>",
       "Play [gu-extreme-light-gu] sound <upon gaining the [Extreme Light Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Extreme Light Gu (太光蛊), a rank-5 Light path Gu: a blast of pure light. 20% stronger when attacking. Refined with XP by a Light Master of rank 5 or higher."
+        "text": "Extreme Light Gu (太光蛊), a rank-5 Light path Gu: a blast of pure light. 28% stronger when attacking. Refined with XP by a Light Master of rank 5 or higher."
       }
     ]
   },
@@ -10502,14 +10502,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+6]% maintenance costs",
-      "[+20]% Strength <when attacking>",
+      "[+28]% Strength <when attacking>",
       "Play [gu-thunder-hammer-gu] sound <upon gaining the [Thunder Hammer Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Thunder Hammer Gu (雷锤蛊), a rank-5 Lightning path Gu: a hammer of thunder. 20% stronger when attacking. Refined with XP by a Lightning Master of rank 5 or higher."
+        "text": "Thunder Hammer Gu (雷锤蛊), a rank-5 Lightning path Gu: a hammer of thunder. 28% stronger when attacking. Refined with XP by a Lightning Master of rank 5 or higher."
       }
     ]
   },
@@ -10601,14 +10601,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+6]% maintenance costs",
-      "[+20]% Strength <when defending>",
+      "[+28]% Strength <when defending>",
       "Play [gu-fire-cape-gu] sound <upon gaining the [Fire Cape Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Fire Cape Gu (火焰披风蛊), a rank-5 Fire path Gu: a cloak of flame that spares its wearer. 20% stronger when defending. Refined with XP by a Fire Master of rank 5 or higher."
+        "text": "Fire Cape Gu (火焰披风蛊), a rank-5 Fire path Gu: a cloak of flame that spares its wearer. 28% stronger when defending. Refined with XP by a Fire Master of rank 5 or higher."
       }
     ]
   },
@@ -10698,14 +10698,14 @@
     "uniques": [
       "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+6]% maintenance costs",
-      "[+13]% Strength",
+      "[+20]% Strength",
       "Play [gu-asura-zombie-gu] sound <upon gaining the [Asura Zombie Gu] promotion>",
       "Only available <for [post-[Rank Four era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Asura Zombie Gu (修罗尸蛊), a rank-5 Transformation path Gu: turns its master into a flying Asura zombie. 13% stronger. Refined with XP by a Transformation Master of rank 5 or higher."
+        "text": "Asura Zombie Gu (修罗尸蛊), a rank-5 Transformation path Gu: turns its master into a flying Asura zombie. 20% stronger. Refined with XP by a Transformation Master of rank 5 or higher."
       }
     ]
   },
@@ -10770,14 +10770,14 @@
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
-      "[+15]% Strength <when above [0] [Green Grape Immortal Essence]>",
+      "[+23]% Strength <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-star-mark-immortal-gu] sound <upon gaining the [Star Mark Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Star Mark Immortal Gu (星痕仙蛊), a rank-6 Star path Gu: lends six hundred star dao marks for a while. 15% stronger. Refined with XP by a Star Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Star Mark Immortal Gu (星痕仙蛊), a rank-6 Star path Gu: lends six hundred star dao marks for a while. 23% stronger. Refined with XP by a Star Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -10793,14 +10793,14 @@
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
-      "[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
+      "[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-pulling-water-immortal-gu] sound <upon gaining the [Pulling Water Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Pulling Water Immortal Gu (挽澜仙蛊), a rank-6 Strength path Gu: pulls back water and waves. 23% stronger when defending. Refined with XP by a Strength Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Pulling Water Immortal Gu (挽澜仙蛊), a rank-6 Strength path Gu: pulls back water and waves. 32% stronger when defending. Refined with XP by a Strength Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -10839,14 +10839,14 @@
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
-      "[+23]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>",
+      "[+32]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-flying-bear-strength-immortal-gu] sound <upon gaining the [Flying Bear Strength Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Flying Bear Strength Immortal Gu (飞熊之力仙蛊), a rank-6 Strength path Gu: the strength of the desolate flying bear. 23% stronger when attacking. Refined with XP by a Strength Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Flying Bear Strength Immortal Gu (飞熊之力仙蛊), a rank-6 Strength path Gu: the strength of the desolate flying bear. 32% stronger when attacking. Refined with XP by a Strength Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -10862,14 +10862,14 @@
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
-      "[+15]% Strength <when above [0] [Green Grape Immortal Essence]>",
+      "[+23]% Strength <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-change-form-immortal-gu] sound <upon gaining the [Change Form Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Change Form Immortal Gu (变形仙蛊), a rank-6 Transformation path Gu: the core of most transformations. 15% stronger. Refined with XP by a Transformation Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Change Form Immortal Gu (变形仙蛊), a rank-6 Transformation path Gu: the core of most transformations. 23% stronger. Refined with XP by a Transformation Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11050,14 +11050,14 @@
     ],
     "uniques": [
       "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
-      "[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
+      "[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
       "Play [gu-flying-bear-phantom-immortal-gu] sound <upon gaining the [Flying Bear Phantom Immortal Gu] promotion>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Flying Bear Phantom Immortal Gu (飞熊虚像蛊), a rank-6 Phantom path Gu: summons a phantom flying bear. 23% stronger when defending. Refined with XP by a Phantom Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Flying Bear Phantom Immortal Gu (飞熊虚像蛊), a rank-6 Phantom path Gu: summons a phantom flying bear. 32% stronger when defending. Refined with XP by a Phantom Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11144,14 +11144,14 @@
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
-      "[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-edge-immortal-gu] sound <upon gaining the [Edge Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Edge Immortal Gu (刃仙蛊), a rank-7 Blade path Gu: the edge itself, made immortal. 26% stronger when attacking. Refined with XP by a Blade Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Edge Immortal Gu (刃仙蛊), a rank-7 Blade path Gu: the edge itself, made immortal. 36% stronger when attacking. Refined with XP by a Blade Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11190,14 +11190,14 @@
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
-      "[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-crescent-moon-immortal-gu] sound <upon gaining the [Crescent Moon Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Crescent Moon Immortal Gu (偃月仙蛊), a rank-7 Moon path Gu: the core of the Peerless Crescent Moon Slash. 26% stronger when attacking. Refined with XP by a Moon Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Crescent Moon Immortal Gu (偃月仙蛊), a rank-7 Moon path Gu: the core of the Peerless Crescent Moon Slash. 36% stronger when attacking. Refined with XP by a Moon Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11213,14 +11213,14 @@
     ],
     "uniques": [
       "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
-      "[+26]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>",
+      "[+36]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>",
       "Play [gu-perseverance-immortal-gu] sound <upon gaining the [Perseverance Immortal Gu] promotion>",
       "Only available <for [post-[Rank Six era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Perseverance Immortal Gu (坚持仙蛊), a rank-7 Human path Gu: makes every other Gu last longer. 26% stronger when defending. Refined with XP by a Human Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Perseverance Immortal Gu (坚持仙蛊), a rank-7 Human path Gu: makes every other Gu last longer. 36% stronger when defending. Refined with XP by a Human Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11424,14 +11424,14 @@
     ],
     "uniques": [
       "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
-      "[+29]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "[+40]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
       "Play [gu-eight-faced-prestige-wind-immortal-gu] sound <upon gaining the [Eight-Faced Prestige Wind Immortal Gu] promotion>",
       "Only available <for [post-[Rank Seven era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Eight-Faced Prestige Wind Immortal Gu (八面威风仙蛊), a rank-8 Wind path Gu: the Wu clan's great wind Gu. 29% stronger when attacking. Refined with XP by a Wind Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Eight-Faced Prestige Wind Immortal Gu (八面威风仙蛊), a rank-8 Wind path Gu: the Wu clan's great wind Gu. 40% stronger when attacking. Refined with XP by a Wind Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11542,14 +11542,14 @@
     ],
     "uniques": [
       "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps]",
-      "[+32]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
+      "[+44]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
       "Play [gu-light-gu] sound <upon gaining the [Light Gu] promotion>",
       "Only available <for [post-[Rank Eight era]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Light Gu (光蛊), a rank-9 Light path Gu: a wild Gu born inside the sun. 32% stronger when attacking. Refined with XP by a Light Master of rank 9 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        "text": "Light Gu (光蛊), a rank-9 Light path Gu: a wild Gu born inside the sun. 44% stronger when attacking. Refined with XP by a Light Master of rank 9 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
       }
     ]
   },
@@ -11986,66 +11986,66 @@
   {
     "name": "Dao Marks I",
     "uniques": [
-      "[+5]% Strength",
+      "[+10]% Strength",
       "Play [dao-1] sound <upon damaging a [Military] unit> <when attacking>"
     ],
     "civilopediaText": [
       {
-        "text": "Tier I: +5% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier I: +10% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
   {
     "name": "Dao Marks II",
     "uniques": [
-      "[+10]% Strength",
+      "[+20]% Strength",
       "[This Unit] loses the [Dao Marks I] promotion",
       "Play [dao-2] sound <upon damaging a [Military] unit> <when attacking>"
     ],
     "civilopediaText": [
       {
-        "text": "Tier II: +10% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier II: +20% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
   {
     "name": "Dao Marks III",
     "uniques": [
-      "[+15]% Strength",
+      "[+30]% Strength",
       "[This Unit] loses the [Dao Marks II] promotion",
       "Play [dao-3] sound <upon damaging a [Military] unit> <when attacking>"
     ],
     "civilopediaText": [
       {
-        "text": "Tier III: +15% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier III: +30% strength. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
   {
     "name": "Dao Marks IV",
     "uniques": [
-      "[+20]% Strength",
+      "[+40]% Strength",
       "[+10] HP when healing",
       "[This Unit] loses the [Dao Marks III] promotion",
       "Play [dao-4] sound <upon damaging a [Military] unit> <when attacking>"
     ],
     "civilopediaText": [
       {
-        "text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier IV: +40% strength, heals 10 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
   {
     "name": "Dao Marks V",
     "uniques": [
-      "[+30]% Strength",
+      "[+55]% Strength",
       "[+15] HP when healing",
       "[This Unit] loses the [Dao Marks IV] promotion",
       "Play [dao-5] sound <upon damaging a [Military] unit> <when attacking>"
     ],
     "civilopediaText": [
       {
-        "text": "Tier V: +30% strength, heals 15 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
+        "text": "Tier V: +55% strength, heals 15 HP more. Dao marks (道痕) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       }
     ]
   },
