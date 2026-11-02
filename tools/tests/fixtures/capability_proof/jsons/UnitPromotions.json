@@ -77,5 +77,14 @@
       "[1] additional attacks per turn",
       "[This Unit] heals [20] HP"
     ]
+  },
+  {
+    "name": "Path Strike Sound",
+    "unitTypes": [
+      "Melee"
+    ],
+    "uniques": [
+      "Play [throw] sound <upon damaging a [Military] unit> <when attacking>"
+    ]
   }
 ]
