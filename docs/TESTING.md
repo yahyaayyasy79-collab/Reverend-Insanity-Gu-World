@@ -129,10 +129,27 @@ unit add gu-yue-clan "Venerable"             # select a tile first: the Venerabl
 Dao marks (select one of your Gu Masters first; the tiers replace one another, the icon shows the stars):
 
 ```
-unit addpromotion "Dao Marks III"           # +15% strength; see it on the unit's promotion list
+unit addpromotion "Dao Marks III"           # +30% strength since the power rebuild; see it on the promotion list
 unit setxp 300                              # Dao Comprehension is automatic: a rank-three+ path Master shows it
                                             # as a 20-turn status (Standard); when it runs out, the tier goes up
 ```
+
+Phase D, 2026-11-02 (regional conflict, Gu catalog, power rebuild, combination moves):
+
+```
+# a Five Regions game: minor clans in every region (Man, Ge, Lang Ya north; Lan, Mo, Xiao west; Song, Xia, Merman
+# east; Immortal Crane, Spirit Affinity, Combat Immortal centre); Demonic Dens on the map
+unit add barbarians "Demonic Gu Master"     # select a tile beside your city: a raider (18 strength, +20% attacking)
+civ activatetrigger "Triggers a [Wandering Gu Master] event"   # hire, send away or rob a lone Gu Master
+# Gu catalog: a unit buys a catalog Gu with XP once it holds the path's Master and its rank reaches the Gu's
+unit addpromotion "Ice Master"
+unit setxp 200                              # open the promotions: Ice Knife Gu (rank 2) and Icicle Gu appear
+# combination move: Ice Knife Gu + Whirlwind Gu (Wind Master grants Whirlwind Gu at the next turn start)
+unit addpromotion "Ice Knife Gu"
+unit addpromotion "Wind Master"             # end the turn: Whirlwind Gu arrives, then the Ice Blade Storm button
+                                            # shows among the unit's actions (20 stones, 1 movement)
+```
+
 
 ```
 civ activatetrigger "Triggers a [Beast Tide] event"      # any Triggerable unique; validated against the ruleset
