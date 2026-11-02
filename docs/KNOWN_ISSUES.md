@@ -128,7 +128,8 @@ rest of the list is what a player or the next session should know before trustin
     Stone Shortage event); a human who keeps the army lean does not hit it. Fixed on the way: the map's riches and
     the stability of wide clans.
 
-20. **A rare crash in the ascension upgrade (2026-11-02, not yet explained).** Once in about 30 autoplay games, an AI
+20. **A rare crash in the ascension upgrade (2026-11-02, not yet explained).** Once in 62 autoplay games (6 × 300 where it
+    happened; then 12 × 300 and 16 × 320 on Qing Mao Mountain and 16 × 400 on the Five Regions map without it), an AI
     Gu Master's free upgrade in the ascension chain could place neither the new immortal nor, restoring it, the old
     Gu Master (NullPointerException at UnitUpgradeManager.performUpgrade, the restore line). The old crashes of this kind
     (foreign land, open water) are closed by the ascension's Unavailable lines; this one happened on Qing Mao Mountain,
