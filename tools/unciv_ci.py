@@ -31,6 +31,7 @@ MAP = {"Error": "ERROR", "ErrorOptionsOnly": "ERROR", "Warning": "WARNING", "War
        "OK": "INFO"}
 # RulesetErrorList.getErrorText escapes brackets as U+27E6/U+27E7 and U+2329/U+232A
 UNKLUDGE = str.maketrans({"\u27e6": "[", "\u27e7": "]", "\u2329": "<", "\u232a": ">"})
+GENERATED_IMAGES = ("Images.Portraits", "Images.Wonders", "Images.Victories")
 PACKED = re.compile(r"^(.*\.atlas|game\d*\.png|.*\d*\.png|Atlases\.json)$")
 
 
@@ -57,6 +58,14 @@ def run(mod_root: Path, reporter: Reporter, pack: bool = False) -> None:
     if not jsons.is_dir():
         reporter.info("unciv_ci", "no jsons/ folder yet - nothing for the official validator")
         return
+    # the Ink Night art pass (tools/art/inkpass.py) is generated, not committed: packing without it would silently drop
+    # every portrait, wonder splash and victory illustration from the atlas
+    if pack:
+        missing = [d for d in GENERATED_IMAGES if not (mod_root / d).is_dir()]
+        if missing and (mod_root / "Atlases.json").exists() and any(
+                d.split(".", 1)[1] in (mod_root / "Atlases.json").read_text(encoding="utf-8") for d in missing):
+            reporter.error("unciv_ci", f"--pack: {missing} missing (generated, not committed): run tools/gen_art.py first")
+            return
     jar = jar_path()
     if not jar.exists() or shutil.which("java") is None:
         reporter.warn("unciv_ci", f"official validator skipped: needs java and {jar} (tools/fetch_ref.sh)")

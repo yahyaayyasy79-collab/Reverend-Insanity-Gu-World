@@ -167,7 +167,15 @@ rest of the list is what a player or the next session should know before trustin
     Nothing in the mod blocks the upgrade: rank units carry no upgrade conditions. The Rank Four Cultivation tech is
     the only requirement that hides it for every unit at once.
 
+24. **The Ink Night art costs texture memory (2026-11-02).** The packed atlases total about 161 MB as RGBA textures:
+    13 pages, 3 of them portraits, 1 wonders and 1 victories, up from about 89 MB. The download grew by about 14 MB
+    of atlas. A very old phone may run short of memory; the fix would be fewer or smaller portraits (`inkpass.PX`).
+
 ## Not yet seen in a real game
+
+* **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small
+  image in a white circle: promotion picker, city construction list, tech tree, Civilopedia. Also check the wonder
+  splash on completion, the leader portrait in diplomacy, and the victory screen's illustration tab.
 
 * **Combination killer moves (Phase D).** A move's button should appear only on a unit that holds both of its Gu. This
   rests on [src UnitActionsFromUniques]: an action's conditionals must apply. Check it in game: give one unit Ice

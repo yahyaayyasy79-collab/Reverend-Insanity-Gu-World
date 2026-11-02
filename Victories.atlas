@@ -1,0 +1,90 @@
+
+Victories.png
+size: 2048, 1024
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+VictoryIllustrations/Endurance/Background
+  rotate: false
+  xy: 4, 500
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Endurance/Have highest score after max turns
+  rotate: false
+  xy: 820, 748
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Endurance/Lost
+  rotate: false
+  xy: 412, 252
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Endurance/Won
+  rotate: false
+  xy: 412, 4
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Eternal Life/Background
+  rotate: false
+  xy: 4, 748
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Eternal Life/Build Eternal Life
+  rotate: false
+  xy: 4, 252
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Eternal Life/Lost
+  rotate: false
+  xy: 4, 4
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Eternal Life/Won
+  rotate: false
+  xy: 1228, 748
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Southern Border Supremacy/Background
+  rotate: false
+  xy: 412, 748
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Southern Border Supremacy/Capture all capitals
+  rotate: false
+  xy: 412, 500
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Southern Border Supremacy/Lost
+  rotate: false
+  xy: 820, 500
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Southern Border Supremacy/Won
+  rotate: false
+  xy: 820, 252
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1

@@ -90,7 +90,9 @@ def main(argv: list[str]) -> int:
     gu_icons = {(folder, name) for folder, name, _, _ in guart.icons() + guart.combo_icons()}
     path_icons |= gu_icons
     arc_names |= {name for _, name in gu_icons}
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons() + pathart.policy_icons() + arcart.realm_icons() + guart.icons() + guart.combo_icons():
+    registry = (glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons()
+                + arcart.rank78_gu_icons() + pathart.policy_icons() + arcart.realm_icons() + guart.icons() + guart.combo_icons())
+    for folder, name, draw, ink in registry:
         if (folder, name) in policy_icons:
             target = args.mod / "Images.Policies" / folder / f"{name}.png"
         elif (folder, name) in path_icons:
@@ -150,6 +152,10 @@ def main(argv: list[str]) -> int:
         for tileset, im in realms.wall_tile(name).items():
             written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
     # Phase D: the attack sounds (tools/art/sfx.py: rank body, path x attainment tier, dao marks, killer moves)
+    # the Ink Night art pass (the user chose style D, 2026-11-02): full-colour portraits for every icon, backgrounds,
+    # wonder splash screens, leader portraits, victory illustrations, unit type icons (tools/art/inkpass.py)
+    from art import inkpass
+    written += inkpass.build(registry, args.mod, save)
     from art import sfx
     written += sfx.build(args.mod)
     if args.sheet:

@@ -844,3 +844,17 @@ minor clans plus wild factions.
   +10/15/20/25%. They now print the real +20/25/30/35% straight from `TIER_STRENGTH`.
 * **Rank upgrade button explained.** KNOWN_ISSUES 23 says when it shows: own territory, enough stones, movement left,
   and not embarked.
+
+## Phase D — Ink Night art pass: the whole mod in colour (2026-11-02)
+
+You picked style D (Ink Night) from four candidates, with the full package.
+
+* **1,002 full-colour portraits:** every building, tech, resource, improvement, promotion and nation. Each object's
+  own shape is lit as a relief and glows in its path, era or nation colour. Objects of a path carry a red path seal.
+* **New backgrounds:** an ink disc with a brush circle (ensō) per type. Unit 3D portraits now sit on it too.
+* **87 wonder splash screens:** misty ink landscapes at night.
+* **8 leader portraits:** rim-lit ink silhouettes before a great moon.
+* **Victory illustrations** for all three victories, and **Civilopedia icons** for unit types.
+* **Policy icons stay flat**, because the engine tints them by state.
+* **Download size:** about 14 MB more, all of it atlas. Generated image sources are not committed, and
+  `unciv_ci.py --pack` refuses to pack without them.

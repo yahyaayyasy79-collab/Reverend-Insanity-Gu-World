@@ -35,7 +35,7 @@ user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one cano
 lone/demonic Gu Master barbarians + Demonic Den, raids; KNOWN_ISSUES 21: arc majors never declare war on each other),
 Gu catalog (113 Gu ranks 1-9, `data/gu_catalog.csv`), power rebuild (body 75/65/60%, tiers 20-35%, dao 10-55%;
 `path_powers.body_strength`; autoplay A/B equal), 42 combination killer moves (`data/gu_combos.csv`, human-only buttons
-on Gu A gated by Gu B; in-game check pending). Left: MOD_SPEC_2 Phase D (balance, Definition of Done).
+on Gu A gated by Gu B; in-game check pending). User 2026-11-02: everything good, Locate mod errors clean. Ink Night art pass built 2026-11-02 (docs/ART.md). Left: MOD_SPEC_2 Phase D (balance, Definition of Done).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -94,6 +94,10 @@ in LORE_MAPPING.md.
   Grandmaster at rank 6+), stronger at Supreme. Kill Immortal Gu rank 8 accepted. numpy added to requirements.
 * Policies (user, 2026-11-02): every policy branch opens in the first era ("terbuka semua tanpa harus memandang era");
   path halls still wait for their family's tech. Autoplay: no weaker AI.
+* Art (user, 2026-11-02, "100x better" visuals): style D "Ink Night" chosen from a 4-style study, full package:
+  portraits for every icon (96 px, per-type Background), 87 wonder splashes, 8 leader silhouettes, victory
+  illustrations, unit type icons (`tools/art/portrait.py`, `inkpass.py`); policies stay flat (engine tints them);
+  generated image sources git-ignored, atlases committed; regenerate with tools/gen_art.py before packing.
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.
