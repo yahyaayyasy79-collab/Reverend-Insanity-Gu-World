@@ -155,7 +155,7 @@ def promotions(unit_types: list[str]) -> list[dict]:
     from gen_paths import KEY, tier_name
     from gu_rules import gu_promotion
     out, statuses = [], []
-    for row in ROWS:
+    for row in (x for x in ROWS if not immortal(x)):   # immortal Gu are one of a kind: wonders(), bearers()
         r = int(row["rank"])
         fx = [asleep(e[0], row) for e in effects(row)]
         food, hunger, _ = food_lines(row)
@@ -175,6 +175,79 @@ def promotions(unit_types: list[str]) -> list[dict]:
     return out + statuses
 
 
+# ---------------------------------------------------------------- immortal Gu: one of a kind (the user, 2026-11-02)
+# "buat gu abadi tetap 1 sesuai kanon tapi bervariasi": every immortal Gu exists once in the world (仙蛊唯一, V5c666).
+# Each is a world wonder (refined in a city, seized with it); one immortal of the owning clan carries it (the bearer
+# promotion). A bearer whose clan lost the wonder keeps the promotion but its Gu sleeps.
+WONDER_COST = {6: 340, 7: 380, 8: 420, 9: 700}      # the mean of the canon wonders of data/immortal_gu.csv per rank
+WONDER_ESSENCE = {6: 35, 7: 35, 8: 35, 9: 60}
+IMMORTAL_ROWS = [r for r in ROWS if int(r["rank"]) >= 6]
+
+
+def bearer(name: str) -> str:
+    return f"{name} Bearer"
+
+
+def all_immortal() -> list[dict]:
+    """Every immortal Gu wonder: the catalog's and data/immortal_gu.csv's (rank, path, names, role)."""
+    from gu_rules import table
+    out = [{"name": r["name"], "name_id": r["name_id"], "rank": r["rank"], "path": r["path"], "role": r["role"],
+            "form": r["form"], "catalog": True, "row": r} for r in IMMORTAL_ROWS]
+    out += [{"name": r["name"], "name_id": r["name_id"], "rank": r["rank"], "path": r["path"], "role": "str",
+             "form": "orb", "catalog": False, "row": r} for r in table("immortal_gu.csv")]
+    return out
+
+
+def bearer_lines(g: dict) -> list[str]:
+    r, name = int(g["rank"]), g["name"]
+    fx = [f"{asleep(e[0], g)} <if [{name}] is constructed>" for e in effects(g)]
+    en = f"Food: {ESSENCE[r]}. With none in store the Gu sleeps; it sleeps too while the clan does not own {name}"
+    return ([f"Comment [{en}]"] + fx
+            + [f"Play [{sound(bearer(name))}] sound <upon gaining the [{bearer(name)}] promotion>",
+               f"Only available <if [{name}] is constructed>",
+               f"Only available <when number of [[{bearer(name)}] Units] is less than [1]>",
+               f"Only available {GATE[r]}", AI_WEIGHT])
+
+
+def bearer_pedia(g: dict) -> tuple[str, str]:
+    from gen_paths import KEY, tier_name, tier_name_id
+    p, r, eff = KEY[g["path"]], int(g["rank"]), effects(g)
+    en = (f"The one immortal who carries {g['name']}, a rank-{r} {p['name']} path immortal Gu. There is only one in the "
+          f"world: the clan that owns the wonder lets one {tier_name(p, 0)} of rank {r} or higher carry it. "
+          + "; ".join(e[1] for e in eff).capitalize() + ". It sleeps without " + ESSENCE[r] + " or the wonder.")
+    idn = (f"Satu-satunya abadi yang membawa {g['name_id']}, Gu abadi jalur {p['name_id']} tingkat {r}. Di dunia hanya ada "
+           f"satu: klan pemilik keajaiban mengizinkan satu {tier_name_id(p, 0)} tingkat {r} atau lebih membawanya. "
+           + "; ".join(e[2] for e in eff).capitalize() + ". Ia tertidur tanpa " + ESSENCE_ID[r] + " atau keajaibannya.")
+    return en, idn
+
+
+def bearers(unit_types: list[str]) -> list[dict]:
+    from gen_paths import KEY, tier_name
+    return [{"name": bearer(g["name"]), "unitTypes": unit_types, "prerequisites": [tier_name(KEY[g["path"]], 0)],
+             "uniques": bearer_lines(g), "civilopediaText": [{"text": bearer_pedia(g)[0]}]} for g in all_immortal()]
+
+
+def wonder_pedia(row: dict) -> tuple[str, str]:
+    en, idn = pedia(row)
+    return (en.split(" Refined with XP")[0] + f" One of a kind: the clan that owns it lets one immortal carry it "
+            f"({bearer(row['name'])}).",
+            idn.split(" Dimurnikan dengan XP")[0] + f" Hanya ada satu: klan pemiliknya mengizinkan satu abadi "
+            f"membawanya ({bearer(row['name'])}).")
+
+
+def wonders(recipe: dict, marker) -> list[dict]:
+    """The catalog's immortal Gu as world wonders (refined like the canon ones; never destroyed on capture)."""
+    out = []
+    for row in IMMORTAL_ROWS:
+        r = int(row["rank"])
+        out.append({"name": row["name"], "isWonder": True, "requiredTech": recipe[str(r)], "cost": WONDER_COST[r],
+                    "uniques": [f"Costs [{WONDER_ESSENCE[r]}] [{ESSENCE[r]}]", "Never destroyed when the city is captured",
+                                "Immortal Gu", marker(row["path"]), "Triggers a [Immortal Gu Refinement] event",
+                                "[+100]% weight to this choice for AI decisions"],
+                    "civilopediaText": [{"text": wonder_pedia(row)[0]}]})
+    return out
+
+
 def food_gu() -> list[tuple[str, str, str, str, str]]:
     """(name, Indonesian name, food, hunger rank, eats) of the catalog Gu with a hunger meter."""
     return [(r["name"], r["name_id"], r["food"], str(min(int(r["rank"]), 4)), "1") for r in ROWS if r["food"]]
@@ -182,8 +255,16 @@ def food_gu() -> list[tuple[str, str, str, str, str]]:
 
 def translations() -> list[tuple[str, str]]:
     out = []
+    for g in all_immortal():
+        r = int(g["rank"])
+        out += [(bearer(g["name"]), f"Pembawa {g['name_id']}"), bearer_pedia(g),
+                (f"Food: {ESSENCE[r]}. With none in store the Gu sleeps; it sleeps too while the clan does not own "
+                 f"{g['name']}", f"Makanan: {ESSENCE_ID[r]}. Bila persediaan habis Gu ini tertidur; ia juga tertidur "
+                 f"selama klan tidak memiliki {g['name_id']}")]
+    for row in IMMORTAL_ROWS:
+        out.append(wonder_pedia(row))
     for row in ROWS:
-        out += [(row["name"], row["name_id"]), pedia(row)]
+        out += [(row["name"], row["name_id"])] + ([] if immortal(row) else [pedia(row)])
         en, idn = food_lines(row)[2]
         if en:
             out.append((en, idn))
@@ -193,11 +274,26 @@ def translations() -> list[tuple[str, str]]:
 def doc_table() -> list[str]:
     from gen_paths import KEY, code
     built = {d["name"]: d for d in promotions(["Gu Master"])}
+    built.update({g["name"]: {"uniques": bearer_lines(g)} for g in all_immortal() if g["catalog"]})
     lines = ["| Rank | Gu | Chinese | Path | Role | Food | Uniques | Verdict | Source |",
              "|---|---|---|---|---|---|---|---|---|"]
+    wonders_by = {w["name"]: w for w in wonders({"6": "-", "7": "-", "8": "-", "9": "-"}, lambda k: f"{KEY[k]['name']} Path")}
     for row in sorted(ROWS, key=lambda x: (int(x["rank"]), KEY[x["path"]]["name"], x["name"])):
         u = " ".join(code(x) for x in built[row["name"]]["uniques"])
+        if row["name"] in wonders_by:   # an immortal Gu: the wonder's uniques, then its bearer's
+            u = "wonder: " + " ".join(code(x) for x in wonders_by[row["name"]]["uniques"]) + "; bearer: " + u
         food = row["food"] or (ESSENCE[int(row["rank"])] if immortal(row) else "stones")
         lines.append(f"| {row['rank']} | {row['name']} | {row['chinese'] or '—'} | {KEY[row['path']]['name']} | "
                      f"{row['role']} | {food} | {u} | {row['verdict']} | {row['source']} |")
     return lines
+
+
+def canon_bearer_table() -> list[str]:
+    from gen_paths import KEY, code
+    lines = ["", "The canon immortal Gu wonders (data/immortal_gu.csv) get a bearer too:", "",
+             "| Rank | Immortal Gu (wonder) | Path | Bearer uniques |", "|---|---|---|---|"]
+    for g in sorted((g for g in all_immortal() if not g["catalog"]), key=lambda x: (int(x["rank"]), x["name"])):
+        lines.append(f"| {g['rank']} | {g['name']} | {KEY[g['path']]['name']} | "
+                     + " ".join(code(x) for x in bearer_lines(g)) + " |")
+    return lines
+

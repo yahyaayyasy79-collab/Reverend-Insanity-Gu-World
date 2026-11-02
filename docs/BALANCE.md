@@ -615,7 +615,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Iron Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
 | Iron Skin Gu | `[+12]% Strength <when defending>` | +12 | tools/gen_ruleset.py `Promotions` |
 | Iron Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Iron Skin Gu | `[This Unit] gains the [Iron Stone Bastion] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement> <for units with [Stone Skin Gu]> <for units without [Iron Stone Bastion]>` | 1, +15, 1 | tools/gen_ruleset.py `Promotions` |
+| Iron Skin Gu | `[This Unit] gains the [Iron Stone Bastion] status for [1] turn(s) <costs [+15 Gold] stats> <requires [1] movement> <for units with [Stone Skin Gu]> <for units with [Metal Grandmaster]> <for units with [Earth Grandmaster]> <for units without [Iron Stone Bastion]>` | 1, +15, 1 | tools/gen_ruleset.py `Promotions` |
 | Stealth Stone Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
 | Stealth Stone Gu | `[+4]% Strength <when defending>` | +4 | tools/gen_ruleset.py `Promotions` |
 | Stealth Stone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -633,16 +633,16 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Flash Gu | `[Target Unit] gains the [Blinded] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Flash Gu | `[+3]% Strength <when attacking>` | +3 | tools/gen_ruleset.py `Promotions` |
 | Flash Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flash Gu | `[This Unit] gains the [Blinding Palm] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Hand Blade Gu]> <for units without [Blinding Palm]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
+| Flash Gu | `[This Unit] gains the [Blinding Palm] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Hand Blade Gu]> <for units with [Light Grandmaster]> <for units with [Blade Grandmaster]> <for units without [Blinding Palm]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
 | Grass Puppet Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
 | Grass Puppet Gu | `[-3]% Strength for enemy [Military] units in adjacent [All] tiles` | -3 | tools/gen_ruleset.py `Promotions` |
 | Grass Puppet Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Grass Puppet Gu | `[This Unit] gains the [Grass Army Ambush] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Grass Tree Army Gu]> <for units without [Grass Army Ambush]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
+| Grass Puppet Gu | `[This Unit] gains the [Grass Army Ambush] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Grass Tree Army Gu]> <for units with [Enslavement Grandmaster]> <for units with [Wood Grandmaster]> <for units without [Grass Army Ambush]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
 | Clear Wind Wheel Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
 | Clear Wind Wheel Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
 | Clear Wind Wheel Gu | `[+2]% Strength` | +2 | tools/gen_ruleset.py `Promotions` |
 | Clear Wind Wheel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Clear Wind Wheel Gu | `[This Unit] gains the [Twin Wheel Gale] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Jade Wind Wheel Gu]> <for units without [Twin Wheel Gale]>` | 1, +20, 1 | tools/gen_ruleset.py `Promotions` |
+| Clear Wind Wheel Gu | `[This Unit] gains the [Twin Wheel Gale] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Jade Wind Wheel Gu]> <for units with [Wind Grandmaster]> <for units without [Twin Wheel Gale]>` | 1, +20, 1 | tools/gen_ruleset.py `Promotions` |
 | Jade Wind Wheel Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Jade Wind Wheel Gu | `[+16]% Strength <when attacking>` | +16 | tools/gen_ruleset.py `Promotions` |
 | Jade Wind Wheel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -656,14 +656,14 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 100%]> <for units without [Moonglow Gu Hunger 80%]>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonglow Gu Hunger 20%]> <for units without [Moonglow Gu Hunger 40%]> <for units without [Moonglow Gu Hunger 60%]> <for units without [Moonglow Gu Hunger 80%]> <for units without [Moonglow Gu Hunger 100%]>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Moonglow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Moonglow Gu | `[This Unit] gains the [Bleeding Moon] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Blood Moon Gu]> <for units without [Bleeding Moon]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Bleeding Moon] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Blood Moon Gu]> <for units with [Moon Grandmaster]> <for units with [Blood Grandmaster]> <for units without [Bleeding Moon]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
 | Stealth Scales Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Stealth Scales Gu | `[+6]% Strength <when defending>` | +6 | tools/gen_ruleset.py `Promotions` |
 | Stealth Scales Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Ice Knife Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Ice Knife Gu | `[+16]% Strength <when attacking>` | +16 | tools/gen_ruleset.py `Promotions` |
 | Ice Knife Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Ice Knife Gu | `[This Unit] gains the [Ice Blade Storm] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Whirlwind Gu]> <for units without [Ice Blade Storm]>` | 1, +20, 1 | tools/gen_ruleset.py `Promotions` |
+| Ice Knife Gu | `[This Unit] gains the [Ice Blade Storm] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Whirlwind Gu]> <for units with [Ice Snow Grandmaster]> <for units with [Wind Grandmaster]> <for units without [Ice Blade Storm]>` | 1, +20, 1 | tools/gen_ruleset.py `Promotions` |
 | Icicle Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Icicle Gu | `[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Icicle Gu | `[+4]% Strength <when attacking>` | +4 | tools/gen_ruleset.py `Promotions` |
@@ -675,11 +675,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Earth Communication Ear Grass | `[+1] Sight` | +1 | tools/gen_ruleset.py `Promotions` |
 | Earth Communication Ear Grass | `[+3]% Strength` | +3 | tools/gen_ruleset.py `Promotions` |
 | Earth Communication Ear Grass | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Earth Communication Ear Grass | `[This Unit] gains the [Earth Listening Ambush] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Stealth Scales Gu]> <for units without [Earth Listening Ambush]>` | 1, +20, 1 | tools/gen_ruleset.py `Promotions` |
+| Earth Communication Ear Grass | `[This Unit] gains the [Earth Listening Ambush] status for [1] turn(s) <costs [+20 Gold] stats> <requires [1] movement> <for units with [Stealth Scales Gu]> <for units with [Earth Grandmaster]> <for units without [Earth Listening Ambush]>` | 1, +20, 1 | tools/gen_ruleset.py `Promotions` |
 | Spiral Bone Spear Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Spiral Bone Spear Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Spiral Bone Spear Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Spiral Bone Spear Gu | `[This Unit] gains the [Spiral Drill Star Spear] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Star River Gu]> <for units without [Spiral Drill Star Spear]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Spiral Bone Spear Gu | `[This Unit] gains the [Spiral Drill Star Spear] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Star River Gu]> <for units with [Bone Grandmaster]> <for units with [Star Grandmaster]> <for units without [Spiral Drill Star Spear]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Plasma Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Plasma Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Plasma Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -696,11 +696,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Love Life Separation | `[Target Unit] gains the [Poisoned] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Love Life Separation | `[+4]% Strength <when attacking>` | +4 | tools/gen_ruleset.py `Promotions` |
 | Love Life Separation | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Love Life Separation | `[This Unit] gains the [Ten Thousand Poisons] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Jade Sky Gu]> <for units without [Ten Thousand Poisons]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Love Life Separation | `[This Unit] gains the [Ten Thousand Poisons] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Jade Sky Gu]> <for units with [Poison Grandmaster]> <for units without [Ten Thousand Poisons]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Ghost Fire Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Ghost Fire Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Ghost Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Ghost Fire Gu | `[This Unit] gains the [Soul Fire Burst] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Soul Explosion Gu]> <for units without [Soul Fire Burst]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Ghost Fire Gu | `[This Unit] gains the [Soul Fire Burst] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Soul Explosion Gu]> <for units with [Soul Grandmaster]> <for units without [Soul Fire Burst]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Whip Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
 | Whip Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
 | Whip Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -712,12 +712,12 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Blue Bird Ice Coffin Gu | `[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Blue Bird Ice Coffin Gu | `[+5]% Strength <when attacking>` | +5 | tools/gen_ruleset.py `Promotions` |
 | Blue Bird Ice Coffin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Blue Bird Ice Coffin Gu | `[This Unit] gains the [Ice Coffin Prison] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Water Prison Gu]> <for units without [Ice Coffin Prison]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
+| Blue Bird Ice Coffin Gu | `[This Unit] gains the [Ice Coffin Prison] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Water Prison Gu]> <for units with [Ice Snow Grandmaster]> <for units with [Water Grandmaster]> <for units without [Ice Coffin Prison]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
 | Lightning Wings Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Lightning Wings Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
 | Lightning Wings Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
 | Lightning Wings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Lightning Wings Gu | `[This Unit] gains the [Thunder Wing Dive] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Thunder Hammer Gu]> <for units without [Thunder Wing Dive]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Lightning Wings Gu | `[This Unit] gains the [Thunder Wing Dive] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Thunder Hammer Gu]> <for units with [Lightning Grandmaster]> <for units without [Thunder Wing Dive]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Lava Explosion Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Lava Explosion Gu | `[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>` | 8 | tools/gen_ruleset.py `Promotions` |
 | Lava Explosion Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -732,11 +732,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Starlight Firefly Gu | `[+1] Sight` | +1 | tools/gen_ruleset.py `Promotions` |
 | Starlight Firefly Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
 | Starlight Firefly Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Starlight Firefly Gu | `[This Unit] gains the [Myriad Star Fireflies] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Clear Mind Gu]> <for units without [Myriad Star Fireflies]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
+| Starlight Firefly Gu | `[This Unit] gains the [Myriad Star Fireflies] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Star Grandmaster]> <for units with [Wisdom Grandmaster]> <for units without [Myriad Star Fireflies]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
 | Self-Reliance Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Self-Reliance Gu | `[+13] HP when healing` | +13 | tools/gen_ruleset.py `Promotions` |
 | Self-Reliance Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Self-Reliance Gu | `[This Unit] gains the [Eight Beast Phantoms] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Strength Qi Gu]> <for units without [Eight Beast Phantoms]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
+| Self-Reliance Gu | `[This Unit] gains the [Eight Beast Phantoms] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Strength Grandmaster]> <for units with [Qi Grandmaster]> <for units without [Eight Beast Phantoms]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
 | Seven Fragrances Liquor Worm | `[+25]% XP gained from combat <when above [-1] [Wine]>` | +25 | tools/gen_ruleset.py `Promotions` |
 | Seven Fragrances Liquor Worm | `Consumes [1] [Wine]` | 1 | tools/gen_ruleset.py `Promotions` |
 | Seven Fragrances Liquor Worm | `[This Unit] loses the [Seven Fragrances Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 86%]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Promotions` |
@@ -752,7 +752,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Chainsaw Golden Centipede | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Chainsaw Golden Centipede | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Chainsaw Golden Centipede | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Chainsaw Golden Centipede | `[This Unit] gains the [Golden Saw Tide] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Living Steel Gu]> <for units without [Golden Saw Tide]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
+| Chainsaw Golden Centipede | `[This Unit] gains the [Golden Saw Tide] status for [1] turn(s) <costs [+25 Gold] stats> <requires [1] movement> <for units with [Living Steel Gu]> <for units with [Metal Grandmaster]> <for units without [Golden Saw Tide]>` | 1, +25, 1 | tools/gen_ruleset.py `Promotions` |
 | Flying Bone Shield Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Flying Bone Shield Gu | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Flying Bone Shield Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -763,7 +763,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Yin Yang Dual Cloud Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Dual Cloud Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Dual Cloud Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Yin Yang Dual Cloud Gu | `[This Unit] gains the [Nine Cloud Ring] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Flying Cloud Gu]> <for units without [Nine Cloud Ring]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Dual Cloud Gu | `[This Unit] gains the [Nine Cloud Ring] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Flying Cloud Gu]> <for units with [Cloud Grandmaster]> <for units without [Nine Cloud Ring]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
 | Poison Vow Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Poison Vow Gu | `[-5]% Strength for enemy [Military] units in adjacent [All] tiles` | -5 | tools/gen_ruleset.py `Promotions` |
 | Poison Vow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -784,7 +784,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bone Wings Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
 | Bone Wings Gu | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
 | Bone Wings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Bone Wings Gu | `[This Unit] gains the [Bone Spear Rain] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Spiral Bone Spear Gu]> <for units without [Bone Spear Rain]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
+| Bone Wings Gu | `[This Unit] gains the [Bone Spear Rain] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Spiral Bone Spear Gu]> <for units with [Bone Grandmaster]> <for units without [Bone Spear Rain]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
 | Impermanence Bone Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Impermanence Bone Gu | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
 | Impermanence Bone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -796,7 +796,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fiery Snake Gu | `[Target Unit] gains the [Burning] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Fiery Snake Gu | `[+6]% Strength <when attacking>` | +6 | tools/gen_ruleset.py `Promotions` |
 | Fiery Snake Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Fiery Snake Gu | `[This Unit] gains the [Molten Serpent Coil] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Lava Explosion Gu]> <for units without [Molten Serpent Coil]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
+| Fiery Snake Gu | `[This Unit] gains the [Molten Serpent Coil] status for [1] turn(s) <costs [+30 Gold] stats> <requires [1] movement> <for units with [Lava Explosion Gu]> <for units with [Fire Grandmaster]> <for units without [Molten Serpent Coil]>` | 1, +30, 1 | tools/gen_ruleset.py `Promotions` |
 | Water Curtain Skyflower Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Water Curtain Skyflower Gu | `[+24]% Strength <when defending>` | +24 | tools/gen_ruleset.py `Promotions` |
 | Water Curtain Skyflower Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -819,7 +819,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Moonshadow Gu | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Moonshadow Gu | `[+6]% Strength <when attacking>` | +6 | tools/gen_ruleset.py `Promotions` |
 | Moonshadow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Moonshadow Gu | `[This Unit] gains the [Sealed Moonshadow] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Search Lock Gu]> <for units without [Sealed Moonshadow]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Moonshadow Gu | `[This Unit] gains the [Sealed Moonshadow] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Search Lock Gu]> <for units with [Moon Grandmaster]> <for units with [Space Grandmaster]> <for units without [Sealed Moonshadow]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Rotation Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Rotation Gu | `[+16] HP when healing` | +16 | tools/gen_ruleset.py `Promotions` |
 | Yin Yang Rotation Gu | `Heals [13] damage if it kills a unit` | 13 | tools/gen_ruleset.py `Promotions` |
@@ -846,11 +846,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Earth Overlord Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Earth Overlord Gu | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Earth Overlord Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Earth Overlord Gu | `[This Unit] gains the [Four Arm Earth King] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Brute Force Longhorn Beetle Gu]> <for units without [Four Arm Earth King]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Earth Overlord Gu | `[This Unit] gains the [Four Arm Earth King] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Brute Force Longhorn Beetle Gu]> <for units with [Strength Grandmaster]> <for units without [Four Arm Earth King]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Extreme Light Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Extreme Light Gu | `[+28]% Strength <when attacking>` | +28 | tools/gen_ruleset.py `Promotions` |
 | Extreme Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Extreme Light Gu | `[This Unit] gains the [My Glorious Spear] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Little Light Gu]> <for units without [My Glorious Spear]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Extreme Light Gu | `[This Unit] gains the [My Glorious Spear] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Little Light Gu]> <for units with [Light Grandmaster]> <for units without [My Glorious Spear]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Star River Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Star River Gu | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
 | Star River Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -885,121 +885,377 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Asura Zombie Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Asura Zombie Gu | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Asura Zombie Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Asura Zombie Gu | `[This Unit] gains the [Six Arm Heavenly Corpse King] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units without [Six Arm Heavenly Corpse King]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Asura Zombie Gu | `[This Unit] gains the [Six Arm Heavenly Corpse King] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Transformation Grandmaster]> <for units without [Six Arm Heavenly Corpse King]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Search Lock Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Search Lock Gu | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Search Lock Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
 | Search Lock Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Search Lock Gu | `[This Unit] gains the [Limitless Search Lock] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Warp Gu]> <for units without [Limitless Search Lock]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Search Lock Gu | `[This Unit] gains the [Limitless Search Lock] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Warp Gu]> <for units with [Space Grandmaster]> <for units without [Limitless Search Lock]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[+35]% XP gained from combat` | +35 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Dream Butterfly Gu | `[This Unit] gains the [Unravel Dream] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units without [Unravel Dream]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
-| Star Mark Immortal Gu | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
-| Star Mark Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Pulling Water Immortal Gu | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
-| Pulling Water Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Snack Immortal Gu | `[-16]% maintenance costs <when above [0] [Green Grape Immortal Essence]>` | -16, 0 | tools/gen_ruleset.py `Promotions` |
-| Snack Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flying Bear Strength Immortal Gu | `[+32]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
-| Flying Bear Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Change Form Immortal Gu | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
-| Change Form Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Change Form Immortal Gu | `[This Unit] gains the [Flying Bear Transformation] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Flying Bear Strength Immortal Gu]> <for units without [Flying Bear Transformation]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Blood Asset Immortal Gu | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
-| Blood Asset Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Blood Asset Immortal Gu | `[This Unit] gains the [Blood Torrent] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Skull Gu]> <for units without [Blood Torrent]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Blood Asset Immortal Gu | `[This Unit] gains the [Blood Healing Lake] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Moon Gu]> <for units without [Blood Healing Lake]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Cleanse Soul Immortal Gu | `[+22] HP when healing <when above [0] [Green Grape Immortal Essence]>` | +22, 0 | tools/gen_ruleset.py `Promotions` |
-| Cleanse Soul Immortal Gu | `Heals [17] damage if it kills a unit <when above [0] [Green Grape Immortal Essence]>` | 17, 0 | tools/gen_ruleset.py `Promotions` |
-| Cleanse Soul Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Cleanse Soul Immortal Gu | `[This Unit] gains the [Ghost Official Garment] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Soul Search Gu]> <for units without [Ghost Official Garment]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Dark Arrow Immortal Gu | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
-| Dark Arrow Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Dark Arrow Immortal Gu | `[This Unit] gains the [Dark Arrow Rain] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units without [Dark Arrow Rain]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Gong Immortal Gu | `[-8]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Green Grape Immortal Essence]>` | -8, 0 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Gong Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Gong Immortal Gu | `[This Unit] gains the [Silent Gong] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Keep Silent Gu]> <for units without [Silent Gong]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Ice Soul Immortal Gu | `[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
-| Ice Soul Immortal Gu | `[+8]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
-| Ice Soul Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Rising Azure Cloud Immortal Gu | `[+1] Movement <when above [0] [Green Grape Immortal Essence]>` | +1, 0 | tools/gen_ruleset.py `Promotions` |
-| Rising Azure Cloud Immortal Gu | `[+7]% Strength <when above [0] [Green Grape Immortal Essence]>` | +7, 0 | tools/gen_ruleset.py `Promotions` |
-| Rising Azure Cloud Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Dog Shit Luck Immortal Gu | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
-| Dog Shit Luck Immortal Gu | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
-| Dog Shit Luck Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flying Bear Phantom Immortal Gu | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
-| Flying Bear Phantom Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Split Shadow Immortal Gu | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
-| Split Shadow Immortal Gu | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
-| Split Shadow Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flying Sword Immortal Gu | `[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>` | 16, 0 | tools/gen_ruleset.py `Promotions` |
-| Flying Sword Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Flying Sword Immortal Gu | `[This Unit] gains the [Sword Marks Targeting Death] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Qi Gu]> <for units without [Sword Marks Targeting Death]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Sword Escape Immortal Gu | `[+2] Movement <when above [0] [Red Date Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
-| Sword Escape Immortal Gu | `[+8]% Strength <when above [0] [Red Date Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
-| Sword Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Sword Escape Immortal Gu | `[This Unit] gains the [One Sword Unrestrained] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units without [One Sword Unrestrained]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Edge Immortal Gu | `[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
-| Edge Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Great Thief Immortal Gu | `Earn [45]% of killed [Military] unit's [Cost] as [Gold] <when above [0] [Red Date Immortal Essence]>` | 45, 0 | tools/gen_ruleset.py `Promotions` |
-| Great Thief Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Great Thief Immortal Gu | `[This Unit] gains the [Ghostly Concealment] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Plunder Gu]> <for units without [Ghostly Concealment]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Crescent Moon Immortal Gu | `[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
-| Crescent Moon Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Perseverance Immortal Gu | `[+36]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
-| Perseverance Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Perseverance Immortal Gu | `[This Unit] gains the [Reverse Flow Protection Seal] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Pulling Water Immortal Gu]> <for units without [Reverse Flow Protection Seal]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Qi Escape Immortal Gu | `[+2] Movement <when above [0] [Red Date Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
-| Qi Escape Immortal Gu | `[+8]% Strength <when above [0] [Red Date Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
-| Qi Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Expend Strength Immortal Gu | `[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]>` | -9, 0 | tools/gen_ruleset.py `Promotions` |
-| Expend Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Fixed Space Immortal Gu | `[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
-| Fixed Space Immortal Gu | `[+9]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +9, 0 | tools/gen_ruleset.py `Promotions` |
-| Fixed Space Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Limit Immortal Gu | `[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]>` | -9, 0 | tools/gen_ruleset.py `Promotions` |
-| Limit Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Region Immortal Gu | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [White Lychee Immortal Essence]>` | -10, 0 | tools/gen_ruleset.py `Promotions` |
-| Region Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Region Immortal Gu | `[This Unit] gains the [Five Restriction Profound Light Qi] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Limit Immortal Gu]> <for units without [Five Restriction Profound Light Qi]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Wisdom Sword Immortal Gu | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
-| Wisdom Sword Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Regret Immortal Gu | `[Target Unit] gains the [Charmed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
-| Regret Immortal Gu | `[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +10, 0 | tools/gen_ruleset.py `Promotions` |
-| Regret Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Attitude Immortal Gu | `Invisible to non-adjacent units <when above [0] [White Lychee Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
-| Attitude Immortal Gu | `[+18]% Strength <when defending> <when above [0] [White Lychee Immortal Essence]>` | +18, 0 | tools/gen_ruleset.py `Promotions` |
-| Attitude Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Eight-Faced Prestige Wind Immortal Gu | `[+40]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +40, 0 | tools/gen_ruleset.py `Promotions` |
-| Eight-Faced Prestige Wind Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Eight-Faced Prestige Wind Immortal Gu | `[This Unit] gains the [Eight Winds Dominion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Jade Wind Wheel Gu]> <for units without [Eight Winds Dominion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Water Refinement Immortal Gu | `[+28] HP when healing <when above [0] [White Lychee Immortal Essence]>` | +28, 0 | tools/gen_ruleset.py `Promotions` |
-| Water Refinement Immortal Gu | `Heals [21] damage if it kills a unit <when above [0] [White Lychee Immortal Essence]>` | 21, 0 | tools/gen_ruleset.py `Promotions` |
-| Water Refinement Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Secret Immortal Gu | `[+2] Sight <when above [0] [White Lychee Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Secret Immortal Gu | `[+9]% Strength <when above [0] [White Lychee Immortal Essence]>` | +9, 0 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Secret Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Heaven's Envy Immortal Gu | `[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
-| Heaven's Envy Immortal Gu | `[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +10, 0 | tools/gen_ruleset.py `Promotions` |
-| Heaven's Envy Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Heaven's Envy Immortal Gu | `[This Unit] gains the [Heaven Envies Heroic Geniuses] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Heavenly Secret Immortal Gu]> <for units without [Heaven Envies Heroic Geniuses]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Kill Immortal Gu | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
-| Kill Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Light Gu | `[+44]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | +44, 0 | tools/gen_ruleset.py `Promotions` |
-| Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Light Gu | `[This Unit] gains the [Sun Descends] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fire Gu]> <for units without [Sun Descends]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Fire Gu | `[Target Unit] takes [20] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | 20, 0 | tools/gen_ruleset.py `Promotions` |
-| Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Love Gu | `[+31] HP when healing <when above [0] [Yellow Apricot Immortal Essence]>` | +31, 0 | tools/gen_ruleset.py `Promotions` |
-| Love Gu | `Heals [23] damage if it kills a unit <when above [0] [Yellow Apricot Immortal Essence]>` | 23, 0 | tools/gen_ruleset.py `Promotions` |
-| Love Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Love Gu | `[This Unit] gains the [Love and Regret] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Regret Immortal Gu]> <for units without [Love and Regret]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Web Immortal Gu | `[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | 4, 0 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Web Immortal Gu | `[+11]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | +11, 0 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Web Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
-| Heavenly Web Immortal Gu | `[This Unit] gains the [Heavenly Net] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fixed Space Immortal Gu]> <for units without [Heavenly Net]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Butterfly Gu | `[This Unit] gains the [Unravel Dream] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Dream Grandmaster]> <for units without [Unravel Dream]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Star Mark Immortal Gu] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu Bearer | `Only available <when number of [[Star Mark Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu Bearer | `[This Unit] gains the [Star Mark Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Star Dart Gu]> <for units with [Star Great Grandmaster]> <for units without [Star Mark Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu Bearer | `[This Unit] gains the [Star Mark Moon Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Moonlight Gu]> <for units with [Star Great Grandmaster]> <for units with [Moon Grandmaster]> <for units without [Star Mark Moon Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu Bearer | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Pulling Water Immortal Gu] is constructed>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu Bearer | `Only available <when number of [[Pulling Water Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu Bearer | `[This Unit] gains the [Pulling Water Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [White Boar Gu]> <for units with [Strength Great Grandmaster]> <for units without [Pulling Water Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu Bearer | `[This Unit] gains the [Pulling Water Transformation Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Strength Great Grandmaster]> <for units with [Transformation Grandmaster]> <for units without [Pulling Water Transformation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu Bearer | `[-16]% maintenance costs <when above [0] [Green Grape Immortal Essence]> <if [Snack Immortal Gu] is constructed>` | -16, 0 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu Bearer | `Only available <when number of [[Snack Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu Bearer | `[This Unit] gains the [Snack Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Liquor Worm]> <for units with [Food Great Grandmaster]> <for units without [Snack Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu Bearer | `[This Unit] gains the [Snack Pill Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Pill Refiner Gu]> <for units with [Food Great Grandmaster]> <for units with [Pill Grandmaster]> <for units without [Snack Pill Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu Bearer | `[+32]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]> <if [Flying Bear Strength Immortal Gu] is constructed>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu Bearer | `Only available <when number of [[Flying Bear Strength Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu Bearer | `[This Unit] gains the [Flying Bear Strength Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [White Boar Gu]> <for units with [Strength Great Grandmaster]> <for units without [Flying Bear Strength Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu Bearer | `[This Unit] gains the [Flying Bear Strength Transformation Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Strength Great Grandmaster]> <for units with [Transformation Grandmaster]> <for units without [Flying Bear Strength Transformation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Change Form Immortal Gu] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu Bearer | `Only available <when number of [[Change Form Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu Bearer | `[This Unit] gains the [Flying Bear Transformation] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Flying Bear Strength Immortal Gu Bearer]> <for units with [Transformation Great Grandmaster]> <for units with [Strength Grandmaster]> <for units without [Flying Bear Transformation]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu Bearer | `[This Unit] gains the [Change Form Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Transformation Great Grandmaster]> <for units without [Change Form Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu Bearer | `[This Unit] gains the [Change Form Bone Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Bone Spear Gu]> <for units with [Transformation Great Grandmaster]> <for units with [Bone Grandmaster]> <for units without [Change Form Bone Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]> <if [Blood Asset Immortal Gu] is constructed>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `Only available <when number of [[Blood Asset Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `[This Unit] gains the [Blood Torrent] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Skull Gu]> <for units with [Blood Great Grandmaster]> <for units without [Blood Torrent]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `[This Unit] gains the [Blood Healing Lake] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Moon Gu]> <for units with [Blood Great Grandmaster]> <for units without [Blood Healing Lake]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `[This Unit] gains the [Blood Asset Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Skull Gu]> <for units with [Blood Great Grandmaster]> <for units without [Blood Asset Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu Bearer | `[This Unit] gains the [Blood Asset Strength Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [White Boar Gu]> <for units with [Blood Great Grandmaster]> <for units with [Strength Grandmaster]> <for units without [Blood Asset Strength Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `[+22] HP when healing <when above [0] [Green Grape Immortal Essence]> <if [Cleanse Soul Immortal Gu] is constructed>` | +22, 0 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `Heals [17] damage if it kills a unit <when above [0] [Green Grape Immortal Essence]> <if [Cleanse Soul Immortal Gu] is constructed>` | 17, 0 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `Only available <when number of [[Cleanse Soul Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `[This Unit] gains the [Ghost Official Garment] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Soul Search Gu]> <for units with [Soul Great Grandmaster]> <for units without [Ghost Official Garment]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `[This Unit] gains the [Cleanse Soul Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Soul Search Gu]> <for units with [Soul Great Grandmaster]> <for units without [Cleanse Soul Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu Bearer | `[This Unit] gains the [Cleanse Soul Dream Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Soul Great Grandmaster]> <for units with [Dream Grandmaster]> <for units without [Cleanse Soul Dream Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu Bearer | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]> <if [Dark Arrow Immortal Gu] is constructed>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu Bearer | `Only available <when number of [[Dark Arrow Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu Bearer | `[This Unit] gains the [Dark Arrow Rain] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units with [Dark Great Grandmaster]> <for units without [Dark Arrow Rain]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu Bearer | `[This Unit] gains the [Dark Arrow Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units with [Dark Great Grandmaster]> <for units without [Dark Arrow Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu Bearer | `[This Unit] gains the [Dark Arrow Shadow Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Overlapping Shadow Gu]> <for units with [Dark Great Grandmaster]> <for units with [Shadow Grandmaster]> <for units without [Dark Arrow Shadow Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu Bearer | `[-8]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Green Grape Immortal Essence]> <if [Heavenly Gong Immortal Gu] is constructed>` | -8, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu Bearer | `Only available <when number of [[Heavenly Gong Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu Bearer | `[This Unit] gains the [Silent Gong] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Keep Silent Gu]> <for units with [Sound Great Grandmaster]> <for units without [Silent Gong]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu Bearer | `[This Unit] gains the [Heavenly Gong Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Heaven Earth Magnificent Sound Gu]> <for units with [Sound Great Grandmaster]> <for units without [Heavenly Gong Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu Bearer | `[This Unit] gains the [Heavenly Gong Illusion Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Illusory Moon Gu]> <for units with [Sound Great Grandmaster]> <for units with [Illusion Grandmaster]> <for units without [Heavenly Gong Illusion Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu Bearer | `[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]> <if [Ice Soul Immortal Gu] is constructed>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu Bearer | `[+8]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]> <if [Ice Soul Immortal Gu] is constructed>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu Bearer | `Only available <when number of [[Ice Soul Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu Bearer | `[This Unit] gains the [Ice Soul Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Frost Demon Gu]> <for units with [Ice Snow Great Grandmaster]> <for units without [Ice Soul Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu Bearer | `[This Unit] gains the [Ice Soul Lightning Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Thunderclap Gu]> <for units with [Ice Snow Great Grandmaster]> <for units with [Lightning Grandmaster]> <for units without [Ice Soul Lightning Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu Bearer | `[+1] Movement <when above [0] [Green Grape Immortal Essence]> <if [Rising Azure Cloud Immortal Gu] is constructed>` | +1, 0 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu Bearer | `[+7]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Rising Azure Cloud Immortal Gu] is constructed>` | +7, 0 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu Bearer | `Only available <when number of [[Rising Azure Cloud Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu Bearer | `[This Unit] gains the [Rising Azure Cloud Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Flying Cloud Gu]> <for units with [Cloud Great Grandmaster]> <for units without [Rising Azure Cloud Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu Bearer | `[This Unit] gains the [Rising Azure Cloud Ice Snow Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Frost Demon Gu]> <for units with [Cloud Great Grandmaster]> <for units with [Ice Snow Grandmaster]> <for units without [Rising Azure Cloud Ice Snow Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu Bearer | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]> <if [Dog Shit Luck Immortal Gu] is constructed>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu Bearer | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Dog Shit Luck Immortal Gu] is constructed>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu Bearer | `Only available <when number of [[Dog Shit Luck Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu Bearer | `[This Unit] gains the [Dog Shit Luck Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Luck Inspection Gu]> <for units with [Luck Great Grandmaster]> <for units without [Dog Shit Luck Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu Bearer | `[This Unit] gains the [Dog Shit Luck Heaven Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Luck Great Grandmaster]> <for units with [Heaven Grandmaster]> <for units without [Dog Shit Luck Heaven Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu Bearer | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Flying Bear Phantom Immortal Gu] is constructed>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu Bearer | `Only available <when number of [[Flying Bear Phantom Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu Bearer | `[This Unit] gains the [Flying Bear Phantom Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Turn Phantom Gu]> <for units with [Phantom Great Grandmaster]> <for units without [Flying Bear Phantom Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu Bearer | `[This Unit] gains the [Flying Bear Phantom Restriction Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Primeval Break Gu]> <for units with [Phantom Great Grandmaster]> <for units with [Restriction Grandmaster]> <for units without [Flying Bear Phantom Restriction Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu Bearer | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]> <if [Split Shadow Immortal Gu] is constructed>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu Bearer | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Split Shadow Immortal Gu] is constructed>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu Bearer | `Only available <when number of [[Split Shadow Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu Bearer | `[This Unit] gains the [Split Shadow Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Overlapping Shadow Gu]> <for units with [Shadow Great Grandmaster]> <for units without [Split Shadow Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu Bearer | `[This Unit] gains the [Split Shadow Star Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Star Dart Gu]> <for units with [Shadow Great Grandmaster]> <for units with [Star Grandmaster]> <for units without [Split Shadow Star Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu Bearer | `[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]> <if [Flying Sword Immortal Gu] is constructed>` | 16, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu Bearer | `Only available <when number of [[Flying Sword Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu Bearer | `[This Unit] gains the [Sword Marks Targeting Death] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Qi Gu]> <for units with [Sword Great Grandmaster]> <for units without [Sword Marks Targeting Death]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu Bearer | `[This Unit] gains the [Flying Sword Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units with [Sword Great Grandmaster]> <for units without [Flying Sword Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu Bearer | `[This Unit] gains the [Flying Sword Blade Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sole Blade Gu]> <for units with [Sword Great Grandmaster]> <for units with [Blade Grandmaster]> <for units without [Flying Sword Blade Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `[+2] Movement <when above [0] [Red Date Immortal Essence]> <if [Sword Escape Immortal Gu] is constructed>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `[+8]% Strength <when above [0] [Red Date Immortal Essence]> <if [Sword Escape Immortal Gu] is constructed>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `Only available <when number of [[Sword Escape Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `[This Unit] gains the [One Sword Unrestrained] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units with [Sword Great Grandmaster]> <for units without [One Sword Unrestrained]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `[This Unit] gains the [Sword Escape Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units with [Sword Great Grandmaster]> <for units without [Sword Escape Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu Bearer | `[This Unit] gains the [Sword Escape Blade Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sole Blade Gu]> <for units with [Sword Great Grandmaster]> <for units with [Blade Grandmaster]> <for units without [Sword Escape Blade Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu Bearer | `[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]> <if [Edge Immortal Gu] is constructed>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu Bearer | `Only available <when number of [[Edge Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu Bearer | `[This Unit] gains the [Edge Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sole Blade Gu]> <for units with [Blade Great Grandmaster]> <for units without [Edge Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu Bearer | `[This Unit] gains the [Edge Metal Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Bronze Skin Gu]> <for units with [Blade Great Grandmaster]> <for units with [Metal Grandmaster]> <for units without [Edge Metal Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu Bearer | `Earn [45]% of killed [Military] unit's [Cost] as [Gold] <when above [0] [Red Date Immortal Essence]> <if [Great Thief Immortal Gu] is constructed>` | 45, 0 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu Bearer | `Only available <when number of [[Great Thief Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu Bearer | `[This Unit] gains the [Ghostly Concealment] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Plunder Gu]> <for units with [Theft Great Grandmaster]> <for units without [Ghostly Concealment]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu Bearer | `[This Unit] gains the [Great Thief Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Plunder Gu]> <for units with [Theft Great Grandmaster]> <for units without [Great Thief Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu Bearer | `[This Unit] gains the [Great Thief Refinement Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Revert Gu]> <for units with [Theft Great Grandmaster]> <for units with [Refinement Grandmaster]> <for units without [Great Thief Refinement Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu Bearer | `[+36]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]> <if [Crescent Moon Immortal Gu] is constructed>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu Bearer | `Only available <when number of [[Crescent Moon Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu Bearer | `[This Unit] gains the [Crescent Moon Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Moonlight Gu]> <for units with [Moon Great Grandmaster]> <for units without [Crescent Moon Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu Bearer | `[This Unit] gains the [Crescent Moon Sound Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Heaven Earth Magnificent Sound Gu]> <for units with [Moon Great Grandmaster]> <for units with [Sound Grandmaster]> <for units without [Crescent Moon Sound Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu Bearer | `[+36]% Strength <when defending> <when above [0] [Red Date Immortal Essence]> <if [Perseverance Immortal Gu] is constructed>` | +36, 0 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu Bearer | `Only available <when number of [[Perseverance Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu Bearer | `[This Unit] gains the [Reverse Flow Protection Seal] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Pulling Water Immortal Gu Bearer]> <for units with [Human Great Grandmaster]> <for units with [Strength Grandmaster]> <for units without [Reverse Flow Protection Seal]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu Bearer | `[This Unit] gains the [Perseverance Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Relic Gu]> <for units with [Human Great Grandmaster]> <for units without [Perseverance Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu Bearer | `[This Unit] gains the [Perseverance Painting Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Painting Idea Gu]> <for units with [Human Great Grandmaster]> <for units with [Painting Grandmaster]> <for units without [Perseverance Painting Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu Bearer | `[+2] Movement <when above [0] [Red Date Immortal Essence]> <if [Qi Escape Immortal Gu] is constructed>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu Bearer | `[+8]% Strength <when above [0] [Red Date Immortal Essence]> <if [Qi Escape Immortal Gu] is constructed>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu Bearer | `Only available <when number of [[Qi Escape Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu Bearer | `[This Unit] gains the [Qi Escape Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Qi Great Grandmaster]> <for units without [Qi Escape Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu Bearer | `[This Unit] gains the [Qi Escape Time Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Man as Before Gu]> <for units with [Qi Great Grandmaster]> <for units with [Time Grandmaster]> <for units without [Qi Escape Time Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu Bearer | `[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]> <if [Expend Strength Immortal Gu] is constructed>` | -9, 0 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu Bearer | `Only available <when number of [[Expend Strength Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu Bearer | `[This Unit] gains the [Expend Strength Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [White Boar Gu]> <for units with [Strength Great Grandmaster]> <for units without [Expend Strength Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu Bearer | `[This Unit] gains the [Expend Strength Transformation Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Strength Great Grandmaster]> <for units with [Transformation Grandmaster]> <for units without [Expend Strength Transformation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu Bearer | `[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]> <if [Fixed Space Immortal Gu] is constructed>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu Bearer | `[+9]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]> <if [Fixed Space Immortal Gu] is constructed>` | +9, 0 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu Bearer | `Only available <when number of [[Fixed Space Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu Bearer | `[This Unit] gains the [Fixed Space Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Warp Gu]> <for units with [Space Great Grandmaster]> <for units without [Fixed Space Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu Bearer | `[This Unit] gains the [Fixed Space Rule Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Amplify Effect Gu]> <for units with [Space Great Grandmaster]> <for units with [Rule Grandmaster]> <for units without [Fixed Space Rule Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu Bearer | `[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]> <if [Limit Immortal Gu] is constructed>` | -9, 0 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu Bearer | `Only available <when number of [[Limit Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu Bearer | `[This Unit] gains the [Limit Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Amplify Effect Gu]> <for units with [Rule Great Grandmaster]> <for units without [Limit Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu Bearer | `[This Unit] gains the [Limit Phantom Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Turn Phantom Gu]> <for units with [Rule Great Grandmaster]> <for units with [Phantom Grandmaster]> <for units without [Limit Phantom Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu Bearer | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [White Lychee Immortal Essence]> <if [Region Immortal Gu] is constructed>` | -10, 0 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu Bearer | `Only available <when number of [[Region Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu Bearer | `[This Unit] gains the [Five Restriction Profound Light Qi] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Limit Immortal Gu Bearer]> <for units with [Rule Great Grandmaster]> <for units without [Five Restriction Profound Light Qi]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu Bearer | `[This Unit] gains the [Region Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Amplify Effect Gu]> <for units with [Rule Great Grandmaster]> <for units without [Region Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu Bearer | `[This Unit] gains the [Region Phantom Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Turn Phantom Gu]> <for units with [Rule Great Grandmaster]> <for units with [Phantom Grandmaster]> <for units without [Region Phantom Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu Bearer | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Wisdom Sword Immortal Gu] is constructed>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu Bearer | `Only available <when number of [[Wisdom Sword Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu Bearer | `[This Unit] gains the [Wisdom Sword Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Wisdom Great Grandmaster]> <for units without [Wisdom Sword Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu Bearer | `[This Unit] gains the [Wisdom Sword Emotion Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Wisdom Great Grandmaster]> <for units with [Emotion Grandmaster]> <for units without [Wisdom Sword Emotion Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu Bearer | `[Target Unit] gains the [Charmed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Regret Immortal Gu] is constructed>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu Bearer | `[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Regret Immortal Gu] is constructed>` | +10, 0 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu Bearer | `Only available <when number of [[Regret Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu Bearer | `[This Unit] gains the [Regret Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Emotion Great Grandmaster]> <for units without [Regret Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu Bearer | `[This Unit] gains the [Regret Enchantment Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Estrus Gu]> <for units with [Emotion Great Grandmaster]> <for units with [Enchantment Grandmaster]> <for units without [Regret Enchantment Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu Bearer | `Invisible to non-adjacent units <when above [0] [White Lychee Immortal Essence]> <if [Attitude Immortal Gu] is constructed>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu Bearer | `[+18]% Strength <when defending> <when above [0] [White Lychee Immortal Essence]> <if [Attitude Immortal Gu] is constructed>` | +18, 0 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu Bearer | `Only available <when number of [[Attitude Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu Bearer | `[This Unit] gains the [Attitude Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Wisdom Great Grandmaster]> <for units without [Attitude Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu Bearer | `[This Unit] gains the [Attitude Emotion Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Wisdom Great Grandmaster]> <for units with [Emotion Grandmaster]> <for units without [Attitude Emotion Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu Bearer | `[+40]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Eight-Faced Prestige Wind Immortal Gu] is constructed>` | +40, 0 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu Bearer | `Only available <when number of [[Eight-Faced Prestige Wind Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu Bearer | `[This Unit] gains the [Eight Winds Dominion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Jade Wind Wheel Gu]> <for units with [Wind Great Grandmaster]> <for units without [Eight Winds Dominion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu Bearer | `[This Unit] gains the [Eight-Faced Prestige Wind Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Whirlwind Gu]> <for units with [Wind Great Grandmaster]> <for units without [Eight-Faced Prestige Wind Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu Bearer | `[This Unit] gains the [Eight-Faced Prestige Wind Cloud Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Flying Cloud Gu]> <for units with [Wind Great Grandmaster]> <for units with [Cloud Grandmaster]> <for units without [Eight-Faced Prestige Wind Cloud Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu Bearer | `[+28] HP when healing <when above [0] [White Lychee Immortal Essence]> <if [Water Refinement Immortal Gu] is constructed>` | +28, 0 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu Bearer | `Heals [21] damage if it kills a unit <when above [0] [White Lychee Immortal Essence]> <if [Water Refinement Immortal Gu] is constructed>` | 21, 0 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu Bearer | `Only available <when number of [[Water Refinement Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu Bearer | `[This Unit] gains the [Water Refinement Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Revert Gu]> <for units with [Refinement Great Grandmaster]> <for units without [Water Refinement Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu Bearer | `[This Unit] gains the [Water Refinement Formation Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Formation Heart Gu]> <for units with [Refinement Great Grandmaster]> <for units with [Formation Grandmaster]> <for units without [Water Refinement Formation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu Bearer | `[+2] Sight <when above [0] [White Lychee Immortal Essence]> <if [Heavenly Secret Immortal Gu] is constructed>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu Bearer | `[+9]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Heavenly Secret Immortal Gu] is constructed>` | +9, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu Bearer | `Only available <when number of [[Heavenly Secret Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu Bearer | `[This Unit] gains the [Heavenly Secret Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Heaven Great Grandmaster]> <for units without [Heavenly Secret Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu Bearer | `[This Unit] gains the [Heavenly Secret Qi Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Heaven Great Grandmaster]> <for units with [Qi Grandmaster]> <for units without [Heavenly Secret Qi Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Heaven's Envy Immortal Gu] is constructed>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Heaven's Envy Immortal Gu] is constructed>` | +10, 0 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `Only available <when number of [[Heaven's Envy Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `[This Unit] gains the [Heaven Envies Heroic Geniuses] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Heavenly Secret Immortal Gu Bearer]> <for units with [Heaven Great Grandmaster]> <for units without [Heaven Envies Heroic Geniuses]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `[This Unit] gains the [Heaven's Envy Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Heaven Great Grandmaster]> <for units without [Heaven's Envy Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu Bearer | `[This Unit] gains the [Heaven's Envy Qi Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Heaven Great Grandmaster]> <for units with [Qi Grandmaster]> <for units without [Heaven's Envy Qi Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu Bearer | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]> <if [Kill Immortal Gu] is constructed>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu Bearer | `Only available <when number of [[Kill Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu Bearer | `[This Unit] gains the [Kill Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Killing Intent Gu]> <for units with [Killing Great Grandmaster]> <for units without [Kill Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu Bearer | `[This Unit] gains the [Kill Sword Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units with [Killing Great Grandmaster]> <for units with [Sword Grandmaster]> <for units without [Kill Sword Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Light Gu Bearer | `[+44]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]> <if [Light Gu] is constructed>` | +44, 0 | tools/gen_ruleset.py `Promotions` |
+| Light Gu Bearer | `Only available <when number of [[Light Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Light Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Light Gu Bearer | `[This Unit] gains the [Sun Descends] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fire Gu Bearer]> <for units with [Light Great Grandmaster]> <for units with [Fire Grandmaster]> <for units without [Sun Descends]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Light Gu Bearer | `[This Unit] gains the [Light Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Little Light Gu]> <for units with [Light Great Grandmaster]> <for units without [Light Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Light Gu Bearer | `[This Unit] gains the [Light Dark Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units with [Light Great Grandmaster]> <for units with [Dark Grandmaster]> <for units without [Light Dark Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu Bearer | `[Target Unit] takes [20] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]> <if [Fire Gu] is constructed>` | 20, 0 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu Bearer | `Only available <when number of [[Fire Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu Bearer | `[This Unit] gains the [Fire Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fiery Claw Gu]> <for units with [Fire Great Grandmaster]> <for units without [Fire Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu Bearer | `[This Unit] gains the [Fire Water Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Water Shield Gu]> <for units with [Fire Great Grandmaster]> <for units with [Water Grandmaster]> <for units without [Fire Water Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `[+31] HP when healing <when above [0] [Yellow Apricot Immortal Essence]> <if [Love Gu] is constructed>` | +31, 0 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `Heals [23] damage if it kills a unit <when above [0] [Yellow Apricot Immortal Essence]> <if [Love Gu] is constructed>` | 23, 0 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `Only available <when number of [[Love Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `[This Unit] gains the [Love and Regret] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Regret Immortal Gu Bearer]> <for units with [Emotion Great Grandmaster]> <for units without [Love and Regret]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `[This Unit] gains the [Love Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Emotion Great Grandmaster]> <for units without [Love Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Love Gu Bearer | `[This Unit] gains the [Love Enchantment Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Estrus Gu]> <for units with [Emotion Great Grandmaster]> <for units with [Enchantment Grandmaster]> <for units without [Love Enchantment Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]> <if [Heavenly Web Immortal Gu] is constructed>` | 4, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `[+11]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]> <if [Heavenly Web Immortal Gu] is constructed>` | +11, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `Only available <when number of [[Heavenly Web Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `[This Unit] gains the [Heavenly Net] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fixed Space Immortal Gu Bearer]> <for units with [Heaven Great Grandmaster]> <for units with [Space Grandmaster]> <for units without [Heavenly Net]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `[This Unit] gains the [Heavenly Web Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Heaven Great Grandmaster]> <for units without [Heavenly Web Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu Bearer | `[This Unit] gains the [Heavenly Web Qi Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Heaven Great Grandmaster]> <for units with [Qi Grandmaster]> <for units without [Heavenly Web Qi Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Spring Autumn Cicada] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Bearer | `Only available <when number of [[Spring Autumn Cicada Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Bearer | `[This Unit] gains the [Spring Autumn Cicada Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Man as Before Gu]> <for units with [Time Great Grandmaster]> <for units without [Spring Autumn Cicada Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Bearer | `[This Unit] gains the [Spring Autumn Cicada Space Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Warp Gu]> <for units with [Time Great Grandmaster]> <for units with [Space Grandmaster]> <for units without [Spring Autumn Cicada Space Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Fixed Immortal Travel] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Bearer | `Only available <when number of [[Fixed Immortal Travel Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Bearer | `[This Unit] gains the [Fixed Immortal Travel Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Warp Gu]> <for units with [Space Great Grandmaster]> <for units without [Fixed Immortal Travel Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Bearer | `[This Unit] gains the [Fixed Immortal Travel Rule Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Amplify Effect Gu]> <for units with [Space Great Grandmaster]> <for units with [Rule Grandmaster]> <for units without [Fixed Immortal Travel Rule Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Man as Before] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Bearer | `Only available <when number of [[Man as Before Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Bearer | `[This Unit] gains the [Man as Before Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Man as Before Gu]> <for units with [Time Great Grandmaster]> <for units without [Man as Before Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Bearer | `[This Unit] gains the [Man as Before Space Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Warp Gu]> <for units with [Time Great Grandmaster]> <for units with [Space Grandmaster]> <for units without [Man as Before Space Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Unravel Mystery] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Bearer | `Only available <when number of [[Unravel Mystery Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Bearer | `[This Unit] gains the [Unravel Mystery Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Wisdom Great Grandmaster]> <for units without [Unravel Mystery Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Bearer | `[This Unit] gains the [Unravel Mystery Emotion Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Wisdom Great Grandmaster]> <for units with [Emotion Grandmaster]> <for units without [Unravel Mystery Emotion Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Connect Luck] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Bearer | `Only available <when number of [[Connect Luck Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Bearer | `[This Unit] gains the [Connect Luck Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Luck Inspection Gu]> <for units with [Luck Great Grandmaster]> <for units without [Connect Luck Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Bearer | `[This Unit] gains the [Connect Luck Heaven Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Luck Great Grandmaster]> <for units with [Heaven Grandmaster]> <for units without [Connect Luck Heaven Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Self Strength] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Bearer | `Only available <when number of [[Self Strength Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Bearer | `[This Unit] gains the [Self Strength Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [White Boar Gu]> <for units with [Strength Great Grandmaster]> <for units without [Self Strength Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Bearer | `[This Unit] gains the [Self Strength Transformation Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Strength Great Grandmaster]> <for units with [Transformation Grandmaster]> <for units without [Self Strength Transformation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Woman's Heart] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Bearer | `Only available <when number of [[Woman's Heart Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Bearer | `[This Unit] gains the [Woman's Heart Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Poison Scorpion Gu]> <for units with [Poison Great Grandmaster]> <for units without [Woman's Heart Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Bearer | `[This Unit] gains the [Woman's Heart Fire Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Fiery Claw Gu]> <for units with [Poison Great Grandmaster]> <for units with [Fire Grandmaster]> <for units without [Woman's Heart Fire Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Bone Spike] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Bearer | `Only available <when number of [[Bone Spike Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Bearer | `[This Unit] gains the [Bone Spike Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Bone Spear Gu]> <for units with [Bone Great Grandmaster]> <for units without [Bone Spike Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Bearer | `[This Unit] gains the [Bone Spike Blood Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Blood Skull Gu]> <for units with [Bone Great Grandmaster]> <for units with [Blood Grandmaster]> <for units without [Bone Spike Blood Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Star Eyes] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Bearer | `Only available <when number of [[Star Eyes Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Bearer | `[This Unit] gains the [Star Eyes Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Star Dart Gu]> <for units with [Star Great Grandmaster]> <for units without [Star Eyes Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Bearer | `[This Unit] gains the [Star Eyes Moon Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Moonlight Gu]> <for units with [Star Great Grandmaster]> <for units with [Moon Grandmaster]> <for units without [Star Eyes Moon Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Divert Disaster] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Bearer | `Only available <when number of [[Divert Disaster Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Bearer | `[This Unit] gains the [Divert Disaster Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Luck Inspection Gu]> <for units with [Luck Great Grandmaster]> <for units without [Divert Disaster Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Bearer | `[This Unit] gains the [Divert Disaster Heaven Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Luck Great Grandmaster]> <for units with [Heaven Grandmaster]> <for units without [Divert Disaster Heaven Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Dragon Strength] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Bearer | `Only available <when number of [[Dragon Strength Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Bearer | `[This Unit] gains the [Dragon Strength Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [White Boar Gu]> <for units with [Strength Great Grandmaster]> <for units without [Dragon Strength Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Bearer | `[This Unit] gains the [Dragon Strength Transformation Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Strength Great Grandmaster]> <for units with [Transformation Grandmaster]> <for units without [Dragon Strength Transformation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Year Gu Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Year Gu] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Year Gu Bearer | `Only available <when number of [[Year Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Year Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Year Gu Bearer | `[This Unit] gains the [Year Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Man as Before Gu]> <for units with [Time Great Grandmaster]> <for units without [Year Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Year Gu Bearer | `[This Unit] gains the [Year Space Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Warp Gu]> <for units with [Time Great Grandmaster]> <for units with [Space Grandmaster]> <for units without [Year Space Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Formation Flag] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Bearer | `Only available <when number of [[Formation Flag Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Bearer | `[This Unit] gains the [Formation Flag Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Formation Heart Gu]> <for units with [Formation Great Grandmaster]> <for units without [Formation Flag Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Bearer | `[This Unit] gains the [Formation Flag Food Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Liquor Worm]> <for units with [Formation Great Grandmaster]> <for units with [Food Grandmaster]> <for units without [Formation Flag Food Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Divination Tortoise Shell] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Bearer | `Only available <when number of [[Divination Tortoise Shell Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Bearer | `[This Unit] gains the [Divination Tortoise Shell Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Wisdom Great Grandmaster]> <for units without [Divination Tortoise Shell Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Bearer | `[This Unit] gains the [Divination Tortoise Shell Emotion Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Wisdom Great Grandmaster]> <for units with [Emotion Grandmaster]> <for units without [Divination Tortoise Shell Emotion Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Dragon Centipede] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Bearer | `Only available <when number of [[Dragon Centipede Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Bearer | `[This Unit] gains the [Dragon Centipede Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sword Shadow Gu]> <for units with [Sword Great Grandmaster]> <for units without [Dragon Centipede Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Bearer | `[This Unit] gains the [Dragon Centipede Blade Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Sole Blade Gu]> <for units with [Sword Great Grandmaster]> <for units with [Blade Grandmaster]> <for units without [Dragon Centipede Blade Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Reputation Restriction] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Bearer | `Only available <when number of [[Reputation Restriction Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Bearer | `[This Unit] gains the [Reputation Restriction Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Flying Sword Letter Gu]> <for units with [Information Great Grandmaster]> <for units without [Reputation Restriction Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Bearer | `[This Unit] gains the [Reputation Restriction Human Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Relic Gu]> <for units with [Information Great Grandmaster]> <for units with [Human Grandmaster]> <for units without [Reputation Restriction Human Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Calamity Beckoning] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Bearer | `Only available <when number of [[Calamity Beckoning Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Bearer | `[This Unit] gains the [Calamity Beckoning Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Luck Inspection Gu]> <for units with [Luck Great Grandmaster]> <for units without [Calamity Beckoning Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Bearer | `[This Unit] gains the [Calamity Beckoning Heaven Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Luck Great Grandmaster]> <for units with [Heaven Grandmaster]> <for units without [Calamity Beckoning Heaven Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Change Soul] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Bearer | `Only available <when number of [[Change Soul Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Bearer | `[This Unit] gains the [Change Soul Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Soul Search Gu]> <for units with [Soul Great Grandmaster]> <for units without [Change Soul Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Bearer | `[This Unit] gains the [Change Soul Dream Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Soul Great Grandmaster]> <for units with [Dream Grandmaster]> <for units without [Change Soul Dream Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bearer | `[+26]% Strength <when above [0] [Red Date Immortal Essence]> <if [Dragon Breath] is constructed>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bearer | `Only available <when number of [[Dragon Breath Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bearer | `[This Unit] gains the [Dragon Breath Resonance] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Roaming Zombie Gu]> <for units with [Transformation Great Grandmaster]> <for units without [Dragon Breath Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bearer | `[This Unit] gains the [Dragon Breath Bone Fusion] status for [1] turn(s) <costs [3] [Red Date Immortal Essence]> <requires [1] movement> <for units with [Bone Spear Gu]> <for units with [Transformation Great Grandmaster]> <for units with [Bone Grandmaster]> <for units without [Dragon Breath Bone Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Heavenly Essence Treasure Imperial Lotus] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Bearer | `Only available <when number of [[Heavenly Essence Treasure Imperial Lotus Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Bearer | `[This Unit] gains the [Heavenly Essence Treasure Imperial Lotus Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Heavenly Essence Treasure Lotus]> <for units with [Wood Great Grandmaster]> <for units without [Heavenly Essence Treasure Imperial Lotus Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Bearer | `[This Unit] gains the [Heavenly Essence Treasure Imperial Lotus Earth Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Gruel Mud Gu]> <for units with [Wood Great Grandmaster]> <for units with [Earth Grandmaster]> <for units without [Heavenly Essence Treasure Imperial Lotus Earth Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Years Flow Like Water] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Bearer | `Only available <when number of [[Years Flow Like Water Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Bearer | `[This Unit] gains the [Years Flow Like Water Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Man as Before Gu]> <for units with [Time Great Grandmaster]> <for units without [Years Flow Like Water Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Bearer | `[This Unit] gains the [Years Flow Like Water Space Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Warp Gu]> <for units with [Time Great Grandmaster]> <for units with [Space Grandmaster]> <for units without [Years Flow Like Water Space Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Dream Token] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Bearer | `Only available <when number of [[Dream Token Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Bearer | `[This Unit] gains the [Dream Token Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Dream Great Grandmaster]> <for units without [Dream Token Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Bearer | `[This Unit] gains the [Dream Token Enslavement Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Wolf Enslavement Gu]> <for units with [Dream Great Grandmaster]> <for units with [Enslavement Grandmaster]> <for units without [Dream Token Enslavement Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Soul Beast Token] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Bearer | `Only available <when number of [[Soul Beast Token Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Bearer | `[This Unit] gains the [Soul Beast Token Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Wolf Enslavement Gu]> <for units with [Enslavement Great Grandmaster]> <for units without [Soul Beast Token Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Bearer | `[This Unit] gains the [Soul Beast Token Wisdom Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Enslavement Great Grandmaster]> <for units with [Wisdom Grandmaster]> <for units without [Soul Beast Token Wisdom Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Gu Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Treasure Light Gu] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Gu Bearer | `Only available <when number of [[Treasure Light Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Gu Bearer | `[This Unit] gains the [Treasure Light Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Little Light Gu]> <for units with [Light Great Grandmaster]> <for units without [Treasure Light Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Gu Bearer | `[This Unit] gains the [Treasure Light Dark Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units with [Light Great Grandmaster]> <for units with [Dark Grandmaster]> <for units without [Treasure Light Dark Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Gu Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Advance Refinement Gu] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Gu Bearer | `Only available <when number of [[Advance Refinement Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Gu Bearer | `[This Unit] gains the [Advance Refinement Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Revert Gu]> <for units with [Refinement Great Grandmaster]> <for units without [Advance Refinement Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Gu Bearer | `[This Unit] gains the [Advance Refinement Formation Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Formation Heart Gu]> <for units with [Refinement Great Grandmaster]> <for units with [Formation Grandmaster]> <for units without [Advance Refinement Formation Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Steal Life] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Bearer | `Only available <when number of [[Steal Life Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Bearer | `[This Unit] gains the [Steal Life Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Plunder Gu]> <for units with [Theft Great Grandmaster]> <for units without [Steal Life Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Bearer | `[This Unit] gains the [Steal Life Refinement Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Revert Gu]> <for units with [Theft Great Grandmaster]> <for units with [Refinement Grandmaster]> <for units without [Steal Life Refinement Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Immortal Gu Bearer | `[+29]% Strength <when above [0] [White Lychee Immortal Essence]> <if [Human Qi Immortal Gu] is constructed>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Immortal Gu Bearer | `Only available <when number of [[Human Qi Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Immortal Gu Bearer | `[This Unit] gains the [Human Qi Resonance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Qi Great Grandmaster]> <for units without [Human Qi Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Immortal Gu Bearer | `[This Unit] gains the [Human Qi Time Fusion] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for units with [Man as Before Gu]> <for units with [Qi Great Grandmaster]> <for units with [Time Grandmaster]> <for units without [Human Qi Time Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Gu Bearer | `[+32]% Strength <when above [0] [Yellow Apricot Immortal Essence]> <if [Wisdom Gu] is constructed>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Gu Bearer | `Only available <when number of [[Wisdom Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Gu Bearer | `[This Unit] gains the [Wisdom Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Clear Mind Gu]> <for units with [Wisdom Great Grandmaster]> <for units without [Wisdom Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Gu Bearer | `[This Unit] gains the [Wisdom Emotion Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Emotion Poetry Gu]> <for units with [Wisdom Great Grandmaster]> <for units with [Emotion Grandmaster]> <for units without [Wisdom Emotion Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Derivation Gu Bearer | `[+32]% Strength <when above [0] [Yellow Apricot Immortal Essence]> <if [Derivation Gu] is constructed>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Derivation Gu Bearer | `Only available <when number of [[Derivation Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Derivation Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Derivation Gu Bearer | `[This Unit] gains the [Derivation Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Amplify Effect Gu]> <for units with [Rule Great Grandmaster]> <for units without [Derivation Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Derivation Gu Bearer | `[This Unit] gains the [Derivation Phantom Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Turn Phantom Gu]> <for units with [Rule Great Grandmaster]> <for units with [Phantom Grandmaster]> <for units without [Derivation Phantom Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
@@ -1167,88 +1423,526 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fox Spirit Favor | `[1] Movement` | 1 | tools/gen_ruleset.py `Promotions` |
 | Four Arm Earth King | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
 | Four Arm Earth King | `[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>` | 19 | tools/gen_ruleset.py `Promotions` |
+| Four Arm Earth King | `[+15]% Strength <for units with [Strength Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Eight Beast Phantoms | `[+22]% Strength <when attacking>` | +22 | tools/gen_ruleset.py `Promotions` |
 | Eight Beast Phantoms | `[Target Unit] takes [13] damage <upon damaging a [Military] unit> <when attacking>` | 13 | tools/gen_ruleset.py `Promotions` |
+| Eight Beast Phantoms | `[+11]% Strength <for units with [Strength Supreme Grandmaster]>` | +11 | tools/gen_ruleset.py `Promotions` |
 | Reverse Flow Protection Seal | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Promotions` |
 | Reverse Flow Protection Seal | `[This Unit] heals [26] HP <upon gaining the [Reverse Flow Protection Seal] status>` | 26 | tools/gen_ruleset.py `Promotions` |
+| Reverse Flow Protection Seal | `[+19]% Strength <for units with [Human Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
 | Spiral Drill Star Spear | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
 | Spiral Drill Star Spear | `[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>` | 19 | tools/gen_ruleset.py `Promotions` |
+| Spiral Drill Star Spear | `[+15]% Strength <for units with [Bone Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Myriad Star Fireflies | `[-14]% Strength for enemy [Military] units in adjacent [All] tiles` | -14 | tools/gen_ruleset.py `Promotions` |
 | Myriad Star Fireflies | `[+13]% Strength` | +13 | tools/gen_ruleset.py `Promotions` |
+| Myriad Star Fireflies | `[+13]% Strength <for units with [Star Supreme Grandmaster]>` | +13 | tools/gen_ruleset.py `Promotions` |
 | Blood Torrent | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
 | Blood Torrent | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Blood Torrent | `[+17]% Strength <for units with [Blood Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Blood Healing Lake | `[This Unit] heals [45] HP <upon gaining the [Blood Healing Lake] status>` | 45 | tools/gen_ruleset.py `Promotions` |
 | Blood Healing Lake | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Blood Healing Lake | `[+17]% Strength <for units with [Blood Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Sword Marks Targeting Death | `[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Sword Marks Targeting Death | `[+27]% Strength <when attacking>` | +27 | tools/gen_ruleset.py `Promotions` |
+| Sword Marks Targeting Death | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
 | One Sword Unrestrained | `[This Unit] gains [2] movement <upon gaining the [One Sword Unrestrained] status>` | 2 | tools/gen_ruleset.py `Promotions` |
 | One Sword Unrestrained | `[+29]% Strength <when attacking>` | +29 | tools/gen_ruleset.py `Promotions` |
+| One Sword Unrestrained | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
 | Flying Bear Transformation | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
 | Flying Bear Transformation | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Transformation | `[+17]% Strength <for units with [Transformation Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Ghost Official Garment | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
 | Ghost Official Garment | `[This Unit] heals [23] HP <upon gaining the [Ghost Official Garment] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Ghost Official Garment | `[+17]% Strength <for units with [Soul Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Ghostly Concealment | `Earn [55]% of killed [Military] unit's [Cost] as [Gold]` | 55 | tools/gen_ruleset.py `Promotions` |
 | Ghostly Concealment | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Ghostly Concealment | `[+19]% Strength <for units with [Theft Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
 | Five Restriction Profound Light Qi | `[Target Unit] gains the [Sealed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
 | Five Restriction Profound Light Qi | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Five Restriction Profound Light Qi | `[+21]% Strength <for units with [Rule Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
 | Limitless Search Lock | `[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Limitless Search Lock | `[+21]% Strength <when attacking>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Limitless Search Lock | `[+15]% Strength <for units with [Space Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Ice Blade Storm | `[+18]% Strength <when attacking>` | +18 | tools/gen_ruleset.py `Promotions` |
 | Ice Blade Storm | `[Target Unit] takes [10] damage <upon damaging a [Military] unit> <when attacking>` | 10 | tools/gen_ruleset.py `Promotions` |
+| Ice Blade Storm | `[+9]% Strength <for units with [Ice Snow Supreme Grandmaster]>` | +9 | tools/gen_ruleset.py `Promotions` |
 | Heaven Envies Heroic Geniuses | `[-22]% Strength for enemy [Military] units in adjacent [All] tiles` | -22 | tools/gen_ruleset.py `Promotions` |
 | Heaven Envies Heroic Geniuses | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Heaven Envies Heroic Geniuses | `[+21]% Strength <for units with [Heaven Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
 | My Glorious Spear | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
 | My Glorious Spear | `[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>` | 19 | tools/gen_ruleset.py `Promotions` |
+| My Glorious Spear | `[+15]% Strength <for units with [Light Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Nine Cloud Ring | `[+35]% Strength <when defending>` | +35 | tools/gen_ruleset.py `Promotions` |
 | Nine Cloud Ring | `[This Unit] heals [17] HP <upon gaining the [Nine Cloud Ring] status>` | 17 | tools/gen_ruleset.py `Promotions` |
+| Nine Cloud Ring | `[+13]% Strength <for units with [Cloud Supreme Grandmaster]>` | +13 | tools/gen_ruleset.py `Promotions` |
 | Six Arm Heavenly Corpse King | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
 | Six Arm Heavenly Corpse King | `[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>` | 19 | tools/gen_ruleset.py `Promotions` |
+| Six Arm Heavenly Corpse King | `[+15]% Strength <for units with [Transformation Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Unravel Dream | `[+55]% XP gained from combat` | +55 | tools/gen_ruleset.py `Promotions` |
 | Unravel Dream | `[This Unit] heals [15] HP <upon gaining the [Unravel Dream] status>` | 15 | tools/gen_ruleset.py `Promotions` |
+| Unravel Dream | `[+15]% Strength <for units with [Dream Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | One Song of Yang Pass | `[-16]% Strength for enemy [Military] units in adjacent [All] tiles` | -16 | tools/gen_ruleset.py `Promotions` |
 | One Song of Yang Pass | `[+15]% Strength` | +15 | tools/gen_ruleset.py `Promotions` |
+| One Song of Yang Pass | `[+15]% Strength <for units with [Sound Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Splendid Star Armour | `[+30]% Strength <when defending>` | +30 | tools/gen_ruleset.py `Promotions` |
 | Splendid Star Armour | `[This Unit] heals [14] HP <upon gaining the [Splendid Star Armour] status>` | 14 | tools/gen_ruleset.py `Promotions` |
+| Splendid Star Armour | `[+11]% Strength <for units with [Star Supreme Grandmaster]>` | +11 | tools/gen_ruleset.py `Promotions` |
 | Bleeding Moon | `[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Bleeding Moon | `[+15]% Strength <when attacking>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Bleeding Moon | `[+11]% Strength <for units with [Moon Supreme Grandmaster]>` | +11 | tools/gen_ruleset.py `Promotions` |
 | Ice Coffin Prison | `[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Ice Coffin Prison | `[+15]% Strength <when attacking>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Ice Coffin Prison | `[+11]% Strength <for units with [Ice Snow Supreme Grandmaster]>` | +11 | tools/gen_ruleset.py `Promotions` |
 | Thunder Wing Dive | `[This Unit] gains [2] movement <upon gaining the [Thunder Wing Dive] status>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Thunder Wing Dive | `[+23]% Strength <when attacking>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Thunder Wing Dive | `[+15]% Strength <for units with [Lightning Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Molten Serpent Coil | `[Target Unit] gains the [Burning] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Molten Serpent Coil | `[+18]% Strength <when attacking>` | +18 | tools/gen_ruleset.py `Promotions` |
+| Molten Serpent Coil | `[+13]% Strength <for units with [Fire Supreme Grandmaster]>` | +13 | tools/gen_ruleset.py `Promotions` |
 | Ten Thousand Poisons | `[Target Unit] gains the [Poisoned] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Ten Thousand Poisons | `[+21]% Strength <when attacking>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Ten Thousand Poisons | `[+15]% Strength <for units with [Poison Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Bone Spear Rain | `[+26]% Strength <when attacking>` | +26 | tools/gen_ruleset.py `Promotions` |
 | Bone Spear Rain | `[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking>` | 16 | tools/gen_ruleset.py `Promotions` |
+| Bone Spear Rain | `[+13]% Strength <for units with [Bone Supreme Grandmaster]>` | +13 | tools/gen_ruleset.py `Promotions` |
 | Iron Stone Bastion | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Iron Stone Bastion | `[This Unit] heals [8] HP <upon gaining the [Iron Stone Bastion] status>` | 8 | tools/gen_ruleset.py `Promotions` |
+| Iron Stone Bastion | `[+7]% Strength <for units with [Metal Supreme Grandmaster]>` | +7 | tools/gen_ruleset.py `Promotions` |
 | Golden Saw Tide | `[+22]% Strength <when attacking>` | +22 | tools/gen_ruleset.py `Promotions` |
 | Golden Saw Tide | `[Target Unit] takes [13] damage <upon damaging a [Military] unit> <when attacking>` | 13 | tools/gen_ruleset.py `Promotions` |
+| Golden Saw Tide | `[+11]% Strength <for units with [Metal Supreme Grandmaster]>` | +11 | tools/gen_ruleset.py `Promotions` |
 | Twin Wheel Gale | `[This Unit] gains [2] movement <upon gaining the [Twin Wheel Gale] status>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Twin Wheel Gale | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Twin Wheel Gale | `[+9]% Strength <for units with [Wind Supreme Grandmaster]>` | +9 | tools/gen_ruleset.py `Promotions` |
 | Grass Army Ambush | `[-14]% Strength for enemy [Military] units in adjacent [All] tiles` | -14 | tools/gen_ruleset.py `Promotions` |
 | Grass Army Ambush | `[+13]% Strength` | +13 | tools/gen_ruleset.py `Promotions` |
+| Grass Army Ambush | `[+13]% Strength <for units with [Enslavement Supreme Grandmaster]>` | +13 | tools/gen_ruleset.py `Promotions` |
 | Earth Listening Ambush | `[+18]% Strength <when attacking>` | +18 | tools/gen_ruleset.py `Promotions` |
 | Earth Listening Ambush | `[Target Unit] takes [10] damage <upon damaging a [Military] unit> <when attacking>` | 10 | tools/gen_ruleset.py `Promotions` |
+| Earth Listening Ambush | `[+9]% Strength <for units with [Earth Supreme Grandmaster]>` | +9 | tools/gen_ruleset.py `Promotions` |
 | Soul Fire Burst | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
 | Soul Fire Burst | `[Target Unit] takes [19] damage <upon damaging a [Military] unit> <when attacking>` | 19 | tools/gen_ruleset.py `Promotions` |
+| Soul Fire Burst | `[+15]% Strength <for units with [Soul Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Blinding Palm | `[Target Unit] gains the [Blinded] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
 | Blinding Palm | `[+15]% Strength <when attacking>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Blinding Palm | `[+11]% Strength <for units with [Light Supreme Grandmaster]>` | +11 | tools/gen_ruleset.py `Promotions` |
 | Sealed Moonshadow | `[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
 | Sealed Moonshadow | `[+21]% Strength <when attacking>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Sealed Moonshadow | `[+15]% Strength <for units with [Moon Supreme Grandmaster]>` | +15 | tools/gen_ruleset.py `Promotions` |
 | Silent Gong | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
 | Silent Gong | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Silent Gong | `[+17]% Strength <for units with [Sound Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Dark Arrow Rain | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
 | Dark Arrow Rain | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Rain | `[+17]% Strength <for units with [Dark Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Eight Winds Dominion | `[-22]% Strength for enemy [Military] units in adjacent [All] tiles` | -22 | tools/gen_ruleset.py `Promotions` |
 | Eight Winds Dominion | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Eight Winds Dominion | `[+21]% Strength <for units with [Wind Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
 | Sun Descends | `[+46]% Strength <when attacking>` | +46 | tools/gen_ruleset.py `Promotions` |
 | Sun Descends | `[Target Unit] takes [31] damage <upon damaging a [Military] unit> <when attacking>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Sun Descends | `[+23]% Strength <for units with [Light Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
 | Heavenly Net | `[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
 | Heavenly Net | `[+33]% Strength <when attacking>` | +33 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Net | `[+23]% Strength <for units with [Heaven Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
 | Love and Regret | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
 | Love and Regret | `[+33]% Strength <when attacking>` | +33 | tools/gen_ruleset.py `Promotions` |
+| Love and Regret | `[+23]% Strength <for units with [Emotion Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Resonance | `[+17]% Strength <for units with [Star Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Moon Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Moon Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Moon Fusion | `[+17]% Strength <for units with [Star Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Resonance | `[This Unit] heals [23] HP <upon gaining the [Pulling Water Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Resonance | `[+17]% Strength <for units with [Strength Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Transformation Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Transformation Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Transformation Fusion | `[+17]% Strength <for units with [Strength Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Snack Resonance | `[+60]% XP gained from combat` | +60 | tools/gen_ruleset.py `Promotions` |
+| Snack Resonance | `[This Unit] heals [17] HP <upon gaining the [Snack Resonance] status>` | 17 | tools/gen_ruleset.py `Promotions` |
+| Snack Resonance | `[+17]% Strength <for units with [Food Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Snack Pill Fusion | `[This Unit] heals [45] HP <upon gaining the [Snack Pill Fusion] status>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Snack Pill Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Snack Pill Fusion | `[+17]% Strength <for units with [Food Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Resonance | `[+17]% Strength <for units with [Strength Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Transformation Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Transformation Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Transformation Fusion | `[+17]% Strength <for units with [Strength Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Change Form Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Change Form Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Change Form Resonance | `[+17]% Strength <for units with [Transformation Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Change Form Bone Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Change Form Bone Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Change Form Bone Fusion | `[+17]% Strength <for units with [Transformation Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Resonance | `[+17]% Strength <for units with [Blood Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Strength Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Strength Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Strength Fusion | `[+17]% Strength <for units with [Blood Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Resonance | `[This Unit] heals [45] HP <upon gaining the [Cleanse Soul Resonance] status>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Resonance | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Resonance | `[+17]% Strength <for units with [Soul Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Dream Fusion | `[+60]% XP gained from combat` | +60 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Dream Fusion | `[This Unit] heals [17] HP <upon gaining the [Cleanse Soul Dream Fusion] status>` | 17 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Dream Fusion | `[+17]% Strength <for units with [Soul Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Resonance | `[+17]% Strength <for units with [Dark Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Shadow Fusion | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Shadow Fusion | `[This Unit] heals [23] HP <upon gaining the [Dark Arrow Shadow Fusion] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Shadow Fusion | `[+17]% Strength <for units with [Dark Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Resonance | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Resonance | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Resonance | `[+17]% Strength <for units with [Sound Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Illusion Fusion | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Illusion Fusion | `[This Unit] heals [23] HP <upon gaining the [Heavenly Gong Illusion Fusion] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Illusion Fusion | `[+17]% Strength <for units with [Sound Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Resonance | `[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Resonance | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Resonance | `[+17]% Strength <for units with [Ice Snow Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Lightning Fusion | `[Target Unit] gains the [Shocked] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Lightning Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Lightning Fusion | `[+17]% Strength <for units with [Ice Snow Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Resonance | `[This Unit] gains [2] movement <upon gaining the [Rising Azure Cloud Resonance] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Resonance | `[+26]% Strength <when attacking>` | +26 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Resonance | `[+17]% Strength <for units with [Cloud Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Ice Snow Fusion | `[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Ice Snow Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Ice Snow Fusion | `[+17]% Strength <for units with [Cloud Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Resonance | `[This Unit] heals [23] HP <upon gaining the [Dog Shit Luck Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Resonance | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Heaven Fusion | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Heaven Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Heaven Fusion | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Resonance | `[This Unit] heals [23] HP <upon gaining the [Flying Bear Phantom Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Resonance | `[+17]% Strength <for units with [Phantom Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Restriction Fusion | `[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Restriction Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Restriction Fusion | `[+17]% Strength <for units with [Phantom Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Resonance | `[This Unit] heals [23] HP <upon gaining the [Split Shadow Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Resonance | `[+17]% Strength <for units with [Shadow Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Star Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Star Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Star Fusion | `[+17]% Strength <for units with [Shadow Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Resonance | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Blade Fusion | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Blade Fusion | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Blade Fusion | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Resonance | `[This Unit] gains [2] movement <upon gaining the [Sword Escape Resonance] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Resonance | `[+29]% Strength <when attacking>` | +29 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Resonance | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Blade Fusion | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Blade Fusion | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Blade Fusion | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Edge Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Edge Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Edge Resonance | `[+19]% Strength <for units with [Blade Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Edge Metal Fusion | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Promotions` |
+| Edge Metal Fusion | `[This Unit] heals [26] HP <upon gaining the [Edge Metal Fusion] status>` | 26 | tools/gen_ruleset.py `Promotions` |
+| Edge Metal Fusion | `[+19]% Strength <for units with [Blade Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Resonance | `Earn [55]% of killed [Military] unit's [Cost] as [Gold]` | 55 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Resonance | `[+19]% Strength <for units with [Theft Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Refinement Fusion | `[This Unit] heals [50] HP <upon gaining the [Great Thief Refinement Fusion] status>` | 50 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Refinement Fusion | `[+19]% Strength` | +19 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Refinement Fusion | `[+19]% Strength <for units with [Theft Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Resonance | `[+19]% Strength <for units with [Moon Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Sound Fusion | `[Target Unit] gains the [Dazed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Sound Fusion | `[+27]% Strength <when attacking>` | +27 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Sound Fusion | `[+19]% Strength <for units with [Moon Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Resonance | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Resonance | `[This Unit] heals [26] HP <upon gaining the [Perseverance Resonance] status>` | 26 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Resonance | `[+19]% Strength <for units with [Human Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Painting Fusion | `[-20]% Strength for enemy [Military] units in adjacent [All] tiles` | -20 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Painting Fusion | `[+19]% Strength` | +19 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Painting Fusion | `[+19]% Strength <for units with [Human Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Resonance | `[This Unit] gains [2] movement <upon gaining the [Qi Escape Resonance] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Resonance | `[+29]% Strength <when attacking>` | +29 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Resonance | `[+19]% Strength <for units with [Qi Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Time Fusion | `[Target Unit] gains the [Aged] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Time Fusion | `[+27]% Strength <when attacking>` | +27 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Time Fusion | `[+19]% Strength <for units with [Qi Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Resonance | `[-20]% Strength for enemy [Military] units in adjacent [All] tiles` | -20 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Resonance | `[+19]% Strength` | +19 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Resonance | `[+19]% Strength <for units with [Strength Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Transformation Fusion | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Transformation Fusion | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Transformation Fusion | `[+19]% Strength <for units with [Strength Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Resonance | `[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Resonance | `[+27]% Strength <when attacking>` | +27 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Resonance | `[+19]% Strength <for units with [Space Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Rule Fusion | `[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Rule Fusion | `[+27]% Strength <when attacking>` | +27 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Rule Fusion | `[+19]% Strength <for units with [Space Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Limit Resonance | `[-20]% Strength for enemy [Military] units in adjacent [All] tiles` | -20 | tools/gen_ruleset.py `Promotions` |
+| Limit Resonance | `[+19]% Strength` | +19 | tools/gen_ruleset.py `Promotions` |
+| Limit Resonance | `[+19]% Strength <for units with [Rule Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Limit Phantom Fusion | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Promotions` |
+| Limit Phantom Fusion | `[This Unit] heals [26] HP <upon gaining the [Limit Phantom Fusion] status>` | 26 | tools/gen_ruleset.py `Promotions` |
+| Limit Phantom Fusion | `[+19]% Strength <for units with [Rule Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Region Resonance | `[-22]% Strength for enemy [Military] units in adjacent [All] tiles` | -22 | tools/gen_ruleset.py `Promotions` |
+| Region Resonance | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Region Resonance | `[+21]% Strength <for units with [Rule Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Region Phantom Fusion | `[+55]% Strength <when defending>` | +55 | tools/gen_ruleset.py `Promotions` |
+| Region Phantom Fusion | `[This Unit] heals [29] HP <upon gaining the [Region Phantom Fusion] status>` | 29 | tools/gen_ruleset.py `Promotions` |
+| Region Phantom Fusion | `[+21]% Strength <for units with [Rule Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Resonance | `[+21]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Emotion Fusion | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Emotion Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Emotion Fusion | `[+21]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Regret Resonance | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Regret Resonance | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Regret Resonance | `[+21]% Strength <for units with [Emotion Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Regret Enchantment Fusion | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Regret Enchantment Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Regret Enchantment Fusion | `[+21]% Strength <for units with [Emotion Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Attitude Resonance | `[+55]% Strength <when defending>` | +55 | tools/gen_ruleset.py `Promotions` |
+| Attitude Resonance | `[This Unit] heals [29] HP <upon gaining the [Attitude Resonance] status>` | 29 | tools/gen_ruleset.py `Promotions` |
+| Attitude Resonance | `[+21]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Attitude Emotion Fusion | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Attitude Emotion Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Attitude Emotion Fusion | `[+21]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Resonance | `[+21]% Strength <for units with [Wind Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Cloud Fusion | `[Target Unit] gains the [Blinded] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Cloud Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Cloud Fusion | `[+21]% Strength <for units with [Wind Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Resonance | `[This Unit] heals [55] HP <upon gaining the [Water Refinement Resonance] status>` | 55 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Resonance | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Resonance | `[+21]% Strength <for units with [Refinement Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Formation Fusion | `[+55]% Strength <when defending>` | +55 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Formation Fusion | `[This Unit] heals [29] HP <upon gaining the [Water Refinement Formation Fusion] status>` | 29 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Formation Fusion | `[+21]% Strength <for units with [Refinement Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Resonance | `[+70]% XP gained from combat` | +70 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Resonance | `[This Unit] heals [21] HP <upon gaining the [Heavenly Secret Resonance] status>` | 21 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Resonance | `[+21]% Strength <for units with [Heaven Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Qi Fusion | `[+55]% Strength <when defending>` | +55 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Qi Fusion | `[This Unit] heals [29] HP <upon gaining the [Heavenly Secret Qi Fusion] status>` | 29 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Qi Fusion | `[+21]% Strength <for units with [Heaven Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Resonance | `[Target Unit] gains the [Doomed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Resonance | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Resonance | `[+21]% Strength <for units with [Heaven Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Qi Fusion | `[+55]% Strength <when defending>` | +55 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Qi Fusion | `[This Unit] heals [29] HP <upon gaining the [Heaven's Envy Qi Fusion] status>` | 29 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Qi Fusion | `[+21]% Strength <for units with [Heaven Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Kill Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Kill Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Kill Resonance | `[+21]% Strength <for units with [Killing Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Kill Sword Fusion | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Kill Sword Fusion | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Kill Sword Fusion | `[+21]% Strength <for units with [Killing Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Light Resonance | `[+46]% Strength <when attacking>` | +46 | tools/gen_ruleset.py `Promotions` |
+| Light Resonance | `[Target Unit] takes [31] damage <upon damaging a [Military] unit> <when attacking>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Light Resonance | `[+23]% Strength <for units with [Light Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Light Dark Fusion | `[-24]% Strength for enemy [Military] units in adjacent [All] tiles` | -24 | tools/gen_ruleset.py `Promotions` |
+| Light Dark Fusion | `[+23]% Strength` | +23 | tools/gen_ruleset.py `Promotions` |
+| Light Dark Fusion | `[+23]% Strength <for units with [Light Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Fire Resonance | `[+46]% Strength <when attacking>` | +46 | tools/gen_ruleset.py `Promotions` |
+| Fire Resonance | `[Target Unit] takes [31] damage <upon damaging a [Military] unit> <when attacking>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Fire Resonance | `[+23]% Strength <for units with [Fire Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Fire Water Fusion | `[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Fire Water Fusion | `[+33]% Strength <when attacking>` | +33 | tools/gen_ruleset.py `Promotions` |
+| Fire Water Fusion | `[+23]% Strength <for units with [Fire Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Love Resonance | `[This Unit] heals [60] HP <upon gaining the [Love Resonance] status>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Love Resonance | `[+23]% Strength` | +23 | tools/gen_ruleset.py `Promotions` |
+| Love Resonance | `[+23]% Strength <for units with [Emotion Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Love Enchantment Fusion | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Love Enchantment Fusion | `[+33]% Strength <when attacking>` | +33 | tools/gen_ruleset.py `Promotions` |
+| Love Enchantment Fusion | `[+23]% Strength <for units with [Emotion Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Resonance | `[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Resonance | `[+33]% Strength <when attacking>` | +33 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Resonance | `[+23]% Strength <for units with [Heaven Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Qi Fusion | `[+60]% Strength <when defending>` | +60 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Qi Fusion | `[This Unit] heals [32] HP <upon gaining the [Heavenly Web Qi Fusion] status>` | 32 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Qi Fusion | `[+23]% Strength <for units with [Heaven Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Resonance | `[+17]% Strength <for units with [Time Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Space Fusion | `[This Unit] gains [2] movement <upon gaining the [Spring Autumn Cicada Space Fusion] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Space Fusion | `[+26]% Strength <when attacking>` | +26 | tools/gen_ruleset.py `Promotions` |
+| Spring Autumn Cicada Space Fusion | `[+17]% Strength <for units with [Time Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Resonance | `[+17]% Strength <for units with [Space Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Rule Fusion | `[Target Unit] gains the [Sealed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Rule Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Fixed Immortal Travel Rule Fusion | `[+17]% Strength <for units with [Space Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Resonance | `[+17]% Strength <for units with [Time Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Space Fusion | `[This Unit] gains [2] movement <upon gaining the [Man as Before Space Fusion] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Space Fusion | `[+26]% Strength <when attacking>` | +26 | tools/gen_ruleset.py `Promotions` |
+| Man as Before Space Fusion | `[+17]% Strength <for units with [Time Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Resonance | `[+17]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Emotion Fusion | `[Target Unit] gains the [Charmed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Emotion Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Unravel Mystery Emotion Fusion | `[+17]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Resonance | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Heaven Fusion | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Heaven Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Connect Luck Heaven Fusion | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Resonance | `[+17]% Strength <for units with [Strength Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Transformation Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Transformation Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Self Strength Transformation Fusion | `[+17]% Strength <for units with [Strength Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Resonance | `[+17]% Strength <for units with [Poison Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Fire Fusion | `[Target Unit] gains the [Burning] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Fire Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Woman's Heart Fire Fusion | `[+17]% Strength <for units with [Poison Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Resonance | `[+17]% Strength <for units with [Bone Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Blood Fusion | `[Target Unit] gains the [Bleeding] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Blood Fusion | `[+24]% Strength <when attacking>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Bone Spike Blood Fusion | `[+17]% Strength <for units with [Bone Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Resonance | `[+17]% Strength <for units with [Star Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Moon Fusion | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Moon Fusion | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Star Eyes Moon Fusion | `[+17]% Strength <for units with [Star Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Resonance | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Heaven Fusion | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Heaven Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Divert Disaster Heaven Fusion | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Resonance | `[+19]% Strength <for units with [Strength Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Transformation Fusion | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Transformation Fusion | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Dragon Strength Transformation Fusion | `[+19]% Strength <for units with [Strength Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Year Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Year Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Year Resonance | `[+19]% Strength <for units with [Time Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Year Space Fusion | `[This Unit] gains [2] movement <upon gaining the [Year Space Fusion] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Year Space Fusion | `[+29]% Strength <when attacking>` | +29 | tools/gen_ruleset.py `Promotions` |
+| Year Space Fusion | `[+19]% Strength <for units with [Time Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Resonance | `[+19]% Strength <for units with [Formation Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Food Fusion | `[This Unit] heals [50] HP <upon gaining the [Formation Flag Food Fusion] status>` | 50 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Food Fusion | `[+19]% Strength` | +19 | tools/gen_ruleset.py `Promotions` |
+| Formation Flag Food Fusion | `[+19]% Strength <for units with [Formation Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Resonance | `[+19]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Emotion Fusion | `[Target Unit] gains the [Charmed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking>` | 3 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Emotion Fusion | `[+27]% Strength <when attacking>` | +27 | tools/gen_ruleset.py `Promotions` |
+| Divination Tortoise Shell Emotion Fusion | `[+19]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Resonance | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Blade Fusion | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Blade Fusion | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Dragon Centipede Blade Fusion | `[+19]% Strength <for units with [Sword Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Resonance | `[+19]% Strength <for units with [Information Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Human Fusion | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Human Fusion | `[This Unit] heals [26] HP <upon gaining the [Reputation Restriction Human Fusion] status>` | 26 | tools/gen_ruleset.py `Promotions` |
+| Reputation Restriction Human Fusion | `[+19]% Strength <for units with [Information Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Resonance | `[+19]% Strength <for units with [Luck Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Heaven Fusion | `[-20]% Strength for enemy [Military] units in adjacent [All] tiles` | -20 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Heaven Fusion | `[+19]% Strength` | +19 | tools/gen_ruleset.py `Promotions` |
+| Calamity Beckoning Heaven Fusion | `[+19]% Strength <for units with [Luck Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Resonance | `[+19]% Strength <for units with [Soul Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Dream Fusion | `[+65]% XP gained from combat` | +65 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Dream Fusion | `[This Unit] heals [19] HP <upon gaining the [Change Soul Dream Fusion] status>` | 19 | tools/gen_ruleset.py `Promotions` |
+| Change Soul Dream Fusion | `[+19]% Strength <for units with [Soul Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Resonance | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Resonance | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Resonance | `[+19]% Strength <for units with [Transformation Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bone Fusion | `[+38]% Strength <when attacking>` | +38 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bone Fusion | `[Target Unit] takes [25] damage <upon damaging a [Military] unit> <when attacking>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Dragon Breath Bone Fusion | `[+19]% Strength <for units with [Transformation Supreme Grandmaster]>` | +19 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Resonance | `[+21]% Strength <for units with [Wood Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Earth Fusion | `[Target Unit] gains the [Weighted] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Earth Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Essence Treasure Imperial Lotus Earth Fusion | `[+21]% Strength <for units with [Wood Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Resonance | `[+21]% Strength <for units with [Time Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Space Fusion | `[This Unit] gains [2] movement <upon gaining the [Years Flow Like Water Space Fusion] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Space Fusion | `[+32]% Strength <when attacking>` | +32 | tools/gen_ruleset.py `Promotions` |
+| Years Flow Like Water Space Fusion | `[+21]% Strength <for units with [Time Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Resonance | `[+21]% Strength <for units with [Dream Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Enslavement Fusion | `[-22]% Strength for enemy [Military] units in adjacent [All] tiles` | -22 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Enslavement Fusion | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Dream Token Enslavement Fusion | `[+21]% Strength <for units with [Dream Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Resonance | `[+21]% Strength <for units with [Enslavement Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Wisdom Fusion | `[Target Unit] gains the [Shaken] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Wisdom Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Soul Beast Token Wisdom Fusion | `[+21]% Strength <for units with [Enslavement Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Resonance | `[+21]% Strength <for units with [Light Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Dark Fusion | `[-22]% Strength for enemy [Military] units in adjacent [All] tiles` | -22 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Dark Fusion | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Treasure Light Dark Fusion | `[+21]% Strength <for units with [Light Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Resonance | `[+21]% Strength <for units with [Refinement Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Formation Fusion | `[+55]% Strength <when defending>` | +55 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Formation Fusion | `[This Unit] heals [29] HP <upon gaining the [Advance Refinement Formation Fusion] status>` | 29 | tools/gen_ruleset.py `Promotions` |
+| Advance Refinement Formation Fusion | `[+21]% Strength <for units with [Refinement Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Resonance | `[+21]% Strength <for units with [Theft Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Refinement Fusion | `[This Unit] heals [55] HP <upon gaining the [Steal Life Refinement Fusion] status>` | 55 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Refinement Fusion | `[+21]% Strength` | +21 | tools/gen_ruleset.py `Promotions` |
+| Steal Life Refinement Fusion | `[+21]% Strength <for units with [Theft Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Resonance | `[+42]% Strength <when attacking>` | +42 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Resonance | `[Target Unit] takes [28] damage <upon damaging a [Military] unit> <when attacking>` | 28 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Resonance | `[+21]% Strength <for units with [Qi Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Time Fusion | `[Target Unit] gains the [Aged] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Time Fusion | `[+30]% Strength <when attacking>` | +30 | tools/gen_ruleset.py `Promotions` |
+| Human Qi Time Fusion | `[+21]% Strength <for units with [Qi Supreme Grandmaster]>` | +21 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Resonance | `[+46]% Strength <when attacking>` | +46 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Resonance | `[Target Unit] takes [31] damage <upon damaging a [Military] unit> <when attacking>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Resonance | `[+23]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Emotion Fusion | `[Target Unit] gains the [Charmed] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking>` | 4 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Emotion Fusion | `[+33]% Strength <when attacking>` | +33 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Emotion Fusion | `[+23]% Strength <for units with [Wisdom Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Derivation Resonance | `[+46]% Strength <when attacking>` | +46 | tools/gen_ruleset.py `Promotions` |
+| Derivation Resonance | `[Target Unit] takes [31] damage <upon damaging a [Military] unit> <when attacking>` | 31 | tools/gen_ruleset.py `Promotions` |
+| Derivation Resonance | `[+23]% Strength <for units with [Rule Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Derivation Phantom Fusion | `[+60]% Strength <when defending>` | +60 | tools/gen_ruleset.py `Promotions` |
+| Derivation Phantom Fusion | `[This Unit] heals [32] HP <upon gaining the [Derivation Phantom Fusion] status>` | 32 | tools/gen_ruleset.py `Promotions` |
+| Derivation Phantom Fusion | `[+23]% Strength <for units with [Rule Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
 
 ### Events.json
 
@@ -1858,6 +2552,117 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Derivation Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
 | Derivation Gu | `[+30]% Production when constructing [All] buildings [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
 | Derivation Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Star Mark Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Star Mark Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Star Mark Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Pulling Water Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Pulling Water Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Pulling Water Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Snack Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Snack Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Snack Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Strength Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Strength Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Change Form Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Change Form Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Change Form Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Blood Asset Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Blood Asset Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Blood Asset Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Cleanse Soul Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Cleanse Soul Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Cleanse Soul Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Dark Arrow Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Dark Arrow Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Dark Arrow Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Gong Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Gong Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Gong Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Ice Soul Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Ice Soul Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Ice Soul Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Rising Azure Cloud Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Rising Azure Cloud Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Rising Azure Cloud Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Dog Shit Luck Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Dog Shit Luck Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Dog Shit Luck Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Phantom Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Phantom Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Phantom Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Split Shadow Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Split Shadow Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Split Shadow Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Flying Sword Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Flying Sword Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Flying Sword Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Sword Escape Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Sword Escape Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Sword Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Edge Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Edge Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Edge Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Great Thief Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Great Thief Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Great Thief Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Crescent Moon Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Crescent Moon Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Crescent Moon Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Perseverance Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Perseverance Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Perseverance Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Qi Escape Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Qi Escape Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Qi Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Expend Strength Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Expend Strength Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Expend Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Fixed Space Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Fixed Space Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Fixed Space Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Limit Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
+| Limit Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Limit Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Region Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Region Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Region Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Sword Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Sword Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Sword Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Regret Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Regret Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Regret Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Attitude Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Attitude Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Attitude Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Eight-Faced Prestige Wind Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Eight-Faced Prestige Wind Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Eight-Faced Prestige Wind Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Water Refinement Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Water Refinement Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Water Refinement Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Secret Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Secret Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Secret Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Heaven's Envy Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Heaven's Envy Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Heaven's Envy Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Kill Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
+| Kill Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Kill Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Light Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
+| Light Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Fire Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
+| Fire Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Love Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
+| Love Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Love Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Web Immortal Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Web Immortal Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Web Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `Instantly provides [2] [Human Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `[+15]% Strength <for units with [Qi Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
@@ -2908,6 +3713,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2691 numbers listed.
+3496 numbers listed.
 
 <!-- inventory:end -->

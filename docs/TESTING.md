@@ -144,10 +144,15 @@ civ activatetrigger "Triggers a [Wandering Gu Master] event"   # hire, send away
 # Gu catalog: a unit buys a catalog Gu with XP once it holds the path's Master and its rank reaches the Gu's
 unit addpromotion "Ice Master"
 unit setxp 200                              # open the promotions: Ice Knife Gu (rank 2) and Icicle Gu appear
-# combination move: Ice Knife Gu + Whirlwind Gu (Wind Master grants Whirlwind Gu at the next turn start)
+# combination move on a Rank Three+ Gu Master: Ice Knife Gu + Whirlwind Gu, comprehension Ice and Wind Grandmaster
 unit addpromotion "Ice Knife Gu"
-unit addpromotion "Wind Master"             # end the turn: Whirlwind Gu arrives, then the Ice Blade Storm button
-                                            # shows among the unit's actions (20 stones, 1 movement)
+unit addpromotion "Wind Master"             # end the turn: Whirlwind Gu arrives (granted with the Master)
+unit addpromotion "Ice Snow Grandmaster"
+unit addpromotion "Wind Grandmaster"        # now the Ice Blade Storm button shows (20 stones, 1 movement)
+# one-of-a-kind immortal Gu: give your capital the wonder, then let one immortal carry it
+city addbuilding "Star Mark Immortal Gu"    # (or build it: Immortal Gu Recipes)
+unit addpromotion "Star Master"             # on a Rank Six Gu Immortal; the Star Mark Immortal Gu Bearer
+                                            # promotion appears; a second unit of yours can no longer take it
 ```
 
 

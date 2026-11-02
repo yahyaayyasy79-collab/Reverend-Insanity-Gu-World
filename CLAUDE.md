@@ -88,6 +88,10 @@ in LORE_MAPPING.md.
   it; canon unique immortal Gu stay wonders, common immortal Gu 6-9 held by units); combos = ~40 curated killer
   moves (unit actions gated by two held Gu, human-only); ~100 more Gu, canon first, the rest ADAPTED. These answers
   approve exceeding the MOD_SPEC_2 caps (city-states, killer moves).
+* Immortal Gu (user, 2026-11-02, revising "common immortal Gu held by units"): every immortal Gu is one of a kind
+  (canon): a world wonder plus a single bearer promotion per clan (66 Gu); varied combos: per immortal Gu a Resonance
+  (own path) and a Fusion (next path of its family); every combo gated by path comprehension (Grandmaster; Great
+  Grandmaster at rank 6+), stronger at Supreme. Kill Immortal Gu rank 8 accepted. numpy added to requirements.
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.

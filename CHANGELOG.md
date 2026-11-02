@@ -813,3 +813,17 @@ minor clans plus wild factions.
 * **Human-only.** The AI never presses custom buttons.
 * **Art, sound and docs.** Every move has a designed icon, its own sound (451 .ogg in all) and a civilopedia entry in
   EN and ID. A Tutorial page lists every move. The table is in docs/PATHS.md.
+
+## Phase D — immortal Gu are one of a kind; comprehension gates every combination (2026-11-02)
+
+* **Every immortal Gu exists once in the world** (canon 仙蛊唯一). The 37 catalog immortal Gu are now world wonders,
+  refined in a city and seized with it.
+* **Bearers.** Every immortal Gu wonder (66 in all) has a bearer promotion. Only one unit of the owning clan can carry
+  it, and the Gu sleeps without the wonder or its rank's essence.
+* **132 generated moves**, two per immortal Gu: a Resonance with its own path's Gu, and a Fusion with the next path of
+  its family. With the 42 curated moves that makes 174.
+* **Comprehension gates every move.** One path needs its Grandmaster (Great Grandmaster at rank 6+); two paths need both
+  Grandmasters. A Supreme Grandmaster adds strength.
+* **New art and sound:** 37 wonder icons, 66 bearer icons, 132 more move icons, and sounds for bearers and moves
+  (612 .ogg).
+* Kill Immortal Gu is rank 8 (the user). numpy is in `tools/requirements.txt`.

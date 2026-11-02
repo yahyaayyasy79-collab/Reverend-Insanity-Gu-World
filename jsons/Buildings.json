@@ -810,6 +810,709 @@
     ]
   },
   {
+    "name": "Star Mark Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Star Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star Mark Immortal Gu (星痕仙蛊), a rank-6 Star path Gu: lends six hundred star dao marks for a while. 23% stronger. One of a kind: the clan that owns it lets one immortal carry it (Star Mark Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Pulling Water Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Strength Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pulling Water Immortal Gu (挽澜仙蛊), a rank-6 Strength path Gu: pulls back water and waves. 32% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Pulling Water Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Snack Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Food Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Snack Immortal Gu (小吃仙蛊), a rank-6 Food path Gu: immortal essence feeds its master's other Gu. Its unit costs 16% less upkeep. One of a kind: the clan that owns it lets one immortal carry it (Snack Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Flying Bear Strength Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Strength Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bear Strength Immortal Gu (飞熊之力仙蛊), a rank-6 Strength path Gu: the strength of the desolate flying bear. 32% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Flying Bear Strength Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Change Form Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Transformation Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Change Form Immortal Gu (变形仙蛊), a rank-6 Transformation path Gu: the core of most transformations. 23% stronger. One of a kind: the clan that owns it lets one immortal carry it (Change Form Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Blood Asset Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Blood Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Asset Immortal Gu (血本仙蛊), a rank-6 Blood path Gu: the core of three blood-path killer moves. Each hit deals 14 more damage. One of a kind: the clan that owns it lets one immortal carry it (Blood Asset Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Cleanse Soul Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Soul Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cleanse Soul Immortal Gu (净魂仙蛊), a rank-6 Soul path Gu: washes and refines the soul. Heals 22 HP more a turn; heals 17 HP after a kill. One of a kind: the clan that owns it lets one immortal carry it (Cleanse Soul Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Dark Arrow Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Dark Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Arrow Immortal Gu (暗箭仙蛊), a rank-6 Dark path Gu: homing arrows of darkness. Each hit deals 14 more damage. One of a kind: the clan that owns it lets one immortal carry it (Dark Arrow Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Gong Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Sound Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Gong Immortal Gu (天锣仙蛊), a rank-6 Sound path Gu: a gong whose shockwave staggers armies. Enemy soldiers beside it fight 8% weaker. One of a kind: the clan that owns it lets one immortal carry it (Heavenly Gong Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Ice Soul Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Ice Snow Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Soul Immortal Gu (冰魄仙蛊), a rank-6 Ice Snow path Gu: ice that freezes the soul. Its hits leave the enemy Frozen for 3 turn(s); 8% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Ice Soul Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Rising Azure Cloud Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Cloud Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rising Azure Cloud Immortal Gu (平步青云仙蛊), a rank-6 Cloud path Gu: rises and falls through the sky in a breath. +1 movement; 7% stronger. One of a kind: the clan that owns it lets one immortal carry it (Rising Azure Cloud Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Dog Shit Luck Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Luck Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dog Shit Luck Immortal Gu (狗屎运仙蛊), a rank-6 Luck path Gu: luck that turns misfortune aside. Unseen except from an adjacent tile; 14% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Dog Shit Luck Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Flying Bear Phantom Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Phantom Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bear Phantom Immortal Gu (飞熊虚像蛊), a rank-6 Phantom path Gu: summons a phantom flying bear. 32% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Flying Bear Phantom Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Split Shadow Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Shadow Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Split Shadow Immortal Gu (分影仙蛊), a rank-6 Shadow path Gu: splits its master's shadow to confuse the enemy. Unseen except from an adjacent tile; 14% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Split Shadow Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Flying Sword Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Sword Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Sword Immortal Gu (飞剑仙蛊), a rank-7 Sword path Gu: a flying sword that strikes from afar. Each hit deals 16 more damage. One of a kind: the clan that owns it lets one immortal carry it (Flying Sword Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Sword Escape Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Sword Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword Escape Immortal Gu (剑遁仙蛊), a rank-7 Sword path Gu: flies away on a sword's edge. +2 movement; 8% stronger. One of a kind: the clan that owns it lets one immortal carry it (Sword Escape Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Edge Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Blade Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Edge Immortal Gu (刃仙蛊), a rank-7 Blade path Gu: the edge itself, made immortal. 36% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Edge Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Great Thief Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Theft Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Great Thief Immortal Gu (大盗仙蛊), a rank-7 Theft path Gu: a ghost hand that takes anything. Takes 45% of a slain soldier's cost as stones. One of a kind: the clan that owns it lets one immortal carry it (Great Thief Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Crescent Moon Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Moon Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Crescent Moon Immortal Gu (偃月仙蛊), a rank-7 Moon path Gu: the core of the Peerless Crescent Moon Slash. 36% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Crescent Moon Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Perseverance Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Human Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Perseverance Immortal Gu (坚持仙蛊), a rank-7 Human path Gu: makes every other Gu last longer. 36% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Perseverance Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Qi Escape Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Qi Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qi Escape Immortal Gu (气遁仙蛊), a rank-7 Qi path Gu: an escape on a stream of qi. +2 movement; 8% stronger. One of a kind: the clan that owns it lets one immortal carry it (Qi Escape Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Expend Strength Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Strength Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Expend Strength Immortal Gu (费力仙蛊), a rank-7 Strength path Gu: drains the strength of everyone who fights its master. Enemy soldiers beside it fight 9% weaker. One of a kind: the clan that owns it lets one immortal carry it (Expend Strength Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Fixed Space Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Space Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fixed Space Immortal Gu (定空仙蛊), a rank-7 Space path Gu: locks space around the enemy. Its hits leave the enemy Entangled for 3 turn(s); 9% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Fixed Space Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Limit Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Seven Immortal Gu Recipes",
+    "cost": 380,
+    "uniques": [
+      "Costs [35] [Red Date Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Rule Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Limit Immortal Gu (限蛊), a rank-7 Rule path Gu: sets a limit the enemy cannot pass. Enemy soldiers beside it fight 9% weaker. One of a kind: the clan that owns it lets one immortal carry it (Limit Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Region Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Rule Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Region Immortal Gu (界蛊), a rank-8 Rule path Gu: Tao Zhu's vital Gu, the boundary of a domain. Enemy soldiers beside it fight 10% weaker. One of a kind: the clan that owns it lets one immortal carry it (Region Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Wisdom Sword Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wisdom Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wisdom Sword Immortal Gu (慧剑仙蛊), a rank-8 Wisdom path Gu: cuts bonds of feeling and dao marks. Each hit deals 18 more damage. One of a kind: the clan that owns it lets one immortal carry it (Wisdom Sword Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Regret Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Emotion Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Regret Immortal Gu (悔蛊), a rank-8 Emotion path Gu: fills everyone near it with regret. Its hits leave the enemy Charmed for 3 turn(s); 10% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Regret Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Attitude Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wisdom Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Attitude Immortal Gu (态度蛊), a rank-8 Wisdom path Gu: shows a false face that others believe. Unseen except from an adjacent tile; 18% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Attitude Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Eight-Faced Prestige Wind Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Wind Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eight-Faced Prestige Wind Immortal Gu (八面威风仙蛊), a rank-8 Wind path Gu: the Wu clan's great wind Gu. 40% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Eight-Faced Prestige Wind Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Water Refinement Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Refinement Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Refinement Immortal Gu (水炼仙蛊), a rank-8 Refinement path Gu: the core of a refinement killer move. Heals 28 HP more a turn; heals 21 HP after a kill. One of a kind: the clan that owns it lets one immortal carry it (Water Refinement Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Secret Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Heaven Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Secret Immortal Gu (天机仙蛊), a rank-8 Heaven path Gu: asks heaven and earth for answers. +2 sight; 9% stronger. One of a kind: the clan that owns it lets one immortal carry it (Heavenly Secret Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Heaven's Envy Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Heaven Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven's Envy Immortal Gu (天妒仙蛊), a rank-8 Heaven path Gu: the core of Heaven Envies Heroic Geniuses. Its hits leave the enemy Doomed for 3 turn(s); 10% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Heaven's Envy Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Kill Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Eight Immortal Gu Recipes",
+    "cost": 420,
+    "uniques": [
+      "Costs [35] [White Lychee Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Killing Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kill Immortal Gu (杀), a rank-8 Killing path Gu: the killing path's core immortal Gu. Each hit deals 18 more damage. One of a kind: the clan that owns it lets one immortal carry it (Kill Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Light Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Nine Immortal Gu Recipes",
+    "cost": 700,
+    "uniques": [
+      "Costs [60] [Yellow Apricot Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Light Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Light Gu (光蛊), a rank-9 Light path Gu: a wild Gu born inside the sun. 44% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Light Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Fire Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Nine Immortal Gu Recipes",
+    "cost": 700,
+    "uniques": [
+      "Costs [60] [Yellow Apricot Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Fire Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire Gu (火蛊), a rank-9 Fire path Gu: the sun's own fire, alive. Each hit deals 20 more damage. One of a kind: the clan that owns it lets one immortal carry it (Fire Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Love Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Nine Immortal Gu Recipes",
+    "cost": 700,
+    "uniques": [
+      "Costs [60] [Yellow Apricot Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Emotion Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Love Gu (爱情蛊), a rank-9 Emotion path Gu: the legendary Gu of love. Heals 31 HP more a turn; heals 23 HP after a kill. One of a kind: the clan that owns it lets one immortal carry it (Love Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Web Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Rank Nine Immortal Gu Recipes",
+    "cost": 700,
+    "uniques": [
+      "Costs [60] [Yellow Apricot Immortal Essence]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Heaven Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Web Immortal Gu (天网蛊), a rank-9 Heaven path Gu: casts a web from heaven that nothing escapes. Its hits leave the enemy Entangled for 4 turn(s); 11% stronger when attacking. One of a kind: the clan that owns it lets one immortal carry it (Heavenly Web Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
     "name": "Primordial Origin Inheritance",
     "isWonder": true,
     "requiredTech": "Calamity Lore",

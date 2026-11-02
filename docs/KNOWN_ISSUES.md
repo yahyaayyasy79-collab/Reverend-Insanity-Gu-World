@@ -147,6 +147,13 @@ rest of the list is what a player or the next session should know before trustin
     * **The Eastern Sea stays the calmest.** Its raiders spawn on small islands and die within a turn or two
       (`docs/AUTOPLAY.md` "Phase D: regional conflict").
 
+22. **An immortal Gu can have a second, sleeping bearer (Phase D, 2026-11-02).** The engine counts units with a
+    promotion per clan only, never across the world. When a clan loses an immortal Gu wonder:
+    * its bearer keeps the promotion, but the Gu sleeps (its effects need the wonder);
+    * the new owner may raise its own bearer.
+
+    So only one bearer is ever awake.
+
 ## Not yet seen in a real game
 
 * **Combination killer moves (Phase D).** A move's button should appear only on a unit that holds both of its Gu. This

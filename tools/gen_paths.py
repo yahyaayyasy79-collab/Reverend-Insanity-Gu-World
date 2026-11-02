@@ -125,7 +125,7 @@ def path_marker(key: str) -> str:
 
 
 def dao_mark_lines(p: dict) -> list[str]:
-    marked = {g["path"] for g in IMMORTAL_GU}
+    marked = {g["path"] for g in IMMORTAL_GU} | {r["path"] for r in GC.IMMORTAL_ROWS}  # Phase D: catalog wonders too
     out = [f"[+{DAO_MARK}]% Strength <for every [1] [[{path_marker(p['key'])}] Buildings]>"] if p["key"] in marked else []
     for (a, b), v in pair_strength().items():
         if v <= STRONG_CLASH and p["key"] in (a, b):
@@ -783,7 +783,7 @@ def doc_tables() -> dict[str, str]:
                   + " ".join(code(u) for x in st for u in x["uniques"]) + " |")
     return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
             "gu": "\n".join(gu), "branches": "\n".join(br), "powers": "\n".join(pw), "hunger": "\n".join(hu),
-            "catalog": "\n".join(GC.doc_table()), "combos": "\n".join(GCO.doc_table())}
+            "catalog": "\n".join(GC.doc_table() + GC.canon_bearer_table()), "combos": "\n".join(GCO.doc_table())}
 
 
 def splice(text: str, tables: dict[str, str]) -> str:

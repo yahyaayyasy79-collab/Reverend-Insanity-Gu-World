@@ -318,10 +318,33 @@ def gu_icon(form: str, path_key: str, rank: int) -> G:
     return g
 
 
+def bearer_icon(wonder_glyph: G) -> G:
+    """A bearer of a canon immortal Gu wonder: the wonder's own glyph inside a halo with a carrying hand's cradle."""
+    g = G()
+    place(g, wonder_glyph, 50, 46, 0.72)
+    g.arc_band(50, 50, 50, 46, 0, 360)
+    g.arc_band(50, 60, 40, 35, 200, 340)                                               # the cradle under the Gu
+    return g
+
+
 def icons() -> list[tuple[str, str, object, str]]:
+    """Mortal catalog Gu (promotions), the catalog's immortal Gu (wonders) and every immortal Gu's bearer."""
     import gu_catalog
-    return [("UnitPromotionIcons", r["name"], (lambda r=r: gu_icon(r["form"], r["path"], int(r["rank"]))), "white")
-            for r in gu_catalog.ROWS]
+    from . import arcart
+    out = []
+    for r in gu_catalog.ROWS:
+        draw = (lambda r=r: gu_icon(r["form"], r["path"], int(r["rank"])))
+        if int(r["rank"]) < 6:
+            out.append(("UnitPromotionIcons", r["name"], draw, "white"))
+        else:
+            out += [("BuildingIcons", r["name"], draw, "black"),
+                    ("UnitPromotionIcons", gu_catalog.bearer(r["name"]), draw, "white")]
+    canon = {name: draw for folder, name, draw, _ in arcart.ICONS3 + arcart.rank78_gu_icons() if folder == "BuildingIcons"}
+    for g in gu_catalog.all_immortal():
+        if not g["catalog"]:
+            out.append(("UnitPromotionIcons", gu_catalog.bearer(g["name"]),
+                        (lambda d=canon[g["name"]]: bearer_icon(d())), "white"))
+    return out
 
 
 # ---------------------------------------------------------------- combination killer moves (tools/gu_combos.py)
@@ -352,5 +375,5 @@ def combo_icons() -> list[tuple[str, str, object, str]]:
     import gu_combos
     info = gu_combos.gu_info()
     return [("UnitPromotionIcons", r["name"],
-             (lambda r=r: combo_icon(info[r["gu_a"]][1], info[r["gu_b"]][1], r["kind"], gu_combos.rank(r))), "white")
-            for r in gu_combos.ROWS]
+             (lambda r=r: combo_icon(*gu_combos.paths_of(r), r["kind"], gu_combos.rank(r))), "white")
+            for r in gu_combos.rows()]

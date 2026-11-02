@@ -4535,3 +4535,26 @@ decided: about 40 curated combinations.
 * **Docs.** Tables are in docs/PATHS.md "Combination killer moves". The Tutorial page "Combination Killer Moves" lists
   every move with its Gu and cost.
 
+## Phase D: one-of-a-kind immortal Gu and comprehension-gated combinations (the user, 2026-11-02)
+
+The user: "buat gu abadi tetap 1 sesuai kanon tapi bervariasi, bisa dikombo dengan sesama jalur gu dan gu jalur lain
+sesuai pemahaman jalur tersebut"; "Kill rank 8 oke".
+
+* **One of each in the world (CANON).** Every immortal Gu is unique in the novel (仙蛊唯一, V5c666). The 37 catalog
+  immortal Gu are no longer promotions any immortal can buy: each is a world wonder now, refined in a city like the
+  29 canon wonders, never destroyed and seized with its city.
+* **Its bearer.** Every immortal Gu wonder, all 66, has a bearer promotion. Only a unit of the clan that owns the
+  wonder can take it, and only one unit at a time. It also needs that path's Master and the Gu's rank. The Gu works
+  only while the clan owns the wonder and has the rank's immortal essence. The engine counts units per clan only, so a
+  bearer whose clan lost the wonder keeps the promotion, asleep, while the new owner may raise its own bearer
+  (KNOWN_ISSUES).
+* **Variety.** 66 different immortal Gu (ranks 6-9) across the paths, each with its own icon and sound, plus two
+  generated combination moves per Gu:
+  * a Resonance with its own path's Gu;
+  * a Fusion with the next path of its family.
+
+  That makes 174 moves with the 42 curated ones.
+* **Comprehension.** Every move needs the path's attainment. Two Gu of one path need its Grandmaster, or its Great
+  Grandmaster at rank 6+. Two paths need both Grandmasters. A Supreme Grandmaster strikes harder.
+* **Kill Immortal Gu.** Rank 8, from the wiki, accepted by the user; its [VERIFY] is closed.
+

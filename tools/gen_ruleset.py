@@ -776,7 +776,8 @@ dump("UnitPromotions.json", with_combos([
     # Phase D: each Gu's hunger meter in percent (tools/gu_rules.py)
     + [st for r in table("gu.csv") for st in hunger_statuses(r["name"], r["food"], int(r["rank"]))]
     # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
-    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions() + gen_paths.GC.promotions(GM_TYPES) + [
+    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions() + gen_paths.GC.promotions(GM_TYPES)
+    + gen_paths.GC.bearers(GM_TYPES) + [
     # MOD_SPEC_2 C1: the ascension is bought like Refine Gu (E4: kept, self-removing); the human may try with the hasty
     # amount of qi, the AI only with the balanced one (it never wastes the XP on an attempt it would rush)
     {"name": "Ascension", "unitTypes": GM_TYPES, "uniques": [
@@ -1190,7 +1191,7 @@ dump("Buildings.json", [
       # autoplay (C3): without it the AI built only the two stat wonders, after turn 275
       + [w("+300")]}
      for g in IMMORTAL_GU
-] + [b for i in INHERITANCES for b in (
+] + gen_paths.GC.wonders(IMMORTAL_GU_RECIPES, gen_paths.path_marker) + [b for i in INHERITANCES for b in (
     {"name": i["name"], "isWonder": True, "requiredTech": "Calamity Lore", "cost": 420,
      "uniques": [f"Only available <if [{i['seal']}] is constructed>", "Never destroyed when the city is captured"]
      + items(i["effects"]) + [w("+300")]},

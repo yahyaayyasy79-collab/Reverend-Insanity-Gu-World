@@ -25,3 +25,19 @@ Transformation Path
 Wood Path
 Supreme Attainment
 Rule Path
+Blade Path
+Blood Path
+Cloud Path
+Dark Path
+Emotion Path
+Fire Path
+Food Path
+Heaven Path
+Human Path
+Ice Snow Path
+Killing Path
+Moon Path
+Phantom Path
+Shadow Path
+Sound Path
+Wind Path

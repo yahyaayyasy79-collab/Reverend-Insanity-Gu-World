@@ -1178,133 +1178,529 @@
         "header": 2
       },
       {
-        "text": "42 killer moves need two Gu on the same unit. When a unit holds both, a button appears among its actions: one turn of power for stones (immortal moves: immortal essence) and one movement. Only you press these buttons; the AI never does. Each move's rank is its strongest Gu's rank, and its power grows with it."
+        "text": "174 killer moves need two Gu on the same unit. When a unit holds both, a button appears among its actions: one turn of power for stones (immortal moves: immortal essence) and one movement. Only you press these buttons; the AI never does. Each move's rank is its strongest Gu's rank, and its power grows with it."
       },
       {
-        "text": "Iron Stone Bastion (rank 1): Iron Skin Gu + Stone Skin Gu. +20% when defending; heals 8 HP at once. Cost 15 stones."
+        "text": "Iron Stone Bastion (rank 1): Iron Skin Gu + Stone Skin Gu. +20% when defending; heals 8 HP at once; +7% more for a Metal Supreme Grandmaster. Cost 15 stones."
       },
       {
-        "text": "Earth Listening Ambush (rank 2): Earth Communication Ear Grass + Stealth Scales Gu. +18% when attacking; each hit deals 10 more damage. Cost 20 stones."
+        "text": "Earth Listening Ambush (rank 2): Earth Communication Ear Grass + Stealth Scales Gu. +18% when attacking; each hit deals 10 more damage; +9% more for a Earth Supreme Grandmaster. Cost 20 stones."
       },
       {
-        "text": "Ice Blade Storm (rank 2): Ice Knife Gu + Whirlwind Gu. +18% when attacking; each hit deals 10 more damage. Cost 20 stones."
+        "text": "Ice Blade Storm (rank 2): Ice Knife Gu + Whirlwind Gu. +18% when attacking; each hit deals 10 more damage; +9% more for a Ice Snow Supreme Grandmaster. Cost 20 stones."
       },
       {
-        "text": "Twin Wheel Gale (rank 2): Clear Wind Wheel Gu + Jade Wind Wheel Gu. +2 movement at once; +14% when attacking. Cost 20 stones."
+        "text": "Twin Wheel Gale (rank 2): Clear Wind Wheel Gu + Jade Wind Wheel Gu. +2 movement at once; +14% when attacking; +9% more for a Wind Supreme Grandmaster. Cost 20 stones."
       },
       {
-        "text": "Bleeding Moon (rank 3): Moonglow Gu + Blood Moon Gu. its hits leave the enemy Bleeding for 2 turns; +15% when attacking. Cost 25 stones."
+        "text": "Bleeding Moon (rank 3): Moonglow Gu + Blood Moon Gu. its hits leave the enemy Bleeding for 2 turns; +15% when attacking; +11% more for a Moon Supreme Grandmaster. Cost 25 stones."
       },
       {
-        "text": "Blinding Palm (rank 3): Flash Gu + Hand Blade Gu. its hits leave the enemy Blinded for 2 turns; +15% when attacking. Cost 25 stones."
+        "text": "Blinding Palm (rank 3): Flash Gu + Hand Blade Gu. its hits leave the enemy Blinded for 2 turns; +15% when attacking; +11% more for a Light Supreme Grandmaster. Cost 25 stones."
       },
       {
-        "text": "Eight Beast Phantoms (rank 3): Self-Reliance Gu + Strength Qi Gu. +22% when attacking; each hit deals 13 more damage. Cost 25 stones."
+        "text": "Eight Beast Phantoms (rank 3): Self-Reliance Gu + Strength Qi Gu. +22% when attacking; each hit deals 13 more damage; +11% more for a Strength Supreme Grandmaster. Cost 25 stones."
       },
       {
-        "text": "Golden Saw Tide (rank 3): Chainsaw Golden Centipede + Living Steel Gu. +22% when attacking; each hit deals 13 more damage. Cost 25 stones."
+        "text": "Golden Saw Tide (rank 3): Chainsaw Golden Centipede + Living Steel Gu. +22% when attacking; each hit deals 13 more damage; +11% more for a Metal Supreme Grandmaster. Cost 25 stones."
       },
       {
-        "text": "Ice Coffin Prison (rank 3): Blue Bird Ice Coffin Gu + Water Prison Gu. its hits leave the enemy Frozen for 2 turns; +15% when attacking. Cost 25 stones."
+        "text": "Ice Coffin Prison (rank 3): Blue Bird Ice Coffin Gu + Water Prison Gu. its hits leave the enemy Frozen for 2 turns; +15% when attacking; +11% more for a Ice Snow Supreme Grandmaster. Cost 25 stones."
       },
       {
-        "text": "Splendid Star Armour (rank 3): Star Dart Gu + Starlight Firefly Gu. +30% when defending; heals 14 HP at once. Cost 25 stones."
+        "text": "Splendid Star Armour (rank 3): Star Dart Gu + Starlight Firefly Gu. +30% when defending; heals 14 HP at once; +11% more for a Star Supreme Grandmaster. Cost 25 stones."
       },
       {
-        "text": "Bone Spear Rain (rank 4): Bone Wings Gu + Spiral Bone Spear Gu. +26% when attacking; each hit deals 16 more damage. Cost 30 stones."
+        "text": "Bone Spear Rain (rank 4): Bone Wings Gu + Spiral Bone Spear Gu. +26% when attacking; each hit deals 16 more damage; +13% more for a Bone Supreme Grandmaster. Cost 30 stones."
       },
       {
-        "text": "Grass Army Ambush (rank 4): Grass Puppet Gu + Grass Tree Army Gu. enemy soldiers beside it fight 14% weaker; +13% strength. Cost 30 stones."
+        "text": "Grass Army Ambush (rank 4): Grass Puppet Gu + Grass Tree Army Gu. enemy soldiers beside it fight 14% weaker; +13% strength; +13% more for a Enslavement Supreme Grandmaster. Cost 30 stones."
       },
       {
-        "text": "Molten Serpent Coil (rank 4): Fiery Snake Gu + Lava Explosion Gu. its hits leave the enemy Burning for 3 turns; +18% when attacking. Cost 30 stones."
+        "text": "Molten Serpent Coil (rank 4): Fiery Snake Gu + Lava Explosion Gu. its hits leave the enemy Burning for 3 turns; +18% when attacking; +13% more for a Fire Supreme Grandmaster. Cost 30 stones."
       },
       {
-        "text": "Myriad Star Fireflies (rank 4): Starlight Firefly Gu + Clear Mind Gu. enemy soldiers beside it fight 14% weaker; +13% strength. Cost 30 stones."
+        "text": "Myriad Star Fireflies (rank 4): Starlight Firefly Gu + Clear Mind Gu. enemy soldiers beside it fight 14% weaker; +13% strength; +13% more for a Star Supreme Grandmaster. Cost 30 stones."
       },
       {
-        "text": "Nine Cloud Ring (rank 4): Yin Yang Dual Cloud Gu + Flying Cloud Gu. +35% when defending; heals 17 HP at once. Cost 30 stones."
+        "text": "Nine Cloud Ring (rank 4): Yin Yang Dual Cloud Gu + Flying Cloud Gu. +35% when defending; heals 17 HP at once; +13% more for a Cloud Supreme Grandmaster. Cost 30 stones."
       },
       {
-        "text": "Four Arm Earth King (rank 5): Earth Overlord Gu + Brute Force Longhorn Beetle Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+        "text": "Four Arm Earth King (rank 5): Earth Overlord Gu + Brute Force Longhorn Beetle Gu. +30% when attacking; each hit deals 19 more damage; +15% more for a Strength Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Limitless Search Lock (rank 5): Search Lock Gu + Warp Gu. its hits leave the enemy Entangled for 3 turns; +21% when attacking. Cost 35 stones."
+        "text": "Limitless Search Lock (rank 5): Search Lock Gu + Warp Gu. its hits leave the enemy Entangled for 3 turns; +21% when attacking; +15% more for a Space Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "My Glorious Spear (rank 5): Extreme Light Gu + Little Light Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+        "text": "My Glorious Spear (rank 5): Extreme Light Gu + Little Light Gu. +30% when attacking; each hit deals 19 more damage; +15% more for a Light Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "One Song of Yang Pass (rank 5): Heaven Earth Magnificent Sound Gu + Tiger Roar Gu. enemy soldiers beside it fight 16% weaker; +15% strength. Cost 35 stones."
+        "text": "One Song of Yang Pass (rank 5): Heaven Earth Magnificent Sound Gu + Tiger Roar Gu. enemy soldiers beside it fight 16% weaker; +15% strength; +15% more for a Sound Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Sealed Moonshadow (rank 5): Moonshadow Gu + Search Lock Gu. its hits leave the enemy Sealed for 3 turns; +21% when attacking. Cost 35 stones."
+        "text": "Sealed Moonshadow (rank 5): Moonshadow Gu + Search Lock Gu. its hits leave the enemy Sealed for 3 turns; +21% when attacking; +15% more for a Moon Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Six Arm Heavenly Corpse King (rank 5): Asura Zombie Gu + Roaming Zombie Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+        "text": "Six Arm Heavenly Corpse King (rank 5): Asura Zombie Gu + Roaming Zombie Gu. +30% when attacking; each hit deals 19 more damage; +15% more for a Transformation Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Soul Fire Burst (rank 5): Ghost Fire Gu + Soul Explosion Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+        "text": "Soul Fire Burst (rank 5): Ghost Fire Gu + Soul Explosion Gu. +30% when attacking; each hit deals 19 more damage; +15% more for a Soul Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Spiral Drill Star Spear (rank 5): Spiral Bone Spear Gu + Star River Gu. +30% when attacking; each hit deals 19 more damage. Cost 35 stones."
+        "text": "Spiral Drill Star Spear (rank 5): Spiral Bone Spear Gu + Star River Gu. +30% when attacking; each hit deals 19 more damage; +15% more for a Bone Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Ten Thousand Poisons (rank 5): Love Life Separation + Jade Sky Gu. its hits leave the enemy Poisoned for 3 turns; +21% when attacking. Cost 35 stones."
+        "text": "Ten Thousand Poisons (rank 5): Love Life Separation + Jade Sky Gu. its hits leave the enemy Poisoned for 3 turns; +21% when attacking; +15% more for a Poison Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Thunder Wing Dive (rank 5): Lightning Wings Gu + Thunder Hammer Gu. +2 movement at once; +23% when attacking. Cost 35 stones."
+        "text": "Thunder Wing Dive (rank 5): Lightning Wings Gu + Thunder Hammer Gu. +2 movement at once; +23% when attacking; +15% more for a Lightning Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Unravel Dream (rank 5): Dream Butterfly Gu + Dream Pillow Gu. 55% more XP from combat; heals 15 HP at once. Cost 35 stones."
+        "text": "Unravel Dream (rank 5): Dream Butterfly Gu + Dream Pillow Gu. 55% more XP from combat; heals 15 HP at once; +15% more for a Dream Supreme Grandmaster. Cost 35 stones."
       },
       {
-        "text": "Blood Healing Lake (rank 6): Blood Asset Immortal Gu + Blood Moon Gu. heals 45 HP at once; +17% strength. Cost 3 Green Grape Immortal Essence."
+        "text": "Blood Asset Resonance (rank 6): Blood Asset Immortal Gu + Blood Skull Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Blood Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Blood Torrent (rank 6): Blood Asset Immortal Gu + Blood Skull Gu. +34% when attacking; each hit deals 22 more damage. Cost 3 Green Grape Immortal Essence."
+        "text": "Blood Asset Strength Fusion (rank 6): Blood Asset Immortal Gu + White Boar Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Blood Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Dark Arrow Rain (rank 6): Dark Arrow Immortal Gu + Shadow Follower Gu. +34% when attacking; each hit deals 22 more damage. Cost 3 Green Grape Immortal Essence."
+        "text": "Blood Healing Lake (rank 6): Blood Asset Immortal Gu + Blood Moon Gu. heals 45 HP at once; +17% strength; +17% more for a Blood Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Flying Bear Transformation (rank 6): Change Form Immortal Gu + Flying Bear Strength Immortal Gu. +34% when attacking; each hit deals 22 more damage. Cost 3 Green Grape Immortal Essence."
+        "text": "Blood Torrent (rank 6): Blood Asset Immortal Gu + Blood Skull Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Blood Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Ghost Official Garment (rank 6): Cleanse Soul Immortal Gu + Soul Search Gu. +45% when defending; heals 23 HP at once. Cost 3 Green Grape Immortal Essence."
+        "text": "Bone Spike Blood Fusion (rank 6): Bone Spike + Blood Skull Gu. its hits leave the enemy Bleeding for 3 turns; +24% when attacking; +17% more for a Bone Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Silent Gong (rank 6): Heavenly Gong Immortal Gu + Keep Silent Gu. enemy soldiers beside it fight 18% weaker; +17% strength. Cost 3 Green Grape Immortal Essence."
+        "text": "Bone Spike Resonance (rank 6): Bone Spike + Bone Spear Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Bone Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Ghostly Concealment (rank 7): Great Thief Immortal Gu + Plunder Gu. takes 55% of a slain soldier's cost as stones; each hit deals 25 more damage. Cost 3 Red Date Immortal Essence."
+        "text": "Change Form Bone Fusion (rank 6): Change Form Immortal Gu + Bone Spear Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Transformation Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "One Sword Unrestrained (rank 7): Sword Escape Immortal Gu + Sword Shadow Gu. +2 movement at once; +29% when attacking. Cost 3 Red Date Immortal Essence."
+        "text": "Change Form Resonance (rank 6): Change Form Immortal Gu + Roaming Zombie Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Transformation Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Reverse Flow Protection Seal (rank 7): Perseverance Immortal Gu + Pulling Water Immortal Gu. +50% when defending; heals 26 HP at once. Cost 3 Red Date Immortal Essence."
+        "text": "Cleanse Soul Dream Fusion (rank 6): Cleanse Soul Immortal Gu + Dream Pillow Gu. 60% more XP from combat; heals 17 HP at once; +17% more for a Soul Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Sword Marks Targeting Death (rank 7): Flying Sword Immortal Gu + Sword Qi Gu. its hits leave the enemy Doomed for 3 turns; +27% when attacking. Cost 3 Red Date Immortal Essence."
+        "text": "Cleanse Soul Resonance (rank 6): Cleanse Soul Immortal Gu + Soul Search Gu. heals 45 HP at once; +17% strength; +17% more for a Soul Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Eight Winds Dominion (rank 8): Eight-Faced Prestige Wind Immortal Gu + Jade Wind Wheel Gu. enemy soldiers beside it fight 22% weaker; +21% strength. Cost 3 White Lychee Immortal Essence."
+        "text": "Connect Luck Heaven Fusion (rank 6): Connect Luck + Ten-Year Lifespan Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Five Restriction Profound Light Qi (rank 8): Region Immortal Gu + Limit Immortal Gu. its hits leave the enemy Sealed for 4 turns; +30% when attacking. Cost 3 White Lychee Immortal Essence."
+        "text": "Connect Luck Resonance (rank 6): Connect Luck + Luck Inspection Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Heaven Envies Heroic Geniuses (rank 8): Heaven's Envy Immortal Gu + Heavenly Secret Immortal Gu. enemy soldiers beside it fight 22% weaker; +21% strength. Cost 3 White Lychee Immortal Essence."
+        "text": "Dark Arrow Rain (rank 6): Dark Arrow Immortal Gu + Shadow Follower Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Dark Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Heavenly Net (rank 9): Heavenly Web Immortal Gu + Fixed Space Immortal Gu. its hits leave the enemy Entangled for 4 turns; +33% when attacking. Cost 3 Yellow Apricot Immortal Essence."
+        "text": "Dark Arrow Resonance (rank 6): Dark Arrow Immortal Gu + Shadow Follower Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Dark Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Love and Regret (rank 9): Love Gu + Regret Immortal Gu. its hits leave the enemy Charmed for 4 turns; +33% when attacking. Cost 3 Yellow Apricot Immortal Essence."
+        "text": "Dark Arrow Shadow Fusion (rank 6): Dark Arrow Immortal Gu + Overlapping Shadow Gu. +45% when defending; heals 23 HP at once; +17% more for a Dark Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
-        "text": "Sun Descends (rank 9): Light Gu + Fire Gu. +46% when attacking; each hit deals 31 more damage. Cost 3 Yellow Apricot Immortal Essence."
+        "text": "Divert Disaster Heaven Fusion (rank 6): Divert Disaster + Ten-Year Lifespan Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Divert Disaster Resonance (rank 6): Divert Disaster + Luck Inspection Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Dog Shit Luck Heaven Fusion (rank 6): Dog Shit Luck Immortal Gu + Ten-Year Lifespan Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Dog Shit Luck Resonance (rank 6): Dog Shit Luck Immortal Gu + Luck Inspection Gu. +45% when defending; heals 23 HP at once; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Fixed Immortal Travel Resonance (rank 6): Fixed Immortal Travel + Warp Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Space Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Fixed Immortal Travel Rule Fusion (rank 6): Fixed Immortal Travel + Amplify Effect Gu. its hits leave the enemy Sealed for 3 turns; +24% when attacking; +17% more for a Space Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Flying Bear Phantom Resonance (rank 6): Flying Bear Phantom Immortal Gu + Turn Phantom Gu. +45% when defending; heals 23 HP at once; +17% more for a Phantom Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Flying Bear Phantom Restriction Fusion (rank 6): Flying Bear Phantom Immortal Gu + Primeval Break Gu. its hits leave the enemy Sealed for 3 turns; +24% when attacking; +17% more for a Phantom Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Flying Bear Strength Resonance (rank 6): Flying Bear Strength Immortal Gu + White Boar Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Strength Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Flying Bear Strength Transformation Fusion (rank 6): Flying Bear Strength Immortal Gu + Roaming Zombie Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Strength Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Flying Bear Transformation (rank 6): Change Form Immortal Gu + Flying Bear Strength Immortal Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Transformation Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Ghost Official Garment (rank 6): Cleanse Soul Immortal Gu + Soul Search Gu. +45% when defending; heals 23 HP at once; +17% more for a Soul Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Heavenly Gong Illusion Fusion (rank 6): Heavenly Gong Immortal Gu + Illusory Moon Gu. +45% when defending; heals 23 HP at once; +17% more for a Sound Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Heavenly Gong Resonance (rank 6): Heavenly Gong Immortal Gu + Heaven Earth Magnificent Sound Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Sound Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Ice Soul Lightning Fusion (rank 6): Ice Soul Immortal Gu + Thunderclap Gu. its hits leave the enemy Shocked for 3 turns; +24% when attacking; +17% more for a Ice Snow Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Ice Soul Resonance (rank 6): Ice Soul Immortal Gu + Frost Demon Gu. its hits leave the enemy Frozen for 3 turns; +24% when attacking; +17% more for a Ice Snow Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Man as Before Resonance (rank 6): Man as Before + Man as Before Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Time Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Man as Before Space Fusion (rank 6): Man as Before + Warp Gu. +2 movement at once; +26% when attacking; +17% more for a Time Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Pulling Water Resonance (rank 6): Pulling Water Immortal Gu + White Boar Gu. +45% when defending; heals 23 HP at once; +17% more for a Strength Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Pulling Water Transformation Fusion (rank 6): Pulling Water Immortal Gu + Roaming Zombie Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Strength Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Rising Azure Cloud Ice Snow Fusion (rank 6): Rising Azure Cloud Immortal Gu + Frost Demon Gu. its hits leave the enemy Frozen for 3 turns; +24% when attacking; +17% more for a Cloud Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Rising Azure Cloud Resonance (rank 6): Rising Azure Cloud Immortal Gu + Flying Cloud Gu. +2 movement at once; +26% when attacking; +17% more for a Cloud Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Self Strength Resonance (rank 6): Self Strength + White Boar Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Strength Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Self Strength Transformation Fusion (rank 6): Self Strength + Roaming Zombie Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Strength Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Silent Gong (rank 6): Heavenly Gong Immortal Gu + Keep Silent Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Sound Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Snack Pill Fusion (rank 6): Snack Immortal Gu + Pill Refiner Gu. heals 45 HP at once; +17% strength; +17% more for a Food Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Snack Resonance (rank 6): Snack Immortal Gu + Liquor Worm. 60% more XP from combat; heals 17 HP at once; +17% more for a Food Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Split Shadow Resonance (rank 6): Split Shadow Immortal Gu + Overlapping Shadow Gu. +45% when defending; heals 23 HP at once; +17% more for a Shadow Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Split Shadow Star Fusion (rank 6): Split Shadow Immortal Gu + Star Dart Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Shadow Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Spring Autumn Cicada Resonance (rank 6): Spring Autumn Cicada + Man as Before Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Time Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Spring Autumn Cicada Space Fusion (rank 6): Spring Autumn Cicada + Warp Gu. +2 movement at once; +26% when attacking; +17% more for a Time Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Star Eyes Moon Fusion (rank 6): Star Eyes + Moonlight Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Star Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Star Eyes Resonance (rank 6): Star Eyes + Star Dart Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Star Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Star Mark Moon Fusion (rank 6): Star Mark Immortal Gu + Moonlight Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Star Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Star Mark Resonance (rank 6): Star Mark Immortal Gu + Star Dart Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Star Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Unravel Mystery Emotion Fusion (rank 6): Unravel Mystery + Emotion Poetry Gu. its hits leave the enemy Charmed for 3 turns; +24% when attacking; +17% more for a Wisdom Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Unravel Mystery Resonance (rank 6): Unravel Mystery + Clear Mind Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Wisdom Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Woman's Heart Fire Fusion (rank 6): Woman's Heart + Fiery Claw Gu. its hits leave the enemy Burning for 3 turns; +24% when attacking; +17% more for a Poison Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Woman's Heart Resonance (rank 6): Woman's Heart + Poison Scorpion Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Poison Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Calamity Beckoning Heaven Fusion (rank 7): Calamity Beckoning + Ten-Year Lifespan Gu. enemy soldiers beside it fight 20% weaker; +19% strength; +19% more for a Luck Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Calamity Beckoning Resonance (rank 7): Calamity Beckoning + Luck Inspection Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Luck Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Change Soul Dream Fusion (rank 7): Change Soul + Dream Pillow Gu. 65% more XP from combat; heals 19 HP at once; +19% more for a Soul Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Change Soul Resonance (rank 7): Change Soul + Soul Search Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Soul Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Crescent Moon Resonance (rank 7): Crescent Moon Immortal Gu + Moonlight Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Moon Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Crescent Moon Sound Fusion (rank 7): Crescent Moon Immortal Gu + Heaven Earth Magnificent Sound Gu. its hits leave the enemy Dazed for 3 turns; +27% when attacking; +19% more for a Moon Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Divination Tortoise Shell Emotion Fusion (rank 7): Divination Tortoise Shell + Emotion Poetry Gu. its hits leave the enemy Charmed for 3 turns; +27% when attacking; +19% more for a Wisdom Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Divination Tortoise Shell Resonance (rank 7): Divination Tortoise Shell + Clear Mind Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Wisdom Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Dragon Breath Bone Fusion (rank 7): Dragon Breath + Bone Spear Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Transformation Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Dragon Breath Resonance (rank 7): Dragon Breath + Roaming Zombie Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Transformation Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Dragon Centipede Blade Fusion (rank 7): Dragon Centipede + Sole Blade Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Dragon Centipede Resonance (rank 7): Dragon Centipede + Sword Shadow Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Dragon Strength Resonance (rank 7): Dragon Strength + White Boar Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Strength Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Dragon Strength Transformation Fusion (rank 7): Dragon Strength + Roaming Zombie Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Strength Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Edge Metal Fusion (rank 7): Edge Immortal Gu + Bronze Skin Gu. +50% when defending; heals 26 HP at once; +19% more for a Blade Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Edge Resonance (rank 7): Edge Immortal Gu + Sole Blade Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Blade Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Expend Strength Resonance (rank 7): Expend Strength Immortal Gu + White Boar Gu. enemy soldiers beside it fight 20% weaker; +19% strength; +19% more for a Strength Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Expend Strength Transformation Fusion (rank 7): Expend Strength Immortal Gu + Roaming Zombie Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Strength Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Fixed Space Resonance (rank 7): Fixed Space Immortal Gu + Warp Gu. its hits leave the enemy Entangled for 3 turns; +27% when attacking; +19% more for a Space Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Fixed Space Rule Fusion (rank 7): Fixed Space Immortal Gu + Amplify Effect Gu. its hits leave the enemy Sealed for 3 turns; +27% when attacking; +19% more for a Space Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Flying Sword Blade Fusion (rank 7): Flying Sword Immortal Gu + Sole Blade Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Flying Sword Resonance (rank 7): Flying Sword Immortal Gu + Sword Shadow Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Formation Flag Food Fusion (rank 7): Formation Flag + Liquor Worm. heals 50 HP at once; +19% strength; +19% more for a Formation Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Formation Flag Resonance (rank 7): Formation Flag + Formation Heart Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Formation Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Ghostly Concealment (rank 7): Great Thief Immortal Gu + Plunder Gu. takes 55% of a slain soldier's cost as stones; each hit deals 25 more damage; +19% more for a Theft Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Great Thief Refinement Fusion (rank 7): Great Thief Immortal Gu + Revert Gu. heals 50 HP at once; +19% strength; +19% more for a Theft Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Great Thief Resonance (rank 7): Great Thief Immortal Gu + Plunder Gu. takes 55% of a slain soldier's cost as stones; each hit deals 25 more damage; +19% more for a Theft Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Limit Phantom Fusion (rank 7): Limit Immortal Gu + Turn Phantom Gu. +50% when defending; heals 26 HP at once; +19% more for a Rule Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Limit Resonance (rank 7): Limit Immortal Gu + Amplify Effect Gu. enemy soldiers beside it fight 20% weaker; +19% strength; +19% more for a Rule Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "One Sword Unrestrained (rank 7): Sword Escape Immortal Gu + Sword Shadow Gu. +2 movement at once; +29% when attacking; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Perseverance Painting Fusion (rank 7): Perseverance Immortal Gu + Painting Idea Gu. enemy soldiers beside it fight 20% weaker; +19% strength; +19% more for a Human Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Perseverance Resonance (rank 7): Perseverance Immortal Gu + Relic Gu. +50% when defending; heals 26 HP at once; +19% more for a Human Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Qi Escape Resonance (rank 7): Qi Escape Immortal Gu + Strength Qi Gu. +2 movement at once; +29% when attacking; +19% more for a Qi Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Qi Escape Time Fusion (rank 7): Qi Escape Immortal Gu + Man as Before Gu. its hits leave the enemy Aged for 3 turns; +27% when attacking; +19% more for a Qi Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Reputation Restriction Human Fusion (rank 7): Reputation Restriction + Relic Gu. +50% when defending; heals 26 HP at once; +19% more for a Information Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Reputation Restriction Resonance (rank 7): Reputation Restriction + Flying Sword Letter Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Information Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Reverse Flow Protection Seal (rank 7): Perseverance Immortal Gu + Pulling Water Immortal Gu. +50% when defending; heals 26 HP at once; +19% more for a Human Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Sword Escape Blade Fusion (rank 7): Sword Escape Immortal Gu + Sole Blade Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Sword Escape Resonance (rank 7): Sword Escape Immortal Gu + Sword Shadow Gu. +2 movement at once; +29% when attacking; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Sword Marks Targeting Death (rank 7): Flying Sword Immortal Gu + Sword Qi Gu. its hits leave the enemy Doomed for 3 turns; +27% when attacking; +19% more for a Sword Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Year Resonance (rank 7): Year Gu + Man as Before Gu. +38% when attacking; each hit deals 25 more damage; +19% more for a Time Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Year Space Fusion (rank 7): Year Gu + Warp Gu. +2 movement at once; +29% when attacking; +19% more for a Time Supreme Grandmaster. Cost 3 Red Date Immortal Essence."
+      },
+      {
+        "text": "Advance Refinement Formation Fusion (rank 8): Advance Refinement Gu + Formation Heart Gu. +55% when defending; heals 29 HP at once; +21% more for a Refinement Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Advance Refinement Resonance (rank 8): Advance Refinement Gu + Revert Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Refinement Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Attitude Emotion Fusion (rank 8): Attitude Immortal Gu + Emotion Poetry Gu. its hits leave the enemy Charmed for 4 turns; +30% when attacking; +21% more for a Wisdom Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Attitude Resonance (rank 8): Attitude Immortal Gu + Clear Mind Gu. +55% when defending; heals 29 HP at once; +21% more for a Wisdom Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Dream Token Enslavement Fusion (rank 8): Dream Token + Wolf Enslavement Gu. enemy soldiers beside it fight 22% weaker; +21% strength; +21% more for a Dream Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Dream Token Resonance (rank 8): Dream Token + Dream Pillow Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Dream Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Eight Winds Dominion (rank 8): Eight-Faced Prestige Wind Immortal Gu + Jade Wind Wheel Gu. enemy soldiers beside it fight 22% weaker; +21% strength; +21% more for a Wind Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Eight-Faced Prestige Wind Cloud Fusion (rank 8): Eight-Faced Prestige Wind Immortal Gu + Flying Cloud Gu. its hits leave the enemy Blinded for 4 turns; +30% when attacking; +21% more for a Wind Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Eight-Faced Prestige Wind Resonance (rank 8): Eight-Faced Prestige Wind Immortal Gu + Whirlwind Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Wind Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Five Restriction Profound Light Qi (rank 8): Region Immortal Gu + Limit Immortal Gu. its hits leave the enemy Sealed for 4 turns; +30% when attacking; +21% more for a Rule Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heaven Envies Heroic Geniuses (rank 8): Heaven's Envy Immortal Gu + Heavenly Secret Immortal Gu. enemy soldiers beside it fight 22% weaker; +21% strength; +21% more for a Heaven Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heaven's Envy Qi Fusion (rank 8): Heaven's Envy Immortal Gu + Strength Qi Gu. +55% when defending; heals 29 HP at once; +21% more for a Heaven Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heaven's Envy Resonance (rank 8): Heaven's Envy Immortal Gu + Ten-Year Lifespan Gu. its hits leave the enemy Doomed for 4 turns; +30% when attacking; +21% more for a Heaven Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heavenly Essence Treasure Imperial Lotus Earth Fusion (rank 8): Heavenly Essence Treasure Imperial Lotus + Gruel Mud Gu. its hits leave the enemy Weighted for 4 turns; +30% when attacking; +21% more for a Wood Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heavenly Essence Treasure Imperial Lotus Resonance (rank 8): Heavenly Essence Treasure Imperial Lotus + Heavenly Essence Treasure Lotus. +42% when attacking; each hit deals 28 more damage; +21% more for a Wood Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heavenly Secret Qi Fusion (rank 8): Heavenly Secret Immortal Gu + Strength Qi Gu. +55% when defending; heals 29 HP at once; +21% more for a Heaven Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Heavenly Secret Resonance (rank 8): Heavenly Secret Immortal Gu + Ten-Year Lifespan Gu. 70% more XP from combat; heals 21 HP at once; +21% more for a Heaven Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Human Qi Resonance (rank 8): Human Qi Immortal Gu + Strength Qi Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Qi Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Human Qi Time Fusion (rank 8): Human Qi Immortal Gu + Man as Before Gu. its hits leave the enemy Aged for 4 turns; +30% when attacking; +21% more for a Qi Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Kill Resonance (rank 8): Kill Immortal Gu + Killing Intent Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Killing Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Kill Sword Fusion (rank 8): Kill Immortal Gu + Sword Shadow Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Killing Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Region Phantom Fusion (rank 8): Region Immortal Gu + Turn Phantom Gu. +55% when defending; heals 29 HP at once; +21% more for a Rule Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Region Resonance (rank 8): Region Immortal Gu + Amplify Effect Gu. enemy soldiers beside it fight 22% weaker; +21% strength; +21% more for a Rule Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Regret Enchantment Fusion (rank 8): Regret Immortal Gu + Estrus Gu. its hits leave the enemy Charmed for 4 turns; +30% when attacking; +21% more for a Emotion Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Regret Resonance (rank 8): Regret Immortal Gu + Emotion Poetry Gu. its hits leave the enemy Charmed for 4 turns; +30% when attacking; +21% more for a Emotion Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Soul Beast Token Resonance (rank 8): Soul Beast Token + Wolf Enslavement Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Enslavement Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Soul Beast Token Wisdom Fusion (rank 8): Soul Beast Token + Clear Mind Gu. its hits leave the enemy Shaken for 4 turns; +30% when attacking; +21% more for a Enslavement Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Steal Life Refinement Fusion (rank 8): Steal Life + Revert Gu. heals 55 HP at once; +21% strength; +21% more for a Theft Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Steal Life Resonance (rank 8): Steal Life + Plunder Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Theft Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Treasure Light Dark Fusion (rank 8): Treasure Light Gu + Shadow Follower Gu. enemy soldiers beside it fight 22% weaker; +21% strength; +21% more for a Light Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Treasure Light Resonance (rank 8): Treasure Light Gu + Little Light Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Light Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Water Refinement Formation Fusion (rank 8): Water Refinement Immortal Gu + Formation Heart Gu. +55% when defending; heals 29 HP at once; +21% more for a Refinement Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Water Refinement Resonance (rank 8): Water Refinement Immortal Gu + Revert Gu. heals 55 HP at once; +21% strength; +21% more for a Refinement Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Wisdom Sword Emotion Fusion (rank 8): Wisdom Sword Immortal Gu + Emotion Poetry Gu. its hits leave the enemy Charmed for 4 turns; +30% when attacking; +21% more for a Wisdom Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Wisdom Sword Resonance (rank 8): Wisdom Sword Immortal Gu + Clear Mind Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Wisdom Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Years Flow Like Water Resonance (rank 8): Years Flow Like Water + Man as Before Gu. +42% when attacking; each hit deals 28 more damage; +21% more for a Time Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Years Flow Like Water Space Fusion (rank 8): Years Flow Like Water + Warp Gu. +2 movement at once; +32% when attacking; +21% more for a Time Supreme Grandmaster. Cost 3 White Lychee Immortal Essence."
+      },
+      {
+        "text": "Derivation Phantom Fusion (rank 9): Derivation Gu + Turn Phantom Gu. +60% when defending; heals 32 HP at once; +23% more for a Rule Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Derivation Resonance (rank 9): Derivation Gu + Amplify Effect Gu. +46% when attacking; each hit deals 31 more damage; +23% more for a Rule Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Fire Resonance (rank 9): Fire Gu + Fiery Claw Gu. +46% when attacking; each hit deals 31 more damage; +23% more for a Fire Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Fire Water Fusion (rank 9): Fire Gu + Water Shield Gu. its hits leave the enemy Entangled for 4 turns; +33% when attacking; +23% more for a Fire Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Heavenly Net (rank 9): Heavenly Web Immortal Gu + Fixed Space Immortal Gu. its hits leave the enemy Entangled for 4 turns; +33% when attacking; +23% more for a Heaven Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Heavenly Web Qi Fusion (rank 9): Heavenly Web Immortal Gu + Strength Qi Gu. +60% when defending; heals 32 HP at once; +23% more for a Heaven Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Heavenly Web Resonance (rank 9): Heavenly Web Immortal Gu + Ten-Year Lifespan Gu. its hits leave the enemy Entangled for 4 turns; +33% when attacking; +23% more for a Heaven Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Light Dark Fusion (rank 9): Light Gu + Shadow Follower Gu. enemy soldiers beside it fight 24% weaker; +23% strength; +23% more for a Light Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Light Resonance (rank 9): Light Gu + Little Light Gu. +46% when attacking; each hit deals 31 more damage; +23% more for a Light Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Love Enchantment Fusion (rank 9): Love Gu + Estrus Gu. its hits leave the enemy Charmed for 4 turns; +33% when attacking; +23% more for a Emotion Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Love Resonance (rank 9): Love Gu + Emotion Poetry Gu. heals 60 HP at once; +23% strength; +23% more for a Emotion Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Love and Regret (rank 9): Love Gu + Regret Immortal Gu. its hits leave the enemy Charmed for 4 turns; +33% when attacking; +23% more for a Emotion Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Sun Descends (rank 9): Light Gu + Fire Gu. +46% when attacking; each hit deals 31 more damage; +23% more for a Light Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Wisdom Emotion Fusion (rank 9): Wisdom Gu + Emotion Poetry Gu. its hits leave the enemy Charmed for 4 turns; +33% when attacking; +23% more for a Wisdom Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
+      },
+      {
+        "text": "Wisdom Resonance (rank 9): Wisdom Gu + Clear Mind Gu. +46% when attacking; each hit deals 31 more damage; +23% more for a Wisdom Supreme Grandmaster. Cost 3 Yellow Apricot Immortal Essence."
       }
     ]
   }

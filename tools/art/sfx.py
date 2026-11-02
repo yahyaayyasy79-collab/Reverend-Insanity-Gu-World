@@ -413,12 +413,14 @@ def all_sounds():
         out[dao_sound(t)] = (lambda t=t: dao_bell(t))
     import gu_catalog
     for r in gu_catalog.ROWS:
-        out[gu_catalog.sound(r["name"])] = (lambda r=r: gu_awaken(r["name"], r["path"], int(r["rank"]), r["form"]))
+        if int(r["rank"]) < 6:
+            out[gu_catalog.sound(r["name"])] = (lambda r=r: gu_awaken(r["name"], r["path"], int(r["rank"]), r["form"]))
+    for g in gu_catalog.all_immortal():   # immortal Gu: one of a kind, heard when its bearer takes it up
+        b = gu_catalog.bearer(g["name"])
+        out[gu_catalog.sound(b)] = (lambda g=g: gu_awaken(g["name"], g["path"], int(g["rank"]), g["form"]))
     import gu_combos
-    info = gu_combos.gu_info()
-    for r in gu_combos.ROWS:
-        out[gu_combos.sound(r["name"])] = (lambda r=r: combo_strike(r["name"], info[r["gu_a"]][1], info[r["gu_b"]][1],
-                                                                  gu_combos.rank(r)))
+    for r in gu_combos.rows():
+        out[gu_combos.sound(r["name"])] = (lambda r=r: combo_strike(r["name"], *gu_combos.paths_of(r), gu_combos.rank(r)))
     return out
 
 
