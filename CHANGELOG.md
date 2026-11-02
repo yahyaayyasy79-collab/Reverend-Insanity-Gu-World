@@ -830,3 +830,10 @@ minor clans plus wild factions.
 * **A bearer needs only the Gu's rank, not its path.** The path's comprehension gates the moves instead. Autoplay
   4 × 400 turns: 2-16 bearers per game, and never two bearers of one Gu. The catalog wonders now weigh +300% for the
   AI, the same as the canon ones (docs/AUTOPLAY.md).
+
+## Phase D — every policy branch open from the first era (2026-11-02)
+
+* **All 49 policy branches open in the first era.** Before, 45 waited for Rank Three, Four or Five.
+* **Path halls still wait for their family's tech.**
+* **Autoplay A/B** (6 × 300, Five Regions): the AI keeps as many immortals and adopts as many policies as before. More
+  war turns, within the noise (docs/AUTOPLAY.md).

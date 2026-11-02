@@ -294,6 +294,7 @@ def promotions(unit_types: list[str]) -> list[dict]:
 # path's family, and a hall building (unlocked by the opener) whose newly trained Gu Masters hold the path's Master.
 # Paths whose dao marks clash strongly (data/path_conflicts.csv at -25) exclude each other's branch.
 SLICE1_BRANCHES = {"moon", "strength"}
+BRANCH_ERA = "Rank One-Two era"
 FAMILY_ERA = {"A": "Rank Three era", "B": "Rank Three era", "C": "Rank Three era", "D": "Rank Four era",
               "E": "Rank Four era", "F": "Rank Five era", "G": "Rank Five era"}
 ERA_TECH = {"Rank One-Two era": "Rank Two Cultivation", "Rank Three era": "Rank Three Cultivation",
@@ -368,7 +369,9 @@ def policy_branches() -> list[dict]:
         f = FAMILY_POLICIES[p["family"]]
         names = [n for n, _ in member_names(p)]
         out.append({
-            "name": branch_name(p), "era": FAMILY_ERA[p["family"]],
+            # the user (2026-11-02): "kebijakannya terbuka semua tanpa harus memandang era": every branch opens in the
+            # first era; the halls still wait for their family's tech (halls())
+            "name": branch_name(p), "era": BRANCH_ERA,
             "priorities": {"Southern Border Supremacy": 3, "Endurance": 3},
             "uniques": [f"[+5]% Strength <for [{m}] units> <for every [Adopted [[{branch_name(p)}] branch] Policies]>"]
             + [f"Only available <before adopting [{branch_name(KEY[c])}]>" for c in clashes(p)],

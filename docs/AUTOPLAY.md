@@ -426,6 +426,19 @@ Canon lets any immortal with the essence use an immortal Gu, so the bearer now n
 comprehension still gates the Gu's combination moves, which only a human presses anyway. Uniqueness held in every
 game: never two bearers of one Gu.
 
+## Phase D: every policy branch from the first era (2026-11-02)
+
+The user asked for every policy branch to open without waiting for an era. The setup was Five Regions, 6 games × 300
+turns, Prince, seeds 51-56, with "Base" as the commit before the change.
+
+| Run | Majors alive | Cities captured | Immortals at T300 | Soldiers | Barbarians | Major-turns at war | Major-turns in the red | Policies adopted (all games) |
+|---|---|---|---|---|---|---|---|---|
+| Base (branches by era) | 7.3 | 2.3 | 17.8 | 99 | 47 | 202 | 150 | 537 |
+| All branches in the first era | 6.7 | 2.7 | 17.3 | 92 | 51 | 398 | 124 | 514 |
+
+The AI is no weaker: it keeps as many immortals and adopts as many policies. It went to war more often, but war turns
+range from 22 to 721 per game, so that difference is within the noise. One game ended with 5 majors after 7 captures.
+
 ## Re-run
 
 ```
