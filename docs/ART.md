@@ -116,8 +116,15 @@ study (ink and jade, bronze medallion, spirit glow, ink night), with the full pa
 * **Leaders.** The eight majors' leaders are ink silhouettes, rim-lit in the nation's colour, before a great moon
   inside an ensō, each with its clan's path signs (moon blades, water rings, an immortal's halo) and seal
   (`Images/LeaderIcons/`).
-* **Victories.** Each of the three victories has a background, a milestone image, a won image and a lost image
-  (`Images.Victories/VictoryIllustrations/`).
+* **Victories** (fixed the same day: the user saw "only the white disc"). Unciv shows the `Background` always and stacks
+  each reached milestone, `Won` or `Lost` over it [src VictoryScreenIllustrations]. The first version's background
+  was an empty ensō, so that was all a new game showed. Now each victory is a layered scene (`tools/art/victories.py`):
+  * Supremacy: Qing Mao's ridges at night with four lit clan villages; conquest raises banners and fires over them;
+  * Endurance: the golden river of time past its waymarks; the milestone lights the great sundial;
+  * Eternal Life: the heavenly stair into the clouds; the milestone raises the gate of eternal life;
+  * won and lost, for every victory: won adds a golden dawn and frame, lost an ink veil with a broken ensō.
+
+  Each victory also has a tab icon (`VictoryTypeIcons`).
 * **Unit types.** Civilopedia shows an icon for every unit type (`Images/UnitTypeIcons/`).
 * **Policies stay flat white**, because Unciv tints policy icons by state (pickable, adopted)
   [src PolicyPickerScreen]: coloured art would hide that state.
@@ -125,4 +132,31 @@ study (ink and jade, bronze medallion, spirit glow, ink night), with the full pa
   `tools/gen_art.py` (about 4.5 minutes, four processes). Only their atlases (`Portraits*`, `Wonders`, `Victories`) are
   committed, since Android reads the atlas and never the sources. `tools/unciv_ci.py --pack` refuses to pack while
   they are missing, so no pack can silently drop them.
+
+## Units and the mod's terrain, second pass (2026-11-02)
+
+The user asked for the units and the mod's own terrain to be "100x better".
+
+* **Units on the map are about 20% larger** (render scale 4.4 to 3.7), and each rank has its own silhouette
+  (`characters.regalia`, stacking):
+  * rank 2: a Gu pouch and a headband;
+  * rank 3: a shoulder mantle in the clan's outer colour;
+  * rank 4: a guan cap and an orbiting jade Gu;
+  * rank 5: a long cape in the clan's colour, a gold hairpin and a second Gu;
+  * immortals: ribbons of their rank's essence, on top of the cloud and halos they already had.
+
+  The strength path (bare-chested) keeps its own build. Before this, ranks 1-5 differed only by the colour of the orb.
+* **The twelve secret realms and the five region walls are small 3D dioramas** (`tools/art/terrain3d.py`). The flat
+  clip art is replaced by a scene of primitives rendered from a 36° three-quarter view, with a soft shadow, on a
+  painted hex of its ground (grass, plains, ocean, rock, ash, swamp), then reduced to HexaRealm's 64 × 56 and
+  FantasyHex's 32 × 28. Examples:
+  * Dang Hun's violet soul rings;
+  * the river climbing Reverse Flow's hill;
+  * the golden river of time with its hourglass;
+  * the white and black Door of Life and Death;
+  * the whale with dragon horns;
+  * Tian Ti's spiral stair through a cloud ring;
+  * Lang Ya's floating island and furnace;
+  * the walls: a breaking water curtain, layered flames, toxic fog with dead trees, giant tangled roots, and
+    rune-cut stone.
 

@@ -175,7 +175,8 @@ rest of the list is what a player or the next session should know before trustin
 
 * **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small
   image in a white circle: promotion picker, city construction list, tech tree, Civilopedia. Also check the wonder
-  splash on completion, the leader portrait in diplomacy, and the victory screen's illustration tab.
+  splash on completion, the leader portrait in diplomacy, and the victory screen's illustration tab. That tab now
+  shows a whole scene from the first turn and adds banners, the sundial or the gate as milestones are reached.
 
 * **Combination killer moves (Phase D).** A move's button should appear only on a unit that holds both of its Gu. This
   rests on [src UnitActionsFromUniques]: an action's conditionals must apply. Check it in game: give one unit Ice

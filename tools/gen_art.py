@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, arcart, characters, glyphs, glyphs2, guart, pathart, realms, render3d  # noqa: E402
+from art import anims, arcart, characters, glyphs, glyphs2, guart, pathart, realms, render3d, terrain3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -129,7 +129,8 @@ def main(argv: list[str]) -> int:
     units = tiles
     for name, build in characters.UNITS.items():
         wolf = "Wolf" in name or "Desolate Beast" in name
-        frame = dict(size=(128, 110), scale=3.4 if wolf else 4.4, center=(0.0, 0.7 if wolf else 0.95))
+        # people fill more of the tile since the 2026-11-02 art pass (scale 4.4 -> 3.7: about 20% larger)
+        frame = dict(size=(128, 110), scale=3.4 if wolf else 3.7, center=(0.0, 0.7 if wolf else 1.0))
         out = render3d.render(build(), **frame)
         for suffix, key in (("", "base"), ("-1", "layer1"), ("-2", "layer2")):
             written += save(out[key], units / f"{name}{suffix}.png")
@@ -146,10 +147,10 @@ def main(argv: list[str]) -> int:
             written += save(fx["base"], units / f"{name}-attack-{n}.png")
     # the secret realms' natural-wonder tiles for the default tileset and its fallback (MOD_SPEC_2 #13)
     for name in realms.SCENES:
-        for tileset, im in realms.tile(name).items():
+        for tileset, im in terrain3d.tile(name).items():   # 3D dioramas since the 2026-11-02 art pass
             written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
     for name in realms.WALLS:   # the five region walls (Five Regions map)
-        for tileset, im in realms.wall_tile(name).items():
+        for tileset, im in terrain3d.tile(name).items():
             written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
     # Phase D: the attack sounds (tools/art/sfx.py: rank body, path x attainment tier, dao marks, killer moves)
     # the Ink Night art pass (the user chose style D, 2026-11-02): full-colour portraits for every icon, backgrounds,

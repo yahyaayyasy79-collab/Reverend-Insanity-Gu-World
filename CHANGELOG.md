@@ -858,3 +858,18 @@ You picked style D (Ink Night) from four candidates, with the full package.
 * **Policy icons stay flat**, because the engine tints them by state.
 * **Download size:** about 14 MB more, all of it atlas. Generated image sources are not committed, and
   `unciv_ci.py --pack` refuses to pack without them.
+
+## Phase D — art pass 2: victory scenes fixed, units and the mod's terrain redrawn (2026-11-02)
+
+* **Fix: the victory illustration tab showed only an empty disc.** Unciv shows the background alone until a milestone
+  is reached, and the background was that disc. Each victory is now a layered scene: Qing Mao villages, the river of
+  time, or the heavenly stair. Milestones add the banners, the sundial or the gate, and won or lost add a dawn or an
+  ink veil. Each victory also has a tab icon.
+* **Units are larger on the map, and every rank looks different.**
+  * rank 2: a Gu pouch and a headband;
+  * rank 3: a mantle in the clan's colour;
+  * rank 4: a guan cap and an orbiting Gu;
+  * rank 5: a cape, a gold hairpin and two Gu;
+  * immortals: essence ribbons.
+* **The 12 secret realms and 5 region walls are 3D dioramas** on painted hexes, sized to match HexaRealm and
+  FantasyHex.

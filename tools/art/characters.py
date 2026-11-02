@@ -116,7 +116,36 @@ def gu_master(rank: int, path: str | None):
         cultivator(s, height=0.94, build=0.9, robe=True, bun=True, pose="cast", young=True)
         s.add("sphere", (0.36, 1.45, 0.5), 0.09, mat="essence1")
         s.add("torus", (0, 0.02, 0), 0.42, 0.016, mat="essence1")
+    if path != "Strength":
+        regalia(s, rank)
     return s
+
+
+def regalia(s: Scene, rank: int, x=0.0, h=1.0):
+    """Rank marks that stack, so every rank has its own silhouette on the map (art pass 2026-11-02): a Gu pouch and a
+    headband from rank two, a shoulder mantle in the clan's colour from three, a guan cap and an orbiting Gu from four,
+    a long cape, a gold hairpin and a second Gu from five; immortals add ribbons of their essence."""
+    head_y = 1.72 * h
+    if rank >= 2:
+        s.add("ellipsoid", (x + 0.2 * h, 0.93 * h, 0.13), (0.07, 0.085, 0.05), mat="leather")             # Gu pouch
+        s.add("torus", (x, head_y + 0.06 * h, -0.01), 0.152 * h, 0.014 * h, mat="trim")                    # headband
+    if rank >= 3:
+        s.add("ellipsoid", (x, 1.42 * h, -0.02), (0.37 * h, 0.1 * h, 0.23 * h), mat="trim", blend=0.03)   # mantle
+        s.add("cone", (x, 1.38 * h, 0.0), (x, 1.12 * h, 0.0), 0.3 * h, 0.2 * h, mat="trim", blend=0.03)
+    if rank >= 4:
+        s.add("box", (x, head_y + 0.27 * h, -0.07), (0.05, 0.05, 0.065), 0.01, mat="metal")               # guan cap
+        s.add("ellipsoid", (x - 0.48, 1.22 * h, 0.28), (0.06, 0.035, 0.08), mat="jade")                   # orbiting Gu
+        s.add("torus", (x - 0.48, 1.22 * h, 0.28), 0.1, 0.008, mat="jade")
+    if rank >= 5:
+        s.add("ellipsoid", (x, 0.86 * h, -0.24), (0.33 * h, 0.78 * h, 0.05), mat="trim", blend=0.04)      # cape
+        s.add("capsule", (x - 0.1, head_y + 0.2 * h, -0.07), (x + 0.1, head_y + 0.2 * h, -0.07), 0.012, mat="metal")
+        s.add("ellipsoid", (x + 0.52, 1.78 * h, -0.05), (0.06, 0.035, 0.08), mat="jade")
+        s.add("torus", (x + 0.52, 1.78 * h, -0.05), 0.1, 0.008, mat="jade")
+    if rank >= 6:   # immortal ribbons of essence flowing from the shoulders
+        mat = ESSENCE[min(rank, 9)]
+        for side in (-1, 1):
+            s.add("capsule", (x + side * 0.24, 1.42 * h, -0.05), (x + side * 0.62, 1.12 * h, -0.25), 0.022, mat=mat)
+            s.add("capsule", (x + side * 0.62, 1.12 * h, -0.25), (x + side * 0.78, 0.7 * h, -0.1), 0.018, mat=mat)
 
 
 def lone_gu_master():
@@ -307,6 +336,7 @@ def gu_immortal(rank=6):
         s.add("torus", (0, 2.22, -0.05), 0.34, 0.016, mat=mat)
         s.add("ellipsoid", (0, 1.85, -0.7), (0.38, 0.38, 0.02), mat=mat)
     s.add("sphere", (0.36, 1.45, 0.5), 0.13 + 0.01 * (rank - 6), mat=mat)
+    regalia(s, rank, h=1.04)
     return s
 
 

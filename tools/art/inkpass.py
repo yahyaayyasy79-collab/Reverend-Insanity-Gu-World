@@ -313,16 +313,8 @@ def build(registry, mod: Path, save) -> int:
     for n in nations:
         if n.get("leaderName") and n["name"] in LEADER_LOOK:
             written += save(leader(n), mod / "Images" / "LeaderIcons" / f"{n['leaderName']}.png")
-    for v in json.loads((mod / "jsons" / "VictoryTypes.json").read_text(encoding="utf-8")):
-        k = VICTORY_SYMBOL.get(v["name"])
-        if not k:
-            continue
-        base = mod / "Images.Victories" / "VictoryIllustrations" / v["name"]
-        written += save(victory(k, "bg"), base / "Background.png")
-        written += save(victory(k, "won"), base / "Won.png")
-        written += save(victory(k, "lost"), base / "Lost.png")
-        for m in v.get("milestones", []):
-            written += save(victory(k, "milestone"), base / f"{m.replace('[', '').replace(']', '')}.png")
+    from . import victories   # layered scenes: Unciv stacks milestones, Won and Lost over the background
+    written += victories.build(mod, json.loads((mod / "jsons" / "VictoryTypes.json").read_text(encoding="utf-8")), save)
     units = json.loads((mod / "jsons" / "Units.json").read_text(encoding="utf-8"))
     for t in sorted({u["unitType"] for u in units}):
         written += save(unit_type_icon(t), mod / "Images" / "UnitTypeIcons" / f"{t}.png")

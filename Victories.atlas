@@ -25,13 +25,6 @@ VictoryIllustrations/Endurance/Lost
   orig: 400, 240
   offset: 0, 0
   index: -1
-VictoryIllustrations/Endurance/Won
-  rotate: false
-  xy: 412, 4
-  size: 400, 240
-  orig: 400, 240
-  offset: 0, 0
-  index: -1
 VictoryIllustrations/Eternal Life/Background
   rotate: false
   xy: 4, 748
@@ -60,6 +53,20 @@ VictoryIllustrations/Eternal Life/Won
   orig: 400, 240
   offset: 0, 0
   index: -1
+VictoryIllustrations/Endurance/Won
+  rotate: false
+  xy: 1228, 748
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
+VictoryIllustrations/Southern Border Supremacy/Won
+  rotate: false
+  xy: 1228, 748
+  size: 400, 240
+  orig: 400, 240
+  offset: 0, 0
+  index: -1
 VictoryIllustrations/Southern Border Supremacy/Background
   rotate: false
   xy: 412, 748
@@ -81,10 +88,24 @@ VictoryIllustrations/Southern Border Supremacy/Lost
   orig: 400, 240
   offset: 0, 0
   index: -1
-VictoryIllustrations/Southern Border Supremacy/Won
+VictoryTypeIcons/Endurance
   rotate: false
-  xy: 820, 252
-  size: 400, 240
-  orig: 400, 240
+  xy: 412, 180
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+VictoryTypeIcons/Eternal Life
+  rotate: false
+  xy: 820, 428
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+VictoryTypeIcons/Southern Border Supremacy
+  rotate: false
+  xy: 1228, 676
+  size: 64, 64
+  orig: 64, 64
   offset: 0, 0
   index: -1
