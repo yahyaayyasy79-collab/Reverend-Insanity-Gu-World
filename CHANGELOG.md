@@ -889,3 +889,34 @@ pixel dioramas seen from a three-quarter top view, on a hexagonal grass frame, w
   * Dragon Whale Paradise is now an atoll: a grass ring around the lagoon where the whale surfaces.
 * **What to check in game:** the 17 tiles on HexaRealm and on FantasyHex, and how the tall tiles overlap the tile
   above them.
+
+## Phase D — every unit redrawn as pixel art (2026-11-02)
+
+You asked for all units, closer to the novel, in the HexaRealm / FantasyHex pixel style.
+
+* **All 43 units are pixel art now** (`tools/art/pixelunits.py`), drawn natively at 64 × 56 and 32 × 28.
+  * On the map they have no grass frame. You chose this after the mockup: a frame would paint grass over the
+    terrain under every unit.
+  * Soldiers stand on the right of the hex and civilians on the left, as in the tilesets, so two units on one tile do
+    not overlap.
+  * Clan colours stay: the robe takes the nation's inner colour, the trim its outer colour.
+  * The sprites work in all three unit sets: AbsoluteUnits (the default), HexaRealm and FantasyHex.
+* **Canon look:**
+  * Rank shows as the held Gu's essence colour and as regalia (pouch, mantle, gold guan cap, cape).
+  * Gu Yue raises the Moonlight Gu's crescent, Bai the Stream Gu's water, and Wu a wind.
+  * Xiong's strength path summons a bear phantom, the Strength line a boar phantom.
+  * The Thunder Crown Wolf wears its crown of gold fur.
+  * Immortals float on cloud in ribbons of their essence. The Venerable shines yellow apricot.
+  * Desolate beasts, Gu Houses, demonic cultivators and the immortal zombie each have their own design.
+* **Portraits are dioramas:** the unit on the grass hex, with its own ground (courtyard, stream, rocks, clouds,
+  forest, ash, field).
+* **Attack effects are pixel art too,** one set per unit: crescent blades, beast phantoms, water whip, wind blades,
+  lightning, claws, blood slashes, Gu House moves, and essence strikes that grow with rank.
+* The Units atlas shrank from two pages to one (`unciv_ci.py --pack` now removes atlas pages that are no longer
+  needed).
+* **What to check in game:**
+  * the units on different terrains;
+  * a laborer and a soldier on one tile;
+  * the Unit set option;
+  * a Civilopedia unit page;
+  * an attack.

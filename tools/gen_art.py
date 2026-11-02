@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate the mod's original art: flat icons (tools/art/glyphs.py) and attack animations (tools/art/anims.py).
+"""Generate the mod's original art: flat icons (tools/art/glyphs.py), pixel-art units and terrain, and the rest.
 
 * Icons follow Unciv's flat-icon style: a one-colour silhouette on a transparent 100x100 canvas; white for units,
   nations, techs, promotions and policies, black for buildings, resources and improvements (as in the base game's
   atlases). Unciv draws them on coloured circles.
-* Attack animations: Images.Units/TileSets/<unitset>/Units/<attacker unit type>-attack-<n>.png, played over the unit that
+* Attack animations: Images.Units/TileSets/<unitset>/Units/<attacker unit name>-attack-<n>.png, played over the unit that
   takes the damage [docs Creating-a-custom-tileset.md, src BattleTableHelpers]; written for the default unit set
   (AbsoluteUnits).
 * Every file carries the PNG text chunk GeneratedArt=gen_art. The tool overwrites only its own files and
@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, arcart, characters, glyphs, glyphs2, guart, pathart, pixeltiles, render3d  # noqa: E402
+from art import arcart, glyphs, glyphs2, guart, pathart, pixeltiles, pixelunits  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -114,37 +114,31 @@ def main(argv: list[str]) -> int:
             written += 1
         else:
             kept.append(f"{folder}/{name}")
-    for unit_type, make in anims.ANIMS.items():
-        for n, im in enumerate(make(), start=1):
-            if save(im, tiles / f"{unit_type}-attack-{n}.png"):
-                written += 1
-            else:
-                kept.append(f"{unit_type}-attack-{n}")
     # Gold is shown as primeval stones (tools/gen_translations.py): the stat icon and the in-text emoji become a stone
     for path, px in (("StatIcons/Gold", 100), ("EmojiIcons/Gold", 50)):
         written += save(glyphs2.primeval_stone_icon(px), images / f"{path}.png")
-    # pre-rendered 3D characters (tools/art/characters.py, render3d.py): map sprites with civ-colour layers
-    # (<name>-1 tinted by the nation's inner colour, <name>-2 by its outer colour [src TileLayerUnitSprite]),
-    # UI portraits, and per-unit attack effects (played over the unit that takes the damage)
-    units = tiles
-    for name, build in characters.UNITS.items():
-        wolf = "Wolf" in name or "Desolate Beast" in name
-        # people fill more of the tile since the 2026-11-02 art pass (scale 4.4 -> 3.7: about 20% larger)
-        frame = dict(size=(128, 110), scale=3.4 if wolf else 3.7, center=(0.0, 0.7 if wolf else 1.0))
-        out = render3d.render(build(), **frame)
-        for suffix, key in (("", "base"), ("-1", "layer1"), ("-2", "layer2")):
-            written += save(out[key], units / f"{name}{suffix}.png")
-        mats = {"robe": render3d.Mat(characters.PORTRAIT_ROBE.get(name, (120, 120, 120))),
-                "trim": render3d.Mat(characters.PORTRAIT_TRIM)}
-        pscale, pcenter = ((1.7, (0.1, 0.8)) if name == "Lightning Wolf" else (2.0, (0.1, 0.9)) if wolf
-                           else (1.5, (0.0, 1.5)))
-        portrait = render3d.render(build(), size=(128, 128), scale=pscale * (1.12 if name == "Thunder Crown Wolf" else 1.0),
-                                   center=pcenter, yaw=30, elevation=12, shadow=False, layers=False, mats=mats)
-        # portraits share the Units atlas: with the icons they spilled into a second game texture (game2.png)
-        written += save(portrait["base"], args.mod / "Images.Units" / "UnitPortraits" / f"{name}.png")
-        for n, effect in enumerate(characters.ATTACKS.get(name, []), start=1):
-            fx = render3d.render(effect(), **frame, shadow=False, layers=False, glow=1.2)
-            written += save(fx["base"], units / f"{name}-attack-{n}.png")
+    # the units as pixel art in the HexaRealm / FantasyHex style (tools/art/pixelunits.py, the user 2026-11-02): the
+    # 64 x 56 sprite for the default unit set and HexaRealm's, the 32 x 28 one for FantasyHex's, each with its civ colour
+    # layers (<name>-1 tinted by the nation's inner colour, <name>-2 by its outer [src TileLayerUnitSprite]); attack
+    # frames for the default unit set; diorama portraits (the unit on its grass hex)
+    unit_files = set()
+    for name in pixelunits.SPRITES:
+        layers = pixelunits.sprite(name)
+        for unitset, ts in ((UNITSET, "HexaRealm"), ("HexaRealm", "HexaRealm"), ("FantasyHex", "FantasyHex")):
+            folder = args.mod / "Images.Units" / "TileSets" / unitset / "Units"
+            for suffix, key in (("", "base"), ("-1", "layer1"), ("-2", "layer2")):
+                im = layers[ts][key]
+                if suffix and im.getbbox() is None:
+                    continue   # no clan colour in this sprite: no empty layer in the atlas
+                unit_files.add(folder / f"{name}{suffix}.png")
+                written += save(im, folder / f"{name}{suffix}.png")
+        for n, im in enumerate(pixelunits.attack_frames(name), start=1):
+            unit_files.add(tiles / f"{name}-attack-{n}.png")
+            written += save(im, tiles / f"{name}-attack-{n}.png")
+        written += save(pixelunits.portrait(name), args.mod / "Images.Units" / "UnitPortraits" / f"{name}.png")
+    for path in (args.mod / "Images.Units" / "TileSets").glob("*/Units/*.png"):   # sprites and frames no longer drawn
+        if path not in unit_files and ours(path):
+            path.unlink()
     # the secret realms' natural-wonder tiles (MOD_SPEC_2 #13) and the five region walls (Five Regions map), drawn as
     # pixel-art dioramas natively for the default tileset and its fallback (the user, 2026-11-02)
     for name in {**pixeltiles.REALMS, **pixeltiles.WALLS}:

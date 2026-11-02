@@ -13,9 +13,8 @@ rest of the list is what a player or the next session should know before trustin
 
 ## Engine limits (no mod can change them)
 
-1. **Unciv draws 2D sprites.** The "3D" characters are rendered here (`tools/art/render3d.py`) into flat sprites,
-   portraits and attack frames; they do not rotate. Unciv has no idle or death animation; a unit that dies simply
-   disappears.
+1. **Unciv draws 2D sprites.** Units are pixel-art images (`tools/art/pixelunits.py`); Unciv has no idle or death
+   animation, and a unit that dies simply disappears. A sprite covers the whole hex, so it carries no grass frame.
 2. **The attack effect belongs to the attacking unit, not to its Gu.** Unciv picks `<unit name or unit type>-attack-N`
    [src], so the effect follows the path and the rank (moon blade, boar charge, lightning, essence burst), not the
    specific Gu a unit carries. A Strength Gu Master with a Jade Skin Gu still charges like a boar.
@@ -167,8 +166,8 @@ rest of the list is what a player or the next session should know before trustin
     Nothing in the mod blocks the upgrade: rank units carry no upgrade conditions. The Rank Four Cultivation tech is
     the only requirement that hides it for every unit at once.
 
-24. **The Ink Night art costs texture memory (2026-11-02).** The packed atlases total about 161 MB as RGBA textures:
-    13 pages, 3 of them portraits, 1 wonders and 1 victories, up from about 89 MB. The download grew by about 14 MB
+24. **The Ink Night art costs texture memory (2026-11-02).** The packed atlases total about 159 MB as RGBA textures:
+    11 pages, 3 of them portraits, 1 wonders and 1 victories, up from about 89 MB (the pixel units fit one page). The download grew by about 14 MB
     of atlas. A very old phone may run short of memory; the fix would be fewer or smaller portraits (`inkpass.PX`).
 
 ## Not yet seen in a real game
@@ -187,7 +186,7 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 
 | What | How to reach it |
 |---|---|
-| 3D sprites, clan colours, portraits | Start a game; `unit add gu-yue-clan "Rank Four Gu Yue Gu Master"` next to `"Rank Four Bai Gu Master"`, `"Rank Four Xiong Gu Master"` and `"Rank Four Gu Master"` |
+| Pixel sprites, clan colours, portraits | Start a game; `unit add gu-yue-clan "Rank Four Gu Yue Gu Master"` next to `"Rank Four Bai Gu Master"`, `"Rank Four Xiong Gu Master"` and `"Rank Four Gu Master"`; put a `"Mortal Laborer"` on a soldier's tile (they stand apart); switch Options → Display → Unit set to HexaRealm and FantasyHex; open a unit's Civilopedia page for its diorama portrait |
 | Attack effects per clan chain | Put those units next to a wolf (`unit add Barbarians "Lightning Wolf"`) and attack |
 | 47 path lines on the promotion screen (C3) | Select a Gu Master: `unit setxp 200`; every Master shows; a Grandmaster only after its Master, on a rank-three or higher unit |
 | Camp change (Collusion Exposed, Blood Lake) | As Gu Yue: `civ addtechnology gu-yue-clan "Inheritance Lore"` fires Blood Lake; choice 3 swaps Righteous for Demonic and marks every military unit with Demonic Infamy |

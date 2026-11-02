@@ -18,51 +18,52 @@ or copied from the novel, its translations, the manhua or fan art (MOD_SPEC rule
 * Category circles in the contact sheet (`tools/gen_art.py --sheet FILE`) only mimic the game; Unciv picks the real
   circle colours (civ colours for units and nations).
 
-## Attack animations
+## Units: pixel art (2026-11-02)
 
-Played over the unit that takes damage, chosen by the attacker's unit type [docs Creating-a-custom-tileset.md]; pixel
-art on a 32x32 grid scaled 3x to match the default AbsoluteUnits unit set.
+The user asked for every unit to be redrawn, closer to the novel, in the pixel style of the HexaRealm (64 × 56) and
+FantasyHex (32 × 28) tilesets. `tools/art/pixelunits.py` draws all 43 units natively at both sizes from one scene
+written in HexaRealm pixels (the mask, shading and outline helpers of `pixeltiles.py`). The 3D renders before them
+(`render3d.py`, `characters.py`) now only draw the leaders' ink silhouettes.
 
-| Attacker type | Animation | Colours | Sound (`attackSound`) |
-|---|---|---|---|
-| Gu Master (rank one) | burst of primeval essence | green copper (rank-one essence) | throw |
-| Moon Gu Master | a moon blade sweeps and shatters into moonlight | silver-blue | whoosh |
-| Strength Gu Master | boar tusks slam, impact star, shock rings | earth and amber | nonmetalhit |
-| Beast (lightning wolves) | bolt from above, flash, sparks | electric blue | shot |
-
-## 3D characters (pre-rendered)
-
-Unciv draws 2D images only, so the twelve units are modelled in 3D and pre-rendered by `tools/art/render3d.py` (a
-numpy ray-marcher over signed distance fields: spheres, capsules, round cones, ellipsoids, tori, crescent blades;
-three-band toon shading, rim light, specular on metal and jade, outlines, glow on Gu effects) from scenes in
-`tools/art/characters.py`.
-
-* **Map sprites** `Images.Units/TileSets/AbsoluteUnits/Units/<unit>.png` (the default unit set; `Images.Units` packs
-  into its own atlas, `Units.png`, so the icons keep `game.png` to one page), 128x110, three-quarter
-  view with a ground shadow, plus `<unit>-1.png` (robe, tinted with the clan's inner colour) and `<unit>-2.png`
-  (sash, collar, banner: the outer colour) [src `TileLayerUnitSprite`, `getLayeredImageColored`].
-* **Portraits** `Images.Units/UnitPortraits/<unit>.png` (the Units atlas), 128x128, head and shoulders, robe in the path's colour; Unciv uses
-  them everywhere except the world map [docs Images-and-Audio.md].
-* **Attack effects** `<unit>-attack-<n>.png`, chosen by the attacker's unit name: rank-one essence burst; Moon: one,
-  two or three moon blades by rank; Strength: an essence boar charge and shock rings in the rank's essence colour;
-  wolves: a lightning strike (golden for the Thunder Crown Wolf). The pixel frames per unit type stay as fallback.
-* **Rank reads as essence** (canon colours): a ring at the feet in green copper (rank one), red iron (two), white
-  silver (three), yellow gold (four); Strength masters grow broader and gain bracers and boar-skull pauldrons; Moon
-  masters gain blades and, at rank four, a moon behind the back.
-* **Rank strikes** (Phase D, 2026-11-02, `characters.strike_frame`). The generic rank units, the immortals, the
-  Venerable, the desolate beasts, the Gu Houses and the immortal zombie strike in their rank's essence colour, and the
-  strike grows with rank:
-  * ranks 1–2: a burst and sparks, 3 frames;
-  * ranks 3–4: a shock ring;
-  * rank 5: two rings;
-  * rank 6 (immortal): a qi pillar rises, 5 frames;
-  * rank 7: rays tear outward;
-  * rank 8 (grotto-heaven): a halo opens above;
-  * rank 9 (Venerable): four rings, a crown of light and a ground shockwave, 6 frames.
-  The clan chains keep their path's own strike (moon blades, water, boar charge, whirlwind).
-* Limits: Unciv has no idle or walking animation and no death animation; an attack effect plays when a unit takes
-  damage, including the killing blow. The effect follows the attacker's unit (path and rank), not the Gu it holds
-  [src `BattleTableHelpers.getAttackAnimationLocation`].
+* **Map sprites, no frame.** The engine scales a unit image over the whole hex, like a tile
+  [src `TileLayerUnitSprite`], so a grass frame on a sprite would paint grass over desert, snow, sea or a city, and
+  hide resources and roads. The user saw a mockup and chose: no frame on the map, the frame on the portraits. As on
+  the tilesets' own units, each sprite is a figure and a soft ground shadow on a transparent canvas: soldiers on the
+  right half, civilians (Clan Settler, Mortal Laborer) on the left, so two units on one tile do not overlap. Tall
+  subjects (immortals, Venerable, the wolf king, desolate beasts, Gu Houses) rise above the hex in a taller image.
+* **Every unit set.** The 64 × 56 sprite goes to the default set (AbsoluteUnits) and to HexaRealm's, the 32 × 28 one to
+  FantasyHex's, so the units show whichever unit set the player picks (Options → Display).
+* **Clan colours.** `<unit>-1.png` (the robe) is greyscale and tinted with the nation's inner colour, `<unit>-2.png`
+  (trim, sash, mantle, cape, banners) with its outer colour [src `getLayeredImageColored`]. Beasts have no clan
+  colour, so they have no layers.
+* **Canon cues.** Rank shows as the essence colour of the held Gu (green copper, red iron, white silver, yellow gold,
+  purple crystal; immortal green grape, red date, white lychee, yellow apricot) and as regalia: rank 2 a pouch and
+  headband, 3 a mantle, 4 a gold guan cap and an orbiting jade Gu, 5 a cape, a hairpin and a second Gu. The robes are
+  cross-collared with wide sleeves. Gu Yue and the Moon line raise the Moonlight Gu's crescent; Bai the Stream Gu's
+  water (its emblem, LORE_MAPPING); Xiong a bear phantom (Bear Strength Gu) and the Strength line a boar phantom (the
+  Black-White Boar Gu), both bare-armed; Wu a wind. The Thunder Crown Wolf wears its canon crown of gold fur.
+  Immortals float on cloud in their essence's ribbons, with a halo from rank seven; the Venerable stands in a
+  yellow-apricot aura with dao marks around it.
+* **ADAPTED designs.** The novel gives no look for these, so the designs are ours: the desolate beasts (a plated,
+  horned boar-rhino; a frilled serpent; a winged colossus, each in its rank's essence aura); the four Gu Houses (a
+  walking altar with red threads of luck, a flying war-chariot with amber time wheels, a palace on a floating rock
+  with a jade dragon, the Heavenly Court's pagoda with Fate Gu's light at its top); the lone cultivator's bamboo
+  hat, the demonic path's black robes and blood aura, and the immortal zombie's grey-green skin and stiff arms.
+* **Portraits are dioramas** (`Images.Units/UnitPortraits/<unit>.png`, 144 × 144 = 72 × 72 pixels doubled): the unit
+  stands on the tilesets' grass hex with its own ground inside the frame: a clan courtyard, Bai's stream, Xiong's
+  rocks, clouds for immortals, a forest edge for wolves, ash and bones for beasts, a field for mortals. Portraits are
+  never tinted, so each wears a fitting nation's colours. The Ink Night background (`Background.png`) is 144 × 144 to
+  match (Portrait.kt scales by the ratio).
+* **Attack effects** (`<unit>-attack-<n>.png`, default unit set, 64 × 55 pixels doubled to the old 128 × 110 frame):
+  * the rank's essence strike, with more rings at higher ranks;
+  * Moonlight crescent blades;
+  * the boar or bear phantom charging;
+  * Bai's water whip and Wu's wind blades;
+  * lightning (gold for the wolf king) and beast claws;
+  * blood slashes for the demonic path and ghost-green claws for the zombie;
+  * one move per Gu House: luck threads, time ripples, a dream dragon, Fate's beam.
+  Every unit has its own frames, so the old frames per unit type are gone.
+* Limits: Unciv has no idle, walking or death animation; an attack effect plays on the unit that takes the damage.
 
 ## Sounds (Phase D, 2026-11-02)
 

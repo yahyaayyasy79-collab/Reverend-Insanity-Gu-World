@@ -102,6 +102,10 @@ in LORE_MAPPING.md.
   victory scenes (`tools/art/victories.py`), rank regalia + larger map units. Third pass (user: the mod's terrain only,
   "like HexaRealm 64x56 and FantasyHex 32x28"): realm/wall tiles as pixel-art dioramas on the tilesets' grass frame,
   drawn natively at both sizes (`tools/art/pixeltiles.py`; tall subjects rise above the hex in taller images).
+  Fourth pass (user: every unit redone, canon, same pixel style): `tools/art/pixelunits.py`, 64x56 sprites for the
+  AbsoluteUnits and HexaRealm unit sets, 32x28 for FantasyHex, civ layers kept; no grass frame on map sprites (it
+  would hide the terrain; the user chose it after a mockup), diorama portraits with the frame (144 px, Background
+  too); pixel attack frames per unit. render3d/characters now only draw the leader silhouettes.
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.
@@ -186,8 +190,9 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `docs/KNOWN_ISSUES.md` — validator warnings explained, engine limits, trade-offs, what needs a real game.
 * `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.
-* `tools/gen_art.py` (+ `tools/art/`) → designed icons and attack animations (`Images.Units/TileSets/AbsoluteUnits/Units/<unit
-  type>-attack-<n>.png`); style guide `docs/ART.md`; repack the atlas after art changes.
+* `tools/gen_art.py` (+ `tools/art/`) → designed icons, pixel-art units (`Images.Units/TileSets/<unit set>/Units/`, attack
+  frames `<unit>-attack-<n>.png`, `Images.Units/UnitPortraits/`) and terrain; style guide `docs/ART.md`; repack the
+  atlas after art changes.
 * `data/*.csv` + `tools/gen_ruleset.py` → `jsons/` (commit all three); `Images/` placeholders (`make_placeholders.py`),
   `game.*`/`Units.*`/`Atlases.json` (`unciv_ci.py --pack`), `preview.png`.
 * `tools/` — checkers; `tools/tests/fixtures/capability_proof` proves every unique CAPABILITIES.md cites.

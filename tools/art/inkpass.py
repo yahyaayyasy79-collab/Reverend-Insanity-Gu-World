@@ -5,7 +5,8 @@ Builds, from the mod's own designed silhouettes and 3D characters:
 * a full-colour portrait for every building, tech, resource, improvement, promotion and nation icon
   (`Images.Portraits/<Type>Portraits/<name>.png`, 96 px), with one `Background.png` per type at the same size so Unciv
   draws the portrait at full size instead of shrinking it into its white circle [src ui/images/Portrait.kt];
-  units keep their 3D portraits, now set on an Ink Night background (`Images.Units/UnitPortraits/Background.png`);
+  units have pixel-art diorama portraits (tools/art/pixelunits.py) set on an Ink Night background
+  (`Images.Units/UnitPortraits/Background.png`);
 * a splash screen for every wonder (`Images.Wonders/WonderImages/<name>.png`, 2:1);
 * the eight majors' leader portraits (`Images/LeaderIcons/<leader>.png`);
 * the victory illustrations (`Images.Victories/VictoryIllustrations/<victory>/...`);
@@ -29,7 +30,7 @@ from PIL import Image, ImageDraw
 from . import portrait as P
 
 PX = 96            # portrait size in the atlas (Unciv recommends 100-256; 96 keeps the atlas to a few pages)
-UNIT_PX = 128      # the 3D unit portraits' size: their background must match it (Portrait.kt scales by the ratio)
+UNIT_PX = 144      # the unit portraits' size (pixelunits.PORTRAIT): the background must match it (Portrait.kt scales by the ratio)
 TYPE_OF = {"BuildingIcons": "BuildingPortraits", "TechIcons": "TechPortraits", "ResourceIcons": "ResourcePortraits",
            "ImprovementIcons": "ImprovementPortraits", "UnitPromotionIcons": "UnitPromotionPortraits",
            "NationIcons": "NationPortraits"}

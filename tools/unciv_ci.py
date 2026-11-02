@@ -106,6 +106,12 @@ def run(mod_root: Path, reporter: Reporter, pack: bool = False) -> None:
                     copied.append(path.name)
             if images and not copied:
                 reporter.error("unciv_ci", "--pack: Images folders exist but Unciv produced no atlas")
+            atlases = {n[:-len(".atlas")] for n in copied if n.endswith(".atlas")}
+            for path in sorted(mod_root.iterdir()):   # pages an atlas no longer needs (it shrank) would still ship
+                page = re.match(r"^(.*?)\d*\.png$", path.name)
+                if page and page.group(1) in atlases and path.name not in copied:
+                    path.unlink()
+                    reporter.info("unciv_ci", f"--pack: removed the stale atlas page {path.name}")
             reporter.info("unciv_ci", f"packed atlas files copied to the mod root: {copied or 'none (no Images)'}")
         reporter.info("unciv_ci", f"official validator: {len(findings)} line(s), exit {result.returncode}")
 
