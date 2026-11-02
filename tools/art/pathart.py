@@ -459,6 +459,19 @@ def status(name: str) -> G:
     return g
 
 
+def hunger_meter(food: str, pct: int):
+    """Phase D: a Gu's hunger meter step: its food over a bowl inside a ring filled clockwise from the top to pct."""
+    from .glyphs2 import _boar_small, _jade_small, _orchid_small, _wine_small, bowl
+    food_draw = {"Moon Orchid": _orchid_small, "Wild Boar": _boar_small, "Jade": _jade_small, "Wine": _wine_small}[food]
+    g, inner = G(), G()
+    bowl(inner, 50, 70, 26)
+    food_draw(inner)
+    place(g, inner, 50, 52, 0.66)
+    g.arc_band(50, 50, 49, 45, 0, 360)                        # the empty meter: a thin ring
+    g.arc_band(50, 50, 49, 38, 90, 90 - 360 * pct / 100)      # the hunger so far: a thick band from the top
+    return g
+
+
 DEBUFF_SYMBOL = {"Burning": "fire", "Frozen": "ice", "Bleeding": "blood", "Blinded": "light", "Soul-Torn": "soul",
                  "Dazed": "sound", "Guard Broken": "metal", "Entangled": "wood", "Shocked": "lightning",
                  "Doomed": "luck", "Aged": "time", "Weighted": "earth"}
@@ -485,6 +498,10 @@ def icons() -> list[tuple[str, str, object, str]]:
             out.append(("UnitPromotionIcons", gu["name"], (lambda k=gu["path"]: path_gu(k)), "white"))
     for s in gen_paths.STATUSES:
         out.append(("UnitPromotionIcons", s["name"], (lambda n=s["name"]: status(n)), "white"))
+    from gu_rules import stage_name, stages
+    for name, _, food, rank, _ in gen_paths.all_food_gu():   # Phase D: every Gu's hunger meter, step by step
+        for p in stages(int(rank)):
+            out.append(("UnitPromotionIcons", stage_name(name, p), (lambda f=food, q=p: hunger_meter(f, q)), "white"))
     return out
 
 

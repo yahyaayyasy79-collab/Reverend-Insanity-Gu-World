@@ -36,6 +36,9 @@ MOD_NAME = "Reverend Insanity Gu World"  # the installed folder name (CLAUDE.md 
 JAVA_SRC = Path(__file__).resolve().parent / "autoplay" / "Autoplay.java"
 DEATH = re.compile(r"^\[This Unit\] loses the \[(.+?)\] promotion <upon losing the \[(.+?)\] status> <when below \[0\] \[(.+?)\]>")
 TIMER = re.compile(r"^\[This Unit\] gains the \[(.+?)\] status for \[(\d+)\] turn\(s\)")
+# Phase D: the hunger meter in percent: the roll fires at a turn start while the Gu's "<Gu> Hunger <p>%" step is held
+METER = re.compile(r"^\[This Unit\] loses the \[(.+?)\] promotion <upon turn start> <when below \[0\] \[(.+?)\]> "
+                   r"<for units with \[(.+?) Hunger \d+%\]>")
 
 
 def load(mod: Path, name: str):
@@ -45,13 +48,20 @@ def load(mod: Path, name: str):
 
 
 def gu_table(mod: Path) -> list[tuple[str, str, str, int]]:
-    """(Gu, hunger status, food, rank) from the promotions; rank from the status length (shorter = rank 1)."""
+    """(Gu, hunger status, food, rank) from the promotions; rank from the status length (shorter = rank 1). With the
+    percent meter the status is "<Gu> Hunger *" (any step; the harness matches the prefix) and the length is the number
+    of steps."""
     rows = []
     for p in load(mod, "UnitPromotions.json"):
-        death = next((m for u in p.get("uniques", []) if (m := DEATH.match(u))), None)
-        timer = next((int(m[2]) for u in p.get("uniques", []) if (m := TIMER.match(u))), None)
+        us = p.get("uniques", [])
+        death = next((m for u in us if (m := DEATH.match(u))), None)
+        timer = next((int(m[2]) for u in us if (m := TIMER.match(u))), None)
+        meter = next((m for u in us if (m := METER.match(u))), None)
         if death and timer:
             rows.append((death[1], death[2], death[3], timer))
+        elif meter:
+            steps = len({u for u in us if u.startswith(f"[This Unit] gains the [{meter[1]} Hunger ")}) - 1
+            rows.append((meter[1], f"{meter[1]} Hunger *", meter[2], steps))
     lengths = sorted({t for *_, t in rows})
     return [(g, s, f, lengths.index(t) + 1) for g, s, f, t in rows]
 

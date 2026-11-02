@@ -55,6 +55,24 @@ public class Autoplay {
         }
         return b.append('"').toString();
     }
+    static String describeTile(com.unciv.logic.map.tile.Tile t) {
+        StringBuilder b = new StringBuilder(t.getPosition() + " " + t.getLastTerrain().getName() + (t.isLand() ? "" : "(water)")
+                + " owner=" + (t.getOwner() == null ? "-" : t.getOwner().getCivName()) + " city=" + t.isCityCenter()
+                + " units=" + kotlin.sequences.SequencesKt.toList(t.getUnits()).size() + " |");
+        for (com.unciv.logic.map.tile.Tile n : kotlin.sequences.SequencesKt.toList(t.getNeighbors()))
+            b.append(" ").append(n.getLastTerrain().getName()).append(n.isImpassible() ? "!" : "")
+                    .append(n.getMilitaryUnit() == null ? "" : "M:" + n.getMilitaryUnit().getCiv().getCivName());
+        return b.toString();
+    }
+
+    /** A hunger status, or with a trailing '*' any status of that prefix (the Phase D percent meter). */
+    static boolean holds(Set<String> statuses, String status) {
+        if (!status.endsWith("*")) return statuses.contains(status);
+        String prefix = status.substring(0, status.length() - 1);
+        for (String s : statuses) if (s.startsWith(prefix)) return true;
+        return false;
+    }
+
     static String obj(Map<String, ?> m) {
         StringBuilder b = new StringBuilder("{");
         boolean first = true;
@@ -149,6 +167,12 @@ public class Autoplay {
         int lastTurn = gi.getTurns();
         while (gi.getTurns() < turns) {
             int target = gi.getTurns() + 1;
+            // crash forensics: where every Gu Master stood before the turn (an upgrade that fails to place its unit
+            // destroys it, so the missing one names the tile)
+            Map<Integer, String> before = new HashMap<>();
+            for (Civilization civ : gi.getCivilizations())
+                for (MapUnit u : kotlin.sequences.SequencesKt.toList(civ.getUnits().getCivUnits()))
+                    if (u.getName().startsWith("Rank ")) before.put(u.getId(), civ.getCivName() + " " + u.getName() + " " + describeTile(u.getCurrentTile()));
             try {
                 gi.setSimulateUntilWin(true);
                 gi.setSimulateMaxTurns(target);
@@ -159,7 +183,12 @@ public class Autoplay {
                 out.println(obj(new LinkedHashMap<String, Object>() {{
                     put("event", "crash"); put("turn", target); put("trace", sw.toString());
                 }}));
-                System.err.println("CRASH on turn " + target + ":\n" + sw);
+                StringBuilder lost = new StringBuilder();
+                java.util.Set<Integer> now = new java.util.HashSet<>();
+                for (Civilization civ : gi.getCivilizations()) for (MapUnit u : kotlin.sequences.SequencesKt.toList(civ.getUnits().getCivUnits())) now.add(u.getId());
+                for (Map.Entry<Integer, String> e2 : before.entrySet()) if (!now.contains(e2.getKey())) lost.append(e2.getValue()).append("\n");
+                out.println(obj(new LinkedHashMap<String, Object>() {{ put("event", "crashUnits"); put("lost", lost.toString()); }}));
+                System.err.println("CRASH on turn " + target + ":\n" + sw + "\nunits gone this turn:\n" + lost);
                 System.exit(2);
             }
             lastTurn = gi.getTurns();
@@ -276,7 +305,7 @@ public class Autoplay {
                 Set<String> countedStatus = new HashSet<>();
                 for (Gu g : gus) {
                     String r = "rank" + g.rank;
-                    boolean hasP = promos.contains(g.name), hasS = statuses.contains(g.status);
+                    boolean hasP = promos.contains(g.name), hasS = holds(statuses, g.status);
                     if (hasP) {
                         inc(holders, g.name, 1);
                         inc(held, r, 1);
@@ -284,9 +313,9 @@ public class Autoplay {
                     }
                     if (hasS && countedStatus.add(g.status)) inc(hungry, g.status, 1);
                     if (p == null) continue;
-                    boolean hadP = p.promos.contains(g.name), hadS = p.statuses.contains(g.status);
+                    boolean hadP = p.promos.contains(g.name), hadS = holds(p.statuses, g.status);
                     if (hadP && !hadS && hasS && hasP) inc(start, r, 1);
-                    if (hadP && hadS && !hasS && !hasP && !gainedFusion) inc(death, r, 1);
+                    if (hadP && hadS && !hasP && !gainedFusion) inc(death, r, 1);
                     else if (hadP && hadS && !hasS && hasP) inc(recover, r, 1);
                     else if (hadP && !hasP && !gainedFusion) inc(otherLoss, g.name, 1);
                 }

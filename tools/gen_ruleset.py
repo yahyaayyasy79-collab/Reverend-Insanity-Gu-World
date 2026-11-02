@@ -25,6 +25,7 @@ from pathlib import Path
 import json5
 
 import gen_paths
+import lifespan as LS  # immortal lifespan numbers (tools/lifespan.py), shared with the Tutorial page
 from common import REPO_ROOT, VANILLA_JSONS
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -184,7 +185,7 @@ GRADES = [("Lower", 1, 2), ("Middle", 2, 4), ("Upper", 3, 6), ("Super", 5, 10)] 
 
 def ascended(grade, weight, a, d):
     return {"text": f"{'An' if grade == 'Upper' else 'A'} {grade.lower()}-grade blessed land opens", "uniques": [
-        f"[This Unit] gains the [{grade} Grade Blessed Land] promotion", f"Instantly provides [5] [{LIFESPAN}]",
+        f"[This Unit] gains the [{grade} Grade Blessed Land] promotion", f"Instantly provides [{LS.GRANT[6]}] [{LIFESPAN}]",
         "Triggers a [Immortal Ascension] event",
         # an upgrade copies the promotions and re-fires their direct effects on the new unit [src UnitManager.
         # placeUnitNearTile]: the Ascension promotion would throw the event again on the immortal being placed, and a
@@ -248,14 +249,19 @@ def blessed_land(grade, essence, stones):
 LIFESPAN_SOURCES = [u for t in ("Forest", "Jungle", "Marsh") for u in per_speed(
     lambda m, t=t: f"Instantly provides [1] [{LIFESPAN}] <upon turn start> <for every [8] [Owned [{t}] Tiles]> "
                    f"<with [{chance(15, m)}]% chance> <after discovering [Calamity Lore]> <for [Major] Civilizations>")]
-IMMORTAL_LIFE = [f"Instantly consumes [1] [{LIFESPAN}] <upon turn start> <every [{turns(10, m)}] turns> <on [{n}] game speed>"
-                 for n, m in SPEEDS] + [
-    f"Can only heal by pillaging <when below [1] [{LIFESPAN}]>",
-    f"[This Unit] takes [7] damage <upon turn start> <when below [1] [{LIFESPAN}]>",
-    # Phase D: an immortal cultivates wherever it stands (its aperture is its own academy); in autoplay the AI's
-    # immortals lacked the XP for the Great and Supreme Grandmaster tiers and never reached a Venerable
-    "[This Unit] gains [3] XP <upon turn start>",
-    "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"]  # a grotto-heaven: faster insight
+# Phase D (the user, 2026-11-02): a higher rank lives longer, so it burns its Lifespan Gu more slowly (tools/lifespan.py)
+def immortal_life(rank):
+    return [f"Instantly consumes [1] [{LIFESPAN}] <upon turn start> <every [{turns(LS.BURN[rank], m)}] turns> "
+            f"<on [{n}] game speed>" for n, m in SPEEDS] + [
+        f"Can only heal by pillaging <when below [1] [{LIFESPAN}]>",
+        f"[This Unit] takes [{LS.STARVE_DAMAGE}] damage <upon turn start> <when below [1] [{LIFESPAN}]>"]
+
+
+# Phase D: an immortal cultivates wherever it stands (its aperture is its own academy); in autoplay the AI's
+# immortals lacked the XP for the Great and Supreme Grandmaster tiers and never reached a Venerable
+IMMORTAL_XP = ["[This Unit] gains [3] XP <upon turn start>",
+               "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>"]  # a grotto-heaven: faster insight
+IMMORTAL_RANK = {"Rank Six Gu Immortal": 6, "Rank Seven Gu Immortal": 7, "Rank Eight Gu Immortal": 8}
 
 
 def toll(text, effects, weight):
@@ -321,7 +327,9 @@ def advance(target):
         + [f"Unavailable <when below [{qi_cost(ADVANCE_COST, m)}] [{essence}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(ADVANCE_COST, m)}] [{essence}] <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"[This Unit] loses the [{SURVIVOR}] promotion", f"[This Unit] loses the [{name}] promotion",
-           "[This Unit] gains the [Advancing] status for [1] turn(s)"] + extra
+           "[This Unit] gains the [Advancing] status for [1] turn(s)",
+           # the user (2026-11-02): each rank climbed lengthens the immortal's life
+           f"Instantly provides [{LS.GRANT[7 if target == 'Rank Seven' else 8]}] [{LIFESPAN}]"] + extra
         + ["[This Unit] upgrades for free including special upgrades", w("+200")]}
 
 
@@ -332,6 +340,7 @@ def advance(target):
 # Eternal Life, Fang Yuan's goal and the arc's victory (MOD_SPEC_3). When it dies its ascension is removed (the race
 # reopens, Phase A2) and its clan gains the seal of its true inheritance.
 APRICOT = "Yellow Apricot Immortal Essence"  # rank nine (R V6/249)
+ETERNAL_COST = 300  # yellow apricot essence for Eternal Life on Standard (was 150 until Phase D, 2026-11-02)
 VEN_ELSEWHERE = "<if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>"
 VENERABLE = "Venerable"
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
@@ -574,7 +583,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     # (1/8 gave 0.4 inheritances per game in autoplay; 1/2 aims at about 1.5).
     u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER] + DAO_LINES
     if r["name"] in IMMORTALS:
-        u["uniques"] += IMMORTAL_LIFE  # MOD_SPEC_2 C2: every immortal burns Lifespan Gu
+        u["uniques"] += immortal_life(IMMORTAL_RANK[r["name"]]) + IMMORTAL_XP  # MOD_SPEC_2 C2: immortals burn Lifespan Gu
         u["uniques"].append("Can pass through impassable tiles")  # immortals cross mountains and the region walls
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
@@ -611,7 +620,7 @@ dump("Units.json", [
     {"name": VENERABLE, "unitType": "Gu Master", "movement": 5, "strength": gen_paths.PP.VENERABLE_STRENGTH, "cost": 1000,
      "requiredTech": "Dao Lord",
      "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
-                                         *IMMORTAL_LIFE[:-2],
+                                         *immortal_life(9),
                                          f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs",
                                          "[2] additional attacks per turn", "Can move after attacking", "Ignores terrain cost",
                                          "Can pass through impassable tiles", "May capture killed [Military] units",
@@ -668,7 +677,7 @@ PROMO_DEAD = [f"{d} {c}" for d in LADDER_DEAD + RO_DEAD for c in LW_IMPOSSIBLE i
 
 
 # R3 hunger meter: tools/gu_rules.py (shared with the path Gu of tools/gen_paths.py).
-from gu_rules import HUNGER, gu_promotion  # noqa: E402
+from gu_rules import HUNGER, gu_promotion, hunger_statuses, stone_comment  # noqa: E402
 
 
 def ladder(base, fusion, tusk):
@@ -712,8 +721,8 @@ dump("UnitPromotions.json", [
                                         # a killer move needs its rank-2 Gu; if that Gu died of hunger, the move goes too
                                         "[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>"]},
     # clan emblem Gu (canon names, ch22); effects and foods unknown, so they eat stones
-    {"name": "Bear Strength Gu", "uniques": ["[+10]% Strength", "[+10]% maintenance costs"]},
-    {"name": "Stream Gu", "uniques": ["[+10] HP when healing", "[+10]% maintenance costs"]},
+    {"name": "Bear Strength Gu", "uniques": [f"Comment [{stone_comment(10)[0]}]", "[+10]% Strength", "[+10]% maintenance costs"]},
+    {"name": "Stream Gu", "uniques": [f"Comment [{stone_comment(10)[0]}]", "[+10] HP when healing", "[+10]% maintenance costs"]},
     # C1 (canon overhaul, conflicts research): the righteous hunt demonic cultivators and post bounties on them (R V2c29,
     # V2c35). A marker on every military unit of a Demonic Path clan; it clears itself once the clan's camp changes.
     {"name": "Demonic Infamy", "uniques": [
@@ -721,7 +730,9 @@ dump("UnitPromotions.json", [
         "[This Unit] loses the [Demonic Infamy] promotion <upon turn start> <before adopting [Demonic Path]>"]},
     # R3 hunger statuses (timers; see hunger()); each removes itself once its food is back
 ] + [{"name": status, "uniques": [f"[This Unit] loses the [{status}] status <upon turn start> <when above [-1] [{food}]>"]}
-     for food, status in HUNGER.items()]
+     for food, status in HUNGER.items()]  # legacy since Phase D: kept so old saves load; nothing grants them now
+    # Phase D: each Gu's hunger meter in percent (tools/gu_rules.py)
+    + [st for r in table("gu.csv") for st in hunger_statuses(r["name"], r["food"], int(r["rank"]))]
     # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
     + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions() + [
     # MOD_SPEC_2 C1: the ascension is bought like Refine Gu (E4: kept, self-removing); the human may try with the hasty
@@ -753,10 +764,13 @@ dump("UnitPromotions.json", [
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),
     {"name": "Venerable Killer Move", "uniques": ["[+100]% Strength"]},
     # the arc's victory: the Venerable spends its yellow apricot essence on eternal life before its lifespan runs out
+    # Phase D (2026-11-02): with immortals' lifespan growing by rank, every Five Regions autoplay game (6 x 400) raised a
+    # Venerable (T314-378) and four won Eternal Life 30-35 turns later at 150. At ETERNAL_COST the Venerable reigns, and
+    # can be hunted, for about twice as long: rank nine stays hard and long, as the user expects
     {"name": "Seek Eternal Life", "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{VENERABLE}] units>", "Unavailable <if [Eternal Life] is constructed by anybody>"]
-        + [f"Unavailable <when below [{qi_cost(150, m)}] [{APRICOT}]> <on [{n}] game speed>" for n, m in SPEEDS]
-        + [f"Instantly consumes [{qi_cost(150, m)}] [{APRICOT}] <on [{n}] game speed>" for n, m in SPEEDS]
+        + [f"Unavailable <when below [{qi_cost(ETERNAL_COST, m)}] [{APRICOT}]> <on [{n}] game speed>" for n, m in SPEEDS]
+        + [f"Instantly consumes [{qi_cost(ETERNAL_COST, m)}] [{APRICOT}] <on [{n}] game speed>" for n, m in SPEEDS]
         + ["Gain a free [Eternal Life] [in capital]", "[This Unit] loses the [Seek Eternal Life] promotion", w("+1000")]},
     {"name": "Ascend to Venerable", "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] units> <after discovering [Dao Lord]>",
@@ -765,6 +779,7 @@ dump("UnitPromotions.json", [
         + [f"Unavailable <when below [{qi_cost(60, m)}] [{WHITE}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(60, m)}] [{WHITE}] <on [{n}] game speed>" for n, m in SPEEDS]
         + ["Gain a free [Venerable Ascension] [in capital]", "[This Unit] loses the [Ascend to Venerable] promotion",
+           f"Instantly provides [{LS.GRANT[9]}] [{LIFESPAN}]",
            # an upgrade keeps every promotion [src MapUnit.copyStatisticsTo]: without this the Venerable kept the
            # grotto-heaven's calamity and tribulation countdowns, whose essence choices stop at rank eight
            "[This Unit] loses the [Grotto-Heaven Aperture] promotion",
@@ -1484,6 +1499,16 @@ dump("Personalities.json", [
      "priorities": {"Righteous Path": 10, "Strength Path": 4},  # D3: the clan walks wind; Wu Ji alone walks strength
      "uniques": ["[+50]% weight to [Martial Arena] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
 ])
+for _k in (("UnitPromotions.json", "Seek Eternal Life"), ("Buildings.json", "Eternal Life"), ("TileResources.json", APRICOT)):
+    assert f"{ETERNAL_COST} " in PEDIA[_k], f"civilopedia {_k[1]}: Eternal Life costs {ETERNAL_COST}"
+# the lifespan texts quote tools/lifespan.py: stop the build when they drift apart
+_lg = PEDIA[("TileResources.json", LS.LIFESPAN)]
+assert (f"{LS.GRANT[6]}, {LS.GRANT[7]}, {LS.GRANT[8]} and {LS.GRANT[9]}" in _lg
+        and f"{LS.BURN[6]}, {LS.BURN[7]}, {LS.BURN[8]} or {LS.BURN[9]} turns" in _lg
+        and f"{LS.STARVE_DAMAGE} HP a turn" in _lg), "data/civilopedia.csv Lifespan Gu: update its numbers (tools/lifespan.py)"
+for _n, _g in (("Ascension", 6), ("Advance to Rank Seven", 7), ("Advance to Rank Eight", 8), ("Ascend to Venerable", 9)):
+    assert f"brings {LS.GRANT[_g]} Lifespan Gu" in PEDIA[("UnitPromotions.json", _n)], f"civilopedia {_n}: lifespan grant"
+assert f"brings {LS.GRANT[9]} Lifespan Gu" in PEDIA[("Units.json", VENERABLE)], "civilopedia Venerable: lifespan grant"
 # Phase D: the power-scaling pages in Civilopedia > Tutorials (tools/gen_paths.py, tools/path_powers.py)
 assert [x[0] for x in DAO_EFFECTS] == ["[+5]% Strength", "[+10]% Strength", "[+15]% Strength", "[+20]% Strength",
                                        "[+30]% Strength"] and DAO == gen_paths.PP.DAO_TIERS, "update tools/path_powers.py"

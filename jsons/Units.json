@@ -304,10 +304,10 @@
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Quick] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Standard] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [22] turns> <on [Epic] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Marathon] game speed>",
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
@@ -353,10 +353,10 @@
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [13] turns> <on [Quick] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Standard] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Epic] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [60] turns> <on [Marathon] game speed>",
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
@@ -1088,10 +1088,10 @@
       "Cannot be purchased",
       "Limited to [1] per Civilization",
       "Never appears as a Barbarian unit",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
-      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Quick] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Standard] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Epic] game speed>",
+      "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [90] turns> <on [Marathon] game speed>",
       "Can only heal by pillaging <when below [1] [Lifespan Gu]>",
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>",
@@ -1129,7 +1129,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. Like every immortal it burns a Lifespan Gu each ten turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."
+        "text": "A Venerable (尊者), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."
       }
     ]
   },

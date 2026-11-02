@@ -245,20 +245,20 @@ Demonic; personalities set the rest.
 | Aptitude C | 丙等资质 | CANON | An essence sea filling 40-59% of the aperture (Fang Yuan's grade).<br>*Note: Verified: grades 甲乙丙丁; aptitude = the share of the aperture the essence sea fills (D 20-30%, C 40-59%, B 60-70%, A 80-90%) plus refill speed; low aptitude needs more primeval stones. Effects are 4X mappings.* | Rolled at 35%; baseline grade with no effect, so every Gu Master shows a grade (P2).<br>*Fields:* no unitTypes; Aptitude Awakening only | — |
 | Aptitude D | 丁等资质 | CANON | An essence sea filling 20-30% of the aperture that refills slowly and needs many stones to advance.<br>*Note: Verified: grades 甲乙丙丁; aptitude = the share of the aperture the essence sea fills (D 20-30%, C 40-59%, B 60-70%, A 80-90%) plus refill speed; low aptitude needs more primeval stones. Effects are 4X mappings.* | Rolled at 40% (28.6% with the Awakening Grounds): weaker, eats more and learns slowly, so the player must decide whether to keep or disband the unit (P2, P1).<br>*Fields:* no unitTypes; Aptitude Awakening only | `[-10]% Strength`<br>`[+20]% maintenance costs`<br>`[-25]% XP gained from combat` |
 | Refine Gu | — | ADAPTED | A Gu Master spends hard-won insight on a refinement attempt. | Only XP-purchasable promotion (kept, self-removing, E4) that opens the Refinement Attempt Alert on this unit. Its Unavailable list is the new ladder's dead states plus, for a Rank One, the states where no Liquor Worm lure is possible either, so neither the AI nor a player pays XP for nothing (checked over 62,208 unit states by tools/ladder_check.py).<br>*Fields:* unitTypes [Gu Master, Moon Gu Master, Strength Gu Master]; closes below 50 HP; dead states: see 'Refinement ladder' | `Only available <after discovering [Gu Refinement]>`<br>`Unavailable <when below [50] HP>`<br>the 46 dead-state lines under 'Refinement ladder'<br>`Triggers a [Refinement Attempt] event`<br>`[This Unit] loses the [Refine Gu] promotion <upon turn start>` |
-| Moonlight Gu | 月光蛊 | CANON | Gu Yue's emblem attack Gu that throws moon blades and eats moon orchid petals.<br>*Note: Verified: rank 1, eats moon orchid petals (4 a day), Gu Yue's secret-bred emblem Gu, ranged moon blade, D-grade students could not refine it. Its path is unnamed in canon: 'Moon Path' is the user's ADAPTED design choice. Effects are 4X mappings.* | Rung 1 of the Moon ladder and Gu Yue's emblem: +20% attack, eats 1 Moon Orchid (a shortage gives every holder -25% [src]); -10% on a Strength Master. It removes itself at once from an unpathed D-grade Rank One (canon: D grades cannot refine it; fires when added, E4, because starting promotions come after the creation triggers [src BaseUnit.construct]). Fused into Moon Raiment at rung 2 (P1, P2, P4). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts. Since D2 (2026-10-19) also the Moon path's Gu: a Moon Master receives it at a turn start while orchids are in surplus and it holds no Moon Raiment.<br>*Fields:* no unitTypes; granted by the Moon ladder and the Gu Yue nation unique | `[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>`<br>`Consumes [1] [Moon Orchid]`<br>`[This Unit] gains the [Orchid Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>`<br>`[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>`<br>`[-10]% Strength <for units with [Strength Master]>`<br>`[This Unit] loses the [Moonlight Gu] promotion <for [Rank One Gu Master] units> <for units without [Moon Master]> <for units with [Aptitude D]>` |
-| White Boar Gu | 白豕蛊 | CANON | A rare beast-strength Gu that rebuilds its user's body until he has one boar's strength.<br>*Note: Verified (boar_gu): rank 1, rare (~600 stones), kept in the aperture and fed pork (one adult pig per 5 days); each boar Gu adds one boar's strength that stays even if the Gu dies; Fang Yuan's came from the Flower Wine Monk's trial. Effects are 4X mappings.* | Rung 1 of the Strength ladder: +15% Strength, eats 1 Wild Boar (pork). Fused into White Jade Gu at rung 2 (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts. Since D2 (2026-10-19) also the Strength path's Gu (the research's Black Boar stays the Jia caravan's): a Strength Master receives it at a turn start while pork is in surplus and it holds no White Jade Gu.<br>*Fields:* no unitTypes; Strength ladder only | `[+15]% Strength <when above [-1] [Wild Boar]>`<br>`Consumes [1] [Wild Boar]`<br>`[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>`<br>`[This Unit] loses the [White Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>` |
-| Black Boar Gu | 黑豕蛊 | CANON | The black twin of the boar Gu; its strength stacks with the white one's.<br>*Note: Verified (boar_gu): rank 1, eats pork, a second boar's strength that stacks with the white one (Fang Yuan reached two boars); Fang Yuan bought his at the Jia caravan's tree-house Gu shop, listed at 3000 stones because bidders competed. Not the archetype of the strength path.* | Off the ladder: Gu Masters trained by the civ allied with the Jia Clan receive it while Wild Boar is in surplus (the caravan's Gu shop; one ally at a time, like the canon bidding war). +15% Strength, eats 1 Wild Boar, stacks with White Boar or White Jade Gu (two boars' strength) (P1, P5). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts.<br>*Fields:* no unitTypes; granted only by the Merchant Clan ally bonus | `[+15]% Strength <when above [-1] [Wild Boar]>`<br>`Consumes [1] [Wild Boar]`<br>`[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>`<br>`[This Unit] loses the [Black Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>` |
-| Jade Skin Gu | 玉皮蛊 | CANON | A rank-1 defensive Gu that wraps its user in a pale-green jade skin and eats jade.<br>*Note: Verified (jade_skin): rank 1 defensive Gu, rarest of the skin series (iron, copper, stone, beast), eats 2 liang of jade every 10 days; Gu Yue Bo gave one to Fang Zheng; the Flower Wine Monk's trial held another. Effects are 4X mappings.* | Rank One rung (the cap for an unpathed Gu Master): +15% defending, eats 1 Jade. Carried into a path, it is the second ingredient of Moon Raiment or White Jade Gu and saves that fusion's extra jade (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts.<br>*Fields:* no unitTypes; Rank One ladder only | `[+15]% Strength <when defending> <when above [-1] [Jade]>`<br>`Consumes [1] [Jade]`<br>`[This Unit] gains the [Jade Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>`<br>`[This Unit] loses the [Jade Skin Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>` |
-| White Jade Gu | 白玉蛊 | CANON | A rank-2 fusion of a boar Gu and a jade-skin Gu: the boar's strength stays in the body and the jade light hardens.<br>*Note: Verified (jade_skin, boar_gu): rank 2, refined from White Boar Gu + Jade Skin Gu by a thousand-year-old recipe; a wild-boar tusk raises the success rate (Fang Yuan's boar-king snow tusk gave about +20%, 两成, ch99; any spare Wild Boar standing in for it is ADAPTED); its jade light is more than twice as strong; it eats 8 liang of jade per 20 days, costlier than both parents together; the boar strength stays and pork is no longer needed. Effect sizes are 4X mappings.* | Strength rung 2. The fusion removes White Boar Gu and Jade Skin Gu and grants +15% Strength (the kept boar strength) and +30% defending; eats 2 Jade, no Wild Boar. Odds: careful 70% (90% with a spare Wild Boar as the tusk), reckless 40% (60%). Gated on jade surplus: 1 spare with a Jade Skin to absorb, 2 without (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 4 more turns (rank 2), dies with a 50% chance, rolled again every 5 turns while the deficit lasts.<br>*Fields:* no unitTypes; Strength ladder only | `[+15]% Strength <when above [-1] [Jade]>`<br>`[+30]% Strength <when defending> <when above [-1] [Jade]>`<br>`Consumes [2] [Jade]`<br>`[This Unit] gains the [Jade Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>`<br>`[This Unit] loses the [White Jade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>` |
-| Moon Raiment | 月霓裳 | CANON **[VERIFY]** | A rank-2 fusion of Moonlight Gu and Jade Skin Gu: a moonlit garment that shields its user and helps nearby allies hold.<br>*[VERIFY] Recipe and name verified (fan translation ch98, ch104, ch106): Gu Yue Bo teaches Fang Zheng the recipe in ch98, where the first attempt fails; he succeeds by ch104. Its food (moon orchid) rests on the fan wiki alone.* | Moon rung 2. The fusion removes Moonlight Gu and Jade Skin Gu. Canon makes it a defensive Gu that also helps allies defend, slightly weaker than White Jade Gu: +20% defending and +10% for military units within 1 tile; the moon blade's +20% attack is kept as an adaptation so the fusion is no downgrade for an attacking unit. Eats 1 Moon Orchid; jade is only a fusion material (unless a Jade Skin is carried). Odds: careful 70%, reckless 40% (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 4 more turns (rank 2), dies with a 50% chance, rolled again every 5 turns while the deficit lasts.<br>*Fields:* no unitTypes; Moon ladder only | `[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>`<br>`[+20]% Strength <when defending> <when above [-1] [Moon Orchid]>`<br>`[+10]% Strength bonus for [Military] units within [1] tiles <when above [-1] [Moon Orchid]>`<br>`Consumes [1] [Moon Orchid]`<br>`[This Unit] gains the [Orchid Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>`<br>`[This Unit] loses the [Moon Raiment] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>` |
-| Liquor Worm | 酒虫 | CANON | A wine-drinking Gu that refines a rank-one Gu Master's essence by one small stage.<br>*Note: Verified (liquor_worm): rank 1, eats wine, refines its user's own essence by one minor stage, useless for rank-2 and rank-3 Gu Masters unless refined on: Fang Yuan fused two worms with four wines into the rank-2 Four Flavours Liquor Worm (四味酒虫, R V1c121), later Seven Fragrances (rank 3) and Nine Eyes (rank 4); Fang Yuan lured his with a jar of Green Bamboo Wine and found it in the Flower Wine Monk's cache; refining it cost at least 30 stones. 'Faster essence = faster XP' is a 4X mapping (question 7 default).* | +50% combat XP, drinks 1 Wine. Rank One only (canon): it is lured through its own Refinement Attempt choice (30 stones, 70%), and it leaves the unit at the next turn start once the unit is above rank one, freeing the Wine (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts. Since D2 (2026-10-19) also the Food path's Gu for a rank-one Food Master (a higher Food Master gets the Four Flavours Liquor Worm, docs/PATHS.md).<br>*Fields:* no unitTypes; Refinement Attempt choice 3 only | `[+50]% XP gained from combat <when above [-1] [Wine]>`<br>`Consumes [1] [Wine]`<br>`[This Unit] gains the [Wine Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>`<br>`[This Unit] loses the [Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>`<br>`[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [non-[Rank One Gu Master]] units>` |
+| Moonlight Gu | 月光蛊 | CANON | Gu Yue's emblem attack Gu that throws moon blades and eats moon orchid petals.<br>*Note: Verified: rank 1, eats moon orchid petals (4 a day), Gu Yue's secret-bred emblem Gu, ranged moon blade, D-grade students could not refine it. Its path is unnamed in canon: 'Moon Path' is the user's ADAPTED design choice. Effects are 4X mappings.* | Rung 1 of the Moon ladder and Gu Yue's emblem: +20% attack, eats 1 Moon Orchid (a shortage gives every holder -25% [src]); -10% on a Strength Master. It removes itself at once from an unpathed D-grade Rank One (canon: D grades cannot refine it; fires when added, E4, because starting promotions come after the creation triggers [src BaseUnit.construct]). Fused into Moon Raiment at rung 2 (P1, P2, P4). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts. Since D2 (2026-10-19) also the Moon path's Gu: a Moon Master receives it at a turn start while orchids are in surplus and it holds no Moon Raiment.<br>*Fields:* no unitTypes; granted by the Moon ladder and the Gu Yue nation unique | `Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]`<br>`[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>`<br>`Consumes [1] [Moon Orchid]`<br>`[This Unit] loses the [Moonlight Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 67%]> <with [50]% chance>`<br>`[This Unit] gains the [Moonlight Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 67%]>`<br>`[This Unit] gains the [Moonlight Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 33%]>`<br>`[This Unit] gains the [Moonlight Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 100%]> <for units without [Moonlight Gu Hunger 67%]>`<br>`[This Unit] gains the [Moonlight Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonlight Gu Hunger 33%]> <for units without [Moonlight Gu Hunger 67%]> <for units without [Moonlight Gu Hunger 100%]>`<br>`[-10]% Strength <for units with [Strength Master]>`<br>`[This Unit] loses the [Moonlight Gu] promotion <for [Rank One Gu Master] units> <for units without [Moon Master]> <for units with [Aptitude D]>` |
+| White Boar Gu | 白豕蛊 | CANON | A rare beast-strength Gu that rebuilds its user's body until he has one boar's strength.<br>*Note: Verified (boar_gu): rank 1, rare (~600 stones), kept in the aperture and fed pork (one adult pig per 5 days); each boar Gu adds one boar's strength that stays even if the Gu dies; Fang Yuan's came from the Flower Wine Monk's trial. Effects are 4X mappings.* | Rung 1 of the Strength ladder: +15% Strength, eats 1 Wild Boar (pork). Fused into White Jade Gu at rung 2 (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts. Since D2 (2026-10-19) also the Strength path's Gu (the research's Black Boar stays the Jia caravan's): a Strength Master receives it at a turn start while pork is in surplus and it holds no White Jade Gu.<br>*Fields:* no unitTypes; Strength ladder only | `Comment [Food: 1 Wild Boar a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]`<br>`[+15]% Strength <when above [-1] [Wild Boar]>`<br>`Consumes [1] [Wild Boar]`<br>`[This Unit] loses the [White Boar Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 67%]> <with [50]% chance>`<br>`[This Unit] gains the [White Boar Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 67%]>`<br>`[This Unit] gains the [White Boar Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 33%]>`<br>`[This Unit] gains the [White Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 100%]> <for units without [White Boar Gu Hunger 67%]>`<br>`[This Unit] gains the [White Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [White Boar Gu Hunger 33%]> <for units without [White Boar Gu Hunger 67%]> <for units without [White Boar Gu Hunger 100%]>` |
+| Black Boar Gu | 黑豕蛊 | CANON | The black twin of the boar Gu; its strength stacks with the white one's.<br>*Note: Verified (boar_gu): rank 1, eats pork, a second boar's strength that stacks with the white one (Fang Yuan reached two boars); Fang Yuan bought his at the Jia caravan's tree-house Gu shop, listed at 3000 stones because bidders competed. Not the archetype of the strength path.* | Off the ladder: Gu Masters trained by the civ allied with the Jia Clan receive it while Wild Boar is in surplus (the caravan's Gu shop; one ally at a time, like the canon bidding war). +15% Strength, eats 1 Wild Boar, stacks with White Boar or White Jade Gu (two boars' strength) (P1, P5). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts.<br>*Fields:* no unitTypes; granted only by the Merchant Clan ally bonus | `Comment [Food: 1 Wild Boar a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]`<br>`[+15]% Strength <when above [-1] [Wild Boar]>`<br>`Consumes [1] [Wild Boar]`<br>`[This Unit] loses the [Black Boar Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 67%]> <with [50]% chance>`<br>`[This Unit] gains the [Black Boar Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 67%]>`<br>`[This Unit] gains the [Black Boar Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 33%]>`<br>`[This Unit] gains the [Black Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 100%]> <for units without [Black Boar Gu Hunger 67%]>`<br>`[This Unit] gains the [Black Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Black Boar Gu Hunger 33%]> <for units without [Black Boar Gu Hunger 67%]> <for units without [Black Boar Gu Hunger 100%]>` |
+| Jade Skin Gu | 玉皮蛊 | CANON | A rank-1 defensive Gu that wraps its user in a pale-green jade skin and eats jade.<br>*Note: Verified (jade_skin): rank 1 defensive Gu, rarest of the skin series (iron, copper, stone, beast), eats 2 liang of jade every 10 days; Gu Yue Bo gave one to Fang Zheng; the Flower Wine Monk's trial held another. Effects are 4X mappings.* | Rank One rung (the cap for an unpathed Gu Master): +15% defending, eats 1 Jade. Carried into a path, it is the second ingredient of Moon Raiment or White Jade Gu and saves that fusion's extra jade (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts.<br>*Fields:* no unitTypes; Rank One ladder only | `Comment [Food: 1 Jade a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]`<br>`[+15]% Strength <when defending> <when above [-1] [Jade]>`<br>`Consumes [1] [Jade]`<br>`[This Unit] loses the [Jade Skin Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 67%]> <with [50]% chance>`<br>`[This Unit] gains the [Jade Skin Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 67%]>`<br>`[This Unit] gains the [Jade Skin Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 33%]>`<br>`[This Unit] gains the [Jade Skin Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 100%]> <for units without [Jade Skin Gu Hunger 67%]>`<br>`[This Unit] gains the [Jade Skin Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Skin Gu Hunger 33%]> <for units without [Jade Skin Gu Hunger 67%]> <for units without [Jade Skin Gu Hunger 100%]>` |
+| White Jade Gu | 白玉蛊 | CANON | A rank-2 fusion of a boar Gu and a jade-skin Gu: the boar's strength stays in the body and the jade light hardens.<br>*Note: Verified (jade_skin, boar_gu): rank 2, refined from White Boar Gu + Jade Skin Gu by a thousand-year-old recipe; a wild-boar tusk raises the success rate (Fang Yuan's boar-king snow tusk gave about +20%, 两成, ch99; any spare Wild Boar standing in for it is ADAPTED); its jade light is more than twice as strong; it eats 8 liang of jade per 20 days, costlier than both parents together; the boar strength stays and pork is no longer needed. Effect sizes are 4X mappings.* | Strength rung 2. The fusion removes White Boar Gu and Jade Skin Gu and grants +15% Strength (the kept boar strength) and +30% defending; eats 2 Jade, no Wild Boar. Odds: careful 70% (90% with a spare Wild Boar as the tusk), reckless 40% (60%). Gated on jade surplus: 1 spare with a Jade Skin to absorb, 2 without (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 4 more turns (rank 2), dies with a 50% chance, rolled again every 5 turns while the deficit lasts.<br>*Fields:* no unitTypes; Strength ladder only | `Comment [Food: 2 Jade a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]`<br>`[+15]% Strength <when above [-1] [Jade]>`<br>`[+30]% Strength <when defending> <when above [-1] [Jade]>`<br>`Consumes [2] [Jade]`<br>`[This Unit] loses the [White Jade Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 80%]> <with [50]% chance>`<br>`[This Unit] gains the [White Jade Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 80%]>`<br>`[This Unit] gains the [White Jade Gu Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 60%]>`<br>`[This Unit] gains the [White Jade Gu Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 40%]>`<br>`[This Unit] gains the [White Jade Gu Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 20%]>`<br>`[This Unit] gains the [White Jade Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 100%]> <for units without [White Jade Gu Hunger 80%]>`<br>`[This Unit] gains the [White Jade Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [White Jade Gu Hunger 20%]> <for units without [White Jade Gu Hunger 40%]> <for units without [White Jade Gu Hunger 60%]> <for units without [White Jade Gu Hunger 80%]> <for units without [White Jade Gu Hunger 100%]>` |
+| Moon Raiment | 月霓裳 | CANON **[VERIFY]** | A rank-2 fusion of Moonlight Gu and Jade Skin Gu: a moonlit garment that shields its user and helps nearby allies hold.<br>*[VERIFY] Recipe and name verified (fan translation ch98, ch104, ch106): Gu Yue Bo teaches Fang Zheng the recipe in ch98, where the first attempt fails; he succeeds by ch104. Its food (moon orchid) rests on the fan wiki alone.* | Moon rung 2. The fusion removes Moonlight Gu and Jade Skin Gu. Canon makes it a defensive Gu that also helps allies defend, slightly weaker than White Jade Gu: +20% defending and +10% for military units within 1 tile; the moon blade's +20% attack is kept as an adaptation so the fusion is no downgrade for an attacking unit. Eats 1 Moon Orchid; jade is only a fusion material (unless a Jade Skin is carried). Odds: careful 70%, reckless 40% (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 4 more turns (rank 2), dies with a 50% chance, rolled again every 5 turns while the deficit lasts.<br>*Fields:* no unitTypes; Moon ladder only | `Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]`<br>`[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>`<br>`[+20]% Strength <when defending> <when above [-1] [Moon Orchid]>`<br>`[+10]% Strength bonus for [Military] units within [1] tiles <when above [-1] [Moon Orchid]>`<br>`Consumes [1] [Moon Orchid]`<br>`[This Unit] loses the [Moon Raiment] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 80%]> <with [50]% chance>`<br>`[This Unit] gains the [Moon Raiment Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 80%]>`<br>`[This Unit] gains the [Moon Raiment Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 60%]>`<br>`[This Unit] gains the [Moon Raiment Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 40%]>`<br>`[This Unit] gains the [Moon Raiment Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 20%]>`<br>`[This Unit] gains the [Moon Raiment Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 100%]> <for units without [Moon Raiment Hunger 80%]>`<br>`[This Unit] gains the [Moon Raiment Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moon Raiment Hunger 20%]> <for units without [Moon Raiment Hunger 40%]> <for units without [Moon Raiment Hunger 60%]> <for units without [Moon Raiment Hunger 80%]> <for units without [Moon Raiment Hunger 100%]>` |
+| Liquor Worm | 酒虫 | CANON | A wine-drinking Gu that refines a rank-one Gu Master's essence by one small stage.<br>*Note: Verified (liquor_worm): rank 1, eats wine, refines its user's own essence by one minor stage, useless for rank-2 and rank-3 Gu Masters unless refined on: Fang Yuan fused two worms with four wines into the rank-2 Four Flavours Liquor Worm (四味酒虫, R V1c121), later Seven Fragrances (rank 3) and Nine Eyes (rank 4); Fang Yuan lured his with a jar of Green Bamboo Wine and found it in the Flower Wine Monk's cache; refining it cost at least 30 stones. 'Faster essence = faster XP' is a 4X mapping (question 7 default).* | +50% combat XP, drinks 1 Wine. Rank One only (canon): it is lured through its own Refinement Attempt choice (30 stones, 70%), and it leaves the unit at the next turn start once the unit is above rank one, freeing the Wine (P1, P2). Hunger: while its food is in deficit it is weakened (its effects switch off) and, if the deficit lasts 2 more turns (rank 1), dies with a 50% chance, rolled again every 3 turns while the deficit lasts. Since D2 (2026-10-19) also the Food path's Gu for a rank-one Food Master (a higher Food Master gets the Four Flavours Liquor Worm, docs/PATHS.md).<br>*Fields:* no unitTypes; Refinement Attempt choice 3 only | `Comment [Food: 1 Wine a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]`<br>`[+50]% XP gained from combat <when above [-1] [Wine]>`<br>`Consumes [1] [Wine]`<br>`[This Unit] loses the [Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 67%]> <with [50]% chance>`<br>`[This Unit] gains the [Liquor Worm Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 67%]>`<br>`[This Unit] gains the [Liquor Worm Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 33%]>`<br>`[This Unit] gains the [Liquor Worm Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 100%]> <for units without [Liquor Worm Hunger 67%]>`<br>`[This Unit] gains the [Liquor Worm Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Liquor Worm Hunger 33%]> <for units without [Liquor Worm Hunger 67%]> <for units without [Liquor Worm Hunger 100%]>`<br>`[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [non-[Rank One Gu Master]] units>` |
 | Killer Move | 杀招 | ADAPTED | The unit's Gu now strike together as one move, at a steep essence cost. | Top rung, which needs a rank-2 fusion Gu (White Jade Gu or Moon Raiment) and the Killer Moves tech: +25% attack and +25% upkeep (P1, P2). If its rank-2 Gu dies of hunger, the killer move goes at the next turn start.<br>*Fields:* no unitTypes; refinement ladder only | `[+25]% Strength <when attacking>`<br>`[+25]% maintenance costs`<br>`[This Unit] loses the [Killer Move] promotion <upon turn start> <for units without [White Jade Gu]> <for units without [Moon Raiment]>` |
-| Bear Strength Gu | 熊力蛊 | CANON **[VERIFY]** | The Xiong clan's emblem Gu, which lends its user a bear's strength.<br>*[VERIFY] Name and emblem status verified (ch22). Fan wiki (uncited): rank 1, strength path, a permanent bear's strength, eats honey; honey is not in the resource budget, so it eats stones.* | Xiong emblem: +10% Strength, +10% upkeep (it eats stones in place of its unverified food) (P1, P4).<br>*Fields:* no unitTypes; granted only by the Xiong nation unique | `[+10]% Strength`<br>`[+10]% maintenance costs` |
-| Stream Gu | 溪流蛊 | CANON **[VERIFY]** | The Bai clan's emblem Gu, named for running water.<br>*[VERIFY] Name and emblem status verified (ch22). Path, rank, food and effect are not in the research: path-neutral here, generic effect, eats stones [VERIFY].* | Bai emblem: +10 HP when healing (running water), +10% upkeep (it eats stones until its food is known); path-neutral, so it never interferes with Moon or Strength (P1).<br>*Fields:* no unitTypes; granted only by the Bai nation unique | `[+10] HP when healing`<br>`[+10]% maintenance costs` |
-| Orchid Hunger | — | INVENTED | A starving Gu (moon orchid has run out). | Hunger timer status for Moonlight Gu, Moon Raiment: given at the first turn start while Moon Orchid is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Moon Orchid is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Moon Orchid is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Orchid Hunger] status <upon turn start> <when above [-1] [Moon Orchid]>` |
-| Pork Hunger | — | INVENTED | A starving Gu (wild boar has run out). | Hunger timer status for White and Black Boar Gu: given at the first turn start while Wild Boar is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Wild Boar is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Wild Boar is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Pork Hunger] status <upon turn start> <when above [-1] [Wild Boar]>` |
-| Jade Hunger | — | INVENTED | A starving Gu (jade has run out). | Hunger timer status for Jade Skin Gu, White Jade Gu: given at the first turn start while Jade is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Jade is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Jade is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Jade Hunger] status <upon turn start> <when above [-1] [Jade]>` |
-| Wine Hunger | — | INVENTED | A starving Gu (wine has run out). | Hunger timer status for Liquor Worm: given at the first turn start while Wine is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Wine is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Wine is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Wine Hunger] status <upon turn start> <when above [-1] [Wine]>` |
+| Bear Strength Gu | 熊力蛊 | CANON **[VERIFY]** | The Xiong clan's emblem Gu, which lends its user a bear's strength.<br>*[VERIFY] Name and emblem status verified (ch22). Fan wiki (uncited): rank 1, strength path, a permanent bear's strength, eats honey; honey is not in the resource budget, so it eats stones.* | Xiong emblem: +10% Strength, +10% upkeep (it eats stones in place of its unverified food) (P1, P4).<br>*Fields:* no unitTypes; granted only by the Xiong nation unique | `Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]`<br>`[+10]% Strength`<br>`[+10]% maintenance costs` |
+| Stream Gu | 溪流蛊 | CANON **[VERIFY]** | The Bai clan's emblem Gu, named for running water.<br>*[VERIFY] Name and emblem status verified (ch22). Path, rank, food and effect are not in the research: path-neutral here, generic effect, eats stones [VERIFY].* | Bai emblem: +10 HP when healing (running water), +10% upkeep (it eats stones until its food is known); path-neutral, so it never interferes with Moon or Strength (P1).<br>*Fields:* no unitTypes; granted only by the Bai nation unique | `Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]`<br>`[+10] HP when healing`<br>`[+10]% maintenance costs` |
+| Orchid Hunger | — | INVENTED | A starving Gu (moon orchid has run out). | Legacy since Phase D (2026-11-02): each Gu now shows its own hunger meter in percent (PATHS.md "Gu hunger meters"); kept defined so old saves load, nothing grants it. Before: Hunger timer status for Moonlight Gu, Moon Raiment: given at the first turn start while Moon Orchid is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Moon Orchid is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Moon Orchid is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Orchid Hunger] status <upon turn start> <when above [-1] [Moon Orchid]>` |
+| Pork Hunger | — | INVENTED | A starving Gu (wild boar has run out). | Legacy since Phase D (2026-11-02): each Gu now shows its own hunger meter in percent (PATHS.md "Gu hunger meters"); kept defined so old saves load, nothing grants it. Before: Hunger timer status for White and Black Boar Gu: given at the first turn start while Wild Boar is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Wild Boar is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Wild Boar is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Pork Hunger] status <upon turn start> <when above [-1] [Wild Boar]>` |
+| Jade Hunger | — | INVENTED | A starving Gu (jade has run out). | Legacy since Phase D (2026-11-02): each Gu now shows its own hunger meter in percent (PATHS.md "Gu hunger meters"); kept defined so old saves load, nothing grants it. Before: Hunger timer status for Jade Skin Gu, White Jade Gu: given at the first turn start while Jade is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Jade is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Jade is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Jade Hunger] status <upon turn start> <when above [-1] [Jade]>` |
+| Wine Hunger | — | INVENTED | A starving Gu (wine has run out). | Legacy since Phase D (2026-11-02): each Gu now shows its own hunger meter in percent (PATHS.md "Gu hunger meters"); kept defined so old saves load, nothing grants it. Before: Hunger timer status for Liquor Worm: given at the first turn start while Wine is in deficit (3 turns for rank-1 Gu, 5 for rank-2 Gu); if Wine is still short when it runs out, the Gu dies with a 50% chance and a survivor gets the status again at the next turn start; it removes itself once Wine is back (P1).<br>*Fields:* status (temporary promotion), no unitTypes | `[This Unit] loses the [Wine Hunger] status <upon turn start> <when above [-1] [Wine]>` |
 
 ### Buildings and wonders
 
@@ -1387,7 +1387,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 ```
 
-**Ascension** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Crush the aperture, draw in the three qi and survive the calamity (\u5347\u4ed9). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master."}]})
+**Ascension** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Crush the aperture, draw in the three qi and survive the calamity (\u5347\u4ed9). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master; success brings 20 Lifespan Gu."}]})
 
 ```
 Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>
@@ -1597,7 +1597,7 @@ Triggers a [Hasty Ascension Trial] event
 
 ```
 [This Unit] gains the [Lower Grade Blessed Land] promotion
-Instantly provides [5] [Lifespan Gu]
+Instantly provides [20] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
 [This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
@@ -1610,7 +1610,7 @@ Triggers a [Immortal Ascension] event
 
 ```
 [This Unit] gains the [Middle Grade Blessed Land] promotion
-Instantly provides [5] [Lifespan Gu]
+Instantly provides [20] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
 [This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
@@ -1623,7 +1623,7 @@ Triggers a [Immortal Ascension] event
 
 ```
 [This Unit] gains the [Upper Grade Blessed Land] promotion
-Instantly provides [5] [Lifespan Gu]
+Instantly provides [20] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
 [This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
@@ -1636,7 +1636,7 @@ Triggers a [Immortal Ascension] event
 
 ```
 [This Unit] gains the [Super Grade Blessed Land] promotion
-Instantly provides [5] [Lifespan Gu]
+Instantly provides [20] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
 [This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
@@ -1661,7 +1661,7 @@ Triggers a [Aperture Collapse] event
 
 ```
 [This Unit] gains the [Lower Grade Blessed Land] promotion
-Instantly provides [5] [Lifespan Gu]
+Instantly provides [20] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
 [This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
@@ -1674,7 +1674,7 @@ Triggers a [Immortal Ascension] event
 
 ```
 [This Unit] gains the [Middle Grade Blessed Land] promotion
-Instantly provides [5] [Lifespan Gu]
+Instantly provides [20] [Lifespan Gu]
 Triggers a [Immortal Ascension] event
 [This Unit] loses the [Ascension] promotion
 [This Unit] upgrades for free including special upgrades
@@ -3037,10 +3037,10 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [22] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
@@ -3075,10 +3075,10 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [13] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [60] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
@@ -3132,7 +3132,7 @@ Triggers a [Earthly Calamity] event <upon losing the [Calamity Countdown] status
 Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown] status>
 ```
 
-**Advance to Rank Seven** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank seven: needs a survived heavenly tribulation, dao marks tier II and 60 green grape essence on Standard, at home."}]})
+**Advance to Rank Seven** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank seven: needs a survived heavenly tribulation, dao marks tier II and 60 green grape essence on Standard, at home. It brings 25 Lifespan Gu."}]})
 
 ```
 Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>
@@ -3150,11 +3150,12 @@ Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game spee
 [This Unit] loses the [Tribulation Survivor] promotion
 [This Unit] loses the [Advance to Rank Seven] promotion
 [This Unit] gains the [Advancing] status for [1] turn(s)
+Instantly provides [25] [Lifespan Gu]
 [This Unit] upgrades for free including special upgrades
 [+200]% weight to this choice for AI decisions
 ```
 
-**Advance to Rank Eight** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven."}]})
+**Advance to Rank Eight** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven. It brings 35 Lifespan Gu."}]})
 
 ```
 Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>
@@ -3172,6 +3173,7 @@ Instantly consumes [180] [Red Date Immortal Essence] <on [Marathon] game speed>
 [This Unit] loses the [Tribulation Survivor] promotion
 [This Unit] loses the [Advance to Rank Eight] promotion
 [This Unit] gains the [Advancing] status for [1] turn(s)
+Instantly provides [35] [Lifespan Gu]
 [This Unit] loses the [Lower Grade Blessed Land] promotion
 [This Unit] loses the [Middle Grade Blessed Land] promotion
 [This Unit] loses the [Upper Grade Blessed Land] promotion
@@ -3200,7 +3202,7 @@ MOD_SPEC_2 Phase C, fifth layer, second half; the arc's victory (MOD_SPEC_3: Ete
   and brings forth the **Venerable** (strength 200): unbeatable in its era, but long-lived, never eternal (R V6/105;
   since Phase D its lifespan is the Lifespan Gu stock, not HP), and it makes 6 **yellow apricot essence** a turn.
 * **Eternal Life** (world wonder; victory type **Eternal Life**, milestone `Build [Eternal Life]`): only a clan with a
-  living Venerable can build it, and it costs 150 yellow apricot essence, about 25 of the Venerable's 33 turns: the
+  living Venerable can build it, and it costs 150 yellow apricot essence (300 since Phase D, 2026-11-02), about 25 of the Venerable's 33 turns: the
   Venerable races its own lifespan (MOD_SPEC_3).
 * When a Venerable dies (losing one is its death: it never upgrades, E9), the Venerable Ascension is removed (A2: the
   race reopens) and its clan gains the **True Inheritance Seal**, which unlocks building the **True Inheritance**
@@ -3229,7 +3231,7 @@ Cannot be purchased
 Suppress warning [is both granted free and could possibly be removed by triggers]
 ```
 
-**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (150 yellow apricot essence on Standard) before its lifespan runs out; it wins the game."}]})
+**Eternal Life** (Buildings.json; {"isWonder": true, "requiredTech": "Dao Lord", "cost": 1200, "civilopediaText": [{"text": "Eternal life (\u6c38\u751f), Fang Yuan's goal, beyond any Venerable. A living Venerable gains it through its Seek Eternal Life promotion (300 yellow apricot essence on Standard) before its lifespan runs out; it wins the game."}]})
 
 ```
 Unbuildable
@@ -3253,17 +3255,17 @@ Unbuildable
 Cannot be purchased
 ```
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. Like every immortal it burns a Lifespan Gu each ten turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
 Cannot be purchased
 Limited to [1] per Civilization
 Never appears as a Barbarian unit
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [90] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
@@ -3344,7 +3346,7 @@ Never appears as a Barbarian unit
 [+0]% weight to this choice for AI decisions
 ```
 
-**Yellow Apricot Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-nine essence (\u9ec4\u674f\u4ed9\u5143); even a Venerable runs short of it. Only a living Venerable makes it; Eternal Life costs 150 on Standard."}]})
+**Yellow Apricot Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-nine essence (\u9ec4\u674f\u4ed9\u5143); even a Venerable runs short of it. Only a living Venerable makes it; Eternal Life costs 300 on Standard."}]})
 
 ```
 Stockpiled
@@ -3579,7 +3581,7 @@ outside the world is the rank-nine trial (R V6/280).
   essence for 110 turns). Both became promotions the AI buys (E4): **Ascend to Venerable** (a rank-eight immortal of
   supreme attainment, at home, 60 white lychee) upgrades the immortal itself into the Venerable (canon: the immortal
   ascends) and grants the Venerable Ascension as the one-in-the-world marker; **Seek Eternal Life** (the Venerable,
-  150 yellow apricot) grants the Eternal Life wonder, which wins. Both wonders are now unbuildable markers. Also:
+  150 yellow apricot, 300 since Phase D) grants the Eternal Life wonder, which wins. Both wonders are now unbuildable markers. Also:
   heavenly tribulations every 30 turns at rank seven (canon: every 50 years against 100 at rank six), immortals
   cultivate 3 XP a turn (rank eight 8, the Venerable 5), essence pouring weighted down for the AI. Autoplay 8 × 550:
   an AI Bai Clan became a Venerable at T342 and won Eternal Life at T373.
@@ -3589,17 +3591,17 @@ outside the world is the rank-nine trial (R V6/280).
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. Like every immortal it burns a Lifespan Gu each ten turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
 Cannot be purchased
 Limited to [1] per Civilization
 Never appears as a Barbarian unit
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
-Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Quick] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Standard] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Epic] game speed>
+Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [90] turns> <on [Marathon] game speed>
 Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>
 Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
@@ -3648,7 +3650,7 @@ Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 Comment [When it runs out, a chaos calamity falls on the Venerable]
 ```
 
-**Ascend to Venerable** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (dao marks tier IV and 60 white lychee essence on Standard, at home). Only one Venerable lives in the world at a time."}]})
+**Ascend to Venerable** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (dao marks tier IV and 60 white lychee essence on Standard, at home). It brings 60 Lifespan Gu. Only one Venerable lives in the world at a time."}]})
 
 ```
 Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>
@@ -3666,25 +3668,26 @@ Instantly consumes [90] [White Lychee Immortal Essence] <on [Epic] game speed>
 Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>
 Gain a free [Venerable Ascension] [in capital]
 [This Unit] loses the [Ascend to Venerable] promotion
+Instantly provides [60] [Lifespan Gu]
 [This Unit] loses the [Grotto-Heaven Aperture] promotion
 [This Unit] gains the [Advancing] status for [1] turn(s)
 [This Unit] upgrades for free including special upgrades
 [+500]% weight to this choice for AI decisions
 ```
 
-**Seek Eternal Life** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "The Venerable spends 150 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."}]})
+**Seek Eternal Life** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "The Venerable spends 300 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."}]})
 
 ```
 Only available <for [Venerable] units>
 Unavailable <if [Eternal Life] is constructed by anybody>
-Unavailable <when below [100] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>
-Unavailable <when below [150] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>
-Unavailable <when below [225] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>
-Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>
-Instantly consumes [100] [Yellow Apricot Immortal Essence] <on [Quick] game speed>
-Instantly consumes [150] [Yellow Apricot Immortal Essence] <on [Standard] game speed>
-Instantly consumes [225] [Yellow Apricot Immortal Essence] <on [Epic] game speed>
-Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>
+Unavailable <when below [201] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>
+Unavailable <when below [300] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>
+Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>
+Unavailable <when below [900] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>
+Instantly consumes [201] [Yellow Apricot Immortal Essence] <on [Quick] game speed>
+Instantly consumes [300] [Yellow Apricot Immortal Essence] <on [Standard] game speed>
+Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Epic] game speed>
+Instantly consumes [900] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>
 Gain a free [Eternal Life] [in capital]
 [This Unit] loses the [Seek Eternal Life] promotion
 [+1000]% weight to this choice for AI decisions
@@ -4160,6 +4163,7 @@ Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank 
 Triggers a [Shadow Sect Envoy] event <upon turn start> <starting from the [Rank Six era]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>
 ```
 
+
 ## Phase D: power scaling (the user, 2026-11-02: "powerscalling sangat jelas dan detail")
 
 The request: each path's attacks distinct and clear, its Gu attacks distinct within and across paths, the quantity of
@@ -4186,4 +4190,27 @@ gave only +10/+15/+20/+25% Strength, killer moves were one of seven family templ
   cities take none: captured cities 16 → 9, clans destroyed 7 → 1. Attack-only hits: 27 and 9, 0 crashes.
 * **The Venerable** no longer loses 3 HP a turn (the user: "kenapa venerable darahnya setiap langkah berkurang
   terus?"): lifespan is its Lifespan Gu stock, like every immortal's; HP is battle damage only.
+
+## Phase D: immortal lifespan grows with rank; Gu hunger in percent (the user, 2026-11-02)
+
+The user: "kalo udah ascend ke abadi umurnya bertambah bukan malah berkurang ... kasih tutor bagaimana cara menambah
+umur gu abadi rank 6, 7, 8 dan 9 ... naik ke gu rank 9 susah dan prosesnya lama", and "kasih rate persentase seberapa
+lapar dan apa makanan gu tersebut".
+
+* **Lifespan** (`tools/lifespan.py`; ADAPTED: canon gives immortals far longer lives than mortals and lets Lifespan Gu
+  extend them, R V3/194; the numbers are the mod's). The clan's Lifespan Gu stock is its immortals' lifespan; each
+  rank reached adds to it (ascension 20, rank seven 25, rank eight 35, the Venerable 60) and a higher rank burns it more
+  slowly (one each 10, 15, 20, 30 turns on Standard), so a rank's own gift lasts about 200, 375, 700 and 1800 turns.
+  Before: the ascension gave 5 and every rank burned one each 10 turns, about 50 turns of life. Starving (7 damage a
+  turn, healing only by pillage) is unchanged. A Tutorial page, "Gu World: Immortal Lifespan", lists every way to add
+  lifespan (climbing, green land, Year Gu, Years Flow Like Water, Red Lotus, the market, conquest) and what takes it.
+* **Immortals against mortals:** the user accepts that a clan with immortals outclasses mortal clans, because the climb
+  is long and hard. To keep rank nine hard and long once immortals stopped dying of age, Eternal Life costs 300 yellow
+  apricot essence instead of 150 (autoplay: a Venerable in 6 of 6 games, T332–T394; the win 59–66 turns later).
+* **Hunger meter in percent** (`tools/gu_rules.py`): each Gu that eats a Gu food shows its own meter, "<Gu> Hunger
+  <p>%", one step per turn start the clan lacks its food (rank one 33/67/100, rank two 20..100, rank three 14..100,
+  rank four 11..100); the death roll comes at 100%, exactly when the R3 timer rolled it, and the meter starts again.
+  Icons: the food over a bowl inside a ring filled to the percent. Every Gu promotion names its food in a visible
+  comment (a Gu food and its hunger rate, or primeval stones and the upkeep it adds); the Tutorial page "Gu World: Gu
+  Hunger and Food" lists every Gu. The four per-food statuses of R3 stay defined, unused, for old saves.
 

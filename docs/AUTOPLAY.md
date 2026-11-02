@@ -339,6 +339,22 @@ Five Regions, eight majors, Prince, seed 401, 6 × 350, per game (captured citie
 0 crashes in all three. Defenders hit back at melee besiegers while cities take no hits, so two-way hits stalled
 conquest; attack-only hits make the attacker's path decide the fight.
 
+## Phase D: immortal lifespan and the hunger meter (2026-11-02)
+
+Five Regions, eight majors, Prince, seed 501:
+
+| Batch | Immortals per clan T250 / T350 | Lifespan Gu stock T350 | Rank eight | Venerable (first) | Eternal Life |
+| --- | --- | --- | --- | --- | --- |
+| Before (grant 5, one each 10 turns), 6 × 400 | 1.24 / 2.15 | 6.4 | 2 clans | none | none |
+| Lifespan by rank, Eternal Life 150, 6 × 400 | 1.49 / 3.14 | 107 | 10 clans | 6 of 6 (T314–378) | 4 of 6 (T345–382) |
+| Lifespan by rank, Eternal Life 300, 6 × 450 | 1.51 / 3.55 | 106 | — | 6 of 6 (T332–394) | 5 of 6 (T391–443) |
+
+Hunger meter (Qing Mao, eight majors, 6 × 300 before, 12 × 300 after): deaths per hunger start at rank one 0.46 → 0.50,
+rank two 0.31 → 0.35 (the roll timing is unchanged; the harness now counts a death while the 100% step is still shown).
+One crash in about 30 games on this code: a free upgrade in the ascension chain could neither place the immortal nor
+restore the Gu Master (NullPointerException in UnitUpgradeManager.performUpgrade); the harness now records where every
+Gu Master stood, so the next occurrence names the tile (KNOWN_ISSUES 20).
+
 ## Re-run
 
 ```

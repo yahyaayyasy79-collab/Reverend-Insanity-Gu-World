@@ -115,10 +115,14 @@
   {
     "name": "Moonlight Gu",
     "uniques": [
+      "Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]",
       "[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
       "Consumes [1] [Moon Orchid]",
-      "[This Unit] gains the [Orchid Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
-      "[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>",
+      "[This Unit] loses the [Moonlight Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 67%]> <with [50]% chance>",
+      "[This Unit] gains the [Moonlight Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 67%]>",
+      "[This Unit] gains the [Moonlight Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 33%]>",
+      "[This Unit] gains the [Moonlight Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 100%]> <for units without [Moonlight Gu Hunger 67%]>",
+      "[This Unit] gains the [Moonlight Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonlight Gu Hunger 33%]> <for units without [Moonlight Gu Hunger 67%]> <for units without [Moonlight Gu Hunger 100%]>",
       "[-10]% Strength <for units with [Strength Master]>",
       "[This Unit] loses the [Moonlight Gu] promotion <for [Rank One Gu Master] units> <for units without [Moon Master]> <for units with [Aptitude D]>"
     ],
@@ -131,10 +135,14 @@
   {
     "name": "White Boar Gu",
     "uniques": [
+      "Comment [Food: 1 Wild Boar a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]",
       "[+15]% Strength <when above [-1] [Wild Boar]>",
       "Consumes [1] [Wild Boar]",
-      "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
-      "[This Unit] loses the [White Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+      "[This Unit] loses the [White Boar Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 67%]> <with [50]% chance>",
+      "[This Unit] gains the [White Boar Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 67%]>",
+      "[This Unit] gains the [White Boar Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 33%]>",
+      "[This Unit] gains the [White Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 100%]> <for units without [White Boar Gu Hunger 67%]>",
+      "[This Unit] gains the [White Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [White Boar Gu Hunger 33%]> <for units without [White Boar Gu Hunger 67%]> <for units without [White Boar Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -145,10 +153,14 @@
   {
     "name": "Black Boar Gu",
     "uniques": [
+      "Comment [Food: 1 Wild Boar a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]",
       "[+15]% Strength <when above [-1] [Wild Boar]>",
       "Consumes [1] [Wild Boar]",
-      "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
-      "[This Unit] loses the [Black Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+      "[This Unit] loses the [Black Boar Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 67%]> <with [50]% chance>",
+      "[This Unit] gains the [Black Boar Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 67%]>",
+      "[This Unit] gains the [Black Boar Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 33%]>",
+      "[This Unit] gains the [Black Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 100%]> <for units without [Black Boar Gu Hunger 67%]>",
+      "[This Unit] gains the [Black Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Black Boar Gu Hunger 33%]> <for units without [Black Boar Gu Hunger 67%]> <for units without [Black Boar Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -159,10 +171,14 @@
   {
     "name": "Jade Skin Gu",
     "uniques": [
+      "Comment [Food: 1 Jade a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]",
       "[+15]% Strength <when defending> <when above [-1] [Jade]>",
       "Consumes [1] [Jade]",
-      "[This Unit] gains the [Jade Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
-      "[This Unit] loses the [Jade Skin Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+      "[This Unit] loses the [Jade Skin Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 67%]> <with [50]% chance>",
+      "[This Unit] gains the [Jade Skin Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 67%]>",
+      "[This Unit] gains the [Jade Skin Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 33%]>",
+      "[This Unit] gains the [Jade Skin Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 100%]> <for units without [Jade Skin Gu Hunger 67%]>",
+      "[This Unit] gains the [Jade Skin Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Skin Gu Hunger 33%]> <for units without [Jade Skin Gu Hunger 67%]> <for units without [Jade Skin Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -173,10 +189,14 @@
   {
     "name": "Liquor Worm",
     "uniques": [
+      "Comment [Food: 1 Wine a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]",
       "[+50]% XP gained from combat <when above [-1] [Wine]>",
       "Consumes [1] [Wine]",
-      "[This Unit] gains the [Wine Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>",
-      "[This Unit] loses the [Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>",
+      "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 67%]> <with [50]% chance>",
+      "[This Unit] gains the [Liquor Worm Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 67%]>",
+      "[This Unit] gains the [Liquor Worm Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 33%]>",
+      "[This Unit] gains the [Liquor Worm Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 100%]> <for units without [Liquor Worm Hunger 67%]>",
+      "[This Unit] gains the [Liquor Worm Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Liquor Worm Hunger 33%]> <for units without [Liquor Worm Hunger 67%]> <for units without [Liquor Worm Hunger 100%]>",
       "[This Unit] loses the [Liquor Worm] promotion <upon turn start> <for [non-[Rank One Gu Master]] units>"
     ],
     "civilopediaText": [
@@ -188,11 +208,17 @@
   {
     "name": "White Jade Gu",
     "uniques": [
+      "Comment [Food: 2 Jade a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]",
       "[+15]% Strength <when above [-1] [Jade]>",
       "[+30]% Strength <when defending> <when above [-1] [Jade]>",
       "Consumes [2] [Jade]",
-      "[This Unit] gains the [Jade Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
-      "[This Unit] loses the [White Jade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+      "[This Unit] loses the [White Jade Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 80%]> <with [50]% chance>",
+      "[This Unit] gains the [White Jade Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 80%]>",
+      "[This Unit] gains the [White Jade Gu Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 60%]>",
+      "[This Unit] gains the [White Jade Gu Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 40%]>",
+      "[This Unit] gains the [White Jade Gu Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 20%]>",
+      "[This Unit] gains the [White Jade Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 100%]> <for units without [White Jade Gu Hunger 80%]>",
+      "[This Unit] gains the [White Jade Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [White Jade Gu Hunger 20%]> <for units without [White Jade Gu Hunger 40%]> <for units without [White Jade Gu Hunger 60%]> <for units without [White Jade Gu Hunger 80%]> <for units without [White Jade Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -203,12 +229,18 @@
   {
     "name": "Moon Raiment",
     "uniques": [
+      "Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]",
       "[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
       "[+20]% Strength <when defending> <when above [-1] [Moon Orchid]>",
       "[+10]% Strength bonus for [Military] units within [1] tiles <when above [-1] [Moon Orchid]>",
       "Consumes [1] [Moon Orchid]",
-      "[This Unit] gains the [Orchid Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
-      "[This Unit] loses the [Moon Raiment] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>"
+      "[This Unit] loses the [Moon Raiment] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 80%]> <with [50]% chance>",
+      "[This Unit] gains the [Moon Raiment Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 80%]>",
+      "[This Unit] gains the [Moon Raiment Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 60%]>",
+      "[This Unit] gains the [Moon Raiment Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 40%]>",
+      "[This Unit] gains the [Moon Raiment Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 20%]>",
+      "[This Unit] gains the [Moon Raiment Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 100%]> <for units without [Moon Raiment Hunger 80%]>",
+      "[This Unit] gains the [Moon Raiment Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moon Raiment Hunger 20%]> <for units without [Moon Raiment Hunger 40%]> <for units without [Moon Raiment Hunger 60%]> <for units without [Moon Raiment Hunger 80%]> <for units without [Moon Raiment Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -232,6 +264,7 @@
   {
     "name": "Bear Strength Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+10]% Strength",
       "[+10]% maintenance costs"
     ],
@@ -244,6 +277,7 @@
   {
     "name": "Stream Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+10] HP when healing",
       "[+10]% maintenance costs"
     ],
@@ -306,6 +340,306 @@
     "civilopediaText": [
       {
         "text": "The wine has run out and the Liquor Worm is starving. It will not wait long."
+      }
+    ]
+  },
+  {
+    "name": "Moonlight Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Moonlight Gu Hunger 33%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonlight Gu: 33%. It rises 33% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moonlight Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Moonlight Gu Hunger 67%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonlight Gu: 67%. It rises 33% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moonlight Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Moonlight Gu Hunger 100%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonlight Gu: 100%. It rises 33% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Boar Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [White Boar Gu Hunger 33%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Boar Gu: 33%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Boar Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [White Boar Gu Hunger 67%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Boar Gu: 67%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Boar Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [White Boar Gu Hunger 100%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Boar Gu: 100%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Black Boar Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Black Boar Gu Hunger 33%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Black Boar Gu: 33%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Black Boar Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Black Boar Gu Hunger 67%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Black Boar Gu: 67%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Black Boar Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Black Boar Gu Hunger 100%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Black Boar Gu: 100%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Jade Skin Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Jade Skin Gu Hunger 33%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Jade Skin Gu: 33%. It rises 33% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Jade Skin Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Jade Skin Gu Hunger 67%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Jade Skin Gu: 67%. It rises 33% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Jade Skin Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Jade Skin Gu Hunger 100%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Jade Skin Gu: 100%. It rises 33% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Liquor Worm Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Liquor Worm Hunger 33%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Liquor Worm: 33%. It rises 33% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Liquor Worm Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Liquor Worm Hunger 67%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Liquor Worm: 67%. It rises 33% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Liquor Worm Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Liquor Worm Hunger 100%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Liquor Worm: 100%. It rises 33% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Jade Gu Hunger 20%",
+    "uniques": [
+      "[This Unit] loses the [White Jade Gu Hunger 20%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 20%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Jade Gu: 20%. It rises 20% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Jade Gu Hunger 40%",
+    "uniques": [
+      "[This Unit] loses the [White Jade Gu Hunger 40%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 40%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Jade Gu: 40%. It rises 20% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Jade Gu Hunger 60%",
+    "uniques": [
+      "[This Unit] loses the [White Jade Gu Hunger 60%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 60%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Jade Gu: 60%. It rises 20% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Jade Gu Hunger 80%",
+    "uniques": [
+      "[This Unit] loses the [White Jade Gu Hunger 80%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 80%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Jade Gu: 80%. It rises 20% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "White Jade Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [White Jade Gu Hunger 100%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of White Jade Gu: 100%. It rises 20% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moon Raiment Hunger 20%",
+    "uniques": [
+      "[This Unit] loses the [Moon Raiment Hunger 20%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 20%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moon Raiment: 20%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moon Raiment Hunger 40%",
+    "uniques": [
+      "[This Unit] loses the [Moon Raiment Hunger 40%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 40%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moon Raiment: 40%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moon Raiment Hunger 60%",
+    "uniques": [
+      "[This Unit] loses the [Moon Raiment Hunger 60%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 60%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moon Raiment: 60%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moon Raiment Hunger 80%",
+    "uniques": [
+      "[This Unit] loses the [Moon Raiment Hunger 80%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 80%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moon Raiment: 80%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moon Raiment Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Moon Raiment Hunger 100%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moon Raiment: 100%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
       }
     ]
   },
@@ -7264,6 +7598,7 @@
   {
     "name": "Roaming Zombie Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when defending>",
       "[+10]% maintenance costs"
     ],
@@ -7276,10 +7611,14 @@
   {
     "name": "Bone Spear Gu",
     "uniques": [
+      "Comment [Food: 1 Wild Boar a turn. Short of it: weakened at once, hunger +33% a turn, at 100% a 50% chance to die]",
       "[+15]% Strength <when attacking> <when above [-1] [Wild Boar]>",
       "Consumes [1] [Wild Boar]",
-      "[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
-      "[This Unit] loses the [Bone Spear Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+      "[This Unit] loses the [Bone Spear Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [Bone Spear Gu Hunger 67%]> <with [50]% chance>",
+      "[This Unit] gains the [Bone Spear Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Bone Spear Gu Hunger 67%]>",
+      "[This Unit] gains the [Bone Spear Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Bone Spear Gu Hunger 33%]>",
+      "[This Unit] gains the [Bone Spear Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Bone Spear Gu Hunger 100%]> <for units without [Bone Spear Gu Hunger 67%]>",
+      "[This Unit] gains the [Bone Spear Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Bone Spear Gu Hunger 33%]> <for units without [Bone Spear Gu Hunger 67%]> <for units without [Bone Spear Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -7290,10 +7629,20 @@
   {
     "name": "Blood Skull Gu",
     "uniques": [
+      "Comment [Food: 1 Wild Boar a turn. Short of it: weakened at once, hunger +11% a turn, at 100% a 50% chance to die]",
       "[+25]% XP gained from combat <when above [-1] [Wild Boar]>",
       "Consumes [1] [Wild Boar]",
-      "[This Unit] gains the [Pork Hunger] status for [9] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>",
-      "[This Unit] loses the [Blood Skull Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>"
+      "[This Unit] loses the [Blood Skull Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 89%]> <with [50]% chance>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 89%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 89%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 78%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 78%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 67%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 56%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 56%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 44%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 44%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 33%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 22%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 22%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 11%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 11%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Blood Skull Gu Hunger 100%]> <for units without [Blood Skull Gu Hunger 89%]>",
+      "[This Unit] gains the [Blood Skull Gu Hunger 11%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Blood Skull Gu Hunger 11%]> <for units without [Blood Skull Gu Hunger 22%]> <for units without [Blood Skull Gu Hunger 33%]> <for units without [Blood Skull Gu Hunger 44%]> <for units without [Blood Skull Gu Hunger 56%]> <for units without [Blood Skull Gu Hunger 67%]> <for units without [Blood Skull Gu Hunger 78%]> <for units without [Blood Skull Gu Hunger 89%]> <for units without [Blood Skull Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -7304,6 +7653,7 @@
   {
     "name": "Sword Shadow Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7316,10 +7666,20 @@
   {
     "name": "Sole Blade Gu",
     "uniques": [
+      "Comment [Food: 1 Jade a turn. Short of it: weakened at once, hunger +11% a turn, at 100% a 50% chance to die]",
       "[+25]% Strength <when attacking> <with [50]% chance> <when above [-1] [Jade]>",
       "Consumes [1] [Jade]",
-      "[This Unit] gains the [Jade Hunger] status for [9] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>",
-      "[This Unit] loses the [Sole Blade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>"
+      "[This Unit] loses the [Sole Blade Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 89%]> <with [50]% chance>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 89%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 89%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 78%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 78%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 67%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 56%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 56%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 44%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 44%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 33%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 22%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 22%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 11%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 11%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Sole Blade Gu Hunger 100%]> <for units without [Sole Blade Gu Hunger 89%]>",
+      "[This Unit] gains the [Sole Blade Gu Hunger 11%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Sole Blade Gu Hunger 11%]> <for units without [Sole Blade Gu Hunger 22%]> <for units without [Sole Blade Gu Hunger 33%]> <for units without [Sole Blade Gu Hunger 44%]> <for units without [Sole Blade Gu Hunger 56%]> <for units without [Sole Blade Gu Hunger 67%]> <for units without [Sole Blade Gu Hunger 78%]> <for units without [Sole Blade Gu Hunger 89%]> <for units without [Sole Blade Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -7330,6 +7690,7 @@
   {
     "name": "Bronze Skin Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when defending>",
       "[+10]% maintenance costs"
     ],
@@ -7342,6 +7703,7 @@
   {
     "name": "Armoury Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7354,6 +7716,7 @@
   {
     "name": "Killing Intent Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+20]% Strength <vs [Wounded] units>",
       "[+10]% maintenance costs"
     ],
@@ -7366,6 +7729,7 @@
   {
     "name": "Fiery Claw Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[Target Unit] takes [5] damage <upon damaging a [Military] unit>",
       "[+10]% maintenance costs"
     ],
@@ -7378,6 +7742,7 @@
   {
     "name": "Water Shield Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when defending>",
       "[+10]% maintenance costs"
     ],
@@ -7390,6 +7755,7 @@
   {
     "name": "Heavenly Essence Treasure Lotus",
     "uniques": [
+      "Comment [Food: primeval stones, 0% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[-20]% maintenance costs"
     ],
     "civilopediaText": [
@@ -7401,6 +7767,7 @@
   {
     "name": "Gruel Mud Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when fighting in [Hill] tiles>",
       "[+10]% maintenance costs"
     ],
@@ -7413,6 +7780,7 @@
   {
     "name": "Whirlwind Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7425,6 +7793,7 @@
   {
     "name": "Flying Cloud Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[1] Movement",
       "[+10]% maintenance costs"
     ],
@@ -7437,6 +7806,7 @@
   {
     "name": "Frost Demon Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7449,6 +7819,7 @@
   {
     "name": "Thunderclap Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7461,6 +7832,7 @@
   {
     "name": "Poison Scorpion Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7473,6 +7845,7 @@
   {
     "name": "Little Light Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[1] Sight",
       "[+10]% maintenance costs"
     ],
@@ -7485,6 +7858,7 @@
   {
     "name": "Shadow Follower Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7497,6 +7871,7 @@
   {
     "name": "Overlapping Shadow Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+20]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7509,6 +7884,7 @@
   {
     "name": "Star Dart Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7521,6 +7897,7 @@
   {
     "name": "Heaven Earth Magnificent Sound Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+20]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7533,10 +7910,18 @@
   {
     "name": "Illusory Moon Gu",
     "uniques": [
+      "Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +14% a turn, at 100% a 50% chance to die]",
       "[+15]% Strength <when defending> <when above [-1] [Moon Orchid]>",
       "Consumes [1] [Moon Orchid]",
-      "[This Unit] gains the [Orchid Hunger] status for [7] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>",
-      "[This Unit] loses the [Illusory Moon Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>"
+      "[This Unit] loses the [Illusory Moon Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 86%]> <with [50]% chance>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 86%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 86%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 71%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 71%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 57%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 57%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 43%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 43%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 29%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 29%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 14%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Illusory Moon Gu Hunger 100%]> <for units without [Illusory Moon Gu Hunger 86%]>",
+      "[This Unit] gains the [Illusory Moon Gu Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Illusory Moon Gu Hunger 14%]> <for units without [Illusory Moon Gu Hunger 29%]> <for units without [Illusory Moon Gu Hunger 43%]> <for units without [Illusory Moon Gu Hunger 57%]> <for units without [Illusory Moon Gu Hunger 71%]> <for units without [Illusory Moon Gu Hunger 86%]> <for units without [Illusory Moon Gu Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -7547,6 +7932,7 @@
   {
     "name": "Clear Mind Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+20]% XP gained from combat",
       "[+10]% maintenance costs"
     ],
@@ -7559,6 +7945,7 @@
   {
     "name": "Emotion Poetry Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when below [50] HP>",
       "[+10]% maintenance costs"
     ],
@@ -7571,6 +7958,7 @@
   {
     "name": "Estrus Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <vs [Barbarians] units>",
       "[+10]% maintenance costs"
     ],
@@ -7583,6 +7971,7 @@
   {
     "name": "Soul Search Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+25]% XP gained from combat",
       "[+10]% maintenance costs"
     ],
@@ -7595,6 +7984,7 @@
   {
     "name": "Dream Pillow Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[10] HP when healing",
       "[+10]% maintenance costs"
     ],
@@ -7607,6 +7997,7 @@
   {
     "name": "Wolf Enslavement Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <vs [Barbarians] units>",
       "[+10]% maintenance costs"
     ],
@@ -7619,6 +8010,7 @@
   {
     "name": "Man as Before Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[20] HP when healing",
       "[+10]% maintenance costs"
     ],
@@ -7631,6 +8023,7 @@
   {
     "name": "Warp Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[1] Movement",
       "[+10]% maintenance costs"
     ],
@@ -7643,6 +8036,7 @@
   {
     "name": "Amplify Effect Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+10]% Strength",
       "[+10]% maintenance costs"
     ],
@@ -7655,6 +8049,7 @@
   {
     "name": "Turn Phantom Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when defending>",
       "[+10]% maintenance costs"
     ],
@@ -7667,6 +8062,7 @@
   {
     "name": "Primeval Break Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when attacking>",
       "[+10]% maintenance costs"
     ],
@@ -7679,6 +8075,7 @@
   {
     "name": "Luck Inspection Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[1] Sight",
       "[+10]% maintenance costs"
     ],
@@ -7691,6 +8088,7 @@
   {
     "name": "Ten-Year Lifespan Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[10] HP when healing",
       "[+10]% maintenance costs"
     ],
@@ -7703,6 +8101,7 @@
   {
     "name": "Strength Qi Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength",
       "[+10]% maintenance costs"
     ],
@@ -7715,6 +8114,7 @@
   {
     "name": "Revert Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+10]% Strength",
       "[+10]% maintenance costs"
     ],
@@ -7727,6 +8127,7 @@
   {
     "name": "Formation Heart Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
       "[+10]% maintenance costs"
     ],
@@ -7739,10 +8140,16 @@
   {
     "name": "Four Flavours Liquor Worm",
     "uniques": [
+      "Comment [Food: 1 Wine a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]",
       "[+50]% XP gained from combat <when above [-1] [Wine]>",
       "Consumes [1] [Wine]",
-      "[This Unit] gains the [Wine Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>",
-      "[This Unit] loses the [Four Flavours Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>"
+      "[This Unit] loses the [Four Flavours Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Four Flavours Liquor Worm Hunger 80%]> <with [50]% chance>",
+      "[This Unit] gains the [Four Flavours Liquor Worm Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Four Flavours Liquor Worm Hunger 80%]>",
+      "[This Unit] gains the [Four Flavours Liquor Worm Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Four Flavours Liquor Worm Hunger 60%]>",
+      "[This Unit] gains the [Four Flavours Liquor Worm Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Four Flavours Liquor Worm Hunger 40%]>",
+      "[This Unit] gains the [Four Flavours Liquor Worm Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Four Flavours Liquor Worm Hunger 20%]>",
+      "[This Unit] gains the [Four Flavours Liquor Worm Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Four Flavours Liquor Worm Hunger 100%]> <for units without [Four Flavours Liquor Worm Hunger 80%]>",
+      "[This Unit] gains the [Four Flavours Liquor Worm Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Four Flavours Liquor Worm Hunger 20%]> <for units without [Four Flavours Liquor Worm Hunger 40%]> <for units without [Four Flavours Liquor Worm Hunger 60%]> <for units without [Four Flavours Liquor Worm Hunger 80%]> <for units without [Four Flavours Liquor Worm Hunger 100%]>"
     ],
     "civilopediaText": [
       {
@@ -7753,6 +8160,7 @@
   {
     "name": "Pill Refiner Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[10] HP when healing",
       "[+10]% maintenance costs"
     ],
@@ -7765,6 +8173,7 @@
   {
     "name": "Flying Sword Letter Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[1] Sight",
       "[+10]% maintenance costs"
     ],
@@ -7777,6 +8186,7 @@
   {
     "name": "Relic Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+25]% XP gained from combat",
       "[+10]% maintenance costs"
     ],
@@ -7789,6 +8199,7 @@
   {
     "name": "Painting Idea Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "[+15]% Strength <when fighting in [Friendly Land] tiles>",
       "[+10]% maintenance costs"
     ],
@@ -7801,12 +8212,409 @@
   {
     "name": "Plunder Gu",
     "uniques": [
+      "Comment [Food: primeval stones, 10% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
       "Earn [25]% of killed [Military] unit's [Cost] as [Gold]",
       "[+10]% maintenance costs"
     ],
     "civilopediaText": [
       {
         "text": "Plunder Gu (强取蛊) tears a Gu away from an enemy while its user stands still; the odds are low, and failure strikes back."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spear Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Bone Spear Gu Hunger 33%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Bone Spear Gu: 33%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spear Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Bone Spear Gu Hunger 67%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Bone Spear Gu: 67%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Bone Spear Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Bone Spear Gu Hunger 100%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Bone Spear Gu: 100%. It rises 33% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 11%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 11%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 11%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 11%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 22%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 22%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 22%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 22%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 33%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 33%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 44%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 44%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 44%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 44%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 56%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 56%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 56%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 56%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 67%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 67%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 78%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 78%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 78%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 78%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 89%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 89%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 89%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 89%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Blood Skull Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Blood Skull Gu Hunger 100%] status <upon turn start> <when above [-1] [Wild Boar]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Blood Skull Gu: 100%. It rises 11% each turn the clan lacks Wild Boar; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 11%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 11%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 11%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 11%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 22%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 22%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 22%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 22%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 33%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 33%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 33%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 33%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 44%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 44%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 44%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 44%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 56%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 56%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 56%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 56%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 67%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 67%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 67%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 67%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 78%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 78%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 78%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 78%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 89%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 89%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 89%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 89%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Sole Blade Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Sole Blade Gu Hunger 100%] status <upon turn start> <when above [-1] [Jade]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Sole Blade Gu: 100%. It rises 11% each turn the clan lacks Jade; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 14%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 14%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 14%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 14%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 29%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 29%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 29%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 29%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 43%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 43%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 43%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 43%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 57%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 57%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 57%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 57%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 71%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 71%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 71%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 71%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 86%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 86%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 86%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 86%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Illusory Moon Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Illusory Moon Gu Hunger 100%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Illusory Moon Gu: 100%. It rises 14% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Four Flavours Liquor Worm Hunger 20%",
+    "uniques": [
+      "[This Unit] loses the [Four Flavours Liquor Worm Hunger 20%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 20%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Four Flavours Liquor Worm: 20%. It rises 20% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Four Flavours Liquor Worm Hunger 40%",
+    "uniques": [
+      "[This Unit] loses the [Four Flavours Liquor Worm Hunger 40%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 40%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Four Flavours Liquor Worm: 40%. It rises 20% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Four Flavours Liquor Worm Hunger 60%",
+    "uniques": [
+      "[This Unit] loses the [Four Flavours Liquor Worm Hunger 60%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 60%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Four Flavours Liquor Worm: 60%. It rises 20% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Four Flavours Liquor Worm Hunger 80%",
+    "uniques": [
+      "[This Unit] loses the [Four Flavours Liquor Worm Hunger 80%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 80%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Four Flavours Liquor Worm: 80%. It rises 20% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Four Flavours Liquor Worm Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Four Flavours Liquor Worm Hunger 100%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Four Flavours Liquor Worm: 100%. It rises 20% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
       }
     ]
   },
@@ -7850,7 +8658,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Crush the aperture, draw in the three qi and survive the calamity (升仙). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master."
+        "text": "Crush the aperture, draw in the three qi and survive the calamity (升仙). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master; success brings 20 Lifespan Gu."
       }
     ]
   },
@@ -8143,12 +8951,13 @@
       "[This Unit] loses the [Tribulation Survivor] promotion",
       "[This Unit] loses the [Advance to Rank Seven] promotion",
       "[This Unit] gains the [Advancing] status for [1] turn(s)",
+      "Instantly provides [25] [Lifespan Gu]",
       "[This Unit] upgrades for free including special upgrades",
       "[+200]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Climb to rank seven: needs a survived heavenly tribulation, dao marks tier II and 60 green grape essence on Standard, at home."
+        "text": "Climb to rank seven: needs a survived heavenly tribulation, dao marks tier II and 60 green grape essence on Standard, at home. It brings 25 Lifespan Gu."
       }
     ]
   },
@@ -8175,6 +8984,7 @@
       "[This Unit] loses the [Tribulation Survivor] promotion",
       "[This Unit] loses the [Advance to Rank Eight] promotion",
       "[This Unit] gains the [Advancing] status for [1] turn(s)",
+      "Instantly provides [35] [Lifespan Gu]",
       "[This Unit] loses the [Lower Grade Blessed Land] promotion",
       "[This Unit] loses the [Middle Grade Blessed Land] promotion",
       "[This Unit] loses the [Upper Grade Blessed Land] promotion",
@@ -8185,7 +8995,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven."
+        "text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven. It brings 35 Lifespan Gu."
       }
     ]
   },
@@ -8210,21 +9020,21 @@
     "uniques": [
       "Only available <for [Venerable] units>",
       "Unavailable <if [Eternal Life] is constructed by anybody>",
-      "Unavailable <when below [100] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>",
-      "Unavailable <when below [150] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>",
-      "Unavailable <when below [225] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>",
-      "Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>",
-      "Instantly consumes [100] [Yellow Apricot Immortal Essence] <on [Quick] game speed>",
-      "Instantly consumes [150] [Yellow Apricot Immortal Essence] <on [Standard] game speed>",
-      "Instantly consumes [225] [Yellow Apricot Immortal Essence] <on [Epic] game speed>",
-      "Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>",
+      "Unavailable <when below [201] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>",
+      "Unavailable <when below [300] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>",
+      "Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>",
+      "Unavailable <when below [900] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>",
+      "Instantly consumes [201] [Yellow Apricot Immortal Essence] <on [Quick] game speed>",
+      "Instantly consumes [300] [Yellow Apricot Immortal Essence] <on [Standard] game speed>",
+      "Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Epic] game speed>",
+      "Instantly consumes [900] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>",
       "Gain a free [Eternal Life] [in capital]",
       "[This Unit] loses the [Seek Eternal Life] promotion",
       "[+1000]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "The Venerable spends 150 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."
+        "text": "The Venerable spends 300 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."
       }
     ]
   },
@@ -8251,6 +9061,7 @@
       "Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>",
       "Gain a free [Venerable Ascension] [in capital]",
       "[This Unit] loses the [Ascend to Venerable] promotion",
+      "Instantly provides [60] [Lifespan Gu]",
       "[This Unit] loses the [Grotto-Heaven Aperture] promotion",
       "[This Unit] gains the [Advancing] status for [1] turn(s)",
       "[This Unit] upgrades for free including special upgrades",
@@ -8258,7 +9069,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (dao marks tier IV and 60 white lychee essence on Standard, at home). Only one Venerable lives in the world at a time."
+        "text": "A rank-eight immortal of supreme attainment breaks the three blockades and becomes a Venerable (dao marks tier IV and 60 white lychee essence on Standard, at home). It brings 60 Lifespan Gu. Only one Venerable lives in the world at a time."
       }
     ]
   },

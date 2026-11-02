@@ -106,17 +106,20 @@ rest of the list is what a player or the next session should know before trustin
     canon regions; on generated maps Unciv scatters a few of them (naturalWonderCountMultiplier 0.3). Inheritances
     still surface anywhere, not in their canon regions.
 
-16. **High immortals die young in autoplay (C5a).** Half the clans reach rank seven, but by turn 420 most of those
-    immortals are gone (lifespan debt, unprepared tribulations, wars) and rank eight rarely lasts. Canon-like, but a
-    lever if games feel thin at the top: tribulation odds, Lifespan Gu supply.
+16. **High immortals die young in autoplay (C5a; resolved 2026-11-02).** Lifespan now grows with rank (tools/lifespan.py):
+    at T350 on the Five Regions map the clans hold 3.6 immortals each (was 2.2) and only clans without immortals have
+    no Lifespan Gu. Calamities, tribulations and wars still kill them.
 
 17. **No upgrade at sea (C5b).** Unciv places an upgraded unit before copying its promotions, so a Water Master
     standing on open water could not be placed and the game crashed restoring it. Ascension and rank advancement are
     closed on water, and every clan can embark land units from the start.
-18. **The AI reaches a Venerable late and rarely** (Phase D): in 8-game batches of 500–550 turns, one or two AI clans
+18. **When the AI reaches a Venerable** (Phase D): in 8-game batches of 500–550 turns, one or two AI clans
     become Venerables (T342–T494) and one won Eternal Life (T373). The AI never queues the two wonders, so both are
     promotions (Ascend to Venerable, Seek Eternal Life) and the wonders only markers. On the Five Regions map (6 × 500)
     no AI Venerable rose once the Zombie Alliance's immortals stopped making essence (before: 5 of 6 games won by it).
+    Since the lifespan rework (2026-11-02) an AI Venerable rises in most games (6 of 6 on the Five Regions map,
+    T332–T394) and Eternal Life, now 300 yellow apricot essence, falls 59–66 turns later (T391–T443, 5 of 6 games;
+    at 150 it fell 30–35 turns after, T345–T382). A human who wants the arc's victory has to race or hunt them.
 19. **Late-game AI debt on wide maps** (Phase D): Unciv's AI keeps training soldiers while its stones per turn are
     positive, up to five per city outside war [src ConstructionAutomation], and every rank they climb then raises
     their upkeep without any decision of the AI. So the AI clans drift into the red late; on the wide Five Regions
@@ -124,6 +127,13 @@ rest of the list is what a player or the next session should know before trustin
     Qing Mao Mountain with the same eight majors by T300. The red is shallow and self-correcting (weaker units, the
     Stone Shortage event); a human who keeps the army lean does not hit it. Fixed on the way: the map's riches and
     the stability of wide clans.
+
+20. **A rare crash in the ascension upgrade (2026-11-02, not yet explained).** Once in about 30 autoplay games, an AI
+    Gu Master's free upgrade in the ascension chain could place neither the new immortal nor, restoring it, the old
+    Gu Master (NullPointerException at UnitUpgradeManager.performUpgrade, the restore line). The old crashes of this kind
+    (foreign land, open water) are closed by the ascension's Unavailable lines; this one happened on Qing Mao Mountain,
+    in the clan's own land. The harness now records where every Gu Master stood before each turn, so the next
+    occurrence names the tile. If it happens in your game, reload the autosave: the AI's choices differ on a reload.
 
 ## Not yet seen in a real game
 

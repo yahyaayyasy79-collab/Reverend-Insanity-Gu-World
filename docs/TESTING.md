@@ -109,6 +109,14 @@ unit addpromotion "Fire Grandmaster"        # +6 damage per attack; the killer m
 unit addpromotion "Dao Marks V"             # Burning lasts 4 turns now: attack an enemy and read the notification
 ```
 
+Immortal lifespan and Gu hunger (Civilopedia > Tutorials > "Gu World: Immortal Lifespan", "Gu World: Gu Hunger and Food"):
+
+```
+unit addpromotion "Moonlight Gu"     # on more Gu Masters than the clan has Moon Orchid (each eats 1): at the next turn
+                                     # start each shows "Moonlight Gu Hunger 33%", then 67%, then 100% (the death roll)
+unit addpromotion "Advance to Rank Seven"                      # on a Rank Six immortal at home: +25 Lifespan Gu
+```
+
 Dao marks (select one of your Gu Masters first; the tiers replace one another, the icon shows the stars):
 
 ```

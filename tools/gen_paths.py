@@ -154,18 +154,32 @@ def new_gu(g: dict) -> bool:
     return bool(g["name_id"])
 
 
+def hunger_rank(g: dict) -> int:
+    return min(int(g["rank"]), 4)  # data/hunger.csv has ranks 1-4
+
+
 def gu_promotions() -> list[dict]:
-    """The new path Gu: a food eater follows the Slice 1 hunger meter (tools/gu_rules.py), the others eat stones."""
-    from gu_rules import gu_promotion, items
-    out = []
+    """The new path Gu: a food eater follows the Slice 1 hunger meter (tools/gu_rules.py, with its percent statuses),
+    the others eat stones (their upkeep); every Gu says what it eats (a visible comment)."""
+    from gu_rules import gu_promotion, hunger_statuses, items, stone_comment
+    out, statuses = [], []
     for g in (g for g in PATH_GU if new_gu(g)):
         if g["food"]:
-            d = gu_promotion({**g, "rank": str(min(int(g["rank"]), 4)), "extra_uniques": ""})
+            d = gu_promotion({**g, "rank": str(hunger_rank(g)), "extra_uniques": ""})
+            statuses += hunger_statuses(g["name"], g["food"], hunger_rank(g))
         else:
-            d = {"name": g["name"], "uniques": items(g["effects"])
+            d = {"name": g["name"], "uniques": [f"Comment [{stone_comment(int(g['upkeep'] or 0))[0]}]"] + items(g["effects"])
                  + ([f"[+{g['upkeep']}]% maintenance costs"] if g["upkeep"] != "0" else [])}
         d["civilopediaText"] = [{"text": g["pedia"]}]
         out.append(d)
+    return out + statuses
+
+
+def all_food_gu() -> list[tuple[str, str, str, str, str]]:
+    """(name, Indonesian name, food, hunger rank, eats) of every Gu with a hunger meter: Slice 1's and the path Gu."""
+    from gu_rules import table as gtable
+    out = [(r["name"], "", r["food"], r["rank"], r["eats"]) for r in gtable("gu.csv")]
+    out += [(g["name"], g["name_id"], g["food"], str(hunger_rank(g)), g["eats"]) for g in PATH_GU if new_gu(g) and g["food"]]
     return out
 
 
@@ -418,6 +432,9 @@ def translations() -> list[tuple[str, str]]:
         out += [(s["name"], s["name_id"]), (s["pedia"], s["pedia_id"])]
     for g in (g for g in PATH_GU if new_gu(g)):
         out += [(g["name"], g["name_id"]), (g["pedia"], g["pedia_id"])]
+    from gu_rules import hunger_translations, stone_comment
+    out += hunger_translations(all_food_gu())
+    out += [stone_comment(u) for u in sorted({int(g["upkeep"] or 0) for g in PATH_GU if new_gu(g) and not g["food"]} | {10})]
     return out + policy_translations() + tutorial_translations()
 
 
@@ -525,8 +542,131 @@ def _lines_statuses() -> list[tuple[str, str, dict]]:
              "sendiri.", {})] + [(f"{s['name']}: {s['pedia']}", f"{s['name_id']}: {s['pedia_id']}", {}) for s in STATUSES]
 
 
+def _lifespan_effects() -> list[tuple[str, str, str, str]]:
+    """(name, Indonesian name, effect EN, effect ID) of every immortal Gu and inheritance that gives or takes Lifespan Gu."""
+    rx = re.compile(r"Instantly (provides|consumes) \[(\d+)\] \[Lifespan Gu\] <upon turn start> <every \[(\d+)\] turns>"
+                    r"( <when above \[(\d+)\] \[Green Grape Immortal Essence\]>)?")
+    out = []
+    for row, name, name_id in ([(r, r["name"], r["name_id"]) for r in IMMORTAL_GU]
+                               + [(r, r["name"], r["name_id"]) for r in table("inheritances.csv")]):
+        for cell in row.values():
+            for m in rx.finditer(cell or ""):
+                give, n, k, _, ess = m.groups()
+                en = f"{'gives' if give == 'provides' else 'takes'} {n} every {k} turns"
+                idt = f"{'memberi' if give == 'provides' else 'mengambil'} {n} tiap {k} giliran"
+                cost = re.search(r"Instantly consumes \[(\d+)\] \[Green Grape Immortal Essence\] <upon turn start> "
+                                 rf"<every \[{k}\] turns>", cell)
+                if cost:
+                    en += f" for {cost.group(1)} green grape essence"
+                    idt += f" dengan {cost.group(1)} esensi anggur hijau"
+                if ess:
+                    en += f" while the clan holds more than {ess}"
+                    idt += f" selama klan memegang lebih dari {ess}"
+                out.append((name, name_id, en, idt))
+    return out
+
+
+def _lines_lifespan() -> list[tuple[str, str, dict]]:
+    import lifespan as LS
+    from gu_rules import ID_NAMES
+    strength = [v for _, _, v in rank_strengths()]  # ranks one to eight, then the Venerable
+    ranks = {r: strength[r - 1] for r in (5, 6, 7, 8)}
+    L = [("How long an immortal lives", "Berapa lama seorang abadi hidup", {"header": 2}),
+         ("A clan's Lifespan Gu are its immortals' lifespan. Reaching each rank adds to the stock and a higher rank burns "
+          "it more slowly, so every rank climbed makes an immortal live longer. Numbers on Standard speed; the other "
+          "speeds scale the turns.",
+          "Gu Umur milik klan adalah umur para abadinya. Setiap rank yang dicapai menambah stok itu, dan rank yang lebih "
+          "tinggi membakarnya lebih lambat, jadi setiap kenaikan rank memperpanjang hidup seorang abadi. Angka pada "
+          "kecepatan Standar; kecepatan lain menyesuaikan jumlah giliran.", {})]
+    for r in (6, 7, 8, 9):
+        en, idt = LS.RANK_NAME[r]
+        how = {6: ("on ascending", "saat naik menjadi abadi"), 7: ("on advancing", "saat naik rank"),
+               8: ("on advancing", "saat naik rank"), 9: ("on becoming a Venerable", "saat menjadi Yang Mulia")}[r]
+        L.append((f"{en}: +{LS.GRANT[r]} Lifespan Gu {how[0]}; burns one every {LS.BURN[r]} turns, so its own gift lasts "
+                  f"about {LS.lasts(r)} turns.",
+                  f"{idt}: +{LS.GRANT[r]} Gu Umur {how[1]}; membakar satu tiap {LS.BURN[r]} giliran, jadi pemberiannya "
+                  f"sendiri bertahan sekitar {LS.lasts(r)} giliran.", {}))
+    L += [("All the clan's immortals share one stock, each burning at its own rank's rate. With none left an immortal "
+           f"wastes away ({LS.STARVE_DAMAGE} damage a turn) and heals only by pillaging; one Lifespan Gu ends that at once.",
+           "Semua abadi klan berbagi satu stok, masing-masing membakar menurut rank-nya. Bila habis, seorang abadi merana "
+           f"({LS.STARVE_DAMAGE} kerusakan per giliran) dan hanya pulih dengan menjarah; satu Gu Umur langsung "
+           "menghentikannya.", {}),
+          ("How to add lifespan", "Cara menambah umur", {"header": 3}),
+          ("1. Climb. Every rank reached adds Lifespan Gu (above): the surest way.",
+           "1. Naik rank. Setiap rank yang dicapai menambah Gu Umur (di atas): cara paling pasti.", {}),
+          (f"2. Green land. From Calamity Lore, every {LS.WILD_TILES} owned forest, jungle or marsh tiles of each kind give "
+           f"one with a {LS.WILD_CHANCE}% chance each turn: keep your woods and swamps, settle near them.",
+           f"2. Tanah hijau. Sejak {ID_NAMES.get('Calamity Lore')}, setiap {LS.WILD_TILES} petak hutan, rimba, atau rawa milikmu (per jenis) "
+           f"memberi satu dengan peluang {LS.WILD_CHANCE}% tiap giliran: jaga hutan dan rawamu, bangun desa di dekatnya.", {})]
+    gives = [x for x in _lifespan_effects() if x[2].startswith("gives")]
+    L.append(("3. Immortal Gu and inheritances: " + "; ".join(f"{n} {e}" for n, _, e, _ in gives) + ".",
+              "3. Gu abadi dan warisan: " + "; ".join(f"{i or n} {d}" for n, i, _, d in gives) + ".", {}))
+    L += [(f"4. The market. Treasure Yellow Heaven sells {LS.MARKET_GU} Lifespan Gu for {LS.MARKET_PRICE} stones.",
+           f"4. Pasar. Treasure Yellow Heaven menjual {LS.MARKET_GU} Gu Umur seharga {LS.MARKET_PRICE} batu.", {}),
+          ("5. Conquest. A captured city keeps its immortal Gu and inheritances, so the ones above can be seized.",
+           "5. Penaklukan. Kota yang direbut tetap memegang Gu abadi dan warisannya, jadi yang di atas bisa direbut.", {}),
+          ("What takes lifespan", "Apa yang menghabiskan umur", {"header": 3})]
+    for name, name_id, en, idt in _lifespan_effects():
+        if en.startswith("takes"):
+            L.append((f"{name}: {en}.", f"{name_id or name}: {idt}.", {}))
+    L += [(f"While a Venerable lives, every clan loses one each {LS.DREAD_TURNS} turns.",
+           f"Selama seorang Yang Mulia hidup, setiap klan kehilangan satu tiap {LS.DREAD_TURNS} giliran.", {}),
+          ("The Zombie Alliance's immortals never age (it gains one per immortal each 10 turns) but make no essence.",
+           "Para abadi Aliansi Mayat Hidup tak pernah menua (mendapat satu per abadi tiap 10 giliran) tetapi tak menghasilkan "
+           "esensi.", {}),
+          ("Immortals against mortal clans", "Abadi melawan klan fana", {"header": 3}),
+          (f"An immortal outclasses any mortal army: strength {ranks[6]}, {ranks[7]} and {ranks[8]} at ranks six to eight "
+           f"against {ranks[5]} at rank five, before its path, and it crosses the region walls. That is the reward for a long, hard "
+           "climb: ascension needs a rank-five Master, the three qi and luck, and every rank above needs a survived "
+           "tribulation, dao marks and essence.",
+           f"Seorang abadi jauh melampaui pasukan fana mana pun: kekuatan {ranks[6]}, {ranks[7]}, dan {ranks[8]} pada rank "
+           f"enam sampai delapan melawan {ranks[5]} pada rank lima, belum termasuk jalurnya, dan ia menembus tembok wilayah. Itulah "
+           "imbalan pendakian yang panjang dan berat: kenaikan abadi butuh Ahli rank lima, tiga qi, dan keberuntungan, dan "
+           "setiap rank di atasnya butuh selamat dari kesengsaraan, jejak dao, dan esensi.", {})]
+    return L
+
+
+def _lines_hunger() -> list[tuple[str, str, dict]]:
+    from gu_rules import HUNGER_RANKS, ID_NAMES, stages
+    L = [("Every Gu eats", "Setiap Gu makan", {"header": 2}),
+         ("A Gu that eats a Gu food (moon orchid, wild boar, jade or wine) takes it from the clan's stock every turn. "
+          "When the clan is short, every Gu eating that food is weakened at once and its hunger meter rises each turn: a "
+          "status on the unit shows the percent. At 100% the Gu rolls its chance to die, then the meter starts again. "
+          "Feed the clan and the meter clears.",
+          "Gu yang memakan makanan Gu (anggrek bulan, babi hutan, giok, atau arak) mengambilnya dari stok klan setiap "
+          "giliran. Bila klan kekurangan, setiap Gu pemakan makanan itu langsung melemah dan meteran laparnya naik tiap "
+          "giliran: sebuah status di unit menunjukkan persennya. Pada 100% Gu itu melempar peluang matinya, lalu meteran "
+          "mulai lagi. Beri makan klan dan meteran itu hilang.", {}),
+         ("Hunger rate by rank: " + ", ".join(f"rank {r} +{stages(r)[0]}% a turn ({HUNGER_RANKS[r][1]}% death chance at 100%)"
+                                            for r in sorted(HUNGER_RANKS)) + ". The lower the rank, the faster the hunger.",
+          "Laju lapar per rank: " + ", ".join(f"rank {r} +{stages(r)[0]}% per giliran (peluang mati {HUNGER_RANKS[r][1]}% "
+                                              f"pada 100%)" for r in sorted(HUNGER_RANKS)) + ". Makin rendah rank-nya, makin "
+          "cepat laparnya.", {}),
+         ("Where the food comes from: moon orchid and wild boar from their improved tiles and the Gu Feeding House, jade "
+          "from mined jade, wine only from the Tavern.",
+          f"Asal makanan: anggrek bulan dan babi hutan dari petaknya yang dikelola dan {ID_NAMES['Gu Feeding House']}, "
+          f"giok dari tambang giok, arak hanya dari {ID_NAMES['Tavern']}.", {}),
+         ("Other Gu eat primeval stones: each raises its unit's upkeep, usually by 10%. When the clan's stones fall below "
+          "zero, every unit fights 20% weaker.",
+          "Gu lain memakan batu primordial: masing-masing menaikkan pemeliharaan unitnya, biasanya 10%. Bila batu klan "
+          "di bawah nol, setiap unit bertarung 20% lebih lemah.", {}),
+         ("Every Gu with a hunger meter", "Setiap Gu dengan meteran lapar", {"header": 3})]
+    for name, name_id, food, rank, eats in all_food_gu():
+        r = int(rank)
+        L.append((f"{name}: {eats} {food} a turn; hunger +{stages(r)[0]}% a turn.",
+                  f"{name_id or ID_NAMES.get(name, name)}: {eats} {ID_NAMES.get(food, food)} per giliran; lapar "
+                  f"+{stages(r)[0]}% per giliran.", {}))
+    stone = sorted(g["name"] for g in PATH_GU if new_gu(g) and not g["food"]) + ["Bear Strength Gu", "Stream Gu"]
+    L += [("Gu that eat stones", "Gu pemakan batu", {"header": 3}),
+          (", ".join(sorted(stone)) + ".", ", ".join(sorted(ID_NAMES.get(n) or next(
+              (g["name_id"] for g in PATH_GU if g["name"] == n), n) for n in stone)) + ".", {})]
+    return L
+
+
 def _tutorial_specs() -> list[tuple[str, str, list]]:
-    out = [("Gu World: Power Scaling", "Dunia Gu: Skala Kekuatan", _lines_power())]
+    out = [("Gu World: Power Scaling", "Dunia Gu: Skala Kekuatan", _lines_power()),
+           ("Gu World: Immortal Lifespan", "Dunia Gu: Umur Abadi", _lines_lifespan()),
+           ("Gu World: Gu Hunger and Food", "Dunia Gu: Lapar dan Makanan Gu", _lines_hunger())]
     out += [(f"Gu World: {f['name'].replace('&', 'and')} Paths", f"Dunia Gu: Jalur {f['name_id'].replace('&', 'dan')}",
              _lines_family(k)) for k, f in FAMILIES.items()]
     out.append(("Gu World: Statuses", "Dunia Gu: Status", _lines_statuses()))
@@ -612,8 +752,14 @@ def doc_tables() -> dict[str, str]:
         q = POWERS[p["key"]]
         pw.append(f"| {p['name']} | {PP.describe(p['signature'])[0]} | {PP.hit_summary(q)[0]} | "
                   + " | ".join(PP.describe_all(PP.cell(q, c))[0] for c in ("gm", "ggm", "sup")) + " |")
+    from gu_rules import hunger_statuses, stages
+    hu = ["| Gu | Food | Hunger rank | Steps | Each step's uniques |", "|---|---|---|---|---|"]
+    for name, _, food, rank, eats in all_food_gu():
+        st = hunger_statuses(name, food, int(rank))
+        hu.append(f"| {name} | {eats} {food} | {rank} | " + ", ".join(f"{p}%" for p in stages(int(rank))) + " | "
+                  + " ".join(code(u) for x in st for u in x["uniques"]) + " |")
     return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
-            "gu": "\n".join(gu), "branches": "\n".join(br), "powers": "\n".join(pw)}
+            "gu": "\n".join(gu), "branches": "\n".join(br), "powers": "\n".join(pw), "hunger": "\n".join(hu)}
 
 
 def splice(text: str, tables: dict[str, str]) -> str:

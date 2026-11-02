@@ -41,6 +41,140 @@
     ]
   },
   {
+    "name": "Gu World: Immortal Lifespan",
+    "civilopediaText": [
+      {
+        "text": "How long an immortal lives",
+        "header": 2
+      },
+      {
+        "text": "A clan's Lifespan Gu are its immortals' lifespan. Reaching each rank adds to the stock and a higher rank burns it more slowly, so every rank climbed makes an immortal live longer. Numbers on Standard speed; the other speeds scale the turns."
+      },
+      {
+        "text": "Rank six: +20 Lifespan Gu on ascending; burns one every 10 turns, so its own gift lasts about 200 turns."
+      },
+      {
+        "text": "Rank seven: +25 Lifespan Gu on advancing; burns one every 15 turns, so its own gift lasts about 375 turns."
+      },
+      {
+        "text": "Rank eight: +35 Lifespan Gu on advancing; burns one every 20 turns, so its own gift lasts about 700 turns."
+      },
+      {
+        "text": "The Venerable: +60 Lifespan Gu on becoming a Venerable; burns one every 30 turns, so its own gift lasts about 1800 turns."
+      },
+      {
+        "text": "All the clan's immortals share one stock, each burning at its own rank's rate. With none left an immortal wastes away (7 damage a turn) and heals only by pillaging; one Lifespan Gu ends that at once."
+      },
+      {
+        "text": "How to add lifespan",
+        "header": 3
+      },
+      {
+        "text": "1. Climb. Every rank reached adds Lifespan Gu (above): the surest way."
+      },
+      {
+        "text": "2. Green land. From Calamity Lore, every 8 owned forest, jungle or marsh tiles of each kind give one with a 15% chance each turn: keep your woods and swamps, settle near them."
+      },
+      {
+        "text": "3. Immortal Gu and inheritances: Year Gu gives 1 every 3 turns; Years Flow Like Water gives 2 every 5 turns for 10 green grape essence while the clan holds more than 9; Red Lotus Inheritance gives 1 every 5 turns."
+      },
+      {
+        "text": "4. The market. Treasure Yellow Heaven sells 3 Lifespan Gu for 120 stones."
+      },
+      {
+        "text": "5. Conquest. A captured city keeps its immortal Gu and inheritances, so the ones above can be seized."
+      },
+      {
+        "text": "What takes lifespan",
+        "header": 3
+      },
+      {
+        "text": "Wisdom Gu: takes 1 every 5 turns."
+      },
+      {
+        "text": "While a Venerable lives, every clan loses one each 10 turns."
+      },
+      {
+        "text": "The Zombie Alliance's immortals never age (it gains one per immortal each 10 turns) but make no essence."
+      },
+      {
+        "text": "Immortals against mortal clans",
+        "header": 3
+      },
+      {
+        "text": "An immortal outclasses any mortal army: strength 60, 85 and 115 at ranks six to eight against 44 at rank five, before its path, and it crosses the region walls. That is the reward for a long, hard climb: ascension needs a rank-five Master, the three qi and luck, and every rank above needs a survived tribulation, dao marks and essence."
+      }
+    ]
+  },
+  {
+    "name": "Gu World: Gu Hunger and Food",
+    "civilopediaText": [
+      {
+        "text": "Every Gu eats",
+        "header": 2
+      },
+      {
+        "text": "A Gu that eats a Gu food (moon orchid, wild boar, jade or wine) takes it from the clan's stock every turn. When the clan is short, every Gu eating that food is weakened at once and its hunger meter rises each turn: a status on the unit shows the percent. At 100% the Gu rolls its chance to die, then the meter starts again. Feed the clan and the meter clears."
+      },
+      {
+        "text": "Hunger rate by rank: rank 1 +33% a turn (50% death chance at 100%), rank 2 +20% a turn (50% death chance at 100%), rank 3 +14% a turn (50% death chance at 100%), rank 4 +11% a turn (50% death chance at 100%). The lower the rank, the faster the hunger."
+      },
+      {
+        "text": "Where the food comes from: moon orchid and wild boar from their improved tiles and the Gu Feeding House, jade from mined jade, wine only from the Tavern."
+      },
+      {
+        "text": "Other Gu eat primeval stones: each raises its unit's upkeep, usually by 10%. When the clan's stones fall below zero, every unit fights 20% weaker."
+      },
+      {
+        "text": "Every Gu with a hunger meter",
+        "header": 3
+      },
+      {
+        "text": "Moonlight Gu: 1 Moon Orchid a turn; hunger +33% a turn."
+      },
+      {
+        "text": "White Boar Gu: 1 Wild Boar a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Black Boar Gu: 1 Wild Boar a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Jade Skin Gu: 1 Jade a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Liquor Worm: 1 Wine a turn; hunger +33% a turn."
+      },
+      {
+        "text": "White Jade Gu: 2 Jade a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Moon Raiment: 1 Moon Orchid a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Bone Spear Gu: 1 Wild Boar a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Blood Skull Gu: 1 Wild Boar a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Sole Blade Gu: 1 Jade a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Illusory Moon Gu: 1 Moon Orchid a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Four Flavours Liquor Worm: 1 Wine a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Gu that eat stones",
+        "header": 3
+      },
+      {
+        "text": "Amplify Effect Gu, Armoury Gu, Bear Strength Gu, Bronze Skin Gu, Clear Mind Gu, Dream Pillow Gu, Emotion Poetry Gu, Estrus Gu, Fiery Claw Gu, Flying Cloud Gu, Flying Sword Letter Gu, Formation Heart Gu, Frost Demon Gu, Gruel Mud Gu, Heaven Earth Magnificent Sound Gu, Heavenly Essence Treasure Lotus, Killing Intent Gu, Little Light Gu, Luck Inspection Gu, Man as Before Gu, Overlapping Shadow Gu, Painting Idea Gu, Pill Refiner Gu, Plunder Gu, Poison Scorpion Gu, Primeval Break Gu, Relic Gu, Revert Gu, Roaming Zombie Gu, Shadow Follower Gu, Soul Search Gu, Star Dart Gu, Stream Gu, Strength Qi Gu, Sword Shadow Gu, Ten-Year Lifespan Gu, Thunderclap Gu, Turn Phantom Gu, Warp Gu, Water Shield Gu, Whirlwind Gu, Wolf Enslavement Gu."
+      }
+    ]
+  },
+  {
     "name": "Gu World: Body and Beast Paths",
     "civilopediaText": [
       {

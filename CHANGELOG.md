@@ -683,3 +683,30 @@
 * Autoplay (Five Regions, 6 × 350): with hits on defence as well, sieges stalled (captured cities 16 → 9, clans
   destroyed 7 → 1), so hits fire on attack only: 27 captured and 9 destroyed. 20+ turns in the red: 25 → 23 of 48.
   0 crashes.
+
+## Phase D: immortals live longer with every rank; Gu hunger in percent (2026-11-02)
+
+* **Lifespan grows with rank.** The user asked: "kalo udah ascend ke abadi umurnya bertambah bukan malah berkurang".
+  * Reaching a rank adds Lifespan Gu: rank six +20, rank seven +25, rank eight +35, the Venerable +60.
+  * Higher ranks burn them more slowly: one Lifespan Gu every 10, 15, 20 or 30 turns on Standard.
+  * One immortal therefore lives about 200, 375, 700 or 1800 turns on its rank's own gift.
+  * Before, ascension gave 5 and every rank burned one each 10 turns: about 50 turns of life.
+* **Tutorial page "Gu World: Immortal Lifespan"** (EN + ID). It gives the numbers per rank, every way to add lifespan
+  (climbing, green land, Year Gu, Years Flow Like Water, Red Lotus, the market, conquest), what takes it, and why
+  immortals outclass mortal clans.
+* **Eternal Life now costs 300 yellow apricot essence (was 150), so rank nine stays hard and long.**
+  * With immortals no longer dying of age, autoplay raised a Venerable in 6 of 6 games.
+  * At 150, Eternal Life fell 30–35 turns after the Venerable; at 300 it falls 59–66 turns after (T391–T443).
+* **Gu hunger in percent** (the user: "kasih rate persentase seberapa lapar dan apa makanan gu tersebut").
+  * Each Gu that eats a Gu food shows its own meter, "<Gu> Hunger <p>%", one step per hungry turn: rank one 33/67/100,
+    rank two 20..100, rank three 14..100, rank four 11..100.
+  * The death roll comes at 100%, exactly as before, then the meter restarts. Each step has an icon (the food in a
+    ring filled to the percent).
+  * Every Gu now names its food in its promotion: a Gu food with its hunger rate, or primeval stones with the upkeep
+    they add.
+  * New Tutorial page "Gu World: Gu Hunger and Food" lists every Gu.
+* The civilopedia texts quote `tools/lifespan.py` and the Eternal Life cost, and the build stops if they drift apart.
+* Autoplay harness:
+  * It counts the percent meter.
+  * On a crash it records where every Gu Master stood.
+  * One crash was seen in about 30 games: an ascension upgrade that could not place the unit (KNOWN_ISSUES 20).

@@ -55,6 +55,14 @@ TIER_STRENGTH in `tools/gen_paths.py`. Evidence (Five Regions, 6 × 350): hits o
 fail (captured cities 16 → 9, clans destroyed 7 → 1); attack-only hits gave 27 and 9. If wars feel too bloody, lower
 the dmg and dur rows first.
 
+## Immortal lifespan and the Eternal Life cost (Phase D, 2026-11-02)
+
+Knobs: `tools/lifespan.py` GRANT (Lifespan Gu on reaching ranks 6/7/8/9: 20/25/35/60), BURN (one each 10/15/20/30
+turns on Standard), WILD_CHANCE; ETERNAL_COST in `tools/gen_ruleset.py` (300). Evidence (Five Regions, 6 × 400–450):
+immortals per clan at T350 2.2 → 3.6, rank eight reached by 10 clans (was 2), a Venerable in 6 of 6 games (was 0);
+Eternal Life at 150 won 4 of 6 games 30–35 turns after the Venerable, at 300 5 of 6 games 59–66 turns after
+(T391–T443). Lifespan stocks reach about 100 by T350: if immortals should feel mortal again, cut WILD_CHANCE first.
+
 ## What the data says is off
 
 Not fixed, because each needs either a human game or the user's taste:
@@ -360,10 +368,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
-| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
-| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
-| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
-| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Quick] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Standard] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [22] turns> <on [Epic] game speed>` | 1, 22 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Marathon] game speed>` | 1, 45 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
@@ -380,10 +388,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [30] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] gains the [Dao Comprehension] status for [60] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `gm()` |
-| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `gm()` |
-| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `gm()` |
-| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `gm()` |
-| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [13] turns> <on [Quick] game speed>` | 1, 13 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Standard] game speed>` | 1, 20 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Epic] game speed>` | 1, 30 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [60] turns> <on [Marathon] game speed>` | 1, 60 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] gains [3] XP <upon turn start>` | 3 | data/gu_masters.csv `cultivationXP` |
@@ -416,10 +424,10 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Venerable | strength | 280 | tools/gen_ruleset.py `Units` |
 | Venerable | cost | 1000 | tools/gen_ruleset.py `Units` |
 | Venerable | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
-| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>` | 1, 7 | tools/gen_ruleset.py `Units` |
-| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>` | 1, 10 | tools/gen_ruleset.py `Units` |
-| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>` | 1, 15 | tools/gen_ruleset.py `Units` |
-| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Marathon] game speed>` | 1, 30 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Quick] game speed>` | 1, 20 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Standard] game speed>` | 1, 30 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [45] turns> <on [Epic] game speed>` | 1, 45 | tools/gen_ruleset.py `Units` |
+| Venerable | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [90] turns> <on [Marathon] game speed>` | 1, 90 | tools/gen_ruleset.py `Units` |
 | Venerable | `Can only heal by pillaging <when below [1] [Lifespan Gu]>` | 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>` | 7, 1 | tools/gen_ruleset.py `Units` |
 | Venerable | `Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>` | 6 | tools/gen_ruleset.py `Units` |
@@ -507,36 +515,61 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Refine Gu | `Unavailable <for units without [Moon Master]> <for units without [Strength Master]> <when below [1] [Jade]> <when below [31] [Gold]>` | 31 | tools/gen_ruleset.py `Promotions` |
 | Moonlight Gu | `[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>` | +20 | data/gu.csv `effects` / `extra_uniques` |
 | Moonlight Gu | `Consumes [1] [Moon Orchid]` | 1 | data/gu.csv `eats` |
-| Moonlight Gu | `[This Unit] gains the [Orchid Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>` | 3 | data/hunger.csv |
-| Moonlight Gu | `[This Unit] loses the [Moonlight Gu] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>` | 50 | data/hunger.csv |
+| Moonlight Gu | `[This Unit] loses the [Moonlight Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 67%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| Moonlight Gu | `[This Unit] gains the [Moonlight Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| Moonlight Gu | `[This Unit] gains the [Moonlight Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 33%]>` | 2 | data/hunger.csv |
+| Moonlight Gu | `[This Unit] gains the [Moonlight Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonlight Gu Hunger 100%]> <for units without [Moonlight Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| Moonlight Gu | `[This Unit] gains the [Moonlight Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonlight Gu Hunger 33%]> <for units without [Moonlight Gu Hunger 67%]> <for units without [Moonlight Gu Hunger 100%]>` | 2 | data/hunger.csv |
 | Moonlight Gu | `[-10]% Strength <for units with [Strength Master]>` | -10 | data/gu.csv `effects` / `extra_uniques` |
 | White Boar Gu | `[+15]% Strength <when above [-1] [Wild Boar]>` | +15 | data/gu.csv `effects` / `extra_uniques` |
 | White Boar Gu | `Consumes [1] [Wild Boar]` | 1 | data/gu.csv `eats` |
-| White Boar Gu | `[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>` | 3 | data/hunger.csv |
-| White Boar Gu | `[This Unit] loses the [White Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>` | 50 | data/hunger.csv |
+| White Boar Gu | `[This Unit] loses the [White Boar Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 67%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| White Boar Gu | `[This Unit] gains the [White Boar Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| White Boar Gu | `[This Unit] gains the [White Boar Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 33%]>` | 2 | data/hunger.csv |
+| White Boar Gu | `[This Unit] gains the [White Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [White Boar Gu Hunger 100%]> <for units without [White Boar Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| White Boar Gu | `[This Unit] gains the [White Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [White Boar Gu Hunger 33%]> <for units without [White Boar Gu Hunger 67%]> <for units without [White Boar Gu Hunger 100%]>` | 2 | data/hunger.csv |
 | Black Boar Gu | `[+15]% Strength <when above [-1] [Wild Boar]>` | +15 | data/gu.csv `effects` / `extra_uniques` |
 | Black Boar Gu | `Consumes [1] [Wild Boar]` | 1 | data/gu.csv `eats` |
-| Black Boar Gu | `[This Unit] gains the [Pork Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Pork Hunger]>` | 3 | data/hunger.csv |
-| Black Boar Gu | `[This Unit] loses the [Black Boar Gu] promotion <upon losing the [Pork Hunger] status> <when below [0] [Wild Boar]> <with [50]% chance>` | 50 | data/hunger.csv |
+| Black Boar Gu | `[This Unit] loses the [Black Boar Gu] promotion <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 67%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| Black Boar Gu | `[This Unit] gains the [Black Boar Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| Black Boar Gu | `[This Unit] gains the [Black Boar Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 33%]>` | 2 | data/hunger.csv |
+| Black Boar Gu | `[This Unit] gains the [Black Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units with [Black Boar Gu Hunger 100%]> <for units without [Black Boar Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| Black Boar Gu | `[This Unit] gains the [Black Boar Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wild Boar]> <for units without [Black Boar Gu Hunger 33%]> <for units without [Black Boar Gu Hunger 67%]> <for units without [Black Boar Gu Hunger 100%]>` | 2 | data/hunger.csv |
 | Jade Skin Gu | `[+15]% Strength <when defending> <when above [-1] [Jade]>` | +15 | data/gu.csv `effects` / `extra_uniques` |
 | Jade Skin Gu | `Consumes [1] [Jade]` | 1 | data/gu.csv `eats` |
-| Jade Skin Gu | `[This Unit] gains the [Jade Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>` | 3 | data/hunger.csv |
-| Jade Skin Gu | `[This Unit] loses the [Jade Skin Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>` | 50 | data/hunger.csv |
+| Jade Skin Gu | `[This Unit] loses the [Jade Skin Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 67%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| Jade Skin Gu | `[This Unit] gains the [Jade Skin Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| Jade Skin Gu | `[This Unit] gains the [Jade Skin Gu Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 33%]>` | 2 | data/hunger.csv |
+| Jade Skin Gu | `[This Unit] gains the [Jade Skin Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [Jade Skin Gu Hunger 100%]> <for units without [Jade Skin Gu Hunger 67%]>` | 2 | data/hunger.csv |
+| Jade Skin Gu | `[This Unit] gains the [Jade Skin Gu Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Skin Gu Hunger 33%]> <for units without [Jade Skin Gu Hunger 67%]> <for units without [Jade Skin Gu Hunger 100%]>` | 2 | data/hunger.csv |
 | Liquor Worm | `[+50]% XP gained from combat <when above [-1] [Wine]>` | +50 | data/gu.csv `effects` / `extra_uniques` |
 | Liquor Worm | `Consumes [1] [Wine]` | 1 | data/gu.csv `eats` |
-| Liquor Worm | `[This Unit] gains the [Wine Hunger] status for [3] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Wine Hunger]>` | 3 | data/hunger.csv |
-| Liquor Worm | `[This Unit] loses the [Liquor Worm] promotion <upon losing the [Wine Hunger] status> <when below [0] [Wine]> <with [50]% chance>` | 50 | data/hunger.csv |
+| Liquor Worm | `[This Unit] loses the [Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 67%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| Liquor Worm | `[This Unit] gains the [Liquor Worm Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 67%]>` | 2 | data/hunger.csv |
+| Liquor Worm | `[This Unit] gains the [Liquor Worm Hunger 67%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 33%]>` | 2 | data/hunger.csv |
+| Liquor Worm | `[This Unit] gains the [Liquor Worm Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Liquor Worm Hunger 100%]> <for units without [Liquor Worm Hunger 67%]>` | 2 | data/hunger.csv |
+| Liquor Worm | `[This Unit] gains the [Liquor Worm Hunger 33%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Liquor Worm Hunger 33%]> <for units without [Liquor Worm Hunger 67%]> <for units without [Liquor Worm Hunger 100%]>` | 2 | data/hunger.csv |
 | White Jade Gu | `[+15]% Strength <when above [-1] [Jade]>` | +15 | data/gu.csv `effects` / `extra_uniques` |
 | White Jade Gu | `[+30]% Strength <when defending> <when above [-1] [Jade]>` | +30 | data/gu.csv `effects` / `extra_uniques` |
 | White Jade Gu | `Consumes [2] [Jade]` | 2 | data/gu.csv `eats` |
-| White Jade Gu | `[This Unit] gains the [Jade Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [Jade Hunger]>` | 5 | data/hunger.csv |
-| White Jade Gu | `[This Unit] loses the [White Jade Gu] promotion <upon losing the [Jade Hunger] status> <when below [0] [Jade]> <with [50]% chance>` | 50 | data/hunger.csv |
+| White Jade Gu | `[This Unit] loses the [White Jade Gu] promotion <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 80%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| White Jade Gu | `[This Unit] gains the [White Jade Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 80%]>` | 2 | data/hunger.csv |
+| White Jade Gu | `[This Unit] gains the [White Jade Gu Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 60%]>` | 2 | data/hunger.csv |
+| White Jade Gu | `[This Unit] gains the [White Jade Gu Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 40%]>` | 2 | data/hunger.csv |
+| White Jade Gu | `[This Unit] gains the [White Jade Gu Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 20%]>` | 2 | data/hunger.csv |
+| White Jade Gu | `[This Unit] gains the [White Jade Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units with [White Jade Gu Hunger 100%]> <for units without [White Jade Gu Hunger 80%]>` | 2 | data/hunger.csv |
+| White Jade Gu | `[This Unit] gains the [White Jade Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Jade]> <for units without [White Jade Gu Hunger 20%]> <for units without [White Jade Gu Hunger 40%]> <for units without [White Jade Gu Hunger 60%]> <for units without [White Jade Gu Hunger 80%]> <for units without [White Jade Gu Hunger 100%]>` | 2 | data/hunger.csv |
 | Moon Raiment | `[+20]% Strength <when attacking> <when above [-1] [Moon Orchid]>` | +20 | data/gu.csv `effects` / `extra_uniques` |
 | Moon Raiment | `[+20]% Strength <when defending> <when above [-1] [Moon Orchid]>` | +20 | data/gu.csv `effects` / `extra_uniques` |
 | Moon Raiment | `[+10]% Strength bonus for [Military] units within [1] tiles <when above [-1] [Moon Orchid]>` | +10, 1 | data/gu.csv `effects` / `extra_uniques` |
 | Moon Raiment | `Consumes [1] [Moon Orchid]` | 1 | data/gu.csv `eats` |
-| Moon Raiment | `[This Unit] gains the [Orchid Hunger] status for [5] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Orchid Hunger]>` | 5 | data/hunger.csv |
-| Moon Raiment | `[This Unit] loses the [Moon Raiment] promotion <upon losing the [Orchid Hunger] status> <when below [0] [Moon Orchid]> <with [50]% chance>` | 50 | data/hunger.csv |
+| Moon Raiment | `[This Unit] loses the [Moon Raiment] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 80%]> <with [50]% chance>` | 50 | data/gu.csv `effects` / `extra_uniques` |
+| Moon Raiment | `[This Unit] gains the [Moon Raiment Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 80%]>` | 2 | data/hunger.csv |
+| Moon Raiment | `[This Unit] gains the [Moon Raiment Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 60%]>` | 2 | data/hunger.csv |
+| Moon Raiment | `[This Unit] gains the [Moon Raiment Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 40%]>` | 2 | data/hunger.csv |
+| Moon Raiment | `[This Unit] gains the [Moon Raiment Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 20%]>` | 2 | data/hunger.csv |
+| Moon Raiment | `[This Unit] gains the [Moon Raiment Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moon Raiment Hunger 100%]> <for units without [Moon Raiment Hunger 80%]>` | 2 | data/hunger.csv |
+| Moon Raiment | `[This Unit] gains the [Moon Raiment Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moon Raiment Hunger 20%]> <for units without [Moon Raiment Hunger 40%]> <for units without [Moon Raiment Hunger 60%]> <for units without [Moon Raiment Hunger 80%]> <for units without [Moon Raiment Hunger 100%]>` | 2 | data/hunger.csv |
 | Killer Move | `[+25]% Strength <when attacking>` | +25 | tools/gen_ruleset.py `Promotions` |
 | Killer Move | `[+25]% maintenance costs` | +25 | tools/gen_ruleset.py `Promotions` |
 | Bear Strength Gu | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
@@ -662,6 +695,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Advance to Rank Seven | `Instantly consumes [90] [Green Grape Immortal Essence] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Seven | `Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Seven | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Seven | `Instantly provides [25] [Lifespan Gu]` | 25 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Seven | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `Unavailable <when below [60] [Red Date Immortal Essence]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
@@ -672,16 +706,17 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Advance to Rank Eight | `Instantly consumes [90] [Red Date Immortal Essence] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `Instantly consumes [180] [Red Date Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
+| Advance to Rank Eight | `Instantly provides [35] [Lifespan Gu]` | 35 | tools/gen_ruleset.py `Promotions` |
 | Advance to Rank Eight | `[+200]% weight to this choice for AI decisions` | +200 | tools/gen_ruleset.py `Promotions` |
 | Venerable Killer Move | `[+100]% Strength` | +100 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Unavailable <when below [100] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>` | 100 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Unavailable <when below [150] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>` | 150 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Unavailable <when below [225] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>` | 225 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>` | 450 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Instantly consumes [100] [Yellow Apricot Immortal Essence] <on [Quick] game speed>` | 100 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Instantly consumes [150] [Yellow Apricot Immortal Essence] <on [Standard] game speed>` | 150 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Instantly consumes [225] [Yellow Apricot Immortal Essence] <on [Epic] game speed>` | 225 | tools/gen_ruleset.py `Promotions` |
-| Seek Eternal Life | `Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>` | 450 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [201] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>` | 201 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [300] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>` | 300 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>` | 450 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Unavailable <when below [900] [Yellow Apricot Immortal Essence]> <on [Marathon] game speed>` | 900 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [201] [Yellow Apricot Immortal Essence] <on [Quick] game speed>` | 201 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [300] [Yellow Apricot Immortal Essence] <on [Standard] game speed>` | 300 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [450] [Yellow Apricot Immortal Essence] <on [Epic] game speed>` | 450 | tools/gen_ruleset.py `Promotions` |
+| Seek Eternal Life | `Instantly consumes [900] [Yellow Apricot Immortal Essence] <on [Marathon] game speed>` | 900 | tools/gen_ruleset.py `Promotions` |
 | Seek Eternal Life | `[+1000]% weight to this choice for AI decisions` | +1000 | tools/gen_ruleset.py `Promotions` |
 | Ascend to Venerable | `Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
 | Ascend to Venerable | `Unavailable <when below [60] [White Lychee Immortal Essence]> <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
@@ -691,6 +726,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Ascend to Venerable | `Instantly consumes [60] [White Lychee Immortal Essence] <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
 | Ascend to Venerable | `Instantly consumes [90] [White Lychee Immortal Essence] <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
 | Ascend to Venerable | `Instantly consumes [180] [White Lychee Immortal Essence] <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Ascend to Venerable | `Instantly provides [60] [Lifespan Gu]` | 60 | tools/gen_ruleset.py `Promotions` |
 | Ascend to Venerable | `[This Unit] gains the [Advancing] status for [1] turn(s)` | 1 | tools/gen_ruleset.py `Promotions` |
 | Ascend to Venerable | `[+500]% weight to this choice for AI decisions` | +500 | tools/gen_ruleset.py `Promotions` |
 | Soul Tempered | `[+15]% XP gained from combat` | +15 | tools/gen_ruleset.py `Promotions` |
@@ -910,30 +946,30 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Ascension › Ascend in haste | `Instantly consumes [90] [Human Qi] <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Events` |
 | Ascension › Ascend in haste | `[-80]% weight to this choice for AI decisions` | -80 | tools/gen_ruleset.py `Events` |
 | Ascension › Not yet | `[-100]% weight to this choice for AI decisions` | -100 | tools/gen_ruleset.py `Events` |
-| Ascension Trial › A lower-grade blessed land opens | `Instantly provides [5] [Lifespan Gu]` | 5 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A lower-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +0 | tools/gen_ruleset.py `Events` |
-| Ascension Trial › A middle-grade blessed land opens | `Instantly provides [5] [Lifespan Gu]` | 5 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A middle-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A middle-grade blessed land opens | `[-30]% weight to this choice for AI decisions` | -30 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A middle-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A middle-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +0 | tools/gen_ruleset.py `Events` |
-| Ascension Trial › An upper-grade blessed land opens | `Instantly provides [5] [Lifespan Gu]` | 5 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › An upper-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › An upper-grade blessed land opens | `[-75]% weight to this choice for AI decisions` | -75 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › An upper-grade blessed land opens | `[+100]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +100 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › An upper-grade blessed land opens | `[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>` | -50 | tools/gen_ruleset.py `Events` |
-| Ascension Trial › A super-grade blessed land opens | `Instantly provides [5] [Lifespan Gu]` | 5 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › A super-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A super-grade blessed land opens | `[-96]% weight to this choice for AI decisions` | -96 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A super-grade blessed land opens | `[+150]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +150 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › A super-grade blessed land opens | `[-100]% weight to this choice for AI decisions <for units with [Aptitude D]>` | -100 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › The aperture collapses | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › The aperture collapses | `[-50]% weight to this choice for AI decisions <for units with [Aptitude A]>` | -50 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › The aperture collapses | `[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +100 | tools/gen_ruleset.py `Events` |
-| Hasty Ascension Trial › A lower-grade blessed land opens | `Instantly provides [5] [Lifespan Gu]` | 5 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A lower-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +0 | tools/gen_ruleset.py `Events` |
-| Hasty Ascension Trial › A middle-grade blessed land opens | `Instantly provides [5] [Lifespan Gu]` | 5 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › A middle-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A middle-grade blessed land opens | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A middle-grade blessed land opens | `[+50]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +50 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A middle-grade blessed land opens | `[-50]% weight to this choice for AI decisions <for units with [Aptitude D]>` | -50 | tools/gen_ruleset.py `Events` |
@@ -2332,6 +2368,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2123 numbers listed.
+2151 numbers listed.
 
 <!-- inventory:end -->
