@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from common import REPO_ROOT  # noqa: E402
 import path_powers as PP  # noqa: E402  (power scaling: data/path_powers.csv)
+import sound_names as sfx  # noqa: E402  (sound file names; tools/art/sfx.py synthesizes the files)
 
 DATA = REPO_ROOT / "data"
 DOC = REPO_ROOT / "docs" / "PATHS.md"
@@ -135,7 +136,9 @@ def dao_mark_lines(p: dict) -> list[str]:
 def move_uniques(p: dict, immortal: bool = False) -> list[str]:
     name = p["immortal" if immortal else "mortal"]
     return [u.replace("{n}", name) for u in split(FAMILIES[p["family"]]["immortal_uniques" if immortal else "mortal_uniques"])] \
-        + [PP.move_burst(POWERS[p["key"]], immortal)]
+        + [PP.move_burst(POWERS[p["key"]], immortal),
+           # the Gu attack's own sound when the move is used (a human player hears it; tools/art/sfx.py)
+           f"Play [{sfx.move_sound(p['key'], immortal)}] sound <upon gaining the [{name}] status>"]
 
 
 def grant(g: dict) -> str:
@@ -195,6 +198,9 @@ def tier_uniques(p: dict, t: int) -> list[str]:
         u += PP.cell(pw, "ggm") + [f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}"]
     if t == 3:
         u += PP.cell(pw, "sup") + SUPREME_EXTRA.get(p["key"], []) + [SUPREME_MARKER]
+    # the path's sound on every attack, from the highest tier held only (tools/art/sfx.py: each tier adds a layer)
+    u.append(f"Play [{sfx.path_sound(p['key'], t + 1)}] sound {PP.UPON_HIT} {PP.ATTACK}"
+             + (f" <for units without [{tier_name(p, t + 1)}]>" if t + 1 < MAX_TIER else ""))
     if TIER_GATE[t]:
         u.append(TIER_GATE[t])
     u.append(TIER_WEIGHT)

@@ -84,6 +84,9 @@ rest of the list is what a player or the next session should know before trustin
    Every other cultivator uses the neutral rank units and the rank-one essence burst.
    Since Phase D the path shows in play instead: its hit leaves a status with the path's own icon on the target,
    and the game's notification names the effect when it lands.
+   Since 2026-11-02 the path is also **heard**. Every attack plays the path's own sound for its highest attainment
+   tier, a dao-mark bell, and a killer move's sound (Play-sound uniques, human player only; CAPABILITIES E11).
+   The animation grows with the attacker's rank, not its path.
 11. **The AI clans are slow to go to war at Prince.** Unciv's AI attacks only when its units can take a city without
    dying and its motivation clears trade, friendship and pact penalties [src `MotivationToAttackAutomation`]; with
    every clan righteous the villages were unassailable (0 wars in 12 games). Guardian Formations now gives +10% city

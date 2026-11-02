@@ -335,6 +335,50 @@ def essence_frame(i, rank=1):
     return s
 
 
+# Phase D (the user, 2026-11-02: "efek serangan ... dengan tingkatan yang jelas dan sesuai scaling"): the strike grows
+# with the attacker's rank, in its essence colour. Rank 1-2: a burst and sparks; 3-4: a shock ring; 5: two rings; 6
+# (immortal): a qi pillar rises; 7: rays tear outward; 8 (grotto-heaven): a halo opens above; 9 (Venerable): four
+# rings, a crown of light and a ground shockwave. Higher ranks also play more frames.
+STRIKE_FRAMES = {1: 3, 2: 3, 3: 4, 4: 4, 5: 4, 6: 5, 7: 5, 8: 5, 9: 6}
+STRIKE_RINGS = {1: 0, 2: 0, 3: 1, 4: 1, 5: 2, 6: 2, 7: 3, 8: 3, 9: 4}
+
+
+def strike_frame(i, rank=1):
+    n = STRIKE_FRAMES[rank]
+    p = i / (n - 1)
+    mat = ESSENCE[rank]
+    s = Scene()
+    core = (0.2 + 0.05 * rank) * (0.3 + 0.7 * math.sin(math.pi * min(1.0, p * 1.1)))   # peak 0.25 (rank 1) .. 0.65 (9)
+    s.add("sphere", (0, 0.9, 0), core, mat=mat)
+    motes = min(2 + rank, 11)
+    spread = 0.18 + 0.6 * p * (1 + 0.08 * rank)
+    for k in range(motes):
+        a = 2 * math.pi * k / motes + 0.4 * rank
+        s.add("sphere", (spread * math.cos(a), 0.9 + 0.12 * math.sin(3 * a), spread * math.sin(a)),
+              (0.055 + 0.003 * rank) * (1 - 0.35 * p), mat=mat)
+    for j in range(STRIKE_RINGS[rank]):
+        big = p * (0.55 + 0.13 * rank) - 0.16 * j
+        if big > 0.06:
+            s.add("torus", (0, 0.9 - 0.18 * j * p, 0), big, 0.02 + 0.004 * rank, mat=mat)
+    if rank >= 6 and p > 0:     # the aperture's qi rises as a pillar
+        s.add("capsule", (0, 0.0, 0), (0, 1.1 + 1.1 * p, 0), (0.05 + 0.012 * (rank - 5)) * (1 - 0.4 * p), mat=mat)
+    if rank >= 7 and 0 < p < 1:  # rays tear outward
+        for k in range(6):
+            a = math.pi * k / 3
+            r0, r1 = 0.2, 0.35 + 0.95 * p
+            s.add("capsule", (r0 * math.cos(a), 0.95, r0 * math.sin(a)), (r1 * math.cos(a), 1.0 + 0.35 * p, r1 * math.sin(a)),
+                  0.045, mat=mat)
+    if rank >= 8 and p > 0.2:    # a grotto-heaven: a halo opens above the strike
+        s.add("torus", (0, 1.7 + 0.2 * p, 0), 0.25 + 0.35 * p, 0.03, mat=mat)
+    if rank >= 9:                # the Venerable: a crown of light and a ground shockwave
+        for k in range(8):
+            a = 2 * math.pi * k / 8
+            s.add("sphere", ((0.4 + 0.3 * p) * math.cos(a), 2.0, (0.4 + 0.3 * p) * math.sin(a)), 0.05, mat=mat)
+        if p >= 0.6:
+            s.add("torus", (0, 0.1, 0), 0.6 + 1.1 * p, 0.05, mat=mat)
+    return s
+
+
 UNITS = {
     "Clan Settler": clan_settler,
     "Mortal Laborer": mortal_laborer,
@@ -369,14 +413,14 @@ UNITS = {
 
 # attack frames per unit name (Unciv plays them over the unit that takes damage)
 ATTACKS = {
-    "Rank One Gu Master": [lambda i=i: essence_frame(i, 1) for i in range(3)],
+    "Rank One Gu Master": [lambda i=i: strike_frame(i, 1) for i in range(STRIKE_FRAMES[1])],
     **{f"Rank {w} Moon Gu Master": [lambda i=i, r=r: moon_blade_frame(i, r) for i in range(4)]
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
     **{f"Rank {w} Strength Gu Master": [lambda i=i, r=r: boar_charge_frame(i, r) for i in range(4)]
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4))},
-    **{f"Rank {w} Gu Master": [lambda i=i, r=r: essence_frame(i, r) for i in range(3)]
+    **{f"Rank {w} Gu Master": [lambda i=i, r=r: strike_frame(i, r) for i in range(STRIKE_FRAMES[r])]
        for w, r in (("Two", 2), ("Three", 3), ("Four", 4), ("Five", 5))},
-    "Rank Six Gu Immortal": [lambda i=i: essence_frame(i, 6) for i in range(4)],
+    "Rank Six Gu Immortal": [lambda i=i: strike_frame(i, 6) for i in range(STRIKE_FRAMES[6])],
     **{f"Rank {w} {clan} Gu Master": [lambda i=i, r=r, f=f: f(i, r) for i in range(4)]
        for clan, f in (("Gu Yue", moon_blade_frame), ("Bai", water_frame), ("Xiong", boar_charge_frame),
                        ("Wu", wind_frame))
@@ -384,15 +428,15 @@ ATTACKS = {
     "Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Bold Lightning Wolf": [lambda i=i: lightning_frame(i) for i in range(4)],
     "Thunder Crown Wolf": [lambda i=i: lightning_frame(i, crown=True) for i in range(4)],
-    "Desolate Beast": [lambda i=i: essence_frame(i, 5) for i in range(3)],
-    "Ancient Desolate Beast": [lambda i=i: essence_frame(i, 7) for i in range(3)],
-    "Immemorial Desolate Beast": [lambda i=i: essence_frame(i, 8) for i in range(3)],
-    "Rank Seven Gu Immortal": [lambda i=i: essence_frame(i, 7) for i in range(4)],
-    "Rank Eight Gu Immortal": [lambda i=i: essence_frame(i, 8) for i in range(4)],
-    "Venerable": [lambda i=i: essence_frame(i, 9) for i in range(4)],
-    **{n: [lambda i=i: essence_frame(i, 8) for i in range(3)]
+    "Desolate Beast": [lambda i=i: strike_frame(i, 5) for i in range(STRIKE_FRAMES[5])],
+    "Ancient Desolate Beast": [lambda i=i: strike_frame(i, 7) for i in range(STRIKE_FRAMES[7])],
+    "Immemorial Desolate Beast": [lambda i=i: strike_frame(i, 8) for i in range(STRIKE_FRAMES[8])],
+    "Rank Seven Gu Immortal": [lambda i=i: strike_frame(i, 7) for i in range(STRIKE_FRAMES[7])],
+    "Rank Eight Gu Immortal": [lambda i=i: strike_frame(i, 8) for i in range(STRIKE_FRAMES[8])],
+    "Venerable": [lambda i=i: strike_frame(i, 9) for i in range(STRIKE_FRAMES[9])],
+    **{n: [lambda i=i: strike_frame(i, 8) for i in range(STRIKE_FRAMES[8])]
        for n in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace", "Heaven Overseeing Tower")},
-    "Immortal Zombie": [lambda i=i: essence_frame(i, 5) for i in range(3)],
+    "Immortal Zombie": [lambda i=i: strike_frame(i, 6) for i in range(STRIKE_FRAMES[6])],
 }
 
 # portraits are single images (no civ tint): the robe takes the path's colour

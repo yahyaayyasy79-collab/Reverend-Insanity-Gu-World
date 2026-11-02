@@ -490,13 +490,39 @@ class RefChecker:
             self.r.warn("game.atlas", f"atlas is stale: {len(stale)} image(s) not packed, e.g. {stale[:3]} "
                                       f"(run tools/unciv_ci.py --pack)")
 
+    # Unciv's own sounds (docs Images-and-Audio.md "Sounds"); any other attackSound or "Play [x] sound" needs
+    # sounds/<x>.(mp3|ogg|wav) in the mod, or it plays nothing [src SoundPlayer.getFile]
+    BUILTIN_SOUNDS = {"arrow", "artillery", "bombard", "bombing", "cannon", "chimes", "choir", "click", "coin",
+                      "construction", "elephant", "fortify", "gdrAttack", "horse", "jetgun", "machinegun", "metalhit",
+                      "missile", "nonmetalhit", "nuke", "paper", "policy", "promote", "setup", "shipguns", "shot",
+                      "slider", "swap", "tankshot", "throw", "torpedo", "upgrade", "whoosh"}
+
+    def sounds_(self):
+        folder = self.rs.mod_root / "sounds"
+        have = {f.stem for f in folder.glob("*") if f.suffix in (".mp3", ".ogg", ".wav")} if folder.exists() else set()
+        wanted = {}
+        for o in self.rs.named("Units.json"):
+            if o.get("attackSound"):
+                wanted.setdefault(o["attackSound"], f"Units.json {o['name']}")
+        play = re.compile(r"^Play \[([^\]]+)\] sound")
+        for site in self.rs.unique_sites():
+            m = play.match(site.text)
+            if m:
+                wanted.setdefault(m.group(1), site.where)
+        for name, where in sorted(wanted.items()):
+            if name not in self.BUILTIN_SOUNDS and name not in have:
+                self.r.error(where, f"sound \"{name}\" has no file sounds/{name}.ogg (or .mp3/.wav)")
+        unused = sorted(have - set(wanted))
+        if unused:
+            self.r.warn("sounds/", f"{len(unused)} sound file(s) nothing plays, e.g. {unused[:3]}")
+
     def run(self):
         if not self.rs.exists:
             self.r.info("jsons/", "no jsons/ folder yet - nothing to cross-check")
             return
         for step in (self.units_, self.buildings_, self.techs_, self.policies_, self.promotions_, self.map_objects_,
                      self.nations_, self.eras_, self.difficulties_, self.victories_, self.events_, self.misc_,
-                     self.ascii_, self.images_, self.atlas_):
+                     self.ascii_, self.images_, self.atlas_, self.sounds_):
             step()
 
 

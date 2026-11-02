@@ -710,3 +710,28 @@
   * It counts the percent meter.
   * On a crash it records where every Gu Master stood.
   * One crash was seen in about 30 games: an ascension upgrade that could not place the unit (KNOWN_ISSUES 20).
+
+## Phase D: attack sounds and rank strikes (2026-11-02)
+
+* The user: "design animasi atau efek serangan ... setiap jalur, pemahaman, gu dan jumlah dao ... sesuaikan sfx-nya".
+* **What the engine allows.** An attack animation is chosen by unit, never by promotion, so a path cannot be *seen* in
+  the animation (its hit still leaves a status icon on the target). A path can be *heard*: a `Play [name] sound`
+  unique on the hit, for a human player (CAPABILITIES E11).
+* **296 original sounds**, synthesized from code (`tools/art/sfx.py`, Ogg Vorbis, about 2 MB). Each attack layers:
+  * the **rank body**, deeper and longer from rank 1 to the Venerable;
+  * the **path's own sound** for its highest attainment tier: 47 timbres × 4 tiers, each tier adding an echo strike,
+    a sub thump, then a shimmer and a long tail;
+  * a **dao-mark bell**, brighter from tier I to V.
+
+  Each path's killer move (Gu attack) has its own swell, mortal and immortal. `check_refs` now fails on a sound with
+  no file.
+* **Rank strikes.** The generic rank units, immortals, the Venerable, desolate beasts, Gu Houses and the immortal zombie
+  now strike in their essence colour, growing with rank:
+  * rank 1–2: a burst and sparks;
+  * rank 3–5: shock rings;
+  * rank 6: a qi pillar;
+  * rank 7: rays;
+  * rank 8: a halo above;
+  * rank 9: four rings, a crown and a ground shockwave.
+
+  The higher the rank, the more frames.

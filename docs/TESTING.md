@@ -117,6 +117,15 @@ unit addpromotion "Moonlight Gu"     # on more Gu Masters than the clan has Moon
 unit addpromotion "Advance to Rank Seven"                      # on a Rank Six immortal at home: +25 Lifespan Gu
 ```
 
+Attack sounds and animations (your own attacks only; the AI's play no path sounds): pick a Gu Master, then
+
+```
+unit addpromotion "Fire Master"              # attack an enemy: rank body + fire whoosh and crackle
+unit addpromotion "Fire Grandmaster"         # the same attack now strikes twice (echo); the killer move swells first
+unit addpromotion "Dao Marks V"              # a three-bell chord rings over every attack
+unit add gu-yue-clan "Venerable"             # select a tile first: the Venerable's strike, choir and thunder
+```
+
 Dao marks (select one of your Gu Masters first; the tiers replace one another, the icon shows the stars):
 
 ```

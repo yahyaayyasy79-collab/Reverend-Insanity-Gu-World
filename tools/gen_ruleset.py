@@ -26,6 +26,7 @@ import json5
 
 import gen_paths
 import lifespan as LS  # immortal lifespan numbers (tools/lifespan.py), shared with the Tutorial page
+import sound_names as sfx  # sound file names (tools/art/sfx.py synthesizes them)
 from common import REPO_ROOT, VANILLA_JSONS
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -560,8 +561,18 @@ GU_MASTERS = [gm(r["name"], r["unitType"], r["requiredTech"], int(r["cost"]), in
                  ranged=int(r["rangedStrength"]) if r["rangedStrength"] else None, upgrades=r["upgradesTo"] or None,
                  legacy=bool(r["legacyPath"]))
               for r in table("gu_masters.csv")]
+RANK_WORD = {"One": 1, "Two": 2, "Three": 3, "Four": 4, "Five": 5, "Six": 6, "Seven": 7, "Eight": 8}
+
+
+def rank_attack_sound(name, fallback):
+    """Phase D: the blow's body by rank (tools/art/sfx.py, sounds/gu-rank-<n>.ogg); the path, its tier and the dao marks
+    layer their own sounds over it through Play-sound uniques."""
+    w = name.split()
+    return sfx.rank_sound(RANK_WORD[w[1]]) if len(w) > 1 and w[0] == "Rank" and w[1] in RANK_WORD else fallback
+
+
 for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
-    u["attackSound"] = r["attackSound"]  # R5: each path sounds different (built-in sounds, Images-and-Audio.md)
+    u["attackSound"] = rank_attack_sound(r["name"], r["attackSound"])  # R5 had one built-in sound per path
     if r["uniqueTo"]:
         # C3 (the user's choice A.b): a signature clan keeps its path's look and attack effect through its own chain,
         # since Unciv picks attack animations by unit name or type only [src BattleTableHelpers.getAttackAnimationLocation]
@@ -619,7 +630,7 @@ dump("Units.json", [
     # lifespan is now the Lifespan Gu stock, HP is only battle damage)
     {"name": VENERABLE, "unitType": "Gu Master", "movement": 5, "strength": gen_paths.PP.VENERABLE_STRENGTH, "cost": 1000,
      "requiredTech": "Dao Lord",
-     "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
+     "attackSound": sfx.rank_sound(9), "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
                                          *immortal_life(9),
                                          f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs",
                                          "[2] additional attacks per turn", "Can move after attacking", "Ignores terrain cost",
@@ -631,13 +642,13 @@ dump("Units.json", [
      # slaughter restores it too
      + ["Heals [10] damage if it kills a unit"] + countdown("Chaos Countdown", 25, "Chaos Calamity")},
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
-      "attackSound": "throw", **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
+      "attackSound": sfx.rank_sound(8), **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
                   "Can pass through impassable tiles",
                                           f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore",
-     "attackSound": "throw", "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
+     "attackSound": sfx.rank_sound(6), "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
                                          "Can pass through impassable tiles",
                                          "[+100]% maintenance costs"]},
 ] + [
@@ -758,7 +769,9 @@ dump("UnitPromotions.json", [
     # C5
     {"name": SURVIVOR, "uniques": ["Comment [Survived a heavenly tribulation: may climb to the next rank]"]},
     {"name": "Dao Comprehension", "uniques": ["Comment [When it runs out, the unit's dao marks grow by one tier]"]},
-] + [{"name": d, "uniques": DAO_EFFECTS[i] + ([f"[This Unit] loses the [{DAO[i - 1]}] promotion"] if i else [])}
+] + [{"name": d, "uniques": DAO_EFFECTS[i] + ([f"[This Unit] loses the [{DAO[i - 1]}] promotion"] if i else [])
+         # Phase D: the marks ring over every attack, brighter with each tier (tools/art/sfx.py)
+         + [f"Play [{sfx.dao_sound(i + 1)}] sound <upon damaging a [Military] unit> <when attacking>"]}
      for i, d in enumerate(DAO)] + [
     {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),

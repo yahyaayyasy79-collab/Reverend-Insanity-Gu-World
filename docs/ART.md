@@ -49,6 +49,46 @@ three-band toon shading, rim light, specular on metal and jade, outlines, glow o
 * **Rank reads as essence** (canon colours): a ring at the feet in green copper (rank one), red iron (two), white
   silver (three), yellow gold (four); Strength masters grow broader and gain bracers and boar-skull pauldrons; Moon
   masters gain blades and, at rank four, a moon behind the back.
+* **Rank strikes** (Phase D, 2026-11-02, `characters.strike_frame`). The generic rank units, the immortals, the
+  Venerable, the desolate beasts, the Gu Houses and the immortal zombie strike in their rank's essence colour, and the
+  strike grows with rank:
+  * ranks 1–2: a burst and sparks, 3 frames;
+  * ranks 3–4: a shock ring;
+  * rank 5: two rings;
+  * rank 6 (immortal): a qi pillar rises, 5 frames;
+  * rank 7: rays tear outward;
+  * rank 8 (grotto-heaven): a halo opens above;
+  * rank 9 (Venerable): four rings, a crown of light and a ground shockwave, 6 frames.
+  The clan chains keep their path's own strike (moon blades, water, boar charge, whirlwind).
 * Limits: Unciv has no idle or walking animation and no death animation; an attack effect plays when a unit takes
   damage, including the killing blow. The effect follows the attacker's unit (path and rank), not the Gu it holds
   [src `BattleTableHelpers.getAttackAnimationLocation`].
+
+## Sounds (Phase D, 2026-11-02)
+
+All sounds are synthesized from code by `tools/art/sfx.py`: numpy builds them from noise, tones, metallic partials,
+plucked strings and clicks, and ffmpeg encodes them as Ogg Vorbis (mono, 22 kHz, about 2 MB in all). Nothing is
+sampled or copied. `tools/gen_art.py` writes them to `sounds/`. The build is bit-exact, so an unchanged sound keeps
+its bytes. An attack layers:
+
+| Layer | File | Plays when | Scales with |
+|---|---|---|---|
+| Body | `gu-rank-<1..9>` | the unit's `attackSound`, every attack | rank: deeper, longer, wider; immortals add a qi hum, the Venerable a choir and thunder |
+| Path | `path-<key>-<1..4>` | Play-sound unique on the attainment tier held, on each attack (only the highest tier plays) | attainment: Master is the path's own timbre (47 recipes); Grandmaster adds an echo strike; Great Grandmaster a sub thump and space; Supreme a shimmer and a long tail |
+| Dao | `dao-<1..5>` | Play-sound unique on Dao Marks I-V, on each attack | dao marks: one bell, brighter and fuller up to a three-bell chord |
+| Gu attack | `move-<key>`, `move-<key>-immortal` | Play-sound unique when a killer move is used | a rising swell into the Great Grandmaster or Supreme strike; the immortal move adds a falling sub drop |
+
+Each path's timbre names its character. Some examples:
+
+* fire: whoosh and crackle;
+* ice: crystal ping and crack;
+* lightning: falling FM zap and sparks;
+* sword: bright swish and ring;
+* sound: plucked qin and gong;
+* time: tick-tock and swell;
+* luck: coin chimes;
+* heaven: chord and thunder.
+
+The recipes are the `PATHS` table in `sfx.py`. Play-sound uniques sound only for a human player (CAPABILITIES E11).
+`check_refs` fails on any sound the rules name without a file, and warns on files nothing plays.
+

@@ -1323,7 +1323,7 @@ Events). What changed against the plan, and why:
 
 Exact uniques (written by tools/lore_blocks.py from jsons/; Earth Qi, Human Qi and the essence share the Heaven Qi lines):
 
-**Rank Five Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "throw", "civilopediaText": [{"text": "A rank-five Gu Master (\u4e94\u8f6c): the strongest a mortal gets. It cannot be upgraded with stones; it can only ascend, through the Ascension promotion, and the ascension may kill it."}]})
+**Rank Five Gu Master** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 44, "cost": 190, "requiredTech": "Purple Crystal Essence", "attackSound": "gu-rank-5", "civilopediaText": [{"text": "A rank-five Gu Master (\u4e94\u8f6c): the strongest a mortal gets. It cannot be upgraded with stones; it can only ascend, through the Ascension promotion, and the ascension may kill it."}]})
 
 ```
 [+225]% maintenance costs
@@ -1349,7 +1349,7 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
 ```
 
-**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
 
 ```
 [+300]% maintenance costs
@@ -3010,7 +3010,7 @@ Instantly provides [3] [Human Qi] <upon turn start>
 [+300]% weight to this choice for AI decisions
 ```
 
-**Rank Seven Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 85, "cost": 330, "requiredTech": "Red Date Essence", "attackSound": "throw", "civilopediaText": [{"text": "A rank-seven Gu Immortal (\u4e03\u8f6c\u86ca\u4ed9). Its blessed land makes red date essence; with more than nine of it in store it fights harder."}]})
+**Rank Seven Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 85, "cost": 330, "requiredTech": "Red Date Essence", "attackSound": "gu-rank-7", "civilopediaText": [{"text": "A rank-seven Gu Immortal (\u4e03\u8f6c\u86ca\u4ed9). Its blessed land makes red date essence; with more than nine of it in store it fights harder."}]})
 
 ```
 [+350]% maintenance costs
@@ -3048,7 +3048,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 ```
 
-**Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 115, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "throw", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
+**Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 115, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
 
 ```
 [+400]% maintenance costs
@@ -3255,7 +3255,7 @@ Unbuildable
 Cannot be purchased
 ```
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "gu-rank-9", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3302,7 +3302,7 @@ Heals [10] damage if it kills a unit
 Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 ```
 
-**Calamity Luck Altar** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 140, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u4ed9\u86ca\u5c4b): Longevity Heaven's rank-eight luck altar (\u52ab\u8fd0\u575b), a fortress that walks. Needs Connect Luck; one per clan; defends 50% harder."}]})
+**Calamity Luck Altar** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 140, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A Gu House (\u4ed9\u86ca\u5c4b): Longevity Heaven's rank-eight luck altar (\u52ab\u8fd0\u575b), a fortress that walks. Needs Connect Luck; one per clan; defends 50% harder."}]})
 
 ```
 Only available <if [Connect Luck] is constructed>
@@ -3314,7 +3314,7 @@ Never appears as a Barbarian unit
 [+50]% Strength <when defending>
 ```
 
-**Myriad Year Flying Warship** (Units.json; {"unitType": "Gu House", "movement": 5, "strength": 150, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u4e07\u5e74\u6597\u98de\u8f66): a rank-eight time-path fortress that sails the river of time. Needs Years Flow Like Water; one per clan; ignores terrain."}]})
+**Myriad Year Flying Warship** (Units.json; {"unitType": "Gu House", "movement": 5, "strength": 150, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A Gu House (\u4e07\u5e74\u6597\u98de\u8f66): a rank-eight time-path fortress that sails the river of time. Needs Years Flow Like Water; one per clan; ignores terrain."}]})
 
 ```
 Only available <if [Years Flow Like Water] is constructed>
@@ -3326,7 +3326,7 @@ Never appears as a Barbarian unit
 Ignores terrain cost
 ```
 
-**Dragon Palace** (Units.json; {"unitType": "Gu House", "movement": 3, "strength": 160, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "civilopediaText": [{"text": "A Gu House (\u9f99\u5bab): a rank-eight dream-token fortress. Needs Dream Token; one per clan; +20% strength against immortals."}]})
+**Dragon Palace** (Units.json; {"unitType": "Gu House", "movement": 3, "strength": 160, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A Gu House (\u9f99\u5bab): a rank-eight dream-token fortress. Needs Dream Token; one per clan; +20% strength against immortals."}]})
 
 ```
 Only available <if [Dream Token] is constructed>
@@ -3451,7 +3451,7 @@ Never destroyed when the city is captured
 [+300]% weight to this choice for AI decisions
 ```
 
-**Immortal Zombie** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "An immortal turned zombie (\u4ed9\u50f5): no ageing, a dead aperture, no healing except by pillage. When the Zombie Alliance loses an immortal, one rises. Weaker while Fate Gu stands."}]})
+**Immortal Zombie** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 70, "cost": 300, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "An immortal turned zombie (\u4ed9\u50f5): no ageing, a dead aperture, no healing except by pillage. When the Zombie Alliance loses an immortal, one rises. Weaker while Fate Gu stands."}]})
 
 ```
 Unbuildable
@@ -3463,7 +3463,7 @@ Can pass through impassable tiles
 [+100]% maintenance costs
 ```
 
-**Heaven Overseeing Tower** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 190, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "throw", "uniqueTo": "Heavenly Court", "civilopediaText": [{"text": "The Heavenly Court's rank-nine Gu House (\u76d1\u5929\u5854) around Fate Gu: it watches the world (+2 sight) and holds fast (+25% defending). Needs Fate Gu."}]})
+**Heaven Overseeing Tower** (Units.json; {"unitType": "Gu House", "movement": 2, "strength": 190, "cost": 650, "requiredTech": "Gu House Formation", "attackSound": "gu-rank-8", "uniqueTo": "Heavenly Court", "civilopediaText": [{"text": "The Heavenly Court's rank-nine Gu House (\u76d1\u5929\u5854) around Fate Gu: it watches the world (+2 sight) and holds fast (+25% defending). Needs Fate Gu."}]})
 
 ```
 Only available <if [Fate Gu] is constructed>
@@ -3591,7 +3591,7 @@ outside the world is the rank-nine trial (R V6/280).
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "throw", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
+**Venerable** (Units.json; {"unitType": "Gu Master", "movement": 5, "strength": 280, "cost": 1000, "requiredTech": "Dao Lord", "attackSound": "gu-rank-9", "civilopediaText": [{"text": "A Venerable (\u5c0a\u8005), rank nine: unbeatable in its era, but only long-lived, never eternal. Strength 280; three strikes a turn; walks through anything; enslaves the defeated; every enemy beside it fights 25% weaker. It brings 60 Lifespan Gu and burns one each thirty turns on Standard; with none left it wastes away (7 HP a turn) and heals only by pillaging. Each kill heals 10 HP; it makes 6 yellow apricot essence a turn."}]})
 
 ```
 Unbuildable
@@ -3781,6 +3781,7 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 
 ```
 [+5]% Strength
+Play [dao-1] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
 **Dao Marks II** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier II: +10% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
@@ -3788,6 +3789,7 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 ```
 [+10]% Strength
 [This Unit] loses the [Dao Marks I] promotion
+Play [dao-2] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
 **Dao Marks III** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier III: +15% strength. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
@@ -3795,6 +3797,7 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 ```
 [+15]% Strength
 [This Unit] loses the [Dao Marks II] promotion
+Play [dao-3] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
 **Dao Marks IV** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier IV: +20% strength, heals 10 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
@@ -3803,6 +3806,7 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 [+20]% Strength
 [+10] HP when healing
 [This Unit] loses the [Dao Marks III] promotion
+Play [dao-4] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
 **Dao Marks V** (UnitPromotions.json; {"civilopediaText": [{"text": "Tier V: +30% strength, heals 15 HP more. Dao marks (\u9053\u75d5) are engraved in a cultivator's body and aperture: the more of its path, the stronger its methods; marks of different paths interfere. They grow one tier every 20 turns on Standard for a path's Master of rank three or more, and an immortal also takes a tier from every immortal it kills and every heavenly tribulation it survives. Mortals hold at most tier II; rank seven needs tier II, rank eight tier III, the Venerable tier IV."}]})
@@ -3811,9 +3815,10 @@ Comment [When it runs out, the unit's dao marks grow by one tier]
 [+30]% Strength
 [+15] HP when healing
 [This Unit] loses the [Dao Marks IV] promotion
+Play [dao-5] sound <upon damaging a [Military] unit> <when attacking>
 ```
 
-**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "throw", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
+**Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 60, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
 
 ```
 [+300]% maintenance costs

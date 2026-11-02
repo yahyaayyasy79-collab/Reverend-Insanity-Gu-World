@@ -145,6 +145,9 @@ def main(argv: list[str]) -> int:
     for name in realms.WALLS:   # the five region walls (Five Regions map)
         for tileset, im in realms.wall_tile(name).items():
             written += save(im, images / "TileSets" / tileset / "Tiles" / f"{name}.png")
+    # Phase D: the attack sounds (tools/art/sfx.py: rank body, path x attainment tier, dao marks, killer moves)
+    from art import sfx
+    written += sfx.build(args.mod)
     if args.sheet:
         contact_sheet(sheet, args.sheet)
     if not args.quiet:

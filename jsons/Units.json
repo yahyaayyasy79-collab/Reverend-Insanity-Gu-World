@@ -68,7 +68,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Two Gu Master",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-1",
     "civilopediaText": [
       {
         "text": "A freshly awakened youth (一转蛊师) with a first Gu from the academy. Cheap, numerous and expendable: the clan learns which ones are worth feeding."
@@ -105,7 +105,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-2",
     "civilopediaText": [
       {
         "text": "A rank-two Gu Master (二转): red-iron essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
@@ -142,7 +142,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-3",
     "civilopediaText": [
       {
         "text": "A rank-three Gu Master (三转): white-silver essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
@@ -179,7 +179,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Five Gu Master",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-4",
     "civilopediaText": [
       {
         "text": "A rank-four Gu Master (四转): yellow-gold essence fills the aperture. Rank and path are separate: any path can be walked at any rank."
@@ -216,7 +216,7 @@
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
-    "attackSound": "throw",
+    "attackSound": "gu-rank-5",
     "civilopediaText": [
       {
         "text": "A rank-five Gu Master (五转): the strongest a mortal gets. It cannot be upgraded with stones; it can only ascend, through the Ascension promotion, and the ascension may kill it."
@@ -265,7 +265,7 @@
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
       "Can pass through impassable tiles"
     ],
-    "attackSound": "throw",
+    "attackSound": "gu-rank-6",
     "civilopediaText": [
       {
         "text": "A rank-six Gu Immortal (六转蛊仙). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."
@@ -314,7 +314,7 @@
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
       "Can pass through impassable tiles"
     ],
-    "attackSound": "throw",
+    "attackSound": "gu-rank-7",
     "civilopediaText": [
       {
         "text": "A rank-seven Gu Immortal (七转蛊仙). Its blessed land makes red date essence; with more than nine of it in store it fights harder."
@@ -363,7 +363,7 @@
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
       "Can pass through impassable tiles"
     ],
-    "attackSound": "throw",
+    "attackSound": "gu-rank-8",
     "civilopediaText": [
       {
         "text": "A rank-eight Gu Immortal (八转蛊仙), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."
@@ -400,7 +400,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-2",
     "uniqueTo": "Gu Yue Clan",
     "replaces": "Rank Two Gu Master",
     "civilopediaText": [
@@ -439,7 +439,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-3",
     "uniqueTo": "Gu Yue Clan",
     "replaces": "Rank Three Gu Master",
     "civilopediaText": [
@@ -478,7 +478,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Five Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-4",
     "uniqueTo": "Gu Yue Clan",
     "replaces": "Rank Four Gu Master",
     "civilopediaText": [
@@ -517,7 +517,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-2",
     "uniqueTo": "Bai Clan",
     "replaces": "Rank Two Gu Master",
     "civilopediaText": [
@@ -556,7 +556,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-3",
     "uniqueTo": "Bai Clan",
     "replaces": "Rank Three Gu Master",
     "civilopediaText": [
@@ -595,7 +595,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Five Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-4",
     "uniqueTo": "Bai Clan",
     "replaces": "Rank Four Gu Master",
     "civilopediaText": [
@@ -634,7 +634,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "gu-rank-2",
     "uniqueTo": "Xiong Clan",
     "replaces": "Rank Two Gu Master",
     "civilopediaText": [
@@ -673,7 +673,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "gu-rank-3",
     "uniqueTo": "Xiong Clan",
     "replaces": "Rank Three Gu Master",
     "civilopediaText": [
@@ -712,7 +712,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Five Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "gu-rank-4",
     "uniqueTo": "Xiong Clan",
     "replaces": "Rank Four Gu Master",
     "civilopediaText": [
@@ -751,7 +751,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-2",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Two Gu Master",
     "civilopediaText": [
@@ -790,7 +790,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-3",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Three Gu Master",
     "civilopediaText": [
@@ -829,7 +829,7 @@
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
     ],
     "upgradesTo": "Rank Five Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-4",
     "uniqueTo": "Wu Clan",
     "replaces": "Rank Four Gu Master",
     "civilopediaText": [
@@ -855,7 +855,7 @@
       "[This Unit] upgrades for free <upon turn start>"
     ],
     "upgradesTo": "Rank Two Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "gu-rank-2",
     "civilopediaText": [
       {
         "text": "A rank-two strength cultivator (二转力道蛊师) who grafts beast strength onto the body. Hits harder than a moon cultivator and costs more to keep."
@@ -879,7 +879,7 @@
       "[This Unit] upgrades for free <upon turn start>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "gu-rank-3",
     "civilopediaText": [
       {
         "text": "A rank-three strength cultivator (三转力道蛊师), able to stand against a beast pack alone. Every fight it wins is paid for in pork and stones."
@@ -903,7 +903,7 @@
       "[This Unit] upgrades for free <upon turn start>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "nonmetalhit",
+    "attackSound": "gu-rank-4",
     "civilopediaText": [
       {
         "text": "A rank-four strength master (四转力道蛊师), a siege engine that walks. Few clans can afford one for long."
@@ -927,7 +927,7 @@
       "[This Unit] upgrades for free <upon turn start>"
     ],
     "upgradesTo": "Rank Two Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-2",
     "civilopediaText": [
       {
         "text": "A rank-two moon cultivator (二转月道蛊师). It opens every clash with a moon blade, the Gu Yue way, and then fights up close."
@@ -951,7 +951,7 @@
       "[This Unit] upgrades for free <upon turn start>"
     ],
     "upgradesTo": "Rank Three Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-3",
     "civilopediaText": [
       {
         "text": "A rank-three moon cultivator (三转月道蛊师) whose first blade often decides the fight before it begins. Lighter than a strength master, and cheaper to feed."
@@ -975,7 +975,7 @@
       "[This Unit] upgrades for free <upon turn start>"
     ],
     "upgradesTo": "Rank Four Gu Master",
-    "attackSound": "whoosh",
+    "attackSound": "gu-rank-4",
     "civilopediaText": [
       {
         "text": "A rank-four moon master (四转月道蛊师), the pride of a moonlit clan. Its upkeep is the price of that pride."
@@ -1082,7 +1082,7 @@
     "strength": 280,
     "cost": 1000,
     "requiredTech": "Dao Lord",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-9",
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
@@ -1140,7 +1140,7 @@
     "strength": 140,
     "cost": 650,
     "requiredTech": "Gu House Formation",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-8",
     "uniques": [
       "Only available <if [Connect Luck] is constructed>",
       "Limited to [1] per Civilization",
@@ -1163,7 +1163,7 @@
     "strength": 150,
     "cost": 650,
     "requiredTech": "Gu House Formation",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-8",
     "uniques": [
       "Only available <if [Years Flow Like Water] is constructed>",
       "Limited to [1] per Civilization",
@@ -1186,7 +1186,7 @@
     "strength": 160,
     "cost": 650,
     "requiredTech": "Gu House Formation",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-8",
     "uniques": [
       "Only available <if [Dream Token] is constructed>",
       "Limited to [1] per Civilization",
@@ -1209,7 +1209,7 @@
     "strength": 190,
     "cost": 650,
     "requiredTech": "Gu House Formation",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-8",
     "uniqueTo": "Heavenly Court",
     "uniques": [
       "Only available <if [Fate Gu] is constructed>",
@@ -1234,7 +1234,7 @@
     "strength": 70,
     "cost": 300,
     "requiredTech": "Calamity Lore",
-    "attackSound": "throw",
+    "attackSound": "gu-rank-6",
     "uniques": [
       "Unbuildable",
       "Cannot be purchased",
