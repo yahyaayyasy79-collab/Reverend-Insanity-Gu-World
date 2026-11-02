@@ -599,6 +599,13 @@ UnitPromotionIcons/Liquor Worm Hunger 100%
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 100%
+  rotate: false
+  xy: 868, 1516
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/Four Flavours Liquor Worm Hunger 20%
   rotate: false
   xy: 976, 1624
@@ -789,6 +796,13 @@ UnitPromotionIcons/Illusory Moon Gu Hunger 100%
   offset: 0, 0
   index: -1
 UnitPromotionIcons/Moon Raiment Hunger 100%
+  rotate: false
+  xy: 1084, 1516
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Moonglow Gu Hunger 100%
   rotate: false
   xy: 1084, 1516
   size: 100, 100
@@ -1096,7 +1110,21 @@ UnitPromotionIcons/Moon Raiment Hunger 20%
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitPromotionIcons/Moonglow Gu Hunger 20%
+  rotate: false
+  xy: 328, 436
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/Moon Raiment Hunger 40%
+  rotate: false
+  xy: 436, 544
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Moonglow Gu Hunger 40%
   rotate: false
   xy: 436, 544
   size: 100, 100
@@ -1110,7 +1138,21 @@ UnitPromotionIcons/Moon Raiment Hunger 60%
   orig: 100, 100
   offset: 0, 0
   index: -1
+UnitPromotionIcons/Moonglow Gu Hunger 60%
+  rotate: false
+  xy: 544, 652
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 UnitPromotionIcons/Moon Raiment Hunger 80%
+  rotate: false
+  xy: 652, 760
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Moonglow Gu Hunger 80%
   rotate: false
   xy: 652, 760
   size: 100, 100
@@ -1369,464 +1411,506 @@ UnitPromotionIcons/Self-Reliance
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Severing Essence
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 14%
   rotate: false
   xy: 976, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shadow Follower Gu
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 29%
   rotate: false
   xy: 1084, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shadow Grandmaster
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 43%
   rotate: false
   xy: 1192, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shadow Master
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 57%
   rotate: false
   xy: 1300, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shadow Step
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 71%
   rotate: false
   xy: 1408, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shaken
+UnitPromotionIcons/Seven Fragrances Liquor Worm Hunger 86%
   rotate: false
   xy: 1516, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shocked
+UnitPromotionIcons/Severing Essence
   rotate: false
   xy: 1624, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Shroud
+UnitPromotionIcons/Shadow Follower Gu
   rotate: false
   xy: 1732, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu
+UnitPromotionIcons/Shadow Grandmaster
   rotate: false
   xy: 1840, 1732
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu Hunger 11%
+UnitPromotionIcons/Shadow Master
   rotate: false
   xy: 220, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu Hunger 22%
+UnitPromotionIcons/Shadow Step
   rotate: false
   xy: 328, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu Hunger 44%
+UnitPromotionIcons/Shaken
   rotate: false
   xy: 436, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu Hunger 56%
+UnitPromotionIcons/Shocked
   rotate: false
   xy: 544, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu Hunger 78%
+UnitPromotionIcons/Shroud
   rotate: false
   xy: 652, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sole Blade Gu Hunger 89%
+UnitPromotionIcons/Sole Blade Gu
   rotate: false
   xy: 760, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Soul Grandmaster
+UnitPromotionIcons/Sole Blade Gu Hunger 11%
   rotate: false
   xy: 868, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Soul Master
+UnitPromotionIcons/Sole Blade Gu Hunger 22%
   rotate: false
   xy: 976, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Soul Search Gu
+UnitPromotionIcons/Sole Blade Gu Hunger 44%
   rotate: false
   xy: 1084, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Soul-Torn
+UnitPromotionIcons/Sole Blade Gu Hunger 56%
   rotate: false
   xy: 1192, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sound Grandmaster
+UnitPromotionIcons/Sole Blade Gu Hunger 78%
   rotate: false
   xy: 1300, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sound Master
+UnitPromotionIcons/Sole Blade Gu Hunger 89%
   rotate: false
   xy: 1408, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Space Grandmaster
+UnitPromotionIcons/Soul Grandmaster
   rotate: false
   xy: 1516, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Space Master
+UnitPromotionIcons/Soul Master
   rotate: false
   xy: 1624, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Star Dart Gu
+UnitPromotionIcons/Soul Search Gu
   rotate: false
   xy: 1732, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Star Grandmaster
+UnitPromotionIcons/Soul-Torn
   rotate: false
   xy: 1840, 1624
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Star Master
+UnitPromotionIcons/Sound Grandmaster
   rotate: false
   xy: 328, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Star Snake Rope
+UnitPromotionIcons/Sound Master
   rotate: false
   xy: 436, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Stream Surge
+UnitPromotionIcons/Space Grandmaster
   rotate: false
   xy: 544, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Strength Grandmaster
+UnitPromotionIcons/Space Master
   rotate: false
   xy: 652, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Strength Master
+UnitPromotionIcons/Star Dart Gu
   rotate: false
   xy: 760, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Strength Qi Gu
+UnitPromotionIcons/Star Grandmaster
   rotate: false
   xy: 868, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sword Escape
+UnitPromotionIcons/Star Master
   rotate: false
   xy: 976, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sword Grandmaster
+UnitPromotionIcons/Star Snake Rope
   rotate: false
   xy: 1084, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sword Master
+UnitPromotionIcons/Stream Surge
   rotate: false
   xy: 1192, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Sword Shadow Gu
+UnitPromotionIcons/Strength Grandmaster
   rotate: false
   xy: 1300, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Ten-Year Lifespan Gu
+UnitPromotionIcons/Strength Master
   rotate: false
   xy: 1408, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Theft Grandmaster
+UnitPromotionIcons/Strength Qi Gu
   rotate: false
   xy: 1516, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Theft Master
+UnitPromotionIcons/Sword Escape
   rotate: false
   xy: 1624, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Thunderclap Gu
+UnitPromotionIcons/Sword Grandmaster
   rotate: false
   xy: 1732, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Time Grandmaster
+UnitPromotionIcons/Sword Master
   rotate: false
   xy: 1840, 1516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Time Master
+UnitPromotionIcons/Sword Shadow Gu
   rotate: false
   xy: 436, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Transformation Grandmaster
+UnitPromotionIcons/Ten-Year Lifespan Gu
   rotate: false
   xy: 544, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Transformation Master
+UnitPromotionIcons/Theft Grandmaster
   rotate: false
   xy: 652, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Turn Phantom Gu
+UnitPromotionIcons/Theft Master
   rotate: false
   xy: 760, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Waking Dream
+UnitPromotionIcons/Thunderclap Gu
   rotate: false
   xy: 868, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Warp Gu
+UnitPromotionIcons/Time Grandmaster
   rotate: false
   xy: 976, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Water Grandmaster
+UnitPromotionIcons/Time Master
   rotate: false
   xy: 1084, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Water Master
+UnitPromotionIcons/Transformation Grandmaster
   rotate: false
   xy: 1192, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Water Shield Gu
+UnitPromotionIcons/Transformation Master
   rotate: false
   xy: 1300, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Weapon Array
+UnitPromotionIcons/Turn Phantom Gu
   rotate: false
   xy: 1408, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Weapon Grandmaster
+UnitPromotionIcons/Waking Dream
   rotate: false
   xy: 1516, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Weapon Master
+UnitPromotionIcons/Warp Gu
   rotate: false
   xy: 1624, 1192
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Weighted
+UnitPromotionIcons/Water Grandmaster
   rotate: false
   xy: 1732, 1300
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Whirlwind Gu
+UnitPromotionIcons/Water Master
   rotate: false
   xy: 1840, 1408
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/White Jade Gu Hunger 20%
+UnitPromotionIcons/Water Shield Gu
   rotate: false
   xy: 544, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/White Jade Gu Hunger 40%
+UnitPromotionIcons/Weapon Array
   rotate: false
   xy: 652, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/White Jade Gu Hunger 60%
+UnitPromotionIcons/Weapon Grandmaster
   rotate: false
   xy: 760, 220
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/White Jade Gu Hunger 80%
+UnitPromotionIcons/Weapon Master
   rotate: false
   xy: 868, 328
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wind Grandmaster
+UnitPromotionIcons/Weighted
   rotate: false
   xy: 976, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wind Master
+UnitPromotionIcons/Whirlwind Gu
   rotate: false
   xy: 1084, 544
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wisdom Grandmaster
+UnitPromotionIcons/White Jade Gu Hunger 20%
   rotate: false
   xy: 1192, 652
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wisdom Master
+UnitPromotionIcons/White Jade Gu Hunger 40%
   rotate: false
   xy: 1300, 760
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wolf Enslavement
+UnitPromotionIcons/White Jade Gu Hunger 60%
   rotate: false
   xy: 1408, 868
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wolf Enslavement Gu
+UnitPromotionIcons/White Jade Gu Hunger 80%
   rotate: false
   xy: 1516, 976
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wood Grandmaster
+UnitPromotionIcons/Wind Grandmaster
   rotate: false
   xy: 1624, 1084
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-UnitPromotionIcons/Wood Master
+UnitPromotionIcons/Wind Master
   rotate: false
   xy: 1732, 1192
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wisdom Grandmaster
+  rotate: false
+  xy: 1840, 1300
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wisdom Master
+  rotate: false
+  xy: 652, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wolf Enslavement
+  rotate: false
+  xy: 760, 112
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wolf Enslavement Gu
+  rotate: false
+  xy: 868, 220
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wood Grandmaster
+  rotate: false
+  xy: 976, 328
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitPromotionIcons/Wood Master
+  rotate: false
+  xy: 1084, 436
   size: 100, 100
   orig: 100, 100
   offset: 0, 0

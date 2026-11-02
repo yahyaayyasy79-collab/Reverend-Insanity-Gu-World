@@ -769,3 +769,23 @@ minor clans plus wild factions.
 
   Results are in docs/AUTOPLAY.md, and KNOWN_ISSUES 21 explains why the majors still don't fight each other.
 * **Autoplay harness** records the city-states each major fights and the raiders near each clan's cities.
+
+## Phase D — Gu catalog: 113 more Gu, ranks 1-9 (2026-11-02)
+
+* **113 Gu across all 47 paths.**
+  * Ranks 1-5: 76 mortal Gu.
+  * Ranks 6-9: 37 immortal Gu, held by units.
+  * Sources: 104 found in the raw text; four are INVENTED, one per path the novel names no Gu for.
+  * Generated from `data/gu_catalog.csv` by `tools/gu_catalog.py`.
+* **How a unit gets one:** it spends XP on the Gu once it holds the path's Master and its rank has reached the Gu's.
+  The AI buys them too: 54 kinds were held in 2 autoplay games.
+* **What a Gu does:** its role sets the effect, and its rank sets how strong it is.
+* **What it eats:**
+  * mortal Gu: stones;
+  * Moonglow Gu and the Seven Fragrances Liquor Worm: Moon Orchid and Wine, through the hunger meter;
+  * immortal Gu: their rank's immortal essence. A Gu sleeps without it.
+* **A designed icon for every Gu** (`tools/art/guart.py`): 37 forms, the path's badge, and its rank. The icons are in
+  the Arc atlas.
+* **A refinement sound for every Gu** (`gu_awaken`): 113 more .ogg files, 409 in all.
+* **Records:** the catalog table is in docs/PATHS.md, the research verdicts and canon killer moves in
+  docs/GU_RESEARCH.md, the summary in LORE_MAPPING.

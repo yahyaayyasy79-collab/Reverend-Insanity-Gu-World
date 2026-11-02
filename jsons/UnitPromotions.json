@@ -8901,6 +8901,2874 @@
     ]
   },
   {
+    "name": "Jin Strength Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+5]% Strength",
+      "Play [gu-jin-strength-gu] sound <upon gaining the [Jin Strength Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Jin Strength Gu (斤力蛊), a rank-1 Strength path Gu: adds one jin of strength to the body for good. 5% stronger. Refined with XP by a Strength Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Brute Force Longhorn Beetle Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+8]% Strength <when attacking>",
+      "Play [gu-brute-force-longhorn-beetle-gu] sound <upon gaining the [Brute Force Longhorn Beetle Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Brute Force Longhorn Beetle Gu (蛮力天牛蛊), a rank-1 Strength path Gu: lends the strength of an ox for a single burst. 8% stronger when attacking. Refined with XP by a Strength Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Stone Skin Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+8]% Strength <when defending>",
+      "Play [gu-stone-skin-gu] sound <upon gaining the [Stone Skin Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stone Skin Gu (石皮蛊), a rank-1 Earth path Gu: turns the skin to stone. 8% stronger when defending. Refined with XP by a Earth Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Iron Skin Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Metal Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+8]% Strength <when defending>",
+      "Play [gu-iron-skin-gu] sound <upon gaining the [Iron Skin Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Iron Skin Gu (铁皮蛊), a rank-1 Metal path Gu: hardens the skin like iron. 8% stronger when defending. Refined with XP by a Metal Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Stealth Stone Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "Invisible to non-adjacent units",
+      "[+4]% Strength <when defending>",
+      "Play [gu-stealth-stone-gu] sound <upon gaining the [Stealth Stone Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stealth Stone Gu (隐石蛊), a rank-1 Earth path Gu: hides its master like a stone among stones. Unseen except from an adjacent tile; 4% stronger when defending. Refined with XP by a Earth Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Vitality Leaf",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wood Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+7] HP when healing",
+      "Play [gu-vitality-leaf] sound <upon gaining the [Vitality Leaf] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Vitality Leaf (生机叶), a rank-1 Wood path Gu: a leaf whose sap closes wounds. Heals 7 HP more a turn. Refined with XP by a Wood Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Bookworm",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Information Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+15]% XP gained from combat",
+      "Play [gu-bookworm] sound <upon gaining the [Bookworm] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bookworm (书虫), a rank-1 Information path Gu: its master never forgets what he has read. 15% more XP from combat. Refined with XP by a Information Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Smelly Fart Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Poison Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[Target Unit] gains the [Poisoned] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+3]% Strength <when attacking>",
+      "Play [gu-smelly-fart-gu] sound <upon gaining the [Smelly Fart Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Smelly Fart Gu (臭屁蛊), a rank-1 Poison path Gu: releases a foul cloud of poison. Its hits leave the enemy Poisoned for 1 turn(s); 3% stronger when attacking. Refined with XP by a Poison Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Flash Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Light Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[Target Unit] gains the [Blinded] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+3]% Strength <when attacking>",
+      "Play [gu-flash-gu] sound <upon gaining the [Flash Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flash Gu (闪光蛊), a rank-1 Light path Gu: bursts into a blinding flash. Its hits leave the enemy Blinded for 1 turn(s); 3% stronger when attacking. Refined with XP by a Light Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Grass Puppet Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Enslavement Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[-3]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-grass-puppet-gu] sound <upon gaining the [Grass Puppet Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grass Puppet Gu (草傀蛊), a rank-1 Enslavement path Gu: raises grass puppets that crowd the enemy. Enemy soldiers beside it fight 3% weaker. Refined with XP by a Enslavement Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Clear Wind Wheel Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wind Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+1] Movement",
+      "[+2]% Strength",
+      "Play [gu-clear-wind-wheel-gu] sound <upon gaining the [Clear Wind Wheel Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Clear Wind Wheel Gu (清风轮蛊), a rank-1 Wind path Gu: spins a wheel of wind under the feet. +1 movement; 2% stronger. Refined with XP by a Wind Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Jade Wind Wheel Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wind Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+11]% Strength <when attacking>",
+      "Play [gu-jade-wind-wheel-gu] sound <upon gaining the [Jade Wind Wheel Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Jade Wind Wheel Gu (碧风轮蛊), a rank-2 Wind path Gu: two green whirlwinds on the arms quicken every strike. 11% stronger when attacking. Refined with XP by a Wind Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Moonglow Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Moon Master"
+    ],
+    "uniques": [
+      "Comment [Food: 1 Moon Orchid a turn. Short of it: weakened at once, hunger +20% a turn, at 100% a 50% chance to die]",
+      "[+11]% Strength <when attacking> <when above [-1] [Moon Orchid]>",
+      "Consumes [1] [Moon Orchid]",
+      "[This Unit] loses the [Moonglow Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]> <with [50]% chance>",
+      "[This Unit] gains the [Moonglow Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]>",
+      "[This Unit] gains the [Moonglow Gu Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 60%]>",
+      "[This Unit] gains the [Moonglow Gu Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 40%]>",
+      "[This Unit] gains the [Moonglow Gu Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 20%]>",
+      "[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 100%]> <for units without [Moonglow Gu Hunger 80%]>",
+      "[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonglow Gu Hunger 20%]> <for units without [Moonglow Gu Hunger 40%]> <for units without [Moonglow Gu Hunger 60%]> <for units without [Moonglow Gu Hunger 80%]> <for units without [Moonglow Gu Hunger 100%]>",
+      "Play [gu-moonglow-gu] sound <upon gaining the [Moonglow Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moonglow Gu (月芒蛊), a rank-2 Moon path Gu: a moon blade three times as strong as Moonlight Gu's. 11% stronger when attacking. Refined with XP by a Moon Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Stealth Scales Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "Invisible to non-adjacent units",
+      "[+6]% Strength <when defending>",
+      "Play [gu-stealth-scales-gu] sound <upon gaining the [Stealth Scales Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stealth Scales Gu (隐鳞蛊), a rank-2 Earth path Gu: hides the body and everything it wears. Unseen except from an adjacent tile; 6% stronger when defending. Refined with XP by a Earth Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Ice Knife Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+11]% Strength <when attacking>",
+      "Play [gu-ice-knife-gu] sound <upon gaining the [Ice Knife Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Knife Gu (冰刀蛊), a rank-2 Ice Snow path Gu: forms a knife of ice. 11% stronger when attacking. Refined with XP by a Ice Snow Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Icicle Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+4]% Strength <when attacking>",
+      "Play [gu-icicle-gu] sound <upon gaining the [Icicle Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Icicle Gu (冰锥蛊), a rank-2 Ice Snow path Gu: a volley of icicles pins the enemy down. Its hits leave the enemy Frozen for 1 turn(s); 4% stronger when attacking. Refined with XP by a Ice Snow Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Nine Leaf Vitality Grass",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wood Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+10] HP when healing",
+      "Play [gu-nine-leaf-vitality-grass] sound <upon gaining the [Nine Leaf Vitality Grass] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Nine Leaf Vitality Grass (九叶生机草), a rank-2 Wood path Gu: a grass that keeps growing healing leaves. Heals 10 HP more a turn. Refined with XP by a Wood Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Earth Communication Ear Grass",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+1] Sight",
+      "[+3]% Strength",
+      "Play [gu-earth-communication-ear-grass] sound <upon gaining the [Earth Communication Ear Grass] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth Communication Ear Grass (地听肉耳草), a rank-2 Earth path Gu: listens through the ground for three hundred paces. +1 sight; 3% stronger. Refined with XP by a Earth Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Spiral Bone Spear Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Bone Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-spiral-bone-spear-gu] sound <upon gaining the [Spiral Bone Spear Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spiral Bone Spear Gu (螺旋骨枪蛊), a rank-2 Bone path Gu: fires a spiralled spear of bone. Each hit deals 6 more damage. Refined with XP by a Bone Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Plasma Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-plasma-gu] sound <upon gaining the [Plasma Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Plasma Gu (电浆蛊), a rank-2 Lightning path Gu: spits a ball of crackling plasma. Each hit deals 6 more damage. Refined with XP by a Lightning Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Water Drill Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Water Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+11]% Strength <when attacking>",
+      "Play [gu-water-drill-gu] sound <upon gaining the [Water Drill Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Drill Gu (水钻蛊), a rank-2 Water path Gu: a drill of water that pierces armour. 11% stronger when attacking. Refined with XP by a Water Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Living Steel Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Metal Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+10] HP when healing",
+      "Play [gu-living-steel-gu] sound <upon gaining the [Living Steel Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Living Steel Gu (生铁蛊), a rank-2 Metal path Gu: mends other Gu and the body that carries them. Heals 10 HP more a turn. Refined with XP by a Metal Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Eating Wind Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Food Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[-8]% maintenance costs",
+      "Play [gu-eating-wind-gu] sound <upon gaining the [Eating Wind Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eating Wind Gu (餐风蛊), a rank-2 Food path Gu: lets its master live on wind instead of food. Its unit costs 8% less upkeep. Refined with XP by a Food Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Love Life Separation",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Poison Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] gains the [Poisoned] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+4]% Strength <when attacking>",
+      "Play [gu-love-life-separation] sound <upon gaining the [Love Life Separation] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Love Life Separation (爱生离), a rank-2 Poison path Gu: the deadliest poison of rank two, carried on the nails. Its hits leave the enemy Poisoned for 1 turn(s); 4% stronger when attacking. Refined with XP by a Poison Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Ghost Fire Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Soul Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-ghost-fire-gu] sound <upon gaining the [Ghost Fire Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ghost Fire Gu (鬼火蛊), a rank-2 Soul path Gu: throws a ghost fire that burns the soul. Each hit deals 6 more damage. Refined with XP by a Soul Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Whip Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Weapon Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-whip-gu] sound <upon gaining the [Whip Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Whip Gu (皮鞭蛊), a rank-2 Weapon path Gu: a leather whip that lashes from afar. Each hit deals 6 more damage. Refined with XP by a Weapon Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Blood Moon Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Blood Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+5]% Strength <when attacking>",
+      "Play [gu-blood-moon-gu] sound <upon gaining the [Blood Moon Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Moon Gu (血月蛊), a rank-3 Blood path Gu: a moon blade whose wounds will not close. Its hits leave the enemy Bleeding for 2 turn(s); 5% stronger when attacking. Refined with XP by a Blood Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Blue Bird Ice Coffin Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+5]% Strength <when attacking>",
+      "Play [gu-blue-bird-ice-coffin-gu] sound <upon gaining the [Blue Bird Ice Coffin Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blue Bird Ice Coffin Gu (蓝鸟冰棺蛊), a rank-3 Ice Snow path Gu: a blue bird that shuts its target in an ice coffin. Its hits leave the enemy Frozen for 2 turn(s); 5% stronger when attacking. Refined with XP by a Ice Snow Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Lightning Wings Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+1] Movement",
+      "[+4]% Strength",
+      "Play [gu-lightning-wings-gu] sound <upon gaining the [Lightning Wings Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lightning Wings Gu (雷翼蛊), a rank-3 Lightning path Gu: wings of lightning for flight. +1 movement; 4% stronger. Refined with XP by a Lightning Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Lava Explosion Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Fire Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-lava-explosion-gu] sound <upon gaining the [Lava Explosion Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Lava Explosion Gu (熔岩炸裂蛊), a rank-3 Fire path Gu: hurls lava that bursts on impact. Each hit deals 8 more damage. Refined with XP by a Fire Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Water Prison Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Water Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] gains the [Entangled] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+5]% Strength <when attacking>",
+      "Play [gu-water-prison-gu] sound <upon gaining the [Water Prison Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Prison Gu (水牢蛊), a rank-3 Water path Gu: traps the target in a ball of water. Its hits leave the enemy Entangled for 2 turn(s); 5% stronger when attacking. Refined with XP by a Water Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Sight Blow Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Soul Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-sight-blow-gu] sound <upon gaining the [Sight Blow Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sight Blow Gu (目击蛊), a rank-3 Soul path Gu: a single look that strikes the soul. Each hit deals 8 more damage. Refined with XP by a Soul Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Starlight Firefly Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Star Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+1] Sight",
+      "[+4]% Strength",
+      "Play [gu-starlight-firefly-gu] sound <upon gaining the [Starlight Firefly Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Starlight Firefly Gu (星萤蛊), a rank-3 Star path Gu: tiny fireflies that shine with starlight. +1 sight; 4% stronger. Refined with XP by a Star Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Self-Reliance Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+13] HP when healing",
+      "Play [gu-self-reliance-gu] sound <upon gaining the [Self-Reliance Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Self-Reliance Gu (自力更生蛊), a rank-3 Strength path Gu: heals by drawing on its master's own strength. Heals 13 HP more a turn. Refined with XP by a Strength Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Food Master"
+    ],
+    "uniques": [
+      "Comment [Food: 1 Wine a turn. Short of it: weakened at once, hunger +14% a turn, at 100% a 50% chance to die]",
+      "[+25]% XP gained from combat <when above [-1] [Wine]>",
+      "Consumes [1] [Wine]",
+      "[This Unit] loses the [Seven Fragrances Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 86%]> <with [50]% chance>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 86%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 86%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 71%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 71%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 57%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 57%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 43%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 43%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 29%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 29%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 14%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 100%]> <for units without [Seven Fragrances Liquor Worm Hunger 86%]>",
+      "[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Seven Fragrances Liquor Worm Hunger 14%]> <for units without [Seven Fragrances Liquor Worm Hunger 29%]> <for units without [Seven Fragrances Liquor Worm Hunger 43%]> <for units without [Seven Fragrances Liquor Worm Hunger 57%]> <for units without [Seven Fragrances Liquor Worm Hunger 71%]> <for units without [Seven Fragrances Liquor Worm Hunger 86%]> <for units without [Seven Fragrances Liquor Worm Hunger 100%]>",
+      "Play [gu-seven-fragrances-liquor-worm] sound <upon gaining the [Seven Fragrances Liquor Worm] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Seven Fragrances Liquor Worm (七香酒虫), a rank-3 Food path Gu: refines its master's essence, the liquor worm grown to rank three. 25% more XP from combat. Refined with XP by a Food Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Chainsaw Golden Centipede",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Metal Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+14]% Strength <when attacking>",
+      "Play [gu-chainsaw-golden-centipede] sound <upon gaining the [Chainsaw Golden Centipede] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Chainsaw Golden Centipede (锯齿金蜈), a rank-3 Metal path Gu: a saw-toothed centipede that grinds through defences. 14% stronger when attacking. Refined with XP by a Metal Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Flying Bone Shield Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Bone Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+14]% Strength <when defending>",
+      "Play [gu-flying-bone-shield-gu] sound <upon gaining the [Flying Bone Shield Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bone Shield Gu (飞骨盾蛊), a rank-3 Bone path Gu: bone shields fly around its master. 14% stronger when defending. Refined with XP by a Bone Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Hand Blade Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Blade Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+14]% Strength <when attacking>",
+      "Play [gu-hand-blade-gu] sound <upon gaining the [Hand Blade Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hand Blade Gu (手刃蛊), a rank-3 Blade path Gu: turns the edges of the palms into blades. 14% stronger when attacking. Refined with XP by a Blade Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Yin Yang Dual Cloud Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Cloud Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+1] Movement",
+      "[+4]% Strength",
+      "Play [gu-yin-yang-dual-cloud-gu] sound <upon gaining the [Yin Yang Dual Cloud Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Yin Yang Dual Cloud Gu (阴阳两云蛊), a rank-3 Cloud path Gu: two clouds to ride. +1 movement; 4% stronger. Refined with XP by a Cloud Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Poison Vow Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Restriction Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[-5]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-poison-vow-gu] sound <upon gaining the [Poison Vow Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Poison Vow Gu (毒誓蛊), a rank-3 Restriction path Gu: an oath that kills whoever breaks it. Enemy soldiers beside it fight 5% weaker. Refined with XP by a Restriction Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Iron Rod Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Weapon Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+14]% Strength <when attacking>",
+      "Play [gu-iron-rod-gu] sound <upon gaining the [Iron Rod Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Iron Rod Gu (铁棒蛊), a rank-3 Weapon path Gu: becomes an iron rod in its master's hand. 14% stronger when attacking. Refined with XP by a Weapon Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Gentle Feelings Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Enchantment Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] gains the [Charmed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+5]% Strength <when attacking>",
+      "Play [gu-gentle-feelings-gu] sound <upon gaining the [Gentle Feelings Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Gentle Feelings Gu (柔情蛊), a rank-3 Enchantment path Gu: soft feelings that disarm the enemy. Its hits leave the enemy Charmed for 2 turn(s); 5% stronger when attacking. Refined with XP by a Enchantment Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Mirage Veil Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Illusion Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "Invisible to non-adjacent units",
+      "[+8]% Strength <when defending>",
+      "Play [gu-mirage-veil-gu] sound <upon gaining the [Mirage Veil Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Mirage Veil Gu, a rank-3 Illusion path Gu: weaves a mirage around its master. Unseen except from an adjacent tile; 8% stronger when defending. Refined with XP by a Illusion Master of rank 3 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Furnace Pill Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Pill Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+13] HP when healing",
+      "Play [gu-furnace-pill-gu] sound <upon gaining the [Furnace Pill Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Furnace Pill Gu, a rank-3 Pill path Gu: condenses a healing pill out of essence. Heals 13 HP more a turn. Refined with XP by a Pill Master of rank 3 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Bone Wings Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Bone Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+1] Movement",
+      "[+5]% Strength",
+      "Play [gu-bone-wings-gu] sound <upon gaining the [Bone Wings Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bone Wings Gu (骨翼蛊), a rank-4 Bone path Gu: wings of bone for flight. +1 movement; 5% stronger. Refined with XP by a Bone Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Impermanence Bone Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Bone Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+11]% Strength",
+      "Play [gu-impermanence-bone-gu] sound <upon gaining the [Impermanence Bone Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Impermanence Bone Gu (无常骨蛊), a rank-4 Bone path Gu: a body strong enough to carry a stronger soul. 11% stronger. Refined with XP by a Bone Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Golden Breeze Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Metal Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+16] HP when healing",
+      "Heals [13] damage if it kills a unit",
+      "Play [gu-golden-breeze-gu] sound <upon gaining the [Golden Breeze Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Golden Breeze Gu (金风送爽蛊), a rank-4 Metal path Gu: a golden breeze that heals almost like a rank-five Gu. Heals 16 HP more a turn; heals 13 HP after a kill. Refined with XP by a Metal Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Fiery Snake Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Fire Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[Target Unit] gains the [Burning] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+6]% Strength <when attacking>",
+      "Play [gu-fiery-snake-gu] sound <upon gaining the [Fiery Snake Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fiery Snake Gu (火蛇蛊), a rank-4 Fire path Gu: two snakes of fire. Its hits leave the enemy Burning for 2 turn(s); 6% stronger when attacking. Refined with XP by a Fire Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Water Curtain Skyflower Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Water Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+17]% Strength <when defending>",
+      "Play [gu-water-curtain-skyflower-gu] sound <upon gaining the [Water Curtain Skyflower Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Curtain Skyflower Gu (水幕天华蛊), a rank-4 Water path Gu: a great sphere of water that stops even rank-five blows. 17% stronger when defending. Refined with XP by a Water Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Instant Success Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Time Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+30]% XP gained from combat",
+      "Play [gu-instant-success-gu] sound <upon gaining the [Instant Success Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Instant Success Gu (一蹴而就蛊), a rank-4 Time path Gu: speeds up time around its master. 30% more XP from combat. Refined with XP by a Time Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Location Swap Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Space Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "Invisible to non-adjacent units",
+      "[+10]% Strength <when defending>",
+      "Play [gu-location-swap-gu] sound <upon gaining the [Location Swap Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Location Swap Gu (换位蛊), a rank-4 Space path Gu: swaps places with anyone its master touches. Unseen except from an adjacent tile; 10% stronger when defending. Refined with XP by a Space Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Sword Qi Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Sword Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[Target Unit] takes [10] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-sword-qi-gu] sound <upon gaining the [Sword Qi Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword Qi Gu (剑气蛊), a rank-4 Sword path Gu: fires a ray of sword qi. Each hit deals 10 more damage. Refined with XP by a Sword Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Tiger Roar Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Sound Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[-6]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-tiger-roar-gu] sound <upon gaining the [Tiger Roar Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tiger Roar Gu (虎吼蛊), a rank-4 Sound path Gu: a roar that shakes the enemy. Enemy soldiers beside it fight 6% weaker. Refined with XP by a Sound Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Grass Tree Army Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wood Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+17]% Strength <when defending>",
+      "Play [gu-grass-tree-army-gu] sound <upon gaining the [Grass Tree Army Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Grass Tree Army Gu (草木皆兵蛊), a rank-4 Wood path Gu: turns grass and trees into soldiers. 17% stronger when defending. Refined with XP by a Wood Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Moonshadow Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Moon Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+6]% Strength <when attacking>",
+      "Play [gu-moonshadow-gu] sound <upon gaining the [Moonshadow Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Moonshadow Gu (月影蛊), a rank-4 Moon path Gu: hides its master and seals the enemy's essence. Its hits leave the enemy Sealed for 2 turn(s); 6% stronger when attacking. Refined with XP by a Moon Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Yin Yang Rotation Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Transformation Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+16] HP when healing",
+      "Heals [13] damage if it kills a unit",
+      "Play [gu-yin-yang-rotation-gu] sound <upon gaining the [Yin Yang Rotation Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Yin Yang Rotation Gu (阴阳转身蛊), a rank-4 Transformation path Gu: half yin, half yang: heals from the edge of death. Heals 16 HP more a turn; heals 13 HP after a kill. Refined with XP by a Transformation Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Blood Frenzy Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Blood Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[-6]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-blood-frenzy-gu] sound <upon gaining the [Blood Frenzy Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Frenzy Gu (血狂蛊), a rank-4 Blood path Gu: formless blood qi that drives Gu berserk. Enemy soldiers beside it fight 6% weaker. Refined with XP by a Blood Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "East Window Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Information Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+1] Sight",
+      "[+5]% Strength",
+      "Play [gu-east-window-gu] sound <upon gaining the [East Window Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "East Window Gu (东窗蛊), a rank-4 Information path Gu: stores knowledge and lets another probe a mind. +1 sight; 5% stronger. Refined with XP by a Information Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Play Phantom Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Phantom Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "Invisible to non-adjacent units",
+      "[+10]% Strength <when defending>",
+      "Play [gu-play-phantom-gu] sound <upon gaining the [Play Phantom Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Play Phantom Gu (弄虚蛊), a rank-4 Phantom path Gu: makes a phantom untouchable. Unseen except from an adjacent tile; 10% stronger when defending. Refined with XP by a Phantom Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Array Stone Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Formation Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+17]% Strength <when defending>",
+      "Play [gu-array-stone-gu] sound <upon gaining the [Array Stone Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Array Stone Gu, a rank-4 Formation path Gu: plants stones that form a small defensive array. 17% stronger when defending. Refined with XP by a Formation Master of rank 4 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Ink Beast Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Painting Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[-6]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-ink-beast-gu] sound <upon gaining the [Ink Beast Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ink Beast Gu, a rank-4 Painting path Gu: paints a beast of ink that harries the enemy. Enemy soldiers beside it fight 6% weaker. Refined with XP by a Painting Master of rank 4 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Blood Guillotine",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Blood Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-blood-guillotine] sound <upon gaining the [Blood Guillotine] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Guillotine (血滴子), a rank-5 Blood path Gu: a blood-sucking swarm that can empty a village. Each hit deals 12 more damage. Refined with XP by a Blood Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Earth Overlord Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+13]% Strength",
+      "Play [gu-earth-overlord-gu] sound <upon gaining the [Earth Overlord Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Earth Overlord Gu (土霸王蛊), a rank-5 Strength path Gu: draws endless strength from the ground. 13% stronger. Refined with XP by a Strength Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Extreme Light Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Light Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+20]% Strength <when attacking>",
+      "Play [gu-extreme-light-gu] sound <upon gaining the [Extreme Light Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Extreme Light Gu (太光蛊), a rank-5 Light path Gu: a blast of pure light. 20% stronger when attacking. Refined with XP by a Light Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Star River Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Star Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-star-river-gu] sound <upon gaining the [Star River Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star River Gu (星河蛊), a rank-5 Star path Gu: a river of stars poured over the enemy. Each hit deals 12 more damage. Refined with XP by a Star Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Hammer Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+20]% Strength <when attacking>",
+      "Play [gu-thunder-hammer-gu] sound <upon gaining the [Thunder Hammer Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Thunder Hammer Gu (雷锤蛊), a rank-5 Lightning path Gu: a hammer of thunder. 20% stronger when attacking. Refined with XP by a Lightning Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Flash Bug Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Space Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+1] Movement",
+      "[+6]% Strength",
+      "Play [gu-flash-bug-gu] sound <upon gaining the [Flash Bug Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flash Bug Gu (烁蝺蛊), a rank-5 Space path Gu: teleports five hundred paces at a time. +1 movement; 6% stronger. Refined with XP by a Space Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Treacherous Cloud Wave Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+7]% Strength <when attacking>",
+      "Play [gu-treacherous-cloud-wave-gu] sound <upon gaining the [Treacherous Cloud Wave Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Treacherous Cloud Wave Gu (波云诡谲蛊), a rank-5 Wisdom path Gu: clouds a target's mind. Its hits leave the enemy Shaken for 2 turn(s); 7% stronger when attacking. Refined with XP by a Wisdom Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Jade Sky Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Poison Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] gains the [Poisoned] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+7]% Strength <when attacking>",
+      "Play [gu-jade-sky-gu] sound <upon gaining the [Jade Sky Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Jade Sky Gu (碧空蛊), a rank-5 Poison path Gu: an ancient and deadly poison. Its hits leave the enemy Poisoned for 2 turn(s); 7% stronger when attacking. Refined with XP by a Poison Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Fire Cape Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Fire Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+20]% Strength <when defending>",
+      "Play [gu-fire-cape-gu] sound <upon gaining the [Fire Cape Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire Cape Gu (火焰披风蛊), a rank-5 Fire path Gu: a cloak of flame that spares its wearer. 20% stronger when defending. Refined with XP by a Fire Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Flying Snow Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[-7]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-flying-snow-gu] sound <upon gaining the [Flying Snow Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Snow Gu (漫天飞雪蛊), a rank-5 Ice Snow path Gu: a blizzard across thousands of paces. Enemy soldiers beside it fight 7% weaker. Refined with XP by a Ice Snow Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Keep Silent Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Sound Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+7]% Strength <when attacking>",
+      "Play [gu-keep-silent-gu] sound <upon gaining the [Keep Silent Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Keep Silent Gu (缄默蛊), a rank-5 Sound path Gu: a silence that drowns every sound. Its hits leave the enemy Dazed for 2 turn(s); 7% stronger when attacking. Refined with XP by a Sound Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Soul Explosion Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Soul Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-soul-explosion-gu] sound <upon gaining the [Soul Explosion Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Soul Explosion Gu (魂爆蛊), a rank-5 Soul path Gu: a soul bomb planted in a living host. Each hit deals 12 more damage. Refined with XP by a Soul Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Asura Zombie Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Transformation Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+13]% Strength",
+      "Play [gu-asura-zombie-gu] sound <upon gaining the [Asura Zombie Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Asura Zombie Gu (修罗尸蛊), a rank-5 Transformation path Gu: turns its master into a flying Asura zombie. 13% stronger. Refined with XP by a Transformation Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Search Lock Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Space Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+7]% Strength <when attacking>",
+      "Play [gu-search-lock-gu] sound <upon gaining the [Search Lock Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Search Lock Gu (搜锁蛊), a rank-5 Space path Gu: seals the target's Gu and essence. Its hits leave the enemy Sealed for 2 turn(s); 7% stronger when attacking. Refined with XP by a Space Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Dream Butterfly Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Dream Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+35]% XP gained from combat",
+      "Play [gu-dream-butterfly-gu] sound <upon gaining the [Dream Butterfly Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream Butterfly Gu (梦蝶蛊), a rank-5 Dream path Gu: travels through dream realms. 35% more XP from combat. Refined with XP by a Dream Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Star Mark Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Star Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+15]% Strength <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-star-mark-immortal-gu] sound <upon gaining the [Star Mark Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Star Mark Immortal Gu (星痕仙蛊), a rank-6 Star path Gu: lends six hundred star dao marks for a while. 15% stronger. Refined with XP by a Star Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Pulling Water Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-pulling-water-immortal-gu] sound <upon gaining the [Pulling Water Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pulling Water Immortal Gu (挽澜仙蛊), a rank-6 Strength path Gu: pulls back water and waves. 23% stronger when defending. Refined with XP by a Strength Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Snack Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Food Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[-16]% maintenance costs <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-snack-immortal-gu] sound <upon gaining the [Snack Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Snack Immortal Gu (小吃仙蛊), a rank-6 Food path Gu: immortal essence feeds its master's other Gu. Its unit costs 16% less upkeep. Refined with XP by a Food Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Flying Bear Strength Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+23]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-flying-bear-strength-immortal-gu] sound <upon gaining the [Flying Bear Strength Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bear Strength Immortal Gu (飞熊之力仙蛊), a rank-6 Strength path Gu: the strength of the desolate flying bear. 23% stronger when attacking. Refined with XP by a Strength Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Change Form Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Transformation Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+15]% Strength <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-change-form-immortal-gu] sound <upon gaining the [Change Form Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Change Form Immortal Gu (变形仙蛊), a rank-6 Transformation path Gu: the core of most transformations. 15% stronger. Refined with XP by a Transformation Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Blood Asset Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Blood Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-blood-asset-immortal-gu] sound <upon gaining the [Blood Asset Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Blood Asset Immortal Gu (血本仙蛊), a rank-6 Blood path Gu: the core of three blood-path killer moves. Each hit deals 14 more damage. Refined with XP by a Blood Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Cleanse Soul Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Soul Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+22] HP when healing <when above [0] [Green Grape Immortal Essence]>",
+      "Heals [17] damage if it kills a unit <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-cleanse-soul-immortal-gu] sound <upon gaining the [Cleanse Soul Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cleanse Soul Immortal Gu (净魂仙蛊), a rank-6 Soul path Gu: washes and refines the soul. Heals 22 HP more a turn; heals 17 HP after a kill. Refined with XP by a Soul Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Dark Arrow Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Dark Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-dark-arrow-immortal-gu] sound <upon gaining the [Dark Arrow Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Arrow Immortal Gu (暗箭仙蛊), a rank-6 Dark path Gu: homing arrows of darkness. Each hit deals 14 more damage. Refined with XP by a Dark Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Gong Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Sound Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[-8]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-heavenly-gong-immortal-gu] sound <upon gaining the [Heavenly Gong Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Gong Immortal Gu (天锣仙蛊), a rank-6 Sound path Gu: a gong whose shockwave staggers armies. Enemy soldiers beside it fight 8% weaker. Refined with XP by a Sound Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Ice Soul Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Ice Snow Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>",
+      "[+8]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-ice-soul-immortal-gu] sound <upon gaining the [Ice Soul Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ice Soul Immortal Gu (冰魄仙蛊), a rank-6 Ice Snow path Gu: ice that freezes the soul. Its hits leave the enemy Frozen for 3 turn(s); 8% stronger when attacking. Refined with XP by a Ice Snow Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Rising Azure Cloud Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Cloud Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+1] Movement <when above [0] [Green Grape Immortal Essence]>",
+      "[+7]% Strength <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-rising-azure-cloud-immortal-gu] sound <upon gaining the [Rising Azure Cloud Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rising Azure Cloud Immortal Gu (平步青云仙蛊), a rank-6 Cloud path Gu: rises and falls through the sky in a breath. +1 movement; 7% stronger. Refined with XP by a Cloud Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Dog Shit Luck Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Luck Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>",
+      "[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-dog-shit-luck-immortal-gu] sound <upon gaining the [Dog Shit Luck Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dog Shit Luck Immortal Gu (狗屎运仙蛊), a rank-6 Luck path Gu: luck that turns misfortune aside. Unseen except from an adjacent tile; 14% stronger when defending. Refined with XP by a Luck Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Flying Bear Phantom Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Phantom Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-flying-bear-phantom-immortal-gu] sound <upon gaining the [Flying Bear Phantom Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Bear Phantom Immortal Gu (飞熊虚像蛊), a rank-6 Phantom path Gu: summons a phantom flying bear. 23% stronger when defending. Refined with XP by a Phantom Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Split Shadow Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Shadow Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps]",
+      "Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>",
+      "[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>",
+      "Play [gu-split-shadow-immortal-gu] sound <upon gaining the [Split Shadow Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Split Shadow Immortal Gu (分影仙蛊), a rank-6 Shadow path Gu: splits its master's shadow to confuse the enemy. Unseen except from an adjacent tile; 14% stronger when defending. Refined with XP by a Shadow Master of rank 6 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Flying Sword Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Sword Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-flying-sword-immortal-gu] sound <upon gaining the [Flying Sword Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Flying Sword Immortal Gu (飞剑仙蛊), a rank-7 Sword path Gu: a flying sword that strikes from afar. Each hit deals 16 more damage. Refined with XP by a Sword Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Sword Escape Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Sword Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[+2] Movement <when above [0] [Red Date Immortal Essence]>",
+      "[+8]% Strength <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-sword-escape-immortal-gu] sound <upon gaining the [Sword Escape Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sword Escape Immortal Gu (剑遁仙蛊), a rank-7 Sword path Gu: flies away on a sword's edge. +2 movement; 8% stronger. Refined with XP by a Sword Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Edge Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Blade Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-edge-immortal-gu] sound <upon gaining the [Edge Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Edge Immortal Gu (刃仙蛊), a rank-7 Blade path Gu: the edge itself, made immortal. 26% stronger when attacking. Refined with XP by a Blade Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Great Thief Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Theft Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "Earn [45]% of killed [Military] unit's [Cost] as [Gold] <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-great-thief-immortal-gu] sound <upon gaining the [Great Thief Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Great Thief Immortal Gu (大盗仙蛊), a rank-7 Theft path Gu: a ghost hand that takes anything. Takes 45% of a slain soldier's cost as stones. Refined with XP by a Theft Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Crescent Moon Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Moon Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-crescent-moon-immortal-gu] sound <upon gaining the [Crescent Moon Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Crescent Moon Immortal Gu (偃月仙蛊), a rank-7 Moon path Gu: the core of the Peerless Crescent Moon Slash. 26% stronger when attacking. Refined with XP by a Moon Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Perseverance Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Human Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[+26]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-perseverance-immortal-gu] sound <upon gaining the [Perseverance Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Perseverance Immortal Gu (坚持仙蛊), a rank-7 Human path Gu: makes every other Gu last longer. 26% stronger when defending. Refined with XP by a Human Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Qi Escape Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Qi Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[+2] Movement <when above [0] [Red Date Immortal Essence]>",
+      "[+8]% Strength <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-qi-escape-immortal-gu] sound <upon gaining the [Qi Escape Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Qi Escape Immortal Gu (气遁仙蛊), a rank-7 Qi path Gu: an escape on a stream of qi. +2 movement; 8% stronger. Refined with XP by a Qi Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Expend Strength Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-expend-strength-immortal-gu] sound <upon gaining the [Expend Strength Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Expend Strength Immortal Gu (费力仙蛊), a rank-7 Strength path Gu: drains the strength of everyone who fights its master. Enemy soldiers beside it fight 9% weaker. Refined with XP by a Strength Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Fixed Space Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Space Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "[+9]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-fixed-space-immortal-gu] sound <upon gaining the [Fixed Space Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fixed Space Immortal Gu (定空仙蛊), a rank-7 Space path Gu: locks space around the enemy. Its hits leave the enemy Entangled for 3 turn(s); 9% stronger when attacking. Refined with XP by a Space Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Limit Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ],
+    "uniques": [
+      "Comment [Food: Red Date Immortal Essence. With none in store the Gu sleeps]",
+      "[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]>",
+      "Play [gu-limit-immortal-gu] sound <upon gaining the [Limit Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Six era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Limit Immortal Gu (限蛊), a rank-7 Rule path Gu: sets a limit the enemy cannot pass. Enemy soldiers beside it fight 9% weaker. Refined with XP by a Rule Master of rank 7 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Region Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Rule Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-region-immortal-gu] sound <upon gaining the [Region Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Region Immortal Gu (界蛊), a rank-8 Rule path Gu: Tao Zhu's vital Gu, the boundary of a domain. Enemy soldiers beside it fight 10% weaker. Refined with XP by a Rule Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Wisdom Sword Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-wisdom-sword-immortal-gu] sound <upon gaining the [Wisdom Sword Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wisdom Sword Immortal Gu (慧剑仙蛊), a rank-8 Wisdom path Gu: cuts bonds of feeling and dao marks. Each hit deals 18 more damage. Refined with XP by a Wisdom Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Regret Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Emotion Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] gains the [Charmed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-regret-immortal-gu] sound <upon gaining the [Regret Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Regret Immortal Gu (悔蛊), a rank-8 Emotion path Gu: fills everyone near it with regret. Its hits leave the enemy Charmed for 3 turn(s); 10% stronger when attacking. Refined with XP by a Emotion Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Attitude Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wisdom Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "Invisible to non-adjacent units <when above [0] [White Lychee Immortal Essence]>",
+      "[+18]% Strength <when defending> <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-attitude-immortal-gu] sound <upon gaining the [Attitude Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Attitude Immortal Gu (态度蛊), a rank-8 Wisdom path Gu: shows a false face that others believe. Unseen except from an adjacent tile; 18% stronger when defending. Refined with XP by a Wisdom Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Eight-Faced Prestige Wind Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Wind Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[+29]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-eight-faced-prestige-wind-immortal-gu] sound <upon gaining the [Eight-Faced Prestige Wind Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Eight-Faced Prestige Wind Immortal Gu (八面威风仙蛊), a rank-8 Wind path Gu: the Wu clan's great wind Gu. 29% stronger when attacking. Refined with XP by a Wind Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Water Refinement Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Refinement Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[+28] HP when healing <when above [0] [White Lychee Immortal Essence]>",
+      "Heals [21] damage if it kills a unit <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-water-refinement-immortal-gu] sound <upon gaining the [Water Refinement Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Water Refinement Immortal Gu (水炼仙蛊), a rank-8 Refinement path Gu: the core of a refinement killer move. Heals 28 HP more a turn; heals 21 HP after a kill. Refined with XP by a Refinement Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Secret Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Heaven Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[+2] Sight <when above [0] [White Lychee Immortal Essence]>",
+      "[+9]% Strength <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-heavenly-secret-immortal-gu] sound <upon gaining the [Heavenly Secret Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Secret Immortal Gu (天机仙蛊), a rank-8 Heaven path Gu: asks heaven and earth for answers. +2 sight; 9% stronger. Refined with XP by a Heaven Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Heaven's Envy Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Heaven Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-heaven-s-envy-immortal-gu] sound <upon gaining the [Heaven's Envy Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven's Envy Immortal Gu (天妒仙蛊), a rank-8 Heaven path Gu: the core of Heaven Envies Heroic Geniuses. Its hits leave the enemy Doomed for 3 turn(s); 10% stronger when attacking. Refined with XP by a Heaven Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Kill Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Killing Master"
+    ],
+    "uniques": [
+      "Comment [Food: White Lychee Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>",
+      "Play [gu-kill-immortal-gu] sound <upon gaining the [Kill Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Seven era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Kill Immortal Gu (杀), a rank-8 Killing path Gu: the killing path's core immortal Gu. Each hit deals 18 more damage. Refined with XP by a Killing Master of rank 8 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Light Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Light Master"
+    ],
+    "uniques": [
+      "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps]",
+      "[+32]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
+      "Play [gu-light-gu] sound <upon gaining the [Light Gu] promotion>",
+      "Only available <for [post-[Rank Eight era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Light Gu (光蛊), a rank-9 Light path Gu: a wild Gu born inside the sun. 32% stronger when attacking. Refined with XP by a Light Master of rank 9 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Fire Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Fire Master"
+    ],
+    "uniques": [
+      "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] takes [20] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
+      "Play [gu-fire-gu] sound <upon gaining the [Fire Gu] promotion>",
+      "Only available <for [post-[Rank Eight era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fire Gu (火蛊), a rank-9 Fire path Gu: the sun's own fire, alive. Each hit deals 20 more damage. Refined with XP by a Fire Master of rank 9 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Love Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Emotion Master"
+    ],
+    "uniques": [
+      "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps]",
+      "[+31] HP when healing <when above [0] [Yellow Apricot Immortal Essence]>",
+      "Heals [23] damage if it kills a unit <when above [0] [Yellow Apricot Immortal Essence]>",
+      "Play [gu-love-gu] sound <upon gaining the [Love Gu] promotion>",
+      "Only available <for [post-[Rank Eight era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Love Gu (爱情蛊), a rank-9 Emotion path Gu: the legendary Gu of love. Heals 31 HP more a turn; heals 23 HP after a kill. Refined with XP by a Emotion Master of rank 9 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Web Immortal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Heaven Master"
+    ],
+    "uniques": [
+      "Comment [Food: Yellow Apricot Immortal Essence. With none in store the Gu sleeps]",
+      "[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
+      "[+11]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>",
+      "Play [gu-heavenly-web-immortal-gu] sound <upon gaining the [Heavenly Web Immortal Gu] promotion>",
+      "Only available <for [post-[Rank Eight era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Web Immortal Gu (天网蛊), a rank-9 Heaven path Gu: casts a web from heaven that nothing escapes. Its hits leave the enemy Entangled for 4 turn(s); 11% stronger when attacking. Refined with XP by a Heaven Master of rank 9 or higher. In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+      }
+    ]
+  },
+  {
+    "name": "Moonglow Gu Hunger 20%",
+    "uniques": [
+      "[This Unit] loses the [Moonglow Gu Hunger 20%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 20%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonglow Gu: 20%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moonglow Gu Hunger 40%",
+    "uniques": [
+      "[This Unit] loses the [Moonglow Gu Hunger 40%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 40%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonglow Gu: 40%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moonglow Gu Hunger 60%",
+    "uniques": [
+      "[This Unit] loses the [Moonglow Gu Hunger 60%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 60%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonglow Gu: 60%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moonglow Gu Hunger 80%",
+    "uniques": [
+      "[This Unit] loses the [Moonglow Gu Hunger 80%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 80%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonglow Gu: 80%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Moonglow Gu Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Moonglow Gu Hunger 100%] status <upon turn start> <when above [-1] [Moon Orchid]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Moonglow Gu: 100%. It rises 20% each turn the clan lacks Moon Orchid; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 14%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 14%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 14%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 14%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 29%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 29%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 29%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 29%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 43%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 43%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 43%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 43%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 57%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 57%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 57%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 57%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 71%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 71%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 71%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 71%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 86%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 86%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 86%. At 100% the Gu has a 50% chance to die]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 86%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
+    "name": "Seven Fragrances Liquor Worm Hunger 100%",
+    "uniques": [
+      "[This Unit] loses the [Seven Fragrances Liquor Worm Hunger 100%] status <upon turn start> <when above [-1] [Wine]>",
+      "Comment [Starving: 100%. This turn the Gu had a 50% chance to die; the meter starts again]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunger meter of Seven Fragrances Liquor Worm: 100%. It rises 14% each turn the clan lacks Wine; at 100% the Gu has a 50% chance to die, then the meter starts again. Feeding the clan clears it."
+      }
+    ]
+  },
+  {
     "name": "Ascension",
     "unitTypes": [
       "Gu Master",

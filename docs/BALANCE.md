@@ -603,6 +603,363 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bear Strength Gu | `[+10]% maintenance costs` | +10 | tools/gen_ruleset.py `Promotions` |
 | Stream Gu | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
 | Stream Gu | `[+10]% maintenance costs` | +10 | tools/gen_ruleset.py `Promotions` |
+| Jin Strength Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Jin Strength Gu | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Jin Strength Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Brute Force Longhorn Beetle Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Brute Force Longhorn Beetle Gu | `[+8]% Strength <when attacking>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Brute Force Longhorn Beetle Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Stone Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Stone Skin Gu | `[+8]% Strength <when defending>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Stone Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Iron Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Iron Skin Gu | `[+8]% Strength <when defending>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Iron Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Stealth Stone Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Stealth Stone Gu | `[+4]% Strength <when defending>` | +4 | tools/gen_ruleset.py `Promotions` |
+| Stealth Stone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Vitality Leaf | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Vitality Leaf | `[+7] HP when healing` | +7 | tools/gen_ruleset.py `Promotions` |
+| Vitality Leaf | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Bookworm | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Bookworm | `[+15]% XP gained from combat` | +15 | tools/gen_ruleset.py `Promotions` |
+| Bookworm | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Smelly Fart Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Smelly Fart Gu | `[Target Unit] gains the [Poisoned] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Smelly Fart Gu | `[+3]% Strength <when attacking>` | +3 | tools/gen_ruleset.py `Promotions` |
+| Smelly Fart Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flash Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Flash Gu | `[Target Unit] gains the [Blinded] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Flash Gu | `[+3]% Strength <when attacking>` | +3 | tools/gen_ruleset.py `Promotions` |
+| Flash Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Grass Puppet Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Grass Puppet Gu | `[-3]% Strength for enemy [Military] units in adjacent [All] tiles` | -3 | tools/gen_ruleset.py `Promotions` |
+| Grass Puppet Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Clear Wind Wheel Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Clear Wind Wheel Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Clear Wind Wheel Gu | `[+2]% Strength` | +2 | tools/gen_ruleset.py `Promotions` |
+| Clear Wind Wheel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Jade Wind Wheel Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Jade Wind Wheel Gu | `[+11]% Strength <when attacking>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Jade Wind Wheel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[+11]% Strength <when attacking> <when above [-1] [Moon Orchid]>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `Consumes [1] [Moon Orchid]` | 1 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] loses the [Moonglow Gu] promotion <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 80%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 80%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 60%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 60%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 40%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 40%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 20%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units with [Moonglow Gu Hunger 100%]> <for units without [Moonglow Gu Hunger 80%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[This Unit] gains the [Moonglow Gu Hunger 20%] status for [2] turn(s) <upon turn start> <when below [0] [Moon Orchid]> <for units without [Moonglow Gu Hunger 20%]> <for units without [Moonglow Gu Hunger 40%]> <for units without [Moonglow Gu Hunger 60%]> <for units without [Moonglow Gu Hunger 80%]> <for units without [Moonglow Gu Hunger 100%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonglow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Stealth Scales Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Stealth Scales Gu | `[+6]% Strength <when defending>` | +6 | tools/gen_ruleset.py `Promotions` |
+| Stealth Scales Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Ice Knife Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Ice Knife Gu | `[+11]% Strength <when attacking>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Ice Knife Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Icicle Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Icicle Gu | `[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Icicle Gu | `[+4]% Strength <when attacking>` | +4 | tools/gen_ruleset.py `Promotions` |
+| Icicle Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Nine Leaf Vitality Grass | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Nine Leaf Vitality Grass | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
+| Nine Leaf Vitality Grass | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Earth Communication Ear Grass | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Earth Communication Ear Grass | `[+1] Sight` | +1 | tools/gen_ruleset.py `Promotions` |
+| Earth Communication Ear Grass | `[+3]% Strength` | +3 | tools/gen_ruleset.py `Promotions` |
+| Earth Communication Ear Grass | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Spiral Bone Spear Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Spiral Bone Spear Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Spiral Bone Spear Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Plasma Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Plasma Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Plasma Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Water Drill Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Water Drill Gu | `[+11]% Strength <when attacking>` | +11 | tools/gen_ruleset.py `Promotions` |
+| Water Drill Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Living Steel Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Living Steel Gu | `[+10] HP when healing` | +10 | tools/gen_ruleset.py `Promotions` |
+| Living Steel Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Eating Wind Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Eating Wind Gu | `[-8]% maintenance costs` | -8 | tools/gen_ruleset.py `Promotions` |
+| Eating Wind Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Love Life Separation | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Love Life Separation | `[Target Unit] gains the [Poisoned] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Love Life Separation | `[+4]% Strength <when attacking>` | +4 | tools/gen_ruleset.py `Promotions` |
+| Love Life Separation | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Ghost Fire Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Ghost Fire Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Ghost Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Whip Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Whip Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Whip Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Blood Moon Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Blood Moon Gu | `[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Blood Moon Gu | `[+5]% Strength <when attacking>` | +5 | tools/gen_ruleset.py `Promotions` |
+| Blood Moon Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Blue Bird Ice Coffin Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Blue Bird Ice Coffin Gu | `[Target Unit] gains the [Frozen] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Blue Bird Ice Coffin Gu | `[+5]% Strength <when attacking>` | +5 | tools/gen_ruleset.py `Promotions` |
+| Blue Bird Ice Coffin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Lightning Wings Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Lightning Wings Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Lightning Wings Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
+| Lightning Wings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Lava Explosion Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Lava Explosion Gu | `[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>` | 8 | tools/gen_ruleset.py `Promotions` |
+| Lava Explosion Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Water Prison Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Water Prison Gu | `[Target Unit] gains the [Entangled] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Water Prison Gu | `[+5]% Strength <when attacking>` | +5 | tools/gen_ruleset.py `Promotions` |
+| Water Prison Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Sight Blow Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Sight Blow Gu | `[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>` | 8 | tools/gen_ruleset.py `Promotions` |
+| Sight Blow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Starlight Firefly Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Starlight Firefly Gu | `[+1] Sight` | +1 | tools/gen_ruleset.py `Promotions` |
+| Starlight Firefly Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
+| Starlight Firefly Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Self-Reliance Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Self-Reliance Gu | `[+13] HP when healing` | +13 | tools/gen_ruleset.py `Promotions` |
+| Self-Reliance Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[+25]% XP gained from combat <when above [-1] [Wine]>` | +25 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `Consumes [1] [Wine]` | 1 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] loses the [Seven Fragrances Liquor Worm] promotion <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 86%]> <with [50]% chance>` | 50 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 100%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 86%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 86%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 71%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 71%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 57%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 57%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 43%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 43%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 29%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 29%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 14%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units with [Seven Fragrances Liquor Worm Hunger 100%]> <for units without [Seven Fragrances Liquor Worm Hunger 86%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[This Unit] gains the [Seven Fragrances Liquor Worm Hunger 14%] status for [2] turn(s) <upon turn start> <when below [0] [Wine]> <for units without [Seven Fragrances Liquor Worm Hunger 14%]> <for units without [Seven Fragrances Liquor Worm Hunger 29%]> <for units without [Seven Fragrances Liquor Worm Hunger 43%]> <for units without [Seven Fragrances Liquor Worm Hunger 57%]> <for units without [Seven Fragrances Liquor Worm Hunger 71%]> <for units without [Seven Fragrances Liquor Worm Hunger 86%]> <for units without [Seven Fragrances Liquor Worm Hunger 100%]>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Seven Fragrances Liquor Worm | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Chainsaw Golden Centipede | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Chainsaw Golden Centipede | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Chainsaw Golden Centipede | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Bone Shield Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Flying Bone Shield Gu | `[+14]% Strength <when defending>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Flying Bone Shield Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Hand Blade Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Hand Blade Gu | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Hand Blade Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Dual Cloud Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Dual Cloud Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Dual Cloud Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Dual Cloud Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Poison Vow Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Poison Vow Gu | `[-5]% Strength for enemy [Military] units in adjacent [All] tiles` | -5 | tools/gen_ruleset.py `Promotions` |
+| Poison Vow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Iron Rod Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Iron Rod Gu | `[+14]% Strength <when attacking>` | +14 | tools/gen_ruleset.py `Promotions` |
+| Iron Rod Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Gentle Feelings Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Gentle Feelings Gu | `[Target Unit] gains the [Charmed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Gentle Feelings Gu | `[+5]% Strength <when attacking>` | +5 | tools/gen_ruleset.py `Promotions` |
+| Gentle Feelings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Mirage Veil Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Mirage Veil Gu | `[+8]% Strength <when defending>` | +8 | tools/gen_ruleset.py `Promotions` |
+| Mirage Veil Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Furnace Pill Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Furnace Pill Gu | `[+13] HP when healing` | +13 | tools/gen_ruleset.py `Promotions` |
+| Furnace Pill Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Bone Wings Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Bone Wings Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Bone Wings Gu | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Bone Wings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Impermanence Bone Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Impermanence Bone Gu | `[+11]% Strength` | +11 | tools/gen_ruleset.py `Promotions` |
+| Impermanence Bone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Golden Breeze Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Golden Breeze Gu | `[+16] HP when healing` | +16 | tools/gen_ruleset.py `Promotions` |
+| Golden Breeze Gu | `Heals [13] damage if it kills a unit` | 13 | tools/gen_ruleset.py `Promotions` |
+| Golden Breeze Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fiery Snake Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Fiery Snake Gu | `[Target Unit] gains the [Burning] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Fiery Snake Gu | `[+6]% Strength <when attacking>` | +6 | tools/gen_ruleset.py `Promotions` |
+| Fiery Snake Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Water Curtain Skyflower Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Water Curtain Skyflower Gu | `[+17]% Strength <when defending>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Water Curtain Skyflower Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Instant Success Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Instant Success Gu | `[+30]% XP gained from combat` | +30 | tools/gen_ruleset.py `Promotions` |
+| Instant Success Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Location Swap Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Location Swap Gu | `[+10]% Strength <when defending>` | +10 | tools/gen_ruleset.py `Promotions` |
+| Location Swap Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Sword Qi Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Sword Qi Gu | `[Target Unit] takes [10] damage <upon damaging a [Military] unit> <when attacking>` | 10 | tools/gen_ruleset.py `Promotions` |
+| Sword Qi Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Tiger Roar Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Tiger Roar Gu | `[-6]% Strength for enemy [Military] units in adjacent [All] tiles` | -6 | tools/gen_ruleset.py `Promotions` |
+| Tiger Roar Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Grass Tree Army Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Grass Tree Army Gu | `[+17]% Strength <when defending>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Grass Tree Army Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Moonshadow Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Moonshadow Gu | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Moonshadow Gu | `[+6]% Strength <when attacking>` | +6 | tools/gen_ruleset.py `Promotions` |
+| Moonshadow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Rotation Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Rotation Gu | `[+16] HP when healing` | +16 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Rotation Gu | `Heals [13] damage if it kills a unit` | 13 | tools/gen_ruleset.py `Promotions` |
+| Yin Yang Rotation Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Blood Frenzy Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Blood Frenzy Gu | `[-6]% Strength for enemy [Military] units in adjacent [All] tiles` | -6 | tools/gen_ruleset.py `Promotions` |
+| Blood Frenzy Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| East Window Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| East Window Gu | `[+1] Sight` | +1 | tools/gen_ruleset.py `Promotions` |
+| East Window Gu | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| East Window Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Play Phantom Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Play Phantom Gu | `[+10]% Strength <when defending>` | +10 | tools/gen_ruleset.py `Promotions` |
+| Play Phantom Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Array Stone Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Array Stone Gu | `[+17]% Strength <when defending>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Array Stone Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Ink Beast Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Ink Beast Gu | `[-6]% Strength for enemy [Military] units in adjacent [All] tiles` | -6 | tools/gen_ruleset.py `Promotions` |
+| Ink Beast Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Blood Guillotine | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Blood Guillotine | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
+| Blood Guillotine | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Earth Overlord Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Earth Overlord Gu | `[+13]% Strength` | +13 | tools/gen_ruleset.py `Promotions` |
+| Earth Overlord Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Extreme Light Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Extreme Light Gu | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Extreme Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Star River Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Star River Gu | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
+| Star River Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Thunder Hammer Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Thunder Hammer Gu | `[+20]% Strength <when attacking>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Thunder Hammer Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flash Bug Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Flash Bug Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Flash Bug Gu | `[+6]% Strength` | +6 | tools/gen_ruleset.py `Promotions` |
+| Flash Bug Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Treacherous Cloud Wave Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Treacherous Cloud Wave Gu | `[Target Unit] gains the [Shaken] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Treacherous Cloud Wave Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
+| Treacherous Cloud Wave Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Jade Sky Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Jade Sky Gu | `[Target Unit] gains the [Poisoned] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Jade Sky Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
+| Jade Sky Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fire Cape Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Fire Cape Gu | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Fire Cape Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Snow Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Flying Snow Gu | `[-7]% Strength for enemy [Military] units in adjacent [All] tiles` | -7 | tools/gen_ruleset.py `Promotions` |
+| Flying Snow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Keep Silent Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Keep Silent Gu | `[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Keep Silent Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
+| Keep Silent Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Soul Explosion Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Soul Explosion Gu | `[Target Unit] takes [12] damage <upon damaging a [Military] unit> <when attacking>` | 12 | tools/gen_ruleset.py `Promotions` |
+| Soul Explosion Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Asura Zombie Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Asura Zombie Gu | `[+13]% Strength` | +13 | tools/gen_ruleset.py `Promotions` |
+| Asura Zombie Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Search Lock Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Search Lock Gu | `[Target Unit] gains the [Sealed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Search Lock Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
+| Search Lock Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dream Butterfly Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Dream Butterfly Gu | `[+35]% XP gained from combat` | +35 | tools/gen_ruleset.py `Promotions` |
+| Dream Butterfly Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu | `[+15]% Strength <when above [0] [Green Grape Immortal Essence]>` | +15, 0 | tools/gen_ruleset.py `Promotions` |
+| Star Mark Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu | `[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Pulling Water Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu | `[-16]% maintenance costs <when above [0] [Green Grape Immortal Essence]>` | -16, 0 | tools/gen_ruleset.py `Promotions` |
+| Snack Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu | `[+23]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu | `[+15]% Strength <when above [0] [Green Grape Immortal Essence]>` | +15, 0 | tools/gen_ruleset.py `Promotions` |
+| Change Form Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
+| Blood Asset Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu | `[+22] HP when healing <when above [0] [Green Grape Immortal Essence]>` | +22, 0 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu | `Heals [17] damage if it kills a unit <when above [0] [Green Grape Immortal Essence]>` | 17, 0 | tools/gen_ruleset.py `Promotions` |
+| Cleanse Soul Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu | `[Target Unit] takes [14] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 14, 0 | tools/gen_ruleset.py `Promotions` |
+| Dark Arrow Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu | `[-8]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Green Grape Immortal Essence]>` | -8, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Gong Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu | `[Target Unit] gains the [Frozen] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Green Grape Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu | `[+8]% Strength <when attacking> <when above [0] [Green Grape Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
+| Ice Soul Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu | `[+1] Movement <when above [0] [Green Grape Immortal Essence]>` | +1, 0 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu | `[+7]% Strength <when above [0] [Green Grape Immortal Essence]>` | +7, 0 | tools/gen_ruleset.py `Promotions` |
+| Rising Azure Cloud Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
+| Dog Shit Luck Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu | `[+23]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Bear Phantom Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
+| Split Shadow Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu | `[Target Unit] takes [16] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>` | 16, 0 | tools/gen_ruleset.py `Promotions` |
+| Flying Sword Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu | `[+2] Movement <when above [0] [Red Date Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu | `[+8]% Strength <when above [0] [Red Date Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
+| Sword Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu | `[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Edge Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu | `Earn [45]% of killed [Military] unit's [Cost] as [Gold] <when above [0] [Red Date Immortal Essence]>` | 45, 0 | tools/gen_ruleset.py `Promotions` |
+| Great Thief Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu | `[+26]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Crescent Moon Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu | `[+26]% Strength <when defending> <when above [0] [Red Date Immortal Essence]>` | +26, 0 | tools/gen_ruleset.py `Promotions` |
+| Perseverance Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu | `[+2] Movement <when above [0] [Red Date Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu | `[+8]% Strength <when above [0] [Red Date Immortal Essence]>` | +8, 0 | tools/gen_ruleset.py `Promotions` |
+| Qi Escape Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu | `[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]>` | -9, 0 | tools/gen_ruleset.py `Promotions` |
+| Expend Strength Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu | `[Target Unit] gains the [Entangled] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Red Date Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu | `[+9]% Strength <when attacking> <when above [0] [Red Date Immortal Essence]>` | +9, 0 | tools/gen_ruleset.py `Promotions` |
+| Fixed Space Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu | `[-9]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [Red Date Immortal Essence]>` | -9, 0 | tools/gen_ruleset.py `Promotions` |
+| Limit Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles <when above [0] [White Lychee Immortal Essence]>` | -10, 0 | tools/gen_ruleset.py `Promotions` |
+| Region Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
+| Wisdom Sword Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu | `[Target Unit] gains the [Charmed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu | `[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +10, 0 | tools/gen_ruleset.py `Promotions` |
+| Regret Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu | `Invisible to non-adjacent units <when above [0] [White Lychee Immortal Essence]>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu | `[+18]% Strength <when defending> <when above [0] [White Lychee Immortal Essence]>` | +18, 0 | tools/gen_ruleset.py `Promotions` |
+| Attitude Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu | `[+29]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +29, 0 | tools/gen_ruleset.py `Promotions` |
+| Eight-Faced Prestige Wind Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu | `[+28] HP when healing <when above [0] [White Lychee Immortal Essence]>` | +28, 0 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu | `Heals [21] damage if it kills a unit <when above [0] [White Lychee Immortal Essence]>` | 21, 0 | tools/gen_ruleset.py `Promotions` |
+| Water Refinement Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu | `[+2] Sight <when above [0] [White Lychee Immortal Essence]>` | +2, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu | `[+9]% Strength <when above [0] [White Lychee Immortal Essence]>` | +9, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Secret Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu | `[Target Unit] gains the [Doomed] status for [3] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 3, 0 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu | `[+10]% Strength <when attacking> <when above [0] [White Lychee Immortal Essence]>` | +10, 0 | tools/gen_ruleset.py `Promotions` |
+| Heaven's Envy Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu | `[Target Unit] takes [18] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [White Lychee Immortal Essence]>` | 18, 0 | tools/gen_ruleset.py `Promotions` |
+| Kill Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Light Gu | `[+32]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Light Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu | `[Target Unit] takes [20] damage <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | 20, 0 | tools/gen_ruleset.py `Promotions` |
+| Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Love Gu | `[+31] HP when healing <when above [0] [Yellow Apricot Immortal Essence]>` | +31, 0 | tools/gen_ruleset.py `Promotions` |
+| Love Gu | `Heals [23] damage if it kills a unit <when above [0] [Yellow Apricot Immortal Essence]>` | 23, 0 | tools/gen_ruleset.py `Promotions` |
+| Love Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu | `[Target Unit] gains the [Entangled] status for [4] turn(s) <upon damaging a [Military] unit> <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | 4, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu | `[+11]% Strength <when attacking> <when above [0] [Yellow Apricot Immortal Essence]>` | +11, 0 | tools/gen_ruleset.py `Promotions` |
+| Heavenly Web Immortal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>` | 20 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
 | Ascension | `Unavailable <when below [45] [Heaven Qi]> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
@@ -2427,6 +2784,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-2210 numbers listed.
+2567 numbers listed.
 
 <!-- inventory:end -->

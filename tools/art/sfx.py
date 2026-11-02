@@ -326,6 +326,48 @@ def dao_bell(tier):
     return _norm(x, 0.3 + 0.04 * tier, 0.45 + 0.15 * tier)
 
 
+# ---------------------------------------------------------------- the Gu catalog: a refinement sound per Gu
+FORM_VOICE = {**{f: "wings" for f in ("moth", "cicada", "bat", "bird", "wing", "firefly")},
+              **{f: "clicks" for f in ("beetle", "beetle_horn", "centipede", "spider", "scorpion", "worm")},
+              **{f: "chime" for f in ("crystal", "orb", "lotus", "flower", "leaf", "sun", "eye", "ear")},
+              **{f: "metal" for f in ("blade", "sword", "rod", "fang", "hammer", "gong", "shell", "fist", "bone", "drill")},
+              **{f: "flow" for f in ("cloud", "wheel", "serpent", "flame", "web", "scroll", "mask", "puppet")}}
+
+
+def gu_awaken(name, key, rank, form):
+    """A Gu wakes in its master's aperture: its own voice (wings, clicks, a chime, ringing metal or a rushing flow),
+    then its path's strike pitched to the Gu, grander with the rank; an immortal Gu adds a dao bell."""
+    import zlib
+    rng = np.random.default_rng(zlib.crc32(name.encode()))
+    pitch = float(rng.uniform(0.82, 1.22))
+    voice = FORM_VOICE[form]
+    if voice == "wings":
+        layers = [T(200 * pitch, 0.01, 0.32, 0.35, vib=(26 + 6 * pitch, 45)), N(2000, 5200, 0.005, 0.25, 0.25)]
+    elif voice == "clicks":
+        layers = [C(40 + 30 * pitch, 1500, 5200, 0.3, 0.55), K(260 * pitch, 140 * pitch, 0.06, 0.4)]
+    elif voice == "chime":
+        layers = [M(900 * pitch, 0.5, 0.42, ratios=(1, 2.0, 3.01)), M(1350 * pitch, 0.4, 0.22, ratios=(1, 2.0), at=0.06)]
+    elif voice == "metal":
+        layers = [M(420 * pitch, 0.45, 0.5, ratios=(1.0, 2.76, 5.4)), N(1800, 6000, 0.002, 0.08, 0.35)]
+    else:
+        layers = [N(250, 1600, 0.06, 0.35, 0.45, lo2=900, hi2=4200)]
+    head = render(layers)
+    tier = 1 if rank <= 2 else 2 if rank <= 4 else 3 if rank <= 6 else 4
+    body = path_hit(key, tier)
+    idx = np.arange(0, len(body) - 1, pitch)
+    body = np.interp(idx, np.arange(len(body)), body)
+    off = int(SR * 0.14)
+    x = np.zeros(max(len(head), off + len(body)))
+    x[: len(head)] += head
+    x[off: off + len(body)] += 0.8 * body
+    if rank >= 6:
+        bell = dao_bell(min(5, rank - 4))
+        b0 = int(SR * 0.2)
+        x = np.concatenate([x, np.zeros(max(0, b0 + len(bell) - len(x)))])
+        x[b0: b0 + len(bell)] += 0.7 * bell
+    return _norm(x, 0.6 + 0.03 * rank, 1.0 + 0.12 * rank)
+
+
 # ---------------------------------------------------------------- names and files
 import sys as _sys  # noqa: E402
 _sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -344,6 +386,9 @@ def all_sounds():
         out[rank_sound(r)] = (lambda r=r: rank_body(r))
     for t in range(1, 6):
         out[dao_sound(t)] = (lambda t=t: dao_bell(t))
+    import gu_catalog
+    for r in gu_catalog.ROWS:
+        out[gu_catalog.sound(r["name"])] = (lambda r=r: gu_awaken(r["name"], r["path"], int(r["rank"]), r["form"]))
     return out
 
 

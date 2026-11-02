@@ -1,0 +1,203 @@
+#!/usr/bin/env python3
+"""The Gu catalog (Phase D, the user 2026-11-02: "buat gu tambahan sekitaran 100 lagi", canon first, the rest adapted).
+
+data/gu_catalog.csv holds one row per Gu: its rank 1-9, path, role, icon form, food and the canon source. A unit refines
+a catalog Gu by spending XP on it (a promotion), once it holds the path's Master and its rank reaches the Gu's; the AI
+buys them too. What the Gu does follows from its role and rank (ROLES), so a rank-9 Gu of a role is always stronger
+than a rank-1 Gu of the same role:
+
+* mortal Gu (ranks 1-5) eat primeval stones (more upkeep) or, for the two whose canon food the mod has, Moon Orchid
+  and Wine through the hunger meter (tools/gu_rules.py);
+* immortal Gu (ranks 6-9) eat the immortal essence of their rank and sleep while the clan has none in store.
+
+Every Gu has its own icon (tools/art/guart.py) and its own refinement sound (tools/art/sfx.py), played when the unit
+gains it. Imported by tools/gen_paths.py (promotions, translations, the PATHS.md table); numpy-free.
+"""
+from __future__ import annotations
+
+import csv
+import re
+
+from common import REPO_ROOT
+
+DATA = REPO_ROOT / "data" / "gu_catalog.csv"
+ROWS = list(csv.DictReader(DATA.open(encoding="utf-8", newline="")))
+
+# a Gu of rank r needs a unit of rank r or higher (a unit's era is its required tech's era [src BaseUnit.matchesFilter])
+GATE = {1: "", 2: "<for [non-[Rank One Gu Master]] units>", 3: "<for [non-[Rank One-Two era]] units>",
+        4: "<for [post-[Rank Three era]] units>", 5: "<for [post-[Rank Four era]] units>",
+        6: "<for [post-[Rank Five era]] units>", 7: "<for [post-[Rank Six era]] units>",
+        8: "<for [post-[Rank Seven era]] units>", 9: "<for [post-[Rank Eight era]] units>"}
+ESSENCE = {6: "Green Grape Immortal Essence", 7: "Red Date Immortal Essence", 8: "White Lychee Immortal Essence",
+           9: "Yellow Apricot Immortal Essence"}
+ESSENCE_ID = {6: "Esensi Abadi Anggur Hijau", 7: "Esensi Abadi Kurma Merah", 8: "Esensi Abadi Leci Putih",
+              9: "Esensi Abadi Aprikot Kuning"}
+UPKEEP = {1: 2, 2: 3, 3: 4, 4: 5, 5: 6}           # % more upkeep for a stone-eating mortal Gu
+AI_WEIGHT = "[+100]% weight to this choice for AI decisions"
+HIT = "<upon damaging a [Military] unit> <when attacking>"
+
+
+def sound(name: str) -> str:
+    """The Gu's refinement sound (sounds/<this>.ogg)."""
+    return "gu-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def status_of(row: dict) -> str:
+    return row["role"].split(":", 1)[1] if row["role"].startswith("status:") else ""
+
+
+def effects(row: dict) -> list[tuple[str, str, str]]:
+    """(unique, English, Indonesian) per effect; magnitudes grow with the rank."""
+    r, role = int(row["rank"]), row["role"].split(":")[0]
+    if role == "str":
+        n = 3 + 2 * r
+        return [(f"[+{n}]% Strength", f"{n}% stronger", f"{n}% lebih kuat")]
+    if role == "atk":
+        n = 5 + 3 * r
+        return [(f"[+{n}]% Strength <when attacking>", f"{n}% stronger when attacking", f"{n}% lebih kuat saat menyerang")]
+    if role == "def":
+        n = 5 + 3 * r
+        return [(f"[+{n}]% Strength <when defending>", f"{n}% stronger when defending", f"{n}% lebih kuat saat bertahan")]
+    if role == "dmg":
+        n = 2 + 2 * r
+        return [(f"[Target Unit] takes [{n}] damage {HIT}", f"each hit deals {n} more damage",
+                 f"setiap serangan memberi {n} kerusakan tambahan")]
+    if role == "status":
+        from gen_paths import STATUSES
+        st = next(s for s in STATUSES if s["name"] == status_of(row))
+        turns, n = 1 + r // 3, r + 2
+        return [(f"[Target Unit] gains the [{st['name']}] status for [{turns}] turn(s) {HIT}",
+                 f"its hits leave the enemy {st['name']} for {turns} turn(s)",
+                 f"serangannya membuat musuh {st['name_id']} selama {turns} giliran"),
+                (f"[+{n}]% Strength <when attacking>", f"{n}% stronger when attacking", f"{n}% lebih kuat saat menyerang")]
+    if role == "move":
+        m, n = (1 if r < 7 else 2), 1 + r
+        return [(f"[+{m}] Movement", f"+{m} movement", f"+{m} gerak"),
+                (f"[+{n}]% Strength", f"{n}% stronger", f"{n}% lebih kuat")]
+    if role == "heal":
+        n = 4 + 3 * r
+        out = [(f"[+{n}] HP when healing", f"heals {n} HP more a turn", f"pulih {n} HP lebih banyak per giliran")]
+        if r >= 4:
+            k = 5 + 2 * r
+            out.append((f"Heals [{k}] damage if it kills a unit", f"heals {k} HP after a kill",
+                        f"pulih {k} HP setelah membunuh"))
+        return out
+    if role == "sight":
+        s, n = (1 if r < 5 else 2), r + 1
+        return [(f"[+{s}] Sight", f"+{s} sight", f"+{s} jarak pandang"),
+                (f"[+{n}]% Strength", f"{n}% stronger", f"{n}% lebih kuat")]
+    if role == "stealth":
+        n = 2 + 2 * r
+        return [("Invisible to non-adjacent units", "unseen except from an adjacent tile",
+                 "tak terlihat kecuali dari petak di sebelahnya"),
+                (f"[+{n}]% Strength <when defending>", f"{n}% stronger when defending", f"{n}% lebih kuat saat bertahan")]
+    if role == "aura":
+        n = 2 + r
+        return [(f"[-{n}]% Strength for enemy [Military] units in adjacent [All] tiles",
+                 f"enemy soldiers beside it fight {n}% weaker", f"prajurit musuh di sampingnya bertarung {n}% lebih lemah")]
+    if role == "xp":
+        n = 10 + 5 * r
+        return [(f"[+{n}]% XP gained from combat", f"{n}% more XP from combat", f"XP dari pertempuran {n}% lebih banyak")]
+    if role == "econ":
+        n = 4 + 2 * r
+        return [(f"[-{n}]% maintenance costs", f"its unit costs {n}% less upkeep",
+                 f"pemeliharaan unitnya {n}% lebih murah")]
+    if role == "theft":
+        n = 10 + 5 * r
+        return [(f"Earn [{n}]% of killed [Military] unit's [Cost] as [Gold]",
+                 f"takes {n}% of a slain soldier's cost as stones", f"merampas {n}% harga prajurit yang dibunuh sebagai batu")]
+    raise KeyError(row["role"])
+
+
+def immortal(row: dict) -> bool:
+    return int(row["rank"]) >= 6
+
+
+def asleep(u: str, row: dict) -> str:
+    """An immortal Gu works only while the clan has its rank's immortal essence in store."""
+    return f"{u} <when above [0] [{ESSENCE[int(row['rank'])]}]>" if immortal(row) else u
+
+
+def food_lines(row: dict) -> tuple[list[str], list[dict], tuple[str, str]]:
+    """(uniques, hunger statuses, (English, Indonesian) food sentence)."""
+    from gu_rules import hunger_statuses, stone_comment
+    r = int(row["rank"])
+    if row["food"]:
+        return [], hunger_statuses(row["name"], row["food"], min(r, 4)), ("", "")
+    if immortal(row):
+        en = f"Food: {ESSENCE[r]}. With none in store the Gu sleeps"
+        idn = f"Makanan: {ESSENCE_ID[r]}. Bila persediaan habis Gu ini tertidur"
+        return [f"Comment [{en}]"], [], (en, idn)
+    en, idn = stone_comment(UPKEEP[r])
+    return [f"Comment [{en}]", f"[+{UPKEEP[r]}]% maintenance costs"], [], (en, idn)
+
+
+def pedia(row: dict) -> tuple[str, str]:
+    from gen_paths import KEY, tier_name, tier_name_id
+    p, r = KEY[row["path"]], int(row["rank"])
+    zh = f" ({row['chinese']})" if row["chinese"] else ""
+    eff = effects(row)
+    en_eff, id_eff = "; ".join(e[1] for e in eff), "; ".join(e[2] for e in eff)
+    note_en = {"INVENTED": " Invented for the mod: the novel names no Gu of this path at this level.",
+               }.get(row["verdict"], "")
+    note_id = {"INVENTED": " Rekaan mod: novel tidak menyebut Gu jalur ini pada tingkat ini."}.get(row["verdict"], "")
+    if immortal(row):
+        note_en += " In the novel every immortal Gu is one of a kind; here each immortal refines its own."
+        note_id += " Dalam novel setiap Gu abadi hanya ada satu; di sini setiap abadi memurnikan miliknya sendiri."
+    en = (f"{row['name']}{zh}, a rank-{r} {p['name']} path Gu: {row['fn']}. {en_eff[0].upper() + en_eff[1:]}. "
+          f"Refined with XP by a {tier_name(p, 0)} of rank {r} or higher.{note_en}")
+    idn = (f"{row['name_id']}{zh}, Gu jalur {p['name_id']} tingkat {r}: {row['fn_id']}. {id_eff[0].upper() + id_eff[1:]}. "
+           f"Dimurnikan dengan XP oleh {tier_name_id(p, 0)} tingkat {r} atau lebih tinggi.{note_id}")
+    return en, idn
+
+
+def promotions(unit_types: list[str]) -> list[dict]:
+    from gen_paths import KEY, tier_name
+    from gu_rules import gu_promotion
+    out, statuses = [], []
+    for row in ROWS:
+        r = int(row["rank"])
+        fx = [asleep(e[0], row) for e in effects(row)]
+        food, hunger, _ = food_lines(row)
+        if row["food"]:
+            d = gu_promotion({"name": row["name"], "rank": str(min(r, 4)), "food": row["food"], "eats": "1",
+                              "effects": "|".join(fx), "extra_uniques": ""})
+            uniques = d["uniques"]
+            statuses += hunger
+        else:
+            uniques = food + fx
+        uniques += [f"Play [{sound(row['name'])}] sound <upon gaining the [{row['name']}] promotion>"]
+        if GATE[r]:
+            uniques.append(f"Only available {GATE[r]}")
+        uniques.append(AI_WEIGHT)
+        out.append({"name": row["name"], "unitTypes": unit_types, "prerequisites": [tier_name(KEY[row["path"]], 0)],
+                    "uniques": uniques, "civilopediaText": [{"text": pedia(row)[0]}]})
+    return out + statuses
+
+
+def food_gu() -> list[tuple[str, str, str, str, str]]:
+    """(name, Indonesian name, food, hunger rank, eats) of the catalog Gu with a hunger meter."""
+    return [(r["name"], r["name_id"], r["food"], str(min(int(r["rank"]), 4)), "1") for r in ROWS if r["food"]]
+
+
+def translations() -> list[tuple[str, str]]:
+    out = []
+    for row in ROWS:
+        out += [(row["name"], row["name_id"]), pedia(row)]
+        en, idn = food_lines(row)[2]
+        if en:
+            out.append((en, idn))
+    return out
+
+
+def doc_table() -> list[str]:
+    from gen_paths import KEY, code
+    built = {d["name"]: d for d in promotions(["Gu Master"])}
+    lines = ["| Rank | Gu | Chinese | Path | Role | Food | Uniques | Verdict | Source |",
+             "|---|---|---|---|---|---|---|---|---|"]
+    for row in sorted(ROWS, key=lambda x: (int(x["rank"]), KEY[x["path"]]["name"], x["name"])):
+        u = " ".join(code(x) for x in built[row["name"]]["uniques"])
+        food = row["food"] or (ESSENCE[int(row["rank"])] if immortal(row) else "stones")
+        lines.append(f"| {row['rank']} | {row['name']} | {row['chinese'] or '—'} | {KEY[row['path']]['name']} | "
+                     f"{row['role']} | {food} | {u} | {row['verdict']} | {row['source']} |")
+    return lines

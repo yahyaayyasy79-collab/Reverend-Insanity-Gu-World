@@ -767,7 +767,7 @@ dump("UnitPromotions.json", [
     # Phase D: each Gu's hunger meter in percent (tools/gu_rules.py)
     + [st for r in table("gu.csv") for st in hunger_statuses(r["name"], r["food"], int(r["rank"]))]
     # C3 (MOD_SPEC_3): every canonical path's attainment tiers, killer moves and signature statuses (docs/PATHS.md)
-    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions() + [
+    + gen_paths.promotions(GM_TYPES) + gen_paths.gu_promotions() + gen_paths.GC.promotions(GM_TYPES) + [
     # MOD_SPEC_2 C1: the ascension is bought like Refine Gu (E4: kept, self-removing); the human may try with the hasty
     # amount of qi, the AI only with the balanced one (it never wastes the XP on an attempt it would rush)
     {"name": "Ascension", "unitTypes": GM_TYPES, "uniques": [

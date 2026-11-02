@@ -1,0 +1,114 @@
+name,name_id,chinese,rank,path,role,form,food,verdict,source,fn,fn_id
+Jin Strength Gu,Gu Kekuatan Jin,斤力蛊,1,strength,str,fist,,CANON,R V3c37,adds one jin of strength to the body for good,menambah kekuatan satu jin ke tubuh untuk selamanya
+Brute Force Longhorn Beetle Gu,Gu Kumbang Tanduk Tenaga Kasar,蛮力天牛蛊,1,strength,atk,beetle_horn,,CANON,"R V1c39, V1c62",lends the strength of an ox for a single burst,meminjamkan tenaga seekor lembu untuk satu ledakan
+Stone Skin Gu,Gu Kulit Batu,石皮蛊,1,earth,def,shell,,CANON,R V3c7,turns the skin to stone,mengubah kulit menjadi batu
+Iron Skin Gu,Gu Kulit Besi,铁皮蛊,1,metal,def,shell,,CANON,R V1c62,hardens the skin like iron,mengeraskan kulit seperti besi
+Stealth Stone Gu,Gu Batu Siluman,隐石蛊,1,earth,stealth,crystal,,CANON,R V1c116,hides its master like a stone among stones,menyembunyikan tuannya seperti batu di antara batu
+Vitality Leaf,Daun Vitalitas,生机叶,1,wood,heal,leaf,,CANON,R V1c102,a leaf whose sap closes wounds,daun yang getahnya menutup luka
+Bookworm,Kutu Buku,书虫,1,information,xp,worm,,CANON,"R V1c50, V1c71",its master never forgets what he has read,tuannya tak pernah lupa apa yang telah dibacanya
+Smelly Fart Gu,Gu Kentut Busuk,臭屁蛊,1,poison,status:Poisoned,beetle,,CANON,"R V2c79, V6c132",releases a foul cloud of poison,melepaskan awan racun yang busuk
+Flash Gu,Gu Kilatan,闪光蛊,1,light,status:Blinded,firefly,,CANON,R V1c76,bursts into a blinding flash,meledak menjadi kilatan yang membutakan
+Grass Puppet Gu,Gu Boneka Rumput,草傀蛊,1,enslavement,aura,puppet,,CANON,"R V2c161, V3c23",raises grass puppets that crowd the enemy,membangkitkan boneka rumput yang mengepung musuh
+Clear Wind Wheel Gu,Gu Roda Angin Jernih,清风轮蛊,1,wind,move,wheel,,CANON,R V6c106,spins a wheel of wind under the feet,memutar roda angin di bawah kaki
+Jade Wind Wheel Gu,Gu Roda Angin Giok,碧风轮蛊,2,wind,atk,wheel,,CANON,R V6c106,two green whirlwinds on the arms quicken every strike,dua pusaran angin hijau di lengan mempercepat setiap serangan
+Moonglow Gu,Gu Kilau Bulan,月芒蛊,2,moon,atk,moth,Moon Orchid,CANON,"R V1c98, V1c127",a moon blade three times as strong as Moonlight Gu's,bilah bulan tiga kali sekuat milik Gu Cahaya Bulan
+Stealth Scales Gu,Gu Sisik Siluman,隐鳞蛊,2,earth,stealth,serpent,,CANON,R V1c121,hides the body and everything it wears,menyembunyikan tubuh dan semua yang dipakainya
+Ice Knife Gu,Gu Pisau Es,冰刀蛊,2,ice,atk,blade,,CANON,R V2c99,forms a knife of ice,membentuk pisau es
+Icicle Gu,Gu Tombak Es,冰锥蛊,2,ice,status:Frozen,crystal,,CANON,R V2c100,a volley of icicles pins the enemy down,rentetan tombak es memaku musuh
+Nine Leaf Vitality Grass,Rumput Vitalitas Sembilan Daun,九叶生机草,2,wood,heal,flower,,CANON,R V1c102,a grass that keeps growing healing leaves,rumput yang terus menumbuhkan daun penyembuh
+Earth Communication Ear Grass,Rumput Telinga Pendengar Bumi,地听肉耳草,2,earth,sight,ear,,CANON,R V1c128,listens through the ground for three hundred paces,mendengar melalui tanah sejauh tiga ratus langkah
+Spiral Bone Spear Gu,Gu Tombak Tulang Spiral,螺旋骨枪蛊,2,bone,dmg,bone,,CANON (rank W),R V2c23,fires a spiralled spear of bone,menembakkan tombak tulang berpilin
+Plasma Gu,Gu Plasma,电浆蛊,2,lightning,dmg,orb,,CANON,R V2c150,spits a ball of crackling plasma,meludahkan bola plasma yang berderak
+Water Drill Gu,Gu Bor Air,水钻蛊,2,water,atk,drill,,CANON,R V1c125,a drill of water that pierces armour,bor air yang menembus zirah
+Living Steel Gu,Gu Baja Hidup,生铁蛊,2,metal,heal,crystal,,CANON,"R V1c177, V3c26",mends other Gu and the body that carries them,memulihkan Gu lain dan tubuh yang membawanya
+Eating Wind Gu,Gu Pemakan Angin,餐风蛊,2,food,econ,cicada,,CANON,R V2c109,lets its master live on wind instead of food,"membuat tuannya hidup dari angin, bukan makanan"
+Love Life Separation,Cinta Hidup Perpisahan,爱生离,2,poison,status:Poisoned,scorpion,,CANON,R V1c75,"the deadliest poison of rank two, carried on the nails","racun tingkat dua paling mematikan, dibawa di kuku"
+Ghost Fire Gu,Gu Api Hantu,鬼火蛊,2,soul,dmg,flame,,CANON,R V3c52,throws a ghost fire that burns the soul,melempar api hantu yang membakar jiwa
+Whip Gu,Gu Cambuk,皮鞭蛊,2,weapon,dmg,serpent,,CANON (rank ADAPTED),R V6c320,a leather whip that lashes from afar,cambuk kulit yang melecut dari jauh
+Blood Moon Gu,Gu Bulan Darah,血月蛊,3,blood,status:Bleeding,moth,,CANON,R V1c157,a moon blade whose wounds will not close,bilah bulan yang lukanya tak mau menutup
+Blue Bird Ice Coffin Gu,Gu Peti Es Burung Biru,蓝鸟冰棺蛊,3,ice,status:Frozen,bird,,CANON,R V1c136,a blue bird that shuts its target in an ice coffin,burung biru yang mengurung sasarannya dalam peti es
+Lightning Wings Gu,Gu Sayap Petir,雷翼蛊,3,lightning,move,wing,,CANON,R V1c157,wings of lightning for flight,sayap petir untuk terbang
+Lava Explosion Gu,Gu Ledakan Lava,熔岩炸裂蛊,3,fire,dmg,flame,,CANON,R V2c8,hurls lava that bursts on impact,melempar lava yang meledak saat menghantam
+Water Prison Gu,Gu Penjara Air,水牢蛊,3,water,status:Entangled,orb,,CANON,R V2c89,traps the target in a ball of water,menjebak sasaran dalam bola air
+Sight Blow Gu,Gu Tatapan Pukul,目击蛊,3,soul,dmg,eye,,CANON,R V3c66,a single look that strikes the soul,satu tatapan yang menghantam jiwa
+Starlight Firefly Gu,Gu Kunang Cahaya Bintang,星萤蛊,3,star,sight,firefly,,CANON,"R V3c61, V4c18",tiny fireflies that shine with starlight,kunang-kunang kecil yang bersinar cahaya bintang
+Self-Reliance Gu,Gu Berdikari,自力更生蛊,3,strength,heal,fist,,CANON,"R V1c161, V2c146",heals by drawing on its master's own strength,menyembuhkan dengan menarik kekuatan tuannya sendiri
+Seven Fragrances Liquor Worm,Ulat Arak Tujuh Wangi,七香酒虫,3,food,xp,worm,Wine,CANON,R V1c105,"refines its master's essence, the liquor worm grown to rank three","memurnikan esensi tuannya, ulat arak yang tumbuh ke tingkat tiga"
+Chainsaw Golden Centipede,Lipan Emas Gergaji,锯齿金蜈,3,metal,atk,centipede,,CANON,R V1c129,a saw-toothed centipede that grinds through defences,lipan bergigi gergaji yang menggerus pertahanan
+Flying Bone Shield Gu,Gu Perisai Tulang Terbang,飞骨盾蛊,3,bone,def,bone,,CANON,R V2c29,bone shields fly around its master,perisai tulang terbang mengitari tuannya
+Hand Blade Gu,Gu Bilah Tangan,手刃蛊,3,blade,atk,blade,,CANON,R V2c99,turns the edges of the palms into blades,mengubah tepi telapak tangan menjadi bilah
+Yin Yang Dual Cloud Gu,Gu Awan Kembar Yin Yang,阴阳两云蛊,3,cloud,move,cloud,,CANON,R V2c98,two clouds to ride,dua awan untuk ditunggangi
+Poison Vow Gu,Gu Sumpah Racun,毒誓蛊,3,restriction,aura,scroll,,CANON,R V2c69,an oath that kills whoever breaks it,sumpah yang membunuh siapa pun yang melanggarnya
+Iron Rod Gu,Gu Tongkat Besi,铁棒蛊,3,weapon,atk,rod,,CANON (rank ADAPTED),R V6c320,becomes an iron rod in its master's hand,menjadi tongkat besi di tangan tuannya
+Gentle Feelings Gu,Gu Perasaan Lembut,柔情蛊,3,enchantment,status:Charmed,flower,,CANON (rank ADAPTED),"R V2c199, V3c165",soft feelings that disarm the enemy,perasaan lembut yang melucuti musuh
+Mirage Veil Gu,Gu Selubung Fatamorgana,,3,illusion,stealth,moth,,INVENTED,none (the novel names no illusion Gu),weaves a mirage around its master,menenun fatamorgana di sekitar tuannya
+Furnace Pill Gu,Gu Pil Tungku,,3,pill,heal,orb,,INVENTED,none (the novel names no pill Gu),condenses a healing pill out of essence,memadatkan pil penyembuh dari esensi
+Bone Wings Gu,Gu Sayap Tulang,骨翼蛊,4,bone,move,wing,,CANON,R V2c205,wings of bone for flight,sayap tulang untuk terbang
+Impermanence Bone Gu,Gu Tulang Ketidakkekalan,无常骨蛊,4,bone,str,bone,,CANON,R V3c95,a body strong enough to carry a stronger soul,tubuh yang mampu memikul jiwa yang lebih kuat
+Golden Breeze Gu,Gu Angin Emas,金风送爽蛊,4,metal,heal,moth,,CANON,R V2c174,a golden breeze that heals almost like a rank-five Gu,angin emas yang menyembuhkan hampir setara Gu tingkat lima
+Fiery Snake Gu,Gu Ular Api,火蛇蛊,4,fire,status:Burning,serpent,,CANON,R V2c114,two snakes of fire,dua ular api
+Water Curtain Skyflower Gu,Gu Bunga Langit Tirai Air,水幕天华蛊,4,water,def,flower,,CANON,R V1c187,a great sphere of water that stops even rank-five blows,bola air raksasa yang menahan bahkan pukulan tingkat lima
+Instant Success Gu,Gu Sukses Seketika,一蹴而就蛊,4,time,xp,cicada,,CANON,R V2c97,speeds up time around its master,mempercepat waktu di sekitar tuannya
+Location Swap Gu,Gu Tukar Posisi,换位蛊,4,space,stealth,orb,,CANON,R V3c66,swaps places with anyone its master touches,bertukar tempat dengan siapa pun yang disentuh tuannya
+Sword Qi Gu,Gu Qi Pedang,剑气蛊,4,sword,dmg,sword,,CANON,R V5c38,fires a ray of sword qi,menembakkan sinar qi pedang
+Tiger Roar Gu,Gu Auman Harimau,虎吼蛊,4,sound,aura,gong,,CANON,R V3c133,a roar that shakes the enemy,auman yang mengguncang musuh
+Grass Tree Army Gu,Gu Pasukan Rumput Pohon,草木皆兵蛊,4,wood,def,leaf,,CANON,R V2c97,turns grass and trees into soldiers,mengubah rumput dan pohon menjadi prajurit
+Moonshadow Gu,Gu Bayang Bulan,月影蛊,4,moon,status:Sealed,moth,,CANON,R V1c15,hides its master and seals the enemy's essence,menyembunyikan tuannya dan menyegel esensi musuh
+Yin Yang Rotation Gu,Gu Putaran Yin Yang,阴阳转身蛊,4,transformation,heal,orb,,CANON,R V1c199,"half yin, half yang: heals from the edge of death","separuh yin, separuh yang: menyembuhkan dari ambang maut"
+Blood Frenzy Gu,Gu Amukan Darah,血狂蛊,4,blood,aura,mask,,CANON,R V1c183,formless blood qi that drives Gu berserk,qi darah tak berbentuk yang membuat Gu mengamuk
+East Window Gu,Gu Jendela Timur,东窗蛊,4,information,sight,eye,,CANON,"R V3c85, V3c131, V4c22",stores knowledge and lets another probe a mind,menyimpan pengetahuan dan membiarkan orang lain menyelami pikiran
+Play Phantom Gu,Gu Permainan Hampa,弄虚蛊,4,phantom,stealth,mask,,CANON (rank ADAPTED),R V3c181,makes a phantom untouchable,membuat bayangan tak tersentuh
+Array Stone Gu,Gu Batu Formasi,,4,formation,def,crystal,,INVENTED,none (the novel names no mortal formation Gu),plants stones that form a small defensive array,menanam batu yang membentuk formasi pertahanan kecil
+Ink Beast Gu,Gu Binatang Tinta,,4,painting,aura,bird,,INVENTED,none (the novel names no painting Gu),paints a beast of ink that harries the enemy,melukis binatang tinta yang mengganggu musuh
+Blood Guillotine,Guillotine Darah,血滴子,5,blood,dmg,spider,,CANON,R V1c165,a blood-sucking swarm that can empty a village,kawanan pengisap darah yang mampu mengosongkan desa
+Earth Overlord Gu,Gu Raja Bumi,土霸王蛊,5,strength,str,fist,,CANON,R V2c160,draws endless strength from the ground,menarik kekuatan tanpa akhir dari tanah
+Extreme Light Gu,Gu Cahaya Agung,太光蛊,5,light,atk,sun,,CANON,R V2c190,a blast of pure light,ledakan cahaya murni
+Star River Gu,Gu Sungai Bintang,星河蛊,5,star,dmg,serpent,,CANON,R V3c177,a river of stars poured over the enemy,sungai bintang yang dicurahkan ke musuh
+Thunder Hammer Gu,Gu Palu Guntur,雷锤蛊,5,lightning,atk,hammer,,CANON,R V3c238,a hammer of thunder,palu guntur
+Flash Bug Gu,Gu Serangga Kilas,烁蝺蛊,5,space,move,beetle,,CANON,R V3c224,teleports five hundred paces at a time,berpindah lima ratus langkah sekali loncat
+Treacherous Cloud Wave Gu,Gu Gelombang Awan Licik,波云诡谲蛊,5,wisdom,status:Shaken,cloud,,CANON,R V3c126,clouds a target's mind,mengaburkan pikiran sasaran
+Jade Sky Gu,Gu Langit Giok,碧空蛊,5,poison,status:Poisoned,scorpion,,CANON,"R V2c201, V2c156",an ancient and deadly poison,racun kuno yang mematikan
+Fire Cape Gu,Gu Jubah Api,火焰披风蛊,5,fire,def,flame,,CANON,R V5c4,a cloak of flame that spares its wearer,jubah api yang tak melukai pemakainya
+Flying Snow Gu,Gu Salju Terbang,漫天飞雪蛊,5,ice,aura,crystal,,CANON,R V3c134,a blizzard across thousands of paces,badai salju sejauh ribuan langkah
+Keep Silent Gu,Gu Bungkam,缄默蛊,5,sound,status:Dazed,gong,,CANON,R V4c192,a silence that drowns every sound,kesunyian yang menenggelamkan semua suara
+Soul Explosion Gu,Gu Ledakan Jiwa,魂爆蛊,5,soul,dmg,mask,,CANON,R V3c100,a soul bomb planted in a living host,bom jiwa yang ditanam di inang hidup
+Asura Zombie Gu,Gu Zombi Asura,修罗尸蛊,5,transformation,str,mask,,CANON,"R V4c1, V3c121",turns its master into a flying Asura zombie,mengubah tuannya menjadi zombi Asura terbang
+Search Lock Gu,Gu Kunci Pencari,搜锁蛊,5,space,status:Sealed,web,,CANON,R V2c154,seals the target's Gu and essence,menyegel Gu dan esensi sasaran
+Dream Butterfly Gu,Gu Kupu-Kupu Mimpi,梦蝶蛊,5,dream,xp,moth,,CANON,R V6c124,travels through dream realms,menjelajah alam mimpi
+Star Mark Immortal Gu,Gu Abadi Jejak Bintang,星痕仙蛊,6,star,str,firefly,,CANON,R V4c203,lends six hundred star dao marks for a while,meminjamkan enam ratus jejak dao bintang untuk sementara
+Pulling Water Immortal Gu,Gu Abadi Penarik Ombak,挽澜仙蛊,6,strength,def,fist,,CANON,R V5c61,pulls back water and waves,menarik kembali air dan ombak
+Snack Immortal Gu,Gu Abadi Camilan,小吃仙蛊,6,food,econ,cicada,,CANON,R V5c436,immortal essence feeds its master's other Gu,esensi abadi memberi makan Gu tuannya yang lain
+Flying Bear Strength Immortal Gu,Gu Abadi Kekuatan Beruang Terbang,飞熊之力仙蛊,6,strength,atk,fist,,CANON,R V5c61,the strength of the desolate flying bear,kekuatan beruang terbang purba
+Change Form Immortal Gu,Gu Abadi Ubah Wujud,变形仙蛊,6,transformation,str,mask,,CANON,R V5c61,the core of most transformations,inti dari sebagian besar transformasi
+Blood Asset Immortal Gu,Gu Abadi Modal Darah,血本仙蛊,6,blood,dmg,spider,,CANON,"R V5c61, V5c40",the core of three blood-path killer moves,inti dari tiga jurus pamungkas jalur darah
+Cleanse Soul Immortal Gu,Gu Abadi Pembasuh Jiwa,净魂仙蛊,6,soul,heal,lotus,,CANON,R V5c427,washes and refines the soul,membasuh dan memurnikan jiwa
+Dark Arrow Immortal Gu,Gu Abadi Panah Gelap,暗箭仙蛊,6,dark,dmg,fang,,CANON,R V4c28,homing arrows of darkness,panah kegelapan yang mengejar sasarannya
+Heavenly Gong Immortal Gu,Gu Abadi Gong Surgawi,天锣仙蛊,6,sound,aura,gong,,CANON,"R V4c98, V4c102",a gong whose shockwave staggers armies,gong yang gelombang kejutnya mengguncang pasukan
+Ice Soul Immortal Gu,Gu Abadi Jiwa Es,冰魄仙蛊,6,ice,status:Frozen,crystal,,CANON,R V5c165,ice that freezes the soul,es yang membekukan jiwa
+Rising Azure Cloud Immortal Gu,Gu Abadi Awan Biru Menanjak,平步青云仙蛊,6,cloud,move,cloud,,CANON,R V4c103,rises and falls through the sky in a breath,naik dan turun di langit dalam sekejap
+Dog Shit Luck Immortal Gu,Gu Abadi Untung Kotoran Anjing,狗屎运仙蛊,6,luck,stealth,beetle,,CANON,R V5c61,luck that turns misfortune aside,keberuntungan yang menangkis kemalangan
+Flying Bear Phantom Immortal Gu,Gu Abadi Bayang Beruang Terbang,飞熊虚像蛊,6,phantom,def,mask,,CANON,"R V3c180, V3c181",summons a phantom flying bear,memanggil bayang beruang terbang
+Split Shadow Immortal Gu,Gu Abadi Bayangan Terbelah,分影仙蛊,6,shadow,stealth,mask,,CANON (rank ADAPTED),R V4c155,splits its master's shadow to confuse the enemy,membelah bayangan tuannya untuk mengecoh musuh
+Flying Sword Immortal Gu,Gu Abadi Pedang Terbang,飞剑仙蛊,7,sword,dmg,sword,,CANON,R V5c11,a flying sword that strikes from afar,pedang terbang yang menyerang dari jauh
+Sword Escape Immortal Gu,Gu Abadi Lolos Pedang,剑遁仙蛊,7,sword,move,sword,,CANON,"R V5c11, V5c40",flies away on a sword's edge,terbang menjauh di atas mata pedang
+Edge Immortal Gu,Gu Abadi Mata Bilah,刃仙蛊,7,blade,atk,blade,,CANON,"R V5c542, V5c582","the edge itself, made immortal","ketajaman itu sendiri, menjadi abadi"
+Great Thief Immortal Gu,Gu Abadi Pencuri Agung,大盗仙蛊,7,theft,theft,spider,,CANON,R V5c503,a ghost hand that takes anything,tangan hantu yang mengambil apa saja
+Crescent Moon Immortal Gu,Gu Abadi Bulan Sabit,偃月仙蛊,7,moon,atk,moth,,CANON,"R V4c61, V4c274",the core of the Peerless Crescent Moon Slash,inti dari Tebasan Bulan Sabit Tanpa Tanding
+Perseverance Immortal Gu,Gu Abadi Ketekunan,坚持仙蛊,7,human,def,shell,,CANON,"R V5c265, V5c389",makes every other Gu last longer,membuat setiap Gu lain bertahan lebih lama
+Qi Escape Immortal Gu,Gu Abadi Lolos Qi,气遁仙蛊,7,qi,move,cloud,,CANON,R V4c346,an escape on a stream of qi,pelarian di atas aliran qi
+Expend Strength Immortal Gu,Gu Abadi Kuras Tenaga,费力仙蛊,7,strength,aura,fist,,CANON,R V6c248,drains the strength of everyone who fights its master,menguras tenaga siapa pun yang melawan tuannya
+Fixed Space Immortal Gu,Gu Abadi Ruang Terpaku,定空仙蛊,7,space,status:Entangled,web,,CANON (rank W),R V5c579,locks space around the enemy,mengunci ruang di sekitar musuh
+Limit Immortal Gu,Gu Abadi Batas,限蛊,7,rule,aura,scroll,,CANON (rank W),R V5c766,sets a limit the enemy cannot pass,menetapkan batas yang tak bisa dilewati musuh
+Region Immortal Gu,Gu Abadi Wilayah,界蛊,8,rule,aura,web,,CANON,R V5c766,"Tao Zhu's vital Gu, the boundary of a domain","Gu vital Tao Zhu, batas sebuah wilayah"
+Wisdom Sword Immortal Gu,Gu Abadi Pedang Kebijaksanaan,慧剑仙蛊,8,wisdom,dmg,sword,,CANON,"R V4c346, V4c367",cuts bonds of feeling and dao marks,memotong ikatan perasaan dan jejak dao
+Regret Immortal Gu,Gu Abadi Penyesalan,悔蛊,8,emotion,status:Charmed,mask,,CANON,R V5c656,fills everyone near it with regret,memenuhi semua yang di dekatnya dengan penyesalan
+Attitude Immortal Gu,Gu Abadi Sikap,态度蛊,8,wisdom,stealth,mask,,CANON,R V4c325,shows a false face that others believe,menampilkan wajah palsu yang dipercaya orang lain
+Eight-Faced Prestige Wind Immortal Gu,Gu Abadi Angin Wibawa Delapan Arah,八面威风仙蛊,8,wind,atk,wheel,,CANON,R V6c113,the Wu clan's great wind Gu,Gu angin agung klan Wu
+Water Refinement Immortal Gu,Gu Abadi Pemurnian Air,水炼仙蛊,8,refinement,heal,lotus,,CANON,R V5c746,the core of a refinement killer move,inti dari jurus pamungkas pemurnian
+Heavenly Secret Immortal Gu,Gu Abadi Rahasia Langit,天机仙蛊,8,heaven,sight,eye,,CANON,R V4c8,asks heaven and earth for answers,bertanya langsung kepada langit dan bumi
+Heaven's Envy Immortal Gu,Gu Abadi Iri Langit,天妒仙蛊,8,heaven,status:Doomed,eye,,CANON,"R V6c155, V6c261",the core of Heaven Envies Heroic Geniuses,inti dari jurus Langit Iri pada Jenius
+Kill Immortal Gu,Gu Abadi Bunuh,杀,8,killing,dmg,fang,,"CANON (rank W, [VERIFY])",R V6c362,the killing path's core immortal Gu,Gu abadi inti jalur pembunuhan
+Light Gu,Gu Cahaya,光蛊,9,light,atk,sun,,CANON,R V6c312,a wild Gu born inside the sun,Gu liar yang lahir di dalam matahari
+Fire Gu,Gu Api,火蛊,9,fire,dmg,flame,,CANON,R V6c311,"the sun's own fire, alive","api matahari itu sendiri, hidup"
+Love Gu,Gu Cinta,爱情蛊,9,emotion,heal,flower,,CANON,R V4c367,the legendary Gu of love,Gu cinta yang legendaris
+Heavenly Web Immortal Gu,Gu Abadi Jaring Langit,天网蛊,9,heaven,status:Entangled,web,,CANON,R V6c340,casts a web from heaven that nothing escapes,menebar jaring dari langit yang tak bisa dihindari

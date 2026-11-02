@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import anims, arcart, characters, glyphs, glyphs2, pathart, realms, render3d  # noqa: E402
+from art import anims, arcart, characters, glyphs, glyphs2, guart, pathart, realms, render3d  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -86,7 +86,11 @@ def main(argv: list[str]) -> int:
     # the immortal tiers and moves (MOD_SPEC_2 C3/C5) overflowed Paths.png in turn: a third atlas, Arc.png
     import gen_paths
     arc_names = {m for p in gen_paths.PATHS for m in (p["immortal"], gen_paths.tier_name(p, 2), gen_paths.tier_name(p, 3))}
-    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons() + pathart.policy_icons() + arcart.realm_icons():
+    # Phase D: the Gu catalog's icons join the Arc atlas, which had room (2048 x 1024)
+    gu_icons = {(folder, name) for folder, name, _, _ in guart.icons()}
+    path_icons |= gu_icons
+    arc_names |= {name for _, name in gu_icons}
+    for folder, name, draw, ink in glyphs.ICONS + glyphs2.ICONS2 + pathart.icons() + arcart.ICONS3 + arcart.inheritance_icons() + arcart.rank78_gu_icons() + pathart.policy_icons() + arcart.realm_icons() + guart.icons():
         if (folder, name) in policy_icons:
             target = args.mod / "Images.Policies" / folder / f"{name}.png"
         elif (folder, name) in path_icons:

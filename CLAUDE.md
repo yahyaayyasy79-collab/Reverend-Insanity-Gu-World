@@ -156,6 +156,8 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `docs/PATHS.md` — MOD_SPEC_3 B3: the 47 canonical paths (source, verdict, family, signature, two moves), attainment
   tiers, conflict matrix, AI signature leanings, C3 migration plan; its tables are written by `tools/gen_paths.py` from
   `data/paths*.csv` (also the path promotions in jsons/).
+* `docs/GU_RESEARCH.md` — Phase D research verdicts: immortal Gu uniqueness, wiki errors, 42 canon killer moves with
+  their component Gu (input for the combo moves); the 113-Gu catalog is `data/gu_catalog.csv` + `tools/gu_catalog.py`.
 * `docs/CAPABILITIES.md` — per-system uniques, status, AI notes, impossibilities, docs conflicts, scaffold choice.
 * `docs/CANON_OVERHAUL.md` — the user's canon overhaul request: text fixes, renames, conflicts, tile regions, path Gu
   options, Wu's signature; the research verdicts behind them (2026-10-19, waiting at a checkpoint).

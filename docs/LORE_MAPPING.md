@@ -4461,3 +4461,30 @@ Starts with [Righteous Path] adopted
 Start bias [Hill]
 [+25]% Strength <vs [Barbarian] units>
 ```
+
+## Phase D: Gu catalog (the user, 2026-11-02)
+
+The user: "Gu yang cuma sampe rank 4 dan terbatas ... minimal buat gu itu sampe Rank 9" and "buat gu tambahan sekitaran
+100 lagi"; decided: canon first, the rest adapted. 113 Gu (`data/gu_catalog.csv`, `tools/gu_catalog.py`):
+11 / 15 / 18 / 17 / 15 at ranks 1-5, 14 / 10 / 9 / 4 immortal Gu at ranks 6-9, every one of the 47 paths covered.
+
+* **Sources.** 104 names were found in the raw text: 100 CANON (five with the rank from the wiki) and four with an
+  adapted rank because the text gives none (Whip, Iron Rod, Gentle Feelings, Play Phantom). Kill is [VERIFY rank]. Four
+  are INVENTED because the novel names no Gu for those paths: Mirage Veil (illusion), Furnace Pill (pill), Array Stone
+  (formation) and Ink Beast (painting). The table with every source is in docs/PATHS.md "Gu catalog"; the research
+  verdicts, the wiki errors it found and the canon killer moves are in docs/GU_RESEARCH.md.
+* **How a unit gets one.** It spends XP on the Gu, as on any promotion. It must first hold the path's Master, and its
+  rank must reach the Gu's: a rank-7 immortal Gu waits for a rank-seven immortal. The AI buys them as well: in 2
+  autoplay games of 250 turns it held 54 different catalog Gu, 213 copies in all, immortal Gu included.
+* **What it does.** Each Gu's effect comes from its role (strength, attack, defence, extra damage, a status, movement,
+  healing, sight, stealth, an aura on enemies, XP, upkeep, plunder) and grows with its rank.
+* **What it eats.** Mortal Gu eat stones (2-6% more upkeep). Moonglow Gu eats Moon Orchid and the Seven Fragrances
+  Liquor Worm eats Wine, through the hunger meter. Immortal Gu eat their rank's immortal essence and sleep while the
+  clan has none.
+* **Immortal Gu (ADAPTED).** Canon makes every immortal Gu one of a kind. The unit-held immortal Gu break that rule on
+  purpose, as the user decided; the one-of-a-kind canon immortal Gu stay wonders.
+* **Art and sound.** Each Gu has its own designed icon (`tools/art/guart.py`): its form (37 kinds: beetle, moth,
+  centipede, gong, web...), its path's badge, and its rank shown as diamonds, or a halo with stars for immortals. Each
+  also has its own refinement sound (`tools/art/sfx.py` `gu_awaken`): its voice (wings, clicks, chime, metal or flow),
+  then its path's strike at its own pitch, with a dao bell for immortals.
+
