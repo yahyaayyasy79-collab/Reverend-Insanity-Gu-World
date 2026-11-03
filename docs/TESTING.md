@@ -162,6 +162,10 @@ unit add barbarians "Lone Gu Master"        # select its tile: the console acts 
 unit addpromotion "Jin Strength Gu"         # give the rogue four catalog Gu (also "Stone Skin Gu",
 unit sethealth 1                            # "Iron Skin Gu", "Flash Gu"); kill it with a rank-two+ Gu Master:
                                             # about one Gu in four moves to your unit, with a notification
+civ activatetrigger "Instantly provides [80] [Immortal Materials]"   # P5: an immortal Gu wonder needs 30 (rank 6)
+                                            # to 80 (rank 9) materials besides its essence; Gu Houses 60
+unit addpromotion "Moon Master"             # P6 on a rank-three Gu Master: end turns until Moonlight Gu arrives, then
+                                            # trade away every Moon Orchid; when the meter's roll kills the Gu, -30 HP
 # AI killer moves: at war, select the tile of an AI Grandmaster that just attacked you: the unit panel lists
 # its path's killer move as a status for the turn (paid 15 stones; it waits while its clan has 114 or fewer)
 ```

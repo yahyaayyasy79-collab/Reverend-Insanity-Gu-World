@@ -349,7 +349,7 @@ APRICOT = "Yellow Apricot Immortal Essence"  # rank nine (R V6/249)
 ETERNAL_COST = 300  # yellow apricot essence for Eternal Life on Standard (was 150 until Phase D, 2026-11-02)
 VEN_ELSEWHERE = "<if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>"
 VENERABLE = "Venerable"
-HOUSE_MATERIALS = 30  # audit P5: a Gu House is refined from immortal materials too
+HOUSE_MATERIALS = 60  # audit P5: a Gu House is refined from immortal materials too
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
     ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
@@ -1138,7 +1138,9 @@ dump("Events.json", [
         {"text": "Buy Lifespan Gu", "uniques": ["Unavailable <when below [120] [Gold]>", "Gain [-120] [Gold]",
                                                 f"Instantly provides [3] [{LIFESPAN}]", w("+0"),
                                                 w("+300", f"<when below [3] [{LIFESPAN}]>")]},
-        toll("Sell immortal materials", [f"Unavailable <when below [40] [{MATERIALS}]>", f"Instantly consumes [20] [{MATERIALS}]",
+        # audit P5: only a surplus is sold, the stock a rank-six immortal Gu needs stays
+        toll("Sell immortal materials", [f"Unavailable <when below [{gen_paths.GC.WONDER_MATERIALS[6] + 20}] [{MATERIALS}]>",
+                                         f"Instantly consumes [20] [{MATERIALS}]",
                                          f"Instantly provides [25] [{GREEN}]"], "+100"),
         toll("Sell essence for stones", [f"Unavailable <when below [40] [{GREEN}]>", f"Instantly consumes [40] [{GREEN}]",
                                          "Gain [200] [Gold]"], "+0"),

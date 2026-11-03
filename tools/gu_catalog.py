@@ -207,9 +207,11 @@ WONDER_ESSENCE = {6: 35, 7: 35, 8: 35, 9: 60}
 # mechanics audit P5 (the user, 2026-11-03: "lanjut"): immortal Gu are refined from immortal materials (仙材). Before,
 # materials had one use (sold at the market). Autoplay (Five Regions, 18 x 300): 29 of the 50 immortal Gu wonders the
 # AI built were begun with no materials at all, so a cost alone would have halved the race; blessed lands now grow a
-# little every turn (tools/gen_ruleset.py LAND_MATERIALS), and a slain desolate beast still yields a windfall
+# little every turn (tools/gen_ruleset.py LAND_MATERIALS), and a slain desolate beast still yields a windfall. Costs:
+# with 15/20/25/40 the AI held 41-195 when it began a wonder (median 108, 18 games), so they were doubled; no build
+# would have been delayed at 2x
 MATERIALS = "Immortal Materials"
-WONDER_MATERIALS = {6: 15, 7: 20, 8: 25, 9: 40}
+WONDER_MATERIALS = {6: 30, 7: 40, 8: 50, 9: 80}
 IMMORTAL_ROWS = [r for r in ROWS if int(r["rank"]) >= 6]
 
 

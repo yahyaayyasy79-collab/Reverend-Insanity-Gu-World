@@ -35,7 +35,7 @@ fixed. Six gaps are listed as proposals for the user's decision.
 
   One action line per rank; Unciv shows only the line whose conditionals apply [src UnitActionsFromUniques].
 
-## Proposals (the user chose P1-P4 on 2026-11-03; see Decisions)
+## Proposals (all six chosen on 2026-11-03; see Decisions)
 
 | # | Proposal | Canon | How (documented uniques) | Risk |
 |---|---|---|---|---|
@@ -48,8 +48,8 @@ fixed. Six gaps are listed as proposals for the user's decision.
 
 ## Decisions (the user, 2026-11-03)
 
-The user chose P1, P2, P3 and P4 ("Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara"). P5 and P6 were
-not chosen and stay open.
+The user chose P1, P2, P3 and P4 ("Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara"), then P5 and
+P6 ("lanjut").
 
 * **P1, built as proposed.** `[+50]% Strength <vs [pre-[Rank Six era]] units>` sits on ranks 6-8, the immortal zombie
   and the four Gu Houses. The Venerable has +100%. Numbers: `tools/path_powers.py` `CHASM`, `VENERABLE_CHASM`.
@@ -79,3 +79,24 @@ commit before P4):
 * Spoils fired about 1.6 times per game between AIs.
 * Majors alive (7.2 / 7.2), immortals (17.4 / 17.9), soldiers, techs and red turns (146 / 159) stayed within the
   noise. Captured cities rose from 1.7 to 2.3.
+
+### P5 and P6 ("lanjut")
+
+* **P5, built with a source the proposal lacked.** In the first A/B (above), 29 of the 50 immortal Gu wonders the AI
+  built were begun with zero materials: only desolate beasts gave them, and the median clan held none even at T300.
+  A cost alone would have halved the AI's immortal Gu race. So:
+  * blessed lands grow materials: 1 a turn (lower, middle), 2 (upper, super), 3 (grotto-heaven);
+  * the wonders cost 30 / 40 / 50 / 80 materials by rank (`tools/gu_catalog.py` `WONDER_MATERIALS`);
+  * a Gu House costs 60 (`HOUSE_MATERIALS`);
+  * the market buys a surplus only: 50 needed to sell 20.
+
+  A first build cost 15 / 20 / 25 / 40 (Gu House 30). In 18 autoplay games the AI then held 41 to 195 materials when
+  it began a wonder (median 108), so the cost never bit; at twice the cost none of the 42 builds would have waited.
+
+  With 1 a turn per immortal, the clans of that A/B would have held a median of 93 (tenth percentile 34) when they
+  began a wonder. Fate Gu is left alone: the Heavenly Court's arc must not wait on beasts.
+* **P6, built.** The Master of each path whose Gu eats a Gu food carries
+  `[This Unit] takes [30] damage <upon losing the [<Gu>] promotion> <for units with [<Gu> Hunger <step>]> <when above [30] HP>`.
+  The hunger step is the one that gates the death roll, so the line fires on a starvation death only. The loss trigger
+  runs after the Gu's own uniques are gone [src UnitPromotions.removePromotion], hence the Master. Edge: refining
+  White Boar or Moonlight Gu into the next rung while it starves at that step also counts as a death; this is rare.

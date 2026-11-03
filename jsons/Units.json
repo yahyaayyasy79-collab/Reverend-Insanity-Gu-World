@@ -1151,7 +1151,7 @@
       "Can pass through impassable tiles",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
-      "Costs [30] [Immortal Materials]",
+      "Costs [60] [Immortal Materials]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
       "[+50]% Strength <when defending>"
@@ -1176,7 +1176,7 @@
       "Can pass through impassable tiles",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
-      "Costs [30] [Immortal Materials]",
+      "Costs [60] [Immortal Materials]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
       "Ignores terrain cost"
@@ -1201,7 +1201,7 @@
       "Can pass through impassable tiles",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
-      "Costs [30] [Immortal Materials]",
+      "Costs [60] [Immortal Materials]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
       "[+20]% Strength <vs [post-[Rank Five era]] units>"
@@ -1227,7 +1227,7 @@
       "Can pass through impassable tiles",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
-      "Costs [30] [Immortal Materials]",
+      "Costs [60] [Immortal Materials]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
       "[+25]% Strength <when defending>",

@@ -1498,7 +1498,7 @@
       {
         "text": "Sell immortal materials",
         "uniques": [
-          "Unavailable <when below [40] [Immortal Materials]>",
+          "Unavailable <when below [50] [Immortal Materials]>",
           "Instantly consumes [20] [Immortal Materials]",
           "Instantly provides [25] [Green Grape Immortal Essence]",
           "[+100]% weight to this choice for AI decisions"

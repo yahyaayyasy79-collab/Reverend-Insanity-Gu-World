@@ -236,7 +236,7 @@
     "cost": 390,
     "uniques": [
       "Costs [50] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Time Path",
@@ -256,7 +256,7 @@
     "cost": 360,
     "uniques": [
       "Costs [40] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Space Path",
@@ -277,7 +277,7 @@
     "cost": 330,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Time Path",
@@ -298,7 +298,7 @@
     "cost": 330,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wisdom Path",
@@ -319,7 +319,7 @@
     "cost": 330,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Luck Path",
@@ -340,7 +340,7 @@
     "cost": 360,
     "uniques": [
       "Costs [40] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Strength Path",
@@ -361,7 +361,7 @@
     "cost": 330,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Poison Path",
@@ -382,7 +382,7 @@
     "cost": 330,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Bone Path",
@@ -403,7 +403,7 @@
     "cost": 300,
     "uniques": [
       "Costs [30] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Star Path",
@@ -424,7 +424,7 @@
     "cost": 340,
     "uniques": [
       "Costs [40] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Luck Path",
@@ -444,7 +444,7 @@
     "cost": 420,
     "uniques": [
       "Costs [40] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Strength Path",
@@ -465,7 +465,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Time Path",
@@ -486,7 +486,7 @@
     "cost": 400,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Formation Path",
@@ -507,7 +507,7 @@
     "cost": 400,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wisdom Path",
@@ -528,7 +528,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Sword Path",
@@ -549,7 +549,7 @@
     "cost": 360,
     "uniques": [
       "Costs [30] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Information Path",
@@ -570,7 +570,7 @@
     "cost": 360,
     "uniques": [
       "Costs [30] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Luck Path",
@@ -590,7 +590,7 @@
     "cost": 360,
     "uniques": [
       "Costs [30] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Soul Path",
@@ -611,7 +611,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Transformation Path",
@@ -632,7 +632,7 @@
     "cost": 480,
     "uniques": [
       "Costs [40] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wood Path",
@@ -654,7 +654,7 @@
     "cost": 440,
     "uniques": [
       "Costs [40] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Time Path",
@@ -676,7 +676,7 @@
     "cost": 440,
     "uniques": [
       "Costs [40] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Dream Path",
@@ -697,7 +697,7 @@
     "cost": 400,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Enslavement Path",
@@ -718,7 +718,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Light Path",
@@ -739,7 +739,7 @@
     "cost": 400,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Refinement Path",
@@ -760,7 +760,7 @@
     "cost": 400,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Theft Path",
@@ -781,7 +781,7 @@
     "cost": 400,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Qi Path",
@@ -802,7 +802,7 @@
     "cost": 700,
     "uniques": [
       "Costs [60] [Yellow Apricot Immortal Essence]",
-      "Costs [40] [Immortal Materials]",
+      "Costs [80] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wisdom Path",
@@ -824,7 +824,7 @@
     "cost": 700,
     "uniques": [
       "Costs [60] [Yellow Apricot Immortal Essence]",
-      "Costs [40] [Immortal Materials]",
+      "Costs [80] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Rule Path",
@@ -845,7 +845,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Star Path",
@@ -865,7 +865,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Strength Path",
@@ -885,7 +885,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Food Path",
@@ -905,7 +905,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Strength Path",
@@ -925,7 +925,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Transformation Path",
@@ -945,7 +945,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Blood Path",
@@ -965,7 +965,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Soul Path",
@@ -985,7 +985,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Dark Path",
@@ -1005,7 +1005,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Sound Path",
@@ -1025,7 +1025,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Ice Snow Path",
@@ -1045,7 +1045,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Cloud Path",
@@ -1065,7 +1065,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Luck Path",
@@ -1085,7 +1085,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Phantom Path",
@@ -1105,7 +1105,7 @@
     "cost": 340,
     "uniques": [
       "Costs [35] [Green Grape Immortal Essence]",
-      "Costs [15] [Immortal Materials]",
+      "Costs [30] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Shadow Path",
@@ -1125,7 +1125,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Sword Path",
@@ -1145,7 +1145,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Sword Path",
@@ -1165,7 +1165,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Blade Path",
@@ -1185,7 +1185,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Theft Path",
@@ -1205,7 +1205,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Moon Path",
@@ -1225,7 +1225,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Human Path",
@@ -1245,7 +1245,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Qi Path",
@@ -1265,7 +1265,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Strength Path",
@@ -1285,7 +1285,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Space Path",
@@ -1305,7 +1305,7 @@
     "cost": 380,
     "uniques": [
       "Costs [35] [Red Date Immortal Essence]",
-      "Costs [20] [Immortal Materials]",
+      "Costs [40] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Rule Path",
@@ -1325,7 +1325,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Rule Path",
@@ -1345,7 +1345,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wisdom Path",
@@ -1365,7 +1365,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Emotion Path",
@@ -1385,7 +1385,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wisdom Path",
@@ -1405,7 +1405,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Wind Path",
@@ -1425,7 +1425,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Refinement Path",
@@ -1445,7 +1445,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Heaven Path",
@@ -1465,7 +1465,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Heaven Path",
@@ -1485,7 +1485,7 @@
     "cost": 420,
     "uniques": [
       "Costs [35] [White Lychee Immortal Essence]",
-      "Costs [25] [Immortal Materials]",
+      "Costs [50] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Killing Path",
@@ -1505,7 +1505,7 @@
     "cost": 700,
     "uniques": [
       "Costs [60] [Yellow Apricot Immortal Essence]",
-      "Costs [40] [Immortal Materials]",
+      "Costs [80] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Light Path",
@@ -1525,7 +1525,7 @@
     "cost": 700,
     "uniques": [
       "Costs [60] [Yellow Apricot Immortal Essence]",
-      "Costs [40] [Immortal Materials]",
+      "Costs [80] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Fire Path",
@@ -1545,7 +1545,7 @@
     "cost": 700,
     "uniques": [
       "Costs [60] [Yellow Apricot Immortal Essence]",
-      "Costs [40] [Immortal Materials]",
+      "Costs [80] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Emotion Path",
@@ -1565,7 +1565,7 @@
     "cost": 700,
     "uniques": [
       "Costs [60] [Yellow Apricot Immortal Essence]",
-      "Costs [40] [Immortal Materials]",
+      "Costs [80] [Immortal Materials]",
       "Never destroyed when the city is captured",
       "Immortal Gu",
       "Heaven Path",

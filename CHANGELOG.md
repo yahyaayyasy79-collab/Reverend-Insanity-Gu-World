@@ -993,3 +993,28 @@ You chose four of the audit's six proposals (`docs/MECHANICS_AUDIT.md`, "Decisio
   * a rogue's Gu passing to your unit after you kill it;
   * an AI Grandmaster's status after it attacks you;
   * a Star Supreme Grandmaster's ranged strike before melee.
+
+## Phase D — the audit's last two: immortal materials refine immortal Gu; the vital Gu (2026-11-03)
+
+You said "lanjut" to P5 and P6 (`docs/MECHANICS_AUDIT.md`, "P5 and P6").
+
+* **Immortal materials.** Each immortal Gu wonder now also costs materials:
+  * rank six: 30;
+  * rank seven: 40;
+  * rank eight: 50;
+  * rank nine: 80;
+  * a Gu House: 60.
+* **Blessed lands grow materials.** Before, only desolate beasts gave them, and in autoplay most clans held none:
+  29 of 50 AI immortal Gu were begun with zero materials, so a cost alone would have halved the race. Now:
+  * lower and middle blessed lands: 1 a turn;
+  * upper and super blessed lands: 2 a turn;
+  * a grotto-heaven: 3 a turn.
+
+  Treasure Yellow Heaven buys only a surplus: you need 50 to sell 20. Fate Gu costs no materials.
+* **The vital Gu.** Some path Gu eat a Gu food: Moonlight, White Boar, both Liquor Worms, Bone Spear, Blood Skull,
+  Sole Blade and Illusory Moon. When one starves to death, its Master takes 30 damage. A unit at 30 HP or less takes
+  none, so the backlash never kills.
+* **What to check in game** (`docs/TESTING.md`):
+  * the materials line in the resource overview while an immortal holds a blessed land;
+  * an immortal Gu wonder greyed in the build list, with the missing materials, until the stock covers it;
+  * a Moon Master losing 30 HP when its starving Moonlight Gu dies.

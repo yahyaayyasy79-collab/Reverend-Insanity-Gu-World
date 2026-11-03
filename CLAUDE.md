@@ -37,7 +37,9 @@ Gu catalog (113 Gu ranks 1-9, `data/gu_catalog.csv`), power rebuild (body 75/65/
 `path_powers.body_strength`; autoplay A/B equal), 42 combination killer moves (`data/gu_combos.csv`, human-only buttons
 on Gu A gated by Gu B; in-game check pending). User 2026-11-02: everything good, Locate mod errors clean. Ink Night art pass built 2026-11-02 (docs/ART.md). 2026-11-03: mechanics audit (docs/MECHANICS_AUDIT.md); the user chose
 P1-P4, built: immortal chasm (+50%, Venerable +100% vs pre-[Rank Six era]), Gu spoils (25% per catalog Gu, on the Gu
-Master unit types), AI path killer moves on attack (reserves 100 stones / 10 essence), even Supremes; P5/P6 open.
+Master unit types), AI path killer moves on attack (reserves 100 stones / 10 essence), even Supremes; then P5/P6
+("lanjut"): immortal Gu wonders cost materials 30/40/50/80 (Gu Houses 60) and blessed lands grow 1-2/turn (grotto 3);
+a starving food path Gu (vital Gu) costs its Master 30 HP, never lethal.
 Left: MOD_SPEC_2 Phase D (balance, Definition of Done).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
@@ -120,7 +122,7 @@ in LORE_MAPPING.md.
   3 or 4) if the trade economy collapses too fast.
 
 * Mechanics audit (user, 2026-11-03): "Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara" chosen (P1-P4);
-  combination moves stay human-only; Immortal Materials sink (P5) and vital Gu (P6) not chosen.
+  combination moves stay human-only; then "lanjut" for the Immortal Materials sink (P5) and the vital Gu (P6).
 
 ## Setup (every fresh container: `ref/` is gitignored)
 
@@ -204,7 +206,7 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `docs/BALANCE.md` — knobs, evidence, what is off; inventory of every tunable number (`tools/gen_balance.py`).
 * `docs/MECHANICS_AUDIT.md` — the 2026-11-03 audit of every system's effects against the canon: measurements, the
   immortal-move essence fix, proposals P1–P6 (immortal chasm, Gu spoils, AI killer moves, even Supremes, Immortal
-  Materials sink, vital Gu); P1–P4 chosen and built 2026-11-03 (its "Decisions"), P5–P6 open.
+  Materials sink, vital Gu); all six chosen and built 2026-11-03 (its "Decisions").
 * `docs/KNOWN_ISSUES.md` — validator warnings explained, engine limits, trade-offs, what needs a real game.
 * `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.

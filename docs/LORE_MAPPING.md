@@ -2154,7 +2154,7 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers and moves 
 
 ```
 Costs [50] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2166,7 +2166,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Space Path
@@ -2179,7 +2179,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2192,7 +2192,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wisdom Path
@@ -2205,7 +2205,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Luck Path
@@ -2218,7 +2218,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Strength Path
@@ -2231,7 +2231,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Poison Path
@@ -2244,7 +2244,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Bone Path
@@ -2257,7 +2257,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [30] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Star Path
@@ -2270,7 +2270,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [Green Grape Immortal Essence]
-Costs [15] [Immortal Materials]
+Costs [30] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Luck Path
@@ -2734,7 +2734,7 @@ Instantly provides [3] [Lifespan Gu]
 * Sell immortal materials
 
 ```
-Unavailable <when below [40] [Immortal Materials]>
+Unavailable <when below [50] [Immortal Materials]>
 Instantly consumes [20] [Immortal Materials]
 Instantly provides [25] [Green Grape Immortal Essence]
 [+100]% weight to this choice for AI decisions
@@ -2765,7 +2765,7 @@ Instantly provides [35] [Green Grape Immortal Essence]
 [-50]% weight to this choice for AI decisions
 ```
 
-**Immortal Materials** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Ranked materials (\u4ed9\u6750) from which immortal Gu are refined: 15 for a rank-six Gu up to 40 for rank nine, 30 for a Gu House. Blessed lands grow 1-2 a turn, a grotto-heaven 3; a slain desolate beast yields 20; Treasure Yellow Heaven buys a surplus for essence."}]})
+**Immortal Materials** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Ranked materials (\u4ed9\u6750) from which immortal Gu are refined: 30 for a rank-six Gu up to 80 for rank nine, 60 for a Gu House. Blessed lands grow 1-2 a turn, a grotto-heaven 3; a slain desolate beast yields 20; Treasure Yellow Heaven buys a surplus for essence."}]})
 
 ```
 Stockpiled
@@ -2826,7 +2826,7 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers are in doc
 
 ```
 Costs [40] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Strength Path
@@ -2839,7 +2839,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2852,7 +2852,7 @@ Instantly provides [1] [Lifespan Gu] <upon turn start> <every [3] turns>
 
 ```
 Costs [35] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Formation Path
@@ -2865,7 +2865,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wisdom Path
@@ -2878,7 +2878,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Sword Path
@@ -2891,7 +2891,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [30] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Information Path
@@ -2904,7 +2904,7 @@ Earn [20]% of killed [Beast] unit's [Cost] as [Immortal Materials]
 
 ```
 Costs [30] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Luck Path
@@ -2916,7 +2916,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [30] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Soul Path
@@ -2929,7 +2929,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
-Costs [20] [Immortal Materials]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Transformation Path
@@ -2942,7 +2942,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wood Path
@@ -2956,7 +2956,7 @@ Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>
 
 ```
 Costs [40] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2970,7 +2970,7 @@ Instantly consumes [10] [Green Grape Immortal Essence] <upon turn start> <every 
 
 ```
 Costs [40] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Dream Path
@@ -2983,7 +2983,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Enslavement Path
@@ -2996,7 +2996,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Light Path
@@ -3009,7 +3009,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Refinement Path
@@ -3022,7 +3022,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Theft Path
@@ -3035,7 +3035,7 @@ Heals [25] damage if it kills a unit <for [post-[Rank Five era]] units>
 
 ```
 Costs [35] [White Lychee Immortal Essence]
-Costs [25] [Immortal Materials]
+Costs [50] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Qi Path
@@ -3348,7 +3348,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
-Costs [30] [Immortal Materials]
+Costs [60] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 [+50]% Strength <when defending>
@@ -3362,7 +3362,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
-Costs [30] [Immortal Materials]
+Costs [60] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 Ignores terrain cost
@@ -3376,7 +3376,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
-Costs [30] [Immortal Materials]
+Costs [60] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 [+20]% Strength <vs [post-[Rank Five era]] units>
@@ -3464,7 +3464,7 @@ Cannot be purchased
 
 ```
 Costs [60] [Yellow Apricot Immortal Essence]
-Costs [40] [Immortal Materials]
+Costs [80] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wisdom Path
@@ -3478,7 +3478,7 @@ Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [5] turns>
 
 ```
 Costs [60] [Yellow Apricot Immortal Essence]
-Costs [40] [Immortal Materials]
+Costs [80] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Rule Path
@@ -3518,7 +3518,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
-Costs [30] [Immortal Materials]
+Costs [60] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 [+25]% Strength <when defending>
@@ -4614,8 +4614,8 @@ sesuai pemahaman jalur tersebut"; "Kill rank 8 oke".
 
 The user asked for every effect to be checked against the canon ("rombak mekanik game atau diadaptasikan agar paling
 terbaik dengan situasi kanon novel"). The audit is `docs/MECHANICS_AUDIT.md`. The user chose four of its six
-proposals: "Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara". Not chosen: Immortal Materials as the
-refiners' stock (P5) and the vital Gu (P6).
+proposals: "Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara". Then "lanjut" for the last two,
+Immortal Materials as the refiners' stock (P5) and the vital Gu (P6).
 
 * **The immortal chasm (P1, ADAPTED).** Mortal and immortal are two worlds in the canon: an immortal's essence and
   aperture are of another order, and a rank-six immortal is beyond any mortal army. Every immortal fights mortal
@@ -4641,3 +4641,19 @@ refiners' stock (P5) and the vital Gu (P6).
   * food: heals 15 HP on every hit;
   * dream: whoever fights it is Soul-Torn for 3 turns;
   * soul: whoever fights it takes 10 damage.
+* **Immortal materials (P5, ADAPTED; [VERIFY] the land's yield).** Immortal Gu are refined from immortal materials
+  (仙材). The wonders now cost materials: 30 at rank six, 40 at seven, 50 at eight, 80 at nine. A Gu House costs 60.
+  Autoplay showed that 29 of the 50 immortal Gu the AI refined were begun with no materials at all, because only
+  desolate beasts gave them. An immortal's aperture now grows materials:
+  * a lower or middle blessed land: 1 a turn;
+  * an upper or super blessed land: 2 a turn;
+  * a grotto-heaven: 3 a turn.
+
+  That the land itself grows materials is the canon's resource points as remembered here; the chapters were not
+  checked in this container. Treasure Yellow Heaven now buys only a surplus: a clan needs 50 to sell 20. Fate Gu,
+  the Heavenly Court's own wonder, costs no materials.
+* **The vital Gu (P6, ADAPTED; [VERIFY] the chapters).** In the canon a Gu Master's vital Gu (本命蛊) is bound to
+  them, and its death wounds them. A path's own Gu that eats a Gu food stands in for it: Moonlight Gu, White Boar Gu,
+  the two Liquor Worms, Bone Spear, Blood Skull, Sole Blade and Illusory Moon Gu. When such a Gu starves to death,
+  its Master takes 30 damage. A unit at 30 HP or less takes none, so the backlash never kills. Gu that eat stones
+  cannot starve.

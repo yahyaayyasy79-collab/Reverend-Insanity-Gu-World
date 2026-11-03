@@ -468,7 +468,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Calamity Luck Altar | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
-| Calamity Luck Altar | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | `Costs [60] [Immortal Materials]` | 60 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | movement | 5 | tools/gen_ruleset.py `Units` |
@@ -477,7 +477,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Myriad Year Flying Warship | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
-| Myriad Year Flying Warship | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | `Costs [60] [Immortal Materials]` | 60 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | movement | 3 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | strength | 160 | tools/gen_ruleset.py `Units` |
@@ -485,7 +485,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Dragon Palace | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
-| Dragon Palace | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | `Costs [60] [Immortal Materials]` | 60 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[+20]% Strength <vs [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | movement | 2 | tools/gen_ruleset.py `Units` |
@@ -494,7 +494,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Heaven Overseeing Tower | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
-| Heaven Overseeing Tower | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `Costs [60] [Immortal Materials]` | 60 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[+25]% Strength <when defending>` | +25 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[+2] Sight` | +2 | tools/gen_ruleset.py `Units` |
@@ -2374,7 +2374,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Treasure Yellow Heaven › Buy Lifespan Gu | `Instantly provides [3] [Lifespan Gu]` | 3 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Buy Lifespan Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Buy Lifespan Gu | `[+300]% weight to this choice for AI decisions <when below [3] [Lifespan Gu]>` | +300, 3 | tools/gen_ruleset.py `Events` |
-| Treasure Yellow Heaven › Sell immortal materials | `Unavailable <when below [40] [Immortal Materials]>` | 40 | tools/gen_ruleset.py `Events` |
+| Treasure Yellow Heaven › Sell immortal materials | `Unavailable <when below [50] [Immortal Materials]>` | 50 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Sell immortal materials | `Instantly consumes [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Sell immortal materials | `Instantly provides [25] [Green Grape Immortal Essence]` | 25 | tools/gen_ruleset.py `Events` |
 | Treasure Yellow Heaven › Sell immortal materials | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
@@ -2456,296 +2456,296 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Stockpile Vault | gold | 2 | tools/gen_ruleset.py `Buildings` |
 | Spring Autumn Cicada | cost | 390 | tools/gen_ruleset.py `Buildings` |
 | Spring Autumn Cicada | `Costs [50] [Green Grape Immortal Essence]` | 50 | tools/gen_ruleset.py `Buildings` |
-| Spring Autumn Cicada | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Spring Autumn Cicada | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Spring Autumn Cicada | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Fixed Immortal Travel | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Fixed Immortal Travel | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | `[+1] Movement <for [post-[Rank Five era]] units>` | +1 | tools/gen_ruleset.py `Buildings` |
 | Fixed Immortal Travel | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Man as Before | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Man as Before | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | `[+20] HP when healing <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Man as Before | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Unravel Mystery | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Unravel Mystery | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Unravel Mystery | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Unravel Mystery | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Unravel Mystery | `[+15]% [Science] [in all cities]` | +15 | tools/gen_ruleset.py `Buildings` |
 | Unravel Mystery | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Connect Luck | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Connect Luck | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | `[+10]% Strength <for [post-[Rank Five era]] units>` | +10 | tools/gen_ruleset.py `Buildings` |
 | Connect Luck | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Self Strength | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Self Strength | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Self Strength | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Self Strength | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Self Strength | `[+15]% Strength <for units with [Strength Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
 | Self Strength | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Woman's Heart | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Woman's Heart | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Woman's Heart | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Woman's Heart | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Woman's Heart | `[+20]% Strength <vs [Wounded] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Woman's Heart | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | cost | 330 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Bone Spike | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Bone Spike | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | `[+20]% Strength <when defending> <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Bone Spike | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | cost | 300 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | `Costs [30] [Green Grape Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
-| Star Eyes | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Star Eyes | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | `[+2] Sight <for [post-[Rank Five era]] units>` | +2 | tools/gen_ruleset.py `Buildings` |
 | Star Eyes | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | `Costs [40] [Green Grape Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Divert Disaster | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Divert Disaster | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Divert Disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Dragon Strength | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Dragon Strength | `Costs [40] [Red Date Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Dragon Strength | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Dragon Strength | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Dragon Strength | `[+20]% Strength <for units with [Strength Master]>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Dragon Strength | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Year Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Year Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Year Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Year Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Year Gu | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [3] turns>` | 1, 3 | tools/gen_ruleset.py `Buildings` |
 | Year Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Formation Flag | cost | 400 | tools/gen_ruleset.py `Buildings` |
 | Formation Flag | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Formation Flag | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Formation Flag | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Formation Flag | `[+15]% Strength <when adjacent to a [Military] unit> <for [Military] units>` | +15 | tools/gen_ruleset.py `Buildings` |
 | Formation Flag | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Divination Tortoise Shell | cost | 400 | tools/gen_ruleset.py `Buildings` |
 | Divination Tortoise Shell | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Divination Tortoise Shell | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Divination Tortoise Shell | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Divination Tortoise Shell | `[+10]% [Science] [in all cities]` | +10 | tools/gen_ruleset.py `Buildings` |
 | Divination Tortoise Shell | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Dragon Centipede | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Dragon Centipede | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Dragon Centipede | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Dragon Centipede | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Dragon Centipede | `[+30]% Strength <vs [Beast] units>` | +30 | tools/gen_ruleset.py `Buildings` |
 | Dragon Centipede | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Reputation Restriction | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Reputation Restriction | `Costs [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
-| Reputation Restriction | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Reputation Restriction | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Reputation Restriction | `Earn [20]% of killed [Beast] unit's [Cost] as [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
 | Reputation Restriction | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Calamity Beckoning | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Calamity Beckoning | `Costs [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
-| Calamity Beckoning | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Calamity Beckoning | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Calamity Beckoning | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Change Soul | cost | 360 | tools/gen_ruleset.py `Buildings` |
 | Change Soul | `Costs [30] [Red Date Immortal Essence]` | 30 | tools/gen_ruleset.py `Buildings` |
-| Change Soul | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Change Soul | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Change Soul | `[+20]% XP gained from combat <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Change Soul | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Dragon Breath | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Dragon Breath | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Dragon Breath | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Dragon Breath | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Dragon Breath | `[+20]% Strength <when attacking> <for [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Dragon Breath | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Essence Treasure Imperial Lotus | cost | 480 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Essence Treasure Imperial Lotus | `Costs [40] [White Lychee Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Heavenly Essence Treasure Imperial Lotus | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Essence Treasure Imperial Lotus | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Essence Treasure Imperial Lotus | `Instantly provides [1] [White Lychee Immortal Essence] <upon turn start>` | 1 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Essence Treasure Imperial Lotus | `Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Essence Treasure Imperial Lotus | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Years Flow Like Water | cost | 440 | tools/gen_ruleset.py `Buildings` |
 | Years Flow Like Water | `Costs [40] [White Lychee Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Years Flow Like Water | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Years Flow Like Water | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Years Flow Like Water | `Instantly provides [2] [Lifespan Gu] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>` | 2, 5, 9 | tools/gen_ruleset.py `Buildings` |
 | Years Flow Like Water | `Instantly consumes [10] [Green Grape Immortal Essence] <upon turn start> <every [5] turns> <when above [9] [Green Grape Immortal Essence]>` | 10, 5, 9 | tools/gen_ruleset.py `Buildings` |
 | Years Flow Like Water | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Dream Token | cost | 440 | tools/gen_ruleset.py `Buildings` |
 | Dream Token | `Costs [40] [White Lychee Immortal Essence]` | 40 | tools/gen_ruleset.py `Buildings` |
-| Dream Token | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Dream Token | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Dream Token | `[+20]% Strength <vs [post-[Rank Five era]] units>` | +20 | tools/gen_ruleset.py `Buildings` |
 | Dream Token | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Soul Beast Token | cost | 400 | tools/gen_ruleset.py `Buildings` |
 | Soul Beast Token | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Soul Beast Token | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Soul Beast Token | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Soul Beast Token | `[4] units cost no maintenance` | 4 | tools/gen_ruleset.py `Buildings` |
 | Soul Beast Token | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Treasure Light Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Treasure Light Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Treasure Light Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Treasure Light Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Treasure Light Gu | `[+10]% [Gold] [in all cities]` | +10 | tools/gen_ruleset.py `Buildings` |
 | Treasure Light Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Advance Refinement Gu | cost | 400 | tools/gen_ruleset.py `Buildings` |
 | Advance Refinement Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Advance Refinement Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Advance Refinement Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Advance Refinement Gu | `[+30]% Production when constructing [Immortal Gu] wonders [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
 | Advance Refinement Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Steal Life | cost | 400 | tools/gen_ruleset.py `Buildings` |
 | Steal Life | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Steal Life | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Steal Life | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Steal Life | `Heals [25] damage if it kills a unit <for [post-[Rank Five era]] units>` | 25 | tools/gen_ruleset.py `Buildings` |
 | Steal Life | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Human Qi Immortal Gu | cost | 400 | tools/gen_ruleset.py `Buildings` |
 | Human Qi Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Human Qi Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Human Qi Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Human Qi Immortal Gu | `Instantly provides [3] [Human Qi] <upon turn start>` | 3 | tools/gen_ruleset.py `Buildings` |
 | Human Qi Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
-| Wisdom Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Gu | `[+30]% [Science] [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Gu | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [5] turns>` | 1, 5 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Derivation Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Derivation Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
-| Derivation Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Derivation Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Derivation Gu | `[+30]% Production when constructing [All] buildings [in all cities]` | +30 | tools/gen_ruleset.py `Buildings` |
 | Derivation Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Star Mark Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Star Mark Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Star Mark Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Star Mark Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Star Mark Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Pulling Water Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Pulling Water Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Pulling Water Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Pulling Water Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Pulling Water Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Snack Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Snack Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Snack Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Snack Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Snack Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Flying Bear Strength Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Flying Bear Strength Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Flying Bear Strength Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Strength Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Flying Bear Strength Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Change Form Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Change Form Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Change Form Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Change Form Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Change Form Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Blood Asset Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Blood Asset Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Blood Asset Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Blood Asset Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Blood Asset Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Cleanse Soul Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Cleanse Soul Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Cleanse Soul Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Cleanse Soul Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Cleanse Soul Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Dark Arrow Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Dark Arrow Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Dark Arrow Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Dark Arrow Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Dark Arrow Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Gong Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Gong Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Heavenly Gong Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Gong Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Gong Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Ice Soul Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Ice Soul Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Ice Soul Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Ice Soul Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Ice Soul Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Rising Azure Cloud Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Rising Azure Cloud Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Rising Azure Cloud Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Rising Azure Cloud Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Rising Azure Cloud Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Dog Shit Luck Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Dog Shit Luck Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Dog Shit Luck Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Dog Shit Luck Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Dog Shit Luck Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Flying Bear Phantom Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Flying Bear Phantom Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Flying Bear Phantom Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Flying Bear Phantom Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Flying Bear Phantom Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Split Shadow Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
 | Split Shadow Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Split Shadow Immortal Gu | `Costs [15] [Immortal Materials]` | 15 | tools/gen_ruleset.py `Buildings` |
+| Split Shadow Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Split Shadow Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Flying Sword Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Flying Sword Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Flying Sword Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Flying Sword Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Flying Sword Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Sword Escape Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Sword Escape Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Sword Escape Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Sword Escape Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Sword Escape Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Edge Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Edge Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Edge Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Edge Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Edge Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Great Thief Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Great Thief Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Great Thief Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Great Thief Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Great Thief Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Crescent Moon Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Crescent Moon Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Crescent Moon Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Crescent Moon Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Crescent Moon Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Perseverance Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Perseverance Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Perseverance Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Perseverance Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Perseverance Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Qi Escape Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Qi Escape Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Qi Escape Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Qi Escape Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Qi Escape Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Expend Strength Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Expend Strength Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Expend Strength Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Expend Strength Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Expend Strength Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Fixed Space Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Fixed Space Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Fixed Space Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Fixed Space Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Fixed Space Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Limit Immortal Gu | cost | 380 | tools/gen_ruleset.py `Buildings` |
 | Limit Immortal Gu | `Costs [35] [Red Date Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Limit Immortal Gu | `Costs [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Buildings` |
+| Limit Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
 | Limit Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Region Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Region Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Region Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Region Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Region Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Sword Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Sword Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Wisdom Sword Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Sword Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Sword Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Regret Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Regret Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Regret Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Regret Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Regret Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Attitude Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Attitude Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Attitude Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Attitude Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Attitude Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Eight-Faced Prestige Wind Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Eight-Faced Prestige Wind Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Eight-Faced Prestige Wind Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Eight-Faced Prestige Wind Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Eight-Faced Prestige Wind Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Water Refinement Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Water Refinement Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Water Refinement Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Water Refinement Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Water Refinement Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Secret Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Secret Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Heavenly Secret Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Secret Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Secret Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Heaven's Envy Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Heaven's Envy Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Heaven's Envy Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Heaven's Envy Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Heaven's Envy Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Kill Immortal Gu | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Kill Immortal Gu | `Costs [35] [White Lychee Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
-| Kill Immortal Gu | `Costs [25] [Immortal Materials]` | 25 | tools/gen_ruleset.py `Buildings` |
+| Kill Immortal Gu | `Costs [50] [Immortal Materials]` | 50 | tools/gen_ruleset.py `Buildings` |
 | Kill Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Light Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Light Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
-| Light Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Light Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Light Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Fire Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Fire Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
-| Fire Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Fire Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Fire Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Love Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Love Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
-| Love Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Love Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Love Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Web Immortal Gu | cost | 700 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Web Immortal Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
-| Heavenly Web Immortal Gu | `Costs [40] [Immortal Materials]` | 40 | tools/gen_ruleset.py `Buildings` |
+| Heavenly Web Immortal Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Web Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `Instantly provides [2] [Human Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
