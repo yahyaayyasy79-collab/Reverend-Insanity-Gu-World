@@ -439,6 +439,27 @@ turns, Prince, seeds 51-56, with "Base" as the commit before the change.
 The AI is no weaker: it keeps as many immortals and adopts as many policies. It went to war more often, but war turns
 range from 22 to 721 per game, so that difference is within the noise. One game ended with 5 majors after 7 captures.
 
+## Phase D: the mechanics audit's four changes (2026-11-03)
+
+The user chose four audit proposals: the immortal chasm, Gu spoils, AI killer moves and even Supremes
+(MECHANICS_AUDIT.md). The test setup was Five Regions, 18 games x 300 turns, Prince, seeds 51-68. "Base" is the
+commit before P4 (15cc2ac). The harness now records statuses held at each snapshot and promotions gained without a
+purchase.
+
+| Run | Majors alive | Cities captured | Immortals at T300 | Soldiers | Barbarians | Major-turns at war | Major-turns in the red | Clans 20+ turns red | Treasury T300 |
+|---|---|---|---|---|---|---|---|---|---|
+| Base | 7.2 | 1.7 | 17.4 | 95 | 42 | 280 | 146 | 2.8 | 124 |
+| P1-P4 | 7.2 | 2.3 | 17.9 | 93 | 45 | 228 | 159 | 2.9 | 134 |
+
+* **The AI uses its killer moves.** Per game, 129 mortal-move statuses and 36 immortal-move statuses were seen at
+  round ends; base had none. This is a lower bound: a snapshot sees only moves still active. The clans that fight
+  most use the moves most, and they are not the ones in the red. Gu Yue used 256 in the first six games and had 27
+  red turns. Red turns gather in the arc majors, which never go to war (KNOWN_ISSUES 21).
+* **Spoils work but are rare between AIs.** 1.6 Gu changed hands per game, against about 118 catalog Gu held at
+  T300. Most AI kills are made by cities or against beasts, and the harness counts only the eight majors' units.
+* **No weaker AI, no poorer AI.** Every measure is within the noise. The first six games alone showed red turns at
+  134 against 200; the next twelve did not repeat it.
+
 ## Re-run
 
 ```

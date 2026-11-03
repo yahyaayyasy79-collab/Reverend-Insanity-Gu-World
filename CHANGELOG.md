@@ -964,3 +964,32 @@ Gu, against the canon. The findings and six proposals are in `docs/MECHANICS_AUD
   ran dry while its own essence piled up.
 * **What to check in game:** on a Rank Seven or Eight Gu Immortal with a Great Grandmaster, the immortal move button
   shows its rank's essence and works.
+
+## Phase D — the audit's four changes: immortal chasm, Gu spoils, AI killer moves, even Supremes (2026-11-03)
+
+You chose four of the audit's six proposals (`docs/MECHANICS_AUDIT.md`, "Decisions").
+
+* **The immortal chasm.** Immortals fight mortal units at +50%, the Venerable at +100%. This covers ranks 6-8, the
+  immortal zombie and the Gu Houses. A mortal unit is any unit from before the Rank Six era: Gu Masters 1-5, clan
+  chains, rogues, the Demonic Elder, bold wolves.
+* **Gu as spoils.** A Gu Master that defeats a unit takes each of its catalog Gu (ranks 1-5) with a 25% chance, if its
+  own rank can hold the Gu. Barbarian Gu Masters loot too.
+* **The AI uses killer moves.** An AI unit uses its path's mortal move when it attacks: it pays 15 stones and keeps
+  100. It uses the immortal move when its clan keeps 10 of its rank's essence. A second attack in the same turn pays
+  nothing. The Venerable keeps its yellow apricot for Eternal Life. Combination moves stay yours.
+* **Even Supremes.** Nine Supreme Grandmasters that only saw or moved farther now fight better:
+  * star and space strike first from range;
+  * information and theft: +40% attacking; cloud: +40% defending;
+  * wind weakens adjacent enemies by 15%;
+  * food heals 15 HP per hit;
+  * dream and soul hurt whoever fights them.
+* **Engine facts found on the way** (CAPABILITIES E12, E13):
+  * "when adjacent to a unit" only sees your own units;
+  * combat triggers fire before the damage;
+  * a cost must be paid by the status itself, not by a second line.
+* The path tables regenerate in seconds now (they took minutes).
+* **What to check in game** (`docs/TESTING.md`, "mechanics audit" lines):
+  * the attack preview of an immortal against a mortal Gu Master;
+  * a rogue's Gu passing to your unit after you kill it;
+  * an AI Grandmaster's status after it attacks you;
+  * a Star Supreme Grandmaster's ranged strike before melee.

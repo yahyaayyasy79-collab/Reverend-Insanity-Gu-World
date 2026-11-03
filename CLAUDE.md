@@ -35,7 +35,10 @@ user's Android promotion-screen check. Answers 2026-10-18: path Gu B.b (one cano
 lone/demonic Gu Master barbarians + Demonic Den, raids; KNOWN_ISSUES 21: arc majors never declare war on each other),
 Gu catalog (113 Gu ranks 1-9, `data/gu_catalog.csv`), power rebuild (body 75/65/60%, tiers 20-35%, dao 10-55%;
 `path_powers.body_strength`; autoplay A/B equal), 42 combination killer moves (`data/gu_combos.csv`, human-only buttons
-on Gu A gated by Gu B; in-game check pending). User 2026-11-02: everything good, Locate mod errors clean. Ink Night art pass built 2026-11-02 (docs/ART.md). Left: MOD_SPEC_2 Phase D (balance, Definition of Done).
+on Gu A gated by Gu B; in-game check pending). User 2026-11-02: everything good, Locate mod errors clean. Ink Night art pass built 2026-11-02 (docs/ART.md). 2026-11-03: mechanics audit (docs/MECHANICS_AUDIT.md); the user chose
+P1-P4, built: immortal chasm (+50%, Venerable +100% vs pre-[Rank Six era]), Gu spoils (25% per catalog Gu, on the Gu
+Master unit types), AI path killer moves on attack (reserves 100 stones / 10 essence), even Supremes; P5/P6 open.
+Left: MOD_SPEC_2 Phase D (balance, Definition of Done).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -116,6 +119,9 @@ in LORE_MAPPING.md.
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.
 
+* Mechanics audit (user, 2026-11-03): "Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara" chosen (P1-P4);
+  combination moves stay human-only; Immortal Materials sink (P5) and vital Gu (P6) not chosen.
+
 ## Setup (every fresh container: `ref/` is gitignored)
 
 ```
@@ -173,6 +179,9 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * E8 [src] City strength grows with the SHARE of the tech tree known (+118 at 100% by default); Slice 1 sets
   `cityStrengthFromTechsFullMultiplier` 0.1. Re-tune it whenever the tech tree or unit strengths change.
 * The AI never presses custom unit-action buttons. A `Barbarians` nation must exist or barbarians never spawn.
+* E12 [src] `<when adjacent to a [mapUnitFilter] unit>` sees only the civ's own units: "an enemy is adjacent" cannot
+  be written. E13 [src] `<upon entering combat>` fires before the damage, with `<when attacking>` usable; triggered
+  uniques run grouped by unique type, not in list order: pay a cost in the status's own `<upon gaining the [X] status>`.
 * Docs/schema conflicts D1–D8 are listed in CAPABILITIES.md; follow the "We follow" column.
 
 ## Files
@@ -195,7 +204,7 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * `docs/BALANCE.md` — knobs, evidence, what is off; inventory of every tunable number (`tools/gen_balance.py`).
 * `docs/MECHANICS_AUDIT.md` — the 2026-11-03 audit of every system's effects against the canon: measurements, the
   immortal-move essence fix, proposals P1–P6 (immortal chasm, Gu spoils, AI killer moves, even Supremes, Immortal
-  Materials sink, vital Gu) waiting for the user's decision.
+  Materials sink, vital Gu); P1–P4 chosen and built 2026-11-03 (its "Decisions"), P5–P6 open.
 * `docs/KNOWN_ISSUES.md` — validator warnings explained, engine limits, trade-offs, what needs a real game.
 * `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.

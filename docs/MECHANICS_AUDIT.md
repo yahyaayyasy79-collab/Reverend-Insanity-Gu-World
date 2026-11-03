@@ -35,7 +35,7 @@ fixed. Six gaps are listed as proposals for the user's decision.
 
   One action line per rank; Unciv shows only the line whose conditionals apply [src UnitActionsFromUniques].
 
-## Proposals (the user's decision: scope and lore)
+## Proposals (the user chose P1-P4 on 2026-11-03; see Decisions)
 
 | # | Proposal | Canon | How (documented uniques) | Risk |
 |---|---|---|---|---|
@@ -45,3 +45,37 @@ fixed. Six gaps are listed as proposals for the user's decision.
 | P4 | **Even Supremes.** Four paths gain an extra attack a turn at Supreme (strength, light, moon, time). Nine get little combat value: sight (star, wisdom, information), movement (wind, cloud, space), cheaper upgrades (refinement), lower upkeep (food), double movement in two terrains (transformation). Give those nine a second, combat-worthy effect in their theme. | Every Supreme Grandmaster is a terror in their own path. | Extra lines in `data/path_powers.csv` `sup` (e.g. wind: `Can move after attacking`; star: `[1] additional attacks per turn`). | Balance; A/B. |
 | P5 | **Immortal Materials as the refiners' stock.** The immortal Gu wonders and the Gu Houses also cost Immortal Materials. | Immortal Gu and Gu Houses are refined from immortal materials. | `Costs [N] [Immortal Materials]` on the wonders and Gu House units (removed when work begins). | A clan without beasts to kill cannot build them: the amounts must be modest. |
 | P6 | **The vital Gu.** Losing the path Gu to hunger wounds its master (about 30 HP). | A Gu Master's vital Gu (本命蛊) is bound to them: its death injures them. | `[This Unit] takes [30] damage <upon losing the [<path Gu>] promotion>`. | Hunger becomes harsher; fine with the meter's warnings. |
+
+## Decisions (the user, 2026-11-03)
+
+The user chose P1, P2, P3 and P4 ("Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara"). P5 and P6 were
+not chosen and stay open.
+
+* **P1, built as proposed.** `[+50]% Strength <vs [pre-[Rank Six era]] units>` sits on ranks 6-8, the immortal zombie
+  and the four Gu Houses. The Venerable has +100%. Numbers: `tools/path_powers.py` `CHASM`, `VENERABLE_CHASM`.
+* **P2, built on the unit types.** The three Gu Master unit types carry one hidden line per mortal catalog Gu (76),
+  plus a visible comment. A unit type's uniques reach every unit of that type [src BaseUnit.setRuleset], so one copy
+  serves every rank, clan chain and rogue. The victory trigger tests the defeated unit, which still holds its
+  promotions [src Battle.triggerVictoryUniques]. Chance: `tools/gu_catalog.py` `SPOILS_CHANCE`.
+* **P3, built differently from the proposal.** The proposal used `<when adjacent to a [Hostile] unit>`, but that
+  conditional counts only the civ's own units (CAPABILITIES E12), so it could never fire. An AI unit now gains its
+  move on attack:
+  * the line is `[This Unit] gains the [<move>] status for [1] turn(s) <upon entering combat> <when attacking>
+    <for [AI player] Civilizations> <when above [N] [<cost>]>`;
+  * the status lands before the damage, so it counts in that fight (E13);
+  * the move's status pays its own cost through `<upon gaining the [<move>] status> <for [AI player] Civilizations>`.
+    That trigger fires only for a new status, so a second attack in the same turn pays nothing.
+
+  Two separate lines (status, then cost) would have been wrong: triggered uniques run grouped by unique type, so the
+  cost could run first and fail the status's own stock test. Reserves are 100 stones and 10 essence after paying, so
+  immortal Gu stay awake and blessed lands keep making Lifespan Gu. The Venerable keeps its yellow apricot for Eternal
+  Life. Numbers: `tools/gen_paths.py` `AI_STONES`, `AI_ESSENCE`.
+* **P4, built.** The nine weak Supremes each gained a second effect in `data/path_powers.csv` `sup`
+  (LORE_MAPPING "Phase D: mechanics audit"). Transformation, wisdom and refinement already carry +20-25% strength.
+
+**Measured** (AUTOPLAY.md, "the mechanics audit's four changes": Five Regions, 18 games x 300 turns against the
+commit before P4):
+* AI units used about 129 mortal and 36 immortal killer moves per game; before, they used none.
+* Spoils fired about 1.6 times per game between AIs.
+* Majors alive (7.2 / 7.2), immortals (17.4 / 17.9), soldiers, techs and red turns (146 / 159) stayed within the
+  noise. Captured cities rose from 1.7 to 2.3.

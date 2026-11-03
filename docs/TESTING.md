@@ -155,6 +155,15 @@ unit setxp 300                              # on a Rank Six Gu Immortal: the Sta
                                             # appears; once taken, a second unit of yours can no longer take it
 unit addpromotion "Star Grandmaster"        # with Star Master and Star Great Grandmaster too: the Star Mark
 unit addpromotion "Star Great Grandmaster"  # Resonance button shows (3 green grape essence)
+# mechanics audit (2026-11-03): the immortal chasm, Gu spoils, AI killer moves
+unit checkfilter "pre-[Rank Six era]"       # on a tile with a mortal Gu Master: true; on an immortal: false
+unit add gu-yue-clan "Rank Six Gu Immortal" # beside a "Demonic Gu Master" (barbarians): attack preview shows +50%
+unit add barbarians "Lone Gu Master"        # select its tile: the console acts on the first unit of the tile
+unit addpromotion "Jin Strength Gu"         # give the rogue four catalog Gu (also "Stone Skin Gu",
+unit sethealth 1                            # "Iron Skin Gu", "Flash Gu"); kill it with a rank-two+ Gu Master:
+                                            # about one Gu in four moves to your unit, with a notification
+# AI killer moves: at war, select the tile of an AI Grandmaster that just attacked you: the unit panel lists
+# its path's killer move as a status for the turn (paid 15 stones; it waits while its clan has 114 or fewer)
 ```
 
 

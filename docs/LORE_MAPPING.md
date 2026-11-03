@@ -4571,3 +4571,35 @@ sesuai pemahaman jalur tersebut"; "Kill rank 8 oke".
   Grandmaster at rank 6+. Two paths need both Grandmasters. A Supreme Grandmaster strikes harder.
 * **Kill Immortal Gu.** Rank 8, from the wiki, accepted by the user; its [VERIFY] is closed.
 
+
+## Phase D: mechanics audit (the user, 2026-11-03)
+
+The user asked for every effect to be checked against the canon ("rombak mekanik game atau diadaptasikan agar paling
+terbaik dengan situasi kanon novel"). The audit is `docs/MECHANICS_AUDIT.md`. The user chose four of its six
+proposals: "Jurang imortal", "Gu jarahan", "AI pakai jurus", "Supreme setara". Not chosen: Immortal Materials as the
+refiners' stock (P5) and the vital Gu (P6).
+
+* **The immortal chasm (P1, ADAPTED).** Mortal and immortal are two worlds in the canon: an immortal's essence and
+  aperture are of another order, and a rank-six immortal is beyond any mortal army. Every immortal fights mortal
+  units at +50%; the Venerable fights them at +100%. This covers ranks 6-8, the immortal zombie and the Gu Houses. A
+  mortal unit is one whose required tech lies before the Rank Six era: Gu Masters 1-5, the clan chains, lone and
+  demonic Gu Masters, the Demonic Elder and bold wolves. Beasts without a tech never match. The numbers are the
+  game's, not the novel's.
+* **Gu as spoils (P2, ADAPTED; [VERIFY] the chapters).** In the canon, victors take the Gu of the fallen, and Fang Yuan
+  gains much of his arsenal this way. The chapter references were not checked in this container. A Gu Master that
+  defeats a unit takes each of its catalog Gu of ranks 1-5 with a 25% chance, when its own rank can hold the Gu. The
+  three Gu Master unit types carry these lines, so barbarian Gu Masters loot too. Slice 1's ladder Gu and the path Gu
+  are not taken: the ladder and the Master hand those out. Immortal Gu are wonders, seized with their city.
+* **The AI uses killer moves (P3, mechanics only).** Every Gu Master of the novel fights with killer moves, not only
+  the player. An AI unit gains its path's mortal move when it attacks and keeps 100 stones after paying 15. It gains
+  the immortal move when its clan keeps 10 of its rank's essence after paying. The Venerable keeps its yellow apricot
+  for Eternal Life. Combination moves stay the player's (the user, 2026-11-02).
+* **Even Supremes (P4, ADAPTED).** Each of the nine Supreme Grandmasters that only saw farther, moved farther or cost
+  less gains a fighting edge in its path's theme:
+  * star and space strike first from range: a falling star at 50%, a fold of space at 40%;
+  * information and theft: +40% when attacking (the weak point read, the opening stolen);
+  * cloud: +40% when defending;
+  * wind: a domain, so enemies beside it fight 15% weaker;
+  * food: heals 15 HP on every hit;
+  * dream: whoever fights it is Soul-Torn for 3 turns;
+  * soul: whoever fights it takes 10 damage.

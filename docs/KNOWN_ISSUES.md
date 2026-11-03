@@ -21,7 +21,8 @@ rest of the list is what a player or the next session should know before trustin
 3. **Sprites on the world map are hex-sized.** The detail of the 3D models shows in the portraits (unit panel, city
    screen, Civilopedia); on the map they read as silhouettes with clan colours.
 4. **The AI never presses unit-action buttons and resolves popups by weight** (E1): it claims a buried inheritance 2
-   times in 3 and never "chooses" among wild Gu, it rolls.
+   times in 3 and never "chooses" among wild Gu, it rolls. Path killer moves reach the AI through a combat trigger
+   instead (mechanics audit P3); combination moves stay the player's.
 5. **Gaining a Gu does not refresh the civ's resource count** [src]: a wild Gu or a refinement can overdraw a food for
    a turn; the hunger meter then does its job. See `docs/LORE_MAPPING.md`, "Known limits" 1–8, which all still hold.
 6. **Chance rolls reroll on reload** (E5): a player can reload to fish for a wild Gu or an inheritance.
@@ -181,6 +182,9 @@ rest of the list is what a player or the next session should know before trustin
   rests on [src UnitActionsFromUniques]: an action's conditionals must apply. Check it in game: give one unit Ice
   Knife Gu, then Whirlwind Gu, and look for the Ice Blade Storm button.
 
+* **AI killer moves and Gu spoils (audit P3, P2).** Both fire in headless games (AUTOPLAY.md, 2026-11-03). Still
+  unseen on a screen: the notification when your unit takes a Gu, and an AI unit's move among its statuses.
+
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
 "Developer console".
 
@@ -224,4 +228,8 @@ Autoplay runs the engine headless; these need eyes on a screen (Android first). 
 | Secret realms | Start a Medium or larger random map and explore; or the map editor: place a realm terrain, move a unit beside it |
 | Dream realm, Shadow Sect | `civ activatetrigger "Triggers a [Dream Realm] event"`, `civ activatetrigger "Triggers a [Shadow Sect Envoy] event"` |
 | Dao marks | Select a rank-three or higher Gu Master holding a path Master: its promotions show Dao Comprehension (a countdown) and later Dao Marks I with a star; `unit addpromotion "Dao Marks IV"` on an immortal shows tier IV and removes nothing below it unless gained by a step |
+| Immortal chasm (audit P1) | `unit add gu-yue-clan "Rank Six Gu Immortal"` beside `unit add barbarians "Demonic Gu Master"`: the attack preview lists +50% against the mortal; against an Immortal Zombie it does not |
+| Gu spoils (audit P2) | Select a barbarian Lone Gu Master's tile: `unit addpromotion` four catalog Gu on it, `unit sethealth 1`, kill it with a rank-two+ Gu Master: about one Gu in four moves to the victor, with a notification |
+| AI killer moves (audit P3) | At war with an AI clan: select the tile of its Grandmaster that just attacked; the move shows among its statuses for the turn |
+| Even Supremes (audit P4) | `unit addpromotion "Star Supreme Grandmaster"` on a rank-eight unit (with the lower Star tiers): attacking shows a ranged strike before melee |
 | 100 turns without a crash, AI solvent | The Definition of Done's last item: the user's own game (Debug tab → "Simulate until turn" also works) |

@@ -124,6 +124,8 @@ def rows_for(file: str, data, source: Source) -> list[tuple[str, str, str, str]]
         for f, v in fields({k: v for k, v in obj.items() if k not in ("choices", "techs", "policies")}):
             add(name, f, v, False)
         for key in ("uniques", "friendBonusUniques", "allyBonusUniques"):
+            if file == "UnitTypes.json":  # only the Gu spoils lines, one per catalog Gu: path_rows() sums them up
+                continue
             for u in obj.get(key, []):
                 n = numbers(u)
                 if n:
@@ -174,6 +176,10 @@ def path_rows() -> list[tuple[str, str, str, str]]:
             for t, n in zip(gen_paths.TIERS[:gen_paths.MAX_TIER], gen_paths.TIER_STRENGTH)]
     rows.append(("every move", code(gen_paths.MOVE_COST), ", ".join(numbers(gen_paths.MOVE_COST)), f"{src} `MOVE_COST`"))
     rows.append(("every tier", code(gen_paths.TIER_WEIGHT), "+400", f"{src} `TIER_WEIGHT`"))
+    rows.append(("AI killer moves", "an AI unit uses its path's move when it attacks, if it keeps this reserve after paying",
+                 f"{gen_paths.AI_STONES} stones, {gen_paths.AI_ESSENCE} essence", f"{src} `AI_STONES`, `AI_ESSENCE`"))
+    rows.append(("every Gu Master unit type", "Gu spoils: one line per mortal catalog Gu, `<with [N]% chance>`",
+                 str(gen_paths.GC.SPOILS_CHANCE), "tools/gu_catalog.py `SPOILS_CHANCE`"))
     rows.append(("signature Masters", "AI weight for the clan's signature path",
                  f"+{gen_paths.SIGNATURE_WEIGHT} (share {gen_paths.SIGNATURE_SHARE})", f"{src} `SIGNATURE_SHARE`"))
     for r in table("path_conflicts.csv"):
