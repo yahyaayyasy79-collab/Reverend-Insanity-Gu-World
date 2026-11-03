@@ -85,6 +85,45 @@ Not fixed, because each needs either a human game or the user's taste:
 6. **The tech tree ends near T113–123.** Slice 1 has 15 techs; the rest of the game is Dao Comprehension. Slice 2 adds
    the next ranks.
 
+## Tension targets: MOD_SPEC_2 Phase D and MOD_SPEC_3 (2026-11-03)
+
+How each target was measured: autoplay (`docs/AUTOPLAY.md`, "Phase D: tension targets"; Five Regions, Prince), the
+ruleset's own numbers, or duels worked with Unciv's damage formula [src BattleDamage.damageModifier] at an average
+roll. Duel loadouts: a rank-5 Gu Master with Master, Grandmaster, Dao Marks II and an attack Gu of its rank; an
+immortal with Master to Great Grandmaster, Dao Marks III and its essence.
+
+| Target (source) | Measured | Status |
+|---|---|---|
+| First tribulation 10-15 turns after ascension (MOD_SPEC_2) | First earthly calamity 13 turns after (lower land) to 10 (super): `CALAMITY_TURNS` 14-11, E7; first heavenly tribulation after 59 at rank six | Met |
+| Unprepared: lose 30%+ of the land's output or a key building; prepared: under 10% (MOD_SPEC_2) | Calamity endured: 50% the land lies ravaged 8 turns of a ~13-turn cycle (31% of its output), 30% the immortal loses 40 HP, 20% nothing. Prepared: ward 10 HP, diversion nothing, vault 40 stones. Tribulation faced bare: 25% death, 45% ravaged 10 turns and 50 HP; with ward and essence, no loss | Met |
+| Rank-6 essence pays about one killer move per immortal per 5 turns (MOD_SPEC_2) | A lower blessed land makes 1 green grape a turn; the immortal move costs 5 (the AI keeps 10 in reserve) | Met |
+| An immortal without Lifespan Gu dies within about 15 turns (MOD_SPEC_2) | 7 HP a turn and no healing: 14 turns | Met |
+| At least one AI contests each immortal Gu race (MOD_SPEC_2) | 66 immortal Gu (the user raised the cap of 30); the AI builds 1-3 by T300 and 5-20 by T450 (mean 14), so most races stay open, not contested | Not met, by the user's scope |
+| The AI stays solvent and reaches rank 7 in 1 of 3 games (MOD_SPEC_2) | Rank 7 in 8 of 8 games (T247-291), rank 8 in 8 (T320-377), a Venerable in 8 (T340-406). Before the late-game relief a third of AI clan-turns after T300 ran in debt and every game touched the -200 disband line; with it, 10% in debt, 2.8 snapshots a game at the disband line (was 19.6), stones per turn after T300 -8 (was -21) | Met |
+| No event choice strictly dominates another (MOD_SPEC_2, MOD_SPEC §10) | A scan of 128 choices in 38 events flags a free choice beside a costly one with the same gate: 5 flags, all explained (two are dice, not choices; three carry costs the scan cannot read: a betrayal risk, unhappiness, a strategic fork) | Met |
+| A single-path unit beats an equal-rank three-path unit (MOD_SPEC_3) | Rank 3, three promotions each: Master and Grandmaster (strength 20.3) against three Masters with the default -10% conflicts (14.0): it deals 38 and takes 24 a fight | Met |
+| A rank 6 survives four fresh rank-5 attacks (MOD_SPEC_3) | 81 of its 100 HP lost on average (97 at the highest rolls); 95 when the attackers use killer moves (+40%); 97 before the immortal chasm (P1) | Met, at the margin with killer moves |
+| One immortal rank step is a strong edge, not an absolute one (MOD_SPEC_3) | Rank 7 against rank 6: kills in 2.7 hits, dies in 4.1; rank 8 against rank 7: 2.8 and 4.0 | Met |
+| A Venerable takes any city alone and dies within its lifespan unless it pillages (MOD_SPEC_3) | Strength about 500 against cities (all four tiers of one path, Dao Marks IV, +50% against cities), a strong late city about 60 (base, population, techs, a garrison, walls): one hit. Its lifespan is Lifespan Gu since the user's change of 2026-11-02 | Met; the lifespan half superseded |
+| AI units stay on their main path in 80% of path promotions (MOD_SPEC_3) | Each AI unit holds one root path (0.97-1.03 root Masters per Gu Master); 92% of path promotions are on that root path, the rest on its sub-paths. Signature clans after the halls fix: Gu Yue 85%, Bai 86%, Xiong 86%, Wu 73% (Bai 69% and Wu 57% before) | Met per unit; Wu's lean below the C3 decision's 85% |
+| Early upkeep near 40% of stone income (MOD_SPEC §10) | 17% in T1-50 (round 8) | Not met: item 1 below |
+| A careless player starves once, a careful one never (MOD_SPEC §10) | Needs a human game | Open |
+
+Fixed in Phase D on the way (2026-11-03):
+
+* **White Boar Gu starvation loop.** The Strength Master handed White Boar Gu back at every turn start without
+  checking Wild Boar (`data/path_gu.csv` had no food on that row), so the Xiong clan ran short at once and lost about
+  75 White Boar Gu a game to starvation. Since the vital Gu, each such death also wounded the Master. The grant now
+  waits for a spare of two, like every other food-eating path Gu: 79 deaths per game by T300 fell to 0.2 (8 + 8 games).
+* **Signature clans drifting off their path.** Halls hand their Master to every unit trained there; the four signature
+  clans' AI now weighs other paths' halls at -90% (`tools/gen_paths.py` `OFF_PATH_HALL`).
+* **Late-game AI debt.** Unit upkeep grows with the game's progress [src CivInfoStatsForNextTurn.getUnitMaintenance]
+  and the engine's AI keeps its army: at T330-400 an AI clan paid 67 stones a turn for units and 40 for buildings and
+  roads, against 83 of income. From turn 300 on Standard (per speed) an AI clan's units cost 30% less
+  (`AI_LATE_UPKEEP`); a player's upkeep is unchanged, so this is a handicap for the AI, like a difficulty level's.
+  8 + 8 games of 450 turns: clan-turns in debt after T300 32% -> 10%, snapshots at the disband line 19.6 -> 2.8 a
+  game, soldiers at the end 89 -> 112, immortals 35 -> 41, majors alive 6.6 -> 6.8.
+
 ## Part 2 — inventory
 
 ## Path halls and the debt regression (2026-11-01)

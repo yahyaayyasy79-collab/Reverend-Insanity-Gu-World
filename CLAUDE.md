@@ -40,7 +40,10 @@ P1-P4, built: immortal chasm (+50%, Venerable +100% vs pre-[Rank Six era]), Gu s
 Master unit types), AI path killer moves on attack (reserves 100 stones / 10 essence), even Supremes; then P5/P6
 ("lanjut"): immortal Gu wonders cost materials 30/40/50/80 (Gu Houses 60) and blessed lands grow 1-2/turn (grotto 3);
 a starving food path Gu (vital Gu) costs its Master 30 HP, never lethal.
-Left: MOD_SPEC_2 Phase D (balance, Definition of Done).
+MOD_SPEC_2 Phase D done 2026-11-03, waiting at its checkpoint: every tension target measured (BALANCE.md "Tension
+targets", AUTOPLAY.md "Phase D: tension targets"); fixed the White Boar starvation loop (path_gu food), signature
+halls (-90% AI weight off-path), AI late upkeep relief (-30% after T300, AI only); DoD audit clean; not met: immortal
+Gu races contested (66 races), early upkeep 40% (17%).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -139,7 +142,8 @@ While designing, `printf '%s\n' "<unique>" | tools/unique_check.py` checks loose
 `tools/check_all --mod DIR --no-self-test && tools/ladder_check.py DIR`); self-tests keep jsons/, data/ and
 `docs/LORE_MAPPING.md` in sync and run the ladder check.
 `tools/autoplay.py [--games N --turns T --out DIR]` plays headless AI-vs-AI games on the mod (needs javac); results
-and method in `docs/AUTOPLAY.md` (AI randomness is not tied to the seed: compare pooled numbers).
+and method in `docs/AUTOPLAY.md` (AI randomness is not tied to the seed: compare pooled numbers). It copies `jsons/` when
+each game starts: run long batches on a `git worktree` snapshot (`--mod`) if you keep editing meanwhile.
 `unciv_ci.py` runs Unciv's own validator (`mod-ci`) on a temp copy — it is the closest thing to "Locate mod
 errors" available here; report its OptionsOnly lines too.
 See `tools/README.md`.

@@ -1018,3 +1018,24 @@ You said "lanjut" to P5 and P6 (`docs/MECHANICS_AUDIT.md`, "P5 and P6").
   * the materials line in the resource overview while an immortal holds a blessed land;
   * an immortal Gu wonder greyed in the build list, with the missing materials, until the stock covers it;
   * a Moon Master losing 30 HP when its starving Moonlight Gu dies.
+
+## MOD_SPEC_2 Phase D — tension targets and Definition of Done (2026-11-03)
+
+You said "lanjutkan saja dulu sisa itu". Every tension target of MOD_SPEC_2 and MOD_SPEC_3 is measured in
+`docs/BALANCE.md` ("Tension targets"), with autoplay runs in `docs/AUTOPLAY.md`.
+
+* **Fixed: the White Boar starvation loop.** The Strength Master handed White Boar Gu back at every turn start without
+  checking Wild Boar. The Xiong clan lost about 75 of them a game to starvation, and each death now also wounds the
+  Master (the vital Gu). The grant now waits for a spare of two boar: 79 deaths a game became 0.2.
+* **Fixed: signature clans drifting off their path.** The four signature clans' AI weighs other paths' halls at -90%.
+  Bai went from 69% to 86% of root Masters on Water, Wu from 57% to 73% on Wind.
+* **Fixed: late-game AI debt.** From turn 300 on Standard (scaled per speed), an AI clan's units cost 30% less;
+  yours cost the same.
+  * Clan-turns in debt after T300: 32% to 10%.
+  * AI soldiers at the end: 89 to 112.
+* **Definition of Done.** Every one of the mod's objects has an icon, civilopedia text and an Indonesian translation
+  (audit). The official validator is clean. Autoplay saw no crash in 84 games of 300-450 turns.
+* **Not met:**
+  * "every immortal Gu race contested": 66 races; the AI builds about 14 by T450;
+  * early upkeep near 40%: 17%;
+  * the human-only target "a careless player starves once".

@@ -129,7 +129,8 @@ rest of the list is what a player or the next session should know before trustin
     map (eight majors, about four villages each) 32 of 48 clans spent 20+ turns in the red by T400, against 9 of 48 on
     Qing Mao Mountain with the same eight majors by T300. The red is shallow and self-correcting (weaker units, the
     Stone Shortage event); a human who keeps the army lean does not hit it. Fixed on the way: the map's riches and
-    the stability of wide clans.
+    the stability of wide clans. Phase D (2026-11-03): after T300 the AI's units cost 30% less (AI only): clan-turns
+    in debt after T300 32% -> 10%, snapshots at the -200 disband line 19.6 -> 2.8 a game (BALANCE.md).
 
 20. **A rare crash in the ascension upgrade (2026-11-02, not yet explained).** Once in 62 autoplay games (6 × 300 where it
     happened; then 12 × 300 and 16 × 320 on Qing Mao Mountain and 16 × 400 on the Five Regions map without it), an AI
@@ -138,6 +139,7 @@ rest of the list is what a player or the next session should know before trustin
     (foreign land, open water) are closed by the ascension's Unavailable lines; this one happened on Qing Mao Mountain,
     in the clan's own land. The harness now records where every Gu Master stood before each turn, so the next
     occurrence names the tile. If it happens in your game, reload the autosave: the AI's choices differ on a reload.
+    Not seen again in 84 more games of 300-450 turns (2026-11-03).
 
 21. **The arc majors never declare war on each other (Phase D, 2026-11-02).** Each sits alone behind its region's
     walls. The AI declares war only with happiness above 0, 4 soldiers and one per city, and 12 population

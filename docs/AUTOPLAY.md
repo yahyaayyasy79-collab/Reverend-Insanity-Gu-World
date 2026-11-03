@@ -487,6 +487,44 @@ same seeds on 841cd4d (materials 15/20/25/40) and 375376b (doubled). SE is the s
   8 clans). Wild Boar runs short wherever the Strength path spreads; the Master hands the Gu back once boar is in
   surplus, so the meter cycles. Not changed here: a balance question of its own.
 
+## Phase D: tension targets (2026-11-03)
+
+Five Regions, Prince, seeds 101-108. The runs are snapshots of a commit (git worktrees), because the harness copies
+`jsons/` when each game starts.
+
+**Long games, 8 × 450 turns** (aabaf80: P1-P6 and the White Boar fix). No crash. Rank seven was reached in 8 of 8
+games (T247-291), rank eight in 8 (T320-377), a Venerable in 8 (T340-406). Five games ended with a victory at
+T403-446. The AI built 1-3 immortal Gu wonders by T300 and 5-20 by the end, of 66. The arc majors were never at war
+with each other (KNOWN_ISSUES 21). After T300 a third of AI clan-turns ran in debt, at -21 stones a turn on average,
+and every game touched the -200 disband line (3-40 snapshots).
+
+**White Boar loop.** Starvation deaths of White Boar Gu by T300: 79 per game before the fix (ab_v_new, 8 games), 0.2
+after (the first 300 turns of the long games).
+
+**Halls, 8 × 300** (4569c5a against aabaf80's first 300 turns). Share of root Masters on the signature path:
+
+| Clan | Before | After |
+|---|---|---|
+| Gu Yue (Moon) | 89% | 85% |
+| Bai (Water) | 69% | 86% |
+| Xiong (Strength) | 87% | 86% |
+| Wu (Wind) | 57% | 73% |
+
+Wu still builds Strength Halls (28 in 8 games), with fewer units from them: at T300 its root Masters were Wind 50 and
+Strength 10 (before: Wind 19, Strength 36).
+
+**AI late-game upkeep relief, 8 × 450** (86d0f7d against aabaf80):
+
+| Metric | Before | After |
+|---|---|---|
+| Clan-turns in debt after T300 | 32% | 10% |
+| Snapshots at the -200 disband line per game | 19.6 | 2.8 |
+| Stones per turn after T300 | -21 | -8 |
+| Majors alive at the end | 6.6 | 6.8 |
+| Soldiers at the end (all majors) | 89 | 112 |
+| Immortals at the end | 35 | 41 |
+| Games won before T450 | 5 | 4 |
+
 ## Re-run
 
 ```
