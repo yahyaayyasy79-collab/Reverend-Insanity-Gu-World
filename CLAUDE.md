@@ -193,6 +193,9 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
   [VERIFY]), questions for the user, refinement ladder, events in detail, balance starting numbers.
 * `docs/AUTOPLAY.md` — autoplay method, baseline data, A/B experiments, verdict on the user's tuning rule.
 * `docs/BALANCE.md` — knobs, evidence, what is off; inventory of every tunable number (`tools/gen_balance.py`).
+* `docs/MECHANICS_AUDIT.md` — the 2026-11-03 audit of every system's effects against the canon: measurements, the
+  immortal-move essence fix, proposals P1–P6 (immortal chasm, Gu spoils, AI killer moves, even Supremes, Immortal
+  Materials sink, vital Gu) waiting for the user's decision.
 * `docs/KNOWN_ISSUES.md` — validator warnings explained, engine limits, trade-offs, what needs a real game.
 * `docs/TESTING.md` — install paths per platform, naming rules, reload rules, console commands for step reports.
 * `CHANGELOG.md` — one entry per green step.

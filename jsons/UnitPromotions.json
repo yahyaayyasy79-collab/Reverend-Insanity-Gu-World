@@ -751,14 +751,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Myriad Self] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-strength-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Strength Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Strength path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Myriad Self (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Strength path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Myriad Self, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -924,14 +928,18 @@
     "uniques": [
       "[+30]% Strength",
       "Can move after attacking",
-      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Ancient Sword Dragon] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-transformation-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Transformation Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Transformation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ancient Sword Dragon (5 green grape essence). +30% strength; adds: can move after attacking."
+        "text": "Transformation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ancient Sword Dragon, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -1096,14 +1104,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Bone Spike Forest] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-bone-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Bone Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Bone path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Bone Spike Forest (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Bone path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Bone Spike Forest, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -1267,14 +1279,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+20]% Strength <when below [50] HP>",
-      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Blood Deity] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-blood-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blood Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Blood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Blood Deity (5 green grape essence). +30% strength; adds: +20% strength below 50 HP."
+        "text": "Blood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Blood Deity, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: +20% strength below 50 HP."
       }
     ],
     "prerequisites": [
@@ -1437,14 +1453,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Five Finger Fist Heart Sword] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-sword-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sword Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Sword path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Five Finger Fist Heart Sword (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Sword path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Five Finger Fist Heart Sword, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -1603,14 +1623,18 @@
     "uniques": [
       "[+30]% Strength",
       "Heals [15] damage if it kills a unit",
-      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Autumn Blade Sweep] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-blade-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blade Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Blade path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Autumn Blade Sweep (5 green grape essence). +30% strength; adds: heals 15 HP per kill."
+        "text": "Blade path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Autumn Blade Sweep, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: heals 15 HP per kill."
       }
     ],
     "prerequisites": [
@@ -1768,14 +1792,18 @@
     "uniques": [
       "[+30]% Strength",
       "Destroys tile improvements when attacking",
-      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [City-Crushing Hammer] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-metal-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Metal Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Metal path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move City-Crushing Hammer (5 green grape essence). +30% strength; adds: destroys improvements when attacking."
+        "text": "Metal path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move City-Crushing Hammer, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: destroys improvements when attacking."
       }
     ],
     "prerequisites": [
@@ -1933,14 +1961,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+15]% Strength bonus for [Military] units within [1] tiles",
-      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Hundred Weapons] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-weapon-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Weapon Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Weapon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Hundred Weapons (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
+        "text": "Weapon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Hundred Weapons, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -2098,14 +2130,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Kill] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-killing-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Killing Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Killing path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Kill (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Killing path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Kill, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -2260,14 +2296,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Nirvana Fire] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-fire-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Fire Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Fire path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nirvana Fire (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Fire path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nirvana Fire, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -2423,14 +2463,18 @@
     "uniques": [
       "[+30]% Strength",
       "All adjacent units heal [10] HP when healing",
-      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Worldly Wave Trace] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-water-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Water Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Water path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Worldly Wave Trace (5 green grape essence). +30% strength; adds: domain: units beside it heal 10 HP more."
+        "text": "Water path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Worldly Wave Trace, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: units beside it heal 10 HP more."
       }
     ],
     "prerequisites": [
@@ -2585,14 +2629,18 @@
     "uniques": [
       "[+30]% Strength",
       "All adjacent units heal [10] HP when healing",
-      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Verdant Renewal] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-wood-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wood Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Wood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Verdant Renewal (5 green grape essence). +30% strength; adds: domain: units beside it heal 10 HP more."
+        "text": "Wood path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Verdant Renewal, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: units beside it heal 10 HP more."
       }
     ],
     "prerequisites": [
@@ -2746,14 +2794,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+15]% Strength bonus for [Military] units within [1] tiles",
-      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Earthen Bulwark] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-earth-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Earth Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Earth path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Earthen Bulwark (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
+        "text": "Earth path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Earthen Bulwark, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -2906,14 +2958,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
-      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Wind-Rolled Dragon Whip] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-wind-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wind Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Wind path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Wind-Rolled Dragon Whip (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Wind path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Wind-Rolled Dragon Whip, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -3065,14 +3121,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Rising Azure Cloud] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-cloud-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Cloud Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Cloud path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Rising Azure Cloud (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Cloud path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Rising Azure Cloud, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -3224,14 +3284,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Frozen Domain] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-ice-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Ice Snow Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Ice Snow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Frozen Domain (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Ice Snow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Frozen Domain, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -3379,14 +3443,18 @@
     "uniques": [
       "[+30]% Strength",
       "Can move after attacking",
-      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Thunder Judgement] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-lightning-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Lightning Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Lightning path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Thunder Judgement (5 green grape essence). +30% strength; adds: can move after attacking."
+        "text": "Lightning path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Thunder Judgement, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -3537,14 +3605,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Heart of Venom] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-poison-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Poison Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Poison path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heart of Venom (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Poison path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heart of Venom, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -3692,14 +3764,18 @@
     "uniques": [
       "[+30]% Strength",
       "Before engaging in combat performs an extra ranged attack with [30]% of melee combat strength",
-      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Saw-Wheel Light] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-light-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Light Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Light path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Saw-Wheel Light (5 green grape essence). +30% strength; adds: strikes first from range at 30% strength."
+        "text": "Light path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Saw-Wheel Light, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: strikes first from range at 30% strength."
       }
     ],
     "prerequisites": [
@@ -3846,14 +3922,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Dark Limit] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-dark-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dark Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Dark path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dark Limit (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Dark path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dark Limit, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -4003,14 +4083,18 @@
     "uniques": [
       "[+30]% Strength",
       "Invisible to others",
-      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Shadow Severance] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-shadow-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Shadow Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Shadow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Shadow Severance (5 green grape essence). +30% strength; adds: invisible to others."
+        "text": "Shadow path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Shadow Severance, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: invisible to others."
       }
     ],
     "prerequisites": [
@@ -4157,14 +4241,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
-      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Nebula Millstone] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-star-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Star Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Star path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nebula Millstone (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Star path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Nebula Millstone, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -4311,14 +4399,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Peerless Crescent Moon Slash] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-moon-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Moon Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Moon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Peerless Crescent Moon Slash (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Moon path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Peerless Crescent Moon Slash, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -4461,14 +4553,18 @@
     "uniques": [
       "[+30]% Strength",
       "Before engaging in combat performs an extra ranged attack with [25]% of melee combat strength",
-      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Silence Beats Sound] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-sound-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sound Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Sound path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Silence Beats Sound (5 green grape essence). +30% strength; adds: strikes first from range at 25% strength."
+        "text": "Sound path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Silence Beats Sound, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -4608,14 +4704,18 @@
     "uniques": [
       "[+30]% Strength",
       "Invisible to others",
-      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Illusory Garden] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-illusion-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Illusion Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Illusion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Illusory Garden (5 green grape essence). +30% strength; adds: invisible to others."
+        "text": "Illusion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Illusory Garden, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: invisible to others."
       }
     ],
     "prerequisites": [
@@ -4754,14 +4854,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
-      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Mystery Unravelled] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-wisdom-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wisdom Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Wisdom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Mystery Unravelled (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Wisdom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Mystery Unravelled, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -4902,14 +5006,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Regret] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-emotion-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Emotion Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Emotion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Regret (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Emotion path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Regret, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -5048,14 +5156,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Captivation] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-enchantment-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enchantment Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Captivation (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Enchantment path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Captivation, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -5191,14 +5303,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Soul Search] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-soul-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Soul Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Soul path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Soul Search (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Soul path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Soul Search, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -5334,14 +5450,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Dreamy Light Smoke] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-dream-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dream Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Dream path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dreamy Light Smoke (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Dream path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Dreamy Light Smoke, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -5476,14 +5596,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+20]% Strength <vs [Beast] units>",
-      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Ambush on Eight Sides] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-enslavement-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enslavement Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Enslavement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ambush on Eight Sides (5 green grape essence). +30% strength; adds: +20% strength against beast units."
+        "text": "Enslavement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Ambush on Eight Sides, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: +20% strength against beast units."
       }
     ],
     "prerequisites": [
@@ -5617,14 +5741,18 @@
     "uniques": [
       "[+30]% Strength",
       "[1] Movement",
-      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Call of the Ancient] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-time-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Time Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Time path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Call of the Ancient (5 green grape essence). +30% strength; adds: +1 movement."
+        "text": "Time path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Call of the Ancient, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: +1 movement."
       }
     ],
     "prerequisites": [
@@ -5756,14 +5884,18 @@
     "uniques": [
       "[+30]% Strength",
       "Withdraws before melee combat",
-      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Sea and Sky Expands] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-space-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Space Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Space path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea and Sky Expands (5 green grape essence). +30% strength; adds: slips away from melee."
+        "text": "Space path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea and Sky Expands, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: slips away from melee."
       }
     ],
     "prerequisites": [
@@ -5894,14 +6026,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [One Step Back] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-rule-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Rule Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Rule path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move One Step Back (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Rule path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move One Step Back, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -6036,14 +6172,18 @@
     "uniques": [
       "[+30]% Strength",
       "Invisible to others",
-      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Phantom Body] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-phantom-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Phantom Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Phantom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Phantom Body (5 green grape essence). +30% strength; adds: invisible to others."
+        "text": "Phantom path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Phantom Body, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: invisible to others."
       }
     ],
     "prerequisites": [
@@ -6173,14 +6313,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Absolute Ban] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-restriction-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Restriction Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Restriction path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Absolute Ban (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Restriction path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Absolute Ban, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -6309,14 +6453,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
-      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Turn of Fortune] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-luck-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Luck Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Luck path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Turn of Fortune (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Luck path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Turn of Fortune, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -6444,14 +6592,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Heavenly Web Protection Veil] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-heaven-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Heaven Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Heaven path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Web Protection Veil (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 15% weaker."
+        "text": "Heaven path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Web Protection Veil, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -6580,14 +6732,18 @@
     "uniques": [
       "[+30]% Strength",
       "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
-      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Qi Covers Mountains and Rivers] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-qi-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Qi Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Qi path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Qi Covers Mountains and Rivers (5 green grape essence). +30% strength; adds: domain: enemies beside it fight 10% weaker."
+        "text": "Qi path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Qi Covers Mountains and Rivers, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: enemies beside it fight 10% weaker."
       }
     ],
     "prerequisites": [
@@ -6715,14 +6871,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
-      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Heavenly Light Rotation] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-refinement-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Refinement Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Refinement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Light Rotation (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Refinement path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heavenly Light Rotation, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -6849,14 +7009,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+15]% Strength bonus for [Military] units within [2] tiles",
-      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Grand Formation] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-formation-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Formation Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Formation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Grand Formation (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 15% harder."
+        "text": "Formation path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Grand Formation, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -6984,14 +7148,18 @@
     "uniques": [
       "[+30]% Strength",
       "All adjacent units heal [10] HP when healing",
-      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Banquet of Immortals] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-food-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Food Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Food path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Banquet of Immortals (5 green grape essence). +30% strength; adds: domain: units beside it heal 10 HP more."
+        "text": "Food path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Banquet of Immortals, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: units beside it heal 10 HP more."
       }
     ],
     "prerequisites": [
@@ -7116,14 +7284,18 @@
     "uniques": [
       "[+30]% Strength",
       "All adjacent units heal [15] HP when healing",
-      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Life-Saving Pill] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-pill-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Pill Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Pill path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Life-Saving Pill (5 green grape essence). +30% strength; adds: domain: units beside it heal 15 HP more."
+        "text": "Pill path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Life-Saving Pill, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: units beside it heal 15 HP more."
       }
     ],
     "prerequisites": [
@@ -7246,14 +7418,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
-      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Sea Oath] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-information-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Information Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Information path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea Oath (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Information path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Sea Oath, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -7377,14 +7553,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [2] tiles",
-      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Heroes Among People] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-human-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Human Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Human path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heroes Among People (5 green grape essence). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
+        "text": "Human path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Heroes Among People, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 2-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -7505,14 +7685,18 @@
     "uniques": [
       "[+30]% Strength",
       "[+10]% Strength bonus for [Military] units within [1] tiles",
-      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Contented Lifestyle] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-painting-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Painting Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Painting path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Contented Lifestyle (5 green grape essence). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
+        "text": "Painting path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Contented Lifestyle, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: domain: own soldiers within a 1-tile radius fight 10% harder."
       }
     ],
     "prerequisites": [
@@ -7635,14 +7819,18 @@
     "uniques": [
       "[+30]% Strength",
       "Withdraws before melee combat",
-      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement>",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Rank Six Gu Immortal] units>",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [5] [Green Grape Immortal Essence]> <requires [1] movement> <for [Immortal Zombie] units>",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [4] [Red Date Immortal Essence]> <requires [1] movement> <for [Rank Seven Gu Immortal] units>",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [3] [White Lychee Immortal Essence]> <requires [1] movement> <for [Rank Eight Gu Immortal] units>",
+      "[This Unit] gains the [Great Thief Ghost Hand] status for [1] turn(s) <costs [2] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for [Venerable] units>",
       "Play [path-theft-3] sound <upon damaging a [Military] unit> <when attacking> <for units without [Theft Supreme Grandmaster]>",
       "Only available <for [post-[Rank Five era]] units>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Theft path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Great Thief Ghost Hand (5 green grape essence). +30% strength; adds: slips away from melee."
+        "text": "Theft path, Great Grandmaster attainment (大宗师): where most rank-eight immortals end; a rank-six immortal that reaches it opens the immortal killer move Great Thief Ghost Hand, paid in its own rank's essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a Venerable). +30% strength; adds: slips away from melee."
       }
     ],
     "prerequisites": [

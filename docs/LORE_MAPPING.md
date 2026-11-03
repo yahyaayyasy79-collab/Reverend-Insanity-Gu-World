@@ -2127,7 +2127,9 @@ MOD_SPEC_2 Phase C, third layer, for the ranks the game has so far (rank six; ra
   earth–fire, strength–water, metal–strength, light–dark). Lines exist only for paths that have immortal Gu.
 * **Great Grandmaster** (大宗师), the third attainment tier of all 47 paths (docs/PATHS.md): rank six and up
   (post-[Rank Five era] units), +20% strength, and the path's **immortal killer move**, a one-turn status button
-  that costs 5 green grape essence (MOD_SPEC_2 #5; human only, the AI never presses it). Three moves named after
+  paid in the immortal's own rank's essence: 5 green grape at rank six, 4 red date at seven, 3 white lychee at eight,
+  2 yellow apricot as a Venerable (MOD_SPEC_2 #5; was 5 green grape for every rank until the mechanics audit of
+  2026-11-03; human only, the AI never presses it). Three moves named after
   immortal Gu were renamed because the Gu are now wonders: Bone Spike Forest, Heart of Venom, Mystery Unravelled.
 * **Heaven's Will** also strikes a clan holding more than two immortal Gu (MOD_SPEC_2 #10).
 * Art: the ten wonders, the recipe tech, 47 Great Grandmaster icons and 47 immortal-move icons. The path promotions

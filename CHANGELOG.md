@@ -948,3 +948,19 @@ candidates and the voice of Chinese instruments.
   * the promotion picker, the tech tree, the city screen and the Civilopedia at your phone's size;
   * a wonder's completion splash, the diplomacy screen and the victory tab;
   * a few battles with sound on.
+
+## Phase D — mechanics audit; immortal moves paid in the right essence (2026-11-03)
+
+You asked for a full check of every effect: skills, paths, dao, policies, resources, comprehension, killer moves and
+Gu, against the canon. The findings and six proposals are in `docs/MECHANICS_AUDIT.md`.
+
+* **Fix: the 47 immortal path moves cost the immortal's own essence.**
+  * rank six: 5 green grape;
+  * rank seven: 4 red date;
+  * rank eight: 3 white lychee;
+  * the Venerable: 2 yellow apricot.
+
+  Before, every rank paid 5 green grape, which only rank-six blessed lands make. A clan with only higher immortals
+  ran dry while its own essence piled up.
+* **What to check in game:** on a Rank Seven or Eight Gu Immortal with a Great Grandmaster, the immortal move button
+  shows its rank's essence and works.

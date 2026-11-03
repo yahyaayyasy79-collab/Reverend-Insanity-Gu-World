@@ -43,7 +43,14 @@ TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", "Only 
 SUPREME_EXTRA = {"space": ["Can pass through impassable tiles"]}
 SUPREME_MARKER = "Supreme Attainment"  # filter marker: the Venerable Ascension counts rank-eight holders (MOD_SPEC_3)
 MOVE_COST = "<costs [+15 Gold] stats> <requires [1] movement>"
-IMMORTAL_MOVE_COST = "<costs [5] [Green Grape Immortal Essence]> <requires [1] movement>"  # MOD_SPEC_2 #5
+# MOD_SPEC_2 #5: the immortal move is paid in the user's own rank's immortal essence (mechanics audit 2026-11-03: it
+# was 5 green grape for every rank, and only rank six makes green grape, so higher clans drained it while their own
+# essence piled up). An action shows only when its conditionals apply [src UnitActionsFromUniques].
+IMMORTAL_MOVE_COSTS = (("Rank Six Gu Immortal", 5, "Green Grape Immortal Essence"),
+                       ("Immortal Zombie", 5, "Green Grape Immortal Essence"),
+                       ("Rank Seven Gu Immortal", 4, "Red Date Immortal Essence"),
+                       ("Rank Eight Gu Immortal", 3, "White Lychee Immortal Essence"),
+                       ("Venerable", 2, "Yellow Apricot Immortal Essence"))
 # MOD_SPEC_2 #4: dao marks. Every immortal Gu carries its path's marker; a path's Master gains per mark of its own path
 # and loses per mark of a path it clashes with strongly (data/path_conflicts.csv at -25 or worse)
 DAO_MARK, DAO_CLASH, STRONG_CLASH = 5, -5, -25
@@ -197,7 +204,8 @@ def tier_uniques(p: dict, t: int) -> list[str]:
     if t == 1:
         u += PP.cell(pw, "gm") + [f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}"]
     if t == 2:
-        u += PP.cell(pw, "ggm") + [f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {IMMORTAL_MOVE_COST}"]
+        u += PP.cell(pw, "ggm") + [f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) <costs [{n}] [{ess}]> "
+                                   f"<requires [1] movement> <for [{unit}] units>" for unit, n, ess in IMMORTAL_MOVE_COSTS]
     if t == 3:
         u += PP.cell(pw, "sup") + SUPREME_EXTRA.get(p["key"], []) + [SUPREME_MARKER]
     # the path's sound on every attack, from the highest tier held only (tools/art/sfx.py: each tier adds a layer)
@@ -239,10 +247,13 @@ def _pedia_lore(p: dict, t: int) -> tuple[str, str]:
                 f"Yang Mulia mencapainya. Tingkat delapan ke atas.")
     if t == 2:
         return (f"{p['name']} path, Great Grandmaster attainment ({TIERS_ZH[2]}): where most rank-eight immortals end; a "
-                f"rank-six immortal that reaches it opens the immortal killer move {p['immortal']} (5 green grape essence).",
+                f"rank-six immortal that reaches it opens the immortal killer move {p['immortal']}, paid in its own rank's "
+                f"essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a "
+                f"Venerable).",
                 f"Jalur {p['name_id']}, pencapaian {TIERS_ID[2]} ({TIERS_ZH[2]}): tempat kebanyakan abadi tingkat delapan "
-                f"berhenti; abadi tingkat enam yang mencapainya membuka jurus pamungkas abadi {p['immortal_id']} "
-                f"(5 esensi anggur hijau).")
+                f"berhenti; abadi tingkat enam yang mencapainya membuka jurus pamungkas abadi {p['immortal_id']}, dibayar "
+                f"dengan esensi tingkatnya sendiri (5 anggur hijau di tingkat enam, 4 kurma merah di tujuh, 3 leci putih di "
+                f"delapan, 2 aprikot kuning untuk Yang Mulia).")
     return (f"{p['name']} path, Grandmaster attainment ({TIERS_ZH[1]}): deep enough to bend other paths' methods to "
             f"its own Gu. Opens the killer move {p['mortal']}.",
             f"Jalur {p['name_id']}, pencapaian {TIERS_ID[1]} ({TIERS_ZH[1]}): cukup dalam untuk meminjam cara jalur lain "
@@ -525,11 +536,13 @@ def _lines_power() -> list[tuple[str, str, dict]]:
           "kekuatan.", {}),
          ("Killer moves", "Jurus pamungkas", {"header": 3}),
          ("A unit-action button, so only you use them: for one turn the path family's burst plus the path's hit at full "
-          "power (twice that for the immortal move). The mortal move costs 15 stones, the immortal move 5 green grape "
-          "essence.",
+          "power (twice that for the immortal move). The mortal move costs 15 stones; the immortal move costs the "
+          "immortal's own essence: 5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow "
+          "apricot as a Venerable.",
           "Tombol aksi unit, jadi hanya kamu yang memakainya: selama satu giliran ledakan keluarga jalur ditambah "
-          "serangan khas jalur pada kekuatan penuh (dua kali lipat untuk jurus abadi). Jurus fana 15 batu, jurus abadi "
-          "5 esensi anggur hijau.", {})]
+          "serangan khas jalur pada kekuatan penuh (dua kali lipat untuk jurus abadi). Jurus fana 15 batu; jurus abadi "
+          "memakai esensi abadi itu sendiri: 5 anggur hijau di tingkat enam, 4 kurma merah di tujuh, 3 leci putih di "
+          "delapan, 2 aprikot kuning untuk Yang Mulia.", {})]
     # a worked example from the data
     ex = [r for _, _, r in ranks][5]
     hit = PP.describe(PP.attack_only(fire["hit"]).replace("{n}", str(PP.amounts(fire)[3])))
