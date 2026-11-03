@@ -439,15 +439,24 @@ def era_of_branch(p: dict) -> str:
     return "Rank One-Two era" if p["key"] in SLICE1_BRANCHES else FAMILY_ERA[p["family"]]
 
 
+# Phase D: a hall hands its path's Master to every unit trained there, and an AI unit walks one root path, so a
+# signature clan that built other paths' halls drifted off its path (autoplay, 8 x 300: Bai 73%, Wu 59% of root Masters
+# on the signature path; Wu built a Strength Hall in 6 of 8 games). The AI weighs such halls down (the user's C3
+# decision: signature clans lean about 85% on their path); a player builds what it likes.
+OFF_PATH_HALL = "[-90]% weight to this choice for AI decisions <for [{c}] Civilizations>"
+
+
 def halls() -> list[dict]:
     out = []
+    sig = {c: q["key"] for q in PATHS for c in split(q["signature_clans"])}
     for p in PATHS:
         era = era_of_branch(p)
         # no upkeep: the AI builds a hall in every city, and at 2 stones each 12 of 24 Slice 1 clans spent 20+ turns in
         # the red against 4 of 24 without it (autoplay A/B, 6 x 320, Prince)
         out.append({"name": hall_name(p), "requiredTech": ERA_TECH[era], "cost": ERA_COST[era],
                     "culture": 1, "uniques": [f"Only available <after adopting [{branch_name(p)}]>",
-                                              f"All newly-trained [Gu Master] units [in this city] receive the [{tier_name(p, 0)}] promotion"],
+                                              f"All newly-trained [Gu Master] units [in this city] receive the [{tier_name(p, 0)}] promotion"]
+                    + [OFF_PATH_HALL.format(c=c) for c, k in sig.items() if k != p["key"]],
                     "civilopediaText": [{"text": hall_pedia(p)[0]}]})
     return out
 

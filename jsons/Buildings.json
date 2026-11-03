@@ -2177,7 +2177,10 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Strength Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Strength Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Strength Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2192,7 +2195,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Transformation Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Transformation Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Transformation Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2207,7 +2214,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Bone Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Bone Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Bone Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2222,7 +2233,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Blood Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Blood Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Blood Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2237,7 +2252,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Sword Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Sword Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Sword Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2252,7 +2271,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Blade Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Blade Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Blade Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2267,7 +2290,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Metal Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Metal Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Metal Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2282,7 +2309,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Weapon Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Weapon Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Weapon Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2297,7 +2328,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Killing Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Killing Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Killing Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2312,7 +2347,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Fire Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Fire Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Fire Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2327,7 +2366,10 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Water Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Water Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Water Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2342,7 +2384,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Wood Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Wood Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Wood Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2357,7 +2403,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Earth Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Earth Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Earth Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2372,7 +2422,10 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Wind Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Wind Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Wind Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2387,7 +2440,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Cloud Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Cloud Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Cloud Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2402,7 +2459,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Ice Snow Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Ice Snow Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Ice Snow Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2417,7 +2478,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Lightning Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Lightning Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Lightning Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2432,7 +2497,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Poison Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Poison Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Poison Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2447,7 +2516,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Light Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Light Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Light Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2462,7 +2535,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Dark Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Dark Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Dark Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2477,7 +2554,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Shadow Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Shadow Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Shadow Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2492,7 +2573,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Star Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Star Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Star Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2507,7 +2592,10 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Moon Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Moon Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Moon Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2522,7 +2610,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Sound Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Sound Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Sound Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2537,7 +2629,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Illusion Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Illusion Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Illusion Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2552,7 +2648,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Wisdom Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Wisdom Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Wisdom Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2567,7 +2667,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Emotion Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Emotion Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Emotion Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2582,7 +2686,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Enchantment Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Enchantment Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Enchantment Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2597,7 +2705,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Soul Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Soul Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Soul Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2612,7 +2724,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Dream Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Dream Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Dream Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2627,7 +2743,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Enslavement Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Enslavement Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Enslavement Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2642,7 +2762,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Time Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Time Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Time Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2657,7 +2781,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Space Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Space Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Space Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2672,7 +2800,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Rule Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Rule Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Rule Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2687,7 +2819,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Phantom Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Phantom Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Phantom Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2702,7 +2838,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Restriction Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Restriction Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Restriction Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2717,7 +2857,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Luck Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Luck Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Luck Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2732,7 +2876,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Heaven Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Heaven Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Heaven Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2747,7 +2895,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Qi Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Qi Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Qi Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2762,7 +2914,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Refinement Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Refinement Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Refinement Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2777,7 +2933,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Formation Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Formation Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Formation Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2792,7 +2952,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Food Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Food Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Food Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2807,7 +2971,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Pill Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Pill Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Pill Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2822,7 +2990,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Information Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Information Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Information Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2837,7 +3009,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Human Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Human Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Human Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2852,7 +3028,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Painting Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Painting Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Painting Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -2867,7 +3047,11 @@
     "culture": 1,
     "uniques": [
       "Only available <after adopting [Theft Path]>",
-      "All newly-trained [Gu Master] units [in this city] receive the [Theft Master] promotion"
+      "All newly-trained [Gu Master] units [in this city] receive the [Theft Master] promotion",
+      "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
+      "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
     ],
     "civilopediaText": [
       {
