@@ -704,7 +704,7 @@
       "[-10]% Strength <for units with [Theft Master]> <hidden from users>",
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
-      "[This Unit] gains the [White Boar Gu] promotion <upon turn start> <for units without [White Boar Gu]> <for units without [White Jade Gu]>",
+      "[This Unit] gains the [White Boar Gu] promotion <upon turn start> <for units without [White Boar Gu]> <for units without [White Jade Gu]> <when above [1] [Wild Boar]> <with [25]% chance>",
       "[This Unit] takes [30] damage <upon losing the [White Boar Gu] promotion> <for units with [White Boar Gu Hunger 67%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Strength Path] Buildings]>",
       "Play [path-strength-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Strength Grandmaster]>",
