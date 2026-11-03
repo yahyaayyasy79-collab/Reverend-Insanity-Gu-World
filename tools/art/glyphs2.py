@@ -688,8 +688,8 @@ def inheritance_dig():
 
 
 def primeval_stone_icon(size=100):
-    """A coloured primeval stone (the Gold stat icon): a faceted gem in three tones with a dark rim, like the base
-    game's coloured stat icons."""
+    """A coloured primeval stone (the Gold stat icon): a faceted jade gem in a gold setting (the enamel-and-gold pass,
+    2026-11-03), bright enough to read at the top bar's 20 px."""
     from PIL import Image, ImageDraw
     k = 4
     n = size * k
@@ -697,13 +697,15 @@ def primeval_stone_icon(size=100):
     d = ImageDraw.Draw(im)
     P = lambda pts: [(x * n / 100, y * n / 100) for x, y in pts]  # noqa: E731
     outer = [(50, 6), (86, 30), (80, 74), (50, 94), (20, 74), (14, 30)]
-    d.polygon(P(outer), fill=(46, 70, 66))
-    inner = [(50, 12), (80, 32), (75, 71), (50, 88), (25, 71), (20, 32)]
-    d.polygon(P(inner), fill=(160, 205, 190))
-    d.polygon(P([(50, 12), (80, 32), (50, 44), (20, 32)]), fill=(232, 246, 238))      # top facet
-    d.polygon(P([(20, 32), (50, 44), (50, 88), (25, 71)]), fill=(196, 228, 214))      # left facet
-    d.polygon(P([(80, 32), (75, 71), (50, 88), (50, 44)]), fill=(122, 170, 156))      # right facet, in shade
-    d.polygon(P([(36, 22), (48, 18), (40, 30)]), fill=(255, 255, 255))                # glint
+    d.polygon(P(outer), fill=(84, 52, 14))                                             # the setting's dark edge
+    d.polygon(P([(50, 8), (84, 31), (79, 73), (50, 92), (21, 73), (16, 31)]), fill=(222, 176, 74))   # gold setting
+    d.polygon(P([(50, 8), (84, 31), (50, 20), (16, 31)]), fill=(250, 216, 128))         # its lit upper rim
+    inner = [(50, 14), (78, 33), (74, 70), (50, 86), (26, 70), (22, 33)]
+    d.polygon(P(inner), fill=(120, 196, 170))
+    d.polygon(P([(50, 14), (78, 33), (50, 45), (22, 33)]), fill=(222, 250, 236))      # top facet
+    d.polygon(P([(22, 33), (50, 45), (50, 86), (26, 70)]), fill=(168, 226, 204))      # left facet
+    d.polygon(P([(78, 33), (74, 70), (50, 86), (50, 45)]), fill=(74, 150, 128))       # right facet, in shade
+    d.polygon(P([(36, 24), (48, 20), (40, 31)]), fill=(255, 255, 255))                # glint
     return im.resize((size, size), Image.LANCZOS)
 
 

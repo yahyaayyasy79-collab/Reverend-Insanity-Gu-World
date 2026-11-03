@@ -1,20 +1,21 @@
-"""The Ink Night art pass (Phase D; the user chose style D and the full package, 2026-11-02).
+"""The mod's portraits and illustrations in jewel enamel and gold (the user chose style B, 2026-11-03: "mewah,
+simple, masih terbaca walau kecil"; before it, the Ink Night pass of 2026-11-02).
 
-Builds, from the mod's own designed silhouettes and 3D characters:
+Builds, from the mod's own designed silhouettes (and the 3D leader figures):
 
-* a full-colour portrait for every building, tech, resource, improvement, promotion and nation icon
-  (`Images.Portraits/<Type>Portraits/<name>.png`, 96 px), with one `Background.png` per type at the same size so Unciv
-  draws the portrait at full size instead of shrinking it into its white circle [src ui/images/Portrait.kt];
-  units have pixel-art diorama portraits (tools/art/pixelunits.py) set on an Ink Night background
-  (`Images.Units/UnitPortraits/Background.png`);
-* a splash screen for every wonder (`Images.Wonders/WonderImages/<name>.png`, 2:1);
-* the eight majors' leader portraits (`Images/LeaderIcons/<leader>.png`);
-* the victory illustrations (`Images.Victories/VictoryIllustrations/<victory>/...`);
-* Civilopedia icons for the unit types (`Images/UnitTypeIcons/<type>.png`).
+* a medallion portrait for every building, tech, resource, improvement, promotion and nation icon
+  (`Images.Portraits/<Type>Portraits/<name>.png`, 96 px): the shape in gold relief on enamel in the object's colour,
+  inside a gold bezel; one `Background.png` per type at the same size (a soft shadow) so Unciv draws the portrait at
+  full size instead of shrinking it into its white circle [src ui/images/Portrait.kt]; the units' diorama portraits
+  (tools/art/pixelunits.py) get the same shadow (`Images.Units/UnitPortraits/Background.png`);
+* a splash screen for every wonder (`Images.Wonders/WonderImages/<name>.png`, 2:1): an enamel dusk, a gold sun,
+  ridges edged in gold, the wonder's medallion, a double gold border;
+* the eight majors' leader portraits (`Images/LeaderIcons/<leader>.png`): the leader in gold on the nation's enamel;
+* the victory illustrations (tools/art/victories.py) and Civilopedia icons for the unit types.
 
 Policy icons stay flat white: Unciv tints them by state (pickable, adopted) [src PolicyPickerScreen.PolicyButton].
-Colours: a path's family colour for everything of a path (with its red seal), the era's essence colour for techs,
-the nation's brighter colour for nations, and a small fixed palette for the rest.
+Colours: a path's family colour for everything of a path, the era's essence colour for techs, the nation's brighter
+colour for nations, and a small fixed palette for the rest.
 """
 from __future__ import annotations
 
@@ -122,22 +123,15 @@ _JOBS: list = []
 
 
 def _render(i):
-    folder, name, draw, colour, seal_key = _JOBS[i]
-    from .pathart import symbol
-    im = P.ink_night(draw(), colour, key=name, seal=symbol(seal_key) if seal_key else None, part="figure")
-    return i, im.resize((PX, PX), Image.LANCZOS).tobytes()
-
-
-# each portrait type's backdrop colour (the ensō and the disc's glow); the object's own colour is its glowing shape
-TYPE_COLOUR = {"BuildingPortraits": (225, 185, 105), "TechPortraits": (120, 175, 230), "ResourcePortraits": (130, 200, 150),
-               "ImprovementPortraits": (200, 170, 120), "UnitPromotionPortraits": (200, 190, 165),
-               "NationPortraits": (215, 205, 185), "UnitPortraits": (190, 180, 160)}
+    folder, name, draw, colour, _ = _JOBS[i]
+    return i, P.enamel(draw(), colour).resize((PX, PX), Image.LANCZOS).tobytes()
 
 
 def background(px: int, ptype: str = "UnitPortraits") -> Image.Image:
-    """The Ink Night disc with its ensō: what Unciv draws behind every portrait of a type."""
+    """What Unciv draws behind every portrait of a type: a soft shadow that grounds the medallions (and the units'
+    diorama hexes) on any screen."""
     from .glyphs import G
-    return P.ink_night(G(), TYPE_COLOUR[ptype], key="background " + ptype, part="backdrop").resize((px, px), Image.LANCZOS)
+    return P.enamel(G(), (0, 0, 0), part="backdrop").resize((px, px), Image.LANCZOS)
 
 
 def portraits(registry, mod: Path, save) -> int:
@@ -163,124 +157,70 @@ def portraits(registry, mod: Path, save) -> int:
 
 
 # ---------------------------------------------------------------- wonder splash screens (2:1)
-def splash(draw, colour, key, seal=None, w=256, h=128) -> Image.Image:
-    """An ink landscape at night: layered ridges in mist, a moon, the wonder's shape glowing in an ensō."""
+def splash(draw, colour, key, w=256, h=128) -> Image.Image:
+    """An enamel screen: the wonder's colour as a dusk sky, a gold sun in a ring, three ridges edged in gold, the
+    wonder's medallion, a double gold border."""
     rng = P._rng("splash" + key)
     W, H = w * 2, h * 2
     yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
-    sky = np.dstack([np.full((H, W), c, np.float32) for c in (0.05, 0.06, 0.12)])
-    sky += (yy / H)[..., None] * np.asarray([0.08, 0.07, 0.10], np.float32)
-    col = np.asarray(colour, np.float32) / 255.0
-    mx, my = rng.uniform(0.12, 0.3) * W, rng.uniform(0.18, 0.32) * H
-    d = np.hypot(xx - mx, yy - my)
-    moon = np.clip((H * 0.07 - d) / 2, 0, 1)
-    sky += np.clip(1 - d / (H * 0.35), 0, 1)[..., None] ** 2 * col * 0.25
-    img = sky * (1 - moon[..., None]) + moon[..., None] * np.asarray([0.95, 0.93, 0.85], np.float32)
-    for layer in range(4):   # ridges, far (pale, misty, tinted) to near (dark ink)
-        base = H * (0.50 + 0.12 * layer)
-        amp = H * (0.18 - 0.03 * layer)
-        xs = np.arange(W, dtype=np.float32)
-        ridge = base - amp * (np.sin(xs / W * math.pi * rng.uniform(1.5, 3.5) + rng.uniform(0, 6)) * 0.6
-                              + np.sin(xs / W * math.pi * rng.uniform(5, 9) + rng.uniform(0, 6)) * 0.3
-                              + (rng.random(W) - 0.5).cumsum() / W * 4)
+    c = np.asarray(colour, np.float32) / 255.0
+    t = (yy / H)[..., None]
+    img = (c * 0.2)[None, None, :] * (1 - t) + (c * 0.5)[None, None, :] * t
+    sx, sy, sr = W * rng.uniform(0.14, 0.3), H * rng.uniform(0.24, 0.34), H * 0.085
+    d = np.hypot(xx - sx, yy - sy)
+    sun, ring = np.clip(sr - d, 0, 1), np.clip(1 - np.abs(d - sr * 1.5) / 1.4, 0, 1) * 0.8
+    img = img * (1 - sun[..., None]) + sun[..., None] * P.gold_ramp(np.clip(0.95 - (yy - sy + sr) / (sr * 4), 0, 1))
+    img = img * (1 - ring[..., None]) + ring[..., None] * P.gold_ramp(np.full_like(d, 0.7))
+    xs = np.arange(W, dtype=np.float32)
+    for layer in range(3):   # far to near, darker, each crest a gold line
+        base, amp = H * (0.58 + 0.13 * layer), H * (0.16 - 0.035 * layer)
+        ridge = base - amp * (np.sin(xs / W * math.pi * rng.uniform(1.4, 2.6) + rng.uniform(0, 6)) * 0.7
+                              + np.sin(xs / W * math.pi * rng.uniform(4, 7) + rng.uniform(0, 6)) * 0.3)
         mask = (yy > ridge[None, :]).astype(np.float32)
-        far = 1 - layer / 3                                                # 1 far .. 0 near
-        tone = np.asarray([0.30, 0.31, 0.38], np.float32) * far + np.asarray([0.05, 0.05, 0.07], np.float32) * (1 - far)
-        tone = tone + col * 0.10 * far
-        depth = np.clip((yy - ridge[None, :]) / (H * 0.22), 0, 1)        # mist pooling at each ridge's foot
-        shade = tone[None, None, :] * (1.15 - 0.45 * depth[..., None]) + (0.10 * far) * (1 - depth[..., None])
-        img = img * (1 - mask[..., None]) + shade * mask[..., None]
-        band = np.exp(-((yy - (base + H * 0.06)) / (H * 0.035)) ** 2) * 0.18 * far   # a mist band
-        img = img + band[..., None] * np.asarray([0.75, 0.78, 0.85], np.float32)
+        img = img * (1 - mask[..., None]) + (c * (0.42 - 0.1 * layer))[None, None, :] * mask[..., None]
+        crest = np.clip(1 - np.abs(yy - ridge[None, :]) / (1.2 + 0.5 * layer), 0, 1) * 0.9
+        img = img * (1 - crest[..., None]) + crest[..., None] * P.gold_ramp(np.full_like(yy, 0.55 + 0.12 * layer))
     rgb = Image.fromarray((np.clip(img, 0, 1) * 255).astype(np.uint8), "RGB").convert("RGBA")
-    emblem = P.ink_night(draw(), colour, key=key, seal=seal).resize((int(H * 0.86), int(H * 0.86)), Image.LANCZOS)
-    rgb.alpha_composite(emblem, (int(W * 0.62 - emblem.width / 2), int(H * 0.07)))
+    medal = P.enamel(draw(), colour).resize((int(H * 0.84), int(H * 0.84)), Image.LANCZOS)
+    rgb.alpha_composite(medal, (int(W * 0.66 - medal.width / 2), int(H * 0.08)))
+    d = ImageDraw.Draw(rgb)
+    d.rounded_rectangle([3, 3, W - 4, H - 4], radius=16, outline=(222, 176, 74, 255), width=4)
+    d.rounded_rectangle([12, 12, W - 13, H - 13], radius=10, outline=(150, 104, 34, 255), width=2)
     edge = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(edge).rounded_rectangle([2, 2, W - 3, H - 3], radius=14, fill=255)
+    ImageDraw.Draw(edge).rounded_rectangle([2, 2, W - 3, H - 3], radius=16, fill=255)
     rgb.putalpha(edge)
     return rgb.resize((w, h), Image.LANCZOS)
 
 
 # ---------------------------------------------------------------- leader portraits
-LEADER_LOOK = {   # nation: (scene builder, path symbol for the seal)
+LEADER_LOOK = {   # nation: (figure, rank)
     "Gu Yue Clan": ("moon", 4), "Bai Clan": ("water", 4), "Xiong Clan": ("strength", 4), "Wu Clan": ("wind", 4),
     "Heavenly Court": ("immortal", 8), "Huang Jin Family": ("immortal", 6), "Zombie Alliance": ("zombie", 6),
     "Fang Clan": ("plain", 5)}
-SEAL_OF = {"Gu Yue Clan": "moon", "Bai Clan": "water", "Xiong Clan": "strength", "Wu Clan": "wind",
-           "Heavenly Court": "heaven", "Huang Jin Family": "human", "Zombie Alliance": "transformation",
-           "Fang Clan": "refinement"}
 
 
 def leader(nation: dict, px=256) -> Image.Image:
-    """An ink silhouette of the clan's leader, rim-lit in the nation's colour, before a great moon inside an ensō."""
-    from PIL import ImageFilter
+    """The clan's leader in gold relief on an enamel medallion in the nation's colour, a pale moon behind."""
     from . import characters as C
     from . import render3d
-    from .pathart import symbol
     kind, rank = LEADER_LOOK[nation["name"]]
     build = {"moon": lambda: C.gu_master(rank, "Moon"), "water": lambda: C.gu_master(rank, "Water"),
              "strength": lambda: C.gu_master(rank, "Strength"), "wind": lambda: C.gu_master(rank, "Wind"),
              "immortal": lambda: C.gu_immortal(rank), "zombie": C.immortal_zombie,
              "plain": lambda: C.gu_master(rank, None)}[kind]
-    fig = render3d.render(build(), size=(px * 2, px * 2), scale=2.7, center=(0.0, 1.05), yaw=24, elevation=8,
+    S = px * 2
+    fig = render3d.render(build(), size=(S, S), scale=2.7, center=(0.0, 1.05), yaw=24, elevation=8,
                           shadow=False, layers=False)["base"]
     a = np.asarray(fig.getchannel("A"), np.float32) / 255.0
     colour = _bright(max((tuple(nation[k]) for k in ("innerColor", "outerColor")),
                          key=lambda c: 0.3 * c[0] + 0.59 * c[1] + 0.11 * c[2]))
-    S = px * 2
-    from .glyphs import G
-    bg = P.ink_night(G(), colour, key="leader" + nation["name"]).resize((S, S), Image.LANCZOS)
+    inside = P._disc(S, 0.44, 1.2)
     yy, xx = np.mgrid[0:S, 0:S].astype(np.float32)
-    d = np.hypot(xx - S * 0.5, yy - S * 0.42)
-    moon = np.clip((S * 0.27 - d) / 3, 0, 1)
-    glow = np.clip(1 - d / (S * 0.5), 0, 1) ** 2
-    col = np.asarray(colour, np.float32) / 255.0
-    base = np.asarray(bg, np.float32)[..., :3] / 255.0
-    base = base + glow[..., None] * col * 0.35
-    base = base * (1 - moon[..., None]) + moon[..., None] * (0.72 + 0.28 * col)
-    # silhouette with a rim of light on the moon side (up), a faint inner sheen
-    er = np.asarray(fig.getchannel("A").filter(ImageFilter.MinFilter(7)), np.float32) / 255.0
-    shifted = np.asarray(fig.getchannel("A").transform((S, S), Image.AFFINE, (1, 0, 0, 0, 1, 6)), np.float32) / 255.0
-    rim = np.clip(a - np.minimum(er, shifted), 0, 1)
-    ink = np.asarray([0.06, 0.06, 0.08], np.float32)
-    out = base * (1 - a[..., None]) + a[..., None] * ink[None, None, :]
-    out = out + rim[..., None] * (0.55 * col + 0.45)
-    disc = Image.new("L", (S, S), 0)
-    ImageDraw.Draw(disc).ellipse([S * 0.03, S * 0.03, S * 0.97, S * 0.97], fill=255)
-    im = Image.fromarray((np.clip(out, 0, 1) * 255).astype(np.uint8), "RGB").convert("RGBA")
-    alpha = np.minimum(np.asarray(bg.getchannel("A")), np.asarray(disc))
-    im.putalpha(Image.fromarray(alpha.astype(np.uint8), "L"))
-    enso = P.ink_night(G(), colour, key="leader" + nation["name"], seal=symbol(SEAL_OF[nation["name"]])).resize((S, S), Image.LANCZOS)
-    ea = np.asarray(enso, np.float32) / 255.0
-    ring = np.clip((_radial_s(S) - 0.72) * 6, 0, 1)                        # keep the ensō and seal, not the disc
-    seal_zone = ((xx > S * 0.6) & (yy > S * 0.6)).astype(np.float32)
-    keep = np.maximum(ring, seal_zone * (ea[..., 0] > 0.5) * (ea[..., 1] < 0.4))
-    over = Image.fromarray((ea * 255).astype(np.uint8), "RGBA")
-    over.putalpha(Image.fromarray((ea[..., 3] * keep * 255).astype(np.uint8), "L"))
-    im.alpha_composite(over)
-    return im.resize((px, px), Image.LANCZOS)
-
-
-def _radial_s(S):
-    yy, xx = np.mgrid[0:S, 0:S].astype(np.float32)
-    return np.hypot(xx - S / 2, yy - S / 2) / (S / 2)
-
-
-# ---------------------------------------------------------------- victory illustrations
-def victory(kind: str, state: str, w=400, h=240) -> Image.Image:
-    """kind: the victory's symbol path key; state: 'bg', 'milestone', 'won' or 'lost'."""
-    from .glyphs import G
-    from .pathart import symbol
-    colour = {"bg": (190, 180, 160), "milestone": (235, 200, 105), "won": (255, 215, 120), "lost": (150, 150, 165)}[state]
-    g = symbol(kind) if state != "bg" else G()
-    im = splash(lambda: g, colour, key=f"victory {kind} {state}", w=w, h=h)
-    if state == "lost":
-        im = Image.blend(im, Image.new("RGBA", im.size, (20, 20, 26, 255)), 0.45)
-        im.putalpha(splash(lambda: g, colour, key=f"victory {kind} {state}", w=w, h=h).getchannel("A"))
-    return im
-
-
-VICTORY_SYMBOL = {"Southern Border Supremacy": "killing", "Endurance": "time", "Eternal Life": "heaven"}
+    moon = np.clip((S * 0.27 - np.hypot(xx - S * 0.5, yy - S * 0.4)) / 2, 0, 1) * 0.3
+    layers = [(P.enamel_fill(colour, S), P._disc(S, 0.447, 1.2)), (np.ones((S, S, 3), np.float32), moon * inside)]
+    P.gold_bezel(layers, S)
+    P.gold_figure(layers, a, size=S, clip=inside, outline=4)
+    return P._compose(layers).resize((px, px), Image.LANCZOS)
 
 
 def unit_type_icon(utype: str) -> Image.Image:
@@ -297,19 +237,56 @@ def unit_type_icon(utype: str) -> Image.Image:
     else:   # Gu Master and the two legacy types
         human(g, 40, 8, 1.2, arms="raised"); gu_beetle(g, 76, 22, 0.6, legs=False)
     colour = {"Beast": (215, 120, 90), "Gu House": (215, 190, 120), "Civilian": (190, 200, 210)}.get(utype, (150, 210, 180))
-    return P.ink_night(g, colour, key=utype).resize((PX, PX), Image.LANCZOS)   # Civilopedia shows it as it is
+    return P.enamel(g, colour).resize((PX, PX), Image.LANCZOS)   # Civilopedia shows it as it is
+
+
+def preview(registry, mod: Path) -> Image.Image:
+    """The mod manager's banner (512 x 256): the Spring Autumn Cicada's medallion, the title in gold, the four signature
+    paths' medallions, a double gold border on jade enamel."""
+    from PIL import ImageFont
+    from .pathart import symbol
+    W, H = 1024, 512
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+    glow = np.clip(1 - np.hypot((xx - W * 0.3) / W, (yy - H * 0.45) / H) * 1.8, 0, 1)[..., None]
+    deep, light = np.asarray((14, 44, 44), np.float32) / 255, np.asarray((40, 112, 100), np.float32) / 255
+    img = Image.fromarray((np.clip(deep * (1 - glow) + light * glow, 0, 1) * 255).astype(np.uint8), "RGB").convert("RGBA")
+    cicada = next(d for f, n, d, _ in registry if n == "Spring Autumn Cicada")
+    medal = P.enamel(cicada(), (110, 200, 150)).resize((400, 400), Image.LANCZOS)
+    img.alpha_composite(medal, (60, 40))
+    font = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
+    for text, size, y in (("REVEREND INSANITY", 40, 128), ("Gu World", 92, 186)):
+        f = ImageFont.truetype(font, size)
+        box = ImageDraw.Draw(img).textbbox((0, 0), text, font=f)
+        x = 728 - (box[2] - box[0]) / 2
+        mask = Image.new("L", (W, H), 0)
+        ImageDraw.Draw(mask).text((x, y), text, font=f, fill=255)
+        outline = Image.new("L", (W, H), 0)
+        ImageDraw.Draw(outline).text((x, y), text, font=f, fill=255, stroke_width=4, stroke_fill=255)
+        shade = np.clip(0.95 - (yy - y) / (size * 1.4), 0.2, 1)
+        gold = Image.fromarray((P.gold_ramp(shade) * 255).astype(np.uint8), "RGB").convert("RGBA")
+        gold.putalpha(mask)
+        dark = Image.new("RGBA", (W, H), (28, 18, 8, 255))
+        dark.putalpha(outline)
+        img.alpha_composite(dark)
+        img.alpha_composite(gold)
+    for i, (k, col) in enumerate((("moon", (120, 150, 230)), ("water", (90, 170, 220)), ("strength", (200, 110, 80)),
+                                  ("wind", (130, 200, 150)))):
+        m = P.enamel(symbol(k), col).resize((92, 92), Image.LANCZOS)
+        img.alpha_composite(m, (int(728 - 2 * 104 + 6 + i * 104), 345))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([6, 6, W - 7, H - 7], radius=26, outline=(222, 176, 74, 255), width=8)
+    d.rounded_rectangle([22, 22, W - 23, H - 23], radius=18, outline=(150, 104, 34, 255), width=3)
+    return img.resize((512, 256), Image.LANCZOS).convert("RGB")
 
 
 def build(registry, mod: Path, save) -> int:
     written = portraits(registry, mod, save)
     pal = Palette(mod)
-    from .pathart import symbol
     draws = {name: draw for folder, name, draw, _ in registry if folder == "BuildingIcons"}
     for name in sorted(pal.wonders):
         if name in draws:
             colour, k = pal("BuildingIcons", name)
-            written += save(splash(draws[name], colour, name, seal=symbol(k) if k else None),
-                            mod / "Images.Wonders" / "WonderImages" / f"{name}.png")
+            written += save(splash(draws[name], colour, name), mod / "Images.Wonders" / "WonderImages" / f"{name}.png")
     nations = json.loads((mod / "jsons" / "Nations.json").read_text(encoding="utf-8"))
     for n in nations:
         if n.get("leaderName") and n["name"] in LEADER_LOOK:
@@ -319,4 +296,5 @@ def build(registry, mod: Path, save) -> int:
     units = json.loads((mod / "jsons" / "Units.json").read_text(encoding="utf-8"))
     for t in sorted({u["unitType"] for u in units}):
         written += save(unit_type_icon(t), mod / "Images" / "UnitTypeIcons" / f"{t}.png")
+    written += save(preview(registry, mod), mod / "preview.png")
     return written

@@ -106,6 +106,12 @@ in LORE_MAPPING.md.
   AbsoluteUnits and HexaRealm unit sets, 32x28 for FantasyHex, civ layers kept; no grass frame on map sprites (it
   would hide the terrain; the user chose it after a mockup), diorama portraits with the frame (144 px, Background
   too); pixel attack frames per unit. render3d/characters now only draw the leader silhouettes.
+  Fifth pass (user 2026-11-03: everything else "mewah, simple, masih terbaca walau kecil", and better sounds): style
+  B "jewel enamel and gold" chosen from a 3-way study (A lacquer, B enamel, C white jade) for portraits (`portrait.enamel`:
+  gold shape at 70% on enamel in the object's colour, gold bezel, no texture or seal; Backgrounds are a soft shadow),
+  splashes, leaders, victories, unit type icons, stone icon, `preview.png`; sounds rebuilt as Chinese instruments
+  (`sfx.py`: guqin, pipa, dizi, xiao, erhu, bianzhong, gongs, cymbals, drums, woodblocks; hall; loudness measured above
+  180 Hz for phone speakers; 32 kHz; same file names).
 * Tuning (user, round 4): autoplay decides, with the Strategic Balance resource option ON; no manual tuning before the
   data exists. The autoplay's rank-1 hunger death rate is the reference for raising the rank-1 threshold (2 turns →
   3 or 4) if the trade economy collapses too fast.

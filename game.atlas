@@ -1189,7 +1189,7 @@ TileSets/FantasyHex/Tiles/Dang Hun Mountain
   index: -1
 TileSets/FantasyHex/Tiles/Door of Life and Death
   rotate: false
-  xy: 1552, 434
+  xy: 1408, 422
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
@@ -1210,70 +1210,70 @@ TileSets/FantasyHex/Tiles/Hu Immortal Blessed Land
   index: -1
 TileSets/FantasyHex/Tiles/Imperial Court Blessed Land
   rotate: false
-  xy: 1552, 396
+  xy: 1984, 1920
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Lang Ya Blessed Land
   rotate: false
-  xy: 1984, 1916
+  xy: 1984, 1878
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Licorice Wall
   rotate: false
-  xy: 1984, 1876
+  xy: 1984, 1838
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Luo Po Valley
   rotate: false
-  xy: 1336, 361
+  xy: 1408, 381
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Miasma Wall
   rotate: false
-  xy: 1984, 1836
+  xy: 1448, 424
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Raging Flame Wall
   rotate: false
-  xy: 1592, 422
+  xy: 1448, 382
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Reverse Flow River
   rotate: false
-  xy: 1632, 423
+  xy: 1488, 435
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/River of Time
   rotate: false
-  xy: 1672, 428
+  xy: 1488, 399
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Sage Wall
   rotate: false
-  xy: 1712, 428
+  xy: 1488, 359
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tian Ti Mountain
   rotate: false
-  xy: 1752, 423
+  xy: 1448, 339
   size: 32, 35
   orig: 32, 35
   offset: 0, 0
@@ -1287,35 +1287,35 @@ TileSets/HexaRealm/Tiles/Azure Water Wall
   index: -1
 TileSets/HexaRealm/Tiles/Book Mountain
   rotate: false
-  xy: 1264, 466
+  xy: 1948, 590
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Crazed Demon Cave
   rotate: false
-  xy: 1336, 466
+  xy: 1264, 466
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Dang Hun Mountain
   rotate: false
-  xy: 1408, 466
+  xy: 1336, 466
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Door of Life and Death
   rotate: false
-  xy: 1480, 464
+  xy: 1408, 464
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Dragon Whale Paradise
   rotate: false
-  xy: 1552, 476
+  xy: 1480, 476
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -1336,63 +1336,63 @@ TileSets/HexaRealm/Tiles/Imperial Court Blessed Land
   index: -1
 TileSets/HexaRealm/Tiles/Lang Ya Blessed Land
   rotate: false
-  xy: 1624, 464
+  xy: 1552, 464
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Licorice Wall
   rotate: false
-  xy: 1696, 468
+  xy: 1624, 468
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Luo Po Valley
   rotate: false
-  xy: 1768, 466
+  xy: 1696, 466
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Miasma Wall
   rotate: false
-  xy: 1840, 468
+  xy: 1768, 468
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Raging Flame Wall
   rotate: false
-  xy: 1192, 390
+  xy: 1840, 464
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Reverse Flow River
   rotate: false
-  xy: 1264, 392
+  xy: 1948, 516
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/River of Time
   rotate: false
-  xy: 1336, 402
+  xy: 1192, 402
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Sage Wall
   rotate: false
-  xy: 1408, 394
+  xy: 1264, 394
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Tiles/Tian Ti Mountain
   rotate: false
-  xy: 1480, 386
+  xy: 1336, 388
   size: 64, 70
   orig: 64, 70
   offset: 0, 0
@@ -2106,14 +2106,14 @@ UnitTypeIcons/Gu Master
   index: -1
 UnitTypeIcons/Moon Gu Master
   rotate: false
-  xy: 1948, 560
+  xy: 1948, 664
   size: 96, 96
   orig: 96, 96
   offset: 0, 0
   index: -1
 UnitTypeIcons/Strength Gu Master
   rotate: false
-  xy: 1948, 456
+  xy: 1948, 664
   size: 96, 96
   orig: 96, 96
   offset: 0, 0

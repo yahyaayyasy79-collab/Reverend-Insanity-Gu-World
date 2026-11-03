@@ -65,35 +65,97 @@ written in HexaRealm pixels (the mask, shading and outline helpers of `pixeltile
   Every unit has its own frames, so the old frames per unit type are gone.
 * Limits: Unciv has no idle, walking or death animation; an attack effect plays on the unit that takes the damage.
 
-## Sounds (Phase D, 2026-11-02)
+## Sounds: Chinese instruments (2026-11-03)
 
-All sounds are synthesized from code by `tools/art/sfx.py`: numpy builds them from noise, tones, metallic partials,
-plucked strings and clicks, and ffmpeg encodes them as Ogg Vorbis (mono, 22 kHz, about 2 MB in all). Nothing is
-sampled or copied. `tools/gen_art.py` writes them to `sounds/`. The build is bit-exact, so an unchanged sound keeps
-its bytes. An attack layers:
+The user asked for better, clearer sounds that stay readable, and chose the voice of Chinese instruments. All sounds
+are synthesized from code by `tools/art/sfx.py` with instrument models, and ffmpeg encodes them as Ogg Vorbis (mono,
+32 kHz). Nothing is sampled or copied. `tools/gen_art.py` writes them to `sounds/`. The build is bit-exact, so an
+unchanged sound keeps its bytes. The file names did not change, so the rules still find them.
+
+* **Instruments.**
+  * Strings (Karplus-Strong with a wooden body): the warm guqin and the bright pipa.
+  * Winds (additive, with breath noise): the dizi, with its membrane's buzz, and the soft xiao.
+  * The bowed erhu, its harmonics shaped by formants.
+  * Bronze: bianzhong two-tone bells, gongs whose pitch sinks (the great gong) or rises (the small gong), stone
+    chimes, nao/bo cymbals.
+  * Tanggu and dagu drums, and muyu woodblocks.
+  * Melodic notes keep to the pentatonic scale on D.
+* **Mixing.** Every sound gets a hall reverb (early reflections, a tail whose highs die first), a 45 Hz low cut and a
+  9 kHz top cut, and a soft limiter. Loudness is set per kind by RMS, measured above 180 Hz as a phone speaker plays
+  it, so a bass-heavy drum is not too quiet on Android.
+  * Rank body: -17 dB.
+  * Paths: -19 to -16 dB by tier.
+  * Dao bells: -24 to -20 dB, soft, since they ring on every attack.
+  * Killer moves and combos: -16 dB.
+
+An attack layers:
 
 | Layer | File | Plays when | Scales with |
 |---|---|---|---|
-| Body | `gu-rank-<1..9>` | the unit's `attackSound`, every attack | rank: deeper, longer, wider; immortals add a qi hum, the Venerable a choir and thunder |
-| Path | `path-<key>-<1..4>` | Play-sound unique on the attainment tier held, on each attack (only the highest tier plays) | attainment: Master is the path's own timbre (47 recipes); Grandmaster adds an echo strike; Great Grandmaster a sub thump and space; Supreme a shimmer and a long tail |
-| Dao | `dao-<1..5>` | Play-sound unique on Dao Marks I-V, on each attack | dao marks: one bell, brighter and fuller up to a three-bell chord |
-| Gu attack | `move-<key>`, `move-<key>-immortal` | Play-sound unique when a killer move is used | a rising swell into the Great Grandmaster or Supreme strike; the immortal move adds a falling sub drop |
+| Body | `gu-rank-<1..9>` | the unit's `attackSound`, every attack | rank: a tanggu for rank one, growing to the great dagu; immortals add a gong; the Venerable a sinking great gong and a chord of bronze bells |
+| Path | `path-<key>-<1..4>` | Play-sound unique on the attainment tier held, on each attack (only the highest tier plays) | attainment: Master is the path's own instrument (47 recipes); Grandmaster adds an echo strike; Great Grandmaster a great drum and a hall; Supreme a gong, a shimmer of bells and a long tail |
+| Dao | `dao-<1..5>` | Play-sound unique on Dao Marks I-V, on each attack | dao marks: one small bianzhong bell up to a chord of three |
+| Gu attack | `move-<key>`, `move-<key>-immortal` | Play-sound unique when a killer move is used | a cymbal roll swelling into the Great Grandmaster or Supreme strike; the immortal move adds a great gong |
 
-Each path's timbre names its character. Some examples:
+The Gu catalog's awakening sounds (`gu-<name>`) give each Gu its own voice before its path's strike:
 
-* fire: whoosh and crackle;
-* ice: crystal ping and crack;
-* lightning: falling FM zap and sparks;
-* sword: bright swish and ring;
-* sound: plucked qin and gong;
-* time: tick-tock and swell;
-* luck: coin chimes;
-* heaven: chord and thunder.
+* winged Gu: a pipa tremolo;
+* crawling Gu: woodblock clicks;
+* crystal and flower Gu: a chime;
+* blade and shell Gu: a small gong;
+* flowing Gu: a xiao's breath.
 
-The recipes are the `PATHS` table in `sfx.py`. Play-sound uniques sound only for a human player (CAPABILITIES E11).
+Immortal Gu add the dao bells. The combination moves (`combo-<name>`) play both Gu's path strikes a beat apart after
+a cymbal swell.
+
+Each path's instrument names its character. Some examples:
+
+* strength: the great drum and a low gong;
+* sword: a swish into a high pipa note and a chime;
+* water: a guqin note and water drops;
+* wind: a dizi's swoop;
+* moon: a xiao note and a bell;
+* time: woodblock tick-tock and a bell;
+* heaven: a chord of bells over the great gong;
+* dream: a guzheng-like run;
+* luck: tinkling chimes.
+
+The recipes are `path_core()` in `sfx.py`. Play-sound uniques sound only for a human player (CAPABILITIES E11).
 `check_refs` fails on any sound the rules name without a file, and warns on files nothing plays.
 
-## Ink Night: portraits, splash screens, leaders, victories (Phase D, 2026-11-02)
+## Jewel enamel and gold: portraits, splash screens, leaders, victories (2026-11-03)
+
+The user asked for every image except the units, the terrain and the attack effects to be redone: luxurious, simple,
+and readable even when small. From a three-way study (A black lacquer and gold, B jewel enamel and gold, C white jade
+and gold) the user chose B. The Ink Night pass below is the history it replaces.
+
+* **Portraits** (1,002, 96 px, `portrait.enamel` in `tools/art/portrait.py`, built by `tools/art/inkpass.py`): a disc
+  of enamel in the object's own colour, brighter toward the top left with a soft gloss. The object's designed shape is
+  in gold relief on it, with a drop shadow and a dark outline, inside a thin gold bezel.
+  * There is no texture, brush stroke or seal.
+  * The shape fills 70% of the disc, up from 62%, so it reads at 32 px.
+  * The colour carries the meaning, as before: a path's family colour, the era's essence colour for techs, the
+    nation's colour, amber for hunger, red for debuffs.
+* **Backgrounds.** Each type's `Background.png` is only a soft shadow now: Unciv still draws the portrait at full size
+  [src ui/images/Portrait.kt], and the medallion carries its own colour. The units' diorama portraits get the same
+  shadow.
+* **Wonder splash screens** (87, 256 × 128): an enamel dusk in the wonder's colour, a gold sun in a ring, three ridges
+  each edged in gold, the wonder's medallion, a double gold border.
+* **Leaders** (8): the leader's figure in gold relief on an enamel medallion in the nation's colour, a pale moon behind.
+* **Victories:** the same layered scenes as before, in flat enamel skies and ridges with every crest and edge in gold,
+  gold stars and moons:
+  * a crimson dusk for Supremacy, deep teal for Endurance, royal purple for Eternal Life;
+  * banners, sundial, gate, river and stair in gold and red enamel;
+  * won is golden rays and a gold frame, lost a dark veil with a broken gold ring.
+
+  The tab icons are medallions too.
+* **Unit types, the primeval stone and the mod's banner.**
+  * Unit type icons are medallions.
+  * The primeval-stone stat icon is a jade gem in a gold setting.
+  * The mod manager's banner (`preview.png`) has the Spring Autumn Cicada's medallion, the title in gold, and the
+    four signature paths' medallions on jade enamel.
+
+## Ink Night (Phase D, 2026-11-02; replaced by enamel and gold on 2026-11-03)
 
 The user asked for the whole mod's look to be "100x better" and picked style D, Ink Night, from a four-way style
 study (ink and jade, bronze medallion, spirit glow, ink night), with the full package.

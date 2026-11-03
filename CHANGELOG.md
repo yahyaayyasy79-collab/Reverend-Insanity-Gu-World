@@ -920,3 +920,31 @@ You asked for all units, closer to the novel, in the HexaRealm / FantasyHex pixe
   * the Unit set option;
   * a Civilopedia unit page;
   * an attack.
+
+## Phase D — enamel and gold for every image, Chinese instruments for every sound (2026-11-03)
+
+You asked for everything except the units, the terrain and the attack effects to look better: luxurious, simple,
+readable even when small. You also asked for better sound effects. You chose style B (jewel enamel and gold) from three
+candidates and the voice of Chinese instruments.
+
+* **1,002 portraits are medallions now:** the object's shape in gold relief on enamel in its own colour, in a thin gold
+  bezel.
+  * No brush texture and no seal.
+  * The shape is larger (70% of the disc), so it reads at 32 px.
+  * The colour still tells the path, era or kind.
+* **Wonders, leaders, victories, unit types.**
+  * Wonder splash screens are enamel dusks with gold-edged ridges and the wonder's medallion.
+  * Leaders are gold figures on their nation's enamel.
+  * Victory scenes are flat enamel and gold: crimson, teal and purple.
+  * Unit type icons and the victory tabs are medallions.
+* **Small things.** The primeval stone sits in a gold setting. The mod manager shows a real banner instead of the
+  placeholder.
+* **All 612 sounds are rebuilt with Chinese instrument models,** under the same names: guqin, pipa, dizi, xiao,
+  erhu, bianzhong bells, gongs, cymbals, tanggu and dagu drums, woodblocks.
+  * Every sound gets a hall reverb and a soft limiter.
+  * Volume is even per kind, measured the way a phone speaker plays it.
+  * 32 kHz instead of 22 kHz, so bells and cymbals are clearer.
+* **What to check in game:**
+  * the promotion picker, the tech tree, the city screen and the Civilopedia at your phone's size;
+  * a wonder's completion splash, the diplomacy screen and the victory tab;
+  * a few battles with sound on.
