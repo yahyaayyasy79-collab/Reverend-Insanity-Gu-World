@@ -2986,6 +2986,7 @@
     "uniques": [
       "[+35]% Strength",
       "[2] Movement",
+      "[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
       "Supreme Attainment",
       "Play [path-wind-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -2993,7 +2994,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Wind path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +2 movement."
+        "text": "Wind path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +2 movement; domain: enemies beside it fight 15% weaker."
       }
     ],
     "prerequisites": [
@@ -3150,6 +3151,7 @@
       "[+35]% Strength",
       "[1] Movement",
       "Ignores Zone of Control",
+      "[+40]% Strength <when defending>",
       "Supreme Attainment",
       "Play [path-cloud-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -3157,7 +3159,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Cloud path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +1 movement; ignores zones of control."
+        "text": "Cloud path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +1 movement; ignores zones of control; +40% strength when defending."
       }
     ],
     "prerequisites": [
@@ -4269,6 +4271,7 @@
     "uniques": [
       "[+35]% Strength",
       "[4] Sight",
+      "Before engaging in combat performs an extra ranged attack with [50]% of melee combat strength",
       "Supreme Attainment",
       "Play [path-star-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -4276,7 +4279,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Star path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +4 sight."
+        "text": "Star path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +4 sight; strikes first from range at 50% strength."
       }
     ],
     "prerequisites": [
@@ -5331,6 +5334,7 @@
     "uniques": [
       "[+35]% Strength",
       "[This Unit] gains [20] XP <upon defeating a [Military] unit>",
+      "[Target Unit] takes [10] damage <upon entering combat>",
       "Supreme Attainment",
       "Play [path-soul-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -5338,7 +5342,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Soul path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 20 XP per kill."
+        "text": "Soul path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: 20 XP per kill; whoever fights it takes 10 damage."
       }
     ],
     "prerequisites": [
@@ -5478,6 +5482,7 @@
     "uniques": [
       "[+35]% Strength",
       "[+100]% XP gained from combat",
+      "[Target Unit] gains the [Soul-Torn] status for [3] turn(s) <upon entering combat>",
       "Supreme Attainment",
       "Play [path-dream-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -5485,7 +5490,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Dream path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +100% battle XP."
+        "text": "Dream path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +100% battle XP; whoever fights it suffers Soul-Torn for 3 turns."
       }
     ],
     "prerequisites": [
@@ -5912,6 +5917,7 @@
     "uniques": [
       "[+35]% Strength",
       "[2] Movement",
+      "Before engaging in combat performs an extra ranged attack with [40]% of melee combat strength",
       "Can pass through impassable tiles",
       "Supreme Attainment",
       "Play [path-space-4] sound <upon damaging a [Military] unit> <when attacking>",
@@ -5920,7 +5926,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Space path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +2 movement."
+        "text": "Space path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: +2 movement; strikes first from range at 40% strength."
       }
     ],
     "prerequisites": [
@@ -7176,6 +7182,7 @@
     "uniques": [
       "[+35]% Strength",
       "[-50]% maintenance costs",
+      "[This Unit] heals [15] HP <upon damaging a [Military] unit> <when attacking>",
       "Supreme Attainment",
       "Play [path-food-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -7183,7 +7190,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Food path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: upkeep 50% lower."
+        "text": "Food path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: upkeep 50% lower; heals 15 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -7447,6 +7454,7 @@
       "[+35]% Strength",
       "Can see invisible [All] units",
       "[3] Sight",
+      "[+40]% Strength <when attacking>",
       "Supreme Attainment",
       "Play [path-information-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -7454,7 +7462,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Information path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: sees invisible units; +3 sight."
+        "text": "Information path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: sees invisible units; +3 sight; +40% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -7847,6 +7855,7 @@
     "uniques": [
       "[+35]% Strength",
       "Earn [100]% of killed [Military] unit's [Cost] as [Gold]",
+      "[+40]% Strength <when attacking>",
       "Supreme Attainment",
       "Play [path-theft-4] sound <upon damaging a [Military] unit> <when attacking>",
       "Only available <for [post-[Rank Seven era]] units>",
@@ -7854,7 +7863,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Theft path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: earns stones worth 100% of each slain soldier's cost."
+        "text": "Theft path, Supreme Grandmaster attainment (无上大宗师): it raises the path's ceiling; all ten Venerables reached it. Rank eight and up. +35% strength; peak: earns stones worth 100% of each slain soldier's cost; +40% strength when attacking."
       }
     ],
     "prerequisites": [

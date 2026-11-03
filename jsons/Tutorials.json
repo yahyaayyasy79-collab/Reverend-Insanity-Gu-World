@@ -460,7 +460,7 @@
         "text": "Great Grandmaster, +30%: domain: own soldiers within a 1-tile radius fight 10% harder. Immortal move Wind-Rolled Dragon Whip: +40% Strength, 25 extra damage; gains 4 movement with each attack."
       },
       {
-        "text": "Supreme Grandmaster, +35%: +2 movement."
+        "text": "Supreme Grandmaster, +35%: +2 movement; domain: enemies beside it fight 15% weaker."
       },
       {
         "text": "Cloud path (云道)",
@@ -479,7 +479,7 @@
         "text": "Great Grandmaster, +30%: domain: enemies beside it fight 10% weaker. Immortal move Rising Azure Cloud: +40% Strength, 25 extra damage; each attack inflicts Blinded for 6 turns."
       },
       {
-        "text": "Supreme Grandmaster, +35%: +1 movement; ignores zones of control."
+        "text": "Supreme Grandmaster, +35%: +1 movement; ignores zones of control; +40% strength when defending."
       },
       {
         "text": "Ice Snow path (冰雪道)",
@@ -617,7 +617,7 @@
         "text": "Great Grandmaster, +30%: domain: own soldiers within a 2-tile radius fight 10% harder. Immortal move Nebula Millstone: +3 movement now, +40% Strength when attacking; each attack deals 18 extra damage."
       },
       {
-        "text": "Supreme Grandmaster, +35%: +4 sight."
+        "text": "Supreme Grandmaster, +35%: +4 sight; strikes first from range at 50% strength."
       },
       {
         "text": "Moon path (月道)",
@@ -755,7 +755,7 @@
         "text": "Great Grandmaster, +30%: domain: enemies beside it fight 10% weaker. Immortal move Soul Search: Shaken target, +30% Strength; each attack inflicts Soul-Torn for 6 turns."
       },
       {
-        "text": "Supreme Grandmaster, +35%: 20 XP per kill."
+        "text": "Supreme Grandmaster, +35%: 20 XP per kill; whoever fights it takes 10 damage."
       },
       {
         "text": "Dream path (梦道)",
@@ -774,7 +774,7 @@
         "text": "Great Grandmaster, +30%: domain: enemies beside it fight 10% weaker. Immortal move Dreamy Light Smoke: Shaken target, +30% Strength; each attack inflicts Dazed for 6 turns."
       },
       {
-        "text": "Supreme Grandmaster, +35%: +100% battle XP."
+        "text": "Supreme Grandmaster, +35%: +100% battle XP; whoever fights it suffers Soul-Torn for 3 turns."
       },
       {
         "text": "Enslavement path (奴道)",
@@ -836,7 +836,7 @@
         "text": "Great Grandmaster, +30%: slips away from melee. Immortal move Sea and Sky Expands: 1 additional attack, +40% Strength; gains 4 movement with each attack."
       },
       {
-        "text": "Supreme Grandmaster, +35%: +2 movement."
+        "text": "Supreme Grandmaster, +35%: +2 movement; strikes first from range at 40% strength."
       },
       {
         "text": "Rule path (律道)",
@@ -1012,7 +1012,7 @@
         "text": "Great Grandmaster, +30%: domain: units beside it heal 10 HP more. Immortal move Banquet of Immortals: heal 80 HP, +30% Strength; heals 30 HP with each attack."
       },
       {
-        "text": "Supreme Grandmaster, +35%: upkeep 50% lower."
+        "text": "Supreme Grandmaster, +35%: upkeep 50% lower; heals 15 HP with each attack."
       },
       {
         "text": "Pill path (丹道)",
@@ -1050,7 +1050,7 @@
         "text": "Great Grandmaster, +30%: domain: own soldiers within a 2-tile radius fight 10% harder. Immortal move Sea Oath: heal 80 HP, +30% Strength; each attack inflicts Guard Broken for 6 turns."
       },
       {
-        "text": "Supreme Grandmaster, +35%: sees invisible units; +3 sight."
+        "text": "Supreme Grandmaster, +35%: sees invisible units; +3 sight; +40% strength when attacking."
       },
       {
         "text": "Human path (人道)",
@@ -1107,7 +1107,7 @@
         "text": "Great Grandmaster, +30%: slips away from melee. Immortal move Great Thief Ghost Hand: heal 80 HP, +30% Strength; earns stones worth 80% of the damage it deals."
       },
       {
-        "text": "Supreme Grandmaster, +35%: earns stones worth 100% of each slain soldier's cost."
+        "text": "Supreme Grandmaster, +35%: earns stones worth 100% of each slain soldier's cost; +40% strength when attacking."
       }
     ]
   },

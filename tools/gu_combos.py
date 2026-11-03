@@ -289,8 +289,9 @@ def doc_table() -> list[str]:
     from gen_paths import code
     lines = ["| Move | Chinese | Rank | Gu A (button) | Gu B | Kind | Button | Status uniques | Verdict | Source |",
              "|---|---|---|---|---|---|---|---|---|---|"]
+    sts = {s["name"]: s for s in statuses()}  # built once: per row it re-read the tables 174 x 174 times (minutes)
     for r in sorted(rows(), key=lambda x: (rank(x), x["name"])):
-        st = " ".join(code(u) for u in statuses()[rows().index(r)]["uniques"])
+        st = " ".join(code(u) for u in sts[r["name"]]["uniques"])
         lines.append(f"| {r['name']} | {r['chinese'] or '—'} | {rank(r)} | {r['gu_a']} | {r['gu_b']} | {r['kind']} | "
                      f"{code(action(r))} | {st} | {r['verdict']} | {r['source']} |")
     return lines
