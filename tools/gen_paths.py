@@ -42,7 +42,8 @@ TIER_GATE = [None, "Only available <for [non-[Rank One-Two era]] units>", "Only 
 # PATHS.md: the space path's Supreme Grandmaster walks through anything (a permanent promotion: the unique is cached)
 SUPREME_EXTRA = {"space": ["Can pass through impassable tiles"]}
 SUPREME_MARKER = "Supreme Attainment"  # filter marker: the Venerable Ascension counts rank-eight holders (MOD_SPEC_3)
-MOVE_COST = "<costs [+15 Gold] stats> <requires [1] movement>"
+MOVE_STONES = 15
+MOVE_COST = f"<costs [+{MOVE_STONES} Gold] stats> <requires [1] movement>"
 # MOD_SPEC_2 #5: the immortal move is paid in the user's own rank's immortal essence (mechanics audit 2026-11-03: it
 # was 5 green grape for every rank, and only rank six makes green grape, so higher clans drained it while their own
 # essence piled up). An action shows only when its conditionals apply [src UnitActionsFromUniques].
@@ -51,6 +52,16 @@ IMMORTAL_MOVE_COSTS = (("Rank Six Gu Immortal", 5, "Green Grape Immortal Essence
                        ("Rank Seven Gu Immortal", 4, "Red Date Immortal Essence"),
                        ("Rank Eight Gu Immortal", 3, "White Lychee Immortal Essence"),
                        ("Venerable", 2, "Yellow Apricot Immortal Essence"))
+# mechanics audit P3 (the user, 2026-11-03: "AI pakai jurus"): the AI never presses an action button, so an AI unit
+# uses its path's killer moves by itself when it attacks. The status lands before the damage [src Battle.attack:
+# triggerCombatUniques before takeDamage]; the status's own gain trigger takes the cost, and that trigger fires only for
+# a new status [src MapUnit.setStatus], so a second attack in the same turn pays nothing. One turn, as when a player
+# presses the button in its own turn. Reserves keep the AI solvent: 100 stones after paying, and 10 essence so its
+# immortal Gu stay awake and its blessed land keeps making Lifespan Gu ("above [9]"). A Venerable keeps its yellow
+# apricot for Eternal Life.
+AI_MOVE = "<upon entering combat> <when attacking> <for [AI player] Civilizations>"
+AI_STONES, AI_ESSENCE = 100, 10
+AI_IMMORTAL_MOVES = [c for c in IMMORTAL_MOVE_COSTS if c[0] != "Venerable"]
 # MOD_SPEC_2 #4: dao marks. Every immortal Gu carries its path's marker; a path's Master gains per mark of its own path
 # and loses per mark of a path it clashes with strongly (data/path_conflicts.csv at -25 or worse)
 DAO_MARK, DAO_CLASH, STRONG_CLASH = 5, -5, -25
@@ -144,10 +155,13 @@ def dao_mark_lines(p: dict) -> list[str]:
 
 def move_uniques(p: dict, immortal: bool = False) -> list[str]:
     name = p["immortal" if immortal else "mortal"]
+    gain = f"<upon gaining the [{name}] status> <for [AI player] Civilizations> <hidden from users>"
+    pay = ([f"Instantly consumes [{n}] [{ess}] {gain} <for [{unit}] units>" for unit, n, ess in AI_IMMORTAL_MOVES]
+           if immortal else [f"Gain [-{MOVE_STONES}] [Gold] {gain}"])  # audit P3: what the AI pays
     return [u.replace("{n}", name) for u in split(FAMILIES[p["family"]]["immortal_uniques" if immortal else "mortal_uniques"])] \
         + [PP.move_burst(POWERS[p["key"]], immortal),
            # the Gu attack's own sound when the move is used (a human player hears it; tools/art/sfx.py)
-           f"Play [{sfx.move_sound(p['key'], immortal)}] sound <upon gaining the [{name}] status>"]
+           f"Play [{sfx.move_sound(p['key'], immortal)}] sound <upon gaining the [{name}] status>"] + pay
 
 
 def grant(g: dict) -> str:
@@ -202,10 +216,15 @@ def tier_uniques(p: dict, t: int) -> list[str]:
         u = ([p["signature"]] + u + PP.hit_lines(pw) + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER]
              + [grant(g) for g in GU_OF[p["key"]]] + dao_mark_lines(p))
     if t == 1:
-        u += PP.cell(pw, "gm") + [f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}"]
+        u += PP.cell(pw, "gm") + [f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}",
+                                  f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {AI_MOVE} "
+                                  f"<when above [{AI_STONES + MOVE_STONES - 1}] [Gold]> <hidden from users>"]
     if t == 2:
         u += PP.cell(pw, "ggm") + [f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) <costs [{n}] [{ess}]> "
                                    f"<requires [1] movement> <for [{unit}] units>" for unit, n, ess in IMMORTAL_MOVE_COSTS]
+        u += [f"[This Unit] gains the [{p['immortal']}] status for [1] turn(s) {AI_MOVE} "
+              f"<when above [{AI_ESSENCE + n - 1}] [{ess}]> <for [{unit}] units> <hidden from users>"
+              for unit, n, ess in AI_IMMORTAL_MOVES]
     if t == 3:
         u += PP.cell(pw, "sup") + SUPREME_EXTRA.get(p["key"], []) + [SUPREME_MARKER]
     # the path's sound on every attack, from the highest tier held only (tools/art/sfx.py: each tier adds a layer)
@@ -249,15 +268,15 @@ def _pedia_lore(p: dict, t: int) -> tuple[str, str]:
         return (f"{p['name']} path, Great Grandmaster attainment ({TIERS_ZH[2]}): where most rank-eight immortals end; a "
                 f"rank-six immortal that reaches it opens the immortal killer move {p['immortal']}, paid in its own rank's "
                 f"essence (5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow apricot as a "
-                f"Venerable).",
+                f"Venerable; AI clans use it by themselves when they attack).",
                 f"Jalur {p['name_id']}, pencapaian {TIERS_ID[2]} ({TIERS_ZH[2]}): tempat kebanyakan abadi tingkat delapan "
                 f"berhenti; abadi tingkat enam yang mencapainya membuka jurus pamungkas abadi {p['immortal_id']}, dibayar "
                 f"dengan esensi tingkatnya sendiri (5 anggur hijau di tingkat enam, 4 kurma merah di tujuh, 3 leci putih di "
-                f"delapan, 2 aprikot kuning untuk Yang Mulia).")
+                f"delapan, 2 aprikot kuning untuk Yang Mulia; klan AI memakainya sendiri saat menyerang).")
     return (f"{p['name']} path, Grandmaster attainment ({TIERS_ZH[1]}): deep enough to bend other paths' methods to "
-            f"its own Gu. Opens the killer move {p['mortal']}.",
+            f"its own Gu. Opens the killer move {p['mortal']} (AI clans use it by themselves when they attack).",
             f"Jalur {p['name_id']}, pencapaian {TIERS_ID[1]} ({TIERS_ZH[1]}): cukup dalam untuk meminjam cara jalur lain "
-            f"dengan Gu sendiri. Membuka jurus pamungkas {p['mortal_id']}.")
+            f"dengan Gu sendiri. Membuka jurus pamungkas {p['mortal_id']} (klan AI memakainya sendiri saat menyerang).")
 
 
 def immortal_move_pedia(p: dict) -> tuple[str, str]:
@@ -486,9 +505,11 @@ def _lines_power() -> list[tuple[str, str, dict]]:
           "Tubuh seorang kultivator saja lemah: sebagian besar kekuatannya datang dari Gu, jejak dao, dan pemahamannya "
           "atas jalurnya. Yang bertarung tanpa Gu tetap bisa bertarung, hanya dengan jejak dao dan pemahaman.", {}),
          ("1. Rank. The body's strength: " + ", ".join(f"{e} {v}" for e, _, v in ranks) + ". Clan Masters of a rank "
-          "have the same strength.",
+          f"have the same strength. Mortal and immortal are two worlds: an immortal fights mortal units {PP.CHASM}% harder, "
+          f"the Venerable {PP.VENERABLE_CHASM}% harder.",
           "1. Tingkat. Kekuatan tubuh: " + ", ".join(f"{i} {v}" for _, i, v in ranks) + ". Gu Master klan pada tingkat "
-          "yang sama punya kekuatan yang sama.", {}),
+          f"yang sama punya kekuatan yang sama. Fana dan abadi adalah dua dunia: seorang abadi melawan unit fana "
+          f"{PP.CHASM}% lebih kuat, Yang Mulia {PP.VENERABLE_CHASM}% lebih kuat.", {}),
          (f"2. Path attainment (comprehension). Four tiers stack: Master +{T[0]}% at any rank, Grandmaster +{T[1]}% from "
           f"rank three, Great Grandmaster +{T[2]}% from rank six, Supreme Grandmaster +{T[3]}% from rank eight: "
           f"+{sum(T)}% at the top. Each "
@@ -524,25 +545,31 @@ def _lines_power() -> list[tuple[str, str, dict]]:
           f"+{GC.effects({'rank': '1', 'role': 'atk'})[0][1].split('%')[0]}%, a rank-nine one "
           f"+{GC.effects({'rank': '9', 'role': 'atk'})[0][1].split('%')[0]}%). Immortal Gu sleep while the clan has no "
           "immortal essence of their rank. Every immortal Gu wonder of your own path that your clan owns adds 5% "
-          "strength; one of a strongly clashing path takes 5% away.",
+          "strength; one of a strongly clashing path takes 5% away. Spoils: a Gu Master that defeats a unit takes each "
+          f"of its catalog Gu of rank 1 to 5 with a {GC.SPOILS_CHANCE}% chance, when its own rank can hold it.",
           f"4. Gu. Gu tiap jalur datang bersama Ahlinya. Seorang Ahli memurnikan lebih banyak dengan XP: {len(GC.ROWS)} "
           "Gu katalog tingkat 1 sampai 9, masing-masing menunggu unit setingkatnya; efek Gu tumbuh dengan tingkatnya "
           f"(Gu serang tingkat satu +{GC.effects({'rank': '1', 'role': 'atk'})[0][1].split('%')[0]}%, tingkat sembilan "
           f"+{GC.effects({'rank': '9', 'role': 'atk'})[0][1].split('%')[0]}%). Gu abadi tertidur bila klan tak punya "
           "esensi abadi setingkatnya. Setiap keajaiban Gu abadi dari jalurmu sendiri yang dimiliki klanmu menambah 5% "
-          "kekuatan; dari jalur yang sangat bertentangan mengurangi 5%.", {}),
+          "kekuatan; dari jalur yang sangat bertentangan mengurangi 5%. Rampasan: Gu Master yang mengalahkan sebuah unit "
+          f"merampas tiap Gu katalog tingkat 1 sampai 5 miliknya dengan peluang {GC.SPOILS_CHANCE}%, bila tingkatnya "
+          "sendiri sanggup memegangnya.", {}),
          ("5. Conflicts. A second path whose dao marks clash with the first costs 5% to 25% strength.",
           "5. Pertentangan. Jalur kedua yang jejak daonya berbenturan dengan jalur pertama memotong 5% sampai 25% "
           "kekuatan.", {}),
          ("Killer moves", "Jurus pamungkas", {"header": 3}),
-         ("A unit-action button, so only you use them: for one turn the path family's burst plus the path's hit at full "
+         ("A unit-action button: for one turn the path family's burst plus the path's hit at full "
           "power (twice that for the immortal move). The mortal move costs 15 stones; the immortal move costs the "
           "immortal's own essence: 5 green grape at rank six, 4 red date at seven, 3 white lychee at eight, 2 yellow "
-          "apricot as a Venerable.",
-          "Tombol aksi unit, jadi hanya kamu yang memakainya: selama satu giliran ledakan keluarga jalur ditambah "
+          f"apricot as a Venerable. AI clans use these moves by themselves whenever they attack and can pay; they keep "
+          f"{AI_STONES} stones and {AI_ESSENCE} essence in reserve, and a Venerable keeps its yellow apricot for Eternal Life.",
+          "Tombol aksi unit: selama satu giliran ledakan keluarga jalur ditambah "
           "serangan khas jalur pada kekuatan penuh (dua kali lipat untuk jurus abadi). Jurus fana 15 batu; jurus abadi "
           "memakai esensi abadi itu sendiri: 5 anggur hijau di tingkat enam, 4 kurma merah di tujuh, 3 leci putih di "
-          "delapan, 2 aprikot kuning untuk Yang Mulia.", {})]
+          f"delapan, 2 aprikot kuning untuk Yang Mulia. Klan AI memakai jurus ini sendiri setiap kali menyerang dan "
+          f"sanggup membayar; mereka menyisakan {AI_STONES} batu dan {AI_ESSENCE} esensi, dan Yang Mulia menyimpan aprikot "
+          "kuningnya untuk Hidup Abadi.", {})]
     # a worked example from the data
     ex = [r for _, _, r in ranks][5]
     hit = PP.describe(PP.attack_only(fire["hit"]).replace("{n}", str(PP.amounts(fire)[3])))

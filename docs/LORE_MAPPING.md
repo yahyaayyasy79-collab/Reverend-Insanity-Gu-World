@@ -1385,6 +1385,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
 **Ascension** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Crush the aperture, draw in the three qi and survive the calamity (\u5347\u4ed9). Balanced qi succeeds four times in five, haste one time in two; aptitude A helps, aptitude D hurts. Failure kills the master; success brings 20 Lifespan Gu."}]})
@@ -3048,6 +3049,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
 **Rank Eight Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 69, "cost": 400, "requiredTech": "Grotto-Heaven", "attackSound": "gu-rank-8", "civilopediaText": [{"text": "A rank-eight Gu Immortal (\u516b\u8f6c\u86ca\u4ed9), master of a grotto-heaven. With more than nine white lychee essence in store it fights harder."}]})
@@ -3086,6 +3088,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
 **Ancient Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 85, "cost": 300, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An ancient desolate beast (\u4e0a\u53e4\u8352\u517d), about rank seven. Beast tides bring it in the Rank Seven era; its corpse yields 30 immortal materials."}]})
@@ -3280,6 +3283,7 @@ May capture killed [Military] units
 [-25]% Strength for enemy [Military] units in adjacent [All] tiles
 [+50]% Strength <vs cities>
 Destroys tile improvements when attacking
+[+100]% Strength <vs [pre-[Rank Six era]] units>
 [This Unit] gains [5] XP <upon turn start>
 [This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
 [This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
@@ -3310,6 +3314,7 @@ Triggers a [Chaos Calamity] event <upon losing the [Chaos Countdown] status>
 Only available <if [Connect Luck] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3322,6 +3327,7 @@ Never appears as a Barbarian unit
 Only available <if [Years Flow Like Water] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3334,6 +3340,7 @@ Ignores terrain cost
 Only available <if [Dream Token] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3462,6 +3469,7 @@ Never appears as a Barbarian unit
 Can only heal by pillaging
 [-15]% Strength <if [Fate Gu] is constructed by anybody>
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 [+100]% maintenance costs
 ```
 
@@ -3471,6 +3479,7 @@ Can pass through impassable tiles
 Only available <if [Fate Gu] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
@@ -3621,6 +3630,7 @@ May capture killed [Military] units
 [-25]% Strength for enemy [Military] units in adjacent [All] tiles
 [+50]% Strength <vs cities>
 Destroys tile improvements when attacking
+[+100]% Strength <vs [pre-[Rank Six era]] units>
 [This Unit] gains [5] XP <upon turn start>
 [This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>
 [This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>
@@ -3861,6 +3871,7 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
 

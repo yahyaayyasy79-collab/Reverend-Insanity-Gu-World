@@ -9,7 +9,8 @@ Five layers make a Gu Master's power, and each one is visible in game:
      so the promotion screen shows what each tier adds;
   4. Gu (path Gu, immortal Gu and their dao-mark lines);
   5. conflicts between paths (dao marks interfere).
-Killer moves are the family's burst plus the path's hit at full power (the AI never presses them: human power).
+Killer moves are the family's burst plus the path's hit at full power: a button for the player, used by the AI by
+itself when it attacks and can pay (tools/gen_paths.py AI_MOVE).
 
 describe() turns each unique this module writes into short English and Indonesian text, so the civilopedia and the
 Tutorial pages always say what the rules do (an unknown pattern stops the build).
@@ -33,7 +34,15 @@ def body_strength(strength: int, rank: int) -> int:
     return max(1, round(strength * BASE_SHARE.get(rank, DEFAULT_SHARE)))
 
 
-VENERABLE_STRENGTH = body_strength(280, 9)  # gen_ruleset asserts the Venerable unit's strength
+VENERABLE_STRENGTH = body_strength(280, 9)
+# mechanics audit P1 (the user, 2026-11-03: "Jurang imortal"): mortals and immortals are two worlds apart. Every immortal
+# fights a mortal unit (one whose required tech lies before the Rank Six era: Gu Masters 1-5, lone and demonic Gu Masters,
+# the Demonic Elder, bold wolves; beasts without a tech never match [src BaseUnit.matchesSingleFilter]) this much harder
+CHASM, VENERABLE_CHASM = 50, 100
+
+
+def chasm(n: int = CHASM) -> str:
+    return f"[+{n}]% Strength <vs [pre-[Rank Six era]] units>"  # gen_ruleset asserts the Venerable unit's strength
 # Dao Marks I..V themselves (tools/gen_ruleset.py DAO_EFFECTS, asserted there), for the Tutorial page
 DAO_STRENGTH = (["+10%", "+20%", "+30%", "+40% and +10 HP healing", "+55% and +15 HP healing"],
                 ["+10%", "+20%", "+30%", "+40% dan +10 HP pemulihan", "+55% dan +15 HP pemulihan"])

@@ -42,8 +42,8 @@ public class Autoplay {
         Gu(String n, String s, String f, int r) { name = n; status = s; food = f; rank = r; }
     }
     static final class UnitState {
-        final String civ; final Set<String> promos; final Set<String> statuses;
-        UnitState(String c, Set<String> p, Set<String> s) { civ = c; promos = p; statuses = s; }
+        final String civ; final Set<String> promos; final Set<String> statuses; final int bought;
+        UnitState(String c, Set<String> p, Set<String> s, int b) { civ = c; promos = p; statuses = s; bought = b; }
     }
 
     static String q(String s) {
@@ -301,18 +301,22 @@ public class Autoplay {
             Map<String, Integer> types = new TreeMap<>(), holders = new TreeMap<>(), hungry = new TreeMap<>();
             Map<String, Integer> start = new TreeMap<>(), death = new TreeMap<>(), recover = new TreeMap<>(),
                     held = new TreeMap<>(), heldShort = new TreeMap<>(), otherLoss = new TreeMap<>(),
-                    allPromotions = new TreeMap<>();
+                    allPromotions = new TreeMap<>(), allStatuses = new TreeMap<>(), freeGains = new TreeMap<>();
             Iterator<MapUnit> it = c.getUnits().getCivUnits().iterator();
             while (it.hasNext()) {
                 MapUnit u = it.next();
                 inc(types, u.getName(), 1);
-                bought += u.getPromotions().getNumberOfPromotions();
+                int nb = u.getPromotions().getNumberOfPromotions();
+                bought += nb;
                 xp += u.getPromotions().getXP();
                 Set<String> promos = new HashSet<>(u.getPromotions().getPromotions());
                 Set<String> statuses = new HashSet<>(u.getStatusMap().keySet());
                 for (String pr : promos) inc(allPromotions, pr, 1);  // every promotion, not only Gu that eat
-                now.put(u.getId(), new UnitState(c.getCivName(), promos, statuses));
+                for (String st : statuses) inc(allStatuses, st, 1);   // killer moves, hunger, target statuses
+                now.put(u.getId(), new UnitState(c.getCivName(), promos, statuses, nb));
                 UnitState p = prev.get(u.getId());
+                // promotions gained without buying one (triggers: Gu spoils, path Gu, ladder, ...)
+                if (p != null && nb == p.bought) for (String pr : promos) if (!p.promos.contains(pr)) inc(freeGains, pr, 1);
                 boolean gainedFusion = false;
                 if (p != null) for (String f : fusions) if (promos.contains(f) && !p.promos.contains(f)) gainedFusion = true;
                 Set<String> countedStatus = new HashSet<>();
@@ -334,7 +338,8 @@ public class Autoplay {
                 }
             }
             rec.put("promotionsBought", bought); rec.put("xp", xp);
-            rec.put("units", types); rec.put("promotionHolders", allPromotions); rec.put("guHolders", holders); rec.put("hungry", hungry);
+            rec.put("units", types); rec.put("promotionHolders", allPromotions);
+            rec.put("statusHolders", allStatuses); rec.put("freeGains", freeGains); rec.put("guHolders", holders); rec.put("hungry", hungry);
             rec.put("hungerStart", start); rec.put("hungerDeath", death); rec.put("hungerRecover", recover);
             rec.put("guHeld", held); rec.put("guHeldInDeficit", heldShort); rec.put("guLostOther", otherLoss);
 

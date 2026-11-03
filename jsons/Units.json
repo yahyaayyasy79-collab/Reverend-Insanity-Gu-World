@@ -263,7 +263,8 @@
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
-      "Can pass through impassable tiles"
+      "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>"
     ],
     "attackSound": "gu-rank-6",
     "civilopediaText": [
@@ -312,7 +313,8 @@
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
-      "Can pass through impassable tiles"
+      "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>"
     ],
     "attackSound": "gu-rank-7",
     "civilopediaText": [
@@ -361,7 +363,8 @@
       "[This Unit] takes [7] damage <upon turn start> <when below [1] [Lifespan Gu]>",
       "[This Unit] gains [3] XP <upon turn start>",
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
-      "Can pass through impassable tiles"
+      "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>"
     ],
     "attackSound": "gu-rank-8",
     "civilopediaText": [
@@ -1104,6 +1107,7 @@
       "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
       "[+50]% Strength <vs cities>",
       "Destroys tile improvements when attacking",
+      "[+100]% Strength <vs [pre-[Rank Six era]] units>",
       "[This Unit] gains [5] XP <upon turn start>",
       "[This Unit] gains the [Dao Comprehension] status for [13] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Quick] game speed>",
       "[This Unit] gains the [Dao Comprehension] status for [20] turn(s) <upon turn start> <for units without [Dao Comprehension]> <for [Path Master] units> <for [non-[Rank One-Two era]] units> <on [Standard] game speed>",
@@ -1145,6 +1149,7 @@
       "Only available <if [Connect Luck] is constructed>",
       "Limited to [1] per Civilization",
       "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1168,6 +1173,7 @@
       "Only available <if [Years Flow Like Water] is constructed>",
       "Limited to [1] per Civilization",
       "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1191,6 +1197,7 @@
       "Only available <if [Dream Token] is constructed>",
       "Limited to [1] per Civilization",
       "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1215,6 +1222,7 @@
       "Only available <if [Fate Gu] is constructed>",
       "Limited to [1] per Civilization",
       "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "Costs [50] [White Lychee Immortal Essence]",
       "[+500]% maintenance costs",
       "Never appears as a Barbarian unit",
@@ -1242,6 +1250,7 @@
       "Can only heal by pillaging",
       "[-15]% Strength <if [Fate Gu] is constructed by anybody>",
       "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "[+100]% maintenance costs"
     ],
     "civilopediaText": [

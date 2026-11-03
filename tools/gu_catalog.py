@@ -37,6 +37,29 @@ AI_WEIGHT = "[+100]% weight to this choice for AI decisions"
 HIT = "<upon damaging a [Military] unit> <when attacking>"
 
 
+# mechanics audit P2 (the user, 2026-11-03: "Gu jarahan"): the victor takes the Gu of the fallen, as Fang Yuan lives on.
+# A Gu Master that defeats a unit takes each of its mortal catalog Gu with this chance (one roll per Gu, E5) when its own
+# rank can hold the Gu (GATE). The Gu Master unit types carry the lines, so every Gu Master loots, barbarians too; the
+# defeated unit still holds its promotions when the trigger runs [src Battle.triggerVictoryUniques]. Slice 1's ladder Gu
+# and the path Gu are not taken (the ladder and the Master hand them out).
+SPOILS_CHANCE = 25
+SPOILS = (f"Spoils: defeating a unit takes each of its catalog Gu of rank 1-5 with a {SPOILS_CHANCE}% chance, when this "
+          "unit's rank can hold it",
+          f"Rampasan: mengalahkan sebuah unit merampas tiap Gu katalog tingkat 1-5 miliknya dengan peluang {SPOILS_CHANCE}%, "
+          "bila tingkat unit ini sanggup memegangnya")
+
+
+def spoils() -> list[str]:
+    """The uniques of every Gu Master unit type: a visible comment, then one hidden line per mortal catalog Gu."""
+    out = [f"Comment [{SPOILS[0]}]"]
+    for row in (x for x in ROWS if not immortal(x)):
+        n = row["name"]
+        out.append(" ".join(x for x in (f"[This Unit] gains the [{n}] promotion <upon defeating a [{n}] unit>",
+                                         f"<with [{SPOILS_CHANCE}]% chance>", f"<for units without [{n}]>",
+                                         GATE[int(row["rank"])], "<hidden from users>") if x))
+    return out
+
+
 def sound(name: str) -> str:
     """The Gu's refinement sound (sounds/<this>.ogg)."""
     return "gu-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -259,7 +282,7 @@ def food_gu() -> list[tuple[str, str, str, str, str]]:
 
 
 def translations() -> list[tuple[str, str]]:
-    out = []
+    out = [SPOILS]
     for g in all_immortal():
         r = int(g["rank"])
         out += [(bearer(g["name"]), f"Pembawa {g['name_id']}"), bearer_pedia(g),

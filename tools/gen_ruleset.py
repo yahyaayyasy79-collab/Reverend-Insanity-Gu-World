@@ -540,8 +540,8 @@ dump("Techs.json", [{"columnNumber": int(c["column"]), "era": c["era"], "techCos
                     for c in table("tech_columns.csv")])
 
 # ---------------- Unit types ----------------
-dump("UnitTypes.json", [{"name": n, "movementType": "Land"} for n in
-                        ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
+dump("UnitTypes.json", [{"name": n, "movementType": "Land", **({"uniques": gen_paths.GC.spoils()} if "Gu Master" in n else {})}
+                        for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
 
 # ---------------- Units ----------------
@@ -606,6 +606,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     if r["name"] in IMMORTALS:
         u["uniques"] += immortal_life(IMMORTAL_RANK[r["name"]]) + IMMORTAL_XP  # MOD_SPEC_2 C2: immortals burn Lifespan Gu
         u["uniques"].append("Can pass through impassable tiles")  # immortals cross mountains and the region walls
+        u["uniques"].append(gen_paths.PP.chasm())  # audit P1: the chasm between mortal and immortal
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
      # R8: mortals live off the land, not off primeval stones (late-game AI bankruptcy, docs/AUTOPLAY.md round 8)
@@ -647,6 +648,7 @@ dump("Units.json", [
                                          "Can pass through impassable tiles", "May capture killed [Military] units",
                                          "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
                                          "[+50]% Strength <vs cities>", "Destroys tile improvements when attacking",
+                                         gen_paths.PP.chasm(gen_paths.PP.VENERABLE_CHASM),
                                          "[This Unit] gains [5] XP <upon turn start>", *DAO_LINES,
                                          f"[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [{APRICOT}]> <requires [1] movement>"]
      # slaughter restores it too
@@ -654,12 +656,12 @@ dump("Units.json", [
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
       "attackSound": sfx.rank_sound(8), **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
-                  "Can pass through impassable tiles",
+                  "Can pass through impassable tiles", gen_paths.PP.chasm(),
                                           f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": gen_paths.PP.body_strength(70, 6), "cost": 300, "requiredTech": "Calamity Lore",
      "attackSound": sfx.rank_sound(6), "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
-                                         "Can pass through impassable tiles",
+                                         "Can pass through impassable tiles", gen_paths.PP.chasm(),
                                          "[+100]% maintenance costs"]},
 ] + [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
