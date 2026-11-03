@@ -176,6 +176,21 @@ def grant(g: dict) -> str:
                     + [x for x in gates if x])
 
 
+# mechanics audit P6 (the user, 2026-11-03: "lanjut"): a path's Gu is its Master's vital Gu (本命蛊, ADAPTED): when
+# it starves to death, the master is wounded. The line fires only for that death: the unit still holds the hunger step
+# that gates the death roll when the Gu is removed (tools/gu_rules.py hunger()). The loss trigger runs after the Gu's
+# own uniques are gone [src UnitPromotions.removePromotion], so the line sits on the Master. Never lethal.
+VITAL_DAMAGE = 30
+
+
+def vital_lines(p: dict) -> list[str]:
+    from gu_rules import stage_name, stages
+    hungry = {name: int(rank) for name, _, _, rank, _ in all_food_gu()}
+    return [f"[This Unit] takes [{VITAL_DAMAGE}] damage <upon losing the [{g['name']}] promotion> "
+            f"<for units with [{stage_name(g['name'], stages(hungry[g['name']])[-2])}]> <when above [{VITAL_DAMAGE}] HP>"
+            for g in GU_OF[p["key"]] if g["name"] in hungry]
+
+
 def new_gu(g: dict) -> bool:
     return bool(g["name_id"])
 
@@ -214,7 +229,7 @@ def tier_uniques(p: dict, t: int) -> list[str]:
     u = [f"[+{TIER_STRENGTH[t]}]% Strength"]
     if t == 0:
         u = ([p["signature"]] + u + PP.hit_lines(pw) + conflict_lines(p) + [f"Comment [{COMMENT}]", MARKER]
-             + [grant(g) for g in GU_OF[p["key"]]] + dao_mark_lines(p))
+             + [grant(g) for g in GU_OF[p["key"]]] + vital_lines(p) + dao_mark_lines(p))
     if t == 1:
         u += PP.cell(pw, "gm") + [f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {MOVE_COST}",
                                   f"[This Unit] gains the [{p['mortal']}] status for [1] turn(s) {AI_MOVE} "
@@ -247,8 +262,12 @@ def pedia(p: dict, t: int) -> tuple[str, str]:
     pw = POWERS[p["key"]]
     if t == 0:
         sig, hit = PP.describe(p["signature"]), PP.hit_summary(pw)
-        return (f"{en} +{TIER_STRENGTH[0]}% strength. Signature: {sig[0]}. Hit: {hit[0]}.",
-                f"{idt} +{TIER_STRENGTH[0]}% kekuatan. Ciri khas: {sig[1]}. Serangan: {hit[1]}.")
+        vital = ((f" Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes {VITAL_DAMAGE} damage "
+                  f"(none at {VITAL_DAMAGE} HP or less).",
+                  f" Gu-nya adalah Gu vitalnya (本命蛊): bila Gu itu mati kelaparan, sang Ahli menerima {VITAL_DAMAGE} "
+                  f"kerusakan (tidak ada bila HP-nya {VITAL_DAMAGE} atau kurang).") if vital_lines(p) else ("", ""))
+        return (f"{en} +{TIER_STRENGTH[0]}% strength. Signature: {sig[0]}. Hit: {hit[0]}.{vital[0]}",
+                f"{idt} +{TIER_STRENGTH[0]}% kekuatan. Ciri khas: {sig[1]}. Serangan: {hit[1]}.{vital[1]}")
     label = {1: ("unlocks", "membuka"), 2: ("adds", "menambah"), 3: ("peak", "puncak")}[t]
     eff = PP.describe_all(PP.cell(pw, ("gm", "ggm", "sup")[t - 1]))
     return (f"{en} +{TIER_STRENGTH[t]}% strength; {label[0]}: {eff[0]}.",
@@ -702,6 +721,11 @@ def _lines_hunger() -> list[tuple[str, str, dict]]:
           "giliran. Bila klan kekurangan, setiap Gu pemakan makanan itu langsung melemah dan meteran laparnya naik tiap "
           "giliran: sebuah status di unit menunjukkan persennya. Pada 100% Gu itu melempar peluang matinya, lalu meteran "
           "mulai lagi. Beri makan klan dan meteran itu hilang.", {}),
+         (f"A path's own Gu is its Master's vital Gu: if it starves to death, the Master takes {VITAL_DAMAGE} damage "
+          f"(none at {VITAL_DAMAGE} HP or less). Its Master brings it back once the food is in surplus again.",
+          f"Gu milik sebuah jalur adalah Gu vital Ahlinya: bila ia mati kelaparan, sang Ahli menerima {VITAL_DAMAGE} "
+          f"kerusakan (tidak ada bila HP-nya {VITAL_DAMAGE} atau kurang). Ahlinya mendapatkannya kembali begitu "
+          "makanannya surplus lagi.", {}),
          ("Hunger rate by rank: " + ", ".join(f"rank {r} +{stages(r)[0]}% a turn ({HUNGER_RANKS[r][1]}% death chance at 100%)"
                                             for r in sorted(HUNGER_RANKS)) + ". The lower the rank, the faster the hunger.",
           "Laju lapar per rank: " + ", ".join(f"rank {r} +{stages(r)[0]}% per giliran (peluang mati {HUNGER_RANKS[r][1]}% "

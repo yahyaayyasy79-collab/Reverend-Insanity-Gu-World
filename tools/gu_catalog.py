@@ -204,6 +204,12 @@ def promotions(unit_types: list[str]) -> list[dict]:
 # promotion). A bearer whose clan lost the wonder keeps the promotion but its Gu sleeps.
 WONDER_COST = {6: 340, 7: 380, 8: 420, 9: 700}      # the mean of the canon wonders of data/immortal_gu.csv per rank
 WONDER_ESSENCE = {6: 35, 7: 35, 8: 35, 9: 60}
+# mechanics audit P5 (the user, 2026-11-03: "lanjut"): immortal Gu are refined from immortal materials (仙材). Before,
+# materials had one use (sold at the market). Autoplay (Five Regions, 18 x 300): 29 of the 50 immortal Gu wonders the
+# AI built were begun with no materials at all, so a cost alone would have halved the race; blessed lands now grow a
+# little every turn (tools/gen_ruleset.py LAND_MATERIALS), and a slain desolate beast still yields a windfall
+MATERIALS = "Immortal Materials"
+WONDER_MATERIALS = {6: 15, 7: 20, 8: 25, 9: 40}
 IMMORTAL_ROWS = [r for r in ROWS if int(r["rank"]) >= 6]
 
 
@@ -269,7 +275,8 @@ def wonders(recipe: dict, marker) -> list[dict]:
     for row in IMMORTAL_ROWS:
         r = int(row["rank"])
         out.append({"name": row["name"], "isWonder": True, "requiredTech": recipe[str(r)], "cost": WONDER_COST[r],
-                    "uniques": [f"Costs [{WONDER_ESSENCE[r]}] [{ESSENCE[r]}]", "Never destroyed when the city is captured",
+                    "uniques": [f"Costs [{WONDER_ESSENCE[r]}] [{ESSENCE[r]}]", f"Costs [{WONDER_MATERIALS[r]}] [{MATERIALS}]",
+                                "Never destroyed when the city is captured",
                                 "Immortal Gu", marker(row["path"]), "Triggers a [Immortal Gu Refinement] event",
                                 "[+300]% weight to this choice for AI decisions"],  # as the canon wonders (C3)
                     "civilopediaText": [{"text": wonder_pedia(row)[0]}]})

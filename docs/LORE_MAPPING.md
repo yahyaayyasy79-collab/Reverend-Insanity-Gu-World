@@ -1422,7 +1422,7 @@ Triggers a [Ascension] event <for [Rank Five Gu Master] units>
 [This Unit] loses the [Ascension] promotion <upon turn start>
 ```
 
-**Lower Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A lower-grade blessed land (\u4e0b\u7b49\u798f\u5730), the most common: 1 green grape essence and 2 stones a turn (red date essence at rank seven)."}]})
+**Lower Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A lower-grade blessed land (\u4e0b\u7b49\u798f\u5730), the most common: 1 green grape essence, 2 stones and 1 immortal material a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1430,6 +1430,7 @@ Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <for units 
 Instantly consumes [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Instantly consumes [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [1] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
 [This Unit] gains the [Calamity Countdown] status for [21] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
@@ -1446,7 +1447,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 [This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
-**Middle Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A middle-grade blessed land (\u4e2d\u7b49\u798f\u5730): 2 green grape essence and 4 stones a turn (red date essence at rank seven)."}]})
+**Middle Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A middle-grade blessed land (\u4e2d\u7b49\u798f\u5730): 2 green grape essence, 4 stones and 1 immortal material a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1454,6 +1455,7 @@ Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <for units 
 Instantly consumes [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Instantly consumes [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [1] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
 [This Unit] gains the [Calamity Countdown] status for [20] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
@@ -1470,7 +1472,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 [This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
-**Upper Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "An upper-grade blessed land (\u4e0a\u7b49\u798f\u5730), rare: 3 green grape essence and 6 stones a turn (red date essence at rank seven)."}]})
+**Upper Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "An upper-grade blessed land (\u4e0a\u7b49\u798f\u5730), rare: 3 green grape essence, 6 stones and 2 immortal materials a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1478,6 +1480,7 @@ Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <for units 
 Instantly consumes [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Instantly consumes [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [2] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
 [This Unit] gains the [Calamity Countdown] status for [18] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
@@ -1494,7 +1497,7 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 [This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>
 ```
 
-**Super Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A super-grade blessed land (\u7279\u7b49\u798f\u5730), the foundation of a prodigy: 5 green grape essence and 10 stones a turn (red date essence at rank seven)."}]})
+**Super Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A super-grade blessed land (\u7279\u7b49\u798f\u5730), the foundation of a prodigy: 5 green grape essence, 10 stones and 2 immortal materials a turn (red date essence at rank seven)."}]})
 
 ```
 Instantly provides [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units>
@@ -1502,6 +1505,7 @@ Instantly provides [5] [Red Date Immortal Essence] <upon turn start> <for units 
 Instantly consumes [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Instantly consumes [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>
 Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [2] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
 [This Unit] gains the [Calamity Countdown] status for [16] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
@@ -2150,6 +2154,7 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers and moves 
 
 ```
 Costs [50] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2161,6 +2166,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Space Path
@@ -2173,6 +2179,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2185,6 +2192,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wisdom Path
@@ -2197,6 +2205,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Luck Path
@@ -2209,6 +2218,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Strength Path
@@ -2221,6 +2231,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Poison Path
@@ -2233,6 +2244,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Bone Path
@@ -2245,6 +2257,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [30] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Star Path
@@ -2257,6 +2270,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [Green Grape Immortal Essence]
+Costs [15] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Luck Path
@@ -2720,7 +2734,7 @@ Instantly provides [3] [Lifespan Gu]
 * Sell immortal materials
 
 ```
-Unavailable <when below [20] [Immortal Materials]>
+Unavailable <when below [40] [Immortal Materials]>
 Instantly consumes [20] [Immortal Materials]
 Instantly provides [25] [Green Grape Immortal Essence]
 [+100]% weight to this choice for AI decisions
@@ -2751,7 +2765,7 @@ Instantly provides [35] [Green Grape Immortal Essence]
 [-50]% weight to this choice for AI decisions
 ```
 
-**Immortal Materials** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Ranked materials (\u4ed9\u6750) that refinement consumes. A slain desolate beast yields 20; Treasure Yellow Heaven buys them for essence."}]})
+**Immortal Materials** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Ranked materials (\u4ed9\u6750) from which immortal Gu are refined: 15 for a rank-six Gu up to 40 for rank nine, 30 for a Gu House. Blessed lands grow 1-2 a turn, a grotto-heaven 3; a slain desolate beast yields 20; Treasure Yellow Heaven buys a surplus for essence."}]})
 
 ```
 Stockpiled
@@ -2812,6 +2826,7 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers are in doc
 
 ```
 Costs [40] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Strength Path
@@ -2824,6 +2839,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2836,6 +2852,7 @@ Instantly provides [1] [Lifespan Gu] <upon turn start> <every [3] turns>
 
 ```
 Costs [35] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Formation Path
@@ -2848,6 +2865,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wisdom Path
@@ -2860,6 +2878,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Sword Path
@@ -2872,6 +2891,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [30] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Information Path
@@ -2884,6 +2904,7 @@ Earn [20]% of killed [Beast] unit's [Cost] as [Immortal Materials]
 
 ```
 Costs [30] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Luck Path
@@ -2895,6 +2916,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [30] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Soul Path
@@ -2907,6 +2929,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [Red Date Immortal Essence]
+Costs [20] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Transformation Path
@@ -2919,6 +2942,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [40] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wood Path
@@ -2932,6 +2956,7 @@ Instantly provides [2] [Green Grape Immortal Essence] <upon turn start>
 
 ```
 Costs [40] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Time Path
@@ -2945,6 +2970,7 @@ Instantly consumes [10] [Green Grape Immortal Essence] <upon turn start> <every 
 
 ```
 Costs [40] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Dream Path
@@ -2957,6 +2983,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Enslavement Path
@@ -2969,6 +2996,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Light Path
@@ -2981,6 +3009,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Refinement Path
@@ -2993,6 +3022,7 @@ Triggers a [Immortal Gu Refinement] event
 
 ```
 Costs [35] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Theft Path
@@ -3005,6 +3035,7 @@ Heals [25] damage if it kills a unit <for [post-[Rank Five era]] units>
 
 ```
 Costs [35] [White Lychee Immortal Essence]
+Costs [25] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Qi Path
@@ -3119,12 +3150,13 @@ Comment [Survived a heavenly tribulation: may climb to the next rank]
 Comment [Climbing to the next rank]
 ```
 
-**Grotto-Heaven Aperture** (UnitPromotions.json; {"civilopediaText": [{"text": "A grotto-heaven (\u6d1e\u5929): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50 (on Standard). A Venerable leaves it behind."}]})
+**Grotto-Heaven Aperture** (UnitPromotions.json; {"civilopediaText": [{"text": "A grotto-heaven (\u6d1e\u5929): the rank-eight aperture. 3 white lychee essence, 12 stones and 3 immortal materials a turn; calamities every 10 turns, tribulations every 50 (on Standard). A Venerable leaves it behind."}]})
 
 ```
 Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>
 Instantly consumes [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Zombie Alliance] Civilizations>
 Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>
+Instantly provides [3] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>
 [This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>
 [This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>
 [This Unit] gains the [Calamity Countdown] status for [15] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>
@@ -3316,6 +3348,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
+Costs [30] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 [+50]% Strength <when defending>
@@ -3329,6 +3362,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
+Costs [30] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 Ignores terrain cost
@@ -3342,6 +3376,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
+Costs [30] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 [+20]% Strength <vs [post-[Rank Five era]] units>
@@ -3429,6 +3464,7 @@ Cannot be purchased
 
 ```
 Costs [60] [Yellow Apricot Immortal Essence]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Wisdom Path
@@ -3442,6 +3478,7 @@ Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [5] turns>
 
 ```
 Costs [60] [Yellow Apricot Immortal Essence]
+Costs [40] [Immortal Materials]
 Never destroyed when the city is captured
 Immortal Gu
 Rule Path
@@ -3481,6 +3518,7 @@ Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 Costs [50] [White Lychee Immortal Essence]
+Costs [30] [Immortal Materials]
 [+500]% maintenance costs
 Never appears as a Barbarian unit
 [+25]% Strength <when defending>

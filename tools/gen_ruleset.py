@@ -182,6 +182,10 @@ def qi_cost(amount, m):
 # a die outcome: the immortal's blessed land (a promotion: the aperture belongs to the immortal and dies with it) and
 # the upgrade, or the collapse. Aptitude is the foundation canon names (R V4/290): grade A raises the odds, D lowers them
 GRADES = [("Lower", 1, 2), ("Middle", 2, 4), ("Upper", 3, 6), ("Super", 5, 10)]  # essence, stones per turn
+MATERIALS = gen_paths.GC.MATERIALS
+# audit P5: an immortal aperture grows immortal materials (the refiners' stock); higher grades grow more
+LAND_MATERIALS = {"Lower": 1, "Middle": 1, "Upper": 2, "Super": 2}
+GROTTO_MATERIALS = 3
 
 
 def ascended(grade, weight, a, d):
@@ -237,7 +241,8 @@ def blessed_land(grade, essence, stones):
         # its immortals hoarded 65-116 red date essence and it won 5 of 6 games through a Venerable at T369-395
         f"Instantly consumes [{essence}] [{e}] <upon turn start> <for units without [{RAVAGED}]> <for [{u}] units> "
         f"<for [Zombie Alliance] Civilizations>" for u, e in list(IMMORTALS.items())[:2]] + [
-        f"Gain [{stones}] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
+        f"Gain [{stones}] [Gold] <upon turn start> <for units without [{RAVAGED}]>",
+        f"Instantly provides [{LAND_MATERIALS[grade]}] [{MATERIALS}] <upon turn start> <for units without [{RAVAGED}]>"]
         + countdown("Calamity Countdown", CALAMITY_TURNS[grade], "Earthly Calamity")
         # Phase D: heavenly tribulations every 100 aperture-years at rank six, every 50 at rank seven (R V4/91, V4/177)
         + countdown("Tribulation Countdown", TRIBULATION_TURNS, "Heavenly Tribulation", " <for [Rank Six Gu Immortal] units>")
@@ -344,6 +349,7 @@ APRICOT = "Yellow Apricot Immortal Essence"  # rank nine (R V6/249)
 ETERNAL_COST = 300  # yellow apricot essence for Eternal Life on Standard (was 150 until Phase D, 2026-11-02)
 VEN_ELSEWHERE = "<if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>"
 VENERABLE = "Venerable"
+HOUSE_MATERIALS = 30  # audit P5: a Gu House is refined from immortal materials too
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
     ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
@@ -357,7 +363,8 @@ GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques)
 GROTTO = {"name": "Grotto-Heaven Aperture", "uniques": [
     f"Instantly provides [3] [{WHITE}] <upon turn start> <for units without [{RAVAGED}]>",
     f"Instantly consumes [3] [{WHITE}] <upon turn start> <for units without [{RAVAGED}]> <for [Zombie Alliance] Civilizations>",
-    f"Gain [12] [Gold] <upon turn start> <for units without [{RAVAGED}]>"]
+    f"Gain [12] [Gold] <upon turn start> <for units without [{RAVAGED}]>",
+    f"Instantly provides [{GROTTO_MATERIALS}] [{MATERIALS}] <upon turn start> <for units without [{RAVAGED}]>"]
     + countdown("Calamity Countdown", 10, "Earthly Calamity") + countdown("Tribulation Countdown", 50, "Heavenly Tribulation")}
 
 # ---------------- MOD_SPEC_2 C3: immortal Gu (data/immortal_gu.csv) ----------------
@@ -384,7 +391,6 @@ FATE_WEAK = "[-15]% Strength <if [Fate Gu] is constructed by anybody>"  # a zomb
 # the inheritance, a world wonder, so a rival with the same seal can race for it and conquest can seize it. The trial
 # is thrown by the owned-tile trigger (Phase A4); preparation (Masters of the inheritance's path) raises the odds.
 INHERITANCES = table("inheritances.csv")
-MATERIALS = "Immortal Materials"
 DESOLATE = "Desolate Beast"
 ANCIENT, IMMEMORIAL = "Ancient Desolate Beast", "Immemorial Desolate Beast"  # C5: about ranks seven and eight (R V5/14)
 
@@ -657,7 +663,8 @@ dump("Units.json", [
       "attackSound": sfx.rank_sound(8), **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
                   "Can pass through impassable tiles", gen_paths.PP.chasm(),
-                                          f"Costs [50] [{WHITE}]", "[+500]% maintenance costs", NB] + extra}
+                                          f"Costs [50] [{WHITE}]", f"Costs [{HOUSE_MATERIALS}] [{MATERIALS}]",
+                                          "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": gen_paths.PP.body_strength(70, 6), "cost": 300, "requiredTech": "Calamity Lore",
      "attackSound": sfx.rank_sound(6), "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
@@ -1131,7 +1138,7 @@ dump("Events.json", [
         {"text": "Buy Lifespan Gu", "uniques": ["Unavailable <when below [120] [Gold]>", "Gain [-120] [Gold]",
                                                 f"Instantly provides [3] [{LIFESPAN}]", w("+0"),
                                                 w("+300", f"<when below [3] [{LIFESPAN}]>")]},
-        toll("Sell immortal materials", [f"Unavailable <when below [20] [{MATERIALS}]>", f"Instantly consumes [20] [{MATERIALS}]",
+        toll("Sell immortal materials", [f"Unavailable <when below [40] [{MATERIALS}]>", f"Instantly consumes [20] [{MATERIALS}]",
                                          f"Instantly provides [25] [{GREEN}]"], "+100"),
         toll("Sell essence for stones", [f"Unavailable <when below [40] [{GREEN}]>", f"Instantly consumes [40] [{GREEN}]",
                                          "Gain [200] [Gold]"], "+0"),
@@ -1188,7 +1195,9 @@ dump("Buildings.json", [
     {"name": "Stockpile Vault", "isNationalWonder": True, "requiredTech": "Calamity Lore", "cost": 160, "maintenance": 1,
      "gold": 2},
 ] + [{"name": g["name"], "isWonder": True, "requiredTech": IMMORTAL_GU_RECIPES[g["rank"]], "cost": int(g["cost"]),
-      "uniques": [f"Costs [{g['essence']}] [{IMMORTAL_GU_ESSENCE[g['rank']]}]", "Never destroyed when the city is captured", "Immortal Gu",
+      "uniques": [f"Costs [{g['essence']}] [{IMMORTAL_GU_ESSENCE[g['rank']]}]",
+                  f"Costs [{gen_paths.GC.WONDER_MATERIALS[int(g['rank'])]}] [{MATERIALS}]",
+                  "Never destroyed when the city is captured", "Immortal Gu",
                   gen_paths.path_marker(g["path"]), "Triggers a [Immortal Gu Refinement] event"] + items(g["effects"])
       # autoplay (C3): without it the AI built only the two stat wonders, after turn 275
       + [w("+300")]}

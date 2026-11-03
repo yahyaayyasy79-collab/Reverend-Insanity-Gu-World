@@ -705,6 +705,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [White Boar Gu] promotion <upon turn start> <for units without [White Boar Gu]> <for units without [White Jade Gu]>",
+      "[This Unit] takes [30] damage <upon losing the [White Boar Gu] promotion> <for units with [White Boar Gu Hunger 67%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Strength Path] Buildings]>",
       "Play [path-strength-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Strength Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
@@ -713,7 +714,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Strength path (力道), Master attainment (大师): a tempered body keeps its force while hurt. +20% strength. Signature: no penalty for wounds. Hit: each attack inflicts Guard Broken for 2 turns (dao marks I-V: 2/2/3/3/4)."
+        "text": "Strength path (力道), Master attainment (大师): a tempered body keeps its force while hurt. +20% strength. Signature: no penalty for wounds. Hit: each attack inflicts Guard Broken for 2 turns (dao marks I-V: 2/2/3/3/4). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -1079,6 +1080,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Bone Spear Gu] promotion <upon turn start> <for units without [Bone Spear Gu]> <when above [1] [Wild Boar]> <with [25]% chance>",
+      "[This Unit] takes [30] damage <upon losing the [Bone Spear Gu] promotion> <for units with [Bone Spear Gu Hunger 67%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Bone Path] Buildings]>",
       "Play [path-bone-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Bone Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
@@ -1086,7 +1088,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bone path (骨道), Master attainment (大师): bone armour grown from one's own skeleton. +20% strength. Signature: +20% strength when defending. Hit: each attack inflicts Bleeding for 2 turns (dao marks I-V: 2/2/3/3/4)."
+        "text": "Bone path (骨道), Master attainment (大师): bone armour grown from one's own skeleton. +20% strength. Signature: +20% strength when defending. Hit: each attack inflicts Bleeding for 2 turns (dao marks I-V: 2/2/3/3/4). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -1264,6 +1266,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Blood Skull Gu] promotion <upon turn start> <for units without [Blood Skull Gu]> <for [post-[Rank Three era]] units> <when above [1] [Wild Boar]> <with [25]% chance>",
+      "[This Unit] takes [30] damage <upon losing the [Blood Skull Gu] promotion> <for units with [Blood Skull Gu Hunger 89%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Blood Path] Buildings]>",
       "Play [path-blood-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blood Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
@@ -1271,7 +1274,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blood path (血道), Master attainment (大师): blood taken from the slain feeds the killer. +20% strength. Signature: heals 20 HP per kill. Hit: heals 8 HP with each attack (dao marks I-V: 9/12/15/18/22)."
+        "text": "Blood path (血道), Master attainment (大师): blood taken from the slain feeds the killer. +20% strength. Signature: heals 20 HP per kill. Hit: heals 8 HP with each attack (dao marks I-V: 9/12/15/18/22). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -1628,6 +1631,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Sole Blade Gu] promotion <upon turn start> <for units without [Sole Blade Gu]> <for [post-[Rank Three era]] units> <when above [1] [Jade]> <with [25]% chance>",
+      "[This Unit] takes [30] damage <upon losing the [Sole Blade Gu] promotion> <for units with [Sole Blade Gu Hunger 89%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Blade Path] Buildings]>",
       "Play [path-blade-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blade Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
@@ -1635,7 +1639,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blade path (刀道), Master attainment (大师): sweeping blade-qi cuts the flanks. +20% strength. Signature: flanking bonus +50%. Hit: each attack inflicts Bleeding for 2 turns (dao marks I-V: 2/2/3/3/4)."
+        "text": "Blade path (刀道), Master attainment (大师): sweeping blade-qi cuts the flanks. +20% strength. Signature: flanking bonus +50%. Hit: each attack inflicts Bleeding for 2 turns (dao marks I-V: 2/2/3/3/4). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -4576,6 +4580,7 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Moonlight Gu] promotion <upon turn start> <for units without [Moonlight Gu]> <for units without [Moon Raiment]> <when above [1] [Moon Orchid]> <with [25]% chance>",
+      "[This Unit] takes [30] damage <upon losing the [Moonlight Gu] promotion> <for units with [Moonlight Gu Hunger 67%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Moon Path] Buildings]>",
       "Play [path-moon-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Moon Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
@@ -4584,7 +4589,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Moon path (月道), Master attainment (大师): a crescent blade of moonlight strikes before the clash. +20% strength. Signature: strikes first from range at 40% strength. Hit: each attack deals 4 extra damage (dao marks I-V: 5/6/8/10/12)."
+        "text": "Moon path (月道), Master attainment (大师): a crescent blade of moonlight strikes before the clash. +20% strength. Signature: strikes first from range at 40% strength. Hit: each attack deals 4 extra damage (dao marks I-V: 5/6/8/10/12). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -4903,13 +4908,14 @@
       "Comment [Every other path this unit holds costs Strength: dao marks interfere]",
       "Path Master",
       "[This Unit] gains the [Illusory Moon Gu] promotion <upon turn start> <for units without [Illusory Moon Gu]> <for [non-[Rank One-Two era]] units> <when above [1] [Moon Orchid]> <with [25]% chance>",
+      "[This Unit] takes [30] damage <upon losing the [Illusory Moon Gu] promotion> <for units with [Illusory Moon Gu Hunger 86%]> <when above [30] HP>",
       "Play [path-illusion-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Illusion Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
       "Unavailable <for [AI player] Civilizations> <for [Path Master] units>"
     ],
     "civilopediaText": [
       {
-        "text": "Illusion path (幻道), Master attainment (大师): the blow lands on an illusion. +20% strength. Signature: slips away from melee. Hit: each attack takes 1 movement from the target (dao marks I-V: 1/1/1/2/2)."
+        "text": "Illusion path (幻道), Master attainment (大师): the blow lands on an illusion. +20% strength. Signature: slips away from melee. Hit: each attack takes 1 movement from the target (dao marks I-V: 1/1/1/2/2). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -7519,6 +7525,8 @@
       "Path Master",
       "[This Unit] gains the [Liquor Worm] promotion <upon turn start> <for units without [Liquor Worm]> <for [Rank One Gu Master] units> <when above [1] [Wine]> <with [25]% chance>",
       "[This Unit] gains the [Four Flavours Liquor Worm] promotion <upon turn start> <for units without [Four Flavours Liquor Worm]> <for [non-[Rank One Gu Master]] units> <when above [1] [Wine]> <with [25]% chance>",
+      "[This Unit] takes [30] damage <upon losing the [Liquor Worm] promotion> <for units with [Liquor Worm Hunger 67%]> <when above [30] HP>",
+      "[This Unit] takes [30] damage <upon losing the [Four Flavours Liquor Worm] promotion> <for units with [Four Flavours Liquor Worm Hunger 80%]> <when above [30] HP>",
       "[+5]% Strength <for every [1] [[Food Path] Buildings]>",
       "Play [path-food-1] sound <upon damaging a [Military] unit> <when attacking> <for units without [Food Grandmaster]>",
       "[+400]% weight to this choice for AI decisions",
@@ -7526,7 +7534,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Food path (食道), Master attainment (大师): the food path feeds Gu cheaply. +20% strength. Signature: upkeep 25% lower. Hit: heals 5 HP with each attack (dao marks I-V: 6/8/10/12/15)."
+        "text": "Food path (食道), Master attainment (大师): the food path feeds Gu cheaply. +20% strength. Signature: upkeep 25% lower. Hit: heals 5 HP with each attack (dao marks I-V: 6/8/10/12/15). Its Gu is its vital Gu (本命蛊): if the Gu starves to death, the Master takes 30 damage (none at 30 HP or less)."
       }
     ]
   },
@@ -13280,6 +13288,7 @@
       "Instantly consumes [1] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Instantly consumes [1] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [2] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "Instantly provides [1] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [14] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [21] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
@@ -13297,7 +13306,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A lower-grade blessed land (下等福地), the most common: 1 green grape essence and 2 stones a turn (red date essence at rank seven)."
+        "text": "A lower-grade blessed land (下等福地), the most common: 1 green grape essence, 2 stones and 1 immortal material a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -13309,6 +13318,7 @@
       "Instantly consumes [2] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Instantly consumes [2] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [4] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "Instantly provides [1] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [9] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [13] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [20] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
@@ -13326,7 +13336,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A middle-grade blessed land (中等福地): 2 green grape essence and 4 stones a turn (red date essence at rank seven)."
+        "text": "A middle-grade blessed land (中等福地): 2 green grape essence, 4 stones and 1 immortal material a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -13338,6 +13348,7 @@
       "Instantly consumes [3] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Instantly consumes [3] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [6] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "Instantly provides [2] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [8] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [12] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [18] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
@@ -13355,7 +13366,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "An upper-grade blessed land (上等福地), rare: 3 green grape essence and 6 stones a turn (red date essence at rank seven)."
+        "text": "An upper-grade blessed land (上等福地), rare: 3 green grape essence, 6 stones and 2 immortal materials a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -13367,6 +13378,7 @@
       "Instantly consumes [5] [Green Grape Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Six Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Instantly consumes [5] [Red Date Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Rank Seven Gu Immortal] units> <for [Zombie Alliance] Civilizations>",
       "Gain [10] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "Instantly provides [2] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [11] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [16] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
@@ -13384,7 +13396,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A super-grade blessed land (特等福地), the foundation of a prodigy: 5 green grape essence and 10 stones a turn (red date essence at rank seven)."
+        "text": "A super-grade blessed land (特等福地), the foundation of a prodigy: 5 green grape essence, 10 stones and 2 immortal materials a turn (red date essence at rank seven)."
       }
     ]
   },
@@ -13526,6 +13538,7 @@
       "Instantly provides [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]>",
       "Instantly consumes [3] [White Lychee Immortal Essence] <upon turn start> <for units without [Ravaged Land]> <for [Zombie Alliance] Civilizations>",
       "Gain [12] [Gold] <upon turn start> <for units without [Ravaged Land]>",
+      "Instantly provides [3] [Immortal Materials] <upon turn start> <for units without [Ravaged Land]>",
       "[This Unit] gains the [Calamity Countdown] status for [7] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Quick] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [10] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Standard] game speed>",
       "[This Unit] gains the [Calamity Countdown] status for [15] turn(s) <upon turn start> <for units without [Calamity Countdown]> <on [Epic] game speed>",
@@ -13539,7 +13552,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "A grotto-heaven (洞天): the rank-eight aperture. 3 white lychee essence and 12 stones a turn; calamities every 10 turns, tribulations every 50 (on Standard). A Venerable leaves it behind."
+        "text": "A grotto-heaven (洞天): the rank-eight aperture. 3 white lychee essence, 12 stones and 3 immortal materials a turn; calamities every 10 turns, tribulations every 50 (on Standard). A Venerable leaves it behind."
       }
     ]
   },

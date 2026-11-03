@@ -120,6 +120,9 @@
         "text": "A Gu that eats a Gu food (moon orchid, wild boar, jade or wine) takes it from the clan's stock every turn. When the clan is short, every Gu eating that food is weakened at once and its hunger meter rises each turn: a status on the unit shows the percent. At 100% the Gu rolls its chance to die, then the meter starts again. Feed the clan and the meter clears."
       },
       {
+        "text": "A path's own Gu is its Master's vital Gu: if it starves to death, the Master takes 30 damage (none at 30 HP or less). Its Master brings it back once the food is in surplus again."
+      },
+      {
         "text": "Hunger rate by rank: rank 1 +33% a turn (50% death chance at 100%), rank 2 +20% a turn (50% death chance at 100%), rank 3 +14% a turn (50% death chance at 100%), rank 4 +11% a turn (50% death chance at 100%). The lower the rank, the faster the hunger."
       },
       {
