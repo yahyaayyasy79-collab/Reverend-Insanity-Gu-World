@@ -137,6 +137,10 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `[-3] units cost no maintenance <for [Major] Civilizations>` | -3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-20]% Strength <when below [0] [Gold]>` | -20, 0 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-33]% unhappiness from the number of cities` | -33 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [201]> <on [Quick] game speed>` | -30, 201 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [300]> <on [Standard] game speed>` | -30, 300 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [450]> <on [Epic] game speed>` | -30, 450 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [900]> <on [Marathon] game speed>` | -30, 900 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [20]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 20, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [45]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -3983,6 +3987,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3766 numbers listed.
+3770 numbers listed.
 
 <!-- inventory:end -->

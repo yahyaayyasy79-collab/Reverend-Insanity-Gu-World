@@ -133,6 +133,9 @@ def w(x, cond=""):
 SPEEDS = [(s["name"], s["modifier"]) for s in json5.load(open(os.path.join(VAN, "Speeds.json")))]
 
 
+AI_LATE_UPKEEP = 30  # Phase D: the AI's late-game upkeep relief, percent (GlobalUniques)
+
+
 def per_speed(make):
     """make(modifier) -> unique without a speed conditional; one line per game speed."""
     return [f"{make(m)} <on [{name}] game speed>" for name, m in SPEEDS]
@@ -431,7 +434,13 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     # clans unhappy, growth -75%, population stuck near 18 whatever the number of villages). With this and the
     # Tavern's +2: population 27 at T280 (Qing Mao: no change in debt, stones per turn -1.5 -> +1.3)
     "[-33]% unhappiness from the number of cities",
-] + per_speed(lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
+] + per_speed(
+    # Phase D: unit upkeep grows with the game's progress p, x(1 + p) and then ^(1 + p/3) [src CivInfoStatsForNextTurn.
+    # getUnitMaintenance], and the engine's AI keeps its army regardless: after T300 a third of AI clan-turns ran in
+    # debt and clans touched the -200 disband line (autoplay, Five Regions, 8 x 450; upkeep 67 against income 83 a
+    # turn at T330-400). From 60% of the game on, an AI clan's units cost 30% less; a player's cost the same.
+    lambda m: f"[-{AI_LATE_UPKEEP}]% maintenance costs <for [AI player] Civilizations> <after turn number [{turn_gate(300, m)}]>"
+) + per_speed(lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
                        f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
     lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(90, m)}]> "
               f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
