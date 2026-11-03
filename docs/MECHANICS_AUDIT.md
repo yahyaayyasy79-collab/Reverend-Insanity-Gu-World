@@ -100,3 +100,8 @@ commit before P4):
   The hunger step is the one that gates the death roll, so the line fires on a starvation death only. The loss trigger
   runs after the Gu's own uniques are gone [src UnitPromotions.removePromotion], hence the Master. Edge: refining
   White Boar or Moonlight Gu into the next rung while it starves at that step also counts as a death; this is rare.
+
+**Measured** (AUTOPLAY.md, "immortal materials and the vital Gu": 26 games each against P1-P4):
+* Materials: the median clan holds 95 at T300 (6 before). AI immortal Gu wonders: 2.7 per game, then 2.5 (noise).
+* Vital Gu: the HP change around a path Gu's starvation death moved from +0.1 to -10.3 in all 8 games of the check.
+* Majors alive (7.2 / 6.9), immortals, soldiers, red turns and techs stayed within the noise.

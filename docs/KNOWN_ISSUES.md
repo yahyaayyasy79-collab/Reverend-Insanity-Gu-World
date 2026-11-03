@@ -184,6 +184,9 @@ rest of the list is what a player or the next session should know before trustin
 
 * **AI killer moves and Gu spoils (audit P3, P2).** Both fire in headless games (AUTOPLAY.md, 2026-11-03). Still
   unseen on a screen: the notification when your unit takes a Gu, and an AI unit's move among its statuses.
+* **The vital Gu (audit P6).** It fires in headless games: Masters lose HP when their path Gu starves. Unseen on a
+  screen: the damage notification. Edge: refining a starving White Boar or Moonlight Gu into its next rung, at the
+  hunger step of the death roll, counts as a death and wounds the Master too.
 
 Autoplay runs the engine headless; these need eyes on a screen (Android first). Commands: `docs/TESTING.md`,
 "Developer console".

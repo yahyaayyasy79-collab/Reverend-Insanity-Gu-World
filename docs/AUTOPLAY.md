@@ -460,6 +460,33 @@ purchase.
 * **No weaker AI, no poorer AI.** Every measure is within the noise. The first six games alone showed red turns at
   134 against 200; the next twelve did not repeat it.
 
+## Phase D: immortal materials and the vital Gu (2026-11-03)
+
+The setup was Five Regions, Prince, 300 turns. "Base" is P1-P4 (26 games: seeds 51-68 and 101-108). "P5+P6" is the
+same seeds on 841cd4d (materials 15/20/25/40) and 375376b (doubled). SE is the standard error of the difference.
+
+| Metric | Base | P5+P6 | Difference | SE |
+|---|---|---|---|---|
+| Majors alive at T300 | 7.2 | 6.9 | -0.3 | 0.2 |
+| Cities captured | 2.3 | 2.7 | +0.4 | 0.6 |
+| Immortals at T300 | 17.2 | 16.6 | -0.6 | 0.9 |
+| Soldiers at T300 | 94 | 91 | -3 | 4 |
+| Major-turns in the red | 153 | 155 | +3 | 16 |
+| Clans 20+ turns red | 3.0 | 2.9 | -0.1 | 0.3 |
+| Immortal Gu wonders per game | 2.7 | 2.5 | -0.2 | 0.4 |
+| Immortal Materials at T300 (median clan) | 6 | 95 | +90 | 9 |
+
+* **Materials no longer gate the race.** With costs of 15/20/25/40, the AI held 41-195 materials when it began a
+  wonder (median 108), so the cost never bit. The costs were doubled, which would have delayed none of those 42
+  builds. Most measures move by less than their noise. The largest is majors alive at 1.5 SE; watch it.
+* **The vital Gu fires.** The harness records each unit's HP change between the snapshots around a starvation death.
+  For the eight path Gu, it moved from +0.1 (918 deaths in 8 games) to -10.3 (668 deaths), lower in every one of
+  the 8 games (-7 to -19). Other Gu stayed near zero (-0.1, then -1.6). It is not -30 because healing comes between snapshots,
+  units at 30 HP or less take nothing, and a unit holding White Boar or Moonlight Gu without the path's Master is spared.
+* **Hunger is the White Boar's.** White Boar Gu makes up about four starvation deaths in five (80-100 per game over
+  8 clans). Wild Boar runs short wherever the Strength path spreads; the Master hands the Gu back once boar is in
+  surplus, so the meter cycles. Not changed here: a balance question of its own.
+
 ## Re-run
 
 ```
