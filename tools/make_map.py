@@ -142,15 +142,17 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     "Jia Clan": ("south", 41, 37), "Huang Jin Family": ("north", 30, 3), "Zombie Alliance": ("east", 52, 20),
     "Merman Imperial Court": ("east", 55, 11), "Fang Clan": ("west", 6, 20), "Heavenly Court": ("central", 30, 18),
     "Lang Ya Sect": ("north", 46, 8), "Spirit Affinity House": ("central", 37, 15),
-    "Combat Immortal Sect": ("central", 30, 24),
+    "Combat Immortal Sect": ("central", 30, 26),
     # Phase D: minor clans in every region (faction research R; Lang Ya is a Northern Plains sect, R ch461/464)
     "Man Tribe": ("north", 20, 8), "Ge Tribe": ("north", 11, 6), "Lan Clan": ("west", 5, 11),
     "Xiao Clan": ("west", 12, 15), "Mo Clan": ("west", 6, 29), "Song Clan": ("east", 50, 29),
     "Xia Clan": ("east", 57, 24), "Immortal Crane Sect": ("central", 21, 16),
     # Regions II: the other seven great sects (R V6c358): Ancient Soul in the far west of the continent (V4c79), Myriad
-    # Dragon Dock beside the Immortal Crane Sect's lands (V4c48); the Wan clan's Gao Song Oasis in the desert (V6c281)
-    "Heavenly Lotus Sect": ("central", 25, 21), "Spirit Butterfly Valley": ("central", 33, 14),
-    "Ancient Soul Sect": ("central", 19, 24), "Heaven's Envy Tower": ("central", 25, 14),
+    # Dragon Dock beside the Immortal Crane Sect's lands (V4c48); the Wan clan's Gao Song Oasis in the desert (V6c281).
+    # The sects sit on the region's rim: placed around the Court they held it to 3.4 cities (5.1 before) and halved
+    # its immortals (autoplay 8 x 450, 2026-11-08); the Combat Immortal Sect moved two tiles south for the same reason
+    "Heavenly Lotus Sect": ("central", 24, 26), "Spirit Butterfly Valley": ("central", 41, 13),
+    "Ancient Soul Sect": ("central", 19, 24), "Heaven's Envy Tower": ("central", 19, 13),
     "Wind Cloud Manor": ("central", 40, 19), "Black Heaven Temple": ("central", 36, 25),
     "Myriad Dragon Dock": ("central", 22, 20), "Wan Clan": ("west", 13, 25)}
 FIVE_REALMS = {  # realm: (region, column, row)
