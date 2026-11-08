@@ -3596,6 +3596,12 @@ Starts with [Righteous Path] adopted
 [+15]% Strength <vs [Immortal Zombie] units>
 Start bias [Hill]
 [+25]% Strength <vs [Barbarian] units>
+[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
+[+15]% [Science] [in all cities]
+[+15]% [Production] [in all cities]
+[+50]% Strength for cities
+[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>
 ```
 
 **Huang Jin Family** (Nations.json; {"leaderName": "Huang Jin Patriarch", "adjective": ["Huang Jin Family"], "personality": "Huang Jin Temperament", "outerColor": [200, 160, 40], "innerColor": [90, 40, 20], "cities": ["Imperial Court", "Golden Tent", "Northern Plains Camp"], "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.", "declaringWar": "The blood of Giant Sun does not ask permission.", "defeated": "Scatter us if you can; one Huang Jin line always survives.", "civilopediaText": [{"text": "The Huang Jin (\u9ec4\u91d1\u5bb6\u65cf), every bloodline of Giant Sun on the Northern Plains. No Huang Jin line may be wiped out; only they may pass the 88 True Yang Building's trial."}]})
@@ -3604,6 +3610,15 @@ Start bias [Hill]
 Starts with [Righteous Path] adopted
 [+15]% Strength <when defending>
 Start bias [Grassland]
+[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
+[-15]% [Gold] [in all cities]
+[+25]% Production when constructing [Military] units [in all cities]
+[+5 Happiness]
+Triggers a [Imperial Court Contest] event <upon turn start> <every [9] turns> <on [Quick] game speed>
+Triggers a [Imperial Court Contest] event <upon turn start> <every [13] turns> <on [Standard] game speed>
+Triggers a [Imperial Court Contest] event <upon turn start> <every [20] turns> <on [Epic] game speed>
+Triggers a [Imperial Court Contest] event <upon turn start> <every [39] turns> <on [Marathon] game speed>
 ```
 
 **Zombie Alliance** (Nations.json; {"leaderName": "Zombie Alliance Elder", "adjective": ["Zombie Alliance"], "personality": "Zombie Alliance Temperament", "outerColor": [60, 80, 70], "innerColor": [180, 220, 190], "cities": ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"], "introduction": "The Zombie Alliance greets you. We are righteous, of course. Ask anyone still breathing.", "declaringWar": "Your immortals will keep. Ours never age.", "defeated": "Dead again. It was bound to happen.", "civilopediaText": [{"text": "The Zombie Alliance (\u50f5\u76df): immortal zombies with a righteous face and a secret master. Its immortals never age but their blessed lands make no essence (plunder and trade must feed them), and its fallen rise again as zombies."}]})
@@ -3612,6 +3627,12 @@ Start bias [Grassland]
 Starts with [Righteous Path] adopted
 Start bias [Coast]
 Free [Immortal Zombie] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]} {non-[Immortal Zombie]}] unit>
+[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[+25]% [Gold] [in all cities]
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [4]% chance> <on [Quick] game speed>
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [3]% chance> <on [Standard] game speed>
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [2]% chance> <on [Epic] game speed>
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [1]% chance> <on [Marathon] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>
@@ -3629,6 +3650,8 @@ Starts with [Righteous Path] adopted
 [+50]% Production when constructing [Gu House] units [in all cities]
 [+10]% [Science] [in all cities]
 Start bias [Desert]
+[2] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[+20]% [Gold] [in all cities]
 ```
 
 **Fate War** (popup)
@@ -3800,6 +3823,7 @@ Instantly provides [60] [Lifespan Gu]
 ```
 Only available <for [Venerable] units>
 Unavailable <if [Eternal Life] is constructed by anybody>
+Unavailable <for [Heavenly Court] Civilizations>
 Unavailable <when below [201] [Yellow Apricot Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [300] [Yellow Apricot Immortal Essence]> <on [Standard] game speed>
 Unavailable <when below [450] [Yellow Apricot Immortal Essence]> <on [Epic] game speed>
@@ -4547,7 +4571,7 @@ A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every 
 **Immortal Crane Sect** (Nations.json; {"cityStateType": "Immortal Sect", "outerColor": [230, 230, 235], "innerColor": [170, 30, 40], "cities": ["Fei He Mountain"], "civilopediaText": [{"text": "The Immortal Crane Sect (\u4ed9\u9e64\u95e8), one of the ten great ancient sects, seated on Fei He Mountain. The Gu Yue founder came from it, and it hunts demonic Gu Masters."}]})
 
 ```
-
+[+50]% Strength for cities
 ```
 
 **Merman Imperial Court** (Nations.json; {"cityStateType": "Merchant Clan", "outerColor": [30, 90, 130], "innerColor": [200, 240, 250], "cities": ["Merman Court"], "civilopediaText": [{"text": "The merfolk's court in the Eastern Sea (\u9c9b\u4eba\u738b\u5ead)."}]})
@@ -4566,6 +4590,12 @@ A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every 
 Starts with [Righteous Path] adopted
 Start bias [Coast]
 Free [Immortal Zombie] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]} {non-[Immortal Zombie]}] unit>
+[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[+25]% [Gold] [in all cities]
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [4]% chance> <on [Quick] game speed>
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [3]% chance> <on [Standard] game speed>
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [2]% chance> <on [Epic] game speed>
+Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [1]% chance> <on [Marathon] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>
 Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>
@@ -4583,6 +4613,12 @@ Starts with [Righteous Path] adopted
 [+15]% Strength <vs [Immortal Zombie] units>
 Start bias [Hill]
 [+25]% Strength <vs [Barbarian] units>
+[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
+[+15]% [Science] [in all cities]
+[+15]% [Production] [in all cities]
+[+50]% Strength for cities
+[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>
 ```
 
 
@@ -4729,3 +4765,34 @@ Immortal Materials as the refiners' stock (P5) and the vital Gu (P6).
   the two Liquor Worms, Bone Spear, Blood Skull, Sole Blade and Illusory Moon Gu. When such a Gu starves to death,
   its Master takes 30 damage. A unit at 30 HP or less takes none, so the backlash never kills. Gu that eat stones
   cannot starve.
+
+## Regions as canon (the user, 2026-11-05: "buatlah semuanya seperti lore, konflik, ... persis seperti di kanon")
+
+The user asked for each region's power, technology, politics and conflict to match the canon. The Central Continent
+must be far ahead, as the Heavenly Court's order is millions of years old, yet the Court is not warlike. Immortals
+should fly. The canon research of 2026-11-08 (subagent, raw text R; verdicts and sources in `docs/REGIONS.md`) drives
+every row. Autoplay before the change: tech, immortals and size were level across the regions, and only the
+Southern Border ever went to war (8 × 450).
+
+| Change | Canon (own words) | Source | Verdict |
+|---|---|---|---|
+| Immortals fly (`May travel on Water tiles without embarking`, `Ignores terrain cost`) | Immortals are all flight masters | R V4c161, V4c154 | CANON |
+| Region walls passable; damage grows with rank | Walls stop the strong: mortals cross, rank 6 hard, rank 7 very dangerous, rank 8 almost never | R V4c61, V5c535, V5c899, V4c286 | CANON (numbers ADAPTED) |
+| Central Continent head start (6 techs, two rank-three Gu Masters), +15% science and production, +50% city strength | Strongest and richest in qi, the most immortals, an order about three million years old | R V2c135, V4c55, V5c519, V5c704 | ADAPTED |
+| The Court declares no war (`declareWar` 0) and never seeks Eternal Life | It wages no ordinary war; it acts against fate-defiers and threats, and keeps Heaven's Will | R V5c49, V4c131, V4c314, V5c344 | CANON (Eternal Life block ADAPTED) |
+| Immortal Tomb: two rank-seven immortals wake when war is declared on the Court | Most Court immortals sleep in the Immortal Tomb and wake only in real need; they face no calamities | R V5c49, V5c560, V5c55 | ADAPTED |
+| The ten sects' seats: +50% city strength (the three on the map) | The ten sects are the Court's lower sects, hold 80% of the continent's resources, from seats a hundred thousand years old | R V4c307, V4c55, V4c9 | ADAPTED |
+| Northern Plains head start (3 techs, three rank-two Gu Masters), −15% stones, +25% military production, +5 happiness, the most warlike temperament | Second fighting power, the poorest land, the most Gu Masters and the best fighters, always at war | R V3c153, V3c20, V4c170 | ADAPTED (the happiness lets the engine's AI declare war, E14) |
+| Imperial Court Contest every ~13 turns (a die: the bigger army wins more often) | Every ten years the golden tribes fight for the Imperial Court before the blizzard; only mortals fight | R V3c117, V3c120, V3c84, V3c147 | CANON (die ADAPTED) |
+| Eastern Sea head start (3 techs), +25% stones | The richest region | R V4c243, V5c669 | ADAPTED |
+| Fate Hunt on the Zombie Alliance | The Court hunts fate escapees, immortal zombies first | R V4c131, V4c307 | CANON (event ADAPTED) |
+| Western Desert head start (2 techs), +20% stones, a cooperative temperament | The most trade-minded region; no one marches across the sand to take another oasis | R V3c20, V5c596, V5c475 | CANON (numbers ADAPTED) |
+
+Exact uniques of the two new events (Events.json):
+
+* **Imperial Court Contest** (presentation None):
+  * Our Gu Masters take the court: `Gain [60] [Gold]`, `New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>`, `[+0]% weight to this choice for AI decisions`, `[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>`.
+  * Another tribe takes the court, and the blizzard falls on our camps: `[-50]% growth [in all cities] <for [10] turns>`, `[+0]% weight to this choice for AI decisions`.
+* **Fate Hunt**:
+  * Go to ground in the Yellow Springs Sea: `[-25]% Strength <for [10] turns>`, `[+0]% weight to this choice for AI decisions`.
+  * Pay informants to lose the trail: `Unavailable <when below [120] [Gold]>`, `Gain [-120] [Gold]`, `[+50]% weight to this choice for AI decisions`.

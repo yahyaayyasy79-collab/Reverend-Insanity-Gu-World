@@ -2365,6 +2365,17 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Immortal Gu Refinement › Its birth calls down a calamity | `[-2] population [in this city]` | -2 | tools/gen_ruleset.py `Events` |
 | Immortal Gu Refinement › Its birth calls down a calamity | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Immortal Gu Refinement › Its birth calls down a calamity | `[-67]% weight to this choice for AI decisions` | -67 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Our Gu Masters take the court | `Gain [60] [Gold]` | 60 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Our Gu Masters take the court | `New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>` | 15, 13 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Our Gu Masters take the court | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Our Gu Masters take the court | `[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>` | +200, 8 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Another tribe takes the court, and the blizzard falls on our camps | `[-50]% growth [in all cities] <for [10] turns>` | -50, 10 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Another tribe takes the court, and the blizzard falls on our camps | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Fate Hunt › Go to ground in the Yellow Springs Sea | `[-25]% Strength <for [10] turns>` | -25, 10 | tools/gen_ruleset.py `Events` |
+| Fate Hunt › Go to ground in the Yellow Springs Sea | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Fate Hunt › Pay informants to lose the trail | `Unavailable <when below [120] [Gold]>` | 120 | tools/gen_ruleset.py `Events` |
+| Fate Hunt › Pay informants to lose the trail | `Gain [-120] [Gold]` | -120 | tools/gen_ruleset.py `Events` |
+| Fate Hunt › Pay informants to lose the trail | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Lie low | `[-20]% Strength <for [10] turns>` | -20, 10 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Lie low | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Pay heaven its due | `Unavailable <when below [30] [Green Grape Immortal Essence]>` | 30 | tools/gen_ruleset.py `Events` |
@@ -3728,7 +3739,28 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bai Clan | `[+15]% Strength <vs [Barbarians] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+15]% Strength <vs [Immortal Zombie] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+25]% Strength <vs [Barbarian] units>` | +25 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 6, 2 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>` | 2, 2 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+15]% [Science] [in all cities]` | +15 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+15]% [Production] [in all cities]` | +15 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>` | 2, 3 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[-15]% [Gold] [in all cities]` | -15 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[+25]% Production when constructing [Military] units [in all cities]` | +25 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[+5 Happiness]` | +5 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [9] turns> <on [Quick] game speed>` | 9 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [13] turns> <on [Standard] game speed>` | 13 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [20] turns> <on [Epic] game speed>` | 20 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [39] turns> <on [Marathon] game speed>` | 39 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `[+25]% [Gold] [in all cities]` | +25 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [4]% chance> <on [Quick] game speed>` | 0, 4 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [3]% chance> <on [Standard] game speed>` | 0, 3 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [2]% chance> <on [Epic] game speed>` | 0, 2 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance | `Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [1]% chance> <on [Marathon] game speed>` | 0, 1 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>` | 1, 7, 1 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>` | 1, 10, 1 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance | `Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>` | 1, 15, 1 | tools/gen_ruleset.py `Nations` |
@@ -3739,6 +3771,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Zombie Alliance | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
 | Fang Clan | `[+50]% Production when constructing [Gu House] units [in all cities]` | +50 | tools/gen_ruleset.py `Nations` |
 | Fang Clan | `[+10]% [Science] [in all cities]` | +10 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `[2] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 2, 2 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `[+20]% [Gold] [in all cities]` | +20 | tools/gen_ruleset.py `Nations` |
+| Spirit Affinity House | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Combat Immortal Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
 | Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
 | Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
@@ -3751,6 +3787,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
 | Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
 | Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
+| Immortal Crane Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 
 ### CityStateTypes.json
 
@@ -3810,30 +3847,33 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Xiong Temperament | priorities.Righteous Path | 3 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+50]% weight to [Gu Academy] for AI decisions` | +50 | tools/gen_ruleset.py `Nations` |
 | Xiong Temperament | `[+100]% weight to [Awakening Grounds] for AI decisions` | +100 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | science | 8 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | aggressive | 5 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | declareWar | 5 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | diplomacy | 6 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court Temperament | loyal | 7 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | science | 9 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | military | 8 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | aggressive | 2 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | declareWar | 0 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | diplomacy | 8 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | loyal | 9 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court Temperament | commerce | 6 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court Temperament | `[+500]% weight to [Fate Gu] for AI decisions` | +500 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | military | 8 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | aggressive | 8 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | declareWar | 8 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Temperament | expansion | 7 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | military | 10 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | aggressive | 10 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | declareWar | 10 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | expansion | 8 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Temperament | loyal | 5 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | gold | 7 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Temperament | diplomacy | 3 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | gold | 8 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
 | Zombie Alliance Temperament | aggressive | 7 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | declareWar | 7 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | commerce | 7 | tools/gen_ruleset.py `Nations` |
-| Zombie Alliance Temperament | loyal | 3 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | declareWar | 6 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | commerce | 8 | tools/gen_ruleset.py `Nations` |
+| Zombie Alliance Temperament | loyal | 2 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | production | 8 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
-| Fang Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
-| Fang Temperament | aggressive | 6 | tools/gen_ruleset.py `Nations` |
-| Fang Temperament | declareWar | 7 | tools/gen_ruleset.py `Nations` |
-| Fang Temperament | diplomacy | 5 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | aggressive | 3 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | declareWar | 2 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | diplomacy | 9 | tools/gen_ruleset.py `Nations` |
+| Fang Temperament | commerce | 9 | tools/gen_ruleset.py `Nations` |
 | Fang Temperament | `[+200]% weight to [Gu House Formation] for AI decisions` | +200 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | military | 7 | tools/gen_ruleset.py `Nations` |
 | Wu Temperament | aggressive | 4 | tools/gen_ruleset.py `Nations` |
@@ -4081,6 +4121,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3825 numbers listed.
+3865 numbers listed.
 
 <!-- inventory:end -->

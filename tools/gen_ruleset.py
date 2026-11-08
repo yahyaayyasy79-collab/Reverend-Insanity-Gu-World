@@ -287,6 +287,16 @@ IMMORTAL_XP = ["[This Unit] gains [3] XP <upon turn start>",
 IMMORTAL_RANK = {"Rank Six Gu Immortal": 6, "Rank Seven Gu Immortal": 7, "Rank Eight Gu Immortal": 8}
 
 
+# Regions (canon research 2026-11-08, docs/REGIONS.md): each region starts as old and as strong as the canon makes it.
+# The head start lands once, when a civ founds its first city [src CityFounder: the trigger runs with that city].
+FIRST_CITY = "<upon founding a city> <when number of [Cities] is less than [2]>"
+
+
+def head_start(techs, units=0, unit=""):
+    return ([f"[{techs}] Free Technologies {FIRST_CITY}"] if techs else []) + (
+        [f"[{units}] free [{unit}] units appear {FIRST_CITY}"] if units else [])
+
+
 def toll(text, effects, weight):
     return {"text": text, "uniques": effects + [w(weight)]}
 
@@ -850,7 +860,9 @@ dump("UnitPromotions.json", with_combos([
     # Venerable (T314-378) and four won Eternal Life 30-35 turns later at 150. At ETERNAL_COST the Venerable reigns, and
     # can be hunted, for about twice as long: rank nine stays hard and long, as the user expects
     {"name": "Seek Eternal Life", "unitTypes": GM_TYPES, "uniques": [
-        f"Only available <for [{VENERABLE}] units>", "Unavailable <if [Eternal Life] is constructed by anybody>"]
+        f"Only available <for [{VENERABLE}] units>", "Unavailable <if [Eternal Life] is constructed by anybody>",
+        # Regions: the Court keeps fate and Heaven's Will; eternal life is the fate-defiers' dream, never its own
+        f"Unavailable <for [{HC}] Civilizations>"]
         + [f"Unavailable <when below [{qi_cost(ETERNAL_COST, m)}] [{APRICOT}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(ETERNAL_COST, m)}] [{APRICOT}] <on [{n}] game speed>" for n, m in SPEEDS]
         + ["Gain a free [Eternal Life] [in capital]", "[This Unit] loses the [Seek Eternal Life] promotion", w("+1000")]},
@@ -1090,6 +1102,23 @@ dump("Events.json", [
         toll("The Gu takes shape", [], "+0"),
         toll("Its birth calls down a calamity", ["[-2] population [in this city]", "[2] [Bold Lightning Wolf]s rebel"], "-67")]},
     # civ-level: no unit context
+    # Regions: the golden tribes' contest for the Imperial Court every ten years, before the killing blizzard. Only
+    # mortals fight, the immortals look on (Giant Sun's rule, R V3c120); the winners shelter in the blessed land and
+    # take its inheritances, the losers face the blizzard (R V3c84, V3c147). A die, not a choice: the bigger army
+    # wins more often
+    {"name": "Imperial Court Contest", "presentation": "None", "text": "The golden tribes' contest for the Imperial "
+     "Court opens before the killing blizzard. Only mortal Gu Masters may fight; the immortals look on.", "choices": [
+        {"text": "Our Gu Masters take the court", "uniques": [
+            "Gain [60] [Gold]", "New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>",
+            w("+0"), w("+200", "<when number of [[Military] Units] is more than [8]>")]},
+        {"text": "Another tribe takes the court, and the blizzard falls on our camps", "uniques": [
+            "[-50]% growth [in all cities] <for [10] turns>", w("+0")]}]},
+    # Regions: the Court hunts those who slipped their fate, for each one killed helps mend Fate Gu; immortal
+    # zombies are its first quarry (R V4c131, V4c307)
+    {"name": "Fate Hunt", "text": "Heavenly Court envoys hunt those who slipped their fate. Your immortal zombies are on "
+     "their list.", "choices": [
+        toll("Go to ground in the Yellow Springs Sea", ["[-25]% Strength <for [10] turns>"], "+0"),
+        toll("Pay informants to lose the trail", ["Unavailable <when below [120] [Gold]>", "Gain [-120] [Gold]"], "+50")]},
     {"name": "Heaven's Will", "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and "
                                       "luck runs thin.", "choices": [
         toll("Lie low", ["[-20]% Strength <for [10] turns>"], "+0"),
@@ -1532,21 +1561,44 @@ dump("Nations.json", [
            ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"],
            [RIGHTEOUS_START, f"[+15]% Strength <vs [{ZOMBIE}] units>", "Start bias [Hill]",
             # Phase D: the Demon Extermination List (诛魔榜, R ch700, ch710)
-            "[+25]% Strength <vs [Barbarian] units>"]),
+            "[+25]% Strength <vs [Barbarian] units>",
+            # Regions: the strongest region, with the richest qi and the most immortals, its order three million years
+            # old (R V2c135, V4c55, V5c519, V5c704). Its many immortals sleep in the Immortal Tomb and wake only when
+            # the Court is truly threatened (R V5c49, V5c560): when a clan declares war on it, two rank-seven immortals
+            # take the field. They have no blessed land, so no calamities (R V5c55), and they burn their last life
+            # (Lifespan Gu) as the canon's sleepers do.
+            *head_start(6, 2, "Rank Three Gu Master"), "[+15]% [Science] [in all cities]", "[+15]% [Production] [in all cities]",
+            "[+50]% Strength for cities",
+            "[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> "
+            "<when number of [[Rank Seven Gu Immortal] Units] is less than [3]>"]),
     nation(HJ, "Huang Jin Patriarch", "Huang Jin Temperament", [200, 160, 40], [90, 40, 20],
            ["Imperial Court", "Golden Tent", "Northern Plains Camp"],
-           [RIGHTEOUS_START, "[+15]% Strength <when defending>", "Start bias [Grassland]"]),
+           [RIGHTEOUS_START, "[+15]% Strength <when defending>", "Start bias [Grassland]",
+            # Regions: the second fighting power after the Central Continent and the poorest land; the most Gu
+            # Masters and the best fighters, tribes always at war (R V3c153, V3c20, V4c170). The engine's AI declares
+            # war only while content (E14): the war economy of captives and loot keeps the tribes so
+            *head_start(3, 3, "Rank Two Gu Master"), "[-15]% [Gold] [in all cities]",
+            "[+25]% Production when constructing [Military] units [in all cities]", "[+5 Happiness]"]
+           # the golden tribes' contest for the Imperial Court, every ten years, before the killing blizzard (R V3c117)
+           + per_speed(lambda m: f"Triggers a [Imperial Court Contest] event <upon turn start> <every [{turns(13, m)}] turns>")),
     nation(ZA, "Zombie Alliance Elder", "Zombie Alliance Temperament", [60, 80, 70], [180, 220, 190],
            ["Eastern Sea Hall", "Bone Isle", "Still Tide Harbour"],
            [RIGHTEOUS_START, "Start bias [Coast]",
-            f"Free [{ZOMBIE}] appears <upon losing a [{{post-[Rank Five era]}} {{non-[Advancing]}} {{non-[{ZOMBIE}]}}] unit>"]
+            f"Free [{ZOMBIE}] appears <upon losing a [{{post-[Rank Five era]}} {{non-[Advancing]}} {{non-[{ZOMBIE}]}}] unit>",
+            # Regions: the richest region (R V4c243, V5c669)
+            *head_start(3), "[+25]% [Gold] [in all cities]"]
+           # fate escapees: killing them helps mend Fate Gu, and immortal zombies are the Court's first quarry (R V4c131)
+           + per_speed(lambda m: f"Triggers a [Fate Hunt] event <upon turn start> <when number of [[{ZOMBIE}] Units] is more "
+                                 f"than [0]> <if [Fate Gu] is constructed by anybody> <with [{chance(3, m)}]% chance>")
            + per_speed(lambda m: f"Instantly provides [1] [{LIFESPAN}] <upon turn start> <every [{turns(10, m)}] turns> "
                                  f"<for every [1] [[post-[Rank Five era]] Units]>")
            + EAST_SEA_RAIDS),
     nation(FANG, "Fang Clan Head", "Fang Temperament", [150, 110, 60], [240, 230, 200],
            ["Fang Fortress", "Sand Gate", "Dune Workshop"],
            [RIGHTEOUS_START, "[+50]% Production when constructing [Gu House] units [in all cities]",
-            "[+10]% [Science] [in all cities]", "Start bias [Desert]"]),
+            "[+10]% [Science] [in all cities]", "Start bias [Desert]",
+            # Regions: the most trade-minded region, poorer than the sea and richer than the plains (R V3c20, V5c475)
+            *head_start(2), "[+20]% [Gold] [in all cities]"]),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -1557,10 +1609,12 @@ dump("Nations.json", [
     # C5c: four arc city-states (R V3/55, V4/55, V5/640)
     {"name": "Lang Ya Sect", "cityStateType": "Refiner Tribe", "outerColor": [90, 60, 30], "innerColor": [230, 210, 160],
      "cities": ["Lang Ya Blessed Land"]},
+    # Regions: the ten great sects, the Court's lower sects, hold 80% of the Central Continent's resources from seats a
+    # hundred thousand years old (R V4c55, V4c9): their cities are the hardest to take
     {"name": "Spirit Affinity House", "cityStateType": "Immortal Sect", "outerColor": [150, 90, 130],
-     "innerColor": [250, 240, 245], "cities": ["Spirit Affinity House"]},
+     "innerColor": [250, 240, 245], "cities": ["Spirit Affinity House"], "uniques": ["[+50]% Strength for cities"]},
     {"name": "Combat Immortal Sect", "cityStateType": "Immortal Sect", "outerColor": [140, 30, 30],
-     "innerColor": [240, 220, 200], "cities": ["Combat Immortal Peak"]},
+     "innerColor": [240, 220, 200], "cities": ["Combat Immortal Peak"], "uniques": ["[+50]% Strength for cities"]},
     {"name": "Merman Imperial Court", "cityStateType": "Merchant Clan", "outerColor": [30, 90, 130],
      "innerColor": [200, 240, 250], "cities": ["Merman Court"], "uniques": ["Start bias [Coast]"] + EAST_SEA_RAIDS},
     # Phase D (the user: conflict in every region; faction research R, see LORE_MAPPING "Phase D: regional conflict")
@@ -1579,7 +1633,7 @@ dump("Nations.json", [
     {"name": "Xia Clan", "cityStateType": "Battle Tribe", "outerColor": [40, 110, 110], "innerColor": [220, 250, 240],
      "cities": ["Xia Harbour"], "uniques": ["Start bias [Coast]"] + EAST_SEA_RAIDS},
     {"name": "Immortal Crane Sect", "cityStateType": "Immortal Sect", "outerColor": [230, 230, 235],
-     "innerColor": [170, 30, 40], "cities": ["Fei He Mountain"]},
+     "innerColor": [170, 30, 40], "cities": ["Fei He Mountain"], "uniques": ["[+50]% Strength for cities"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},
@@ -1621,13 +1675,19 @@ dump("Personalities.json", [
     # Phase D (the user: no conflict outside the south; autoplay 4 x 200: the four arc majors never went to war):
     # the Northern Plains tribes swallow small tribes (R ch443), the desert's clans gang up on rivals (R ch1775),
     # the Eastern Sea's lone and demonic immortals are the strongest (R ch1650); the Court hunts demons
-    {"name": "Heavenly Court Temperament", "science": 8, "military": 7, "aggressive": 5, "declareWar": 5, "diplomacy": 6,
-     "loyal": 7, "uniques": ["[+500]% weight to [Fate Gu] for AI decisions"]},
-    {"name": "Huang Jin Temperament", "military": 8, "aggressive": 8, "declareWar": 8, "expansion": 7, "loyal": 5},
-    {"name": "Zombie Alliance Temperament", "gold": 7, "military": 7, "aggressive": 7, "declareWar": 7, "commerce": 7,
-     "loyal": 3},
-    {"name": "Fang Temperament", "production": 8, "science": 6, "military": 7, "aggressive": 6, "declareWar": 7,
-     "diplomacy": 5,
+    # Regions (canon research 2026-11-08): the Court wages no ordinary war, it guards fate and strikes only at
+    # threats (R V5c49, V4c131, V4c314); declareWar 0 means it never declares one [docs Personalities], but it fights
+    # back. The plains are the most warlike (R V4c170); the sea's houses are many, opportunistic and none a hegemon
+    # (R V4c336, V5c864); the desert's clans trade and cooperate, since no one marches across the sand for another
+    # oasis (R V3c20, V5c596)
+    {"name": "Heavenly Court Temperament", "science": 9, "military": 8, "aggressive": 2, "declareWar": 0, "diplomacy": 8,
+     "loyal": 9, "commerce": 6, "uniques": ["[+500]% weight to [Fate Gu] for AI decisions"]},
+    {"name": "Huang Jin Temperament", "military": 10, "aggressive": 10, "declareWar": 10, "expansion": 8, "loyal": 5,
+     "diplomacy": 3},
+    {"name": "Zombie Alliance Temperament", "gold": 8, "military": 7, "aggressive": 7, "declareWar": 6, "commerce": 8,
+     "loyal": 2},
+    {"name": "Fang Temperament", "production": 8, "science": 6, "military": 6, "aggressive": 3, "declareWar": 2,
+     "diplomacy": 9, "commerce": 9,
      "uniques": ["[+200]% weight to [Gu House Formation] for AI decisions"]},
     {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
      "declareWar": 6, "diplomacy": 7,

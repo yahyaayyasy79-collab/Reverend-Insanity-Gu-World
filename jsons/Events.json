@@ -992,6 +992,50 @@
     ]
   },
   {
+    "name": "Imperial Court Contest",
+    "presentation": "None",
+    "text": "The golden tribes' contest for the Imperial Court opens before the killing blizzard. Only mortal Gu Masters may fight; the immortals look on.",
+    "choices": [
+      {
+        "text": "Our Gu Masters take the court",
+        "uniques": [
+          "Gain [60] [Gold]",
+          "New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>",
+          "[+0]% weight to this choice for AI decisions",
+          "[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>"
+        ]
+      },
+      {
+        "text": "Another tribe takes the court, and the blizzard falls on our camps",
+        "uniques": [
+          "[-50]% growth [in all cities] <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fate Hunt",
+    "text": "Heavenly Court envoys hunt those who slipped their fate. Your immortal zombies are on their list.",
+    "choices": [
+      {
+        "text": "Go to ground in the Yellow Springs Sea",
+        "uniques": [
+          "[-25]% Strength <for [10] turns>",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Pay informants to lose the trail",
+        "uniques": [
+          "Unavailable <when below [120] [Gold]>",
+          "Gain [-120] [Gold]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Heaven's Will",
     "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and luck runs thin.",
     "choices": [

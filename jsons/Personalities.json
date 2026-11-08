@@ -60,41 +60,44 @@
   },
   {
     "name": "Heavenly Court Temperament",
-    "science": 8,
-    "military": 7,
-    "aggressive": 5,
-    "declareWar": 5,
-    "diplomacy": 6,
-    "loyal": 7,
+    "science": 9,
+    "military": 8,
+    "aggressive": 2,
+    "declareWar": 0,
+    "diplomacy": 8,
+    "loyal": 9,
+    "commerce": 6,
     "uniques": [
       "[+500]% weight to [Fate Gu] for AI decisions"
     ]
   },
   {
     "name": "Huang Jin Temperament",
-    "military": 8,
-    "aggressive": 8,
-    "declareWar": 8,
-    "expansion": 7,
-    "loyal": 5
+    "military": 10,
+    "aggressive": 10,
+    "declareWar": 10,
+    "expansion": 8,
+    "loyal": 5,
+    "diplomacy": 3
   },
   {
     "name": "Zombie Alliance Temperament",
-    "gold": 7,
+    "gold": 8,
     "military": 7,
     "aggressive": 7,
-    "declareWar": 7,
-    "commerce": 7,
-    "loyal": 3
+    "declareWar": 6,
+    "commerce": 8,
+    "loyal": 2
   },
   {
     "name": "Fang Temperament",
     "production": 8,
     "science": 6,
-    "military": 7,
-    "aggressive": 6,
-    "declareWar": 7,
-    "diplomacy": 5,
+    "military": 6,
+    "aggressive": 3,
+    "declareWar": 2,
+    "diplomacy": 9,
+    "commerce": 9,
     "uniques": [
       "[+200]% weight to [Gu House Formation] for AI decisions"
     ]

@@ -178,7 +178,13 @@
       "Starts with [Righteous Path] adopted",
       "[+15]% Strength <vs [Immortal Zombie] units>",
       "Start bias [Hill]",
-      "[+25]% Strength <vs [Barbarian] units>"
+      "[+25]% Strength <vs [Barbarian] units>",
+      "[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[+15]% [Science] [in all cities]",
+      "[+15]% [Production] [in all cities]",
+      "[+50]% Strength for cities",
+      "[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>"
     ],
     "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.",
     "declaringWar": "You have strayed from your fate. The Court will set it right.",
@@ -214,7 +220,16 @@
     "uniques": [
       "Starts with [Righteous Path] adopted",
       "[+15]% Strength <when defending>",
-      "Start bias [Grassland]"
+      "Start bias [Grassland]",
+      "[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[-15]% [Gold] [in all cities]",
+      "[+25]% Production when constructing [Military] units [in all cities]",
+      "[+5 Happiness]",
+      "Triggers a [Imperial Court Contest] event <upon turn start> <every [9] turns> <on [Quick] game speed>",
+      "Triggers a [Imperial Court Contest] event <upon turn start> <every [13] turns> <on [Standard] game speed>",
+      "Triggers a [Imperial Court Contest] event <upon turn start> <every [20] turns> <on [Epic] game speed>",
+      "Triggers a [Imperial Court Contest] event <upon turn start> <every [39] turns> <on [Marathon] game speed>"
     ],
     "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.",
     "declaringWar": "The blood of Giant Sun does not ask permission.",
@@ -251,6 +266,12 @@
       "Starts with [Righteous Path] adopted",
       "Start bias [Coast]",
       "Free [Immortal Zombie] appears <upon losing a [{post-[Rank Five era]} {non-[Advancing]} {non-[Immortal Zombie]}] unit>",
+      "[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[+25]% [Gold] [in all cities]",
+      "Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [4]% chance> <on [Quick] game speed>",
+      "Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [3]% chance> <on [Standard] game speed>",
+      "Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [2]% chance> <on [Epic] game speed>",
+      "Triggers a [Fate Hunt] event <upon turn start> <when number of [[Immortal Zombie] Units] is more than [0]> <if [Fate Gu] is constructed by anybody> <with [1]% chance> <on [Marathon] game speed>",
       "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [7] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Quick] game speed>",
       "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [10] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Standard] game speed>",
       "Instantly provides [1] [Lifespan Gu] <upon turn start> <every [15] turns> <for every [1] [[post-[Rank Five era]] Units]> <on [Epic] game speed>",
@@ -295,7 +316,9 @@
       "Starts with [Righteous Path] adopted",
       "[+50]% Production when constructing [Gu House] units [in all cities]",
       "[+10]% [Science] [in all cities]",
-      "Start bias [Desert]"
+      "Start bias [Desert]",
+      "[2] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[+20]% [Gold] [in all cities]"
     ],
     "introduction": "The Fang clan builds what lasts. What have you built?",
     "declaringWar": "Our Gu Houses are already moving. You should have counted them.",
@@ -410,6 +433,9 @@
     "cities": [
       "Spirit Affinity House"
     ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
     "civilopediaText": [
       {
         "text": "Spirit Affinity House (灵缘斋), one of the ten great ancient sects of the Central Continent."
@@ -431,6 +457,9 @@
     ],
     "cities": [
       "Combat Immortal Peak"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
     ],
     "civilopediaText": [
       {
@@ -652,6 +681,9 @@
     ],
     "cities": [
       "Fei He Mountain"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
     ],
     "civilopediaText": [
       {
