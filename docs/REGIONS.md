@@ -139,6 +139,9 @@ armed and near a target (CAPABILITIES E14). The arc majors met those gates on 6-
 | Western Desert | 18.2 → 18.4 | 0.5 → 0.9 | 0 (the Fang clan no longer conquers its neighbours) |
 | Southern Border | 19.0 → 19.8 | 2.5 → 2.6 | 242 → 232 |
 
+With all ten sects on the region's rim (Regions II, 8 × 450) the Court keeps the lead: 5.6 cities, 23.5 techs and 5.9
+immortals at T300, and no sect falls.
+
 The Court never declared war; before, it took Spirit Affinity House in 2 of 8 games. The first build let the Huang Jin
 snowball (a Venerable in 5 of 8 games, 3 wins); the contest's XP now lasts 5 turns and the war economy gives +3
 happiness, and the Eternal Life wins are spread again (Wu, Bai, Huang Jin).
@@ -148,7 +151,8 @@ happiness, and the Eternal Life wins are spread again (Wu, Bai, Huang Jin).
 * **The Court's Venerable.** The strongest region raises the Venerable in 5 of 8 games. In the canon's present the
   Court's best are rank eight (Duke Long, matched with the rank-eight zombie Bo Qing, R V5c343); its Venerables
   belong to the past, and Star Constellation only descends as a will (R V5c344). The Court cannot seek Eternal Life,
-  so while its Venerable lives no one wins that way. Keep it, or bar the Court from ascending?
+  so while its Venerable lives no one wins that way: with all ten sects on the map only 2 of 8 games ended in an
+  Eternal Life win. Keep it, or bar the Court from ascending?
 
 ## Not done yet
 

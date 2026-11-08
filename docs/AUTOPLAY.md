@@ -563,6 +563,36 @@ of each region (majors and city-states together), at T300.
 * Debt rose with the wars: Huang Jin in the red on 23% of turns (15% before), snapshots at the -200 line 10.4 per game
   (2.8).
 
+## Regions II: the ten sects, the Refinement Conference (2026-11-08)
+
+Five Regions map, 8 × 450, seed 101: the tuned regions build 8f54dbc (`reg2_450`, 3 sects); Regions II 60b633e (`r2b`,
+all ten sects and the Wan clan, 31 civs); the same with the sects moved to the region's rim, 05c93a8 (`r2c`). No crash
+in 24 games with 31 civs.
+
+| The Heavenly Court | 3 sects | 10 sects around the Court | 10 sects on the rim |
+|---|---|---|---|
+| Cities at T300 | 5.1 | 3.4 | 5.6 |
+| Techs at T300 | 23.8 | 22.4 | 23.5 |
+| Immortals at T300 | 4.2 | 2.0 | 5.9 |
+| Venerables (games) | 5 | 0 | 5 |
+
+| All majors | 3 sects | 10 sects around | 10 sects on the rim |
+|---|---|---|---|
+| Venerables (games) | Court 5, Wu 1, Bai 1, Huang Jin 1 | Bai 5, Huang Jin 2, Gu Yue 1 | Court 5, Huang Jin 2, Wu 1 |
+| Eternal Life wins | Wu, Bai, Huang Jin | Bai 4, Huang Jin 1 | Huang Jin, Wu |
+| Clan-turns in debt after T300 | 10% | 14% | 8% |
+| Sects destroyed | - | 0 | 0 |
+
+* **The Refinement Conference fires** for every major at T130, T260 and T390. At T130 most clans buy 8 materials at
+  the fair; the rich enter the contest (+20) more often later.
+* **The Wan Coalition never fired:** the Fang clan never held more than three cities.
+* **Ten sects around the Court boxed it in**: the Venerable race then went to the Bai clan. On the rim the Court is
+  back to the strongest.
+* **The Court strikes back.** In one rim game the Huang Jin declared war on the Court around T240; the Court, which
+  never declares war itself, took two of their cities and the tribes fell (208 turns at war).
+* **Fewer decided games.** With the Court raising the Venerable in 5 of 8 games and barred from Eternal Life, only 2
+  of 8 games ended in an Eternal Life win (`docs/REGIONS.md`, open question).
+
 ## Re-run
 
 ```

@@ -1095,6 +1095,9 @@ checked in the raw text (`docs/LORE_MAPPING.md` "Regions II").
   * pay 60 stones for 8 materials;
   * stay home.
 * **City-state emblems.** All 23 city-states have a designed nation icon. Before, Unciv drew a bare circle.
-* **Autoplay** of the previous step (8 × 450): the regions stand in canon order, the Court never declares war, and
-  the Eternal Life wins are spread (Wu, Bai, Huang Jin). Open question for you: the Court raises the Venerable in 5 of
-  8 games (`docs/REGIONS.md`).
+* **Autoplay** (8 × 450, 31 civs, no crash):
+  * with the ten sects placed around the Court it held only 3.4 cities and lost every Venerable race;
+  * so the sects now sit on the region's rim, and the Court leads again: 5.6 cities, 23.5 techs, 5.9 immortals at T300;
+  * the conference fires for every clan at T130, T260 and T390; no sect falls.
+* **Open question for you:** the Court raises the Venerable in 5 of 8 games and cannot win Eternal Life, so only 2 of
+  8 games end in an Eternal Life win (`docs/REGIONS.md`).
