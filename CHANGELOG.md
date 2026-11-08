@@ -1144,3 +1144,16 @@ Border "Yi" clan) was not found and is not built. Layer 1 is the cultivation cor
   * the hundred-beast king joins from the Rank Three era;
   * the thousand-beast king from Rank Four;
   * the ten-thousand-beast king from Rank Five (it was Rank Four).
+
+## Layer 4: the variant humans; the Court's Venerable settled (2026-11-08)
+
+* **Four variant-human city-states**, each with its kind's own city-state type and bonuses:
+  * the feathermen of Yu Sheng City (Western Desert, Winged Folk): sight, and speed in the desert;
+  * the snowmen of the Great Snow Mountain (Northern Plains, Snow Folk): defence and warriors;
+  * the inkmen of Ink Man City (Northern Plains, Ink Folk): culture and contentment;
+  * the rockmen of their burrow south of the Hu Immortal blessed land (Southern Border, Stone Folk): production and
+    mines.
+* Their emblems and type icons are designed; the Five Regions map now holds 35 civs.
+* **The Court cannot ascend to Venerable.** In the canon's present its best are rank eight (Duke Long). In autoplay it
+  took the one Venerable slot in 7 of 8 games, and being barred from Eternal Life it blocked that win for everyone.
+  One line to remove if you want the old rule back (`docs/REGIONS.md`).

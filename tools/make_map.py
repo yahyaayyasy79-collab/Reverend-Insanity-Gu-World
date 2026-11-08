@@ -154,7 +154,11 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     "Heavenly Lotus Sect": ("central", 24, 26), "Spirit Butterfly Valley": ("central", 41, 13),
     "Ancient Soul Sect": ("central", 19, 24), "Heaven's Envy Tower": ("central", 19, 13),
     "Wind Cloud Manor": ("central", 40, 19), "Black Heaven Temple": ("central", 36, 25),
-    "Myriad Dragon Dock": ("central", 22, 20), "Wan Clan": ("west", 13, 25)}
+    "Myriad Dragon Dock": ("central", 22, 20), "Wan Clan": ("west", 13, 25),
+    # reference audit Layer 4: the variant humans (R V4c215 Yu Sheng City; V3c132 the Great Snow Mountain; V4c13 Ink Man
+    # City; V3c4 the rockmen south of the Hu Immortal blessed land)
+    "Feathermen": ("west", 11, 21), "Snowmen": ("north", 37, 4), "Inkmen": ("north", 52, 5),
+    "Rockmen": ("south", 12, 31)}
 FIVE_REALMS = {  # realm: (region, column, row)
     "Hu Immortal Blessed Land": ("south", 20, 31), "Dang Hun Mountain": ("south", 19, 33), "Tian Ti Mountain": ("south", 33, 30),
     "Luo Po Valley": ("south", 44, 33), "Door of Life and Death": ("south", 12, 37), "Imperial Court Blessed Land": ("north", 24, 4),

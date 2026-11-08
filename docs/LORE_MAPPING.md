@@ -3816,6 +3816,7 @@ Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <afte
 Unavailable <if [Venerable Ascension] is constructed by anybody>
 Unavailable <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
 Unavailable <in [Foreign Land] tiles>
+Unavailable <for [Heavenly Court] Civilizations>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [60] [White Lychee Immortal Essence]> <on [Standard] game speed>
@@ -5042,3 +5043,26 @@ Exact uniques: the Frenzy Lightning Wolf (Units.json) has
 `[+15]% Strength bonus for [Beast] units within [2] tiles` and `[+150]% maintenance costs`; the Beast Tide's first
 choice gains `A [Frenzy Lightning Wolf] rebels <starting from the [Rank Four era]>` and its thunder crown line now reads
 `A [Thunder Crown Wolf] rebels <starting from the [Rank Five era]>`.
+
+## Reference audit Layer 4: the variant humans (the user, 2026-11-08)
+
+The reference proposes the variant humans (异人) as city-states with their kind's own bonuses. All humans descend from
+Ren Zu (R V1c134); four kinds have a canon home on the map (raw text R; verdicts in our own words). The mushroommen are
+real (R V5c316) but their home could not be pinned to a region, so they wait.
+
+| Object | Chinese | Canon | Source | Status |
+|---|---|---|---|---|
+| Feathermen (city-state, Winged Folk), Yu Sheng City, Western Desert | 羽民 / 羽圣城 | A flying kind with a royal line; they do not go to war lightly but have immortals of their own | R V4c215, V4c217 | CANON |
+| Snowmen (Snow Folk), Great Snow Mountain, Northern Plains | 雪人 / 大雪山 | Six snowman tribes, hardly ever laughing or crying, bred on an immortal's peak as elite warbands | R V3c132 | CANON |
+| Inkmen (Ink Folk), Ink Man City, Northern Plains | 墨人 / 墨人城 | Their king rules the plains' inkmen; the golden tribes have long pressed them | R V4c13, V4c230 | CANON |
+| Rockmen (Stone Folk), Rockmen Burrow, Southern Border | 石人 | They live deep underground, eat ore and find Gu as they dig; a tribe lives south of the Hu Immortal blessed land | R V3c4, V3c7 | CANON (city name ADAPTED) |
+
+The four city-state types lend what each kind is:
+
+* **Winged Folk** (friend): `[+1] Sight <for [Military] units>`; (ally) the same and
+  `[+1] Movement <for [Military] units> <in [Desert] tiles>`.
+* **Snow Folk** (friend): `[+5]% Strength <for [Military] units> <when defending>`; (ally)
+  `[+10]% Strength <for [Military] units> <when defending>`, `Provides military units every ≈[25] turns`.
+* **Ink Folk** (friend): `[+2 Culture] [in capital]`; (ally) `[+3 Culture] [in capital]`, `[+1 Happiness]`.
+* **Stone Folk** (friend): `[+2 Production] [in capital]`; (ally) `[+2 Production] [in capital]`,
+  `[+1 Production] from [Mine] tiles [in all cities]`.

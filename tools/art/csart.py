@@ -290,6 +290,98 @@ def wan_clan():
     return g
 
 
+# ---------------------------------------------------------------- reference audit Layer 4: the variant humans
+def _wing(g: G, cx, cy, side, s=1.0):
+    """One feathered wing from the shoulder at (cx, cy), spreading sideways to `side` (-1 left, +1 right)."""
+    for k, (ln, wd) in enumerate(((44, 8), (40, 7), (34, 6), (27, 5))):
+        a = (150 + 16 * k) if side < 0 else (30 - 16 * k)
+        _petal(g, cx, cy, ln * s, wd * s, a)
+
+
+def feathermen():
+    """Yu Sheng City's feathermen: a robed figure with wings spread wide."""
+    g = G()
+    _wing(g, 44, 44, -1, 0.95); _wing(g, 56, 44, 1, 0.95)
+    g.circ(50, 24, 9)
+    g.poly([(42, 38), (58, 38), (64, 92), (36, 92)])
+    g.line([(50, 44), (50, 90)], 2.2, 0)
+    return g
+
+
+def snowmen():
+    """The Great Snow Mountain: a white-capped peak under a six-armed snowflake."""
+    g = G()
+    g.poly([(8, 94), (50, 40), (92, 94)])
+    g.poly([(50, 40), (62, 56), (55, 52), (50, 60), (45, 52), (38, 56)], 0)
+    for k in range(6):
+        a = math.radians(90 + k * 60)
+        g.line([(50, 20), (50 + 16 * math.cos(a), 20 - 16 * math.sin(a))], 3.2)
+    g.circ(50, 20, 4)
+    return g
+
+
+def inkmen():
+    """Ink Man City: a figure brushed in ink, an ink drop for a head, standing in its own pool of ink."""
+    g = G()
+    g.poly([(50, 4), (59, 18), (61, 26), (55, 33), (45, 33), (39, 26), (41, 18)])          # the ink-drop head
+    g.poly([(42, 38), (58, 38), (62, 60), (56, 82), (44, 82), (38, 60)])                     # a brushed body
+    g.line([(42, 42), (28, 62), (24, 74)], 6); g.line([(58, 42), (72, 62), (76, 74)], 6)    # arms hanging
+    g.circ(24, 80, 3.5); g.circ(76, 80, 3.5)                                                 # drips
+    g.ell(20, 84, 80, 96)                                                                    # the pool
+    return g
+
+
+def rockmen():
+    """The rockmen: an angular figure of cut stone gripping a digging pick."""
+    g = G()
+    g.poly([(38, 10), (60, 8), (66, 22), (58, 34), (40, 34), (34, 22)])                      # a faceted head
+    g.poly([(28, 38), (70, 36), (76, 58), (66, 72), (32, 72), (24, 56)])                     # a stone torso
+    g.poly([(32, 74), (48, 74), (46, 94), (30, 94)]); g.poly([(52, 74), (68, 74), (70, 94), (54, 94)])
+    g.line([(40, 34), (46, 50), (36, 66)], 2.4, 0); g.line([(46, 50), (70, 52)], 2.4, 0)    # cracks
+    g.circ(44, 21, 2.6, 0); g.circ(56, 20, 2.6, 0)
+    g.line([(76, 34), (92, 80)], 5)                                                          # the pick
+    g.poly([(64, 30), (92, 22), (88, 32), (72, 36)])
+    return g
+
+
+def winged_folk():
+    g = G(); _wing(g, 46, 56, -1, 1.1); _wing(g, 54, 56, 1, 1.1); g.circ(50, 56, 6); return g
+
+
+def snow_folk():
+    g = G()
+    for k in range(6):
+        a = math.radians(90 + k * 60)
+        x, y = 50 + 40 * math.cos(a), 50 - 40 * math.sin(a)
+        g.line([(50, 50), (x, y)], 5)
+        for t in (0.55, 0.8):
+            bx, by = 50 + 40 * t * math.cos(a), 50 - 40 * t * math.sin(a)
+            for d in (-0.6, 0.6):
+                g.line([(bx, by), (bx + 10 * math.cos(a + d), by - 10 * math.sin(a + d))], 3.4)
+    g.circ(50, 50, 7)
+    return g
+
+
+def ink_folk():
+    """A brush and its ink drop."""
+    g = G()
+    g.line([(22, 20), (62, 60)], 7)
+    g.poly([(56, 54), (74, 60), (82, 78), (68, 70), (60, 66)])
+    g.poly([(70, 6), (80, 22), (82, 30), (76, 36), (64, 36), (58, 30), (60, 22)])
+    g.ell(18, 80, 82, 94)
+    return g
+
+
+def stone_folk():
+    """A cut stone and a pick."""
+    g = G()
+    g.poly([(18, 54), (40, 40), (70, 46), (84, 66), (66, 88), (30, 86), (14, 72)])
+    g.line([(40, 40), (46, 62), (30, 86)], 2.6, 0); g.line([(46, 62), (84, 66)], 2.6, 0)
+    g.line([(54, 34), (80, 8)], 5)
+    g.poly([(66, 4), (92, 22), (86, 26), (64, 12)])
+    return g
+
+
 CITY_STATE_ICONS = [(n, f) for n, f in (
     ("Hairy Man Tribe", hairy_man_tribe), ("Foothill Villages", foothill_villages), ("Jia Clan", jia_clan),
     ("Lang Ya Sect", lang_ya_sect), ("Man Tribe", man_tribe), ("Ge Tribe", ge_tribe),
@@ -299,8 +391,11 @@ CITY_STATE_ICONS = [(n, f) for n, f in (
     ("Heaven's Envy Tower", heavens_envy_tower), ("Wind Cloud Manor", wind_cloud_manor),
     ("Black Heaven Temple", black_heaven_temple), ("Myriad Dragon Dock", myriad_dragon_dock),
     ("Merman Imperial Court", merman_imperial_court), ("Song Clan", song_clan), ("Xia Clan", xia_clan),
-    ("Lan Clan", lan_clan), ("Xiao Clan", xiao_clan), ("Mo Clan", mo_clan), ("Wan Clan", wan_clan))]
+    ("Lan Clan", lan_clan), ("Xiao Clan", xiao_clan), ("Mo Clan", mo_clan), ("Wan Clan", wan_clan),
+    ("Feathermen", feathermen), ("Snowmen", snowmen), ("Inkmen", inkmen), ("Rockmen", rockmen))]
+FOLK_ICONS = [("Winged Folk", winged_folk), ("Snow Folk", snow_folk), ("Ink Folk", ink_folk), ("Stone Folk", stone_folk)]
 
 
 def icons():
-    return [("NationIcons", name, draw, "white") for name, draw in CITY_STATE_ICONS]
+    return ([("NationIcons", name, draw, "white") for name, draw in CITY_STATE_ICONS]
+            + [("CityStateIcons", name, draw, "white") for name, draw in FOLK_ICONS])

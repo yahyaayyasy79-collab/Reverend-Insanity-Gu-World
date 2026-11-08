@@ -3902,6 +3902,18 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Merchant Clan (allyBonusUniques) | `[+10]% [Gold]` | +10 | tools/gen_ruleset.py `Nations` |
 | Battle Tribe (friendBonusUniques) | `Provides military units every ≈[20] turns` | 20 | tools/gen_ruleset.py `Nations` |
 | Battle Tribe (allyBonusUniques) | `Provides military units every ≈[17] turns` | 17 | tools/gen_ruleset.py `Nations` |
+| Winged Folk (friendBonusUniques) | `[+1] Sight <for [Military] units>` | +1 | tools/gen_ruleset.py `Nations` |
+| Winged Folk (allyBonusUniques) | `[+1] Sight <for [Military] units>` | +1 | tools/gen_ruleset.py `Nations` |
+| Winged Folk (allyBonusUniques) | `[+1] Movement <for [Military] units> <in [Desert] tiles>` | +1 | tools/gen_ruleset.py `Nations` |
+| Snow Folk (friendBonusUniques) | `[+5]% Strength <for [Military] units> <when defending>` | +5 | tools/gen_ruleset.py `Nations` |
+| Snow Folk (allyBonusUniques) | `[+10]% Strength <for [Military] units> <when defending>` | +10 | tools/gen_ruleset.py `Nations` |
+| Snow Folk (allyBonusUniques) | `Provides military units every ≈[25] turns` | 25 | tools/gen_ruleset.py `Nations` |
+| Ink Folk (friendBonusUniques) | `[+2 Culture] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
+| Ink Folk (allyBonusUniques) | `[+3 Culture] [in capital]` | +3 | tools/gen_ruleset.py `Nations` |
+| Ink Folk (allyBonusUniques) | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Nations` |
+| Stone Folk (friendBonusUniques) | `[+2 Production] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
+| Stone Folk (allyBonusUniques) | `[+2 Production] [in capital]` | +2 | tools/gen_ruleset.py `Nations` |
+| Stone Folk (allyBonusUniques) | `[+1 Production] from [Mine] tiles [in all cities]` | +1 | tools/gen_ruleset.py `Nations` |
 
 ### Personalities.json
 
@@ -4216,6 +4228,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3960 numbers listed.
+3972 numbers listed.
 
 <!-- inventory:end -->

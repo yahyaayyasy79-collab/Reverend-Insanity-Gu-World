@@ -73,5 +73,65 @@
     "allyBonusUniques": [
       "Provides military units every ≈[17] turns"
     ]
+  },
+  {
+    "name": "Winged Folk",
+    "color": [
+      150,
+      200,
+      240
+    ],
+    "friendBonusUniques": [
+      "[+1] Sight <for [Military] units>"
+    ],
+    "allyBonusUniques": [
+      "[+1] Sight <for [Military] units>",
+      "[+1] Movement <for [Military] units> <in [Desert] tiles>"
+    ]
+  },
+  {
+    "name": "Snow Folk",
+    "color": [
+      215,
+      225,
+      240
+    ],
+    "friendBonusUniques": [
+      "[+5]% Strength <for [Military] units> <when defending>"
+    ],
+    "allyBonusUniques": [
+      "[+10]% Strength <for [Military] units> <when defending>",
+      "Provides military units every ≈[25] turns"
+    ]
+  },
+  {
+    "name": "Ink Folk",
+    "color": [
+      70,
+      70,
+      90
+    ],
+    "friendBonusUniques": [
+      "[+2 Culture] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+3 Culture] [in capital]",
+      "[+1 Happiness]"
+    ]
+  },
+  {
+    "name": "Stone Folk",
+    "color": [
+      150,
+      130,
+      110
+    ],
+    "friendBonusUniques": [
+      "[+2 Production] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+2 Production] [in capital]",
+      "[+1 Production] from [Mine] tiles [in all cities]"
+    ]
   }
 ]

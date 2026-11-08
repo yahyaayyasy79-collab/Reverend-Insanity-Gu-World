@@ -893,6 +893,94 @@
     ]
   },
   {
+    "name": "Feathermen",
+    "cityStateType": "Winged Folk",
+    "outerColor": [
+      99,
+      139,
+      179
+    ],
+    "innerColor": [
+      251,
+      247,
+      235
+    ],
+    "cities": [
+      "Yu Sheng City"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The feathermen (羽民) of Yu Sheng City in the Western Desert, a variant human kind born to fly. They keep a royal line and do not go to war lightly, though they have immortals of their own. Friends see farther; allies' soldiers move faster over the desert."
+      }
+    ]
+  },
+  {
+    "name": "Snowmen",
+    "cityStateType": "Snow Folk",
+    "outerColor": [
+      200,
+      215,
+      230
+    ],
+    "innerColor": [
+      60,
+      80,
+      110
+    ],
+    "cities": [
+      "Great Snow Mountain"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The snowmen (雪人) of the Great Snow Mountain on the Northern Plains: six tribes who hardly laugh or cry, raised as an immortal's elite warbands. Friends and allies hold their ground better; allies receive warriors."
+      }
+    ]
+  },
+  {
+    "name": "Inkmen",
+    "cityStateType": "Ink Folk",
+    "outerColor": [
+      30,
+      30,
+      40
+    ],
+    "innerColor": [
+      200,
+      230,
+      240
+    ],
+    "cities": [
+      "Ink Man City"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The inkmen (墨人) of Ink Man City, a variant human kind of the Northern Plains whose king rules them under the long pressure of the golden tribes. Friends and allies gain culture; allies, contentment too."
+      }
+    ]
+  },
+  {
+    "name": "Rockmen",
+    "cityStateType": "Stone Folk",
+    "outerColor": [
+      110,
+      100,
+      90
+    ],
+    "innerColor": [
+      240,
+      200,
+      120
+    ],
+    "cities": [
+      "Rockmen Burrow"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The rockmen (石人) live deep underground and eat ore, finding Gu as they dig; a tribe of them dwells south of the Hu Immortal blessed land. Friends and allies gain production; allies' mines yield more."
+      }
+    ]
+  },
+  {
     "name": "Barbarians",
     "outerColor": [
       0,

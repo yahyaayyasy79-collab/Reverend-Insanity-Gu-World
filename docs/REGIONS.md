@@ -146,13 +146,14 @@ The Court never declared war; before, it took Spirit Affinity House in 2 of 8 ga
 snowball (a Venerable in 5 of 8 games, 3 wins); the contest's XP now lasts 5 turns and the war economy gives +3
 happiness, and the Eternal Life wins are spread again (Wu, Bai, Huang Jin).
 
-## Open question (the user decides)
+## The Court's Venerable (settled 2026-11-08)
 
-* **The Court's Venerable.** The strongest region raises the Venerable in 5 of 8 games. In the canon's present the
-  Court's best are rank eight (Duke Long, matched with the rank-eight zombie Bo Qing, R V5c343); its Venerables
-  belong to the past, and Star Constellation only descends as a will (R V5c344). The Court cannot seek Eternal Life,
-  so while its Venerable lives no one wins that way: with all ten sects on the map only 2 of 8 games ended in an
-  Eternal Life win. Keep it, or bar the Court from ascending?
+The strongest region raised the Venerable in 5 of 8 games, and in 7 of 8 once the stages came in (Layer 1). Barred
+from Eternal Life, it then left one game in eight with that win. In the canon's present the Court's best are rank
+eight: Duke Long is a match for the rank-eight zombie Bo Qing (R V5c343). Its Venerables belong to the past, and Star
+Constellation only descends as a will (R V5c344). Under the user's request of 2026-11-08 ("sesuai kanon, seimbangkan"),
+the Court cannot ascend to Venerable (`Ascend to Venerable`: `Unavailable <for [Heavenly Court] Civilizations>`). One
+line to remove if the user wants the old rule back.
 
 ## Not done yet
 

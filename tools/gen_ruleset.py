@@ -952,6 +952,11 @@ dump("UnitPromotions.json", with_combos([
     {"name": "Ascend to Venerable", "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] units> <after discovering [Dao Lord]>",
         "Unavailable <if [Venerable Ascension] is constructed by anybody>", dao_at_least(3), "Unavailable <in [Foreign Land] tiles>",
+        # reference audit (the user, 2026-11-08: canon and balanced): the Court's leaders in the canon's present are rank
+        # eight (Duke Long, a match for the rank-eight zombie Bo Qing, R V5c343); its Venerables belong to the past and
+        # Star Constellation only descends as a will (R V5c344). In autoplay the Court took the one Venerable slot in 7
+        # of 8 games and, barred from Eternal Life, left 1 game in 8 with that win
+        f"Unavailable <for [{HC}] Civilizations>",
         "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(60, m)}] [{WHITE}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(60, m)}] [{WHITE}] <on [{n}] game speed>" for n, m in SPEEDS]
@@ -1762,6 +1767,19 @@ dump("Nations.json", [
     # Fang clan (R V6c281, V6c256)
     {"name": "Wan Clan", "cityStateType": "Battle Tribe", "outerColor": [230, 200, 140], "innerColor": [120, 60, 20],
      "cities": ["Gao Song Oasis"]},
+    # reference audit Layer 4: the variant humans (异人) as city-states, each with its kind's own bonuses (R V1c134 all
+    # descend from Ren Zu): the feathermen of Yu Sheng City, peaceable flyers of the Western Desert (R V4c215, V4c217);
+    # the snowmen tribes of the Great Snow Mountain, bred as elite warbands (R V3c132); Ink Man City, whose king leads the
+    # plains' inkmen under the golden tribes' long pressure (R V4c13, V4c230); the rockmen who live deep underground and
+    # eat ore, a tribe south of the Hu Immortal blessed land (R V3c4, V3c7)
+    {"name": "Feathermen", "cityStateType": "Winged Folk", "outerColor": [99, 139, 179], "innerColor": [251, 247, 235],
+     "cities": ["Yu Sheng City"]},
+    {"name": "Snowmen", "cityStateType": "Snow Folk", "outerColor": [200, 215, 230], "innerColor": [60, 80, 110],
+     "cities": ["Great Snow Mountain"]},
+    {"name": "Inkmen", "cityStateType": "Ink Folk", "outerColor": [30, 30, 40], "innerColor": [200, 230, 240],
+     "cities": ["Ink Man City"]},
+    {"name": "Rockmen", "cityStateType": "Stone Folk", "outerColor": [110, 100, 90], "innerColor": [240, 200, 120],
+     "cities": ["Rockmen Burrow"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},
@@ -1782,6 +1800,17 @@ dump("CityStateTypes.json", [
     # Phase D: warlike tribes and clans send Gu Masters to their friends (Vanilla's Militaristic numbers)
     {"name": "Battle Tribe", "color": [200, 60, 40], "friendBonusUniques": ["Provides military units every ≈[20] turns"],
      "allyBonusUniques": ["Provides military units every ≈[17] turns"]},
+    # reference audit Layer 4: each variant kind lends what it is (docs/REFERENCE_AUDIT.md)
+    {"name": "Winged Folk", "color": [150, 200, 240], "friendBonusUniques": ["[+1] Sight <for [Military] units>"],
+     "allyBonusUniques": ["[+1] Sight <for [Military] units>", "[+1] Movement <for [Military] units> <in [Desert] tiles>"]},
+    {"name": "Snow Folk", "color": [215, 225, 240],
+     "friendBonusUniques": ["[+5]% Strength <for [Military] units> <when defending>"],
+     "allyBonusUniques": ["[+10]% Strength <for [Military] units> <when defending>",
+                          "Provides military units every ≈[25] turns"]},
+    {"name": "Ink Folk", "color": [70, 70, 90], "friendBonusUniques": ["[+2 Culture] [in capital]"],
+     "allyBonusUniques": ["[+3 Culture] [in capital]", "[+1 Happiness]"]},
+    {"name": "Stone Folk", "color": [150, 130, 110], "friendBonusUniques": ["[+2 Production] [in capital]"],
+     "allyBonusUniques": ["[+2 Production] [in capital]", "[+1 Production] from [Mine] tiles [in all cities]"]},
 ])
 dump("Personalities.json", [
     # C4 (conflicts research M6): Gu Yue the declining overlord that brokers alliances and lives off caravans; Bai the
