@@ -1526,6 +1526,29 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Extreme Physique | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Extreme Physique | `[+50]% XP gained from combat` | +50 | tools/gen_ruleset.py `Promotions` |
 | Extreme Physique | `[-20]% maintenance costs` | -20 | tools/gen_ruleset.py `Promotions` |
+| Fang Zheng | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Fang Zheng | `[+50]% XP gained from combat` | +50 | tools/gen_ruleset.py `Promotions` |
+| Fang Zheng | `[+10]% Strength bonus for [Military] units within [2] tiles` | +10, 2 | tools/gen_ruleset.py `Promotions` |
+| Bai Ning Bing | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Bai Ning Bing | `[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Xiong Lin | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Xiong Lin | `[+15]% Strength <when attacking>` | +15 | tools/gen_ruleset.py `Promotions` |
+| Wu Shuai | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Wu Shuai | `[+15]% Strength bonus for [Military] units within [2] tiles` | +15, 2 | tools/gen_ruleset.py `Promotions` |
+| Duke Long | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
+| Duke Long | `[+15]% Strength bonus for [Military] units within [2] tiles` | +15, 2 | tools/gen_ruleset.py `Promotions` |
+| Duke Long | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Hei Lou Lan | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Hei Lou Lan | `[+25]% Strength <when attacking>` | +25 | tools/gen_ruleset.py `Promotions` |
+| Hei Lou Lan | `[This Unit] gains the [Doomed Aperture] status for [40] turn(s) <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Hei Lou Lan | `[This Unit] gains the [Doomed Aperture] status for [60] turn(s) <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Promotions` |
+| Hei Lou Lan | `[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Hei Lou Lan | `[This Unit] gains the [Doomed Aperture] status for [180] turn(s) <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Promotions` |
+| Bo Qing | `[+25]% Strength` | +25 | tools/gen_ruleset.py `Promotions` |
+| Bo Qing | `[1] additional attacks per turn` | 1 | tools/gen_ruleset.py `Promotions` |
+| Fang Di Chang | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Fang Di Chang | `[+1] Sight` | +1 | tools/gen_ruleset.py `Promotions` |
+| Fang Di Chang | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles` | -10 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks I | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks II | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks III | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
@@ -3823,10 +3846,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bai Clan | `[+15]% Strength <vs [Barbarians] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+15]% Strength <vs [Immortal Zombie] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+25]% Strength <vs [Barbarian] units>` | +25 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court | `[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 6, 2 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court | `[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>` | 2, 2 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court | `[+15]% [Science] [in all cities]` | +15 | tools/gen_ruleset.py `Nations` |
-| Heavenly Court | `[+15]% [Production] [in all cities]` | +15 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[8] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 8, 2 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[3] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+30]% [Science] [in all cities]` | +30 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+30]% [Production] [in all cities]` | +30 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+25]% [Gold] [in all cities]` | +25 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+15]% Strength <for [Military] units>` | +15 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>` | 2 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>` | 2, 3 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Nations` |
@@ -4229,6 +4255,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3973 numbers listed.
+3999 numbers listed.
 
 <!-- inventory:end -->

@@ -3608,10 +3608,13 @@ Starts with [Righteous Path] adopted
 [+15]% Strength <vs [Immortal Zombie] units>
 Start bias [Hill]
 [+25]% Strength <vs [Barbarian] units>
-[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
-[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
-[+15]% [Science] [in all cities]
-[+15]% [Production] [in all cities]
+[8] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[3] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
+[+30]% [Science] [in all cities]
+[+30]% [Production] [in all cities]
+[+25]% [Gold] [in all cities]
+[+15]% Strength <for [Military] units>
+Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>
 [+50]% Strength for cities
 [2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>
 ```
@@ -4633,10 +4636,13 @@ Starts with [Righteous Path] adopted
 [+15]% Strength <vs [Immortal Zombie] units>
 Start bias [Hill]
 [+25]% Strength <vs [Barbarian] units>
-[6] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
-[2] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
-[+15]% [Science] [in all cities]
-[+15]% [Production] [in all cities]
+[8] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[3] free [Rank Three Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
+[+30]% [Science] [in all cities]
+[+30]% [Production] [in all cities]
+[+25]% [Gold] [in all cities]
+[+15]% Strength <for [Military] units>
+Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>
 [+50]% Strength for cities
 [2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>
 ```
@@ -5081,3 +5087,118 @@ pairs one (`tools/gen_paths.py` PATH_AGE). Verdicts in our own words.
 | Medieval Antiquity | 中古 | wood (Genesis Lotus), theft (Thieving Heaven), luck (Giant Sun), metal, water, ice-snow, cloud, earth, lightning, information, sound | R V5c302 |
 
 The eras of the game stay the rank eras (the user's approved design); the antiquities live in the texts.
+
+## Layer 6: the Heavenly Court as the boss; one hero per major clan (the user, 2026-11-08)
+
+The user: the Court is the boss, with the best power, technology and resources of the five regions; the heroes are
+welcome, and for the Gu Yue the hero is Fang Zheng, since Fang Yuan's nature runs against heroism. Unciv cannot keep a
+nation in the game while barring players from it (`Will not be chosen for new games` drops it from new games,
+map starts included [src GameStarter, PlayerPickerTable]), so the Court stays a playable major; the AI plays it as
+the boss. Facts from the raw text (R), in our own words; the emblems are symbols, never likenesses.
+
+| Object | Chinese | Canon | Source | Status |
+|---|---|---|---|---|
+| The Court: 8 free techs and three rank-three Gu Masters, +30% science and production, +25% stones, +15% soldier strength, 2 Immortal Materials a turn from Three Qi, +50% city strength | 天庭 | The strongest power of the five regions, its order three million years old | R V5c519, V5c704 | ADAPTED (the boss) |
+| Fang Zheng (Gu Yue, the first Rank One) | 方正 | Fang Yuan's younger brother, grade A aptitude, the clan's hope | R V1c7, V1c9 | CANON |
+| Bai Ning Bing (Bai, the first Rank One) | 白凝冰 | Northern Dark Ice Soul; the aperture cannot bear the essence at rank four | R V1c135 | CANON |
+| Xiong Lin (Xiong, the first Rank One) | 熊林 | The best of the Xiong clan's new generation | R V1c121 | CANON |
+| Wu Shuai (Wu, the first Rank Eight) | 吴帅 | The Wu clan's rank-eight leader, enslavement path | R (ranks and paths counted around his name) | CANON |
+| Duke Long (the Court, the first Rank Eight) | 龙公 | The Court's rank-eight head, qi path | R V5c343 | CANON |
+| Hei Lou Lan (Huang Jin, the first Rank Five) | 黑楼兰 | Great Strength True Martial; only becoming an immortal saves her | R V3c159, V3c181 | CANON |
+| Bo Qing (Zombie Alliance, the first Immortal Zombie) | 薄青 | A rank-eight immortal zombie of the sword path | R V5c343 | CANON |
+| Fang Di Chang (Fang, the first Rank Seven) | 房睇长 | The Fang clan's wisdom-path elder | R V5c484 | CANON |
+
+The reference's "Wu Yong" is not in the raw text.
+
+Exact uniques (the triggers sit on the Gu Master unit type and fire when a unit joins the clan, upgrades
+included; a unit trigger on a nation is flagged by the official validator):
+
+**Fang Zheng** (Gu Yue Clan):
+
+```
+[This Unit] gains the [Fang Zheng] promotion <for [Gu Yue Clan] Civilizations> <for [Rank One Gu Master] units> <when number of [[Fang Zheng] Units] is less than [1]>
+[+20]% Strength
+[+50]% XP gained from combat
+[+10]% Strength bonus for [Military] units within [2] tiles
+[This Unit] loses the [Aptitude B] promotion
+[This Unit] loses the [Aptitude C] promotion
+[This Unit] loses the [Aptitude D] promotion
+[This Unit] gains the [Aptitude A] promotion
+```
+
+**Bai Ning Bing** (Bai Clan):
+
+```
+[This Unit] gains the [Bai Ning Bing] promotion <for [Bai Clan] Civilizations> <for [Rank One Gu Master] units> <when number of [[Bai Ning Bing] Units] is less than [1]>
+[This Unit] gains the [Doomed Aperture] status for [20] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Quick] game speed>
+[This Unit] gains the [Doomed Aperture] status for [30] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Standard] game speed>
+[This Unit] gains the [Doomed Aperture] status for [45] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Epic] game speed>
+[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Marathon] game speed>
+[+20]% Strength
+[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>
+[This Unit] loses the [Aptitude A] promotion
+[This Unit] loses the [Aptitude B] promotion
+[This Unit] loses the [Aptitude C] promotion
+[This Unit] loses the [Aptitude D] promotion
+[This Unit] gains the [Extreme Physique] promotion
+```
+
+**Xiong Lin** (Xiong Clan):
+
+```
+[This Unit] gains the [Xiong Lin] promotion <for [Xiong Clan] Civilizations> <for [Rank One Gu Master] units> <when number of [[Xiong Lin] Units] is less than [1]>
+[+20]% Strength
+[+15]% Strength <when attacking>
+```
+
+**Wu Shuai** (Wu Clan):
+
+```
+[This Unit] gains the [Wu Shuai] promotion <for [Wu Clan] Civilizations> <for [Rank Eight Gu Immortal] units> <when number of [[Wu Shuai] Units] is less than [1]>
+[+20]% Strength
+[+15]% Strength bonus for [Military] units within [2] tiles
+May capture killed [Beast] units
+```
+
+**Duke Long** (Heavenly Court):
+
+```
+[This Unit] gains the [Duke Long] promotion <for [Heavenly Court] Civilizations> <for [Rank Eight Gu Immortal] units> <when number of [[Duke Long] Units] is less than [1]>
+[+30]% Strength
+[+15]% Strength bonus for [Military] units within [2] tiles
+[+1] Movement
+```
+
+**Hei Lou Lan** (Huang Jin Family):
+
+```
+[This Unit] gains the [Hei Lou Lan] promotion <for [Huang Jin Family] Civilizations> <for [Rank Five Gu Master] units> <when number of [[Hei Lou Lan] Units] is less than [1]>
+[+20]% Strength
+[+25]% Strength <when attacking>
+[This Unit] loses the [Aptitude A] promotion
+[This Unit] loses the [Aptitude B] promotion
+[This Unit] loses the [Aptitude C] promotion
+[This Unit] loses the [Aptitude D] promotion
+[This Unit] gains the [Extreme Physique] promotion
+[This Unit] gains the [Doomed Aperture] status for [40] turn(s) <on [Quick] game speed>
+[This Unit] gains the [Doomed Aperture] status for [60] turn(s) <on [Standard] game speed>
+[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <on [Epic] game speed>
+[This Unit] gains the [Doomed Aperture] status for [180] turn(s) <on [Marathon] game speed>
+```
+
+**Bo Qing** (Zombie Alliance):
+
+```
+[This Unit] gains the [Bo Qing] promotion <for [Zombie Alliance] Civilizations> <for [Immortal Zombie] units> <when number of [[Bo Qing] Units] is less than [1]>
+[+25]% Strength
+[1] additional attacks per turn
+```
+
+**Fang Di Chang** (Fang Clan):
+
+```
+[This Unit] gains the [Fang Di Chang] promotion <for [Fang Clan] Civilizations> <for [Rank Seven Gu Immortal] units> <when number of [[Fang Di Chang] Units] is less than [1]>
+[+20]% Strength
+[+1] Sight
+[-10]% Strength for enemy [Military] units in adjacent [All] tiles
+```

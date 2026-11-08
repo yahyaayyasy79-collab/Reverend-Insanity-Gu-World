@@ -13892,6 +13892,124 @@
     ]
   },
   {
+    "name": "Fang Zheng",
+    "uniques": [
+      "[+20]% Strength",
+      "[+50]% XP gained from combat",
+      "[+10]% Strength bonus for [Military] units within [2] tiles",
+      "[This Unit] loses the [Aptitude B] promotion",
+      "[This Unit] loses the [Aptitude C] promotion",
+      "[This Unit] loses the [Aptitude D] promotion",
+      "[This Unit] gains the [Aptitude A] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fang Zheng (方正), Fang Yuan's younger brother, the Gu Yue clan's grade A genius and the hope it raises with care. The clan's first awakened youth carries his name: grade A aptitude, +20% Strength, +50% XP from combat, and +10% Strength to soldiers within 2 tiles. If he falls, the clan's next new Gu Master takes his place."
+      }
+    ]
+  },
+  {
+    "name": "Bai Ning Bing",
+    "uniques": [
+      "[+20]% Strength",
+      "[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[This Unit] loses the [Aptitude A] promotion",
+      "[This Unit] loses the [Aptitude B] promotion",
+      "[This Unit] loses the [Aptitude C] promotion",
+      "[This Unit] loses the [Aptitude D] promotion",
+      "[This Unit] gains the [Extreme Physique] promotion"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bai Ning Bing (白凝冰), the Bai clan's genius with the Northern Dark Ice Soul physique: the essence fills the whole aperture. The clan's first awakened youth carries the name: an extreme physique, +20% Strength, and hits that leave the enemy Frozen. At rank four the aperture starts to give way: 30 turns to become an immortal, or she dies."
+      }
+    ]
+  },
+  {
+    "name": "Xiong Lin",
+    "uniques": [
+      "[+20]% Strength",
+      "[+15]% Strength <when attacking>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Xiong Lin (熊林), the best of the Xiong clan's new generation, of an age with Fang Yuan. The clan's first awakened youth carries his name: +20% Strength and +15% more when attacking."
+      }
+    ]
+  },
+  {
+    "name": "Wu Shuai",
+    "uniques": [
+      "[+20]% Strength",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "May capture killed [Beast] units"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wu Shuai (吴帅), the Wu clan's rank-eight leader on the enslavement path. The clan's first rank-eight immortal carries his name: +20% Strength, +15% Strength to soldiers within 2 tiles, and beasts he defeats join him."
+      }
+    ]
+  },
+  {
+    "name": "Duke Long",
+    "uniques": [
+      "[+30]% Strength",
+      "[+15]% Strength bonus for [Military] units within [2] tiles",
+      "[+1] Movement"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Duke Long (龙公), the Heavenly Court's rank-eight head on the qi path, a match for any rank eight of his age. The Court's first rank-eight immortal carries his name: +30% Strength, +15% Strength to soldiers within 2 tiles, +1 Movement."
+      }
+    ]
+  },
+  {
+    "name": "Hei Lou Lan",
+    "uniques": [
+      "[+20]% Strength",
+      "[+25]% Strength <when attacking>",
+      "[This Unit] loses the [Aptitude A] promotion",
+      "[This Unit] loses the [Aptitude B] promotion",
+      "[This Unit] loses the [Aptitude C] promotion",
+      "[This Unit] loses the [Aptitude D] promotion",
+      "[This Unit] gains the [Extreme Physique] promotion",
+      "[This Unit] gains the [Doomed Aperture] status for [40] turn(s) <on [Quick] game speed>",
+      "[This Unit] gains the [Doomed Aperture] status for [60] turn(s) <on [Standard] game speed>",
+      "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <on [Epic] game speed>",
+      "[This Unit] gains the [Doomed Aperture] status for [180] turn(s) <on [Marathon] game speed>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hei Lou Lan (黑楼兰), the Huang Jin heroine with the Great Strength True Martial physique, who must become an immortal to live. The tribes' first rank-five Gu Master carries her name: an extreme physique, +20% Strength, +25% more when attacking, and 60 turns to ascend before the aperture bursts."
+      }
+    ]
+  },
+  {
+    "name": "Bo Qing",
+    "uniques": [
+      "[+25]% Strength",
+      "[1] additional attacks per turn"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bo Qing (薄青), a rank-eight immortal zombie of the sword path, the Zombie Alliance's sharpest blade. The alliance's first immortal zombie carries his name: +25% Strength and one more attack each turn."
+      }
+    ]
+  },
+  {
+    "name": "Fang Di Chang",
+    "uniques": [
+      "[+20]% Strength",
+      "[+1] Sight",
+      "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fang Di Chang (房睇长), the Fang clan's elder and a great master of the wisdom path. The clan's first rank-seven immortal carries his name: +20% Strength, +1 Sight, and enemy soldiers beside him fight 10% weaker."
+      }
+    ]
+  },
+  {
     "name": "Dao Marks I",
     "uniques": [
       "[+10]% Strength",

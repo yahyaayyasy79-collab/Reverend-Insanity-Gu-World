@@ -1183,3 +1183,26 @@ Autoplay (8 × 450):
 * Eternal Life wins: Gu Yue 3, Huang Jin 1;
 * Venerables: Gu Yue 4, Wu 3, Huang Jin 3;
 * the Court still leads in techs and immortals.
+
+## Layer 6: the Heavenly Court as the boss; one hero per major clan (2026-11-08)
+
+You asked for the Court as the boss of the five regions, and for heroes, with Fang Zheng for the Gu Yue.
+
+* **The Court as boss.**
+  * It starts with 8 free techs and three rank-three Gu Masters.
+  * +30% science and production, +25% stones, +15% soldier strength.
+  * From Three Qi it gains 2 Immortal Materials a turn.
+  * It keeps its +50% city strength, its Immortal Tomb and its peace.
+  * Unciv cannot keep a nation in the game while barring players from it, so you could still choose to play the boss.
+* **Heroes.** The clan's first unit of the right kind takes the hero's name, then climbs the ranks like any Gu Master.
+  One hero lives at a time; if it falls, the next qualifying unit carries the name on.
+  * Fang Zheng (Gu Yue): grade A aptitude, a rallying leader.
+  * Bai Ning Bing (Bai): Northern Dark Ice Soul. Her hits freeze; at rank four she has 30 turns to become immortal or
+    die.
+  * Xiong Lin (Xiong): born strength.
+  * Wu Shuai (Wu, rank eight): a leader who enslaves beasts.
+  * Duke Long (the Court, rank eight): the strongest of the heroes.
+  * Hei Lou Lan (Huang Jin, rank five): Great Strength True Martial; 60 turns to ascend.
+  * Bo Qing (Zombie Alliance): a zombie swordsman with a second attack.
+  * Fang Di Chang (Fang, rank seven): the wisdom elder.
+* Their emblems are symbols of path and nature, not portraits.

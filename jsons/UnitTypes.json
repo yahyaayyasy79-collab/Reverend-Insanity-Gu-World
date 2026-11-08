@@ -141,7 +141,19 @@
       "[This Unit] gains the [Stage Cultivation] status for [96] turn(s) <upon turn start> <for units without [Stage Cultivation]> <for units without [Peak Stage]> <for units with [Aptitude D]> <for [post-[Rank Five era]] units> <for [non-[Venerable]] units> <on [Marathon] game speed>",
       "[This Unit] gains the [Peak Stage] promotion <upon losing the [Stage Cultivation] status> <for units with [Upper Stage]>",
       "[This Unit] gains the [Upper Stage] promotion <upon losing the [Stage Cultivation] status> <for units with [Middle Stage]> <for units without [Upper Stage]>",
-      "[This Unit] gains the [Middle Stage] promotion <upon losing the [Stage Cultivation] status> <for units without [Middle Stage]>"
+      "[This Unit] gains the [Middle Stage] promotion <upon losing the [Stage Cultivation] status> <for units without [Middle Stage]>",
+      "[This Unit] gains the [Fang Zheng] promotion <for [Gu Yue Clan] Civilizations> <for [Rank One Gu Master] units> <when number of [[Fang Zheng] Units] is less than [1]>",
+      "[This Unit] gains the [Bai Ning Bing] promotion <for [Bai Clan] Civilizations> <for [Rank One Gu Master] units> <when number of [[Bai Ning Bing] Units] is less than [1]>",
+      "[This Unit] gains the [Xiong Lin] promotion <for [Xiong Clan] Civilizations> <for [Rank One Gu Master] units> <when number of [[Xiong Lin] Units] is less than [1]>",
+      "[This Unit] gains the [Wu Shuai] promotion <for [Wu Clan] Civilizations> <for [Rank Eight Gu Immortal] units> <when number of [[Wu Shuai] Units] is less than [1]>",
+      "[This Unit] gains the [Duke Long] promotion <for [Heavenly Court] Civilizations> <for [Rank Eight Gu Immortal] units> <when number of [[Duke Long] Units] is less than [1]>",
+      "[This Unit] gains the [Hei Lou Lan] promotion <for [Huang Jin Family] Civilizations> <for [Rank Five Gu Master] units> <when number of [[Hei Lou Lan] Units] is less than [1]>",
+      "[This Unit] gains the [Bo Qing] promotion <for [Zombie Alliance] Civilizations> <for [Immortal Zombie] units> <when number of [[Bo Qing] Units] is less than [1]>",
+      "[This Unit] gains the [Fang Di Chang] promotion <for [Fang Clan] Civilizations> <for [Rank Seven Gu Immortal] units> <when number of [[Fang Di Chang] Units] is less than [1]>",
+      "[This Unit] gains the [Doomed Aperture] status for [20] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Quick] game speed>",
+      "[This Unit] gains the [Doomed Aperture] status for [30] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Standard] game speed>",
+      "[This Unit] gains the [Doomed Aperture] status for [45] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Epic] game speed>",
+      "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {

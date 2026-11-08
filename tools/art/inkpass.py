@@ -120,6 +120,9 @@ class Palette:
                 return RELIC_COLOURS[name[:-len(" Relic Gu")]], None
             if name == "Extreme Physique":
                 return (150, 205, 250), None
+            from .heroart import HERO_NATION   # the heroes wear their clan's colour
+            if name in HERO_NATION:
+                return self.nation.get(HERO_NATION[name], NEUTRAL), None
             if name == "Doomed Aperture":
                 return DEBUFF, None
         return NEUTRAL, None

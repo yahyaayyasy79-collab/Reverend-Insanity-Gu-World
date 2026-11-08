@@ -645,8 +645,52 @@ dump("Techs.json", [{"columnNumber": int(c["column"]), "era": c["era"], "techCos
                     for c in table("tech_columns.csv")])
 
 # ---------------- Unit types ----------------
+# ---------------- the user, 2026-11-08: one hero per major clan (docs/REFERENCE_AUDIT.md, Layer 6) ----------------
+# A hero is a promotion the clan's first unit of the right kind receives when it joins the clan, so it climbs the rank
+# chain like any Gu Master and keeps its name through every upgrade. One lives at a time; if it falls, the next
+# qualifying unit carries the name on. The user chose Fang Zheng for the Gu Yue: Fang Yuan's nature is no hero's.
+# Canon (raw text R, in our own words): Fang Zheng, grade A aptitude, the clan's hope (V1c7, V1c9); Bai Ning Bing,
+# Northern Dark Ice Soul, whose aperture fails at rank four (V1c135); Xiong Lin, the best of the Xiong clan's new
+# generation (V1c121); Wu Shuai, the Wu clan's rank-eight leader, enslavement path; Duke Long, the Court's rank-eight
+# head, qi path (V5c343); Hei Lou Lan, Great Strength True Martial, who must become an immortal to live (V3c159,
+# V3c181); Bo Qing, a rank-eight immortal zombie of the sword path; Fang Di Chang, the Fang clan's wisdom-path elder
+# (V5c484). Icons are symbols of path and nature, never likenesses.
+APT_LOSS = [f"[This Unit] loses the [Aptitude {g}] promotion" for g in "ABCD"]
+HEROES = [  # (promotion, nation, the unit it falls to, its uniques, what happens when it is gained)
+    ("Fang Zheng", "Gu Yue Clan", "Rank One Gu Master",
+     ["[+20]% Strength", "[+50]% XP gained from combat", "[+10]% Strength bonus for [Military] units within [2] tiles"],
+     [u for u in APT_LOSS if "[Aptitude A]" not in u] + ["[This Unit] gains the [Aptitude A] promotion"]),
+    ("Bai Ning Bing", "Bai Clan", "Rank One Gu Master",
+     ["[+20]% Strength", "[Target Unit] gains the [Frozen] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>"],
+     APT_LOSS + [f"[This Unit] gains the [{PHYSIQUE}] promotion"]),
+    ("Xiong Lin", "Xiong Clan", "Rank One Gu Master", ["[+20]% Strength", "[+15]% Strength <when attacking>"], []),
+    ("Wu Shuai", "Wu Clan", "Rank Eight Gu Immortal",
+     ["[+20]% Strength", "[+15]% Strength bonus for [Military] units within [2] tiles", "May capture killed [Beast] units"], []),
+    ("Duke Long", "Heavenly Court", "Rank Eight Gu Immortal",
+     ["[+30]% Strength", "[+15]% Strength bonus for [Military] units within [2] tiles", "[+1] Movement"], []),
+    ("Hei Lou Lan", "Huang Jin Family", "Rank Five Gu Master", ["[+20]% Strength", "[+25]% Strength <when attacking>"],
+     APT_LOSS + [f"[This Unit] gains the [{PHYSIQUE}] promotion"]
+     + per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{turns(60, m)}] turn(s)")),
+    ("Bo Qing", "Zombie Alliance", "Immortal Zombie", ["[+25]% Strength", "[1] additional attacks per turn"], []),
+    ("Fang Di Chang", "Fang Clan", "Rank Seven Gu Immortal",
+     ["[+20]% Strength", "[+1] Sight", "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"], []),
+]
+# Bai Ning Bing's aperture gives way at rank four (canon: three years after the wolf tide): 30 turns to become immortal
+BAI_DOOM = per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{turns(30, m)}] turn(s) "
+                               f"<for units with [Bai Ning Bing]> <for [Rank Four era] units>")
+# On the Gu Master unit type, as creation triggers: they fire when a unit joins the clan, upgrades included, after its
+# promotions are copied [src UnitManager.placeUnitNearTile]. (A unit trigger on a nation is not allowed: the official
+# validator flags "<upon gaining a [unit] unit>" there.)
+HERO_TRIGGERS = [f"[This Unit] gains the [{h}] promotion <for [{n}] Civilizations> <for [{who}] units> "
+                 f"<when number of [[{h}] Units] is less than [1]>" for h, n, who, _, _ in HEROES] + BAI_DOOM
+
+
+def hero_triggers(nation_name):
+    return []
+
+
 dump("UnitTypes.json", [{"name": n, "movementType": "Land", **({"uniques": gen_paths.GC.spoils()
-                                                                  + (stage_lines() if n == "Gu Master" else [])}
+                                                                  + (stage_lines() + HERO_TRIGGERS if n == "Gu Master" else [])}
                                                                  if "Gu Master" in n else {})}
                         for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
@@ -931,6 +975,8 @@ dump("UnitPromotions.json", with_combos([
         "[+20]% Strength", "[+50]% XP gained from combat", "[-20]% maintenance costs",
         f"[This Unit] is destroyed <upon losing the [{DOOMED}] status> <for [pre-[Rank Six era]] units>"]},
     {"name": DOOMED, "uniques": ["Comment [When it runs out, the aperture of a mortal bearer bursts and it dies]"]},
+    # the user (2026-11-08): the heroes (HEROES); not for sale: a trigger grants them
+    *[{"name": h, "uniques": fx + gain} for h, _, _, fx, gain in HEROES],
 ] + [{"name": d, "uniques": DAO_EFFECTS[i] + ([f"[This Unit] loses the [{DAO[i - 1]}] promotion"] if i else [])
          # Phase D: the marks ring over every attack, brighter with each tier (tools/art/sfx.py)
          + [f"Play [{sfx.dao_sound(i + 1)}] sound <upon damaging a [Military] unit> <when attacking>"]}
@@ -1633,7 +1679,7 @@ VOICES = {
 
 def nation(name, leader, pers, outer, inner, cities, uniques):
     d = {"name": name, "leaderName": leader, "adjective": [name], "personality": pers, "outerColor": outer,
-         "innerColor": inner, "cities": cities, "uniques": uniques}
+         "innerColor": inner, "cities": cities, "uniques": uniques + hero_triggers(name)}
     if name in VOICES:
         d["introduction"], d["declaringWar"], d["defeated"] = VOICES[name]
     return d
@@ -1688,7 +1734,11 @@ dump("Nations.json", [
             # the Court is truly threatened (R V5c49, V5c560): when a clan declares war on it, two rank-seven immortals
             # take the field. They have no blessed land, so no calamities (R V5c55), and they burn their last life
             # (Lifespan Gu) as the canon's sleepers do.
-            *head_start(6, 2, "Rank Three Gu Master"), "[+15]% [Science] [in all cities]", "[+15]% [Production] [in all cities]",
+            # the user (2026-11-08): the Court is the boss, with the best power, technology and resources of the five
+            # regions (was 6 techs, 2 rank-three Gu Masters, +15% science and production)
+            *head_start(8, 3, "Rank Three Gu Master"), "[+30]% [Science] [in all cities]", "[+30]% [Production] [in all cities]",
+            "[+25]% [Gold] [in all cities]", "[+15]% Strength <for [Military] units>",
+            "Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>",
             "[+50]% Strength for cities",
             "[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> "
             "<when number of [[Rank Seven Gu Immortal] Units] is less than [3]>"]),

@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import arcart, csart, cultart, glyphs, glyphs2, guart, pathart, pixeltiles, pixelunits  # noqa: E402
+from art import arcart, csart, cultart, glyphs, glyphs2, guart, heroart, pathart, pixeltiles, pixelunits  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -95,7 +95,9 @@ def main(argv: list[str]) -> int:
                 # Regions II: every city-state's nation icon (Unciv drew a bare circle without one)
                 + csart.icons()
                 # reference audit Layer 1: the small stages, the rank relics, the extreme physique
-                + cultart.icons())
+                + cultart.icons()
+                # the user (2026-11-08): the heroes' emblems
+                + heroart.icons())
     for folder, name, draw, ink in registry:
         if (folder, name) in policy_icons:
             target = args.mod / "Images.Policies" / folder / f"{name}.png"
