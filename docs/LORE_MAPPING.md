@@ -210,10 +210,10 @@ Demonic; personalities set the rest.
 |---|---|---|---|---|---|
 | Clan Settler | — | INVENTED | A branch family leaves to raise a new mountain village under the clan's name. | City founder. Pays upkeep like every unit of a major civ (P1). Vanilla's very-unhappy settler ban (happiness below -10) lives on the unit and keeps it visible, greyed with the reason; as a global `Cannot build` it vanished from the build list without a word [src `BaseUnit.shouldBeDisplayed`] (the user's bug report, 2026-10-18).<br>*Fields:* unitType Civilian, movement 2, cost 80, requiredTech Aperture Awakening | `Founds a new city <by consuming this unit>`<br>`Excess Food converted to Production when under construction`<br>`[-100]% maintenance costs`<br>`Requires at least [2] population`<br>`Can only be built <when above [-11] [Happiness]>`<br>`Shown while unbuilable`<br>`Never appears as a Barbarian unit` |
 | Mortal Laborer | 凡人 | ADAPTED | Mortals whose apertures were never opened farm, mine and haul for the Gu Masters. | Worker. Every laborer still costs upkeep, so too many is a slow leak (P1).<br>*Fields:* unitType Civilian, movement 2, cost 45, requiredTech Aperture Awakening | `Can build [Land] improvements on tiles`<br>`Automation is a primary action`<br>`[-100]% maintenance costs`<br>`Never appears as a Barbarian unit` |
-| Rank One Gu Master | 一转蛊师 | ADAPTED | A freshly awakened youth with his first Gu from the academy Gu room.<br>*Note: Verified: new students pick a first rank-1 Gu free from the academy Gu room; the Liquor Worm only helps rank-one essence.* | Starting Gu Master: rolls aptitude at creation (E3) and pays +50% upkeep (round 8). Since C3 the path is an XP promotion (docs/PATHS.md), so a Rank One may already take a Master tier; unpathed, its ladder caps at Jade Skin Gu (eats jade). It may lure a Liquor Worm; trained in a city with a Gu Academy it receives its clan's emblem Gu (Gu Yue: only while orchids are in surplus; an unpathed D grade loses it at once). A Jade Skin carried into a path saves the rung-2 fusion's jade. It upgrades into Rank Two Gu Master, or its clan's version where one exists [src `getEquivalentUnit`] (P2, P4).<br>*Fields:* unitType Gu Master, strength 8, movement 2, cost 35, requiredTech Aperture Awakening, upgradesTo Rank Two Gu Master | `[+50]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
-| Rank Two Gu Master | 二转蛊师 | ADAPTED | A rank-two Gu Master: a green-copper essence sea and room for a second, stronger Gu. | C3 rank chain: one unit per rank for every path; the path, its tiers and its Gu are promotions, so any clan climbs (P2, P4). A breakthrough is a stone-paid upgrade (P1).<br>*Fields:* unitType Gu Master, strength 14, movement 2, cost 60, requiredTech Rank Two Cultivation, upgradesTo Rank Three Gu Master | `[+100]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
-| Rank Three Gu Master | 三转蛊师 | ADAPTED | A rank-three Gu Master, an elder of a mountain village. | C3 rank chain: one unit per rank for every path; the path, its tiers and its Gu are promotions, so any clan climbs (P2, P4). A breakthrough is a stone-paid upgrade (P1).<br>*Fields:* unitType Gu Master, strength 22, movement 2, cost 95, requiredTech Rank Three Cultivation, upgradesTo Rank Four Gu Master | `[+125]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
-| Rank Four Gu Master | 四转蛊师 | ADAPTED | A rank-four Gu Master, the kind of power that leads a clan. | C3 rank chain: one unit per rank for every path; the path, its tiers and its Gu are promotions, so any clan climbs (P2, P4). A breakthrough is a stone-paid upgrade (P1).<br>*Fields:* unitType Gu Master, strength 32, movement 2, cost 140, requiredTech Rank Four Cultivation | `[+175]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
+| Rank One Gu Master | 一转蛊师 | ADAPTED | A freshly awakened youth with his first Gu from the academy Gu room.<br>*Note: Verified: new students pick a first rank-1 Gu free from the academy Gu room; the Liquor Worm only helps rank-one essence.* | Starting Gu Master: rolls aptitude at creation (E3) and pays +50% upkeep (round 8). Since C3 the path is an XP promotion (docs/PATHS.md), so a Rank One may already take a Master tier; unpathed, its ladder caps at Jade Skin Gu (eats jade). It may lure a Liquor Worm; trained in a city with a Gu Academy it receives its clan's emblem Gu (Gu Yue: only while orchids are in surplus; an unpathed D grade loses it at once). A Jade Skin carried into a path saves the rung-2 fusion's jade. It upgrades into Rank Two Gu Master, or its clan's version where one exists [src `getEquivalentUnit`] (P2, P4).<br>*Fields:* unitType Gu Master, strength 8, movement 2, cost 35, requiredTech Aperture Awakening, upgradesTo Rank Two Gu Master | `[+50]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
+| Rank Two Gu Master | 二转蛊师 | ADAPTED | A rank-two Gu Master: a green-copper essence sea and room for a second, stronger Gu. | C3 rank chain: one unit per rank for every path; the path, its tiers and its Gu are promotions, so any clan climbs (P2, P4). A breakthrough is a stone-paid upgrade (P1).<br>*Fields:* unitType Gu Master, strength 14, movement 2, cost 60, requiredTech Rank Two Cultivation, upgradesTo Rank Three Gu Master | `[+100]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
+| Rank Three Gu Master | 三转蛊师 | ADAPTED | A rank-three Gu Master, an elder of a mountain village. | C3 rank chain: one unit per rank for every path; the path, its tiers and its Gu are promotions, so any clan climbs (P2, P4). A breakthrough is a stone-paid upgrade (P1).<br>*Fields:* unitType Gu Master, strength 22, movement 2, cost 95, requiredTech Rank Three Cultivation, upgradesTo Rank Four Gu Master | `[+125]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
+| Rank Four Gu Master | 四转蛊师 | ADAPTED | A rank-four Gu Master, the kind of power that leads a clan. | C3 rank chain: one unit per rank for every path; the path, its tiers and its Gu are promotions, so any clan climbs (P2, P4). A breakthrough is a stone-paid upgrade (P1).<br>*Fields:* unitType Gu Master, strength 32, movement 2, cost 140, requiredTech Rank Four Cultivation | `[+175]% maintenance costs`<br>`Never appears as a Barbarian unit`<br>`Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>`<br>`[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>`<br>`Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>`<br>`Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>` |
 | Rank Two Gu Yue Gu Master | — | ADAPTED | A rank-two Gu Master raised on the clan's moon tradition (Moonlight Gu, the clan emblem). | Clan unit (C3 decision A.b, 2026-10-18): the stats and uniques of Rank Two Gu Master; it exists so the map sprite and the attack animation show the clan's signature Moon path. The clan's AI takes Moon Master on about 85% of its units; a unit on another path still looks like its clan's.<br>*Fields:* unitType Gu Master, strength 14, movement 2, cost 60, requiredTech Rank Two Cultivation, uniqueTo Gu Yue Clan, replaces Rank Two Gu Master, upgradesTo Rank Three Gu Master | as Rank Two Gu Master |
 | Rank Two Bai Gu Master | — | ADAPTED | A rank-two Gu Master of the waterfall clan, whose canon main path is water. | Clan unit (C3 decision A.b, 2026-10-18): the stats and uniques of Rank Two Gu Master; it exists so the map sprite and the attack animation show the clan's signature Water path. The clan's AI takes Water Master on about 85% of its units; a unit on another path still looks like its clan's.<br>*Fields:* unitType Gu Master, strength 14, movement 2, cost 60, requiredTech Rank Two Cultivation, uniqueTo Bai Clan, replaces Rank Two Gu Master, upgradesTo Rank Three Gu Master | as Rank Two Gu Master |
 | Rank Two Xiong Gu Master | — | ADAPTED | A rank-two Gu Master of the bear-strength clan. | Clan unit (C3 decision A.b, 2026-10-18): the stats and uniques of Rank Two Gu Master; it exists so the map sprite and the attack animation show the clan's signature Strength path. The clan's AI takes Strength Master on about 85% of its units; a unit on another path still looks like its clan's.<br>*Fields:* unitType Gu Master, strength 14, movement 2, cost 60, requiredTech Rank Two Cultivation, uniqueTo Xiong Clan, replaces Rank Two Gu Master, upgradesTo Rank Three Gu Master | as Rank Two Gu Master |
@@ -1328,7 +1328,7 @@ Exact uniques (written by tools/lore_blocks.py from jsons/; Earth Qi, Human Qi a
 ```
 [+225]% maintenance costs
 Never appears as a Barbarian unit
-Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>
 May upgrade to [Rank Six Gu Immortal] through ruins-like effects
 [This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>
 Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>
@@ -1347,6 +1347,9 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
+[This Unit] loses the [Peak Stage] promotion
+[This Unit] loses the [Upper Stage] promotion
+[This Unit] loses the [Middle Stage] promotion
 ```
 
 **Rank Six Gu Immortal** (Units.json; {"unitType": "Gu Master", "movement": 2, "strength": 36, "cost": 260, "requiredTech": "Calamity Lore", "attackSound": "gu-rank-6", "civilopediaText": [{"text": "A rank-six Gu Immortal (\u516d\u8f6c\u86ca\u4ed9). Only the ascension makes one, or Spring Autumn Cicada's return (without a blessed land). Its blessed land feeds the clan green grape essence and stones; with more than nine essence in store it fights harder."}]})
@@ -1354,7 +1357,7 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 ```
 [+300]% maintenance costs
 Never appears as a Barbarian unit
-Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>
 Unbuildable
 Cannot be purchased
 May upgrade to [Rank Seven Gu Immortal] through ruins-like effects
@@ -1376,6 +1379,9 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
+[This Unit] loses the [Peak Stage] promotion
+[This Unit] loses the [Upper Stage] promotion
+[This Unit] loses the [Middle Stage] promotion
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
@@ -3061,7 +3067,7 @@ Instantly provides [3] [Human Qi] <upon turn start>
 ```
 [+350]% maintenance costs
 Never appears as a Barbarian unit
-Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>
 Unbuildable
 Cannot be purchased
 May upgrade to [Rank Eight Gu Immortal] through ruins-like effects
@@ -3083,6 +3089,9 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
+[This Unit] loses the [Peak Stage] promotion
+[This Unit] loses the [Upper Stage] promotion
+[This Unit] loses the [Middle Stage] promotion
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [22] turns> <on [Epic] game speed>
@@ -3107,7 +3116,7 @@ Ignores terrain cost
 ```
 [+400]% maintenance costs
 Never appears as a Barbarian unit
-Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>
 Unbuildable
 Cannot be purchased
 May upgrade to [Venerable] through ruins-like effects
@@ -3129,6 +3138,9 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
+[This Unit] loses the [Peak Stage] promotion
+[This Unit] loses the [Upper Stage] promotion
+[This Unit] loses the [Middle Stage] promotion
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [13] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Epic] game speed>
@@ -3971,7 +3983,7 @@ Play [dao-5] sound <upon damaging a [Military] unit> <when attacking>
 ```
 [+300]% maintenance costs
 Never appears as a Barbarian unit
-Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>
+Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>
 Unbuildable
 Cannot be purchased
 May upgrade to [Rank Seven Gu Immortal] through ruins-like effects
@@ -3993,6 +4005,9 @@ Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [
 [This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>
 [This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>
+[This Unit] loses the [Peak Stage] promotion
+[This Unit] loses the [Upper Stage] promotion
+[This Unit] loses the [Middle Stage] promotion
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>
 Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>
@@ -4844,3 +4859,149 @@ Exact uniques (Events.json, GlobalUniques.json, Nations.json):
 * **Earth tide** (`gen_ruleset.EARTH_TIDE_WALL`): the immortals' lines for the Azure Water Wall read
   `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>` at rank six, 15 at seven and 30 at
   eight (the other walls 10 / 30 / 60).
+
+## Reference audit Layer 1: small stages, rank relics, extreme physiques (the user, 2026-11-08)
+
+The user's lore reference (`docs/REFERENCE_AUDIT.md`) listed what the cultivation system lacked. Facts checked in the
+raw text (R), verdicts in our own words; the numbers live in `tools/cultivation.py`.
+
+| Object | Chinese | Canon | Source | Status |
+|---|---|---|---|---|
+| Middle Stage, Upper Stage, Peak Stage (promotions, +5% Strength each) | 中阶 / 高阶 / 巅峰 | Every rank has four small stages, initial to peak; from the peak to the next rank's initial is the big breakthrough, far harder, burning many primeval stones | R V1c63, V1c81, V1c90 | CANON (+5% ADAPTED) |
+| Stage Cultivation (status): a stage every 8 / 10 / 12 / 16 turns for aptitude A / B / C / D, 5 for an extreme physique, twice as long for an immortal | 修行 | Aptitude decides how fast a Gu Master cultivates | R V1c7 (aptitude grades) | ADAPTED |
+| A new rank starts at initial | 突破大境界 | After the breakthrough the Gu Master stands at the new rank's initial stage | R V1c90 | CANON |
+| The breakthrough costs 30% fewer stones from the peak, 50% more before it | 冲击 | The breakthrough is only possible from the peak | R V1c81 | ADAPTED (Unciv checks an upgrade without the unit, so the gate is the price) |
+| Green Copper, Red Iron, White Silver, Yellow Gold, Purple Crystal Relic Gu (XP + 25 / 40 / 60 / 90 / 130 stones, one stage, spent) | 青铜 / 赤铁 / 白银 / 黄金 / 紫晶舍利蛊 | Used once, a relic raises its rank's Gu Master one small stage at once; a rank-two relic sells for thousands of stones | R V1c53, V1c111, V1c112 | CANON (prices ADAPTED) |
+| Extreme Physique (1% of awakenings): +20% Strength, +50% combat XP, -20% upkeep, a stage every 5 turns | 十绝体 | The essence fills the whole aperture; cultivation speeds up as the rank rises | R V1c135, V1c140 | CANON |
+| Doomed Aperture (status, 60 turns): a bearer still below rank six dies when it runs out | 窍壁极限 | Heaven does not suffer them: the aperture finally bursts; only becoming an immortal saves them (Hei Lou Lan) | R V1c144, V3c159, V3c181 | CANON (60 turns ADAPTED) |
+
+The Human path's Relic Gu (D2, +25% XP) stays as it is: the five rank relics are new objects.
+
+Exact uniques:
+
+* GlobalUniques: `[-30]% Gold cost of upgrading <for units with [Peak Stage]>`,
+  `[+50]% Gold cost of upgrading <for units without [Peak Stage]>`.
+* Aptitude Awakening, new choice "One of the ten extreme physiques": `[This Unit] gains the [Extreme Physique] promotion`,
+  `[This Unit] gains the [Doomed Aperture] status for [40] turn(s) <on [Quick] game speed>`,
+  `[This Unit] gains the [Doomed Aperture] status for [60] turn(s) <on [Standard] game speed>`,
+  `[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <on [Epic] game speed>`,
+  `[This Unit] gains the [Doomed Aperture] status for [180] turn(s) <on [Marathon] game speed>`,
+  `[-99]% weight to this choice for AI decisions`.
+* The Gu Master unit type cultivates: per aptitude, mortal or immortal, and speed, e.g.
+  `[This Unit] gains the [Stage Cultivation] status for [12] turn(s) <upon turn start> <for units without [Stage Cultivation]> <for units without [Peak Stage]> <for units with [Aptitude C]> <for [pre-[Rank Six era]] units> <for [non-[Venerable]] units> <on [Standard] game speed>`;
+  then `[This Unit] gains the [Peak Stage] promotion <upon losing the [Stage Cultivation] status> <for units with [Upper Stage]>`
+  and the same for Upper and Middle.
+* Every rank unit drops the old rank's stages when it is created, upgrades included:
+  `[This Unit] loses the [Peak Stage] promotion`, `[This Unit] loses the [Upper Stage] promotion`,
+  `[This Unit] loses the [Middle Stage] promotion`.
+
+Promotions (UnitPromotions.json):
+
+**Stage Cultivation**
+
+```
+Comment [When it runs out, the unit climbs one small stage]
+```
+
+**Middle Stage**
+
+```
+[+5]% Strength
+```
+
+**Upper Stage**
+
+```
+[+5]% Strength
+```
+
+**Peak Stage**
+
+```
+[+5]% Strength
+```
+
+**Green Copper Relic Gu**
+
+```
+Only available <for [Rank One Gu Master] units>
+Unavailable <for units with [Peak Stage]>
+Unavailable <when below [25] [Gold]>
+Gain [-25] [Gold]
+[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>
+[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>
+[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>
+[This Unit] loses the [Green Copper Relic Gu] promotion <upon turn start>
+[+50]% weight to this choice for AI decisions
+```
+
+**Red Iron Relic Gu**
+
+```
+Only available <for [{Rank One-Two era} {non-[Rank One Gu Master]}] units>
+Unavailable <for units with [Peak Stage]>
+Unavailable <when below [40] [Gold]>
+Gain [-40] [Gold]
+[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>
+[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>
+[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>
+[This Unit] loses the [Red Iron Relic Gu] promotion <upon turn start>
+[+50]% weight to this choice for AI decisions
+```
+
+**White Silver Relic Gu**
+
+```
+Only available <for [Rank Three era] units>
+Unavailable <for units with [Peak Stage]>
+Unavailable <when below [60] [Gold]>
+Gain [-60] [Gold]
+[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>
+[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>
+[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>
+[This Unit] loses the [White Silver Relic Gu] promotion <upon turn start>
+[+50]% weight to this choice for AI decisions
+```
+
+**Yellow Gold Relic Gu**
+
+```
+Only available <for [Rank Four era] units>
+Unavailable <for units with [Peak Stage]>
+Unavailable <when below [90] [Gold]>
+Gain [-90] [Gold]
+[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>
+[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>
+[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>
+[This Unit] loses the [Yellow Gold Relic Gu] promotion <upon turn start>
+[+50]% weight to this choice for AI decisions
+```
+
+**Purple Crystal Relic Gu**
+
+```
+Only available <for [Rank Five era] units>
+Unavailable <for units with [Peak Stage]>
+Unavailable <when below [130] [Gold]>
+Gain [-130] [Gold]
+[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>
+[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>
+[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>
+[This Unit] loses the [Purple Crystal Relic Gu] promotion <upon turn start>
+[+50]% weight to this choice for AI decisions
+```
+
+**Extreme Physique**
+
+```
+[+20]% Strength
+[+50]% XP gained from combat
+[-20]% maintenance costs
+[This Unit] is destroyed <upon losing the [Doomed Aperture] status> <for [pre-[Rank Six era]] units>
+```
+
+**Doomed Aperture**
+
+```
+Comment [When it runs out, the aperture of a mortal bearer bursts and it dies]
+```

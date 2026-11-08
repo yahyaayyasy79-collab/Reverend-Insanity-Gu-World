@@ -1101,3 +1101,23 @@ checked in the raw text (`docs/LORE_MAPPING.md` "Regions II").
   * the conference fires for every clan at T130, T260 and T390; no sect falls.
 * **Open question for you:** the Court raises the Venerable in 5 of 8 games and cannot win Eternal Life, so only 2 of
   8 games end in an Eternal Life win (`docs/REGIONS.md`).
+
+## Reference audit and Layer 1: small stages, rank relics, extreme physiques (2026-11-08)
+
+You gave a lore reference and asked for everything it shows missing, canon-faithful and balanced (section 10.1 aside).
+`docs/REFERENCE_AUDIT.md` maps every section to the mod and checks each claim in the raw text; one claim (a Southern
+Border "Yi" clan) was not found and is not built. Layer 1 is the cultivation core:
+
+* **Four small stages per rank** (initial, middle, upper, peak).
+  * A Gu Master climbs them by itself: a stage every 8 / 10 / 12 / 16 turns for aptitude A / B / C / D (Standard
+    speed), twice as long for an immortal.
+  * Each stage adds 5% Strength, so the peak is +15%.
+  * A new rank starts again at initial.
+  * The breakthrough costs 30% fewer stones from the peak and 50% more before it.
+* **Five rank relic Gu** (green copper, red iron, white silver, yellow gold, purple crystal). Each is bought with XP
+  and 25-130 stones, raises its rank's Gu Master one stage at once, and is spent. The Human path's own Relic Gu stays
+  as it was.
+* **The ten extreme physiques**: one awakening in a hundred.
+  * The bearer gets +20% Strength, +50% combat XP, 20% less upkeep and a stage every 5 turns.
+  * After 60 turns its aperture bursts and it dies, unless it has become an immortal.
+* A Tutorial page, "Gu World: Small Stages", and 11 new icons.

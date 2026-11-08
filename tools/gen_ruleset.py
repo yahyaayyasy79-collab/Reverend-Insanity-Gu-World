@@ -110,7 +110,54 @@ UNPATHED = "<for units without [Moon Master]> <for units without [Strength Maste
 RANK1 = "<for [Rank One Gu Master] units>"  # the Liquor Worm refines rank-one essence only (canon)
 RANK2 = "<for [non-[Rank One Gu Master]] units>"  # a fused rank-two Gu needs a rank-two aperture
 APT = ("Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> "
-       "<for units without [Aptitude C]> <for units without [Aptitude D]>")
+       "<for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>")
+
+# ---------------- Reference audit Layer 1 (docs/REFERENCE_AUDIT.md): small stages, rank relics, extreme physiques ----
+# Every rank has four small stages, initial, middle, upper and peak; from a rank's peak to the next rank's initial is the
+# big breakthrough, far harder, and it burns many primeval stones (R V1c63, V1c81, V1c90). Initial is the bare rank. A Gu
+# Master climbs the stages by itself: a countdown status, shorter for a better aptitude and twice as long once immortal
+# (an immortal's small stage takes years of aperture time, ADAPTED); each stage adds STAGE_BONUS % Strength. A rank change
+# starts again at initial: the new unit's creation triggers run after its promotions are copied [src
+# UnitManager.placeUnitNearTile], so STAGE_RESET on every rank unit drops the old rank's stages, ascension included.
+from cultivation import (CULTIVATING, EARLY_PREMIUM, IMMORTAL_STAGE_FACTOR, PEAK_DISCOUNT, PHYSIQUE, PHYSIQUE_CHANCE,  # noqa: E402,E501
+                         PHYSIQUE_DOOM, DOOMED, RELICS, STAGE_BONUS, STAGE_TURNS, STAGES)
+STAGE_RESET = [f"[This Unit] loses the [{s}] promotion" for s in reversed(STAGES)]
+
+
+def stage_step(trigger=""):
+    """One small stage more, highest first so a single trigger climbs one stage only (as dao_step)."""
+    t = f" {trigger}" if trigger else ""
+    return [f"[This Unit] gains the [Peak Stage] promotion{t} <for units with [Upper Stage]>",
+            f"[This Unit] gains the [Upper Stage] promotion{t} <for units with [Middle Stage]> <for units without [Upper Stage]>",
+            f"[This Unit] gains the [Middle Stage] promotion{t} <for units without [Middle Stage]>"]
+
+
+def stage_lines():
+    """The Gu Master unit type's cultivation: one countdown per aptitude, mortal or immortal, and game speed."""
+    out = []
+    for apt, base in STAGE_TURNS.items():
+        for factor, who in ((1, "<for [pre-[Rank Six era]] units>"), (IMMORTAL_STAGE_FACTOR, "<for [post-[Rank Five era]] units>")):
+            out += per_speed(lambda m, apt=apt, n=base * factor, who=who:
+                             f"[This Unit] gains the [{CULTIVATING}] status for [{turns(n, m)}] turn(s) <upon turn start> "
+                             f"<for units without [{CULTIVATING}]> <for units without [Peak Stage]> <for units with [{apt}]> "
+                             f"{who} <for [non-[Venerable]] units>")
+    return out + stage_step(f"<upon losing the [{CULTIVATING}] status>")
+
+
+# Relic Gu (舍利蛊): used once, it raises a Gu Master one small stage at once; one colour for every mortal rank, and a
+# rank-two relic sells for thousands of stones (R V1c53, V1c111, V1c112). A kept promotion (E4) that pays its stones and
+# climbs one stage on purchase, then is spent at the next turn start; closed at the peak, where it would do nothing.
+def relic(colour, only, stones):
+    name = f"{colour} Relic Gu"
+    return {"name": name, "unitTypes": GM_TYPES, "uniques": [
+        f"Only available {only}", "Unavailable <for units with [Peak Stage]>", f"Unavailable <when below [{stones}] [Gold]>",
+        f"Gain [-{stones}] [Gold]", *stage_step(), f"[This Unit] loses the [{name}] promotion <upon turn start>", w("+50")]}
+
+
+# The ten extreme physiques (十绝体): the essence fills the whole aperture, cultivation quickens as the rank rises, and
+# heaven does not suffer them: the aperture finally bursts; only becoming an immortal saves them (R V1c135, V1c140,
+# V1c144, V3c159, V3c181). One awakening in a hundred; the bearer cultivates a stage in 5 turns and dies when the
+# Doomed Aperture runs out, unless it has ascended by then (numbers in tools/cultivation.py).
 NB = "Never appears as a Barbarian unit"
 WILD_GU_TRIGGER = "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>"
 # "Add [resource] to this tile" deletes the tile's resource [src UniqueTriggerActivation OneTimeAddResource]: never on a
@@ -476,7 +523,11 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     # debt and clans touched the -200 disband line (autoplay, Five Regions, 8 x 450; upkeep 67 against income 83 a
     # turn at T330-400). From 60% of the game on, an AI clan's units cost 30% less; a player's cost the same.
     lambda m: f"[-{AI_LATE_UPKEEP}]% maintenance costs <for [AI player] Civilizations> <after turn number [{turn_gate(300, m)}]>"
-) + per_speed(lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
+) + [
+    # reference audit Layer 1: the big breakthrough is cheap from the peak and dear before it
+    f"[-{PEAK_DISCOUNT}]% Gold cost of upgrading <for units with [Peak Stage]>",
+    f"[+{EARLY_PREMIUM}]% Gold cost of upgrading <for units without [Peak Stage]>",
+] + per_speed(lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
                        f"<with [{chance(3, m)}]% chance> <for [Major] Civilizations>") + per_speed(
     lambda m: f"Triggers a [{TIDE}] event <upon turn start> <after turn number [{turn_gate(90, m)}]> "
               f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
@@ -594,7 +645,9 @@ dump("Techs.json", [{"columnNumber": int(c["column"]), "era": c["era"], "techCos
                     for c in table("tech_columns.csv")])
 
 # ---------------- Unit types ----------------
-dump("UnitTypes.json", [{"name": n, "movementType": "Land", **({"uniques": gen_paths.GC.spoils()} if "Gu Master" in n else {})}
+dump("UnitTypes.json", [{"name": n, "movementType": "Land", **({"uniques": gen_paths.GC.spoils()
+                                                                  + (stage_lines() if n == "Gu Master" else [])}
+                                                                 if "Gu Master" in n else {})}
                         for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
 
@@ -656,7 +709,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     # numbers [docs Unique-parameters nonNegativeAmount], so each is a small trigger followed by a weighted die (E1):
     # 6% x 1/5 = 1.2% per Gu Master per turn for a wild Gu; 1% x 1/2 per turn in foreign land for an inheritance
     # (1/8 gave 0.4 inheritances per game in autoplay; 1/2 aims at about 1.5).
-    u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER] + DAO_LINES
+    u["uniques"] += [WILD_GU_TRIGGER, INHERITANCE_TRIGGER] + DAO_LINES + STAGE_RESET
     if r["name"] in IMMORTALS:
         u["uniques"] += immortal_life(IMMORTAL_RANK[r["name"]]) + IMMORTAL_XP  # MOD_SPEC_2 C2: immortals burn Lifespan Gu
         u["uniques"].append("Can pass through impassable tiles")  # immortals cross mountains and the region walls
@@ -863,6 +916,14 @@ dump("UnitPromotions.json", with_combos([
     # C5
     {"name": SURVIVOR, "uniques": ["Comment [Survived a heavenly tribulation: may climb to the next rank]"]},
     {"name": "Dao Comprehension", "uniques": ["Comment [When it runs out, the unit's dao marks grow by one tier]"]},
+    # reference audit Layer 1: the small stages, their countdown, the rank relics, the extreme physique
+    {"name": CULTIVATING, "uniques": ["Comment [When it runs out, the unit climbs one small stage]"]},
+    *[{"name": st, "unitTypes": GM_TYPES, "uniques": [f"[+{STAGE_BONUS}]% Strength"]} for st in STAGES],
+    *[relic(c, only, stones) for c, only, stones in RELICS],
+    {"name": PHYSIQUE, "unitTypes": GM_TYPES, "uniques": [
+        "[+20]% Strength", "[+50]% XP gained from combat", "[-20]% maintenance costs",
+        f"[This Unit] is destroyed <upon losing the [{DOOMED}] status> <for [pre-[Rank Six era]] units>"]},
+    {"name": DOOMED, "uniques": ["Comment [When it runs out, the aperture of a mortal bearer bursts and it dies]"]},
 ] + [{"name": d, "uniques": DAO_EFFECTS[i] + ([f"[This Unit] loses the [{DAO[i - 1]}] promotion"] if i else [])
          # Phase D: the marks ring over every attack, brighter with each tier (tools/art/sfx.py)
          + [f"Play [{sfx.dao_sound(i + 1)}] sound <upon damaging a [Military] unit> <when attacking>"]}
@@ -912,6 +973,9 @@ dump("Events.json", [
         {"text": "Grade C aptitude", "uniques": ["[This Unit] gains the [Aptitude C] promotion", w("-65")]},
         {"text": "Grade D aptitude", "uniques": ["[This Unit] gains the [Aptitude D] promotion", w("-60"),
                                                  w("-25", SPR)]},
+        # reference audit Layer 1: one of the ten extreme physiques, one awakening in a hundred
+        {"text": "One of the ten extreme physiques", "uniques": [f"[This Unit] gains the [{PHYSIQUE}] promotion"]
+         + per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{turns(PHYSIQUE_DOOM, m)}] turn(s)") + [w(f"-{100 - PHYSIQUE_CHANCE}")]},
     ]},
     {"name": "Refinement Attempt", "text": "Your essence pours into the Gu and its materials. How far will you push it?", "choices": [
         {"text": "Refine carefully", "uniques":

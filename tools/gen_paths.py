@@ -761,8 +761,43 @@ def _lines_hunger() -> list[tuple[str, str, dict]]:
     return L
 
 
+def _lines_cultivation() -> list:
+    """Reference audit Layer 1: the small stages, the rank relics and the extreme physique (tools/cultivation.py)."""
+    import cultivation as C
+    t = C.STAGE_TURNS
+    relics = ", ".join(f"{c.lower()} {s}" for c, _, s in C.RELICS)
+    relics_id = ", ".join(f"{C.RELIC_ID[c].lower()} {s}" for c, _, s in C.RELICS)
+    return [
+        (f"Every rank has four small stages: initial, middle, upper and peak. A Gu Master climbs them by cultivating; each "
+         f"stage above initial adds {C.STAGE_BONUS}% Strength.",
+         f"Setiap rank punya empat tahap kecil: awal, menengah, atas dan puncak. Gu Master menaikinya dengan berkultivasi; "
+         f"tiap tahap di atas awal menambah Kekuatan {C.STAGE_BONUS}%.", {}),
+        (f"One stage every {t['Aptitude A']} turns with grade A aptitude, {t['Aptitude B']} with B, {t['Aptitude C']} with C, "
+         f"{t['Aptitude D']} with D and {t[C.PHYSIQUE]} with an extreme physique (Standard speed; the other speeds scale). "
+         f"An immortal takes {C.IMMORTAL_STAGE_FACTOR} times as long.",
+         f"Satu tahap tiap {t['Aptitude A']} giliran dengan bakat A, {t['Aptitude B']} dengan B, {t['Aptitude C']} dengan C, "
+         f"{t['Aptitude D']} dengan D dan {t[C.PHYSIQUE]} dengan fisik ekstrem (kecepatan Standar; kecepatan lain menyesuaikan). "
+         f"Gu Abadi butuh {C.IMMORTAL_STAGE_FACTOR} kali lebih lama.", {}),
+        (f"A new rank starts again at initial. The breakthrough costs {C.PEAK_DISCOUNT}% fewer stones from the peak and "
+         f"{C.EARLY_PREMIUM}% more before it.",
+         f"Rank baru dimulai lagi dari tahap awal. Terobosan {C.PEAK_DISCOUNT}% lebih murah dari puncak dan "
+         f"{C.EARLY_PREMIUM}% lebih mahal sebelum puncak.", {}),
+        (f"Relic Gu, one colour for each mortal rank, bought with XP and primeval stones ({relics}): it lifts the unit one "
+         f"stage at once and is spent.",
+         f"Gu relik, satu warna untuk tiap rank fana, dibeli dengan XP dan batu primordial ({relics_id}): mengangkat unit "
+         f"satu tahap seketika lalu habis.", {}),
+        (f"An extreme physique: {C.PHYSIQUE_CHANCE} awakening in a hundred. +20% Strength, +50% XP from combat, 20% less "
+         f"upkeep. After {C.PHYSIQUE_DOOM} turns (Standard speed) the aperture bursts and the unit dies, unless it has "
+         f"ascended to rank six.",
+         f"Fisik ekstrem: {C.PHYSIQUE_CHANCE} dari seratus kebangkitan. Kekuatan +20%, XP pertempuran +50%, pemeliharaan "
+         f"20% lebih murah. Setelah {C.PHYSIQUE_DOOM} giliran (kecepatan Standar) aperturnya meledak dan unit mati, kecuali "
+         f"ia sudah naik ke rank enam.", {}),
+    ]
+
+
 def _tutorial_specs() -> list[tuple[str, str, list]]:
     out = [("Gu World: Power Scaling", "Dunia Gu: Skala Kekuatan", _lines_power()),
+           ("Gu World: Small Stages", "Dunia Gu: Tahap Kecil", _lines_cultivation()),
            ("Gu World: Immortal Lifespan", "Dunia Gu: Umur Abadi", _lines_lifespan()),
            ("Gu World: Gu Hunger and Food", "Dunia Gu: Lapar dan Makanan Gu", _lines_hunger())]
     out += [(f"Gu World: {f['name'].replace('&', 'and')} Paths", f"Dunia Gu: Jalur {f['name_id'].replace('&', 'dan')}",

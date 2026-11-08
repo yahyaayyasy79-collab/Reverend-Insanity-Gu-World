@@ -35,6 +35,17 @@
           "[-60]% weight to this choice for AI decisions",
           "[-25]% weight to this choice for AI decisions <if [Awakening Grounds] is constructed>"
         ]
+      },
+      {
+        "text": "One of the ten extreme physiques",
+        "uniques": [
+          "[This Unit] gains the [Extreme Physique] promotion",
+          "[This Unit] gains the [Doomed Aperture] status for [40] turn(s) <on [Quick] game speed>",
+          "[This Unit] gains the [Doomed Aperture] status for [60] turn(s) <on [Standard] game speed>",
+          "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <on [Epic] game speed>",
+          "[This Unit] gains the [Doomed Aperture] status for [180] turn(s) <on [Marathon] game speed>",
+          "[-99]% weight to this choice for AI decisions"
+        ]
       }
     ]
   },

@@ -48,7 +48,7 @@
     "uniques": [
       "[+50]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -65,7 +65,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Two Gu Master",
     "attackSound": "gu-rank-1",
@@ -85,7 +88,7 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -102,7 +105,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Three Gu Master",
     "attackSound": "gu-rank-2",
@@ -122,7 +128,7 @@
     "uniques": [
       "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -139,7 +145,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Four Gu Master",
     "attackSound": "gu-rank-3",
@@ -159,7 +168,7 @@
     "uniques": [
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -176,7 +185,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Five Gu Master",
     "attackSound": "gu-rank-4",
@@ -196,7 +208,7 @@
     "uniques": [
       "[+225]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "May upgrade to [Rank Six Gu Immortal] through ruins-like effects",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
@@ -214,7 +226,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "attackSound": "gu-rank-5",
     "civilopediaText": [
@@ -233,7 +248,7 @@
     "uniques": [
       "[+300]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "Unbuildable",
       "Cannot be purchased",
       "May upgrade to [Rank Seven Gu Immortal] through ruins-like effects",
@@ -255,6 +270,9 @@
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [7] turns> <on [Quick] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Standard] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Epic] game speed>",
@@ -290,7 +308,7 @@
     "uniques": [
       "[+350]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "Unbuildable",
       "Cannot be purchased",
       "May upgrade to [Rank Eight Gu Immortal] through ruins-like effects",
@@ -312,6 +330,9 @@
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <on [Quick] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [15] turns> <on [Standard] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [22] turns> <on [Epic] game speed>",
@@ -347,7 +368,7 @@
     "uniques": [
       "[+400]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "Unbuildable",
       "Cannot be purchased",
       "May upgrade to [Venerable] through ruins-like effects",
@@ -369,6 +390,9 @@
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [13] turns> <on [Quick] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [20] turns> <on [Standard] game speed>",
       "Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [30] turns> <on [Epic] game speed>",
@@ -404,7 +428,7 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -421,7 +445,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Three Gu Master",
     "attackSound": "gu-rank-2",
@@ -443,7 +470,7 @@
     "uniques": [
       "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -460,7 +487,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Four Gu Master",
     "attackSound": "gu-rank-3",
@@ -482,7 +512,7 @@
     "uniques": [
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -499,7 +529,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Five Gu Master",
     "attackSound": "gu-rank-4",
@@ -521,7 +554,7 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -538,7 +571,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Three Gu Master",
     "attackSound": "gu-rank-2",
@@ -560,7 +596,7 @@
     "uniques": [
       "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -577,7 +613,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Four Gu Master",
     "attackSound": "gu-rank-3",
@@ -599,7 +638,7 @@
     "uniques": [
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -616,7 +655,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Five Gu Master",
     "attackSound": "gu-rank-4",
@@ -638,7 +680,7 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -655,7 +697,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Three Gu Master",
     "attackSound": "gu-rank-2",
@@ -677,7 +722,7 @@
     "uniques": [
       "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -694,7 +739,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Four Gu Master",
     "attackSound": "gu-rank-3",
@@ -716,7 +764,7 @@
     "uniques": [
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -733,7 +781,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Five Gu Master",
     "attackSound": "gu-rank-4",
@@ -755,7 +806,7 @@
     "uniques": [
       "[+100]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -772,7 +823,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Three Gu Master",
     "attackSound": "gu-rank-2",
@@ -794,7 +848,7 @@
     "uniques": [
       "[+125]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -811,7 +865,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Four Gu Master",
     "attackSound": "gu-rank-3",
@@ -833,7 +890,7 @@
     "uniques": [
       "[+175]% maintenance costs",
       "Never appears as a Barbarian unit",
-      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]>",
+      "Triggers a [Aptitude Awakening] event <for units without [Aptitude A]> <for units without [Aptitude B]> <for units without [Aptitude C]> <for units without [Aptitude D]> <for units without [Extreme Physique]>",
       "[This Unit] gains [2] XP <upon turn start> <in cities with a [Gu Academy]> <for units without [Killer Move]>",
       "Triggers a [Wild Gu] event <upon turn start> <with [6]% chance>",
       "Triggers a [Inheritance Rumour] event <upon turn start> <with [1]% chance> <in [Foreign Land] tiles> <in tiles without [resource]> <after discovering [Inheritance Lore]>",
@@ -850,7 +907,10 @@
       "[This Unit] gains the [Dao Marks IV] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks III]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks III] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks II]> <for [post-[Rank Five era]] units> <for [post-[Rank Five era]] units>",
       "[This Unit] gains the [Dao Marks II] promotion <upon defeating a [post-[Rank Five era]] unit> <for units with [Dao Marks I]> <for [post-[Rank Five era]] units>",
-      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>"
+      "[This Unit] gains the [Dao Marks I] promotion <upon defeating a [post-[Rank Five era]] unit> <for units without [Dao Marks I]> <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]> <for [post-[Rank Five era]] units>",
+      "[This Unit] loses the [Peak Stage] promotion",
+      "[This Unit] loses the [Upper Stage] promotion",
+      "[This Unit] loses the [Middle Stage] promotion"
     ],
     "upgradesTo": "Rank Five Gu Master",
     "attackSound": "gu-rank-4",

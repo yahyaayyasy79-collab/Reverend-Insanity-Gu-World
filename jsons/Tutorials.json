@@ -44,6 +44,26 @@
     ]
   },
   {
+    "name": "Gu World: Small Stages",
+    "civilopediaText": [
+      {
+        "text": "Every rank has four small stages: initial, middle, upper and peak. A Gu Master climbs them by cultivating; each stage above initial adds 5% Strength."
+      },
+      {
+        "text": "One stage every 8 turns with grade A aptitude, 10 with B, 12 with C, 16 with D and 5 with an extreme physique (Standard speed; the other speeds scale). An immortal takes 2 times as long."
+      },
+      {
+        "text": "A new rank starts again at initial. The breakthrough costs 30% fewer stones from the peak and 50% more before it."
+      },
+      {
+        "text": "Relic Gu, one colour for each mortal rank, bought with XP and primeval stones (green copper 25, red iron 40, white silver 60, yellow gold 90, purple crystal 130): it lifts the unit one stage at once and is spent."
+      },
+      {
+        "text": "An extreme physique: 1 awakening in a hundred. +20% Strength, +50% XP from combat, 20% less upkeep. After 60 turns (Standard speed) the aperture bursts and the unit dies, unless it has ascended to rank six."
+      }
+    ]
+  },
+  {
     "name": "Gu World: Immortal Lifespan",
     "civilopediaText": [
       {

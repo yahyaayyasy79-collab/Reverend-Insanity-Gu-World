@@ -13456,6 +13456,215 @@
     ]
   },
   {
+    "name": "Stage Cultivation",
+    "uniques": [
+      "Comment [When it runs out, the unit climbs one small stage]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Cultivating towards the next small stage. When the count runs out the unit climbs one stage: every 8 turns with grade A aptitude, 10 with B, 12 with C, 16 with D, 5 with an extreme physique (Standard speed); twice as long for an immortal."
+      }
+    ]
+  },
+  {
+    "name": "Middle Stage",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+5]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Middle stage (中阶), the second of a rank's four small stages. A Gu Master climbs them by cultivating, faster with a better aptitude; each stage adds 5% Strength, and a new rank starts again at initial."
+      }
+    ]
+  },
+  {
+    "name": "Upper Stage",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+5]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Upper stage (高阶), the third small stage of a rank: 5% more Strength again."
+      }
+    ]
+  },
+  {
+    "name": "Peak Stage",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+5]% Strength"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Peak stage (巅峰), the top of a rank. From here the breakthrough to the next rank costs 30% fewer stones; before the peak it costs 50% more."
+      }
+    ]
+  },
+  {
+    "name": "Green Copper Relic Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [Rank One Gu Master] units>",
+      "Unavailable <for units with [Peak Stage]>",
+      "Unavailable <when below [25] [Gold]>",
+      "Gain [-25] [Gold]",
+      "[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>",
+      "[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>",
+      "[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>",
+      "[This Unit] loses the [Green Copper Relic Gu] promotion <upon turn start>",
+      "[+50]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Green Copper relic Gu (青铜舍利蛊): used once, it lifts a rank-one Gu Master one small stage at once. It costs 25 primeval stones and is spent."
+      }
+    ]
+  },
+  {
+    "name": "Red Iron Relic Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [{Rank One-Two era} {non-[Rank One Gu Master]}] units>",
+      "Unavailable <for units with [Peak Stage]>",
+      "Unavailable <when below [40] [Gold]>",
+      "Gain [-40] [Gold]",
+      "[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>",
+      "[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>",
+      "[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>",
+      "[This Unit] loses the [Red Iron Relic Gu] promotion <upon turn start>",
+      "[+50]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Red Iron relic Gu (赤铁舍利蛊): used once, it lifts a rank-two Gu Master one small stage at once. It costs 40 primeval stones and is spent."
+      }
+    ]
+  },
+  {
+    "name": "White Silver Relic Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [Rank Three era] units>",
+      "Unavailable <for units with [Peak Stage]>",
+      "Unavailable <when below [60] [Gold]>",
+      "Gain [-60] [Gold]",
+      "[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>",
+      "[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>",
+      "[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>",
+      "[This Unit] loses the [White Silver Relic Gu] promotion <upon turn start>",
+      "[+50]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "White Silver relic Gu (白银舍利蛊): used once, it lifts a rank-three Gu Master one small stage at once. It costs 60 primeval stones and is spent."
+      }
+    ]
+  },
+  {
+    "name": "Yellow Gold Relic Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [Rank Four era] units>",
+      "Unavailable <for units with [Peak Stage]>",
+      "Unavailable <when below [90] [Gold]>",
+      "Gain [-90] [Gold]",
+      "[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>",
+      "[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>",
+      "[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>",
+      "[This Unit] loses the [Yellow Gold Relic Gu] promotion <upon turn start>",
+      "[+50]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Yellow Gold relic Gu (黄金舍利蛊): used once, it lifts a rank-four Gu Master one small stage at once. It costs 90 primeval stones and is spent."
+      }
+    ]
+  },
+  {
+    "name": "Purple Crystal Relic Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Only available <for [Rank Five era] units>",
+      "Unavailable <for units with [Peak Stage]>",
+      "Unavailable <when below [130] [Gold]>",
+      "Gain [-130] [Gold]",
+      "[This Unit] gains the [Peak Stage] promotion <for units with [Upper Stage]>",
+      "[This Unit] gains the [Upper Stage] promotion <for units with [Middle Stage]> <for units without [Upper Stage]>",
+      "[This Unit] gains the [Middle Stage] promotion <for units without [Middle Stage]>",
+      "[This Unit] loses the [Purple Crystal Relic Gu] promotion <upon turn start>",
+      "[+50]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Purple Crystal relic Gu (紫晶舍利蛊): used once, it lifts a rank-five Gu Master one small stage at once. It costs 130 primeval stones and is spent."
+      }
+    ]
+  },
+  {
+    "name": "Extreme Physique",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "[+20]% Strength",
+      "[+50]% XP gained from combat",
+      "[-20]% maintenance costs",
+      "[This Unit] is destroyed <upon losing the [Doomed Aperture] status> <for [pre-[Rank Six era]] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "One of the ten extreme physiques (十绝体), one awakening in a hundred: the essence fills the whole aperture. +20% Strength, +50% XP from combat, 20% less upkeep, a small stage every 5 turns. Heaven does not suffer it: when the Doomed Aperture runs out, a bearer still mortal bursts and dies; only ascending to rank six saves it."
+      }
+    ]
+  },
+  {
+    "name": "Doomed Aperture",
+    "uniques": [
+      "Comment [When it runs out, the aperture of a mortal bearer bursts and it dies]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The extreme physique's countdown. When it runs out, a bearer still below rank six dies."
+      }
+    ]
+  },
+  {
     "name": "Dao Marks I",
     "uniques": [
       "[+10]% Strength",

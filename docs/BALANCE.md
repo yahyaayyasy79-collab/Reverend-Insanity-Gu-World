@@ -180,6 +180,8 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [300]> <on [Standard] game speed>` | -30, 300 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [450]> <on [Epic] game speed>` | -30, 450 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-30]% maintenance costs <for [AI player] Civilizations> <after turn number [900]> <on [Marathon] game speed>` | -30, 900 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[-30]% Gold cost of upgrading <for units with [Peak Stage]>` | -30 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[+50]% Gold cost of upgrading <for units without [Peak Stage]>` | +50 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [20]> <with [4]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 20, 4 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [30]> <with [3]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Beast Tide] event <upon turn start> <after turn number [45]> <with [2]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -1467,6 +1469,27 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [30] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Standard] game speed>` | 30 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [45] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Epic] game speed>` | 45 | tools/gen_ruleset.py `Promotions` |
 | Super Grade Blessed Land | `[This Unit] gains the [Tribulation Countdown] status for [90] turn(s) <upon turn start> <for units without [Tribulation Countdown]> <for [Rank Seven Gu Immortal] units> <on [Marathon] game speed>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Middle Stage | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Upper Stage | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Peak Stage | `[+5]% Strength` | +5 | tools/gen_ruleset.py `Promotions` |
+| Green Copper Relic Gu | `Unavailable <when below [25] [Gold]>` | 25 | tools/gen_ruleset.py `Promotions` |
+| Green Copper Relic Gu | `Gain [-25] [Gold]` | -25 | tools/gen_ruleset.py `Promotions` |
+| Green Copper Relic Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Promotions` |
+| Red Iron Relic Gu | `Unavailable <when below [40] [Gold]>` | 40 | tools/gen_ruleset.py `Promotions` |
+| Red Iron Relic Gu | `Gain [-40] [Gold]` | -40 | tools/gen_ruleset.py `Promotions` |
+| Red Iron Relic Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Promotions` |
+| White Silver Relic Gu | `Unavailable <when below [60] [Gold]>` | 60 | tools/gen_ruleset.py `Promotions` |
+| White Silver Relic Gu | `Gain [-60] [Gold]` | -60 | tools/gen_ruleset.py `Promotions` |
+| White Silver Relic Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Promotions` |
+| Yellow Gold Relic Gu | `Unavailable <when below [90] [Gold]>` | 90 | tools/gen_ruleset.py `Promotions` |
+| Yellow Gold Relic Gu | `Gain [-90] [Gold]` | -90 | tools/gen_ruleset.py `Promotions` |
+| Yellow Gold Relic Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Promotions` |
+| Purple Crystal Relic Gu | `Unavailable <when below [130] [Gold]>` | 130 | tools/gen_ruleset.py `Promotions` |
+| Purple Crystal Relic Gu | `Gain [-130] [Gold]` | -130 | tools/gen_ruleset.py `Promotions` |
+| Purple Crystal Relic Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Promotions` |
+| Extreme Physique | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Extreme Physique | `[+50]% XP gained from combat` | +50 | tools/gen_ruleset.py `Promotions` |
+| Extreme Physique | `[-20]% maintenance costs` | -20 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks I | `[+10]% Strength` | +10 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks II | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
 | Dao Marks III | `[+30]% Strength` | +30 | tools/gen_ruleset.py `Promotions` |
@@ -2077,6 +2100,11 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Aptitude Awakening › Grade C aptitude | `[-65]% weight to this choice for AI decisions` | -65 | tools/gen_ruleset.py `Events` |
 | Aptitude Awakening › Grade D aptitude | `[-60]% weight to this choice for AI decisions` | -60 | tools/gen_ruleset.py `Events` |
 | Aptitude Awakening › Grade D aptitude | `[-25]% weight to this choice for AI decisions <if [Awakening Grounds] is constructed>` | -25 | tools/gen_ruleset.py `Events` |
+| Aptitude Awakening › One of the ten extreme physiques | `[This Unit] gains the [Doomed Aperture] status for [40] turn(s) <on [Quick] game speed>` | 40 | tools/gen_ruleset.py `Events` |
+| Aptitude Awakening › One of the ten extreme physiques | `[This Unit] gains the [Doomed Aperture] status for [60] turn(s) <on [Standard] game speed>` | 60 | tools/gen_ruleset.py `Events` |
+| Aptitude Awakening › One of the ten extreme physiques | `[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <on [Epic] game speed>` | 90 | tools/gen_ruleset.py `Events` |
+| Aptitude Awakening › One of the ten extreme physiques | `[This Unit] gains the [Doomed Aperture] status for [180] turn(s) <on [Marathon] game speed>` | 180 | tools/gen_ruleset.py `Events` |
+| Aptitude Awakening › One of the ten extreme physiques | `[-99]% weight to this choice for AI decisions` | -99 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Only available <if [Refinement Chamber] is constructed> <when above [80] [Gold]>` | 80 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Unavailable <when below [140] [Gold]> <during the [Rank Three era]>` | 140 | tools/gen_ruleset.py `Events` |
 | Refinement Attempt › Refine carefully | `Unavailable <when below [200] [Gold]> <starting from the [Rank Four era]>` | 200 | tools/gen_ruleset.py `Events` |
@@ -4152,6 +4180,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3896 numbers listed.
+3924 numbers listed.
 
 <!-- inventory:end -->

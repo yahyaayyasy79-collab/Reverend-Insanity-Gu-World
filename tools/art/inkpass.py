@@ -113,8 +113,15 @@ class Palette:
                 return DEBUFF, None
             if name.startswith("Dao Marks"):
                 return (205, 175, 240), None
-            if name.startswith("Aptitude"):
+            if name.startswith("Aptitude") or name.endswith(" Stage") or name == "Stage Cultivation":
                 return (240, 205, 110), None
+            if name.endswith(" Relic Gu"):   # reference audit Layer 1: the relic's rank colour
+                from .cultart import RELIC_COLOURS
+                return RELIC_COLOURS[name[:-len(" Relic Gu")]], None
+            if name == "Extreme Physique":
+                return (150, 205, 250), None
+            if name == "Doomed Aperture":
+                return DEBUFF, None
         return NEUTRAL, None
 
 
