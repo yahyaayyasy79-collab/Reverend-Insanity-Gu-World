@@ -225,7 +225,7 @@
       "[3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>",
       "[-15]% [Gold] [in all cities]",
       "[+25]% Production when constructing [Military] units [in all cities]",
-      "[+5 Happiness]",
+      "[+3 Happiness]",
       "Triggers a [Imperial Court Contest] event <upon turn start> <every [9] turns> <on [Quick] game speed>",
       "Triggers a [Imperial Court Contest] event <upon turn start> <every [13] turns> <on [Standard] game speed>",
       "Triggers a [Imperial Court Contest] event <upon turn start> <every [20] turns> <on [Epic] game speed>",

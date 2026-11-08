@@ -3614,7 +3614,7 @@ Start bias [Grassland]
 [3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>
 [-15]% [Gold] [in all cities]
 [+25]% Production when constructing [Military] units [in all cities]
-[+5 Happiness]
+[+3 Happiness]
 Triggers a [Imperial Court Contest] event <upon turn start> <every [9] turns> <on [Quick] game speed>
 Triggers a [Imperial Court Contest] event <upon turn start> <every [13] turns> <on [Standard] game speed>
 Triggers a [Imperial Court Contest] event <upon turn start> <every [20] turns> <on [Epic] game speed>
@@ -4782,7 +4782,7 @@ Southern Border ever went to war (8 × 450).
 | The Court declares no war (`declareWar` 0) and never seeks Eternal Life | It wages no ordinary war; it acts against fate-defiers and threats, and keeps Heaven's Will | R V5c49, V4c131, V4c314, V5c344 | CANON (Eternal Life block ADAPTED) |
 | Immortal Tomb: two rank-seven immortals wake when war is declared on the Court | Most Court immortals sleep in the Immortal Tomb and wake only in real need; they face no calamities | R V5c49, V5c560, V5c55 | ADAPTED |
 | The ten sects' seats: +50% city strength (the three on the map) | The ten sects are the Court's lower sects, hold 80% of the continent's resources, from seats a hundred thousand years old | R V4c307, V4c55, V4c9 | ADAPTED |
-| Northern Plains head start (3 techs, three rank-two Gu Masters), −15% stones, +25% military production, +5 happiness, the most warlike temperament | Second fighting power, the poorest land, the most Gu Masters and the best fighters, always at war | R V3c153, V3c20, V4c170 | ADAPTED (the happiness lets the engine's AI declare war, E14) |
+| Northern Plains head start (3 techs, three rank-two Gu Masters), −15% stones, +25% military production, +3 happiness, the most warlike temperament | Second fighting power, the poorest land, the most Gu Masters and the best fighters, always at war | R V3c153, V3c20, V4c170 | ADAPTED (the happiness lets the engine's AI declare war, E14) |
 | Imperial Court Contest every ~13 turns (a die: the bigger army wins more often) | Every ten years the golden tribes fight for the Imperial Court before the blizzard; only mortals fight | R V3c117, V3c120, V3c84, V3c147 | CANON (die ADAPTED) |
 | Eastern Sea head start (3 techs), +25% stones | The richest region | R V4c243, V5c669 | ADAPTED |
 | Fate Hunt on the Zombie Alliance | The Court hunts fate escapees, immortal zombies first | R V4c131, V4c307 | CANON (event ADAPTED) |
@@ -4791,7 +4791,7 @@ Southern Border ever went to war (8 × 450).
 Exact uniques of the two new events (Events.json):
 
 * **Imperial Court Contest** (presentation None):
-  * Our Gu Masters take the court: `Gain [60] [Gold]`, `New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>`, `[+0]% weight to this choice for AI decisions`, `[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>`.
+  * Our Gu Masters take the court: `Gain [60] [Gold]`, `New [Gu Master] units start with [15] XP [in all cities] <for [5] turns>`, `[+0]% weight to this choice for AI decisions`, `[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>`.
   * Another tribe takes the court, and the blizzard falls on our camps: `[-50]% growth [in all cities] <for [10] turns>`, `[+0]% weight to this choice for AI decisions`.
 * **Fate Hunt**:
   * Go to ground in the Yellow Springs Sea: `[-25]% Strength <for [10] turns>`, `[+0]% weight to this choice for AI decisions`.

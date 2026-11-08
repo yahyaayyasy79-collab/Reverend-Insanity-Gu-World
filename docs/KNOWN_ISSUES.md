@@ -141,6 +141,11 @@ rest of the list is what a player or the next session should know before trustin
     occurrence names the tile. If it happens in your game, reload the autosave: the AI's choices differ on a reload.
     Not seen again in 84 more games of 300-450 turns (2026-11-03).
 
+25. **No filter for "this region" (2026-11-08).** Unciv knows a civ's own and foreign land, not the five regions, so
+    three canon rules have no exact form: an immortal's strain in another region, Gu weakened abroad, and the
+    desert's ban on flying over oases (docs/REGIONS.md, "Not done yet"). Region rules are tied to each region's
+    nations instead.
+
 21. **The arc majors never declare war on each other (Phase D, 2026-11-02).** Each sits alone behind its region's
     walls. The AI declares war only with happiness above 0, 4 soldiers and one per city, and 12 population
     [src DiplomacyAutomation.declareWar], and no unique can make a civ declare war.

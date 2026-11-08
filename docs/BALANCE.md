@@ -2366,7 +2366,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Immortal Gu Refinement › Its birth calls down a calamity | `[2] [Bold Lightning Wolf]s rebel` | 2 | tools/gen_ruleset.py `Events` |
 | Immortal Gu Refinement › Its birth calls down a calamity | `[-67]% weight to this choice for AI decisions` | -67 | tools/gen_ruleset.py `Events` |
 | Imperial Court Contest › Our Gu Masters take the court | `Gain [60] [Gold]` | 60 | tools/gen_ruleset.py `Events` |
-| Imperial Court Contest › Our Gu Masters take the court | `New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>` | 15, 13 | tools/gen_ruleset.py `Events` |
+| Imperial Court Contest › Our Gu Masters take the court | `New [Gu Master] units start with [15] XP [in all cities] <for [5] turns>` | 15, 5 | tools/gen_ruleset.py `Events` |
 | Imperial Court Contest › Our Gu Masters take the court | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Imperial Court Contest › Our Gu Masters take the court | `[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>` | +200, 8 | tools/gen_ruleset.py `Events` |
 | Imperial Court Contest › Another tribe takes the court, and the blizzard falls on our camps | `[-50]% growth [in all cities] <for [10] turns>` | -50, 10 | tools/gen_ruleset.py `Events` |
@@ -3750,7 +3750,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Huang Jin Family | `[3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[-15]% [Gold] [in all cities]` | -15 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[+25]% Production when constructing [Military] units [in all cities]` | +25 | tools/gen_ruleset.py `Nations` |
-| Huang Jin Family | `[+5 Happiness]` | +5 | tools/gen_ruleset.py `Nations` |
+| Huang Jin Family | `[+3 Happiness]` | +3 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [9] turns> <on [Quick] game speed>` | 9 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [13] turns> <on [Standard] game speed>` | 13 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `Triggers a [Imperial Court Contest] event <upon turn start> <every [20] turns> <on [Epic] game speed>` | 20 | tools/gen_ruleset.py `Nations` |

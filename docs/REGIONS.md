@@ -119,7 +119,7 @@ armed and near a target (CAPABILITIES E14). The arc majors met those gates on 6-
 | Central Continent strongest | The Court gets 6 free techs and two rank-three Gu Masters when it founds its capital, +15% science and production, and +50% city strength; the three sects on the map get +50% city strength |
 | The Court wages no war | `declareWar` 0 (it never declares one, but fights back); it cannot seek Eternal Life |
 | The Immortal Tomb | When a clan declares war on the Court, two rank-seven immortals wake (at most three in the field). They have no blessed land and burn their last Lifespan Gu |
-| Northern Plains | 3 free techs and three rank-two Gu Masters, −15% stones, +25% military production, +5 happiness (so the engine's AI can declare war, E14), the most warlike temperament, and the Imperial Court Contest every ~13 turns |
+| Northern Plains | 3 free techs and three rank-two Gu Masters, −15% stones, +25% military production, +3 happiness (so the engine's AI can declare war, E14), the most warlike temperament, and the Imperial Court Contest every ~13 turns |
 | Eastern Sea | 3 free techs, +25% stones; the Fate Hunt on the Zombie Alliance while Fate Gu stands |
 | Western Desert | 2 free techs, +20% stones, a trading and cooperative temperament |
 | Southern Border | Unchanged: the baseline, and already at war |

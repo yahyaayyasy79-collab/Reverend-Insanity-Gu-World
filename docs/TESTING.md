@@ -155,6 +155,12 @@ unit setxp 300                              # on a Rank Six Gu Immortal: the Sta
                                             # appears; once taken, a second unit of yours can no longer take it
 unit addpromotion "Star Grandmaster"        # with Star Master and Star Great Grandmaster too: the Star Mark
 unit addpromotion "Star Great Grandmaster"  # Resonance button shows (3 green grape essence)
+# Regions (2026-11-08, docs/REGIONS.md): flight, walls, the Court
+unit add gu-yue-clan "Rank Six Gu Immortal"   # on a coast tile: it moves over the sea without embarking
+unit add gu-yue-clan "Rank Three Gu Master"   # beside a region wall: it can enter; ending a turn inside costs 10-15 HP
+                                            # (a rank-eight immortal loses 60 more there)
+# play the Heavenly Court: 6 free techs and two Rank Three Gu Masters when the capital is founded;
+# as any other clan declare war on the Court: two Rank Seven Gu Immortals appear by its capital
 # mechanics audit (2026-11-03): the immortal chasm, Gu spoils, AI killer moves
 unit checkfilter "pre-[Rank Six era]"       # on a tile with a mortal Gu Master: true; on an immortal: false
 unit add gu-yue-clan "Rank Six Gu Immortal" # beside a "Demonic Gu Master" (barbarians): attack preview shows +50%

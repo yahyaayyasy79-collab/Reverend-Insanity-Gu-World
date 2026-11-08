@@ -1000,7 +1000,7 @@
         "text": "Our Gu Masters take the court",
         "uniques": [
           "Gain [60] [Gold]",
-          "New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>",
+          "New [Gu Master] units start with [15] XP [in all cities] <for [5] turns>",
           "[+0]% weight to this choice for AI decisions",
           "[+200]% weight to this choice for AI decisions <when number of [[Military] Units] is more than [8]>"
         ]

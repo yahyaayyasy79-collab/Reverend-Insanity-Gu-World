@@ -290,6 +290,12 @@ IMMORTAL_RANK = {"Rank Six Gu Immortal": 6, "Rank Seven Gu Immortal": 7, "Rank E
 # Regions (canon research 2026-11-08, docs/REGIONS.md): each region starts as old and as strong as the canon makes it.
 # The head start lands once, when a civ founds its first city [src CityFounder: the trigger runs with that city].
 FIRST_CITY = "<upon founding a city> <when number of [Cities] is less than [2]>"
+# autoplay (8 x 450, 2026-11-08): with the contest's XP lasting as long as the gap between contests (13 turns) and +5
+# happiness, the Huang Jin tribes held 7.4 cities at T150 (4.5 before), raised a Venerable in 5 of 8 games and won 3,
+# while the Southern Border raised none. The canon gives the contest's winners shelter and the blessed land's
+# inheritances, not a standing school, and makes the plains short of rank eights (R V4c164): the XP lasts 5 turns and
+# the war economy gives +3
+CONTEST_XP_TURNS, HJ_HAPPINESS = 5, 3
 
 
 def head_start(techs, units=0, unit=""):
@@ -1109,7 +1115,7 @@ dump("Events.json", [
     {"name": "Imperial Court Contest", "presentation": "None", "text": "The golden tribes' contest for the Imperial "
      "Court opens before the killing blizzard. Only mortal Gu Masters may fight; the immortals look on.", "choices": [
         {"text": "Our Gu Masters take the court", "uniques": [
-            "Gain [60] [Gold]", "New [Gu Master] units start with [15] XP [in all cities] <for [13] turns>",
+            "Gain [60] [Gold]", f"New [Gu Master] units start with [15] XP [in all cities] <for [{CONTEST_XP_TURNS}] turns>",
             w("+0"), w("+200", "<when number of [[Military] Units] is more than [8]>")]},
         {"text": "Another tribe takes the court, and the blizzard falls on our camps", "uniques": [
             "[-50]% growth [in all cities] <for [10] turns>", w("+0")]}]},
@@ -1578,7 +1584,7 @@ dump("Nations.json", [
             # Masters and the best fighters, tribes always at war (R V3c153, V3c20, V4c170). The engine's AI declares
             # war only while content (E14): the war economy of captives and loot keeps the tribes so
             *head_start(3, 3, "Rank Two Gu Master"), "[-15]% [Gold] [in all cities]",
-            "[+25]% Production when constructing [Military] units [in all cities]", "[+5 Happiness]"]
+            "[+25]% Production when constructing [Military] units [in all cities]", f"[+{HJ_HAPPINESS} Happiness]"]
            # the golden tribes' contest for the Imperial Court, every ten years, before the killing blizzard (R V3c117)
            + per_speed(lambda m: f"Triggers a [Imperial Court Contest] event <upon turn start> <every [{turns(13, m)}] turns>")),
     nation(ZA, "Zombie Alliance Elder", "Zombie Alliance Temperament", [60, 80, 70], [180, 220, 190],

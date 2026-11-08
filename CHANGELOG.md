@@ -1039,3 +1039,41 @@ You said "lanjutkan saja dulu sisa itu". Every tension target of MOD_SPEC_2 and 
   * "every immortal Gu race contested": 66 races; the AI builds about 14 by T450;
   * early upkeep near 40%: 17%;
   * the human-only target "a careless player starves once".
+
+## Regions as canon: flight, region walls, power and conflict by region (2026-11-08)
+
+You asked for every region to match the canon. A research pass over the raw text (`docs/REGIONS.md`) gives each
+region's power, politics and conflict.
+
+* **Immortals fly.** Ranks 6-8, the Venerable and the immortal zombie cross water without embarking and ignore
+  terrain cost. Over water they fight at full strength, and land units can still attack them from the coast.
+* **Region walls stop the strong, not the weak (canon).**
+  * Anyone can push through a wall, slowly (movement cost 3).
+  * A unit that ends its turn inside takes 10-15 damage.
+  * Immortals take more: +10 at rank six, +30 at seven, +60 at eight, so rank eight all but never crosses. The
+    Venerable is beyond the walls.
+* **The Central Continent is the strongest region.** When the Heavenly Court founds its capital it gets:
+  * 6 free techs and two rank-three Gu Masters;
+  * +15% science and +15% production;
+  * +50% city strength (its three sects get the same).
+* **The Court wages no ordinary war.**
+  * It never declares war, though it fights back.
+  * When a clan declares war on it, two rank-seven immortals wake from the Immortal Tomb, then slowly burn out.
+  * It cannot seek Eternal Life.
+* **The Northern Plains are the most warlike.**
+  * 3 free techs and three rank-two Gu Masters.
+  * Poorer stones, faster military production, and enough contentment for the AI to go to war.
+  * The Imperial Court Contest every ~13 turns: the winners' new Gu Masters gain XP for 5 turns; the losers'
+    growth is halved by the blizzard.
+  * Autoplay (8 × 450): with the XP lasting all 13 turns and +5 happiness, the tribes held 7.4 cities at T150
+    (4.5 before), raised a Venerable in 5 of 8 games and won 3, while the Southern Border raised none. Now: XP for
+    5 turns and +3 happiness (measured in the next run).
+* **The Eastern Sea is the richest:** 3 free techs and +25% stones. The Court's Fate Hunt chases the Zombie
+  Alliance's immortal zombies.
+* **The Western Desert trades and cooperates:** 2 free techs, +20% stones, a peaceful temperament.
+* **The Southern Border is unchanged:** the baseline, and still at war.
+* **What to check in game** (`docs/TESTING.md`, "Regions"):
+  * an immortal flying over the sea;
+  * a mortal Gu Master crossing a wall;
+  * the Court's head start;
+  * the Immortal Tomb waking when you declare war on the Court.

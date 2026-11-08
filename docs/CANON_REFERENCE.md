@@ -88,6 +88,20 @@ world's Lifespan Gu (R V5/54).
 | Hu Immortal, Lang Ya and the Imperial Court are blessed lands; Treasure Yellow Heaven 宝黄天 is a grotto-heaven market; Yi Tian Mountain is a battlefield, not a realm | R V2/142, V3/55, V3/143, V3/61, V2/57 | CANON |
 | Fang Yuan was reborn 500 years back through Spring Autumn Cicada and starts on Qing Mao Mountain (Gu Yue, Bai and Xiong villages) | MOD_SPEC §5 | CANON |
 
+### Regions (research of 2026-11-08; details in `docs/REGIONS.md`)
+
+| Fact | Source | Verdict |
+|---|---|---|
+| Region walls stop the strong, not the weak: mortals cross; rank 6 hard, rank 7 very dangerous, rank 8 almost never (they detour through the Black or White Heaven) | R V4c61, V5c535, V5c899, V4c286 | CANON |
+| Immortals are all flight masters; mortal flight Gu are rare | R V4c161, V2c28 | CANON |
+| Ranking: Central Continent strongest; Northern Plains second in fighting power but poorest; Eastern Sea richest, the most rank 8s; Western Desert divided, weakest late | R V5c704, V3c153, V4c170, V5c669, V6c253 | CANON |
+| The Heavenly Court dates from Remote Antiquity, about three million years ago | R V5c519, V6c35 | CANON |
+| The ten great sects: Immortal Crane, Heavenly Lotus, Spirit Butterfly Valley, Ancient Soul, Heaven's Envy Manor, Wind Cloud Manor, Combat Immortal, Spirit Affinity House, Black Heaven Temple, Myriad Dragon Dock | R V6c358 | CANON |
+| The Court's immortals mostly sleep in the Immortal Tomb; it wages no ordinary war and acts against fate-defiers and threats | R V5c49, V4c131, V4c314 | CANON |
+| The Imperial Court contest: every ten years, before the blizzard; only mortals fight | R V3c117, V3c120 | CANON |
+| Desert oases: caravans and cooperation; no one marches across the sand to take another oasis | R V3c20, V5c596 | CANON |
+| Dou Shen Palace is 豆神宫; Feng Jiu Ge is Spirit Affinity House's; the Southern Border's Yang clan is 羊 | R V5c486, V4c163, V5c589 | CANON corrections |
+
 ### Open questions ([VERIFY], the user decides)
 
 * Slice 1: Beast Enslavement as a named path in the Southern Border arc; Moon Raiment's recipe detail; Bear Strength
