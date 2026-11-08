@@ -918,9 +918,10 @@ dump("UnitPromotions.json", with_combos([
     {"name": "Dao Comprehension", "uniques": ["Comment [When it runs out, the unit's dao marks grow by one tier]"]},
     # reference audit Layer 1: the small stages, their countdown, the rank relics, the extreme physique
     {"name": CULTIVATING, "uniques": ["Comment [When it runs out, the unit climbs one small stage]"]},
-    *[{"name": st, "unitTypes": GM_TYPES, "uniques": [f"[+{STAGE_BONUS}]% Strength"]} for st in STAGES],
+    # stages and the physique come from triggers only: with unitTypes the AI bought them with XP (autoplay, 98af8c4)
+    *[{"name": st, "uniques": [f"[+{STAGE_BONUS}]% Strength"]} for st in STAGES],
     *[relic(c, only, stones) for c, only, stones in RELICS],
-    {"name": PHYSIQUE, "unitTypes": GM_TYPES, "uniques": [
+    {"name": PHYSIQUE, "uniques": [
         "[+20]% Strength", "[+50]% XP gained from combat", "[-20]% maintenance costs",
         f"[This Unit] is destroyed <upon losing the [{DOOMED}] status> <for [pre-[Rank Six era]] units>"]},
     {"name": DOOMED, "uniques": ["Comment [When it runs out, the aperture of a mortal bearer bursts and it dies]"]},

@@ -1121,3 +1121,16 @@ Border "Yi" clan) was not found and is not built. Layer 1 is the cultivation cor
   * The bearer gets +20% Strength, +50% combat XP, 20% less upkeep and a stage every 5 turns.
   * After 60 turns its aperture bursts and it dies, unless it has become an immortal.
 * A Tutorial page, "Gu World: Small Stages", and 11 new icons.
+
+## Layer 2: canon Gu and fusion recipes (2026-11-08)
+
+* **Ten canon Gu join the catalog:** Green Silk, Black Mane, Steel Mane, Stealth Rock, Rock Skin, Beast Skin, Bear
+  Enslavement, Charred Thunder Potato, Thunder Wings and Sky Canopy. Each has its own icon and refinement sound.
+* **Fusion recipes from the novel** (`data/gu_fusions.csv`):
+  * Black Boar + Green Silk become Black Mane, then Steel Mane;
+  * Stealth Rock becomes Stealth Scales;
+  * Sky Canopy needs a White Jade Gu.
+  * The ingredients are used up as in the novel. Sky Canopy keeps its White Jade, because the Strength killer move
+    needs it.
+* **Fix to Layer 1:** the stages and the extreme physique could be bought with XP; the AI bought the physique as a plain
+  +20% promotion (53 of 77 Gu Masters at T300 in autoplay). They now come only from cultivation and awakening.

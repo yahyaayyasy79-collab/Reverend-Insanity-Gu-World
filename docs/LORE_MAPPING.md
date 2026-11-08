@@ -5005,3 +5005,27 @@ Gain [-130] [Gold]
 ```
 Comment [When it runs out, the aperture of a mortal bearer bursts and it dies]
 ```
+
+## Reference audit Layer 2: canon Gu and fusion recipes (the user, 2026-11-08)
+
+Ten canon Gu the catalog lacked, and the fusions that make them (raw text R; verdicts in our own words). The recipes
+live in `data/gu_fusions.csv`: a fused Gu needs every ingredient and uses up the ones the novel's fusion consumes. Only
+chains a single-path unit can climb are gated (the AI walks one path per unit): Moonglow keeps its Phase D access (its
+recipe needs the light path's Little Light Gu), and Sky Canopy keeps its White Jade (the Strength ladder's killer move
+needs it) and does not ask for the water-path Gu.
+
+| Gu | Chinese | Rank, path, role | Canon | Source | Status |
+|---|---|---|---|---|---|
+| Green Silk Gu | 青丝蛊 | 1, strength, defence | A rank-1 Gu that takes the force out of a blow; fused with a Black Boar Gu it becomes a Black Mane Gu | R V1c47 | CANON |
+| Black Mane Gu | 黑鬃蛊 | 2, strength, strength | Black Boar + Green Silk, both used up | R V1c47, V1c64 | CANON |
+| Steel Mane Gu | 钢鬃蛊 | 3, strength, strength | The famous rank-3 Gu the Black Mane rises into | R V1c47, V1c64 | CANON |
+| Stealth Rock Gu | 隐石蛊 | 1, earth, stealth | Rank 1; it hides the body but not the clothes, until it rises into Stealth Scales | R V1c121 | CANON |
+| Stealth Scales Gu (now fused) | 隐鳞蛊 | 2, earth | Fused up from the Stealth Rock Gu, which is used up | R V1c121 | CANON |
+| Rock Skin Gu | 石皮蛊 | 1, earth, defence | One of the skin Gu; the rockmen carry many | R V1c62, V3c7 | CANON |
+| Beast Skin Gu | 兽皮蛊 | 1, strength, defence | The cheapest of the skin Gu | R V1c62 | CANON (path ADAPTED) |
+| Bear Enslavement Gu | 驭熊蛊 | 2, enslavement, +20% vs beasts | A rank-2 Gu that drives ordinary beasts, never a beast king | R V1c146 | CANON (effect ADAPTED) |
+| Charred Thunder Potato Gu | 焦雷土豆蛊 | 2, lightning, defence | Buried, it grows on the soil's strength and bursts when anything treads near | R V2c11, V2c14 | CANON (a trap read as defence, ADAPTED) |
+| Thunder Wings Gu | 雷翼蛊 | 3, lightning, movement | Thunder wings for a short flight; frenzy lightning wolves carry them | R V1c150, V1c157 | CANON |
+| Sky Canopy Gu | 天蓬蛊 | 3, strength, defence | Refined from a White Jade Gu and a water-path defence Gu | R V1c64, V1c155 | CANON (recipe ADAPTED) |
+
+Their uniques are quoted in `docs/PATHS.md` (the catalog table written by `tools/gen_paths.py`).

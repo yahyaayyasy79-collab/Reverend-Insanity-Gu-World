@@ -22,6 +22,21 @@ from common import REPO_ROOT
 
 DATA = REPO_ROOT / "data" / "gu_catalog.csv"
 ROWS = list(csv.DictReader(DATA.open(encoding="utf-8", newline="")))
+# reference audit Layer 2 (2026-11-08): canon fusion recipes. A fused Gu needs its ingredients (every one in `needs`) and
+# uses up those in `spends` when refined, as the novel's fusions do (R V1c47, V1c64, V1c121, V1c155). Only chains a
+# single-path unit can climb are gated: Moonglow (Moonlight + Little Light, a light-path Gu) and the water-path half of
+# Sky Canopy would shut out the AI, which walks one path per unit; Sky Canopy keeps its White Jade (the Strength killer
+# move of Slice 1 needs it).
+with (REPO_ROOT / "data" / "gu_fusions.csv").open(encoding="utf-8", newline="") as _f:
+    FUSIONS = {r["name"]: r for r in csv.DictReader(_f)}
+
+
+def fusion_lines(name: str) -> list[str]:
+    f = FUSIONS.get(name)
+    if not f:
+        return []
+    return ([f"Unavailable <for units without [{g}]>" for g in f["needs"].split("|") if g]
+            + [f"[This Unit] loses the [{g}] promotion" for g in f["spends"].split("|") if g])
 
 # a Gu of rank r needs a unit of rank r or higher (a unit's era is its required tech's era [src BaseUnit.matchesFilter])
 GATE = {1: "", 2: "<for [non-[Rank One Gu Master]] units>", 3: "<for [non-[Rank One-Two era]] units>",
@@ -125,6 +140,10 @@ def effects(row: dict) -> list[tuple[str, str, str]]:
         n = 4 + 2 * r
         return [(f"[-{n}]% maintenance costs", f"its unit costs {n}% less upkeep",
                  f"pemeliharaan unitnya {n}% lebih murah")]
+    if role == "beast":   # Layer 2: an enslavement Gu, the beasts it drives fight it badly
+        n = 10 + 5 * r
+        return [(f"[+{n}]% Strength <vs [Beast] units>", f"{n}% stronger against beasts",
+                 f"{n}% lebih kuat melawan binatang")]
     if role == "theft":
         n = 10 + 5 * r
         return [(f"Earn [{n}]% of killed [Military] unit's [Cost] as [Gold]",
@@ -164,11 +183,22 @@ def pedia(row: dict) -> tuple[str, str]:
     note_en = {"INVENTED": " Invented for the mod: the novel names no Gu of this path at this level.",
                }.get(row["verdict"], "")
     note_id = {"INVENTED": " Rekaan mod: novel tidak menyebut Gu jalur ini pada tingkat ini."}.get(row["verdict"], "")
+    f = FUSIONS.get(row["name"])
+    if f:
+        from gu_rules import ID_NAMES
+        need = [g for g in f["needs"].split("|") if g]
+        spent = [g for g in f["spends"].split("|") if g]
+        idn_of = lambda g: next((x["name_id"] for x in ROWS if x["name"] == g), ID_NAMES.get(g, g))
+        note_en += f" Fused from {' and '.join(need)}" + (f", which {'are' if len(spent) > 1 else 'is'} used up." if spent
+                                                         else ", which stays.")
+        note_id += f" Dilebur dari {' dan '.join(idn_of(g) for g in need)}" + (", yang habis terpakai." if spent
+                                                                               else ", yang tetap ada.")
     if immortal(row):
         note_en += " In the novel every immortal Gu is one of a kind; here each immortal refines its own."
         note_id += " Dalam novel setiap Gu abadi hanya ada satu; di sini setiap abadi memurnikan miliknya sendiri."
     en = (f"{row['name']}{zh}, a rank-{r} {p['name']} path Gu: {row['fn']}. {en_eff[0].upper() + en_eff[1:]}. "
-          f"Refined with XP by a {tier_name(p, 0)} of rank {r} or higher.{note_en}")
+          f"Refined with XP by {'an' if tier_name(p, 0)[0] in 'AEIOU' else 'a'} {tier_name(p, 0)} of rank {r} or "
+          f"higher.{note_en}")
     idn = (f"{row['name_id']}{zh}, Gu jalur {p['name_id']} tingkat {r}: {row['fn_id']}. {id_eff[0].upper() + id_eff[1:]}. "
            f"Dimurnikan dengan XP oleh {tier_name_id(p, 0)} tingkat {r} atau lebih tinggi.{note_id}")
     return en, idn
@@ -189,6 +219,7 @@ def promotions(unit_types: list[str]) -> list[dict]:
             statuses += hunger
         else:
             uniques = food + fx
+        uniques += fusion_lines(row["name"])
         uniques += [f"Play [{sound(row['name'])}] sound <upon gaining the [{row['name']}] promotion>"]
         if GATE[r]:
             uniques.append(f"Only available {GATE[r]}")

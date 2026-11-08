@@ -9660,7 +9660,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Stone Skin Gu (石皮蛊), a rank-1 Earth path Gu: turns the skin to stone. 12% stronger when defending. Refined with XP by a Earth Master of rank 1 or higher."
+        "text": "Stone Skin Gu (石皮蛊), a rank-1 Earth path Gu: turns the skin to stone. 12% stronger when defending. Refined with XP by an Earth Master of rank 1 or higher."
       }
     ]
   },
@@ -9708,7 +9708,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Stealth Stone Gu (隐石蛊), a rank-1 Earth path Gu: hides its master like a stone among stones. Unseen except from an adjacent tile; 4% stronger when defending. Refined with XP by a Earth Master of rank 1 or higher."
+        "text": "Stealth Stone Gu (隐石蛊), a rank-1 Earth path Gu: hides its master like a stone among stones. Unseen except from an adjacent tile; 4% stronger when defending. Refined with XP by an Earth Master of rank 1 or higher."
       }
     ]
   },
@@ -9754,7 +9754,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Bookworm (书虫), a rank-1 Information path Gu: its master never forgets what he has read. 15% more XP from combat. Refined with XP by a Information Master of rank 1 or higher."
+        "text": "Bookworm (书虫), a rank-1 Information path Gu: its master never forgets what he has read. 15% more XP from combat. Refined with XP by an Information Master of rank 1 or higher."
       }
     ]
   },
@@ -9827,7 +9827,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Grass Puppet Gu (草傀蛊), a rank-1 Enslavement path Gu: raises grass puppets that crowd the enemy. Enemy soldiers beside it fight 3% weaker. Refined with XP by a Enslavement Master of rank 1 or higher."
+        "text": "Grass Puppet Gu (草傀蛊), a rank-1 Enslavement path Gu: raises grass puppets that crowd the enemy. Enemy soldiers beside it fight 3% weaker. Refined with XP by an Enslavement Master of rank 1 or higher."
       }
     ]
   },
@@ -9927,13 +9927,15 @@
       "[+3]% maintenance costs",
       "Invisible to non-adjacent units",
       "[+6]% Strength <when defending>",
+      "Unavailable <for units without [Stealth Rock Gu]>",
+      "[This Unit] loses the [Stealth Rock Gu] promotion",
       "Play [gu-stealth-scales-gu] sound <upon gaining the [Stealth Scales Gu] promotion>",
       "Only available <for [non-[Rank One Gu Master]] units>",
       "[+100]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Stealth Scales Gu (隐鳞蛊), a rank-2 Earth path Gu: hides the body and everything it wears. Unseen except from an adjacent tile; 6% stronger when defending. Refined with XP by a Earth Master of rank 2 or higher."
+        "text": "Stealth Scales Gu (隐鳞蛊), a rank-2 Earth path Gu: hides the body and everything it wears. Unseen except from an adjacent tile; 6% stronger when defending. Refined with XP by an Earth Master of rank 2 or higher. Fused from Stealth Rock Gu, which is used up."
       }
     ]
   },
@@ -9958,7 +9960,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Ice Knife Gu (冰刀蛊), a rank-2 Ice Snow path Gu: forms a knife of ice. 16% stronger when attacking. Refined with XP by a Ice Snow Master of rank 2 or higher."
+        "text": "Ice Knife Gu (冰刀蛊), a rank-2 Ice Snow path Gu: forms a knife of ice. 16% stronger when attacking. Refined with XP by an Ice Snow Master of rank 2 or higher."
       }
     ]
   },
@@ -9983,7 +9985,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Icicle Gu (冰锥蛊), a rank-2 Ice Snow path Gu: a volley of icicles pins the enemy down. Its hits leave the enemy Frozen for 1 turn(s); 4% stronger when attacking. Refined with XP by a Ice Snow Master of rank 2 or higher."
+        "text": "Icicle Gu (冰锥蛊), a rank-2 Ice Snow path Gu: a volley of icicles pins the enemy down. Its hits leave the enemy Frozen for 1 turn(s); 4% stronger when attacking. Refined with XP by an Ice Snow Master of rank 2 or higher."
       }
     ]
   },
@@ -10033,7 +10035,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Earth Communication Ear Grass (地听肉耳草), a rank-2 Earth path Gu: listens through the ground for three hundred paces. +1 sight; 3% stronger. Refined with XP by a Earth Master of rank 2 or higher."
+        "text": "Earth Communication Ear Grass (地听肉耳草), a rank-2 Earth path Gu: listens through the ground for three hundred paces. +1 sight; 3% stronger. Refined with XP by an Earth Master of rank 2 or higher."
       }
     ]
   },
@@ -10280,7 +10282,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Blue Bird Ice Coffin Gu (蓝鸟冰棺蛊), a rank-3 Ice Snow path Gu: a blue bird that shuts its target in an ice coffin. Its hits leave the enemy Frozen for 2 turn(s); 5% stronger when attacking. Refined with XP by a Ice Snow Master of rank 3 or higher."
+        "text": "Blue Bird Ice Coffin Gu (蓝鸟冰棺蛊), a rank-3 Ice Snow path Gu: a blue bird that shuts its target in an ice coffin. Its hits leave the enemy Frozen for 2 turn(s); 5% stronger when attacking. Refined with XP by an Ice Snow Master of rank 3 or higher."
       }
     ]
   },
@@ -10635,7 +10637,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Gentle Feelings Gu (柔情蛊), a rank-3 Enchantment path Gu: soft feelings that disarm the enemy. Its hits leave the enemy Charmed for 2 turn(s); 5% stronger when attacking. Refined with XP by a Enchantment Master of rank 3 or higher."
+        "text": "Gentle Feelings Gu (柔情蛊), a rank-3 Enchantment path Gu: soft feelings that disarm the enemy. Its hits leave the enemy Charmed for 2 turn(s); 5% stronger when attacking. Refined with XP by an Enchantment Master of rank 3 or higher."
       }
     ]
   },
@@ -10660,7 +10662,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Mirage Veil Gu, a rank-3 Illusion path Gu: weaves a mirage around its master. Unseen except from an adjacent tile; 8% stronger when defending. Refined with XP by a Illusion Master of rank 3 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+        "text": "Mirage Veil Gu, a rank-3 Illusion path Gu: weaves a mirage around its master. Unseen except from an adjacent tile; 8% stronger when defending. Refined with XP by an Illusion Master of rank 3 or higher. Invented for the mod: the novel names no Gu of this path at this level."
       }
     ]
   },
@@ -11030,7 +11032,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "East Window Gu (东窗蛊), a rank-4 Information path Gu: stores knowledge and lets another probe a mind. +1 sight; 5% stronger. Refined with XP by a Information Master of rank 4 or higher."
+        "text": "East Window Gu (东窗蛊), a rank-4 Information path Gu: stores knowledge and lets another probe a mind. +1 sight; 5% stronger. Refined with XP by an Information Master of rank 4 or higher."
       }
     ]
   },
@@ -11348,7 +11350,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Flying Snow Gu (漫天飞雪蛊), a rank-5 Ice Snow path Gu: a blizzard across thousands of paces. Enemy soldiers beside it fight 7% weaker. Refined with XP by a Ice Snow Master of rank 5 or higher."
+        "text": "Flying Snow Gu (漫天飞雪蛊), a rank-5 Ice Snow path Gu: a blizzard across thousands of paces. Enemy soldiers beside it fight 7% weaker. Refined with XP by an Ice Snow Master of rank 5 or higher."
       }
     ]
   },
@@ -11474,6 +11476,251 @@
     "civilopediaText": [
       {
         "text": "Dream Butterfly Gu (梦蝶蛊), a rank-5 Dream path Gu: travels through dream realms. 35% more XP from combat. Refined with XP by a Dream Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Green Silk Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+12]% Strength <when defending>",
+      "Play [gu-green-silk-gu] sound <upon gaining the [Green Silk Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Green Silk Gu (青丝蛊), a rank-1 Strength path Gu: takes the force out of a blow. 12% stronger when defending. Refined with XP by a Strength Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Black Mane Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+11]% Strength",
+      "Unavailable <for units without [Black Boar Gu]>",
+      "Unavailable <for units without [Green Silk Gu]>",
+      "[This Unit] loses the [Black Boar Gu] promotion",
+      "[This Unit] loses the [Green Silk Gu] promotion",
+      "Play [gu-black-mane-gu] sound <upon gaining the [Black Mane Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Black Mane Gu (黑鬃蛊), a rank-2 Strength path Gu: a boar's strength under a bristling mane. 11% stronger. Refined with XP by a Strength Master of rank 2 or higher. Fused from Black Boar Gu and Green Silk Gu, which are used up."
+      }
+    ]
+  },
+  {
+    "name": "Steel Mane Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+14]% Strength",
+      "Unavailable <for units without [Black Mane Gu]>",
+      "[This Unit] loses the [Black Mane Gu] promotion",
+      "Play [gu-steel-mane-gu] sound <upon gaining the [Steel Mane Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Steel Mane Gu (钢鬃蛊), a rank-3 Strength path Gu: a mane hard as steel, the Black Mane refined a rank higher. 14% stronger. Refined with XP by a Strength Master of rank 3 or higher. Fused from Black Mane Gu, which is used up."
+      }
+    ]
+  },
+  {
+    "name": "Stealth Rock Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "Invisible to non-adjacent units",
+      "[+4]% Strength <when defending>",
+      "Play [gu-stealth-rock-gu] sound <upon gaining the [Stealth Rock Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Stealth Rock Gu (隐石蛊), a rank-1 Earth path Gu: hides its master like a stone, though not what he wears. Unseen except from an adjacent tile; 4% stronger when defending. Refined with XP by an Earth Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Rock Skin Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Earth Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+12]% Strength <when defending>",
+      "Play [gu-rock-skin-gu] sound <upon gaining the [Rock Skin Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Rock Skin Gu (石皮蛊), a rank-1 Earth path Gu: hardens the skin like stone; the rockmen carry many. 12% stronger when defending. Refined with XP by an Earth Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Beast Skin Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[+12]% Strength <when defending>",
+      "Play [gu-beast-skin-gu] sound <upon gaining the [Beast Skin Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Beast Skin Gu (兽皮蛊), a rank-1 Strength path Gu: the cheapest of the skin Gu, a hide of beast leather. 12% stronger when defending. Refined with XP by a Strength Master of rank 1 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Bear Enslavement Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Enslavement Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+20]% Strength <vs [Beast] units>",
+      "Play [gu-bear-enslavement-gu] sound <upon gaining the [Bear Enslavement Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bear Enslavement Gu (驭熊蛊), a rank-2 Enslavement path Gu: drives ordinary beasts, though no beast king. 20% stronger against beasts. Refined with XP by an Enslavement Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Charred Thunder Potato Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+16]% Strength <when defending>",
+      "Play [gu-charred-thunder-potato-gu] sound <upon gaining the [Charred Thunder Potato Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Charred Thunder Potato Gu (焦雷土豆蛊), a rank-2 Lightning path Gu: buried, it grows on the soil and bursts when anything treads near. 16% stronger when defending. Refined with XP by a Lightning Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Thunder Wings Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Lightning Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+1] Movement",
+      "[+4]% Strength",
+      "Play [gu-thunder-wings-gu] sound <upon gaining the [Thunder Wings Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Thunder Wings Gu (雷翼蛊), a rank-3 Lightning path Gu: thunder wings for a short flight. +1 movement; 4% stronger. Refined with XP by a Lightning Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Sky Canopy Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Strength Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+20]% Strength <when defending>",
+      "Unavailable <for units without [White Jade Gu]>",
+      "Play [gu-sky-canopy-gu] sound <upon gaining the [Sky Canopy Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sky Canopy Gu (天蓬蛊), a rank-3 Strength path Gu: a canopy no blade passes, refined from the White Jade Gu. 20% stronger when defending. Refined with XP by a Strength Master of rank 3 or higher. Fused from White Jade Gu, which stays."
       }
     ]
   },
@@ -13468,11 +13715,6 @@
   },
   {
     "name": "Middle Stage",
-    "unitTypes": [
-      "Gu Master",
-      "Moon Gu Master",
-      "Strength Gu Master"
-    ],
     "uniques": [
       "[+5]% Strength"
     ],
@@ -13484,11 +13726,6 @@
   },
   {
     "name": "Upper Stage",
-    "unitTypes": [
-      "Gu Master",
-      "Moon Gu Master",
-      "Strength Gu Master"
-    ],
     "uniques": [
       "[+5]% Strength"
     ],
@@ -13500,11 +13737,6 @@
   },
   {
     "name": "Peak Stage",
-    "unitTypes": [
-      "Gu Master",
-      "Moon Gu Master",
-      "Strength Gu Master"
-    ],
     "uniques": [
       "[+5]% Strength"
     ],
@@ -13636,11 +13868,6 @@
   },
   {
     "name": "Extreme Physique",
-    "unitTypes": [
-      "Gu Master",
-      "Moon Gu Master",
-      "Strength Gu Master"
-    ],
     "uniques": [
       "[+20]% Strength",
       "[+50]% XP gained from combat",

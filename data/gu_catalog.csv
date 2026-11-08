@@ -112,3 +112,13 @@ Light Gu,Gu Cahaya,光蛊,9,light,atk,sun,,CANON,R V6c312,a wild Gu born inside 
 Fire Gu,Gu Api,火蛊,9,fire,dmg,flame,,CANON,R V6c311,"the sun's own fire, alive","api matahari itu sendiri, hidup"
 Love Gu,Gu Cinta,爱情蛊,9,emotion,heal,flower,,CANON,R V4c367,the legendary Gu of love,Gu cinta yang legendaris
 Heavenly Web Immortal Gu,Gu Abadi Jaring Langit,天网蛊,9,heaven,status:Entangled,web,,CANON,R V6c340,casts a web from heaven that nothing escapes,menebar jaring dari langit yang tak bisa dihindari
+Green Silk Gu,Gu Sutra Hijau,青丝蛊,1,strength,def,worm,,CANON,R V1c47,takes the force out of a blow,meredam tenaga sebuah pukulan
+Black Mane Gu,Gu Surai Hitam,黑鬃蛊,2,strength,str,fang,,CANON,"R V1c47, V1c64",a boar's strength under a bristling mane,tenaga babi hutan di balik surai yang kaku
+Steel Mane Gu,Gu Surai Baja,钢鬃蛊,3,strength,str,beetle_horn,,CANON,"R V1c47, V1c64","a mane hard as steel, the Black Mane refined a rank higher","surai sekeras baja, Surai Hitam yang dimurnikan satu tingkat lebih tinggi"
+Stealth Rock Gu,Gu Batu Siluman,隐石蛊,1,earth,stealth,shell,,CANON,R V1c121,"hides its master like a stone, though not what he wears","menyembunyikan tuannya seperti batu, tetapi tidak pakaiannya"
+Rock Skin Gu,Gu Kulit Batu,石皮蛊,1,earth,def,shell,,CANON,"R V1c62, V3c7",hardens the skin like stone; the rockmen carry many,mengeraskan kulit seperti batu; kaum manusia batu membawa banyak
+Beast Skin Gu,Gu Kulit Binatang,兽皮蛊,1,strength,def,shell,,CANON,R V1c62,"the cheapest of the skin Gu, a hide of beast leather","Gu kulit termurah, selapis kulit binatang"
+Bear Enslavement Gu,Gu Pengendali Beruang,驭熊蛊,2,enslavement,beast,puppet,,CANON,R V1c146,"drives ordinary beasts, though no beast king","mengendalikan binatang biasa, tetapi tidak raja binatang"
+Charred Thunder Potato Gu,Gu Kentang Petir Hangus,焦雷土豆蛊,2,lightning,def,orb,,CANON,"R V2c11, V2c14","buried, it grows on the soil and bursts when anything treads near","terkubur, ia tumbuh dari tanah dan meledak bila ada yang menginjak di dekatnya"
+Thunder Wings Gu,Gu Sayap Petir,雷翼蛊,3,lightning,move,wing,,CANON,"R V1c150, V1c157",thunder wings for a short flight,sayap petir untuk terbang sebentar
+Sky Canopy Gu,Gu Kanopi Langit,天蓬蛊,3,strength,def,shell,,CANON,"R V1c64, V1c155","a canopy no blade passes, refined from the White Jade Gu","kanopi yang tak tertembus bilah, dimurnikan dari Gu Giok Putih"

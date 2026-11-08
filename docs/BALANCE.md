@@ -1012,6 +1012,37 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dream Butterfly Gu | `[+35]% XP gained from combat` | +35 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Dream Butterfly Gu | `[This Unit] gains the [Unravel Dream] status for [1] turn(s) <costs [+35 Gold] stats> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Dream Grandmaster]> <for units without [Unravel Dream]>` | 1, +35, 1 | tools/gen_ruleset.py `Promotions` |
+| Green Silk Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Green Silk Gu | `[+12]% Strength <when defending>` | +12 | tools/gen_ruleset.py `Promotions` |
+| Green Silk Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Black Mane Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Black Mane Gu | `[+11]% Strength` | +11 | tools/gen_ruleset.py `Promotions` |
+| Black Mane Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Steel Mane Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Steel Mane Gu | `[+14]% Strength` | +14 | tools/gen_ruleset.py `Promotions` |
+| Steel Mane Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Stealth Rock Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Stealth Rock Gu | `[+4]% Strength <when defending>` | +4 | tools/gen_ruleset.py `Promotions` |
+| Stealth Rock Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Rock Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Rock Skin Gu | `[+12]% Strength <when defending>` | +12 | tools/gen_ruleset.py `Promotions` |
+| Rock Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Beast Skin Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Beast Skin Gu | `[+12]% Strength <when defending>` | +12 | tools/gen_ruleset.py `Promotions` |
+| Beast Skin Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Bear Enslavement Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Bear Enslavement Gu | `[+20]% Strength <vs [Beast] units>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Bear Enslavement Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Charred Thunder Potato Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Charred Thunder Potato Gu | `[+16]% Strength <when defending>` | +16 | tools/gen_ruleset.py `Promotions` |
+| Charred Thunder Potato Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Thunder Wings Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Thunder Wings Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Thunder Wings Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
+| Thunder Wings Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Sky Canopy Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Sky Canopy Gu | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
+| Sky Canopy Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Star Mark Immortal Gu] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `Only available <when number of [[Star Mark Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -4180,6 +4211,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3924 numbers listed.
+3955 numbers listed.
 
 <!-- inventory:end -->
