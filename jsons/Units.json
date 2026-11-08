@@ -264,6 +264,8 @@
       "[This Unit] gains [3] XP <upon turn start>",
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
       "Can pass through impassable tiles",
+      "May travel on Water tiles without embarking",
+      "Ignores terrain cost",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>"
     ],
     "attackSound": "gu-rank-6",
@@ -314,6 +316,8 @@
       "[This Unit] gains [3] XP <upon turn start>",
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
       "Can pass through impassable tiles",
+      "May travel on Water tiles without embarking",
+      "Ignores terrain cost",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>"
     ],
     "attackSound": "gu-rank-7",
@@ -364,6 +368,8 @@
       "[This Unit] gains [3] XP <upon turn start>",
       "[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>",
       "Can pass through impassable tiles",
+      "May travel on Water tiles without embarking",
+      "Ignores terrain cost",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>"
     ],
     "attackSound": "gu-rank-8",
@@ -1101,6 +1107,7 @@
       "[+300]% maintenance costs",
       "[2] additional attacks per turn",
       "Can move after attacking",
+      "May travel on Water tiles without embarking",
       "Ignores terrain cost",
       "Can pass through impassable tiles",
       "May capture killed [Military] units",
@@ -1255,6 +1262,8 @@
       "[-15]% Strength <if [Fate Gu] is constructed by anybody>",
       "Can pass through impassable tiles",
       "[+50]% Strength <vs [pre-[Rank Six era]] units>",
+      "May travel on Water tiles without embarking",
+      "Ignores terrain cost",
       "[+100]% maintenance costs"
     ],
     "civilopediaText": [

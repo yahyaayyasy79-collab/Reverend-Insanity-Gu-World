@@ -1385,6 +1385,8 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+May travel on Water tiles without embarking
+Ignores terrain cost
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3080,6 +3082,8 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+May travel on Water tiles without embarking
+Ignores terrain cost
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3119,6 +3123,8 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+May travel on Water tiles without embarking
+Ignores terrain cost
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3309,6 +3315,7 @@ Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
 [+300]% maintenance costs
 [2] additional attacks per turn
 Can move after attacking
+May travel on Water tiles without embarking
 Ignores terrain cost
 Can pass through impassable tiles
 May capture killed [Military] units
@@ -3507,6 +3514,8 @@ Can only heal by pillaging
 [-15]% Strength <if [Fate Gu] is constructed by anybody>
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
+May travel on Water tiles without embarking
+Ignores terrain cost
 [+100]% maintenance costs
 ```
 
@@ -3662,6 +3671,7 @@ Instantly provides [6] [Yellow Apricot Immortal Essence] <upon turn start>
 [+300]% maintenance costs
 [2] additional attacks per turn
 Can move after attacking
+May travel on Water tiles without embarking
 Ignores terrain cost
 Can pass through impassable tiles
 May capture killed [Military] units
@@ -3909,6 +3919,8 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 [This Unit] gains [3] XP <upon turn start>
 [This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>
 Can pass through impassable tiles
+May travel on Water tiles without embarking
+Ignores terrain cost
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 

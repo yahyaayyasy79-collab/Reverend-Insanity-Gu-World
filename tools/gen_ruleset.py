@@ -165,6 +165,11 @@ QI = ["Heaven Qi", "Earth Qi", "Human Qi"]
 GREEN = "Green Grape Immortal Essence"
 RED, WHITE = "Red Date Immortal Essence", "White Lychee Immortal Essence"  # C5: ranks seven and eight (R V4/141, V5/613)
 IMMORTALS = {"Rank Six Gu Immortal": GREEN, "Rank Seven Gu Immortal": RED, "Rank Eight Gu Immortal": WHITE}
+# the user (2026-11-05): immortals fly, so they cross the Eastern Sea and every water, yet land units can still strike
+# them. A land unit with this unique is never embarked [src MapUnit.isEmbarked], so it fights at full strength over
+# water, and land melee units may attack it there once embarkation is known [src TargetHelper], which the first tech
+# grants. Both uniques are cached: permanent on the unit, never on a status.
+FLIGHT = ["May travel on Water tiles without embarking", "Ignores terrain cost"]
 IMMORTAL = "post-[Rank Five era]"  # unit filter: every Gu Immortal (their required techs lie after the Rank Five era)
 THREE_QI = "<after discovering [Three Qi]> <for [Major] Civilizations>"
 QI_SOURCES = [
@@ -621,6 +626,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     if r["name"] in IMMORTALS:
         u["uniques"] += immortal_life(IMMORTAL_RANK[r["name"]]) + IMMORTAL_XP  # MOD_SPEC_2 C2: immortals burn Lifespan Gu
         u["uniques"].append("Can pass through impassable tiles")  # immortals cross mountains and the region walls
+        u["uniques"] += FLIGHT
         u["uniques"].append(gen_paths.PP.chasm())  # audit P1: the chasm between mortal and immortal
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
@@ -659,7 +665,7 @@ dump("Units.json", [
      "attackSound": sfx.rank_sound(9), "uniques": ["Unbuildable", "Cannot be purchased", "Limited to [1] per Civilization", NB,
                                          *immortal_life(9),
                                          f"Instantly provides [6] [{APRICOT}] <upon turn start>", "[+300]% maintenance costs",
-                                         "[2] additional attacks per turn", "Can move after attacking", "Ignores terrain cost",
+                                         "[2] additional attacks per turn", "Can move after attacking", *FLIGHT,
                                          "Can pass through impassable tiles", "May capture killed [Military] units",
                                          "[-25]% Strength for enemy [Military] units in adjacent [All] tiles",
                                          "[+50]% Strength <vs cities>", "Destroys tile improvements when attacking",
@@ -677,7 +683,7 @@ dump("Units.json", [
      for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": gen_paths.PP.body_strength(70, 6), "cost": 300, "requiredTech": "Calamity Lore",
      "attackSound": sfx.rank_sound(6), "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
-                                         "Can pass through impassable tiles", gen_paths.PP.chasm(),
+                                         "Can pass through impassable tiles", gen_paths.PP.chasm(), *FLIGHT,
                                          "[+100]% maintenance costs"]},
 ] + [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
