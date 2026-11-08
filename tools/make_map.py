@@ -157,7 +157,10 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     "Myriad Dragon Dock": ("central", 22, 20), "Wan Clan": ("west", 13, 25),
     # reference audit Layer 4: the variant humans (R V4c215 Yu Sheng City; V3c132 the Great Snow Mountain; V4c13 Ink Man
     # City; V3c4 the rockmen south of the Hu Immortal blessed land)
-    "Feathermen": ("west", 11, 21), "Snowmen": ("north", 37, 4), "Inkmen": ("north", 52, 5),
+    # the snowmen on the far north-west tundra: 7 tiles from the Huang Jin capital they fell by T84-157 in 10 of 16
+    # autoplay games, shield or no shield (8 x 450, 6edf4a8 and 997e679); the canon places the Great Snow Mountain in a
+    # blessed land, not beside the golden tribes
+    "Feathermen": ("west", 11, 21), "Snowmen": ("north", 6, 2), "Inkmen": ("north", 52, 5),
     "Rockmen": ("south", 12, 31)}
 FIVE_REALMS = {  # realm: (region, column, row)
     "Hu Immortal Blessed Land": ("south", 20, 31), "Dang Hun Mountain": ("south", 19, 33), "Tian Ti Mountain": ("south", 33, 30),
