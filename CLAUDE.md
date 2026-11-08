@@ -48,7 +48,11 @@ Regions as canon (user 2026-11-05, built 2026-11-08, docs/REGIONS.md): immortals
 Central Continent strongest and at peace (Court `declareWar` 0, Immortal Tomb), the plains at war (contest XP 5
 turns, +3 happiness after the first build let the Huang Jin snowball), sea richest, desert cooperative; autoplay
 puts the regions in canon order. Regions II: all ten great sects, the Wan clan and its coalition on the Fang clan,
-the earth tide, the Refinement Conference, an emblem for every city-state. Open: the Court's Venerable (5 of 8).
+the earth tide, the Refinement Conference, an emblem for every city-state.
+Reference audit (user 2026-11-08: the user's lore reference, canon and balanced, all but its 10.1;
+docs/REFERENCE_AUDIT.md): Layer 1 small stages + rank relics + extreme physiques (tools/cultivation.py), Layer 2
+ten canon Gu + fusions (data/gu_fusions.csv), Layer 3 the frenzy wolf, Layer 4 four variant-human city-states,
+Layer 5 path origins; the Court cannot reach rank nine (it held the Venerable slot in 7 of 8 games).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.

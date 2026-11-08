@@ -5053,7 +5053,7 @@ real (R V5c316) but their home could not be pinned to a region, so they wait.
 | Object | Chinese | Canon | Source | Status |
 |---|---|---|---|---|
 | Feathermen (city-state, Winged Folk), Yu Sheng City, Western Desert | 羽民 / 羽圣城 | A flying kind with a royal line; they do not go to war lightly but have immortals of their own | R V4c215, V4c217 | CANON |
-| Snowmen (Snow Folk), Great Snow Mountain, Northern Plains | 雪人 / 大雪山 | Six snowman tribes, hardly ever laughing or crying, bred on an immortal's peak as elite warbands | R V3c132 | CANON |
+| Snowmen (Snow Folk), Great Snow Mountain, Northern Plains; `[+50]% Strength for cities` | 雪人 / 大雪山 | Six snowman tribes, hardly ever laughing or crying, bred on an immortal's peak as elite warbands; the immortal's blessed land shields them | R V3c132 | CANON (city strength ADAPTED: without it the Huang Jin razed them in 5 of 8 autoplay games) |
 | Inkmen (Ink Folk), Ink Man City, Northern Plains | 墨人 / 墨人城 | Their king rules the plains' inkmen; the golden tribes have long pressed them | R V4c13, V4c230 | CANON |
 | Rockmen (Stone Folk), Rockmen Burrow, Southern Border | 石人 | They live deep underground, eat ore and find Gu as they dig; a tribe lives south of the Hu Immortal blessed land | R V3c4, V3c7 | CANON (city name ADAPTED) |
 

@@ -1163,3 +1163,13 @@ Border "Yi" clan) was not found and is not built. Layer 1 is the cultivation cor
 Every path branch's civilopedia now names the age the path arose in, and its founding Venerable where the canon pairs
 one. For example: qi and enslavement, Primordial Origin, Remote Antiquity; wood, Genesis Lotus, Medieval Antiquity.
 Checked in the raw text; the game's eras stay the rank eras.
+
+## Snowmen shielded; reference audit measured (2026-11-08)
+
+* The snowmen live on an immortal's blessed land: their city now has +50% strength. Without it the Huang Jin razed them
+  in 5 of 8 autoplay games.
+* Autoplay of the reference layers (`docs/AUTOPLAY.md`):
+  * 5 of 8 games end in an Eternal Life win, spread over four clans (1 of 8 before the Court's bar);
+  * about half the Gu Masters reach their rank's peak;
+  * the AI buys rank relics and climbs the fusion chains;
+  * the barbarian total stays lower than before.

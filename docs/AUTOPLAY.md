@@ -593,6 +593,36 @@ in 24 games with 31 civs.
 * **Fewer decided games.** With the Court raising the Venerable in 5 of 8 games and barred from Eternal Life, only 2
   of 8 games ended in an Eternal Life win (`docs/REGIONS.md`, open question).
 
+## Reference audit layers (2026-11-08)
+
+Five Regions, 8 × 450, seed 101. Baseline: Regions II with the sects on the rim (05c93a8, `r2c`). Layers 1-2 (4cbadd2,
+`l2`); Layers 3-4 with the Court barred from rank nine (6edf4a8, `l4`).
+
+| | Baseline | Layers 1-2 | Layers 3-4 |
+|---|---|---|---|
+| Eternal Life wins | Huang Jin, Wu | Wu | Huang Jin 2, Wu, Gu Yue, Bai |
+| Venerables (games) | Court 5, Huang Jin 2, Wu 1 | Court 7, Wu 1 | Huang Jin 4, Wu 2, Gu Yue 1, Bai 1 |
+| First rank seven / eight | T232-266 / T294-346 | T222-275 / T279-358 | T214-255 / T280-313 |
+| The Court at T300 (cities, techs, immortals) | 5.6, 23.5, 5.9 | 4.9, 23.9, 5.9 | 5.6, 23.2, 5.8 |
+| Gu Masters per major at T300 / at the peak stage | 9.7 / - | 10.8 / 5.8 | - |
+| Extreme physiques per major at T300 | - | 0.02 | - |
+| Rank relics bought (holder snapshots, 8 games) | - | 349 | - |
+| Clan-turns in debt after T300 | 8% | 10% | 15% |
+| Stones per turn after T300 | -10.5 | -13.4 | -9.3 |
+
+* **Layer 1 bug found by autoplay:** the stage promotions and the extreme physique carried unitTypes, so they were for
+  sale; the AI bought the physique as a plain +20% promotion (53 of 77 Gu Masters at T300). Fixed in 4cbadd2.
+* **Stages work:** about half the Gu Masters stand at their rank's peak at T300. The AI buys rank relics and climbs the
+  fusion chains (Black Mane 4, Steel Mane 2, Stealth Scales 3 holders at most).
+* **The Court's Venerable:** with the stages the Court took the one Venerable slot in 7 of 8 games and, barred from
+  Eternal Life, left one win in eight. Barred from rank nine (canon: its present leaders are rank eight), the race is
+  open again: 5 games of 8 end in an Eternal Life win, spread over four clans.
+* **The beast kings:** frenzy wolves replace part of the bold wolves and demonic elders in the camps; the barbarian
+  total stays lower than before (T150 61 vs 67, T250 35 vs 42).
+* **The variant humans:** the Huang Jin razed the snowmen in 5 of 8 games. An immortal's blessed land shields them in the
+  canon, so their city now has +50% strength like the great sects'. The other three kinds survived every game.
+* Region order holds in every run: Central > North > East > South > West in techs and immortals at T300.
+
 ## Re-run
 
 ```

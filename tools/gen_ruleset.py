@@ -1774,8 +1774,10 @@ dump("Nations.json", [
     # eat ore, a tribe south of the Hu Immortal blessed land (R V3c4, V3c7)
     {"name": "Feathermen", "cityStateType": "Winged Folk", "outerColor": [99, 139, 179], "innerColor": [251, 247, 235],
      "cities": ["Yu Sheng City"]},
+    # the snowmen live on an immortal's blessed land, which shields them like the great sects' seats; without it the
+    # Huang Jin tribes razed them in 5 of 8 autoplay games (8 x 450, 6edf4a8)
     {"name": "Snowmen", "cityStateType": "Snow Folk", "outerColor": [200, 215, 230], "innerColor": [60, 80, 110],
-     "cities": ["Great Snow Mountain"]},
+     "cities": ["Great Snow Mountain"], "uniques": ["[+50]% Strength for cities"]},
     {"name": "Inkmen", "cityStateType": "Ink Folk", "outerColor": [30, 30, 40], "innerColor": [200, 230, 240],
      "cities": ["Ink Man City"]},
     {"name": "Rockmen", "cityStateType": "Stone Folk", "outerColor": [110, 100, 90], "innerColor": [240, 200, 120],

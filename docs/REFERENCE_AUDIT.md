@@ -96,6 +96,18 @@ simplification already documented; **not found** = the claim could not be confir
 * 10.2 "a civ game, not a cultivation RPG: clan = civilisation, Gu Master = unit": the mod's architecture.
 * 10.3 "limit immortals through essence and caps, not by nerfing them": the mod's essence, lifespan and immortal chasm.
 
+## Built (2026-11-08)
+
+| Layer | What | Commit |
+|---|---|---|
+| 1 | Small stages (middle, upper, peak; reset on a new rank; breakthrough price), five rank relic Gu, the ten extreme physiques; Tutorial "Gu World: Small Stages" | 98af8c4, fixed in 4cbadd2 |
+| 2 | Ten canon Gu (Green Silk, Black Mane, Steel Mane, Stealth Rock, Rock Skin, Beast Skin, Bear Enslavement, Charred Thunder Potato, Thunder Wings, Sky Canopy) and the fusion recipes (`data/gu_fusions.csv`) | 4cbadd2 |
+| 3 | Frenzy Lightning Wolf, the thousand-beast king; the wolf tide follows the beast-king ranks | 24b88ef |
+| 4 | Feathermen, Snowmen, Inkmen, Rockmen as city-states with four new city-state types; the Court cannot ascend to Venerable | 6edf4a8 |
+| 5 | Every path branch names its founding age and Venerable | 7b40304 |
+
+Balance is measured per layer in `docs/AUTOPLAY.md` ("Reference audit layers").
+
 ## Design proposals not adopted (the user's choice)
 
 | Proposal | Conflict | Option |

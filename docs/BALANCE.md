@@ -3883,6 +3883,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Wind Cloud Manor | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Black Heaven Temple | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Myriad Dragon Dock | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Snowmen | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 
 ### CityStateTypes.json
 
@@ -4228,6 +4229,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3972 numbers listed.
+3973 numbers listed.
 
 <!-- inventory:end -->
