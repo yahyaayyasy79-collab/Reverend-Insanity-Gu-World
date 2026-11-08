@@ -146,7 +146,13 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     # Phase D: minor clans in every region (faction research R; Lang Ya is a Northern Plains sect, R ch461/464)
     "Man Tribe": ("north", 20, 8), "Ge Tribe": ("north", 11, 6), "Lan Clan": ("west", 5, 11),
     "Xiao Clan": ("west", 12, 15), "Mo Clan": ("west", 6, 29), "Song Clan": ("east", 50, 29),
-    "Xia Clan": ("east", 57, 24), "Immortal Crane Sect": ("central", 21, 16)}
+    "Xia Clan": ("east", 57, 24), "Immortal Crane Sect": ("central", 21, 16),
+    # Regions II: the other seven great sects (R V6c358): Ancient Soul in the far west of the continent (V4c79), Myriad
+    # Dragon Dock beside the Immortal Crane Sect's lands (V4c48); the Wan clan's Gao Song Oasis in the desert (V6c281)
+    "Heavenly Lotus Sect": ("central", 25, 21), "Spirit Butterfly Valley": ("central", 33, 14),
+    "Ancient Soul Sect": ("central", 19, 24), "Heaven's Envy Tower": ("central", 25, 14),
+    "Wind Cloud Manor": ("central", 40, 19), "Black Heaven Temple": ("central", 36, 25),
+    "Myriad Dragon Dock": ("central", 22, 20), "Wan Clan": ("west", 13, 25)}
 FIVE_REALMS = {  # realm: (region, column, row)
     "Hu Immortal Blessed Land": ("south", 20, 31), "Dang Hun Mountain": ("south", 19, 33), "Tian Ti Mountain": ("south", 33, 30),
     "Luo Po Valley": ("south", 44, 33), "Door of Life and Death": ("south", 12, 37), "Imperial Court Blessed Land": ("north", 24, 4),
@@ -305,13 +311,15 @@ def five_regions() -> list[str]:
         tiles[pos] = [realm_base[name], [], "-", 0, "-", "", name]
     # the clans' spirit springs and Gu foods, near the Southern Border villages and across the other regions
     # the Fang clan's oasis: on bare desert the AI's settler never founded a city (autoplay, 6 of 6 games)
-    fc, fr = starts["Fang Clan"]
-    for (c, r), t in tiles.items():
-        d = math.hypot(c - fc, r - fr)
-        if 0 < d <= 2.5 and t[0] == "Desert" and (c, r) not in wall:
-            t[0], t[1] = ("Plains" if (c + r) % 3 else "Grassland"), []
-        elif 2.5 < d <= 3.5 and t[0] == "Desert" and (c + 2 * r) % 4 == 0 and (c, r) not in wall:
-            t[1] = ["Oasis"]
+    # (Regions II: the Wan clan's Gao Song Oasis likewise)
+    for oasis in ("Fang Clan", "Wan Clan"):
+        fc, fr = starts[oasis]
+        for (c, r), t in tiles.items():
+            d = math.hypot(c - fc, r - fr)
+            if 0 < d <= 2.5 and t[0] == "Desert" and (c, r) not in wall:
+                t[0], t[1] = ("Plains" if (c + r) % 3 else "Grassland"), []
+            elif 2.5 < d <= 3.5 and t[0] == "Desert" and (c + 2 * r) % 4 == 0 and (c, r) not in wall:
+                t[1] = ["Oasis"]
     for name in ("Gu Yue Clan", "Bai Clan", "Xiong Clan", "Wu Clan", "Heavenly Court", "Huang Jin Family", "Fang Clan"):
         c0, r0 = starts[name]
         for dc, dr, res, amt in ((1, 1, "Spirit Spring", 1), (-1, 2, "Moon Orchid", 2), (2, -1, "Wild Boar", 2), (-2, 0, "Jade", 2)):

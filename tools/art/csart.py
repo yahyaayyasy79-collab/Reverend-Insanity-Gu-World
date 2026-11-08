@@ -1,0 +1,306 @@
+"""Regions II (2026-11-08): a nation icon for every city-state, in the flat style and motif language of glyphs.py.
+
+Without one Unciv draws a city-state's portrait as a bare circle in its colours [src Portrait.PortraitNation]. Every
+emblem is built from geometric primitives (MOD_SPEC rule 6); the motif comes from the canon fact the civilopedia
+gives for the city-state (docs/LORE_MAPPING.md "Regions II", "Phase D: regional conflict").
+"""
+from __future__ import annotations
+
+import math
+
+from .arcart import _cloud
+from .glyphs import G, wolf_head
+from .glyphs2 import coin, ding, flame, roof, waves
+
+
+def _petal(g: G, cx, cy, length, width, angle, v=255):
+    """A pointed petal or wing from (cx, cy) outwards at `angle` degrees (0 = east, y up)."""
+    a = math.radians(angle)
+    tip = (cx + length * math.cos(a), cy - length * math.sin(a))
+    mid = (cx + length * 0.5 * math.cos(a), cy - length * 0.5 * math.sin(a))
+    n = (-math.sin(a) * width, -math.cos(a) * width)
+    g.poly([(cx, cy), (mid[0] + n[0], mid[1] + n[1]), tip, (mid[0] - n[0], mid[1] - n[1])], v)
+
+
+# ---------------------------------------------------------------- Southern Border
+def hairy_man_tribe():
+    """Lang Ya's kin, the hairy-men refiners: a shaggy head over a refining cauldron."""
+    g = G()
+    for k in range(14):                                                            # mane
+        a = math.radians(-20 + k * 220 / 13)
+        g.line([(50 + 16 * math.cos(a), 34 - 16 * math.sin(a)), (50 + 28 * math.cos(a), 34 - 28 * math.sin(a))], 5)
+    g.circ(50, 34, 17)
+    g.circ(43, 32, 3, 0); g.circ(57, 32, 3, 0)
+    ding(g, 50, 74, 0.72)
+    return g
+
+
+def foothill_villages():
+    """Mortal villages at the foot of the mountain."""
+    g = G()
+    g.poly([(10, 66), (36, 22), (50, 40), (62, 26), (90, 66)])                    # mountain
+    g.poly([(36, 22), (44, 35), (38, 33), (33, 38), (30, 32)], 0)                 # snow line
+    for x in (30, 66):                                                            # two houses
+        roof(g, x, 70, 16, 12)
+        g.poly([(x - 11, 72), (x + 11, 72), (x + 11, 90), (x - 11, 90)])
+        g.poly([(x - 4, 79), (x + 4, 79), (x + 4, 90), (x - 4, 90)], 0)
+    return g
+
+
+def jia_clan():
+    """The Jia merchants: a tied money pouch over a coin."""
+    g = G()
+    g.ell(22, 34, 78, 90)                                                         # pouch
+    g.poly([(38, 20), (62, 20), (56, 38), (44, 38)])                              # neck
+    g.line([(36, 38), (64, 38)], 5, 0)                                            # the cord
+    coin(g, 50, 64, 15, 0)
+    return g
+
+
+# ---------------------------------------------------------------- Northern Plains
+def lang_ya_sect():
+    """The Lang Ya blessed land: a floating island carrying a refining cauldron."""
+    g = G()
+    ding(g, 50, 36, 0.62)
+    g.poly([(12, 56), (88, 56), (72, 70), (60, 86), (50, 94), (40, 84), (28, 70)])
+    g.line([(20, 60), (80, 60)], 2.5, 0)
+    _cloud(g, 18, 82, 12); _cloud(g, 84, 82, 12)
+    return g
+
+
+def man_tribe():
+    """The Man tribe of Red Flame Valley: a war spear through a flame."""
+    g = G()
+    flame(g, 50, 92, 74)
+    g.line([(50, 96), (50, 20)], 5, 0)
+    g.line([(50, 92), (50, 24)], 3.2)
+    g.poly([(50, 4), (60, 22), (50, 18), (40, 22)])                               # spearhead
+    return g
+
+
+def ge_tribe():
+    """The Ge tribe's camp: a round felt tent with its lattice band and smoke ring."""
+    g = G()
+    g.ell(10, 26, 90, 86)                                                         # dome
+    g.poly([(10, 56), (90, 56), (90, 88), (10, 88)])                              # wall
+    g.line([(12, 58), (88, 58)], 3, 0)
+    for x in range(18, 86, 9):                                                    # lattice
+        g.line([(x, 62), (x + 6, 70)], 1.6, 0)
+    g.poly([(40, 88), (40, 70), (60, 70), (60, 88)], 0)                           # door
+    g.circ(50, 26, 7, 0); g.arc_band(50, 26, 7, 4, 0, 180)                        # smoke ring
+    return g
+
+
+# ---------------------------------------------------------------- Central Continent: the ten great sects
+def spirit_affinity_house():
+    """Spirit Affinity House: two linked rings of affinity under a hall roof."""
+    g = G()
+    roof(g, 50, 30, 40, 22)
+    for x in (38, 62):
+        g.circ(x, 64, 20); g.circ(x, 64, 14, 0)
+    g.arc_band(38, 64, 20, 14, -60, 60)                                           # re-ink the left ring's crossing
+    return g
+
+
+def combat_immortal_sect():
+    """Combat Immortal Sect, famed for battle: a war drum with two crossed drumsticks."""
+    g = G()
+    for a, b in (((18, 8), (62, 40)), ((82, 8), (38, 40))):                       # drumsticks
+        g.line([a, b], 5)
+        g.circ(*a, 6)
+    g.ell(16, 40, 84, 58)                                                         # drum head
+    g.poly([(16, 49), (84, 49), (80, 86), (20, 86)])                              # body
+    g.ell(20, 78, 80, 94)
+    g.ell(22, 43, 78, 55, 0); g.ell(26, 45, 74, 53)                               # the skin's rim
+    for x in (26, 38, 50, 62, 74):                                                # studs
+        g.circ(x, 66, 2.6, 0)
+    return g
+
+
+def immortal_crane_sect():
+    """The Immortal Crane Sect of Fei He Mountain: a crane in flight."""
+    g = G()
+    _petal(g, 46, 54, 48, 11, 150)                                                # wings
+    _petal(g, 54, 54, 48, 11, 30)
+    g.ell(36, 46, 64, 64)                                                         # body
+    g.line([(62, 54), (78, 40), (84, 26)], 4)                                     # neck
+    g.circ(86, 23, 5)
+    g.poly([(89, 21), (99, 25), (89, 26)])                                        # beak
+    g.circ(87, 20, 2, 0)                                                          # the red crown, cut out
+    g.line([(38, 60), (16, 76)], 3); g.line([(40, 62), (22, 82)], 3)              # legs
+    return g
+
+
+def heavenly_lotus_sect():
+    """Heavenly Lotus Sect: a lotus in bloom on its blessed water."""
+    g = G()
+    for a in (90, 125, 55, 160, 20):
+        _petal(g, 50, 66, 46 if a == 90 else 38, 10, a)
+    g.ell(30, 62, 70, 74)
+    waves(g, 50, 86, 34, n=1)
+    return g
+
+
+def spirit_butterfly_valley():
+    """Spirit Butterfly Valley, masters of the information path: a butterfly."""
+    g = G()
+    for side in (-1, 1):
+        g.ell(50 + side * 6 - (36 if side < 0 else 0), 16, 50 + side * 6 + (36 if side > 0 else 0), 54)
+        g.ell(50 + side * 6 - (26 if side < 0 else 0), 50, 50 + side * 6 + (26 if side > 0 else 0), 82)
+        g.circ(50 + side * 24, 34, 6, 0)                                          # eye spots
+    g.ell(45, 22, 55, 82)                                                         # body
+    g.line([(48, 24), (36, 6)], 2.5); g.line([(52, 24), (64, 6)], 2.5)            # antennae
+    g.line([(47, 24), (47, 80)], 2, 0); g.line([(53, 24), (53, 80)], 2, 0)
+    return g
+
+
+def ancient_soul_sect():
+    """Ancient Soul Sect above the Earth Abyss: a soul fire rising out of a chasm."""
+    g = G()
+    g.poly([(6, 66), (36, 66), (44, 94), (56, 94), (64, 66), (94, 66), (94, 98), (6, 98)])  # the abyss
+    g.poly([(50, 4), (64, 30), (66, 46), (58, 60), (50, 64), (42, 60), (34, 46), (36, 30)])
+    g.poly([(50, 22), (56, 38), (54, 52), (50, 56), (46, 52), (44, 38)], 0)
+    g.circ(50, 44, 5)
+    return g
+
+
+def heavens_envy_tower():
+    """Heaven's Envy Tower: a three-storey tower."""
+    g = G()
+    for k, (y, w) in enumerate(((26, 26), (48, 32), (70, 38))):
+        roof(g, 50, y, w, 14)
+        g.poly([(50 - w * 0.6, y + 2), (50 + w * 0.6, y + 2), (50 + w * 0.6, y + 14), (50 - w * 0.6, y + 14)])
+        g.poly([(46, y + 5), (54, y + 5), (54, y + 14), (46, y + 14)], 0)
+    g.line([(50, 12), (50, 2)], 3)
+    g.poly([(24, 84), (76, 84), (82, 94), (18, 94)])
+    return g
+
+
+def wind_cloud_manor():
+    """Wind Cloud Manor, famed for Gu formations: clouds over a swirl of wind."""
+    g = G()
+    _cloud(g, 50, 40, 36)
+    for k in range(3):
+        y = 60 + k * 11
+        g.line([(16 + k * 8, y), (72 - k * 4, y)], 4)
+        g.arc_band(72 - k * 4, y - 5, 6, 2, -90, 90)
+    return g
+
+
+def black_heaven_temple():
+    """Black Heaven Temple: a temple roof under a black sun."""
+    g = G()
+    g.circ(50, 30, 24); g.circ(50, 30, 17, 0); g.circ(50, 30, 12)
+    roof(g, 50, 66, 44, 16)
+    for x in (24, 40, 60, 76):
+        g.line([(x, 70), (x, 92)], 5)
+    g.line([(14, 94), (86, 94)], 5)
+    return g
+
+
+def myriad_dragon_dock():
+    """Myriad Dragon Dock on its island in Dragon Lake: a dragon rising over the waves after a pearl."""
+    g = G()
+    body = [(10 + i * 2.6, 70 - i * 1.5 - 11 * math.sin(i / 4.0)) for i in range(26)]
+    g.line(body, 10)
+    for x, y in body[3:-3:4]:
+        g.poly([(x - 4, y - 3), (x + 1, y - 14), (x + 5, y - 3)])                  # dorsal fins
+    hx, hy = body[-1]
+    g.ell(hx - 6, hy - 12, hx + 14, hy + 6)                                        # head
+    g.poly([(hx + 10, hy - 8), (hx + 26, hy - 4), (hx + 12, hy - 1)])             # upper jaw
+    g.poly([(hx + 10, hy + 1), (hx + 22, hy + 6), (hx + 8, hy + 5)])              # lower jaw
+    g.line([(hx, hy - 10), (hx - 6, hy - 22)], 3); g.line([(hx + 6, hy - 11), (hx + 6, hy - 24)], 3)  # horns
+    g.line([(hx + 14, hy - 2), (hx + 26, hy + 10)], 1.8)                          # whisker
+    g.circ(hx + 5, hy - 5, 2.2, 0)                                                # eye
+    g.circ(86, 18, 8); g.circ(86, 18, 4, 0)                                       # the pearl
+    waves(g, 50, 88, 42, n=1)
+    return g
+
+
+# ---------------------------------------------------------------- Eastern Sea
+def merman_imperial_court():
+    """The merfolk's court: a crowned fish tail."""
+    g = G()
+    g.poly([(24, 30), (32, 14), (42, 26), (50, 8), (58, 26), (68, 14), (76, 30)])  # crown
+    g.ell(38, 36, 62, 70)
+    g.poly([(44, 66), (56, 66), (52, 82), (48, 82)])
+    _petal(g, 50, 80, 30, 8, 215); _petal(g, 50, 80, 30, 8, 325)                   # tail fins
+    return g
+
+
+def song_clan():
+    """The Song clan's Heavy Water Blessed Land: a heavy drop over the sea."""
+    g = G()
+    g.poly([(50, 6), (64, 30), (70, 46), (66, 58), (50, 66), (34, 58), (30, 46), (36, 30)])
+    g.ell(30, 30, 70, 66)
+    g.ell(40, 38, 50, 52, 0)
+    waves(g, 50, 82, 40, n=2)
+    return g
+
+
+def xia_clan():
+    """The Xia clan's harbour: an anchor."""
+    g = G()
+    g.circ(50, 14, 9); g.circ(50, 14, 4.5, 0)
+    g.line([(50, 22), (50, 84)], 7)
+    g.line([(32, 34), (68, 34)], 6)
+    g.arc_band(50, 64, 30, 23, 180, 360)
+    g.poly([(14, 62), (26, 58), (24, 70)]); g.poly([(86, 62), (74, 58), (76, 70)])  # flukes
+    return g
+
+
+# ---------------------------------------------------------------- Western Desert
+def lan_clan():
+    """The Lan clan of Zhou Xi Oasis: a palm over the oasis pool."""
+    g = G()
+    g.line([(50, 84), (52, 60), (50, 36)], 6)
+    for a in (20, 60, 120, 160, 95):
+        _petal(g, 50, 34, 34, 7, a)
+    g.ell(18, 80, 82, 96)
+    return g
+
+
+def xiao_clan():
+    """The Xiao merchants of the Silk Corridor: a camel with its load."""
+    g = G()
+    g.ell(24, 34, 76, 66)                                                         # body
+    g.ell(34, 22, 52, 42); g.ell(50, 24, 66, 42)                                  # humps
+    g.line([(74, 46), (84, 26)], 7); g.ell(80, 16, 96, 30)                        # neck, head
+    for x in (30, 40, 62, 72):
+        g.line([(x, 62), (x, 92)], 5)
+    g.poly([(36, 40), (64, 40), (64, 50), (36, 50)], 0)                           # the silk bale's band
+    return g
+
+
+def mo_clan():
+    """The Mo clan of Sand Wolf City: a howling wolf over a dune."""
+    g = G()
+    wolf_head(g, 50, 40, 0.8)
+    g.poly([(4, 96), (30, 78), (56, 86), (80, 72), (96, 80), (96, 98), (4, 98)])
+    return g
+
+
+def wan_clan():
+    """The Wan clan of Gao Song (tall pine) Oasis: a tall pine over the oasis water."""
+    g = G()
+    g.line([(50, 86), (50, 12)], 5)
+    for k, (y, w) in enumerate(((22, 14), (38, 22), (54, 30), (70, 36))):
+        g.poly([(50, y - 12), (50 + w, y + 6), (50 - w, y + 6)])
+    g.ell(16, 82, 84, 96)
+    return g
+
+
+CITY_STATE_ICONS = [(n, f) for n, f in (
+    ("Hairy Man Tribe", hairy_man_tribe), ("Foothill Villages", foothill_villages), ("Jia Clan", jia_clan),
+    ("Lang Ya Sect", lang_ya_sect), ("Man Tribe", man_tribe), ("Ge Tribe", ge_tribe),
+    ("Spirit Affinity House", spirit_affinity_house), ("Combat Immortal Sect", combat_immortal_sect),
+    ("Immortal Crane Sect", immortal_crane_sect), ("Heavenly Lotus Sect", heavenly_lotus_sect),
+    ("Spirit Butterfly Valley", spirit_butterfly_valley), ("Ancient Soul Sect", ancient_soul_sect),
+    ("Heaven's Envy Tower", heavens_envy_tower), ("Wind Cloud Manor", wind_cloud_manor),
+    ("Black Heaven Temple", black_heaven_temple), ("Myriad Dragon Dock", myriad_dragon_dock),
+    ("Merman Imperial Court", merman_imperial_court), ("Song Clan", song_clan), ("Xia Clan", xia_clan),
+    ("Lan Clan", lan_clan), ("Xiao Clan", xiao_clan), ("Mo Clan", mo_clan), ("Wan Clan", wan_clan))]
+
+
+def icons():
+    return [("NationIcons", name, draw, "white") for name, draw in CITY_STATE_ICONS]

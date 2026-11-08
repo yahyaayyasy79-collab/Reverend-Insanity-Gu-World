@@ -318,7 +318,11 @@
       "[+10]% [Science] [in all cities]",
       "Start bias [Desert]",
       "[2] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>",
-      "[+20]% [Gold] [in all cities]"
+      "[+20]% [Gold] [in all cities]",
+      "Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [3]% chance> <on [Quick] game speed>",
+      "Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [2]% chance> <on [Standard] game speed>",
+      "Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [1]% chance> <on [Epic] game speed>",
+      "Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [1]% chance> <on [Marathon] game speed>"
     ],
     "introduction": "The Fang clan builds what lasts. What have you built?",
     "declaringWar": "Our Gu Houses are already moving. You should have counted them.",
@@ -688,6 +692,203 @@
     "civilopediaText": [
       {
         "text": "The Immortal Crane Sect (仙鹤门), one of the ten great ancient sects, seated on Fei He Mountain. The Gu Yue founder came from it, and it hunts demonic Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Heavenly Lotus Sect",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      198,
+      121,
+      147
+    ],
+    "innerColor": [
+      255,
+      250,
+      208
+    ],
+    "cities": [
+      "Heavenly Lotus Blessed Land"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heavenly Lotus Sect (天莲派), one of the ten great ancient sects. Its seat is a blessed land on a mountain rich in natural dao marks, and it alone owns four Gu Houses."
+      }
+    ]
+  },
+  {
+    "name": "Spirit Butterfly Valley",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      36,
+      138,
+      121
+    ],
+    "innerColor": [
+      255,
+      225,
+      140
+    ],
+    "cities": [
+      "Spirit Butterfly Valley"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Spirit Butterfly Valley (灵蝶谷), one of the ten great ancient sects, the best of them at information-path arts."
+      }
+    ]
+  },
+  {
+    "name": "Ancient Soul Sect",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      70,
+      50,
+      100
+    ],
+    "innerColor": [
+      210,
+      200,
+      160
+    ],
+    "cities": [
+      "Earth Abyss"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ancient Soul Sect (古魂门), one of the ten great ancient sects. For thousands of years it has ruled the far west of the Central Continent from its seat above the Earth Abyss."
+      }
+    ]
+  },
+  {
+    "name": "Heaven's Envy Tower",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      40,
+      120,
+      80
+    ],
+    "innerColor": [
+      250,
+      225,
+      150
+    ],
+    "cities": [
+      "Heaven's Envy Tower"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Heaven's Envy Tower (天妒楼), one of the ten great ancient sects, known for its healers and its wisdom-path immortals."
+      }
+    ]
+  },
+  {
+    "name": "Wind Cloud Manor",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      109,
+      145,
+      190
+    ],
+    "innerColor": [
+      255,
+      255,
+      250
+    ],
+    "cities": [
+      "Wind Cloud Manor"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Wind Cloud Manor (风云府), one of the ten great ancient sects, famed across the continent for its Gu formations."
+      }
+    ]
+  },
+  {
+    "name": "Black Heaven Temple",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      20,
+      20,
+      24
+    ],
+    "innerColor": [
+      235,
+      235,
+      225
+    ],
+    "cities": [
+      "Black Heaven Temple"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Black Heaven Temple (黑天寺), one of the ten great ancient sects. Its word alone can brand an immortal demonic and set the ten sects hunting him."
+      }
+    ]
+  },
+  {
+    "name": "Myriad Dragon Dock",
+    "cityStateType": "Immortal Sect",
+    "outerColor": [
+      90,
+      20,
+      120
+    ],
+    "innerColor": [
+      250,
+      200,
+      60
+    ],
+    "cities": [
+      "Dragon Lake Isle"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Myriad Dragon Dock (万龙坞), one of the ten great ancient sects. Its blessed land lies on an island in the middle of Dragon Lake, next to the Immortal Crane Sect's lands."
+      }
+    ]
+  },
+  {
+    "name": "Wan Clan",
+    "cityStateType": "Battle Tribe",
+    "outerColor": [
+      230,
+      200,
+      140
+    ],
+    "innerColor": [
+      120,
+      60,
+      20
+    ],
+    "cities": [
+      "Gao Song Oasis"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Wan clan (万家) of Gao Song Oasis, the second resource point of the Western Desert. It rallies the desert's righteous families against the Fang clan."
       }
     ]
   },

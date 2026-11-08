@@ -51,7 +51,7 @@ armed and near a target (CAPABILITIES E14). The arc majors met those gates on 6-
 ### Central Continent
 
 * **The ten great sects.** Immortal Crane Sect, Heavenly Lotus Sect, Spirit Butterfly Valley, Ancient Soul Sect,
-  Heaven's Envy Manor, Wind Cloud Manor, Combat Immortal Sect, Spirit Affinity House, Black Heaven Temple and Myriad
+  Heaven's Envy Tower, Wind Cloud Manor, Combat Immortal Sect, Spirit Affinity House, Black Heaven Temple and Myriad
   Dragon Dock (R V6c358).
   * They are the Court's lower sects and hold about 80% of the continent's resources (R V4c307, V4c55).
   * They compete openly and in secret, through disciples' contests (R V4c56, V2c166).
@@ -123,11 +123,37 @@ armed and near a target (CAPABILITIES E14). The arc majors met those gates on 6-
 | Eastern Sea | 3 free techs, +25% stones; the Fate Hunt on the Zombie Alliance while Fate Gu stands |
 | Western Desert | 2 free techs, +20% stones, a trading and cooperative temperament |
 | Southern Border | Unchanged: the baseline, and already at war |
+| Ten great sects (Regions II) | All ten on the map as Immortal Sect city-states with +50% city strength, on their canon seats where the text names one (Heavenly Lotus's blessed land, Ancient Soul above the Earth Abyss in the far west, Myriad Dragon Dock on Dragon Lake beside the Immortal Crane Sect) |
+| Refinement Conference (Regions II) | A world event every ~130 turns (a hundred years): pay 150 stones for 20 Immortal Materials and +33% production on immortal Gu for 20 turns, or 60 stones for 8 materials, or stay home |
+| Wan coalition (Regions II) | The Wan clan of Gao Song Oasis as a city-state; a Fang clan holding more than three cities may face the coalition: pay 200 stones or meet two rank-five Gu Masters in the sand |
+| Earth tide (Regions II) | An immortal's strain in the Azure Water Wall is half the other walls' (5 / 15 / 30) |
+| Nation icons (Regions II) | Every city-state has a designed emblem (they showed a bare circle) |
+
+## Measured (autoplay, 2026-11-08; details in docs/AUTOPLAY.md "Regions as canon")
+
+| Region | Techs at T300 (before → after) | Immortals at T300 | Turns at war (majors) |
+|---|---|---|---|
+| Central Continent | 20.9 → 23.8 | 1.9 → 4.2 | 0 → 8 |
+| Northern Plains | 19.2 → 21.0 | 1.8 → 2.8 | 0 → 8 (and the tribes fight the northern minor clans in 7 of 8 games) |
+| Eastern Sea | 20.1 → 20.8 | 2.4 → 2.8 | 0 |
+| Western Desert | 18.2 → 18.4 | 0.5 → 0.9 | 0 (the Fang clan no longer conquers its neighbours) |
+| Southern Border | 19.0 → 19.8 | 2.5 → 2.6 | 242 → 232 |
+
+The Court never declared war; before, it took Spirit Affinity House in 2 of 8 games. The first build let the Huang Jin
+snowball (a Venerable in 5 of 8 games, 3 wins); the contest's XP now lasts 5 turns and the war economy gives +3
+happiness, and the Eternal Life wins are spread again (Wu, Bai, Huang Jin).
+
+## Open question (the user decides)
+
+* **The Court's Venerable.** The strongest region raises the Venerable in 5 of 8 games. In the canon's present the
+  Court's best are rank eight (Duke Long, matched with the rank-eight zombie Bo Qing, R V5c343); its Venerables
+  belong to the past, and Star Constellation only descends as a will (R V5c344). The Court cannot seek Eternal Life,
+  so while its Venerable lives no one wins that way. Keep it, or bar the Court from ascending?
 
 ## Not done yet
 
-* The seven missing great sects as city-states, and more of the sea's, desert's and Southern Border's super forces.
-  Each needs a city on the map, an icon and text.
-* The Refinement Conference and the Demon Extermination List as events.
-* The earth tide, oasis no-fly zones, the punish-Fang coalition, and immortals' strain in a foreign region. Unciv has
-  no filter for "this region", only for a civ's own or foreign land.
+* More of the sea's, desert's and Southern Border's super forces (the sea has Tang, Shen, Cai, Su, Nangong and Qing
+  Yue too; the desert fourteen peers; the south thirteen super clans). Each needs a city on the map, an icon and text.
+* The Demon Extermination List as an event (the Court has a standing +25% against barbarians for it).
+* Oasis no-fly zones and an immortal's strain in a foreign region: Unciv has no filter for "this region", only for a
+  civ's own or foreign land (KNOWN_ISSUES 25).

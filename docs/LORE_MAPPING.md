@@ -1389,7 +1389,7 @@ May travel on Water tiles without embarking
 Ignores terrain cost
 [This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
@@ -2490,7 +2490,7 @@ Unbuildable
 [+200]% maintenance costs
 [This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 ```
@@ -3096,7 +3096,7 @@ May travel on Water tiles without embarking
 Ignores terrain cost
 [This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
@@ -3142,7 +3142,7 @@ May travel on Water tiles without embarking
 Ignores terrain cost
 [This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
@@ -3156,7 +3156,7 @@ Unbuildable
 [+250]% maintenance costs
 [This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>
 ```
@@ -3169,7 +3169,7 @@ Unbuildable
 [+300]% maintenance costs
 [This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 ```
@@ -3386,7 +3386,7 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 [This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
@@ -3405,7 +3405,7 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 [This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
@@ -3424,7 +3424,7 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 [This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
@@ -3563,7 +3563,7 @@ May travel on Water tiles without embarking
 Ignores terrain cost
 [This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 [+100]% maintenance costs
@@ -3578,7 +3578,7 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 [This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
@@ -3652,6 +3652,10 @@ Starts with [Righteous Path] adopted
 Start bias [Desert]
 [2] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
 [+20]% [Gold] [in all cities]
+Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [3]% chance> <on [Quick] game speed>
+Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [2]% chance> <on [Standard] game speed>
+Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [1]% chance> <on [Epic] game speed>
+Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [1]% chance> <on [Marathon] game speed>
 ```
 
 **Fate War** (popup)
@@ -4002,7 +4006,7 @@ May travel on Water tiles without embarking
 Ignores terrain cost
 [This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
 [This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
@@ -4796,3 +4800,47 @@ Exact uniques of the two new events (Events.json):
 * **Fate Hunt**:
   * Go to ground in the Yellow Springs Sea: `[-25]% Strength <for [10] turns>`, `[+0]% weight to this choice for AI decisions`.
   * Pay informants to lose the trail: `Unavailable <when below [120] [Gold]>`, `Gain [-120] [Gold]`, `[+50]% weight to this choice for AI decisions`.
+
+## Regions II (the user, 2026-11-05; built 2026-11-08 from `docs/REGIONS.md` "Not done yet")
+
+The rest of the Central Continent's ten great sects, the Western Desert's coalition against the Fang clan, the Eastern
+Sea's earth tide and the Refinement Conference. The facts were checked in the raw text (R) on 2026-11-08; the
+verdicts are in our own words, and no text of the novel is kept.
+
+| Object | Chinese | Canon | Source | Status |
+|---|---|---|---|---|
+| Heavenly Lotus Sect (Immortal Sect city-state, Heavenly Lotus Blessed Land) | 天莲派 | One of the ten; its seat is a blessed land on a mountain with deep natural dao marks; it alone owns four Gu Houses | R V6c358, V4c351, V6c322, V5c212 | CANON |
+| Spirit Butterfly Valley (Immortal Sect) | 灵蝶谷 | One of the ten, the best at information-path arts | R V6c358, V5c212 | CANON |
+| Ancient Soul Sect (Immortal Sect, Earth Abyss) | 古魂门 | One of the ten; rules the far west of the continent from a seat above the Earth Abyss | R V6c358, V4c79, V6c80 | CANON |
+| Heaven's Envy Tower (Immortal Sect) | 天妒楼 | One of the ten; healers and wisdom-path immortals (REGIONS.md's first draft called it a manor: 楼 is a tower) | R V6c358, V2c140, V4c199 | CANON |
+| Wind Cloud Manor (Immortal Sect) | 风云府 | One of the ten, famed for Gu formations; lightning-path immortals | R V6c358, V4c274, V4c189 | CANON |
+| Black Heaven Temple (Immortal Sect) | 黑天寺 | One of the ten; its word can brand an immortal demonic and set the ten sects hunting him | R V6c358, V4c162, V5c367 | CANON |
+| Myriad Dragon Dock (Immortal Sect, Dragon Lake Isle) | 万龙坞 | One of the ten; its blessed land is an island in Dragon Lake; it borders the Immortal Crane Sect's lands | R V6c358, V4c48 | CANON |
+| The ten sects' seats: `[+50]% Strength for cities` | 十大古派 | They share one origin with the Court, hold 60-80% of the continent's resources, compete in the open and in secret, and may not attack other sects or lone immortals at will | R V4c48, V4c55, V4c56 | ADAPTED |
+| Wan Clan (Battle Tribe city-state, Gao Song Oasis) | 万家 | A great righteous family; Gao Song Oasis is its second resource point; it calls the desert's families to punish the Fang clan | R V6c281, V6c256 | CANON |
+| Wan Coalition (event on the Fang clan when it holds more than three cities) | 讨伐房家 | The coalition against the Fang clan; the Court promises to stay out; the siege fails | R V6c256, V6c279, V6c285 | CANON (trigger ADAPTED) |
+| Refinement Conference (world event every ~130 turns) | 炼道大会 | Hundreds of thousands of Gu Masters from all sects, the sea and the desert too; each brings his own materials; the champion takes an undefeated inheritance | R V4c179, V4c85 | CANON (cadence ADAPTED: a hundred years) |
+| Earth tide: an immortal's strain in the Azure Water Wall is halved | 地潮 | Every year the earth tide thins the Azure Water wall and immortals of three regions slip into the Eastern Sea | R V4c170 | ADAPTED (a yearly tide comes about every turn and a half, so the wall is thinner for good) |
+
+Exact uniques (Events.json, GlobalUniques.json, Nations.json):
+
+* **Refinement Conference**, every hundred years (GlobalUniques, one line per speed):
+  `Triggers a [Refinement Conference] event <upon turn start> <every [87] turns> <for [Major] Civilizations> <on [Quick] game speed>`,
+  `Triggers a [Refinement Conference] event <upon turn start> <every [130] turns> <for [Major] Civilizations> <on [Standard] game speed>`,
+  `Triggers a [Refinement Conference] event <upon turn start> <every [195] turns> <for [Major] Civilizations> <on [Epic] game speed>`,
+  `Triggers a [Refinement Conference] event <upon turn start> <every [390] turns> <for [Major] Civilizations> <on [Marathon] game speed>`.
+  * Send our best refiners to compete: `Unavailable <when below [150] [Gold]>`, `Gain [-150] [Gold]`,
+    `Instantly provides [20] [Immortal Materials]`,
+    `[+33]% Production when constructing [Immortal Gu] wonders [in all cities] <for [20] turns>`,
+    `[+0]% weight to this choice for AI decisions`, `[+100]% weight to this choice for AI decisions <when above [400] [Gold]>`.
+  * Trade for materials at the fair: `Unavailable <when below [60] [Gold]>`, `Gain [-60] [Gold]`,
+    `Instantly provides [8] [Immortal Materials]`, `[+0]% weight to this choice for AI decisions`.
+  * Stay home: `[-50]% weight to this choice for AI decisions`.
+* **Wan Coalition** (Fang clan, one line per speed, e.g. Standard):
+  `Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [2]% chance> <on [Standard] game speed>`.
+  * Pay the families to go home: `Unavailable <when below [200] [Gold]>`, `Gain [-200] [Gold]`,
+    `[+50]% weight to this choice for AI decisions`.
+  * Meet the coalition in the sand: `[2] [Rank Five Gu Master]s rebel`, `[+0]% weight to this choice for AI decisions`.
+* **Earth tide** (`gen_ruleset.EARTH_TIDE_WALL`): the immortals' lines for the Azure Water Wall read
+  `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>` at rank six, 15 at seven and 30 at
+  eight (the other walls 10 / 30 / 60).

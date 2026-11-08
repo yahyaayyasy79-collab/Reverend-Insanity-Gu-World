@@ -153,6 +153,10 @@ rest of the list is what a player or the next session should know before trustin
       minor clan; and the dens.
     * **The Eastern Sea stays the calmest.** Its raiders spawn on small islands and die within a turn or two
       (`docs/AUTOPLAY.md` "Phase D: regional conflict").
+    * **Since the regions build (2026-11-08)** the Huang Jin tribes meet those gates (+3 happiness) and fight the
+      northern minor clans in 7 of 8 games; in 2 of 8 they also declared war on the Heavenly Court, which never
+      declares one itself (`declareWar` 0). The other arc majors still never do (`docs/AUTOPLAY.md` "Regions as
+      canon").
 
 22. **An immortal Gu can have a second, sleeping bearer (Phase D, 2026-11-02).** The engine counts units with a
     promotion per clan only, never across the world. When a clan loses an immortal Gu wonder:

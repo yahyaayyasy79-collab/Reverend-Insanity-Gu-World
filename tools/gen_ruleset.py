@@ -177,8 +177,14 @@ WALLS = ["Miasma Wall", "Licorice Wall", "Azure Water Wall", "Raging Flame Wall"
 WALL_STRAIN = {6: 10, 7: 30, 8: 60}
 
 
+# Regions II: every year the earth tide thins the Azure Water wall and immortals of three regions slip into the Eastern
+# Sea (R V4c170): the sea's wall drags an immortal half as hard as the others
+EARTH_TIDE_WALL = "Azure Water Wall"
+
+
 def wall_strain(n):
-    return [f"[This Unit] takes [{n}] damage <upon ending a turn in a [{w}] tile>" for w in WALLS]
+    return [f"[This Unit] takes [{n // 2 if w == EARTH_TIDE_WALL else n}] damage <upon ending a turn in a [{w}] tile>"
+            for w in WALLS]
 IMMORTAL = "post-[Rank Five era]"  # unit filter: every Gu Immortal (their required techs lie after the Rank Five era)
 THREE_QI = "<after discovering [Three Qi]> <for [Major] Civilizations>"
 QI_SOURCES = [
@@ -540,6 +546,9 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
               f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
     lambda m: f"Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [{turn_gate(30, m)}]> "
               f"<with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
+    # Regions II: the Refinement Conference, once every hundred years (R V4c179)
+    lambda m: f"Triggers a [Refinement Conference] event <upon turn start> <every [{turns(130, m)}] turns> "
+              f"<for [Major] Civilizations>") + per_speed(
     # demonic Gu Masters prey on the small clans of every region (faction research: R ch443, ch704, ch1650)
     lambda m: f"A [Demonic Gu Master] rebels <upon turn start> <after turn number [{turn_gate(40, m)}]> "
               f"<every [{max(1, round(m))}] turns> <with [1]% chance> <for [City-States] Civilizations>")})
@@ -1125,6 +1134,25 @@ dump("Events.json", [
      "their list.", "choices": [
         toll("Go to ground in the Yellow Springs Sea", ["[-25]% Strength <for [10] turns>"], "+0"),
         toll("Pay informants to lose the trail", ["Unavailable <when below [120] [Gold]>", "Gain [-120] [Gold]"], "+50")]},
+    # Regions II: the Refinement Conference of the Central Continent draws hundreds of thousands of Gu Masters, from the
+    # Eastern Sea and the Western Desert too; each refiner brings his own materials and the champion takes an
+    # undefeated inheritance (R V4c179, V4c85). One every hundred years (GlobalUniques)
+    {"name": "Refinement Conference", "text": "The Refinement Conference opens in the Central Continent. Refiners "
+     "from all five regions come, each with his own materials; the champion takes an undefeated inheritance.",
+     "choices": [
+        {"text": "Send our best refiners to compete", "uniques": [
+            "Unavailable <when below [150] [Gold]>", "Gain [-150] [Gold]", f"Instantly provides [20] [{MATERIALS}]",
+            "[+33]% Production when constructing [Immortal Gu] wonders [in all cities] <for [20] turns>",
+            w("+0"), w("+100", "<when above [400] [Gold]>")]},
+        toll("Trade for materials at the fair", ["Unavailable <when below [60] [Gold]>", "Gain [-60] [Gold]",
+                                                 f"Instantly provides [8] [{MATERIALS}]"], "+0"),
+        toll("Stay home", [], "-50")]},
+    # Regions II: the Wan clan calls the Western Desert's righteous families to punish the Fang clan, which swallowed
+    # their resource points; the Court promises to stay out, and the siege fails (R V6c256, V6c279, V6c285)
+    {"name": "Wan Coalition", "text": "The Wan clan calls the desert's righteous families to punish your clan for "
+     "swallowing their oases. The Heavenly Court has promised to stay out of it.", "choices": [
+        toll("Pay the families to go home", ["Unavailable <when below [200] [Gold]>", "Gain [-200] [Gold]"], "+50"),
+        toll("Meet the coalition in the sand", ["[2] [Rank Five Gu Master]s rebel"], "+0")]},
     {"name": "Heaven's Will", "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and "
                                       "luck runs thin.", "choices": [
         toll("Lie low", ["[-20]% Strength <for [10] turns>"], "+0"),
@@ -1539,6 +1567,15 @@ def emblem(gu, extra=""):
             f"<in cities with a [Gu Academy]>" + (f" {extra}" if extra else ""))
 
 
+SECTS = [  # (name, outer colour, inner colour, seat); three colour pairs are the official validator's suggestions
+    ("Heavenly Lotus Sect", [198, 121, 147], [255, 250, 208], "Heavenly Lotus Blessed Land"),
+    ("Spirit Butterfly Valley", [36, 138, 121], [255, 225, 140], "Spirit Butterfly Valley"),
+    ("Ancient Soul Sect", [70, 50, 100], [210, 200, 160], "Earth Abyss"),
+    ("Heaven's Envy Tower", [40, 120, 80], [250, 225, 150], "Heaven's Envy Tower"),
+    ("Wind Cloud Manor", [109, 145, 190], [255, 255, 250], "Wind Cloud Manor"),
+    ("Black Heaven Temple", [20, 20, 24], [235, 235, 225], "Black Heaven Temple"),
+    ("Myriad Dragon Dock", [90, 20, 120], [250, 200, 60], "Dragon Lake Isle"),
+]
 EAST_SEA_RAIDS = per_speed(  # Phase D: the Eastern Sea has the most and strongest lone and demonic cultivators (R ch1650)
     lambda m: f"A [Demonic Gu Master] rebels <upon turn start> <after turn number [{turn_gate(40, m)}]> "
               f"<every [{max(1, round(m))}] turns> <with [4]% chance>")
@@ -1604,7 +1641,10 @@ dump("Nations.json", [
            [RIGHTEOUS_START, "[+50]% Production when constructing [Gu House] units [in all cities]",
             "[+10]% [Science] [in all cities]", "Start bias [Desert]",
             # Regions: the most trade-minded region, poorer than the sea and richer than the plains (R V3c20, V5c475)
-            *head_start(2), "[+20]% [Gold] [in all cities]"]),
+            *head_start(2), "[+20]% [Gold] [in all cities]"]
+           # Regions II: a Fang clan that swallows more oases than its own three draws the Wan coalition (R V6c256)
+           + per_speed(lambda m: f"Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more "
+                                 f"than [3]> <with [{chance(2, m)}]% chance>")),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -1640,6 +1680,15 @@ dump("Nations.json", [
      "cities": ["Xia Harbour"], "uniques": ["Start bias [Coast]"] + EAST_SEA_RAIDS},
     {"name": "Immortal Crane Sect", "cityStateType": "Immortal Sect", "outerColor": [230, 230, 235],
      "innerColor": [170, 30, 40], "cities": ["Fei He Mountain"], "uniques": ["[+50]% Strength for cities"]},
+    # Regions II: the other seven of the ten great ancient sects (R V6c358), on their canon seats where the text names
+    # one: Heavenly Lotus's blessed land on a mountain rich in natural dao marks (V4c351, V6c322), Ancient Soul above the
+    # Earth Abyss in the far west of the continent (V4c79, V6c80), Myriad Dragon Dock's island in Dragon Lake (V6c358)
+    *[{"name": n, "cityStateType": "Immortal Sect", "outerColor": o, "innerColor": i, "cities": [c],
+       "uniques": ["[+50]% Strength for cities"]} for n, o, i, c in SECTS],
+    # Regions II: the Wan clan of Gao Song Oasis, the desert's second resource point, leads the coalition against the
+    # Fang clan (R V6c281, V6c256)
+    {"name": "Wan Clan", "cityStateType": "Battle Tribe", "outerColor": [230, 200, 140], "innerColor": [120, 60, 20],
+     "cities": ["Gao Song Oasis"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},

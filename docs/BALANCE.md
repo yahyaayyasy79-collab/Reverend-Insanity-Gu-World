@@ -285,6 +285,10 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [30]> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 30, 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [45]> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 45, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Wandering Gu Master] event <upon turn start> <after turn number [90]> <with [1]% chance> <for [Major] Civilizations> <on [Marathon] game speed>` | 90, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Refinement Conference] event <upon turn start> <every [87] turns> <for [Major] Civilizations> <on [Quick] game speed>` | 87 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Refinement Conference] event <upon turn start> <every [130] turns> <for [Major] Civilizations> <on [Standard] game speed>` | 130 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Refinement Conference] event <upon turn start> <every [195] turns> <for [Major] Civilizations> <on [Epic] game speed>` | 195 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Refinement Conference] event <upon turn start> <every [390] turns> <for [Major] Civilizations> <on [Marathon] game speed>` | 390 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Quick] game speed>` | 27, 1, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Standard] game speed>` | 40, 1, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [1]% chance> <for [City-States] Civilizations> <on [Epic] game speed>` | 60, 2, 1 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -413,7 +417,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Six Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Six Gu Immortal | `[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>` | 10 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>` | 10 | tools/gen_ruleset.py `gm()` |
-| Rank Six Gu Immortal | `[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>` | 10 | tools/gen_ruleset.py `gm()` |
+| Rank Six Gu Immortal | `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>` | 5 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 10 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>` | 10 | tools/gen_ruleset.py `gm()` |
 | Rank Six Gu Immortal | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `gm()` |
@@ -439,7 +443,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Seven Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Seven Gu Immortal | `[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>` | 30 | tools/gen_ruleset.py `gm()` |
-| Rank Seven Gu Immortal | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `gm()` |
+| Rank Seven Gu Immortal | `[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile>` | 15 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Seven Gu Immortal | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `gm()` |
@@ -465,7 +469,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Rank Eight Gu Immortal | `[This Unit] gains [5] XP <upon turn start> <for [Rank Eight Gu Immortal] units>` | 5 | data/gu_masters.csv `cultivationXP` |
 | Rank Eight Gu Immortal | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `gm()` |
-| Rank Eight Gu Immortal | `[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>` | 60 | tools/gen_ruleset.py `gm()` |
+| Rank Eight Gu Immortal | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `gm()` |
 | Rank Eight Gu Immortal | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `gm()` |
@@ -485,7 +489,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Desolate Beast | `[+200]% maintenance costs` | +200 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | `[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | `[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
-| Desolate Beast | `[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
+| Desolate Beast | `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>` | 5 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | `[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | `[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
 | Ancient Desolate Beast | movement | 3 | tools/gen_ruleset.py `Units` |
@@ -495,7 +499,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Ancient Desolate Beast | `[+250]% maintenance costs` | +250 | tools/gen_ruleset.py `Units` |
 | Ancient Desolate Beast | `[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Ancient Desolate Beast | `[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
-| Ancient Desolate Beast | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
+| Ancient Desolate Beast | `[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile>` | 15 | tools/gen_ruleset.py `Units` |
 | Ancient Desolate Beast | `[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Ancient Desolate Beast | `[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | movement | 3 | tools/gen_ruleset.py `Units` |
@@ -505,7 +509,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Immemorial Desolate Beast | `[+300]% maintenance costs` | +300 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
-| Immemorial Desolate Beast | `[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Immemorial Desolate Beast | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Immemorial Desolate Beast | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Venerable | movement | 5 | tools/gen_ruleset.py `Units` |
@@ -542,7 +546,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Calamity Luck Altar | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
-| Calamity Luck Altar | `[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Calamity Luck Altar | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
@@ -556,7 +560,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Myriad Year Flying Warship | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
-| Myriad Year Flying Warship | `[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Myriad Year Flying Warship | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Myriad Year Flying Warship | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
@@ -569,7 +573,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Dragon Palace | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
-| Dragon Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Dragon Palace | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Dragon Palace | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
@@ -583,7 +587,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Heaven Overseeing Tower | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
-| Heaven Overseeing Tower | `[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Heaven Overseeing Tower | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
 | Heaven Overseeing Tower | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
@@ -598,7 +602,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Immortal Zombie | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
-| Immortal Zombie | `[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
+| Immortal Zombie | `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>` | 5 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>` | 10 | tools/gen_ruleset.py `Units` |
 | Immortal Zombie | `[+100]% maintenance costs` | +100 | tools/gen_ruleset.py `Units` |
@@ -2376,6 +2380,22 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fate Hunt › Pay informants to lose the trail | `Unavailable <when below [120] [Gold]>` | 120 | tools/gen_ruleset.py `Events` |
 | Fate Hunt › Pay informants to lose the trail | `Gain [-120] [Gold]` | -120 | tools/gen_ruleset.py `Events` |
 | Fate Hunt › Pay informants to lose the trail | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Send our best refiners to compete | `Unavailable <when below [150] [Gold]>` | 150 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Send our best refiners to compete | `Gain [-150] [Gold]` | -150 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Send our best refiners to compete | `Instantly provides [20] [Immortal Materials]` | 20 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Send our best refiners to compete | `[+33]% Production when constructing [Immortal Gu] wonders [in all cities] <for [20] turns>` | +33, 20 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Send our best refiners to compete | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Send our best refiners to compete | `[+100]% weight to this choice for AI decisions <when above [400] [Gold]>` | +100, 400 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Trade for materials at the fair | `Unavailable <when below [60] [Gold]>` | 60 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Trade for materials at the fair | `Gain [-60] [Gold]` | -60 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Trade for materials at the fair | `Instantly provides [8] [Immortal Materials]` | 8 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Trade for materials at the fair | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Refinement Conference › Stay home | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
+| Wan Coalition › Pay the families to go home | `Unavailable <when below [200] [Gold]>` | 200 | tools/gen_ruleset.py `Events` |
+| Wan Coalition › Pay the families to go home | `Gain [-200] [Gold]` | -200 | tools/gen_ruleset.py `Events` |
+| Wan Coalition › Pay the families to go home | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Wan Coalition › Meet the coalition in the sand | `[2] [Rank Five Gu Master]s rebel` | 2 | tools/gen_ruleset.py `Events` |
+| Wan Coalition › Meet the coalition in the sand | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Lie low | `[-20]% Strength <for [10] turns>` | -20, 10 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Lie low | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Heaven's Will › Pay heaven its due | `Unavailable <when below [30] [Green Grape Immortal Essence]>` | 30 | tools/gen_ruleset.py `Events` |
@@ -3773,6 +3793,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fang Clan | `[+10]% [Science] [in all cities]` | +10 | tools/gen_ruleset.py `Nations` |
 | Fang Clan | `[2] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 2, 2 | tools/gen_ruleset.py `Nations` |
 | Fang Clan | `[+20]% [Gold] [in all cities]` | +20 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [3]% chance> <on [Quick] game speed>` | 3, 3 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [2]% chance> <on [Standard] game speed>` | 3, 2 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [1]% chance> <on [Epic] game speed>` | 3, 1 | tools/gen_ruleset.py `Nations` |
+| Fang Clan | `Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more than [3]> <with [1]% chance> <on [Marathon] game speed>` | 3, 1 | tools/gen_ruleset.py `Nations` |
 | Spirit Affinity House | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Combat Immortal Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
@@ -3788,6 +3812,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
 | Xia Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
 | Immortal Crane Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Heavenly Lotus Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Spirit Butterfly Valley | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Ancient Soul Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Heaven's Envy Tower | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Wind Cloud Manor | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Black Heaven Temple | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Myriad Dragon Dock | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 
 ### CityStateTypes.json
 
@@ -4121,6 +4152,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3865 numbers listed.
+3896 numbers listed.
 
 <!-- inventory:end -->

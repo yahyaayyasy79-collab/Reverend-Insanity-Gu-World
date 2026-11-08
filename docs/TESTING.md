@@ -161,6 +161,13 @@ unit add gu-yue-clan "Rank Three Gu Master"   # beside a region wall: it can ent
                                             # (a rank-eight immortal loses 60 more there)
 # play the Heavenly Court: 6 free techs and two Rank Three Gu Masters when the capital is founded;
 # as any other clan declare war on the Court: two Rank Seven Gu Immortals appear by its capital
+# Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference
+# Five Regions map: the Central Continent holds ten Immortal Sect city-states; each shows its own emblem in diplomacy
+unit add gu-yue-clan "Rank Six Gu Immortal"   # end a turn in the Azure Water Wall: 10 (wall) + 5 (strain) damage;
+                                            # in any other wall 10-15 + 10
+civ activatetrigger "Triggers a [Wan Coalition] event"           # as the Fang clan: the coalition's two choices
+civ activatetrigger "Triggers a [Refinement Conference] event"   # the conference's three choices (it opens on
+                                            # turn 130 on Standard; 87 Quick, 195 Epic, 390 Marathon)
 # mechanics audit (2026-11-03): the immortal chasm, Gu spoils, AI killer moves
 unit checkfilter "pre-[Rank Six era]"       # on a tile with a mortal Gu Master: true; on an immortal: false
 unit add gu-yue-clan "Rank Six Gu Immortal" # beside a "Demonic Gu Master" (barbarians): attack preview shows +50%

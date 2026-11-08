@@ -525,6 +525,44 @@ Strength 10 (before: Wind 19, Strength 36).
 | Immortals at the end | 35 | 41 |
 | Games won before T450 | 5 | 4 |
 
+## Regions as canon (2026-11-08)
+
+Five Regions map, 8 × 450, seed 101, AI only. Baseline aabaf80 + the AI upkeep relief (`late450`); the regions build
+8e02019 (`reg450`); the same with the Huang Jin contest and war economy toned down, 8f54dbc (`reg2_450`). Means per civ
+of each region (majors and city-states together), at T300.
+
+| Region | Techs (base / build / tuned) | Immortals (base / build / tuned) | Turns at war with a major |
+|---|---|---|---|
+| Central Continent | 20.9 / 23.9 / 23.8 | 1.9 / 4.6 / 4.2 | 0 / 26 / 8 |
+| Northern Plains | 19.2 / 21.4 / 21.0 | 1.8 / 4.2 / 2.8 | 0 / 34 / 8 |
+| Eastern Sea | 20.1 / 20.5 / 20.8 | 2.4 / 3.6 / 2.8 | 0 / 0 / 0 |
+| Western Desert | 18.2 / 19.0 / 18.4 | 0.5 / 1.5 / 0.9 | 0 / 0 / 0 |
+| Southern Border | 19.0 / 20.1 / 19.8 | 2.5 / 2.2 / 2.6 | 242 / 144 / 232 |
+
+| Arc majors | Base | Build | Tuned |
+|---|---|---|---|
+| The Court fights a city-state (games) | 2 of 8 (took Spirit Affinity House twice) | 0 | 0 |
+| The Huang Jin fight the northern tribes (games, turns) | 5 of 8, 1145 | 8 of 8, 1905 | 7 of 8, 1673 |
+| The Fang clan conquers in the desert (games) | 1 of 8 (took Lan and Xiao) | 0 | 0 |
+| Huang Jin cities at T150 | 4.5 | 7.4 | 6.8 |
+| First rank eight: the Court | T371-425 (3 games) | T278-335 (5) | earliest in most games |
+| Venerables (games) | Bai 3, Wu 3, Xiong 1, Huang Jin 1, Court 1 | Huang Jin 5, Court 2 | Court 5, Wu 1, Bai 1, Huang Jin 1 |
+| Eternal Life wins | Wu 2, Bai 2 | Huang Jin 3 | Wu 1, Bai 1, Huang Jin 1 |
+| Clan-turns in debt, Huang Jin | 15% | - | 23% |
+
+* The regions now stand in canon order: the Central Continent ahead in techs and immortals, the plains second, the
+  sea third, the desert last.
+* The Court never declares war. In the build's game 108 the Huang Jin raised a Venerable at T337, declared war on
+  the Court at T341 and razed it by T357; the Immortal Tomb did not wake, as the Court already had four rank sevens
+  (the cap is three). The tuned run had no such game.
+* The contest's XP had lasted as long as the gap between contests, so the plains trained every Gu Master with it; with
+  +5 happiness the tribes settled and conquered to 7.4 cities by T150 and took every Venerable race the Court did not.
+  The tuned numbers (XP for 5 turns, +3 happiness) keep the northern wars and spread the wins again.
+* The Court, the strongest region, raises the Venerable in 5 of 8 tuned games. It cannot seek Eternal Life, so while
+  it lives no one wins that way (docs/REGIONS.md, open question).
+* Debt rose with the wars: Huang Jin in the red on 23% of turns (15% before), snapshots at the -200 line 10.4 per game
+  (2.8).
+
 ## Re-run
 
 ```

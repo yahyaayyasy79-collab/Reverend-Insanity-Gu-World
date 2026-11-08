@@ -96,7 +96,12 @@ world's Lifespan Gu (R V5/54).
 | Immortals are all flight masters; mortal flight Gu are rare | R V4c161, V2c28 | CANON |
 | Ranking: Central Continent strongest; Northern Plains second in fighting power but poorest; Eastern Sea richest, the most rank 8s; Western Desert divided, weakest late | R V5c704, V3c153, V4c170, V5c669, V6c253 | CANON |
 | The Heavenly Court dates from Remote Antiquity, about three million years ago | R V5c519, V6c35 | CANON |
-| The ten great sects: Immortal Crane, Heavenly Lotus, Spirit Butterfly Valley, Ancient Soul, Heaven's Envy Manor, Wind Cloud Manor, Combat Immortal, Spirit Affinity House, Black Heaven Temple, Myriad Dragon Dock | R V6c358 | CANON |
+| The ten great sects: Immortal Crane (仙鹤门), Heavenly Lotus (天莲派), Spirit Butterfly Valley (灵蝶谷), Ancient Soul (古魂门), Heaven's Envy Tower (天妒楼), Wind Cloud Manor (风云府), Combat Immortal (战仙宗), Spirit Affinity House (灵缘斋), Black Heaven Temple (黑天寺), Myriad Dragon Dock (万龙坞) | R V6c358 | CANON |
+| The sects' seats: Heavenly Lotus on a blessed land rich in natural dao marks; Ancient Soul above the Earth Abyss in the far west; Myriad Dragon Dock on an island in Dragon Lake, beside the Immortal Crane Sect | R V4c351, V6c322, V4c79, V6c80, V6c358, V4c48 | CANON |
+| The sects' arts: Spirit Butterfly Valley information, Wind Cloud Manor formations, Heaven's Envy Tower healers; Heavenly Lotus owns four Gu Houses | R V5c212, V4c274, V2c140 | CANON |
+| The Refinement Conference: hundreds of thousands of Gu Masters from every sect and from the sea and desert; each brings his own materials; the champion takes an undefeated inheritance | R V4c179, V4c85 | CANON |
+| The Wan clan (万家, Gao Song Oasis) leads the desert's righteous families against the Fang clan (房家); the Court stays out; the siege fails | R V6c281, V6c256, V6c285, V6c279 | CANON |
+| Duke Long (龙公), the Court's leader in the present, is rank eight, a match for the rank-eight zombie Bo Qing | R V5c343 | CANON |
 | The Court's immortals mostly sleep in the Immortal Tomb; it wages no ordinary war and acts against fate-defiers and threats | R V5c49, V4c131, V4c314 | CANON |
 | The Imperial Court contest: every ten years, before the blizzard; only mortals fight | R V3c117, V3c120 | CANON |
 | Desert oases: caravans and cooperation; no one marches across the sand to take another oasis | R V3c20, V5c596 | CANON |

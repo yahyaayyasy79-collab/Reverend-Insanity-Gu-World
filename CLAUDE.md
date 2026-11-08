@@ -44,6 +44,11 @@ MOD_SPEC_2 Phase D done 2026-11-03, waiting at its checkpoint: every tension tar
 targets", AUTOPLAY.md "Phase D: tension targets"); fixed the White Boar starvation loop (path_gu food), signature
 halls (-90% AI weight off-path), AI late upkeep relief (-30% after T300, AI only); DoD audit clean; not met: immortal
 Gu races contested (66 races), early upkeep 40% (17%).
+Regions as canon (user 2026-11-05, built 2026-11-08, docs/REGIONS.md): immortals fly, walls stop the strong, the
+Central Continent strongest and at peace (Court `declareWar` 0, Immortal Tomb), the plains at war (contest XP 5
+turns, +3 happiness after the first build let the Huang Jin snowball), sea richest, desert cooperative; autoplay
+puts the regions in canon order. Regions II: all ten great sects, the Wan clan and its coalition on the Fang clan,
+the earth tide, the Refinement Conference, an emblem for every city-state. Open: the Court's Venerable (5 of 8).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.

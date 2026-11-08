@@ -1077,3 +1077,24 @@ region's power, politics and conflict.
   * a mortal Gu Master crossing a wall;
   * the Court's head start;
   * the Immortal Tomb waking when you declare war on the Court.
+
+## Regions II: the ten great sects, the Wan coalition, the earth tide, the Refinement Conference (2026-11-08)
+
+You asked for every region "exactly like the canon". This step builds what `docs/REGIONS.md` left open, from facts
+checked in the raw text (`docs/LORE_MAPPING.md` "Regions II").
+
+* **All ten great sects of the Central Continent** are on the Five Regions map. The seven new ones are Heavenly Lotus,
+  Spirit Butterfly Valley, Ancient Soul (above the Earth Abyss), Heaven's Envy Tower, Wind Cloud Manor, Black Heaven
+  Temple and Myriad Dragon Dock (Dragon Lake Isle). Each is an Immortal Sect city-state with +50% city strength.
+* **The Western Desert's coalition.** The Wan clan of Gao Song Oasis joins as a city-state. When the Fang clan holds
+  more than its three cities, the Wan clan may rally the desert's families against it: pay 200 stones, or meet two
+  rank-five Gu Masters in the sand.
+* **The earth tide** thins the Azure Water Wall: an immortal's strain there is half the other walls'.
+* **The Refinement Conference**, every ~130 turns (a hundred years), for every clan. Choose one:
+  * pay 150 stones for 20 Immortal Materials and +33% production on immortal Gu for 20 turns;
+  * pay 60 stones for 8 materials;
+  * stay home.
+* **City-state emblems.** All 23 city-states have a designed nation icon. Before, Unciv drew a bare circle.
+* **Autoplay** of the previous step (8 × 450): the regions stand in canon order, the Court never declares war, and
+  the Eternal Life wins are spread (Wu, Bai, Huang Jin). Open question for you: the Court raises the Venerable in 5 of
+  8 games (`docs/REGIONS.md`).

@@ -1036,6 +1036,59 @@
     ]
   },
   {
+    "name": "Refinement Conference",
+    "text": "The Refinement Conference opens in the Central Continent. Refiners from all five regions come, each with his own materials; the champion takes an undefeated inheritance.",
+    "choices": [
+      {
+        "text": "Send our best refiners to compete",
+        "uniques": [
+          "Unavailable <when below [150] [Gold]>",
+          "Gain [-150] [Gold]",
+          "Instantly provides [20] [Immortal Materials]",
+          "[+33]% Production when constructing [Immortal Gu] wonders [in all cities] <for [20] turns>",
+          "[+0]% weight to this choice for AI decisions",
+          "[+100]% weight to this choice for AI decisions <when above [400] [Gold]>"
+        ]
+      },
+      {
+        "text": "Trade for materials at the fair",
+        "uniques": [
+          "Unavailable <when below [60] [Gold]>",
+          "Gain [-60] [Gold]",
+          "Instantly provides [8] [Immortal Materials]",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Stay home",
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wan Coalition",
+    "text": "The Wan clan calls the desert's righteous families to punish your clan for swallowing their oases. The Heavenly Court has promised to stay out of it.",
+    "choices": [
+      {
+        "text": "Pay the families to go home",
+        "uniques": [
+          "Unavailable <when below [200] [Gold]>",
+          "Gain [-200] [Gold]",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Meet the coalition in the sand",
+        "uniques": [
+          "[2] [Rank Five Gu Master]s rebel",
+          "[+0]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Heaven's Will",
     "text": "Heaven's Will turns against a clan with too many immortals. Beasts go mad and luck runs thin.",
     "choices": [
