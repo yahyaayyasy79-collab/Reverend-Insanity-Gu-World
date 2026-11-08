@@ -1173,3 +1173,13 @@ Checked in the raw text; the game's eras stay the rank eras.
   * about half the Gu Masters reach their rank's peak;
   * the AI buys rank relics and climbs the fusion chains;
   * the barbarian total stays lower than before.
+
+## The snowmen move to the far north-west (2026-11-08)
+
+Seven tiles from the Huang Jin capital, the snowmen fell in 5 of 8 autoplay games even with their +50% city strength,
+and fed the tribes' run to 3 of 8 wins. The Great Snow Mountain now lies on the far north-west tundra, 24 tiles away.
+Autoplay (8 × 450):
+* no variant-human city-state fell;
+* Eternal Life wins: Gu Yue 3, Huang Jin 1;
+* Venerables: Gu Yue 4, Wu 3, Huang Jin 3;
+* the Court still leads in techs and immortals.

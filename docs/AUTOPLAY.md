@@ -622,6 +622,11 @@ Five Regions, 8 × 450, seed 101. Baseline: Regions II with the sects on the rim
 * **The variant humans:** the Huang Jin razed the snowmen in 5 of 8 games. An immortal's blessed land shields them in the
   canon, so their city now has +50% strength like the great sects'. The other three kinds survived every game.
 * Region order holds in every run: Central > North > East > South > West in techs and immortals at T300.
+* **The snowmen, again** (8 × 450 each): with +50% city strength they still fell in 5 of 8 games (997e679, attacked
+  T67-151, fallen T107-157), and the Huang Jin won 3 of 8. Moved to the far north-west tundra, 24 tiles from the Huang
+  Jin capital (8f76096): no variant-human city-state fell in 8 games; Eternal Life wins Gu Yue 3, Huang Jin 1;
+  Venerables Gu Yue 4, Wu 3, Huang Jin 3; the Court at T300 still leads (23.5 techs, 6.4 immortals); clan-turns in debt
+  after T300 12% (12% before).
 
 ## Re-run
 
