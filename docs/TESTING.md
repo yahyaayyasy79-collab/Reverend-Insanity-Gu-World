@@ -161,6 +161,20 @@ unit add gu-yue-clan "Rank Three Gu Master"   # beside a region wall: it can ent
                                             # (a rank-eight immortal loses 60 more there)
 # play the Heavenly Court: 6 free techs and two Rank Three Gu Masters when the capital is founded;
 # as any other clan declare war on the Court: two Rank Seven Gu Immortals appear by its capital
+# Reference audit (2026-11-08, docs/REFERENCE_AUDIT.md): small stages, relics, physiques, fusions, beast kings, variant humans
+unit add gu-yue-clan "Rank Two Gu Master"    # select it: the Stage Cultivation status counts down (8-16 turns by aptitude)
+unit addpromotion "Upper Stage"             # when Stage Cultivation runs out: Peak Stage (+5% Strength per stage)
+unit addpromotion "Peak Stage"              # the Upgrade button now costs 30% less than for a unit before its peak;
+                                            # after the upgrade the unit stands at initial again (no stage icons)
+unit setxp 100                              # on a Rank Two at middle stage: "Red Iron Relic Gu" (40 stones) lifts one
+                                            # stage at once and is gone at the next turn start
+unit addpromotion "Extreme Physique"        # then:
+unit activatetrigger "[This Unit] gains the [Doomed Aperture] status for [3] turn(s)"   # a mortal bearer dies in 2 turns
+unit addpromotion "Black Boar Gu"           # on a Rank Two Strength Master with "Green Silk Gu" too: Black Mane Gu can be
+                                            # refined and uses both up; then Steel Mane Gu from Black Mane at rank three
+unit add barbarians "Frenzy Lightning Wolf" # the thousand-beast king with thunder wings
+# Five Regions map: Feathermen (west), Snowmen and Inkmen (north), Rockmen (south) with their own emblems and types;
+# as the Heavenly Court, "Ascend to Venerable" stays closed for a rank-eight Supreme
 # Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference
 # Five Regions map: the Central Continent holds ten Immortal Sect city-states; each shows its own emblem in diplomacy
 unit add gu-yue-clan "Rank Six Gu Immortal"   # end a turn in the Azure Water Wall: 10 (wall) + 5 (strain) damage;
