@@ -1387,6 +1387,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -2483,6 +2488,11 @@ Cannot be purchased
 Unbuildable
 [+15]% Strength <when defending>
 [+200]% maintenance costs
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 ```
 
 **Inheritance Trial** (silent die)
@@ -3084,6 +3094,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
+[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3125,6 +3140,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3134,6 +3154,11 @@ Ignores terrain cost
 Unbuildable
 [+15]% Strength <when defending>
 [+250]% maintenance costs
+[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>
 ```
 
 **Immemorial Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An immemorial desolate beast (\u592a\u53e4\u8352\u517d), about rank eight; one killed a rank-seven immortal of the Heavenly Court. Its corpse yields 50 immortal materials."}]})
@@ -3142,6 +3167,11 @@ Unbuildable
 Unbuildable
 [+15]% Strength <when defending>
 [+300]% maintenance costs
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 ```
 
 **Tribulation Survivor** (UnitPromotions.json; {"civilopediaText": [{"text": "This immortal came through a heavenly tribulation and may climb to the next rank."}]})
@@ -3354,6 +3384,11 @@ Only available <if [Connect Luck] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3368,6 +3403,11 @@ Only available <if [Years Flow Like Water] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3382,6 +3422,11 @@ Only available <if [Dream Token] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3516,6 +3561,11 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 May travel on Water tiles without embarking
 Ignores terrain cost
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 [+100]% maintenance costs
 ```
 
@@ -3526,6 +3576,11 @@ Only available <if [Fate Gu] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3921,6 +3976,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Azure Water Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3954,42 +4014,42 @@ Continent in the middle, the Northern Plains, the Western Desert, the Eastern Se
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Miasma Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [90, 130, 70], "civilopediaText": [{"text": "The region wall of the Southern Border (\u7634\u6c14\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 25 damage. Found on the Five Regions map."}]})
+**Miasma Wall** (Terrains.json; {"type": "Land", "movementCost": 3, "defenceBonus": 0.5, "RGB": [90, 130, 70], "civilopediaText": [{"text": "The region wall of the Southern Border (\u7634\u6c14\u754c\u58c1). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 15 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."}]})
 
 ```
-Units ending their turn on this terrain take [25] damage
+Units ending their turn on this terrain take [15] damage
 Has an elevation of [3] for visibility calculations
 Considered [Undesirable] when determining start locations
 ```
 
-**Licorice Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [200, 180, 120], "civilopediaText": [{"text": "The region wall of the Northern Plains (\u7518\u8349\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."}]})
+**Licorice Wall** (Terrains.json; {"type": "Land", "movementCost": 3, "defenceBonus": 0.5, "RGB": [200, 180, 120], "civilopediaText": [{"text": "The region wall of the Northern Plains (\u7518\u8349\u754c\u58c1). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 10 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."}]})
 
 ```
-Units ending their turn on this terrain take [20] damage
+Units ending their turn on this terrain take [10] damage
 Has an elevation of [3] for visibility calculations
 Considered [Undesirable] when determining start locations
 ```
 
-**Azure Water Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [60, 120, 190], "civilopediaText": [{"text": "The region wall of the Eastern Sea (\u82cd\u6c34\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."}]})
+**Azure Water Wall** (Terrains.json; {"type": "Land", "movementCost": 3, "defenceBonus": 0.5, "RGB": [60, 120, 190], "civilopediaText": [{"text": "The region wall of the Eastern Sea (\u82cd\u6c34\u754c\u58c1). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 10 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."}]})
 
 ```
-Units ending their turn on this terrain take [20] damage
+Units ending their turn on this terrain take [10] damage
 Has an elevation of [3] for visibility calculations
 Considered [Undesirable] when determining start locations
 ```
 
-**Raging Flame Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [220, 90, 40], "civilopediaText": [{"text": "The region wall of the Western Desert (\u72c2\u708e\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 30 damage. Found on the Five Regions map."}]})
+**Raging Flame Wall** (Terrains.json; {"type": "Land", "movementCost": 3, "defenceBonus": 0.5, "RGB": [220, 90, 40], "civilopediaText": [{"text": "The region wall of the Western Desert (\u72c2\u708e\u754c\u58c1). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 15 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."}]})
 
 ```
-Units ending their turn on this terrain take [30] damage
+Units ending their turn on this terrain take [15] damage
 Has an elevation of [3] for visibility calculations
 Considered [Undesirable] when determining start locations
 ```
 
-**Sage Wall** (Terrains.json; {"type": "Land", "impassable": true, "defenceBonus": 0.5, "RGB": [235, 230, 210], "civilopediaText": [{"text": "The region wall of the Central Continent (\u5723\u8d24\u754c\u58c1). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."}]})
+**Sage Wall** (Terrains.json; {"type": "Land", "movementCost": 3, "defenceBonus": 0.5, "RGB": [235, 230, 210], "civilopediaText": [{"text": "The region wall of the Central Continent (\u5723\u8d24\u754c\u58c1). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 10 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."}]})
 
 ```
-Units ending their turn on this terrain take [20] damage
+Units ending their turn on this terrain take [10] damage
 Has an elevation of [3] for visibility calculations
 Considered [Undesirable] when determining start locations
 ```

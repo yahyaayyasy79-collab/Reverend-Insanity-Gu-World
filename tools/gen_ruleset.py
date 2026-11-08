@@ -170,6 +170,15 @@ IMMORTALS = {"Rank Six Gu Immortal": GREEN, "Rank Seven Gu Immortal": RED, "Rank
 # water, and land melee units may attack it there once embarkation is known [src TargetHelper], which the first tech
 # grants. Both uniques are cached: permanent on the unit, never on a status.
 FLIGHT = ["May travel on Water tiles without embarking", "Ignores terrain cost"]
+# a region wall drags the strong harder (canon research 2026-11-08: R V5c535, V4c286): on top of the wall's own damage,
+# an immortal that ends its turn inside takes this much more by rank; desolate beasts "belong to their region" the
+# same way (R V5c24). Rank nine is beyond the walls.
+WALLS = ["Miasma Wall", "Licorice Wall", "Azure Water Wall", "Raging Flame Wall", "Sage Wall"]
+WALL_STRAIN = {6: 10, 7: 30, 8: 60}
+
+
+def wall_strain(n):
+    return [f"[This Unit] takes [{n}] damage <upon ending a turn in a [{w}] tile>" for w in WALLS]
 IMMORTAL = "post-[Rank Five era]"  # unit filter: every Gu Immortal (their required techs lie after the Rank Five era)
 THREE_QI = "<after discovering [Three Qi]> <for [Major] Civilizations>"
 QI_SOURCES = [
@@ -626,7 +635,7 @@ for u, r in zip(GU_MASTERS, table("gu_masters.csv")):
     if r["name"] in IMMORTALS:
         u["uniques"] += immortal_life(IMMORTAL_RANK[r["name"]]) + IMMORTAL_XP  # MOD_SPEC_2 C2: immortals burn Lifespan Gu
         u["uniques"].append("Can pass through impassable tiles")  # immortals cross mountains and the region walls
-        u["uniques"] += FLIGHT
+        u["uniques"] += FLIGHT + wall_strain(WALL_STRAIN[IMMORTAL_RANK[r["name"]]])
         u["uniques"].append(gen_paths.PP.chasm())  # audit P1: the chasm between mortal and immortal
 dump("Units.json", [
     {"name": "Clan Settler", "unitType": "Civilian", "movement": 2, "cost": 80, "requiredTech": "Aperture Awakening",
@@ -649,11 +658,14 @@ dump("Units.json", [
      "uniques": ["[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles", "[+100]% maintenance costs"]},
     # C4: a desolate beast (荒兽), about a rank-six immortal (R V5/14); only events bring one
     {"name": DESOLATE, "unitType": "Beast", "movement": 3, "strength": 62, "cost": 200, "attackSound": "shot",
-     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+200]% maintenance costs"]},
+     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+200]% maintenance costs",
+                                           *wall_strain(WALL_STRAIN[6])]},
     {"name": ANCIENT, "unitType": "Beast", "movement": 3, "strength": 85, "cost": 300, "attackSound": "shot",
-     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+250]% maintenance costs"]},
+     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+250]% maintenance costs",
+                                           *wall_strain(WALL_STRAIN[7])]},
     {"name": IMMEMORIAL, "unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot",
-     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+300]% maintenance costs"]},
+     "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+300]% maintenance costs",
+                                           *wall_strain(WALL_STRAIN[8])]},
     # C5b: the Venerable and the Gu Houses
     # the user (2026-11-01): rank nine dominates and terrifies. A Venerable is unbeatable in its era (R V6/105): it strikes
     # three times, walks through anything, enslaves the defeated, cows every enemy beside it. Its life is long but not
@@ -677,13 +689,14 @@ dump("Units.json", [
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
       "attackSound": sfx.rank_sound(8), **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
-                  "Can pass through impassable tiles", gen_paths.PP.chasm(),
+                  "Can pass through impassable tiles", gen_paths.PP.chasm(), *wall_strain(WALL_STRAIN[8]),
                                           f"Costs [50] [{WHITE}]", f"Costs [{HOUSE_MATERIALS}] [{MATERIALS}]",
                                           "[+500]% maintenance costs", NB] + extra}
      for n, gu, st, mv, extra in GU_HOUSES] + [
     {"name": ZOMBIE, "unitType": "Gu Master", "movement": 2, "strength": gen_paths.PP.body_strength(70, 6), "cost": 300, "requiredTech": "Calamity Lore",
      "attackSound": sfx.rank_sound(6), "uniques": ["Unbuildable", "Cannot be purchased", NB, "Can only heal by pillaging", FATE_WEAK,
                                          "Can pass through impassable tiles", gen_paths.PP.chasm(), *FLIGHT,
+                                         *wall_strain(WALL_STRAIN[6]),
                                          "[+100]% maintenance costs"]},
 ] + [
     {"name": "Thunder Crown Wolf", "unitType": "Beast", "movement": 3, "strength": 28, "cost": 120, "attackSound": "shot",
@@ -1372,15 +1385,20 @@ def realm(r):
 
 ter += [realm(r) for r in REALMS]
 # the five regions' walls (界壁, R V5/22, V4/61, V4/279; T3 of docs/CANON_OVERHAUL.md), only on the Five Regions map:
-# impassable to mortals; immortals cross them ("Can pass through impassable tiles") but suffer if they stop inside
-REGION_WALLS = {"Miasma Wall": ((90, 130, 70), 25), "Licorice Wall": ((200, 180, 120), 20),
-                "Azure Water Wall": ((60, 120, 190), 20), "Raging Flame Wall": ((220, 90, 40), 30),
-                "Sage Wall": ((235, 230, 210), 20)}
-ter += [{"name": n, "type": "Land", "impassable": True, "defenceBonus": 0.5, "RGB": list(rgb),
+# Regions (canon research 2026-11-08, docs/REGIONS.md): a region wall stops the strong, not the weak. A rank-4 Fang Yuan
+# crossed and crowds of mortal Gu Masters cross to the Refinement Conference; for immortals it is hard at rank six, very
+# dangerous at seven and all but impossible at eight (R V4c61, V5c535, V5c899). So every unit may enter (slow going),
+# every unit that ends its turn inside is hurt, and an immortal is hurt more the higher its rank (WALL_STRAIN). The
+# engine's AI never ends a turn on damaging terrain without need [src UnitAutomation], so the regions stay apart.
+REGION_WALLS = {"Miasma Wall": ((90, 130, 70), 15), "Licorice Wall": ((200, 180, 120), 10),
+                "Azure Water Wall": ((60, 120, 190), 10), "Raging Flame Wall": ((220, 90, 40), 15),
+                "Sage Wall": ((235, 230, 210), 10)}
+ter += [{"name": n, "type": "Land", "movementCost": 3, "defenceBonus": 0.5, "RGB": list(rgb),
          "uniques": [f"Units ending their turn on this terrain take [{dmg}] damage",
                      "Has an elevation of [3] for visibility calculations",
                      "Considered [Undesirable] when determining start locations"]}
         for n, (rgb, dmg) in REGION_WALLS.items()]
+assert list(REGION_WALLS) == WALLS
 dump("Terrains.json", ter)
 
 # ---------------- Improvements ----------------

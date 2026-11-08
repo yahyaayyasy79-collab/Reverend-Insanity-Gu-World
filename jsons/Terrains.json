@@ -690,7 +690,7 @@
   {
     "name": "Miasma Wall",
     "type": "Land",
-    "impassable": true,
+    "movementCost": 3,
     "defenceBonus": 0.5,
     "RGB": [
       90,
@@ -698,20 +698,20 @@
       70
     ],
     "uniques": [
-      "Units ending their turn on this terrain take [25] damage",
+      "Units ending their turn on this terrain take [15] damage",
       "Has an elevation of [3] for visibility calculations",
       "Considered [Undesirable] when determining start locations"
     ],
     "civilopediaText": [
       {
-        "text": "The region wall of the Southern Border (瘴气界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 25 damage. Found on the Five Regions map."
+        "text": "The region wall of the Southern Border (瘴气界壁). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 15 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."
       }
     ]
   },
   {
     "name": "Licorice Wall",
     "type": "Land",
-    "impassable": true,
+    "movementCost": 3,
     "defenceBonus": 0.5,
     "RGB": [
       200,
@@ -719,20 +719,20 @@
       120
     ],
     "uniques": [
-      "Units ending their turn on this terrain take [20] damage",
+      "Units ending their turn on this terrain take [10] damage",
       "Has an elevation of [3] for visibility calculations",
       "Considered [Undesirable] when determining start locations"
     ],
     "civilopediaText": [
       {
-        "text": "The region wall of the Northern Plains (甘草界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."
+        "text": "The region wall of the Northern Plains (甘草界壁). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 10 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."
       }
     ]
   },
   {
     "name": "Azure Water Wall",
     "type": "Land",
-    "impassable": true,
+    "movementCost": 3,
     "defenceBonus": 0.5,
     "RGB": [
       60,
@@ -740,20 +740,20 @@
       190
     ],
     "uniques": [
-      "Units ending their turn on this terrain take [20] damage",
+      "Units ending their turn on this terrain take [10] damage",
       "Has an elevation of [3] for visibility calculations",
       "Considered [Undesirable] when determining start locations"
     ],
     "civilopediaText": [
       {
-        "text": "The region wall of the Eastern Sea (苍水界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."
+        "text": "The region wall of the Eastern Sea (苍水界壁). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 10 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."
       }
     ]
   },
   {
     "name": "Raging Flame Wall",
     "type": "Land",
-    "impassable": true,
+    "movementCost": 3,
     "defenceBonus": 0.5,
     "RGB": [
       220,
@@ -761,20 +761,20 @@
       40
     ],
     "uniques": [
-      "Units ending their turn on this terrain take [30] damage",
+      "Units ending their turn on this terrain take [15] damage",
       "Has an elevation of [3] for visibility calculations",
       "Considered [Undesirable] when determining start locations"
     ],
     "civilopediaText": [
       {
-        "text": "The region wall of the Western Desert (狂炎界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 30 damage. Found on the Five Regions map."
+        "text": "The region wall of the Western Desert (狂炎界壁). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 15 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."
       }
     ]
   },
   {
     "name": "Sage Wall",
     "type": "Land",
-    "impassable": true,
+    "movementCost": 3,
     "defenceBonus": 0.5,
     "RGB": [
       235,
@@ -782,13 +782,13 @@
       210
     ],
     "uniques": [
-      "Units ending their turn on this terrain take [20] damage",
+      "Units ending their turn on this terrain take [10] damage",
       "Has an elevation of [3] for visibility calculations",
       "Considered [Undesirable] when determining start locations"
     ],
     "civilopediaText": [
       {
-        "text": "The region wall of the Central Continent (圣贤界壁). Mortals cannot cross it; immortals can, but one that ends its turn inside takes 20 damage. Found on the Five Regions map."
+        "text": "The region wall of the Central Continent (圣贤界壁). It holds back the strong, not the weak: anyone can push through, slowly, and a unit that ends its turn inside takes 10 damage. An immortal is dragged harder by rank: 10 more at rank six, 30 at seven, 60 at eight, so rank-eight immortals all but never cross. Found on the Five Regions map."
       }
     ]
   }
