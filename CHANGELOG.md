@@ -1134,3 +1134,13 @@ Border "Yi" clan) was not found and is not built. Layer 1 is the cultivation cor
     needs it.
 * **Fix to Layer 1:** the stages and the extreme physique could be bought with XP; the AI bought the physique as a plain
   +20% promotion (53 of 77 Gu Masters at T300 in autoplay). They now come only from cultivation and awakening.
+
+## Layer 3: the beast kings (2026-11-08)
+
+* **The Frenzy Lightning Wolf**, the wolf tide's thousand-beast king (strength 22, with thunder wings). It sits between
+  the bold wolf (hundred-beast king) and the thunder crown wolf (ten-thousand-beast king), and it leads every beast near
+  it. It has its own pixel sprite, portrait, attack frames and icon.
+* **The wolf tide follows the ranks:**
+  * the hundred-beast king joins from the Rank Three era;
+  * the thousand-beast king from Rank Four;
+  * the ten-thousand-beast king from Rank Five (it was Rank Four).

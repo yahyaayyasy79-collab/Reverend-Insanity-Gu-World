@@ -91,6 +91,15 @@ def doomed_aperture():
     return g
 
 
+def frenzy_lightning_wolf():
+    """Layer 3: the thousand-beast king of the wolf tide: the wolf's head with thunder wings forking up behind it."""
+    from .glyphs import lightning_wolf
+    g = lightning_wolf(bold=True)
+    for x in (14, 26):
+        g.bolt([x, x + 8, x + 2, x + 10], 4, 36, 4)
+    return g
+
+
 RELIC_COLOURS = {"Green Copper": (120, 200, 150), "Red Iron": (220, 95, 80), "White Silver": (230, 232, 240),
                  "Yellow Gold": (245, 200, 80), "Purple Crystal": (190, 130, 235)}
 
@@ -103,4 +112,5 @@ def icons():
            ("UnitPromotionIcons", "Extreme Physique", extreme_physique, "white"),
            ("UnitPromotionIcons", "Doomed Aperture", doomed_aperture, "white")]
     out += [("UnitPromotionIcons", f"{c} Relic Gu", _relic(i + 1), "white") for i, c in enumerate(RELIC_COLOURS)]
+    out.append(("UnitIcons", "Frenzy Lightning Wolf", frenzy_lightning_wolf, "white"))
     return out

@@ -462,7 +462,7 @@ def mortal_laborer(s: Sprite):
 
 
 # ---------------------------------------------------------------- beasts (facing left)
-def wolf(f=1.0, bx=46.0, mane=False, crown=False, streaks=1):
+def wolf(f=1.0, bx=46.0, mane=False, crown=False, streaks=1, wings=False):
     """A lightning wolf (电狼): blue-grey fur crackling with lightning. The bold wolf is larger and maned; the Thunder
     Crown Wolf, a ten-thousand-beast king the size of a small hill, wears a crown of gold fur (canon)."""
     def draw(s: Sprite):
@@ -511,6 +511,14 @@ def wolf(f=1.0, bx=46.0, mane=False, crown=False, streaks=1):
         if crown:
             for x, y in ((-15, -23), (-4, -23), (-17, -16)):
                 s.light(bx + x * f, FEET + y * f, (255, 250, 200))
+        if wings:   # reference audit Layer 3: the frenzy wolf's thunder wings, swept back from the shoulders
+            for dx, dy, k in ((2.4, -1.2, 0.85), (0.0, 0.0, 1.0)):   # far wing, then near wing
+                pts = [(-2.4, -12.2), (2.0, -18.6), (5.2, -17.4), (8.6, -23.8), (11.2, -20.2), (15.4, -24.2),
+                       (14.6, -16.6), (9.4, -14.6), (4.8, -12.0)]
+                wing = poly([(x * k + dx, y * k + dy) for x, y in pts])
+                s.glow(wing, (150, 210, 255), 0.55)
+                edge = [P(x * k + dx, y * k + dy) for x, y in pts[:7]]
+                s.light_mask(s.line(edge, 1), (255, 245, 170))
     return draw
 
 
@@ -884,6 +892,7 @@ SPRITES = {   # name: (draw, design rows above the hex for tall subjects)
     "Clan Settler": (clan_settler, 0), "Mortal Laborer": (mortal_laborer, 0),
     "Lightning Wolf": (wolf(), 0), "Bold Lightning Wolf": (wolf(1.2, 44, mane=True, streaks=2), 0),
     "Thunder Crown Wolf": (wolf(1.55, 37, mane=True, crown=True, streaks=2), 6),
+    "Frenzy Lightning Wolf": (wolf(1.38, 40, mane=True, streaks=3, wings=True), 3),
     "Desolate Beast": (desolate_beast, 4), "Ancient Desolate Beast": (ancient_beast, 8),
     "Immemorial Desolate Beast": (immemorial_beast, 12),
     "Calamity Luck Altar": (luck_altar, 12), "Myriad Year Flying Warship": (flying_warship, 12),
@@ -903,6 +912,7 @@ ATTACKS = {   # name: (draw, frames); every unit has its own, so the unit-type f
     "Venerable": strike(9), "Lone Gu Master": strike(2), "Demonic Gu Master": blood_slash(3),
     "Demonic Elder": blood_slash(5), "Immortal Zombie": miasma_claw(), "Clan Settler": None, "Mortal Laborer": None,
     "Lightning Wolf": lightning(), "Bold Lightning Wolf": lightning(), "Thunder Crown Wolf": lightning(crown=True),
+    "Frenzy Lightning Wolf": lightning(),
     "Desolate Beast": claws(6), "Ancient Desolate Beast": claws(7), "Immemorial Desolate Beast": claws(8),
     "Calamity Luck Altar": house_fx("luck"), "Myriad Year Flying Warship": house_fx("time"),
     "Dragon Palace": house_fx("dream"), "Heaven Overseeing Tower": house_fx("fate"),

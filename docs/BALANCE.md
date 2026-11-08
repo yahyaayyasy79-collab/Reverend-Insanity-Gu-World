@@ -484,6 +484,11 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Bold Lightning Wolf | cost | 60 | tools/gen_ruleset.py `Units` |
 | Bold Lightning Wolf | `[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles` | +15, 2 | tools/gen_ruleset.py `Units` |
 | Bold Lightning Wolf | `[+100]% maintenance costs` | +100 | tools/gen_ruleset.py `Units` |
+| Frenzy Lightning Wolf | movement | 3 | tools/gen_ruleset.py `Units` |
+| Frenzy Lightning Wolf | strength | 22 | tools/gen_ruleset.py `Units` |
+| Frenzy Lightning Wolf | cost | 90 | tools/gen_ruleset.py `Units` |
+| Frenzy Lightning Wolf | `[+15]% Strength bonus for [Beast] units within [2] tiles` | +15, 2 | tools/gen_ruleset.py `Units` |
+| Frenzy Lightning Wolf | `[+150]% maintenance costs` | +150 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | movement | 3 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | strength | 62 | tools/gen_ruleset.py `Units` |
 | Desolate Beast | cost | 200 | tools/gen_ruleset.py `Units` |
@@ -4211,6 +4216,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3955 numbers listed.
+3960 numbers listed.
 
 <!-- inventory:end -->

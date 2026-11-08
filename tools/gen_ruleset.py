@@ -734,6 +734,12 @@ dump("Units.json", [
     {"name": "Bold Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 16, "cost": 60, "attackSound": "shot",
      "requiredTech": "Rank Three Cultivation", "uniqueTo": "Barbarians",
      "uniques": ["[+15]% Strength bonus for [Lightning Wolf] units within [2] tiles", "[+100]% maintenance costs"]},
+    # reference audit Layer 3: a beast group climbs hundred-, thousand- and ten-thousand-beast king, then beast emperor
+    # (R V3c4); in the wolf tide the bold wolf is the hundred-beast king, the frenzy wolf the thousand-beast king and the
+    # thunder crown wolf the ten-thousand (R V1c114, V1c130, V1c131). Frenzy wolves carry thunder wings (R V1c150)
+    {"name": "Frenzy Lightning Wolf", "unitType": "Beast", "movement": 3, "strength": 22, "cost": 90, "attackSound": "shot",
+     "requiredTech": "Rank Four Cultivation", "uniqueTo": "Barbarians",
+     "uniques": ["[+15]% Strength bonus for [Beast] units within [2] tiles", "[+150]% maintenance costs"]},
     # C4: a desolate beast (荒兽), about a rank-six immortal (R V5/14); only events bring one
     {"name": DESOLATE, "unitType": "Beast", "movement": 3, "strength": 62, "cost": 200, "attackSound": "shot",
      "uniqueTo": "Barbarians", "uniques": ["Unbuildable", "[+15]% Strength <when defending>", "[+200]% maintenance costs",
@@ -999,7 +1005,9 @@ dump("Events.json", [
             f"[2] [Lightning Wolf]s rebel <during the [{E12}]>",
             f"[3] [Lightning Wolf]s rebel <starting from the [{E3}]>",
             f"A [Bold Lightning Wolf] rebels <starting from the [{E3}]>",
-            f"A [Thunder Crown Wolf] rebels <starting from the [{E4}]>",
+            # Layer 3: the thousand-beast king from rank four, the ten-thousand-beast king from rank five (was rank four)
+            f"A [Frenzy Lightning Wolf] rebels <starting from the [{E4}]>",
+            "A [Thunder Crown Wolf] rebels <starting from the [Rank Five era]>",
             w("+0")]},
         {"text": "Hire demonic Gu Masters to thin the pack", "uniques": [
             "Only available <when above [60] [Gold]>",

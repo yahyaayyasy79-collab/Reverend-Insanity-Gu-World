@@ -1103,6 +1103,25 @@
     ]
   },
   {
+    "name": "Frenzy Lightning Wolf",
+    "unitType": "Beast",
+    "movement": 3,
+    "strength": 22,
+    "cost": 90,
+    "attackSound": "shot",
+    "requiredTech": "Rank Four Cultivation",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "[+15]% Strength bonus for [Beast] units within [2] tiles",
+      "[+150]% maintenance costs"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The frenzy lightning wolf (狂电狼), a thousand-beast king of the wolf tide: above the bold wolf, below the thunder crown wolf. Some carry thunder wings and leap into the air. It leads every beast near it."
+      }
+    ]
+  },
+  {
     "name": "Desolate Beast",
     "unitType": "Beast",
     "movement": 3,

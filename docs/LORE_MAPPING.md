@@ -687,7 +687,7 @@ Presentation **Alert**. Fired by GlobalUniques for every major (3% per turn afte
 [2] [Lightning Wolf]s rebel <during the [Rank One-Two era]>
 [3] [Lightning Wolf]s rebel <starting from the [Rank Three era]>
 A [Bold Lightning Wolf] rebels <starting from the [Rank Three era]>
-A [Thunder Crown Wolf] rebels <starting from the [Rank Four era]>
+A [Thunder Crown Wolf] rebels <starting from the [Rank Five era]>
 ```
 
 **2. Hire demonic Gu Masters to thin the pack** — AI weight 1, 18% when every choice is open and no conditional weight applies
@@ -5029,3 +5029,16 @@ needs it) and does not ask for the water-path Gu.
 | Sky Canopy Gu | 天蓬蛊 | 3, strength, defence | Refined from a White Jade Gu and a water-path defence Gu | R V1c64, V1c155 | CANON (recipe ADAPTED) |
 
 Their uniques are quoted in `docs/PATHS.md` (the catalog table written by `tools/gen_paths.py`).
+
+## Reference audit Layer 3: the beast kings (the user, 2026-11-08)
+
+| Object | Chinese | Canon | Source | Status |
+|---|---|---|---|---|
+| Beast group ranks | 百兽王 / 千兽王 / 万兽王 / 兽皇 | A beast group climbs from hundred- to thousand- to ten-thousand-beast king, then beast emperor | R V3c4 | CANON (the beast emperor is not built: the desolate beasts stand above the kings) |
+| Frenzy Lightning Wolf (barbarian Beast, strength 22, from Rank Four Cultivation) | 狂电狼 | The wolf tide's thousand-beast king, between the bold wolf (hundred) and the thunder crown wolf (ten thousand); some carry thunder wings | R V1c114, V1c130, V1c131, V1c150 | CANON |
+| The wolf tide follows the ranks | 狼潮 | Each king leads the tier below it | R V1c114 | ADAPTED: the hundred-beast king from the Rank Three era, the thousand from Rank Four, the ten-thousand from Rank Five (was Rank Four) |
+
+Exact uniques: the Frenzy Lightning Wolf (Units.json) has
+`[+15]% Strength bonus for [Beast] units within [2] tiles` and `[+150]% maintenance costs`; the Beast Tide's first
+choice gains `A [Frenzy Lightning Wolf] rebels <starting from the [Rank Four era]>` and its thunder crown line now reads
+`A [Thunder Crown Wolf] rebels <starting from the [Rank Five era]>`.
