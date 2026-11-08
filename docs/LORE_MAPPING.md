@@ -5066,3 +5066,18 @@ The four city-state types lend what each kind is:
 * **Ink Folk** (friend): `[+2 Culture] [in capital]`; (ally) `[+3 Culture] [in capital]`, `[+1 Happiness]`.
 * **Stone Folk** (friend): `[+2 Production] [in capital]`; (ally) `[+2 Production] [in capital]`,
   `[+1 Production] from [Mine] tiles [in all cities]`.
+
+## Reference audit Layer 5: when each path was founded (the user, 2026-11-08)
+
+The reference's table of path origins (from a dream-realm account, R V5c302) was checked sentence by sentence in the raw
+text; it holds. Each path branch's civilopedia now names its founding age, and its founding Venerable where the canon
+pairs one (`tools/gen_paths.py` PATH_AGE). Verdicts in our own words.
+
+| Age | Chinese | Paths (founder) | Source |
+|---|---|---|---|
+| Immemorial Antiquity | 太古 | space, time | R V5c302 |
+| Remote Antiquity | 远古 | qi and enslavement (Primordial Origin), wisdom and star (Star Constellation), formation | R V5c302 |
+| Olden Antiquity | 上古 | rule (Limitless), transformation (Reckless Savage), strength, wind, light, dark | R V5c302 |
+| Medieval Antiquity | 中古 | wood (Genesis Lotus), theft (Thieving Heaven), luck (Giant Sun), metal, water, ice-snow, cloud, earth, lightning, information, sound | R V5c302 |
+
+The eras of the game stay the rank eras (the user's approved design); the antiquities live in the texts.

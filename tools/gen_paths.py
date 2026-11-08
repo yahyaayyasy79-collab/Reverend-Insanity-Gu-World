@@ -461,12 +461,41 @@ def halls() -> list[dict]:
     return out
 
 
+# reference audit Layer 5 (2026-11-08): the age each path was founded in, and its founding Venerable where the canon names
+# one (R V5c302, checked in the raw text): space and time in Immemorial Antiquity; qi and enslavement (Primordial
+# Origin), wisdom and star (Star Constellation) and formation in Remote Antiquity; rule (Limitless), transformation
+# (Reckless Savage), strength, wind, light and dark in Olden Antiquity; wood (Genesis Lotus), theft (Thieving Heaven), luck
+# (Giant Sun), metal, water, ice-snow, cloud, earth, lightning, information and sound in Medieval Antiquity
+AGES = {"Immemorial": ("Immemorial Antiquity", "太古", "Zaman Purba"), "Remote": ("Remote Antiquity", "远古", "Zaman Jauh"),
+        "Olden": ("Olden Antiquity", "上古", "Zaman Kuno"), "Medieval": ("Medieval Antiquity", "中古", "Zaman Pertengahan")}
+PATH_AGE = {"space": ("Immemorial", ""), "time": ("Immemorial", ""),
+            "qi": ("Remote", "Primordial Origin"), "enslavement": ("Remote", "Primordial Origin"),
+            "wisdom": ("Remote", "Star Constellation"), "star": ("Remote", "Star Constellation"), "formation": ("Remote", ""),
+            "rule": ("Olden", "Limitless"), "transformation": ("Olden", "Reckless Savage"), "strength": ("Olden", ""),
+            "wind": ("Olden", ""), "light": ("Olden", ""), "dark": ("Olden", ""),
+            "wood": ("Medieval", "Genesis Lotus"), "theft": ("Medieval", "Thieving Heaven"), "luck": ("Medieval", "Giant Sun"),
+            **{k: ("Medieval", "") for k in ("metal", "water", "ice", "cloud", "earth", "lightning", "information", "sound")}}
+
+
+def age_text(key: str) -> tuple[str, str]:
+    """The path's founding age (and Venerable), English and Indonesian, or empty strings."""
+    if key not in PATH_AGE:
+        return "", ""
+    age, founder = PATH_AGE[key]
+    en, zh, idn = AGES[age]
+    if founder:
+        return (f" It was founded in {en} ({zh}) by {founder} Venerable.",
+                f" Jalur ini didirikan pada {idn} ({zh}) oleh Yang Mulia {founder}.")
+    return f" It arose in {en} ({zh}).", f" Jalur ini lahir pada {idn} ({zh})."
+
+
 def branch_pedia(p: dict) -> tuple[str, str]:
     fam, fam_id = FAMILY_TEXT[p["family"]]
+    age_en, age_id = age_text(p["key"])
     return (f"The {p['name'].lower()} path ({p['chinese']}) as a clan's tradition ({fam}): its Masters grow with every "
-            f"policy of the branch, and it opens the {hall_name(p)}.",
+            f"policy of the branch, and it opens the {hall_name(p)}.{age_en}",
             f"Jalur {p['name_id']} ({p['chinese']}) sebagai tradisi klan ({fam_id}): para Ahlinya menguat dengan setiap "
-            f"kebijakan cabang ini, dan cabang ini membuka Aula Jalur {p['name_id']}.")
+            f"kebijakan cabang ini, dan cabang ini membuka Aula Jalur {p['name_id']}.{age_id}")
 
 
 def hall_pedia(p: dict) -> tuple[str, str]:

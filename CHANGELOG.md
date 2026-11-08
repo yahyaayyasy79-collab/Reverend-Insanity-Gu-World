@@ -1157,3 +1157,9 @@ Border "Yi" clan) was not found and is not built. Layer 1 is the cultivation cor
 * **The Court cannot ascend to Venerable.** In the canon's present its best are rank eight (Duke Long). In autoplay it
   took the one Venerable slot in 7 of 8 games, and being barred from Eternal Life it blocked that win for everyone.
   One line to remove if you want the old rule back (`docs/REGIONS.md`).
+
+## Layer 5: when each path was founded (2026-11-08)
+
+Every path branch's civilopedia now names the age the path arose in, and its founding Venerable where the canon pairs
+one. For example: qi and enslavement, Primordial Origin, Remote Antiquity; wood, Genesis Lotus, Medieval Antiquity.
+Checked in the raw text; the game's eras stay the rank eras.
