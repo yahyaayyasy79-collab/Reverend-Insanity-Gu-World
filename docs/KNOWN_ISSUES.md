@@ -196,9 +196,11 @@ rest of the list is what a player or the next session should know before trustin
 
 29. **Fang Yuan's AI is the barbarians' AI (Layer 10, 2026-11-09).** A mod cannot replace Unciv's AI. A clan without
     cities never declares war [src DiplomacyAutomation, E14], so he walks with the barbarians, whose AI attacks only
-    what it can beat without dying, pillages to heal and wanders [src BarbarianAutomation]. His kit (heals every turn
-    even after acting, withdraws from melee, ignores zones of control, keeps his strength when wounded) makes that the
-    best it can be; he does not plot, ally or take cities. He spawns near the Gu Yue's first city on turn 30 (Standard),
+    what it can beat without dying, pillages to heal and wanders [src BarbarianAutomation]. His kit (invisible except to
+    adjacent units, heals every turn even after acting, withdraws from melee, ignores zones of control, keeps his
+    strength when wounded, attacks only the other clans' military units, never the Gu Yue's; exempt from the barbarians'
+    heal-only-by-pillaging rule) makes that the best it can be; he does not plot, ally or take cities. His return needs
+    a unit's victory: a city's strike that kills him ends him for good. He spawns near the Gu Yue's first city on turn 30 (Standard),
     or near the capital of the clan that killed him when he returns.
 
 30. **Path foods on random maps (Layer 9, 2026-11-09).** The 44 new foods are luxuries (with their happiness switched

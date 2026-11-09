@@ -22,7 +22,7 @@
         "text": "Dao marks grow one tier every 20 turns on Standard for a path Master of rank three or more; an immortal also gains one for every immortal it kills and every heavenly tribulation it survives. Mortals stop at tier II. Rank seven needs tier II, rank eight tier III, the Venerable tier IV."
       },
       {
-        "text": "4. Gu. Each path's Gu comes with its Master. A Master refines more with XP: 123 catalog Gu of ranks 1 to 9, each waiting for a unit of its rank; a Gu's effect grows with its rank (a rank-one attack Gu +12%, a rank-nine one +44%). Immortal Gu sleep while the clan has no immortal essence of their rank. Every immortal Gu wonder of your own path that your clan owns adds 5% strength; one of a strongly clashing path takes 5% away. Spoils: a Gu Master that defeats a unit takes each of its catalog Gu of rank 1 to 5 with a 25% chance, when its own rank can hold it."
+        "text": "4. Gu. Each path's Gu comes with its Master. A Master refines more with XP: 133 catalog Gu of ranks 1 to 9, each waiting for a unit of its rank; a Gu's effect grows with its rank (a rank-one attack Gu +12%, a rank-nine one +44%). Immortal Gu sleep while the clan has no immortal essence of their rank. Every immortal Gu wonder of your own path that your clan owns adds 5% strength; one of a strongly clashing path takes 5% away. Spoils: a Gu Master that defeats a unit takes each of its catalog Gu of rank 1 to 5 with a 25% chance, when its own rank can hold it."
       },
       {
         "text": "5. Conflicts. A second path whose dao marks clash with the first costs 5% to 25% strength."
@@ -1351,7 +1351,7 @@
         "header": 2
       },
       {
-        "text": "174 killer moves need two Gu on the same unit. When a unit holds both, a button appears among its actions: one turn of power for stones (immortal moves: immortal essence) and one movement. Only you press these buttons; the AI never does. Each move's rank is its strongest Gu's rank, and its power grows with it."
+        "text": "182 killer moves need two Gu on the same unit. When a unit holds both, a button appears among its actions: one turn of power for stones (immortal moves: immortal essence) and one movement. Only you press these buttons; the AI never does. Each move's rank is its strongest Gu's rank, and its power grows with it."
       },
       {
         "text": "Iron Stone Bastion (rank 1): Iron Skin Gu + Stone Skin Gu. +20% when defending; heals 8 HP at once; +7% more for a Metal Supreme Grandmaster. Cost 15 stones."
@@ -1462,6 +1462,12 @@
         "text": "Cleanse Soul Resonance (rank 6): Cleanse Soul Immortal Gu + Soul Search Gu. heals 45 HP at once; +17% strength; +17% more for a Soul Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
+        "text": "Conceal Luck Heaven Fusion (rank 6): Conceal Luck Immortal Gu + Ten-Year Lifespan Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Conceal Luck Resonance (rank 6): Conceal Luck Immortal Gu + Luck Inspection Gu. +45% when defending; heals 23 HP at once; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
         "text": "Connect Luck Heaven Fusion (rank 6): Connect Luck + Ten-Year Lifespan Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
@@ -1477,6 +1483,12 @@
         "text": "Dark Arrow Shadow Fusion (rank 6): Dark Arrow Immortal Gu + Overlapping Shadow Gu. +45% when defending; heals 23 HP at once; +17% more for a Dark Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
+        "text": "Dark Limit Resonance (rank 6): Dark Limit Immortal Gu + Shadow Follower Gu. +45% when defending; heals 23 HP at once; +17% more for a Dark Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Dark Limit Shadow Fusion (rank 6): Dark Limit Immortal Gu + Overlapping Shadow Gu. +45% when defending; heals 23 HP at once; +17% more for a Dark Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
         "text": "Divert Disaster Heaven Fusion (rank 6): Divert Disaster + Ten-Year Lifespan Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
@@ -1487,6 +1499,12 @@
       },
       {
         "text": "Dog Shit Luck Resonance (rank 6): Dog Shit Luck Immortal Gu + Luck Inspection Gu. +45% when defending; heals 23 HP at once; +17% more for a Luck Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Dream Wings Enslavement Fusion (rank 6): Dream Wings Immortal Gu + Wolf Enslavement Gu. enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Dream Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Dream Wings Resonance (rank 6): Dream Wings Immortal Gu + Dream Pillow Gu. +2 movement at once; +26% when attacking; +17% more for a Dream Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
         "text": "Fixed Immortal Travel Resonance (rank 6): Fixed Immortal Travel + Warp Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Space Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
@@ -1508,6 +1526,12 @@
       },
       {
         "text": "Flying Bear Transformation (rank 6): Change Form Immortal Gu + Flying Bear Strength Immortal Gu. +34% when attacking; each hit deals 22 more damage; +17% more for a Transformation Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Formation Plate Food Fusion (rank 6): Formation Plate Gu + Liquor Worm. heals 45 HP at once; +17% strength; +17% more for a Formation Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
+      },
+      {
+        "text": "Formation Plate Resonance (rank 6): Formation Plate Gu + Formation Heart Gu. +45% when defending; heals 23 HP at once; +17% more for a Formation Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."
       },
       {
         "text": "Ghost Official Garment (rank 6): Cleanse Soul Immortal Gu + Soul Search Gu. +45% when defending; heals 23 HP at once; +17% more for a Soul Supreme Grandmaster. Cost 3 Green Grape Immortal Essence."

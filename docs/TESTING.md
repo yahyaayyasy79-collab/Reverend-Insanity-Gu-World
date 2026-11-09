@@ -194,9 +194,11 @@ unit addpromotion "Wind Master"                 # on a Wu Gu Master: Whirlwind G
                                                 # food by source (tiles, Wind Path 2, Wind Insight 2, halls, lore 2)
 civ addtechnology wu-clan "Wind Path Lore"      # +2 Wind Knot Grass; the top bar does not show the foods (luxuries)
 # Layer 10 (2026-11-09): Fang Yuan
-unit add barbarians "Fang Yuan"                 # strength 16 x1.25 (x2.5 from T100 ... x11 from T390 on Standard);
-                                                # he slips away from melee, heals every turn, never takes a city;
-                                                # kill him with a Gu Master: 50% he comes back (none while anyone
+unit add barbarians "Fang Yuan"                 # strength 30 (about 40 from T100 ... 176 from T390 on Standard);
+                                                # unseen except from an adjacent tile; he slips away from melee,
+                                                # heals every turn, attacks only other clans' military units (never
+                                                # the Gu Yue's), never takes a city;
+                                                # kill him with a unit: 50% he comes back (none while anyone
                                                 # has built the Spring Autumn Cicada); in a new game he appears near
                                                 # the Gu Yue village on turn 30 (Standard)
 # Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference

@@ -122,3 +122,13 @@ Bear Enslavement Gu,Gu Pengendali Beruang,驭熊蛊,2,enslavement,beast,puppet,,
 Charred Thunder Potato Gu,Gu Kentang Petir Hangus,焦雷土豆蛊,2,lightning,def,orb,,CANON,"R V2c11, V2c14","buried, it grows on the soil and bursts when anything treads near","terkubur, ia tumbuh dari tanah dan meledak bila ada yang menginjak di dekatnya"
 Thunder Wings Gu,Gu Sayap Petir,雷翼蛊,3,lightning,move,wing,,CANON,"R V1c150, V1c157",thunder wings for a short flight,sayap petir untuk terbang sebentar
 Sky Canopy Gu,Gu Kanopi Langit,天蓬蛊,3,strength,def,shell,,CANON,"R V1c64, V1c155","a canopy no blade passes, refined from the White Jade Gu","kanopi yang tak tertembus bilah, dimurnikan dari Gu Giok Putih"
+Dark Limit Immortal Gu,Gu Abadi Batas Gelap,暗渡仙蛊,6,dark,stealth,mask,,CANON,"R V5c61, V3c244",seals its master's aura and veils it from heaven's secrets and every deduction,menyegel aura tuannya dan menyelubunginya dari rahasia langit dan setiap perhitungan
+Dream Wings Immortal Gu,Gu Abadi Sayap Mimpi,梦翼仙蛊,6,dream,move,wing,,CANON,"R V2c199, V4c264","wings found only in dreams, driven by the soul rather than essence","sayap yang hanya ada di dalam mimpi, digerakkan oleh jiwa, bukan esensi"
+Formation Plate Gu,Gu Piring Formasi,阵盘蛊,6,formation,def,wheel,,CANON,"R V5c68, V5c389",holds a whole Gu formation and lays it out again,menyimpan sebuah formasi Gu utuh dan memasangnya kembali
+Justice Gu,Gu Keadilan,正义蛊,5,human,str,crystal,,CANON (path W),R V5c798,greatly strengthens its master,sangat menguatkan tuannya
+Conceal Luck Immortal Gu,Gu Abadi Penyembunyi Keberuntungan,隐运仙蛊,6,luck,stealth,orb,,CANON,R V4c102,hides its master's luck and defeats a Luck Inspection Gu of its rank,menyembunyikan keberuntungan tuannya dan mengalahkan Gu Pemeriksa Keberuntungan setingkat
+Hard Qi Gu,Gu Qi Keras,硬气蛊,4,qi,def,shell,,CANON (rank ADAPTED),R V2c116,"the qi Gu of a rank-four Gu Master, hardening his guard",Gu qi milik Gu Master tingkat empat yang mengeraskan pertahanannya
+Sneak Attack Gu,Gu Serangan Diam-diam,偷袭蛊,2,theft,dmg,puppet,,CANON,"R V5c479, V5c480",a blue child phantom that pounces faster than the eye and breaks through guards,bayangan anak biru yang menerkam lebih cepat dari mata dan menembus pertahanan
+Day Gu,Gu Hari,日蛊,3,time,xp,sun,,CANON,R V5c379,holds three days of time; a refiner spends them to finish a Gu three days sooner,menyimpan tiga hari waktu; penyuling memakainya untuk merampungkan Gu tiga hari lebih cepat
+Pill Fire Gu,Gu Api Pil,丹火蛊,3,pill,dmg,flame,,ADAPTED,R V2c113,hurls balls of furnace fire,melontarkan bola api tungku
+Swift Shadow Gu,Gu Bayangan Kilat,迅影蛊,3,shadow,move,bat,,ADAPTED,"R V2c99, V2c15",turns its master into a fleeting shadow to slip away,mengubah tuannya menjadi bayangan sekilas untuk meloloskan diri

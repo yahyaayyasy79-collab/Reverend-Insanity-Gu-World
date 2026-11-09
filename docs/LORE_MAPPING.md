@@ -5347,48 +5347,86 @@ the canon as a Venerable (V6c329, ch2295). All CANON; the numbers are the mod's.
 [src DiplomacyAutomation, E14], so a wandering clan of one would stand idle; the barbarians are at war with all and
 their AI attacks only what it can beat without dying, pillages to heal and wanders [src BarbarianAutomation]. His kit
 makes that behaviour the best it can be: he heals every turn even after acting, slips away from melee, ignores zones of
-control, keeps his strength when wounded, moves after attacking and crosses impassable tiles.
+control, keeps his strength when wounded, moves after attacking and crosses impassable tiles. He is invisible except to
+an adjacent unit (his Stealth Scales Gu, which he fuses as "a life-saving means" for the wolf tide, R V1c121), and he
+attacks only military units of the other clans: he hunts Gu Masters, never walls or laborers, and never turns openly on
+the Gu Yue clan he hid inside in the first volume (ADAPTED).
 
-**Numbers.** Strength 16 and +25% for five hundred years' experience (20 when he comes, turn 30 on Standard, when the
-rank-one and rank-two Masters stand at 6-10), then x2.5 from T100, x4 from T170, x6.5 from T260, x9 from T340 and
-x11 (176) from T390, the Venerables' era, level with a Venerable (168). Movement 3, sight +1. Killed by a Gu Master,
-he returns with a 50% chance near the killer's capital while no clan has built the Spring Autumn Cicada.
+**Numbers.** Strength 24 and +25% for five hundred years' experience (30 when he comes, turn 30 on Standard, when the
+rank-one and rank-two Masters stand at 6-13), then about 40 from T100, 64 from T170, 103 from T260, 144 from T340 and
+176 from T390, the Venerables' era, level with a Venerable (168); +50% when defending (in the canon he always gets
+away), +100% more against a city's strike (his return needs a unit's victory, which a city's strike is not). The
+barbarians heal only by pillaging (a Vanilla rule the mod keeps for its raiders); he is exempt, or his "heals every
+turn" does nothing (autoplay: he wore down to 1-4 HP and stayed there). Exempt and with +15 HP a turn on top he
+outlived every clan near him (the Xiong fell in 3 of 8 games), so he heals like any unit: alive 103-420 turns, returned
+twice in 8 games. At 20 on arrival the Gu Yue's soldiers cut him down within 2-20 turns in most autoplay games. Movement 3, sight +1. He comes at the end of the Gu Yue's turn, so he moves before its units and its city
+strike (the first build spawned him at its turn start, twice, and he fell within 4-8 turns in all 8 autoplay games; at
+turn end with +50% guard alone he still fell within 3-8 turns, so he got his Stealth Scales).
+Killed by a unit of any fighting type (not by a city's strike), he returns with a 50% chance near that unit's city while no clan has built the Spring Autumn
+Cicada.
 
 ```
 Unbuildable
 Unable to capture cities
 Withdraws before melee combat
 Unit will heal every turn, even if it performs an action
-[15] HP when healing
 Ignores Zone of Control
 No damage penalty for wounded units
 Can move after attacking
 [+1] Sight
 Can pass through impassable tiles
 [+25]% Strength
-[+125]% Strength <after turn number [67]> <on [Quick] game speed>
-[+125]% Strength <after turn number [100]> <on [Standard] game speed>
-[+125]% Strength <after turn number [150]> <on [Epic] game speed>
-[+125]% Strength <after turn number [300]> <on [Marathon] game speed>
-[+150]% Strength <after turn number [114]> <on [Quick] game speed>
-[+150]% Strength <after turn number [170]> <on [Standard] game speed>
-[+150]% Strength <after turn number [255]> <on [Epic] game speed>
-[+150]% Strength <after turn number [510]> <on [Marathon] game speed>
-[+250]% Strength <after turn number [174]> <on [Quick] game speed>
-[+250]% Strength <after turn number [260]> <on [Standard] game speed>
-[+250]% Strength <after turn number [390]> <on [Epic] game speed>
-[+250]% Strength <after turn number [780]> <on [Marathon] game speed>
-[+250]% Strength <after turn number [228]> <on [Quick] game speed>
-[+250]% Strength <after turn number [340]> <on [Standard] game speed>
-[+250]% Strength <after turn number [510]> <on [Epic] game speed>
-[+250]% Strength <after turn number [1020]> <on [Marathon] game speed>
-[+200]% Strength <after turn number [261]> <on [Quick] game speed>
-[+200]% Strength <after turn number [390]> <on [Standard] game speed>
-[+200]% Strength <after turn number [585]> <on [Epic] game speed>
-[+200]% Strength <after turn number [1170]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon turn start> <after turn number [19]> <before turn number [21]> <on [Quick] game speed>
-A [Fang Yuan] rebels <upon turn start> <after turn number [29]> <before turn number [31]> <on [Standard] game speed>
-A [Fang Yuan] rebels <upon turn start> <after turn number [44]> <before turn number [46]> <on [Epic] game speed>
-A [Fang Yuan] rebels <upon turn start> <after turn number [89]> <before turn number [91]> <on [Marathon] game speed>
+[+50]% Strength <when defending>
+[+100]% Strength <when defending> <vs cities>
+Invisible to non-adjacent units
+Can only attack [{Military} {non-[Gu Yue Clan]}] units
+[+40]% Strength <after turn number [67]> <on [Quick] game speed>
+[+40]% Strength <after turn number [100]> <on [Standard] game speed>
+[+40]% Strength <after turn number [150]> <on [Epic] game speed>
+[+40]% Strength <after turn number [300]> <on [Marathon] game speed>
+[+100]% Strength <after turn number [114]> <on [Quick] game speed>
+[+100]% Strength <after turn number [170]> <on [Standard] game speed>
+[+100]% Strength <after turn number [255]> <on [Epic] game speed>
+[+100]% Strength <after turn number [510]> <on [Marathon] game speed>
+[+165]% Strength <after turn number [174]> <on [Quick] game speed>
+[+165]% Strength <after turn number [260]> <on [Standard] game speed>
+[+165]% Strength <after turn number [390]> <on [Epic] game speed>
+[+165]% Strength <after turn number [780]> <on [Marathon] game speed>
+[+170]% Strength <after turn number [228]> <on [Quick] game speed>
+[+170]% Strength <after turn number [340]> <on [Standard] game speed>
+[+170]% Strength <after turn number [510]> <on [Epic] game speed>
+[+170]% Strength <after turn number [1020]> <on [Marathon] game speed>
+[+135]% Strength <after turn number [261]> <on [Quick] game speed>
+[+135]% Strength <after turn number [390]> <on [Standard] game speed>
+[+135]% Strength <after turn number [585]> <on [Epic] game speed>
+[+135]% Strength <after turn number [1170]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <on [Marathon] game speed>
 A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>
+Can only heal by pillaging <for [non-[Fang Yuan]] units>
 ```
+
+## Layer 11: the Gu catalog evened (the user, 2026-11-09)
+
+The user: the mod's Gu and paths weigh on the moon and strength paths; even them out. The catalog had 12 strength Gu and
+a single Gu for 16 paths. Ten more Gu for the poorest paths, each checked in the raw text (R); a canon Gu given to
+another path, or with its rank taken from its user, is marked so. The canon names no further Gu for the killing,
+enchantment, illusion, painting, restriction and refinement paths (the wiki and a corpus scan found none; the
+refinement path's Refinement Cauldron is a rank-eight Immortal Gu House, R V4c229), so those keep one catalog Gu besides
+their path Gu. Effects come from the role and rank like every catalog Gu (docs/PATHS.md "Gu catalog" quotes them); the
+four immortal ones are world wonders with one bearer per clan, as every immortal Gu.
+
+| Gu | Chinese | Rank | Path | Canon | Source | Status |
+|---|---|---|---|---|---|---|
+| Dark Limit Immortal Gu | 暗渡仙蛊 | 6 | Dark | listed among the rank-six immortal Gu; it seals its user's aura, blinds the heavens' secrets and guards against deduction | R V5c61, V3c244 | CANON |
+| Dream Wings Immortal Gu | 梦翼仙蛊 | 6 | Dream | an immortal Gu found only in dreams, driven by the soul, not essence; a rank-six Gu | R V2c199, V4c264 | CANON |
+| Formation Plate Gu | 阵盘蛊 | 6 | Formation | a rank-six Gu that holds a Gu formation (the Formation Chart Gu works like it, with fewer errors) | R V5c68, V5c389 | CANON |
+| Justice Gu | 正义蛊 | 5 | Human | a rank-five Gu that greatly strengthens its user; the text names no path (the human path is the wiki's) | R V5c798 | CANON (path W) |
+| Conceal Luck Immortal Gu | 隐运仙蛊 | 6 | Luck | a rank-six immortal Gu that defeats a rank-six Luck Inspection Gu | R V4c102 | CANON |
+| Hard Qi Gu | 硬气蛊 | 4 | Qi | the Gu of a rank-four Gu Master in a chapter on qi-path Gu; its rank is its user's | R V2c116 | CANON (rank ADAPTED) |
+| Sneak Attack Gu | 偷袭蛊 | 2 | Theft | a rank-two Gu: a blue child phantom pounces faster than rank-one and rank-two Gu Masters can dodge and breaks through guards; the young Thieving Heaven's | R V5c479, V5c480 | CANON |
+| Day Gu | 日蛊 | 3 | Time | a rank-three Day Gu holds three days of time; refinement-path means spend it to cut three days from refining a Gu | R V5c379 | CANON |
+| Pill Fire Gu | 丹火蛊 | 3 | Pill | a rank-three fire Gu of a rank-four Gu Master; the pill path takes it for its furnace fire | R V2c113 | ADAPTED (path) |
+| Swift Shadow Gu | 迅影蛊 | 3 | Shadow | a retreat Gu of a rank-three Gu Master; the shadow path takes it by its name | R V2c99, V2c15 | ADAPTED (path, rank) |

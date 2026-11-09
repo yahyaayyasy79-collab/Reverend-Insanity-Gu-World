@@ -14909,6 +14909,151 @@
     ]
   },
   {
+    "name": "Justice Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Human Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+20]% Strength",
+      "Play [gu-justice-gu] sound <upon gaining the [Justice Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Justice Gu (正义蛊), a rank-5 Human path Gu: greatly strengthens its master. 20% stronger. Refined with XP by a Human Master of rank 5 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Hard Qi Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Qi Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 5% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+5]% maintenance costs",
+      "[+24]% Strength <when defending>",
+      "Play [gu-hard-qi-gu] sound <upon gaining the [Hard Qi Gu] promotion>",
+      "Only available <for [post-[Rank Three era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Hard Qi Gu (硬气蛊), a rank-4 Qi path Gu: the qi Gu of a rank-four Gu Master, hardening his guard. 24% stronger when defending. Refined with XP by a Qi Master of rank 4 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Sneak Attack Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Theft Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-sneak-attack-gu] sound <upon gaining the [Sneak Attack Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Sneak Attack Gu (偷袭蛊), a rank-2 Theft path Gu: a blue child phantom that pounces faster than the eye and breaks through guards. Each hit deals 6 more damage. Refined with XP by a Theft Master of rank 2 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Day Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Time Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+25]% XP gained from combat",
+      "Play [gu-day-gu] sound <upon gaining the [Day Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Day Gu (日蛊), a rank-3 Time path Gu: holds three days of time; a refiner spends them to finish a Gu three days sooner. 25% more XP from combat. Refined with XP by a Time Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Pill Fire Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Pill Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-pill-fire-gu] sound <upon gaining the [Pill Fire Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Pill Fire Gu (丹火蛊), a rank-3 Pill path Gu: hurls balls of furnace fire. Each hit deals 8 more damage. Refined with XP by a Pill Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
+    "name": "Swift Shadow Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Shadow Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+1] Movement",
+      "[+4]% Strength",
+      "Play [gu-swift-shadow-gu] sound <upon gaining the [Swift Shadow Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Swift Shadow Gu (迅影蛊), a rank-3 Shadow path Gu: turns its master into a fleeting shadow to slip away. +1 movement; 4% stronger. Refined with XP by a Shadow Master of rank 3 or higher."
+      }
+    ]
+  },
+  {
     "name": "Moonglow Gu Hunger 20%",
     "uniques": [
       "[This Unit] loses the [Moonglow Gu Hunger 20%] status <upon turn start> <when above [-1] [Moon Orchid]>",
@@ -15968,6 +16113,105 @@
     "civilopediaText": [
       {
         "text": "The one immortal who carries Heavenly Web Immortal Gu, a rank-9 Heaven path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 9 or higher carry it; its combination moves need the comprehension of the Heaven path. Its hits leave the enemy entangled for 4 turn(s); 11% stronger when attacking. It sleeps without Yellow Apricot Immortal Essence or the wonder."
+      }
+    ]
+  },
+  {
+    "name": "Dark Limit Immortal Gu Bearer",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dark Limit Immortal Gu]",
+      "Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]> <if [Dark Limit Immortal Gu] is constructed>",
+      "[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Dark Limit Immortal Gu] is constructed>",
+      "Play [gu-dark-limit-immortal-gu-bearer] sound <upon gaining the [Dark Limit Immortal Gu Bearer] promotion>",
+      "Only available <if [Dark Limit Immortal Gu] is constructed>",
+      "Only available <when number of [[Dark Limit Immortal Gu Bearer] Units] is less than [1]>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Dark Limit Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units with [Dark Great Grandmaster]> <for units without [Dark Limit Resonance]>",
+      "[This Unit] gains the [Dark Limit Shadow Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Overlapping Shadow Gu]> <for units with [Dark Great Grandmaster]> <for units with [Shadow Grandmaster]> <for units without [Dark Limit Shadow Fusion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The one immortal who carries Dark Limit Immortal Gu, a rank-6 Dark path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Dark path. Unseen except from an adjacent tile; 14% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
+      }
+    ]
+  },
+  {
+    "name": "Dream Wings Immortal Gu Bearer",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Dream Wings Immortal Gu]",
+      "[+1] Movement <when above [0] [Green Grape Immortal Essence]> <if [Dream Wings Immortal Gu] is constructed>",
+      "[+7]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Dream Wings Immortal Gu] is constructed>",
+      "Play [gu-dream-wings-immortal-gu-bearer] sound <upon gaining the [Dream Wings Immortal Gu Bearer] promotion>",
+      "Only available <if [Dream Wings Immortal Gu] is constructed>",
+      "Only available <when number of [[Dream Wings Immortal Gu Bearer] Units] is less than [1]>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Dream Wings Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Dream Great Grandmaster]> <for units without [Dream Wings Resonance]>",
+      "[This Unit] gains the [Dream Wings Enslavement Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Wolf Enslavement Gu]> <for units with [Dream Great Grandmaster]> <for units with [Enslavement Grandmaster]> <for units without [Dream Wings Enslavement Fusion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The one immortal who carries Dream Wings Immortal Gu, a rank-6 Dream path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Dream path. +1 movement; 7% stronger. It sleeps without Green Grape Immortal Essence or the wonder."
+      }
+    ]
+  },
+  {
+    "name": "Formation Plate Gu Bearer",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Formation Plate Gu]",
+      "[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Formation Plate Gu] is constructed>",
+      "Play [gu-formation-plate-gu-bearer] sound <upon gaining the [Formation Plate Gu Bearer] promotion>",
+      "Only available <if [Formation Plate Gu] is constructed>",
+      "Only available <when number of [[Formation Plate Gu Bearer] Units] is less than [1]>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Formation Plate Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Formation Heart Gu]> <for units with [Formation Great Grandmaster]> <for units without [Formation Plate Resonance]>",
+      "[This Unit] gains the [Formation Plate Food Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Liquor Worm]> <for units with [Formation Great Grandmaster]> <for units with [Food Grandmaster]> <for units without [Formation Plate Food Fusion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The one immortal who carries Formation Plate Gu, a rank-6 Formation path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Formation path. 32% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
+      }
+    ]
+  },
+  {
+    "name": "Conceal Luck Immortal Gu Bearer",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "uniques": [
+      "Comment [Food: Green Grape Immortal Essence. With none in store the Gu sleeps; it sleeps too while the clan does not own Conceal Luck Immortal Gu]",
+      "Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]> <if [Conceal Luck Immortal Gu] is constructed>",
+      "[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Conceal Luck Immortal Gu] is constructed>",
+      "Play [gu-conceal-luck-immortal-gu-bearer] sound <upon gaining the [Conceal Luck Immortal Gu Bearer] promotion>",
+      "Only available <if [Conceal Luck Immortal Gu] is constructed>",
+      "Only available <when number of [[Conceal Luck Immortal Gu Bearer] Units] is less than [1]>",
+      "Only available <for [post-[Rank Five era]] units>",
+      "[+100]% weight to this choice for AI decisions",
+      "[This Unit] gains the [Conceal Luck Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Luck Inspection Gu]> <for units with [Luck Great Grandmaster]> <for units without [Conceal Luck Resonance]>",
+      "[This Unit] gains the [Conceal Luck Heaven Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Luck Great Grandmaster]> <for units with [Heaven Grandmaster]> <for units without [Conceal Luck Heaven Fusion]>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The one immortal who carries Conceal Luck Immortal Gu, a rank-6 Luck path immortal Gu. There is only one in the world: the clan that owns the wonder lets one immortal of rank 6 or higher carry it; its combination moves need the comprehension of the Luck path. Unseen except from an adjacent tile; 14% stronger when defending. It sleeps without Green Grape Immortal Essence or the wonder."
       }
     ]
   },
@@ -19205,6 +19449,118 @@
     "civilopediaText": [
       {
         "text": "Heavenly Web Qi Fusion, a rank-9 combination killer move (ward): Heavenly Web Immortal Gu fuses with the Qi path's Strength Qi Gu. Needs Heavenly Web Immortal Gu Bearer and Strength Qi Gu on the same unit, and the comprehension of a Heaven Great Grandmaster and Qi Grandmaster; the button is on Heavenly Web Immortal Gu Bearer. For one turn: +60% when defending; heals 32 HP at once; +23% more for a Heaven Supreme Grandmaster. Costs 3 Yellow Apricot Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Dark Limit Resonance",
+    "uniques": [
+      "[+45]% Strength <when defending>",
+      "[This Unit] heals [23] HP <upon gaining the [Dark Limit Resonance] status>",
+      "[+17]% Strength <for units with [Dark Supreme Grandmaster]>",
+      "Play [combo-dark-limit-resonance] sound <upon gaining the [Dark Limit Resonance] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Limit Resonance, a rank-6 combination killer move (ward): Dark Limit Immortal Gu resonates with its own path's Shadow Follower Gu. Needs Dark Limit Immortal Gu Bearer and Shadow Follower Gu on the same unit, and the comprehension of a Dark Great Grandmaster; the button is on Dark Limit Immortal Gu Bearer. For one turn: +45% when defending; heals 23 HP at once; +17% more for a Dark Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Dark Limit Shadow Fusion",
+    "uniques": [
+      "[+45]% Strength <when defending>",
+      "[This Unit] heals [23] HP <upon gaining the [Dark Limit Shadow Fusion] status>",
+      "[+17]% Strength <for units with [Dark Supreme Grandmaster]>",
+      "Play [combo-dark-limit-shadow-fusion] sound <upon gaining the [Dark Limit Shadow Fusion] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Limit Shadow Fusion, a rank-6 combination killer move (ward): Dark Limit Immortal Gu fuses with the Shadow path's Overlapping Shadow Gu. Needs Dark Limit Immortal Gu Bearer and Overlapping Shadow Gu on the same unit, and the comprehension of a Dark Great Grandmaster and Shadow Grandmaster; the button is on Dark Limit Immortal Gu Bearer. For one turn: +45% when defending; heals 23 HP at once; +17% more for a Dark Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Dream Wings Resonance",
+    "uniques": [
+      "[This Unit] gains [2] movement <upon gaining the [Dream Wings Resonance] status>",
+      "[+26]% Strength <when attacking>",
+      "[+17]% Strength <for units with [Dream Supreme Grandmaster]>",
+      "Play [combo-dream-wings-resonance] sound <upon gaining the [Dream Wings Resonance] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream Wings Resonance, a rank-6 combination killer move (mobility): Dream Wings Immortal Gu resonates with its own path's Dream Pillow Gu. Needs Dream Wings Immortal Gu Bearer and Dream Pillow Gu on the same unit, and the comprehension of a Dream Great Grandmaster; the button is on Dream Wings Immortal Gu Bearer. For one turn: +2 movement at once; +26% when attacking; +17% more for a Dream Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Dream Wings Enslavement Fusion",
+    "uniques": [
+      "[-18]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+17]% Strength",
+      "[+17]% Strength <for units with [Dream Supreme Grandmaster]>",
+      "Play [combo-dream-wings-enslavement-fusion] sound <upon gaining the [Dream Wings Enslavement Fusion] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream Wings Enslavement Fusion, a rank-6 combination killer move (aura): Dream Wings Immortal Gu fuses with the Enslavement path's Wolf Enslavement Gu. Needs Dream Wings Immortal Gu Bearer and Wolf Enslavement Gu on the same unit, and the comprehension of a Dream Great Grandmaster and Enslavement Grandmaster; the button is on Dream Wings Immortal Gu Bearer. For one turn: enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Dream Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Formation Plate Resonance",
+    "uniques": [
+      "[+45]% Strength <when defending>",
+      "[This Unit] heals [23] HP <upon gaining the [Formation Plate Resonance] status>",
+      "[+17]% Strength <for units with [Formation Supreme Grandmaster]>",
+      "Play [combo-formation-plate-resonance] sound <upon gaining the [Formation Plate Resonance] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation Plate Resonance, a rank-6 combination killer move (ward): Formation Plate Gu resonates with its own path's Formation Heart Gu. Needs Formation Plate Gu Bearer and Formation Heart Gu on the same unit, and the comprehension of a Formation Great Grandmaster; the button is on Formation Plate Gu Bearer. For one turn: +45% when defending; heals 23 HP at once; +17% more for a Formation Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Formation Plate Food Fusion",
+    "uniques": [
+      "[This Unit] heals [45] HP <upon gaining the [Formation Plate Food Fusion] status>",
+      "[+17]% Strength",
+      "[+17]% Strength <for units with [Formation Supreme Grandmaster]>",
+      "Play [combo-formation-plate-food-fusion] sound <upon gaining the [Formation Plate Food Fusion] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation Plate Food Fusion, a rank-6 combination killer move (heal): Formation Plate Gu fuses with the Food path's Liquor Worm. Needs Formation Plate Gu Bearer and Liquor Worm on the same unit, and the comprehension of a Formation Great Grandmaster and Food Grandmaster; the button is on Formation Plate Gu Bearer. For one turn: heals 45 HP at once; +17% strength; +17% more for a Formation Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Conceal Luck Resonance",
+    "uniques": [
+      "[+45]% Strength <when defending>",
+      "[This Unit] heals [23] HP <upon gaining the [Conceal Luck Resonance] status>",
+      "[+17]% Strength <for units with [Luck Supreme Grandmaster]>",
+      "Play [combo-conceal-luck-resonance] sound <upon gaining the [Conceal Luck Resonance] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Conceal Luck Resonance, a rank-6 combination killer move (ward): Conceal Luck Immortal Gu resonates with its own path's Luck Inspection Gu. Needs Conceal Luck Immortal Gu Bearer and Luck Inspection Gu on the same unit, and the comprehension of a Luck Great Grandmaster; the button is on Conceal Luck Immortal Gu Bearer. For one turn: +45% when defending; heals 23 HP at once; +17% more for a Luck Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
+      }
+    ]
+  },
+  {
+    "name": "Conceal Luck Heaven Fusion",
+    "uniques": [
+      "[-18]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "[+17]% Strength",
+      "[+17]% Strength <for units with [Luck Supreme Grandmaster]>",
+      "Play [combo-conceal-luck-heaven-fusion] sound <upon gaining the [Conceal Luck Heaven Fusion] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Conceal Luck Heaven Fusion, a rank-6 combination killer move (aura): Conceal Luck Immortal Gu fuses with the Heaven path's Ten-Year Lifespan Gu. Needs Conceal Luck Immortal Gu Bearer and Ten-Year Lifespan Gu on the same unit, and the comprehension of a Luck Great Grandmaster and Heaven Grandmaster; the button is on Conceal Luck Immortal Gu Bearer. For one turn: enemy soldiers beside it fight 18% weaker; +17% strength; +17% more for a Luck Supreme Grandmaster. Costs 3 Green Grape Immortal Essence and 1 movement."
       }
     ]
   },

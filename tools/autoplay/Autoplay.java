@@ -233,13 +233,18 @@ public class Autoplay {
         }
         Map<String, Object> unowned = new LinkedHashMap<>();
         for (Map.Entry<String, int[]> e : deposits.getOrDefault("", Map.of()).entrySet()) unowned.put(e.getKey(), e.getValue()[0]);
+        List<String> fangYuan = new ArrayList<>();
         List<MapUnit> barbList = new ArrayList<>();   // Phase D: raiders near each clan's cities
         for (Civilization b : gi.getCivilizations())
             if (b.isBarbarian()) barbList.addAll(kotlin.sequences.SequencesKt.toList(b.getUnits().getCivUnits()));
         for (Civilization c : gi.getCivilizations()) {
             if (c.isBarbarian()) {
                 barbUnits = c.getUnits().getCivUnitsSize();
-                for (MapUnit u : kotlin.sequences.SequencesKt.toList(c.getUnits().getCivUnits())) barbByName.merge(u.getName(), 1, Integer::sum);
+                for (MapUnit u : kotlin.sequences.SequencesKt.toList(c.getUnits().getCivUnits())) {
+                    barbByName.merge(u.getName(), 1, Integer::sum);
+                    if (u.getName().equals("Fang Yuan"))   // Layer 10: each life (unit id), its health and promotions
+                        fangYuan.add(u.getId() + ":" + u.getHealth() + ":" + u.getPromotions().getPromotions().size());
+                }
                 continue;
             }
             if (c.isSpectator()) continue;
@@ -392,7 +397,7 @@ public class Autoplay {
         }
         final int bu = barbUnits; final int turn = gi.getTurns(); final Map<String, Integer> barbByNameF = barbByName;
         out.println(obj(new LinkedHashMap<String, Object>() {{ put("event", "barbarians"); put("turn", turn); put("units", bu);
-            put("byName", barbByNameF); put("unownedDeposits", unowned); }}));
+            put("byName", barbByNameF); put("unownedDeposits", unowned); put("fangYuan", fangYuan); }}));
         return now;
     }
 }

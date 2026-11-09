@@ -227,6 +227,7 @@ IMPROVEMENT_SITES = {"Inheritance Site", "Beast Lair", "Demonic Den"}
 # jade, its two foods at one copy each, an inheritance site), nothing else lands within MAJOR_CLEAR tiles of a capital,
 # at most MAJOR_RING_CAP scattered riches lie within MAJOR_RING tiles, and no barbarian camp within CAMP_CLEAR
 MAJOR_CLEAR, MAJOR_RING, MAJOR_RING_CAP, CAMP_CLEAR = 3.5, 6.0, 4, 6.0
+SLICE1_FOODS = ("Moon Orchid", "Wild Boar")   # strategic: one tile holds two copies
 SEA_RING_CAP = 8   # the Eastern Sea's few islands lie mostly near the Zombie Alliance; the canon sea is the richest
 
 
@@ -444,7 +445,9 @@ def five_regions() -> list[str]:
     for name in ("Gu Yue Clan", "Bai Clan", "Xiong Clan", "Wu Clan", "Heavenly Court", "Huang Jin Family", "Fang Clan"):
         c0, r0 = starts[name]
         fa, fb = START_FOODS[name]
-        for dc, dr, res, amt in ((1, 1, "Spirit Spring", 1), (-1, 2, fa, 1), (2, -1, fb, 1), (-2, 0, "Jade", 2)):
+        # two copies of the first food (its signature path's: the Gu Yue emblem eats Moon Orchid), one of the second
+        two = ((-1, 2, fa, 2),) if fa in SLICE1_FOODS else ((-1, 2, fa, 1), (1, -2, fa, 1))
+        for dc, dr, res, amt in ((1, 1, "Spirit Spring", 1), *two, (2, -1, fb, 1), (-2, 0, "Jade", 2)):
             q = (c0 + dc, r0 + dr)
             if q in tiles and q not in wall and q not in taken and tiles[q][0] not in ("Ocean", "Coast", "Mountain", "Lakes"):
                 t = tiles[q]
@@ -452,7 +455,8 @@ def five_regions() -> list[str]:
                 fit_tile(t, res)
     za = starts["Zombie Alliance"]
     for q, res in (((za[0] + 1, za[1]), "Spirit Spring"), ((za[0], za[1] + 1), "Spirit Spring"),
-                   ((za[0] - 1, za[1]), START_FOODS["Zombie Alliance"][0]), ((za[0], za[1] - 1), START_FOODS["Zombie Alliance"][1])):
+                   ((za[0] - 1, za[1]), START_FOODS["Zombie Alliance"][0]), ((za[0] - 1, za[1] + 1), START_FOODS["Zombie Alliance"][0]),
+                   ((za[0], za[1] - 1), START_FOODS["Zombie Alliance"][1])):
         if q in tiles and tiles[q][0] not in ("Ocean", "Coast") and q not in taken:
             tiles[q][2], tiles[q][3] = res, 1
             fit_tile(tiles[q], res)

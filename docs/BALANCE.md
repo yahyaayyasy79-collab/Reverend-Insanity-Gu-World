@@ -652,31 +652,32 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Demonic Elder | `Heals [20] damage if it kills a unit` | 20 | tools/gen_ruleset.py `Units` |
 | Demonic Elder | `[-10]% Strength for enemy [Military] units in adjacent [All] tiles` | -10 | tools/gen_ruleset.py `Units` |
 | Fang Yuan | movement | 3 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | strength | 16 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | strength | 24 | tools/gen_ruleset.py `Units` |
 | Fang Yuan | cost | 200 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[15] HP when healing` | 15 | tools/gen_ruleset.py `Units` |
 | Fang Yuan | `[+1] Sight` | +1 | tools/gen_ruleset.py `Units` |
 | Fang Yuan | `[+25]% Strength` | +25 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+125]% Strength <after turn number [67]> <on [Quick] game speed>` | +125, 67 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+125]% Strength <after turn number [100]> <on [Standard] game speed>` | +125, 100 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+125]% Strength <after turn number [150]> <on [Epic] game speed>` | +125, 150 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+125]% Strength <after turn number [300]> <on [Marathon] game speed>` | +125, 300 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+150]% Strength <after turn number [114]> <on [Quick] game speed>` | +150, 114 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+150]% Strength <after turn number [170]> <on [Standard] game speed>` | +150, 170 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+150]% Strength <after turn number [255]> <on [Epic] game speed>` | +150, 255 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+150]% Strength <after turn number [510]> <on [Marathon] game speed>` | +150, 510 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [174]> <on [Quick] game speed>` | +250, 174 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [260]> <on [Standard] game speed>` | +250, 260 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [390]> <on [Epic] game speed>` | +250, 390 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [780]> <on [Marathon] game speed>` | +250, 780 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [228]> <on [Quick] game speed>` | +250, 228 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [340]> <on [Standard] game speed>` | +250, 340 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [510]> <on [Epic] game speed>` | +250, 510 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+250]% Strength <after turn number [1020]> <on [Marathon] game speed>` | +250, 1020 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+200]% Strength <after turn number [261]> <on [Quick] game speed>` | +200, 261 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+200]% Strength <after turn number [390]> <on [Standard] game speed>` | +200, 390 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+200]% Strength <after turn number [585]> <on [Epic] game speed>` | +200, 585 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+200]% Strength <after turn number [1170]> <on [Marathon] game speed>` | +200, 1170 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+50]% Strength <when defending>` | +50 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+100]% Strength <when defending> <vs cities>` | +100 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+40]% Strength <after turn number [67]> <on [Quick] game speed>` | +40, 67 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+40]% Strength <after turn number [100]> <on [Standard] game speed>` | +40, 100 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+40]% Strength <after turn number [150]> <on [Epic] game speed>` | +40, 150 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+40]% Strength <after turn number [300]> <on [Marathon] game speed>` | +40, 300 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+100]% Strength <after turn number [114]> <on [Quick] game speed>` | +100, 114 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+100]% Strength <after turn number [170]> <on [Standard] game speed>` | +100, 170 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+100]% Strength <after turn number [255]> <on [Epic] game speed>` | +100, 255 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+100]% Strength <after turn number [510]> <on [Marathon] game speed>` | +100, 510 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+165]% Strength <after turn number [174]> <on [Quick] game speed>` | +165, 174 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+165]% Strength <after turn number [260]> <on [Standard] game speed>` | +165, 260 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+165]% Strength <after turn number [390]> <on [Epic] game speed>` | +165, 390 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+165]% Strength <after turn number [780]> <on [Marathon] game speed>` | +165, 780 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+170]% Strength <after turn number [228]> <on [Quick] game speed>` | +170, 228 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+170]% Strength <after turn number [340]> <on [Standard] game speed>` | +170, 340 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+170]% Strength <after turn number [510]> <on [Epic] game speed>` | +170, 510 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+170]% Strength <after turn number [1020]> <on [Marathon] game speed>` | +170, 1020 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [261]> <on [Quick] game speed>` | +135, 261 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [390]> <on [Standard] game speed>` | +135, 390 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [585]> <on [Epic] game speed>` | +135, 585 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [1170]> <on [Marathon] game speed>` | +135, 1170 | tools/gen_ruleset.py `Units` |
 
 ### UnitPromotions.json
 
@@ -1092,6 +1093,25 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Sky Canopy Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
 | Sky Canopy Gu | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Promotions` |
 | Sky Canopy Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Justice Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Justice Gu | `[+20]% Strength` | +20 | tools/gen_ruleset.py `Promotions` |
+| Justice Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Hard Qi Gu | `[+5]% maintenance costs` | +5 | tools/gen_ruleset.py `Promotions` |
+| Hard Qi Gu | `[+24]% Strength <when defending>` | +24 | tools/gen_ruleset.py `Promotions` |
+| Hard Qi Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Sneak Attack Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Sneak Attack Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Sneak Attack Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Day Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Day Gu | `[+25]% XP gained from combat` | +25 | tools/gen_ruleset.py `Promotions` |
+| Day Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Pill Fire Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Pill Fire Gu | `[Target Unit] takes [8] damage <upon damaging a [Military] unit> <when attacking>` | 8 | tools/gen_ruleset.py `Promotions` |
+| Pill Fire Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Swift Shadow Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Swift Shadow Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
+| Swift Shadow Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
+| Swift Shadow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Star Mark Immortal Gu] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `Only available <when number of [[Star Mark Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -1308,6 +1328,29 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heavenly Web Immortal Gu Bearer | `[This Unit] gains the [Heavenly Net] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Fixed Space Immortal Gu Bearer]> <for units with [Heaven Great Grandmaster]> <for units with [Space Grandmaster]> <for units without [Heavenly Net]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
 | Heavenly Web Immortal Gu Bearer | `[This Unit] gains the [Heavenly Web Resonance] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Heaven Great Grandmaster]> <for units without [Heavenly Web Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
 | Heavenly Web Immortal Gu Bearer | `[This Unit] gains the [Heavenly Web Qi Fusion] status for [1] turn(s) <costs [3] [Yellow Apricot Immortal Essence]> <requires [1] movement> <for units with [Strength Qi Gu]> <for units with [Heaven Great Grandmaster]> <for units with [Qi Grandmaster]> <for units without [Heavenly Web Qi Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Immortal Gu Bearer | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]> <if [Dark Limit Immortal Gu] is constructed>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Immortal Gu Bearer | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Dark Limit Immortal Gu] is constructed>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Immortal Gu Bearer | `Only available <when number of [[Dark Limit Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Immortal Gu Bearer | `[This Unit] gains the [Dark Limit Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Shadow Follower Gu]> <for units with [Dark Great Grandmaster]> <for units without [Dark Limit Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Immortal Gu Bearer | `[This Unit] gains the [Dark Limit Shadow Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Overlapping Shadow Gu]> <for units with [Dark Great Grandmaster]> <for units with [Shadow Grandmaster]> <for units without [Dark Limit Shadow Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Immortal Gu Bearer | `[+1] Movement <when above [0] [Green Grape Immortal Essence]> <if [Dream Wings Immortal Gu] is constructed>` | +1, 0 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Immortal Gu Bearer | `[+7]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Dream Wings Immortal Gu] is constructed>` | +7, 0 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Immortal Gu Bearer | `Only available <when number of [[Dream Wings Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Immortal Gu Bearer | `[This Unit] gains the [Dream Wings Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Dream Pillow Gu]> <for units with [Dream Great Grandmaster]> <for units without [Dream Wings Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Immortal Gu Bearer | `[This Unit] gains the [Dream Wings Enslavement Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Wolf Enslavement Gu]> <for units with [Dream Great Grandmaster]> <for units with [Enslavement Grandmaster]> <for units without [Dream Wings Enslavement Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Gu Bearer | `[+32]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Formation Plate Gu] is constructed>` | +32, 0 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Gu Bearer | `Only available <when number of [[Formation Plate Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Gu Bearer | `[This Unit] gains the [Formation Plate Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Formation Heart Gu]> <for units with [Formation Great Grandmaster]> <for units without [Formation Plate Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Gu Bearer | `[This Unit] gains the [Formation Plate Food Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Liquor Worm]> <for units with [Formation Great Grandmaster]> <for units with [Food Grandmaster]> <for units without [Formation Plate Food Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Immortal Gu Bearer | `Invisible to non-adjacent units <when above [0] [Green Grape Immortal Essence]> <if [Conceal Luck Immortal Gu] is constructed>` | 0 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Immortal Gu Bearer | `[+14]% Strength <when defending> <when above [0] [Green Grape Immortal Essence]> <if [Conceal Luck Immortal Gu] is constructed>` | +14, 0 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Immortal Gu Bearer | `Only available <when number of [[Conceal Luck Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Immortal Gu Bearer | `[This Unit] gains the [Conceal Luck Resonance] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Luck Inspection Gu]> <for units with [Luck Great Grandmaster]> <for units without [Conceal Luck Resonance]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Immortal Gu Bearer | `[This Unit] gains the [Conceal Luck Heaven Fusion] status for [1] turn(s) <costs [3] [Green Grape Immortal Essence]> <requires [1] movement> <for units with [Ten-Year Lifespan Gu]> <for units with [Luck Great Grandmaster]> <for units with [Heaven Grandmaster]> <for units without [Conceal Luck Heaven Fusion]>` | 1, 3, 1 | tools/gen_ruleset.py `Promotions` |
 | Spring Autumn Cicada Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Spring Autumn Cicada] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
 | Spring Autumn Cicada Bearer | `Only available <when number of [[Spring Autumn Cicada Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Spring Autumn Cicada Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -2015,6 +2058,30 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heavenly Web Qi Fusion | `[+60]% Strength <when defending>` | +60 | tools/gen_ruleset.py `Promotions` |
 | Heavenly Web Qi Fusion | `[This Unit] heals [32] HP <upon gaining the [Heavenly Web Qi Fusion] status>` | 32 | tools/gen_ruleset.py `Promotions` |
 | Heavenly Web Qi Fusion | `[+23]% Strength <for units with [Heaven Supreme Grandmaster]>` | +23 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Resonance | `[This Unit] heals [23] HP <upon gaining the [Dark Limit Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Resonance | `[+17]% Strength <for units with [Dark Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Shadow Fusion | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Shadow Fusion | `[This Unit] heals [23] HP <upon gaining the [Dark Limit Shadow Fusion] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Dark Limit Shadow Fusion | `[+17]% Strength <for units with [Dark Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Resonance | `[This Unit] gains [2] movement <upon gaining the [Dream Wings Resonance] status>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Resonance | `[+26]% Strength <when attacking>` | +26 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Resonance | `[+17]% Strength <for units with [Dream Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Enslavement Fusion | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Enslavement Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Dream Wings Enslavement Fusion | `[+17]% Strength <for units with [Dream Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Resonance | `[This Unit] heals [23] HP <upon gaining the [Formation Plate Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Resonance | `[+17]% Strength <for units with [Formation Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Food Fusion | `[This Unit] heals [45] HP <upon gaining the [Formation Plate Food Fusion] status>` | 45 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Food Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Formation Plate Food Fusion | `[+17]% Strength <for units with [Formation Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Resonance | `[+45]% Strength <when defending>` | +45 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Resonance | `[This Unit] heals [23] HP <upon gaining the [Conceal Luck Resonance] status>` | 23 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Resonance | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Heaven Fusion | `[-18]% Strength for enemy [Military] units in adjacent [All] tiles` | -18 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Heaven Fusion | `[+17]% Strength` | +17 | tools/gen_ruleset.py `Promotions` |
+| Conceal Luck Heaven Fusion | `[+17]% Strength <for units with [Luck Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
 | Spring Autumn Cicada Resonance | `[+34]% Strength <when attacking>` | +34 | tools/gen_ruleset.py `Promotions` |
 | Spring Autumn Cicada Resonance | `[Target Unit] takes [22] damage <upon damaging a [Military] unit> <when attacking>` | 22 | tools/gen_ruleset.py `Promotions` |
 | Spring Autumn Cicada Resonance | `[+17]% Strength <for units with [Time Supreme Grandmaster]>` | +17 | tools/gen_ruleset.py `Promotions` |
@@ -3007,6 +3074,22 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heavenly Web Immortal Gu | `Costs [60] [Yellow Apricot Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Web Immortal Gu | `Costs [80] [Immortal Materials]` | 80 | tools/gen_ruleset.py `Buildings` |
 | Heavenly Web Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Dark Limit Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Dark Limit Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Dark Limit Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Dark Limit Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Dream Wings Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Dream Wings Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Dream Wings Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Dream Wings Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Formation Plate Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Formation Plate Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Formation Plate Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Formation Plate Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
+| Conceal Luck Immortal Gu | cost | 340 | tools/gen_ruleset.py `Buildings` |
+| Conceal Luck Immortal Gu | `Costs [35] [Green Grape Immortal Essence]` | 35 | tools/gen_ruleset.py `Buildings` |
+| Conceal Luck Immortal Gu | `Costs [30] [Immortal Materials]` | 30 | tools/gen_ruleset.py `Buildings` |
+| Conceal Luck Immortal Gu | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | cost | 420 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `Instantly provides [2] [Human Qi] <upon turn start>` | 2 | tools/gen_ruleset.py `Buildings` |
 | Primordial Origin Inheritance | `[+15]% Strength <for units with [Qi Master]>` | +15 | tools/gen_ruleset.py `Buildings` |
@@ -4300,10 +4383,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
-| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn start> <after turn number [19]> <before turn number [21]> <on [Quick] game speed>` | 19, 21 | tools/gen_ruleset.py `Nations` |
-| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn start> <after turn number [29]> <before turn number [31]> <on [Standard] game speed>` | 29, 31 | tools/gen_ruleset.py `Nations` |
-| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn start> <after turn number [44]> <before turn number [46]> <on [Epic] game speed>` | 44, 46 | tools/gen_ruleset.py `Nations` |
-| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn start> <after turn number [89]> <before turn number [91]> <on [Marathon] game speed>` | 89, 91 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>` | 20, 21 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>` | 30, 31 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>` | 45, 46 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <on [Marathon] game speed>` | 90, 91 | tools/gen_ruleset.py `Nations` |
 | Bai Clan | `[+15]% Strength <vs [Barbarians] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+15]% Strength <vs [Immortal Zombie] units>` | +15 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+25]% Strength <vs [Barbarian] units>` | +25 | tools/gen_ruleset.py `Nations` |
@@ -4421,7 +4504,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Gu Yue Temperament | science | 7 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | culture | 6 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | gold | 5 | tools/gen_ruleset.py `Nations` |
-| Gu Yue Temperament | military | 4 | tools/gen_ruleset.py `Nations` |
+| Gu Yue Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | aggressive | 3 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | declareWar | 3 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Temperament | diplomacy | 7 | tools/gen_ruleset.py `Nations` |
@@ -4730,6 +4813,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-4474 numbers listed.
+4557 numbers listed.
 
 <!-- inventory:end -->

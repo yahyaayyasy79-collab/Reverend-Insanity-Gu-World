@@ -436,14 +436,19 @@ ETERNAL_COST = 300  # yellow apricot essence for Eternal Life on Standard (was 1
 VEN_ELSEWHERE = "<if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>"
 VENERABLE = "Venerable"
 HOUSE_MATERIALS = 60  # audit P5: a Gu House is refined from immortal materials too
-# Fang Yuan (the user, 2026-11-09): base 16, +25% for five hundred years' experience, then he grows as he did in the
-# canon, ahead of every mortal of his time: x1.25 when he comes (T30 on Standard), x2.5 from T100, x4 from T170, x6.5
-# from T260, x9 from T340 (rank-two to rank-eight Gu Masters stand at about 15, 32, 44-61, 80-108 by then), x11 from
-# T390, the Venerables' era (autoplay median), where he stands level with a Venerable (168): he ends the canon as one
-# (R V6c329, ch2295: no Venerable ever cared for his people like him)
+# Fang Yuan (the user, 2026-11-09): base 24, +25% for five hundred years' experience, then he grows as he did in the
+# canon, ahead of every mortal of his time: 30 when he comes (T30 on Standard; rank-one and rank-two Gu Masters stand at
+# 6-13), then about 40 from T100, 64 from T170, 103 from T260, 144 from T340 (rank-two to rank-eight Gu Masters stand
+# at about 15, 32, 44-61, 80-108 by then) and 176 from T390, the Venerables' era (autoplay median), level with a
+# Venerable (168): he ends the canon as one (R V6c329, ch2295: no Venerable ever cared for his people like him).
+# Autoplay: at 20 when he came, the Gu Yue's soldiers cut him down within 2-20 turns in most games.
 FANG_YUAN = "Fang Yuan"
-FY_BASE, FY_EXPERIENCE, FY_ARRIVES, FY_REBIRTH = 16, 25, 30, 50
-FY_GROWTH = [(100, 125), (170, 150), (260, 250), (340, 250), (390, 200)]
+FY_BASE, FY_EXPERIENCE, FY_ARRIVES, FY_REBIRTH = 24, 25, 30, 50
+# autoplay (8 x 450): spawned at the Gu Yue's turn start beside its capital he was cut down within 4-8 turns, so he
+# now comes at the end of the Gu Yue's turn (he moves before its units and its city strike) and guards +50%: in the
+# canon he always gets away (the user: the best stats, the smartest AI)
+FY_GUARD = 50
+FY_GROWTH = [(100, 40), (170, 100), (260, 165), (340, 170), (390, 135)]   # +% on the base, cumulative
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
     ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
@@ -709,9 +714,11 @@ def hero_triggers(nation_name):
     return []
 
 
-dump("UnitTypes.json", [{"name": n, "movementType": "Land", **({"uniques": gen_paths.GC.spoils()
-                                                                  + (stage_lines() + HERO_TRIGGERS + FY_REBORN if n == "Gu Master" else [])}
-                                                                 if "Gu Master" in n else {})}
+# Fang Yuan's return rides on every fighting unit type: on the Gu Master type alone it never fired in autoplay (the clan
+# chains' Moon and Strength types, beasts and Gu Houses struck him down too)
+dump("UnitTypes.json", [{"name": n, "movementType": "Land",
+                         **({"uniques": (gen_paths.GC.spoils() + (stage_lines() + HERO_TRIGGERS if n == "Gu Master" else [])
+                                         if "Gu Master" in n else []) + FY_REBORN} if n != "Civilian" else {})}
                         for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
 
@@ -884,9 +891,21 @@ dump("Units.json", [
     {"name": FANG_YUAN, "unitType": "Gu Master", "movement": 3, "strength": FY_BASE, "cost": 200, "requiredTech": "Calamity Lore",
      "attackSound": sfx.rank_sound(6), "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "Unable to capture cities", "Withdraws before melee combat",
-                 "Unit will heal every turn, even if it performs an action", "[15] HP when healing", "Ignores Zone of Control",
+                 # autoplay: with +15 HP a turn on top he outlived every clan near him (alive 400+ turns, the Xiong fell in 3
+                 # of 8 games); without it he falls now and then and returns near his killer's city, a true wanderer
+                 "Unit will heal every turn, even if it performs an action", "Ignores Zone of Control",
                  "No damage penalty for wounded units", "Can move after attacking", "[+1] Sight",
-                 "Can pass through impassable tiles", f"[+{FY_EXPERIENCE}]% Strength"]
+                 "Can pass through impassable tiles", f"[+{FY_EXPERIENCE}]% Strength",
+                 f"[+{FY_GUARD}]% Strength <when defending>",
+                 # a city strikes what its men point out; its walls cannot pin him down (autoplay: he never returned,
+                 # since a city's strike does not trigger a unit's victory)
+                 "[+100]% Strength <when defending> <vs cities>",
+                 # his Stealth Scales Gu, "a life-saving means" to come and go in the wolf tide (R V1c121): the cities'
+                 # strikes and his hunters cannot find him from afar (autoplay: still cut down in 3-8 turns without it);
+                 # he hunts Gu Masters, never walls or laborers
+                 # in the first volume he hid inside the Gu Yue clan and never turned on it in the open: he hunts
+                 # the other clans' Gu Masters
+                 "Invisible to non-adjacent units", "Can only attack [{Military} {non-[Gu Yue Clan]}] units"]
      + [line for t, bonus in FY_GROWTH for line in per_speed(lambda m, t=t, bonus=bonus:
                                                               f"[+{bonus}]% Strength <after turn number [{turn_gate(t, m)}]>")]},
 ])
@@ -1755,7 +1774,8 @@ dump("Nations.json", [
            [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), RIGHTEOUS_START, "Start bias [Spirit Spring]",
             "Start bias [Hill]"]
            # the user, 2026-11-09: Fang Yuan comes back to the Gu Yue village and turns on it, once a game
-           + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn start> <after turn number [{turn_gate(FY_ARRIVES, m) - 1}]> "
+           # "after turn number [N]" holds from turn N on [src Conditionals]: [T, T+1) is turn T alone
+           + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn end> <after turn number [{turn_gate(FY_ARRIVES, m)}]> "
                                  f"<before turn number [{turn_gate(FY_ARRIVES, m) + 1}]>")),
     # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
     nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
@@ -1901,7 +1921,9 @@ dump("Nations.json", [
     {"name": "Dong Fang Tribe", "cityStateType": "Refiner Tribe", "outerColor": [160, 60, 70], "innerColor": [250, 240, 220],
      "cities": ["Jade Pool"], "uniques": ["[+50]% Strength for cities"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
-     "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
+     # Layer 10: Fang Yuan heals like a clan's unit (autoplay: under this rule he never healed, his "heals every turn"
+     # was void, and he wore down to 1-4 HP; [src MapUnit.getHealAmountForCurrentTile] checks the civ's uniques per unit)
+     "uniques": [f"Can only heal by pillaging <for [non-[{FANG_YUAN}]] units>", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},
 ])
 dump("CityStateTypes.json", [
@@ -1935,7 +1957,9 @@ dump("CityStateTypes.json", [
 dump("Personalities.json", [
     # C4 (conflicts research M6): Gu Yue the declining overlord that brokers alliances and lives off caravans; Bai the
     # rising aggressor after all three springs; Xiong the free-rider; Wu the coalition leader. Never declareWar 0 [src].
-    {"name": "Gu Yue Temperament", "science": 7, "culture": 6, "gold": 5, "military": 4, "aggressive": 3,
+    # Layer 9b (autoplay 8 x 450): once the fair starts made the Wu hold, the Bai turned on the Gu Yue, which kept few
+    # soldiers and fell in 4 of 8 games; a declining overlord still guards its village (military 4 -> 6, never the aggressor)
+    {"name": "Gu Yue Temperament", "science": 7, "culture": 6, "gold": 5, "military": 6, "aggressive": 3,
      "declareWar": 3, "diplomacy": 7, "commerce": 7, "loyal": 6,
      "priorities": {"Moon Path": 10, "Righteous Path": 6},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions",

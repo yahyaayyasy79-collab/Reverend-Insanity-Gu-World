@@ -30,7 +30,7 @@ those Gu cost before (+10% each) is gone.
 
 | Source | Food |
 |---|---|
-| A worked tile of the food (each major starts beside one tile of each of its two foods) | 1 |
+| A worked tile of the food (each major starts beside two copies of its first food and one of its second) | 1 |
 | The path's branch (opener) | 2 |
 | The branch's Insight policy (the moon's Orchid Beds and the strength's Beast Hunters already gave 2) | 2 |
 | Each of the path's halls (one per city) | 1 |
@@ -68,7 +68,7 @@ emotion, soul, dream, time, heaven, refinement, formation, pill, information).
 | Layer 9b, per 100 land tiles (kits included) | 13.0 | 10.0 | 14.5 | 13.6 | 23.0 (the canon sea, richest per tile) |
 
 Spirit springs (4 a region, 2 in the sea) and jade (2 a region, 1 in the sea) are spread the same way. Each major's
-start kit holds one tile of each of its two foods: the four Southern Border clans their signature paths' (Gu Yue moon
+start kit holds two copies of its first food and one of its second: the four Southern Border clans their signature paths' (Gu Yue moon
 and strength, Bai water and wood, Xiong strength and blood, Wu wind and star), each arc major two of its region's (the
 Court heaven and emotion, the Huang Jin qi and enslavement, the Fang wisdom and blade, the Zombie Alliance water and
 lightning; docs/REGIONS.md).
@@ -89,8 +89,8 @@ Four causes, each fixed:
 
 1. **Uneven starts.** The scatter put 10-11 riches within 3.5 tiles of the Court, the Fang and the Zombie Alliance, 5
    and a beast lair beside the Wu, which also lost its inheritance site (Wu at T100: 3.4 cities, 11 pop; it had 5.2 and
-   17). Now every major gets the same kit (a spirit spring, jade, one tile of each of its two foods, an inheritance site
-   three tiles out), nothing else within 3.5 tiles of a capital, at most 4 scattered riches within 6 (8 for the sea's
+   17). Now every major gets the same kit (a spirit spring, jade, two copies of its first food and one of its second, an
+   inheritance site three tiles out; the Gu Yue's emblem Gu eats Moon Orchid, so one copy starved it), nothing else within 3.5 tiles of a capital, at most 4 scattered riches within 6 (8 for the sea's
    islands), no beast lair or demonic den within 6; a food without room in one of its regions spills into the other,
    and each region places its own foods before the ones it holds as a second region.
 2. **The Slice 1 branches outranked the rest.** The AI ranks branches by priority; the Moon and Strength branches had
@@ -112,4 +112,7 @@ The lore now gives 2 (1 fed no Gu by itself).
 
 ## Measured
 
-See docs/AUTOPLAY.md "Path foods" for the autoplay A/B.
+docs/AUTOPLAY.md "Layers 9-11": with the fixes, 79-85% of Masters hold their path Gu (89% when stones fed them, 53% in
+the first build); the moon and strength hold 22% of the Masters and 16% of the Gu (23% and 15% before Layer 9); the
+supply per major at T300 is about 13 from lores, 7 from tiles, 7 from halls and 5-6 from branches; 2 majors fell in 8
+games in the final build (14 before Layer 9), the Wu once (6 in the first build).

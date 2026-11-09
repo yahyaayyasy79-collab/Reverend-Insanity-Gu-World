@@ -1579,6 +1579,86 @@
     ]
   },
   {
+    "name": "Dark Limit Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Costs [30] [Immortal Materials]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Dark Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dark Limit Immortal Gu (暗渡仙蛊), a rank-6 Dark path Gu: seals its master's aura and veils it from heaven's secrets and every deduction. Unseen except from an adjacent tile; 14% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Dark Limit Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Dream Wings Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Costs [30] [Immortal Materials]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Dream Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Dream Wings Immortal Gu (梦翼仙蛊), a rank-6 Dream path Gu: wings found only in dreams, driven by the soul rather than essence. +1 movement; 7% stronger. One of a kind: the clan that owns it lets one immortal carry it (Dream Wings Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Formation Plate Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Costs [30] [Immortal Materials]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Formation Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Formation Plate Gu (阵盘蛊), a rank-6 Formation path Gu: holds a whole Gu formation and lays it out again. 32% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Formation Plate Gu Bearer)."
+      }
+    ]
+  },
+  {
+    "name": "Conceal Luck Immortal Gu",
+    "isWonder": true,
+    "requiredTech": "Immortal Gu Recipes",
+    "cost": 340,
+    "uniques": [
+      "Costs [35] [Green Grape Immortal Essence]",
+      "Costs [30] [Immortal Materials]",
+      "Never destroyed when the city is captured",
+      "Immortal Gu",
+      "Luck Path",
+      "Triggers a [Immortal Gu Refinement] event",
+      "[+300]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Conceal Luck Immortal Gu (隐运仙蛊), a rank-6 Luck path Gu: hides its master's luck and defeats a Luck Inspection Gu of its rank. Unseen except from an adjacent tile; 14% stronger when defending. One of a kind: the clan that owns it lets one immortal carry it (Conceal Luck Immortal Gu Bearer)."
+      }
+    ]
+  },
+  {
     "name": "Primordial Origin Inheritance",
     "isWonder": true,
     "requiredTech": "Calamity Lore",

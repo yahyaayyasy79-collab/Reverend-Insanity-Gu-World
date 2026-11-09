@@ -27,10 +27,10 @@
       "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Hill]",
-      "A [Fang Yuan] rebels <upon turn start> <after turn number [19]> <before turn number [21]> <on [Quick] game speed>",
-      "A [Fang Yuan] rebels <upon turn start> <after turn number [29]> <before turn number [31]> <on [Standard] game speed>",
-      "A [Fang Yuan] rebels <upon turn start> <after turn number [44]> <before turn number [46]> <on [Epic] game speed>",
-      "A [Fang Yuan] rebels <upon turn start> <after turn number [89]> <before turn number [91]> <on [Marathon] game speed>"
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <on [Marathon] game speed>"
     ],
     "introduction": "I am Gu Yue Bo of the Gu Yue clan. Our village has stood on Qing Mao longer than any other; speak, and be brief.",
     "declaringWar": "The covenant of the alliance slope does not shelter you. The Gu Yue will settle this themselves.",
@@ -1159,7 +1159,7 @@
       12
     ],
     "uniques": [
-      "Can only heal by pillaging",
+      "Can only heal by pillaging <for [non-[Fang Yuan]] units>",
       "Excluded from map editor"
     ]
   },

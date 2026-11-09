@@ -1266,8 +1266,8 @@ paths, and asked for every path's food, spread over all five regions, even and b
 * **Path lores redesigned:** cost by family (40, 60 or 80; a sub-path 20 more) and 2 of the path's food.
 * **Fair starts (Layer 9b).** The first measurement showed the Wu falling in 6 of 8 games: the scatter had left it 5
   riches and a beast lair, while the Court, the Fang and the Zombie Alliance got 10-11. Now every major gets the same
-  kit (a spirit spring, jade, one tile of each of its two foods, an inheritance site), nothing else lands within 3.5
-  tiles of a capital, at most 4 more within 6, and no barbarian camp within 6.
+  kit (a spirit spring, jade, two copies of its first food and one of its second, an inheritance site), nothing else
+  lands within 3.5 tiles of a capital, at most 4 more within 6, and no barbarian camp within 6.
 * **Even branches (Layer 9b).** The Moon and Strength branches no longer outrank the rest (the AI weighed them 5/5,
   every other path 3/3); every branch's Insight feeds its Gu as Orchid Beds and Beast Hunters always did; the Bai and
   Wu AI now prefer their own Water and Wind branches (they never took them, so their Gu starved).
@@ -1277,14 +1277,32 @@ paths, and asked for every path's food, spread over all five regions, even and b
 You asked for Fang Yuan as a wandering cultivator with the smartest AI and the best stats: the demon from another
 world with five hundred years of experience.
 * **A lone wanderer** of the barbarians: at war with every clan, he never takes a city. He comes to the Gu Yue village
-  on turn 30 (Standard; 20 Quick, 45 Epic, 90 Marathon).
-* **The best stats of his time:** strength 16 and +25% for his experience, then x2.5 from T100, x4 from T170, x6.5 from
-  T260, x9 from T340 and x11 (176) from T390, level with a Venerable, as he ends the canon as one (checked in the raw
-  text). Movement 3, sight +1.
+  at the end of its turn 30 (Standard; 20 Quick, 45 Epic, 90 Marathon), so he moves before its units can strike.
+* **The best stats of his time:** strength 30 when he comes (rank-one Gu Masters stand at 6), about 40 from T100, 64
+  from T170, 103 from T260, 144 from T340 and 176 from T390, level with a Venerable, as he ends the canon as one
+  (checked in the raw text); +50% when defending, as he always gets away, and +100% more against city walls. Movement
+  3, sight +1.
 * **The smartest the engine allows.** A mod cannot replace Unciv's AI; the barbarians' AI attacks only what it can beat
-  and pillages to heal. His kit makes that sharp: he heals every turn even after acting, withdraws from melee, ignores
-  zones of control, keeps his strength when wounded, moves after attacking and crosses impassable tiles.
-* **The Spring Autumn Cicada:** struck down by a Gu Master, he returns with a 50% chance near the killer's capital, as
+  and pillages to heal. His kit makes that sharp: only an adjacent unit can see him (his Stealth Scales Gu), he heals
+  every turn even after acting, withdraws from melee, ignores zones of control, keeps his strength when wounded, moves
+  after attacking, crosses impassable tiles and hunts only the other clans' military units: no suicide runs at city
+  walls, and he never turns openly on the Gu Yue, the clan he hid inside in the first volume.
+* **Found in autoplay:** the barbarians heal only by pillaging, so at first he never healed and wore down to 1-4 HP;
+  he is now exempt from that rule (the other raiders keep it).
+* **The Spring Autumn Cicada:** struck down by a unit, he returns with a 50% chance near the killer's city, as
   long as no clan has built the Spring Autumn Cicada.
 * Designed art: map sprites (three unit sets), a portrait, a four-frame blood-slash attack, an icon (the cicada before
   a blood moon).
+
+## Layer 11: Gu for the poorest paths (2026-11-09)
+
+You said the mod's Gu and paths weighed on the moon and strength paths. The catalog had 12 strength Gu and a single Gu
+for 16 paths.
+* **Ten more Gu**, each checked in the raw text (docs/LORE_MAPPING.md "Layer 11"): Dark Limit (dark, rank 6), Dream
+  Wings (dream, 6), Formation Plate (formation, 6), Justice (human, 5), Conceal Luck (luck, 6), Hard Qi (qi, 4), Sneak
+  Attack (theft, 2), Day (time, 3), Pill Fire (pill, 3; a fire Gu in the canon) and Swift Shadow (shadow, 3).
+* The four immortal ones are world wonders with one bearer per clan and their Resonance and Fusion moves, as every
+  immortal Gu; the mortal ones are refined with XP like every catalog Gu.
+* The novel names no other Gu for the killing, enchantment, illusion, painting, restriction and refinement paths, so
+  they keep one catalog Gu besides their path Gu; more would have to be invented, which is your call.
+* Each has its own icon and refinement sound.

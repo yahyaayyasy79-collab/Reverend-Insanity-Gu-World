@@ -661,6 +661,43 @@ Layer 7's city-states moved (7628537); Layer 8 as shipped (41d2350).
 * **Intermediate runs:** lores open to any Master at a cost of 40 with the city-strength factor 13: captured cities fell
   to 2.9 a game (factor now 11); an AI wait for the lores until Rank Three Cultivation changed nothing (same eras).
 
+## Layers 9-11: path foods, fair starts, Fang Yuan, the catalog (2026-11-09)
+
+Five Regions, 8 x 450, seed 101 each. Layer 8 as shipped (4676a82); Layer 9 as first built (db6dbab); Layers 9b and 10
+as first built (a4b80a0); the final build (fair kits with two copies of the first food, the Gu Yue's military 6, Fang
+Yuan invisible, at 30, never striking the Gu Yue, healing like a clan's unit). The foods' stock is recorded per clan and origin (`lux`, `luxBy`), Fang Yuan's lives in
+the barbarians' record (`fangYuan`).
+
+| | Layer 8 | Layer 9 | Layers 9b-10 first | Final |
+|---|---|---|---|---|
+| Path Gu holders per Master (T300) | 0.89 | 0.53 | 0.85 | 0.79 |
+| Moon + strength: share of Masters / of holders | 23% / 15% | 29% / 35% | 19% / 16% | 22% / 16% |
+| Majors fallen (8 games) | 14 | 9 (Wu 6) | 5 (Gu Yue 4) | 2 (Xiong 1, Wu 1) |
+| Majors alive at the end (of 8) | 6.25 | 6.88 | 6.75 | 7.75 |
+| Fang clan cities at T300 | 2.0 | 5.4 | 5.6 | 6.0 |
+| Venerables (games) | Wu 5, Bai 2, Huang Jin 1 | Bai 5, Gu Yue 2, Wu 1 | Bai 6, Wu 1, Fang 1 | Wu 3, Fang 2, Gu Yue 1, Huang Jin 1 |
+| Eternal Life wins | Wu 4, Bai 1 | Bai 3, Gu Yue 1, Wu 1 | Bai 4 | Wu 2, Huang Jin 1 (5 games to T450) |
+| Clan-turns in debt after T300 | 13% | 13% | 17% | 18% |
+| City-states fallen | 3 | 9 | 8 | 8 |
+
+* **Layer 9's first build made the moon and strength heavier:** the 44 new foods were scarce (Bai's water and Wu's wind
+  Masters held their Gu 1 time in 6 on a stock of about 3) while Moon Orchid and Wild Boar stayed plentiful; the
+  scatter left the Wu 5 riches and a beast lair (it fell in 6 games). Causes and fixes: docs/PATH_ECONOMY.md "Layer 9b".
+* **After the fixes** every path's Masters hold their Gu as often (85% of Masters; 86% for paths a clan walks with 1-3
+  Masters), the supply per major at T300 is about 13 from lores, 7 from tiles, 7 from halls and 5-6 from branches, and
+  the moon and strength fell below their Layer 8 share of Masters.
+* **The Gu Yue in the middle:** with the Wu holding, the Bai (the canon aggressor) turned on the Gu Yue, which sits 4
+  tiles from the Bai and the Xiong and kept few soldiers; the Gu Yue fell in 4 of 8 games, 3 after its AI's military
+  went from 4 to 6, none in the final build (Fang Yuan now strikes its neighbours, never it). In Layer 8 it fell in 3.
+* **Fang Yuan:** spawned at the Gu Yue's turn start (twice, from a turn window read as "from turn N") he fell within 4-8
+  turns; at turn end with +50% guard, 3-8; invisible but to adjacent units, 2-87 (median about 10); at strength 30,
+  never striking the Gu Yue, 11-57 (median about 22). He never healed: the barbarians heal only by pillaging. Exempt,
+  with +15 HP a turn, he outlived everything (alive 400+ turns in 6 of 8 games) and the Xiong fell in 3 games; without
+  the +15, 103-420 turns (median about 210), twice returned after a death. He spawns on turn 30 in every game.
+* **Winners:** the Venerable spread over four clans in the final build (Wu 3, Fang 2, Gu Yue 1, Huang Jin 1); the runs
+  in between gave it to the Bai (6 of 8) or the Wu (5 of 8). Eight games are few: compare pooled. More soldiers live
+  (156 at the end against 114 in Layer 8), so the late debt rose to 18%.
+
 ## Re-run
 
 ```
