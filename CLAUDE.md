@@ -192,7 +192,7 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
   out at the (N−1)th turn start after); a status that runs out fires `<upon losing the [X] status>`; reapplying never lowers its
   timer; `<for units with/without [X]>` sees statuses. The hunger meter rests on this; test it in game.
 * E8 [src] City strength grows with the SHARE of the tech tree known (+118 at 100% by default); Slice 1 sets
-  `cityStrengthFromTechsFullMultiplier` 0.1, Layer 8 (47 path lore techs, 74 in all) the share factor 13.0. Re-tune
+  `cityStrengthFromTechsFullMultiplier` 0.1, Layer 8 (47 path lore techs, 74 in all) the share factor 11.0. Re-tune
   them whenever the tech tree or unit strengths change.
 * The AI never presses custom unit-action buttons. A `Barbarians` nation must exist or barbarians never spawn.
 * E12 [src] `<when adjacent to a [mapUnitFilter] unit>` sees only the civ's own units: "an enemy is adjacent" cannot

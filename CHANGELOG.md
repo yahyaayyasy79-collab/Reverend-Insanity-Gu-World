@@ -1206,3 +1206,24 @@ You asked for the Court as the boss of the five regions, and for heroes, with Fa
   * Bo Qing (Zombie Alliance): a zombie swordsman with a second attack.
   * Fang Di Chang (Fang, rank seven): the wisdom elder.
 * Their emblems are symbols of path and nature, not portraits.
+
+## Layer 7: more super forces and Dou Shen Palace (2026-11-08)
+
+You said to add the remaining super forces. Each claim was checked in the raw text first; one claim of my draft failed
+(the Liu tribe has no wisdom-path immortal) and was dropped.
+* **Six city-states**, each with +50% city strength and its own emblem:
+  * Tie Clan (Southern Border, Battle Tribe): the Demon-Suppressing Tower; +25% against lone and demonic Gu Masters.
+  * Tang Clan (Western Desert, Merchant Clan): found Thieving Heaven's dream realm.
+  * Shen Clan (Eastern Sea, Merchant Clan): the sound path; an island city raided like the rest of the sea.
+  * Ma Tribe and Liu Tribe (Northern Plains, Battle Tribes): golden bloodlines contesting the Imperial Court.
+  * Dong Fang Tribe (Northern Plains, Refiner Tribe): the wisdom path, seated in Jade Pool.
+* **Dou Shen Palace:** the rank-eight Gu House Genesis Lotus left in the Western Desert, which the Fang clan won. The
+  Fang clan's own; no immortal Gu needed; +20% when defending; adjacent units heal 15 HP more. Pixel sprite, portrait
+  and a wood-path attack (vines lashing in).
+* **Placement, measured** (8 × 450 each). First placed 14-15 tiles from the Huang Jin capital, the Ma and Liu tribes fell
+  in 2 and 3 games and the Huang Jin won 4 of 8; the Tang clan beside the Fang capital cut the Fang to 1.6 cities at
+  T300. Moved (Ma and Liu 20-29 tiles from the Huang Jin, the Tang in the desert's far south-west):
+  * the Ma never fell, the Liu once;
+  * Eternal Life wins: Bai 2, Wu 2, Gu Yue 1; three games reached turn 450;
+  * the Fang back at 2.2 cities; the Court at T300: 5.0 cities, 25 techs, 5.8 immortals, the strongest;
+  * clan-turns in debt after T300: 9%.

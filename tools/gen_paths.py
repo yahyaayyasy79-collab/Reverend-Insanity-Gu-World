@@ -517,10 +517,15 @@ def lore_name_id(p: dict) -> str:
     return f"Ilmu Jalur {p['name_id']}"
 
 
+# The AI researches the cheapest tech first, so at 40 it took the lores before every main tech: the eras came 15-35
+# turns later (autoplay 8 x 450). It waits for them until its Gu Masters can reach rank three, when Grandmaster needs one.
+LORE_AI_WAIT = "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
+
+
 def lore_uniques(p: dict) -> list[str]:
     m = tier_name(p, 0)
     return [f"Only available <when number of [[{m}] Units] is more than [0]>",
-            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>"]
+            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>", LORE_AI_WAIT]
 
 
 def lore_pedia(p: dict) -> tuple[str, str]:

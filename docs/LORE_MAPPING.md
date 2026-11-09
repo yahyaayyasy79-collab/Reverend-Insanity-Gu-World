@@ -5258,4 +5258,4 @@ Engine notes: a tech's `Only available` conditionals are checked against the cla
 the AI researches the cheapest researchable tech first [src NextTurnAutomation.chooseTechToResearch], so it pays only
 for the paths its units walk. The lore techs sit in the first era's three columns: a tech of a later column would move
 its clan into a later era before its time (civ-era conditionals drive events and global uniques). E8 re-tuned:
-`cityStrengthFromTechsMultiplier` 13.0 (was the default 5.5) for a 74-tech tree.
+`cityStrengthFromTechsMultiplier` 11.0 (was the default 5.5) for a 74-tech tree; the AI waits for the lores until Rank Three Cultivation (at the cost of 40 it took them before every main tech, and the eras came 15-35 turns later).

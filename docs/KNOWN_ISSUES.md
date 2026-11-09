@@ -182,6 +182,18 @@ rest of the list is what a player or the next session should know before trustin
     11 pages, 3 of them portraits, 1 wonders and 1 victories, up from about 89 MB (the pixel units fit one page). The download grew by about 14 MB
     of atlas. A very old phone may run short of memory; the fix would be fewer or smaller portraits (`inkpass.PX`).
 
+26. **The boss can fall to a Venerable (Layers 6-7, 2026-11-08).** The Court is the strongest clan to rank eight, but
+    it cannot reach rank nine (it would take the one Venerable slot, as it did in 7 of 8 games). In 1 of 24 autoplay
+    games another clan's Venerable razed the Court's six cities in about 25 turns (T375-400). Canon allows it; if you
+    want the Court safe, its cities could get more than +50% strength.
+
+27. **41 civs on the Five Regions map (Layer 7, 2026-11-08).** Every civ adds to the wait between turns on a phone. If
+    the map feels slow, Layer 7's six city-states are the first to remove (`tools/make_map.py` FIVE_STARTS).
+
+28. **A path lore needs a living Master (Layer 8, 2026-11-08).** A clan studies a path's lore only while it has a
+    Master of that path. If its last Master dies during the research, the progress stays but the tech waits until the
+    clan has a Master again (by XP, a hall or a path Gu's bearer).
+
 ## Not yet seen in a real game
 
 * **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small

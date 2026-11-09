@@ -49,11 +49,11 @@ simplification already documented; **not found** = the claim could not be confir
 | Reference item | Raw-text verdict | Mod before | Action |
 |---|---|---|---|
 | Five regions and walls that hinder the strong | CANON | have (Regions, 2026-11-08) | - |
-| Southern Border super clans Wu, Shang, Tie; Gu Yue, Bai, Xiong | CANON (Tie R V1c171; Shang R V1c43) | Wu and the Gu Yue, Bai and Xiong majors; Shang Clan City as a wonder | Tie: see "Not built" |
+| Southern Border super clans Wu, Shang, Tie; Gu Yue, Bai, Xiong | CANON (Tie R V1c171, V1c182; Shang R V1c43) | Wu and the Gu Yue, Bai and Xiong majors; Shang Clan City as a wonder | Tie: Layer 7 |
 | A Southern Border "Yi" clan | **not found** (no such clan name in the raw text) | - | not built |
-| Northern Plains tribes Hei, Ma, Liu, Dong Fang, Ge | CANON (R V3c22, V3c36, V3c65, V3c96) | Huang Jin major stands for every Giant Sun line; Ge Tribe city-state | kept |
-| Western Desert Tang clan, Dou Shen (Divine Bean) Palace | CANON (R V3c104, V5c486) | Fang clan, Lan, Xiao, Mo, Wan | see "Not built" |
-| Eastern Sea Shen and Song clans, Dragon Palace | CANON (R V4c243, V5c215) | Song Clan, Xia Clan, Merman Court; Dragon Palace as a Gu House | - |
+| Northern Plains tribes Hei, Ma, Liu, Dong Fang, Ge | CANON (R V3c22, V3c36, V3c65, V3c96) | Huang Jin major stands for every Giant Sun line; Ge Tribe city-state | Ma, Liu, Dong Fang: Layer 7 (the Huang Jin stay the Hei line) |
+| Western Desert Tang clan, Dou Shen (Divine Bean) Palace | CANON (R V3c104, V4c126, V5c486, V5c509: the Fang clan won the palace) | Fang clan, Lan, Xiao, Mo, Wan | Layer 7 |
+| Eastern Sea Shen and Song clans, Dragon Palace | CANON (R V4c243, V5c215, V5c679) | Song Clan, Xia Clan, Merman Court; Dragon Palace as a Gu House | Shen: Layer 7 |
 | Central Continent: ten great sects, Heavenly Court | CANON | have (Regions II) | - |
 | Natural wonders: Dang Hun Mountain, Lang Ya | CANON | have | - |
 | "Miniscule Mountain", "anti-sound desert" | not found under a name we could match | - | not built |
@@ -105,21 +105,24 @@ simplification already documented; **not found** = the claim could not be confir
 | 3 | Frenzy Lightning Wolf, the thousand-beast king; the wolf tide follows the beast-king ranks | 24b88ef |
 | 4 | Feathermen, Snowmen, Inkmen, Rockmen as city-states with four new city-state types; the Court cannot ascend to Venerable | 6edf4a8 |
 | 5 | Every path branch names its founding age and Venerable | 7b40304 |
+| 6 | The Heavenly Court as the boss (8 free techs, +30% science and production, +25% stones, +15% soldier strength, Immortal Materials); one hero per major clan (Fang Zheng for the Gu Yue) | efbbdd2 |
+| 7 | Tie, Tang and Shen clans, Ma, Liu and Dong Fang tribes as city-states; Dou Shen Palace, the Fang clan's Gu House | d11bfda, placed in 7628537 |
+| 8 | One tech per path (47 path lores, needed for Grandmaster); Tutorial "Gu World: The Five Antiquities" | ebd2c91 |
 
 Balance is measured per layer in `docs/AUTOPLAY.md` ("Reference audit layers").
 
-## Design proposals not adopted (the user's choice)
+## Design proposals: the user's answers (2026-11-08)
 
-| Proposal | Conflict | Option |
+| Proposal | The user's answer | Built |
 |---|---|---|
-| Eras = the five antiquities | the rank eras were approved (MOD_SPEC_2, rank nine an era 2026-11-01) | the antiquities stay lore (Layer 5) |
-| One tech per path | the paths are promotion lines and policy branches (MOD_SPEC_3, 2026-11-01) | - |
-| No Venerable unit | MOD_SPEC_3 makes rank nine one playable unit | - |
-| The Heavenly Court as a boss, not a nation | the Court is a playable major (C5c) | the open question on the Court's Venerable |
-| Fang Yuan as a hero unit; figures as Great People | no Great Person system in the mod | a later layer if the user wants it |
+| Eras = the five antiquities | "dimasukkan ke lorenya saja": the rank eras stay | Layer 5 (each path's age), Layer 8 (Tutorial) |
+| One tech per path | "menarik" | Layer 8 |
+| No Venerable unit | asked what it means: the reference would make a Venerable a top Great Person or a wonder, not a regular unit, since rank-nine power breaks balance | kept for now: one Venerable per world, with a lifespan, and the Eternal Life victory rests on it; in 24 autoplay games it came at T320-398 and once razed the Court |
+| The Heavenly Court as a boss | "sebagai boss saja", strongest of the five regions | Layer 6 (a playable major the AI runs as the boss; the engine cannot bar players from a nation) |
+| Heroes; Fang Yuan as one | yes, but Fang Zheng for the Gu Yue | Layer 6 (eight heroes); Fang Yuan's place is the user's call |
+| More super forces | "tambahkan saja takpapa" | Layer 7 |
 
 ## Not built (scale and map space)
 
-The Five Regions map already holds 31 civs. Each further super force (Tie, Tang, Dou Shen Palace, Shen, the Huang Jin
-lines as separate tribes) needs a city on the map, an icon and text, and every civ slows each turn on a phone. They
-wait for the user's call, like the dragonmen and the minor variant races.
+The Five Regions map holds 41 civs after Layer 7, and every civ slows each turn on a phone. The dragonmen and the other
+minor variant races wait for the user's call.

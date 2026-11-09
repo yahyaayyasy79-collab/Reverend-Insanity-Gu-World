@@ -25,7 +25,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Strength Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Strength Master] units>"
+          "[+15]% XP gained from combat <for [Strength Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -39,7 +40,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Transformation Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Transformation Master] units>"
+          "[+15]% XP gained from combat <for [Transformation Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -53,7 +55,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Bone Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Bone Master] units>"
+          "[+15]% XP gained from combat <for [Bone Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -67,7 +70,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Blood Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Blood Master] units>"
+          "[+15]% XP gained from combat <for [Blood Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -81,7 +85,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Sword Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Sword Master] units>"
+          "[+15]% XP gained from combat <for [Sword Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -95,7 +100,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Blade Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Blade Master] units>"
+          "[+15]% XP gained from combat <for [Blade Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -109,7 +115,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Metal Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Metal Master] units>"
+          "[+15]% XP gained from combat <for [Metal Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -123,7 +130,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Weapon Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Weapon Master] units>"
+          "[+15]% XP gained from combat <for [Weapon Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -137,7 +145,8 @@
         "cost": 40,
         "uniques": [
           "Only available <when number of [[Killing Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Killing Master] units>"
+          "[+15]% XP gained from combat <for [Killing Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -187,7 +196,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Fire Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Fire Master] units>"
+          "[+15]% XP gained from combat <for [Fire Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -204,7 +214,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Water Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Water Master] units>"
+          "[+15]% XP gained from combat <for [Water Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -221,7 +232,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Wood Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Wood Master] units>"
+          "[+15]% XP gained from combat <for [Wood Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -238,7 +250,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Earth Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Earth Master] units>"
+          "[+15]% XP gained from combat <for [Earth Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -255,7 +268,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Wind Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Wind Master] units>"
+          "[+15]% XP gained from combat <for [Wind Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -272,7 +286,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Cloud Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Cloud Master] units>"
+          "[+15]% XP gained from combat <for [Cloud Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -289,7 +304,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Ice Snow Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Ice Snow Master] units>"
+          "[+15]% XP gained from combat <for [Ice Snow Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -306,7 +322,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Lightning Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Lightning Master] units>"
+          "[+15]% XP gained from combat <for [Lightning Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -323,7 +340,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Poison Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Poison Master] units>"
+          "[+15]% XP gained from combat <for [Poison Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -340,7 +358,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Light Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Light Master] units>"
+          "[+15]% XP gained from combat <for [Light Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -357,7 +376,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Dark Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Dark Master] units>"
+          "[+15]% XP gained from combat <for [Dark Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -374,7 +394,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Shadow Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Shadow Master] units>"
+          "[+15]% XP gained from combat <for [Shadow Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -391,7 +412,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Star Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Star Master] units>"
+          "[+15]% XP gained from combat <for [Star Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -408,7 +430,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Moon Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Moon Master] units>"
+          "[+15]% XP gained from combat <for [Moon Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -425,7 +448,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Sound Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Sound Master] units>"
+          "[+15]% XP gained from combat <for [Sound Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -442,7 +466,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Illusion Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Illusion Master] units>"
+          "[+15]% XP gained from combat <for [Illusion Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -505,7 +530,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Wisdom Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Wisdom Master] units>"
+          "[+15]% XP gained from combat <for [Wisdom Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -522,7 +548,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Emotion Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Emotion Master] units>"
+          "[+15]% XP gained from combat <for [Emotion Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -539,7 +566,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Enchantment Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Enchantment Master] units>"
+          "[+15]% XP gained from combat <for [Enchantment Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -556,7 +584,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Soul Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Soul Master] units>"
+          "[+15]% XP gained from combat <for [Soul Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -573,7 +602,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Dream Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Dream Master] units>"
+          "[+15]% XP gained from combat <for [Dream Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -590,7 +620,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Enslavement Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Enslavement Master] units>"
+          "[+15]% XP gained from combat <for [Enslavement Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -607,7 +638,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Time Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Time Master] units>"
+          "[+15]% XP gained from combat <for [Time Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -624,7 +656,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Space Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Space Master] units>"
+          "[+15]% XP gained from combat <for [Space Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -641,7 +674,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Rule Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Rule Master] units>"
+          "[+15]% XP gained from combat <for [Rule Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -658,7 +692,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Phantom Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Phantom Master] units>"
+          "[+15]% XP gained from combat <for [Phantom Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -675,7 +710,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Restriction Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Restriction Master] units>"
+          "[+15]% XP gained from combat <for [Restriction Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -692,7 +728,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Luck Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Luck Master] units>"
+          "[+15]% XP gained from combat <for [Luck Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -709,7 +746,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Heaven Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Heaven Master] units>"
+          "[+15]% XP gained from combat <for [Heaven Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -726,7 +764,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Qi Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Qi Master] units>"
+          "[+15]% XP gained from combat <for [Qi Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -743,7 +782,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Refinement Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Refinement Master] units>"
+          "[+15]% XP gained from combat <for [Refinement Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -760,7 +800,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Formation Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Formation Master] units>"
+          "[+15]% XP gained from combat <for [Formation Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -777,7 +818,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Food Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Food Master] units>"
+          "[+15]% XP gained from combat <for [Food Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -794,7 +836,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Pill Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Pill Master] units>"
+          "[+15]% XP gained from combat <for [Pill Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -811,7 +854,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Information Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Information Master] units>"
+          "[+15]% XP gained from combat <for [Information Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -828,7 +872,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Human Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Human Master] units>"
+          "[+15]% XP gained from combat <for [Human Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -845,7 +890,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Painting Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Painting Master] units>"
+          "[+15]% XP gained from combat <for [Painting Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {
@@ -862,7 +908,8 @@
         ],
         "uniques": [
           "Only available <when number of [[Theft Master] Units] is more than [0]>",
-          "[+15]% XP gained from combat <for [Theft Master] units>"
+          "[+15]% XP gained from combat <for [Theft Master] units>",
+          "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
         ],
         "civilopediaText": [
           {

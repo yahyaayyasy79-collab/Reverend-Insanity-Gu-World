@@ -282,6 +282,9 @@ public class Autoplay {
             rec.put("science", Math.round(next.getScience()));
             rec.put("happiness", c.getHappiness());
             rec.put("techs", c.getTech().getTechsResearched().size());
+            int lores = 0;   // Layer 8: the path lore techs among them
+            for (String t : c.getTech().getTechsResearched()) if (t.endsWith(" Path Lore")) lores++;
+            rec.put("lores", lores);
             rec.put("policies", c.getPolicies().getAdoptedPolicies().size());
             rec.put("policyNames", new ArrayList<>(c.getPolicies().getAdoptedPolicies()));
             rec.put("era", c.getEra().getName());
