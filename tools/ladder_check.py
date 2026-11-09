@@ -121,9 +121,10 @@ def check(mod_root: Path) -> tuple[int, list[str]]:
     ruin = next((r["uniques"] for r in ruins.values() if "Triggers a [Refinement Attempt] event" in r["uniques"]), None)
     eats = {name: {m[2]: int(m[1]) for u in p.get("uniques", []) if (m := CONSUMES.match(u))}
             for name, p in promos.items()}
-    foods = sorted({r for d in eats.values() for r in d})
     ladder_gu = sorted({g[1] for c in refining for u in c["uniques"] if (g := GAIN.match(u) or LOSE.match(u))}
                        | {"Black Boar Gu", "Liquor Worm"} | set(PATHS))
+    # only the foods the ladder's own Gu eat: the 44 path foods (2026-11-09) would make 3^48 states
+    foods = sorted({r for g in ladder_gu for r in eats.get(g, {})})
 
     def eaten(gu: set[str]) -> dict[str, int]:
         total: dict[str, int] = {}

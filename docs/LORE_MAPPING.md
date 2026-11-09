@@ -5259,3 +5259,69 @@ the AI researches the cheapest researchable tech first [src NextTurnAutomation.c
 for the paths its units walk; a unit count takes a combined filter (`{A} {B}`, [src MultiFilter]). The lore techs sit in the first era's three columns: a tech of a later column would move
 its clan into a later era before its time (civ-era conditionals drive events and global uniques). E8 re-tuned:
 `cityStrengthFromTechsMultiplier` 11.0 (was the default 5.5) for a 74-tech tree. A lore opens only with a Master of rank three or higher, when Grandmaster needs it. The lores never all get researched, so each era starts with its first tech (E15): 12-30 turns later than before, main techs, ranks and immortals on time.
+
+## Path foods: one basic food per path (the user, 2026-11-09)
+
+The user: "tambahkan tiap jalur makanan dasar nya ... sebarkanlah sumber daya itu ke seluruh 5 benua ... rata kan sama
+semua dan seimbangkan". Every path's Gu now eat a basic food of their own (data/path_foods.csv, tools/path_foods.py,
+design and numbers in docs/PATH_ECONOMY.md). Each verdict was checked in the raw text (R); a food named by the canon
+for a Gu of the path is CANON, a canon food or plant given to another path, or a canon object used as a food, is
+ADAPTED. Two draft picks failed the check and were replaced: "盗天眼花" is no flower (the words are 盗天 + 眼花缭乱),
+and 九曲梦里花 is a dream-path material, so it went to the dream path.
+
+| Path | Food | Chinese | Home / second region | Canon | Source | Status |
+|---|---|---|---|---|---|---|
+| Strength | Wild Boar | 野猪 | Southern Border / Northern Plains | the White Boar Gu eats pork | R V1c64 | CANON |
+| Transformation | Wild Deer | 鹿肉 | Northern Plains / Southern Border | deer meat feeds some Gu; the beast-shaped Gu of the transformation path take it here | R V1c65 | ADAPTED |
+| Bone | Beast Milk | 奶水 | Northern Plains / Eastern Sea | the Bone Spear Gu and the Spiral Bone Spear Gu live on milk | R V2c23 | CANON |
+| Blood | Python Blood | 蟒血 | Southern Border / Eastern Sea | python blood is the best food of many blood-path Gu; fresh crocodile blood feeds the Blood Skull Gu | R V3c143 V2c6 | CANON |
+| Sword | Fine Iron | 精铁 | Central Continent / Western Desert | no canon food is named for the sword path's Gu; fine iron, the metal of the Fine Iron Bone Gu, feeds them here | R V2c156 | ADAPTED |
+| Blade | Old Blades | 旧刀 | Western Desert / Northern Plains | the Sole Blade Gu lives inside a blade and eats it away | R V3c114 | CANON |
+| Metal | Rooster Iron | 雄鸡铁 | Western Desert / Southern Border | rooster iron lies in open-air beds and rings in the wind; the metal path's Gu eat it here | R V5c869 | ADAPTED |
+| Weapon | Iron Ore | 铁矿 | Northern Plains / Western Desert | no canon food is named for the weapon path's Gu; the iron ore weapons are forged from feeds them here | R V5c869 | ADAPTED |
+| Killing | Battlefield Bones | 白骨 | Western Desert / Northern Plains | a rank-five Gu that outlived its master turned wild and fed on the white bones of a battlefield | R V3c25 | CANON |
+| Fire | Fire Charcoal | 火炭 | Western Desert / Southern Border | the Fire Charcoal Gu burns from within; the fire path's Gu eat charcoal here | R V1c152 | ADAPTED |
+| Water | Dragonfish | 龙鱼 | Eastern Sea / Southern Border | dragonfish meat is the most common food of immortal Gu | R V4c260 | ADAPTED |
+| Wood | Lingzhi | 灵芝 | Southern Border / Central Continent | giant lingzhi can feed Gu | R V4c31 | CANON |
+| Earth | Marsh Mud | 泥浆 | Western Desert / Southern Border | mud crabs swallow marsh mud and carry the Gruel Mud Gu's power | R V3c20 | ADAPTED |
+| Wind | Wind Knot Grass | 风结草 | Southern Border / Northern Plains | the beastmen believed whoever unties wind knot grass is favoured by heaven; the wind path's Gu eat it here | R V4c263 | ADAPTED |
+| Cloud | Sand Gull Earth | 沙鸥土 | Western Desert / Eastern Sea | ten thousand jin of sand gull earth feed the Connected Clouds Gu | R V4c60 | CANON |
+| Ice Snow | Dancing Snow | 舞遥雪 | Northern Plains / Central Continent | dancing snow is the food of an immortal Gu; the ice path's Gu eat it here | R V5c441 | ADAPTED |
+| Lightning | Lightning Eel | 闪电鳗鱼 | Eastern Sea / Northern Plains | deep-sea lightning eels feed an immortal Gu | R V4c24 | ADAPTED |
+| Poison | Rotten Frozen Mud | 腐泥冻土 | Northern Plains / Southern Border | frozen rotten mud feeds the Smelly Fart Fat Worm | R V1c88 V6c132 | CANON |
+| Light | Flame Swan Stone | 炎鸿石 | Western Desert / Central Continent | flame swan stone feeds the Dazzling Light Gu | R V5c62 | CANON |
+| Dark | Dark Fragrant Mushroom | 暗香菇 | Southern Border / Eastern Sea | dark fragrant mushrooms grow under the arrow bamboo; the dark path's Gu eat them here | R V4c202 | ADAPTED |
+| Shadow | White Shadow Grass | 白影草 | Southern Border / Northern Plains | white shadow grass grows under the arrow bamboo; the shadow path's Gu eat it here | R V4c202 | ADAPTED |
+| Star | Arrow Bamboo | 箭竹 | Southern Border / Central Continent | the Star Dart Gu drinks the juice of the arrow bamboo | R V4c202 | CANON |
+| Moon | Moon Orchid | 月兰 | Southern Border / Northern Plains | the Moonlight Gu eats moon orchid petals | R V1c23 V1c39 | CANON |
+| Sound | Wave Sound Conch | 涛声 | Eastern Sea / Western Desert | the wave-sound held in a conch is a sound-path material of the Shen clan | R V5c874 | ADAPTED |
+| Illusion | Illusion Peach | 幻界桃 | Central Continent / Western Desert | the illusion-realm peach tree weaves illusions to guard itself; the illusion path's Gu eat its fruit here | R V4c150 | ADAPTED |
+| Wisdom | Splendid Overlord Flower | 斑斓霸王花 | Western Desert / Central Continent | the Wisdom Sword Gu eats the splendid overlord flower | R V5c62 V5c276 | CANON |
+| Emotion | Taize Flower | 太泽花 | Central Continent / Eastern Sea | the Regret Gu eats the mist of taize flowers | R V5c660 | CANON |
+| Enchantment | Peach Blossom | 桃花 | Southern Border / Northern Plains | peach blossom is the charm of spring; the enchantment path's Gu eat it here | R V4c49 | ADAPTED |
+| Soul | White Lotus Silkworm | 白莲巨蚕 | Central Continent / Southern Border | the flesh of white lotus silkworms feeds the Cleanse Soul Gu | R V4c23 V5c439 | CANON |
+| Dream | Nine-Bend Dream Flower | 九曲梦里花 | Central Continent / Western Desert | the nine-bend dream flower is a dream-path Gu material | R V6c128 V6c131 | CANON |
+| Enslavement | Wolf Meat | 狼肉 | Northern Plains / Southern Border | enslavement Gu Masters must feed their beast packs; a wolf pack's hunt yields wolf meat | R V2c151 V3c53 | ADAPTED |
+| Time | Time River Water | 光阴河水 | Central Continent / Eastern Sea | the Years Flow Like Water Gu only drinks the water of the river of time | R V5c437 | CANON |
+| Space | Nether Jellyfish | 幽冥水母 | Eastern Sea / Central Continent | tens of thousands of nether jellyfish feed a travelling immortal Gu | R V4c24 | ADAPTED |
+| Rule | Pearl Thread Water | 珠线水 | Eastern Sea / Central Continent | an immortal Gu soaks in pearl thread water, the saliva of immemorial water spiders, and stays fed for eighty years | R V5c770 | CANON |
+| Phantom | Flying Bear Flesh | 飞熊血肉 | Northern Plains / Southern Border | the Flying Bear Phantom Gu eats the flesh of desolate flying bears | R V3c181 | CANON |
+| Restriction | North Ban Licorice | 北禁甘草 | Northern Plains / Western Desert | the northern wall's light qi carries the name of north ban licorice; the restriction path's Gu eat it here | R V5c772 | ADAPTED |
+| Luck | Hound Dung | 犬粪 | Northern Plains / Western Desert | the Dog Shit Luck Gu is fed with the dung of desolate hounds | R V5c112 V5c72 | CANON |
+| Heaven | Brocade Cloud | 锦绣云 | Central Continent / Western Desert | the Heavenly Secret Gu is fed with brocade clouds | R V6c326 | CANON |
+| Qi | Heavy Gold | 重金 | Northern Plains / Western Desert | the heavy gold under Lou Lan Blessed Land feeds the Strength Qi Gu | R V4c61 | CANON |
+| Refinement | Ash | 灰烬 | Central Continent / Western Desert | the Ash Gu lives on ashes; the refinement path's furnaces leave them | R V2c8 | ADAPTED |
+| Formation | Star Cave Stone | 星洞石 | Central Continent / Southern Border | star cave stones lie under the arrow bamboo; formations are laid on them | R V4c202 | ADAPTED |
+| Food | Wine | 酒 | Southern Border / Central Continent | the Liquor Worm drinks wine | R V1c14 V1c23 | CANON |
+| Pill | Ginseng Whiskers | 参须 | Central Continent / Southern Border | ginseng whiskers feed the Earth Communication Ear Grass | R V2c3 | ADAPTED |
+| Information | Old Scrolls | 书卷 | Central Continent / Western Desert | the Bookworm eats books and maps and remembers them | R V1c71 | CANON |
+| Human | Rice | 稻米 | Southern Border / Northern Plains | clans store rice for people beside the Gu's food | R V1c132 | ADAPTED |
+| Painting | Danqing Incense | 丹青香 | Northern Plains / Eastern Sea | danqing incense feeds the Soul Swap Gu; its name is the painter's colours | R V5c93 | ADAPTED |
+| Theft | Jade-Eye Monkey | 玉眼石猴 | Western Desert / Central Continent | killing jade-eye stone monkeys feeds the Jade Skin Gu; the thieving monkeys feed the theft path's Gu here | R V1c79 | ADAPTED |
+
+Exact uniques (the halls', branches' and lores' food lines, such as `Provides [1] [Fine Iron]`, are quoted in docs/PATHS.md):
+
+```
+[-4] Happiness from each type of luxury resource
+[+4 Happiness] [in capital] <when above [0] [Furs]>
+```

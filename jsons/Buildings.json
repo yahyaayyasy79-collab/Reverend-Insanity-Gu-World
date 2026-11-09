@@ -2178,6 +2178,7 @@
     "uniques": [
       "Only available <after adopting [Strength Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Strength Master] promotion",
+      "Provides [1] [Wild Boar]",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
@@ -2196,6 +2197,7 @@
     "uniques": [
       "Only available <after adopting [Transformation Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Transformation Master] promotion",
+      "Provides [1] [Wild Deer]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2215,6 +2217,7 @@
     "uniques": [
       "Only available <after adopting [Bone Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Bone Master] promotion",
+      "Provides [1] [Beast Milk]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2234,6 +2237,7 @@
     "uniques": [
       "Only available <after adopting [Blood Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Blood Master] promotion",
+      "Provides [1] [Python Blood]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2253,6 +2257,7 @@
     "uniques": [
       "Only available <after adopting [Sword Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Sword Master] promotion",
+      "Provides [1] [Fine Iron]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2272,6 +2277,7 @@
     "uniques": [
       "Only available <after adopting [Blade Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Blade Master] promotion",
+      "Provides [1] [Old Blades]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2291,6 +2297,7 @@
     "uniques": [
       "Only available <after adopting [Metal Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Metal Master] promotion",
+      "Provides [1] [Rooster Iron]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2310,6 +2317,7 @@
     "uniques": [
       "Only available <after adopting [Weapon Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Weapon Master] promotion",
+      "Provides [1] [Iron Ore]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2329,6 +2337,7 @@
     "uniques": [
       "Only available <after adopting [Killing Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Killing Master] promotion",
+      "Provides [1] [Battlefield Bones]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2348,6 +2357,7 @@
     "uniques": [
       "Only available <after adopting [Fire Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Fire Master] promotion",
+      "Provides [1] [Fire Charcoal]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2367,6 +2377,7 @@
     "uniques": [
       "Only available <after adopting [Water Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Water Master] promotion",
+      "Provides [1] [Dragonfish]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
@@ -2385,6 +2396,7 @@
     "uniques": [
       "Only available <after adopting [Wood Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Wood Master] promotion",
+      "Provides [1] [Lingzhi]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2404,6 +2416,7 @@
     "uniques": [
       "Only available <after adopting [Earth Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Earth Master] promotion",
+      "Provides [1] [Marsh Mud]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2423,6 +2436,7 @@
     "uniques": [
       "Only available <after adopting [Wind Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Wind Master] promotion",
+      "Provides [1] [Wind Knot Grass]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>"
@@ -2441,6 +2455,7 @@
     "uniques": [
       "Only available <after adopting [Cloud Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Cloud Master] promotion",
+      "Provides [1] [Sand Gull Earth]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2460,6 +2475,7 @@
     "uniques": [
       "Only available <after adopting [Ice Snow Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Ice Snow Master] promotion",
+      "Provides [1] [Dancing Snow]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2479,6 +2495,7 @@
     "uniques": [
       "Only available <after adopting [Lightning Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Lightning Master] promotion",
+      "Provides [1] [Lightning Eel]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2498,6 +2515,7 @@
     "uniques": [
       "Only available <after adopting [Poison Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Poison Master] promotion",
+      "Provides [1] [Rotten Frozen Mud]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2517,6 +2535,7 @@
     "uniques": [
       "Only available <after adopting [Light Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Light Master] promotion",
+      "Provides [1] [Flame Swan Stone]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2536,6 +2555,7 @@
     "uniques": [
       "Only available <after adopting [Dark Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Dark Master] promotion",
+      "Provides [1] [Dark Fragrant Mushroom]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2555,6 +2575,7 @@
     "uniques": [
       "Only available <after adopting [Shadow Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Shadow Master] promotion",
+      "Provides [1] [White Shadow Grass]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2574,6 +2595,7 @@
     "uniques": [
       "Only available <after adopting [Star Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Star Master] promotion",
+      "Provides [1] [Arrow Bamboo]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2593,6 +2615,7 @@
     "uniques": [
       "Only available <after adopting [Moon Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Moon Master] promotion",
+      "Provides [1] [Moon Orchid]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>"
@@ -2611,6 +2634,7 @@
     "uniques": [
       "Only available <after adopting [Sound Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Sound Master] promotion",
+      "Provides [1] [Wave Sound Conch]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2630,6 +2654,7 @@
     "uniques": [
       "Only available <after adopting [Illusion Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Illusion Master] promotion",
+      "Provides [1] [Illusion Peach]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2649,6 +2674,7 @@
     "uniques": [
       "Only available <after adopting [Wisdom Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Wisdom Master] promotion",
+      "Provides [1] [Splendid Overlord Flower]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2668,6 +2694,7 @@
     "uniques": [
       "Only available <after adopting [Emotion Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Emotion Master] promotion",
+      "Provides [1] [Taize Flower]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2687,6 +2714,7 @@
     "uniques": [
       "Only available <after adopting [Enchantment Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Enchantment Master] promotion",
+      "Provides [1] [Peach Blossom]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2706,6 +2734,7 @@
     "uniques": [
       "Only available <after adopting [Soul Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Soul Master] promotion",
+      "Provides [1] [White Lotus Silkworm]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2725,6 +2754,7 @@
     "uniques": [
       "Only available <after adopting [Dream Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Dream Master] promotion",
+      "Provides [1] [Nine-Bend Dream Flower]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2744,6 +2774,7 @@
     "uniques": [
       "Only available <after adopting [Enslavement Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Enslavement Master] promotion",
+      "Provides [1] [Wolf Meat]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2763,6 +2794,7 @@
     "uniques": [
       "Only available <after adopting [Time Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Time Master] promotion",
+      "Provides [1] [Time River Water]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2782,6 +2814,7 @@
     "uniques": [
       "Only available <after adopting [Space Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Space Master] promotion",
+      "Provides [1] [Nether Jellyfish]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2801,6 +2834,7 @@
     "uniques": [
       "Only available <after adopting [Rule Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Rule Master] promotion",
+      "Provides [1] [Pearl Thread Water]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2820,6 +2854,7 @@
     "uniques": [
       "Only available <after adopting [Phantom Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Phantom Master] promotion",
+      "Provides [1] [Flying Bear Flesh]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2839,6 +2874,7 @@
     "uniques": [
       "Only available <after adopting [Restriction Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Restriction Master] promotion",
+      "Provides [1] [North Ban Licorice]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2858,6 +2894,7 @@
     "uniques": [
       "Only available <after adopting [Luck Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Luck Master] promotion",
+      "Provides [1] [Hound Dung]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2877,6 +2914,7 @@
     "uniques": [
       "Only available <after adopting [Heaven Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Heaven Master] promotion",
+      "Provides [1] [Brocade Cloud]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2896,6 +2934,7 @@
     "uniques": [
       "Only available <after adopting [Qi Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Qi Master] promotion",
+      "Provides [1] [Heavy Gold]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2915,6 +2954,7 @@
     "uniques": [
       "Only available <after adopting [Refinement Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Refinement Master] promotion",
+      "Provides [1] [Ash]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2934,6 +2974,7 @@
     "uniques": [
       "Only available <after adopting [Formation Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Formation Master] promotion",
+      "Provides [1] [Star Cave Stone]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2953,6 +2994,7 @@
     "uniques": [
       "Only available <after adopting [Food Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Food Master] promotion",
+      "Provides [1] [Wine]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2972,6 +3014,7 @@
     "uniques": [
       "Only available <after adopting [Pill Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Pill Master] promotion",
+      "Provides [1] [Ginseng Whiskers]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -2991,6 +3034,7 @@
     "uniques": [
       "Only available <after adopting [Information Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Information Master] promotion",
+      "Provides [1] [Old Scrolls]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -3010,6 +3054,7 @@
     "uniques": [
       "Only available <after adopting [Human Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Human Master] promotion",
+      "Provides [1] [Rice]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -3029,6 +3074,7 @@
     "uniques": [
       "Only available <after adopting [Painting Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Painting Master] promotion",
+      "Provides [1] [Danqing Incense]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",
@@ -3048,6 +3094,7 @@
     "uniques": [
       "Only available <after adopting [Theft Path]>",
       "All newly-trained [Gu Master] units [in this city] receive the [Theft Master] promotion",
+      "Provides [1] [Jade-Eye Monkey]",
       "[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>",
       "[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>",

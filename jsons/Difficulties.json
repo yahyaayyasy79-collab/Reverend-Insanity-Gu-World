@@ -2,7 +2,7 @@
   {
     "name": "Settler",
     "baseHappiness": 21,
-    "extraHappinessPerLuxury": 1,
+    "extraHappinessPerLuxury": 0,
     "researchCostModifier": 0.9,
     "unitCostModifier": 0.5,
     "unitSupplyBase": 10,
@@ -32,7 +32,7 @@
   {
     "name": "Chieftain",
     "baseHappiness": 18,
-    "extraHappinessPerLuxury": 1,
+    "extraHappinessPerLuxury": 0,
     "researchCostModifier": 0.95,
     "unitCostModifier": 0.67,
     "unitSupplyBase": 7,

@@ -1,6 +1,8 @@
 {
   "name": "GlobalUniques",
   "uniques": [
+    "[-4] Happiness from each type of luxury resource",
+    "[+4 Happiness] [in capital] <when above [0] [Furs]>",
     "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]>",
     "Nullifies Growth [in all cities] <when below [-10] [Happiness]>",
     "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",

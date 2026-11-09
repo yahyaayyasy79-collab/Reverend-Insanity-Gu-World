@@ -462,10 +462,14 @@ def status(name: str) -> G:
 def hunger_meter(food: str, pct: int):
     """Phase D: a Gu's hunger meter step: its food over a bowl inside a ring filled clockwise from the top to pct."""
     from .glyphs2 import _boar_small, _jade_small, _orchid_small, _wine_small, bowl
-    food_draw = {"Moon Orchid": _orchid_small, "Wild Boar": _boar_small, "Jade": _jade_small, "Wine": _wine_small}[food]
+    from .foodart import FOODS   # the paths' basic foods (2026-11-09): their own icon, small, over the bowl
+    small = {"Moon Orchid": _orchid_small, "Wild Boar": _boar_small, "Jade": _jade_small, "Wine": _wine_small}
     g, inner = G(), G()
     bowl(inner, 50, 70, 26)
-    food_draw(inner)
+    if food in small:
+        small[food](inner)
+    else:
+        place(inner, FOODS[food](), 50, 32, 0.42)
     place(g, inner, 50, 52, 0.66)
     g.arc_band(50, 50, 49, 45, 0, 360)                        # the empty meter: a thin ring
     g.arc_band(50, 50, 49, 38, 90, 90 - 360 * pct / 100)      # the hunger so far: a thick band from the top

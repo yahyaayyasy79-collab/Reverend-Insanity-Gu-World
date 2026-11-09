@@ -73,6 +73,9 @@ class Palette:
             self.of_path[g["name"]] = self.of_path[GC.bearer(g["name"])] = g["path"]
         for r in GCO.rows():
             self.of_path[r["name"]] = GCO.paths_of(r)[0]
+        import path_foods as PF   # the paths' basic foods wear their path's colour
+        for r in PF.ROWS:
+            self.of_path.setdefault(r["food"], r["key"])
         eras = {e["name"]: _bright(tuple(e["iconRGB"])) for e in js("Eras.json")}
         self.tech = {t["name"]: eras[col["era"]] for col in js("Techs.json") for t in col["techs"]}
         self.nation = {}

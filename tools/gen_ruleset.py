@@ -509,6 +509,9 @@ dump("ModOptions.json", {"isBaseRuleset": True,
 dump("Beliefs.json", [])
 dump("Religions.json", [])
 dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
+    # the paths' basic foods are luxuries without happiness (tools/path_foods.py: a luxury, unlike a strategic resource,
+    # leaves the random maps' other resources alone); Furs, the one real luxury, keeps its 4 happiness
+    "[-4] Happiness from each type of luxury resource", "[+4 Happiness] [in capital] <when above [0] [Furs]>",
     "[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]>",
     "Nullifies Growth [in all cities] <when below [-10] [Happiness]>",
     "[-50]% [Production] [in all cities] <when below [-10] [Happiness]>",
@@ -1560,6 +1563,8 @@ dump("TileResources.json", [
      "uniques": ["Doesn't generate naturally", "Cannot be traded"]},
     {"name": "Furs", "resourceType": "Luxury", "terrainsCanBeFoundOn": ["Forest", "Tundra", "Jungle"], "gold": 2,
      "improvement": "Camp", "improvementStats": {"gold": 1}},
+    # the user, 2026-11-09: every path's basic food (data/path_foods.csv, tools/path_foods.py)
+    *gen_paths.PF.resources(),
     # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
 ] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
      for r in QI + [GREEN, LIFESPAN, MATERIALS, RED, WHITE, APRICOT]])
@@ -1966,6 +1971,9 @@ for d in diffs:
         d[k] = [{"Scout": "Rank One Gu Master", "Settler": "Clan Settler", "Worker": "Mortal Laborer"}.get(u, u) for u in d.get(k, [])]
     d["aiFreeTechs"] = [TECHMAP[t] for t in d.get("aiFreeTechs", [])]
     d["baseHappiness"] = d.get("baseHappiness", 0) + 6  # Slice 1 has one luxury (Furs) instead of Vanilla's many
+    # the paths' basic foods are luxuries that give no happiness (tools/path_foods.py): the per-luxury happiness is
+    # switched off in GlobalUniques, so the easy levels' extra point goes too, and Furs keeps its 4 there
+    d["extraHappinessPerLuxury"] = 0
 dump("Difficulties.json", diffs)
 dump("Speeds.json", json5.load(open(os.path.join(VAN, "Speeds.json"))))
 

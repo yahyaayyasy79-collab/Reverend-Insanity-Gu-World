@@ -24,7 +24,7 @@ from PIL import Image, ImageDraw, PngImagePlugin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from art import arcart, csart, cultart, glyphs, glyphs2, guart, heroart, pathart, pixeltiles, pixelunits  # noqa: E402
+from art import arcart, csart, cultart, foodart, glyphs, glyphs2, guart, heroart, pathart, pixeltiles, pixelunits  # noqa: E402
 from common import REPO_ROOT  # noqa: E402
 
 TAG = ("GeneratedArt", "gen_art")
@@ -97,9 +97,24 @@ def main(argv: list[str]) -> int:
                 # reference audit Layer 1: the small stages, the rank relics, the extreme physique
                 + cultart.icons()
                 # the user (2026-11-08): the heroes' emblems
-                + heroart.icons())
+                + heroart.icons() + foodart.icons())
+    # the paths' basic foods (2026-11-09) and their Gu's hunger meters overflowed game.png and Paths.png (Unciv warns
+    # on a game2.png): they get their own atlas, Foods.png
+    import path_foods
+    new_foods = {r["food"] for r in path_foods.NEW}
+    food_gu = {g["name"] for g in gen_paths.PATH_GU if g["food"] in new_foods}
+    food_icons = {("ResourceIcons", f) for f in new_foods}
+    for folder, name, _, _ in registry:
+        if folder == "UnitPromotionIcons" and " Hunger " in name and name.split(" Hunger ")[0] in food_gu:
+            food_icons.add((folder, name))
     for folder, name, draw, ink in registry:
-        if (folder, name) in policy_icons:
+        if (folder, name) in food_icons:
+            for old_dir in (images, args.mod / "Images.Paths", args.mod / "Images.Arc"):
+                stale = old_dir / folder / f"{name}.png"
+                if stale.exists() and ours(stale):
+                    stale.unlink()
+            target = args.mod / "Images.Foods" / folder / f"{name}.png"
+        elif (folder, name) in policy_icons:
             target = args.mod / "Images.Policies" / folder / f"{name}.png"
         elif (folder, name) in path_icons:
             stale = images / folder / f"{name}.png"

@@ -169,6 +169,8 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
+| GlobalUniques | `[-4] Happiness from each type of luxury resource` | -4 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `[+4 Happiness] [in capital] <when above [0] [Furs]>` | +4, 0 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-75]% growth [in all cities] <when between [-10] and [-1] [Happiness]>` | -75, -10, -1 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Nullifies Growth [in all cities] <when below [-10] [Happiness]>` | -10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[-50]% [Production] [in all cities] <when below [-10] [Happiness]>` | -50, -10 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -304,7 +306,7 @@ Vanilla's eight levels, edited in tools/gen_ruleset.py `Nations (Difficulties)` 
 | Field | Settler | Chieftain | Warlord | Prince | King | Emperor | Immortal | Deity |
 |---|---|---|---|---|---|---|---|---|
 | baseHappiness | 21 | 18 | 18 | 15 | 15 | 15 | 15 | 15 |
-| extraHappinessPerLuxury | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| extraHappinessPerLuxury | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | researchCostModifier | 0.9 | 0.95 | 1 | 1 | 1 | 1 | 1 | 1 |
 | unitCostModifier | 0.5 | 0.67 | 0.85 | 1 | 1 | 1 | 1 | 1 |
 | unitSupplyBase | 10 | 7 | 7 | 5 | 5 | 5 | 5 | 5 |
@@ -3070,278 +3072,325 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fate Seized | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | cost | 90 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Strength Hall | `Provides [1] [Wild Boar]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Transformation Hall | `Provides [1] [Wild Deer]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Transformation Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Bone Hall | `Provides [1] [Beast Milk]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Bone Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Blood Hall | `Provides [1] [Python Blood]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blood Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Sword Hall | `Provides [1] [Fine Iron]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sword Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Blade Hall | `Provides [1] [Old Blades]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Blade Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Metal Hall | `Provides [1] [Rooster Iron]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Metal Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Weapon Hall | `Provides [1] [Iron Ore]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Weapon Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Killing Hall | `Provides [1] [Battlefield Bones]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Killing Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Fire Hall | `Provides [1] [Fire Charcoal]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Fire Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Water Hall | `Provides [1] [Dragonfish]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Water Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Wood Hall | `Provides [1] [Lingzhi]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wood Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Earth Hall | `Provides [1] [Marsh Mud]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Earth Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Wind Hall | `Provides [1] [Wind Knot Grass]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wind Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Cloud Hall | `Provides [1] [Sand Gull Earth]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Cloud Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Ice Snow Hall | `Provides [1] [Dancing Snow]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Ice Snow Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Lightning Hall | `Provides [1] [Lightning Eel]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Lightning Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | cost | 120 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Poison Hall | `Provides [1] [Rotten Frozen Mud]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Poison Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Light Hall | `Provides [1] [Flame Swan Stone]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Light Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Dark Hall | `Provides [1] [Dark Fragrant Mushroom]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dark Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Shadow Hall | `Provides [1] [White Shadow Grass]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Shadow Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Star Hall | `Provides [1] [Arrow Bamboo]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Star Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | cost | 90 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Moon Hall | `Provides [1] [Moon Orchid]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Moon Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Sound Hall | `Provides [1] [Wave Sound Conch]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Sound Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Illusion Hall | `Provides [1] [Illusion Peach]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Illusion Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Wisdom Hall | `Provides [1] [Splendid Overlord Flower]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Wisdom Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Emotion Hall | `Provides [1] [Taize Flower]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Emotion Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Enchantment Hall | `Provides [1] [Peach Blossom]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enchantment Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Soul Hall | `Provides [1] [White Lotus Silkworm]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Soul Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Dream Hall | `Provides [1] [Nine-Bend Dream Flower]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Dream Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | cost | 170 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Enslavement Hall | `Provides [1] [Wolf Meat]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Enslavement Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Time Hall | `Provides [1] [Time River Water]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Time Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Space Hall | `Provides [1] [Nether Jellyfish]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Space Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Rule Hall | `Provides [1] [Pearl Thread Water]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Rule Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Phantom Hall | `Provides [1] [Flying Bear Flesh]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Phantom Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Restriction Hall | `Provides [1] [North Ban Licorice]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Restriction Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Luck Hall | `Provides [1] [Hound Dung]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Luck Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Heaven Hall | `Provides [1] [Brocade Cloud]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Heaven Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Qi Hall | `Provides [1] [Heavy Gold]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Qi Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Refinement Hall | `Provides [1] [Ash]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Refinement Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Formation Hall | `Provides [1] [Star Cave Stone]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Formation Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Food Hall | `Provides [1] [Wine]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Food Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Pill Hall | `Provides [1] [Ginseng Whiskers]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Pill Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Information Hall | `Provides [1] [Old Scrolls]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Information Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Human Hall | `Provides [1] [Rice]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Human Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Painting Hall | `Provides [1] [Danqing Incense]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Painting Hall | `[-90]% weight to this choice for AI decisions <for [Gu Yue Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | cost | 240 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | culture | 1 | tools/gen_ruleset.py `Buildings` |
+| Theft Hall | `Provides [1] [Jade-Eye Monkey]` | 1 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | `[-90]% weight to this choice for AI decisions <for [Xiong Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | `[-90]% weight to this choice for AI decisions <for [Bai Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
 | Theft Hall | `[-90]% weight to this choice for AI decisions <for [Wu Clan] Civilizations>` | -90 | tools/gen_ruleset.py `Buildings` |
@@ -3357,150 +3406,197 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Strength Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Strength Path Lore | `Only available <when number of [[{Strength Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Strength Path Lore | `[+15]% XP gained from combat <for [Strength Master] units>` | +15 | data/techs.csv `uniques` |
+| Strength Path Lore | `Provides [1] [Wild Boar]` | 1 | data/techs.csv `uniques` |
 | Transformation Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Transformation Path Lore | `Only available <when number of [[{Transformation Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Transformation Path Lore | `[+15]% XP gained from combat <for [Transformation Master] units>` | +15 | data/techs.csv `uniques` |
+| Transformation Path Lore | `Provides [1] [Wild Deer]` | 1 | data/techs.csv `uniques` |
 | Bone Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Bone Path Lore | `Only available <when number of [[{Bone Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Bone Path Lore | `[+15]% XP gained from combat <for [Bone Master] units>` | +15 | data/techs.csv `uniques` |
+| Bone Path Lore | `Provides [1] [Beast Milk]` | 1 | data/techs.csv `uniques` |
 | Blood Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Blood Path Lore | `Only available <when number of [[{Blood Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Blood Path Lore | `[+15]% XP gained from combat <for [Blood Master] units>` | +15 | data/techs.csv `uniques` |
+| Blood Path Lore | `Provides [1] [Python Blood]` | 1 | data/techs.csv `uniques` |
 | Sword Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Sword Path Lore | `Only available <when number of [[{Sword Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Sword Path Lore | `[+15]% XP gained from combat <for [Sword Master] units>` | +15 | data/techs.csv `uniques` |
+| Sword Path Lore | `Provides [1] [Fine Iron]` | 1 | data/techs.csv `uniques` |
 | Blade Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Blade Path Lore | `Only available <when number of [[{Blade Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Blade Path Lore | `[+15]% XP gained from combat <for [Blade Master] units>` | +15 | data/techs.csv `uniques` |
+| Blade Path Lore | `Provides [1] [Old Blades]` | 1 | data/techs.csv `uniques` |
 | Metal Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Metal Path Lore | `Only available <when number of [[{Metal Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Metal Path Lore | `[+15]% XP gained from combat <for [Metal Master] units>` | +15 | data/techs.csv `uniques` |
+| Metal Path Lore | `Provides [1] [Rooster Iron]` | 1 | data/techs.csv `uniques` |
 | Weapon Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Weapon Path Lore | `Only available <when number of [[{Weapon Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Weapon Path Lore | `[+15]% XP gained from combat <for [Weapon Master] units>` | +15 | data/techs.csv `uniques` |
+| Weapon Path Lore | `Provides [1] [Iron Ore]` | 1 | data/techs.csv `uniques` |
 | Killing Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Killing Path Lore | `Only available <when number of [[{Killing Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Killing Path Lore | `[+15]% XP gained from combat <for [Killing Master] units>` | +15 | data/techs.csv `uniques` |
+| Killing Path Lore | `Provides [1] [Battlefield Bones]` | 1 | data/techs.csv `uniques` |
 | Column 2 (Spirit Spring Lore, Gu Feeding, Fire Path Lore, Water Path Lore, Wood Path Lore, Earth Path Lore, Wind Path Lore, Cloud Path Lore, Ice Snow Path Lore, Lightning Path Lore, Poison Path Lore, Light Path Lore, Dark Path Lore, Shadow Path Lore, Star Path Lore, Moon Path Lore, Sound Path Lore, Illusion Path Lore) | techCost | 40 | data/tech_columns.csv `techCost` |
 | Column 2 (Spirit Spring Lore, Gu Feeding, Fire Path Lore, Water Path Lore, Wood Path Lore, Earth Path Lore, Wind Path Lore, Cloud Path Lore, Ice Snow Path Lore, Lightning Path Lore, Poison Path Lore, Light Path Lore, Dark Path Lore, Shadow Path Lore, Star Path Lore, Moon Path Lore, Sound Path Lore, Illusion Path Lore) | buildingCost | 60 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 2 (Spirit Spring Lore, Gu Feeding, Fire Path Lore, Water Path Lore, Wood Path Lore, Earth Path Lore, Wind Path Lore, Cloud Path Lore, Ice Snow Path Lore, Lightning Path Lore, Poison Path Lore, Light Path Lore, Dark Path Lore, Shadow Path Lore, Star Path Lore, Moon Path Lore, Sound Path Lore, Illusion Path Lore) | wonderCost | 140 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Fire Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Fire Path Lore | `Only available <when number of [[{Fire Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Fire Path Lore | `[+15]% XP gained from combat <for [Fire Master] units>` | +15 | data/techs.csv `uniques` |
+| Fire Path Lore | `Provides [1] [Fire Charcoal]` | 1 | data/techs.csv `uniques` |
 | Water Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Water Path Lore | `Only available <when number of [[{Water Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Water Path Lore | `[+15]% XP gained from combat <for [Water Master] units>` | +15 | data/techs.csv `uniques` |
+| Water Path Lore | `Provides [1] [Dragonfish]` | 1 | data/techs.csv `uniques` |
 | Wood Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Wood Path Lore | `Only available <when number of [[{Wood Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Wood Path Lore | `[+15]% XP gained from combat <for [Wood Master] units>` | +15 | data/techs.csv `uniques` |
+| Wood Path Lore | `Provides [1] [Lingzhi]` | 1 | data/techs.csv `uniques` |
 | Earth Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Earth Path Lore | `Only available <when number of [[{Earth Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Earth Path Lore | `[+15]% XP gained from combat <for [Earth Master] units>` | +15 | data/techs.csv `uniques` |
+| Earth Path Lore | `Provides [1] [Marsh Mud]` | 1 | data/techs.csv `uniques` |
 | Wind Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Wind Path Lore | `Only available <when number of [[{Wind Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Wind Path Lore | `[+15]% XP gained from combat <for [Wind Master] units>` | +15 | data/techs.csv `uniques` |
+| Wind Path Lore | `Provides [1] [Wind Knot Grass]` | 1 | data/techs.csv `uniques` |
 | Cloud Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Cloud Path Lore | `Only available <when number of [[{Cloud Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Cloud Path Lore | `[+15]% XP gained from combat <for [Cloud Master] units>` | +15 | data/techs.csv `uniques` |
+| Cloud Path Lore | `Provides [1] [Sand Gull Earth]` | 1 | data/techs.csv `uniques` |
 | Ice Snow Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Ice Snow Path Lore | `Only available <when number of [[{Ice Snow Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Ice Snow Path Lore | `[+15]% XP gained from combat <for [Ice Snow Master] units>` | +15 | data/techs.csv `uniques` |
+| Ice Snow Path Lore | `Provides [1] [Dancing Snow]` | 1 | data/techs.csv `uniques` |
 | Lightning Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Lightning Path Lore | `Only available <when number of [[{Lightning Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Lightning Path Lore | `[+15]% XP gained from combat <for [Lightning Master] units>` | +15 | data/techs.csv `uniques` |
+| Lightning Path Lore | `Provides [1] [Lightning Eel]` | 1 | data/techs.csv `uniques` |
 | Poison Path Lore | cost | 40 | data/techs.csv `uniques` |
 | Poison Path Lore | `Only available <when number of [[{Poison Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Poison Path Lore | `[+15]% XP gained from combat <for [Poison Master] units>` | +15 | data/techs.csv `uniques` |
-| Light Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Poison Path Lore | `Provides [1] [Rotten Frozen Mud]` | 1 | data/techs.csv `uniques` |
+| Light Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Light Path Lore | `Only available <when number of [[{Light Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Light Path Lore | `[+15]% XP gained from combat <for [Light Master] units>` | +15 | data/techs.csv `uniques` |
-| Dark Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Light Path Lore | `Provides [1] [Flame Swan Stone]` | 1 | data/techs.csv `uniques` |
+| Dark Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Dark Path Lore | `Only available <when number of [[{Dark Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Dark Path Lore | `[+15]% XP gained from combat <for [Dark Master] units>` | +15 | data/techs.csv `uniques` |
-| Shadow Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Dark Path Lore | `Provides [1] [Dark Fragrant Mushroom]` | 1 | data/techs.csv `uniques` |
+| Shadow Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Shadow Path Lore | `Only available <when number of [[{Shadow Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Shadow Path Lore | `[+15]% XP gained from combat <for [Shadow Master] units>` | +15 | data/techs.csv `uniques` |
-| Star Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Shadow Path Lore | `Provides [1] [White Shadow Grass]` | 1 | data/techs.csv `uniques` |
+| Star Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Star Path Lore | `Only available <when number of [[{Star Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Star Path Lore | `[+15]% XP gained from combat <for [Star Master] units>` | +15 | data/techs.csv `uniques` |
-| Moon Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Star Path Lore | `Provides [1] [Arrow Bamboo]` | 1 | data/techs.csv `uniques` |
+| Moon Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Moon Path Lore | `Only available <when number of [[{Moon Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Moon Path Lore | `[+15]% XP gained from combat <for [Moon Master] units>` | +15 | data/techs.csv `uniques` |
-| Sound Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Moon Path Lore | `Provides [1] [Moon Orchid]` | 1 | data/techs.csv `uniques` |
+| Sound Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Sound Path Lore | `Only available <when number of [[{Sound Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Sound Path Lore | `[+15]% XP gained from combat <for [Sound Master] units>` | +15 | data/techs.csv `uniques` |
-| Illusion Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Sound Path Lore | `Provides [1] [Wave Sound Conch]` | 1 | data/techs.csv `uniques` |
+| Illusion Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Illusion Path Lore | `Only available <when number of [[{Illusion Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Illusion Path Lore | `[+15]% XP gained from combat <for [Illusion Master] units>` | +15 | data/techs.csv `uniques` |
+| Illusion Path Lore | `Provides [1] [Illusion Peach]` | 1 | data/techs.csv `uniques` |
 | Column 3 (Wine Brewing, Gu Refinement, Rank Two Cultivation, Wisdom Path Lore, Emotion Path Lore, Enchantment Path Lore, Soul Path Lore, Dream Path Lore, Enslavement Path Lore, Time Path Lore, Space Path Lore, Rule Path Lore, Phantom Path Lore, Restriction Path Lore, Luck Path Lore, Heaven Path Lore, Qi Path Lore, Refinement Path Lore, Formation Path Lore, Food Path Lore, Pill Path Lore, Information Path Lore, Human Path Lore, Painting Path Lore, Theft Path Lore) | techCost | 65 | data/tech_columns.csv `techCost` |
 | Column 3 (Wine Brewing, Gu Refinement, Rank Two Cultivation, Wisdom Path Lore, Emotion Path Lore, Enchantment Path Lore, Soul Path Lore, Dream Path Lore, Enslavement Path Lore, Time Path Lore, Space Path Lore, Rule Path Lore, Phantom Path Lore, Restriction Path Lore, Luck Path Lore, Heaven Path Lore, Qi Path Lore, Refinement Path Lore, Formation Path Lore, Food Path Lore, Pill Path Lore, Information Path Lore, Human Path Lore, Painting Path Lore, Theft Path Lore) | buildingCost | 75 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 3 (Wine Brewing, Gu Refinement, Rank Two Cultivation, Wisdom Path Lore, Emotion Path Lore, Enchantment Path Lore, Soul Path Lore, Dream Path Lore, Enslavement Path Lore, Time Path Lore, Space Path Lore, Rule Path Lore, Phantom Path Lore, Restriction Path Lore, Luck Path Lore, Heaven Path Lore, Qi Path Lore, Refinement Path Lore, Formation Path Lore, Food Path Lore, Pill Path Lore, Information Path Lore, Human Path Lore, Painting Path Lore, Theft Path Lore) | wonderCost | 170 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
-| Wisdom Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Wisdom Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Wisdom Path Lore | `Only available <when number of [[{Wisdom Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Wisdom Path Lore | `[+15]% XP gained from combat <for [Wisdom Master] units>` | +15 | data/techs.csv `uniques` |
-| Emotion Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Wisdom Path Lore | `Provides [1] [Splendid Overlord Flower]` | 1 | data/techs.csv `uniques` |
+| Emotion Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Emotion Path Lore | `Only available <when number of [[{Emotion Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Emotion Path Lore | `[+15]% XP gained from combat <for [Emotion Master] units>` | +15 | data/techs.csv `uniques` |
-| Enchantment Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Emotion Path Lore | `Provides [1] [Taize Flower]` | 1 | data/techs.csv `uniques` |
+| Enchantment Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Enchantment Path Lore | `Only available <when number of [[{Enchantment Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Enchantment Path Lore | `[+15]% XP gained from combat <for [Enchantment Master] units>` | +15 | data/techs.csv `uniques` |
-| Soul Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Enchantment Path Lore | `Provides [1] [Peach Blossom]` | 1 | data/techs.csv `uniques` |
+| Soul Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Soul Path Lore | `Only available <when number of [[{Soul Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Soul Path Lore | `[+15]% XP gained from combat <for [Soul Master] units>` | +15 | data/techs.csv `uniques` |
-| Dream Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Soul Path Lore | `Provides [1] [White Lotus Silkworm]` | 1 | data/techs.csv `uniques` |
+| Dream Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Dream Path Lore | `Only available <when number of [[{Dream Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Dream Path Lore | `[+15]% XP gained from combat <for [Dream Master] units>` | +15 | data/techs.csv `uniques` |
-| Enslavement Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Dream Path Lore | `Provides [1] [Nine-Bend Dream Flower]` | 1 | data/techs.csv `uniques` |
+| Enslavement Path Lore | cost | 60 | data/techs.csv `uniques` |
 | Enslavement Path Lore | `Only available <when number of [[{Enslavement Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Enslavement Path Lore | `[+15]% XP gained from combat <for [Enslavement Master] units>` | +15 | data/techs.csv `uniques` |
-| Time Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Enslavement Path Lore | `Provides [1] [Wolf Meat]` | 1 | data/techs.csv `uniques` |
+| Time Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Time Path Lore | `Only available <when number of [[{Time Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Time Path Lore | `[+15]% XP gained from combat <for [Time Master] units>` | +15 | data/techs.csv `uniques` |
-| Space Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Time Path Lore | `Provides [1] [Time River Water]` | 1 | data/techs.csv `uniques` |
+| Space Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Space Path Lore | `Only available <when number of [[{Space Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Space Path Lore | `[+15]% XP gained from combat <for [Space Master] units>` | +15 | data/techs.csv `uniques` |
-| Rule Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Space Path Lore | `Provides [1] [Nether Jellyfish]` | 1 | data/techs.csv `uniques` |
+| Rule Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Rule Path Lore | `Only available <when number of [[{Rule Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Rule Path Lore | `[+15]% XP gained from combat <for [Rule Master] units>` | +15 | data/techs.csv `uniques` |
-| Phantom Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Rule Path Lore | `Provides [1] [Pearl Thread Water]` | 1 | data/techs.csv `uniques` |
+| Phantom Path Lore | cost | 100 | data/techs.csv `uniques` |
 | Phantom Path Lore | `Only available <when number of [[{Phantom Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Phantom Path Lore | `[+15]% XP gained from combat <for [Phantom Master] units>` | +15 | data/techs.csv `uniques` |
-| Restriction Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Phantom Path Lore | `Provides [1] [Flying Bear Flesh]` | 1 | data/techs.csv `uniques` |
+| Restriction Path Lore | cost | 100 | data/techs.csv `uniques` |
 | Restriction Path Lore | `Only available <when number of [[{Restriction Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Restriction Path Lore | `[+15]% XP gained from combat <for [Restriction Master] units>` | +15 | data/techs.csv `uniques` |
-| Luck Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Restriction Path Lore | `Provides [1] [North Ban Licorice]` | 1 | data/techs.csv `uniques` |
+| Luck Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Luck Path Lore | `Only available <when number of [[{Luck Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Luck Path Lore | `[+15]% XP gained from combat <for [Luck Master] units>` | +15 | data/techs.csv `uniques` |
-| Heaven Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Luck Path Lore | `Provides [1] [Hound Dung]` | 1 | data/techs.csv `uniques` |
+| Heaven Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Heaven Path Lore | `Only available <when number of [[{Heaven Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Heaven Path Lore | `[+15]% XP gained from combat <for [Heaven Master] units>` | +15 | data/techs.csv `uniques` |
-| Qi Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Heaven Path Lore | `Provides [1] [Brocade Cloud]` | 1 | data/techs.csv `uniques` |
+| Qi Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Qi Path Lore | `Only available <when number of [[{Qi Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Qi Path Lore | `[+15]% XP gained from combat <for [Qi Master] units>` | +15 | data/techs.csv `uniques` |
-| Refinement Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Qi Path Lore | `Provides [1] [Heavy Gold]` | 1 | data/techs.csv `uniques` |
+| Refinement Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Refinement Path Lore | `Only available <when number of [[{Refinement Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Refinement Path Lore | `[+15]% XP gained from combat <for [Refinement Master] units>` | +15 | data/techs.csv `uniques` |
-| Formation Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Refinement Path Lore | `Provides [1] [Ash]` | 1 | data/techs.csv `uniques` |
+| Formation Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Formation Path Lore | `Only available <when number of [[{Formation Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Formation Path Lore | `[+15]% XP gained from combat <for [Formation Master] units>` | +15 | data/techs.csv `uniques` |
-| Food Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Formation Path Lore | `Provides [1] [Star Cave Stone]` | 1 | data/techs.csv `uniques` |
+| Food Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Food Path Lore | `Only available <when number of [[{Food Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Food Path Lore | `[+15]% XP gained from combat <for [Food Master] units>` | +15 | data/techs.csv `uniques` |
-| Pill Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Food Path Lore | `Provides [1] [Wine]` | 1 | data/techs.csv `uniques` |
+| Pill Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Pill Path Lore | `Only available <when number of [[{Pill Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Pill Path Lore | `[+15]% XP gained from combat <for [Pill Master] units>` | +15 | data/techs.csv `uniques` |
-| Information Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Pill Path Lore | `Provides [1] [Ginseng Whiskers]` | 1 | data/techs.csv `uniques` |
+| Information Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Information Path Lore | `Only available <when number of [[{Information Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Information Path Lore | `[+15]% XP gained from combat <for [Information Master] units>` | +15 | data/techs.csv `uniques` |
-| Human Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Information Path Lore | `Provides [1] [Old Scrolls]` | 1 | data/techs.csv `uniques` |
+| Human Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Human Path Lore | `Only available <when number of [[{Human Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Human Path Lore | `[+15]% XP gained from combat <for [Human Master] units>` | +15 | data/techs.csv `uniques` |
-| Painting Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Human Path Lore | `Provides [1] [Rice]` | 1 | data/techs.csv `uniques` |
+| Painting Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Painting Path Lore | `Only available <when number of [[{Painting Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Painting Path Lore | `[+15]% XP gained from combat <for [Painting Master] units>` | +15 | data/techs.csv `uniques` |
-| Theft Path Lore | cost | 40 | data/techs.csv `uniques` |
+| Painting Path Lore | `Provides [1] [Danqing Incense]` | 1 | data/techs.csv `uniques` |
+| Theft Path Lore | cost | 80 | data/techs.csv `uniques` |
 | Theft Path Lore | `Only available <when number of [[{Theft Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Theft Path Lore | `[+15]% XP gained from combat <for [Theft Master] units>` | +15 | data/techs.csv `uniques` |
+| Theft Path Lore | `Provides [1] [Jade-Eye Monkey]` | 1 | data/techs.csv `uniques` |
 | Column 4 (Gu Formations, Rank Three Cultivation) | techCost | 120 | data/tech_columns.csv `techCost` |
 | Column 4 (Gu Formations, Rank Three Cultivation) | buildingCost | 100 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 4 (Gu Formations, Rank Three Cultivation) | wonderCost | 220 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
@@ -3587,6 +3683,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Transformation Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Transformation Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Transformation Path | `[+5]% Strength <for [Transformation Master] units> <for every [Adopted [[Transformation Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Transformation Path | `Provides [2] [Wild Deer]` | 2 | tools/gen_ruleset.py `Policies` |
 | Transformation Path › Transformation Lineage | `[+15]% Strength <when defending> <for [Transformation Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Transformation Path › Transformation Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Transformation Path › Transformation Doctrine | `Heals [15] damage if it kills a unit <for [Transformation Master] units>` | 15 | tools/gen_ruleset.py `Policies` |
@@ -3594,6 +3691,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bone Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Bone Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Bone Path | `[+5]% Strength <for [Bone Master] units> <for every [Adopted [[Bone Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Bone Path | `Provides [2] [Beast Milk]` | 2 | tools/gen_ruleset.py `Policies` |
 | Bone Path › Bone Lineage | `[+15]% Strength <when defending> <for [Bone Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Bone Path › Bone Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Bone Path › Bone Doctrine | `Heals [15] damage if it kills a unit <for [Bone Master] units>` | 15 | tools/gen_ruleset.py `Policies` |
@@ -3601,6 +3699,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Blood Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Blood Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Blood Path | `[+5]% Strength <for [Blood Master] units> <for every [Adopted [[Blood Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Blood Path | `Provides [2] [Python Blood]` | 2 | tools/gen_ruleset.py `Policies` |
 | Blood Path › Blood Lineage | `[+15]% Strength <when defending> <for [Blood Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Blood Path › Blood Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Blood Path › Blood Doctrine | `Heals [15] damage if it kills a unit <for [Blood Master] units>` | 15 | tools/gen_ruleset.py `Policies` |
@@ -3608,6 +3707,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Sword Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Sword Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Sword Path | `[+5]% Strength <for [Sword Master] units> <for every [Adopted [[Sword Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Sword Path | `Provides [2] [Fine Iron]` | 2 | tools/gen_ruleset.py `Policies` |
 | Sword Path › Sword Lineage | `[+15]% Strength <when attacking> <for [Sword Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Sword Path › Sword Insight | `[+10]% Production when constructing [Military] units [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Sword Path › Sword Doctrine | `[1] Movement <for [Sword Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
@@ -3615,6 +3715,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Blade Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Blade Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Blade Path | `[+5]% Strength <for [Blade Master] units> <for every [Adopted [[Blade Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Blade Path | `Provides [2] [Old Blades]` | 2 | tools/gen_ruleset.py `Policies` |
 | Blade Path › Blade Lineage | `[+15]% Strength <when attacking> <for [Blade Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Blade Path › Blade Insight | `[+10]% Production when constructing [Military] units [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Blade Path › Blade Doctrine | `[1] Movement <for [Blade Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
@@ -3622,6 +3723,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Metal Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Metal Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Metal Path | `[+5]% Strength <for [Metal Master] units> <for every [Adopted [[Metal Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Metal Path | `Provides [2] [Rooster Iron]` | 2 | tools/gen_ruleset.py `Policies` |
 | Metal Path › Metal Lineage | `[+15]% Strength <when attacking> <for [Metal Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Metal Path › Metal Insight | `[+10]% Production when constructing [Military] units [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Metal Path › Metal Doctrine | `[1] Movement <for [Metal Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
@@ -3629,6 +3731,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Weapon Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Weapon Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Weapon Path | `[+5]% Strength <for [Weapon Master] units> <for every [Adopted [[Weapon Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Weapon Path | `Provides [2] [Iron Ore]` | 2 | tools/gen_ruleset.py `Policies` |
 | Weapon Path › Weapon Lineage | `[+15]% Strength <when attacking> <for [Weapon Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Weapon Path › Weapon Insight | `[+10]% Production when constructing [Military] units [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Weapon Path › Weapon Doctrine | `[1] Movement <for [Weapon Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
@@ -3636,6 +3739,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Killing Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Killing Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Killing Path | `[+5]% Strength <for [Killing Master] units> <for every [Adopted [[Killing Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Killing Path | `Provides [2] [Battlefield Bones]` | 2 | tools/gen_ruleset.py `Policies` |
 | Killing Path › Killing Lineage | `[+15]% Strength <when attacking> <for [Killing Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Killing Path › Killing Insight | `[+10]% Production when constructing [Military] units [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Killing Path › Killing Doctrine | `[1] Movement <for [Killing Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
@@ -3643,6 +3747,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fire Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Fire Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Fire Path | `[+5]% Strength <for [Fire Master] units> <for every [Adopted [[Fire Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Fire Path | `Provides [2] [Fire Charcoal]` | 2 | tools/gen_ruleset.py `Policies` |
 | Fire Path › Fire Lineage | `[+10]% Strength <for [Fire Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Fire Path › Fire Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Fire Path › Fire Doctrine | `[+10] HP when healing <for [Fire Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3650,6 +3755,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Water Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Water Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Water Path | `[+5]% Strength <for [Water Master] units> <for every [Adopted [[Water Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Water Path | `Provides [2] [Dragonfish]` | 2 | tools/gen_ruleset.py `Policies` |
 | Water Path › Water Lineage | `[+10]% Strength <for [Water Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Water Path › Water Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Water Path › Water Doctrine | `[+10] HP when healing <for [Water Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3657,6 +3763,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Wood Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Wood Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Wood Path | `[+5]% Strength <for [Wood Master] units> <for every [Adopted [[Wood Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Wood Path | `Provides [2] [Lingzhi]` | 2 | tools/gen_ruleset.py `Policies` |
 | Wood Path › Wood Lineage | `[+10]% Strength <for [Wood Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Wood Path › Wood Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Wood Path › Wood Doctrine | `[+10] HP when healing <for [Wood Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3664,6 +3771,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Earth Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Earth Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Earth Path | `[+5]% Strength <for [Earth Master] units> <for every [Adopted [[Earth Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Earth Path | `Provides [2] [Marsh Mud]` | 2 | tools/gen_ruleset.py `Policies` |
 | Earth Path › Earth Lineage | `[+10]% Strength <for [Earth Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Earth Path › Earth Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Earth Path › Earth Doctrine | `[+10] HP when healing <for [Earth Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3671,6 +3779,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Wind Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Wind Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Wind Path | `[+5]% Strength <for [Wind Master] units> <for every [Adopted [[Wind Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Wind Path | `Provides [2] [Wind Knot Grass]` | 2 | tools/gen_ruleset.py `Policies` |
 | Wind Path › Wind Lineage | `[+10]% Strength <for [Wind Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Wind Path › Wind Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Wind Path › Wind Doctrine | `[+10] HP when healing <for [Wind Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3678,6 +3787,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Cloud Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Cloud Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Cloud Path | `[+5]% Strength <for [Cloud Master] units> <for every [Adopted [[Cloud Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Cloud Path | `Provides [2] [Sand Gull Earth]` | 2 | tools/gen_ruleset.py `Policies` |
 | Cloud Path › Cloud Lineage | `[+10]% Strength <for [Cloud Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Cloud Path › Cloud Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Cloud Path › Cloud Doctrine | `[+10] HP when healing <for [Cloud Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3685,6 +3795,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Ice Snow Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Ice Snow Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Ice Snow Path | `[+5]% Strength <for [Ice Snow Master] units> <for every [Adopted [[Ice Snow Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Ice Snow Path | `Provides [2] [Dancing Snow]` | 2 | tools/gen_ruleset.py `Policies` |
 | Ice Snow Path › Ice Snow Lineage | `[+10]% Strength <for [Ice Snow Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Ice Snow Path › Ice Snow Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Ice Snow Path › Ice Snow Doctrine | `[+10] HP when healing <for [Ice Snow Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3692,6 +3803,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Lightning Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Lightning Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Lightning Path | `[+5]% Strength <for [Lightning Master] units> <for every [Adopted [[Lightning Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Lightning Path | `Provides [2] [Lightning Eel]` | 2 | tools/gen_ruleset.py `Policies` |
 | Lightning Path › Lightning Lineage | `[+10]% Strength <for [Lightning Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Lightning Path › Lightning Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Lightning Path › Lightning Doctrine | `[+10] HP when healing <for [Lightning Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3699,6 +3811,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Poison Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Poison Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Poison Path | `[+5]% Strength <for [Poison Master] units> <for every [Adopted [[Poison Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Poison Path | `Provides [2] [Rotten Frozen Mud]` | 2 | tools/gen_ruleset.py `Policies` |
 | Poison Path › Poison Lineage | `[+10]% Strength <for [Poison Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Poison Path › Poison Insight | `[+1 Food] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Poison Path › Poison Doctrine | `[+10] HP when healing <for [Poison Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3706,6 +3819,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Light Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Light Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Light Path | `[+5]% Strength <for [Light Master] units> <for every [Adopted [[Light Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Light Path | `Provides [2] [Flame Swan Stone]` | 2 | tools/gen_ruleset.py `Policies` |
 | Light Path › Light Lineage | `[1] Sight <for [Light Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Light Path › Light Insight | `[+1 Culture] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Light Path › Light Doctrine | `[+15]% Strength <when attacking> <for [Light Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
@@ -3713,6 +3827,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dark Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Dark Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Dark Path | `[+5]% Strength <for [Dark Master] units> <for every [Adopted [[Dark Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Dark Path | `Provides [2] [Dark Fragrant Mushroom]` | 2 | tools/gen_ruleset.py `Policies` |
 | Dark Path › Dark Lineage | `[1] Sight <for [Dark Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Dark Path › Dark Insight | `[+1 Culture] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Dark Path › Dark Doctrine | `[+15]% Strength <when attacking> <for [Dark Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
@@ -3720,6 +3835,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Shadow Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Shadow Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Shadow Path | `[+5]% Strength <for [Shadow Master] units> <for every [Adopted [[Shadow Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Shadow Path | `Provides [2] [White Shadow Grass]` | 2 | tools/gen_ruleset.py `Policies` |
 | Shadow Path › Shadow Lineage | `[1] Sight <for [Shadow Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Shadow Path › Shadow Insight | `[+1 Culture] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Shadow Path › Shadow Doctrine | `[+15]% Strength <when attacking> <for [Shadow Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
@@ -3727,6 +3843,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Star Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Star Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Star Path | `[+5]% Strength <for [Star Master] units> <for every [Adopted [[Star Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Star Path | `Provides [2] [Arrow Bamboo]` | 2 | tools/gen_ruleset.py `Policies` |
 | Star Path › Star Lineage | `[1] Sight <for [Star Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Star Path › Star Insight | `[+1 Culture] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Star Path › Star Doctrine | `[+15]% Strength <when attacking> <for [Star Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
@@ -3734,6 +3851,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Sound Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Sound Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Sound Path | `[+5]% Strength <for [Sound Master] units> <for every [Adopted [[Sound Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Sound Path | `Provides [2] [Wave Sound Conch]` | 2 | tools/gen_ruleset.py `Policies` |
 | Sound Path › Sound Lineage | `[1] Sight <for [Sound Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Sound Path › Sound Insight | `[+1 Culture] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Sound Path › Sound Doctrine | `[+15]% Strength <when attacking> <for [Sound Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
@@ -3741,6 +3859,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Illusion Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Illusion Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Illusion Path | `[+5]% Strength <for [Illusion Master] units> <for every [Adopted [[Illusion Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Illusion Path | `Provides [2] [Illusion Peach]` | 2 | tools/gen_ruleset.py `Policies` |
 | Illusion Path › Illusion Lineage | `[1] Sight <for [Illusion Master] units>` | 1 | tools/gen_ruleset.py `Policies` |
 | Illusion Path › Illusion Insight | `[+1 Culture] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Illusion Path › Illusion Doctrine | `[+15]% Strength <when attacking> <for [Illusion Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
@@ -3748,6 +3867,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Wisdom Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Wisdom Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Wisdom Path | `[+5]% Strength <for [Wisdom Master] units> <for every [Adopted [[Wisdom Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Wisdom Path | `Provides [2] [Splendid Overlord Flower]` | 2 | tools/gen_ruleset.py `Policies` |
 | Wisdom Path › Wisdom Lineage | `[+15]% XP gained from combat <for [Wisdom Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Wisdom Path › Wisdom Insight | `[+1 Science] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Wisdom Path › Wisdom Doctrine | `[+10]% Strength <for [Wisdom Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3755,6 +3875,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Emotion Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Emotion Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Emotion Path | `[+5]% Strength <for [Emotion Master] units> <for every [Adopted [[Emotion Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Emotion Path | `Provides [2] [Taize Flower]` | 2 | tools/gen_ruleset.py `Policies` |
 | Emotion Path › Emotion Lineage | `[+15]% XP gained from combat <for [Emotion Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Emotion Path › Emotion Insight | `[+1 Science] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Emotion Path › Emotion Doctrine | `[+10]% Strength <for [Emotion Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3762,6 +3883,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Enchantment Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Enchantment Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Enchantment Path | `[+5]% Strength <for [Enchantment Master] units> <for every [Adopted [[Enchantment Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Enchantment Path | `Provides [2] [Peach Blossom]` | 2 | tools/gen_ruleset.py `Policies` |
 | Enchantment Path › Enchantment Lineage | `[+15]% XP gained from combat <for [Enchantment Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Enchantment Path › Enchantment Insight | `[+1 Science] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Enchantment Path › Enchantment Doctrine | `[+10]% Strength <for [Enchantment Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3769,6 +3891,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Soul Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Soul Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Soul Path | `[+5]% Strength <for [Soul Master] units> <for every [Adopted [[Soul Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Soul Path | `Provides [2] [White Lotus Silkworm]` | 2 | tools/gen_ruleset.py `Policies` |
 | Soul Path › Soul Lineage | `[+15]% XP gained from combat <for [Soul Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Soul Path › Soul Insight | `[+1 Science] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Soul Path › Soul Doctrine | `[+10]% Strength <for [Soul Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3776,6 +3899,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Dream Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Dream Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Dream Path | `[+5]% Strength <for [Dream Master] units> <for every [Adopted [[Dream Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Dream Path | `Provides [2] [Nine-Bend Dream Flower]` | 2 | tools/gen_ruleset.py `Policies` |
 | Dream Path › Dream Lineage | `[+15]% XP gained from combat <for [Dream Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Dream Path › Dream Insight | `[+1 Science] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Dream Path › Dream Doctrine | `[+10]% Strength <for [Dream Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3783,6 +3907,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Enslavement Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Enslavement Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Enslavement Path | `[+5]% Strength <for [Enslavement Master] units> <for every [Adopted [[Enslavement Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Enslavement Path | `Provides [2] [Wolf Meat]` | 2 | tools/gen_ruleset.py `Policies` |
 | Enslavement Path › Enslavement Lineage | `[+15]% XP gained from combat <for [Enslavement Master] units>` | +15 | tools/gen_ruleset.py `Policies` |
 | Enslavement Path › Enslavement Insight | `[+1 Science] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Enslavement Path › Enslavement Doctrine | `[+10]% Strength <for [Enslavement Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3790,6 +3915,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Time Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Time Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Time Path | `[+5]% Strength <for [Time Master] units> <for every [Adopted [[Time Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Time Path | `Provides [2] [Time River Water]` | 2 | tools/gen_ruleset.py `Policies` |
 | Time Path › Time Lineage | `[+10]% Strength <for [Time Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Time Path › Time Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Time Path › Time Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3797,6 +3923,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Space Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Space Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Space Path | `[+5]% Strength <for [Space Master] units> <for every [Adopted [[Space Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Space Path | `Provides [2] [Nether Jellyfish]` | 2 | tools/gen_ruleset.py `Policies` |
 | Space Path › Space Lineage | `[+10]% Strength <for [Space Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Space Path › Space Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Space Path › Space Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3804,6 +3931,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Rule Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Rule Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Rule Path | `[+5]% Strength <for [Rule Master] units> <for every [Adopted [[Rule Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Rule Path | `Provides [2] [Pearl Thread Water]` | 2 | tools/gen_ruleset.py `Policies` |
 | Rule Path › Rule Lineage | `[+10]% Strength <for [Rule Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Rule Path › Rule Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Rule Path › Rule Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3811,6 +3939,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Phantom Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Phantom Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Phantom Path | `[+5]% Strength <for [Phantom Master] units> <for every [Adopted [[Phantom Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Phantom Path | `Provides [2] [Flying Bear Flesh]` | 2 | tools/gen_ruleset.py `Policies` |
 | Phantom Path › Phantom Lineage | `[+10]% Strength <for [Phantom Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Phantom Path › Phantom Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Phantom Path › Phantom Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3818,6 +3947,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Restriction Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Restriction Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Restriction Path | `[+5]% Strength <for [Restriction Master] units> <for every [Adopted [[Restriction Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Restriction Path | `Provides [2] [North Ban Licorice]` | 2 | tools/gen_ruleset.py `Policies` |
 | Restriction Path › Restriction Lineage | `[+10]% Strength <for [Restriction Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Restriction Path › Restriction Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Restriction Path › Restriction Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3825,6 +3955,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Luck Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Luck Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Luck Path | `[+5]% Strength <for [Luck Master] units> <for every [Adopted [[Luck Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Luck Path | `Provides [2] [Hound Dung]` | 2 | tools/gen_ruleset.py `Policies` |
 | Luck Path › Luck Lineage | `[+10]% Strength <for [Luck Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Luck Path › Luck Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Luck Path › Luck Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3832,6 +3963,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heaven Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Heaven Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Heaven Path | `[+5]% Strength <for [Heaven Master] units> <for every [Adopted [[Heaven Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Heaven Path | `Provides [2] [Brocade Cloud]` | 2 | tools/gen_ruleset.py `Policies` |
 | Heaven Path › Heaven Lineage | `[+10]% Strength <for [Heaven Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Heaven Path › Heaven Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Heaven Path › Heaven Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3839,6 +3971,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Qi Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Qi Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Qi Path | `[+5]% Strength <for [Qi Master] units> <for every [Adopted [[Qi Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Qi Path | `Provides [2] [Heavy Gold]` | 2 | tools/gen_ruleset.py `Policies` |
 | Qi Path › Qi Lineage | `[+10]% Strength <for [Qi Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
 | Qi Path › Qi Insight | `[+1 Gold] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Qi Path › Qi Doctrine | `[+1 Happiness]` | +1 | tools/gen_ruleset.py `Policies` |
@@ -3846,6 +3979,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Refinement Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Refinement Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Refinement Path | `[+5]% Strength <for [Refinement Master] units> <for every [Adopted [[Refinement Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Refinement Path | `Provides [2] [Ash]` | 2 | tools/gen_ruleset.py `Policies` |
 | Refinement Path › Refinement Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Refinement Path › Refinement Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Refinement Path › Refinement Doctrine | `[+10]% Strength <for [Refinement Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3853,6 +3987,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Formation Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Formation Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Formation Path | `[+5]% Strength <for [Formation Master] units> <for every [Adopted [[Formation Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Formation Path | `Provides [2] [Star Cave Stone]` | 2 | tools/gen_ruleset.py `Policies` |
 | Formation Path › Formation Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Formation Path › Formation Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Formation Path › Formation Doctrine | `[+10]% Strength <for [Formation Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3860,6 +3995,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Food Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Food Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Food Path | `[+5]% Strength <for [Food Master] units> <for every [Adopted [[Food Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Food Path | `Provides [2] [Wine]` | 2 | tools/gen_ruleset.py `Policies` |
 | Food Path › Food Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Food Path › Food Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Food Path › Food Doctrine | `[+10]% Strength <for [Food Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3867,6 +4003,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Pill Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Pill Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Pill Path | `[+5]% Strength <for [Pill Master] units> <for every [Adopted [[Pill Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Pill Path | `Provides [2] [Ginseng Whiskers]` | 2 | tools/gen_ruleset.py `Policies` |
 | Pill Path › Pill Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Pill Path › Pill Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Pill Path › Pill Doctrine | `[+10]% Strength <for [Pill Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3874,6 +4011,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Information Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Information Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Information Path | `[+5]% Strength <for [Information Master] units> <for every [Adopted [[Information Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Information Path | `Provides [2] [Old Scrolls]` | 2 | tools/gen_ruleset.py `Policies` |
 | Information Path › Information Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Information Path › Information Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Information Path › Information Doctrine | `[+10]% Strength <for [Information Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3881,6 +4019,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Human Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Human Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Human Path | `[+5]% Strength <for [Human Master] units> <for every [Adopted [[Human Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Human Path | `Provides [2] [Rice]` | 2 | tools/gen_ruleset.py `Policies` |
 | Human Path › Human Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Human Path › Human Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Human Path › Human Doctrine | `[+10]% Strength <for [Human Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3888,6 +4027,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Painting Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Painting Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Painting Path | `[+5]% Strength <for [Painting Master] units> <for every [Adopted [[Painting Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Painting Path | `Provides [2] [Danqing Incense]` | 2 | tools/gen_ruleset.py `Policies` |
 | Painting Path › Painting Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Painting Path › Painting Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Painting Path › Painting Doctrine | `[+10]% Strength <for [Painting Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3895,6 +4035,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Theft Path | priorities.Southern Border Supremacy | 3 | tools/gen_ruleset.py `Policies` |
 | Theft Path | priorities.Endurance | 3 | tools/gen_ruleset.py `Policies` |
 | Theft Path | `[+5]% Strength <for [Theft Master] units> <for every [Adopted [[Theft Path] branch] Policies]>` | +5 | tools/gen_ruleset.py `Policies` |
+| Theft Path | `Provides [2] [Jade-Eye Monkey]` | 2 | tools/gen_ruleset.py `Policies` |
 | Theft Path › Theft Lineage | `[+10]% Production when constructing [All] wonders [in all cities]` | +10 | tools/gen_ruleset.py `Policies` |
 | Theft Path › Theft Insight | `[+1 Production] [in all cities]` | +1 | tools/gen_ruleset.py `Policies` |
 | Theft Path › Theft Doctrine | `[+10]% Strength <for [Theft Master] units>` | +10 | tools/gen_ruleset.py `Policies` |
@@ -3943,6 +4084,94 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Gu Inheritance | improvementStats.gold | 2 | tools/gen_ruleset.py `Resources` |
 | Furs | gold | 2 | tools/gen_ruleset.py `Resources` |
 | Furs | improvementStats.gold | 1 | tools/gen_ruleset.py `Resources` |
+| Wild Deer | food | 1 | tools/gen_ruleset.py `Resources` |
+| Wild Deer | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Beast Milk | food | 1 | tools/gen_ruleset.py `Resources` |
+| Beast Milk | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Python Blood | food | 1 | tools/gen_ruleset.py `Resources` |
+| Python Blood | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Fine Iron | production | 1 | tools/gen_ruleset.py `Resources` |
+| Fine Iron | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Old Blades | production | 1 | tools/gen_ruleset.py `Resources` |
+| Old Blades | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Rooster Iron | production | 1 | tools/gen_ruleset.py `Resources` |
+| Rooster Iron | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Iron Ore | production | 1 | tools/gen_ruleset.py `Resources` |
+| Iron Ore | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Battlefield Bones | food | 1 | tools/gen_ruleset.py `Resources` |
+| Battlefield Bones | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Fire Charcoal | production | 1 | tools/gen_ruleset.py `Resources` |
+| Fire Charcoal | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Dragonfish | food | 1 | tools/gen_ruleset.py `Resources` |
+| Dragonfish | improvementStats.gold | 1 | tools/gen_ruleset.py `Resources` |
+| Lingzhi | food | 1 | tools/gen_ruleset.py `Resources` |
+| Lingzhi | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Marsh Mud | food | 1 | tools/gen_ruleset.py `Resources` |
+| Marsh Mud | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Wind Knot Grass | food | 1 | tools/gen_ruleset.py `Resources` |
+| Wind Knot Grass | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Sand Gull Earth | food | 1 | tools/gen_ruleset.py `Resources` |
+| Sand Gull Earth | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Dancing Snow | food | 1 | tools/gen_ruleset.py `Resources` |
+| Dancing Snow | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Lightning Eel | food | 1 | tools/gen_ruleset.py `Resources` |
+| Lightning Eel | improvementStats.gold | 1 | tools/gen_ruleset.py `Resources` |
+| Rotten Frozen Mud | food | 1 | tools/gen_ruleset.py `Resources` |
+| Rotten Frozen Mud | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Flame Swan Stone | production | 1 | tools/gen_ruleset.py `Resources` |
+| Flame Swan Stone | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Dark Fragrant Mushroom | food | 1 | tools/gen_ruleset.py `Resources` |
+| Dark Fragrant Mushroom | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| White Shadow Grass | food | 1 | tools/gen_ruleset.py `Resources` |
+| White Shadow Grass | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Arrow Bamboo | food | 1 | tools/gen_ruleset.py `Resources` |
+| Arrow Bamboo | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Wave Sound Conch | food | 1 | tools/gen_ruleset.py `Resources` |
+| Wave Sound Conch | improvementStats.gold | 1 | tools/gen_ruleset.py `Resources` |
+| Illusion Peach | food | 1 | tools/gen_ruleset.py `Resources` |
+| Illusion Peach | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Splendid Overlord Flower | food | 1 | tools/gen_ruleset.py `Resources` |
+| Splendid Overlord Flower | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Taize Flower | food | 1 | tools/gen_ruleset.py `Resources` |
+| Taize Flower | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Peach Blossom | food | 1 | tools/gen_ruleset.py `Resources` |
+| Peach Blossom | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| White Lotus Silkworm | food | 1 | tools/gen_ruleset.py `Resources` |
+| White Lotus Silkworm | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Nine-Bend Dream Flower | food | 1 | tools/gen_ruleset.py `Resources` |
+| Nine-Bend Dream Flower | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Wolf Meat | food | 1 | tools/gen_ruleset.py `Resources` |
+| Wolf Meat | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Time River Water | gold | 1 | tools/gen_ruleset.py `Resources` |
+| Time River Water | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Nether Jellyfish | food | 1 | tools/gen_ruleset.py `Resources` |
+| Nether Jellyfish | improvementStats.gold | 1 | tools/gen_ruleset.py `Resources` |
+| Pearl Thread Water | gold | 1 | tools/gen_ruleset.py `Resources` |
+| Pearl Thread Water | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Flying Bear Flesh | food | 1 | tools/gen_ruleset.py `Resources` |
+| Flying Bear Flesh | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| North Ban Licorice | food | 1 | tools/gen_ruleset.py `Resources` |
+| North Ban Licorice | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Hound Dung | food | 1 | tools/gen_ruleset.py `Resources` |
+| Hound Dung | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Brocade Cloud | food | 1 | tools/gen_ruleset.py `Resources` |
+| Brocade Cloud | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Heavy Gold | production | 1 | tools/gen_ruleset.py `Resources` |
+| Heavy Gold | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Ash | production | 1 | tools/gen_ruleset.py `Resources` |
+| Ash | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Star Cave Stone | production | 1 | tools/gen_ruleset.py `Resources` |
+| Star Cave Stone | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
+| Ginseng Whiskers | food | 1 | tools/gen_ruleset.py `Resources` |
+| Ginseng Whiskers | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Old Scrolls | science | 1 | tools/gen_ruleset.py `Resources` |
+| Old Scrolls | improvementStats.science | 1 | tools/gen_ruleset.py `Resources` |
+| Rice | food | 1 | tools/gen_ruleset.py `Resources` |
+| Rice | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Danqing Incense | food | 1 | tools/gen_ruleset.py `Resources` |
+| Danqing Incense | improvementStats.food | 1 | tools/gen_ruleset.py `Resources` |
+| Jade-Eye Monkey | food | 1 | tools/gen_ruleset.py `Resources` |
+| Jade-Eye Monkey | improvementStats.production | 1 | tools/gen_ruleset.py `Resources` |
 
 ### TileImprovements.json
 
@@ -4307,94 +4536,95 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 | Painting Master | `[+20]% Strength <when fighting in [Friendly Land] tiles>` | +20 | data/paths.csv `signature` |
 | Theft Master | `Earn [50]% of killed [Military] unit's [Cost] as [Gold]` | 50 | data/paths.csv `signature` |
 | Roaming Zombie Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
-| Roaming Zombie Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Roaming Zombie Gu | eats Wild Deer | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Bone Spear Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Bone Spear Gu | eats Wild Boar | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Bone Spear Gu | eats Beast Milk | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Blood Skull Gu | `[+25]% XP gained from combat` | +25 | data/path_gu.csv `effects` |
-| Blood Skull Gu | eats Wild Boar | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Blood Skull Gu | eats Python Blood | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Sword Shadow Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Sword Shadow Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Sword Shadow Gu | eats Fine Iron | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Sole Blade Gu | `[+25]% Strength <when attacking> <with [50]% chance>` | +25, 50 | data/path_gu.csv `effects` |
-| Sole Blade Gu | eats Jade | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Sole Blade Gu | eats Old Blades | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Bronze Skin Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
-| Bronze Skin Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Bronze Skin Gu | eats Rooster Iron | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Armoury Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Armoury Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Armoury Gu | eats Iron Ore | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Killing Intent Gu | `[+20]% Strength <vs [Wounded] units>` | +20 | data/path_gu.csv `effects` |
-| Killing Intent Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Killing Intent Gu | eats Battlefield Bones | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Fiery Claw Gu | `[Target Unit] takes [5] damage <upon damaging a [Military] unit>` | 5 | data/path_gu.csv `effects` |
-| Fiery Claw Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Fiery Claw Gu | eats Fire Charcoal | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Water Shield Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
-| Water Shield Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Water Shield Gu | eats Dragonfish | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Heavenly Essence Treasure Lotus | `[-20]% maintenance costs` | -20 | data/path_gu.csv `effects` |
+| Heavenly Essence Treasure Lotus | eats Lingzhi | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Gruel Mud Gu | `[+15]% Strength <when fighting in [Hill] tiles>` | +15 | data/path_gu.csv `effects` |
-| Gruel Mud Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Gruel Mud Gu | eats Marsh Mud | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Whirlwind Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Whirlwind Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Whirlwind Gu | eats Wind Knot Grass | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Flying Cloud Gu | `[1] Movement` | 1 | data/path_gu.csv `effects` |
-| Flying Cloud Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Flying Cloud Gu | eats Sand Gull Earth | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Frost Demon Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Frost Demon Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Frost Demon Gu | eats Dancing Snow | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Thunderclap Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Thunderclap Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Thunderclap Gu | eats Lightning Eel | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Poison Scorpion Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Poison Scorpion Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Poison Scorpion Gu | eats Rotten Frozen Mud | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Little Light Gu | `[1] Sight` | 1 | data/path_gu.csv `effects` |
-| Little Light Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Little Light Gu | eats Flame Swan Stone | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Shadow Follower Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Shadow Follower Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Shadow Follower Gu | eats Dark Fragrant Mushroom | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Overlapping Shadow Gu | `[+20]% Strength <when attacking>` | +20 | data/path_gu.csv `effects` |
-| Overlapping Shadow Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Overlapping Shadow Gu | eats White Shadow Grass | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Star Dart Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Star Dart Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Star Dart Gu | eats Arrow Bamboo | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Heaven Earth Magnificent Sound Gu | `[+20]% Strength <when attacking>` | +20 | data/path_gu.csv `effects` |
-| Heaven Earth Magnificent Sound Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Heaven Earth Magnificent Sound Gu | eats Wave Sound Conch | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Illusory Moon Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
-| Illusory Moon Gu | eats Moon Orchid | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
+| Illusory Moon Gu | eats Illusion Peach | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Clear Mind Gu | `[+20]% XP gained from combat` | +20 | data/path_gu.csv `effects` |
-| Clear Mind Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Clear Mind Gu | eats Splendid Overlord Flower | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Emotion Poetry Gu | `[+15]% Strength <when below [50] HP>` | +15, 50 | data/path_gu.csv `effects` |
-| Emotion Poetry Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Emotion Poetry Gu | eats Taize Flower | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Estrus Gu | `[+15]% Strength <vs [Barbarians] units>` | +15 | data/path_gu.csv `effects` |
-| Estrus Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Estrus Gu | eats Peach Blossom | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Soul Search Gu | `[+25]% XP gained from combat` | +25 | data/path_gu.csv `effects` |
-| Soul Search Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Soul Search Gu | eats White Lotus Silkworm | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Dream Pillow Gu | `[10] HP when healing` | 10 | data/path_gu.csv `effects` |
-| Dream Pillow Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Dream Pillow Gu | eats Nine-Bend Dream Flower | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Wolf Enslavement Gu | `[+15]% Strength <vs [Barbarians] units>` | +15 | data/path_gu.csv `effects` |
-| Wolf Enslavement Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Wolf Enslavement Gu | eats Wolf Meat | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Man as Before Gu | `[20] HP when healing` | 20 | data/path_gu.csv `effects` |
-| Man as Before Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Man as Before Gu | eats Time River Water | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Warp Gu | `[1] Movement` | 1 | data/path_gu.csv `effects` |
-| Warp Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Warp Gu | eats Nether Jellyfish | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Amplify Effect Gu | `[+10]% Strength` | +10 | data/path_gu.csv `effects` |
-| Amplify Effect Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Amplify Effect Gu | eats Pearl Thread Water | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Turn Phantom Gu | `[+15]% Strength <when defending>` | +15 | data/path_gu.csv `effects` |
-| Turn Phantom Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Turn Phantom Gu | eats Flying Bear Flesh | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Primeval Break Gu | `[+15]% Strength <when attacking>` | +15 | data/path_gu.csv `effects` |
-| Primeval Break Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Primeval Break Gu | eats North Ban Licorice | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Luck Inspection Gu | `[1] Sight` | 1 | data/path_gu.csv `effects` |
-| Luck Inspection Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Luck Inspection Gu | eats Hound Dung | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Ten-Year Lifespan Gu | `[10] HP when healing` | 10 | data/path_gu.csv `effects` |
-| Ten-Year Lifespan Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Ten-Year Lifespan Gu | eats Brocade Cloud | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Strength Qi Gu | `[+15]% Strength` | +15 | data/path_gu.csv `effects` |
-| Strength Qi Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Strength Qi Gu | eats Heavy Gold | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Revert Gu | `[+10]% Strength` | +10 | data/path_gu.csv `effects` |
-| Revert Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Revert Gu | eats Ash | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Formation Heart Gu | `[+10]% Strength bonus for [Military] units within [1] tiles` | +10, 1 | data/path_gu.csv `effects` |
-| Formation Heart Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Formation Heart Gu | eats Star Cave Stone | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Four Flavours Liquor Worm | `[+50]% XP gained from combat` | +50 | data/path_gu.csv `effects` |
 | Four Flavours Liquor Worm | eats Wine | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Pill Refiner Gu | `[10] HP when healing` | 10 | data/path_gu.csv `effects` |
-| Pill Refiner Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Pill Refiner Gu | eats Ginseng Whiskers | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Flying Sword Letter Gu | `[1] Sight` | 1 | data/path_gu.csv `effects` |
-| Flying Sword Letter Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Flying Sword Letter Gu | eats Old Scrolls | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Relic Gu | `[+25]% XP gained from combat` | +25 | data/path_gu.csv `effects` |
-| Relic Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Relic Gu | eats Rice | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Painting Idea Gu | `[+15]% Strength <when fighting in [Friendly Land] tiles>` | +15 | data/path_gu.csv `effects` |
-| Painting Idea Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Painting Idea Gu | eats Danqing Incense | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Plunder Gu | `Earn [25]% of killed [Military] unit's [Cost] as [Gold]` | 25 | data/path_gu.csv `effects` |
-| Plunder Gu | `[+10]% maintenance costs` | +10 | data/path_gu.csv `upkeep` |
+| Plunder Gu | eats Jade-Eye Monkey | 1 | data/path_gu.csv `eats` (hunger: data/hunger.csv) |
 | Poisoned | `[This Unit] takes [10] damage <upon turn start>` | 10 | data/path_statuses.csv `uniques` |
 | Charmed | `[-25]% Strength <when attacking>` | -25 | data/path_statuses.csv `uniques` |
 | Phantom Veil | `[+50]% Strength <when defending>` | +50 | data/path_statuses.csv `uniques` |
@@ -4423,6 +4653,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-4167 numbers listed.
+4397 numbers listed.
 
 <!-- inventory:end -->

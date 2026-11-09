@@ -177,19 +177,139 @@
         "text": "Moon Raiment: 1 Moon Orchid a turn; hunger +20% a turn."
       },
       {
-        "text": "Bone Spear Gu: 1 Wild Boar a turn; hunger +33% a turn."
+        "text": "Roaming Zombie Gu: 1 Wild Deer a turn; hunger +20% a turn."
       },
       {
-        "text": "Blood Skull Gu: 1 Wild Boar a turn; hunger +11% a turn."
+        "text": "Bone Spear Gu: 1 Beast Milk a turn; hunger +33% a turn."
       },
       {
-        "text": "Sole Blade Gu: 1 Jade a turn; hunger +11% a turn."
+        "text": "Blood Skull Gu: 1 Python Blood a turn; hunger +11% a turn."
       },
       {
-        "text": "Illusory Moon Gu: 1 Moon Orchid a turn; hunger +14% a turn."
+        "text": "Sword Shadow Gu: 1 Fine Iron a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Sole Blade Gu: 1 Old Blades a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Bronze Skin Gu: 1 Rooster Iron a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Armoury Gu: 1 Iron Ore a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Killing Intent Gu: 1 Battlefield Bones a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Fiery Claw Gu: 1 Fire Charcoal a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Water Shield Gu: 1 Dragonfish a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Heavenly Essence Treasure Lotus: 1 Lingzhi a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Gruel Mud Gu: 1 Marsh Mud a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Whirlwind Gu: 1 Wind Knot Grass a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Flying Cloud Gu: 1 Sand Gull Earth a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Frost Demon Gu: 1 Dancing Snow a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Thunderclap Gu: 1 Lightning Eel a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Poison Scorpion Gu: 1 Rotten Frozen Mud a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Little Light Gu: 1 Flame Swan Stone a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Shadow Follower Gu: 1 Dark Fragrant Mushroom a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Overlapping Shadow Gu: 1 White Shadow Grass a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Star Dart Gu: 1 Arrow Bamboo a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Heaven Earth Magnificent Sound Gu: 1 Wave Sound Conch a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Illusory Moon Gu: 1 Illusion Peach a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Clear Mind Gu: 1 Splendid Overlord Flower a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Emotion Poetry Gu: 1 Taize Flower a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Estrus Gu: 1 Peach Blossom a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Soul Search Gu: 1 White Lotus Silkworm a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Dream Pillow Gu: 1 Nine-Bend Dream Flower a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Wolf Enslavement Gu: 1 Wolf Meat a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Man as Before Gu: 1 Time River Water a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Warp Gu: 1 Nether Jellyfish a turn; hunger +11% a turn."
+      },
+      {
+        "text": "Amplify Effect Gu: 1 Pearl Thread Water a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Turn Phantom Gu: 1 Flying Bear Flesh a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Primeval Break Gu: 1 North Ban Licorice a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Luck Inspection Gu: 1 Hound Dung a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Ten-Year Lifespan Gu: 1 Brocade Cloud a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Strength Qi Gu: 1 Heavy Gold a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Revert Gu: 1 Ash a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Formation Heart Gu: 1 Star Cave Stone a turn; hunger +33% a turn."
       },
       {
         "text": "Four Flavours Liquor Worm: 1 Wine a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Pill Refiner Gu: 1 Ginseng Whiskers a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Flying Sword Letter Gu: 1 Old Scrolls a turn; hunger +14% a turn."
+      },
+      {
+        "text": "Relic Gu: 1 Rice a turn; hunger +33% a turn."
+      },
+      {
+        "text": "Painting Idea Gu: 1 Danqing Incense a turn; hunger +20% a turn."
+      },
+      {
+        "text": "Plunder Gu: 1 Jade-Eye Monkey a turn; hunger +20% a turn."
       },
       {
         "text": "Moonglow Gu: 1 Moon Orchid a turn; hunger +20% a turn."
@@ -202,7 +322,7 @@
         "header": 3
       },
       {
-        "text": "Amplify Effect Gu, Armoury Gu, Bear Strength Gu, Bronze Skin Gu, Clear Mind Gu, Dream Pillow Gu, Emotion Poetry Gu, Estrus Gu, Fiery Claw Gu, Flying Cloud Gu, Flying Sword Letter Gu, Formation Heart Gu, Frost Demon Gu, Gruel Mud Gu, Heaven Earth Magnificent Sound Gu, Heavenly Essence Treasure Lotus, Killing Intent Gu, Little Light Gu, Luck Inspection Gu, Man as Before Gu, Overlapping Shadow Gu, Painting Idea Gu, Pill Refiner Gu, Plunder Gu, Poison Scorpion Gu, Primeval Break Gu, Relic Gu, Revert Gu, Roaming Zombie Gu, Shadow Follower Gu, Soul Search Gu, Star Dart Gu, Stream Gu, Strength Qi Gu, Sword Shadow Gu, Ten-Year Lifespan Gu, Thunderclap Gu, Turn Phantom Gu, Warp Gu, Water Shield Gu, Whirlwind Gu, Wolf Enslavement Gu."
+        "text": "Bear Strength Gu, Stream Gu."
       }
     ]
   },

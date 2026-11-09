@@ -85,6 +85,7 @@ STATUSES = table("path_statuses.csv")
 KEY = {p["key"]: p for p in PATHS}
 # D2 (the user, 2026-10-19): one Gu per path, granted with the Master. Rows with no name_id are Slice 1 Gu that
 # already exist (Moonlight Gu, White Boar Gu, Liquor Worm); the rest are new promotions built here.
+import path_foods as PF   # noqa: E402  (the paths' basic foods, 2026-11-09)
 PATH_GU = table("path_gu.csv")
 GU_OF = {p["key"]: [g for g in PATH_GU if g["path"] == p["key"]] for p in PATHS}
 assert all(GU_OF.values()), "every path needs its Gu (data/path_gu.csv)"
@@ -426,7 +427,8 @@ def policy_branches() -> list[dict]:
             # first era; the halls still wait for their family's tech (halls())
             "name": branch_name(p), "era": BRANCH_ERA,
             "priorities": {"Southern Border Supremacy": 3, "Endurance": 3},
-            "uniques": [f"[+5]% Strength <for [{m}] units> <for every [Adopted [[{branch_name(p)}] branch] Policies]>"]
+            "uniques": [f"[+5]% Strength <for [{m}] units> <for every [Adopted [[{branch_name(p)}] branch] Policies]>",
+                        f"Provides [{PF.BRANCH_FOOD}] [{PF.food_of(p['key'])}]"]
             + [f"Only available <before adopting [{branch_name(KEY[c])}]>" for c in clashes(p)],
             "civilopediaText": [{"text": branch_pedia(p)[0]}],
             "policies": [
@@ -459,7 +461,8 @@ def halls() -> list[dict]:
         # the red against 4 of 24 without it (autoplay A/B, 6 x 320, Prince)
         out.append({"name": hall_name(p), "requiredTech": ERA_TECH[era], "cost": ERA_COST[era],
                     "culture": 1, "uniques": [f"Only available <after adopting [{branch_name(p)}]>",
-                                              f"All newly-trained [Gu Master] units [in this city] receive the [{tier_name(p, 0)}] promotion"]
+                                              f"All newly-trained [Gu Master] units [in this city] receive the [{tier_name(p, 0)}] promotion",
+                                              f"Provides [{PF.HALL_FOOD}] [{PF.food_of(p['key'])}]"]
                     + [OFF_PATH_HALL.format(c=c) for c, k in sig.items() if k != p["key"]],
                     "civilopediaText": [{"text": hall_pedia(p)[0]}]})
     return out
@@ -502,7 +505,6 @@ def age_text(key: str) -> tuple[str, str]:
 # lore lifts its Masters' XP, and no Master reaches Grandmaster without it. The techs sit in the Rank One-Two era's
 # columns (a tech of a later column would move the clan into a later era early), the body, beast and war families
 # first, the subtle ones after Gu Feeding.
-LORE_COST = 40
 LORE_XP = 15
 LORE_ROW0 = 5
 LORE_COLUMN = {"A": 1, "B": 1, "C": 2, "D": 2, "E": 3, "F": 3, "G": 3}
@@ -524,17 +526,29 @@ def lore_name_id(p: dict) -> str:
 def lore_uniques(p: dict) -> list[str]:
     m = tier_name(p, 0)
     return [f"Only available <when number of [[{{{m}}} {{non-[Rank One-Two era]}}] Units] is more than [0]>",
-            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>"]
+            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>", f"Provides [{PF.LORE_FOOD}] [{PF.food_of(p['key'])}]"]
+
+
+# the 2026-11-09 redesign: a lore costs by its family's depth (the body and edge families are the common ones, the law
+# and craft families the rarest) and a sub-path's lore asks a little more than its parent's
+LORE_FAMILY_COST = {"A": 40, "B": 40, "C": 40, "D": 60, "E": 60, "F": 80, "G": 80}
+LORE_SUB = 20
+
+
+def lore_cost(p: dict) -> int:
+    return LORE_FAMILY_COST[p["family"]] + (LORE_SUB if p["parent"] else 0)
 
 
 def lore_pedia(p: dict) -> tuple[str, str]:
     age_en, age_id = age_text(p["key"])
     return (f"The clan's inheritance of the {p['name'].lower()} path ({p['chinese']}传承). Only a clan with a living "
-            f"{tier_name(p, 0)} of rank three or higher can study it. Its Masters gain {LORE_XP}% more XP, and none of them "
-            f"reaches Grandmaster attainment without it.{age_en}",
+            f"{tier_name(p, 0)} of rank three or higher can study it. Its Masters gain {LORE_XP}% more XP, it provides "
+            f"{PF.LORE_FOOD} {PF.food_of(p['key'])}, the path's basic food, and none of its Masters reaches Grandmaster "
+            f"attainment without it.{age_en}",
             f"Warisan jalur {p['name_id']} milik klan ({p['chinese']}传承). Hanya klan yang punya {tier_name_id(p, 0)} "
             f"tingkat tiga ke atas yang masih hidup dapat mempelajarinya. Para Ahlinya mendapat {LORE_XP}% XP lebih banyak, "
-            f"dan tak satu pun mencapai pencapaian {TIERS_ID[1]} tanpanya.{age_id}")
+            f"ilmu ini memberi {PF.LORE_FOOD} {PF.FOOD[p['key']]['food_id']}, makanan dasar jalur itu, dan tak satu pun Ahlinya "
+            f"mencapai pencapaian {TIERS_ID[1]} tanpanya.{age_id}")
 
 
 def path_techs() -> dict[int, list[dict]]:
@@ -542,7 +556,7 @@ def path_techs() -> dict[int, list[dict]]:
     out: dict[int, list[dict]] = {}
     for p in PATHS:
         col = LORE_COLUMN[p["family"]]
-        d = {"name": lore_name(p), "row": LORE_ROW0 + len(out.get(col, [])), "cost": LORE_COST}
+        d = {"name": lore_name(p), "row": LORE_ROW0 + len(out.get(col, [])), "cost": lore_cost(p)}
         if LORE_PREREQ[col]:
             d["prerequisites"] = list(LORE_PREREQ[col])
         d["uniques"] = lore_uniques(p)
@@ -595,7 +609,7 @@ def translations() -> list[tuple[str, str]]:
     from gu_rules import hunger_translations, stone_comment
     out += hunger_translations(all_food_gu())
     out += [stone_comment(u) for u in sorted({int(g["upkeep"] or 0) for g in PATH_GU if new_gu(g) and not g["food"]} | {10})]
-    return out + GC.translations() + GCO.translations() + policy_translations() + tutorial_translations()
+    return out + GC.translations() + GCO.translations() + policy_translations() + tutorial_translations() + PF.translations()
 
 
 # ---------------- Tutorials (Civilopedia > Tutorials): the power-scaling pages (Phase D) ----------------

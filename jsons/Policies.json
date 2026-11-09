@@ -317,7 +317,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Transformation Master] units> <for every [Adopted [[Transformation Path] branch] Policies]>"
+      "[+5]% Strength <for [Transformation Master] units> <for every [Adopted [[Transformation Path] branch] Policies]>",
+      "Provides [2] [Wild Deer]"
     ],
     "civilopediaText": [
       {
@@ -388,7 +389,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Bone Master] units> <for every [Adopted [[Bone Path] branch] Policies]>"
+      "[+5]% Strength <for [Bone Master] units> <for every [Adopted [[Bone Path] branch] Policies]>",
+      "Provides [2] [Beast Milk]"
     ],
     "civilopediaText": [
       {
@@ -459,7 +461,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Blood Master] units> <for every [Adopted [[Blood Path] branch] Policies]>"
+      "[+5]% Strength <for [Blood Master] units> <for every [Adopted [[Blood Path] branch] Policies]>",
+      "Provides [2] [Python Blood]"
     ],
     "civilopediaText": [
       {
@@ -530,7 +533,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Sword Master] units> <for every [Adopted [[Sword Path] branch] Policies]>"
+      "[+5]% Strength <for [Sword Master] units> <for every [Adopted [[Sword Path] branch] Policies]>",
+      "Provides [2] [Fine Iron]"
     ],
     "civilopediaText": [
       {
@@ -601,7 +605,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Blade Master] units> <for every [Adopted [[Blade Path] branch] Policies]>"
+      "[+5]% Strength <for [Blade Master] units> <for every [Adopted [[Blade Path] branch] Policies]>",
+      "Provides [2] [Old Blades]"
     ],
     "civilopediaText": [
       {
@@ -673,6 +678,7 @@
     },
     "uniques": [
       "[+5]% Strength <for [Metal Master] units> <for every [Adopted [[Metal Path] branch] Policies]>",
+      "Provides [2] [Rooster Iron]",
       "Only available <before adopting [Strength Path]>"
     ],
     "civilopediaText": [
@@ -744,7 +750,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Weapon Master] units> <for every [Adopted [[Weapon Path] branch] Policies]>"
+      "[+5]% Strength <for [Weapon Master] units> <for every [Adopted [[Weapon Path] branch] Policies]>",
+      "Provides [2] [Iron Ore]"
     ],
     "civilopediaText": [
       {
@@ -815,7 +822,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Killing Master] units> <for every [Adopted [[Killing Path] branch] Policies]>"
+      "[+5]% Strength <for [Killing Master] units> <for every [Adopted [[Killing Path] branch] Policies]>",
+      "Provides [2] [Battlefield Bones]"
     ],
     "civilopediaText": [
       {
@@ -887,6 +895,7 @@
     },
     "uniques": [
       "[+5]% Strength <for [Fire Master] units> <for every [Adopted [[Fire Path] branch] Policies]>",
+      "Provides [2] [Fire Charcoal]",
       "Only available <before adopting [Earth Path]>"
     ],
     "civilopediaText": [
@@ -959,6 +968,7 @@
     },
     "uniques": [
       "[+5]% Strength <for [Water Master] units> <for every [Adopted [[Water Path] branch] Policies]>",
+      "Provides [2] [Dragonfish]",
       "Only available <before adopting [Strength Path]>",
       "Only available <before adopting [Earth Path]>"
     ],
@@ -1031,7 +1041,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Wood Master] units> <for every [Adopted [[Wood Path] branch] Policies]>"
+      "[+5]% Strength <for [Wood Master] units> <for every [Adopted [[Wood Path] branch] Policies]>",
+      "Provides [2] [Lingzhi]"
     ],
     "civilopediaText": [
       {
@@ -1103,6 +1114,7 @@
     },
     "uniques": [
       "[+5]% Strength <for [Earth Master] units> <for every [Adopted [[Earth Path] branch] Policies]>",
+      "Provides [2] [Marsh Mud]",
       "Only available <before adopting [Fire Path]>",
       "Only available <before adopting [Water Path]>"
     ],
@@ -1175,7 +1187,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Wind Master] units> <for every [Adopted [[Wind Path] branch] Policies]>"
+      "[+5]% Strength <for [Wind Master] units> <for every [Adopted [[Wind Path] branch] Policies]>",
+      "Provides [2] [Wind Knot Grass]"
     ],
     "civilopediaText": [
       {
@@ -1246,7 +1259,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Cloud Master] units> <for every [Adopted [[Cloud Path] branch] Policies]>"
+      "[+5]% Strength <for [Cloud Master] units> <for every [Adopted [[Cloud Path] branch] Policies]>",
+      "Provides [2] [Sand Gull Earth]"
     ],
     "civilopediaText": [
       {
@@ -1317,7 +1331,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Ice Snow Master] units> <for every [Adopted [[Ice Snow Path] branch] Policies]>"
+      "[+5]% Strength <for [Ice Snow Master] units> <for every [Adopted [[Ice Snow Path] branch] Policies]>",
+      "Provides [2] [Dancing Snow]"
     ],
     "civilopediaText": [
       {
@@ -1388,7 +1403,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Lightning Master] units> <for every [Adopted [[Lightning Path] branch] Policies]>"
+      "[+5]% Strength <for [Lightning Master] units> <for every [Adopted [[Lightning Path] branch] Policies]>",
+      "Provides [2] [Lightning Eel]"
     ],
     "civilopediaText": [
       {
@@ -1459,7 +1475,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Poison Master] units> <for every [Adopted [[Poison Path] branch] Policies]>"
+      "[+5]% Strength <for [Poison Master] units> <for every [Adopted [[Poison Path] branch] Policies]>",
+      "Provides [2] [Rotten Frozen Mud]"
     ],
     "civilopediaText": [
       {
@@ -1531,6 +1548,7 @@
     },
     "uniques": [
       "[+5]% Strength <for [Light Master] units> <for every [Adopted [[Light Path] branch] Policies]>",
+      "Provides [2] [Flame Swan Stone]",
       "Only available <before adopting [Dark Path]>"
     ],
     "civilopediaText": [
@@ -1603,6 +1621,7 @@
     },
     "uniques": [
       "[+5]% Strength <for [Dark Master] units> <for every [Adopted [[Dark Path] branch] Policies]>",
+      "Provides [2] [Dark Fragrant Mushroom]",
       "Only available <before adopting [Light Path]>"
     ],
     "civilopediaText": [
@@ -1674,7 +1693,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Shadow Master] units> <for every [Adopted [[Shadow Path] branch] Policies]>"
+      "[+5]% Strength <for [Shadow Master] units> <for every [Adopted [[Shadow Path] branch] Policies]>",
+      "Provides [2] [White Shadow Grass]"
     ],
     "civilopediaText": [
       {
@@ -1745,7 +1765,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Star Master] units> <for every [Adopted [[Star Path] branch] Policies]>"
+      "[+5]% Strength <for [Star Master] units> <for every [Adopted [[Star Path] branch] Policies]>",
+      "Provides [2] [Arrow Bamboo]"
     ],
     "civilopediaText": [
       {
@@ -1816,7 +1837,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Sound Master] units> <for every [Adopted [[Sound Path] branch] Policies]>"
+      "[+5]% Strength <for [Sound Master] units> <for every [Adopted [[Sound Path] branch] Policies]>",
+      "Provides [2] [Wave Sound Conch]"
     ],
     "civilopediaText": [
       {
@@ -1887,7 +1909,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Illusion Master] units> <for every [Adopted [[Illusion Path] branch] Policies]>"
+      "[+5]% Strength <for [Illusion Master] units> <for every [Adopted [[Illusion Path] branch] Policies]>",
+      "Provides [2] [Illusion Peach]"
     ],
     "civilopediaText": [
       {
@@ -1958,7 +1981,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Wisdom Master] units> <for every [Adopted [[Wisdom Path] branch] Policies]>"
+      "[+5]% Strength <for [Wisdom Master] units> <for every [Adopted [[Wisdom Path] branch] Policies]>",
+      "Provides [2] [Splendid Overlord Flower]"
     ],
     "civilopediaText": [
       {
@@ -2029,7 +2053,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Emotion Master] units> <for every [Adopted [[Emotion Path] branch] Policies]>"
+      "[+5]% Strength <for [Emotion Master] units> <for every [Adopted [[Emotion Path] branch] Policies]>",
+      "Provides [2] [Taize Flower]"
     ],
     "civilopediaText": [
       {
@@ -2100,7 +2125,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Enchantment Master] units> <for every [Adopted [[Enchantment Path] branch] Policies]>"
+      "[+5]% Strength <for [Enchantment Master] units> <for every [Adopted [[Enchantment Path] branch] Policies]>",
+      "Provides [2] [Peach Blossom]"
     ],
     "civilopediaText": [
       {
@@ -2171,7 +2197,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Soul Master] units> <for every [Adopted [[Soul Path] branch] Policies]>"
+      "[+5]% Strength <for [Soul Master] units> <for every [Adopted [[Soul Path] branch] Policies]>",
+      "Provides [2] [White Lotus Silkworm]"
     ],
     "civilopediaText": [
       {
@@ -2242,7 +2269,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Dream Master] units> <for every [Adopted [[Dream Path] branch] Policies]>"
+      "[+5]% Strength <for [Dream Master] units> <for every [Adopted [[Dream Path] branch] Policies]>",
+      "Provides [2] [Nine-Bend Dream Flower]"
     ],
     "civilopediaText": [
       {
@@ -2313,7 +2341,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Enslavement Master] units> <for every [Adopted [[Enslavement Path] branch] Policies]>"
+      "[+5]% Strength <for [Enslavement Master] units> <for every [Adopted [[Enslavement Path] branch] Policies]>",
+      "Provides [2] [Wolf Meat]"
     ],
     "civilopediaText": [
       {
@@ -2384,7 +2413,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Time Master] units> <for every [Adopted [[Time Path] branch] Policies]>"
+      "[+5]% Strength <for [Time Master] units> <for every [Adopted [[Time Path] branch] Policies]>",
+      "Provides [2] [Time River Water]"
     ],
     "civilopediaText": [
       {
@@ -2455,7 +2485,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Space Master] units> <for every [Adopted [[Space Path] branch] Policies]>"
+      "[+5]% Strength <for [Space Master] units> <for every [Adopted [[Space Path] branch] Policies]>",
+      "Provides [2] [Nether Jellyfish]"
     ],
     "civilopediaText": [
       {
@@ -2526,7 +2557,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Rule Master] units> <for every [Adopted [[Rule Path] branch] Policies]>"
+      "[+5]% Strength <for [Rule Master] units> <for every [Adopted [[Rule Path] branch] Policies]>",
+      "Provides [2] [Pearl Thread Water]"
     ],
     "civilopediaText": [
       {
@@ -2597,7 +2629,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Phantom Master] units> <for every [Adopted [[Phantom Path] branch] Policies]>"
+      "[+5]% Strength <for [Phantom Master] units> <for every [Adopted [[Phantom Path] branch] Policies]>",
+      "Provides [2] [Flying Bear Flesh]"
     ],
     "civilopediaText": [
       {
@@ -2668,7 +2701,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Restriction Master] units> <for every [Adopted [[Restriction Path] branch] Policies]>"
+      "[+5]% Strength <for [Restriction Master] units> <for every [Adopted [[Restriction Path] branch] Policies]>",
+      "Provides [2] [North Ban Licorice]"
     ],
     "civilopediaText": [
       {
@@ -2739,7 +2773,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Luck Master] units> <for every [Adopted [[Luck Path] branch] Policies]>"
+      "[+5]% Strength <for [Luck Master] units> <for every [Adopted [[Luck Path] branch] Policies]>",
+      "Provides [2] [Hound Dung]"
     ],
     "civilopediaText": [
       {
@@ -2810,7 +2845,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Heaven Master] units> <for every [Adopted [[Heaven Path] branch] Policies]>"
+      "[+5]% Strength <for [Heaven Master] units> <for every [Adopted [[Heaven Path] branch] Policies]>",
+      "Provides [2] [Brocade Cloud]"
     ],
     "civilopediaText": [
       {
@@ -2881,7 +2917,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Qi Master] units> <for every [Adopted [[Qi Path] branch] Policies]>"
+      "[+5]% Strength <for [Qi Master] units> <for every [Adopted [[Qi Path] branch] Policies]>",
+      "Provides [2] [Heavy Gold]"
     ],
     "civilopediaText": [
       {
@@ -2952,7 +2989,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Refinement Master] units> <for every [Adopted [[Refinement Path] branch] Policies]>"
+      "[+5]% Strength <for [Refinement Master] units> <for every [Adopted [[Refinement Path] branch] Policies]>",
+      "Provides [2] [Ash]"
     ],
     "civilopediaText": [
       {
@@ -3023,7 +3061,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Formation Master] units> <for every [Adopted [[Formation Path] branch] Policies]>"
+      "[+5]% Strength <for [Formation Master] units> <for every [Adopted [[Formation Path] branch] Policies]>",
+      "Provides [2] [Star Cave Stone]"
     ],
     "civilopediaText": [
       {
@@ -3094,7 +3133,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Food Master] units> <for every [Adopted [[Food Path] branch] Policies]>"
+      "[+5]% Strength <for [Food Master] units> <for every [Adopted [[Food Path] branch] Policies]>",
+      "Provides [2] [Wine]"
     ],
     "civilopediaText": [
       {
@@ -3165,7 +3205,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Pill Master] units> <for every [Adopted [[Pill Path] branch] Policies]>"
+      "[+5]% Strength <for [Pill Master] units> <for every [Adopted [[Pill Path] branch] Policies]>",
+      "Provides [2] [Ginseng Whiskers]"
     ],
     "civilopediaText": [
       {
@@ -3236,7 +3277,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Information Master] units> <for every [Adopted [[Information Path] branch] Policies]>"
+      "[+5]% Strength <for [Information Master] units> <for every [Adopted [[Information Path] branch] Policies]>",
+      "Provides [2] [Old Scrolls]"
     ],
     "civilopediaText": [
       {
@@ -3307,7 +3349,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Human Master] units> <for every [Adopted [[Human Path] branch] Policies]>"
+      "[+5]% Strength <for [Human Master] units> <for every [Adopted [[Human Path] branch] Policies]>",
+      "Provides [2] [Rice]"
     ],
     "civilopediaText": [
       {
@@ -3378,7 +3421,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Painting Master] units> <for every [Adopted [[Painting Path] branch] Policies]>"
+      "[+5]% Strength <for [Painting Master] units> <for every [Adopted [[Painting Path] branch] Policies]>",
+      "Provides [2] [Danqing Incense]"
     ],
     "civilopediaText": [
       {
@@ -3449,7 +3493,8 @@
       "Endurance": 3
     },
     "uniques": [
-      "[+5]% Strength <for [Theft Master] units> <for every [Adopted [[Theft Path] branch] Policies]>"
+      "[+5]% Strength <for [Theft Master] units> <for every [Adopted [[Theft Path] branch] Policies]>",
+      "Provides [2] [Jade-Eye Monkey]"
     ],
     "civilopediaText": [
       {
