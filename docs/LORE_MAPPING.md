@@ -5325,3 +5325,70 @@ Exact uniques (the halls', branches' and lores' food lines, such as `Provides [1
 [-4] Happiness from each type of luxury resource
 [+4 Happiness] [in capital] <when above [0] [Furs]>
 ```
+
+Layer 9b (autoplay, 4 x 300, 2026-11-09): the Moon and Strength branches no longer outrank the others (priorities 3/3
+like every path; they were 5/5), every branch's Insight policy gives 2 of the path's food as Orchid Beds and Beast
+Hunters always did, the lore gives 2, and the Bai and Wu clans' AI now prefers its signature branch (Water, Wind); the
+lines are the same `Provides [2] [Wind Knot Grass]` form quoted in docs/PATHS.md.
+
+## Layer 10: Fang Yuan, the demon from beyond (the user, 2026-11-09)
+
+The user: "buat fang yuan jadi kultivator pengembara tapi dengan AI paling canggih, terpintar, dengan statistik paling
+terbaik karena dia iblis dunia lain, dan punya pengalaman 500 tahun". Verified in the raw text (R): he is reborn five
+hundred years back by the Spring Autumn Cicada (V1c1), which is not carried back with him (V1c2); he holds five hundred
+years of experience (V1c23); the world calls him the demon from beyond the heavens, 天外之魔 (V3c209; V2c147); he ends
+the canon as a Venerable (V6c329, ch2295). All CANON; the numbers are the mod's.
+
+| Object | Chinese | Role | Status |
+|---|---|---|---|
+| Fang Yuan | 方源 | A lone wanderer of the Barbarians (at war with everyone, never takes a city) | CANON |
+
+**How "the smartest AI" is met.** Unciv's AI cannot be replaced by a mod. A major without cities never declares war
+[src DiplomacyAutomation, E14], so a wandering clan of one would stand idle; the barbarians are at war with all and
+their AI attacks only what it can beat without dying, pillages to heal and wanders [src BarbarianAutomation]. His kit
+makes that behaviour the best it can be: he heals every turn even after acting, slips away from melee, ignores zones of
+control, keeps his strength when wounded, moves after attacking and crosses impassable tiles.
+
+**Numbers.** Strength 16 and +25% for five hundred years' experience (20 when he comes, turn 30 on Standard, when the
+rank-one and rank-two Masters stand at 6-10), then x2.5 from T100, x4 from T170, x6.5 from T260, x9 from T340 and
+x11 (176) from T390, the Venerables' era, level with a Venerable (168). Movement 3, sight +1. Killed by a Gu Master,
+he returns with a 50% chance near the killer's capital while no clan has built the Spring Autumn Cicada.
+
+```
+Unbuildable
+Unable to capture cities
+Withdraws before melee combat
+Unit will heal every turn, even if it performs an action
+[15] HP when healing
+Ignores Zone of Control
+No damage penalty for wounded units
+Can move after attacking
+[+1] Sight
+Can pass through impassable tiles
+[+25]% Strength
+[+125]% Strength <after turn number [67]> <on [Quick] game speed>
+[+125]% Strength <after turn number [100]> <on [Standard] game speed>
+[+125]% Strength <after turn number [150]> <on [Epic] game speed>
+[+125]% Strength <after turn number [300]> <on [Marathon] game speed>
+[+150]% Strength <after turn number [114]> <on [Quick] game speed>
+[+150]% Strength <after turn number [170]> <on [Standard] game speed>
+[+150]% Strength <after turn number [255]> <on [Epic] game speed>
+[+150]% Strength <after turn number [510]> <on [Marathon] game speed>
+[+250]% Strength <after turn number [174]> <on [Quick] game speed>
+[+250]% Strength <after turn number [260]> <on [Standard] game speed>
+[+250]% Strength <after turn number [390]> <on [Epic] game speed>
+[+250]% Strength <after turn number [780]> <on [Marathon] game speed>
+[+250]% Strength <after turn number [228]> <on [Quick] game speed>
+[+250]% Strength <after turn number [340]> <on [Standard] game speed>
+[+250]% Strength <after turn number [510]> <on [Epic] game speed>
+[+250]% Strength <after turn number [1020]> <on [Marathon] game speed>
+[+200]% Strength <after turn number [261]> <on [Quick] game speed>
+[+200]% Strength <after turn number [390]> <on [Standard] game speed>
+[+200]% Strength <after turn number [585]> <on [Epic] game speed>
+[+200]% Strength <after turn number [1170]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn start> <after turn number [19]> <before turn number [21]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn start> <after turn number [29]> <before turn number [31]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn start> <after turn number [44]> <before turn number [46]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn start> <after turn number [89]> <before turn number [91]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>
+```

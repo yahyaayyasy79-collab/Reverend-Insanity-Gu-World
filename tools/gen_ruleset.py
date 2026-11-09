@@ -436,6 +436,14 @@ ETERNAL_COST = 300  # yellow apricot essence for Eternal Life on Standard (was 1
 VEN_ELSEWHERE = "<if [Venerable Ascension] is constructed by anybody> <if [Venerable Ascension] is not constructed>"
 VENERABLE = "Venerable"
 HOUSE_MATERIALS = 60  # audit P5: a Gu House is refined from immortal materials too
+# Fang Yuan (the user, 2026-11-09): base 16, +25% for five hundred years' experience, then he grows as he did in the
+# canon, ahead of every mortal of his time: x1.25 when he comes (T30 on Standard), x2.5 from T100, x4 from T170, x6.5
+# from T260, x9 from T340 (rank-two to rank-eight Gu Masters stand at about 15, 32, 44-61, 80-108 by then), x11 from
+# T390, the Venerables' era (autoplay median), where he stands level with a Venerable (168): he ends the canon as one
+# (R V6c329, ch2295: no Venerable ever cared for his people like him)
+FANG_YUAN = "Fang Yuan"
+FY_BASE, FY_EXPERIENCE, FY_ARRIVES, FY_REBIRTH = 16, 25, 30, 50
+FY_GROWTH = [(100, 125), (170, 150), (260, 250), (340, 250), (390, 200)]
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
     ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
@@ -689,6 +697,10 @@ BAI_DOOM = per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{t
 # On the Gu Master unit type, as creation triggers: they fire when a unit joins the clan, upgrades included, after its
 # promotions are copied [src UnitManager.placeUnitNearTile]. (A unit trigger on a nation is not allowed: the official
 # validator flags "<upon gaining a [unit] unit>" there.)
+# Fang Yuan's Spring Autumn Cicada: struck down, he may return near the capital of the clan that killed him, unless a
+# clan holds the Spring Autumn Cicada itself (the immortal Gu wonder); canon has him reborn by it (R V1c1)
+FY_REBORN = [f"A [{FANG_YUAN}] rebels <upon defeating a [{FANG_YUAN}] unit> <with [{FY_REBIRTH}]% chance> "
+             f"<if [Spring Autumn Cicada] is not constructed by anybody>"]
 HERO_TRIGGERS = [f"[This Unit] gains the [{h}] promotion <for [{n}] Civilizations> <for [{who}] units> "
                  f"<when number of [[{h}] Units] is less than [1]>" for h, n, who, _, _ in HEROES] + BAI_DOOM
 
@@ -698,7 +710,7 @@ def hero_triggers(nation_name):
 
 
 dump("UnitTypes.json", [{"name": n, "movementType": "Land", **({"uniques": gen_paths.GC.spoils()
-                                                                  + (stage_lines() + HERO_TRIGGERS if n == "Gu Master" else [])}
+                                                                  + (stage_lines() + HERO_TRIGGERS + FY_REBORN if n == "Gu Master" else [])}
                                                                  if "Gu Master" in n else {})}
                         for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
@@ -862,6 +874,21 @@ dump("Units.json", [
         ("Demonic Elder", 44, 190, "Purple Crystal Essence", 5,
          ["[+20]% Strength <when attacking>", "Heals [20] damage if it kills a unit",
           "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"]))
+] + [
+    # the user, 2026-11-09: Fang Yuan as a wandering cultivator with the best stats, the demon from beyond with five
+    # hundred years behind him (R V1c1, V1c23, V3c209). A barbarian, so he is at war with every clan: a major without
+    # cities would never declare war [src DiplomacyAutomation.declareWar, E14]. The barbarians' AI attacks only what it
+    # can beat without dying, pillages to heal and wanders [src BarbarianAutomation]; his kit makes that the best it can
+    # be: he heals even after acting, slips away from melee, ignores zones of control, keeps his strength when wounded
+    # and outgrows every mortal of his time. He never takes a city.
+    {"name": FANG_YUAN, "unitType": "Gu Master", "movement": 3, "strength": FY_BASE, "cost": 200, "requiredTech": "Calamity Lore",
+     "attackSound": sfx.rank_sound(6), "uniqueTo": "Barbarians",
+     "uniques": ["Unbuildable", "Unable to capture cities", "Withdraws before melee combat",
+                 "Unit will heal every turn, even if it performs an action", "[15] HP when healing", "Ignores Zone of Control",
+                 "No damage penalty for wounded units", "Can move after attacking", "[+1] Sight",
+                 "Can pass through impassable tiles", f"[+{FY_EXPERIENCE}]% Strength"]
+     + [line for t, bonus in FY_GROWTH for line in per_speed(lambda m, t=t, bonus=bonus:
+                                                              f"[+{bonus}]% Strength <after turn number [{turn_gate(t, m)}]>")]},
 ])
 
 # ---------------- R2 T4: refinement ladder with the canon recipes ----------------
@@ -1506,7 +1533,7 @@ dump("Policies.json", [
             "[-20]% maintenance costs <when at war>",
             "[+20]% Unhappiness from [Population] [in all cities]"]},
         {"name": "Demonic Path Complete", "uniques": ["[+15]% Strength <when attacking>"]}]},
-    {"name": "Moon Path", "era": E12, "priorities": {"Southern Border Supremacy": 5, "Endurance": 5}, "uniques": [
+    {"name": "Moon Path", "era": E12, "priorities": {"Southern Border Supremacy": 3, "Endurance": 3}, "uniques": [
         "Only available <before adopting [Strength Path]>",
         "Provides [2] [Moon Orchid]",
         "[+5]% Strength <for [Moon Master] units> <for every [Adopted [[Moon Path] branch] Policies]>"], "policies": [
@@ -1517,7 +1544,7 @@ dump("Policies.json", [
         {"name": "Moon Blade Step", "row": 2, "column": 2, "requires": ["Moonlight Mastery"],
          "uniques": ["[1] Movement <for [Moon Master] units>"]},
         {"name": "Moon Path Complete", "uniques": ["New [Gu Master] units start with [10] XP [in all cities]"]}]},
-    {"name": "Strength Path", "era": E12, "priorities": {"Southern Border Supremacy": 5, "Endurance": 5}, "uniques": [
+    {"name": "Strength Path", "era": E12, "priorities": {"Southern Border Supremacy": 3, "Endurance": 3}, "uniques": [
         "Only available <before adopting [Moon Path]>",
         # the 47-branch update: strength's dao marks clash strongly with water and metal (docs/PATHS.md), both ways
         "Only available <before adopting [Water Path]>", "Only available <before adopting [Metal Path]>",
@@ -1726,7 +1753,10 @@ dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
            ["Gu Yue Village", "Alliance Slope", "Spear Bamboo Grove", "Stone Forest"],
            [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), RIGHTEOUS_START, "Start bias [Spirit Spring]",
-            "Start bias [Hill]"]),
+            "Start bias [Hill]"]
+           # the user, 2026-11-09: Fang Yuan comes back to the Gu Yue village and turns on it, once a game
+           + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn start> <after turn number [{turn_gate(FY_ARRIVES, m) - 1}]> "
+                                 f"<before turn number [{turn_gate(FY_ARRIVES, m) + 1}]>")),
     # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
     nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
            ["Bai Village", "Back-Slope Waterfall", "Deep Pool", "Bitter Shell Pool"],
@@ -1912,7 +1942,8 @@ dump("Personalities.json", [
                  "Will not build [Flower Wine Monk Inheritance]"]},
     {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 6, "aggressive": 8,
      "declareWar": 9, "expansion": 7, "diplomacy": 3, "loyal": 3, "preferredVictoryType": "Southern Border Supremacy",
-     "priorities": {"Righteous Path": 8},
+     # Layer 9b: Bai's signature branch (the user's B3 decision, Water); its AI never adopted it, so its water Gu starved
+     "priorities": {"Water Path": 10, "Righteous Path": 8},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Xiong Temperament", "military": 7, "aggressive": 6, "production": 6, "declareWar": 5, "loyal": 2,
      "diplomacy": 6,
@@ -1939,7 +1970,8 @@ dump("Personalities.json", [
     {"name": "Wu Temperament", "military": 7, "aggressive": 4, "production": 6, "loyal": 7, "expansion": 5,
      "declareWar": 6, "diplomacy": 7,
      "preferredVictoryType": "Southern Border Supremacy",
-     "priorities": {"Righteous Path": 10, "Strength Path": 4},  # D3: the clan walks wind; Wu Ji alone walks strength
+     # D3: the clan walks wind; Wu Ji alone walks strength. Layer 9b: the Wind branch was never weighed, so Wu's wind Gu starved
+     "priorities": {"Wind Path": 10, "Righteous Path": 10, "Strength Path": 4},
      "uniques": ["[+50]% weight to [Martial Arena] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
 ])
 for _k in (("UnitPromotions.json", "Seek Eternal Life"), ("Buildings.json", "Eternal Life"), ("TileResources.json", APRICOT)):

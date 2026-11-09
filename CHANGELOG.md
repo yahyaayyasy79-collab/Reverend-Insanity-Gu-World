@@ -1247,3 +1247,44 @@ You said one tech per path would be interesting, and the eras should go into the
   * Eternal Life wins: Wu 4, Bai 1; three games reached turn 450.
   * First rank eight T248-313, earlier than before.
   * Cities captured 4.1 a game (4.5 before).
+
+## Layer 9: a basic food for every path, spread over the five regions (2026-11-09)
+
+You said only the moon and strength paths had a basic food, the mod leaned on the Southern Border and on those two
+paths, and asked for every path's food, spread over all five regions, even and balanced, with a systematic design.
+* **47 path foods** (data/path_foods.csv; docs/PATH_ECONOMY.md): one per path, 23 canon (the novel names it as a Gu's
+  food) and 24 adapted, each checked in the raw text. Moon Orchid, Wild Boar and Wine keep their roles.
+* **The path Gu eat them.** Every path Gu eats 1 of its path's food a turn with the hunger meter; a Master gets its
+  path Gu only while the clan has 2 spare, so a clan without the food never starves. The +10% stone upkeep is gone.
+* **Where the food comes from:** a worked tile 1, the path's branch 2 and its Insight policy 2, each of its halls 1,
+  its lore 2. Plantation, Camp, Mine, Spring Cave or Inheritance Dig works the tile.
+* **Not on the top bar.** The foods are luxuries whose happiness is switched off (Furs keeps its +4), so a random map
+  still places spirit springs and jade, and the phone's top bar stays as it was.
+* **Spread over the five regions:** each food has two tiles in its home region and one in a second region; spirit
+  springs, jade and sites are spread evenly too. Riches without the start kits: south 43, north 46, central 43, west 40,
+  east 18 (the sea, richest per tile).
+* **Path lores redesigned:** cost by family (40, 60 or 80; a sub-path 20 more) and 2 of the path's food.
+* **Fair starts (Layer 9b).** The first measurement showed the Wu falling in 6 of 8 games: the scatter had left it 5
+  riches and a beast lair, while the Court, the Fang and the Zombie Alliance got 10-11. Now every major gets the same
+  kit (a spirit spring, jade, one tile of each of its two foods, an inheritance site), nothing else lands within 3.5
+  tiles of a capital, at most 4 more within 6, and no barbarian camp within 6.
+* **Even branches (Layer 9b).** The Moon and Strength branches no longer outrank the rest (the AI weighed them 5/5,
+  every other path 3/3); every branch's Insight feeds its Gu as Orchid Beds and Beast Hunters always did; the Bai and
+  Wu AI now prefer their own Water and Wind branches (they never took them, so their Gu starved).
+
+## Layer 10: Fang Yuan, the demon from beyond (2026-11-09)
+
+You asked for Fang Yuan as a wandering cultivator with the smartest AI and the best stats: the demon from another
+world with five hundred years of experience.
+* **A lone wanderer** of the barbarians: at war with every clan, he never takes a city. He comes to the Gu Yue village
+  on turn 30 (Standard; 20 Quick, 45 Epic, 90 Marathon).
+* **The best stats of his time:** strength 16 and +25% for his experience, then x2.5 from T100, x4 from T170, x6.5 from
+  T260, x9 from T340 and x11 (176) from T390, level with a Venerable, as he ends the canon as one (checked in the raw
+  text). Movement 3, sight +1.
+* **The smartest the engine allows.** A mod cannot replace Unciv's AI; the barbarians' AI attacks only what it can beat
+  and pillages to heal. His kit makes that sharp: he heals every turn even after acting, withdraws from melee, ignores
+  zones of control, keeps his strength when wounded, moves after attacking and crosses impassable tiles.
+* **The Spring Autumn Cicada:** struck down by a Gu Master, he returns with a 50% chance near the killer's capital, as
+  long as no clan has built the Spring Autumn Cicada.
+* Designed art: map sprites (three unit sets), a portrait, a four-frame blood-slash attack, an icon (the cicada before
+  a blood moon).

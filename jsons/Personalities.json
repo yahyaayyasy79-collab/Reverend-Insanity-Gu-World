@@ -33,6 +33,7 @@
     "loyal": 3,
     "preferredVictoryType": "Southern Border Supremacy",
     "priorities": {
+      "Water Path": 10,
       "Righteous Path": 8
     },
     "uniques": [
@@ -113,6 +114,7 @@
     "diplomacy": 7,
     "preferredVictoryType": "Southern Border Supremacy",
     "priorities": {
+      "Wind Path": 10,
       "Righteous Path": 10,
       "Strength Path": 4
     },

@@ -117,9 +117,9 @@ Balance is measured per layer in `docs/AUTOPLAY.md` ("Reference audit layers").
 |---|---|---|
 | Eras = the five antiquities | "dimasukkan ke lorenya saja": the rank eras stay | Layer 5 (each path's age), Layer 8 (Tutorial) |
 | One tech per path | "menarik" | Layer 8 |
-| No Venerable unit | asked what it means: the reference would make a Venerable a top Great Person or a wonder, not a regular unit, since rank-nine power breaks balance | kept for now: one Venerable per world, with a lifespan, and the Eternal Life victory rests on it; in 24 autoplay games it came at T320-398 and once razed the Court |
+| No Venerable unit | asked what it means: the reference would make a Venerable a top Great Person or a wonder, not a regular unit, since rank-nine power breaks balance; 2026-11-09: "venerable tetap" | kept: one Venerable per world, with a lifespan, and the Eternal Life victory rests on it; in 24 autoplay games it came at T320-398 and once razed the Court |
 | The Heavenly Court as a boss | "sebagai boss saja", strongest of the five regions | Layer 6 (a playable major the AI runs as the boss; the engine cannot bar players from a nation) |
-| Heroes; Fang Yuan as one | yes, but Fang Zheng for the Gu Yue | Layer 6 (eight heroes); Fang Yuan's place is the user's call |
+| Heroes; Fang Yuan as one | yes, but Fang Zheng for the Gu Yue; 2026-11-09: Fang Yuan as a wandering cultivator with the smartest AI and the best stats (the demon from beyond, 500 years' experience) | Layer 6 (eight heroes); Layer 10 (Fang Yuan, a lone wanderer of the barbarians; LORE_MAPPING "Layer 10") |
 | More super forces | "tambahkan saja takpapa" | Layer 7 |
 
 ## Not built (scale and map space)

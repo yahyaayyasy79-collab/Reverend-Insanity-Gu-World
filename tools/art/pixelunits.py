@@ -417,6 +417,25 @@ def demonic(rank: int):
     return draw
 
 
+def fang_yuan(s: Sprite):
+    """The demon from beyond (天外之魔, the user 2026-11-09): a lean cultivator in a plain black robe and a blood-red
+    sash, standing calm, a cicada of green-gold light (the Spring Autumn Cicada) circling him and blood mist at his
+    feet. A symbol of the role, no likeness."""
+    cx = SOLDIER
+    s.shadow(cx, FEET + 0.4, 8.5, 2.2)
+    s.glow(s.ellipse(cx, FEET - 1, 12, 3.4), (150, 10, 20), 0.4)               # the blood mist
+    s.glow(s.ellipse(cx, FEET - 18, 13, 19), (40, 10, 20), 0.25)
+    hand = person(s, cx, arm="raise", robe=BLACK, trim=ROOF, sash=ROOF, hair="long")
+    s.outline()
+    eyes(s, cx, col=(255, 210, 120))
+    hx, hy = hand[0] + 0.6, hand[1] - 3.2                                      # the cicada over his hand
+    s.glow(s.ellipse(hx, hy, 4.6, 3.6), (150, 220, 90), 0.45)
+    s.put(s.ellipse(hx, hy, 1.2, 1.8), (120, 200, 70))
+    for side in (-1, 1):
+        s.put(s.poly([(hx, hy - 0.6), (hx + side * 3.4, hy - 2.2), (hx + side * 2.6, hy + 0.6)]), (220, 240, 150))
+    s.light(hx, hy - 1.2, (255, 250, 200))
+
+
 def immortal_zombie(s: Sprite):
     """An immortal zombie (仙僵): grey-green skin, stiff arms held out, a torn robe, pale glowing eyes, ghost fire."""
     cx = SOLDIER - 1
@@ -934,7 +953,7 @@ SPRITES = {   # name: (draw, design rows above the hex for tall subjects)
     "Rank Six Gu Immortal": (gu_immortal(6), 4), "Rank Seven Gu Immortal": (gu_immortal(7), 6),
     "Rank Eight Gu Immortal": (gu_immortal(8), 8), "Venerable": (venerable, 10),
     "Lone Gu Master": (lone_gu_master, 0), "Demonic Gu Master": (demonic(3), 0), "Demonic Elder": (demonic(5), 0),
-    "Immortal Zombie": (immortal_zombie, 0),
+    "Immortal Zombie": (immortal_zombie, 0), "Fang Yuan": (fang_yuan, 0),
     "Clan Settler": (clan_settler, 0), "Mortal Laborer": (mortal_laborer, 0),
     "Lightning Wolf": (wolf(), 0), "Bold Lightning Wolf": (wolf(1.2, 44, mane=True, streaks=2), 0),
     "Thunder Crown Wolf": (wolf(1.55, 37, mane=True, crown=True, streaks=2), 6),
@@ -957,7 +976,8 @@ ATTACKS = {   # name: (draw, frames); every unit has its own, so the unit-type f
     **{f"Rank {w} Wu Gu Master": wind_blades(r) for w, r in WORDS[1:4]},
     "Rank Six Gu Immortal": strike(6), "Rank Seven Gu Immortal": strike(7), "Rank Eight Gu Immortal": strike(8),
     "Venerable": strike(9), "Lone Gu Master": strike(2), "Demonic Gu Master": blood_slash(3),
-    "Demonic Elder": blood_slash(5), "Immortal Zombie": miasma_claw(), "Clan Settler": None, "Mortal Laborer": None,
+    "Demonic Elder": blood_slash(5), "Immortal Zombie": miasma_claw(), "Fang Yuan": blood_slash(6),
+    "Clan Settler": None, "Mortal Laborer": None,
     "Lightning Wolf": lightning(), "Bold Lightning Wolf": lightning(), "Thunder Crown Wolf": lightning(crown=True),
     "Frenzy Lightning Wolf": lightning(),
     "Desolate Beast": claws(6), "Ancient Desolate Beast": claws(7), "Immemorial Desolate Beast": claws(8),
@@ -985,7 +1005,7 @@ def _portrait_colours(name):
     for clan in ("Gu Yue", "Bai", "Xiong", "Wu"):
         if f" {clan} " in name:
             return CLAN[clan]
-    if name in ("Lone Gu Master", "Demonic Gu Master", "Demonic Elder") or "Wolf" in name or "Desolate" in name:
+    if name in ("Lone Gu Master", "Demonic Gu Master", "Demonic Elder", "Fang Yuan") or "Wolf" in name or "Desolate" in name:
         return CLAN["Barbarians"]
     if name == "Heaven Overseeing Tower" or "Immortal" in name and "Zombie" not in name or name == "Venerable":
         return CLAN["Heavenly Court"]
@@ -1009,7 +1029,7 @@ def _ground(cv: Canvas, name: str):
     elif "Zombie" in name:
         cv.patch(cv.ellipse(32, 30, 23, 13), MIASMA, "zombie ground", specks=0.1)
         cv.tone(cv.line([(48, 26), (49, 14), (45, 9)], 1.4) | cv.line([(49, 18), (53, 13)], 1), np.zeros((cv.h, cv.w), int), BLACK)
-    elif "Demonic" in name:
+    elif "Demonic" in name or name == "Fang Yuan":
         cv.patch(cv.ellipse(32, 30, 22, 12), ((44, 10, 14), (76, 18, 22), (104, 30, 30), (134, 50, 44), (170, 80, 64)),
                  "blood ground", specks=0.1)
     elif "Immortal" in name or name == "Venerable" or name in ("Dragon Palace", "Myriad Year Flying Warship", "Dou Shen Palace"):

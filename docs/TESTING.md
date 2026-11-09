@@ -188,6 +188,17 @@ civ addtechnology gu-yue-clan "Moon Path Lore"  # the tech screen lists 47 path 
 unit addpromotion "Moon Master"                 # on a rank-three Gu Master: Moon Grandmaster stays closed until the
                                                 # clan knows Moon Path Lore; Civilopedia > Tutorials > "Gu World: The
                                                 # Five Antiquities"
+# Layer 9 (2026-11-09): a basic food per path; Layer 9b: fair starts, every branch feeds its path
+unit addpromotion "Wind Master"                 # on a Wu Gu Master: Whirlwind Gu comes (25% a turn) only while the
+                                                # clan has 2+ Wind Knot Grass spare; the resource overview lists the
+                                                # food by source (tiles, Wind Path 2, Wind Insight 2, halls, lore 2)
+civ addtechnology wu-clan "Wind Path Lore"      # +2 Wind Knot Grass; the top bar does not show the foods (luxuries)
+# Layer 10 (2026-11-09): Fang Yuan
+unit add barbarians "Fang Yuan"                 # strength 16 x1.25 (x2.5 from T100 ... x11 from T390 on Standard);
+                                                # he slips away from melee, heals every turn, never takes a city;
+                                                # kill him with a Gu Master: 50% he comes back (none while anyone
+                                                # has built the Spring Autumn Cicada); in a new game he appears near
+                                                # the Gu Yue village on turn 30 (Standard)
 # Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference
 # Five Regions map: the Central Continent holds ten Immortal Sect city-states; each shows its own emblem in diplomacy
 unit add gu-yue-clan "Rank Six Gu Immortal"   # end a turn in the Azure Water Wall: 10 (wall) + 5 (strain) damage;

@@ -56,8 +56,13 @@ Layer 5 path origins; the Court cannot reach rank nine (it held the Venerable sl
 Layers 6-8 (user 2026-11-08, REFERENCE_AUDIT "Design proposals"): the Court as the boss + one hero per major (Fang
 Zheng for the Gu Yue); Tie, Tang, Shen, Ma, Liu, Dong Fang city-states + the Fang clan's Dou Shen Palace (placed
 20+ tiles from the Huang Jin, the Tang off the Fang); 47 path lore techs (open with a rank-3+ Master of the path,
-needed for Grandmaster; E8 factor 11) and the Tutorial "The Five Antiquities". Open: the Venerable unit (the
-reference would make it a Great Person or wonder) and Fang Yuan's place, both the user's call.
+needed for Grandmaster; E8 factor 11) and the Tutorial "The Five Antiquities". User 2026-11-09: the Venerable unit
+stays; no patch for the later era rollover (E15) and no stronger Court cities. Layer 9 (docs/PATH_ECONOMY.md): one basic
+food per path (data/path_foods.csv, 47; luxuries with happiness off), path Gu eat it (grant needs 2 spare), supply tile
+1 / branch 2 / Insight 2 / hall 1 / lore 2; Layer 9b fair starts (same kit for every major, no riches within 3.5 tiles
+of a capital, no camps within 6) and even branches (all 3/3 priorities; Bai and Wu AI weigh Water and Wind). Layer 10:
+Fang Yuan, a barbarian wanderer (never takes cities, heals every turn, x11 strength by the Venerables' era, 50% return
+while no Spring Autumn Cicada). Next: even the Gu catalog per path (16 paths have 1 Gu, strength 12).
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.

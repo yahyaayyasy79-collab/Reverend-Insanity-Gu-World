@@ -21,7 +21,8 @@ import re
 from common import REPO_ROOT
 
 DATA = REPO_ROOT / "data" / "gu_catalog.csv"
-ROWS = list(csv.DictReader(DATA.open(encoding="utf-8", newline="")))
+with DATA.open(encoding="utf-8", newline="") as _f:
+    ROWS = list(csv.DictReader(_f))
 # reference audit Layer 2 (2026-11-08): canon fusion recipes. A fused Gu needs its ingredients (every one in `needs`) and
 # uses up those in `spends` when refined, as the novel's fusions do (R V1c47, V1c64, V1c121, V1c155). Only chains a
 # single-path unit can climb are gated: Moonglow (Moonlight + Little Light, a light-path Gu) and the water-path half of

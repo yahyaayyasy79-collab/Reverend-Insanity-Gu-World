@@ -193,16 +193,24 @@ FOOD_HOME, FOOD_SECOND = 2, 1
 
 
 def food_spots() -> dict:
-    """{region: [(food, count)]} from data/path_foods.csv, the brewed Wine left out."""
+    """{region: [(food, count)]} from data/path_foods.csv, the brewed Wine left out; each region places its own foods
+    before the ones it holds as a second region, so a crowded region keeps room for its home foods."""
     import csv
-    out = {}
+    out, second = {}, {}
     with open(REPO_ROOT / "data" / "path_foods.csv", newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
             if r["food"] == "Wine":
                 continue
             out.setdefault(r["home"], []).append((r["food"], FOOD_HOME))
-            out.setdefault(r["second"], []).append((r["food"], FOOD_SECOND))
-    return out
+            second.setdefault(r["second"], []).append((r["food"], FOOD_SECOND))
+    return {g: out.get(g, []) + second.get(g, []) for g in set(out) | set(second)}
+
+
+def food_regions() -> dict:
+    """{food: (home, second)} from data/path_foods.csv."""
+    import csv
+    with open(REPO_ROOT / "data" / "path_foods.csv", newline="", encoding="utf-8") as f:
+        return {r["food"]: (r["home"], r["second"]) for r in csv.DictReader(f)}
 
 
 # each major's own foods beside its capital: the four Southern Border clans their signature paths', the arc majors
@@ -214,6 +222,12 @@ START_FOODS = {"Gu Yue Clan": ("Moon Orchid", "Wild Boar"), "Bai Clan": ("Dragon
                "Fang Clan": ("Splendid Overlord Flower", "Old Blades"), "Zombie Alliance": ("Dragonfish", "Lightning Eel")}
 
 IMPROVEMENT_SITES = {"Inheritance Site", "Beast Lair", "Demonic Den"}
+# Fair starts (autoplay, Layer 9: the scatter put 10-11 riches within 3.5 tiles of the Court, the Fang and the Zombie
+# Alliance, 5 and a beast lair beside the Wu, who fell in 6 of 8 games): every major gets the same kit (a spirit spring,
+# jade, its two foods at one copy each, an inheritance site), nothing else lands within MAJOR_CLEAR tiles of a capital,
+# at most MAJOR_RING_CAP scattered riches lie within MAJOR_RING tiles, and no barbarian camp within CAMP_CLEAR
+MAJOR_CLEAR, MAJOR_RING, MAJOR_RING_CAP, CAMP_CLEAR = 3.5, 6.0, 4, 6.0
+SEA_RING_CAP = 8   # the Eastern Sea's few islands lie mostly near the Zombie Alliance; the canon sea is the richest
 
 
 # the tile a resource needs: hills for jade and minerals, forest for beasts of the wood, open land for the rest
@@ -260,42 +274,64 @@ def scatter_riches(tiles, reg, wall, taken, starts):
     cells = sorted(tiles)
     rng.shuffle(cells)
     wanted = {g: list(RICHES.get(g, [])) + food_spots().get(g, []) for g in set(RICHES) | set(food_spots())}
-    for region, wants in wanted.items():
+    capitals = [starts[m] for m in START_FOODS]
+    ring = {m: 0 for m in capitals}
+    cap = {m: SEA_RING_CAP if reg[m] == "east" else MAJOR_RING_CAP for m in capitals}
+    def place(region, what, count, tight=False):
+        for q in cells:
+            if count == 0:
+                break
+            t = tiles[q]
+            if reg[q] != region or q in wall or t[2] != "-" or t[4] != "-" or t[6] != "-" \
+                    or t[0] in ("Ocean", "Coast", "Mountain", "Lakes"):
+                continue
+            gap = SEA_GAP if region == "east" or tight else MIN_GAP
+            if any(math.hypot(q[0] - a, q[1] - b) < gap for a, b in placed):
+                continue
+            near = [m for m in capitals if math.hypot(q[0] - m[0], q[1] - m[1]) <= MAJOR_RING]
+            if any(math.hypot(q[0] - m[0], q[1] - m[1]) <= MAJOR_CLEAR for m in near) \
+                    or any(ring[m] >= cap[m] for m in near) \
+                    or (what in ("Beast Lair", "Demonic Den") and any(
+                        math.hypot(q[0] - m[0], q[1] - m[1]) <= CAMP_CLEAR for m in near)):
+                continue
+            if food_kind(what) == "sea" and region == "east" and not near_sea(tiles, q):
+                continue   # in the sea region a sea creature lives on a shore; elsewhere in rivers and marshes
+            for m in near:
+                ring[m] += 1
+            if what == "Furs" and region == "north":
+                t[0], t[1] = "Tundra", ["Forest"]
+            elif what == "Furs":
+                t[1] = ["Jungle"]
+            elif what in ("Beast Lair", "Demonic Den"):
+                t[1] = ["Jungle"] if "Jungle" in t[1] else ["Forest"]
+            elif what not in IMPROVEMENT_SITES:
+                fit_tile(t, what)
+            if t[0] == "Desert" and what in ("Spirit Spring", "Beast Lair", "Demonic Den", "Furs"):
+                t[0] = "Plains"
+            if t[0] == "Tundra" and what in ("Spirit Spring",):
+                t[0] = "Plains"
+            if what in IMPROVEMENT_SITES:
+                t[4] = what
+            else:
+                t[2], t[3] = what, (0 if what == "Furs" or food_kind(what) else 1 if what == "Spirit Spring" else 2)
+            placed.append(q)
+            count -= 1
+        return count
+
+    homes = food_regions()
+    for region, wants in sorted(wanted.items()):
         for what, count in wants:
-            for q in cells:
-                if count == 0:
-                    break
-                t = tiles[q]
-                if reg[q] != region or q in wall or t[2] != "-" or t[4] != "-" or t[6] != "-" \
-                        or t[0] in ("Ocean", "Coast", "Mountain", "Lakes"):
-                    continue
-                if any(math.hypot(q[0] - a, q[1] - b) < MIN_GAP for a, b in placed):
-                    continue
-                if food_kind(what) == "sea" and region == "east" and not near_sea(tiles, q):
-                    continue   # in the sea region a sea creature lives on a shore; elsewhere in rivers and marshes
-                if what == "Furs" and region == "north":
-                    t[0], t[1] = "Tundra", ["Forest"]
-                elif what == "Furs":
-                    t[1] = ["Jungle"]
-                elif what in ("Beast Lair", "Demonic Den"):
-                    t[1] = ["Jungle"] if "Jungle" in t[1] else ["Forest"]
-                elif what not in IMPROVEMENT_SITES:
-                    fit_tile(t, what)
-                if t[0] == "Desert" and what in ("Spirit Spring", "Beast Lair", "Demonic Den", "Furs"):
-                    t[0] = "Plains"
-                if t[0] == "Tundra" and what in ("Spirit Spring",):
-                    t[0] = "Plains"
-                if what in IMPROVEMENT_SITES:
-                    t[4] = what
-                else:
-                    t[2], t[3] = what, (0 if what == "Furs" or food_kind(what) else 1 if what == "Spirit Spring" else 2)
-                placed.append(q)
-                count -= 1
+            count = place(region, what, count)
+            if count and what in homes:   # a food with no room left in one of its regions spills into the other
+                other = homes[what][1] if region == homes[what][0] else homes[what][0]
+                count = place(other, what, count)
+                count = place(other, what, place(region, what, count, tight=True), tight=True)   # crowded: only not touching
             if count:
                 print(f"[make_map] {region}: {count} {what} could not be placed", file=sys.stderr)
 
 
 MIN_GAP = 2.0   # tiles between two riches; 2.5 left no room for the foods in the Eastern Sea's islands
+SEA_GAP = 1.5   # on the Eastern Sea's islands two riches only must not touch
 
 
 def near_sea(tiles, q):
@@ -408,7 +444,7 @@ def five_regions() -> list[str]:
     for name in ("Gu Yue Clan", "Bai Clan", "Xiong Clan", "Wu Clan", "Heavenly Court", "Huang Jin Family", "Fang Clan"):
         c0, r0 = starts[name]
         fa, fb = START_FOODS[name]
-        for dc, dr, res, amt in ((1, 1, "Spirit Spring", 1), (-1, 2, fa, 2), (2, -1, fb, 2), (-2, 0, "Jade", 2)):
+        for dc, dr, res, amt in ((1, 1, "Spirit Spring", 1), (-1, 2, fa, 1), (2, -1, fb, 1), (-2, 0, "Jade", 2)):
             q = (c0 + dc, r0 + dr)
             if q in tiles and q not in wall and q not in taken and tiles[q][0] not in ("Ocean", "Coast", "Mountain", "Lakes"):
                 t = tiles[q]
@@ -418,8 +454,21 @@ def five_regions() -> list[str]:
     for q, res in (((za[0] + 1, za[1]), "Spirit Spring"), ((za[0], za[1] + 1), "Spirit Spring"),
                    ((za[0] - 1, za[1]), START_FOODS["Zombie Alliance"][0]), ((za[0], za[1] - 1), START_FOODS["Zombie Alliance"][1])):
         if q in tiles and tiles[q][0] not in ("Ocean", "Coast") and q not in taken:
-            tiles[q][2], tiles[q][3] = res, (1 if res == "Spirit Spring" else 2)
+            tiles[q][2], tiles[q][3] = res, 1
             fit_tile(tiles[q], res)
+    for name in START_FOODS:   # one inheritance site three tiles out, the same for every major
+        c0, r0 = starts[name]
+        for dc, dr in ((0, -3), (3, 0), (-3, 0), (0, 3), (2, -2), (-2, 2), (2, 2), (-2, -2)):
+            q = (c0 + dc, r0 + dr)
+            t = tiles.get(q)
+            if t and q not in wall and q not in taken and t[0] not in ("Ocean", "Coast", "Mountain", "Lakes") \
+                    and t[2] == "-" and t[4] == "-" and t[6] == "-":
+                t[4] = "Inheritance Site"
+                if t[0] == "Desert":
+                    t[0] = "Plains"
+                break
+        else:
+            print(f"[make_map] {name}: no tile for its inheritance site", file=sys.stderr)
     scatter_riches(tiles, reg, wall, taken, starts)
     # the Yellow Dragon River along the Southern Border, north of the villages (Qing Mao Mountain has its tributary)
     for c in range(FW):

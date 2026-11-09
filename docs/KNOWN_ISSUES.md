@@ -194,6 +194,17 @@ rest of the list is what a player or the next session should know before trustin
     Master of that path at rank three or higher. If its last Master dies during the research, the progress stays but the tech waits until the
     clan has a Master again (by XP, a hall or a path Gu's bearer).
 
+29. **Fang Yuan's AI is the barbarians' AI (Layer 10, 2026-11-09).** A mod cannot replace Unciv's AI. A clan without
+    cities never declares war [src DiplomacyAutomation, E14], so he walks with the barbarians, whose AI attacks only
+    what it can beat without dying, pillages to heal and wanders [src BarbarianAutomation]. His kit (heals every turn
+    even after acting, withdraws from melee, ignores zones of control, keeps his strength when wounded) makes that the
+    best it can be; he does not plot, ally or take cities. He spawns near the Gu Yue's first city on turn 30 (Standard),
+    or near the capital of the clan that killed him when he returns.
+
+30. **Path foods on random maps (Layer 9, 2026-11-09).** The 44 new foods are luxuries (with their happiness switched
+    off), so a random map spreads them by count like any luxury; the Strategic Balance option still guarantees only
+    Moon Orchid and Wild Boar near each start. On the Five Regions map every major gets the same start kit.
+
 ## Not yet seen in a real game
 
 * **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small

@@ -113,6 +113,21 @@ def fang_di_chang():
     return g
 
 
+def fang_yuan_icon():
+    """The demon from beyond (the user, 2026-11-09): the Spring Autumn Cicada before a blood moon."""
+    g = G()
+    g.circ(50, 46, 40); g.circ(50, 46, 34, 0)                                   # the blood moon's rim
+    g.ell(42, 26, 58, 74)                                                       # the cicada's body
+    g.circ(50, 24, 7)
+    for side in (-1, 1):                                                        # its four wings
+        g.poly([(50, 36), (50 + side * 34, 22), (50 + side * 30, 44)])
+        g.poly([(50, 48), (50 + side * 28, 52), (50 + side * 20, 66)])
+    for y in (46, 56, 66):
+        g.line([(43, y), (57, y)], 2, 0)
+    g.line([(20, 94), (80, 94)], 4)
+    return g
+
+
 HEROES = [("Fang Zheng", fang_zheng), ("Bai Ning Bing", bai_ning_bing), ("Xiong Lin", xiong_lin),
           ("Wu Shuai", wu_shuai), ("Duke Long", duke_long), ("Hei Lou Lan", hei_lou_lan), ("Bo Qing", bo_qing),
           ("Fang Di Chang", fang_di_chang)]
@@ -122,4 +137,4 @@ HERO_NATION = {"Fang Zheng": "Gu Yue Clan", "Bai Ning Bing": "Bai Clan", "Xiong 
 
 
 def icons():
-    return [("UnitPromotionIcons", n, f, "white") for n, f in HEROES]
+    return [("UnitPromotionIcons", n, f, "white") for n, f in HEROES] + [("UnitIcons", "Fang Yuan", fang_yuan_icon, "white")]

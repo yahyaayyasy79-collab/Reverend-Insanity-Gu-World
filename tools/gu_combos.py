@@ -24,7 +24,8 @@ import re
 from common import REPO_ROOT
 
 DATA = REPO_ROOT / "data" / "gu_combos.csv"
-CURATED = list(csv.DictReader(DATA.open(encoding="utf-8", newline="")))
+with DATA.open(encoding="utf-8", newline="") as _f:
+    CURATED = list(csv.DictReader(_f))
 HIT = "<upon damaging a [Military] unit> <when attacking>"
 KIND_ID = {"assault": "serbuan", "bind": "jerat", "ward": "perisai", "heal": "pemulihan", "mobility": "gerak",
            "aura": "aura", "plunder": "rampasan", "insight": "wawasan"}

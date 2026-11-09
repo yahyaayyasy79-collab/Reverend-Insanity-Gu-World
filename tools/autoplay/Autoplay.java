@@ -291,6 +291,17 @@ public class Autoplay {
             Map<String, Integer> res = new LinkedHashMap<>();
             for (String r : strategic) res.put(r, c.getResourceAmount(r));
             rec.put("res", res);
+            // Layer 9: the path foods are luxuries; net stock per food and supply/demand by origin (tiles, branch, halls,
+            // lores, trade, units' consumption)
+            Map<String, Integer> lux = new TreeMap<>(), luxBy = new TreeMap<>();
+            for (com.unciv.models.ruleset.tile.ResourceSupplyList.ResourceSupply s : c.getDetailedCivResources()) {
+                if (s.getResource().getResourceType() != com.unciv.models.ruleset.tile.ResourceType.Luxury) continue;
+                inc(luxBy, s.getOrigin(), s.getAmount());
+            }
+            for (com.unciv.models.ruleset.tile.ResourceSupplyList.ResourceSupply s : c.getCivResourceSupply())
+                if (s.getResource().getResourceType() == com.unciv.models.ruleset.tile.ResourceType.Luxury && s.getAmount() != 0)
+                    lux.put(s.getResource().getName(), s.getAmount());
+            rec.put("lux", lux); rec.put("luxBy", luxBy);
             Map<String, Object> dep = new LinkedHashMap<>();
             for (Map.Entry<String, int[]> e : deposits.getOrDefault(c.getCivName(), Map.of()).entrySet())
                 dep.put(e.getKey(), e.getValue()[0] + "/" + e.getValue()[1]);

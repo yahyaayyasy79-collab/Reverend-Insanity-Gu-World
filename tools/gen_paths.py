@@ -392,6 +392,9 @@ FAMILY_POLICY_TEXT = {
 
 def member_pedia(p: dict, i: int) -> tuple[str, str]:
     en, idn = FAMILY_POLICY_TEXT[p["family"]][i]
+    if i == 1:   # the Insight policy also feeds the path's Gu (Layer 9b)
+        r = PF.FOOD[p["key"]]
+        en, idn = f"{en}, and {PF.INSIGHT_FOOD} {r['food']}", f"{idn}, dan {PF.INSIGHT_FOOD} {r['food_id']}"
     what = ("Completing the branch: " if i == 3 else f"A policy of the {branch_name(p)}: ")
     what_id = ("Menuntaskan cabang ini: " if i == 3 else f"Kebijakan cabang Jalur {p['name_id']}: ")
     return what + en + ".", what_id + idn + "."
@@ -433,7 +436,8 @@ def policy_branches() -> list[dict]:
             "civilopediaText": [{"text": branch_pedia(p)[0]}],
             "policies": [
                 {"name": names[0], "row": 1, "column": 1, "uniques": [f[0].format(m=m)]},
-                {"name": names[1], "row": 1, "column": 3, "uniques": [f[1].format(m=m)]},
+                {"name": names[1], "row": 1, "column": 3, "uniques": [f[1].format(m=m),
+                                                                      f"Provides [{PF.INSIGHT_FOOD}] [{PF.food_of(p['key'])}]"]},
                 {"name": names[2], "row": 2, "column": 2, "requires": [names[0]], "uniques": [f[2].format(m=m)]},
                 {"name": f"{branch_name(p)} Complete", "uniques": [f[3].format(m=m)]}]})
         for i, pol in enumerate(out[-1]["policies"]):

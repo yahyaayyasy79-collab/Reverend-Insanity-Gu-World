@@ -153,7 +153,8 @@
       "[This Unit] gains the [Doomed Aperture] status for [20] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Quick] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [30] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Standard] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [45] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Epic] game speed>",
-      "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Marathon] game speed>"
+      "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Marathon] game speed>",
+      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>"
     ],
     "civilopediaText": [
       {

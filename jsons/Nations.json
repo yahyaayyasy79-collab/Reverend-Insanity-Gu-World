@@ -26,7 +26,11 @@
       "All newly-trained [Rank One Gu Master] units [in all cities] receive the [Moonlight Gu] promotion <in cities with a [Gu Academy]> <when above [0] [Moon Orchid]>",
       "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
-      "Start bias [Hill]"
+      "Start bias [Hill]",
+      "A [Fang Yuan] rebels <upon turn start> <after turn number [19]> <before turn number [21]> <on [Quick] game speed>",
+      "A [Fang Yuan] rebels <upon turn start> <after turn number [29]> <before turn number [31]> <on [Standard] game speed>",
+      "A [Fang Yuan] rebels <upon turn start> <after turn number [44]> <before turn number [46]> <on [Epic] game speed>",
+      "A [Fang Yuan] rebels <upon turn start> <after turn number [89]> <before turn number [91]> <on [Marathon] game speed>"
     ],
     "introduction": "I am Gu Yue Bo of the Gu Yue clan. Our village has stood on Qing Mao longer than any other; speak, and be brief.",
     "declaringWar": "The covenant of the alliance slope does not shelter you. The Gu Yue will settle this themselves.",

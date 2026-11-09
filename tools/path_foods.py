@@ -22,7 +22,10 @@ FOOD = {r["key"]: r for r in ROWS}
 SLICE1 = {"Moon Orchid", "Wild Boar", "Wine"}   # already in the ruleset (strategic, Slice 1)
 NEW = [r for r in ROWS if r["food"] not in SLICE1]
 
-BRANCH_FOOD, HALL_FOOD, LORE_FOOD = 2, 1, 1
+# Layer 9b (autoplay, 4 x 300: Bai's water and Wu's wind Masters held their Gu 1 time in 6, on a stock of about 3):
+# every branch gives 2 on adoption and 2 more with its Insight policy (as the moon's Orchid Beds and the strength's
+# Beast Hunters always did), each hall 1, the lore 2 (one Gu fed by the lore alone, a grant needing 2 spare)
+BRANCH_FOOD, INSIGHT_FOOD, HALL_FOOD, LORE_FOOD = 2, 2, 1, 2
 # kind -> (the improvement that works it, the tile's yield, the improved yield)
 KIND = {"plant": ("Plantation", {"food": 1}, {"food": 1}),
         "beast": ("Camp", {"food": 1}, {"production": 1}),
@@ -61,12 +64,12 @@ def pedia(r: dict) -> tuple[str, str]:
     imp = KIND[r["kind"]][0]
     return (f"{r['food']} ({r['chinese']}), the basic food of the {p['name'].lower()} path's Gu: {r['note']}. It grows in "
             f"{home[0]}, and some in {second[0]}; a {imp} works it. A clan gets it from each worked tile (1), the "
-            f"{p['name']} Path branch ({BRANCH_FOOD}), each {p['name']} Hall ({HALL_FOOD}) and the {p['name']} Path Lore "
-            f"({LORE_FOOD}). It gives no happiness.",
+            f"{p['name']} Path branch ({BRANCH_FOOD}) and its {p['name']} Insight ({INSIGHT_FOOD}), each {p['name']} Hall "
+            f"({HALL_FOOD}) and the {p['name']} Path Lore ({LORE_FOOD}). It gives no happiness.",
             f"{r['food_id']} ({r['chinese']}), makanan dasar Gu jalur {p['name_id']}: {r['note_id']}. Tumbuh di "
             f"{home[1]}, sebagian di {second[1]}; dikerjakan dengan {imp}. Klan mendapatkannya dari tiap petak yang dikerjakan "
-            f"(1), cabang Jalur {p['name_id']} ({BRANCH_FOOD}), tiap Aula Jalur {p['name_id']} ({HALL_FOOD}) dan Ilmu Jalur "
-            f"{p['name_id']} ({LORE_FOOD}). Tidak memberi kebahagiaan.")
+            f"(1), cabang Jalur {p['name_id']} ({BRANCH_FOOD}) dan Wawasan {p['name_id']}-nya ({INSIGHT_FOOD}), tiap Aula "
+            f"Jalur {p['name_id']} ({HALL_FOOD}) dan Ilmu Jalur {p['name_id']} ({LORE_FOOD}). Tidak memberi kebahagiaan.")
 
 
 def translations() -> list[tuple[str, str]]:

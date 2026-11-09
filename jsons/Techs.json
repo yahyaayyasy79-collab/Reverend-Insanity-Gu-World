@@ -26,11 +26,11 @@
         "uniques": [
           "Only available <when number of [[{Strength Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Strength Master] units>",
-          "Provides [1] [Wild Boar]"
+          "Provides [2] [Wild Boar]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the strength path (力道传承). Only a clan with a living Strength Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Wild Boar, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
+            "text": "The clan's inheritance of the strength path (力道传承). Only a clan with a living Strength Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Wild Boar, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
           }
         ]
       },
@@ -41,11 +41,11 @@
         "uniques": [
           "Only available <when number of [[{Transformation Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Transformation Master] units>",
-          "Provides [1] [Wild Deer]"
+          "Provides [2] [Wild Deer]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the transformation path (变化道传承). Only a clan with a living Transformation Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Wild Deer, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Olden Antiquity (上古) by Reckless Savage Venerable."
+            "text": "The clan's inheritance of the transformation path (变化道传承). Only a clan with a living Transformation Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Wild Deer, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Olden Antiquity (上古) by Reckless Savage Venerable."
           }
         ]
       },
@@ -56,11 +56,11 @@
         "uniques": [
           "Only available <when number of [[{Bone Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Bone Master] units>",
-          "Provides [1] [Beast Milk]"
+          "Provides [2] [Beast Milk]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the bone path (骨道传承). Only a clan with a living Bone Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Beast Milk, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the bone path (骨道传承). Only a clan with a living Bone Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Beast Milk, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -71,11 +71,11 @@
         "uniques": [
           "Only available <when number of [[{Blood Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Blood Master] units>",
-          "Provides [1] [Python Blood]"
+          "Provides [2] [Python Blood]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the blood path (血道传承). Only a clan with a living Blood Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Python Blood, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the blood path (血道传承). Only a clan with a living Blood Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Python Blood, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -86,11 +86,11 @@
         "uniques": [
           "Only available <when number of [[{Sword Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Sword Master] units>",
-          "Provides [1] [Fine Iron]"
+          "Provides [2] [Fine Iron]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the sword path (剑道传承). Only a clan with a living Sword Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Fine Iron, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the sword path (剑道传承). Only a clan with a living Sword Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Fine Iron, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -101,11 +101,11 @@
         "uniques": [
           "Only available <when number of [[{Blade Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Blade Master] units>",
-          "Provides [1] [Old Blades]"
+          "Provides [2] [Old Blades]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the blade path (刀道传承). Only a clan with a living Blade Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Old Blades, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the blade path (刀道传承). Only a clan with a living Blade Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Old Blades, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -116,11 +116,11 @@
         "uniques": [
           "Only available <when number of [[{Metal Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Metal Master] units>",
-          "Provides [1] [Rooster Iron]"
+          "Provides [2] [Rooster Iron]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the metal path (金道传承). Only a clan with a living Metal Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Rooster Iron, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the metal path (金道传承). Only a clan with a living Metal Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Rooster Iron, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -131,11 +131,11 @@
         "uniques": [
           "Only available <when number of [[{Weapon Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Weapon Master] units>",
-          "Provides [1] [Iron Ore]"
+          "Provides [2] [Iron Ore]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the weapon path (兵道传承). Only a clan with a living Weapon Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Iron Ore, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the weapon path (兵道传承). Only a clan with a living Weapon Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Iron Ore, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -146,11 +146,11 @@
         "uniques": [
           "Only available <when number of [[{Killing Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Killing Master] units>",
-          "Provides [1] [Battlefield Bones]"
+          "Provides [2] [Battlefield Bones]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the killing path (杀道传承). Only a clan with a living Killing Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Battlefield Bones, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the killing path (杀道传承). Only a clan with a living Killing Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Battlefield Bones, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       }
@@ -197,11 +197,11 @@
         "uniques": [
           "Only available <when number of [[{Fire Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Fire Master] units>",
-          "Provides [1] [Fire Charcoal]"
+          "Provides [2] [Fire Charcoal]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the fire path (炎道传承). Only a clan with a living Fire Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Fire Charcoal, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the fire path (炎道传承). Only a clan with a living Fire Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Fire Charcoal, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -215,11 +215,11 @@
         "uniques": [
           "Only available <when number of [[{Water Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Water Master] units>",
-          "Provides [1] [Dragonfish]"
+          "Provides [2] [Dragonfish]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the water path (水道传承). Only a clan with a living Water Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Dragonfish, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the water path (水道传承). Only a clan with a living Water Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Dragonfish, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -233,11 +233,11 @@
         "uniques": [
           "Only available <when number of [[{Wood Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Wood Master] units>",
-          "Provides [1] [Lingzhi]"
+          "Provides [2] [Lingzhi]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the wood path (木道传承). Only a clan with a living Wood Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Lingzhi, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Medieval Antiquity (中古) by Genesis Lotus Venerable."
+            "text": "The clan's inheritance of the wood path (木道传承). Only a clan with a living Wood Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Lingzhi, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Medieval Antiquity (中古) by Genesis Lotus Venerable."
           }
         ]
       },
@@ -251,11 +251,11 @@
         "uniques": [
           "Only available <when number of [[{Earth Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Earth Master] units>",
-          "Provides [1] [Marsh Mud]"
+          "Provides [2] [Marsh Mud]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the earth path (土道传承). Only a clan with a living Earth Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Marsh Mud, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the earth path (土道传承). Only a clan with a living Earth Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Marsh Mud, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -269,11 +269,11 @@
         "uniques": [
           "Only available <when number of [[{Wind Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Wind Master] units>",
-          "Provides [1] [Wind Knot Grass]"
+          "Provides [2] [Wind Knot Grass]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the wind path (风道传承). Only a clan with a living Wind Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Wind Knot Grass, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
+            "text": "The clan's inheritance of the wind path (风道传承). Only a clan with a living Wind Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Wind Knot Grass, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
           }
         ]
       },
@@ -287,11 +287,11 @@
         "uniques": [
           "Only available <when number of [[{Cloud Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Cloud Master] units>",
-          "Provides [1] [Sand Gull Earth]"
+          "Provides [2] [Sand Gull Earth]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the cloud path (云道传承). Only a clan with a living Cloud Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Sand Gull Earth, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the cloud path (云道传承). Only a clan with a living Cloud Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Sand Gull Earth, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -305,11 +305,11 @@
         "uniques": [
           "Only available <when number of [[{Ice Snow Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Ice Snow Master] units>",
-          "Provides [1] [Dancing Snow]"
+          "Provides [2] [Dancing Snow]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the ice snow path (冰雪道传承). Only a clan with a living Ice Snow Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Dancing Snow, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the ice snow path (冰雪道传承). Only a clan with a living Ice Snow Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Dancing Snow, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -323,11 +323,11 @@
         "uniques": [
           "Only available <when number of [[{Lightning Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Lightning Master] units>",
-          "Provides [1] [Lightning Eel]"
+          "Provides [2] [Lightning Eel]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the lightning path (雷道传承). Only a clan with a living Lightning Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Lightning Eel, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the lightning path (雷道传承). Only a clan with a living Lightning Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Lightning Eel, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -341,11 +341,11 @@
         "uniques": [
           "Only available <when number of [[{Poison Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Poison Master] units>",
-          "Provides [1] [Rotten Frozen Mud]"
+          "Provides [2] [Rotten Frozen Mud]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the poison path (毒道传承). Only a clan with a living Poison Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Rotten Frozen Mud, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the poison path (毒道传承). Only a clan with a living Poison Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Rotten Frozen Mud, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -359,11 +359,11 @@
         "uniques": [
           "Only available <when number of [[{Light Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Light Master] units>",
-          "Provides [1] [Flame Swan Stone]"
+          "Provides [2] [Flame Swan Stone]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the light path (光道传承). Only a clan with a living Light Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Flame Swan Stone, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
+            "text": "The clan's inheritance of the light path (光道传承). Only a clan with a living Light Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Flame Swan Stone, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
           }
         ]
       },
@@ -377,11 +377,11 @@
         "uniques": [
           "Only available <when number of [[{Dark Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Dark Master] units>",
-          "Provides [1] [Dark Fragrant Mushroom]"
+          "Provides [2] [Dark Fragrant Mushroom]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the dark path (暗道传承). Only a clan with a living Dark Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Dark Fragrant Mushroom, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
+            "text": "The clan's inheritance of the dark path (暗道传承). Only a clan with a living Dark Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Dark Fragrant Mushroom, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Olden Antiquity (上古)."
           }
         ]
       },
@@ -395,11 +395,11 @@
         "uniques": [
           "Only available <when number of [[{Shadow Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Shadow Master] units>",
-          "Provides [1] [White Shadow Grass]"
+          "Provides [2] [White Shadow Grass]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the shadow path (影道传承). Only a clan with a living Shadow Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 White Shadow Grass, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the shadow path (影道传承). Only a clan with a living Shadow Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 White Shadow Grass, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -413,11 +413,11 @@
         "uniques": [
           "Only available <when number of [[{Star Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Star Master] units>",
-          "Provides [1] [Arrow Bamboo]"
+          "Provides [2] [Arrow Bamboo]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the star path (星道传承). Only a clan with a living Star Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Arrow Bamboo, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Star Constellation Venerable."
+            "text": "The clan's inheritance of the star path (星道传承). Only a clan with a living Star Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Arrow Bamboo, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Star Constellation Venerable."
           }
         ]
       },
@@ -431,11 +431,11 @@
         "uniques": [
           "Only available <when number of [[{Moon Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Moon Master] units>",
-          "Provides [1] [Moon Orchid]"
+          "Provides [2] [Moon Orchid]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the moon path (月道传承). Only a clan with a living Moon Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Moon Orchid, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the moon path (月道传承). Only a clan with a living Moon Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Moon Orchid, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -449,11 +449,11 @@
         "uniques": [
           "Only available <when number of [[{Sound Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Sound Master] units>",
-          "Provides [1] [Wave Sound Conch]"
+          "Provides [2] [Wave Sound Conch]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the sound path (音道传承). Only a clan with a living Sound Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Wave Sound Conch, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the sound path (音道传承). Only a clan with a living Sound Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Wave Sound Conch, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -467,11 +467,11 @@
         "uniques": [
           "Only available <when number of [[{Illusion Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Illusion Master] units>",
-          "Provides [1] [Illusion Peach]"
+          "Provides [2] [Illusion Peach]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the illusion path (幻道传承). Only a clan with a living Illusion Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Illusion Peach, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the illusion path (幻道传承). Only a clan with a living Illusion Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Illusion Peach, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       }
@@ -531,11 +531,11 @@
         "uniques": [
           "Only available <when number of [[{Wisdom Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Wisdom Master] units>",
-          "Provides [1] [Splendid Overlord Flower]"
+          "Provides [2] [Splendid Overlord Flower]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the wisdom path (智道传承). Only a clan with a living Wisdom Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Splendid Overlord Flower, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Star Constellation Venerable."
+            "text": "The clan's inheritance of the wisdom path (智道传承). Only a clan with a living Wisdom Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Splendid Overlord Flower, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Star Constellation Venerable."
           }
         ]
       },
@@ -549,11 +549,11 @@
         "uniques": [
           "Only available <when number of [[{Emotion Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Emotion Master] units>",
-          "Provides [1] [Taize Flower]"
+          "Provides [2] [Taize Flower]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the emotion path (情道传承). Only a clan with a living Emotion Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Taize Flower, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the emotion path (情道传承). Only a clan with a living Emotion Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Taize Flower, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -567,11 +567,11 @@
         "uniques": [
           "Only available <when number of [[{Enchantment Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Enchantment Master] units>",
-          "Provides [1] [Peach Blossom]"
+          "Provides [2] [Peach Blossom]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the enchantment path (魅道传承). Only a clan with a living Enchantment Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Peach Blossom, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the enchantment path (魅道传承). Only a clan with a living Enchantment Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Peach Blossom, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -585,11 +585,11 @@
         "uniques": [
           "Only available <when number of [[{Soul Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Soul Master] units>",
-          "Provides [1] [White Lotus Silkworm]"
+          "Provides [2] [White Lotus Silkworm]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the soul path (魂道传承). Only a clan with a living Soul Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 White Lotus Silkworm, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the soul path (魂道传承). Only a clan with a living Soul Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 White Lotus Silkworm, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -603,11 +603,11 @@
         "uniques": [
           "Only available <when number of [[{Dream Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Dream Master] units>",
-          "Provides [1] [Nine-Bend Dream Flower]"
+          "Provides [2] [Nine-Bend Dream Flower]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the dream path (梦道传承). Only a clan with a living Dream Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Nine-Bend Dream Flower, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the dream path (梦道传承). Only a clan with a living Dream Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Nine-Bend Dream Flower, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -621,11 +621,11 @@
         "uniques": [
           "Only available <when number of [[{Enslavement Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Enslavement Master] units>",
-          "Provides [1] [Wolf Meat]"
+          "Provides [2] [Wolf Meat]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the enslavement path (奴道传承). Only a clan with a living Enslavement Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Wolf Meat, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Primordial Origin Venerable."
+            "text": "The clan's inheritance of the enslavement path (奴道传承). Only a clan with a living Enslavement Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Wolf Meat, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Primordial Origin Venerable."
           }
         ]
       },
@@ -639,11 +639,11 @@
         "uniques": [
           "Only available <when number of [[{Time Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Time Master] units>",
-          "Provides [1] [Time River Water]"
+          "Provides [2] [Time River Water]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the time path (宙道传承). Only a clan with a living Time Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Time River Water, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Immemorial Antiquity (太古)."
+            "text": "The clan's inheritance of the time path (宙道传承). Only a clan with a living Time Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Time River Water, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Immemorial Antiquity (太古)."
           }
         ]
       },
@@ -657,11 +657,11 @@
         "uniques": [
           "Only available <when number of [[{Space Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Space Master] units>",
-          "Provides [1] [Nether Jellyfish]"
+          "Provides [2] [Nether Jellyfish]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the space path (宇道传承). Only a clan with a living Space Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Nether Jellyfish, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Immemorial Antiquity (太古)."
+            "text": "The clan's inheritance of the space path (宇道传承). Only a clan with a living Space Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Nether Jellyfish, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Immemorial Antiquity (太古)."
           }
         ]
       },
@@ -675,11 +675,11 @@
         "uniques": [
           "Only available <when number of [[{Rule Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Rule Master] units>",
-          "Provides [1] [Pearl Thread Water]"
+          "Provides [2] [Pearl Thread Water]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the rule path (律道传承). Only a clan with a living Rule Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Pearl Thread Water, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Olden Antiquity (上古) by Limitless Venerable."
+            "text": "The clan's inheritance of the rule path (律道传承). Only a clan with a living Rule Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Pearl Thread Water, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Olden Antiquity (上古) by Limitless Venerable."
           }
         ]
       },
@@ -693,11 +693,11 @@
         "uniques": [
           "Only available <when number of [[{Phantom Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Phantom Master] units>",
-          "Provides [1] [Flying Bear Flesh]"
+          "Provides [2] [Flying Bear Flesh]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the phantom path (虚道传承). Only a clan with a living Phantom Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Flying Bear Flesh, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the phantom path (虚道传承). Only a clan with a living Phantom Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Flying Bear Flesh, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -711,11 +711,11 @@
         "uniques": [
           "Only available <when number of [[{Restriction Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Restriction Master] units>",
-          "Provides [1] [North Ban Licorice]"
+          "Provides [2] [North Ban Licorice]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the restriction path (禁道传承). Only a clan with a living Restriction Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 North Ban Licorice, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the restriction path (禁道传承). Only a clan with a living Restriction Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 North Ban Licorice, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -729,11 +729,11 @@
         "uniques": [
           "Only available <when number of [[{Luck Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Luck Master] units>",
-          "Provides [1] [Hound Dung]"
+          "Provides [2] [Hound Dung]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the luck path (运道传承). Only a clan with a living Luck Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Hound Dung, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Medieval Antiquity (中古) by Giant Sun Venerable."
+            "text": "The clan's inheritance of the luck path (运道传承). Only a clan with a living Luck Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Hound Dung, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Medieval Antiquity (中古) by Giant Sun Venerable."
           }
         ]
       },
@@ -747,11 +747,11 @@
         "uniques": [
           "Only available <when number of [[{Heaven Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Heaven Master] units>",
-          "Provides [1] [Brocade Cloud]"
+          "Provides [2] [Brocade Cloud]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the heaven path (天道传承). Only a clan with a living Heaven Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Brocade Cloud, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the heaven path (天道传承). Only a clan with a living Heaven Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Brocade Cloud, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -765,11 +765,11 @@
         "uniques": [
           "Only available <when number of [[{Qi Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Qi Master] units>",
-          "Provides [1] [Heavy Gold]"
+          "Provides [2] [Heavy Gold]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the qi path (气道传承). Only a clan with a living Qi Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Heavy Gold, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Primordial Origin Venerable."
+            "text": "The clan's inheritance of the qi path (气道传承). Only a clan with a living Qi Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Heavy Gold, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Remote Antiquity (远古) by Primordial Origin Venerable."
           }
         ]
       },
@@ -783,11 +783,11 @@
         "uniques": [
           "Only available <when number of [[{Refinement Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Refinement Master] units>",
-          "Provides [1] [Ash]"
+          "Provides [2] [Ash]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the refinement path (炼道传承). Only a clan with a living Refinement Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Ash, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the refinement path (炼道传承). Only a clan with a living Refinement Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Ash, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -801,11 +801,11 @@
         "uniques": [
           "Only available <when number of [[{Formation Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Formation Master] units>",
-          "Provides [1] [Star Cave Stone]"
+          "Provides [2] [Star Cave Stone]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the formation path (阵道传承). Only a clan with a living Formation Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Star Cave Stone, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Remote Antiquity (远古)."
+            "text": "The clan's inheritance of the formation path (阵道传承). Only a clan with a living Formation Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Star Cave Stone, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Remote Antiquity (远古)."
           }
         ]
       },
@@ -819,11 +819,11 @@
         "uniques": [
           "Only available <when number of [[{Food Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Food Master] units>",
-          "Provides [1] [Wine]"
+          "Provides [2] [Wine]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the food path (食道传承). Only a clan with a living Food Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Wine, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the food path (食道传承). Only a clan with a living Food Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Wine, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -837,11 +837,11 @@
         "uniques": [
           "Only available <when number of [[{Pill Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Pill Master] units>",
-          "Provides [1] [Ginseng Whiskers]"
+          "Provides [2] [Ginseng Whiskers]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the pill path (丹道传承). Only a clan with a living Pill Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Ginseng Whiskers, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the pill path (丹道传承). Only a clan with a living Pill Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Ginseng Whiskers, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -855,11 +855,11 @@
         "uniques": [
           "Only available <when number of [[{Information Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Information Master] units>",
-          "Provides [1] [Old Scrolls]"
+          "Provides [2] [Old Scrolls]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the information path (信道传承). Only a clan with a living Information Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Old Scrolls, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
+            "text": "The clan's inheritance of the information path (信道传承). Only a clan with a living Information Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Old Scrolls, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It arose in Medieval Antiquity (中古)."
           }
         ]
       },
@@ -873,11 +873,11 @@
         "uniques": [
           "Only available <when number of [[{Human Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Human Master] units>",
-          "Provides [1] [Rice]"
+          "Provides [2] [Rice]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the human path (人道传承). Only a clan with a living Human Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Rice, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the human path (人道传承). Only a clan with a living Human Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Rice, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -891,11 +891,11 @@
         "uniques": [
           "Only available <when number of [[{Painting Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Painting Master] units>",
-          "Provides [1] [Danqing Incense]"
+          "Provides [2] [Danqing Incense]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the painting path (画道传承). Only a clan with a living Painting Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Danqing Incense, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
+            "text": "The clan's inheritance of the painting path (画道传承). Only a clan with a living Painting Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Danqing Incense, the path's basic food, and none of its Masters reaches Grandmaster attainment without it."
           }
         ]
       },
@@ -909,11 +909,11 @@
         "uniques": [
           "Only available <when number of [[{Theft Master} {non-[Rank One-Two era]}] Units] is more than [0]>",
           "[+15]% XP gained from combat <for [Theft Master] units>",
-          "Provides [1] [Jade-Eye Monkey]"
+          "Provides [2] [Jade-Eye Monkey]"
         ],
         "civilopediaText": [
           {
-            "text": "The clan's inheritance of the theft path (偷道传承). Only a clan with a living Theft Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 1 Jade-Eye Monkey, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Medieval Antiquity (中古) by Thieving Heaven Venerable."
+            "text": "The clan's inheritance of the theft path (偷道传承). Only a clan with a living Theft Master of rank three or higher can study it. Its Masters gain 15% more XP, it provides 2 Jade-Eye Monkey, the path's basic food, and none of its Masters reaches Grandmaster attainment without it. It was founded in Medieval Antiquity (中古) by Thieving Heaven Venerable."
           }
         ]
       }

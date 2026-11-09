@@ -210,7 +210,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Wild Deer (鹿肉), the basic food of the transformation path's Gu: deer meat feeds some Gu; the beast-shaped Gu of the transformation path take it here. It grows in the Northern Plains, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Transformation Path branch (2), each Transformation Hall (1) and the Transformation Path Lore (1). It gives no happiness."
+        "text": "Wild Deer (鹿肉), the basic food of the transformation path's Gu: deer meat feeds some Gu; the beast-shaped Gu of the transformation path take it here. It grows in the Northern Plains, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Transformation Path branch (2) and its Transformation Insight (2), each Transformation Hall (1) and the Transformation Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -228,7 +228,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Beast Milk (奶水), the basic food of the bone path's Gu: the Bone Spear Gu and the Spiral Bone Spear Gu live on milk. It grows in the Northern Plains, and some in the Eastern Sea; a Camp works it. A clan gets it from each worked tile (1), the Bone Path branch (2), each Bone Hall (1) and the Bone Path Lore (1). It gives no happiness."
+        "text": "Beast Milk (奶水), the basic food of the bone path's Gu: the Bone Spear Gu and the Spiral Bone Spear Gu live on milk. It grows in the Northern Plains, and some in the Eastern Sea; a Camp works it. A clan gets it from each worked tile (1), the Bone Path branch (2) and its Bone Insight (2), each Bone Hall (1) and the Bone Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -247,7 +247,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Python Blood (蟒血), the basic food of the blood path's Gu: python blood is the best food of many blood-path Gu; fresh crocodile blood feeds the Blood Skull Gu. It grows in the Southern Border, and some in the Eastern Sea; a Camp works it. A clan gets it from each worked tile (1), the Blood Path branch (2), each Blood Hall (1) and the Blood Path Lore (1). It gives no happiness."
+        "text": "Python Blood (蟒血), the basic food of the blood path's Gu: python blood is the best food of many blood-path Gu; fresh crocodile blood feeds the Blood Skull Gu. It grows in the Southern Border, and some in the Eastern Sea; a Camp works it. A clan gets it from each worked tile (1), the Blood Path branch (2) and its Blood Insight (2), each Blood Hall (1) and the Blood Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -264,7 +264,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Fine Iron (精铁), the basic food of the sword path's Gu: no canon food is named for the sword path's Gu; fine iron, the metal of the Fine Iron Bone Gu, feeds them here. It grows in the Central Continent, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Sword Path branch (2), each Sword Hall (1) and the Sword Path Lore (1). It gives no happiness."
+        "text": "Fine Iron (精铁), the basic food of the sword path's Gu: no canon food is named for the sword path's Gu; fine iron, the metal of the Fine Iron Bone Gu, feeds them here. It grows in the Central Continent, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Sword Path branch (2) and its Sword Insight (2), each Sword Hall (1) and the Sword Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -281,7 +281,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Old Blades (旧刀), the basic food of the blade path's Gu: the Sole Blade Gu lives inside a blade and eats it away. It grows in the Western Desert, and some in the Northern Plains; a Mine works it. A clan gets it from each worked tile (1), the Blade Path branch (2), each Blade Hall (1) and the Blade Path Lore (1). It gives no happiness."
+        "text": "Old Blades (旧刀), the basic food of the blade path's Gu: the Sole Blade Gu lives inside a blade and eats it away. It grows in the Western Desert, and some in the Northern Plains; a Mine works it. A clan gets it from each worked tile (1), the Blade Path branch (2) and its Blade Insight (2), each Blade Hall (1) and the Blade Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -298,7 +298,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Rooster Iron (雄鸡铁), the basic food of the metal path's Gu: rooster iron lies in open-air beds and rings in the wind; the metal path's Gu eat it here. It grows in the Western Desert, and some in the Southern Border; a Mine works it. A clan gets it from each worked tile (1), the Metal Path branch (2), each Metal Hall (1) and the Metal Path Lore (1). It gives no happiness."
+        "text": "Rooster Iron (雄鸡铁), the basic food of the metal path's Gu: rooster iron lies in open-air beds and rings in the wind; the metal path's Gu eat it here. It grows in the Western Desert, and some in the Southern Border; a Mine works it. A clan gets it from each worked tile (1), the Metal Path branch (2) and its Metal Insight (2), each Metal Hall (1) and the Metal Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -315,7 +315,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Iron Ore (铁矿), the basic food of the weapon path's Gu: no canon food is named for the weapon path's Gu; the iron ore weapons are forged from feeds them here. It grows in the Northern Plains, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Weapon Path branch (2), each Weapon Hall (1) and the Weapon Path Lore (1). It gives no happiness."
+        "text": "Iron Ore (铁矿), the basic food of the weapon path's Gu: no canon food is named for the weapon path's Gu; the iron ore weapons are forged from feeds them here. It grows in the Northern Plains, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Weapon Path branch (2) and its Weapon Insight (2), each Weapon Hall (1) and the Weapon Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -335,7 +335,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Battlefield Bones (白骨), the basic food of the killing path's Gu: a rank-five Gu that outlived its master turned wild and fed on the white bones of a battlefield. It grows in the Western Desert, and some in the Northern Plains; a Camp works it. A clan gets it from each worked tile (1), the Killing Path branch (2), each Killing Hall (1) and the Killing Path Lore (1). It gives no happiness."
+        "text": "Battlefield Bones (白骨), the basic food of the killing path's Gu: a rank-five Gu that outlived its master turned wild and fed on the white bones of a battlefield. It grows in the Western Desert, and some in the Northern Plains; a Camp works it. A clan gets it from each worked tile (1), the Killing Path branch (2) and its Killing Insight (2), each Killing Hall (1) and the Killing Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -352,7 +352,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Fire Charcoal (火炭), the basic food of the fire path's Gu: the Fire Charcoal Gu burns from within; the fire path's Gu eat charcoal here. It grows in the Western Desert, and some in the Southern Border; a Mine works it. A clan gets it from each worked tile (1), the Fire Path branch (2), each Fire Hall (1) and the Fire Path Lore (1). It gives no happiness."
+        "text": "Fire Charcoal (火炭), the basic food of the fire path's Gu: the Fire Charcoal Gu burns from within; the fire path's Gu eat charcoal here. It grows in the Western Desert, and some in the Southern Border; a Mine works it. A clan gets it from each worked tile (1), the Fire Path branch (2) and its Fire Insight (2), each Fire Hall (1) and the Fire Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -371,7 +371,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Dragonfish (龙鱼), the basic food of the water path's Gu: dragonfish meat is the most common food of immortal Gu. It grows in the Eastern Sea, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Water Path branch (2), each Water Hall (1) and the Water Path Lore (1). It gives no happiness."
+        "text": "Dragonfish (龙鱼), the basic food of the water path's Gu: dragonfish meat is the most common food of immortal Gu. It grows in the Eastern Sea, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Water Path branch (2) and its Water Insight (2), each Water Hall (1) and the Water Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -389,7 +389,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Lingzhi (灵芝), the basic food of the wood path's Gu: giant lingzhi can feed Gu. It grows in the Southern Border, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Wood Path branch (2), each Wood Hall (1) and the Wood Path Lore (1). It gives no happiness."
+        "text": "Lingzhi (灵芝), the basic food of the wood path's Gu: giant lingzhi can feed Gu. It grows in the Southern Border, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Wood Path branch (2) and its Wood Insight (2), each Wood Hall (1) and the Wood Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -409,7 +409,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Marsh Mud (泥浆), the basic food of the earth path's Gu: mud crabs swallow marsh mud and carry the Gruel Mud Gu's power. It grows in the Western Desert, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Earth Path branch (2), each Earth Hall (1) and the Earth Path Lore (1). It gives no happiness."
+        "text": "Marsh Mud (泥浆), the basic food of the earth path's Gu: mud crabs swallow marsh mud and carry the Gruel Mud Gu's power. It grows in the Western Desert, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Earth Path branch (2) and its Earth Insight (2), each Earth Hall (1) and the Earth Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -427,7 +427,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Wind Knot Grass (风结草), the basic food of the wind path's Gu: the beastmen believed whoever unties wind knot grass is favoured by heaven; the wind path's Gu eat it here. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Wind Path branch (2), each Wind Hall (1) and the Wind Path Lore (1). It gives no happiness."
+        "text": "Wind Knot Grass (风结草), the basic food of the wind path's Gu: the beastmen believed whoever unties wind knot grass is favoured by heaven; the wind path's Gu eat it here. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Wind Path branch (2) and its Wind Insight (2), each Wind Hall (1) and the Wind Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -445,7 +445,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Sand Gull Earth (沙鸥土), the basic food of the cloud path's Gu: ten thousand jin of sand gull earth feed the Connected Clouds Gu. It grows in the Western Desert, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Cloud Path branch (2), each Cloud Hall (1) and the Cloud Path Lore (1). It gives no happiness."
+        "text": "Sand Gull Earth (沙鸥土), the basic food of the cloud path's Gu: ten thousand jin of sand gull earth feed the Connected Clouds Gu. It grows in the Western Desert, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Cloud Path branch (2) and its Cloud Insight (2), each Cloud Hall (1) and the Cloud Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -464,7 +464,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Dancing Snow (舞遥雪), the basic food of the ice snow path's Gu: dancing snow is the food of an immortal Gu; the ice path's Gu eat it here. It grows in the Northern Plains, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Ice Snow Path branch (2), each Ice Snow Hall (1) and the Ice Snow Path Lore (1). It gives no happiness."
+        "text": "Dancing Snow (舞遥雪), the basic food of the ice snow path's Gu: dancing snow is the food of an immortal Gu; the ice path's Gu eat it here. It grows in the Northern Plains, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Ice Snow Path branch (2) and its Ice Snow Insight (2), each Ice Snow Hall (1) and the Ice Snow Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -483,7 +483,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Lightning Eel (闪电鳗鱼), the basic food of the lightning path's Gu: deep-sea lightning eels feed an immortal Gu. It grows in the Eastern Sea, and some in the Northern Plains; a Camp works it. A clan gets it from each worked tile (1), the Lightning Path branch (2), each Lightning Hall (1) and the Lightning Path Lore (1). It gives no happiness."
+        "text": "Lightning Eel (闪电鳗鱼), the basic food of the lightning path's Gu: deep-sea lightning eels feed an immortal Gu. It grows in the Eastern Sea, and some in the Northern Plains; a Camp works it. A clan gets it from each worked tile (1), the Lightning Path branch (2) and its Lightning Insight (2), each Lightning Hall (1) and the Lightning Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -501,7 +501,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Rotten Frozen Mud (腐泥冻土), the basic food of the poison path's Gu: frozen rotten mud feeds the Smelly Fart Fat Worm. It grows in the Northern Plains, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Poison Path branch (2), each Poison Hall (1) and the Poison Path Lore (1). It gives no happiness."
+        "text": "Rotten Frozen Mud (腐泥冻土), the basic food of the poison path's Gu: frozen rotten mud feeds the Smelly Fart Fat Worm. It grows in the Northern Plains, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Poison Path branch (2) and its Poison Insight (2), each Poison Hall (1) and the Poison Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -518,7 +518,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Flame Swan Stone (炎鸿石), the basic food of the light path's Gu: flame swan stone feeds the Dazzling Light Gu. It grows in the Western Desert, and some in the Central Continent; a Mine works it. A clan gets it from each worked tile (1), the Light Path branch (2), each Light Hall (1) and the Light Path Lore (1). It gives no happiness."
+        "text": "Flame Swan Stone (炎鸿石), the basic food of the light path's Gu: flame swan stone feeds the Dazzling Light Gu. It grows in the Western Desert, and some in the Central Continent; a Mine works it. A clan gets it from each worked tile (1), the Light Path branch (2) and its Light Insight (2), each Light Hall (1) and the Light Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -536,7 +536,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Dark Fragrant Mushroom (暗香菇), the basic food of the dark path's Gu: dark fragrant mushrooms grow under the arrow bamboo; the dark path's Gu eat them here. It grows in the Southern Border, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Dark Path branch (2), each Dark Hall (1) and the Dark Path Lore (1). It gives no happiness."
+        "text": "Dark Fragrant Mushroom (暗香菇), the basic food of the dark path's Gu: dark fragrant mushrooms grow under the arrow bamboo; the dark path's Gu eat them here. It grows in the Southern Border, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Dark Path branch (2) and its Dark Insight (2), each Dark Hall (1) and the Dark Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -555,7 +555,7 @@
     },
     "civilopediaText": [
       {
-        "text": "White Shadow Grass (白影草), the basic food of the shadow path's Gu: white shadow grass grows under the arrow bamboo; the shadow path's Gu eat it here. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Shadow Path branch (2), each Shadow Hall (1) and the Shadow Path Lore (1). It gives no happiness."
+        "text": "White Shadow Grass (白影草), the basic food of the shadow path's Gu: white shadow grass grows under the arrow bamboo; the shadow path's Gu eat it here. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Shadow Path branch (2) and its Shadow Insight (2), each Shadow Hall (1) and the Shadow Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -574,7 +574,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Arrow Bamboo (箭竹), the basic food of the star path's Gu: the Star Dart Gu drinks the juice of the arrow bamboo. It grows in the Southern Border, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Star Path branch (2), each Star Hall (1) and the Star Path Lore (1). It gives no happiness."
+        "text": "Arrow Bamboo (箭竹), the basic food of the star path's Gu: the Star Dart Gu drinks the juice of the arrow bamboo. It grows in the Southern Border, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Star Path branch (2) and its Star Insight (2), each Star Hall (1) and the Star Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -593,7 +593,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Wave Sound Conch (涛声), the basic food of the sound path's Gu: the wave-sound held in a conch is a sound-path material of the Shen clan. It grows in the Eastern Sea, and some in the Western Desert; a Camp works it. A clan gets it from each worked tile (1), the Sound Path branch (2), each Sound Hall (1) and the Sound Path Lore (1). It gives no happiness."
+        "text": "Wave Sound Conch (涛声), the basic food of the sound path's Gu: the wave-sound held in a conch is a sound-path material of the Shen clan. It grows in the Eastern Sea, and some in the Western Desert; a Camp works it. A clan gets it from each worked tile (1), the Sound Path branch (2) and its Sound Insight (2), each Sound Hall (1) and the Sound Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -611,7 +611,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Illusion Peach (幻界桃), the basic food of the illusion path's Gu: the illusion-realm peach tree weaves illusions to guard itself; the illusion path's Gu eat its fruit here. It grows in the Central Continent, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Illusion Path branch (2), each Illusion Hall (1) and the Illusion Path Lore (1). It gives no happiness."
+        "text": "Illusion Peach (幻界桃), the basic food of the illusion path's Gu: the illusion-realm peach tree weaves illusions to guard itself; the illusion path's Gu eat its fruit here. It grows in the Central Continent, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Illusion Path branch (2) and its Illusion Insight (2), each Illusion Hall (1) and the Illusion Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -630,7 +630,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Splendid Overlord Flower (斑斓霸王花), the basic food of the wisdom path's Gu: the Wisdom Sword Gu eats the splendid overlord flower. It grows in the Western Desert, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Wisdom Path branch (2), each Wisdom Hall (1) and the Wisdom Path Lore (1). It gives no happiness."
+        "text": "Splendid Overlord Flower (斑斓霸王花), the basic food of the wisdom path's Gu: the Wisdom Sword Gu eats the splendid overlord flower. It grows in the Western Desert, and some in the Central Continent; a Plantation works it. A clan gets it from each worked tile (1), the Wisdom Path branch (2) and its Wisdom Insight (2), each Wisdom Hall (1) and the Wisdom Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -648,7 +648,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Taize Flower (太泽花), the basic food of the emotion path's Gu: the Regret Gu eats the mist of taize flowers. It grows in the Central Continent, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Emotion Path branch (2), each Emotion Hall (1) and the Emotion Path Lore (1). It gives no happiness."
+        "text": "Taize Flower (太泽花), the basic food of the emotion path's Gu: the Regret Gu eats the mist of taize flowers. It grows in the Central Continent, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Emotion Path branch (2) and its Emotion Insight (2), each Emotion Hall (1) and the Emotion Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -667,7 +667,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Peach Blossom (桃花), the basic food of the enchantment path's Gu: peach blossom is the charm of spring; the enchantment path's Gu eat it here. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Enchantment Path branch (2), each Enchantment Hall (1) and the Enchantment Path Lore (1). It gives no happiness."
+        "text": "Peach Blossom (桃花), the basic food of the enchantment path's Gu: peach blossom is the charm of spring; the enchantment path's Gu eat it here. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Enchantment Path branch (2) and its Enchantment Insight (2), each Enchantment Hall (1) and the Enchantment Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -685,7 +685,7 @@
     },
     "civilopediaText": [
       {
-        "text": "White Lotus Silkworm (白莲巨蚕), the basic food of the soul path's Gu: the flesh of white lotus silkworms feeds the Cleanse Soul Gu. It grows in the Central Continent, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Soul Path branch (2), each Soul Hall (1) and the Soul Path Lore (1). It gives no happiness."
+        "text": "White Lotus Silkworm (白莲巨蚕), the basic food of the soul path's Gu: the flesh of white lotus silkworms feeds the Cleanse Soul Gu. It grows in the Central Continent, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Soul Path branch (2) and its Soul Insight (2), each Soul Hall (1) and the Soul Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -703,7 +703,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Nine-Bend Dream Flower (九曲梦里花), the basic food of the dream path's Gu: the nine-bend dream flower is a dream-path Gu material. It grows in the Central Continent, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Dream Path branch (2), each Dream Hall (1) and the Dream Path Lore (1). It gives no happiness."
+        "text": "Nine-Bend Dream Flower (九曲梦里花), the basic food of the dream path's Gu: the nine-bend dream flower is a dream-path Gu material. It grows in the Central Continent, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Dream Path branch (2) and its Dream Insight (2), each Dream Hall (1) and the Dream Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -723,7 +723,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Wolf Meat (狼肉), the basic food of the enslavement path's Gu: enslavement Gu Masters must feed their beast packs; a wolf pack's hunt yields wolf meat. It grows in the Northern Plains, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Enslavement Path branch (2), each Enslavement Hall (1) and the Enslavement Path Lore (1). It gives no happiness."
+        "text": "Wolf Meat (狼肉), the basic food of the enslavement path's Gu: enslavement Gu Masters must feed their beast packs; a wolf pack's hunt yields wolf meat. It grows in the Northern Plains, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Enslavement Path branch (2) and its Enslavement Insight (2), each Enslavement Hall (1) and the Enslavement Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -742,7 +742,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Time River Water (光阴河水), the basic food of the time path's Gu: the Years Flow Like Water Gu only drinks the water of the river of time. It grows in the Central Continent, and some in the Eastern Sea; a Spring Cave works it. A clan gets it from each worked tile (1), the Time Path branch (2), each Time Hall (1) and the Time Path Lore (1). It gives no happiness."
+        "text": "Time River Water (光阴河水), the basic food of the time path's Gu: the Years Flow Like Water Gu only drinks the water of the river of time. It grows in the Central Continent, and some in the Eastern Sea; a Spring Cave works it. A clan gets it from each worked tile (1), the Time Path branch (2) and its Time Insight (2), each Time Hall (1) and the Time Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -761,7 +761,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Nether Jellyfish (幽冥水母), the basic food of the space path's Gu: tens of thousands of nether jellyfish feed a travelling immortal Gu. It grows in the Eastern Sea, and some in the Central Continent; a Camp works it. A clan gets it from each worked tile (1), the Space Path branch (2), each Space Hall (1) and the Space Path Lore (1). It gives no happiness."
+        "text": "Nether Jellyfish (幽冥水母), the basic food of the space path's Gu: tens of thousands of nether jellyfish feed a travelling immortal Gu. It grows in the Eastern Sea, and some in the Central Continent; a Camp works it. A clan gets it from each worked tile (1), the Space Path branch (2) and its Space Insight (2), each Space Hall (1) and the Space Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -780,7 +780,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Pearl Thread Water (珠线水), the basic food of the rule path's Gu: an immortal Gu soaks in pearl thread water, the saliva of immemorial water spiders, and stays fed for eighty years. It grows in the Eastern Sea, and some in the Central Continent; a Spring Cave works it. A clan gets it from each worked tile (1), the Rule Path branch (2), each Rule Hall (1) and the Rule Path Lore (1). It gives no happiness."
+        "text": "Pearl Thread Water (珠线水), the basic food of the rule path's Gu: an immortal Gu soaks in pearl thread water, the saliva of immemorial water spiders, and stays fed for eighty years. It grows in the Eastern Sea, and some in the Central Continent; a Spring Cave works it. A clan gets it from each worked tile (1), the Rule Path branch (2) and its Rule Insight (2), each Rule Hall (1) and the Rule Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -799,7 +799,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Flying Bear Flesh (飞熊血肉), the basic food of the phantom path's Gu: the Flying Bear Phantom Gu eats the flesh of desolate flying bears. It grows in the Northern Plains, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Phantom Path branch (2), each Phantom Hall (1) and the Phantom Path Lore (1). It gives no happiness."
+        "text": "Flying Bear Flesh (飞熊血肉), the basic food of the phantom path's Gu: the Flying Bear Phantom Gu eats the flesh of desolate flying bears. It grows in the Northern Plains, and some in the Southern Border; a Camp works it. A clan gets it from each worked tile (1), the Phantom Path branch (2) and its Phantom Insight (2), each Phantom Hall (1) and the Phantom Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -818,7 +818,7 @@
     },
     "civilopediaText": [
       {
-        "text": "North Ban Licorice (北禁甘草), the basic food of the restriction path's Gu: the northern wall's light qi carries the name of north ban licorice; the restriction path's Gu eat it here. It grows in the Northern Plains, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Restriction Path branch (2), each Restriction Hall (1) and the Restriction Path Lore (1). It gives no happiness."
+        "text": "North Ban Licorice (北禁甘草), the basic food of the restriction path's Gu: the northern wall's light qi carries the name of north ban licorice; the restriction path's Gu eat it here. It grows in the Northern Plains, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Restriction Path branch (2) and its Restriction Insight (2), each Restriction Hall (1) and the Restriction Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -837,7 +837,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Hound Dung (犬粪), the basic food of the luck path's Gu: the Dog Shit Luck Gu is fed with the dung of desolate hounds. It grows in the Northern Plains, and some in the Western Desert; a Camp works it. A clan gets it from each worked tile (1), the Luck Path branch (2), each Luck Hall (1) and the Luck Path Lore (1). It gives no happiness."
+        "text": "Hound Dung (犬粪), the basic food of the luck path's Gu: the Dog Shit Luck Gu is fed with the dung of desolate hounds. It grows in the Northern Plains, and some in the Western Desert; a Camp works it. A clan gets it from each worked tile (1), the Luck Path branch (2) and its Luck Insight (2), each Luck Hall (1) and the Luck Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -855,7 +855,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Brocade Cloud (锦绣云), the basic food of the heaven path's Gu: the Heavenly Secret Gu is fed with brocade clouds. It grows in the Central Continent, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Heaven Path branch (2), each Heaven Hall (1) and the Heaven Path Lore (1). It gives no happiness."
+        "text": "Brocade Cloud (锦绣云), the basic food of the heaven path's Gu: the Heavenly Secret Gu is fed with brocade clouds. It grows in the Central Continent, and some in the Western Desert; a Plantation works it. A clan gets it from each worked tile (1), the Heaven Path branch (2) and its Heaven Insight (2), each Heaven Hall (1) and the Heaven Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -872,7 +872,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Heavy Gold (重金), the basic food of the qi path's Gu: the heavy gold under Lou Lan Blessed Land feeds the Strength Qi Gu. It grows in the Northern Plains, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Qi Path branch (2), each Qi Hall (1) and the Qi Path Lore (1). It gives no happiness."
+        "text": "Heavy Gold (重金), the basic food of the qi path's Gu: the heavy gold under Lou Lan Blessed Land feeds the Strength Qi Gu. It grows in the Northern Plains, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Qi Path branch (2) and its Qi Insight (2), each Qi Hall (1) and the Qi Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -891,7 +891,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Ash (灰烬), the basic food of the refinement path's Gu: the Ash Gu lives on ashes; the refinement path's furnaces leave them. It grows in the Central Continent, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Refinement Path branch (2), each Refinement Hall (1) and the Refinement Path Lore (1). It gives no happiness."
+        "text": "Ash (灰烬), the basic food of the refinement path's Gu: the Ash Gu lives on ashes; the refinement path's furnaces leave them. It grows in the Central Continent, and some in the Western Desert; a Mine works it. A clan gets it from each worked tile (1), the Refinement Path branch (2) and its Refinement Insight (2), each Refinement Hall (1) and the Refinement Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -908,7 +908,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Star Cave Stone (星洞石), the basic food of the formation path's Gu: star cave stones lie under the arrow bamboo; formations are laid on them. It grows in the Central Continent, and some in the Southern Border; a Mine works it. A clan gets it from each worked tile (1), the Formation Path branch (2), each Formation Hall (1) and the Formation Path Lore (1). It gives no happiness."
+        "text": "Star Cave Stone (星洞石), the basic food of the formation path's Gu: star cave stones lie under the arrow bamboo; formations are laid on them. It grows in the Central Continent, and some in the Southern Border; a Mine works it. A clan gets it from each worked tile (1), the Formation Path branch (2) and its Formation Insight (2), each Formation Hall (1) and the Formation Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -927,7 +927,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Ginseng Whiskers (参须), the basic food of the pill path's Gu: ginseng whiskers feed the Earth Communication Ear Grass. It grows in the Central Continent, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Pill Path branch (2), each Pill Hall (1) and the Pill Path Lore (1). It gives no happiness."
+        "text": "Ginseng Whiskers (参须), the basic food of the pill path's Gu: ginseng whiskers feed the Earth Communication Ear Grass. It grows in the Central Continent, and some in the Southern Border; a Plantation works it. A clan gets it from each worked tile (1), the Pill Path branch (2) and its Pill Insight (2), each Pill Hall (1) and the Pill Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -947,7 +947,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Old Scrolls (书卷), the basic food of the information path's Gu: the Bookworm eats books and maps and remembers them. It grows in the Central Continent, and some in the Western Desert; a Inheritance Dig works it. A clan gets it from each worked tile (1), the Information Path branch (2), each Information Hall (1) and the Information Path Lore (1). It gives no happiness."
+        "text": "Old Scrolls (书卷), the basic food of the information path's Gu: the Bookworm eats books and maps and remembers them. It grows in the Central Continent, and some in the Western Desert; a Inheritance Dig works it. A clan gets it from each worked tile (1), the Information Path branch (2) and its Information Insight (2), each Information Hall (1) and the Information Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -965,7 +965,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Rice (稻米), the basic food of the human path's Gu: clans store rice for people beside the Gu's food. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Human Path branch (2), each Human Hall (1) and the Human Path Lore (1). It gives no happiness."
+        "text": "Rice (稻米), the basic food of the human path's Gu: clans store rice for people beside the Gu's food. It grows in the Southern Border, and some in the Northern Plains; a Plantation works it. A clan gets it from each worked tile (1), the Human Path branch (2) and its Human Insight (2), each Human Hall (1) and the Human Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -983,7 +983,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Danqing Incense (丹青香), the basic food of the painting path's Gu: danqing incense feeds the Soul Swap Gu; its name is the painter's colours. It grows in the Northern Plains, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Painting Path branch (2), each Painting Hall (1) and the Painting Path Lore (1). It gives no happiness."
+        "text": "Danqing Incense (丹青香), the basic food of the painting path's Gu: danqing incense feeds the Soul Swap Gu; its name is the painter's colours. It grows in the Northern Plains, and some in the Eastern Sea; a Plantation works it. A clan gets it from each worked tile (1), the Painting Path branch (2) and its Painting Insight (2), each Painting Hall (1) and the Painting Path Lore (2). It gives no happiness."
       }
     ]
   },
@@ -1002,7 +1002,7 @@
     },
     "civilopediaText": [
       {
-        "text": "Jade-Eye Monkey (玉眼石猴), the basic food of the theft path's Gu: killing jade-eye stone monkeys feeds the Jade Skin Gu; the thieving monkeys feed the theft path's Gu here. It grows in the Western Desert, and some in the Central Continent; a Camp works it. A clan gets it from each worked tile (1), the Theft Path branch (2), each Theft Hall (1) and the Theft Path Lore (1). It gives no happiness."
+        "text": "Jade-Eye Monkey (玉眼石猴), the basic food of the theft path's Gu: killing jade-eye stone monkeys feeds the Jade Skin Gu; the thieving monkeys feed the theft path's Gu here. It grows in the Western Desert, and some in the Central Continent; a Camp works it. A clan gets it from each worked tile (1), the Theft Path branch (2) and its Theft Insight (2), each Theft Hall (1) and the Theft Path Lore (2). It gives no happiness."
       }
     ]
   },

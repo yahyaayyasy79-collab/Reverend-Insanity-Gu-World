@@ -1512,5 +1512,53 @@
         "text": "A demonic elder (魔道长老) of rank five, who leads the raids. Strength 35, 20% stronger when attacking, heals 20 HP per kill, and every enemy soldier beside him fights 10% weaker."
       }
     ]
+  },
+  {
+    "name": "Fang Yuan",
+    "unitType": "Gu Master",
+    "movement": 3,
+    "strength": 16,
+    "cost": 200,
+    "requiredTech": "Calamity Lore",
+    "attackSound": "gu-rank-6",
+    "uniqueTo": "Barbarians",
+    "uniques": [
+      "Unbuildable",
+      "Unable to capture cities",
+      "Withdraws before melee combat",
+      "Unit will heal every turn, even if it performs an action",
+      "[15] HP when healing",
+      "Ignores Zone of Control",
+      "No damage penalty for wounded units",
+      "Can move after attacking",
+      "[+1] Sight",
+      "Can pass through impassable tiles",
+      "[+25]% Strength",
+      "[+125]% Strength <after turn number [67]> <on [Quick] game speed>",
+      "[+125]% Strength <after turn number [100]> <on [Standard] game speed>",
+      "[+125]% Strength <after turn number [150]> <on [Epic] game speed>",
+      "[+125]% Strength <after turn number [300]> <on [Marathon] game speed>",
+      "[+150]% Strength <after turn number [114]> <on [Quick] game speed>",
+      "[+150]% Strength <after turn number [170]> <on [Standard] game speed>",
+      "[+150]% Strength <after turn number [255]> <on [Epic] game speed>",
+      "[+150]% Strength <after turn number [510]> <on [Marathon] game speed>",
+      "[+250]% Strength <after turn number [174]> <on [Quick] game speed>",
+      "[+250]% Strength <after turn number [260]> <on [Standard] game speed>",
+      "[+250]% Strength <after turn number [390]> <on [Epic] game speed>",
+      "[+250]% Strength <after turn number [780]> <on [Marathon] game speed>",
+      "[+250]% Strength <after turn number [228]> <on [Quick] game speed>",
+      "[+250]% Strength <after turn number [340]> <on [Standard] game speed>",
+      "[+250]% Strength <after turn number [510]> <on [Epic] game speed>",
+      "[+250]% Strength <after turn number [1020]> <on [Marathon] game speed>",
+      "[+200]% Strength <after turn number [261]> <on [Quick] game speed>",
+      "[+200]% Strength <after turn number [390]> <on [Standard] game speed>",
+      "[+200]% Strength <after turn number [585]> <on [Epic] game speed>",
+      "[+200]% Strength <after turn number [1170]> <on [Marathon] game speed>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fang Yuan (方源), the demon from beyond the heavens (天外之魔): reborn five hundred years back with the Spring Autumn Cicada, he carries five centuries of memory and cunning. He wanders the five regions alone, at war with every clan, and outgrows every mortal of his time; in the Venerables' era he stands level with a Venerable, as he ends the canon as one. He slips away from melee, heals every turn, ignores zones of control and never takes a city. He comes to the Gu Yue village on turn 30 (Standard); struck down, he may return near his killer's capital while no clan holds the Spring Autumn Cicada."
+      }
+    ]
   }
 ]
