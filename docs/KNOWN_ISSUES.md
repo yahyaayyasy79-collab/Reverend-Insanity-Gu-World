@@ -191,7 +191,7 @@ rest of the list is what a player or the next session should know before trustin
     the map feels slow, Layer 7's six city-states are the first to remove (`tools/make_map.py` FIVE_STARTS).
 
 28. **A path lore needs a living Master (Layer 8, 2026-11-08).** A clan studies a path's lore only while it has a
-    Master of that path. If its last Master dies during the research, the progress stays but the tech waits until the
+    Master of that path at rank three or higher. If its last Master dies during the research, the progress stays but the tech waits until the
     clan has a Master again (by XP, a hall or a path Gu's bearer).
 
 ## Not yet seen in a real game

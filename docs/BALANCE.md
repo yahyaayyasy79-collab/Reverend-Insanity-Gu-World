@@ -3355,199 +3355,152 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Column 1 (Aperture Awakening, Strength Path Lore, Transformation Path Lore, Bone Path Lore, Blood Path Lore, Sword Path Lore, Blade Path Lore, Metal Path Lore, Weapon Path Lore, Killing Path Lore) | buildingCost | 45 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 1 (Aperture Awakening, Strength Path Lore, Transformation Path Lore, Bone Path Lore, Blood Path Lore, Sword Path Lore, Blade Path Lore, Metal Path Lore, Weapon Path Lore, Killing Path Lore) | wonderCost | 75 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Strength Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Strength Path Lore | `Only available <when number of [[Strength Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Strength Path Lore | `Only available <when number of [[{Strength Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Strength Path Lore | `[+15]% XP gained from combat <for [Strength Master] units>` | +15 | data/techs.csv `uniques` |
-| Strength Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Transformation Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Transformation Path Lore | `Only available <when number of [[Transformation Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Transformation Path Lore | `Only available <when number of [[{Transformation Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Transformation Path Lore | `[+15]% XP gained from combat <for [Transformation Master] units>` | +15 | data/techs.csv `uniques` |
-| Transformation Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Bone Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Bone Path Lore | `Only available <when number of [[Bone Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Bone Path Lore | `Only available <when number of [[{Bone Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Bone Path Lore | `[+15]% XP gained from combat <for [Bone Master] units>` | +15 | data/techs.csv `uniques` |
-| Bone Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Blood Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Blood Path Lore | `Only available <when number of [[Blood Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Blood Path Lore | `Only available <when number of [[{Blood Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Blood Path Lore | `[+15]% XP gained from combat <for [Blood Master] units>` | +15 | data/techs.csv `uniques` |
-| Blood Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Sword Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Sword Path Lore | `Only available <when number of [[Sword Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Sword Path Lore | `Only available <when number of [[{Sword Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Sword Path Lore | `[+15]% XP gained from combat <for [Sword Master] units>` | +15 | data/techs.csv `uniques` |
-| Sword Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Blade Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Blade Path Lore | `Only available <when number of [[Blade Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Blade Path Lore | `Only available <when number of [[{Blade Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Blade Path Lore | `[+15]% XP gained from combat <for [Blade Master] units>` | +15 | data/techs.csv `uniques` |
-| Blade Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Metal Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Metal Path Lore | `Only available <when number of [[Metal Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Metal Path Lore | `Only available <when number of [[{Metal Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Metal Path Lore | `[+15]% XP gained from combat <for [Metal Master] units>` | +15 | data/techs.csv `uniques` |
-| Metal Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Weapon Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Weapon Path Lore | `Only available <when number of [[Weapon Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Weapon Path Lore | `Only available <when number of [[{Weapon Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Weapon Path Lore | `[+15]% XP gained from combat <for [Weapon Master] units>` | +15 | data/techs.csv `uniques` |
-| Weapon Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Killing Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Killing Path Lore | `Only available <when number of [[Killing Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Killing Path Lore | `Only available <when number of [[{Killing Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Killing Path Lore | `[+15]% XP gained from combat <for [Killing Master] units>` | +15 | data/techs.csv `uniques` |
-| Killing Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Column 2 (Spirit Spring Lore, Gu Feeding, Fire Path Lore, Water Path Lore, Wood Path Lore, Earth Path Lore, Wind Path Lore, Cloud Path Lore, Ice Snow Path Lore, Lightning Path Lore, Poison Path Lore, Light Path Lore, Dark Path Lore, Shadow Path Lore, Star Path Lore, Moon Path Lore, Sound Path Lore, Illusion Path Lore) | techCost | 40 | data/tech_columns.csv `techCost` |
 | Column 2 (Spirit Spring Lore, Gu Feeding, Fire Path Lore, Water Path Lore, Wood Path Lore, Earth Path Lore, Wind Path Lore, Cloud Path Lore, Ice Snow Path Lore, Lightning Path Lore, Poison Path Lore, Light Path Lore, Dark Path Lore, Shadow Path Lore, Star Path Lore, Moon Path Lore, Sound Path Lore, Illusion Path Lore) | buildingCost | 60 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 2 (Spirit Spring Lore, Gu Feeding, Fire Path Lore, Water Path Lore, Wood Path Lore, Earth Path Lore, Wind Path Lore, Cloud Path Lore, Ice Snow Path Lore, Lightning Path Lore, Poison Path Lore, Light Path Lore, Dark Path Lore, Shadow Path Lore, Star Path Lore, Moon Path Lore, Sound Path Lore, Illusion Path Lore) | wonderCost | 140 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Fire Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Fire Path Lore | `Only available <when number of [[Fire Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Fire Path Lore | `Only available <when number of [[{Fire Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Fire Path Lore | `[+15]% XP gained from combat <for [Fire Master] units>` | +15 | data/techs.csv `uniques` |
-| Fire Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Water Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Water Path Lore | `Only available <when number of [[Water Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Water Path Lore | `Only available <when number of [[{Water Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Water Path Lore | `[+15]% XP gained from combat <for [Water Master] units>` | +15 | data/techs.csv `uniques` |
-| Water Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Wood Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Wood Path Lore | `Only available <when number of [[Wood Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Wood Path Lore | `Only available <when number of [[{Wood Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Wood Path Lore | `[+15]% XP gained from combat <for [Wood Master] units>` | +15 | data/techs.csv `uniques` |
-| Wood Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Earth Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Earth Path Lore | `Only available <when number of [[Earth Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Earth Path Lore | `Only available <when number of [[{Earth Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Earth Path Lore | `[+15]% XP gained from combat <for [Earth Master] units>` | +15 | data/techs.csv `uniques` |
-| Earth Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Wind Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Wind Path Lore | `Only available <when number of [[Wind Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Wind Path Lore | `Only available <when number of [[{Wind Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Wind Path Lore | `[+15]% XP gained from combat <for [Wind Master] units>` | +15 | data/techs.csv `uniques` |
-| Wind Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Cloud Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Cloud Path Lore | `Only available <when number of [[Cloud Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Cloud Path Lore | `Only available <when number of [[{Cloud Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Cloud Path Lore | `[+15]% XP gained from combat <for [Cloud Master] units>` | +15 | data/techs.csv `uniques` |
-| Cloud Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Ice Snow Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Ice Snow Path Lore | `Only available <when number of [[Ice Snow Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Ice Snow Path Lore | `Only available <when number of [[{Ice Snow Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Ice Snow Path Lore | `[+15]% XP gained from combat <for [Ice Snow Master] units>` | +15 | data/techs.csv `uniques` |
-| Ice Snow Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Lightning Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Lightning Path Lore | `Only available <when number of [[Lightning Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Lightning Path Lore | `Only available <when number of [[{Lightning Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Lightning Path Lore | `[+15]% XP gained from combat <for [Lightning Master] units>` | +15 | data/techs.csv `uniques` |
-| Lightning Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Poison Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Poison Path Lore | `Only available <when number of [[Poison Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Poison Path Lore | `Only available <when number of [[{Poison Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Poison Path Lore | `[+15]% XP gained from combat <for [Poison Master] units>` | +15 | data/techs.csv `uniques` |
-| Poison Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Light Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Light Path Lore | `Only available <when number of [[Light Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Light Path Lore | `Only available <when number of [[{Light Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Light Path Lore | `[+15]% XP gained from combat <for [Light Master] units>` | +15 | data/techs.csv `uniques` |
-| Light Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Dark Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Dark Path Lore | `Only available <when number of [[Dark Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Dark Path Lore | `Only available <when number of [[{Dark Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Dark Path Lore | `[+15]% XP gained from combat <for [Dark Master] units>` | +15 | data/techs.csv `uniques` |
-| Dark Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Shadow Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Shadow Path Lore | `Only available <when number of [[Shadow Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Shadow Path Lore | `Only available <when number of [[{Shadow Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Shadow Path Lore | `[+15]% XP gained from combat <for [Shadow Master] units>` | +15 | data/techs.csv `uniques` |
-| Shadow Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Star Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Star Path Lore | `Only available <when number of [[Star Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Star Path Lore | `Only available <when number of [[{Star Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Star Path Lore | `[+15]% XP gained from combat <for [Star Master] units>` | +15 | data/techs.csv `uniques` |
-| Star Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Moon Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Moon Path Lore | `Only available <when number of [[Moon Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Moon Path Lore | `Only available <when number of [[{Moon Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Moon Path Lore | `[+15]% XP gained from combat <for [Moon Master] units>` | +15 | data/techs.csv `uniques` |
-| Moon Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Sound Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Sound Path Lore | `Only available <when number of [[Sound Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Sound Path Lore | `Only available <when number of [[{Sound Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Sound Path Lore | `[+15]% XP gained from combat <for [Sound Master] units>` | +15 | data/techs.csv `uniques` |
-| Sound Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Illusion Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Illusion Path Lore | `Only available <when number of [[Illusion Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Illusion Path Lore | `Only available <when number of [[{Illusion Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Illusion Path Lore | `[+15]% XP gained from combat <for [Illusion Master] units>` | +15 | data/techs.csv `uniques` |
-| Illusion Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Column 3 (Wine Brewing, Gu Refinement, Rank Two Cultivation, Wisdom Path Lore, Emotion Path Lore, Enchantment Path Lore, Soul Path Lore, Dream Path Lore, Enslavement Path Lore, Time Path Lore, Space Path Lore, Rule Path Lore, Phantom Path Lore, Restriction Path Lore, Luck Path Lore, Heaven Path Lore, Qi Path Lore, Refinement Path Lore, Formation Path Lore, Food Path Lore, Pill Path Lore, Information Path Lore, Human Path Lore, Painting Path Lore, Theft Path Lore) | techCost | 65 | data/tech_columns.csv `techCost` |
 | Column 3 (Wine Brewing, Gu Refinement, Rank Two Cultivation, Wisdom Path Lore, Emotion Path Lore, Enchantment Path Lore, Soul Path Lore, Dream Path Lore, Enslavement Path Lore, Time Path Lore, Space Path Lore, Rule Path Lore, Phantom Path Lore, Restriction Path Lore, Luck Path Lore, Heaven Path Lore, Qi Path Lore, Refinement Path Lore, Formation Path Lore, Food Path Lore, Pill Path Lore, Information Path Lore, Human Path Lore, Painting Path Lore, Theft Path Lore) | buildingCost | 75 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 3 (Wine Brewing, Gu Refinement, Rank Two Cultivation, Wisdom Path Lore, Emotion Path Lore, Enchantment Path Lore, Soul Path Lore, Dream Path Lore, Enslavement Path Lore, Time Path Lore, Space Path Lore, Rule Path Lore, Phantom Path Lore, Restriction Path Lore, Luck Path Lore, Heaven Path Lore, Qi Path Lore, Refinement Path Lore, Formation Path Lore, Food Path Lore, Pill Path Lore, Information Path Lore, Human Path Lore, Painting Path Lore, Theft Path Lore) | wonderCost | 170 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Wisdom Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Wisdom Path Lore | `Only available <when number of [[Wisdom Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Wisdom Path Lore | `Only available <when number of [[{Wisdom Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Wisdom Path Lore | `[+15]% XP gained from combat <for [Wisdom Master] units>` | +15 | data/techs.csv `uniques` |
-| Wisdom Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Emotion Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Emotion Path Lore | `Only available <when number of [[Emotion Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Emotion Path Lore | `Only available <when number of [[{Emotion Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Emotion Path Lore | `[+15]% XP gained from combat <for [Emotion Master] units>` | +15 | data/techs.csv `uniques` |
-| Emotion Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Enchantment Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Enchantment Path Lore | `Only available <when number of [[Enchantment Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Enchantment Path Lore | `Only available <when number of [[{Enchantment Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Enchantment Path Lore | `[+15]% XP gained from combat <for [Enchantment Master] units>` | +15 | data/techs.csv `uniques` |
-| Enchantment Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Soul Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Soul Path Lore | `Only available <when number of [[Soul Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Soul Path Lore | `Only available <when number of [[{Soul Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Soul Path Lore | `[+15]% XP gained from combat <for [Soul Master] units>` | +15 | data/techs.csv `uniques` |
-| Soul Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Dream Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Dream Path Lore | `Only available <when number of [[Dream Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Dream Path Lore | `Only available <when number of [[{Dream Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Dream Path Lore | `[+15]% XP gained from combat <for [Dream Master] units>` | +15 | data/techs.csv `uniques` |
-| Dream Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Enslavement Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Enslavement Path Lore | `Only available <when number of [[Enslavement Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Enslavement Path Lore | `Only available <when number of [[{Enslavement Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Enslavement Path Lore | `[+15]% XP gained from combat <for [Enslavement Master] units>` | +15 | data/techs.csv `uniques` |
-| Enslavement Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Time Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Time Path Lore | `Only available <when number of [[Time Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Time Path Lore | `Only available <when number of [[{Time Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Time Path Lore | `[+15]% XP gained from combat <for [Time Master] units>` | +15 | data/techs.csv `uniques` |
-| Time Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Space Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Space Path Lore | `Only available <when number of [[Space Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Space Path Lore | `Only available <when number of [[{Space Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Space Path Lore | `[+15]% XP gained from combat <for [Space Master] units>` | +15 | data/techs.csv `uniques` |
-| Space Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Rule Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Rule Path Lore | `Only available <when number of [[Rule Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Rule Path Lore | `Only available <when number of [[{Rule Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Rule Path Lore | `[+15]% XP gained from combat <for [Rule Master] units>` | +15 | data/techs.csv `uniques` |
-| Rule Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Phantom Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Phantom Path Lore | `Only available <when number of [[Phantom Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Phantom Path Lore | `Only available <when number of [[{Phantom Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Phantom Path Lore | `[+15]% XP gained from combat <for [Phantom Master] units>` | +15 | data/techs.csv `uniques` |
-| Phantom Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Restriction Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Restriction Path Lore | `Only available <when number of [[Restriction Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Restriction Path Lore | `Only available <when number of [[{Restriction Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Restriction Path Lore | `[+15]% XP gained from combat <for [Restriction Master] units>` | +15 | data/techs.csv `uniques` |
-| Restriction Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Luck Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Luck Path Lore | `Only available <when number of [[Luck Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Luck Path Lore | `Only available <when number of [[{Luck Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Luck Path Lore | `[+15]% XP gained from combat <for [Luck Master] units>` | +15 | data/techs.csv `uniques` |
-| Luck Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Heaven Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Heaven Path Lore | `Only available <when number of [[Heaven Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Heaven Path Lore | `Only available <when number of [[{Heaven Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Heaven Path Lore | `[+15]% XP gained from combat <for [Heaven Master] units>` | +15 | data/techs.csv `uniques` |
-| Heaven Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Qi Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Qi Path Lore | `Only available <when number of [[Qi Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Qi Path Lore | `Only available <when number of [[{Qi Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Qi Path Lore | `[+15]% XP gained from combat <for [Qi Master] units>` | +15 | data/techs.csv `uniques` |
-| Qi Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Refinement Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Refinement Path Lore | `Only available <when number of [[Refinement Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Refinement Path Lore | `Only available <when number of [[{Refinement Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Refinement Path Lore | `[+15]% XP gained from combat <for [Refinement Master] units>` | +15 | data/techs.csv `uniques` |
-| Refinement Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Formation Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Formation Path Lore | `Only available <when number of [[Formation Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Formation Path Lore | `Only available <when number of [[{Formation Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Formation Path Lore | `[+15]% XP gained from combat <for [Formation Master] units>` | +15 | data/techs.csv `uniques` |
-| Formation Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Food Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Food Path Lore | `Only available <when number of [[Food Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Food Path Lore | `Only available <when number of [[{Food Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Food Path Lore | `[+15]% XP gained from combat <for [Food Master] units>` | +15 | data/techs.csv `uniques` |
-| Food Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Pill Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Pill Path Lore | `Only available <when number of [[Pill Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Pill Path Lore | `Only available <when number of [[{Pill Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Pill Path Lore | `[+15]% XP gained from combat <for [Pill Master] units>` | +15 | data/techs.csv `uniques` |
-| Pill Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Information Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Information Path Lore | `Only available <when number of [[Information Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Information Path Lore | `Only available <when number of [[{Information Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Information Path Lore | `[+15]% XP gained from combat <for [Information Master] units>` | +15 | data/techs.csv `uniques` |
-| Information Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Human Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Human Path Lore | `Only available <when number of [[Human Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Human Path Lore | `Only available <when number of [[{Human Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Human Path Lore | `[+15]% XP gained from combat <for [Human Master] units>` | +15 | data/techs.csv `uniques` |
-| Human Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Painting Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Painting Path Lore | `Only available <when number of [[Painting Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Painting Path Lore | `Only available <when number of [[{Painting Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Painting Path Lore | `[+15]% XP gained from combat <for [Painting Master] units>` | +15 | data/techs.csv `uniques` |
-| Painting Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Theft Path Lore | cost | 40 | data/techs.csv `uniques` |
-| Theft Path Lore | `Only available <when number of [[Theft Master] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
+| Theft Path Lore | `Only available <when number of [[{Theft Master} {non-[Rank One-Two era]}] Units] is more than [0]>` | 0 | data/techs.csv `uniques` |
 | Theft Path Lore | `[+15]% XP gained from combat <for [Theft Master] units>` | +15 | data/techs.csv `uniques` |
-| Theft Path Lore | `[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>` | -100 | data/techs.csv `uniques` |
 | Column 4 (Gu Formations, Rank Three Cultivation) | techCost | 120 | data/tech_columns.csv `techCost` |
 | Column 4 (Gu Formations, Rank Three Cultivation) | buildingCost | 100 | data/tech_columns.csv `buildingCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
 | Column 4 (Gu Formations, Rank Three Cultivation) | wonderCost | 220 | data/tech_columns.csv `wonderCost`: inert while every building sets its own cost [src Ruleset.updateBuildingCosts] |
@@ -4470,6 +4423,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-4214 numbers listed.
+4167 numbers listed.
 
 <!-- inventory:end -->

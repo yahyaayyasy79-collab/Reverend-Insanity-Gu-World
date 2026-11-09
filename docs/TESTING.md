@@ -184,7 +184,7 @@ unit add fang-clan "Dou Shen Palace"            # as the Fang clan with Gu House
                                                 # adjacent units heal 15 HP more; +20% when defending
 # Layer 8: one tech per path
 civ addtechnology gu-yue-clan "Moon Path Lore"  # the tech screen lists 47 path lores in the first three columns; a
-                                                # lore is researchable only while the clan has a Master of its path
+                                                # lore opens only while the clan has a Master of its path at rank three+
 unit addpromotion "Moon Master"                 # on a rank-three Gu Master: Moon Grandmaster stays closed until the
                                                 # clan knows Moon Path Lore; Civilopedia > Tutorials > "Gu World: The
                                                 # Five Antiquities"

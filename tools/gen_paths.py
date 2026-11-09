@@ -517,25 +517,25 @@ def lore_name_id(p: dict) -> str:
     return f"Ilmu Jalur {p['name_id']}"
 
 
-# The AI researches the cheapest tech first, so at 40 it took the lores before every main tech: the eras came 15-35
-# turns later (autoplay 8 x 450). It waits for them until its Gu Masters can reach rank three, when Grandmaster needs one.
-LORE_AI_WAIT = "[-100]% weight to this choice for AI decisions <before discovering [Rank Three Cultivation]>"
-
-
+# A lore opens when the clan has a Master of the path at rank three or higher, when Grandmaster needs it. The AI picks
+# among the cheapest researchable group and the next one of the whole list [src NextTurnAutomation.chooseTechToResearch]:
+# while any lore waited to be studied, even unweighted, it held the cheapest place and the AI stopped reaching one
+# column ahead for its rank techs, so the eras came 15-35 turns later with the same number of main techs (autoplay
+# 8 x 450, open to any Master, with and without an AI wait until Rank Three Cultivation).
 def lore_uniques(p: dict) -> list[str]:
     m = tier_name(p, 0)
-    return [f"Only available <when number of [[{m}] Units] is more than [0]>",
-            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>", LORE_AI_WAIT]
+    return [f"Only available <when number of [[{{{m}}} {{non-[Rank One-Two era]}}] Units] is more than [0]>",
+            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>"]
 
 
 def lore_pedia(p: dict) -> tuple[str, str]:
     age_en, age_id = age_text(p["key"])
     return (f"The clan's inheritance of the {p['name'].lower()} path ({p['chinese']}传承). Only a clan with a living "
-            f"{tier_name(p, 0)} can study it. Its Masters gain {LORE_XP}% more XP, and none of them reaches Grandmaster "
-            f"attainment without it.{age_en}",
-            f"Warisan jalur {p['name_id']} milik klan ({p['chinese']}传承). Hanya klan yang punya {tier_name_id(p, 0)} yang "
-            f"masih hidup dapat mempelajarinya. Para Ahlinya mendapat {LORE_XP}% XP lebih banyak, dan tak satu pun mencapai "
-            f"pencapaian {TIERS_ID[1]} tanpanya.{age_id}")
+            f"{tier_name(p, 0)} of rank three or higher can study it. Its Masters gain {LORE_XP}% more XP, and none of them "
+            f"reaches Grandmaster attainment without it.{age_en}",
+            f"Warisan jalur {p['name_id']} milik klan ({p['chinese']}传承). Hanya klan yang punya {tier_name_id(p, 0)} "
+            f"tingkat tiga ke atas yang masih hidup dapat mempelajarinya. Para Ahlinya mendapat {LORE_XP}% XP lebih banyak, "
+            f"dan tak satu pun mencapai pencapaian {TIERS_ID[1]} tanpanya.{age_id}")
 
 
 def path_techs() -> dict[int, list[dict]]:

@@ -5246,7 +5246,7 @@ is in its "Generated uniques" table.
 
 | Object | Canon | Source | Status |
 |---|---|---|---|
-| Path lore techs: one per path, only for a clan with a living Master of the path, +15% XP for its Masters, needed for Grandmaster | A path's inheritance (传承) passes its methods down | (game design) | ADAPTED |
+| Path lore techs: one per path, only for a clan with a living Master of the path at rank three or higher, +15% XP for its Masters, needed for Grandmaster | A path's inheritance (传承) passes its methods down | (game design) | ADAPTED |
 | Immemorial Antiquity (太古): the nine heavens still in the sky; humans had yet to rise | CANON | R V2c190, V4c263 | CANON |
 | Remote Antiquity (远古): Primordial Origin and Star Constellation lead humans against the variant humans' rule | CANON | R V4c263 | CANON |
 | Olden Antiquity (上古): three Demon Venerables (Limitless, Reckless Savage, Red Lotus) end the beastmen and found human rule | CANON (the order Reckless Savage → Red Lotus → Genesis Lotus, Thieving Heaven, Giant Sun → Spectral Soul, Paradise Earth) | R V4c263, V4c89, V3c192 | CANON |
@@ -5256,6 +5256,6 @@ is in its "Generated uniques" table.
 
 Engine notes: a tech's `Only available` conditionals are checked against the clan [src TechManager.isUnresearchable];
 the AI researches the cheapest researchable tech first [src NextTurnAutomation.chooseTechToResearch], so it pays only
-for the paths its units walk. The lore techs sit in the first era's three columns: a tech of a later column would move
+for the paths its units walk; a unit count takes a combined filter (`{A} {B}`, [src MultiFilter]). The lore techs sit in the first era's three columns: a tech of a later column would move
 its clan into a later era before its time (civ-era conditionals drive events and global uniques). E8 re-tuned:
-`cityStrengthFromTechsMultiplier` 11.0 (was the default 5.5) for a 74-tech tree; the AI waits for the lores until Rank Three Cultivation (at the cost of 40 it took them before every main tech, and the eras came 15-35 turns later).
+`cityStrengthFromTechsMultiplier` 11.0 (was the default 5.5) for a 74-tech tree. A lore opens only with a Master of rank three or higher: a lore waiting to be studied holds the AI's cheapest tech group, and the AI then stops reaching one column ahead for its rank techs (the eras came 15-35 turns later in autoplay).
