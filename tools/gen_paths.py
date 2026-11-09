@@ -517,11 +517,10 @@ def lore_name_id(p: dict) -> str:
     return f"Ilmu Jalur {p['name_id']}"
 
 
-# A lore opens when the clan has a Master of the path at rank three or higher, when Grandmaster needs it. The AI picks
-# among the cheapest researchable group and the next one of the whole list [src NextTurnAutomation.chooseTechToResearch]:
-# while any lore waited to be studied, even unweighted, it held the cheapest place and the AI stopped reaching one
-# column ahead for its rank techs, so the eras came 15-35 turns later with the same number of main techs (autoplay
-# 8 x 450, open to any Master, with and without an AI wait until Rank Three Cultivation).
+# A lore opens when the clan has a Master of the path at rank three or higher, when Grandmaster needs it, so no clan
+# spends science on a lore its rank-one and -two Masters cannot use yet. The lores never all get researched, which
+# changes how eras start (E15, docs/CAPABILITIES.md): each era now begins with its first tech, 12-30 turns later than
+# when a finished era rolled over (autoplay 8 x 450; main techs, ranks and immortals came on time).
 def lore_uniques(p: dict) -> list[str]:
     m = tier_name(p, 0)
     return [f"Only available <when number of [[{{{m}}} {{non-[Rank One-Two era]}}] Units] is more than [0]>",

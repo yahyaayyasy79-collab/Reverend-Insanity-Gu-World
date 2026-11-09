@@ -628,6 +628,39 @@ Five Regions, 8 × 450, seed 101. Baseline: Regions II with the sects on the rim
   Venerables Gu Yue 4, Wu 3, Huang Jin 3; the Court at T300 still leads (23.5 techs, 6.4 immortals); clan-turns in debt
   after T300 12% (12% before).
 
+## Layers 6-8: the boss, the heroes, the super forces, the path lores (2026-11-08/09)
+
+Five Regions, 8 × 450, seed 101 each. Baseline: the snowmen moved (26302e7). Layers 6-7 as first placed (d11bfda);
+Layer 7's city-states moved (7628537); Layer 8 as shipped (41d2350).
+
+| | Baseline | Layers 6-7 | Layer 7 placed | Layer 8 |
+|---|---|---|---|---|
+| Eternal Life wins | Gu Yue 3, Huang Jin 1 | Huang Jin 4, Wu 3, Bai 1 | Bai 2, Wu 2, Gu Yue 1 | Wu 4, Bai 1 |
+| Venerables (games) | Gu Yue 4, Wu 3, Huang Jin 3 | Huang Jin 4, Wu 3, Bai 1 | Wu 4, Bai 2, Xiong 1, Gu Yue 1 | Wu 5, Bai 2, Huang Jin 1 |
+| First rank seven / eight | T206-268 / T255-367 | T216-277 / T263-342 | T216-298 / T264-388 | T190-260 / T248-313 |
+| Era medians (Three, Five, Seven, Nine) | 49, 139, 214, 349 | 51, 133, 212, 350 | 51, 131, 212, 364 | 63, 152, 240, 393 |
+| Grandmasters per major (T150, T250) | 3.5, 7.9 | 3.6, 7.6 | 3.9, 7.7 | 3.4, 7.7 |
+| The Court at T300 (cities, techs, immortals) | 4.9, 23.5, 6.4 | 5.0, 25.0, 5.2 | 5.0, 25.0, 5.8 | 5.2, 36.5 (11.8 lores), 4.9 |
+| Cities captured per game | 4.5 | 4.3 | 4.5 | 4.1 |
+| City-states fallen (8 games) | 8 | 11 | 8 | 3 |
+| Clan-turns in debt after T300 | 12% | 16% | 9% | 13% |
+
+* **The Court as the boss:** the strongest clan to rank eight in every run: the first immortals (rank six at T138
+  median), the most techs, peace. It cannot reach rank nine. In one game of 24 another clan's Venerable razed it.
+* **Layer 7 placement:** first placed, the Ma and Liu tribes (14-15 tiles from the Huang Jin capital) fell in 2 and 3
+  games and the Huang Jin took 4 wins; the Tang clan beside the Fang capital cut the Fang to 1.6 cities at T300.
+  Moved 20+ tiles away (Ma, Liu) and to the desert's far south-west (Tang): the Ma never fell, the Liu once, the Fang
+  back at 2.2 cities, the wins spread.
+* **Layer 8, the lores:** by T300 a signature clan knows 2-4 lores, the Fang 7, the Zombie Alliance 9, the Court 12, the
+  Huang Jin 16. Grandmasters come on time. Main techs per major are the same (T100 10.3 against 10.7, T300 20.9
+  against 21.0); ranks and immortals come earlier, not later.
+* **Layer 8, the eras (E15):** the era medians moved 12-30 turns later. Traced tech by tech (2 × 80 turns): the order and
+  timing of the main techs did not change. A clan used to enter the next era when it had researched every tech of
+  its era; the lores, never all researched, switch that rule off, so each era now starts with its first tech. The
+  era-gated content (Dream Realm, Shadow Sect, the tides' and the refinement's era steps) moves with it.
+* **Intermediate runs:** lores open to any Master at a cost of 40 with the city-strength factor 13: captured cities fell
+  to 2.9 a game (factor now 11); an AI wait for the lores until Rank Three Cultivation changed nothing (same eras).
+
 ## Re-run
 
 ```

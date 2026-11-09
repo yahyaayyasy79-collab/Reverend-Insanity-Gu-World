@@ -53,6 +53,11 @@ Reference audit (user 2026-11-08: the user's lore reference, canon and balanced,
 docs/REFERENCE_AUDIT.md): Layer 1 small stages + rank relics + extreme physiques (tools/cultivation.py), Layer 2
 ten canon Gu + fusions (data/gu_fusions.csv), Layer 3 the frenzy wolf, Layer 4 four variant-human city-states,
 Layer 5 path origins; the Court cannot reach rank nine (it held the Venerable slot in 7 of 8 games).
+Layers 6-8 (user 2026-11-08, REFERENCE_AUDIT "Design proposals"): the Court as the boss + one hero per major (Fang
+Zheng for the Gu Yue); Tie, Tang, Shen, Ma, Liu, Dong Fang city-states + the Fang clan's Dou Shen Palace (placed
+20+ tiles from the Huang Jin, the Tang off the Fang); 47 path lore techs (open with a rank-3+ Master of the path,
+needed for Grandmaster; E8 factor 11) and the Tutorial "The Five Antiquities". Open: the Venerable unit (the
+reference would make it a Great Person or wonder) and Fang Yuan's place, both the user's call.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.
@@ -198,6 +203,9 @@ Repetitive content is generated from `data/*.csv` by `tools/gen_*.py`; commit ta
 * E12 [src] `<when adjacent to a [mapUnitFilter] unit>` sees only the civ's own units: "an enemy is adjacent" cannot
   be written. E13 [src] `<upon entering combat>` fires before the damage, with `<when attacking>` usable; triggered
   uniques run grouped by unique type, not in list order: pay a cost in the status's own `<upon gaining the [X] status>`.
+* E15 [src] A civ's era = its highest researched tech's era, or the earliest era still holding an unresearched tech
+  when that is later; the path lores (never all researched) switch the second rule off, so each era starts with its
+  first tech. A tech in a later era's column moves its researcher into that era at once.
 * Docs/schema conflicts D1–D8 are listed in CAPABILITIES.md; follow the "We follow" column.
 
 ## Files

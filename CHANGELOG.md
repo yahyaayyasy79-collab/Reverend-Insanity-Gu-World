@@ -1227,3 +1227,23 @@ You said to add the remaining super forces. Each claim was checked in the raw te
   * Eternal Life wins: Bai 2, Wu 2, Gu Yue 1; three games reached turn 450;
   * the Fang back at 2.2 cities; the Court at T300: 5.0 cities, 25 techs, 5.8 immortals, the strongest;
   * clan-turns in debt after T300: 9%.
+
+## Layer 8: one tech per path; the five antiquities (2026-11-09)
+
+You said one tech per path would be interesting, and the eras should go into the lore.
+* **47 path lores.** Every path has a tech, its lore (X道传承), in the first era's three columns of the tech tree, with
+  a scroll icon bearing the path's symbol.
+  * It opens when your clan has a Master of that path at rank three or higher.
+  * It gives that path's Masters +15% XP.
+  * No Master reaches Grandmaster without it.
+  * The AI studies only the paths its units walk: 2-4 lores for a signature clan by T300, up to 16 for the Huang Jin.
+* **Tutorial "Gu World: The Five Antiquities":** the Immemorial, Remote, Olden, Medieval and Recent antiquities, the
+  Venerables of each, the prophecy of Great Dream. Each fact was checked in the raw text.
+* **Engine finding (E15):** a clan used to enter the next era as soon as it had finished every tech of its era. The
+  lores are never all researched, so now each era starts with its first tech: 12-30 turns later. Ranks and immortals
+  are not delayed; era-gated events (Dream Realm, Shadow Sect, the tides) come later with the era.
+* City strength from techs re-tuned for the 74-tech tree (factor 11).
+* Autoplay (8 × 450):
+  * Eternal Life wins: Wu 4, Bai 1; three games reached turn 450.
+  * First rank eight T248-313, earlier than before.
+  * Cities captured 4.1 a game (4.5 before).

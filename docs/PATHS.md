@@ -556,7 +556,7 @@ TechManager.isUnresearchable]), so the AI, which researches the cheapest researc
 NextTurnAutomation.chooseTechToResearch], pays only for the paths its units walk, when they need it. The lore gives the path's Masters +15% XP, and the path's Grandmaster tier asks for
 it (`Only available <after discovering [Moon Path Lore]>` for the moon path, in the Grandmaster column of "Generated uniques"). The techs
 sit in the first era's three columns, so studying one never moves a clan into a later era early; the city-strength
-constants were re-tuned for the longer tree (E8, `docs/CAPABILITIES.md`). Why rank three: the AI picks among the cheapest researchable group and the next group of the whole list; while a lore waited to be studied it held the cheapest place, the AI stopped reaching one column ahead for its rank techs, and the eras came 15-35 turns later with the same number of main techs (autoplay 8 × 450, lores open to any Master, with and without an AI wait until Rank Three Cultivation).
+constants were re-tuned for the longer tree (E8, `docs/CAPABILITIES.md`). Why rank three: no clan spends science on a lore its rank-one and -two Masters cannot use yet. The lores never all get researched, so each era now starts with its first tech instead of rolling over when the previous one is finished (E15): 12-30 turns later in autoplay, with main techs, ranks and immortals on time.
 
 <!-- lore:start (tools/gen_paths.py) -->
 | Path | Tech | Column | Prerequisites | Cost | Uniques |
