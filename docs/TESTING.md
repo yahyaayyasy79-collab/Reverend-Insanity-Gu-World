@@ -175,6 +175,19 @@ unit addpromotion "Black Boar Gu"           # on a Rank Two Strength Master with
 unit add barbarians "Frenzy Lightning Wolf" # the thousand-beast king with thunder wings
 # Five Regions map: Feathermen (west), Snowmen and Inkmen (north), Rockmen (south) with their own emblems and types;
 # as the Heavenly Court, "Ascend to Venerable" stays closed for a rank-eight Supreme
+# Layer 6 (2026-11-08): the Court as the boss, one hero per major
+civ addtechnology heavenly-court "Three Qi"     # as the Court: 2 Immortal Materials every turn start
+unit add gu-yue-clan "Rank One Gu Master"       # in a new Gu Yue game the first Rank One Gu Master turns Fang Zheng
+                                                # (Aptitude A); kill him and the next new Rank One carries the name
+# Layer 7: Tie, Tang, Shen clans; Ma, Liu, Dong Fang tribes (each with its emblem; Five Regions map)
+unit add fang-clan "Dou Shen Palace"            # as the Fang clan with Gu House Formation: no immortal Gu needed;
+                                                # adjacent units heal 15 HP more; +20% when defending
+# Layer 8: one tech per path
+civ addtechnology gu-yue-clan "Moon Path Lore"  # the tech screen lists 47 path lores in the first three columns; a
+                                                # lore is researchable only while the clan has a Master of its path
+unit addpromotion "Moon Master"                 # on a rank-three Gu Master: Moon Grandmaster stays closed until the
+                                                # clan knows Moon Path Lore; Civilopedia > Tutorials > "Gu World: The
+                                                # Five Antiquities"
 # Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference
 # Five Regions map: the Central Continent holds ten Immortal Sect city-states; each shows its own emblem in diplomacy
 unit add gu-yue-clan "Rank Six Gu Immortal"   # end a turn in the Azure Water Wall: 10 (wall) + 5 (strain) damage;

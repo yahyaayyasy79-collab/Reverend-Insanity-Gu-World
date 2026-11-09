@@ -732,11 +732,12 @@
       "[This Unit] gains the [Self-Reliance] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-strength-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Strength Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Strength Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Strength path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Self-Reliance (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack takes 1 movement from the target."
+        "text": "Strength path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Strength Path Lore. Opens the killer move Self-Reliance (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack takes 1 movement from the target."
       }
     ],
     "prerequisites": [
@@ -919,11 +920,12 @@
       "[This Unit] gains the [Flying Bear Change] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-transformation-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Transformation Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Transformation Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Transformation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Flying Bear Change (AI clans use it by themselves when they attack). +25% strength; unlocks: +1 movement."
+        "text": "Transformation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Transformation Path Lore. Opens the killer move Flying Bear Change (AI clans use it by themselves when they attack). +25% strength; unlocks: +1 movement."
       }
     ],
     "prerequisites": [
@@ -1106,11 +1108,12 @@
       "[This Unit] gains the [Bone Spear] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-bone-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Bone Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Bone Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Bone path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bone Spear (AI clans use it by themselves when they attack). +25% strength; unlocks: whoever fights it takes 6 damage."
+        "text": "Bone path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Bone Path Lore. Opens the killer move Bone Spear (AI clans use it by themselves when they attack). +25% strength; unlocks: whoever fights it takes 6 damage."
       }
     ],
     "prerequisites": [
@@ -1292,11 +1295,12 @@
       "[This Unit] gains the [Blood Skull] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-blood-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blood Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Blood Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Blood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Blood Skull (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Bleeding for 2 turns."
+        "text": "Blood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Blood Path Lore. Opens the killer move Blood Skull (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Bleeding for 2 turns."
       }
     ],
     "prerequisites": [
@@ -1476,11 +1480,12 @@
       "[This Unit] gains the [Sword Escape] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-sword-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sword Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Sword Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Sword path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Sword Escape (AI clans use it by themselves when they attack). +25% strength; unlocks: strikes first from range at 25% strength."
+        "text": "Sword path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Sword Path Lore. Opens the killer move Sword Escape (AI clans use it by themselves when they attack). +25% strength; unlocks: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -1657,11 +1662,12 @@
       "[This Unit] gains the [Edge] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-blade-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Blade Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Blade Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Blade path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Edge (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when attacking."
+        "text": "Blade path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Blade Path Lore. Opens the killer move Edge (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -1836,11 +1842,12 @@
       "[This Unit] gains the [Iron Rain] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-metal-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Metal Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Metal Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Metal path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Iron Rain (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% strength when defending."
+        "text": "Metal path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Metal Path Lore. Opens the killer move Iron Rain (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% strength when defending."
       }
     ],
     "prerequisites": [
@@ -2015,11 +2022,12 @@
       "[This Unit] gains the [Weapon Array] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-weapon-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Weapon Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Weapon Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Weapon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Weapon Array (AI clans use it by themselves when they attack). +25% strength; unlocks: strikes first from range at 25% strength."
+        "text": "Weapon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Weapon Path Lore. Opens the killer move Weapon Array (AI clans use it by themselves when they attack). +25% strength; unlocks: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -2194,11 +2202,12 @@
       "[This Unit] gains the [Killing Intent] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-killing-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Killing Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Killing Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Killing path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Killing Intent (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 15 HP per kill."
+        "text": "Killing path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Killing Path Lore. Opens the killer move Killing Intent (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 15 HP per kill."
       }
     ],
     "prerequisites": [
@@ -2370,11 +2379,12 @@
       "[This Unit] gains the [Five-Finger Flame Chain] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-fire-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Fire Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Fire Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Fire path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Five-Finger Flame Chain (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack deals 6 extra damage."
+        "text": "Fire path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Fire Path Lore. Opens the killer move Five-Finger Flame Chain (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack deals 6 extra damage."
       }
     ],
     "prerequisites": [
@@ -2547,11 +2557,12 @@
       "[This Unit] gains the [Stream Surge] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-water-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Water Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Water Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Water path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Stream Surge (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP with each attack."
+        "text": "Water path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Water Path Lore. Opens the killer move Stream Surge (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -2723,11 +2734,12 @@
       "[This Unit] gains the [Rooted Vigor] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-wood-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wood Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Wood Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Wood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Rooted Vigor (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP with each attack."
+        "text": "Wood path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Wood Path Lore. Opens the killer move Rooted Vigor (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -2898,11 +2910,12 @@
       "[This Unit] gains the [Nine-Ren Mountain] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-earth-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Earth Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Earth Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Earth path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Nine-Ren Mountain (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
+        "text": "Earth path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Earth Path Lore. Opens the killer move Nine-Ren Mountain (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -3072,11 +3085,12 @@
       "[This Unit] gains the [Gale Step] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-wind-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wind Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Wind Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Wind path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Gale Step (AI clans use it by themselves when they attack). +25% strength; unlocks: can move after attacking."
+        "text": "Wind path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Wind Path Lore. Opens the killer move Gale Step (AI clans use it by themselves when they attack). +25% strength; unlocks: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -3246,11 +3260,12 @@
       "[This Unit] gains the [Cloud Stride] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-cloud-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Cloud Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Cloud Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Cloud path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Cloud Stride (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% strength when defending."
+        "text": "Cloud path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Cloud Path Lore. Opens the killer move Cloud Stride (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% strength when defending."
       }
     ],
     "prerequisites": [
@@ -3420,11 +3435,12 @@
       "[This Unit] gains the [Frost Bind] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-ice-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Ice Snow Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Ice Snow Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Ice Snow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Frost Bind (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
+        "text": "Ice Snow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Ice Snow Path Lore. Opens the killer move Frost Bind (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -3589,11 +3605,12 @@
       "[This Unit] gains the [Lightning Wings] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-lightning-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Lightning Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Lightning Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Lightning path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Lightning Wings (AI clans use it by themselves when they attack). +25% strength; unlocks: +1 movement."
+        "text": "Lightning path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Lightning Path Lore. Opens the killer move Lightning Wings (AI clans use it by themselves when they attack). +25% strength; unlocks: +1 movement."
       }
     ],
     "prerequisites": [
@@ -3761,11 +3778,12 @@
       "[This Unit] gains the [Bee Net Sting] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-poison-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Poison Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Poison Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Poison path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bee Net Sting (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Guard Broken for 2 turns."
+        "text": "Poison path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Poison Path Lore. Opens the killer move Bee Net Sting (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Guard Broken for 2 turns."
       }
     ],
     "prerequisites": [
@@ -3930,11 +3948,12 @@
       "[This Unit] gains the [Glare] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-light-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Light Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Light Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Light path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Glare (AI clans use it by themselves when they attack). +25% strength; unlocks: +2 sight."
+        "text": "Light path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Light Path Lore. Opens the killer move Glare (AI clans use it by themselves when they attack). +25% strength; unlocks: +2 sight."
       }
     ],
     "prerequisites": [
@@ -4098,11 +4117,12 @@
       "[This Unit] gains the [Shroud] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-dark-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dark Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Dark Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Dark path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shroud (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack takes 1 movement from the target."
+        "text": "Dark path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Dark Path Lore. Opens the killer move Shroud (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack takes 1 movement from the target."
       }
     ],
     "prerequisites": [
@@ -4269,11 +4289,12 @@
       "[This Unit] gains the [Shadow Step] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-shadow-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Shadow Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Shadow Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Shadow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Shadow Step (AI clans use it by themselves when they attack). +25% strength; unlocks: can move after attacking."
+        "text": "Shadow path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Shadow Path Lore. Opens the killer move Shadow Step (AI clans use it by themselves when they attack). +25% strength; unlocks: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -4437,11 +4458,12 @@
       "[This Unit] gains the [Star Snake Rope] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-star-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Star Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Star Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Star path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Star Snake Rope (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Weighted for 2 turns."
+        "text": "Star path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Star Path Lore. Opens the killer move Star Snake Rope (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Weighted for 2 turns."
       }
     ],
     "prerequisites": [
@@ -4607,11 +4629,12 @@
       "[This Unit] gains the [Crescent Moon] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-moon-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Moon Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Moon Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Moon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Crescent Moon (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when attacking."
+        "text": "Moon path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Moon Path Lore. Opens the killer move Crescent Moon (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when attacking."
       }
     ],
     "prerequisites": [
@@ -4771,11 +4794,12 @@
       "[This Unit] gains the [Qin Strike] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-sound-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Sound Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Sound Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Sound path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Qin Strike (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack takes 1 movement from the target."
+        "text": "Sound path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Sound Path Lore. Opens the killer move Qin Strike (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack takes 1 movement from the target."
       }
     ],
     "prerequisites": [
@@ -4933,11 +4957,12 @@
       "[This Unit] gains the [Mirage] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-illusion-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Illusion Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Illusion Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Illusion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mirage (AI clans use it by themselves when they attack). +25% strength; unlocks: +25% strength when defending."
+        "text": "Illusion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Illusion Path Lore. Opens the killer move Mirage (AI clans use it by themselves when they attack). +25% strength; unlocks: +25% strength when defending."
       }
     ],
     "prerequisites": [
@@ -5093,11 +5118,12 @@
       "[This Unit] gains the [Deduction] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-wisdom-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Wisdom Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Wisdom Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Wisdom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Deduction (AI clans use it by themselves when they attack). +25% strength; unlocks: +30% battle XP."
+        "text": "Wisdom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Wisdom Path Lore. Opens the killer move Deduction (AI clans use it by themselves when they attack). +25% strength; unlocks: +30% battle XP."
       }
     ],
     "prerequisites": [
@@ -5255,11 +5281,12 @@
       "[This Unit] gains the [Doting Mother] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-emotion-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Emotion Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Emotion Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Emotion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Doting Mother (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength below 75 HP."
+        "text": "Emotion path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Emotion Path Lore. Opens the killer move Doting Mother (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength below 75 HP."
       }
     ],
     "prerequisites": [
@@ -5415,11 +5442,12 @@
       "[This Unit] gains the [Charming Glance] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-enchantment-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enchantment Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Enchantment Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Enchantment path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Charming Glance (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Shaken for 2 turns."
+        "text": "Enchantment path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Enchantment Path Lore. Opens the killer move Charming Glance (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Shaken for 2 turns."
       }
     ],
     "prerequisites": [
@@ -5572,11 +5600,12 @@
       "[This Unit] gains the [Guts] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-soul-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Soul Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Soul Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Soul path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Guts (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP per kill."
+        "text": "Soul path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Soul Path Lore. Opens the killer move Guts (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP per kill."
       }
     ],
     "prerequisites": [
@@ -5730,11 +5759,12 @@
       "[This Unit] gains the [Waking Dream] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-dream-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Dream Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Dream Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Dream path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Waking Dream (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Soul-Torn for 2 turns."
+        "text": "Dream path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Dream Path Lore. Opens the killer move Waking Dream (AI clans use it by themselves when they attack). +25% strength; unlocks: each attack inflicts Soul-Torn for 2 turns."
       }
     ],
     "prerequisites": [
@@ -5887,11 +5917,12 @@
       "[This Unit] gains the [Wolf Enslavement] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-enslavement-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Enslavement Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Enslavement Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Enslavement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Wolf Enslavement (AI clans use it by themselves when they attack). +25% strength; unlocks: domain: own beasts within a 2-tile radius fight 15% harder."
+        "text": "Enslavement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Enslavement Path Lore. Opens the killer move Wolf Enslavement (AI clans use it by themselves when they attack). +25% strength; unlocks: domain: own beasts within a 2-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -6042,11 +6073,12 @@
       "[This Unit] gains the [Borrowed Moment] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-time-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Time Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Time Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Time path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Borrowed Moment (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP with each attack."
+        "text": "Time path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Time Path Lore. Opens the killer move Borrowed Moment (AI clans use it by themselves when they attack). +25% strength; unlocks: heals 10 HP with each attack."
       }
     ],
     "prerequisites": [
@@ -6195,11 +6227,12 @@
       "[This Unit] gains the [Folded Step] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-space-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Space Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Space Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Space path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Folded Step (AI clans use it by themselves when they attack). +25% strength; unlocks: can move after attacking."
+        "text": "Space path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Space Path Lore. Opens the killer move Folded Step (AI clans use it by themselves when they attack). +25% strength; unlocks: can move after attacking."
       }
     ],
     "prerequisites": [
@@ -6348,11 +6381,12 @@
       "[This Unit] gains the [Bent Law] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-rule-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Rule Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Rule Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Rule path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Bent Law (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% strength when defending."
+        "text": "Rule path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Rule Path Lore. Opens the killer move Bent Law (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% strength when defending."
       }
     ],
     "prerequisites": [
@@ -6504,11 +6538,12 @@
       "[This Unit] gains the [Hollow Form] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-phantom-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Phantom Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Phantom Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Phantom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hollow Form (AI clans use it by themselves when they attack). +25% strength; unlocks: slips away from melee."
+        "text": "Phantom path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Phantom Path Lore. Opens the killer move Hollow Form (AI clans use it by themselves when they attack). +25% strength; unlocks: slips away from melee."
       }
     ],
     "prerequisites": [
@@ -6655,11 +6690,12 @@
       "[This Unit] gains the [Severing Essence] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-restriction-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Restriction Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Restriction Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Restriction path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Severing Essence (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
+        "text": "Restriction path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Restriction Path Lore. Opens the killer move Severing Essence (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -6805,11 +6841,12 @@
       "[This Unit] gains the [Fortune Rivalling Heaven] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-luck-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Luck Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Luck Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Luck path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Fortune Rivalling Heaven (AI clans use it by themselves when they attack). +25% strength; unlocks: earns stones worth 20% of the damage it deals."
+        "text": "Luck path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Luck Path Lore. Opens the killer move Fortune Rivalling Heaven (AI clans use it by themselves when they attack). +25% strength; unlocks: earns stones worth 20% of the damage it deals."
       }
     ],
     "prerequisites": [
@@ -6954,11 +6991,12 @@
       "[This Unit] gains the [Heaven's Rebuke] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-heaven-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Heaven Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Heaven Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Heaven path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Heaven's Rebuke (AI clans use it by themselves when they attack). +25% strength; unlocks: +2 sight."
+        "text": "Heaven path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Heaven Path Lore. Opens the killer move Heaven's Rebuke (AI clans use it by themselves when they attack). +25% strength; unlocks: +2 sight."
       }
     ],
     "prerequisites": [
@@ -7104,11 +7142,12 @@
       "[This Unit] gains the [Exploding Qi Roar] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-qi-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Qi Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Qi Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Qi path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Exploding Qi Roar (AI clans use it by themselves when they attack). +25% strength; unlocks: strikes first from range at 25% strength."
+        "text": "Qi path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Qi Path Lore. Opens the killer move Exploding Qi Roar (AI clans use it by themselves when they attack). +25% strength; unlocks: strikes first from range at 25% strength."
       }
     ],
     "prerequisites": [
@@ -7253,11 +7292,12 @@
       "[This Unit] gains the [Ink Transformation] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-refinement-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Refinement Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Refinement Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Refinement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Ink Transformation (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% battle XP."
+        "text": "Refinement path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Refinement Path Lore. Opens the killer move Ink Transformation (AI clans use it by themselves when they attack). +25% strength; unlocks: +20% battle XP."
       }
     ],
     "prerequisites": [
@@ -7401,11 +7441,12 @@
       "[This Unit] gains the [Linked Formation] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-formation-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Formation Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Formation Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Formation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Linked Formation (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
+        "text": "Formation path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Formation Path Lore. Opens the killer move Linked Formation (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -7552,11 +7593,12 @@
       "[This Unit] gains the [Eat Bitterness] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-food-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Food Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Food Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Food path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Eat Bitterness (AI clans use it by themselves when they attack). +25% strength; unlocks: +10 HP when healing."
+        "text": "Food path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Food Path Lore. Opens the killer move Eat Bitterness (AI clans use it by themselves when they attack). +25% strength; unlocks: +10 HP when healing."
       }
     ],
     "prerequisites": [
@@ -7699,11 +7741,12 @@
       "[This Unit] gains the [Recovery Pill] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-pill-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Pill Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Pill Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Pill path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Recovery Pill (AI clans use it by themselves when they attack). +25% strength; unlocks: +15 HP when healing."
+        "text": "Pill path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Pill Path Lore. Opens the killer move Recovery Pill (AI clans use it by themselves when they attack). +25% strength; unlocks: +15 HP when healing."
       }
     ],
     "prerequisites": [
@@ -7843,11 +7886,12 @@
       "[This Unit] gains the [Mountain Pledge] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-information-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Information Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Information Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Information path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Mountain Pledge (AI clans use it by themselves when they attack). +25% strength; unlocks: +2 sight."
+        "text": "Information path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Information Path Lore. Opens the killer move Mountain Pledge (AI clans use it by themselves when they attack). +25% strength; unlocks: +2 sight."
       }
     ],
     "prerequisites": [
@@ -7989,11 +8033,12 @@
       "[This Unit] gains the [Hopes of the Crowd] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-human-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Human Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Human Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Human path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Hopes of the Crowd (AI clans use it by themselves when they attack). +25% strength; unlocks: domain: own soldiers within a 1-tile radius fight 15% harder."
+        "text": "Human path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Human Path Lore. Opens the killer move Hopes of the Crowd (AI clans use it by themselves when they attack). +25% strength; unlocks: domain: own soldiers within a 1-tile radius fight 15% harder."
       }
     ],
     "prerequisites": [
@@ -8131,11 +8176,12 @@
       "[This Unit] gains the [Living Ink] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-painting-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Painting Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Painting Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Painting path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Living Ink (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
+        "text": "Painting path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Painting Path Lore. Opens the killer move Living Ink (AI clans use it by themselves when they attack). +25% strength; unlocks: +15% strength when defending."
       }
     ],
     "prerequisites": [
@@ -8275,11 +8321,12 @@
       "[This Unit] gains the [Light Fingers] status for [1] turn(s) <upon entering combat> <when attacking> <for [AI player] Civilizations> <when above [114] [Gold]> <hidden from users>",
       "Play [path-theft-2] sound <upon damaging a [Military] unit> <when attacking> <for units without [Theft Great Grandmaster]>",
       "Only available <for [non-[Rank One-Two era]] units>",
+      "Only available <after discovering [Theft Path Lore]>",
       "[+400]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Theft path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Opens the killer move Light Fingers (AI clans use it by themselves when they attack). +25% strength; unlocks: gains 1 movement with each attack."
+        "text": "Theft path, Grandmaster attainment (宗师): deep enough to bend other paths' methods to its own Gu. Needs the clan's Theft Path Lore. Opens the killer move Light Fingers (AI clans use it by themselves when they attack). +25% strength; unlocks: gains 1 movement with each attack."
       }
     ],
     "prerequisites": [

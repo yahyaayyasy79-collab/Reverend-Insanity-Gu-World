@@ -498,7 +498,11 @@ dump("ModOptions.json", {"isBaseRuleset": True,
                          # R5: the engine adds (share of techs known x 5.5)^2.8 x this to every city's strength [src
                          # CityCombatant.getCityStrength]; with a 15-tech tree the default 1.0 gave +118 by turn ~120 and
                          # no city was ever taken. 0.1 caps it at +12 (autoplay, docs/AUTOPLAY.md round 5).
+                         # Layer 8: 47 path lore techs join the 27 (74 in all) and a clan studies only the paths it
+                         # walks (about 3 of them), so the share's factor goes from 5.5 to 13 (5.5 x 74 / 31): a
+                         # clan with every main tech and three lores keeps its +12; one with ten lores gets about +19
                          "constants": {"maxXPfromBarbarians": 90, "cityStrengthFromTechsFullMultiplier": 0.1,
+                                       "cityStrengthFromTechsMultiplier": 13.0,
                                        # MOD_SPEC_2 #13: random maps place only 1-5 natural wonders by default; the
                                        # twelve secret realms want more (Small about 5, Huge about 12)
                                        "naturalWonderCountMultiplier": 0.3, "naturalWonderCountAddedConstant": 1.0}})
@@ -639,9 +643,10 @@ def tech(t):
 
 
 TECHS = table("techs.csv")
+LORE_TECHS = gen_paths.path_techs()   # Layer 8: one lore tech per path (tools/gen_paths.py)
 dump("Techs.json", [{"columnNumber": int(c["column"]), "era": c["era"], "techCost": int(c["techCost"]),
                      "buildingCost": int(c["buildingCost"]), "wonderCost": int(c["wonderCost"]),
-                     "techs": [tech(t) for t in TECHS if t["column"] == c["column"]]}
+                     "techs": [tech(t) for t in TECHS if t["column"] == c["column"]] + LORE_TECHS.get(int(c["column"]), [])}
                     for c in table("tech_columns.csv")])
 
 # ---------------- Unit types ----------------

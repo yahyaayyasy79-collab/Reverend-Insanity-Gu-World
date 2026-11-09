@@ -247,6 +247,8 @@ def tier_uniques(p: dict, t: int) -> list[str]:
              + (f" <for units without [{tier_name(p, t + 1)}]>" if t + 1 < MAX_TIER else ""))
     if TIER_GATE[t]:
         u.append(TIER_GATE[t])
+    if t == 1:   # Layer 8: deep attainment needs the clan's lore of the path
+        u.append(f"Only available <after discovering [{lore_name(p)}]>")
     u.append(TIER_WEIGHT)
     if t == 0:
         if not p["parent"]:  # one path per AI unit; a sub-path stays open to its parent's holders
@@ -293,9 +295,11 @@ def _pedia_lore(p: dict, t: int) -> tuple[str, str]:
                 f"dengan esensi tingkatnya sendiri (5 anggur hijau di tingkat enam, 4 kurma merah di tujuh, 3 leci putih di "
                 f"delapan, 2 aprikot kuning untuk Yang Mulia; klan AI memakainya sendiri saat menyerang).")
     return (f"{p['name']} path, Grandmaster attainment ({TIERS_ZH[1]}): deep enough to bend other paths' methods to "
-            f"its own Gu. Opens the killer move {p['mortal']} (AI clans use it by themselves when they attack).",
+            f"its own Gu. Needs the clan's {lore_name(p)}. Opens the killer move {p['mortal']} (AI clans use it by "
+            f"themselves when they attack).",
             f"Jalur {p['name_id']}, pencapaian {TIERS_ID[1]} ({TIERS_ZH[1]}): cukup dalam untuk meminjam cara jalur lain "
-            f"dengan Gu sendiri. Membuka jurus pamungkas {p['mortal_id']} (klan AI memakainya sendiri saat menyerang).")
+            f"dengan Gu sendiri. Butuh {lore_name_id(p)} milik klan. Membuka jurus pamungkas {p['mortal_id']} (klan AI "
+            f"memakainya sendiri saat menyerang).")
 
 
 def immortal_move_pedia(p: dict) -> tuple[str, str]:
@@ -489,6 +493,60 @@ def age_text(key: str) -> tuple[str, str]:
     return f" It arose in {en} ({zh}).", f" Jalur ini lahir pada {idn} ({zh})."
 
 
+
+# ---------------- Layer 8 (the user, 2026-11-08: "kalo dibuat 1 tech per jalur menarik sih"): one tech per path ----------
+# A path's lore (X道传承) is the clan's inheritance of that path. Only a clan with a living Master of the path can study
+# it [src TechManager.isUnresearchable: a tech's "Only available" conditionals are checked against the civ], so the AI,
+# which researches the cheapest researchable techs first [src NextTurnAutomation.chooseTechToResearch], spends science
+# only on the paths its units walk (autoplay: 1-3 paths for a signature clan, up to 14 for the Huang Jin by T250). The
+# lore lifts its Masters' XP, and no Master reaches Grandmaster without it. The techs sit in the Rank One-Two era's
+# columns (a tech of a later column would move the clan into a later era early), the body, beast and war families
+# first, the subtle ones after Gu Feeding.
+LORE_COST = 40
+LORE_XP = 15
+LORE_ROW0 = 5
+LORE_COLUMN = {"A": 1, "B": 1, "C": 2, "D": 2, "E": 3, "F": 3, "G": 3}
+LORE_PREREQ = {1: [], 2: ["Aperture Awakening"], 3: ["Gu Feeding"]}
+
+
+def lore_name(p: dict) -> str:
+    return f"{p['name']} Path Lore"
+
+
+def lore_name_id(p: dict) -> str:
+    return f"Ilmu Jalur {p['name_id']}"
+
+
+def lore_uniques(p: dict) -> list[str]:
+    m = tier_name(p, 0)
+    return [f"Only available <when number of [[{m}] Units] is more than [0]>",
+            f"[+{LORE_XP}]% XP gained from combat <for [{m}] units>"]
+
+
+def lore_pedia(p: dict) -> tuple[str, str]:
+    age_en, age_id = age_text(p["key"])
+    return (f"The clan's inheritance of the {p['name'].lower()} path ({p['chinese']}传承). Only a clan with a living "
+            f"{tier_name(p, 0)} can study it. Its Masters gain {LORE_XP}% more XP, and none of them reaches Grandmaster "
+            f"attainment without it.{age_en}",
+            f"Warisan jalur {p['name_id']} milik klan ({p['chinese']}传承). Hanya klan yang punya {tier_name_id(p, 0)} yang "
+            f"masih hidup dapat mempelajarinya. Para Ahlinya mendapat {LORE_XP}% XP lebih banyak, dan tak satu pun mencapai "
+            f"pencapaian {TIERS_ID[1]} tanpanya.{age_id}")
+
+
+def path_techs() -> dict[int, list[dict]]:
+    """{column: [tech]} for tools/gen_ruleset.py: one lore tech per path."""
+    out: dict[int, list[dict]] = {}
+    for p in PATHS:
+        col = LORE_COLUMN[p["family"]]
+        d = {"name": lore_name(p), "row": LORE_ROW0 + len(out.get(col, [])), "cost": LORE_COST}
+        if LORE_PREREQ[col]:
+            d["prerequisites"] = list(LORE_PREREQ[col])
+        d["uniques"] = lore_uniques(p)
+        d["civilopediaText"] = [{"text": lore_pedia(p)[0]}]
+        out.setdefault(col, []).append(d)
+    return out
+
+
 def branch_pedia(p: dict) -> tuple[str, str]:
     fam, fam_id = FAMILY_TEXT[p["family"]]
     age_en, age_id = age_text(p["key"])
@@ -523,7 +581,7 @@ def translations() -> list[tuple[str, str]]:
     for p in PATHS:
         for t in range(MAX_TIER):
             out += [(tier_name(p, t), tier_name_id(p, t)), pedia(p, t)]
-        out += [(p["mortal"], p["mortal_id"]), move_pedia(p)]
+        out += [(p["mortal"], p["mortal_id"]), move_pedia(p), (lore_name(p), lore_name_id(p)), lore_pedia(p)]
         if MAX_TIER > 2:
             out += [(p["immortal"], p["immortal_id"]), immortal_move_pedia(p)]
     for s in STATUSES:
@@ -824,11 +882,56 @@ def _lines_cultivation() -> list:
     ]
 
 
+
+def _lines_antiquities() -> list:
+    """Layer 8 (the user: "kalo masalah era mungkin dimasukkan ke lorenya saja"): the five antiquities as lore. Checked in
+    the raw text: the Venerables in order (R V4c263, V4c89, V5c170, V6c119), the nine heavens (V2c190), the prophecy of
+    Great Dream (V3c56) and the Court's hope in Fairy Zi Wei (V5c419); the paths' ages are Layer 5's (V5c302)."""
+    def paths_of(age):
+        en = [KEY[k]["name"].lower() for k, (a, _) in PATH_AGE.items() if a == age]
+        idn = [KEY[k]["name_id"].lower() for k, (a, _) in PATH_AGE.items() if a == age]
+        return ", ".join(en), ", ".join(idn)
+    L = [("The five antiquities", "Lima zaman purba", {"header": 2}),
+         ("The game's eras are the ranks a clan reaches. The world's history is older: five antiquities, and in each the "
+          "Venerables who shaped it. Each path branch names the age its path came from.",
+          "Era dalam permainan adalah rank yang dicapai klan. Sejarah dunia lebih tua: lima zaman purba, dan di tiap zaman "
+          "para Yang Mulia yang membentuknya. Setiap cabang jalur menyebut zaman asal jalurnya.", {})]
+    ages = [("Immemorial", "the nine heavens still stood in the sky, and humans had yet to rise",
+             "sembilan langit masih berdiri di angkasa, dan manusia belum bangkit"),
+            ("Remote", "Primordial Origin and Star Constellation, the first Venerables, led humans against the variant "
+             "humans' rule and founded human governments",
+             "Asal Primordial dan Rasi Bintang, Yang Mulia pertama, memimpin manusia melawan kekuasaan manusia varian dan "
+             "mendirikan pemerintahan manusia"),
+            ("Olden", "three Demon Venerables, Limitless, Reckless Savage and Red Lotus, wiped out the beastmen and made "
+             "humans the masters of the world",
+             "tiga Yang Mulia Iblis, Tanpa Batas, Si Buas Nekat dan Teratai Merah, memusnahkan manusia binatang dan menjadikan "
+             "manusia penguasa dunia"),
+            ("Medieval", "about three hundred thousand years ago Genesis Lotus, Thieving Heaven and Giant Sun rose; the "
+             "Gu Immortal Shui Ni founded the water path and Spirit Affinity House",
+             "sekitar tiga ratus ribu tahun lalu Teratai Asal, Pencuri Langit dan Matahari Raksasa bangkit; Gu Abadi Shui "
+             "Ni mendirikan jalur air dan Rumah Afinitas Roh"),
+            ("Recent", "about a hundred thousand years ago Spectral Soul and Paradise Earth",
+             "sekitar seratus ribu tahun lalu Jiwa Hantu dan Bumi Surga")]
+    zh = {"Immemorial": "太古", "Remote": "远古", "Olden": "上古", "Medieval": "中古", "Recent": "近古"}
+    for age, en, idn in ages:
+        name, _, name_id = AGES.get(age, ("Recent Antiquity", "", "Zaman Akhir"))
+        pe, pi = paths_of(age)
+        tail = (f" Paths from this age: {pe}." if pe else "", f" Jalur dari zaman ini: {pi}." if pi else "")
+        L.append((f"{name} ({zh[age]}): {en}.{tail[0]}", f"{name_id} ({zh[age]}): {idn}.{tail[1]}", {}))
+    L.append(("A prophecy foretold three Venerables after the Medieval age: Spectral Soul, Paradise Earth and a woman, "
+              "Great Dream. The Heavenly Court sees her in Fairy Zi Wei. In the game one Venerable may stand at a time "
+              "(Venerable Ascension).",
+              "Sebuah ramalan menyebut tiga Yang Mulia setelah Zaman Pertengahan: Jiwa Hantu, Bumi Surga dan seorang "
+              "perempuan, Mimpi Agung. Istana Langit melihatnya pada Peri Zi Wei. Dalam permainan hanya satu Yang Mulia "
+              "boleh berdiri pada satu waktu (Kenaikan Yang Mulia).", {}))
+    return L
+
 def _tutorial_specs() -> list[tuple[str, str, list]]:
     out = [("Gu World: Power Scaling", "Dunia Gu: Skala Kekuatan", _lines_power()),
            ("Gu World: Small Stages", "Dunia Gu: Tahap Kecil", _lines_cultivation()),
            ("Gu World: Immortal Lifespan", "Dunia Gu: Umur Abadi", _lines_lifespan()),
-           ("Gu World: Gu Hunger and Food", "Dunia Gu: Lapar dan Makanan Gu", _lines_hunger())]
+           ("Gu World: Gu Hunger and Food", "Dunia Gu: Lapar dan Makanan Gu", _lines_hunger()),
+           ("Gu World: The Five Antiquities", "Dunia Gu: Lima Zaman Purba", _lines_antiquities())]
     out += [(f"Gu World: {f['name'].replace('&', 'and')} Paths", f"Dunia Gu: Jalur {f['name_id'].replace('&', 'dan')}",
              _lines_family(k)) for k, f in FAMILIES.items()]
     out.append(("Gu World: Statuses", "Dunia Gu: Status", _lines_statuses()))
@@ -921,7 +1024,14 @@ def doc_tables() -> dict[str, str]:
         st = hunger_statuses(name, food, int(rank))
         hu.append(f"| {name} | {eats} {food} | {rank} | " + ", ".join(f"{p}%" for p in stages(int(rank))) + " | "
                   + " ".join(code(u) for x in st for u in x["uniques"]) + " |")
+    lore = ["| Path | Tech | Column | Prerequisites | Cost | Uniques |", "|---|---|---|---|---|---|"]
+    for col, techs in sorted(path_techs().items()):
+        for d in techs:
+            key = next(p for p in PATHS if lore_name(p) == d["name"])
+            lore.append(f"| {key['name']} | {d['name']} | {col} | {', '.join(d.get('prerequisites', [])) or '—'} | "
+                        f"{d['cost']} | " + " ".join(code(u) for u in d["uniques"]) + " |")
     return {"paths": "\n".join(paths), "families": "\n".join(fams), "moves": "\n".join(moves), "uniques": "\n".join(uniq),
+            "lore": "\n".join(lore),
             "gu": "\n".join(gu), "branches": "\n".join(br), "powers": "\n".join(pw), "hunger": "\n".join(hu),
             "catalog": "\n".join(GC.doc_table() + GC.canon_bearer_table()), "combos": "\n".join(GCO.doc_table())}
 

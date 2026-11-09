@@ -534,11 +534,24 @@ def hall_icon(key: str) -> G:
     return g
 
 
+def lore_icon(key: str) -> G:
+    """Layer 8: a path's lore (tech): an open scroll between its two rollers, the path's symbol on the paper."""
+    g = G()
+    g.poly([(16, 22), (84, 22), (84, 78), (16, 78)])
+    for x in (12, 88):
+        g.ell(x - 7, 14, x + 7, 86)
+        g.poly([(x - 3, 6), (x + 3, 6), (x + 3, 94), (x - 3, 94)])
+    inner = G(); place(inner, symbol(key), 50, 50, 0.56)
+    g.paste(inner, 0)
+    return g
+
+
 def policy_icons() -> list[tuple[str, str, object, str]]:
     import gen_paths
     out = []
     for p in gen_paths.PATHS:
         k = p["key"]
+        out.append(("TechIcons", gen_paths.lore_name(p), (lambda k=k: lore_icon(k)), "white"))
         out.append(("BuildingIcons", gen_paths.hall_name(p), (lambda k=k: hall_icon(k)), "black"))
         if k in gen_paths.SLICE1_BRANCHES:
             continue
