@@ -679,6 +679,41 @@ def overseeing_tower(s: Sprite):
     s.put(s.ellipse(44, y - 8, 1.8, 1.8), (255, 246, 200))
 
 
+
+BEAN = ((40, 70, 20), (70, 120, 36), (110, 170, 60), (160, 210, 96), (214, 240, 160))
+LOTUS = ((110, 40, 70), (180, 80, 120), (226, 130, 160), (244, 180, 200), (255, 226, 236))
+
+
+def dou_shen_palace(s: Sprite):
+    """Dou Shen Palace (豆神宫): the rank-eight Gu House of Genesis Lotus, the wood path's Venerable, which the Fang clan
+    won in the Western Desert: jade halls risen from a great bean pod on a lotus, vines climbing its sides, a sprout on
+    its roof."""
+    c = 42.0
+    s.shadow(c, FEET + 0.6, 17, 2.8)
+    for dx in (-17, -9, 0, 9, 17):                                                    # the lotus under it
+        s.round(s.ellipse(c + dx, FEET - 3, 4.6, 3.2), LOTUS)
+    s.body(s.poly([(c - 21, FEET - 15), (c + 21, FEET - 15), (c + 16, FEET - 6), (c - 16, FEET - 6)]), BEAN)  # the pod
+    for dx in (-13, -4.4, 4.4, 13):                                                   # beans swelling in it
+        s.round(s.ellipse(c + dx, FEET - 10.5, 3.4, 2.8), BEAN)
+    s.body(s.rect(c - 12, FEET - 25, c + 12, FEET - 15), JADE)                        # the main hall
+    for dx in (-8, -1, 6):
+        s.flat(s.rect(c + dx, FEET - 22, c + dx + 2, FEET - 15), BLACK, 2)
+    s.round(s.poly([(c - 17, FEET - 24), (c - 12, FEET - 30), (c + 12, FEET - 30), (c + 17, FEET - 24)]), BEAN)
+    s.body(s.rect(c - 7, FEET - 36, c + 7, FEET - 30), JADE)                          # the upper hall
+    s.round(s.poly([(c - 11, FEET - 35), (c - 7, FEET - 41), (c + 7, FEET - 41), (c + 11, FEET - 35)]), BEAN)
+    s.body(s.line([(c, FEET - 41), (c, FEET - 46), (c + 2.4, FEET - 49)], 1.2), BEAN)  # the sprout
+    s.round(s.ellipse(c + 4.6, FEET - 49.6, 2.6, 1.5), BEAN)
+    s.round(s.ellipse(c - 2.6, FEET - 47.4, 2.4, 1.4), BEAN)
+    for side in (-1, 1):                                                              # vines up its sides
+        x = c + side * 19
+        s.body(s.line([(x, FEET - 7), (x - side * 1.5, FEET - 14), (x + side * 1, FEET - 21), (x - side * 2, FEET - 28)], 1.2),
+               LEAF)
+        s.round(s.ellipse(x + side * 1.6, FEET - 18, 1.6, 1.1), LEAF)
+    s.outline()
+    s.glow(s.ellipse(c, FEET - 20, 5, 3.6), (180, 255, 160), 0.4)
+    s.light(c + 4.6, FEET - 50, (230, 255, 200))
+
+
 # ---------------------------------------------------------------- attack effects (played over the unit hit)
 FX_SIZE = (128, 110)   # the frames' canvas, as before: drawn at 64 x 55 and doubled, so its pixels match the sprites'
 
@@ -846,7 +881,8 @@ def miasma_claw():
 
 
 def house_fx(kind):
-    """The Gu Houses' killer moves: luck threads drawing tight, time rippling, a dream dragon coiling, Fate's beam."""
+    """The Gu Houses' killer moves: luck threads drawing tight, time rippling, a dream dragon coiling, vines lashing in,
+    Fate's beam."""
     def draw(s, i, n):
         t = (i + 1) / n
         if kind == "luck":
@@ -868,6 +904,16 @@ def house_fx(kind):
             s.glow(s.line(pts, 3.2), (180, 140, 255), 0.6)
             s.glow(s.line(pts, 1.2), (230, 210, 255), 1.0)
             s.glow(s.ellipse(*pts[-1], 2.4, 2), (150, 236, 200), 1.0)
+        elif kind == "wood":
+            for k in range(5):
+                a = 2 * math.pi * k / 5 + 0.4
+                r0, r1 = 26 * (1 - t) + 6, 26 * (1 - t) + 18
+                pts = [(32 + (r0 + (r1 - r0) * u) * math.cos(a + 0.5 * u), 28 + 0.8 * (r0 + (r1 - r0) * u) * math.sin(a + 0.5 * u))
+                       for u in np.linspace(0, 1, 6)]
+                s.glow(s.line(pts, 2.2), (90, 170, 60), 0.6)
+                s.glow(s.line(pts, 1), (180, 240, 130), 1.0)
+            if i >= n - 2:
+                _burst(s, 32, 28, 12, (170, 240, 120), 8)
         else:   # fate: a golden beam from above
             w = 2 + 3 * min(t, 0.7)
             s.glow(s.rect(32 - w, 0, 32 + w, 30), (255, 220, 120), 0.5)
@@ -897,6 +943,7 @@ SPRITES = {   # name: (draw, design rows above the hex for tall subjects)
     "Immemorial Desolate Beast": (immemorial_beast, 12),
     "Calamity Luck Altar": (luck_altar, 12), "Myriad Year Flying Warship": (flying_warship, 12),
     "Dragon Palace": (dragon_palace, 10), "Heaven Overseeing Tower": (overseeing_tower, 16),
+    "Dou Shen Palace": (dou_shen_palace, 12),
 }
 
 
@@ -915,7 +962,7 @@ ATTACKS = {   # name: (draw, frames); every unit has its own, so the unit-type f
     "Frenzy Lightning Wolf": lightning(),
     "Desolate Beast": claws(6), "Ancient Desolate Beast": claws(7), "Immemorial Desolate Beast": claws(8),
     "Calamity Luck Altar": house_fx("luck"), "Myriad Year Flying Warship": house_fx("time"),
-    "Dragon Palace": house_fx("dream"), "Heaven Overseeing Tower": house_fx("fate"),
+    "Dragon Palace": house_fx("dream"), "Heaven Overseeing Tower": house_fx("fate"), "Dou Shen Palace": house_fx("wood"),
 }
 
 
@@ -944,7 +991,7 @@ def _portrait_colours(name):
         return CLAN["Heavenly Court"]
     if name == "Immortal Zombie":
         return CLAN["Zombie Alliance"]
-    if name in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace"):
+    if name in ("Calamity Luck Altar", "Myriad Year Flying Warship", "Dragon Palace", "Dou Shen Palace"):
         return CLAN["Fang Clan"]
     return PATH_COLOUR["Moon" if "Moon" in name else "Strength" if "Strength" in name else None]
 
@@ -965,7 +1012,7 @@ def _ground(cv: Canvas, name: str):
     elif "Demonic" in name:
         cv.patch(cv.ellipse(32, 30, 22, 12), ((44, 10, 14), (76, 18, 22), (104, 30, 30), (134, 50, 44), (170, 80, 64)),
                  "blood ground", specks=0.1)
-    elif "Immortal" in name or name == "Venerable" or name in ("Dragon Palace", "Myriad Year Flying Warship"):
+    elif "Immortal" in name or name == "Venerable" or name in ("Dragon Palace", "Myriad Year Flying Warship", "Dou Shen Palace"):
         for x, y, r in ((12, 22, 4.4), (52, 20, 4.4), (20, 40, 4), (46, 42, 4.2), (32, 10, 4)):
             cv.cloud(x, y, r)
     elif name in ("Calamity Luck Altar", "Heaven Overseeing Tower"):

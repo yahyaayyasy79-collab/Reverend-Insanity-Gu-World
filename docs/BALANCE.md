@@ -546,6 +546,21 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Venerable | `[This Unit] gains the [Chaos Countdown] status for [25] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Standard] game speed>` | 25 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains the [Chaos Countdown] status for [38] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Epic] game speed>` | 38 | tools/gen_ruleset.py `Units` |
 | Venerable | `[This Unit] gains the [Chaos Countdown] status for [75] turn(s) <upon turn start> <for units without [Chaos Countdown]> <on [Marathon] game speed>` | 75 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | movement | 2 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | strength | 150 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | cost | 650 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `Limited to [1] per Civilization` | 1 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>` | 30 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>` | 60 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `Costs [50] [White Lychee Immortal Essence]` | 50 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `Costs [60] [Immortal Materials]` | 60 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[+500]% maintenance costs` | +500 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `[+20]% Strength <when defending>` | +20 | tools/gen_ruleset.py `Units` |
+| Dou Shen Palace | `All adjacent units heal [15] HP when healing` | 15 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | movement | 2 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | strength | 140 | tools/gen_ruleset.py `Units` |
 | Calamity Luck Altar | cost | 650 | tools/gen_ruleset.py `Units` |
@@ -3910,6 +3925,17 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Black Heaven Temple | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Myriad Dragon Dock | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Snowmen | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Tie Clan | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Tie Clan | `[+25]% Strength <vs [Barbarian] units>` | +25 | tools/gen_ruleset.py `Nations` |
+| Tang Clan | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Shen Clan | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Shen Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Shen Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>` | 40, 1, 4 | tools/gen_ruleset.py `Nations` |
+| Shen Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>` | 60, 2, 4 | tools/gen_ruleset.py `Nations` |
+| Shen Clan | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>` | 120, 3, 4 | tools/gen_ruleset.py `Nations` |
+| Ma Tribe | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Liu Tribe | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
+| Dong Fang Tribe | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 
 ### CityStateTypes.json
 
@@ -4255,6 +4281,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-3999 numbers listed.
+4025 numbers listed.
 
 <!-- inventory:end -->

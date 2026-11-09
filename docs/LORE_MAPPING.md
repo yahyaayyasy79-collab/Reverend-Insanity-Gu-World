@@ -5202,3 +5202,36 @@ May capture killed [Beast] units
 [+1] Sight
 [-10]% Strength for enemy [Military] units in adjacent [All] tiles
 ```
+
+## Layer 7: more super forces and Dou Shen Palace (the user, 2026-11-08: "tambahkan saja takpapa")
+
+The reference names super forces the map lacked. Each joins as a city-state with the seat a region respects
+(`[+50]% Strength for cities`, the snowmen's lesson). Facts from the raw text (R), in our own words; a claim of the
+first draft failed the check and was dropped (the Liu tribe has no wisdom-path immortal, R V5c190).
+
+| Object | Chinese | Canon | Source | Status |
+|---|---|---|---|---|
+| Tie Clan (Battle Tribe), Tie Clan City, Southern Border | 铁家 / 铁家城 | A super clan thousands of years old; its Demon-Suppressing Tower holds countless demonic Gu Masters, a symbol of the righteous giants | R V1c182, V2c12 | CANON (+25% against the barbarians' lone and demonic Gu Masters ADAPTED) |
+| Tang Clan (Merchant Clan), Tang Clan Oasis, Western Desert | 唐家 | One of the desert's super forces, middling until it found Thieving Heaven's dream realm | R V4c126, V4c127 | CANON (city name INVENTED) |
+| Shen Clan (Merchant Clan), Shen Clan Isle, Eastern Sea | 沈家 | An Eastern Sea super force; its supreme elder is a rank-eight sound-path immortal; a wave-sound immortal material is its specialty | R V5c679, V5c874 | CANON (city name INVENTED) |
+| Ma Tribe (Battle Tribe), Ma Tribe Camp, Northern Plains | 马家 | A golden bloodline left by Giant Sun, grown by generations of work and uncommon luck, expanding to win the Imperial Court | R V3c36, V3c84 | CANON |
+| Liu Tribe (Battle Tribe), Liu Tribe Camp, Northern Plains | 刘家 | A super family and golden bloodline; its third son broke away to contest the Imperial Court | R V3c65, V5c94, V5c190 | CANON |
+| Dong Fang Tribe (Refiner Tribe), Jade Pool, Northern Plains | 东方家 / 碧潭福地 | A golden bloodline that held the Imperial Court many times; its patriarchs walk the wisdom path; Jade Pool Blessed Land is its seat | R V3c96, V3c109, V3c123, V4c8 | CANON |
+| Dou Shen Palace (Gu House, the Fang clan's own) | 豆神宫 | The rank-eight Gu House Genesis Lotus left in the Western Desert; the Fang clan schemed for generations to take it, and took it | R V5c486, V5c487, V5c509 | CANON (its effects ADAPTED: the wood path's growth as healing) |
+
+Exact uniques (the city-states' `[+50]% Strength for cities`, the Shen clan's `Start bias [Coast]` and Eastern Sea
+raids, and the Gu House lines are quoted in "Regions II", "Reference audit Layer 4" and the Gu House sections):
+
+**Tie Clan**:
+
+```
+[+25]% Strength <vs [Barbarian] units>
+```
+
+**Dou Shen Palace** (`uniqueTo` the Fang Clan; the other Gu Houses' cost, chasm, wall and maintenance lines, without
+their immortal Gu requirement):
+
+```
+[+20]% Strength <when defending>
+All adjacent units heal [15] HP when healing
+```

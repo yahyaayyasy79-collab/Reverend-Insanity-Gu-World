@@ -6,189 +6,189 @@ filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 TileSets/AbsoluteUnits/Units/Ancient Desolate Beast
   rotate: false
-  xy: 4, 22
+  xy: 1276, 648
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Ancient Desolate Beast
   rotate: false
-  xy: 4, 22
+  xy: 1276, 648
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ancient Desolate Beast-attack-1
   rotate: false
-  xy: 4, 566
+  xy: 156, 718
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ancient Desolate Beast-attack-2
   rotate: false
-  xy: 156, 718
+  xy: 308, 870
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ancient Desolate Beast-attack-3
   rotate: false
-  xy: 308, 870
+  xy: 460, 1022
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Ancient Desolate Beast-attack-4
   rotate: false
-  xy: 460, 1022
+  xy: 612, 1174
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Bold Lightning Wolf
   rotate: false
-  xy: 412, 14
+  xy: 1276, 584
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Bold Lightning Wolf
   rotate: false
-  xy: 412, 14
+  xy: 1276, 584
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-1
   rotate: false
-  xy: 612, 1174
+  xy: 764, 1326
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frenzy Lightning Wolf-attack-1
   rotate: false
-  xy: 612, 1174
+  xy: 764, 1326
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-1
   rotate: false
-  xy: 612, 1174
+  xy: 764, 1326
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-2
   rotate: false
-  xy: 764, 1326
+  xy: 916, 1478
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frenzy Lightning Wolf-attack-2
   rotate: false
-  xy: 764, 1326
+  xy: 916, 1478
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-2
   rotate: false
-  xy: 764, 1326
+  xy: 916, 1478
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-3
   rotate: false
-  xy: 916, 1478
+  xy: 1068, 1630
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frenzy Lightning Wolf-attack-3
   rotate: false
-  xy: 916, 1478
+  xy: 1068, 1630
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-3
   rotate: false
-  xy: 916, 1478
+  xy: 1068, 1630
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Bold Lightning Wolf-attack-4
   rotate: false
-  xy: 1068, 1630
+  xy: 1220, 1782
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Frenzy Lightning Wolf-attack-4
   rotate: false
-  xy: 1068, 1630
+  xy: 1220, 1782
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Lightning Wolf-attack-4
   rotate: false
-  xy: 1068, 1630
+  xy: 1220, 1782
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Calamity Luck Altar
   rotate: false
-  xy: 548, 36
+  xy: 1276, 508
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Calamity Luck Altar
   rotate: false
-  xy: 548, 36
+  xy: 1276, 508
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Calamity Luck Altar-2
   rotate: false
-  xy: 1324, 1352
+  xy: 972, 20
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Calamity Luck Altar-2
   rotate: false
-  xy: 1324, 1352
+  xy: 972, 20
   size: 64, 68
   orig: 64, 68
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Calamity Luck Altar-attack-1
   rotate: false
-  xy: 1220, 1782
+  xy: 1372, 1934
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Calamity Luck Altar-attack-2
   rotate: false
-  xy: 1372, 1934
+  xy: 4, 414
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Calamity Luck Altar-attack-3
   rotate: false
-  xy: 4, 448
+  xy: 156, 600
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
@@ -202,91 +202,91 @@ TileSets/AbsoluteUnits/Units/Calamity Luck Altar-attack-4
   index: -1
 TileSets/AbsoluteUnits/Units/Calamity Luck Altar-attack-5
   rotate: false
-  xy: 4, 330
+  xy: 4, 296
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Clan Settler
   rotate: false
-  xy: 1324, 1288
+  xy: 412, 14
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Clan Settler
   rotate: false
-  xy: 1324, 1288
+  xy: 412, 14
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Clan Settler-1
   rotate: false
-  xy: 1324, 1224
+  xy: 484, 14
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Clan Settler-1
   rotate: false
-  xy: 1324, 1224
+  xy: 484, 14
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Clan Settler-2
   rotate: false
-  xy: 1324, 1160
+  xy: 556, 48
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Clan Settler-2
   rotate: false
-  xy: 1324, 1160
+  xy: 556, 48
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Elder
   rotate: false
-  xy: 1308, 1096
+  xy: 1276, 444
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demonic Elder
   rotate: false
-  xy: 1308, 1096
+  xy: 1276, 444
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Elder-1
   rotate: false
-  xy: 1308, 1032
+  xy: 1260, 380
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demonic Elder-1
   rotate: false
-  xy: 1308, 1032
+  xy: 1260, 380
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Elder-2
   rotate: false
-  xy: 1308, 968
+  xy: 1260, 316
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demonic Elder-2
   rotate: false
-  xy: 1308, 968
+  xy: 1260, 316
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
@@ -307,14 +307,14 @@ TileSets/AbsoluteUnits/Units/Demonic Gu Master-attack-1
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Elder-attack-2
   rotate: false
-  xy: 4, 212
+  xy: 4, 178
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Gu Master-attack-2
   rotate: false
-  xy: 4, 212
+  xy: 4, 178
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
@@ -349,63 +349,63 @@ TileSets/AbsoluteUnits/Units/Demonic Gu Master-attack-4
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Gu Master
   rotate: false
-  xy: 956, 32
+  xy: 1260, 252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demonic Gu Master
   rotate: false
-  xy: 956, 32
+  xy: 1260, 252
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Gu Master-1
   rotate: false
-  xy: 1028, 32
+  xy: 1244, 184
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demonic Gu Master-1
   rotate: false
-  xy: 1028, 32
+  xy: 1244, 184
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Demonic Gu Master-2
   rotate: false
-  xy: 1308, 904
+  xy: 1244, 120
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Demonic Gu Master-2
   rotate: false
-  xy: 1308, 904
+  xy: 1244, 120
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Desolate Beast
   rotate: false
-  xy: 1292, 836
+  xy: 1244, 52
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Desolate Beast
   rotate: false
-  xy: 1292, 836
+  xy: 1244, 52
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Desolate Beast-attack-1
   rotate: false
-  xy: 4, 94
+  xy: 4, 60
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
@@ -419,2366 +419,2415 @@ TileSets/AbsoluteUnits/Units/Desolate Beast-attack-2
   index: -1
 TileSets/AbsoluteUnits/Units/Desolate Beast-attack-3
   rotate: false
-  xy: 156, 600
+  xy: 156, 482
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Desolate Beast-attack-4
   rotate: false
-  xy: 140, 482
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace
-  rotate: false
-  xy: 1292, 762
-  size: 64, 66
-  orig: 64, 66
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Dragon Palace
-  rotate: false
-  xy: 1292, 762
-  size: 64, 66
-  orig: 64, 66
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace-2
-  rotate: false
-  xy: 1292, 688
-  size: 64, 66
-  orig: 64, 66
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Dragon Palace-2
-  rotate: false
-  xy: 1292, 688
-  size: 64, 66
-  orig: 64, 66
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace-attack-1
-  rotate: false
   xy: 140, 364
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace-attack-2
+TileSets/AbsoluteUnits/Units/Dou Shen Palace
+  rotate: false
+  xy: 1340, 1588
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Dou Shen Palace
+  rotate: false
+  xy: 1340, 1588
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Dou Shen Palace-attack-1
   rotate: false
   xy: 140, 246
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace-attack-3
+TileSets/AbsoluteUnits/Units/Dou Shen Palace-attack-2
   rotate: false
   xy: 140, 128
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace-attack-4
-  rotate: false
-  xy: 308, 752
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Dragon Palace-attack-5
-  rotate: false
-  xy: 292, 634
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Frenzy Lightning Wolf
-  rotate: false
-  xy: 1276, 621
-  size: 64, 59
-  orig: 64, 59
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Frenzy Lightning Wolf
-  rotate: false
-  xy: 1276, 621
-  size: 64, 59
-  orig: 64, 59
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower
-  rotate: false
-  xy: 1276, 541
-  size: 64, 72
-  orig: 64, 72
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Heaven Overseeing Tower
-  rotate: false
-  xy: 1276, 541
-  size: 64, 72
-  orig: 64, 72
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-1
-  rotate: false
-  xy: 460, 904
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-2
-  rotate: false
-  xy: 444, 786
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-3
-  rotate: false
-  xy: 612, 1056
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-4
-  rotate: false
-  xy: 596, 938
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-5
-  rotate: false
-  xy: 764, 1208
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast
-  rotate: false
-  xy: 1276, 465
-  size: 64, 68
-  orig: 64, 68
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Immemorial Desolate Beast
-  rotate: false
-  xy: 1276, 465
-  size: 64, 68
-  orig: 64, 68
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-1
-  rotate: false
-  xy: 748, 1090
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-2
-  rotate: false
-  xy: 916, 1360
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-3
-  rotate: false
-  xy: 900, 1242
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-4
-  rotate: false
-  xy: 1068, 1512
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie
-  rotate: false
-  xy: 1260, 401
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Immortal Zombie
-  rotate: false
-  xy: 1260, 401
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-1
-  rotate: false
-  xy: 1260, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Immortal Zombie-1
-  rotate: false
-  xy: 1260, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-2
-  rotate: false
-  xy: 1260, 273
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Immortal Zombie-2
-  rotate: false
-  xy: 1260, 273
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-1
-  rotate: false
-  xy: 1052, 1394
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-2
-  rotate: false
-  xy: 1220, 1664
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-3
-  rotate: false
-  xy: 1204, 1546
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-4
-  rotate: false
-  xy: 1372, 1816
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-5
-  rotate: false
-  xy: 1508, 1816
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Lightning Wolf
-  rotate: false
-  xy: 1260, 209
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Lightning Wolf
-  rotate: false
-  xy: 1260, 209
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Lone Gu Master
-  rotate: false
-  xy: 1244, 145
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Lone Gu Master
-  rotate: false
-  xy: 1244, 145
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Lone Gu Master-1
-  rotate: false
-  xy: 1244, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Lone Gu Master-1
-  rotate: false
-  xy: 1244, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Lone Gu Master-attack-1
-  rotate: false
-  xy: 1644, 1816
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Gu Master-attack-1
-  rotate: false
-  xy: 1644, 1816
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Lone Gu Master-attack-2
-  rotate: false
-  xy: 1780, 1816
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Gu Master-attack-2
-  rotate: false
-  xy: 1780, 1816
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Lone Gu Master-attack-3
-  rotate: false
-  xy: 1356, 1698
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Gu Master-attack-3
-  rotate: false
-  xy: 1356, 1698
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Mortal Laborer
-  rotate: false
-  xy: 1244, 17
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Mortal Laborer
-  rotate: false
-  xy: 1244, 17
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Mortal Laborer-1
-  rotate: false
-  xy: 1340, 1600
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Mortal Laborer-1
-  rotate: false
-  xy: 1340, 1600
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship
-  rotate: false
-  xy: 1340, 1524
-  size: 64, 68
-  orig: 64, 68
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Myriad Year Flying Warship
-  rotate: false
-  xy: 1340, 1524
-  size: 64, 68
-  orig: 64, 68
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-1
-  rotate: false
-  xy: 1340, 1448
-  size: 64, 68
-  orig: 64, 68
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Myriad Year Flying Warship-1
-  rotate: false
-  xy: 1340, 1448
-  size: 64, 68
-  orig: 64, 68
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-1
-  rotate: false
-  xy: 1492, 1698
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-2
-  rotate: false
-  xy: 1628, 1698
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-3
-  rotate: false
-  xy: 1764, 1698
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-4
-  rotate: false
-  xy: 1900, 1698
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-5
+TileSets/AbsoluteUnits/Units/Dou Shen Palace-attack-3
   rotate: false
   xy: 140, 10
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal
+TileSets/AbsoluteUnits/Units/Dou Shen Palace-attack-4
   rotate: false
-  xy: 1380, 1088
-  size: 64, 64
-  orig: 64, 64
+  xy: 308, 752
+  size: 128, 110
+  orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Units/Rank Eight Gu Immortal
+TileSets/AbsoluteUnits/Units/Dou Shen Palace-attack-5
   rotate: false
-  xy: 1380, 1088
-  size: 64, 64
-  orig: 64, 64
+  xy: 292, 634
+  size: 128, 110
+  orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-1
+TileSets/AbsoluteUnits/Units/Dragon Palace
   rotate: false
-  xy: 1364, 832
-  size: 64, 64
-  orig: 64, 64
+  xy: 1340, 1514
+  size: 64, 66
+  orig: 64, 66
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Units/Rank Eight Gu Immortal-1
+TileSets/HexaRealm/Units/Dragon Palace
   rotate: false
-  xy: 1364, 832
-  size: 64, 64
-  orig: 64, 64
+  xy: 1340, 1514
+  size: 64, 66
+  orig: 64, 66
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-2
+TileSets/AbsoluteUnits/Units/Dragon Palace-2
   rotate: false
-  xy: 1348, 616
-  size: 64, 64
-  orig: 64, 64
+  xy: 1340, 1440
+  size: 64, 66
+  orig: 64, 66
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Units/Rank Eight Gu Immortal-2
+TileSets/HexaRealm/Units/Dragon Palace-2
   rotate: false
-  xy: 1348, 616
-  size: 64, 64
-  orig: 64, 64
+  xy: 1340, 1440
+  size: 64, 66
+  orig: 64, 66
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-1
+TileSets/AbsoluteUnits/Units/Dragon Palace-attack-1
   rotate: false
   xy: 292, 516
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-2
+TileSets/AbsoluteUnits/Units/Dragon Palace-attack-2
   rotate: false
-  xy: 276, 398
+  xy: 460, 904
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-3
+TileSets/AbsoluteUnits/Units/Dragon Palace-attack-3
+  rotate: false
+  xy: 444, 786
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Dragon Palace-attack-4
+  rotate: false
+  xy: 612, 1056
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Dragon Palace-attack-5
+  rotate: false
+  xy: 596, 938
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Frenzy Lightning Wolf
+  rotate: false
+  xy: 1332, 377
+  size: 64, 59
+  orig: 64, 59
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Frenzy Lightning Wolf
+  rotate: false
+  xy: 1332, 377
+  size: 64, 59
+  orig: 64, 59
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower
+  rotate: false
+  xy: 1316, 172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Heaven Overseeing Tower
+  rotate: false
+  xy: 1316, 172
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-1
+  rotate: false
+  xy: 764, 1208
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-2
+  rotate: false
+  xy: 748, 1090
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-3
+  rotate: false
+  xy: 916, 1360
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-4
+  rotate: false
+  xy: 900, 1242
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Heaven Overseeing Tower-attack-5
+  rotate: false
+  xy: 1068, 1512
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast
+  rotate: false
+  xy: 1460, 1234
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Immemorial Desolate Beast
+  rotate: false
+  xy: 1460, 1234
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-1
+  rotate: false
+  xy: 1052, 1394
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-2
+  rotate: false
+  xy: 1220, 1664
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-3
+  rotate: false
+  xy: 1204, 1546
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immemorial Desolate Beast-attack-4
+  rotate: false
+  xy: 1372, 1816
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie
+  rotate: false
+  xy: 1532, 1516
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Immortal Zombie
+  rotate: false
+  xy: 1532, 1516
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-1
+  rotate: false
+  xy: 1460, 1516
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Immortal Zombie-1
+  rotate: false
+  xy: 1460, 1516
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-2
+  rotate: false
+  xy: 1412, 1452
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Immortal Zombie-2
+  rotate: false
+  xy: 1412, 1452
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-1
+  rotate: false
+  xy: 1508, 1816
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-2
+  rotate: false
+  xy: 1644, 1816
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-3
+  rotate: false
+  xy: 1780, 1816
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-4
+  rotate: false
+  xy: 1356, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Immortal Zombie-attack-5
+  rotate: false
+  xy: 1492, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lightning Wolf
+  rotate: false
+  xy: 1484, 1452
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Lightning Wolf
+  rotate: false
+  xy: 1484, 1452
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lone Gu Master
+  rotate: false
+  xy: 1556, 1452
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Lone Gu Master
+  rotate: false
+  xy: 1556, 1452
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lone Gu Master-1
+  rotate: false
+  xy: 1460, 1388
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Lone Gu Master-1
+  rotate: false
+  xy: 1460, 1388
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lone Gu Master-attack-1
+  rotate: false
+  xy: 1628, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Gu Master-attack-1
+  rotate: false
+  xy: 1628, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lone Gu Master-attack-2
+  rotate: false
+  xy: 1764, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Gu Master-attack-2
+  rotate: false
+  xy: 1764, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Lone Gu Master-attack-3
+  rotate: false
+  xy: 1900, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Gu Master-attack-3
+  rotate: false
+  xy: 1900, 1698
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Mortal Laborer
+  rotate: false
+  xy: 1532, 1388
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Mortal Laborer
+  rotate: false
+  xy: 1532, 1388
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Mortal Laborer-1
+  rotate: false
+  xy: 1460, 1324
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Mortal Laborer-1
+  rotate: false
+  xy: 1460, 1324
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship
+  rotate: false
+  xy: 1532, 1312
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Myriad Year Flying Warship
+  rotate: false
+  xy: 1532, 1312
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-1
+  rotate: false
+  xy: 1532, 1236
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Myriad Year Flying Warship-1
+  rotate: false
+  xy: 1532, 1236
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-1
+  rotate: false
+  xy: 292, 398
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-2
   rotate: false
   xy: 276, 280
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-4
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-3
   rotate: false
   xy: 276, 162
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-5
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-4
   rotate: false
   xy: 276, 44
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master
-  rotate: false
-  xy: 1332, 401
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Five Gu Master
-  rotate: false
-  xy: 1332, 401
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Five Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Gu Yue Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Moon Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Wu Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Three Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Three Gu Yue Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Three Moon Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Three Wu Gu Master-1
-  rotate: false
-  xy: 1332, 337
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master-2
-  rotate: false
-  xy: 1332, 273
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Five Gu Master-2
-  rotate: false
-  xy: 1332, 273
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-1
+TileSets/AbsoluteUnits/Units/Myriad Year Flying Warship-attack-5
   rotate: false
   xy: 444, 668
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-2
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal
+  rotate: false
+  xy: 1628, 1390
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Eight Gu Immortal
+  rotate: false
+  xy: 1628, 1390
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-1
+  rotate: false
+  xy: 1700, 1390
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Eight Gu Immortal-1
+  rotate: false
+  xy: 1700, 1390
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-2
+  rotate: false
+  xy: 1532, 1164
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Eight Gu Immortal-2
+  rotate: false
+  xy: 1532, 1164
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-1
   rotate: false
   xy: 428, 550
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-3
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-2
+  rotate: false
+  xy: 428, 432
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-3
   rotate: false
   xy: 596, 820
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-4
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-4
   rotate: false
   xy: 580, 702
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master
-  rotate: false
-  xy: 1332, 209
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Bai Gu Master
-  rotate: false
-  xy: 1332, 209
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-1
-  rotate: false
-  xy: 1316, 145
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-1
-  rotate: false
-  xy: 1316, 145
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Bai Gu Master-1
-  rotate: false
-  xy: 1316, 145
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Three Bai Gu Master-1
-  rotate: false
-  xy: 1316, 145
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Bai Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Gu Yue Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Moon Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/HexaRealm/Units/Rank Four Wu Gu Master-2
-  rotate: false
-  xy: 1316, 81
-  size: 64, 56
-  orig: 64, 56
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-1
+TileSets/AbsoluteUnits/Units/Rank Eight Gu Immortal-attack-5
   rotate: false
   xy: 748, 972
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master
   rotate: false
-  xy: 748, 972
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-1
-  rotate: false
-  xy: 748, 972
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-2
-  rotate: false
-  xy: 732, 854
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-2
-  rotate: false
-  xy: 732, 854
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-2
-  rotate: false
-  xy: 732, 854
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-3
-  rotate: false
-  xy: 900, 1124
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-3
-  rotate: false
-  xy: 900, 1124
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-3
-  rotate: false
-  xy: 900, 1124
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-4
-  rotate: false
-  xy: 884, 1006
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-4
-  rotate: false
-  xy: 884, 1006
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-4
-  rotate: false
-  xy: 884, 1006
-  size: 128, 110
-  orig: 128, 110
-  offset: 0, 0
-  index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master
-  rotate: false
-  xy: 1316, 17
+  xy: 1628, 1326
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/HexaRealm/Units/Rank Four Gu Master
+TileSets/HexaRealm/Units/Rank Five Gu Master
   rotate: false
-  xy: 1316, 17
+  xy: 1628, 1326
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Five Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Gu Yue Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Moon Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Wu Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Three Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Three Gu Yue Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Three Moon Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Three Wu Gu Master-1
+  rotate: false
+  xy: 1700, 1326
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master-2
+  rotate: false
+  xy: 1604, 1262
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Five Gu Master-2
+  rotate: false
+  xy: 1604, 1262
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-1
+  rotate: false
+  xy: 732, 854
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-2
+  rotate: false
+  xy: 900, 1124
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-3
+  rotate: false
+  xy: 884, 1006
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Five Gu Master-attack-4
   rotate: false
   xy: 1052, 1276
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-2
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master
+  rotate: false
+  xy: 1604, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Bai Gu Master
+  rotate: false
+  xy: 1604, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-1
+  rotate: false
+  xy: 1676, 1262
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-1
+  rotate: false
+  xy: 1676, 1262
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Bai Gu Master-1
+  rotate: false
+  xy: 1676, 1262
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Three Bai Gu Master-1
+  rotate: false
+  xy: 1676, 1262
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Bai Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Gu Yue Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Moon Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Wu Gu Master-2
+  rotate: false
+  xy: 1676, 1198
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-1
   rotate: false
   xy: 1036, 1158
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-3
+TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-1
+  rotate: false
+  xy: 1036, 1158
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-1
+  rotate: false
+  xy: 1036, 1158
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-2
   rotate: false
   xy: 1204, 1428
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
-TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-4
+TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-2
+  rotate: false
+  xy: 1204, 1428
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-2
+  rotate: false
+  xy: 1204, 1428
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-3
   rotate: false
   xy: 1188, 1310
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-3
+  rotate: false
+  xy: 1188, 1310
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-3
+  rotate: false
+  xy: 1188, 1310
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Bai Gu Master-attack-4
+  rotate: false
+  xy: 428, 314
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-attack-4
+  rotate: false
+  xy: 428, 314
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-attack-4
+  rotate: false
+  xy: 428, 314
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master
+  rotate: false
+  xy: 1604, 1134
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/HexaRealm/Units/Rank Four Gu Master
+  rotate: false
+  xy: 1604, 1134
+  size: 64, 56
+  orig: 64, 56
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-1
+  rotate: false
+  xy: 412, 196
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-2
+  rotate: false
+  xy: 412, 78
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-3
+  rotate: false
+  xy: 580, 584
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
+TileSets/AbsoluteUnits/Units/Rank Four Gu Master-attack-4
+  rotate: false
+  xy: 564, 466
+  size: 128, 110
+  orig: 128, 110
+  offset: 0, 0
+  index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master
   rotate: false
-  xy: 1412, 1600
+  xy: 1676, 1134
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master
   rotate: false
-  xy: 1412, 1600
+  xy: 1676, 1134
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Gu Yue Gu Master
   rotate: false
-  xy: 1412, 1600
+  xy: 1676, 1134
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Moon Gu Master
   rotate: false
-  xy: 1412, 1600
+  xy: 1676, 1134
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-attack-1
   rotate: false
-  xy: 428, 432
+  xy: 564, 348
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-1
   rotate: false
-  xy: 428, 432
+  xy: 564, 348
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-attack-2
   rotate: false
-  xy: 412, 314
+  xy: 732, 736
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-2
   rotate: false
-  xy: 412, 314
+  xy: 732, 736
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-attack-3
   rotate: false
-  xy: 412, 196
+  xy: 716, 618
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-3
   rotate: false
-  xy: 412, 196
+  xy: 716, 618
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Gu Yue Gu Master-attack-4
   rotate: false
-  xy: 412, 78
+  xy: 884, 888
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Moon Gu Master-attack-4
   rotate: false
-  xy: 412, 78
+  xy: 884, 888
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-attack-4
   rotate: false
-  xy: 412, 78
+  xy: 884, 888
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-4
   rotate: false
-  xy: 412, 78
+  xy: 884, 888
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master-attack-4
   rotate: false
-  xy: 412, 78
+  xy: 884, 888
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-4
   rotate: false
-  xy: 412, 78
+  xy: 884, 888
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master
   rotate: false
-  xy: 1412, 1536
+  xy: 1532, 1100
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Strength Gu Master
   rotate: false
-  xy: 1412, 1536
+  xy: 1532, 1100
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Strength Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Xiong Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Strength Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Xiong Gu Master-1
   rotate: false
-  xy: 1412, 1472
+  xy: 1604, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-2
   rotate: false
-  xy: 1484, 1516
+  xy: 1676, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master-2
   rotate: false
-  xy: 1484, 1516
+  xy: 1676, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Strength Gu Master-2
   rotate: false
-  xy: 1484, 1516
+  xy: 1676, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Xiong Gu Master-2
   rotate: false
-  xy: 1484, 1516
+  xy: 1676, 1070
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-1
   rotate: false
-  xy: 580, 584
+  xy: 868, 770
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-1
   rotate: false
-  xy: 580, 584
+  xy: 868, 770
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-1
   rotate: false
-  xy: 580, 584
+  xy: 868, 770
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-2
   rotate: false
-  xy: 564, 466
+  xy: 1036, 1040
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-2
   rotate: false
-  xy: 564, 466
+  xy: 1036, 1040
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-2
   rotate: false
-  xy: 564, 466
+  xy: 1036, 1040
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-3
   rotate: false
-  xy: 732, 736
+  xy: 1020, 922
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-3
   rotate: false
-  xy: 732, 736
+  xy: 1020, 922
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-3
   rotate: false
-  xy: 732, 736
+  xy: 1020, 922
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Strength Gu Master-attack-4
   rotate: false
-  xy: 716, 618
+  xy: 1188, 1192
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-attack-4
   rotate: false
-  xy: 716, 618
+  xy: 1188, 1192
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-attack-4
   rotate: false
-  xy: 716, 618
+  xy: 1188, 1192
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master
   rotate: false
-  xy: 1556, 1516
+  xy: 1532, 1036
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Wu Gu Master
   rotate: false
-  xy: 1556, 1516
+  xy: 1532, 1036
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-attack-1
   rotate: false
-  xy: 884, 888
+  xy: 1172, 1074
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-attack-1
   rotate: false
-  xy: 884, 888
+  xy: 1172, 1074
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master-attack-1
   rotate: false
-  xy: 884, 888
+  xy: 1172, 1074
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-attack-2
   rotate: false
-  xy: 868, 770
+  xy: 564, 230
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-attack-2
   rotate: false
-  xy: 868, 770
+  xy: 564, 230
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master-attack-2
   rotate: false
-  xy: 868, 770
+  xy: 564, 230
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-attack-3
   rotate: false
-  xy: 1036, 1040
+  xy: 548, 112
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-attack-3
   rotate: false
-  xy: 1036, 1040
+  xy: 548, 112
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master-attack-3
   rotate: false
-  xy: 1036, 1040
+  xy: 548, 112
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Wu Gu Master-attack-4
   rotate: false
-  xy: 1020, 922
+  xy: 716, 500
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-attack-4
   rotate: false
-  xy: 1020, 922
+  xy: 716, 500
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master-attack-4
   rotate: false
-  xy: 1020, 922
+  xy: 716, 500
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master
   rotate: false
-  xy: 1556, 1452
+  xy: 1604, 1006
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Four Xiong Gu Master
   rotate: false
-  xy: 1556, 1452
+  xy: 1604, 1006
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master-attack-1
   rotate: false
-  xy: 1188, 1192
+  xy: 700, 382
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master-attack-1
   rotate: false
-  xy: 1188, 1192
+  xy: 700, 382
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master-attack-1
   rotate: false
-  xy: 1188, 1192
+  xy: 700, 382
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master-attack-2
   rotate: false
-  xy: 1172, 1074
+  xy: 700, 264
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master-attack-2
   rotate: false
-  xy: 1172, 1074
+  xy: 700, 264
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master-attack-2
   rotate: false
-  xy: 1172, 1074
+  xy: 700, 264
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master-attack-3
   rotate: false
-  xy: 564, 348
+  xy: 868, 652
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master-attack-3
   rotate: false
-  xy: 564, 348
+  xy: 868, 652
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master-attack-3
   rotate: false
-  xy: 564, 348
+  xy: 868, 652
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Four Xiong Gu Master-attack-4
   rotate: false
-  xy: 548, 230
+  xy: 852, 534
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master-attack-4
   rotate: false
-  xy: 548, 230
+  xy: 852, 534
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master-attack-4
   rotate: false
-  xy: 548, 230
+  xy: 852, 534
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank One Gu Master
   rotate: false
-  xy: 1412, 1408
+  xy: 1676, 1006
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank One Gu Master
   rotate: false
-  xy: 1412, 1408
+  xy: 1676, 1006
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank One Gu Master-1
   rotate: false
-  xy: 1396, 1344
+  xy: 1748, 1262
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank One Gu Master-1
   rotate: false
-  xy: 1396, 1344
+  xy: 1748, 1262
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank One Gu Master-2
   rotate: false
-  xy: 1396, 1280
+  xy: 1748, 1198
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank One Gu Master-2
   rotate: false
-  xy: 1396, 1280
+  xy: 1748, 1198
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank One Gu Master-attack-1
   rotate: false
-  xy: 548, 112
+  xy: 1020, 804
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank One Gu Master-attack-2
   rotate: false
-  xy: 716, 500
+  xy: 1004, 686
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank One Gu Master-attack-3
   rotate: false
-  xy: 700, 382
+  xy: 1172, 956
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal
   rotate: false
-  xy: 1396, 1210
+  xy: 1748, 1128
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Seven Gu Immortal
   rotate: false
-  xy: 1396, 1210
+  xy: 1748, 1128
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-1
   rotate: false
-  xy: 1468, 1338
+  xy: 1748, 1058
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Seven Gu Immortal-1
   rotate: false
-  xy: 1468, 1338
+  xy: 1748, 1058
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-2
   rotate: false
-  xy: 1628, 1392
+  xy: 1748, 988
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Seven Gu Immortal-2
   rotate: false
-  xy: 1628, 1392
+  xy: 1748, 988
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-attack-1
   rotate: false
-  xy: 868, 652
+  xy: 1156, 838
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-attack-2
   rotate: false
-  xy: 852, 534
+  xy: 700, 146
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-attack-3
   rotate: false
-  xy: 1020, 804
+  xy: 852, 416
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-attack-4
   rotate: false
-  xy: 1004, 686
+  xy: 836, 298
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Seven Gu Immortal-attack-5
   rotate: false
-  xy: 1172, 956
+  xy: 836, 180
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal
   rotate: false
-  xy: 1700, 1394
+  xy: 1428, 770
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Six Gu Immortal
   rotate: false
-  xy: 1700, 1394
+  xy: 1428, 770
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-1
   rotate: false
-  xy: 1540, 1384
+  xy: 1428, 702
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Six Gu Immortal-1
   rotate: false
-  xy: 1540, 1384
+  xy: 1428, 702
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-2
   rotate: false
-  xy: 1540, 1316
+  xy: 1428, 634
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Six Gu Immortal-2
   rotate: false
-  xy: 1540, 1316
+  xy: 1428, 634
   size: 64, 60
   orig: 64, 60
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-attack-1
   rotate: false
-  xy: 1156, 838
+  xy: 1004, 568
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-attack-2
   rotate: false
-  xy: 700, 264
+  xy: 988, 450
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-attack-3
   rotate: false
-  xy: 684, 146
+  xy: 1156, 720
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-attack-4
   rotate: false
-  xy: 852, 416
+  xy: 1140, 602
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Six Gu Immortal-attack-5
   rotate: false
-  xy: 836, 298
+  xy: 836, 62
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master
   rotate: false
-  xy: 1612, 1328
+  xy: 1388, 188
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Bai Gu Master
   rotate: false
-  xy: 1612, 1328
+  xy: 1388, 188
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Bai Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Bai Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Gu Yue Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Moon Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Wu Gu Master-2
   rotate: false
-  xy: 1684, 1328
+  xy: 1388, 124
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Master
   rotate: false
-  xy: 1756, 1330
+  xy: 1388, 60
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Gu Master
   rotate: false
-  xy: 1756, 1330
+  xy: 1388, 60
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Master-attack-1
   rotate: false
-  xy: 1004, 568
+  xy: 988, 332
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Master-attack-2
   rotate: false
-  xy: 988, 450
+  xy: 972, 214
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Master-attack-3
   rotate: false
-  xy: 1156, 720
+  xy: 972, 96
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Master-attack-4
   rotate: false
-  xy: 1140, 602
+  xy: 1140, 484
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master
   rotate: false
-  xy: 1756, 1266
+  xy: 1412, 1600
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master
   rotate: false
-  xy: 1756, 1266
+  xy: 1412, 1600
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Gu Yue Gu Master
   rotate: false
-  xy: 1756, 1266
+  xy: 1412, 1600
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Moon Gu Master
   rotate: false
-  xy: 1756, 1266
+  xy: 1412, 1600
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-attack-1
   rotate: false
-  xy: 684, 28
+  xy: 1124, 366
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-1
   rotate: false
-  xy: 684, 28
+  xy: 1124, 366
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-attack-2
   rotate: false
-  xy: 836, 180
+  xy: 1124, 248
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-2
   rotate: false
-  xy: 836, 180
+  xy: 1124, 248
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Gu Yue Gu Master-attack-3
   rotate: false
-  xy: 820, 62
+  xy: 1108, 130
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Moon Gu Master-attack-3
   rotate: false
-  xy: 820, 62
+  xy: 1108, 130
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master
   rotate: false
-  xy: 1684, 1264
+  xy: 1772, 1398
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Strength Gu Master
   rotate: false
-  xy: 1684, 1264
+  xy: 1772, 1398
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Strength Gu Master-2
   rotate: false
-  xy: 1756, 1202
+  xy: 1772, 1334
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master-2
   rotate: false
-  xy: 1756, 1202
+  xy: 1772, 1334
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Strength Gu Master-2
   rotate: false
-  xy: 1756, 1202
+  xy: 1772, 1334
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Xiong Gu Master-2
   rotate: false
-  xy: 1756, 1202
+  xy: 1772, 1334
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Wu Gu Master
   rotate: false
-  xy: 1540, 1252
+  xy: 1820, 1270
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Wu Gu Master
   rotate: false
-  xy: 1540, 1252
+  xy: 1820, 1270
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Three Xiong Gu Master
   rotate: false
-  xy: 1612, 1252
+  xy: 1820, 1206
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Three Xiong Gu Master
   rotate: false
-  xy: 1612, 1252
+  xy: 1820, 1206
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master
   rotate: false
-  xy: 1684, 1200
+  xy: 1820, 1142
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Bai Gu Master
   rotate: false
-  xy: 1684, 1200
+  xy: 1820, 1142
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-1
   rotate: false
-  xy: 1756, 1138
+  xy: 1820, 1078
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Bai Gu Master-1
   rotate: false
-  xy: 1756, 1138
+  xy: 1820, 1078
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Bai Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Bai Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Gu Yue Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Moon Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Wu Gu Master-2
   rotate: false
-  xy: 1540, 1188
+  xy: 1820, 1014
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Master
   rotate: false
-  xy: 1612, 1188
+  xy: 1820, 950
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Gu Master
   rotate: false
-  xy: 1612, 1188
+  xy: 1820, 950
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Gu Yue Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Moon Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Wu Gu Master-1
   rotate: false
-  xy: 1684, 1136
+  xy: 1444, 1010
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master
   rotate: false
-  xy: 1756, 1074
+  xy: 1444, 946
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master
   rotate: false
-  xy: 1756, 1074
+  xy: 1444, 946
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Gu Yue Gu Master
   rotate: false
-  xy: 1756, 1074
+  xy: 1444, 946
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Moon Gu Master
   rotate: false
-  xy: 1756, 1074
+  xy: 1444, 946
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master-attack-1
   rotate: false
-  xy: 988, 332
+  xy: 1108, 12
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-1
   rotate: false
-  xy: 988, 332
+  xy: 1108, 12
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master-attack-2
   rotate: false
-  xy: 972, 214
+  xy: 684, 28
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-2
   rotate: false
-  xy: 972, 214
+  xy: 684, 28
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Gu Yue Gu Master-attack-3
   rotate: false
-  xy: 1140, 484
+  xy: 1492, 1580
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Moon Gu Master-attack-3
   rotate: false
-  xy: 1140, 484
+  xy: 1492, 1580
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master
   rotate: false
-  xy: 1436, 840
+  xy: 1516, 972
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Strength Gu Master
   rotate: false
-  xy: 1436, 840
+  xy: 1516, 972
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-1
   rotate: false
-  xy: 1436, 776
+  xy: 1516, 908
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master-1
   rotate: false
-  xy: 1436, 776
+  xy: 1516, 908
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Strength Gu Master-1
   rotate: false
-  xy: 1436, 776
+  xy: 1516, 908
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Xiong Gu Master-1
   rotate: false
-  xy: 1436, 776
+  xy: 1516, 908
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Strength Gu Master-2
   rotate: false
-  xy: 1436, 712
+  xy: 1588, 942
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master-2
   rotate: false
-  xy: 1436, 712
+  xy: 1588, 942
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Strength Gu Master-2
   rotate: false
-  xy: 1436, 712
+  xy: 1588, 942
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Xiong Gu Master-2
   rotate: false
-  xy: 1436, 712
+  xy: 1588, 942
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Wu Gu Master
   rotate: false
-  xy: 1436, 648
+  xy: 1660, 942
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Wu Gu Master
   rotate: false
-  xy: 1436, 648
+  xy: 1660, 942
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Rank Two Xiong Gu Master
   rotate: false
-  xy: 1420, 584
+  xy: 1444, 882
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Rank Two Xiong Gu Master
   rotate: false
-  xy: 1420, 584
+  xy: 1444, 882
   size: 64, 56
   orig: 64, 56
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Thunder Crown Wolf
   rotate: false
-  xy: 1492, 578
+  xy: 1588, 872
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Thunder Crown Wolf
   rotate: false
-  xy: 1492, 578
+  xy: 1588, 872
   size: 64, 62
   orig: 64, 62
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-1
   rotate: false
-  xy: 1124, 366
+  xy: 1628, 1580
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-2
   rotate: false
-  xy: 972, 96
+  xy: 1764, 1580
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-3
   rotate: false
-  xy: 1124, 248
+  xy: 1900, 1580
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Thunder Crown Wolf-attack-4
   rotate: false
-  xy: 1108, 130
+  xy: 1628, 1462
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable
   rotate: false
-  xy: 1420, 510
+  xy: 1660, 868
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Venerable
   rotate: false
-  xy: 1420, 510
+  xy: 1660, 868
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-1
   rotate: false
-  xy: 1492, 504
+  xy: 1516, 834
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Venerable-1
   rotate: false
-  xy: 1492, 504
+  xy: 1516, 834
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-2
   rotate: false
-  xy: 1420, 436
+  xy: 1732, 914
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/HexaRealm/Units/Venerable-2
   rotate: false
-  xy: 1420, 436
+  xy: 1732, 914
   size: 64, 66
   orig: 64, 66
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-attack-1
   rotate: false
-  xy: 1108, 12
+  xy: 1324, 1310
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-attack-2
   rotate: false
-  xy: 1492, 1580
+  xy: 1324, 1192
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-attack-3
   rotate: false
-  xy: 1628, 1580
+  xy: 1308, 1074
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-attack-4
   rotate: false
-  xy: 1764, 1580
+  xy: 1308, 956
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-attack-5
   rotate: false
-  xy: 1900, 1580
+  xy: 1292, 838
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
   index: -1
 TileSets/AbsoluteUnits/Units/Venerable-attack-6
   rotate: false
-  xy: 1628, 1462
+  xy: 1292, 720
   size: 128, 110
   orig: 128, 110
   offset: 0, 0
@@ -2792,763 +2841,770 @@ TileSets/FantasyHex/Units/Ancient Desolate Beast
   index: -1
 TileSets/FantasyHex/Units/Bold Lightning Wolf
   rotate: false
-  xy: 76, 58
+  xy: 4, 24
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Calamity Luck Altar
   rotate: false
-  xy: 620, 70
+  xy: 1044, 54
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Calamity Luck Altar-2
   rotate: false
-  xy: 484, 36
+  xy: 628, 70
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Clan Settler
   rotate: false
-  xy: 1396, 1174
+  xy: 1244, 16
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Clan Settler-1
   rotate: false
-  xy: 1492, 468
+  xy: 1412, 1564
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Clan Settler-2
   rotate: false
-  xy: 316, 8
+  xy: 1588, 836
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demonic Elder
   rotate: false
-  xy: 76, 22
+  xy: 316, 8
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demonic Elder-1
   rotate: false
-  xy: 356, 8
+  xy: 44, 24
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demonic Gu Master-1
   rotate: false
-  xy: 356, 8
+  xy: 44, 24
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Lone Gu Master-1
   rotate: false
-  xy: 356, 8
+  xy: 44, 24
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demonic Elder-2
   rotate: false
-  xy: 820, 26
+  xy: 1412, 1528
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Demonic Gu Master
   rotate: false
-  xy: 860, 26
+  xy: 356, 8
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Desolate Beast
   rotate: false
-  xy: 900, 24
+  xy: 84, 22
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Units/Dou Shen Palace
+  rotate: false
+  xy: 556, 6
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
 TileSets/FantasyHex/Units/Dragon Palace
   rotate: false
-  xy: 620, 29
+  xy: 1044, 13
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Dragon Palace-2
   rotate: false
-  xy: 1492, 427
+  xy: 596, 7
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Frenzy Lightning Wolf
   rotate: false
-  xy: 1532, 466
+  xy: 1284, 14
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Heaven Overseeing Tower
   rotate: false
-  xy: 1436, 1166
+  xy: 1444, 838
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Immemorial Desolate Beast
   rotate: false
-  xy: 1404, 394
+  xy: 1500, 792
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Immortal Zombie
   rotate: false
-  xy: 1404, 358
+  xy: 1500, 756
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Immortal Zombie-1
   rotate: false
-  xy: 1444, 400
+  xy: 1540, 798
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Immortal Zombie-2
   rotate: false
-  xy: 1404, 322
+  xy: 1500, 720
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Lightning Wolf
   rotate: false
-  xy: 1444, 364
+  xy: 1540, 762
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Lone Gu Master
   rotate: false
-  xy: 1404, 286
+  xy: 1500, 684
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mortal Laborer
   rotate: false
-  xy: 1444, 328
+  xy: 1540, 726
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Mortal Laborer-1
   rotate: false
-  xy: 1404, 250
+  xy: 1500, 648
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Myriad Year Flying Warship
   rotate: false
-  xy: 1444, 286
+  xy: 1540, 684
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Myriad Year Flying Warship-1
   rotate: false
-  xy: 1404, 208
+  xy: 1540, 642
   size: 32, 34
   orig: 32, 34
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Eight Gu Immortal
   rotate: false
-  xy: 1444, 246
+  xy: 1804, 910
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Eight Gu Immortal-1
   rotate: false
-  xy: 1484, 387
+  xy: 1844, 910
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Eight Gu Immortal-2
   rotate: false
-  xy: 1452, 1126
+  xy: 1500, 608
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Five Gu Master
   rotate: false
-  xy: 1452, 1090
+  xy: 1540, 606
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Five Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Gu Yue Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Moon Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Wu Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Gu Yue Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Moon Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Wu Gu Master-1
   rotate: false
-  xy: 1524, 391
+  xy: 1460, 598
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Five Gu Master-2
   rotate: false
-  xy: 1524, 355
+  xy: 820, 26
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Bai Gu Master
   rotate: false
-  xy: 1452, 1054
+  xy: 860, 26
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Bai Gu Master-1
   rotate: false
-  xy: 1564, 1152
+  xy: 900, 26
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Bai Gu Master-1
   rotate: false
-  xy: 1564, 1152
+  xy: 900, 26
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Bai Gu Master-2
   rotate: false
-  xy: 1604, 1152
+  xy: 1500, 572
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Gu Master-2
   rotate: false
-  xy: 1604, 1152
+  xy: 1500, 572
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Gu Yue Gu Master-2
   rotate: false
-  xy: 1604, 1152
+  xy: 1500, 572
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Moon Gu Master-2
   rotate: false
-  xy: 1604, 1152
+  xy: 1500, 572
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Wu Gu Master-2
   rotate: false
-  xy: 1604, 1152
+  xy: 1500, 572
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Gu Master
   rotate: false
-  xy: 1644, 1152
+  xy: 1540, 570
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Gu Yue Gu Master
   rotate: false
-  xy: 1644, 1116
+  xy: 1460, 562
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Moon Gu Master
   rotate: false
-  xy: 1644, 1116
+  xy: 1460, 562
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Strength Gu Master
   rotate: false
-  xy: 1684, 1100
+  xy: 1500, 536
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Xiong Gu Master
   rotate: false
-  xy: 1684, 1100
+  xy: 1500, 536
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Strength Gu Master-1
   rotate: false
-  xy: 1404, 172
+  xy: 1540, 534
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Xiong Gu Master-1
   rotate: false
-  xy: 1404, 172
+  xy: 1540, 534
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Strength Gu Master-1
   rotate: false
-  xy: 1404, 172
+  xy: 1540, 534
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Xiong Gu Master-1
   rotate: false
-  xy: 1404, 172
+  xy: 1540, 534
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Strength Gu Master-2
   rotate: false
-  xy: 1524, 319
+  xy: 1460, 526
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Xiong Gu Master-2
   rotate: false
-  xy: 1524, 319
+  xy: 1460, 526
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Four Wu Gu Master
   rotate: false
-  xy: 1452, 1018
+  xy: 1500, 500
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank One Gu Master
   rotate: false
-  xy: 1564, 1116
+  xy: 1540, 498
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank One Gu Master-1
   rotate: false
-  xy: 1604, 1116
+  xy: 1460, 490
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank One Gu Master-2
   rotate: false
-  xy: 1564, 1080
+  xy: 1500, 464
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Seven Gu Immortal
   rotate: false
-  xy: 1604, 1077
+  xy: 1540, 459
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Seven Gu Immortal-1
   rotate: false
-  xy: 1644, 1077
+  xy: 1460, 451
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Seven Gu Immortal-2
   rotate: false
-  xy: 1684, 1061
+  xy: 1500, 425
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Six Gu Immortal
   rotate: false
-  xy: 1564, 1042
+  xy: 1540, 421
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Six Gu Immortal-1
   rotate: false
-  xy: 1604, 1039
+  xy: 1460, 413
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Six Gu Immortal-2
   rotate: false
-  xy: 1644, 1039
+  xy: 1500, 387
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Bai Gu Master
   rotate: false
-  xy: 1684, 1025
+  xy: 1540, 385
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Bai Gu Master-2
   rotate: false
-  xy: 1724, 1038
+  xy: 1460, 377
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Gu Master-2
   rotate: false
-  xy: 1724, 1038
+  xy: 1460, 377
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Gu Yue Gu Master-2
   rotate: false
-  xy: 1724, 1038
+  xy: 1460, 377
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Moon Gu Master-2
   rotate: false
-  xy: 1724, 1038
+  xy: 1460, 377
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Wu Gu Master-2
   rotate: false
-  xy: 1724, 1038
+  xy: 1460, 377
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Gu Master
   rotate: false
-  xy: 1764, 1038
+  xy: 1500, 351
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Gu Yue Gu Master
   rotate: false
-  xy: 1804, 1038
+  xy: 1540, 349
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Moon Gu Master
   rotate: false
-  xy: 1804, 1038
+  xy: 1540, 349
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Strength Gu Master
   rotate: false
-  xy: 1564, 1006
+  xy: 1460, 341
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Xiong Gu Master
   rotate: false
-  xy: 1564, 1006
+  xy: 1460, 341
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Strength Gu Master-2
   rotate: false
-  xy: 1604, 1003
+  xy: 1500, 315
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Xiong Gu Master-2
   rotate: false
-  xy: 1604, 1003
+  xy: 1500, 315
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Three Wu Gu Master
   rotate: false
-  xy: 1644, 1003
+  xy: 1540, 313
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Bai Gu Master
   rotate: false
-  xy: 1684, 989
+  xy: 1460, 305
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Bai Gu Master-1
   rotate: false
-  xy: 1564, 970
+  xy: 1500, 279
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Bai Gu Master-2
   rotate: false
-  xy: 1604, 967
+  xy: 1540, 277
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Gu Master-2
   rotate: false
-  xy: 1604, 967
+  xy: 1540, 277
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Gu Yue Gu Master-2
   rotate: false
-  xy: 1604, 967
+  xy: 1540, 277
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Moon Gu Master-2
   rotate: false
-  xy: 1604, 967
+  xy: 1540, 277
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Wu Gu Master-2
   rotate: false
-  xy: 1604, 967
+  xy: 1540, 277
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Gu Master
   rotate: false
-  xy: 1644, 967
+  xy: 1460, 269
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Gu Master-1
   rotate: false
-  xy: 1684, 953
+  xy: 1460, 233
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Gu Yue Gu Master-1
   rotate: false
-  xy: 1684, 953
+  xy: 1460, 233
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Moon Gu Master-1
   rotate: false
-  xy: 1684, 953
+  xy: 1460, 233
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Wu Gu Master-1
   rotate: false
-  xy: 1684, 953
+  xy: 1460, 233
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Gu Yue Gu Master
   rotate: false
-  xy: 1564, 934
+  xy: 1500, 243
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Moon Gu Master
   rotate: false
-  xy: 1564, 934
+  xy: 1500, 243
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Strength Gu Master
   rotate: false
-  xy: 1604, 931
+  xy: 1460, 197
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Xiong Gu Master
   rotate: false
-  xy: 1604, 931
+  xy: 1460, 197
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Strength Gu Master-1
   rotate: false
-  xy: 1644, 931
+  xy: 1460, 161
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Xiong Gu Master-1
   rotate: false
-  xy: 1644, 931
+  xy: 1460, 161
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Strength Gu Master-2
   rotate: false
-  xy: 1684, 917
+  xy: 1460, 125
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Xiong Gu Master-2
   rotate: false
-  xy: 1684, 917
+  xy: 1460, 125
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Rank Two Wu Gu Master
   rotate: false
-  xy: 1564, 898
+  xy: 1460, 89
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Thunder Crown Wolf
   rotate: false
-  xy: 1604, 892
+  xy: 1540, 238
   size: 32, 31
   orig: 32, 31
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Venerable
   rotate: false
-  xy: 1644, 890
+  xy: 1460, 48
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Venerable-1
   rotate: false
-  xy: 1684, 876
+  xy: 636, 29
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Venerable-2
   rotate: false
-  xy: 1564, 857
+  xy: 1580, 793
   size: 32, 33
   orig: 32, 33
   offset: 0, 0
@@ -3609,261 +3665,268 @@ UnitPortraits/Desolate Beast
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Dragon Palace
+UnitPortraits/Dou Shen Palace
   rotate: false
   xy: 308, 1748
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Frenzy Lightning Wolf
+UnitPortraits/Dragon Palace
   rotate: false
   xy: 460, 1900
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Heaven Overseeing Tower
+UnitPortraits/Frenzy Lightning Wolf
   rotate: false
   xy: 4, 1292
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Immemorial Desolate Beast
+UnitPortraits/Heaven Overseeing Tower
   rotate: false
   xy: 156, 1444
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Immortal Zombie
+UnitPortraits/Immemorial Desolate Beast
   rotate: false
   xy: 308, 1596
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Lightning Wolf
+UnitPortraits/Immortal Zombie
   rotate: false
   xy: 460, 1748
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Lone Gu Master
+UnitPortraits/Lightning Wolf
   rotate: false
   xy: 612, 1900
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Mortal Laborer
+UnitPortraits/Lone Gu Master
   rotate: false
   xy: 4, 1140
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Myriad Year Flying Warship
+UnitPortraits/Mortal Laborer
   rotate: false
   xy: 156, 1292
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Eight Gu Immortal
+UnitPortraits/Myriad Year Flying Warship
   rotate: false
   xy: 308, 1444
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Five Gu Master
+UnitPortraits/Rank Eight Gu Immortal
   rotate: false
   xy: 460, 1596
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Bai Gu Master
+UnitPortraits/Rank Five Gu Master
   rotate: false
   xy: 612, 1748
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Gu Master
+UnitPortraits/Rank Four Bai Gu Master
   rotate: false
   xy: 764, 1900
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Gu Yue Gu Master
+UnitPortraits/Rank Four Gu Master
   rotate: false
   xy: 4, 988
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Moon Gu Master
+UnitPortraits/Rank Four Gu Yue Gu Master
   rotate: false
   xy: 156, 1140
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Strength Gu Master
+UnitPortraits/Rank Four Moon Gu Master
   rotate: false
   xy: 308, 1292
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Wu Gu Master
+UnitPortraits/Rank Four Strength Gu Master
   rotate: false
   xy: 460, 1444
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Four Xiong Gu Master
+UnitPortraits/Rank Four Wu Gu Master
   rotate: false
   xy: 612, 1596
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank One Gu Master
+UnitPortraits/Rank Four Xiong Gu Master
   rotate: false
   xy: 764, 1748
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Seven Gu Immortal
+UnitPortraits/Rank One Gu Master
   rotate: false
   xy: 916, 1900
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Six Gu Immortal
+UnitPortraits/Rank Seven Gu Immortal
   rotate: false
   xy: 4, 836
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Bai Gu Master
+UnitPortraits/Rank Six Gu Immortal
   rotate: false
   xy: 156, 988
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Gu Master
+UnitPortraits/Rank Three Bai Gu Master
   rotate: false
   xy: 308, 1140
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Gu Yue Gu Master
+UnitPortraits/Rank Three Gu Master
   rotate: false
   xy: 460, 1292
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Moon Gu Master
+UnitPortraits/Rank Three Gu Yue Gu Master
   rotate: false
   xy: 612, 1444
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Strength Gu Master
+UnitPortraits/Rank Three Moon Gu Master
   rotate: false
   xy: 764, 1596
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Wu Gu Master
+UnitPortraits/Rank Three Strength Gu Master
   rotate: false
   xy: 916, 1748
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Three Xiong Gu Master
+UnitPortraits/Rank Three Wu Gu Master
   rotate: false
   xy: 1068, 1900
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Bai Gu Master
+UnitPortraits/Rank Three Xiong Gu Master
   rotate: false
   xy: 4, 684
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Gu Master
+UnitPortraits/Rank Two Bai Gu Master
   rotate: false
   xy: 156, 836
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Gu Yue Gu Master
+UnitPortraits/Rank Two Gu Master
   rotate: false
   xy: 308, 988
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Moon Gu Master
+UnitPortraits/Rank Two Gu Yue Gu Master
   rotate: false
   xy: 460, 1140
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Strength Gu Master
+UnitPortraits/Rank Two Moon Gu Master
   rotate: false
   xy: 612, 1292
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Wu Gu Master
+UnitPortraits/Rank Two Strength Gu Master
   rotate: false
   xy: 764, 1444
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Rank Two Xiong Gu Master
+UnitPortraits/Rank Two Wu Gu Master
   rotate: false
   xy: 916, 1596
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Thunder Crown Wolf
+UnitPortraits/Rank Two Xiong Gu Master
   rotate: false
   xy: 1068, 1748
   size: 144, 144
   orig: 144, 144
   offset: 0, 0
   index: -1
-UnitPortraits/Venerable
+UnitPortraits/Thunder Crown Wolf
   rotate: false
   xy: 1220, 1900
+  size: 144, 144
+  orig: 144, 144
+  offset: 0, 0
+  index: -1
+UnitPortraits/Venerable
+  rotate: false
+  xy: 4, 532
   size: 144, 144
   orig: 144, 144
   offset: 0, 0

@@ -814,6 +814,15 @@ dump("Units.json", [
                                          f"[This Unit] gains the [Venerable Killer Move] status for [1] turn(s) <costs [20] [{APRICOT}]> <requires [1] movement>"]
      # slaughter restores it too
      + ["Heals [10] damage if it kills a unit"] + countdown("Chaos Countdown", 25, "Chaos Calamity")},
+] + [
+    # Layer 7: Dou Shen Palace (豆神宫), the rank-eight Gu House Genesis Lotus left in the Western Desert, which the Fang
+    # clan, famed for its Gu Houses, set out to take (R V5c486, V5c487): the Fang clan's own house, no immortal Gu asked
+    {"name": "Dou Shen Palace", "unitType": "Gu House", "movement": 2, "strength": 150, "cost": 650,
+     "requiredTech": "Gu House Formation", "uniqueTo": FANG, "attackSound": sfx.rank_sound(8),
+     "uniques": ["Limited to [1] per Civilization", "Can pass through impassable tiles", gen_paths.PP.chasm(),
+                 *wall_strain(WALL_STRAIN[8]), f"Costs [50] [{WHITE}]", f"Costs [{HOUSE_MATERIALS}] [{MATERIALS}]",
+                 "[+500]% maintenance costs", NB, "[+20]% Strength <when defending>",
+                 "All adjacent units heal [15] HP when healing"]},
 ] + [{"name": n, "unitType": "Gu House", "movement": mv, "strength": st, "cost": 650, "requiredTech": "Gu House Formation",
       "attackSound": sfx.rank_sound(8), **({"uniqueTo": HC} if gu == "Fate Gu" else {}),
       "uniques": [f"Only available <if [{gu}] is constructed>", "Limited to [1] per Civilization",
@@ -1832,6 +1841,25 @@ dump("Nations.json", [
      "cities": ["Ink Man City"]},
     {"name": "Rockmen", "cityStateType": "Stone Folk", "outerColor": [110, 100, 90], "innerColor": [240, 200, 120],
      "cities": ["Rockmen Burrow"]},
+    # Layer 7 (the user, 2026-11-08: "tambahkan saja"): more super forces, each a seat its region respects (+50% city
+    # strength): the Tie clan, a Southern Border super clan of thousands of years whose Demon-Suppressing Tower holds
+    # countless demonic Gu Masters (R V1c182, V2c12); the Tang clan, a Western Desert super force that found Thieving
+    # Heaven's dream realm (R V4c126); the Shen clan of the Eastern Sea, whose elder is a rank-eight sound-path immortal
+    # (R V5c679); and three golden tribes of the Northern Plains: the Ma, risen by generations and uncommon luck (R V3c36,
+    # V3c84), the Liu, a super family with no wisdom-path immortal (R V3c65, V5c190), and the Dong Fang of the wisdom
+    # path in Jade Pool Blessed Land (R V3c96, V3c109, V4c8)
+    {"name": "Tie Clan", "cityStateType": "Battle Tribe", "outerColor": [59, 59, 67], "innerColor": [227, 99, 91],
+     "cities": ["Tie Clan City"], "uniques": ["[+50]% Strength for cities", "[+25]% Strength <vs [Barbarian] units>"]},
+    {"name": "Tang Clan", "cityStateType": "Merchant Clan", "outerColor": [190, 150, 100], "innerColor": [60, 30, 90],
+     "cities": ["Tang Clan Oasis"], "uniques": ["[+50]% Strength for cities"]},
+    {"name": "Shen Clan", "cityStateType": "Merchant Clan", "outerColor": [20, 90, 90], "innerColor": [240, 220, 160],
+     "cities": ["Shen Clan Isle"], "uniques": ["[+50]% Strength for cities", "Start bias [Coast]"] + EAST_SEA_RAIDS},
+    {"name": "Ma Tribe", "cityStateType": "Battle Tribe", "outerColor": [140, 90, 40], "innerColor": [250, 230, 120],
+     "cities": ["Ma Tribe Camp"], "uniques": ["[+50]% Strength for cities"]},
+    {"name": "Liu Tribe", "cityStateType": "Battle Tribe", "outerColor": [90, 120, 60], "innerColor": [240, 230, 190],
+     "cities": ["Liu Tribe Camp"], "uniques": ["[+50]% Strength for cities"]},
+    {"name": "Dong Fang Tribe", "cityStateType": "Refiner Tribe", "outerColor": [160, 60, 70], "innerColor": [250, 240, 220],
+     "cities": ["Jade Pool"], "uniques": ["[+50]% Strength for cities"]},
     {"name": "Barbarians", "outerColor": [0, 0, 0], "innerColor": [185, 12, 12],
      "uniques": ["Can only heal by pillaging", "Excluded from map editor"]},
     {"name": "Spectator", "outerColor": [255, 255, 255]},

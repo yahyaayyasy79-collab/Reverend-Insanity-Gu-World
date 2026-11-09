@@ -1254,6 +1254,37 @@
     ]
   },
   {
+    "name": "Dou Shen Palace",
+    "unitType": "Gu House",
+    "movement": 2,
+    "strength": 150,
+    "cost": 650,
+    "requiredTech": "Gu House Formation",
+    "uniqueTo": "Fang Clan",
+    "attackSound": "gu-rank-8",
+    "uniques": [
+      "Limited to [1] per Civilization",
+      "Can pass through impassable tiles",
+      "[+50]% Strength <vs [pre-[Rank Six era]] units>",
+      "[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>",
+      "[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>",
+      "[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>",
+      "[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>",
+      "[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>",
+      "Costs [50] [White Lychee Immortal Essence]",
+      "Costs [60] [Immortal Materials]",
+      "[+500]% maintenance costs",
+      "Never appears as a Barbarian unit",
+      "[+20]% Strength <when defending>",
+      "All adjacent units heal [15] HP when healing"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A Gu House (仙蛊屋): Dou Shen Palace (豆神宫), the rank-eight house Genesis Lotus left in the Western Desert, which the Fang clan schemed for generations to win, and won. The Fang clan's own; needs no immortal Gu; one per clan; +20% defending; heals the units beside it."
+      }
+    ]
+  },
+  {
     "name": "Calamity Luck Altar",
     "unitType": "Gu House",
     "movement": 2,

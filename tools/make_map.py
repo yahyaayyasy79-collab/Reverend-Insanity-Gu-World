@@ -161,7 +161,10 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     # autoplay games, shield or no shield (8 x 450, 6edf4a8 and 997e679); the canon places the Great Snow Mountain in a
     # blessed land, not beside the golden tribes
     "Feathermen": ("west", 11, 21), "Snowmen": ("north", 6, 2), "Inkmen": ("north", 52, 5),
-    "Rockmen": ("south", 12, 31)}
+    "Rockmen": ("south", 12, 31),
+    # Layer 7: more super forces; the golden tribes far from the Huang Jin capital (the snowmen's lesson)
+    "Tie Clan": ("south", 47, 36), "Tang Clan": ("west", 3, 15), "Shen Clan": ("east", 57, 33),
+    "Ma Tribe": ("north", 15, 1), "Liu Tribe": ("north", 44, 1), "Dong Fang Tribe": ("north", 57, 2)}
 FIVE_REALMS = {  # realm: (region, column, row)
     "Hu Immortal Blessed Land": ("south", 20, 31), "Dang Hun Mountain": ("south", 19, 33), "Tian Ti Mountain": ("south", 33, 30),
     "Luo Po Valley": ("south", 44, 33), "Door of Life and Death": ("south", 12, 37), "Imperial Court Blessed Land": ("north", 24, 4),

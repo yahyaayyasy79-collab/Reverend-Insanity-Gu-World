@@ -987,6 +987,162 @@
     ]
   },
   {
+    "name": "Tie Clan",
+    "cityStateType": "Battle Tribe",
+    "outerColor": [
+      59,
+      59,
+      67
+    ],
+    "innerColor": [
+      227,
+      99,
+      91
+    ],
+    "cities": [
+      "Tie Clan City"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities",
+      "[+25]% Strength <vs [Barbarian] units>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Tie clan (铁家), a Southern Border super clan with thousands of years behind it. Its Demon-Suppressing Tower holds countless demonic Gu Masters, a symbol of the righteous path. Its city is hard to take, and its Gu Masters strike lone and demonic Gu Masters 25% harder. A Battle Tribe: its friends receive Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Tang Clan",
+    "cityStateType": "Merchant Clan",
+    "outerColor": [
+      190,
+      150,
+      100
+    ],
+    "innerColor": [
+      60,
+      30,
+      90
+    ],
+    "cities": [
+      "Tang Clan Oasis"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Tang clan (唐家), one of the Western Desert's super forces, middling among them until it found Thieving Heaven's dream realm. Its city is hard to take. A Merchant Clan: its friends receive primeval stones."
+      }
+    ]
+  },
+  {
+    "name": "Shen Clan",
+    "cityStateType": "Merchant Clan",
+    "outerColor": [
+      20,
+      90,
+      90
+    ],
+    "innerColor": [
+      240,
+      220,
+      160
+    ],
+    "cities": [
+      "Shen Clan Isle"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities",
+      "Start bias [Coast]",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [40]> <every [1] turns> <with [4]% chance> <on [Standard] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [2] turns> <with [4]% chance> <on [Epic] game speed>",
+      "A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Shen clan (沈家), an Eastern Sea super force of the sound path. Its supreme elder is a rank-eight immortal, and its waters give a wave-sound that rings for years, an immortal material. Its island city is hard to take. A Merchant Clan: its friends receive primeval stones."
+      }
+    ]
+  },
+  {
+    "name": "Ma Tribe",
+    "cityStateType": "Battle Tribe",
+    "outerColor": [
+      140,
+      90,
+      40
+    ],
+    "innerColor": [
+      250,
+      230,
+      120
+    ],
+    "cities": [
+      "Ma Tribe Camp"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Ma tribe (马家), a golden bloodline of Giant Sun's line in the Northern Plains, grown large over generations of work and uncommon luck, and fighting its way toward the Imperial Court. Its camp is hard to take. A Battle Tribe: its friends receive Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Liu Tribe",
+    "cityStateType": "Battle Tribe",
+    "outerColor": [
+      90,
+      120,
+      60
+    ],
+    "innerColor": [
+      240,
+      230,
+      190
+    ],
+    "cities": [
+      "Liu Tribe Camp"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Liu tribe (刘家), one of the Northern Plains' super families and a golden bloodline. Its third son, gifted in letters and war alike, broke away to contest the Imperial Court. It has no wisdom-path immortal of its own. Its camp is hard to take. A Battle Tribe: its friends receive Gu Masters."
+      }
+    ]
+  },
+  {
+    "name": "Dong Fang Tribe",
+    "cityStateType": "Refiner Tribe",
+    "outerColor": [
+      160,
+      60,
+      70
+    ],
+    "innerColor": [
+      250,
+      240,
+      220
+    ],
+    "cities": [
+      "Jade Pool"
+    ],
+    "uniques": [
+      "[+50]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Dong Fang tribe (东方家), a golden bloodline that has held the Imperial Court many times, seated in Jade Pool Blessed Land. Its patriarchs walk the wisdom path. Its city is hard to take. A Refiner Tribe: its friends gain science."
+      }
+    ]
+  },
+  {
     "name": "Barbarians",
     "outerColor": [
       0,

@@ -382,6 +382,121 @@ def stone_folk():
     return g
 
 
+
+# ---------------------------------------------------------------- reference audit Layer 7: more super forces
+def tie_clan():
+    """The Tie (iron) clan's Demon-Suppressing Tower, where demonic Gu Masters are held: an iron pagoda whose barred
+    gate is shut."""
+    g = G()
+    w, y = 40.0, 94.0
+    for tier in range(5):
+        h = 13 - 2 * tier
+        g.poly([(50 - w / 2, y), (50 + w / 2, y), (50 + w / 2, y - h), (50 - w / 2, y - h)])
+        roof(g, 50, y - h - 1, w / 2 + 7, 7)
+        y -= h + 7
+        w -= 6
+    g.line([(50, y + 2), (50, y - 8)], 3.2)
+    g.circ(50, y - 9, 3.4)
+    g.poly([(42, 94), (58, 94), (58, 80), (42, 80)], 0)                            # the gate
+    for x in (45.5, 50, 54.5):                                                    # its bars
+        g.line([(x, 80), (x, 94)], 2.2)
+    return g
+
+
+def tang_clan():
+    """The Tang clan, which found Thieving Heaven's dream realm in the desert: a dream spiral rising over the dunes,
+    stars caught in it."""
+    g = G()
+    g.poly([(2, 98), (2, 86), (22, 76), (44, 86), (68, 72), (98, 84), (98, 98)])
+    pts = []
+    for i in range(80):
+        t = i / 79 * 2.7 * math.pi
+        r = 3 + t * 4.6
+        pts.append((50 + r * math.cos(t), 38 - r * 0.86 * math.sin(t)))
+    g.line(pts, 5.4)
+    for x, y, r in ((18, 18, 4.2), (84, 30, 3.4), (76, 8, 2.8)):
+        g.poly([(x, y - 2.4 * r), (x + r * 0.5, y - r * 0.5), (x + 2.4 * r, y), (x + r * 0.5, y + r * 0.5),
+                (x, y + 2.4 * r), (x - r * 0.5, y + r * 0.5), (x - 2.4 * r, y), (x - r * 0.5, y - r * 0.5)])
+    return g
+
+
+def shen_clan():
+    """The Shen clan of the sound path, whose sea makes the conch of wave-sound: a conch shell, sound rippling out of
+    its mouth."""
+    g = G()
+    g.circ(46, 58, 25)                                                            # the body whorl
+    g.poly([(28, 42), (58, 28), (92, 8), (72, 58), (62, 70)])                     # the spire
+    for t in (0.2, 0.45, 0.7):                                                    # knobs on its shoulder
+        x, y = 58 + 34 * t, 28 - 20 * t
+        g.poly([(x - 5, y + 2), (x - 1, y - 8), (x + 4, y - 1)])
+    for a, b in (((60, 38), (74, 48)), ((70, 28), (80, 36))):                     # sutures
+        g.line([a, b], 2.4, 0)
+    g.poly([(26, 70), (6, 94), (38, 80)])                                         # the canal
+    g.poly([(30, 46), (42, 52), (46, 70), (36, 84), (26, 74), (24, 58)], 0)       # the mouth
+    for r in (8, 15, 22):                                                         # the wave-sound
+        g.arc_band(36, 66, r + 2.6, r, 128, 232)
+    return g
+
+
+def _sun(g: G, cx, cy, r, rays=12):
+    g.circ(cx, cy, r)
+    for k in range(rays):
+        a = math.radians(k * 360 / rays)
+        g.poly([(cx + (r + 3) * math.cos(a - 0.12), cy - (r + 3) * math.sin(a - 0.12)),
+                (cx + (r + 10) * math.cos(a), cy - (r + 10) * math.sin(a)),
+                (cx + (r + 3) * math.cos(a + 0.12), cy - (r + 3) * math.sin(a + 0.12))])
+
+
+def ma_tribe():
+    """The Ma (horse) tribe, a golden bloodline of Giant Sun: a horse's head before the sun."""
+    g = G()
+    _sun(g, 72, 24, 12)
+    g.poly([(36, 96), (40, 70), (34, 56), (22, 58), (10, 54), (8, 46), (20, 32), (30, 22), (38, 10), (44, 20),
+            (50, 18), (58, 30), (64, 50), (66, 70), (62, 96)])                    # head and neck, facing left
+    for k in range(5):                                                            # the mane along the neck
+        t = k / 4
+        x, y = 50 + 16 * t, 20 + 50 * t
+        g.ell(x - 3, y - 6, x + 7, y + 6)
+    for k in range(4):                                                            # its strands, cut
+        t = (k + 0.5) / 4
+        g.line([(52 + 14 * t, 24 + 46 * t), (58 + 14 * t, 30 + 46 * t)], 1.6, 0)
+    g.circ(30, 34, 3.2, 0)                                                        # eye
+    g.circ(14, 50, 2, 0)                                                          # nostril
+    return g
+
+
+def liu_tribe():
+    """The Liu tribe, a golden family of Giant Sun's line whose heir was famed for letters and war alike: a sword and
+    a writing brush crossed beneath the sun."""
+    g = G()
+    _sun(g, 50, 20, 10)
+    g.poly([(24, 84), (70, 40), (78, 34), (74, 44), (30, 90)])                    # the sword's blade, point up right
+    g.line([(16, 76), (36, 96)], 5)                                               # its guard
+    g.line([(24, 86), (12, 98)], 4.4); g.circ(10, 99, 3.6)                        # grip and pommel
+    g.line([(84, 92), (46, 56)], 4)                                               # the brush's shaft
+    g.ell(84, 90, 96, 102); g.ell(87, 93, 93, 99, 0)                              # its hanging loop
+    g.circ(40, 50, 7.5)                                                           # the brush head: a teardrop
+    g.poly([(45.3, 44.7), (34.7, 55.3), (22, 32)])
+    return g
+
+
+def dong_fang_tribe():
+    """The Dong Fang (east) tribe of the wisdom path in Jade Pool Blessed Land: the sun rising over the jade pool,
+    its light in the water."""
+    g = G()
+    c = G()
+    c.circ(50, 58, 22)
+    for k in range(9):
+        a = math.radians(10 + k * 20)
+        c.poly([(50 + 25 * math.cos(a - 0.08), 58 - 25 * math.sin(a - 0.08)), (50 + 40 * math.cos(a), 58 - 40 * math.sin(a)),
+                (50 + 25 * math.cos(a + 0.08), 58 - 25 * math.sin(a + 0.08))])
+    c.poly([(0, 60), (100, 60), (100, 100), (0, 100)], 0)                        # cut at the horizon
+    g.paste(c)
+    g.line([(6, 62), (94, 62)], 3)
+    for y, w in ((72, 34), (82, 24), (91, 14)):                                  # the pool's ripples and the light
+        g.line([(50 - w, y), (50 + w, y)], 3.2)
+    return g
+
 CITY_STATE_ICONS = [(n, f) for n, f in (
     ("Hairy Man Tribe", hairy_man_tribe), ("Foothill Villages", foothill_villages), ("Jia Clan", jia_clan),
     ("Lang Ya Sect", lang_ya_sect), ("Man Tribe", man_tribe), ("Ge Tribe", ge_tribe),
@@ -392,7 +507,9 @@ CITY_STATE_ICONS = [(n, f) for n, f in (
     ("Black Heaven Temple", black_heaven_temple), ("Myriad Dragon Dock", myriad_dragon_dock),
     ("Merman Imperial Court", merman_imperial_court), ("Song Clan", song_clan), ("Xia Clan", xia_clan),
     ("Lan Clan", lan_clan), ("Xiao Clan", xiao_clan), ("Mo Clan", mo_clan), ("Wan Clan", wan_clan),
-    ("Feathermen", feathermen), ("Snowmen", snowmen), ("Inkmen", inkmen), ("Rockmen", rockmen))]
+    ("Feathermen", feathermen), ("Snowmen", snowmen), ("Inkmen", inkmen), ("Rockmen", rockmen),
+    ("Tie Clan", tie_clan), ("Tang Clan", tang_clan), ("Shen Clan", shen_clan), ("Ma Tribe", ma_tribe),
+    ("Liu Tribe", liu_tribe), ("Dong Fang Tribe", dong_fang_tribe))]
 FOLK_ICONS = [("Winged Folk", winged_folk), ("Snow Folk", snow_folk), ("Ink Folk", ink_folk), ("Stone Folk", stone_folk)]
 
 
