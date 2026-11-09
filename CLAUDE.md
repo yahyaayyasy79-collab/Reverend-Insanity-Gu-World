@@ -66,7 +66,12 @@ Gu Yue or cities, strength 30 growing to 176 by the Venerables' era, exempt from
 rule, 50% return when a unit kills him while no Spring Autumn Cicada stands). Layer 11:
 ten more canon-checked catalog Gu for the poorest paths; killing, enchantment, illusion, painting, restriction and
 refinement have no further canon Gu (more would be invented: the user's call). Gu Yue AI military 4 -> 6 (Bai turned
-on it once the Wu held).
+on it once the Wu held). Layer 12 (user 2026-11-10): twelve invented Gu for those six paths; the race for fate (the
+Court mends Fate Gu into Fate Restoration, +1/turn from 30; every Court soldier defeated -8, an empty store shatters it;
+at 100 Fate Gu Restored: +50% strength/yields, rank-eight sleepers, Heaven's Decree every 20 turns: bow or face two
+rank-seven immortals; Court declareWar stays 0); Fang Yuan strikes only the Court (his kills -25), pillages nothing, moves
+to the Court's capital on T260, always returns, Venerable-level only after the shattering; the Qing Mao villages 6-7
+tiles apart, Gu Yue cities +25%.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.

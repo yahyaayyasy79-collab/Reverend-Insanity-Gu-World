@@ -105,6 +105,18 @@
       "[This Unit] gains the [Day Gu] promotion <upon defeating a [Day Gu] unit> <with [25]% chance> <for units without [Day Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Pill Fire Gu] promotion <upon defeating a [Pill Fire Gu] unit> <with [25]% chance> <for units without [Pill Fire Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Swift Shadow Gu] promotion <upon defeating a [Swift Shadow Gu] unit> <with [25]% chance> <for units without [Swift Shadow Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
+      "[This Unit] gains the [Killing Edge Gu] promotion <upon defeating a [Killing Edge Gu] unit> <with [25]% chance> <for units without [Killing Edge Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Slaughter Intent Gu] promotion <upon defeating a [Slaughter Intent Gu] unit> <with [25]% chance> <for units without [Slaughter Intent Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Charming Glance Gu] promotion <upon defeating a [Charming Glance Gu] unit> <with [25]% chance> <for units without [Charming Glance Gu]> <hidden from users>",
+      "[This Unit] gains the [Bewitching Mist Gu] promotion <upon defeating a [Bewitching Mist Gu] unit> <with [25]% chance> <for units without [Bewitching Mist Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [False Image Gu] promotion <upon defeating a [False Image Gu] unit> <with [25]% chance> <for units without [False Image Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Illusion Maze Gu] promotion <upon defeating a [Illusion Maze Gu] unit> <with [25]% chance> <for units without [Illusion Maze Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Ink Brush Gu] promotion <upon defeating a [Ink Brush Gu] unit> <with [25]% chance> <for units without [Ink Brush Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Living Scroll Gu] promotion <upon defeating a [Living Scroll Gu] unit> <with [25]% chance> <for units without [Living Scroll Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Binding Seal Gu] promotion <upon defeating a [Binding Seal Gu] unit> <with [25]% chance> <for units without [Binding Seal Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Forbidden Ground Gu] promotion <upon defeating a [Forbidden Ground Gu] unit> <with [25]% chance> <for units without [Forbidden Ground Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Refining Hammer Gu] promotion <upon defeating a [Refining Hammer Gu] unit> <with [25]% chance> <for units without [Refining Hammer Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
+      "[This Unit] gains the [Tempering Flame Gu] promotion <upon defeating a [Tempering Flame Gu] unit> <with [25]% chance> <for units without [Tempering Flame Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
       "[This Unit] gains the [Stage Cultivation] status for [3] turn(s) <upon turn start> <for units without [Stage Cultivation]> <for units without [Peak Stage]> <for units with [Extreme Physique]> <for [pre-[Rank Six era]] units> <for [non-[Venerable]] units> <on [Quick] game speed>",
       "[This Unit] gains the [Stage Cultivation] status for [5] turn(s) <upon turn start> <for units without [Stage Cultivation]> <for units without [Peak Stage]> <for units with [Extreme Physique]> <for [pre-[Rank Six era]] units> <for [non-[Venerable]] units> <on [Standard] game speed>",
       "[This Unit] gains the [Stage Cultivation] status for [8] turn(s) <upon turn start> <for units without [Stage Cultivation]> <for units without [Peak Stage]> <for units with [Extreme Physique]> <for [pre-[Rank Six era]] units> <for [non-[Venerable]] units> <on [Epic] game speed>",
@@ -160,7 +172,11 @@
       "[This Unit] gains the [Doomed Aperture] status for [30] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Standard] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [45] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Epic] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Marathon] game speed>",
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>"
+      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
+      "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
+      "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
     ],
     "civilopediaText": [
       {
@@ -265,7 +281,23 @@
       "[This Unit] gains the [Day Gu] promotion <upon defeating a [Day Gu] unit> <with [25]% chance> <for units without [Day Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Pill Fire Gu] promotion <upon defeating a [Pill Fire Gu] unit> <with [25]% chance> <for units without [Pill Fire Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Swift Shadow Gu] promotion <upon defeating a [Swift Shadow Gu] unit> <with [25]% chance> <for units without [Swift Shadow Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>"
+      "[This Unit] gains the [Killing Edge Gu] promotion <upon defeating a [Killing Edge Gu] unit> <with [25]% chance> <for units without [Killing Edge Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Slaughter Intent Gu] promotion <upon defeating a [Slaughter Intent Gu] unit> <with [25]% chance> <for units without [Slaughter Intent Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Charming Glance Gu] promotion <upon defeating a [Charming Glance Gu] unit> <with [25]% chance> <for units without [Charming Glance Gu]> <hidden from users>",
+      "[This Unit] gains the [Bewitching Mist Gu] promotion <upon defeating a [Bewitching Mist Gu] unit> <with [25]% chance> <for units without [Bewitching Mist Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [False Image Gu] promotion <upon defeating a [False Image Gu] unit> <with [25]% chance> <for units without [False Image Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Illusion Maze Gu] promotion <upon defeating a [Illusion Maze Gu] unit> <with [25]% chance> <for units without [Illusion Maze Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Ink Brush Gu] promotion <upon defeating a [Ink Brush Gu] unit> <with [25]% chance> <for units without [Ink Brush Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Living Scroll Gu] promotion <upon defeating a [Living Scroll Gu] unit> <with [25]% chance> <for units without [Living Scroll Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Binding Seal Gu] promotion <upon defeating a [Binding Seal Gu] unit> <with [25]% chance> <for units without [Binding Seal Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Forbidden Ground Gu] promotion <upon defeating a [Forbidden Ground Gu] unit> <with [25]% chance> <for units without [Forbidden Ground Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Refining Hammer Gu] promotion <upon defeating a [Refining Hammer Gu] unit> <with [25]% chance> <for units without [Refining Hammer Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
+      "[This Unit] gains the [Tempering Flame Gu] promotion <upon defeating a [Tempering Flame Gu] unit> <with [25]% chance> <for units without [Tempering Flame Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
+      "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
+      "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
     ],
     "civilopediaText": [
       {
@@ -370,7 +402,23 @@
       "[This Unit] gains the [Day Gu] promotion <upon defeating a [Day Gu] unit> <with [25]% chance> <for units without [Day Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Pill Fire Gu] promotion <upon defeating a [Pill Fire Gu] unit> <with [25]% chance> <for units without [Pill Fire Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Swift Shadow Gu] promotion <upon defeating a [Swift Shadow Gu] unit> <with [25]% chance> <for units without [Swift Shadow Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>"
+      "[This Unit] gains the [Killing Edge Gu] promotion <upon defeating a [Killing Edge Gu] unit> <with [25]% chance> <for units without [Killing Edge Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Slaughter Intent Gu] promotion <upon defeating a [Slaughter Intent Gu] unit> <with [25]% chance> <for units without [Slaughter Intent Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Charming Glance Gu] promotion <upon defeating a [Charming Glance Gu] unit> <with [25]% chance> <for units without [Charming Glance Gu]> <hidden from users>",
+      "[This Unit] gains the [Bewitching Mist Gu] promotion <upon defeating a [Bewitching Mist Gu] unit> <with [25]% chance> <for units without [Bewitching Mist Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [False Image Gu] promotion <upon defeating a [False Image Gu] unit> <with [25]% chance> <for units without [False Image Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Illusion Maze Gu] promotion <upon defeating a [Illusion Maze Gu] unit> <with [25]% chance> <for units without [Illusion Maze Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Ink Brush Gu] promotion <upon defeating a [Ink Brush Gu] unit> <with [25]% chance> <for units without [Ink Brush Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Living Scroll Gu] promotion <upon defeating a [Living Scroll Gu] unit> <with [25]% chance> <for units without [Living Scroll Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Binding Seal Gu] promotion <upon defeating a [Binding Seal Gu] unit> <with [25]% chance> <for units without [Binding Seal Gu]> <for [non-[Rank One Gu Master]] units> <hidden from users>",
+      "[This Unit] gains the [Forbidden Ground Gu] promotion <upon defeating a [Forbidden Ground Gu] unit> <with [25]% chance> <for units without [Forbidden Ground Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "[This Unit] gains the [Refining Hammer Gu] promotion <upon defeating a [Refining Hammer Gu] unit> <with [25]% chance> <for units without [Refining Hammer Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
+      "[This Unit] gains the [Tempering Flame Gu] promotion <upon defeating a [Tempering Flame Gu] unit> <with [25]% chance> <for units without [Tempering Flame Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
+      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
+      "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
+      "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
     ],
     "civilopediaText": [
       {
@@ -382,7 +430,11 @@
     "name": "Beast",
     "movementType": "Land",
     "uniques": [
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>"
+      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
+      "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
+      "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
     ],
     "civilopediaText": [
       {
@@ -394,7 +446,11 @@
     "name": "Gu House",
     "movementType": "Land",
     "uniques": [
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>"
+      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
+      "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
+      "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
     ],
     "civilopediaText": [
       {

@@ -1536,7 +1536,8 @@
       "[+50]% Strength <when defending>",
       "[+100]% Strength <when defending> <vs cities>",
       "Invisible to non-adjacent units",
-      "Can only attack [{Military} {non-[Gu Yue Clan]}] units",
+      "Can only attack [{Military} {Heavenly Court}] units",
+      "Unable to pillage tiles",
       "[+40]% Strength <after turn number [67]> <on [Quick] game speed>",
       "[+40]% Strength <after turn number [100]> <on [Standard] game speed>",
       "[+40]% Strength <after turn number [150]> <on [Epic] game speed>",
@@ -1553,14 +1554,18 @@
       "[+170]% Strength <after turn number [340]> <on [Standard] game speed>",
       "[+170]% Strength <after turn number [510]> <on [Epic] game speed>",
       "[+170]% Strength <after turn number [1020]> <on [Marathon] game speed>",
-      "[+135]% Strength <after turn number [261]> <on [Quick] game speed>",
-      "[+135]% Strength <after turn number [390]> <on [Standard] game speed>",
-      "[+135]% Strength <after turn number [585]> <on [Epic] game speed>",
-      "[+135]% Strength <after turn number [1170]> <on [Marathon] game speed>"
+      "[+135]% Strength <after turn number [261]> <if [Shattered Fate] is constructed by anybody> <on [Quick] game speed>",
+      "[+135]% Strength <after turn number [390]> <if [Shattered Fate] is constructed by anybody> <on [Standard] game speed>",
+      "[+135]% Strength <after turn number [585]> <if [Shattered Fate] is constructed by anybody> <on [Epic] game speed>",
+      "[+135]% Strength <after turn number [1170]> <if [Shattered Fate] is constructed by anybody> <on [Marathon] game speed>",
+      "[This Unit] is destroyed <upon turn start> <after turn number [174]> <before turn number [175]> <on [Quick] game speed>",
+      "[This Unit] is destroyed <upon turn start> <after turn number [260]> <before turn number [261]> <on [Standard] game speed>",
+      "[This Unit] is destroyed <upon turn start> <after turn number [390]> <before turn number [391]> <on [Epic] game speed>",
+      "[This Unit] is destroyed <upon turn start> <after turn number [780]> <before turn number [781]> <on [Marathon] game speed>"
     ],
     "civilopediaText": [
       {
-        "text": "Fang Yuan (方源), the demon from beyond the heavens (天外之魔): reborn five hundred years back with the Spring Autumn Cicada, he carries five centuries of memory and cunning. He wanders the five regions alone, at war with every clan, and outgrows every mortal of his time; in the Venerables' era he stands level with a Venerable, as he ends the canon as one. Only an adjacent unit can see him (his Stealth Scales Gu); he slips away from melee, is hard to pin down (+50% when defending, +100% more against city walls), heals every turn, ignores zones of control, hunts only the other clans' Gu Masters (never his own Gu Yue) and never takes a city. He comes to the Gu Yue village on turn 30 (Standard); struck down by a unit, he returns with a 50% chance near his killer's city while no clan holds the Spring Autumn Cicada."
+        "text": "Fang Yuan (方源), the demon from beyond the heavens (天外之魔): reborn five hundred years back with the Spring Autumn Cicada, he carries five centuries of memory and cunning, and only one aim: eternal life (永生). He comes to the Gu Yue village on turn 30 (Standard) and wanders unseen, harming no clan and pillaging nothing; on turn 260 he leaves for the Central Continent, where he hunts the Heavenly Court's soldiers to break its mending of Fate Gu. Only an adjacent unit can see him (his Stealth Scales Gu); he slips away from melee, is hard to pin down (+50% when defending, +100% more against city walls), heals every turn and never takes a city. Strength 30 when he comes, about 144 by turn 340; once Fate Gu lies shattered he stands level with a Venerable (176 from turn 390), as he ends the canon as one. Fate Gu cannot read him: a Court soldier he strikes down costs its mending 25. Struck down by a unit, his Spring Autumn Cicada brings him back near his killer's city."
       }
     ]
   }

@@ -698,6 +698,33 @@ the barbarians' record (`fangYuan`).
   in between gave it to the Bai (6 of 8) or the Wu (5 of 8). Eight games are few: compare pooled. More soldiers live
   (156 at the end against 114 in Layer 8), so the late debt rose to 18%.
 
+## Layer 12: the race for fate (2026-11-10)
+
+Five Regions, 8 x 450, seed 101 each, against the Layer 11 build (Fang Yuan striking every clan but the Gu Yue).
+Each run counts the Court's Fate Restoration every 50 turns, Fate Gu Restored and Shattered Fate, the Court's wars
+and Fang Yuan's lives.
+
+| | Layer 11 | First build | Fang Yuan from T260, -25 a kill, always returns; Court declareWar 4 | Final (Heaven's Decree, declareWar 0, villages 6-7 tiles apart) |
+|---|---|---|---|---|
+| Fate Gu mended whole / shattered / neither (of 8) | (no race) | 8 / 0 / 0 | 3 / 4 / 1 | 3 / 4 / 1 |
+| Turn mended whole | | T306-411 | T301-427 | T311-353 |
+| Turn shattered | | | T264-377 | T264-305 |
+| Fang Yuan's turns alive after reaching the Court | | 0-25 | 8-197 | 13-197 |
+| The Court's own wars | 0 | 0 | 1 (one of its own sects, T61) | 0 |
+| Majors fallen | 2 | 7 (Gu Yue 3) | 6 (Gu Yue 3) | 7 (Gu Yue 3, Wu 2, Xiong 2) |
+| Venerables (games) | Wu 3, Fang 2, Gu Yue 1, Huang Jin 1 | Bai 5, Wu 2 | Bai 3, Wu 2, Huang Jin 1, Xiong 1 | Bai 5, Fang 1, Huang Jin 1, Wu 1 |
+
+* **The first build was one-sided:** the Court mended Fate Gu in every game. Fang Yuan came at 64 strength and fell in
+  2-5 turns, and the Spring Autumn Cicada's wonder (refined by the Court itself in 5 games, by T213-293) had ended his
+  returns. From T260 (103 strength), with every kill costing the mending 25 and the cicada no longer stopping him, the
+  race splits: Fate Gu shattered in 4 games, mended in 3.
+* **The Court and war:** with declareWar 1 it never went to war; with 4 it went once, against one of its own sects at
+  T61, and never after Fate Gu was whole. The engine's motive weighs distance and walls over strength, so the Court
+  keeps its peace and a whole Fate Gu acts through Heaven's Decree.
+* **The Gu Yue:** without Fang Yuan striking its neighbours it falls again as in Layer 8 (to the Bai twice, the Xiong
+  once). More room (villages 6-7 tiles apart) and +25% city strength raised it from 2.0 to 3.4 cities at T100, but the
+  Bai, the canon's aggressor, still takes it in 3 of 8 games.
+
 ## Re-run
 
 ```

@@ -266,6 +266,10 @@ Generated from `jsons/` by `tools/gen_balance.py`; the self-tests fail when it i
 | GlobalUniques | `Instantly consumes [1] [Lifespan Gu] <upon turn start> <every [10] turns> <if [Venerable Ascension] is constructed by anybody> <for [Major] Civilizations>` | 1, 10 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+20]% [Production] [in all cities] <if [Venerable Ascension] is constructed>` | +20 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `[+3 Happiness] <if [Venerable Ascension] is constructed>` | +3 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Decree] event <upon turn start> <every [13] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Quick] game speed>` | 13 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Decree] event <upon turn start> <every [20] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Standard] game speed>` | 20 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Decree] event <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Epic] game speed>` | 30 | tools/gen_ruleset.py `ModOptions / Globals` |
+| GlobalUniques | `Triggers a [Heaven's Decree] event <upon turn start> <every [60] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Marathon] game speed>` | 60 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [3]% chance> <for [Major] Civilizations> <on [Quick] game speed>` | 3 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [2]% chance> <for [Major] Civilizations> <on [Standard] game speed>` | 2 | tools/gen_ruleset.py `ModOptions / Globals` |
 | GlobalUniques | `Triggers a [Dream Realm] event <upon turn start> <starting from the [Rank Seven era]> <if [Shattered Fate] is not constructed by anybody> <with [1]% chance> <for [Major] Civilizations> <on [Epic] game speed>` | 1 | tools/gen_ruleset.py `ModOptions / Globals` |
@@ -674,10 +678,14 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Fang Yuan | `[+170]% Strength <after turn number [340]> <on [Standard] game speed>` | +170, 340 | tools/gen_ruleset.py `Units` |
 | Fang Yuan | `[+170]% Strength <after turn number [510]> <on [Epic] game speed>` | +170, 510 | tools/gen_ruleset.py `Units` |
 | Fang Yuan | `[+170]% Strength <after turn number [1020]> <on [Marathon] game speed>` | +170, 1020 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+135]% Strength <after turn number [261]> <on [Quick] game speed>` | +135, 261 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+135]% Strength <after turn number [390]> <on [Standard] game speed>` | +135, 390 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+135]% Strength <after turn number [585]> <on [Epic] game speed>` | +135, 585 | tools/gen_ruleset.py `Units` |
-| Fang Yuan | `[+135]% Strength <after turn number [1170]> <on [Marathon] game speed>` | +135, 1170 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [261]> <if [Shattered Fate] is constructed by anybody> <on [Quick] game speed>` | +135, 261 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [390]> <if [Shattered Fate] is constructed by anybody> <on [Standard] game speed>` | +135, 390 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [585]> <if [Shattered Fate] is constructed by anybody> <on [Epic] game speed>` | +135, 585 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[+135]% Strength <after turn number [1170]> <if [Shattered Fate] is constructed by anybody> <on [Marathon] game speed>` | +135, 1170 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[This Unit] is destroyed <upon turn start> <after turn number [174]> <before turn number [175]> <on [Quick] game speed>` | 174, 175 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[This Unit] is destroyed <upon turn start> <after turn number [260]> <before turn number [261]> <on [Standard] game speed>` | 260, 261 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[This Unit] is destroyed <upon turn start> <after turn number [390]> <before turn number [391]> <on [Epic] game speed>` | 390, 391 | tools/gen_ruleset.py `Units` |
+| Fang Yuan | `[This Unit] is destroyed <upon turn start> <after turn number [780]> <before turn number [781]> <on [Marathon] game speed>` | 780, 781 | tools/gen_ruleset.py `Units` |
 
 ### UnitPromotions.json
 
@@ -1112,6 +1120,47 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Swift Shadow Gu | `[+1] Movement` | +1 | tools/gen_ruleset.py `Promotions` |
 | Swift Shadow Gu | `[+4]% Strength` | +4 | tools/gen_ruleset.py `Promotions` |
 | Swift Shadow Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Killing Edge Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Killing Edge Gu | `[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>` | 6 | tools/gen_ruleset.py `Promotions` |
+| Killing Edge Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Slaughter Intent Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Slaughter Intent Gu | `[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Slaughter Intent Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
+| Slaughter Intent Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Charming Glance Gu | `[+2]% maintenance costs` | +2 | tools/gen_ruleset.py `Promotions` |
+| Charming Glance Gu | `[Target Unit] gains the [Charmed] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Charming Glance Gu | `[+3]% Strength <when attacking>` | +3 | tools/gen_ruleset.py `Promotions` |
+| Charming Glance Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Bewitching Mist Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Bewitching Mist Gu | `[-7]% Strength for enemy [Military] units in adjacent [All] tiles` | -7 | tools/gen_ruleset.py `Promotions` |
+| Bewitching Mist Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| False Image Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| False Image Gu | `[+16]% Strength <when defending>` | +16 | tools/gen_ruleset.py `Promotions` |
+| False Image Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Illusion Maze Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Illusion Maze Gu | `[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>` | 2 | tools/gen_ruleset.py `Promotions` |
+| Illusion Maze Gu | `[+7]% Strength <when attacking>` | +7 | tools/gen_ruleset.py `Promotions` |
+| Illusion Maze Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Ink Brush Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Ink Brush Gu | `[+16]% Strength <when attacking>` | +16 | tools/gen_ruleset.py `Promotions` |
+| Ink Brush Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Living Scroll Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Living Scroll Gu | `[+19] HP when healing` | +19 | tools/gen_ruleset.py `Promotions` |
+| Living Scroll Gu | `Heals [15] damage if it kills a unit` | 15 | tools/gen_ruleset.py `Promotions` |
+| Living Scroll Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Binding Seal Gu | `[+3]% maintenance costs` | +3 | tools/gen_ruleset.py `Promotions` |
+| Binding Seal Gu | `[Target Unit] gains the [Sealed] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>` | 1 | tools/gen_ruleset.py `Promotions` |
+| Binding Seal Gu | `[+4]% Strength <when attacking>` | +4 | tools/gen_ruleset.py `Promotions` |
+| Binding Seal Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Forbidden Ground Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Forbidden Ground Gu | `[+28]% Strength <when defending>` | +28 | tools/gen_ruleset.py `Promotions` |
+| Forbidden Ground Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Refining Hammer Gu | `[+4]% maintenance costs` | +4 | tools/gen_ruleset.py `Promotions` |
+| Refining Hammer Gu | `[+14]% Strength` | +14 | tools/gen_ruleset.py `Promotions` |
+| Refining Hammer Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
+| Tempering Flame Gu | `[+6]% maintenance costs` | +6 | tools/gen_ruleset.py `Promotions` |
+| Tempering Flame Gu | `[+28]% Strength <when defending>` | +28 | tools/gen_ruleset.py `Promotions` |
+| Tempering Flame Gu | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `[+23]% Strength <when above [0] [Green Grape Immortal Essence]> <if [Star Mark Immortal Gu] is constructed>` | +23, 0 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `Only available <when number of [[Star Mark Immortal Gu Bearer] Units] is less than [1]>` | 1 | tools/gen_ruleset.py `Promotions` |
 | Star Mark Immortal Gu Bearer | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Promotions` |
@@ -2644,6 +2693,13 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fate War › Shatter Fate Gu | `[+20]% Strength <for [20] turns>` | +20, 20 | tools/gen_ruleset.py `Events` |
 | Fate War › Shatter Fate Gu | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
 | Fate War › Seize Fate Gu | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
+| Heaven's Decree › Bow to the Court | `[-25]% [Production] [in all cities] <for [10] turns>` | -25, 10 | tools/gen_ruleset.py `Events` |
+| Heaven's Decree › Bow to the Court | `[-25]% [Gold] [in all cities] <for [10] turns>` | -25, 10 | tools/gen_ruleset.py `Events` |
+| Heaven's Decree › Bow to the Court | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
+| Heaven's Decree › Defy the Court | `[2] [Rank Seven Gu Immortal]s rebel` | 2 | tools/gen_ruleset.py `Events` |
+| Heaven's Decree › Defy the Court | `[+20]% Strength <for [10] turns>` | +20, 10 | tools/gen_ruleset.py `Events` |
+| Heaven's Decree › Defy the Court | `[+50]% weight to this choice for AI decisions` | +50 | tools/gen_ruleset.py `Events` |
+| Fate Gu Shattered › Fate Gu shatters | `[+100]% weight to this choice for AI decisions` | +100 | tools/gen_ruleset.py `Events` |
 | Qi Tides › Shelter the cities | `[-25]% [Production] [in all cities] <for [5] turns>` | -25, 5 | tools/gen_ruleset.py `Events` |
 | Qi Tides › Shelter the cities | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Qi Tides › Ride the tide | `Instantly provides [10] [Heaven Qi]` | 10 | tools/gen_ruleset.py `Events` |
@@ -3176,7 +3232,9 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fate Gu | `Costs [60] [Green Grape Immortal Essence]` | 60 | tools/gen_ruleset.py `Buildings` |
 | Fate Gu | `[+15]% Strength <for [post-[Rank Five era]] units>` | +15 | tools/gen_ruleset.py `Buildings` |
 | Fate Gu | `[+2 Happiness]` | +2 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu | `Instantly provides [30] [Fate Restoration]` | 30 | tools/gen_ruleset.py `Buildings` |
 | Fate Gu | `[+500]% weight to this choice for AI decisions` | +500 | tools/gen_ruleset.py `Buildings` |
+| Fate Gu Restored | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Shattered Fate | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Fate Seized | cost | 1 | tools/gen_ruleset.py `Buildings` |
 | Strength Hall | cost | 90 | tools/gen_ruleset.py `Buildings` |
@@ -4383,6 +4441,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 
 | Object | Field or unique | Value | Edit in |
 |---|---|---|---|
+| Gu Yue Clan | `[+25]% Strength for cities` | +25 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>` | 20, 21 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>` | 30, 31 | tools/gen_ruleset.py `Nations` |
 | Gu Yue Clan | `A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>` | 45, 46 | tools/gen_ruleset.py `Nations` |
@@ -4399,6 +4458,23 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Heavenly Court | `Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>` | 2 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Heavenly Court | `[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>` | 2, 3 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `Instantly provides [3] [Fate Restoration] <upon turn start> <every [2] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Quick] game speed>` | 3, 2, 100 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `Instantly provides [1] [Fate Restoration] <upon turn start> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Standard] game speed>` | 1, 100 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `Instantly provides [2] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Epic] game speed>` | 2, 3, 100 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `Instantly provides [1] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Marathon] game speed>` | 1, 3, 100 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is constructed> <when above [99] [Fate Restoration]> <if [Fate Gu Restored] is not constructed>` | 99 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+50]% Strength <for [Military] units> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>` | +50 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+50]% [Production] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>` | +50 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+50]% [Science] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>` | +50 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[+50]% [Gold] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>` | +50 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [7] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Quick] game speed>` | 1, 7, 6 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>` | 1, 10, 6 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>` | 1, 15, 6 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>` | 1, 30, 6 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>` | 175, 176 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>` | 261, 262 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>` | 391, 392 | tools/gen_ruleset.py `Nations` |
+| Heavenly Court | `A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>` | 781, 782 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[+15]% Strength <when defending>` | +15 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[3] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
 | Huang Jin Family | `[3] free [Rank Two Gu Master] units appear <upon founding a city> <when number of [Cities] is less than [2]>` | 3, 2 | tools/gen_ruleset.py `Nations` |
@@ -4813,6 +4889,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-4557 numbers listed.
+4633 numbers listed.
 
 <!-- inventory:end -->

@@ -1317,6 +1317,43 @@
     ]
   },
   {
+    "name": "Heaven's Decree",
+    "text": "Fate Gu stands whole again, and the Heavenly Court sends down its decree: bow to Heaven's order, or its immortals will flatten your land.",
+    "choices": [
+      {
+        "text": "Bow to the Court",
+        "uniques": [
+          "[-25]% [Production] [in all cities] <for [10] turns>",
+          "[-25]% [Gold] [in all cities] <for [10] turns>",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      },
+      {
+        "text": "Defy the Court",
+        "uniques": [
+          "[2] [Rank Seven Gu Immortal]s rebel",
+          "[+20]% Strength <for [10] turns>",
+          "[+50]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fate Gu Shattered",
+    "text": "The Heavenly Court could not hold its mending of Fate Gu: struck one blow too many, it shatters, and every being's fate runs free.",
+    "choices": [
+      {
+        "text": "Fate Gu shatters",
+        "uniques": [
+          "Remove [Fate Gu] [in all cities]",
+          "Gain a free [Shattered Fate] [in capital]",
+          "Triggers the following global alert: [Fate Gu has shattered: the Heavenly Court could not mend it. Qi tides will sweep the five regions.]",
+          "[+100]% weight to this choice for AI decisions"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Qi Tides",
     "text": "With Fate Gu shattered, tides of qi sweep the five regions.",
     "choices": [

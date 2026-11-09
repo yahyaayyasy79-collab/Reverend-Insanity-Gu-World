@@ -194,7 +194,8 @@ rest of the list is what a player or the next session should know before trustin
     Master of that path at rank three or higher. If its last Master dies during the research, the progress stays but the tech waits until the
     clan has a Master again (by XP, a hall or a path Gu's bearer).
 
-29. **Fang Yuan's AI is the barbarians' AI (Layer 10, 2026-11-09).** A mod cannot replace Unciv's AI. A clan without
+29. **Fang Yuan's AI is the barbarians' AI (Layer 10, 2026-11-09; Layer 12: he strikes only the Heavenly Court,
+    pillages nothing and moves to the Central Continent on turn 250 by a respawn, as the AI cannot walk him there).** A mod cannot replace Unciv's AI. A clan without
     cities never declares war [src DiplomacyAutomation, E14], so he walks with the barbarians, whose AI attacks only
     what it can beat without dying, pillages to heal and wanders [src BarbarianAutomation]. His kit (invisible except to
     adjacent units, heals every turn even after acting, withdraws from melee, ignores zones of control, keeps his
@@ -206,6 +207,15 @@ rest of the list is what a player or the next session should know before trustin
 30. **Path foods on random maps (Layer 9, 2026-11-09).** The 44 new foods are luxuries (with their happiness switched
     off), so a random map spreads them by count like any luxury; the Strategic Balance option still guarantees only
     Moon Orchid and Wild Boar near each start. On the Five Regions map every major gets the same start kit.
+
+31. **A whole Fate Gu flattens by decree, not by the Court's march (Layer 12, 2026-11-10).** A personality cannot
+    change mid-game, and the engine's war motive weighs distance and walls over strength: with declareWar 1 or 4 the
+    Court never went to war after Fate Gu was whole, and at 4 it once attacked one of its own sects at T61. It keeps
+    declareWar 0; Heaven's Decree sends its immortals (belonging to no clan) against every major that defies it.
+
+32. **What shatters Fate Gu (Layer 12).** Any Court soldier struck down with less than 8 mending in store, by Fang
+    Yuan, a clan at war with the Court, a beast or a demonic Gu Master. A Court that loses many soldiers early never
+    mends it; one left in peace mends it in about 70 turns (Standard).
 
 ## Not yet seen in a real game
 

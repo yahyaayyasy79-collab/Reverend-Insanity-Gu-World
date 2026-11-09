@@ -193,14 +193,23 @@ unit addpromotion "Wind Master"                 # on a Wu Gu Master: Whirlwind G
                                                 # clan has 2+ Wind Knot Grass spare; the resource overview lists the
                                                 # food by source (tiles, Wind Path 2, Wind Insight 2, halls, lore 2)
 civ addtechnology wu-clan "Wind Path Lore"      # +2 Wind Knot Grass; the top bar does not show the foods (luxuries)
+# Layer 12 (2026-11-10): the race for fate (as the Heavenly Court, with Fate Gu built)
+civ activatetrigger "Instantly provides [70] [Fate Restoration]"   # 30 + 70 = 100: next turn the Court gains Fate Gu
+                                                # Restored (a global alert; +50% strength, production, science, stones;
+                                                # a rank-eight immortal every 10 turns)
+civ activatetrigger "Instantly consumes [100] [Fate Restoration]" # then let a Court soldier be struck down in battle:
+                                                # the Fate Gu Shattered event removes Fate Gu, Shattered Fate appears
+civ activatetrigger "Triggers a [Heaven's Decree] event"          # as any other major: bow (-25% production and stones,
+                                                # 10 turns) or defy (two rank-seven immortals beside your capital)
 # Layer 10 (2026-11-09): Fang Yuan
-unit add barbarians "Fang Yuan"                 # strength 30 (about 40 from T100 ... 176 from T390 on Standard);
+unit add barbarians "Fang Yuan"                 # strength 30 (about 40 from T100 ... 144 from T340 on Standard);
                                                 # unseen except from an adjacent tile; he slips away from melee,
-                                                # heals every turn, attacks only other clans' military units (never
-                                                # the Gu Yue's), never takes a city;
-                                                # kill him with a unit: 50% he comes back (none while anyone
-                                                # has built the Spring Autumn Cicada); in a new game he appears near
-                                                # the Gu Yue village on turn 30 (Standard)
+                                                # heals every turn, attacks only the Heavenly Court's military units,
+                                                # pillages nothing, never takes a city;
+                                                # kill him with a unit: he comes back near its city (none while
+                                                # anyone has built the Spring Autumn Cicada); in a new game he appears
+                                                # near the Gu Yue village on turn 30 and beside the Court's capital
+                                                # on turn 261 (Standard)
 # Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference
 # Five Regions map: the Central Continent holds ten Immortal Sect city-states; each shows its own emblem in diplomacy
 unit add gu-yue-clan "Rank Six Gu Immortal"   # end a turn in the Azure Water Wall: 10 (wall) + 5 (strain) damage;

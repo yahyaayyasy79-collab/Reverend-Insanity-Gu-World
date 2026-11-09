@@ -137,8 +137,10 @@ FW, FH = 60, 40
 WALL_OF = {"south": "Miasma Wall", "north": "Licorice Wall", "east": "Azure Water Wall", "west": "Raging Flame Wall",
            "central": "Sage Wall"}
 FIVE_STARTS = {  # nation: (region, target column, target row)
-    "Gu Yue Clan": ("south", 25, 33), "Bai Clan": ("south", 29, 31), "Xiong Clan": ("south", 23, 36),
-    "Wu Clan": ("south", 36, 34), "Hairy Man Tribe": ("south", 16, 35), "Foothill Villages": ("south", 31, 37),
+    # Layer 12 (autoplay): 4 tiles apart the Bai and the Xiong left the Gu Yue no room (it fell in 3 of 8 games); still
+    # one mountain's three villages, now 6-7 tiles apart (the Hairy Man Tribe a little further west)
+    "Gu Yue Clan": ("south", 25, 33), "Bai Clan": ("south", 31, 31), "Xiong Clan": ("south", 19, 36),
+    "Wu Clan": ("south", 37, 34), "Hairy Man Tribe": ("south", 12, 34), "Foothill Villages": ("south", 31, 37),
     "Jia Clan": ("south", 41, 37), "Huang Jin Family": ("north", 30, 3), "Zombie Alliance": ("east", 52, 20),
     "Merman Imperial Court": ("east", 55, 11), "Fang Clan": ("west", 6, 20), "Heavenly Court": ("central", 30, 18),
     "Lang Ya Sect": ("north", 46, 8), "Spirit Affinity House": ("central", 37, 15),

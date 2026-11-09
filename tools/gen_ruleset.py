@@ -443,12 +443,41 @@ HOUSE_MATERIALS = 60  # audit P5: a Gu House is refined from immortal materials 
 # Venerable (168): he ends the canon as one (R V6c329, ch2295: no Venerable ever cared for his people like him).
 # Autoplay: at 20 when he came, the Gu Yue's soldiers cut him down within 2-20 turns in most games.
 FANG_YUAN = "Fang Yuan"
-FY_BASE, FY_EXPERIENCE, FY_ARRIVES, FY_REBIRTH = 24, 25, 30, 50
+FY_BASE, FY_EXPERIENCE, FY_ARRIVES = 24, 25, 30
 # autoplay (8 x 450): spawned at the Gu Yue's turn start beside its capital he was cut down within 4-8 turns, so he
 # now comes at the end of the Gu Yue's turn (he moves before its units and its city strike) and guards +50%: in the
 # canon he always gets away (the user: the best stats, the smartest AI)
 FY_GUARD = 50
-FY_GROWTH = [(100, 40), (170, 100), (260, 165), (340, 170), (390, 135)]   # +% on the base, cumulative
+FY_GROWTH = [(100, 40), (170, 100), (260, 165), (340, 170)]   # +% on the base, cumulative
+# Layer 12 (the user, 2026-11-10: "fang yuan itu fokus mencapai keabadian saja ... menghancurkan takdir gu di benua
+# tengah, dan mencapai hidup abadi. daripada dia mengganggu kestabilan sumber daya tiap klan"): his one aim is eternal
+# life (R V3c27, V3c162, V5c11). He strikes only the Heavenly Court and pillages nothing; the wolves and the demonic Gu
+# Masters raid the clans. He leaves the south for the Central Continent on FY_TO_COURT (the Court refines Fate Gu at
+# T228-323, median 272, autoplay) and rises level with a Venerable (FY_ETERNAL) only once Fate Gu lies shattered: he
+# shatters it in the canon (R V5c939) and ends it as a Venerable (R V6c329).
+FY_TO_COURT = 260   # autoplay: at T250 he came at 64 strength and was cut down in 2-5 turns; from T260 he has 103
+FY_ETERNAL = (390, 135)
+# The race for fate: the Court mends Fate Gu (R V4c189, V4c230) into a stockpile, Fate Restoration: FATE_START when
+# the Gu is refined, about one a turn (Standard), FATE_FULL mends it whole. Every Court soldier struck down in battle
+# costs FATE_LOSS; one struck down with less in store shatters Fate Gu. Whole, it gives the Court the strength to
+# flatten the five regions (the user: "mampu meratakan 5 benua jikalau takdir gu sudah sepenuhnya pulih"); until then
+# the old Venerables' legacies (Primordial Origin, Star Constellation, Genesis Lotus, R V5c214, V5c530) and the
+# Immortal Tomb's sleepers (R V5c49, V5c207) hold it.
+FATE_RES, FATE_RESTORED, FATE_SHATTER = "Fate Restoration", "Fate Gu Restored", "Fate Gu Shattered"
+FATE_START, FATE_FULL, FATE_LOSS = 30, 100, 8
+# Fate Gu cannot read the demon from beyond the heavens: a Court soldier he strikes down undoes FATE_LOSS_FY in all
+# (autoplay: at 8 a kill the Court mended Fate Gu whole in 8 of 8 games, T306-411)
+FATE_LOSS_FY = 25
+FATE_MIGHT = 50          # % strength, production, science and stones the mended Fate Gu adds
+FATE_ARMY, FATE_ARMY_CAP = 10, 6   # a rank-eight immortal wakes every FATE_ARMY turns (Standard), at most FATE_ARMY_CAP
+# Heaven's Decree: while Fate Gu stands whole, every DECREE_EVERY turns (Standard) each other major bows (tribute:
+# -DECREE_TRIBUTE% production and stones for DECREE_TURNS turns) or defies (DECREE_HOST rank-seven immortals come down)
+DECREE, DECREE_EVERY, DECREE_TRIBUTE, DECREE_TURNS, DECREE_HOST = "Heaven's Decree", 20, 25, 10, 2
+
+
+def fate_gain(m):
+    """(amount, every N turns) of Fate Restoration per speed: about one a turn on Standard."""
+    return {0.67: (3, 2), 1: (1, 1), 1.5: (2, 3), 3: (1, 3)}.get(round(m, 2), (1, max(1, round(m))))
 GU_HOUSES = [  # (name, immortal Gu it needs, strength, movement, extra uniques); R V4/356, V5/694, V6/68, V6/14
     ("Calamity Luck Altar", "Connect Luck", 140, 2, ["[+50]% Strength <when defending>"]),
     ("Myriad Year Flying Warship", "Years Flow Like Water", 150, 5, ["Ignores terrain cost"]),
@@ -604,6 +633,11 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     f"Triggers a [Fate War] event <upon conquering a city> <if [Fate Gu] is constructed> <if [Fate Seized] is not "
     f"constructed> <for [non-[{HC}]] Civilizations>",
 ] + per_speed(
+    # Layer 12: Heaven's Decree while Fate Gu stands whole
+    lambda m: f"Triggers a [{DECREE}] event <upon turn start> <every [{turns(DECREE_EVERY, m)}] turns> "
+              f"<if [{FATE_RESTORED}] is constructed by anybody> <if [Fate Gu] is constructed by anybody> "
+              f"<for [Major] Civilizations> <for [non-[{HC}]] Civilizations>") + [
+] + per_speed(
     # dream realms surface before the Fate War and burn the soul, but pour attainment into survivors (R V4/74-85; B4)
     lambda m: f"Triggers a [Dream Realm] event <upon turn start> <starting from the [{E7}]> <if [Shattered Fate] is not "
               f"constructed by anybody> <with [{chance(2, m)}]% chance> <for [Major] Civilizations>") + per_speed(
@@ -704,8 +738,21 @@ BAI_DOOM = per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{t
 # validator flags "<upon gaining a [unit] unit>" there.)
 # Fang Yuan's Spring Autumn Cicada: struck down, he may return near the capital of the clan that killed him, unless a
 # clan holds the Spring Autumn Cicada itself (the immortal Gu wonder); canon has him reborn by it (R V1c1)
-FY_REBORN = [f"A [{FANG_YUAN}] rebels <upon defeating a [{FANG_YUAN}] unit> <with [{FY_REBIRTH}]% chance> "
-             f"<if [Spring Autumn Cicada] is not constructed by anybody>"]
+# Layer 12: his Spring Autumn Cicada brings him back every time (autoplay: the cicada's wonder, refined by the Court
+# itself in 5 of 8 games by T213-293, had ended him for good; in the canon the cicada is his alone)
+FY_REBORN = [f"A [{FANG_YUAN}] rebels <upon defeating a [{FANG_YUAN}] unit>"]
+# Layer 12: every Court soldier struck down in battle (a unit's or a city's blow; an upgrade or old age is no defeat)
+# sets the mending of Fate Gu back; one struck down with less than FATE_LOSS in store shatters it. In real need the
+# Immortal Tomb's sleepers wake (R V5c49, V5c207)
+COURT_FALLEN = [
+    f"Instantly consumes [{FATE_LOSS}] [{FATE_RES}] <upon being defeated> <for [{HC}] Civilizations> <if [Fate Gu] is constructed> "
+    f"<when above [{FATE_LOSS - 1}] [{FATE_RES}]>",
+    f"Triggers a [{FATE_SHATTER}] event <upon being defeated> <for [{HC}] Civilizations> <if [Fate Gu] is constructed> "
+    f"<when below [{FATE_LOSS}] [{FATE_RES}]>",
+    f"Instantly consumes [{FATE_LOSS_FY - FATE_LOSS}] [{FATE_RES}] <upon being defeated> <vs [{FANG_YUAN}] units> "
+    f"<for [{HC}] Civilizations> <if [Fate Gu] is constructed> <when above [{FATE_LOSS_FY - FATE_LOSS - 1}] [{FATE_RES}]>",
+    f"[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [{HC}] Civilizations> "
+    f"<when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"]
 HERO_TRIGGERS = [f"[This Unit] gains the [{h}] promotion <for [{n}] Civilizations> <for [{who}] units> "
                  f"<when number of [[{h}] Units] is less than [1]>" for h, n, who, _, _ in HEROES] + BAI_DOOM
 
@@ -718,7 +765,7 @@ def hero_triggers(nation_name):
 # chains' Moon and Strength types, beasts and Gu Houses struck him down too)
 dump("UnitTypes.json", [{"name": n, "movementType": "Land",
                          **({"uniques": (gen_paths.GC.spoils() + (stage_lines() + HERO_TRIGGERS if n == "Gu Master" else [])
-                                         if "Gu Master" in n else []) + FY_REBORN} if n != "Civilian" else {})}
+                                         if "Gu Master" in n else []) + FY_REBORN + COURT_FALLEN} if n != "Civilian" else {})}
                         for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
 
@@ -901,13 +948,19 @@ dump("Units.json", [
                  # since a city's strike does not trigger a unit's victory)
                  "[+100]% Strength <when defending> <vs cities>",
                  # his Stealth Scales Gu, "a life-saving means" to come and go in the wolf tide (R V1c121): the cities'
-                 # strikes and his hunters cannot find him from afar (autoplay: still cut down in 3-8 turns without it);
-                 # he hunts Gu Masters, never walls or laborers
-                 # in the first volume he hid inside the Gu Yue clan and never turned on it in the open: he hunts
-                 # the other clans' Gu Masters
-                 "Invisible to non-adjacent units", "Can only attack [{Military} {non-[Gu Yue Clan]}] units"]
+                 # strikes and his hunters cannot find him from afar (autoplay: still cut down in 3-8 turns without it)
+                 "Invisible to non-adjacent units",
+                 # Layer 12: he strikes only the guardians of Fate Gu and leaves the clans' land alone
+                 f"Can only attack [{{Military}} {{{HC}}}] units", "Unable to pillage tiles"]
      + [line for t, bonus in FY_GROWTH for line in per_speed(lambda m, t=t, bonus=bonus:
-                                                              f"[+{bonus}]% Strength <after turn number [{turn_gate(t, m)}]>")]},
+                                                              f"[+{bonus}]% Strength <after turn number [{turn_gate(t, m)}]>")]
+     # eternal life: level with a Venerable only once Fate Gu lies shattered
+     + per_speed(lambda m: f"[+{FY_ETERNAL[1]}]% Strength <after turn number [{turn_gate(FY_ETERNAL[0], m)}]> "
+                           f"<if [Shattered Fate] is constructed by anybody>")
+     # he leaves the south for the Central Continent: gone at the start of this turn, back beside the Court's capital
+     # at the end of its next turn (Nations.json); a window of one turn, as "after turn number [N]" holds from N on
+     + per_speed(lambda m: f"[This Unit] is destroyed <upon turn start> <after turn number [{turn_gate(FY_TO_COURT, m)}]> "
+                           f"<before turn number [{turn_gate(FY_TO_COURT, m) + 1}]>")},
 ])
 
 # ---------------- R2 T4: refinement ladder with the canon recipes ----------------
@@ -1385,6 +1438,20 @@ dump("Events.json", [
         toll("Shatter Fate Gu", ["Remove [Fate Gu] [in all cities]", "Gain a free [Shattered Fate] [in capital]",
                                  "[+20]% Strength <for [20] turns>"], "+50"),
         toll("Seize Fate Gu", ["Gain a free [Fate Seized] [in capital]"], "+0")]},
+    # Layer 12: Fate Gu whole: the Court's decree to every major clan, bow (tribute) or defy (its immortals come down on
+    # the clan's capital as a punitive host; they belong to no clan, so they fight whoever stands near)
+    {"name": DECREE, "text": "Fate Gu stands whole again, and the Heavenly Court sends down its decree: bow to Heaven's "
+                             "order, or its immortals will flatten your land.", "choices": [
+        toll("Bow to the Court", [f"[-{DECREE_TRIBUTE}]% [Production] [in all cities] <for [{DECREE_TURNS}] turns>",
+                                  f"[-{DECREE_TRIBUTE}]% [Gold] [in all cities] <for [{DECREE_TURNS}] turns>"], "+100"),
+        toll("Defy the Court", [f"[{DECREE_HOST}] [Rank Seven Gu Immortal]s rebel",
+                                f"[+20]% Strength <for [{DECREE_TURNS}] turns>"], "+50")]},
+    # Layer 12: the mending fails: one Court soldier too many struck down and Fate Gu shatters (Fang Yuan's aim, R V5c939)
+    {"name": FATE_SHATTER, "text": "The Heavenly Court could not hold its mending of Fate Gu: struck one blow too many, it "
+                                   "shatters, and every being's fate runs free.", "choices": [
+        toll("Fate Gu shatters", ["Remove [Fate Gu] [in all cities]", "Gain a free [Shattered Fate] [in capital]",
+                                  "Triggers the following global alert: [Fate Gu has shattered: the Heavenly Court could not "
+                                  "mend it. Qi tides will sweep the five regions.]"], "+100")]},
     # the qi tides after the Fate War (R V6/1, V6/13; B4): they hamper fighting and fling qi about
     {"name": "Qi Tides", "text": "With Fate Gu shattered, tides of qi sweep the five regions.", "choices": [
         toll("Shelter the cities", ["[-25]% [Production] [in all cities] <for [5] turns>"], "+0"),
@@ -1509,7 +1576,12 @@ dump("Buildings.json", [
     {"name": "Fate Gu", "isWonder": True, "uniqueTo": HC, "requiredTech": "Immortal Gu Recipes", "cost": 600,
      "uniques": [f"Costs [60] [{GREEN}]", "Never destroyed when the city is captured", "Immortal Gu",
                  "Unavailable <if [Shattered Fate] is constructed by anybody>", "[+15]% Strength <for [post-[Rank Five era]] units>",
-                 "[+2 Happiness]", w("+500")]},
+                 "[+2 Happiness]", f"Instantly provides [{FATE_START}] [{FATE_RES}]", w("+500")]},
+    # Layer 12: the mark of a whole Fate Gu, granted when the Court's mending reaches FATE_FULL
+    {"name": FATE_RESTORED, "isNationalWonder": True, "cost": 1,
+     "uniques": ["Unbuildable", "Cannot be purchased",
+                 "Triggers the following global alert: [The Heavenly Court has mended Fate Gu whole. Its sleepers wake, and "
+                 "its armies are strong enough to flatten the five regions.]"]},
     {"name": "Shattered Fate", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]},
     {"name": "Fate Seized", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]}
 ] + gen_paths.halls() + [
@@ -1613,7 +1685,10 @@ dump("TileResources.json", [
     *gen_paths.PF.resources(),
     # MOD_SPEC_2 C1: the three qi and rank-six essence; essence never regenerates by itself (MOD_SPEC_2 #2)
 ] + [{"name": r, "resourceType": "Strategic", "terrainsCanBeFoundOn": [], "uniques": ["Stockpiled", "Cannot be traded"]}
-     for r in QI + [GREEN, LIFESPAN, MATERIALS, RED, WHITE, APRICOT]])
+     for r in QI + [GREEN, LIFESPAN, MATERIALS, RED, WHITE, APRICOT]]
+  # Layer 12: the Court's mending of Fate Gu; kept off the top bar (only the Court ever holds any)
+  + [{"name": FATE_RES, "resourceType": "Strategic", "terrainsCanBeFoundOn": [],
+      "uniques": ["Stockpiled", "Cannot be traded", "Not shown on world screen"]}])
 
 # ---------------- Terrains (Vanilla minus natural wonders and Fallout) ----------------
 ter = [t for t in json5.load(open(os.path.join(VAN, "Terrains.json")))
@@ -1772,8 +1847,11 @@ dump("Nations.json", [
     nation("Gu Yue Clan", "Gu Yue Bo", "Gu Yue Temperament", [30, 40, 90], [220, 220, 240],
            ["Gu Yue Village", "Alliance Slope", "Spear Bamboo Grove", "Stone Forest"],
            [emblem("Moonlight Gu", "<when above [0] [Moon Orchid]>"), RIGHTEOUS_START, "Start bias [Spirit Spring]",
-            "Start bias [Hill]"]
-           # the user, 2026-11-09: Fang Yuan comes back to the Gu Yue village and turns on it, once a game
+            "Start bias [Hill]",
+            # Layer 12 (autoplay): wedged 4 tiles between the Bai and the Xiong, the Gu Yue fell in 3 of 8 games once Fang
+            # Yuan stopped striking its neighbours; the old overlord of Qing Mao Mountain holds its villages harder
+            "[+25]% Strength for cities"]
+           # the user, 2026-11-09: Fang Yuan comes to the Gu Yue village, once a game
            # "after turn number [N]" holds from turn N on [src Conditionals]: [T, T+1) is turn T alone
            + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn end> <after turn number [{turn_gate(FY_ARRIVES, m)}]> "
                                  f"<before turn number [{turn_gate(FY_ARRIVES, m) + 1}]>")),
@@ -1810,7 +1888,23 @@ dump("Nations.json", [
             "Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>",
             "[+50]% Strength for cities",
             "[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> "
-            "<when number of [[Rank Seven Gu Immortal] Units] is less than [3]>"]),
+            "<when number of [[Rank Seven Gu Immortal] Units] is less than [3]>"]
+           # Layer 12: the race for fate. The mending of Fate Gu grows about one a turn (Standard) while it stands
+           + per_speed(lambda m: f"Instantly provides [{fate_gain(m)[0]}] [{FATE_RES}] <upon turn start>"
+                                 + (f" <every [{fate_gain(m)[1]}] turns>" if fate_gain(m)[1] > 1 else "")
+                                 + f" <if [Fate Gu] is constructed> <when below [{FATE_FULL}] [{FATE_RES}]>")
+           + [f"Gain a free [{FATE_RESTORED}] [in capital] <upon turn start> <if [Fate Gu] is constructed> "
+              f"<when above [{FATE_FULL - 1}] [{FATE_RES}]> <if [{FATE_RESTORED}] is not constructed>"]
+           # a whole Fate Gu: the strength to flatten the five regions, while it stands
+           + [f"[+{FATE_MIGHT}]% Strength <for [Military] units> <if [{FATE_RESTORED}] is constructed> <if [Fate Gu] is constructed>"]
+           + [f"[+{FATE_MIGHT}]% [{st}] [in all cities] <if [{FATE_RESTORED}] is constructed> <if [Fate Gu] is constructed>"
+              for st in ("Production", "Science", "Gold")]
+           + per_speed(lambda m: f"[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [{turns(FATE_ARMY, m)}] turns> "
+                                 f"<if [{FATE_RESTORED}] is constructed> <if [Fate Gu] is constructed> "
+                                 f"<when number of [[Rank Eight Gu Immortal] Units] is less than [{FATE_ARMY_CAP}]>")
+           # Fang Yuan comes for Fate Gu: beside the Court's capital at the end of its turn, a turn after he left the south
+           + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn end> <after turn number [{turn_gate(FY_TO_COURT, m) + 1}]> "
+                                 f"<before turn number [{turn_gate(FY_TO_COURT, m) + 2}]>")),
     nation(HJ, "Huang Jin Patriarch", "Huang Jin Temperament", [200, 160, 40], [90, 40, 20],
            ["Imperial Court", "Golden Tent", "Northern Plains Camp"],
            [RIGHTEOUS_START, "[+15]% Strength <when defending>", "Start bias [Grassland]",
@@ -1982,6 +2076,9 @@ dump("Personalities.json", [
     # back. The plains are the most warlike (R V4c170); the sea's houses are many, opportunistic and none a hegemon
     # (R V4c336, V5c864); the desert's clans trade and cooperate, since no one marches across the sand for another
     # oasis (R V3c20, V5c596)
+    # Layer 12 (autoplay): declareWar 1 and 4 never sent it to war after Fate Gu was whole (distance and walls weigh
+    # more than strength in the engine's motive [src MotivationToAttackAutomation]), and at 4 it once fell on one of its
+    # own sects at T61. It wages no ordinary war again; a whole Fate Gu flattens the regions by Heaven's Decree instead
     {"name": "Heavenly Court Temperament", "science": 9, "military": 8, "aggressive": 2, "declareWar": 0, "diplomacy": 8,
      "loyal": 9, "commerce": 6, "uniques": ["[+500]% weight to [Fate Gu] for AI decisions"]},
     {"name": "Huang Jin Temperament", "military": 10, "aggressive": 10, "declareWar": 10, "expansion": 8, "loyal": 5,

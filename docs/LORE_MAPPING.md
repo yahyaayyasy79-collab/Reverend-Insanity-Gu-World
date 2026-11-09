@@ -3498,7 +3498,7 @@ MOD_SPEC_2 Phase C, last layer, from the "Nations", "Immortal Gu" and "Events" r
 
 Exact uniques (written by tools/lore_blocks.py from jsons/):
 
-**Fate Gu** (Buildings.json; {"isWonder": true, "uniqueTo": "Heavenly Court", "requiredTech": "Immortal Gu Recipes", "cost": 600, "civilopediaText": [{"text": "Fate Gu (\u5bbf\u547d\u86ca), rank nine: it fixes every being's destiny. Only the Heavenly Court builds it; whoever conquers its city fights the Fate War. Immortals +15% strength; +2 happiness."}]})
+**Fate Gu** (Buildings.json; {"isWonder": true, "uniqueTo": "Heavenly Court", "requiredTech": "Immortal Gu Recipes", "cost": 600, "civilopediaText": [{"text": "Fate Gu (\u5bbf\u547d\u86ca), rank nine: it fixes every being's destiny. Only the Heavenly Court builds it, wounded, and mends it: 30 Fate Restoration when refined, about one a turn after. At 100 it is whole and the Court gains the strength to flatten the five regions. Every Court soldier struck down in battle costs 8 (25 if Fang Yuan strikes him down); one struck down with less in store shatters it. Whoever conquers its city fights the Fate War. Immortals +15% strength; +2 happiness."}]})
 
 ```
 Costs [60] [Green Grape Immortal Essence]
@@ -3507,10 +3507,11 @@ Immortal Gu
 Unavailable <if [Shattered Fate] is constructed by anybody>
 [+15]% Strength <for [post-[Rank Five era]] units>
 [+2 Happiness]
+Instantly provides [30] [Fate Restoration]
 [+500]% weight to this choice for AI decisions
 ```
 
-**Shattered Fate** (Buildings.json; {"isNationalWonder": true, "cost": 1, "civilopediaText": [{"text": "Proof that this clan shattered Fate Gu. It can never be rebuilt, and the qi tides sweep the world."}]})
+**Shattered Fate** (Buildings.json; {"isNationalWonder": true, "cost": 1, "civilopediaText": [{"text": "Fate Gu lies shattered, by this clan in the Fate War or, in the Heavenly Court's capital, because the Court could not hold its mending. It can never be rebuilt, and the qi tides sweep the world."}]})
 
 ```
 Unbuildable
@@ -3601,7 +3602,7 @@ Never appears as a Barbarian unit
 [+2] Sight
 ```
 
-**Heavenly Court** (Nations.json; {"leaderName": "Duke Long", "adjective": ["Heavenly Court"], "personality": "Heavenly Court Temperament", "outerColor": [235, 225, 180], "innerColor": [70, 60, 140], "cities": ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"], "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.", "declaringWar": "You have strayed from your fate. The Court will set it right.", "defeated": "Fate itself was broken here. Remember who broke it.", "civilopediaText": [{"text": "The Heavenly Court (\u5929\u5ead), founded by Primordial Origin: it guards and repairs Fate Gu and rules the Central Continent through the ancient sects. Only it builds Fate Gu."}]})
+**Heavenly Court** (Nations.json; {"leaderName": "Duke Long", "adjective": ["Heavenly Court"], "personality": "Heavenly Court Temperament", "outerColor": [235, 225, 180], "innerColor": [70, 60, 140], "cities": ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"], "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.", "declaringWar": "You have strayed from your fate. The Court will set it right.", "defeated": "Fate itself was broken here. Remember who broke it.", "civilopediaText": [{"text": "The Heavenly Court (\u5929\u5ead), founded by Primordial Origin: three Venerables, Primordial Origin, Star Constellation and Genesis Lotus, entered it, and their legacies keep it the strongest of the five regions (+30% science and production, +25% stones, +15% strength, +50% city strength). Its immortals sleep in the Immortal Tomb and wake in real need. It guards and mends Fate Gu and rules the Central Continent through the ancient sects; once Fate Gu is whole it can flatten the five regions."}]})
 
 ```
 Starts with [Righteous Path] adopted
@@ -3617,6 +3618,23 @@ Start bias [Hill]
 Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>
 [+50]% Strength for cities
 [2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>
+Instantly provides [3] [Fate Restoration] <upon turn start> <every [2] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Quick] game speed>
+Instantly provides [1] [Fate Restoration] <upon turn start> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Standard] game speed>
+Instantly provides [2] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Epic] game speed>
+Instantly provides [1] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Marathon] game speed>
+Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is constructed> <when above [99] [Fate Restoration]> <if [Fate Gu Restored] is not constructed>
+[+50]% Strength <for [Military] units> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Production] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Science] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Gold] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [7] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Quick] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>
 ```
 
 **Huang Jin Family** (Nations.json; {"leaderName": "Huang Jin Patriarch", "adjective": ["Huang Jin Family"], "personality": "Huang Jin Temperament", "outerColor": [200, 160, 40], "innerColor": [90, 40, 20], "cities": ["Imperial Court", "Golden Tent", "Northern Plains Camp"], "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.", "declaringWar": "The blood of Giant Sun does not ask permission.", "defeated": "Scatter us if you can; one Huang Jin line always survives.", "civilopediaText": [{"text": "The Huang Jin (\u9ec4\u91d1\u5bb6\u65cf), every bloodline of Giant Sun on the Northern Plains. No Huang Jin line may be wiped out; only they may pass the 88 True Yang Building's trial."}]})
@@ -4629,7 +4647,7 @@ A [Demonic Gu Master] rebels <upon turn start> <after turn number [60]> <every [
 A [Demonic Gu Master] rebels <upon turn start> <after turn number [120]> <every [3] turns> <with [4]% chance> <on [Marathon] game speed>
 ```
 
-**Heavenly Court** (Nations.json; {"leaderName": "Duke Long", "adjective": ["Heavenly Court"], "personality": "Heavenly Court Temperament", "outerColor": [235, 225, 180], "innerColor": [70, 60, 140], "cities": ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"], "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.", "declaringWar": "You have strayed from your fate. The Court will set it right.", "defeated": "Fate itself was broken here. Remember who broke it.", "civilopediaText": [{"text": "The Heavenly Court (\u5929\u5ead), founded by Primordial Origin: it guards and repairs Fate Gu and rules the Central Continent through the ancient sects. Only it builds Fate Gu."}]})
+**Heavenly Court** (Nations.json; {"leaderName": "Duke Long", "adjective": ["Heavenly Court"], "personality": "Heavenly Court Temperament", "outerColor": [235, 225, 180], "innerColor": [70, 60, 140], "cities": ["Heavenly Court", "Tian Ti Mountain", "Fate Pavilion", "Central Continent Gate"], "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.", "declaringWar": "You have strayed from your fate. The Court will set it right.", "defeated": "Fate itself was broken here. Remember who broke it.", "civilopediaText": [{"text": "The Heavenly Court (\u5929\u5ead), founded by Primordial Origin: three Venerables, Primordial Origin, Star Constellation and Genesis Lotus, entered it, and their legacies keep it the strongest of the five regions (+30% science and production, +25% stones, +15% strength, +50% city strength). Its immortals sleep in the Immortal Tomb and wake in real need. It guards and mends Fate Gu and rules the Central Continent through the ancient sects; once Fate Gu is whole it can flatten the five regions."}]})
 
 ```
 Starts with [Righteous Path] adopted
@@ -4645,6 +4663,23 @@ Start bias [Hill]
 Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>
 [+50]% Strength for cities
 [2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>
+Instantly provides [3] [Fate Restoration] <upon turn start> <every [2] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Quick] game speed>
+Instantly provides [1] [Fate Restoration] <upon turn start> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Standard] game speed>
+Instantly provides [2] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Epic] game speed>
+Instantly provides [1] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Marathon] game speed>
+Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is constructed> <when above [99] [Fate Restoration]> <if [Fate Gu Restored] is not constructed>
+[+50]% Strength <for [Military] units> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Production] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Science] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Gold] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [7] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Quick] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>
 ```
 
 
@@ -5333,6 +5368,9 @@ lines are the same `Provides [2] [Wind Knot Grass]` form quoted in docs/PATHS.md
 
 ## Layer 10: Fang Yuan, the demon from beyond (the user, 2026-11-09)
 
+Layer 12 (2026-11-10) narrowed his targets to the Heavenly Court, stopped his pillaging and sends him to the Central
+Continent on turn 250 (see Layer 12); the code block below is his current kit.
+
 The user: "buat fang yuan jadi kultivator pengembara tapi dengan AI paling canggih, terpintar, dengan statistik paling
 terbaik karena dia iblis dunia lain, dan punya pengalaman 500 tahun". Verified in the raw text (R): he is reborn five
 hundred years back by the Spring Autumn Cicada (V1c1), which is not carried back with him (V1c2); he holds five hundred
@@ -5379,7 +5417,8 @@ Can pass through impassable tiles
 [+50]% Strength <when defending>
 [+100]% Strength <when defending> <vs cities>
 Invisible to non-adjacent units
-Can only attack [{Military} {non-[Gu Yue Clan]}] units
+Can only attack [{Military} {Heavenly Court}] units
+Unable to pillage tiles
 [+40]% Strength <after turn number [67]> <on [Quick] game speed>
 [+40]% Strength <after turn number [100]> <on [Standard] game speed>
 [+40]% Strength <after turn number [150]> <on [Epic] game speed>
@@ -5396,15 +5435,20 @@ Can only attack [{Military} {non-[Gu Yue Clan]}] units
 [+170]% Strength <after turn number [340]> <on [Standard] game speed>
 [+170]% Strength <after turn number [510]> <on [Epic] game speed>
 [+170]% Strength <after turn number [1020]> <on [Marathon] game speed>
-[+135]% Strength <after turn number [261]> <on [Quick] game speed>
-[+135]% Strength <after turn number [390]> <on [Standard] game speed>
-[+135]% Strength <after turn number [585]> <on [Epic] game speed>
-[+135]% Strength <after turn number [1170]> <on [Marathon] game speed>
+[+135]% Strength <after turn number [261]> <if [Shattered Fate] is constructed by anybody> <on [Quick] game speed>
+[+135]% Strength <after turn number [390]> <if [Shattered Fate] is constructed by anybody> <on [Standard] game speed>
+[+135]% Strength <after turn number [585]> <if [Shattered Fate] is constructed by anybody> <on [Epic] game speed>
+[+135]% Strength <after turn number [1170]> <if [Shattered Fate] is constructed by anybody> <on [Marathon] game speed>
+[This Unit] is destroyed <upon turn start> <after turn number [174]> <before turn number [175]> <on [Quick] game speed>
+[This Unit] is destroyed <upon turn start> <after turn number [260]> <before turn number [261]> <on [Standard] game speed>
+[This Unit] is destroyed <upon turn start> <after turn number [390]> <before turn number [391]> <on [Epic] game speed>
+[This Unit] is destroyed <upon turn start> <after turn number [780]> <before turn number [781]> <on [Marathon] game speed>
 A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>
 A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>
 A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>
 A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit> <with [50]% chance> <if [Spring Autumn Cicada] is not constructed by anybody>
+A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>
+Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>
 Can only heal by pillaging <for [non-[Fang Yuan]] units>
 ```
 
@@ -5430,3 +5474,112 @@ four immortal ones are world wonders with one bearer per clan, as every immortal
 | Day Gu | 日蛊 | 3 | Time | a rank-three Day Gu holds three days of time; refinement-path means spend it to cut three days from refining a Gu | R V5c379 | CANON |
 | Pill Fire Gu | 丹火蛊 | 3 | Pill | a rank-three fire Gu of a rank-four Gu Master; the pill path takes it for its furnace fire | R V2c113 | ADAPTED (path) |
 | Swift Shadow Gu | 迅影蛊 | 3 | Shadow | a retreat Gu of a rank-three Gu Master; the shadow path takes it by its name | R V2c99, V2c15 | ADAPTED (path, rank) |
+
+## Layer 12: the race for fate; invented Gu for six paths (the user, 2026-11-10)
+
+The user: invent Gu for the six paths the canon leaves poor ("boleh"); and "fang yuan itu fokus mencapai keabadian
+saja ... jalur targetnya: menghancurkan takdir gu di benua tengah, dan mencapai hidup abadi. daripada dia mengganggu
+kestabilan sumber daya tiap klan. cukup serigala dan gu master iblis saja"; the Court "mampu meratakan 5 benua
+jikalau takdir gu sudah sepenuhnya pulih, kalo belum mereka masih memiliki warisan venerable zaman² dulu, dan
+militer di makam agung". Verified in the raw text (R):
+
+| Claim | Source | Status |
+|---|---|---|
+| Fang Yuan's one aim is eternal life (永生); cultivation only serves it | R V3c27, V3c162, V5c11 | CANON |
+| Fang Yuan shatters Fate Gu in the Fate War | R V5c939 (Phase C5c row) | CANON |
+| The Heavenly Court took over mending Fate Gu; a refinement Gu formation mends it | R V4c189, V4c230 | CANON |
+| Three Venerables entered the Court: Primordial Origin (the first rank-nine Venerable), Star Constellation (founder of the wisdom path), Genesis Lotus (founder of the wood path) | R V5c214, V5c530 | CANON |
+| The Immortal Tomb: no one knows how many Gu Immortals sleep in it; a Court elder wakes from it | R V5c207 | CANON |
+| The Court plans wars of conquest only after the walls fall | R V5c314 (REGIONS.md) | CANON; the mod ties it to a whole Fate Gu (ADAPTED) |
+| A stockpile of mending, 8 lost per Court soldier struck down, shattering at an empty store | | INVENTED (mechanics) |
+
+**The race.** The Court refines Fate Gu wounded (30 Fate Restoration) and mends it about one a turn (Standard). Every
+Court soldier struck down in battle, by a unit's blow or a city's, costs 8, and 25 when Fang Yuan strikes him down
+(Fate Gu cannot read the demon from beyond the heavens: the defeat trigger's condition on Fang Yuan as the foe); an upgrade or
+old age is no defeat, so it rides on the fighting unit types' `<upon being defeated>` (a nation's `<upon losing a
+unit>` counts upgrades too [src UnitManager.removeUnit]). One struck down with less than 8 in store shatters Fate Gu
+(the event below: the marker Shattered Fate goes to the Court's capital and the qi tides begin). At 100 it is whole:
+the Court's soldiers +50%, its production, science and stones +50%, a rank-eight immortal wakes every 10 turns
+(Standard; at most 6), and every 20 turns each other major clan receives **Heaven's Decree**: bow (25% less production
+and stones for 10 turns) or defy (two rank-seven immortals, belonging to no clan, come down on its capital). That is
+how a whole Fate Gu flattens the regions: the engine's AI weighs distance and walls over strength [src
+MotivationToAttackAutomation], so with declareWar 1 or 4 the Court never went to war after Fate Gu was whole, and at 4
+it once fell on one of its own sects at T61; its temperament stays declareWar 0. Until Fate Gu is whole the three
+Venerables' legacies (the Court's standing bonuses) and the Immortal Tomb hold it: two rank-seven sleepers when war is
+declared on it, and one in four of its fallen soldiers wakes another (at most three).
+
+**Fang Yuan's path.** He comes to the Gu Yue village on turn 30, wanders unseen and harms no clan: he strikes only
+the Court's military units and pillages nothing (the wolves and demonic Gu Masters raid the clans). On turn 260 (at
+103 strength; at 64 on turn 250 he was cut down in 2-5 turns) he leaves the south and comes back beside the Court's
+capital at the end of its next turn. Struck down by a unit he always returns near his killer's city: his Spring Autumn
+Cicada (the cicada's wonder, which the Court refined itself in 5 of 8 games, no longer stops him). Once Fate Gu lies
+shattered he rises level with a Venerable (176 from turn 390): his eternal life.
+
+**The Gu Yue's room.** With Fang Yuan no longer striking its neighbours, the Gu Yue, wedged 4 tiles from the Bai and
+the Xiong, fell in 3 of 8 games; the three villages now stand 6-7 tiles apart on the map, and its cities hold 25%
+harder (the old overlord of Qing Mao Mountain).
+
+**Invented Gu (the user's leave, 2026-11-10).** The canon names no further Gu for six paths; two each, mortal ranks
+the paths lacked, effects from role and rank like every catalog Gu (docs/PATHS.md "Gu catalog"):
+
+| Gu | Rank | Path | Role | Status |
+|---|---|---|---|---|
+| Killing Edge Gu | 2 | Killing | extra damage | INVENTED |
+| Slaughter Intent Gu | 5 | Killing | Bleeding | INVENTED |
+| Charming Glance Gu | 1 | Enchantment | Charmed | INVENTED |
+| Bewitching Mist Gu | 5 | Enchantment | aura | INVENTED |
+| False Image Gu | 2 | Illusion | defence | INVENTED |
+| Illusion Maze Gu | 5 | Illusion | Dazed | INVENTED |
+| Ink Brush Gu | 2 | Painting | attack | INVENTED |
+| Living Scroll Gu | 5 | Painting | healing | INVENTED |
+| Binding Seal Gu | 2 | Restriction | Sealed | INVENTED |
+| Forbidden Ground Gu | 5 | Restriction | defence | INVENTED |
+| Refining Hammer Gu | 3 | Refinement | strength | INVENTED |
+| Tempering Flame Gu | 5 | Refinement | defence | INVENTED |
+
+Exact uniques (the Court's and Fate Gu's lines are also in the Phase C5c blocks; Fang Yuan's in Layer 10):
+
+```
+Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>
+Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>
+Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>
+[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>
+Instantly provides [3] [Fate Restoration] <upon turn start> <every [2] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Quick] game speed>
+Instantly provides [1] [Fate Restoration] <upon turn start> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Standard] game speed>
+Instantly provides [2] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Epic] game speed>
+Instantly provides [1] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Marathon] game speed>
+Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is constructed> <when above [99] [Fate Restoration]> <if [Fate Gu Restored] is not constructed>
+[+50]% Strength <for [Military] units> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Production] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Science] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[+50]% [Gold] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [7] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Quick] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>
+[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>
+[+25]% Strength for cities
+Unbuildable
+Cannot be purchased
+Triggers the following global alert: [The Heavenly Court has mended Fate Gu whole. Its sleepers wake, and its armies are strong enough to flatten the five regions.]
+Remove [Fate Gu] [in all cities]
+Gain a free [Shattered Fate] [in capital]
+Triggers the following global alert: [Fate Gu has shattered: the Heavenly Court could not mend it. Qi tides will sweep the five regions.]
+[+100]% weight to this choice for AI decisions
+[-25]% [Production] [in all cities] <for [10] turns>
+[-25]% [Gold] [in all cities] <for [10] turns>
+[+100]% weight to this choice for AI decisions
+[2] [Rank Seven Gu Immortal]s rebel
+[+20]% Strength <for [10] turns>
+[+50]% weight to this choice for AI decisions
+Triggers a [Heaven's Decree] event <upon turn start> <every [13] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Quick] game speed>
+Triggers a [Heaven's Decree] event <upon turn start> <every [20] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Standard] game speed>
+Triggers a [Heaven's Decree] event <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Epic] game speed>
+Triggers a [Heaven's Decree] event <upon turn start> <every [60] turns> <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody> <for [Major] Civilizations> <for [non-[Heavenly Court]] Civilizations> <on [Marathon] game speed>
+Stockpiled
+Cannot be traded
+Not shown on world screen
+```

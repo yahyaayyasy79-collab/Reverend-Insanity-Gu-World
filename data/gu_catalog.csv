@@ -132,3 +132,15 @@ Sneak Attack Gu,Gu Serangan Diam-diam,偷袭蛊,2,theft,dmg,puppet,,CANON,"R V5c
 Day Gu,Gu Hari,日蛊,3,time,xp,sun,,CANON,R V5c379,holds three days of time; a refiner spends them to finish a Gu three days sooner,menyimpan tiga hari waktu; penyuling memakainya untuk merampungkan Gu tiga hari lebih cepat
 Pill Fire Gu,Gu Api Pil,丹火蛊,3,pill,dmg,flame,,ADAPTED,R V2c113,hurls balls of furnace fire,melontarkan bola api tungku
 Swift Shadow Gu,Gu Bayangan Kilat,迅影蛊,3,shadow,move,bat,,ADAPTED,"R V2c99, V2c15",turns its master into a fleeting shadow to slip away,mengubah tuannya menjadi bayangan sekilas untuk meloloskan diri
+Killing Edge Gu,Gu Bilah Pembunuh,,2,killing,dmg,blade,,INVENTED,,"an edge honed on the slain, biting deeper with every kill","bilah yang diasah oleh yang terbunuh, menggigit lebih dalam setiap membunuh"
+Slaughter Intent Gu,Gu Niat Pembantaian,,5,killing,status:Bleeding,fang,,INVENTED,,a murderous will that leaves wounds that will not close,niat membunuh yang meninggalkan luka yang tak mau menutup
+Charming Glance Gu,Gu Lirikan Memikat,,1,enchantment,status:Charmed,eye,,INVENTED,,one glance that makes a foe hesitate,satu lirikan yang membuat lawan ragu
+Bewitching Mist Gu,Gu Kabut Pesona,,5,enchantment,aura,cloud,,INVENTED,,a sweet mist that saps the will of all around,kabut manis yang melemahkan kehendak semua di sekitarnya
+False Image Gu,Gu Citra Palsu,,2,illusion,def,mask,,INVENTED,,a false image takes the blow meant for its master,citra palsu menerima pukulan yang ditujukan pada tuannya
+Illusion Maze Gu,Gu Labirin Ilusi,,5,illusion,status:Dazed,web,,INVENTED,,a maze of illusions that leaves the struck lost,labirin ilusi yang membuat yang terkena tersesat
+Ink Brush Gu,Gu Kuas Tinta,,2,painting,atk,rod,,INVENTED,,a brush whose strokes become blades of ink,kuas yang goresannya menjadi bilah tinta
+Living Scroll Gu,Gu Gulungan Hidup,,5,painting,heal,scroll,,INVENTED,,a painted scroll that mends what it depicts,gulungan lukisan yang memulihkan apa yang dilukisnya
+Binding Seal Gu,Gu Segel Pengikat,,2,restriction,status:Sealed,scroll,,INVENTED,,a seal that forbids the struck to act,segel yang melarang yang terkena untuk bertindak
+Forbidden Ground Gu,Gu Tanah Terlarang,,5,restriction,def,shell,,INVENTED,,lays a ban on the ground its master holds,memasang larangan di tanah yang dijaga tuannya
+Refining Hammer Gu,Gu Palu Penyulingan,,3,refinement,str,hammer,,INVENTED,,a refiner's hammer that tempers its master like a Gu,palu penyuling yang menempa tuannya seperti Gu
+Tempering Flame Gu,Gu Api Penempaan,,5,refinement,def,flame,,INVENTED,,a furnace flame that hardens flesh into a refined vessel,api tungku yang mengeraskan daging menjadi wadah tersuling

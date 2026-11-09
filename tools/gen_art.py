@@ -103,7 +103,9 @@ def main(argv: list[str]) -> int:
     import path_foods
     new_foods = {r["food"] for r in path_foods.NEW}
     food_gu = {g["name"] for g in gen_paths.PATH_GU if g["food"] in new_foods}
-    food_icons = {("ResourceIcons", f) for f in new_foods} | {("UnitIcons", "Fang Yuan")}   # his icon overflowed game.png too
+    # Fang Yuan's icon and Layer 12's two (2026-11-10) overflowed game.png too
+    food_icons = {("ResourceIcons", f) for f in new_foods} | {("UnitIcons", "Fang Yuan"), ("BuildingIcons", "Fate Gu Restored"),
+                                                              ("ResourceIcons", "Fate Restoration")}
     for folder, name, _, _ in registry:
         if folder == "UnitPromotionIcons" and " Hunger " in name and name.split(" Hunger ")[0] in food_gu:
             food_icons.add((folder, name))

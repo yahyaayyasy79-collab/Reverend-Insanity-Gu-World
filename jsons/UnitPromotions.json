@@ -15054,6 +15054,298 @@
     ]
   },
   {
+    "name": "Killing Edge Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Killing Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] takes [6] damage <upon damaging a [Military] unit> <when attacking>",
+      "Play [gu-killing-edge-gu] sound <upon gaining the [Killing Edge Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Killing Edge Gu, a rank-2 Killing path Gu: an edge honed on the slain, biting deeper with every kill. Each hit deals 6 more damage. Refined with XP by a Killing Master of rank 2 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Slaughter Intent Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Killing Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] gains the [Bleeding] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+7]% Strength <when attacking>",
+      "Play [gu-slaughter-intent-gu] sound <upon gaining the [Slaughter Intent Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Slaughter Intent Gu, a rank-5 Killing path Gu: a murderous will that leaves wounds that will not close. Its hits leave the enemy Bleeding for 2 turn(s); 7% stronger when attacking. Refined with XP by a Killing Master of rank 5 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Charming Glance Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Enchantment Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 2% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+2]% maintenance costs",
+      "[Target Unit] gains the [Charmed] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+3]% Strength <when attacking>",
+      "Play [gu-charming-glance-gu] sound <upon gaining the [Charming Glance Gu] promotion>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Charming Glance Gu, a rank-1 Enchantment path Gu: one glance that makes a foe hesitate. Its hits leave the enemy Charmed for 1 turn(s); 3% stronger when attacking. Refined with XP by an Enchantment Master of rank 1 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Bewitching Mist Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Enchantment Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[-7]% Strength for enemy [Military] units in adjacent [All] tiles",
+      "Play [gu-bewitching-mist-gu] sound <upon gaining the [Bewitching Mist Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Bewitching Mist Gu, a rank-5 Enchantment path Gu: a sweet mist that saps the will of all around. Enemy soldiers beside it fight 7% weaker. Refined with XP by an Enchantment Master of rank 5 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "False Image Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Illusion Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+16]% Strength <when defending>",
+      "Play [gu-false-image-gu] sound <upon gaining the [False Image Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "False Image Gu, a rank-2 Illusion path Gu: a false image takes the blow meant for its master. 16% stronger when defending. Refined with XP by an Illusion Master of rank 2 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Illusion Maze Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Illusion Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[Target Unit] gains the [Dazed] status for [2] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+7]% Strength <when attacking>",
+      "Play [gu-illusion-maze-gu] sound <upon gaining the [Illusion Maze Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Illusion Maze Gu, a rank-5 Illusion path Gu: a maze of illusions that leaves the struck lost. Its hits leave the enemy Dazed for 2 turn(s); 7% stronger when attacking. Refined with XP by an Illusion Master of rank 5 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Ink Brush Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Painting Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[+16]% Strength <when attacking>",
+      "Play [gu-ink-brush-gu] sound <upon gaining the [Ink Brush Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Ink Brush Gu, a rank-2 Painting path Gu: a brush whose strokes become blades of ink. 16% stronger when attacking. Refined with XP by a Painting Master of rank 2 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Living Scroll Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Painting Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+19] HP when healing",
+      "Heals [15] damage if it kills a unit",
+      "Play [gu-living-scroll-gu] sound <upon gaining the [Living Scroll Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Living Scroll Gu, a rank-5 Painting path Gu: a painted scroll that mends what it depicts. Heals 19 HP more a turn; heals 15 HP after a kill. Refined with XP by a Painting Master of rank 5 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Binding Seal Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Restriction Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 3% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+3]% maintenance costs",
+      "[Target Unit] gains the [Sealed] status for [1] turn(s) <upon damaging a [Military] unit> <when attacking>",
+      "[+4]% Strength <when attacking>",
+      "Play [gu-binding-seal-gu] sound <upon gaining the [Binding Seal Gu] promotion>",
+      "Only available <for [non-[Rank One Gu Master]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Binding Seal Gu, a rank-2 Restriction path Gu: a seal that forbids the struck to act. Its hits leave the enemy Sealed for 1 turn(s); 4% stronger when attacking. Refined with XP by a Restriction Master of rank 2 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Forbidden Ground Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Restriction Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+28]% Strength <when defending>",
+      "Play [gu-forbidden-ground-gu] sound <upon gaining the [Forbidden Ground Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Forbidden Ground Gu, a rank-5 Restriction path Gu: lays a ban on the ground its master holds. 28% stronger when defending. Refined with XP by a Restriction Master of rank 5 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Refining Hammer Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Refinement Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 4% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+4]% maintenance costs",
+      "[+14]% Strength",
+      "Play [gu-refining-hammer-gu] sound <upon gaining the [Refining Hammer Gu] promotion>",
+      "Only available <for [non-[Rank One-Two era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Refining Hammer Gu, a rank-3 Refinement path Gu: a refiner's hammer that tempers its master like a Gu. 14% stronger. Refined with XP by a Refinement Master of rank 3 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
+    "name": "Tempering Flame Gu",
+    "unitTypes": [
+      "Gu Master",
+      "Moon Gu Master",
+      "Strength Gu Master"
+    ],
+    "prerequisites": [
+      "Refinement Master"
+    ],
+    "uniques": [
+      "Comment [Food: primeval stones, 6% more upkeep. With the clan's stones below zero every unit fights 20% weaker]",
+      "[+6]% maintenance costs",
+      "[+28]% Strength <when defending>",
+      "Play [gu-tempering-flame-gu] sound <upon gaining the [Tempering Flame Gu] promotion>",
+      "Only available <for [post-[Rank Four era]] units>",
+      "[+100]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Tempering Flame Gu, a rank-5 Refinement path Gu: a furnace flame that hardens flesh into a refined vessel. 28% stronger when defending. Refined with XP by a Refinement Master of rank 5 or higher. Invented for the mod: the novel names no Gu of this path at this level."
+      }
+    ]
+  },
+  {
     "name": "Moonglow Gu Hunger 20%",
     "uniques": [
       "[This Unit] loses the [Moonglow Gu Hunger 20%] status <upon turn start> <when above [-1] [Moon Orchid]>",

@@ -2214,11 +2214,27 @@
       "Unavailable <if [Shattered Fate] is constructed by anybody>",
       "[+15]% Strength <for [post-[Rank Five era]] units>",
       "[+2 Happiness]",
+      "Instantly provides [30] [Fate Restoration]",
       "[+500]% weight to this choice for AI decisions"
     ],
     "civilopediaText": [
       {
-        "text": "Fate Gu (宿命蛊), rank nine: it fixes every being's destiny. Only the Heavenly Court builds it; whoever conquers its city fights the Fate War. Immortals +15% strength; +2 happiness."
+        "text": "Fate Gu (宿命蛊), rank nine: it fixes every being's destiny. Only the Heavenly Court builds it, wounded, and mends it: 30 Fate Restoration when refined, about one a turn after. At 100 it is whole and the Court gains the strength to flatten the five regions. Every Court soldier struck down in battle costs 8 (25 if Fang Yuan strikes him down); one struck down with less in store shatters it. Whoever conquers its city fights the Fate War. Immortals +15% strength; +2 happiness."
+      }
+    ]
+  },
+  {
+    "name": "Fate Gu Restored",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Triggers the following global alert: [The Heavenly Court has mended Fate Gu whole. Its sleepers wake, and its armies are strong enough to flatten the five regions.]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Heavenly Court has mended Fate Gu whole. While it stands, the Court's soldiers fight 50% harder, its cities make 50% more production, science and stones, and a rank-eight immortal wakes from the Immortal Tomb every 10 turns (Standard; at most 6). Every 20 turns each other major clan receives Heaven's Decree: bow (25% less production and stones for 10 turns) or defy (two rank-seven immortals come down on its capital)."
       }
     ]
   },
@@ -2232,7 +2248,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Proof that this clan shattered Fate Gu. It can never be rebuilt, and the qi tides sweep the world."
+        "text": "Fate Gu lies shattered, by this clan in the Fate War or, in the Heavenly Court's capital, because the Court could not hold its mending. It can never be rebuilt, and the qi tides sweep the world."
       }
     ]
   },

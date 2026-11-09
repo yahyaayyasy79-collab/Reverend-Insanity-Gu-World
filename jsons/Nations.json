@@ -27,6 +27,7 @@
       "Starts with [Righteous Path] adopted",
       "Start bias [Spirit Spring]",
       "Start bias [Hill]",
+      "[+25]% Strength for cities",
       "A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>",
       "A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>",
       "A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>",
@@ -191,14 +192,31 @@
       "[+15]% Strength <for [Military] units>",
       "Instantly provides [2] [Immortal Materials] <upon turn start> <after discovering [Three Qi]>",
       "[+50]% Strength for cities",
-      "[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>"
+      "[2] free [Rank Seven Gu Immortal] units appear <upon being declared war on by [All] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]>",
+      "Instantly provides [3] [Fate Restoration] <upon turn start> <every [2] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Quick] game speed>",
+      "Instantly provides [1] [Fate Restoration] <upon turn start> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Standard] game speed>",
+      "Instantly provides [2] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Epic] game speed>",
+      "Instantly provides [1] [Fate Restoration] <upon turn start> <every [3] turns> <if [Fate Gu] is constructed> <when below [100] [Fate Restoration]> <on [Marathon] game speed>",
+      "Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is constructed> <when above [99] [Fate Restoration]> <if [Fate Gu Restored] is not constructed>",
+      "[+50]% Strength <for [Military] units> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>",
+      "[+50]% [Production] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>",
+      "[+50]% [Science] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>",
+      "[+50]% [Gold] [in all cities] <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed>",
+      "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [7] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Quick] game speed>",
+      "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>",
+      "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>",
+      "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>"
     ],
     "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.",
     "declaringWar": "You have strayed from your fate. The Court will set it right.",
     "defeated": "Fate itself was broken here. Remember who broke it.",
     "civilopediaText": [
       {
-        "text": "The Heavenly Court (天庭), founded by Primordial Origin: it guards and repairs Fate Gu and rules the Central Continent through the ancient sects. Only it builds Fate Gu."
+        "text": "The Heavenly Court (天庭), founded by Primordial Origin: three Venerables, Primordial Origin, Star Constellation and Genesis Lotus, entered it, and their legacies keep it the strongest of the five regions (+30% science and production, +25% stones, +15% strength, +50% city strength). Its immortals sleep in the Immortal Tomb and wake in real need. It guards and mends Fate Gu and rules the Central Continent through the ancient sects; once Fate Gu is whole it can flatten the five regions."
       }
     ]
   },

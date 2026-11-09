@@ -1306,3 +1306,31 @@ for 16 paths.
 * The novel names no other Gu for the killing, enchantment, illusion, painting, restriction and refinement paths, so
   they keep one catalog Gu besides their path Gu; more would have to be invented, which is your call.
 * Each has its own icon and refinement sound.
+
+## Layer 12: the race for fate; invented Gu for six paths (2026-11-10)
+
+You said Fang Yuan should pursue only eternal life (destroy Fate Gu in the Central Continent) instead of unsettling
+the clans, which the wolves and demonic Gu Masters do; that the Heavenly Court should be able to flatten the five
+regions once Fate Gu is fully restored, and otherwise still hold through the old Venerables' legacies and the Immortal
+Tomb; and you allowed invented Gu for the paths the canon leaves poor.
+* **Fate Restoration:** the Court refines Fate Gu wounded (30) and mends it about one a turn (Standard). Every Court
+  soldier struck down in battle costs 8, and 25 when Fang Yuan strikes him down (upgrades and old age do not count);
+  one struck down with less than 8 in store shatters Fate Gu (a global alert; the qi tides begin).
+* **Fate Gu Restored (at 100):** the Court's soldiers +50%, its production, science and stones +50%, a rank-eight
+  immortal wakes from the Immortal Tomb every 10 turns (at most 6), and every 20 turns each other major clan receives
+  **Heaven's Decree**: bow (25% less production and stones for 10 turns) or defy (two rank-seven immortals come down
+  on its capital). A global alert tells every clan. (The engine's AI never sent the Court to war even with Fate Gu
+  whole, and once fell on one of its own sects early, so the Court keeps its peace and flattens by decree.)
+* **Before that:** the legacies of Primordial Origin, Star Constellation and Genesis Lotus (the Court's standing
+  bonuses) and the Immortal Tomb: two rank-seven sleepers when war is declared on it, and one in four fallen soldiers
+  wakes another (at most three).
+* **Fang Yuan:** wanders unseen from turn 30 and harms no clan: he strikes only the Court's military units and
+  pillages nothing. On turn 260 he leaves the south and reappears beside the Court's capital. Struck down by a unit his
+  Spring Autumn Cicada always brings him back near its city. Once Fate Gu lies shattered he rises level with a
+  Venerable (176 from turn 390): his eternal life.
+* **The Gu Yue's room:** the three Qing Mao villages now stand 6-7 tiles apart (4 before) and the Gu Yue's cities hold
+  25% harder: without Fang Yuan striking its neighbours it fell in 3 of 8 games.
+* **Twelve invented Gu** (two each for killing, enchantment, illusion, painting, restriction and refinement), mortal
+  ranks those paths lacked, each with its icon and refinement sound.
+* Designed icons for Fate Restoration (Fate Gu's cracked eye stitched shut) and Fate Gu Restored (the eye in a closed
+  ring).

@@ -580,6 +580,28 @@ def fate_seized():
     g = fate_gu(); fist(g, 50, 70, 0.6); return g
 
 
+def fate_restored():
+    """Layer 12: Fate Gu made whole, ringed by a closed band and four rays: the Court's strength to flatten the regions."""
+    g = fate_gu()
+    g.arc_band(50, 50, 49, 44, 0, 360)
+    for k in range(4):
+        a = math.radians(45 + 90 * k)
+        g.poly([(50 + 40 * math.cos(a), 50 - 40 * math.sin(a)), (50 + 49 * math.cos(a + 0.12), 50 - 49 * math.sin(a + 0.12)),
+                (50 + 49 * math.cos(a - 0.12), 50 - 49 * math.sin(a - 0.12))])
+    return g
+
+
+def fate_restoration():
+    """Layer 12: the mending of Fate Gu: its eye split by a crack, three stitches drawing the crack shut."""
+    g = G()
+    g.ell(6, 22, 94, 78); g.ell(14, 30, 86, 70, 0); g.circ(50, 50, 9)
+    g.line([(40, 6), (50, 34), (44, 62), (58, 94)], 9, 0)          # the crack, cut through ring and pupil
+    for y in (36, 50, 64):                                          # stitches across it
+        x = 50 - (y - 34) * 6 / 28 if y <= 62 else 44
+        g.line([(x - 14, y - 4), (x + 14, y + 4)], 4)
+    return g
+
+
 def immortal_zombie_icon():
     """A stiff figure with arms forward and a dead halo."""
     g = G(); human(g, 50, 18, 1.05, arms="forward")
@@ -713,6 +735,8 @@ ICONS3 = [
     ("BuildingIcons", "Fate Gu", fate_gu, "black"),
     ("BuildingIcons", "Shattered Fate", shattered_fate, "black"),
     ("BuildingIcons", "Fate Seized", fate_seized, "black"),
+    ("BuildingIcons", "Fate Gu Restored", fate_restored, "black"),
+    ("ResourceIcons", "Fate Restoration", fate_restoration, "black"),
     ("UnitIcons", "Immortal Zombie", immortal_zombie_icon, "white"),
     ("UnitIcons", "Heaven Overseeing Tower", heaven_overseeing_tower, "white"),
     ("TechIcons", "Rank Nine Immortal Gu Recipes", recipes_rank(9), "white"),
