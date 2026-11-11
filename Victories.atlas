@@ -4,107 +4,170 @@ size: 2048, 1024
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
+LeaderIcons/Bai Clan Leader
+  rotate: false
+  xy: 412, 20
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Duke Long
+  rotate: false
+  xy: 820, 268
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Fang Clan Head
+  rotate: false
+  xy: 676, 4
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Fang Yuan
+  rotate: false
+  xy: 940, 4
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Gu Yue Bo
+  rotate: false
+  xy: 1084, 268
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Huang Jin Patriarch
+  rotate: false
+  xy: 1204, 4
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Wu Ji
+  rotate: false
+  xy: 1636, 764
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Xiong Clan Leader
+  rotate: false
+  xy: 1348, 516
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderIcons/Zombie Alliance Elder
+  rotate: false
+  xy: 1612, 500
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
 VictoryIllustrations/Endurance/Background
   rotate: false
-  xy: 4, 500
+  xy: 4, 532
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Endurance/Have highest score after max turns
   rotate: false
-  xy: 820, 748
+  xy: 820, 780
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Endurance/Lost
   rotate: false
-  xy: 412, 252
+  xy: 412, 284
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Eternal Life/Background
   rotate: false
-  xy: 4, 748
+  xy: 4, 780
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Eternal Life/Build Eternal Life
   rotate: false
-  xy: 4, 252
+  xy: 4, 284
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Eternal Life/Lost
   rotate: false
-  xy: 4, 4
+  xy: 4, 36
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Eternal Life/Won
   rotate: false
-  xy: 1228, 748
+  xy: 1228, 780
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Endurance/Won
   rotate: false
-  xy: 1228, 748
+  xy: 1228, 780
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Southern Border Supremacy/Won
   rotate: false
-  xy: 1228, 748
+  xy: 1228, 780
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Southern Border Supremacy/Background
   rotate: false
-  xy: 412, 748
+  xy: 412, 780
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Southern Border Supremacy/Capture all capitals
   rotate: false
-  xy: 412, 500
+  xy: 412, 532
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryIllustrations/Southern Border Supremacy/Lost
   rotate: false
-  xy: 820, 500
+  xy: 820, 532
   size: 400, 240
   orig: 400, 240
   offset: 0, 0
   index: -1
 VictoryTypeIcons/Endurance
   rotate: false
-  xy: 412, 180
+  xy: 1900, 956
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 VictoryTypeIcons/Eternal Life
   rotate: false
-  xy: 820, 428
+  xy: 1228, 708
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
 VictoryTypeIcons/Southern Border Supremacy
   rotate: false
-  xy: 1228, 676
+  xy: 1348, 444
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
