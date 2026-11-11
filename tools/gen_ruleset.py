@@ -2091,8 +2091,9 @@ dump("Nations.json", [
             # (the AI's immortal moves burned it, 60-130 turns at rank seven); his trades fill part of the gap (INVENTED).
             # With one red date a turn and one white lychee more he became the Venerable in 5 of 8 games (the user's
             # target is 3) once the Bai no longer took the place (declareWar 5); with a red date every other turn and
-            # no white lychee in 4 of 16, with a red date a turn in 5 of 8: two every three turns (docs/AUTOPLAY.md 13b)
-            f"Instantly provides [2] [{RED}] <upon turn start> <every [3] turns> <after discovering [Red Date Essence]>",
+            # no white lychee in 4 of 16, two every three turns in 1 of 8, one a turn in 5 of 8: a threshold (the AI's
+            # immortal moves burn red date above a reserve of 10), three every four turns (docs/AUTOPLAY.md 13b)
+            f"Instantly provides [3] [{RED}] <upon turn start> <every [4] turns> <after discovering [Red Date Essence]>",
             # the Spring Autumn Cicada's return: fallen, he wakes again with all his memories, as far up the mortal
             # ranks as his clan's lore reaches (his Gu, his paths and his immortal body are gone); while he holds the
             # cicada, its rank-six immortal (immortal_gu.csv) is he

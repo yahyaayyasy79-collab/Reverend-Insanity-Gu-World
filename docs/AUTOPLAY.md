@@ -768,6 +768,37 @@ Final build against Layer 12:
   Venerable and while he stalks Fate Gu; his body fell 2-3 times in 8 games. No clan declared war on him: his city
   lies 12+ tiles from the Qing Mao clans, beyond the engine's war motive (KNOWN_ISSUES 34, 36).
 
+## Layer 13b: the race tuned (2026-11-11)
+
+The user: Fang Yuan a Venerable in about 3 games of 8; the Bai's declareWar from 9 to 5; advice asked on the righteous
+clans' war on him (answered with the list: one more hunter in every wave while six or more righteous majors stand).
+Five Regions, Prince, 8 games x 450 turns, seeds 101-108 unless noted. Every build below also has: his mortal climb
+gated by the techs (the free rank-up had made him rank five on turn 4), an ascension that never collapses, the Bai at
+declareWar 5 and the righteous wave.
+
+| Build | Hunters with a whole Fate Gu | Red date / white lychee trade | FY Venerable | FY Eternal Life | FY body cut down | FY rank eight | Venerables | Eternal Life |
+|---|---|---|---|---|---|---|---|---|
+| Layer 13 (before) | +50% | none | 1 | 0 | 2-3 | 3 | Bai 5, Gu Yue 2, FY 1, Wu 1 | Bai 2, Wu 1, Gu Yue 1 |
+| 13b-1 | +50% | 1 / 1 a turn | 1 | 0 | 5 | 3 | Bai 4, Wu 2, FY 1, Gu Yue 1, Huang Jin 1 | Bai 2, Wu 1 |
+| 13b-2 | +0% | 1 / 1 | 5 | 3 | 1 | 6 | FY 5, Wu 2, Bai 1 | FY 3, Bai 1, Wu 1 |
+| 13b-3 | +25% | 1 / 1 | 5 | 4 | 2 | 7 | FY 5, Huang Jin 2, Wu 1 | FY 4, Huang Jin 1, Wu 1 |
+| 13b-4 | +25% | every other turn / none | 2 | 2 | 2 | 5 | FY 2, Wu 2, Bai 2, Gu Yue 1, Huang Jin 1 | FY 2, Wu 1, Huang Jin 1, Bai 1 |
+| 13b-4, seeds 109-116 | +25% | every other turn / none | 2 | 0 | 2 | 4 | Wu 4, FY 2, Bai 1 | Wu 4, Bai 1 |
+| 13b-5 | +25% | 1 a turn / none | 5 | 5 | 0 | 8 | FY 5, Wu 1, Bai 1, Xiong 1 | FY 5, Wu 1, Bai 1 |
+| 13b-6 | +25% | 2 every 3 turns / none | 1 | 0 | 2 | 2 | Bai 3, Wu 2, Fang 1, FY 1, Gu Yue 1 | Bai 2, Wu 2, Fang 1 |
+| **13b-7 (final)** | +25% | **3 every 4 turns / none** | **3** | 1 | 0 | 6 | FY 3, Wu 2, Bai 1, Fang 1, Gu Yue 1 | Wu 2, Bai 1, Fang 1, Gu Yue 1, FY 1 |
+
+* **The Bai's place:** at declareWar 5 the Bai took the one Venerable's place in 0-3 games of 8 (5 before); the
+  Southern Border holds together (Bai 3.9 cities at T300, 4.4-5.4 before; every Xiong and Wu alive at T300 in the final
+  build).
+* **Two sharp knobs.** The hunters' bonus with a whole Fate Gu decides whether his body survives rank six and seven
+  (+50%: cut down in 5 games; +0%: in 1). The red date trade decides whether he reaches rank eight in time: the AI's
+  immortal moves burn red date above a reserve of 10, and below about three every four turns his advance waits on the
+  burn (2 every 3: rank eight in 2 games; 1 a turn: in 8). Eight games carry about plus or minus one and a half
+  Venerables of noise; the final build sits on the user's 3.
+* **Fate Gu:** shattered in 5 of 8 games in the final build (every time by his scheme), mended whole in 4.
+* Still no clan declared war on him; the list's hunters (at most 3 at once) and the righteous clans' +15% do the hunting.
+
 ## Re-run
 
 ```

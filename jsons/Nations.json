@@ -412,7 +412,7 @@
       "Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>",
       "Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>",
       "Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>",
-      "Instantly provides [2] [Red Date Immortal Essence] <upon turn start> <every [3] turns> <after discovering [Red Date Essence]>",
+      "Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <every [4] turns> <after discovering [Red Date Essence]>",
       "Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>",
       "Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>",
       "Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>",
@@ -447,7 +447,7 @@
     "defeated": "Is this the end? It never has been, for me.",
     "civilopediaText": [
       {
-        "text": "Fang Yuan (方源), the demon from beyond the heavens, a clan of one: he races every clan, and you, for eternal life (永生). One city, his own aperture beside the rockmen he made slaves; he founds no village and keeps what he conquers as puppets. He bends the minor clans (influence that holds, a long ally bought outright) and draws a quarter of their science; five hundred years of memory give five techs and +50% science, +25% production and stones; he knows where the three qi pool (+1 of each a turn once he knows Three Qi) and trades for immortal essence (a red date every other turn once he knows Red Date Essence); his aperture holds +50%. His body is the hero Demon from Beyond, the only one of his clan who can become a Venerable. From the Battle of Yi Tian Mountain he can take the Sovereign Immortal Body and go for Fate Gu, and the Heavenly Court's Demon Extermination List hunts him; every righteous clan fights his men harder."
+        "text": "Fang Yuan (方源), the demon from beyond the heavens, a clan of one: he races every clan, and you, for eternal life (永生). One city, his own aperture beside the rockmen he made slaves; he founds no village and keeps what he conquers as puppets. He bends the minor clans (influence that holds, a long ally bought outright) and draws a quarter of their science; five hundred years of memory give five techs and +50% science, +25% production and stones; he knows where the three qi pool (+1 of each a turn once he knows Three Qi) and trades for immortal essence (three red date every four turns once he knows Red Date Essence); his aperture holds +50%. His body is the hero Demon from Beyond, the only one of his clan who can become a Venerable. From the Battle of Yi Tian Mountain he can take the Sovereign Immortal Body and go for Fate Gu, and the Heavenly Court's Demon Extermination List hunts him; every righteous clan fights his men harder."
       }
     ]
   },

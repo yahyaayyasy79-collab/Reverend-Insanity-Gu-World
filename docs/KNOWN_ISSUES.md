@@ -241,6 +241,11 @@ rest of the list is what a player or the next session should know before trustin
     stand (Layer 13b: the righteous of the five regions answer the list), and the righteous clans' +15% against his
     men. A clan that expands toward him, or a player, can still go to war with him.
 
+37. **Fang Yuan's race turns on red date essence (Layer 13b).** The AI's immortal moves spend red date above a reserve
+    of 10, so his advance to rank eight (60 red date) waits until his income beats the burn. Between two every three
+    turns and one a turn his Venerable rate jumps from about 1 to 5 games of 8; three every four turns gave 3. Retune it
+    if the immortal moves' costs or the advance's price change.
+
 ## Not yet seen in a real game
 
 * **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small

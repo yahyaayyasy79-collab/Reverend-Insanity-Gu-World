@@ -1369,3 +1369,22 @@ the Court, the Shadow Sect being a complete hoard meant to revive Spectral Soul;
   broke Fate Gu in 3 (twice after the Court had mended it whole); alive at the end in 8; Eternal Life to the Bai 2, Wu
   1, Gu Yue 1. No clan declared war on him: the list's hunters do the hunting.
 
+## Layer 13b: the race tuned; the Bai calmer; the righteous answer the list (2026-11-11)
+
+You asked for Fang Yuan to become a Venerable in about 3 games of 8, for the Bai's declareWar to go to 5, and for my
+advice on the righteous clans' war on him.
+* **Fang Yuan's climb, fixed:** his body had become rank five on turn 4 (a free rank-up ignored the techs); it now
+  climbs only as his clan's lore allows. His ascension never collapses (five hundred years of memory), and he trades for
+  three red date essence every four turns once he knows Red Date Essence (the AI's immortal moves burned what his one
+  blessed land made, and his advance to rank eight waited 60-130 turns). The list's hunters fight 25% harder while Fate
+  Gu stands whole (v4: 50%).
+* **The Bai:** declareWar 9 to 5. They took the one Venerable's place in 0-3 games of 8 (5 before), and the Southern
+  Border holds together.
+* **The righteous clans (my advice, built):** his aperture stays where it is. Moved within the engine's 12-tile war reach
+  of the Qing Mao clans, a one-city clan would fall early, against the canon (his blessed land was hidden) and against
+  his race. Instead the righteous of the five regions answer the Demon Extermination List: one more hunter in every
+  wave while six or more righteous majors stand.
+* Autoplay (8 x 450, seven builds, docs/AUTOPLAY.md Layer 13b): final build: Fang Yuan a Venerable in 3 of 8, rank eight
+  in 6, never lost his body; Venerables Fang Yuan 3, Wu 2, Bai 1, Fang 1, Gu Yue 1; Eternal Life Wu 2, Bai 1, Fang 1,
+  Gu Yue 1, Fang Yuan 1; Fate Gu broken by his scheme in 5.
+

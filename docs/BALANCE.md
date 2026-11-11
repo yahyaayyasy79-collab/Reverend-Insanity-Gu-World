@@ -4564,7 +4564,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fang Yuan | `Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
-| Fang Yuan | `Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <every [2] turns> <after discovering [Red Date Essence]>` | 1, 2 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <every [4] turns> <after discovering [Red Date Essence]>` | 3, 4 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>` | 1 | tools/gen_ruleset.py `Nations` |

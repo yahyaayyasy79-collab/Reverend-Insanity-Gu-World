@@ -5724,11 +5724,13 @@ mistake.
 The autoplay showed four brakes: a free rank-up at turn start ignored the techs (his body was rank five on turn 4, so
 it now climbs only as his clan's lore allows); one in five of his bodies died in the ascension's collapse (his never
 collapses now: five hundred years of memory); the AI's immortal moves burned the red date essence the advance to rank
-eight needs (60-130 turns at rank seven: he now trades for a red date essence every other turn once he knows Red Date
+eight needs (60-130 turns at rank seven: he now trades for three red date essence every four turns once he knows Red Date
 Essence, INVENTED); and twice he reached rank eight 20-40 turns after the Bai had taken the one Venerable's place. The
 hunters' strength decided the rest: at +50% with a whole Fate Gu they cut his body down in 5 of 8 games, at +0% in 1;
 they keep +25%. With the Bai at declareWar 5 the one Venerable's place opened, and with a red date and a white lychee a
-turn he took it in 5 of 8 games; the trades were halved (white lychee none) for the user's 3 of 8. The Bai's temperament goes from declareWar 9 to 5 (the user: "boleh
+turn he took it in 5 of 8 games; at one red date every other turn (no white lychee) in 4 of 16, at one a turn in 5 of
+8, at two every three turns in 1 of 8: a threshold, since the AI's immortal moves burn red date above a reserve of
+10; three every four turns gave the user's 3 of 8 (docs/AUTOPLAY.md Layer 13b). The Bai's temperament goes from declareWar 9 to 5 (the user: "boleh
 ke 5 saja"). Asked for advice on the righteous clans' war on him: his aperture stays where it is (moved within the
 engine's 12-tile war reach of the Qing Mao clans, a one-city clan would fall early, against the canon's hidden blessed
 land and against his race), and the righteous of the five regions answer the list instead: one more hunter in every
@@ -5753,7 +5755,7 @@ Allied City-States provide [Science] equal to [25]% of what they produce for the
 Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>
 Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>
 Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>
-Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <every [2] turns> <after discovering [Red Date Essence]>
+Instantly provides [3] [Red Date Immortal Essence] <upon turn start> <every [4] turns> <after discovering [Red Date Essence]>
 Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>
 Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>
 Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>

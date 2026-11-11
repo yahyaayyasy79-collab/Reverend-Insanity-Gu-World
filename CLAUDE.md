@@ -78,6 +78,10 @@ his clan, AI weight x21 on his climb, returns by era); Yi Tian Mountain T240 (Co
 (no path clashes, no wall strain, +40/-20%); the Demon Extermination List's Demon Hunters (barbarian-owned, attack only
 him); Crush Fate Gu from rank eight; the Shadow Sect city-state with a complete hoard; the cicada uniqueTo him; leaders
 in the Victories atlas. Autoplay: Venerable 1/8, rank 8 3/8, Fate Gu broken by him 3/8, no wars on him (KNOWN_ISSUES 36).
+Layer 13b (user 2026-11-11: FY Venerable "3", Bai declareWar 5, my advice on
+the righteous): climb gated by techs, no ascension collapse for him, red date 3 every 4 turns, hunters +25% with a whole
+Fate Gu, the righteous answer the list (+1 hunter per wave while 6+ righteous majors stand); final autoplay: FY Venerable
+3/8, Venerables spread (Wu 2, Bai 1, Fang 1, Gu Yue 1), red date is a sharp knob (AUTOPLAY.md Layer 13b).
 A container reset lost a day of uncommitted work once: push WIP to the session branch at each milestone.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
