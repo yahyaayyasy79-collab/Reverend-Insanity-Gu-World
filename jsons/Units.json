@@ -1588,12 +1588,13 @@
       "[+50]% Strength <vs [pre-[Rank Six era]] units>",
       "May travel on Water tiles without embarking",
       "Ignores terrain cost",
+      "[+25]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>",
       "[This Unit] gains the [Demon Hunt] status for [10] turn(s)",
       "[This Unit] is destroyed <upon losing the [Demon Hunt] status>"
     ],
     "civilopediaText": [
       {
-        "text": "A hunter of the Demon Extermination List (诛魔榜), the Heavenly Court's roll of demons to be killed, issued every ten years: a Court immortal or a righteous one who answers the bounty. After the Battle of Yi Tian Mountain the list names Fang Yuan; every ten years (13 turns, Standard) a hunter comes for him beside his capital, more as he climbs and while he stalks Fate Gu, and one more in every wave while six or more righteous clans stand (the righteous of the five regions answer the list). The list finds a listed demon, so a hunter sees him hidden; it strikes only Fang Yuan's men and city, takes and pillages nothing, and goes home after 10 turns. It belongs to no clan."
+        "text": "A hunter of the Demon Extermination List (诛魔榜), the Heavenly Court's roll of demons to be killed, issued every ten years: a Court immortal or a righteous one who answers the bounty. After the Battle of Yi Tian Mountain the list names Fang Yuan; every ten years (13 turns, Standard) a hunter comes for him beside his capital, more as he climbs and while he stalks Fate Gu, and one more in every wave while six or more righteous clans stand (the righteous of the five regions answer the list). The list finds a listed demon, so a hunter sees him hidden; it strikes only Fang Yuan's men and city, takes and pillages nothing, fights 25% harder while Fate Gu stands whole, and goes home after 10 turns. It belongs to no clan."
       }
     ]
   }

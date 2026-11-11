@@ -5700,8 +5700,8 @@ strain in the region walls.
 **The list.** From Yi Tian on, every ten years (13 turns, Standard) a Demon Hunter comes for him beside his capital,
 one more while he is rank eight, one more while he is the Venerable, and two every 7 turns while he stalks Fate Gu.
 Hunters belong to no clan (no trigger can give one clan's units to another), see him hidden, strike only his units and
-city, take and pillage nothing and go home after 10 turns (v4 gave them +50% while Fate Gu stood whole; Layer 13b
-took it back: they cut his body down at rank six or seven in 5 of 8 games). The Court's own men see him hidden too, and every righteous clan fights his men 15% harder once he is
+city, take and pillage nothing, fight 25% harder while Fate Gu stands whole (the Court's men; v4 gave them +50%, and
+they cut his body down at rank six or seven in 5 of 8 games, at +0% in 1 of 8) and go home after 10 turns. The Court's own men see him hidden too, and every righteous clan fights his men 15% harder once he is
 listed (on top of the Righteous Path's edge on any demonic clan).
 
 **Fate Gu.** With the body and at rank eight or above, Fang Yuan takes Crush Fate Gu while Fate Gu stands (a free
@@ -5819,6 +5819,7 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 May travel on Water tiles without embarking
 Ignores terrain cost
+[+25]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>
 [This Unit] gains the [Demon Hunt] status for [10] turn(s)
 [This Unit] is destroyed <upon losing the [Demon Hunt] status>
 Cannot be purchased

@@ -1034,8 +1034,10 @@ dump("Units.json", [
      "attackSound": sfx.rank_sound(7), "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "Unable to capture cities", "Unable to pillage tiles", f"Can only attack [{FANG_YUAN}] units",
                  f"Can see invisible [{FANG_YUAN}] units", "Can pass through impassable tiles", gen_paths.PP.chasm(), *FLIGHT,
-                 # (Layer 13b: no +50% with a whole Fate Gu any more: with it they cut his body down at rank six or
-                 # seven in 5 of 8 games, after the Court had mended Fate Gu)
+                 # the Court's men: a whole Fate Gu strengthens them, half as much as its own soldiers (Layer 13b,
+                 # autoplay 8 x 450: at +50% they cut his body down at rank six or seven in 5 games and he became a
+                 # Venerable in 1; at +0% he died once, became a Venerable in 5 and won Eternal Life in 3)
+                 f"[+{FATE_MIGHT // 2}]% Strength <if [{FATE_RESTORED}] is constructed by anybody> <if [Fate Gu] is constructed by anybody>",
                  f"[This Unit] gains the [{HUNT}] status for [{HUNT_TURNS}] turn(s)",
                  f"[This Unit] is destroyed <upon losing the [{HUNT}] status>"]},
 ])
@@ -2086,10 +2088,10 @@ dump("Nations.json", [
             # where every kind of qi pools
             *[f"Instantly provides [1] [{q}] <upon turn start> <after discovering [Three Qi]>" for q in QI],
             # Layer 13b (autoplay): his one blessed land made too little red date essence for the advance to rank eight
-            # (the AI's immortal moves burned it, 60-130 turns at rank seven) and too little white lychee for the
-            # Venerable's ascension; his trades fill the gap (INVENTED)
-            f"Instantly provides [1] [{RED}] <upon turn start> <after discovering [Red Date Essence]>",
-            f"Instantly provides [1] [{WHITE}] <upon turn start> <after discovering [Grotto-Heaven]>",
+            # (the AI's immortal moves burned it, 60-130 turns at rank seven); his trades fill part of the gap (INVENTED).
+            # With one red date a turn and one white lychee more he became the Venerable in 5 of 8 games (the user's
+            # target is 3) once the Bai no longer took the place (declareWar 5)
+            f"Instantly provides [1] [{RED}] <upon turn start> <every [2] turns> <after discovering [Red Date Essence]>",
             # the Spring Autumn Cicada's return: fallen, he wakes again with all his memories, as far up the mortal
             # ranks as his clan's lore reaches (his Gu, his paths and his immortal body are gone); while he holds the
             # cicada, its rank-six immortal (immortal_gu.csv) is he
