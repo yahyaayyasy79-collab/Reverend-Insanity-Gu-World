@@ -694,7 +694,7 @@ The 12 clan units (ranks 2-4 of Gu Yue, Bai, Xiong and Wu) copy their rank's num
 | Demon Hunter | strength | 56 | tools/gen_ruleset.py `Units` |
 | Demon Hunter | cost | 330 | tools/gen_ruleset.py `Units` |
 | Demon Hunter | `[+50]% Strength <vs [pre-[Rank Six era]] units>` | +50 | tools/gen_ruleset.py `Units` |
-| Demon Hunter | `[+50]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>` | +50 | tools/gen_ruleset.py `Units` |
+| Demon Hunter | `[+25]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>` | +25 | tools/gen_ruleset.py `Units` |
 | Demon Hunter | `[This Unit] gains the [Demon Hunt] status for [10] turn(s)` | 10 | tools/gen_ruleset.py `Units` |
 
 ### UnitPromotions.json
@@ -4564,8 +4564,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fang Yuan | `Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
-| Fang Yuan | `Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <after discovering [Red Date Essence]>` | 1 | tools/gen_ruleset.py `Nations` |
-| Fang Yuan | `Instantly provides [1] [White Lychee Immortal Essence] <upon turn start> <after discovering [Grotto-Heaven]>` | 1 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <every [2] turns> <after discovering [Red Date Essence]>` | 1, 2 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>` | 1 | tools/gen_ruleset.py `Nations` |
@@ -4998,6 +4997,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-4742 numbers listed.
+4741 numbers listed.
 
 <!-- inventory:end -->
