@@ -27,7 +27,7 @@
     "science": 6,
     "military": 6,
     "aggressive": 8,
-    "declareWar": 9,
+    "declareWar": 5,
     "expansion": 7,
     "diplomacy": 3,
     "loyal": 3,

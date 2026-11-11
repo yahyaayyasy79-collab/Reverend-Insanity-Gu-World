@@ -274,7 +274,10 @@ def ascended(grade, weight, a, d):
 def collapse(weight, a, d):
     return {"text": "The aperture collapses", "uniques": [
         "Triggers a [Aperture Collapse] event", "[This Unit] is destroyed",
-        w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>")]}
+        w(weight), w(a, "<for units with [Aptitude A]>"), w(d, "<for units with [Aptitude D]>"),
+        # Layer 13b: five hundred years of memory: Fang Yuan's ascension never collapses (autoplay: one in five of his
+        # bodies died there; the weights multiply, so -100% closes the die's face [src getWeightForAiDecision])
+        w("-100", "<for units with [Demon from Beyond]>")]}
 
 
 # ---------------- MOD_SPEC_2 C2: calamities, tribulations, Heaven's Will, lifespan ----------------
@@ -508,6 +511,10 @@ HOME_ONLY = [f"Unavailable <in [Foreign Land] tiles> <for [non-[{FANG_YUAN}]] Ci
              f"Unavailable <in [{FY_WILDS}] tiles> <for [{FANG_YUAN}] Civilizations>",
              f"Unavailable <in [City-States] tiles> <for [{FANG_YUAN}] Civilizations>"]
 SHADOW = "Shadow Sect"
+# Layer 13b (autoplay): a free rank-up at turn start ignores the techs the next rank needs, and his body was rank five on
+# turn 4. He climbs the mortal ranks only as his clan's lore allows (data/gu_masters.csv requiredTech)
+FY_CLIMB = (("Rank One Gu Master", "Rank Two Cultivation"), ("Rank Two Gu Master", "Rank Three Cultivation"),
+            ("Rank Three Gu Master", "Rank Four Cultivation"), ("Rank Four Gu Master", "Purple Crystal Essence"))
 
 
 def fate_gain(m):
@@ -778,8 +785,9 @@ HEROES = [  # (promotion, nation, the unit it falls to, its uniques, what happen
      ["[+30]% Strength", "[+100]% XP gained from combat", "[This Unit] gains [3] XP <upon turn start>",
       # he climbs the mortal ranks by himself as soon as his clan's lore allows, at home or in the wilds (Unciv's own
       # upgrade needs his clan's land and its stones [docs/KNOWN_ISSUES 23])
-      f"[This Unit] upgrades for free <upon turn start> <in tiles without [{FY_WILDS}]> <in tiles without [City-States]> "
-      "<in tiles without [Water]>", "[+1] Movement",
+      *[f"[This Unit] upgrades for free <upon turn start> <for [{unit}] units> <after discovering [{tech}]> "
+        f"<in tiles without [{FY_WILDS}]> <in tiles without [City-States]> <in tiles without [Water]>" for unit, tech in FY_CLIMB],
+      "[+1] Movement",
       "Withdraws before melee combat", "No damage penalty for wounded units", "Invisible to non-adjacent units",
       "[+25]% Strength <if [Shattered Fate] is constructed by anybody>"],
      [u for u in APT_LOSS if "[Aptitude C]" not in u] + ["[This Unit] gains the [Aptitude C] promotion",
@@ -2077,6 +2085,11 @@ dump("Nations.json", [
             # clan gathers 15-25, and his body ascended 40 turns after the clans' first immortals (autoplay). He knows
             # where every kind of qi pools
             *[f"Instantly provides [1] [{q}] <upon turn start> <after discovering [Three Qi]>" for q in QI],
+            # Layer 13b (autoplay): his one blessed land made too little red date essence for the advance to rank eight
+            # (the AI's immortal moves burned it, 60-130 turns at rank seven) and too little white lychee for the
+            # Venerable's ascension; his trades fill the gap (INVENTED)
+            f"Instantly provides [1] [{RED}] <upon turn start> <after discovering [Red Date Essence]>",
+            f"Instantly provides [1] [{WHITE}] <upon turn start> <after discovering [Grotto-Heaven]>",
             # the Spring Autumn Cicada's return: fallen, he wakes again with all his memories, as far up the mortal
             # ranks as his clan's lore reaches (his Gu, his paths and his immortal body are gone); while he holds the
             # cicada, its rank-six immortal (immortal_gu.csv) is he
@@ -2100,7 +2113,14 @@ dump("Nations.json", [
               for line in per_speed(lambda m, cond=cond: f"A [{HUNTER}] rebels <upon turn start> <every [{turns(LIST_EVERY, m)}] turns> "
                                                          f"<after turn number [{turn_gate(YI_TIAN, m)}]>{cond}")]
            + per_speed(lambda m: f"[2] [{HUNTER}]s rebel <upon turn start> <every [{turns(7, m)}] turns> "
-                                 f"<if [{FY_SCHEME}] is constructed> <if [Fate Gu] is constructed by anybody>")),
+                                 f"<if [{FY_SCHEME}] is constructed> <if [Fate Gu] is constructed by anybody>")
+           # Layer 13b (the user asked for advice, 2026-11-11): the righteous clans of the five regions answer the list
+           # too, one more hunter in every wave while six or more righteous majors stand. Moving his aperture within the
+           # engine's 12-tile war reach of the Qing Mao clans would end a one-city clan early, against the canon (his
+           # blessed land was hidden) and against his race for eternal life
+           + per_speed(lambda m: f"A [{HUNTER}] rebels <upon turn start> <every [{turns(LIST_EVERY, m)}] turns> "
+                                 f"<after turn number [{turn_gate(YI_TIAN, m)}]> "
+                                 f"<when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]>")),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -2235,8 +2255,9 @@ dump("Personalities.json", [
      "priorities": {"Moon Path": 10, "Righteous Path": 6},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions",
                  "Will not build [Flower Wine Monk Inheritance]"]},
+    # Layer 13b (the user, 2026-11-11: "boleh ke 5 saja"): the Bai took the one Venerable's place in 5 of 8 games
     {"name": "Bai Temperament", "gold": 7, "production": 6, "science": 6, "military": 6, "aggressive": 8,
-     "declareWar": 9, "expansion": 7, "diplomacy": 3, "loyal": 3, "preferredVictoryType": "Southern Border Supremacy",
+     "declareWar": 5, "expansion": 7, "diplomacy": 3, "loyal": 3, "preferredVictoryType": "Southern Border Supremacy",
      # Layer 9b: Bai's signature branch (the user's B3 decision, Water); its AI never adopted it, so its water Gu starved
      "priorities": {"Water Path": 10, "Righteous Path": 8},
      "uniques": ["[+50]% weight to [Gu Academy] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},

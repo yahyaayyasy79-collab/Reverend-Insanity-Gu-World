@@ -412,6 +412,8 @@
       "Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>",
       "Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>",
       "Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>",
+      "Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <after discovering [Red Date Essence]>",
+      "Instantly provides [1] [White Lychee Immortal Essence] <upon turn start> <after discovering [Grotto-Heaven]>",
       "Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>",
       "Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>",
       "Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>",
@@ -435,7 +437,11 @@
       "[2] [Demon Hunter]s rebel <upon turn start> <every [5] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Quick] game speed>",
       "[2] [Demon Hunter]s rebel <upon turn start> <every [7] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Standard] game speed>",
       "[2] [Demon Hunter]s rebel <upon turn start> <every [10] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Epic] game speed>",
-      "[2] [Demon Hunter]s rebel <upon turn start> <every [21] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Marathon] game speed>"
+      "[2] [Demon Hunter]s rebel <upon turn start> <every [21] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Marathon] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Quick] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Standard] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Epic] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Marathon] game speed>"
     ],
     "introduction": "Fang Yuan. I have five hundred years on you, so skip the courtesies: what can you offer me?",
     "declaringWar": "Nothing personal. You stand between me and eternal life; that is reason enough.",

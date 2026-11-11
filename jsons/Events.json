@@ -644,7 +644,8 @@
           "[This Unit] is destroyed",
           "[-50]% weight to this choice for AI decisions",
           "[-50]% weight to this choice for AI decisions <for units with [Aptitude A]>",
-          "[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+          "[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>",
+          "[-100]% weight to this choice for AI decisions <for units with [Demon from Beyond]>"
         ]
       }
     ]
@@ -686,7 +687,8 @@
           "[This Unit] is destroyed",
           "[+40]% weight to this choice for AI decisions",
           "[-40]% weight to this choice for AI decisions <for units with [Aptitude A]>",
-          "[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>"
+          "[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>",
+          "[-100]% weight to this choice for AI decisions <for units with [Demon from Beyond]>"
         ]
       }
     ]
