@@ -5700,8 +5700,8 @@ strain in the region walls.
 **The list.** From Yi Tian on, every ten years (13 turns, Standard) a Demon Hunter comes for him beside his capital,
 one more while he is rank eight, one more while he is the Venerable, and two every 7 turns while he stalks Fate Gu.
 Hunters belong to no clan (no trigger can give one clan's units to another), see him hidden, strike only his units and
-city, take and pillage nothing, fight 50% harder while Fate Gu stands whole (they are the Court's men) and go home
-after 10 turns. The Court's own men see him hidden too, and every righteous clan fights his men 15% harder once he is
+city, take and pillage nothing and go home after 10 turns (v4 gave them +50% while Fate Gu stood whole; Layer 13b
+took it back: they cut his body down at rank six or seven in 5 of 8 games). The Court's own men see him hidden too, and every righteous clan fights his men 15% harder once he is
 listed (on top of the Righteous Path's edge on any demonic clan).
 
 **Fate Gu.** With the body and at rank eight or above, Fang Yuan takes Crush Fate Gu while Fate Gu stands (a free
@@ -5719,6 +5719,18 @@ production, +10% for immortals and +20% XP.
 **The other regions.** The autoplay shows the AI clans already build what keeps them alive (Formation Ward 3-8 and
 Stockpile Vault 4-8 of 8 games per clan, Layer 12); their temperaments are left as they are until a game shows a
 mistake.
+
+**Layer 13b (the user, 2026-11-11).** "Naikkan ke 3": Fang Yuan a Venerable in about 3 games of 8 (he was in 1).
+The autoplay showed four brakes: a free rank-up at turn start ignored the techs (his body was rank five on turn 4, so
+it now climbs only as his clan's lore allows); one in five of his bodies died in the ascension's collapse (his never
+collapses now: five hundred years of memory); the AI's immortal moves burned the red date essence the advance to rank
+eight needs (60-130 turns at rank seven) and his one blessed land made little white lychee (he now trades for one of
+each a turn once he knows Red Date Essence and Grotto-Heaven, INVENTED); and twice he reached rank eight 20-40 turns
+after the Bai had taken the one Venerable's place. The Bai's temperament goes from declareWar 9 to 5 (the user: "boleh
+ke 5 saja"). Asked for advice on the righteous clans' war on him: his aperture stays where it is (moved within the
+engine's 12-tile war reach of the Qing Mao clans, a one-city clan would fall early, against the canon's hidden blessed
+land and against his race), and the righteous of the five regions answer the list instead: one more hunter in every
+wave while six or more righteous majors stand.
 
 Exact uniques:
 
@@ -5739,6 +5751,8 @@ Allied City-States provide [Science] equal to [25]% of what they produce for the
 Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>
 Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>
 Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>
+Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <after discovering [Red Date Essence]>
+Instantly provides [1] [White Lychee Immortal Essence] <upon turn start> <after discovering [Grotto-Heaven]>
 Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>
 Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>
 Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>
@@ -5763,10 +5777,17 @@ A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number 
 [2] [Demon Hunter]s rebel <upon turn start> <every [7] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Standard] game speed>
 [2] [Demon Hunter]s rebel <upon turn start> <every [10] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Epic] game speed>
 [2] [Demon Hunter]s rebel <upon turn start> <every [21] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Marathon] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Quick] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Standard] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Epic] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Marathon] game speed>
 [+30]% Strength
 [+100]% XP gained from combat
 [This Unit] gains [3] XP <upon turn start>
-[This Unit] upgrades for free <upon turn start> <in tiles without [{Major} {non-[Fang Yuan]}]> <in tiles without [City-States]> <in tiles without [Water]>
+[This Unit] upgrades for free <upon turn start> <for [Rank One Gu Master] units> <after discovering [Rank Two Cultivation]> <in tiles without [{Major} {non-[Fang Yuan]}]> <in tiles without [City-States]> <in tiles without [Water]>
+[This Unit] upgrades for free <upon turn start> <for [Rank Two Gu Master] units> <after discovering [Rank Three Cultivation]> <in tiles without [{Major} {non-[Fang Yuan]}]> <in tiles without [City-States]> <in tiles without [Water]>
+[This Unit] upgrades for free <upon turn start> <for [Rank Three Gu Master] units> <after discovering [Rank Four Cultivation]> <in tiles without [{Major} {non-[Fang Yuan]}]> <in tiles without [City-States]> <in tiles without [Water]>
+[This Unit] upgrades for free <upon turn start> <for [Rank Four Gu Master] units> <after discovering [Purple Crystal Essence]> <in tiles without [{Major} {non-[Fang Yuan]}]> <in tiles without [City-States]> <in tiles without [Water]>
 [+1] Movement
 Withdraws before melee combat
 No damage penalty for wounded units
@@ -5798,7 +5819,6 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 May travel on Water tiles without embarking
 Ignores terrain cost
-[+50]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>
 [This Unit] gains the [Demon Hunt] status for [10] turn(s)
 [This Unit] is destroyed <upon losing the [Demon Hunt] status>
 Cannot be purchased
@@ -5844,4 +5864,5 @@ Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilization
 Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <for [Fang Yuan] Civilizations> <for units without [Demon from Beyond]>
 Unavailable <for [Fang Yuan] Civilizations>
+[-100]% weight to this choice for AI decisions <for units with [Demon from Beyond]>
 ```

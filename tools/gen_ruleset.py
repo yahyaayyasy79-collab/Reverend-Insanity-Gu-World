@@ -1034,8 +1034,8 @@ dump("Units.json", [
      "attackSound": sfx.rank_sound(7), "uniqueTo": "Barbarians",
      "uniques": ["Unbuildable", "Unable to capture cities", "Unable to pillage tiles", f"Can only attack [{FANG_YUAN}] units",
                  f"Can see invisible [{FANG_YUAN}] units", "Can pass through impassable tiles", gen_paths.PP.chasm(), *FLIGHT,
-                 # the Court's men: a whole Fate Gu strengthens them as it does its soldiers
-                 f"[+{FATE_MIGHT}]% Strength <if [{FATE_RESTORED}] is constructed by anybody> <if [Fate Gu] is constructed by anybody>",
+                 # (Layer 13b: no +50% with a whole Fate Gu any more: with it they cut his body down at rank six or
+                 # seven in 5 of 8 games, after the Court had mended Fate Gu)
                  f"[This Unit] gains the [{HUNT}] status for [{HUNT_TURNS}] turn(s)",
                  f"[This Unit] is destroyed <upon losing the [{HUNT}] status>"]},
 ])

@@ -2558,6 +2558,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Ascension Trial › The aperture collapses | `[-50]% weight to this choice for AI decisions` | -50 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › The aperture collapses | `[-50]% weight to this choice for AI decisions <for units with [Aptitude A]>` | -50 | tools/gen_ruleset.py `Events` |
 | Ascension Trial › The aperture collapses | `[+100]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +100 | tools/gen_ruleset.py `Events` |
+| Ascension Trial › The aperture collapses | `[-100]% weight to this choice for AI decisions <for units with [Demon from Beyond]>` | -100 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A lower-grade blessed land opens | `Instantly provides [20] [Lifespan Gu]` | 20 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › A lower-grade blessed land opens | `[+0]% weight to this choice for AI decisions <for units with [Aptitude A]>` | +0 | tools/gen_ruleset.py `Events` |
@@ -2569,6 +2570,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Hasty Ascension Trial › The aperture collapses | `[+40]% weight to this choice for AI decisions` | +40 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › The aperture collapses | `[-40]% weight to this choice for AI decisions <for units with [Aptitude A]>` | -40 | tools/gen_ruleset.py `Events` |
 | Hasty Ascension Trial › The aperture collapses | `[+60]% weight to this choice for AI decisions <for units with [Aptitude D]>` | +60 | tools/gen_ruleset.py `Events` |
+| Hasty Ascension Trial › The aperture collapses | `[-100]% weight to this choice for AI decisions <for units with [Demon from Beyond]>` | -100 | tools/gen_ruleset.py `Events` |
 | Immortal Ascension › Enter the blessed land | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Aperture Collapse › Mourn the fallen | `[+0]% weight to this choice for AI decisions` | +0 | tools/gen_ruleset.py `Events` |
 | Earthly Calamity › Divert the disaster | `[+300]% weight to this choice for AI decisions` | +300 | tools/gen_ruleset.py `Events` |
@@ -4562,6 +4564,8 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fang Yuan | `Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>` | 1 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `Instantly provides [1] [Red Date Immortal Essence] <upon turn start> <after discovering [Red Date Essence]>` | 1 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `Instantly provides [1] [White Lychee Immortal Essence] <upon turn start> <after discovering [Grotto-Heaven]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>` | 1 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>` | 1 | tools/gen_ruleset.py `Nations` |
@@ -4586,6 +4590,10 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Fang Yuan | `[2] [Demon Hunter]s rebel <upon turn start> <every [7] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Standard] game speed>` | 2, 7 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `[2] [Demon Hunter]s rebel <upon turn start> <every [10] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Epic] game speed>` | 2, 10 | tools/gen_ruleset.py `Nations` |
 | Fang Yuan | `[2] [Demon Hunter]s rebel <upon turn start> <every [21] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Marathon] game speed>` | 2, 21 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Quick] game speed>` | 9, 161, 5 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Standard] game speed>` | 13, 240, 5 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Epic] game speed>` | 20, 360, 5 | tools/gen_ruleset.py `Nations` |
+| Fang Yuan | `A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [Adopted [Righteous Path] Policies by [Major] Civilizations] is more than [5]> <on [Marathon] game speed>` | 39, 720, 5 | tools/gen_ruleset.py `Nations` |
 | Spirit Affinity House | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Combat Immortal Sect | `[+50]% Strength for cities` | +50 | tools/gen_ruleset.py `Nations` |
 | Merman Imperial Court | `A [Demonic Gu Master] rebels <upon turn start> <after turn number [27]> <every [1] turns> <with [4]% chance> <on [Quick] game speed>` | 27, 1, 4 | tools/gen_ruleset.py `Nations` |
@@ -4682,7 +4690,7 @@ The path promotions and their statuses are listed under 'Paths' below.
 | Bai Temperament | science | 6 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | military | 6 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | aggressive | 8 | tools/gen_ruleset.py `Nations` |
-| Bai Temperament | declareWar | 9 | tools/gen_ruleset.py `Nations` |
+| Bai Temperament | declareWar | 5 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | expansion | 7 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | diplomacy | 3 | tools/gen_ruleset.py `Nations` |
 | Bai Temperament | loyal | 3 | tools/gen_ruleset.py `Nations` |
@@ -4990,6 +4998,6 @@ Every path promotion and path Gu is built from these knobs; the hidden conflict 
 
 Vanilla copies (tools/gen_ruleset.py `Terrains (Vanilla minus natural wonders and Fallout)` and the Speeds line in `Nations (Difficulties)`); the only change is that no terrain grants an extra Spirit Spring. Tune them there if a playtest asks for it; until then the Vanilla numbers stand.
 
-4734 numbers listed.
+4742 numbers listed.
 
 <!-- inventory:end -->
