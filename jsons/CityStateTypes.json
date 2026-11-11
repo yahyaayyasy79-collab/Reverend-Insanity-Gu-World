@@ -133,5 +133,24 @@
       "[+2 Production] [in capital]",
       "[+1 Production] from [Mine] tiles [in all cities]"
     ]
+  },
+  {
+    "name": "Shadow Sect",
+    "color": [
+      110,
+      80,
+      160
+    ],
+    "friendBonusUniques": [
+      "[+2 Science] [in capital]",
+      "[+2 Gold] [in capital]"
+    ],
+    "allyBonusUniques": [
+      "[+3 Science] [in capital]",
+      "[+3 Gold] [in capital]",
+      "[+3 Production] [in capital]",
+      "[+10]% Strength <for [post-[Rank Five era]] units>",
+      "[+20]% XP gained from combat"
+    ]
   }
 ]

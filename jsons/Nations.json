@@ -28,10 +28,10 @@
       "Start bias [Spirit Spring]",
       "Start bias [Hill]",
       "[+25]% Strength for cities",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <on [Marathon] game speed>"
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Quick] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Standard] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Epic] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Marathon] game speed>"
     ],
     "introduction": "I am Gu Yue Bo of the Gu Yue clan. Our village has stood on Qing Mao longer than any other; speak, and be brief.",
     "declaringWar": "The covenant of the alliance slope does not shelter you. The Gu Yue will settle this themselves.",
@@ -206,10 +206,27 @@
       "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>",
       "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>",
       "[1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>",
-      "A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>"
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Quick] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Standard] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Epic] game speed>",
+      "A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Marathon] game speed>",
+      "Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [161]> <before turn number [162]> <on [Quick] game speed>",
+      "Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [240]> <before turn number [241]> <on [Standard] game speed>",
+      "Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [360]> <before turn number [361]> <on [Epic] game speed>",
+      "Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [720]> <before turn number [721]> <on [Marathon] game speed>",
+      "Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [161]> <before turn number [162]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Quick] game speed>",
+      "Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [240]> <before turn number [241]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Standard] game speed>",
+      "Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [360]> <before turn number [361]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Epic] game speed>",
+      "Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [720]> <before turn number [721]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Marathon] game speed>",
+      "Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [3] [Fate Restoration]> <on [Quick] game speed>",
+      "Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [2] [Fate Restoration]> <on [Standard] game speed>",
+      "Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [1] [Fate Restoration]> <on [Epic] game speed>",
+      "Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [0] [Fate Restoration]> <on [Marathon] game speed>",
+      "Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [3] [Fate Restoration]> <on [Quick] game speed>",
+      "Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [2] [Fate Restoration]> <on [Standard] game speed>",
+      "Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [1] [Fate Restoration]> <on [Epic] game speed>",
+      "Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [0] [Fate Restoration]> <on [Marathon] game speed>",
+      "Triggers a [Fate Gu Shattered] event <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>"
     ],
     "introduction": "Duke Long of the Heavenly Court. Fate keeps the world in order; we keep Fate.",
     "declaringWar": "You have strayed from your fate. The Court will set it right.",
@@ -357,6 +374,72 @@
         "text": "The Fang clan (房家), a righteous Western Desert power unrivalled at building Gu Houses. Gu Houses +50% production; +10% science."
       }
     ]
+  },
+  {
+    "name": "Fang Yuan",
+    "leaderName": "Fang Yuan",
+    "adjective": [
+      "Fang Yuan"
+    ],
+    "personality": "Fang Yuan Temperament",
+    "outerColor": [
+      40,
+      12,
+      22
+    ],
+    "innerColor": [
+      214,
+      48,
+      58
+    ],
+    "cities": [
+      "Fang Yuan's Aperture"
+    ],
+    "uniques": [
+      "Starts with [Demonic Path] adopted",
+      "Start bias [Hill]",
+      "Cannot build [Clan Settler] units",
+      "May not annex cities",
+      "Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns",
+      "Resting point for Influence with City-States is increased by [20]",
+      "[-75]% City-State Influence degradation",
+      "Allied City-States provide [Science] equal to [25]% of what they produce for themselves",
+      "[5] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>",
+      "[+50]% [Science] [in all cities]",
+      "[+25]% [Production] [in all cities]",
+      "[+25]% [Gold] [in all cities]",
+      "[+50]% Strength for cities",
+      "Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>",
+      "Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>",
+      "Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>",
+      "Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>",
+      "Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>",
+      "Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>",
+      "Remove [Fate Gu Scheme] [in all cities] <upon turn start> <when number of [[Sovereign Immortal Body] Units] is less than [1]>",
+      "[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [161]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Quick] game speed>",
+      "[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [240]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Standard] game speed>",
+      "[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [360]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Epic] game speed>",
+      "[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [720]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Marathon] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <on [Quick] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <on [Standard] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <on [Epic] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <on [Marathon] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Quick] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Standard] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Epic] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Marathon] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Quick] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Standard] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Epic] game speed>",
+      "A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Marathon] game speed>",
+      "[2] [Demon Hunter]s rebel <upon turn start> <every [5] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Quick] game speed>",
+      "[2] [Demon Hunter]s rebel <upon turn start> <every [7] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Standard] game speed>",
+      "[2] [Demon Hunter]s rebel <upon turn start> <every [10] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Epic] game speed>",
+      "[2] [Demon Hunter]s rebel <upon turn start> <every [21] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Marathon] game speed>"
+    ],
+    "introduction": "Fang Yuan. I have five hundred years on you, so skip the courtesies: what can you offer me?",
+    "declaringWar": "Nothing personal. You stand between me and eternal life; that is reason enough.",
+    "defeated": "Is this the end? It never has been, for me."
   },
   {
     "name": "Hairy Man Tribe",
@@ -915,6 +998,26 @@
       {
         "text": "The Wan clan (万家) of Gao Song Oasis, the second resource point of the Western Desert. It rallies the desert's righteous families against the Fang clan."
       }
+    ]
+  },
+  {
+    "name": "Shadow Sect",
+    "cityStateType": "Shadow Sect",
+    "outerColor": [
+      34,
+      26,
+      48
+    ],
+    "innerColor": [
+      170,
+      140,
+      220
+    ],
+    "cities": [
+      "Shadow Sect Blessed Land"
+    ],
+    "uniques": [
+      "[+100]% Strength for cities"
     ]
   },
   {

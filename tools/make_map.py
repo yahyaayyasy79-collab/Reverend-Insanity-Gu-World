@@ -145,6 +145,9 @@ FIVE_STARTS = {  # nation: (region, target column, target row)
     "Merman Imperial Court": ("east", 55, 11), "Fang Clan": ("west", 6, 20), "Heavenly Court": ("central", 30, 18),
     "Lang Ya Sect": ("north", 46, 8), "Spirit Affinity House": ("central", 37, 15),
     "Combat Immortal Sect": ("central", 30, 26),
+    # Layer 13: Fang Yuan's own aperture in the south-west of his home region, beside the rockmen he made his slaves
+    # (R V3c4, V3c7), clear of the Qing Mao clans; the Shadow Sect's blessed land in the far south-east (R V5c599)
+    "Fang Yuan": ("south", 6, 37), "Shadow Sect": ("south", 54, 38),
     # Phase D: minor clans in every region (faction research R; Lang Ya is a Northern Plains sect, R ch461/464)
     "Man Tribe": ("north", 20, 8), "Ge Tribe": ("north", 11, 6), "Lan Clan": ("west", 5, 11),
     "Xiao Clan": ("west", 12, 15), "Mo Clan": ("west", 6, 29), "Song Clan": ("east", 50, 29),
@@ -221,7 +224,14 @@ def food_regions() -> dict:
 START_FOODS = {"Gu Yue Clan": ("Moon Orchid", "Wild Boar"), "Bai Clan": ("Dragonfish", "Lingzhi"),
                "Xiong Clan": ("Wild Boar", "Python Blood"), "Wu Clan": ("Wind Knot Grass", "Arrow Bamboo"),
                "Heavenly Court": ("Brocade Cloud", "Taize Flower"), "Huang Jin Family": ("Heavy Gold", "Wolf Meat"),
-               "Fang Clan": ("Splendid Overlord Flower", "Old Blades"), "Zombie Alliance": ("Dragonfish", "Lightning Eel")}
+               "Fang Clan": ("Splendid Overlord Flower", "Old Blades"), "Zombie Alliance": ("Dragonfish", "Lightning Eel"),
+               # Layer 13: his first Gu, the boar pair of the strength path and the Gu Yue's moonlight (R V1c64)
+               "Fang Yuan": ("Wild Boar", "Moon Orchid")}
+# Layer 13: the Shadow Sect's hoard (the user: "kekayaan yang lengkap"): a spring, jade and the foods of the paths its
+# souls walked (shadow, soul, dream, wisdom, refinement of pills, formations), all within its first two rings
+SHADOW_HOARD = ((1, 1, "Spirit Spring", 1), (-1, 1, "Jade", 2), (1, -1, "White Shadow Grass", 1),
+                (-1, -1, "White Lotus Silkworm", 1), (2, 0, "Nine-Bend Dream Flower", 1),
+                (-2, 0, "Splendid Overlord Flower", 1), (2, 1, "Ginseng Whiskers", 1), (0, -2, "Star Cave Stone", 1))
 
 IMPROVEMENT_SITES = {"Inheritance Site", "Beast Lair", "Demonic Den"}
 # Fair starts (autoplay, Layer 9: the scatter put 10-11 riches within 3.5 tiles of the Court, the Fang and the Zombie
@@ -444,7 +454,8 @@ def five_regions() -> list[str]:
                 t[0], t[1] = ("Plains" if (c + r) % 3 else "Grassland"), []
             elif 2.5 < d <= 3.5 and t[0] == "Desert" and (c + 2 * r) % 4 == 0 and (c, r) not in wall:
                 t[1] = ["Oasis"]
-    for name in ("Gu Yue Clan", "Bai Clan", "Xiong Clan", "Wu Clan", "Heavenly Court", "Huang Jin Family", "Fang Clan"):
+    for name in ("Gu Yue Clan", "Bai Clan", "Xiong Clan", "Wu Clan", "Heavenly Court", "Huang Jin Family", "Fang Clan",
+                 "Fang Yuan"):
         c0, r0 = starts[name]
         fa, fb = START_FOODS[name]
         # two copies of the first food (its signature path's: the Gu Yue emblem eats Moon Orchid), one of the second
@@ -455,6 +466,14 @@ def five_regions() -> list[str]:
                 t = tiles[q]
                 t[2], t[3] = res, amt
                 fit_tile(t, res)
+    sc, sr = starts["Shadow Sect"]
+    for dc, dr, res, amt in SHADOW_HOARD:
+        q = (sc + dc, sr + dr)
+        if q in tiles and q not in wall and q not in taken and tiles[q][0] not in ("Ocean", "Coast", "Mountain", "Lakes"):
+            tiles[q][2], tiles[q][3] = res, amt
+            fit_tile(tiles[q], res)
+        else:
+            print(f"[make_map] Shadow Sect: no tile for {res}", file=sys.stderr)
     za = starts["Zombie Alliance"]
     for q, res in (((za[0] + 1, za[1]), "Spirit Spring"), ((za[0], za[1] + 1), "Spirit Spring"),
                    ((za[0] - 1, za[1]), START_FOODS["Zombie Alliance"][0]), ((za[0] - 1, za[1] + 1), START_FOODS["Zombie Alliance"][0]),

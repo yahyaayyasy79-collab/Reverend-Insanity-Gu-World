@@ -230,8 +230,9 @@ EARTH_TIDE_WALL = "Azure Water Wall"
 
 
 def wall_strain(n):
-    return [f"[This Unit] takes [{n // 2 if w == EARTH_TIDE_WALL else n}] damage <upon ending a turn in a [{w}] tile>"
-            for w in WALLS]
+    # Layer 13: the Sovereign Immortal Body crosses the walls with ease (R V5c133)
+    return [f"[This Unit] takes [{n // 2 if w == EARTH_TIDE_WALL else n}] damage <upon ending a turn in a [{w}] tile> "
+            f"<for units without [Sovereign Immortal Body]>" for w in WALLS]
 IMMORTAL = "post-[Rank Five era]"  # unit filter: every Gu Immortal (their required techs lie after the Rank Five era)
 THREE_QI = "<after discovering [Three Qi]> <for [Major] Civilizations>"
 QI_SOURCES = [
@@ -415,14 +416,14 @@ def advance(target):
     return {"name": name, "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{unit}] units> <after discovering [{tech}]> <for units with [{SURVIVOR}]>",
         dao_at_least(1 if target == "Rank Seven" else 2),
-        "Unavailable <in [Foreign Land] tiles>", "Unavailable <in [Water] tiles>"]
+        *HOME_ONLY, "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(ADVANCE_COST, m)}] [{essence}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(ADVANCE_COST, m)}] [{essence}] <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"[This Unit] loses the [{SURVIVOR}] promotion", f"[This Unit] loses the [{name}] promotion",
            "[This Unit] gains the [Advancing] status for [1] turn(s)",
            # the user (2026-11-02): each rank climbed lengthens the immortal's life
            f"Instantly provides [{LS.GRANT[7 if target == 'Rank Seven' else 8]}] [{LIFESPAN}]"] + extra
-        + ["[This Unit] upgrades for free including special upgrades", w("+200")]}
+        + ["[This Unit] upgrades for free including special upgrades", w("+200"), FY_STEP]}
 
 
 # ---------------- MOD_SPEC_2 C5b: the Venerable, Eternal Life, Gu Houses ----------------
@@ -473,6 +474,40 @@ FATE_ARMY, FATE_ARMY_CAP = 10, 6   # a rank-eight immortal wakes every FATE_ARMY
 # Heaven's Decree: while Fate Gu stands whole, every DECREE_EVERY turns (Standard) each other major bows (tribute:
 # -DECREE_TRIBUTE% production and stones for DECREE_TURNS turns) or defies (DECREE_HOST rank-seven immortals come down)
 DECREE, DECREE_EVERY, DECREE_TRIBUTE, DECREE_TURNS, DECREE_HOST = "Heaven's Decree", 20, 25, 10, 2
+# ---------------- Layer 13 (the user, 2026-11-09): Fang Yuan races everyone for eternal life ----------------
+# A barbarian can win nothing, so Fang Yuan becomes a major of one city (FANG_YUAN names the nation as well as the old
+# wanderer, who now comes only in games without that nation). His body is FY_HERO, a hero promotion on one of his
+# Gu Masters that climbs the rank chain to the Venerable like any clan's (canon: grade-C aptitude, his brother Fang
+# Zheng grade A, R V1c8; reborn five hundred years back, R V1c1). Canon research (raw text, 2026-11-09):
+# * the Battle of Yi Tian Mountain, a righteous-demonic war over the whole Southern Border (R V2c74): the Court came for
+#   the Shadow Sect, both paid dearly and the Court won narrowly (R V4c356, V4c369); Spectral Soul's remnant, about to
+#   enter the rank-nine Sovereign Immortal Fetus Gu the sect had planned for tens of thousands of years, was cut off by
+#   Fang Yuan, who took it himself (R V4c369, V4c371) against Star Constellation's hint to destroy it (R V5c1)
+# * the Sovereign Immortal Body: dao marks never hinder one another, so any immortal he kills feeds him (R V5c106); it
+#   crosses region walls and passes for a local anywhere (R V5c133, V5c151); it is fragile (R V5c120, V5c158)
+# * the Shadow Sect's cover had kept heaven's deduction off him; after Yi Tian the Court put him on the Demon
+#   Extermination List, resolved to kill him (R V5c93), near the top (R V5c367); the list can find a listed demon (R V5c528)
+# * he crushed Fate Gu in his hand while the Court was in turmoil (R V5c821: fishing in troubled waters; V5c939)
+FY_HERO = "Demon from Beyond"     # 天外之魔, his canon name in the Court's mouth (R V4c356, V5c1, V5c269)
+SOVEREIGN, FETUS = "Sovereign Immortal Body", "Sovereign Immortal Fetus"
+FY_SCHEME, CRUSH = "Fate Gu Scheme", "Crush Fate Gu"
+YI_TIAN = 240         # Standard turn of the Battle of Yi Tian Mountain (the Court refines Fate Gu at T228-323)
+HUNTER, HUNT, LIST_EVERY, HUNT_TURNS = "Demon Hunter", "Demon Hunt", 13, 10   # the list comes every ten years
+SCHEME_DRAIN, YI_TIAN_LOSS = 3, 15     # Fate Restoration a turn while his scheme runs; the Court's price at Yi Tian
+NO_FY_NATION = f"<when number of [Remaining [{FANG_YUAN}] Civilizations] is less than [1]>"
+# He never wastes a step (autoplay v4: his AI spent its XP on whatever was open and reached rank eight 40 turns before
+# the Bai's Venerable without the Supreme tier): with his body the engine's AI weighs every step of the climb, the
+# ascension, the advances, the attainment tiers (tools/gen_paths.py HERO_STEP) and the Venerable's, 21 times heavier
+FY_STEP = f"[+2000]% weight to this choice for AI decisions <for units with [{FY_HERO}]>"
+# An ascension upgrades the unit, and an upgrade in land its clan may not enter crashes Unciv restoring the old unit
+# [src UnitUpgradeManager.performUpgrade]: every clan ascends in friendly land only. Autoplay (Layer 13, 8 x 450): with
+# one city Fang Yuan's body stood outside his borders most turns, piling up 700-1000 XP it could never spend. He
+# ascends in the wilds too (canon: he crossed his tribulations in hiding); only other clans' land is closed to him
+FY_WILDS = f"{{Major}} {{non-[{FANG_YUAN}]}}"
+HOME_ONLY = [f"Unavailable <in [Foreign Land] tiles> <for [non-[{FANG_YUAN}]] Civilizations>",
+             f"Unavailable <in [{FY_WILDS}] tiles> <for [{FANG_YUAN}] Civilizations>",
+             f"Unavailable <in [City-States] tiles> <for [{FANG_YUAN}] Civilizations>"]
+SHADOW = "Shadow Sect"
 
 
 def fate_gain(m):
@@ -654,6 +689,10 @@ dump("GlobalUniques.json", {"name": "GlobalUniques", "uniques": [
     # Regions II: the Refinement Conference, once every hundred years (R V4c179)
     lambda m: f"Triggers a [Refinement Conference] event <upon turn start> <every [{turns(130, m)}] turns> "
               f"<for [Major] Civilizations>") + per_speed(
+    # Layer 13: the Demon Extermination List's bounty: once the Court has listed Fang Yuan, every righteous clan
+    # fights his men harder (on top of the Righteous Path's edge on any demonic clan)
+    lambda m: f"[+15]% Strength <vs [{FANG_YUAN}] units> <after adopting [Righteous Path]> "
+              f"<after turn number [{turn_gate(YI_TIAN, m)}]>") + per_speed(
     # demonic Gu Masters prey on the small clans of every region (faction research: R ch443, ch704, ch1650)
     lambda m: f"A [Demonic Gu Master] rebels <upon turn start> <after turn number [{turn_gate(40, m)}]> "
               f"<every [{max(1, round(m))}] turns> <with [1]% chance> <for [City-States] Civilizations>")})
@@ -729,6 +768,22 @@ HEROES = [  # (promotion, nation, the unit it falls to, its uniques, what happen
     ("Bo Qing", "Zombie Alliance", "Immortal Zombie", ["[+25]% Strength", "[1] additional attacks per turn"], []),
     ("Fang Di Chang", "Fang Clan", "Rank Seven Gu Immortal",
      ["[+20]% Strength", "[+1] Sight", "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"], []),
+    # Layer 13: Fang Yuan himself. Five hundred years of experience, not talent: grade C (R V1c8), he learns twice as
+    # fast, slips away, hides (his Stealth Scales Gu, R V1c121) and keeps his strength when wounded; free of fate once
+    # Fate Gu lies shattered. Autoplay v1 (8 x 450): a clan's Gu Masters cultivate only inside an academy city, one to a
+    # city; with his one city his body was rarely his clan's first cultivator (a Venerable in 1 game of 8, the body in
+    # 3). He cultivates wherever he stands (+3 XP a turn), and whichever of his Gu Masters joins while he is gone
+    # becomes him
+    (FY_HERO, FANG_YUAN, "Gu Master",
+     ["[+30]% Strength", "[+100]% XP gained from combat", "[This Unit] gains [3] XP <upon turn start>",
+      # he climbs the mortal ranks by himself as soon as his clan's lore allows, at home or in the wilds (Unciv's own
+      # upgrade needs his clan's land and its stones [docs/KNOWN_ISSUES 23])
+      f"[This Unit] upgrades for free <upon turn start> <in tiles without [{FY_WILDS}]> <in tiles without [City-States]> "
+      "<in tiles without [Water]>", "[+1] Movement",
+      "Withdraws before melee combat", "No damage penalty for wounded units", "Invisible to non-adjacent units",
+      "[+25]% Strength <if [Shattered Fate] is constructed by anybody>"],
+     [u for u in APT_LOSS if "[Aptitude C]" not in u] + ["[This Unit] gains the [Aptitude C] promotion",
+                                                          "[This Unit] gains [30] XP"]),
 ]
 # Bai Ning Bing's aperture gives way at rank four (canon: three years after the wolf tide): 30 turns to become immortal
 BAI_DOOM = per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{turns(30, m)}] turn(s) "
@@ -740,7 +795,8 @@ BAI_DOOM = per_speed(lambda m: f"[This Unit] gains the [{DOOMED}] status for [{t
 # clan holds the Spring Autumn Cicada itself (the immortal Gu wonder); canon has him reborn by it (R V1c1)
 # Layer 12: his Spring Autumn Cicada brings him back every time (autoplay: the cicada's wonder, refined by the Court
 # itself in 5 of 8 games by T213-293, had ended him for good; in the canon the cicada is his alone)
-FY_REBORN = [f"A [{FANG_YUAN}] rebels <upon defeating a [{FANG_YUAN}] unit>"]
+# Layer 13: the wanderer returns only as a wanderer (a unit of the Fang Yuan nation is no barbarian)
+FY_REBORN = [f"A [{FANG_YUAN}] rebels <upon defeating a [{{{FANG_YUAN}}} {{Barbarian}}] unit>"]
 # Layer 12: every Court soldier struck down in battle (a unit's or a city's blow; an upgrade or old age is no defeat)
 # sets the mending of Fate Gu back; one struck down with less than FATE_LOSS in store shatters it. In real need the
 # Immortal Tomb's sleepers wake (R V5c49, V5c207)
@@ -753,6 +809,8 @@ COURT_FALLEN = [
     f"<for [{HC}] Civilizations> <if [Fate Gu] is constructed> <when above [{FATE_LOSS_FY - FATE_LOSS - 1}] [{FATE_RES}]>",
     f"[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [{HC}] Civilizations> "
     f"<when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"]
+# Layer 13: the Court's deduction finds the demon on its list (R V5c528): its men see Fang Yuan hidden
+COURT_SIGHT = [f"Can see invisible [{FANG_YUAN}] units <for [{HC}] Civilizations>"]
 HERO_TRIGGERS = [f"[This Unit] gains the [{h}] promotion <for [{n}] Civilizations> <for [{who}] units> "
                  f"<when number of [[{h}] Units] is less than [1]>" for h, n, who, _, _ in HEROES] + BAI_DOOM
 
@@ -765,7 +823,7 @@ def hero_triggers(nation_name):
 # chains' Moon and Strength types, beasts and Gu Houses struck him down too)
 dump("UnitTypes.json", [{"name": n, "movementType": "Land",
                          **({"uniques": (gen_paths.GC.spoils() + (stage_lines() + HERO_TRIGGERS if n == "Gu Master" else [])
-                                         if "Gu Master" in n else []) + FY_REBORN + COURT_FALLEN} if n != "Civilian" else {})}
+                                         if "Gu Master" in n else []) + FY_REBORN + COURT_FALLEN + COURT_SIGHT} if n != "Civilian" else {})}
                         for n in ["Civilian", "Gu Master", "Moon Gu Master", "Strength Gu Master", "Beast", "Gu House"]])
 
 
@@ -961,6 +1019,17 @@ dump("Units.json", [
      # at the end of its next turn (Nations.json); a window of one turn, as "after turn number [N]" holds from N on
      + per_speed(lambda m: f"[This Unit] is destroyed <upon turn start> <after turn number [{turn_gate(FY_TO_COURT, m)}]> "
                            f"<before turn number [{turn_gate(FY_TO_COURT, m) + 1}]>")},
+    # Layer 13: the Demon Extermination List's hunters, the Court's immortals and the righteous who answer it. The list
+    # finds a listed demon (R V5c528): they see him hidden, strike only him, his men and his city, take nothing, and
+    # go home after HUNT_TURNS turns. Barbarian-owned, as no trigger can give one civ's units to another
+    {"name": HUNTER, "unitType": "Gu Master", "movement": 3, "strength": 56, "cost": 330, "requiredTech": "Calamity Lore",
+     "attackSound": sfx.rank_sound(7), "uniqueTo": "Barbarians",
+     "uniques": ["Unbuildable", "Unable to capture cities", "Unable to pillage tiles", f"Can only attack [{FANG_YUAN}] units",
+                 f"Can see invisible [{FANG_YUAN}] units", "Can pass through impassable tiles", gen_paths.PP.chasm(), *FLIGHT,
+                 # the Court's men: a whole Fate Gu strengthens them as it does its soldiers
+                 f"[+{FATE_MIGHT}]% Strength <if [{FATE_RESTORED}] is constructed by anybody> <if [Fate Gu] is constructed by anybody>",
+                 f"[This Unit] gains the [{HUNT}] status for [{HUNT_TURNS}] turn(s)",
+                 f"[This Unit] is destroyed <upon losing the [{HUNT}] status>"]},
 ])
 
 # ---------------- R2 T4: refinement ladder with the canon recipes ----------------
@@ -1065,7 +1134,7 @@ dump("UnitPromotions.json", with_combos([
         "Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>",
         # an upgrade anywhere fails in foreign land without open borders, and Unciv then crashes restoring the old unit
         # [src UnitUpgradeManager.performUpgrade, TileMap.placeUnitNearTile]: ascend at home (autoplay crash, C3)
-        "Unavailable <in [Foreign Land] tiles>",
+        *HOME_ONLY,
         # a Water Master walks on water, but the upgraded unit is placed before its promotions are copied: at sea it
         # finds no tile and Unciv crashes restoring the old one (autoplay crash, C5)
         "Unavailable <in [Water] tiles>"]
@@ -1074,7 +1143,7 @@ dump("UnitPromotions.json", with_combos([
         + [f"Unavailable <when below [{qi_cost(ASCEND['Balance the three qi'], m)}] [{q}]> <for [AI player] Civilizations> "
            f"<on [{n}] game speed>" for q in QI for n, m in SPEEDS]
         + ["Triggers a [Ascension] event <for [Rank Five Gu Master] units>",
-           "[This Unit] loses the [Ascension] promotion <upon turn start>"]},
+           "[This Unit] loses the [Ascension] promotion <upon turn start>", FY_STEP]},
 ] + [blessed_land(g, e, st) for g, e, st in GRADES] + [
     {"name": "Calamity Countdown", "uniques": ["Comment [When it runs out, the blessed land meets an earthly calamity]"]},
     {"name": "Tribulation Countdown", "uniques": ["Comment [When it runs out, the immortal meets a heavenly tribulation]"]},
@@ -1100,6 +1169,23 @@ dump("UnitPromotions.json", with_combos([
     {"name": "Advancing", "uniques": ["Comment [Climbing to the next rank]"]},
     GROTTO, advance("Rank Seven"), advance("Rank Eight"),
     {"name": "Venerable Killer Move", "uniques": ["[+100]% Strength"]},
+    # Layer 13: the body Fang Yuan took at Yi Tian Mountain (R V4c371, V5c106-158): strong in attack, fragile in defence,
+    # fed by every immortal it kills; its dao marks never clash (tools/gen_paths.py BODY), the walls never drag it
+    # (wall_strain). Granted, not bought (no unit types)
+    {"name": SOVEREIGN, "uniques": [
+        "[+40]% Strength <when attacking>", "[-20]% Strength <when defending>",
+        f"[This Unit] gains [20] XP <upon defeating a [{IMMORTAL}] unit>", f"Gain a free [{FETUS}] [in capital]",
+        "Comment [The dao marks of every path live side by side in it: no path clashes with another, and the region walls do not drag it]"]},
+    {"name": HUNT, "uniques": ["Comment [Hunting a demon of the Demon Extermination List; when the hunt ends the hunter goes home]"]},
+    # Fang Yuan's scheme on Fate Gu: from the shadows, while the Court bleeds (R V5c821, V5c939). Kept and self-removing
+    # (E4); the Court pays in its Nations.json lines while the scheme's marker stands. Autoplay v2 (8 x 450): bought
+    # with XP against a dozen other promotions, the AI took it in 1 game of the 5 where it was open; free, the engine's
+    # AI takes it at once [src NextTurnAutomation.applyPromotions]. From rank eight (post-[Rank Seven era]): he broke
+    # Fate Gu late in the canon, long after Yi Tian, when the Court had all but mended it
+    {"name": CRUSH, "unitTypes": GM_TYPES, "uniques": [
+        f"Only available <for [{{{FY_HERO}}} {{{SOVEREIGN}}} {{post-[Rank Seven era]}}] units> <if [Fate Gu] is constructed by anybody>",
+        f"Unavailable <if [{FY_SCHEME}] is constructed by anybody>", "This Promotion is free",
+        f"Gain a free [{FY_SCHEME}] [in capital]", f"[This Unit] loses the [{CRUSH}] promotion", w("+1000")]},
     # the arc's victory: the Venerable spends its yellow apricot essence on eternal life before its lifespan runs out
     # Phase D (2026-11-02): with immortals' lifespan growing by rank, every Five Regions autoplay game (6 x 400) raised a
     # Venerable (T314-378) and four won Eternal Life 30-35 turns later at 150. At ETERNAL_COST the Venerable reigns, and
@@ -1113,12 +1199,14 @@ dump("UnitPromotions.json", with_combos([
         + ["Gain a free [Eternal Life] [in capital]", "[This Unit] loses the [Seek Eternal Life] promotion", w("+1000")]},
     {"name": "Ascend to Venerable", "unitTypes": GM_TYPES, "uniques": [
         f"Only available <for [{{Rank Eight Gu Immortal}} {{{gen_paths.SUPREME_MARKER}}}] units> <after discovering [Dao Lord]>",
-        "Unavailable <if [Venerable Ascension] is constructed by anybody>", dao_at_least(3), "Unavailable <in [Foreign Land] tiles>",
+        "Unavailable <if [Venerable Ascension] is constructed by anybody>", dao_at_least(3), *HOME_ONLY,
         # reference audit (the user, 2026-11-08: canon and balanced): the Court's leaders in the canon's present are rank
         # eight (Duke Long, a match for the rank-eight zombie Bo Qing, R V5c343); its Venerables belong to the past and
         # Star Constellation only descends as a will (R V5c344). In autoplay the Court took the one Venerable slot in 7
         # of 8 games and, barred from Eternal Life, left 1 game in 8 with that win
         f"Unavailable <for [{HC}] Civilizations>",
+        # Layer 13: in Fang Yuan's clan the one who ascends is Fang Yuan
+        f"Unavailable <for [{FANG_YUAN}] Civilizations> <for units without [{FY_HERO}]>",
         "Unavailable <in [Water] tiles>"]
         + [f"Unavailable <when below [{qi_cost(60, m)}] [{WHITE}]> <on [{n}] game speed>" for n, m in SPEEDS]
         + [f"Instantly consumes [{qi_cost(60, m)}] [{WHITE}] <on [{n}] game speed>" for n, m in SPEEDS]
@@ -1128,7 +1216,7 @@ dump("UnitPromotions.json", with_combos([
            # grotto-heaven's calamity and tribulation countdowns, whose essence choices stop at rank eight
            "[This Unit] loses the [Grotto-Heaven Aperture] promotion",
            "[This Unit] gains the [Advancing] status for [1] turn(s)", "[This Unit] upgrades for free including special upgrades",
-           w("+500")]},
+           w("+500"), FY_STEP]},
 ] + [{"name": r["promotion"], "uniques": [r["promotion_effect"]]} for r in REALMS] + [
     {"name": "Chaos Countdown", "uniques": ["Comment [When it runs out, a chaos calamity falls on the Venerable]"]},
 ]))
@@ -1242,7 +1330,9 @@ dump("Events.json", [
     # C8 (M4b): a demonic clan can buy a righteous name in the Shang clan's battle district (R V2c60, V2c66)
     {"name": "Whitewashed Name", "text": "The Shang clan's battle stage will wash any name white, for a price.", "choices": [
         {"text": "Buy a righteous name", "uniques": ["Only available <when above [150] [Gold]>", "Gain [-150] [Gold]",
-                                                    "Remove [[Demonic Path] branch]", "Adopt [Righteous Path]", w("-50")]},
+                                                    "Remove [[Demonic Path] branch]", "Adopt [Righteous Path]", w("-50"),
+                                                    # Layer 13: no stage washes the demon from beyond
+                                                    f"Unavailable <for [{FANG_YUAN}] Civilizations>"]},
         {"text": "Stay what you are", "uniques": [w("+0")]},
     ]},
     # C9 (M11): a peacetime contest between the clans splits the mountain's gains (R V1c179); a silent die
@@ -1300,7 +1390,7 @@ dump("Events.json", [
     # MOD_SPEC_2 C1: crush the aperture, draw in and balance the three qi, survive (R V3/201, V5/346, V3/222)
     {"name": "Ascension", "text": "Your rank-five Gu Master is ready to crush the aperture and draw in the three qi. "
                                   "Balanced qi gives the best odds; haste costs less and risks everything.", "choices": [
-        {"text": text, "uniques": ["Unavailable <in [Foreign Land] tiles>", "Unavailable <in [Water] tiles>"] + [
+        {"text": text, "uniques": [*HOME_ONLY, "Unavailable <in [Water] tiles>"] + [
             f"Unavailable <when below [{qi_cost(a, m)}] [{q}]> <on [{n}] game speed>"
                                    for q in QI for n, m in SPEEDS]
             + [f"Instantly consumes [{qi_cost(a, m)}] [{q}] <on [{n}] game speed>" for q in QI for n, m in SPEEDS]
@@ -1547,7 +1637,9 @@ dump("Buildings.json", [
                   "Never destroyed when the city is captured", "Immortal Gu",
                   gen_paths.path_marker(g["path"]), "Triggers a [Immortal Gu Refinement] event"] + items(g["effects"])
       # autoplay (C3): without it the AI built only the two stat wonders, after turn 275
-      + [w("+300")]}
+      + [w("+300")],
+      # Layer 13: the cicada is Fang Yuan's alone in the canon (R V1c1); the Court refined it in 5 of 8 games
+      **({"uniqueTo": FANG_YUAN} if g["name"] == "Spring Autumn Cicada" else {})}
      for g in IMMORTAL_GU
 ] + gen_paths.GC.wonders(IMMORTAL_GU_RECIPES, gen_paths.path_marker) + [b for i in INHERITANCES for b in (
     {"name": i["name"], "isWonder": True, "requiredTech": "Calamity Lore", "cost": 420,
@@ -1583,7 +1675,17 @@ dump("Buildings.json", [
                  "Triggers the following global alert: [The Heavenly Court has mended Fate Gu whole. Its sleepers wake, and "
                  "its armies are strong enough to flatten the five regions.]"]},
     {"name": "Shattered Fate", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]},
-    {"name": "Fate Seized", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]}
+    {"name": "Fate Seized", "isNationalWonder": True, "cost": 1, "uniques": ["Unbuildable", "Cannot be purchased"]},
+    # Layer 13: markers of Fang Yuan's two great deeds, in his capital (granted by his promotions)
+    {"name": FETUS, "isNationalWonder": True, "cost": 1,
+     "uniques": ["Unbuildable", "Cannot be purchased",
+                 "Triggers the following global alert: [In the ruins of Yi Tian Mountain, Fang Yuan has taken the rank-nine "
+                 "Sovereign Immortal Fetus Gu meant to bring back Spectral Soul. His body now holds every dao.]"]},
+    {"name": FY_SCHEME, "isNationalWonder": True, "cost": 1,
+     # safe: granted only through a body that holds the Sovereign Immortal Body, removed only when none does
+     "uniques": ["Unbuildable", "Cannot be purchased", "Suppress warning [is both granted free and could possibly be removed by triggers]",
+                 "Triggers the following global alert: [Fang Yuan has slipped into the Central Continent: Fate Gu itself is "
+                 "his quarry. Every turn it stands, the Heavenly Court loses ground mending it.]"]},
 ] + gen_paths.halls() + [
 ])
 
@@ -1811,6 +1913,9 @@ VOICES = {
     "Fang Clan": ("The Fang clan builds what lasts. What have you built?",
                   "Our Gu Houses are already moving. You should have counted them.",
                   "A fortress falls once. Our name will outlast it."),
+    "Fang Yuan": ("Fang Yuan. I have five hundred years on you, so skip the courtesies: what can you offer me?",
+                  "Nothing personal. You stand between me and eternal life; that is reason enough.",
+                  "Is this the end? It never has been, for me."),
     "Wu Clan": ("Wu Ji of the Wu clan. The Southern Border keeps me busy; state your purpose.",
                 "The righteous never strike without a reason. Here is ours.",
                 "Write it down: the Wu fell to you. Few will believe it."),
@@ -1854,7 +1959,7 @@ dump("Nations.json", [
            # the user, 2026-11-09: Fang Yuan comes to the Gu Yue village, once a game
            # "after turn number [N]" holds from turn N on [src Conditionals]: [T, T+1) is turn T alone
            + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn end> <after turn number [{turn_gate(FY_ARRIVES, m)}]> "
-                                 f"<before turn number [{turn_gate(FY_ARRIVES, m) + 1}]>")),
+                                 f"<before turn number [{turn_gate(FY_ARRIVES, m) + 1}]> {NO_FY_NATION}")),
     # R2 T2: the Bai and Xiong leaders are never named in canon (bai jia zu zhang / xiong jia zu zhang)
     nation("Bai Clan", "Bai Clan Leader", "Bai Temperament", [230, 230, 230], [40, 70, 120],
            ["Bai Village", "Back-Slope Waterfall", "Deep Pool", "Bitter Shell Pool"],
@@ -1904,7 +2009,24 @@ dump("Nations.json", [
                                  f"<when number of [[Rank Eight Gu Immortal] Units] is less than [{FATE_ARMY_CAP}]>")
            # Fang Yuan comes for Fate Gu: beside the Court's capital at the end of its turn, a turn after he left the south
            + per_speed(lambda m: f"A [{FANG_YUAN}] rebels <upon turn end> <after turn number [{turn_gate(FY_TO_COURT, m) + 1}]> "
-                                 f"<before turn number [{turn_gate(FY_TO_COURT, m) + 2}]>")),
+                                 f"<before turn number [{turn_gate(FY_TO_COURT, m) + 2}]> {NO_FY_NATION}")
+           # Layer 13: the Battle of Yi Tian Mountain (R V4c356, V4c369): the Court breaks the Shadow Sect's plan and
+           # wins narrowly, at a price in Fate Gu's mending
+           + per_speed(lambda m: f"Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court "
+                                 f"has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's "
+                                 f"Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> "
+                                 f"<after turn number [{turn_gate(YI_TIAN, m)}]> <before turn number [{turn_gate(YI_TIAN, m) + 1}]>")
+           + per_speed(lambda m: f"Instantly consumes [{YI_TIAN_LOSS}] [{FATE_RES}] <upon turn start> "
+                                 f"<after turn number [{turn_gate(YI_TIAN, m)}]> <before turn number [{turn_gate(YI_TIAN, m) + 1}]> "
+                                 f"<if [Fate Gu] is constructed> <when above [{YI_TIAN_LOSS - 1}] [{FATE_RES}]>")
+           # Fang Yuan's scheme on Fate Gu: every turn it runs the mending slips, twice as fast while the Court is at war
+           # (fishing in troubled waters, R V5c821); with the store run down, Fate Gu breaks in his hand (R V5c939)
+           + [line for war in ("", " <when at war>") for line in per_speed(
+               lambda m, war=war: f"Instantly consumes [{max(1, round(SCHEME_DRAIN / m))}] [{FATE_RES}] <upon turn start> "
+                                  f"<if [{FY_SCHEME}] is constructed by anybody> <if [Fate Gu] is constructed>{war} "
+                                  f"<when above [{max(1, round(SCHEME_DRAIN / m)) - 1}] [{FATE_RES}]>")]
+           + [f"Triggers a [{FATE_SHATTER}] event <upon turn start> <if [{FY_SCHEME}] is constructed by anybody> "
+              f"<if [Fate Gu] is constructed> <when below [{FATE_LOSS}] [{FATE_RES}]>"]),
     nation(HJ, "Huang Jin Patriarch", "Huang Jin Temperament", [200, 160, 40], [90, 40, 20],
            ["Imperial Court", "Golden Tent", "Northern Plains Camp"],
            [RIGHTEOUS_START, "[+15]% Strength <when defending>", "Start bias [Grassland]",
@@ -1936,6 +2058,49 @@ dump("Nations.json", [
            # Regions II: a Fang clan that swallows more oases than its own three draws the Wan coalition (R V6c256)
            + per_speed(lambda m: f"Triggers a [Wan Coalition] event <upon turn start> <when number of [Cities] is more "
                                  f"than [3]> <with [{chance(2, m)}]% chance>")),
+    # Layer 13 (the user, 2026-11-09): Fang Yuan, a major of one city, races every clan and the player for eternal life.
+    # His capital is his own aperture (the Hu Immortal blessed land he won on Dang Hun Mountain, R V2c199, V2c205, and
+    # Luo Po Valley, R V4c324, are secret realms on the map), beside the rockmen he made his slaves (R V3c4, V3c7). The
+    # user's "negotiation, strategy, manipulation, deduction, survival, social science", in what the engine can do: he
+    # founds no village and rules what he takes through puppets, bends the minor clans (influence that holds, annexing a
+    # long ally), draws on their knowledge, and outthinks a clan with one city (five hundred years of memory: free techs,
+    # +50% science). Survival: his hero (HEROES) and the cicada's return; the list hunts him after Yi Tian Mountain
+    nation(FANG_YUAN, FANG_YUAN, "Fang Yuan Temperament", [40, 12, 22], [214, 48, 58],
+           ["Fang Yuan's Aperture"],
+           ["Starts with [Demonic Path] adopted", "Start bias [Hill]", "Cannot build [Clan Settler] units",
+            "May not annex cities", "Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns",
+            "Resting point for Influence with City-States is increased by [20]", "[-75]% City-State Influence degradation",
+            "Allied City-States provide [Science] equal to [25]% of what they produce for themselves",
+            *head_start(5), "[+50]% [Science] [in all cities]", "[+25]% [Production] [in all cities]",
+            "[+25]% [Gold] [in all cities]", "[+50]% Strength for cities",
+            # the three qi come from land, springs, hills and people (QI_SOURCES): one city gathers 3-5 a turn where a
+            # clan gathers 15-25, and his body ascended 40 turns after the clans' first immortals (autoplay). He knows
+            # where every kind of qi pools
+            *[f"Instantly provides [1] [{q}] <upon turn start> <after discovering [Three Qi]>" for q in QI],
+            # the Spring Autumn Cicada's return: fallen, he wakes again with all his memories, as far up the mortal
+            # ranks as his clan's lore reaches (his Gu, his paths and his immortal body are gone); while he holds the
+            # cicada, its rank-six immortal (immortal_gu.csv) is he
+            f"Free [Rank One Gu Master] appears <upon turn start> <when number of [[{FY_HERO}] Units] is less than [1]> "
+            f"<before the [Rank Three era]>",
+            f"Free [Rank Three Gu Master] appears <upon turn start> <when number of [[{FY_HERO}] Units] is less than [1]> "
+            f"<starting from the [Rank Three era]> <before the [Rank Five era]>",
+            f"Free [Rank Five Gu Master] appears <upon turn start> <when number of [[{FY_HERO}] Units] is less than [1]> "
+            f"<starting from the [Rank Five era]>",
+            # his scheme on Fate Gu dies with the body that carried it
+            f"Remove [{FY_SCHEME}] [in all cities] <upon turn start> <when number of [[{SOVEREIGN}] Units] is less than [1]>"]
+           # Yi Tian Mountain: the fetus waits in the ruins for an immortal Fang Yuan; a Fang Yuan who returns and
+           # ascends again forms the body again (autoplay v1: once a game, the hunters ended his scheme for good)
+           + per_speed(lambda m: f"[{{{FY_HERO}}} {{{IMMORTAL}}}] units gain the [{SOVEREIGN}] promotion <upon turn start> "
+                                 f"<after turn number [{turn_gate(YI_TIAN, m)}]> "
+                                 f"<when number of [[{SOVEREIGN}] Units] is less than [1]>")
+           # the Demon Extermination List: every ten years from Yi Tian on, more as he climbs, twice as often while he
+           # stalks Fate Gu
+           + [line for cond in ("", f" <when number of [[{{{FY_HERO}}} {{Rank Eight Gu Immortal}}] Units] is more than [0]>",
+                                f" <when number of [[{{{FY_HERO}}} {{{VENERABLE}}}] Units] is more than [0]>")
+              for line in per_speed(lambda m, cond=cond: f"A [{HUNTER}] rebels <upon turn start> <every [{turns(LIST_EVERY, m)}] turns> "
+                                                         f"<after turn number [{turn_gate(YI_TIAN, m)}]>{cond}")]
+           + per_speed(lambda m: f"[2] [{HUNTER}]s rebel <upon turn start> <every [{turns(7, m)}] turns> "
+                                 f"<if [{FY_SCHEME}] is constructed> <if [Fate Gu] is constructed by anybody>")),
     # R2 T7
     {"name": "Hairy Man Tribe", "cityStateType": "Refiner Tribe", "outerColor": [60, 30, 10], "innerColor": [255, 230, 180],
      "cities": ["Bronze Hall"]},
@@ -1980,6 +2145,12 @@ dump("Nations.json", [
     # Fang clan (R V6c281, V6c256)
     {"name": "Wan Clan", "cityStateType": "Battle Tribe", "outerColor": [230, 200, 140], "innerColor": [120, 60, 20],
      "cities": ["Gao Song Oasis"]},
+    # Layer 13: the Shadow Sect, Spectral Soul's split souls working tens of thousands of years to bring him back
+    # (R V4c367, V4c369), seated in its blessed land in the Southern Border amid hidden natural immortal formations
+    # (R V3c87, V5c599, V5c628): the user's "complete wealth", shared with whoever it favours (its land holds a bit of
+    # everything, tools/make_map.py)
+    {"name": SHADOW, "cityStateType": SHADOW, "outerColor": [34, 26, 48], "innerColor": [170, 140, 220],
+     "cities": ["Shadow Sect Blessed Land"], "uniques": ["[+100]% Strength for cities"]},
     # reference audit Layer 4: the variant humans (异人) as city-states, each with its kind's own bonuses (R V1c134 all
     # descend from Ren Zu): the feathermen of Yu Sheng City, peaceable flyers of the Western Desert (R V4c215, V4c217);
     # the snowmen tribes of the Great Snow Mountain, bred as elite warbands (R V3c132); Ink Man City, whose king leads the
@@ -2047,6 +2218,12 @@ dump("CityStateTypes.json", [
      "allyBonusUniques": ["[+3 Culture] [in capital]", "[+1 Happiness]"]},
     {"name": "Stone Folk", "color": [150, 130, 110], "friendBonusUniques": ["[+2 Production] [in capital]"],
      "allyBonusUniques": ["[+2 Production] [in capital]", "[+1 Production] from [Mine] tiles [in all cities]"]},
+    # Layer 13: the Shadow Sect's hoard, gathered to bring back a Venerable, is complete: a share of everything it owns
+    # (its land's riches go to its ally like every city-state's) and its immortals' strength
+    {"name": SHADOW, "color": [110, 80, 160],
+     "friendBonusUniques": ["[+2 Science] [in capital]", "[+2 Gold] [in capital]"],
+     "allyBonusUniques": ["[+3 Science] [in capital]", "[+3 Gold] [in capital]", "[+3 Production] [in capital]",
+                          "[+10]% Strength <for [post-[Rank Five era]] units>", "[+20]% XP gained from combat"]},
 ])
 dump("Personalities.json", [
     # C4 (conflicts research M6): Gu Yue the declining overlord that brokers alliances and lives off caravans; Bai the
@@ -2085,6 +2262,12 @@ dump("Personalities.json", [
      "diplomacy": 3},
     {"name": "Zombie Alliance Temperament", "gold": 8, "military": 7, "aggressive": 7, "declareWar": 6, "commerce": 8,
      "loyal": 2},
+    # Layer 13: Fang Yuan thinks of everything and trusts no one (R V3c27, V5c11): knowledge, production and trade
+    # first, an army that guards more than it strikes, wars only when they pay, no loyalty at all, no villages
+    {"name": "Fang Yuan Temperament", "science": 10, "production": 8, "gold": 8, "food": 6, "military": 7,
+     "aggressive": 5, "declareWar": 4, "diplomacy": 9, "commerce": 9, "loyal": 0, "expansion": 0, "happiness": 6,
+     "preferredVictoryType": "Eternal Life",
+     "uniques": ["[+300]% weight to [Spring Autumn Cicada] for AI decisions", f"[+100]% weight to [{SPRING}] for AI decisions"]},
     {"name": "Fang Temperament", "production": 8, "science": 6, "military": 6, "aggressive": 3, "declareWar": 2,
      "diplomacy": 9, "commerce": 9,
      "uniques": ["[+200]% weight to [Gu House Formation] for AI decisions"]},

@@ -68,9 +68,15 @@ DAO_MARK, DAO_CLASH, STRONG_CLASH = 5, -5, -25
 MARKER = "Path Master"  # filter marker on every Master (tools/unique_allowlist.txt)
 SIGNATURE_SHARE = 0.85  # MOD_SPEC_3: a signature clan keeps >=80% of its path promotions on its path
 TIER_WEIGHT = "[+400]% weight to this choice for AI decisions"
+HERO_STEP = "[+2000]% weight to this choice for AI decisions <for units with [Demon from Beyond]>"
+# Layer 13: the Sovereign Immortal Body holds the dao marks of every path side by side (R V5c106, V5c140): no clash
+# lines for it (the AI keeps one path even in that body: autoplay, offered every path its Fang Yuan bought two dozen
+# Masters and never the advance to rank seven)
+BODY = "<for units without [Sovereign Immortal Body]>"
 ONE_PATH = f"Unavailable <for [AI player] Civilizations> <for [{MARKER}] units>"
 COMMENT = "Every other path this unit holds costs Strength: dao marks interfere"
-CONFLICT = re.compile(r"^\[-?\d+\]% Strength <for units with \[.+ Master\]> <hidden from users>$")
+CONFLICT = re.compile(r"^\[-?\d+\]% Strength <for units with \[.+ Master\]> <for units without \[Sovereign Immortal Body\]> "
+                      r"<hidden from users>$")
 
 
 def table(name: str) -> list[dict]:
@@ -135,7 +141,7 @@ def pair_strength() -> dict[tuple[str, str], int]:
 
 def conflict_lines(p: dict) -> list[str]:
     """On the earlier path's Master, one line per later path whose pair costs Strength."""
-    return [f"[{v}]% Strength <for units with [{tier_name(KEY[b], 0)}]> <hidden from users>"
+    return [f"[{v}]% Strength <for units with [{tier_name(KEY[b], 0)}]> {BODY} <hidden from users>"
             for (a, b), v in pair_strength().items() if a == p["key"] and v]
 
 
@@ -150,7 +156,7 @@ def dao_mark_lines(p: dict) -> list[str]:
         if v <= STRONG_CLASH and p["key"] in (a, b):
             other = b if a == p["key"] else a
             if other in marked:
-                out.append(f"[{DAO_CLASH}]% Strength <for every [1] [[{path_marker(other)}] Buildings]>")
+                out.append(f"[{DAO_CLASH}]% Strength <for every [1] [[{path_marker(other)}] Buildings]> {BODY}")
     return out
 
 
@@ -251,6 +257,8 @@ def tier_uniques(p: dict, t: int) -> list[str]:
     if t == 1:   # Layer 8: deep attainment needs the clan's lore of the path
         u.append(f"Only available <after discovering [{lore_name(p)}]>")
     u.append(TIER_WEIGHT)
+    if t:   # Layer 13: Fang Yuan's AI never wastes a step (tools/gen_ruleset.py FY_STEP)
+        u.append(HERO_STEP)
     if t == 0:
         if not p["parent"]:  # one path per AI unit; a sub-path stays open to its parent's holders
             u.append(ONE_PATH)
@@ -1001,7 +1009,7 @@ def doc_tables() -> dict[str, str]:
         moves.append(f"| {p['name']} | {p['family']} | {m} | {p['mortal_tag']} | {im} | {p['immortal_tag']} |")
     uniq = [f"Tiers 1-2 ship in Slice 1, tier 3 (Great Grandmaster, rank six) in MOD_SPEC_2 C3, tier 4 (Supreme Grandmaster, rank eight) in C5. Every Master also carries "
             "one hidden conflict line per later path whose pair costs Strength (`[relativeAmount]% Strength` "
-            "`<for units with [promotion]>` `<hidden from users>`, values from data/path_conflicts.csv), a visible "
+            "`<for units with [promotion]>` `<for units without [promotion]>` `<hidden from users>`, values from data/path_conflicts.csv; none for the Sovereign Immortal Body), a visible "
             "comment line and, where immortal Gu of its own or a strongly clashing path exist, its dao-mark lines.", "",
             "| Path | Master | Grandmaster | Mortal move status | Great Grandmaster | Immortal move status | Supreme Grandmaster |",
             "|---|---|---|---|---|---|---|"]

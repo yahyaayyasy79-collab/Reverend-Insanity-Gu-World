@@ -243,6 +243,7 @@
       "Triggers a [Immortal Gu Refinement] event",
       "[+300]% weight to this choice for AI decisions"
     ],
+    "uniqueTo": "Fang Yuan",
     "civilopediaText": [
       {
         "text": "Spring Autumn Cicada (春秋蝉), rank six, time path: Red Lotus's vital Gu. When its owner loses an immortal, the will may return up the river of time: half the time a new Gu Immortal appears (without a blessed land). Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."
@@ -2264,6 +2265,27 @@
       {
         "text": "Proof that this clan seized Fate Gu from the Heavenly Court and kept it."
       }
+    ]
+  },
+  {
+    "name": "Sovereign Immortal Fetus",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Triggers the following global alert: [In the ruins of Yi Tian Mountain, Fang Yuan has taken the rank-nine Sovereign Immortal Fetus Gu meant to bring back Spectral Soul. His body now holds every dao.]"
+    ]
+  },
+  {
+    "name": "Fate Gu Scheme",
+    "isNationalWonder": true,
+    "cost": 1,
+    "uniques": [
+      "Unbuildable",
+      "Cannot be purchased",
+      "Suppress warning [is both granted free and could possibly be removed by triggers]",
+      "Triggers the following global alert: [Fang Yuan has slipped into the Central Continent: Fate Gu itself is his quarry. Every turn it stands, the Heavenly Court loses ground mending it.]"
     ]
   },
   {

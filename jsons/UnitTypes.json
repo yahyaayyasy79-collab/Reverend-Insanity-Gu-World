@@ -168,15 +168,17 @@
       "[This Unit] gains the [Hei Lou Lan] promotion <for [Huang Jin Family] Civilizations> <for [Rank Five Gu Master] units> <when number of [[Hei Lou Lan] Units] is less than [1]>",
       "[This Unit] gains the [Bo Qing] promotion <for [Zombie Alliance] Civilizations> <for [Immortal Zombie] units> <when number of [[Bo Qing] Units] is less than [1]>",
       "[This Unit] gains the [Fang Di Chang] promotion <for [Fang Clan] Civilizations> <for [Rank Seven Gu Immortal] units> <when number of [[Fang Di Chang] Units] is less than [1]>",
+      "[This Unit] gains the [Demon from Beyond] promotion <for [Fang Yuan] Civilizations> <for [Gu Master] units> <when number of [[Demon from Beyond] Units] is less than [1]>",
       "[This Unit] gains the [Doomed Aperture] status for [20] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Quick] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [30] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Standard] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [45] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Epic] game speed>",
       "[This Unit] gains the [Doomed Aperture] status for [90] turn(s) <for units with [Bai Ning Bing]> <for [Rank Four era] units> <on [Marathon] game speed>",
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "A [Fang Yuan] rebels <upon defeating a [{Fang Yuan} {Barbarian}] unit>",
       "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
       "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
       "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
-      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>",
+      "Can see invisible [Fang Yuan] units <for [Heavenly Court] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -293,11 +295,12 @@
       "[This Unit] gains the [Forbidden Ground Gu] promotion <upon defeating a [Forbidden Ground Gu] unit> <with [25]% chance> <for units without [Forbidden Ground Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
       "[This Unit] gains the [Refining Hammer Gu] promotion <upon defeating a [Refining Hammer Gu] unit> <with [25]% chance> <for units without [Refining Hammer Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Tempering Flame Gu] promotion <upon defeating a [Tempering Flame Gu] unit> <with [25]% chance> <for units without [Tempering Flame Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "A [Fang Yuan] rebels <upon defeating a [{Fang Yuan} {Barbarian}] unit>",
       "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
       "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
       "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
-      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>",
+      "Can see invisible [Fang Yuan] units <for [Heavenly Court] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -414,11 +417,12 @@
       "[This Unit] gains the [Forbidden Ground Gu] promotion <upon defeating a [Forbidden Ground Gu] unit> <with [25]% chance> <for units without [Forbidden Ground Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
       "[This Unit] gains the [Refining Hammer Gu] promotion <upon defeating a [Refining Hammer Gu] unit> <with [25]% chance> <for units without [Refining Hammer Gu]> <for [non-[Rank One-Two era]] units> <hidden from users>",
       "[This Unit] gains the [Tempering Flame Gu] promotion <upon defeating a [Tempering Flame Gu] unit> <with [25]% chance> <for units without [Tempering Flame Gu]> <for [post-[Rank Four era]] units> <hidden from users>",
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "A [Fang Yuan] rebels <upon defeating a [{Fang Yuan} {Barbarian}] unit>",
       "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
       "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
       "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
-      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>",
+      "Can see invisible [Fang Yuan] units <for [Heavenly Court] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -430,11 +434,12 @@
     "name": "Beast",
     "movementType": "Land",
     "uniques": [
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "A [Fang Yuan] rebels <upon defeating a [{Fang Yuan} {Barbarian}] unit>",
       "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
       "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
       "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
-      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>",
+      "Can see invisible [Fang Yuan] units <for [Heavenly Court] Civilizations>"
     ],
     "civilopediaText": [
       {
@@ -446,11 +451,12 @@
     "name": "Gu House",
     "movementType": "Land",
     "uniques": [
-      "A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>",
+      "A [Fang Yuan] rebels <upon defeating a [{Fang Yuan} {Barbarian}] unit>",
       "Instantly consumes [8] [Fate Restoration] <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [7] [Fate Restoration]>",
       "Triggers a [Fate Gu Shattered] event <upon being defeated> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>",
       "Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>",
-      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>"
+      "[1] free [Rank Seven Gu Immortal] units appear <upon being defeated> <for [Heavenly Court] Civilizations> <when number of [[Rank Seven Gu Immortal] Units] is less than [3]> <with [25]% chance>",
+      "Can see invisible [Fang Yuan] units <for [Heavenly Court] Civilizations>"
     ],
     "civilopediaText": [
       {

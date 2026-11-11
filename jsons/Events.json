@@ -334,7 +334,8 @@
           "Gain [-150] [Gold]",
           "Remove [[Demonic Path] branch]",
           "Adopt [Righteous Path]",
-          "[-50]% weight to this choice for AI decisions"
+          "[-50]% weight to this choice for AI decisions",
+          "Unavailable <for [Fang Yuan] Civilizations>"
         ]
       },
       {
@@ -505,7 +506,9 @@
       {
         "text": "Balance the three qi",
         "uniques": [
-          "Unavailable <in [Foreign Land] tiles>",
+          "Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>",
+          "Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>",
+          "Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>",
           "Unavailable <in [Water] tiles>",
           "Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>",
           "Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>",
@@ -538,7 +541,9 @@
       {
         "text": "Ascend in haste",
         "uniques": [
-          "Unavailable <in [Foreign Land] tiles>",
+          "Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>",
+          "Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>",
+          "Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>",
           "Unavailable <in [Water] tiles>",
           "Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>",
           "Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>",
