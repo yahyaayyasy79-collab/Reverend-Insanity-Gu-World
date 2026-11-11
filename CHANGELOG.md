@@ -1334,3 +1334,38 @@ Tomb; and you allowed invented Gu for the paths the canon leaves poor.
   ranks those paths lacked, each with its icon and refinement sound.
 * Designed icons for Fate Restoration (Fate Gu's cracked eye stitched shut) and Fate Gu Restored (the eye in a closed
   ring).
+
+## Layer 13: Fang Yuan races everyone for eternal life (2026-11-11)
+
+You asked that Fang Yuan can become a Venerable and compete with the five regions and with you for eternal life; that
+he is the world's first demon, hunted most by the Heavenly Court and then by the righteous clans; that the Court is
+the final boss whose power quietly threatens the other regions; that he seems a genius at negotiation, strategy,
+manipulation, deduction, survival and social science; that he takes the Sovereign Body from the Shadow Sect's war with
+the Court, the Shadow Sect being a complete hoard meant to revive Spectral Soul; and that the regions are not dumb.
+* **Fang Yuan is a nation** (a barbarian can win nothing): one city, Fang Yuan's Aperture, in the south-west of the
+  Southern Border beside the Rockmen; "Select players from starting locations" adds him on the Five Regions map. He
+  starts on the Demonic Path, founds no village, keeps conquests as puppets, bends the minor clans (influence that
+  holds, a five-turn ally bought outright, a quarter of their science), has five free techs, +50% science, +25%
+  production and stones, +50% city strength, and his own temperament (science 10, diplomacy 9, loyalty 0).
+* **His body, Demon from Beyond:** a hero on one of his Gu Masters (grade C, as in the canon): +30%, double XP and 3 XP
+  a turn anywhere, climbs the mortal ranks by itself, ascends in his land or the wilds, unseen beyond the next tile;
+  only he can become his clan's Venerable, and his AI weighs every step of that climb heavily. Fallen, he returns the
+  next turn with his memories (a Gu Master of the era's rank), or as the rank-six immortal of his Spring Autumn Cicada
+  (now his alone).
+* **Yi Tian Mountain** (turn 240, Standard): the Court falls on the Shadow Sect and wins barely (15 of Fate Gu's
+  mending); an immortal Fang Yuan then takes the **Sovereign Immortal Body**: +40% attacking, -20% defending (fragile),
+  20 XP per immortal killed, no path clashes, no wall strain.
+* **The Demon Extermination List:** from Yi Tian, a Demon Hunter comes for him every 13 turns, more as he climbs and
+  while he stalks Fate Gu; hunters see him hidden and strike only his men and city; the Court's men see him too; the
+  righteous fight his men 15% harder.
+* **Crush Fate Gu:** from rank eight, his scheme drains the Court's mending (twice as fast while it is at war) until
+  Fate Gu breaks in his hand, whole or not.
+* **The Shadow Sect** is a city-state in the far south-east (+100% city strength) whose land holds a spring, jade and
+  six path foods its ally receives, with science, stones, production and immortal strength.
+* Canon checked in the raw text: he did not get the body by accident (he chose to take the fetus against Star
+  Constellation's hint), and the canon puts him near the top of the list, not first. In games without the nation the
+  old barbarian wanderer still comes. Designed art for every new object; nine leaders moved to the Victories atlas.
+* Autoplay (8 x 450): Fang Yuan an immortal in 8 games, rank eight in 3, Venerable in 1; the body in 8; his scheme
+  broke Fate Gu in 3 (twice after the Court had mended it whole); alive at the end in 8; Eternal Life to the Bai 2, Wu
+  1, Gu Yue 1. No clan declared war on him: the list's hunters do the hunting.
+

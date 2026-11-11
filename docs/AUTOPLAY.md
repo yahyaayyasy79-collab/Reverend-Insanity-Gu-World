@@ -725,6 +725,49 @@ and Fang Yuan's lives.
   once). More room (villages 6-7 tiles apart) and +25% city strength raised it from 2.0 to 3.4 cities at T100, but the
   Bai, the canon's aggressor, still takes it in 3 of 8 games.
 
+## Layer 13: Fang Yuan the nation (2026-11-11)
+
+Five Regions, Prince, 8 games x 450 turns, seeds 101-108, against the Layer 12 build (v22, same seeds). The harness
+now records Fang Yuan's body (`hero`: its unit, XP, promotions and which of his great steps are open). Five builds:
+
+| | v1 | v2 | v3 | v4 | final |
+|---|---|---|---|---|---|
+| Change | first build | hero cultivates anywhere, any Gu Master carries him, era-based return | ascends in the wilds, climbs mortal ranks by itself, scheme free | +1 of each qi a turn, scheme from rank eight, hunters +50% with a whole Fate Gu | his AI weighs every step of his climb x21 |
+| Body an immortal (games) | 8 | 6 | 8 | 8 | 8 |
+| Body at rank seven / eight | 4 / 1 | 0 / 0 | 2 / 3 | 5 / 4 | 7 / 3 |
+| Fang Yuan a Venerable | 1 | 0 | 0 | 1 (and won Eternal Life) | 1 |
+| Sovereign Immortal Body | 3 | 6 | 8 | 8 | 8 |
+| His scheme on Fate Gu | 0 | 1 | 0 | 3 | 3 |
+| Fate Gu shattered / mended whole | 1 / 7 | 0 / 7 | 0 / 6 | 2 / 6 | 3 / 6 (2 whole ones broken later) |
+| Fang Yuan alive at the end | 6 | 4 | 8 | 8 | 8 |
+
+(v4's data was lost with a container reset; its numbers above come from the notes taken when it ran.)
+
+Final build against Layer 12:
+
+| | Layer 12 (v22) | Layer 13 |
+|---|---|---|
+| Venerables (games, per clan) | Bai 5, Fang 1, Huang Jin 1, Wu 1 | Bai 5, Gu Yue 2, Fang Yuan 1, Wu 1 |
+| Eternal Life won | Bai 2, Huang Jin 1 | Bai 2, Wu 1, Gu Yue 1 |
+| Fate Gu shattered / mended whole | 4 / 3 | 3 / 6 (every shattering his scheme's) |
+| Majors fallen | Gu Yue 3, Xiong 2, Wu 2 | Gu Yue 2, Xiong 2, Heavenly Court 1 |
+| Fang Yuan at T300: techs, immortals | | 28.2 (south clans 20-24, Court 35.8), 3.0 |
+| Wars on Fang Yuan | | none in 8 games |
+| Demon Hunters at once (most) | | 1-4 |
+| Minor clans allied to him | | Hairy Man Tribe in 8 games (T64-211), Foothill Villages 3, Shadow Sect 2; a second city (annexed) in 2 |
+
+* **Why the body lagged:** a clan's Gu Masters cultivate in an academy city, rank up on their clan's land and ascend
+  in friendly land; Fang Yuan's one city left his body abroad with hundreds of unspent XP. Cultivation anywhere, a free
+  mortal rank-up at turn start and ascension in the wilds (never in another clan's land, the upgrade crash guard) fixed
+  it; one of each qi a turn fed the ascension his single city could not; weighting his steps x21 stopped his AI from
+  spending XP on side promotions.
+* **The race for fate is his now:** every shattering came from his scheme, twice after the Court had mended Fate Gu
+  whole (canon: he broke it late). The Court fell once: after he broke Fate Gu (T350), the Bai and their Venerable
+  took it city by city (T365-387).
+* **Hunted, not destroyed:** the list's hunters come every 13 turns (Standard), more while he is rank eight or the
+  Venerable and while he stalks Fate Gu; his body fell 2-3 times in 8 games. No clan declared war on him: his city
+  lies 12+ tiles from the Qing Mao clans, beyond the engine's war motive (KNOWN_ISSUES 34, 36).
+
 ## Re-run
 
 ```

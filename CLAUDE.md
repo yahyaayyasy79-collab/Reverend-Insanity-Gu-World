@@ -71,7 +71,14 @@ Court mends Fate Gu into Fate Restoration, +1/turn from 30; every Court soldier 
 at 100 Fate Gu Restored: +50% strength/yields, rank-eight sleepers, Heaven's Decree every 20 turns: bow or face two
 rank-seven immortals; Court declareWar stays 0); Fang Yuan strikes only the Court (his kills -25), pillages nothing, moves
 to the Court's capital on T260, always returns, Venerable-level only after the shattering; the Qing Mao villages 6-7
-tiles apart, Gu Yue cities +25%.
+tiles apart, Gu Yue cities +25%. Layer 13 (user 2026-11-09, built 2026-11-11; LORE_MAPPING "Layer 13"): Fang Yuan as a
+one-city major (Demonic Path, no settlers, puppets, minor-clan manipulation, 5 free techs, +50% science) whose body is
+the hero Demon from Beyond (grade C, +3 XP/turn anywhere, free mortal rank-ups, ascends in the wilds, only Venerable of
+his clan, AI weight x21 on his climb, returns by era); Yi Tian Mountain T240 (Court -15 mending); Sovereign Immortal Body
+(no path clashes, no wall strain, +40/-20%); the Demon Extermination List's Demon Hunters (barbarian-owned, attack only
+him); Crush Fate Gu from rank eight; the Shadow Sect city-state with a complete hoard; the cicada uniqueTo him; leaders
+in the Victories atlas. Autoplay: Venerable 1/8, rank 8 3/8, Fate Gu broken by him 3/8, no wars on him (KNOWN_ISSUES 36).
+A container reset lost a day of uncommitted work once: push WIP to the session branch at each milestone.
 Never grant a world wonder for free when it must stay unique or be seizable (free grants duplicate and vanish on
 capture). Test mod: branch `test/capability-tests` (slash keeps it a separate mod on download). Edit `data/` or the generators, then LORE_MAPPING.md; the self-tests keep jsons/,
 data/, BALANCE.md's inventory and the document in sync.

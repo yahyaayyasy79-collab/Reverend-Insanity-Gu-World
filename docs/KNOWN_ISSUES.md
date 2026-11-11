@@ -234,6 +234,12 @@ rest of the list is what a player or the next session should know before trustin
     every other clan still ascends in friendly land only, and land owned by another clan or minor clan stays closed to
     him too. Unowned land is safe: the new unit stands where the old one stood.
 
+36. **The righteous clans hunt him through the list, not through wars (Layer 13).** The engine's AI only weighs war
+    against clans whose cities lie within 12 tiles of its own [src ThreatManager.getNeighboringCitiesOfOtherCivs];
+    Fang Yuan's aperture stands 13+ tiles from the Qing Mao clans, and in 8 autoplay games no clan declared war on him.
+    His hunters are the Demon Extermination List's (34) and the righteous clans' +15% against his men. A clan that
+    expands toward him, or a player, can still go to war with him.
+
 ## Not yet seen in a real game
 
 * **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small
