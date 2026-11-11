@@ -17890,6 +17890,11 @@
       "[This Unit] loses the [Aptitude D] promotion",
       "[This Unit] gains the [Aptitude C] promotion",
       "[This Unit] gains [30] XP"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fang Yuan himself, the demon from beyond the heavens (天外之魔): reborn five hundred years back with the Spring Autumn Cicada, grade C aptitude and five centuries of memory. One of his Gu Masters carries him up the ranks to the Venerable (in his clan only he can become one): +30% Strength, twice the XP from combat and 3 XP every turn wherever he stands, +1 Movement, withdraws from melee, keeps his strength when wounded, unseen beyond the next tile, +25% once Fate Gu lies shattered. He climbs the mortal ranks by himself as soon as his clan's lore allows, and ascends in his own land or in the wilds (never in another clan's land). Fallen, he wakes again the next turn with his memories (30 XP), as a rank one, three or five Gu Master by the era, or as the rank-six immortal his Spring Autumn Cicada brings back."
+      }
     ]
   },
   {
@@ -18089,12 +18094,22 @@
       "[This Unit] gains [20] XP <upon defeating a [post-[Rank Five era]] unit>",
       "Gain a free [Sovereign Immortal Fetus] [in capital]",
       "Comment [The dao marks of every path live side by side in it: no path clashes with another, and the region walls do not drag it]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The body Fang Yuan made from the rank-nine Sovereign Immortal Fetus Gu (至尊仙胎蛊), which Spectral Soul's remnant had meant for its own rebirth. The dao marks of every path live in it side by side: no path clashes with another (a Fang Yuan in your hands may walk several paths at no cost; the AI keeps to one), and every immortal he kills feeds him (20 XP). It crosses the region walls without strain. Strong in attack (+40%), it is fragile in defence (-20%). After the Battle of Yi Tian Mountain an immortal Fang Yuan takes it at once; if he falls, the one who returns forms it again when he is an immortal once more."
+      }
     ]
   },
   {
     "name": "Demon Hunt",
     "uniques": [
       "Comment [Hunting a demon of the Demon Extermination List; when the hunt ends the hunter goes home]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The hunt of the Demon Extermination List. When it runs out (10 turns), the hunter goes home."
+      }
     ]
   },
   {
@@ -18111,6 +18126,11 @@
       "Gain a free [Fate Gu Scheme] [in capital]",
       "[This Unit] loses the [Crush Fate Gu] promotion",
       "[+1000]% weight to this choice for AI decisions"
+    ],
+    "civilopediaText": [
+      {
+        "text": "Fang Yuan, in his Sovereign Immortal Body and at rank eight or above, goes for Fate Gu itself: he slips into the Central Continent and waits for the Court's turmoil, fishing in troubled waters. Free to take. While his scheme runs, the Court loses 3 of Fate Gu's mending a turn (Standard), 6 while it is at war, and with less than 8 left Fate Gu breaks in his hand. The scheme dies with his body, and the list hunts him twice as hard meanwhile."
+      }
     ]
   },
   {

@@ -128,12 +128,25 @@ def fang_yuan_icon():
     return g
 
 
+def demon_from_beyond():
+    """Layer 13: Fang Yuan's own body: a shard from beyond breaking through the ring of heaven, the cicada's wings at
+    its root."""
+    g = G()
+    g.arc_band(50, 54, 40, 33, 75, 375)                                         # heaven's ring, broken at the top
+    g.poly([(58, 2), (66, 8), (50, 60), (44, 58)])                              # the shard from outside, falling in
+    g.poly([(44, 58), (50, 60), (46, 72)])
+    for side in (-1, 1):                                                        # the cicada's wings where it lands
+        g.poly([(47, 66), (47 + side * 26, 58), (47 + side * 22, 76)])
+    g.circ(47, 70, 5)
+    return g
+
+
 HEROES = [("Fang Zheng", fang_zheng), ("Bai Ning Bing", bai_ning_bing), ("Xiong Lin", xiong_lin),
           ("Wu Shuai", wu_shuai), ("Duke Long", duke_long), ("Hei Lou Lan", hei_lou_lan), ("Bo Qing", bo_qing),
-          ("Fang Di Chang", fang_di_chang)]
+          ("Fang Di Chang", fang_di_chang), ("Demon from Beyond", demon_from_beyond)]
 HERO_NATION = {"Fang Zheng": "Gu Yue Clan", "Bai Ning Bing": "Bai Clan", "Xiong Lin": "Xiong Clan", "Wu Shuai": "Wu Clan",
                "Duke Long": "Heavenly Court", "Hei Lou Lan": "Huang Jin Family", "Bo Qing": "Zombie Alliance",
-               "Fang Di Chang": "Fang Clan"}
+               "Fang Di Chang": "Fang Clan", "Demon from Beyond": "Fang Yuan"}
 
 
 def icons():

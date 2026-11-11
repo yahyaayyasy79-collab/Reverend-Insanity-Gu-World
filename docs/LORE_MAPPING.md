@@ -1393,11 +1393,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
-[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -1405,7 +1405,9 @@ Ignores terrain cost
 
 ```
 Only available <for [Rank Five Gu Master] units> <after discovering [Calamity Lore]>
-Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <in [Water] tiles>
 Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
@@ -1433,6 +1435,7 @@ Unavailable <when below [90] [Human Qi]> <for [AI player] Civilizations> <on [Ep
 Unavailable <when below [180] [Human Qi]> <for [AI player] Civilizations> <on [Marathon] game speed>
 Triggers a [Ascension] event <for [Rank Five Gu Master] units>
 [This Unit] loses the [Ascension] promotion <upon turn start>
+[+2000]% weight to this choice for AI decisions <for units with [Demon from Beyond]>
 ```
 
 **Lower Grade Blessed Land** (UnitPromotions.json; {"civilopediaText": [{"text": "A lower-grade blessed land (\u4e0b\u7b49\u798f\u5730), the most common: 1 green grape essence, 2 stones and 1 immortal material a turn (red date essence at rank seven)."}]})
@@ -1540,7 +1543,9 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 * Balance the three qi
 
 ```
-Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [60] [Heaven Qi]> <on [Standard] game speed>
@@ -1573,7 +1578,9 @@ Triggers a [Ascension Trial] event
 * Ascend in haste
 
 ```
-Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <in [Water] tiles>
 Unavailable <when below [20] [Heaven Qi]> <on [Quick] game speed>
 Unavailable <when below [30] [Heaven Qi]> <on [Standard] game speed>
@@ -2163,7 +2170,7 @@ MOD_SPEC_2 Phase C, third layer, for the ranks the game has so far (rank six; ra
 
 Exact uniques (written by tools/lore_blocks.py from jsons/; the tiers and moves are in docs/PATHS.md):
 
-**Spring Autumn Cicada** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 390, "civilopediaText": [{"text": "Spring Autumn Cicada (\u6625\u79cb\u8749), rank six, time path: Red Lotus's vital Gu. When its owner loses an immortal, the will may return up the river of time: half the time a new Gu Immortal appears (without a blessed land). Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
+**Spring Autumn Cicada** (Buildings.json; {"isWonder": true, "requiredTech": "Immortal Gu Recipes", "cost": 390, "uniqueTo": "Fang Yuan", "civilopediaText": [{"text": "Spring Autumn Cicada (\u6625\u79cb\u8749), rank six, time path: Red Lotus's vital Gu. When its owner loses an immortal, the will may return up the river of time: half the time a new Gu Immortal appears (without a blessed land). Costs essence on top of production; a captured city keeps it, so conquest seizes the Gu. Its birth may call down a calamity."}]})
 
 ```
 Costs [50] [Green Grape Immortal Essence]
@@ -2494,11 +2501,11 @@ Cannot be purchased
 Unbuildable
 [+15]% Strength <when defending>
 [+200]% maintenance costs
-[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 ```
 
 **Inheritance Trial** (silent die)
@@ -3103,11 +3110,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
-[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3152,11 +3159,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
-[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -3166,11 +3173,11 @@ Ignores terrain cost
 Unbuildable
 [+15]% Strength <when defending>
 [+250]% maintenance costs
-[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [30] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [15] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 ```
 
 **Immemorial Desolate Beast** (Units.json; {"unitType": "Beast", "movement": 3, "strength": 115, "cost": 500, "attackSound": "shot", "uniqueTo": "Barbarians", "civilopediaText": [{"text": "An immemorial desolate beast (\u592a\u53e4\u8352\u517d), about rank eight; one killed a rank-seven immortal of the Heavenly Court. Its corpse yields 50 immortal materials."}]})
@@ -3179,11 +3186,11 @@ Unbuildable
 Unbuildable
 [+15]% Strength <when defending>
 [+300]% maintenance costs
-[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 ```
 
 **Tribulation Survivor** (UnitPromotions.json; {"civilopediaText": [{"text": "This immortal came through a heavenly tribulation and may climb to the next rank."}]})
@@ -3222,7 +3229,9 @@ Triggers a [Heavenly Tribulation] event <upon losing the [Tribulation Countdown]
 ```
 Only available <for [Rank Six Gu Immortal] units> <after discovering [Red Date Essence]> <for units with [Tribulation Survivor]>
 Unavailable <for units without [Dao Marks II]> <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
-Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Green Grape Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [60] [Green Grape Immortal Essence]> <on [Standard] game speed>
@@ -3238,6 +3247,7 @@ Instantly consumes [180] [Green Grape Immortal Essence] <on [Marathon] game spee
 Instantly provides [25] [Lifespan Gu]
 [This Unit] upgrades for free including special upgrades
 [+200]% weight to this choice for AI decisions
+[+2000]% weight to this choice for AI decisions <for units with [Demon from Beyond]>
 ```
 
 **Advance to Rank Eight** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "Climb to rank eight: needs another survived tribulation, dao marks tier III and 60 red date essence on Standard, at home. The blessed land becomes a grotto-heaven. It brings 35 Lifespan Gu."}]})
@@ -3245,7 +3255,9 @@ Instantly provides [25] [Lifespan Gu]
 ```
 Only available <for [Rank Seven Gu Immortal] units> <after discovering [Grotto-Heaven]> <for units with [Tribulation Survivor]>
 Unavailable <for units without [Dao Marks III]> <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
-Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [Red Date Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [60] [Red Date Immortal Essence]> <on [Standard] game speed>
@@ -3266,6 +3278,7 @@ Instantly provides [35] [Lifespan Gu]
 [This Unit] gains the [Grotto-Heaven Aperture] promotion
 [This Unit] upgrades for free including special upgrades
 [+200]% weight to this choice for AI decisions
+[+2000]% weight to this choice for AI decisions <for units with [Demon from Beyond]>
 ```
 
 **Red Date Immortal Essence** (TileResources.json; {"resourceType": "Strategic", "terrainsCanBeFoundOn": [], "civilopediaText": [{"text": "Rank-seven immortal essence (\u7ea2\u67a3\u4ed9\u5143). Blessed lands of rank-seven immortals make it; rank-seven immortal Gu cost it."}]})
@@ -3396,11 +3409,11 @@ Only available <if [Connect Luck] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
-[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3415,11 +3428,11 @@ Only available <if [Years Flow Like Water] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
-[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3434,11 +3447,11 @@ Only available <if [Dream Token] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
-[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3574,11 +3587,11 @@ Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 May travel on Water tiles without embarking
 Ignores terrain cost
-[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 [+100]% maintenance costs
 ```
 
@@ -3589,11 +3602,11 @@ Only available <if [Fate Gu] is constructed>
 Limited to [1] per Civilization
 Can pass through impassable tiles
 [+50]% Strength <vs [pre-[Rank Six era]] units>
-[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [60] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [30] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [60] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 Costs [50] [White Lychee Immortal Essence]
 Costs [60] [Immortal Materials]
 [+500]% maintenance costs
@@ -3631,10 +3644,27 @@ Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is c
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Marathon] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [161]> <before turn number [162]> <on [Quick] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [240]> <before turn number [241]> <on [Standard] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [360]> <before turn number [361]> <on [Epic] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [720]> <before turn number [721]> <on [Marathon] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [161]> <before turn number [162]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [240]> <before turn number [241]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [360]> <before turn number [361]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [720]> <before turn number [721]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Marathon] game speed>
+Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [3] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [2] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [1] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [0] [Fate Restoration]> <on [Marathon] game speed>
+Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [3] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [2] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [1] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [0] [Fate Restoration]> <on [Marathon] game speed>
+Triggers a [Fate Gu Shattered] event <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>
 ```
 
 **Huang Jin Family** (Nations.json; {"leaderName": "Huang Jin Patriarch", "adjective": ["Huang Jin Family"], "personality": "Huang Jin Temperament", "outerColor": [200, 160, 40], "innerColor": [90, 40, 20], "cities": ["Imperial Court", "Golden Tent", "Northern Plains Camp"], "introduction": "The Huang Jin answer to no one on the plains. Speak plainly.", "declaringWar": "The blood of Giant Sun does not ask permission.", "defeated": "Scatter us if you can; one Huang Jin line always survives.", "civilopediaText": [{"text": "The Huang Jin (\u9ec4\u91d1\u5bb6\u65cf), every bloodline of Giant Sun on the Northern Plains. No Huang Jin line may be wiped out; only they may pass the 88 True Yang Building's trial."}]})
@@ -3836,8 +3866,11 @@ Comment [When it runs out, a chaos calamity falls on the Venerable]
 Only available <for [{Rank Eight Gu Immortal} {Supreme Attainment}] units> <after discovering [Dao Lord]>
 Unavailable <if [Venerable Ascension] is constructed by anybody>
 Unavailable <for units without [Dao Marks IV]> <for units without [Dao Marks V]>
-Unavailable <in [Foreign Land] tiles>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
 Unavailable <for [Heavenly Court] Civilizations>
+Unavailable <for [Fang Yuan] Civilizations> <for units without [Demon from Beyond]>
 Unavailable <in [Water] tiles>
 Unavailable <when below [40] [White Lychee Immortal Essence]> <on [Quick] game speed>
 Unavailable <when below [60] [White Lychee Immortal Essence]> <on [Standard] game speed>
@@ -3854,6 +3887,7 @@ Instantly provides [60] [Lifespan Gu]
 [This Unit] gains the [Advancing] status for [1] turn(s)
 [This Unit] upgrades for free including special upgrades
 [+500]% weight to this choice for AI decisions
+[+2000]% weight to this choice for AI decisions <for units with [Demon from Beyond]>
 ```
 
 **Seek Eternal Life** (UnitPromotions.json; {"unitTypes": ["Gu Master", "Moon Gu Master", "Strength Gu Master"], "civilopediaText": [{"text": "The Venerable spends 300 yellow apricot essence (on Standard) on eternal life, Fang Yuan's goal: its clan wins the game."}]})
@@ -4041,11 +4075,11 @@ Can only heal by pillaging <when below [1] [Lifespan Gu]>
 Can pass through impassable tiles
 May travel on Water tiles without embarking
 Ignores terrain cost
-[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile>
-[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile>
-[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile>
+[This Unit] takes [10] damage <upon ending a turn in a [Miasma Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Licorice Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Raging Flame Wall] tile> <for units without [Sovereign Immortal Body]>
+[This Unit] takes [10] damage <upon ending a turn in a [Sage Wall] tile> <for units without [Sovereign Immortal Body]>
 [+50]% Strength <vs [pre-[Rank Six era]] units>
 ```
 
@@ -4676,10 +4710,27 @@ Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is c
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Marathon] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [161]> <before turn number [162]> <on [Quick] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [240]> <before turn number [241]> <on [Standard] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [360]> <before turn number [361]> <on [Epic] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [720]> <before turn number [721]> <on [Marathon] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [161]> <before turn number [162]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [240]> <before turn number [241]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [360]> <before turn number [361]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [720]> <before turn number [721]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Marathon] game speed>
+Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [3] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [2] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [1] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [0] [Fate Restoration]> <on [Marathon] game speed>
+Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [3] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [2] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [1] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [0] [Fate Restoration]> <on [Marathon] game speed>
+Triggers a [Fate Gu Shattered] event <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>
 ```
 
 
@@ -4899,7 +4950,7 @@ Exact uniques (Events.json, GlobalUniques.json, Nations.json):
     `[+50]% weight to this choice for AI decisions`.
   * Meet the coalition in the sand: `[2] [Rank Five Gu Master]s rebel`, `[+0]% weight to this choice for AI decisions`.
 * **Earth tide** (`gen_ruleset.EARTH_TIDE_WALL`): the immortals' lines for the Azure Water Wall read
-  `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile>` at rank six, 15 at seven and 30 at
+  `[This Unit] takes [5] damage <upon ending a turn in a [Azure Water Wall] tile> <for units without [Sovereign Immortal Body]>` at rank six, 15 at seven and 30 at
   eight (the other walls 10 / 30 / 60).
 
 ## Reference audit Layer 1: small stages, rank relics, extreme physiques (the user, 2026-11-08)
@@ -5443,12 +5494,11 @@ Unable to pillage tiles
 [This Unit] is destroyed <upon turn start> <after turn number [260]> <before turn number [261]> <on [Standard] game speed>
 [This Unit] is destroyed <upon turn start> <after turn number [390]> <before turn number [391]> <on [Epic] game speed>
 [This Unit] is destroyed <upon turn start> <after turn number [780]> <before turn number [781]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <on [Quick] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <on [Standard] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <on [Epic] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon defeating a [Fang Yuan] unit>
-Instantly consumes [17] [Fate Restoration] <upon being defeated> <vs [Fang Yuan] units> <for [Heavenly Court] Civilizations> <if [Fate Gu] is constructed> <when above [16] [Fate Restoration]>
+A [Fang Yuan] rebels <upon turn end> <after turn number [20]> <before turn number [21]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [30]> <before turn number [31]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [45]> <before turn number [46]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [90]> <before turn number [91]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Marathon] game speed>
+A [Fang Yuan] rebels <upon defeating a [{Fang Yuan} {Barbarian}] unit>
 Can only heal by pillaging <for [non-[Fang Yuan]] units>
 ```
 
@@ -5557,10 +5607,10 @@ Gain a free [Fate Gu Restored] [in capital] <upon turn start> <if [Fate Gu] is c
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [10] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Standard] game speed>
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [15] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Epic] game speed>
 [1] free [Rank Eight Gu Immortal] units appear <upon turn start> <every [30] turns> <if [Fate Gu Restored] is constructed> <if [Fate Gu] is constructed> <when number of [[Rank Eight Gu Immortal] Units] is less than [6]> <on [Marathon] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <on [Quick] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <on [Standard] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <on [Epic] game speed>
-A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <on [Marathon] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [161]> <before turn number [162]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [240]> <before turn number [241]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [360]> <before turn number [361]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [15] [Fate Restoration] <upon turn start> <after turn number [720]> <before turn number [721]> <if [Fate Gu] is constructed> <when above [14] [Fate Restoration]> <on [Marathon] game speed>
 [+25]% Strength for cities
 Unbuildable
 Cannot be purchased
@@ -5571,7 +5621,6 @@ Triggers the following global alert: [Fate Gu has shattered: the Heavenly Court 
 [+100]% weight to this choice for AI decisions
 [-25]% [Production] [in all cities] <for [10] turns>
 [-25]% [Gold] [in all cities] <for [10] turns>
-[+100]% weight to this choice for AI decisions
 [2] [Rank Seven Gu Immortal]s rebel
 [+20]% Strength <for [10] turns>
 [+50]% weight to this choice for AI decisions
@@ -5582,4 +5631,217 @@ Triggers a [Heaven's Decree] event <upon turn start> <every [60] turns> <if [Fat
 Stockpiled
 Cannot be traded
 Not shown on world screen
+```
+
+## Layer 13: Fang Yuan races everyone for eternal life (the user, 2026-11-09)
+
+The user: Fang Yuan can become a Venerable and competes with the five regions, and with the player, for eternal
+life; he is the world's first demon, hunted most by the Heavenly Court and then by the righteous clans; the Court is
+the final boss, its power a quiet threat to the other regions; he should seem a master of negotiation, strategy,
+manipulation, deduction, survival and social science; before he destroys Fate Gu he "accidentally" gains the body
+that clashes with no dao (Sovereign Body, rank nine) from the Shadow Sect's war with the Court, and the Shadow Sect is
+"complete wealth", the legacy meant to revive Spectral Soul; and the other regions must not be dumb. Verified in the
+raw text (R):
+
+| Claim | Source | Status |
+|---|---|---|
+| Fang Yuan's aptitude is grade C; Fang Zheng's grade A | R V1c8 | CANON |
+| The Yi Tian Mountain war is a righteous-demonic war over the whole Southern Border | R V2c74 | CANON |
+| At Yi Tian the Court came for the Shadow Sect; both lost heavily; the Court won narrowly | R V4c356, V4c369 | CANON |
+| Spectral Soul's remnant refined the rank-nine Sovereign Immortal Fetus Gu over tens of thousands of years to be reborn above every Venerable; Fang Yuan cut it off and entered the fetus himself | R V4c369, V4c371 | CANON |
+| "Accidentally": Star Constellation's hint told him to destroy the fetus; he chose to take it | R V5c1 | CORRECTED: a choice at the decisive moment, not an accident |
+| The Sovereign Immortal Body: dao marks never hinder one another, so killing any Gu Immortal feeds him | R V5c106, V5c140 | CANON |
+| It crosses region walls with ease and passes for a local anywhere | R V5c133, V5c151 | CANON (walls; ascension in the wilds, see below) |
+| It is fragile | R V5c120, V5c158 | CANON |
+| Rank nine (the user's "Sovereign Body Gu Rank 9") | R V4c369 (九转至尊仙胎蛊) | CANON |
+| The Shadow Sect's headquarters and its hidden natural immortal formations are in the Southern Border | R V3c87, V5c599, V5c628 | CANON |
+| Before Yi Tian the Shadow Sect hid him from deduction; after it the Court put him on the Demon Extermination List, resolved to kill him | R V5c93 | CANON |
+| "The world's first demon": near the top of the list | R V5c367 | ADAPTED (the canon says near the top) |
+| The list can find a listed demon | R V5c528 | CANON |
+| He crushed Fate Gu in his hand while the Court was in turmoil (fishing in troubled waters) | R V5c821, V5c939 | CANON |
+| The Hu Immortal blessed land he won on Dang Hun Mountain; its rockmen his slaves | R V2c199, V2c205, V3c4, V3c7 | CANON (his capital stands beside the Rockmen; the blessed land is a secret realm on the map) |
+| A one-city major, his genius as nation uniques, the hunters' numbers | | INVENTED (mechanics) |
+
+**Why a nation.** A barbarian can win nothing, so Fang Yuan is now a major civilization of one city, Fang Yuan's
+Aperture, in the south-west of the Southern Border beside the Rockmen ("Select players from starting locations" picks
+him on the Five Regions map). His body is the hero promotion Demon from Beyond on one of his Gu Masters: it climbs the
+rank chain to the Venerable (in his clan only he can become one) and can win Eternal Life, or take the one
+Venerable's place from everyone else. Fallen, he wakes again the next turn with his memories (30 XP): as a rank one,
+three or five Gu Master by the era, or, while he holds the Spring Autumn Cicada (now his alone), as the rank-six
+immortal the cicada brings back. In games without the nation the old wanderer still comes (the barbarian unit Fang
+Yuan; its return now needs a barbarian Fang Yuan).
+
+**One city, one cultivator (autoplay v1-v4, 8 x 450 each).** A clan's Gu Masters cultivate only inside an academy
+city, climb the mortal ranks only on their clan's land (Unciv's upgrade rule) and ascend only in friendly land (an
+upgrade where the unit may not stand crashes Unciv). With one city his body stood outside his borders most turns: it
+piled up 700-1000 XP it could not spend, and his clan raised a Venerable in 1 game of 8. So he gains 3 XP a turn
+wherever he stands, climbs the mortal ranks by himself (a free upgrade at turn start) and ascends in his own land or
+in the wilds; land owned by another clan or minor clan stays closed to him, which is what the crash guard needs. His
+one city gathers too little of the three qi for an ascension, so he gains one of each a turn once he knows Three Qi.
+His AI weighs every step of his climb (the ascension, the advances, the attainment tiers, the Venerable) 21 times
+heavier than any other promotion, since it otherwise spent its XP on whatever was open. It keeps to one path even in
+the Sovereign body: offered every path it bought two dozen Masters and never the advance to rank seven.
+
+**The genius, in what the engine can do.** He founds no village and keeps what he conquers as puppets (manipulation:
+he rules through others); the minor clans stay bent to him (influence resting 20 higher, decaying 75% slower before
+the Demonic Path's +50%) and a clan allied five turns can be bought outright; allied minor clans feed him a quarter
+of their science (deduction); five hundred years of memory give five techs at the start and +50% science, +25%
+production and stones; his aperture's formations hold +50%. His temperament: science 10, diplomacy and commerce 9,
+loyalty 0, no villages, wars only when they pay. The engine's AI cannot scheme like the novel's Fang Yuan; these make
+its choices look like his.
+
+**Yi Tian Mountain and the body.** On turn 240 (Standard) the Court falls on the Shadow Sect and wins barely, at 15
+of Fate Gu's mending (a world alert). The fetus waits in the ruins: from then on an immortal Fang Yuan takes the
+Sovereign Immortal Body at once (a marker in his capital, a world alert the first time; a Fang Yuan who falls forms
+it again when he is an immortal once more): +40% when attacking, -20% when defending, 20 XP for every immortal he
+kills, no path clashes (the path conflict lines and dao-mark clash lines carry `<for units without [promotion]>`), no
+strain in the region walls.
+
+**The list.** From Yi Tian on, every ten years (13 turns, Standard) a Demon Hunter comes for him beside his capital,
+one more while he is rank eight, one more while he is the Venerable, and two every 7 turns while he stalks Fate Gu.
+Hunters belong to no clan (no trigger can give one clan's units to another), see him hidden, strike only his units and
+city, take and pillage nothing, fight 50% harder while Fate Gu stands whole (they are the Court's men) and go home
+after 10 turns. The Court's own men see him hidden too, and every righteous clan fights his men 15% harder once he is
+listed (on top of the Righteous Path's edge on any demonic clan).
+
+**Fate Gu.** With the body and at rank eight or above, Fang Yuan takes Crush Fate Gu while Fate Gu stands (a free
+promotion: bought with XP against a dozen others the AI took it in 1 game of the 5 where it was open; free, the
+engine's AI takes it at once [src NextTurnAutomation.applyPromotions]): the marker Fate Gu Scheme in his capital costs
+the Court 3 of its mending a turn (Standard), 6 while the Court is at war, and with less than 8 in store Fate Gu
+breaks; the scheme dies with the body. A whole Fate Gu can still be broken this way, slowly. Once Fate Gu lies
+shattered, Fang Yuan fights 25% harder.
+
+**The Shadow Sect.** A city-state on its blessed land in the far south-east, +100% city strength (its hidden
+formations). Its hoard is complete: a spring, jade and the foods of shadow, soul, dream, wisdom, pill and formation
+paths in its first two rings, which its ally receives like any city-state's resources, plus science, stones,
+production, +10% for immortals and +20% XP.
+
+**The other regions.** The autoplay shows the AI clans already build what keeps them alive (Formation Ward 3-8 and
+Stockpile Vault 4-8 of 8 games per clan, Layer 12); their temperaments are left as they are until a game shows a
+mistake.
+
+Exact uniques:
+
+```
+Starts with [Demonic Path] adopted
+Start bias [Hill]
+Cannot build [Clan Settler] units
+May not annex cities
+Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns
+Resting point for Influence with City-States is increased by [20]
+[-75]% City-State Influence degradation
+Allied City-States provide [Science] equal to [25]% of what they produce for themselves
+[5] Free Technologies <upon founding a city> <when number of [Cities] is less than [2]>
+[+50]% [Science] [in all cities]
+[+25]% [Production] [in all cities]
+[+25]% [Gold] [in all cities]
+[+50]% Strength for cities
+Instantly provides [1] [Heaven Qi] <upon turn start> <after discovering [Three Qi]>
+Instantly provides [1] [Earth Qi] <upon turn start> <after discovering [Three Qi]>
+Instantly provides [1] [Human Qi] <upon turn start> <after discovering [Three Qi]>
+Free [Rank One Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <before the [Rank Three era]>
+Free [Rank Three Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Three era]> <before the [Rank Five era]>
+Free [Rank Five Gu Master] appears <upon turn start> <when number of [[Demon from Beyond] Units] is less than [1]> <starting from the [Rank Five era]>
+Remove [Fate Gu Scheme] [in all cities] <upon turn start> <when number of [[Sovereign Immortal Body] Units] is less than [1]>
+[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [161]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Quick] game speed>
+[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [240]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Standard] game speed>
+[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [360]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Epic] game speed>
+[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion <upon turn start> <after turn number [720]> <when number of [[Sovereign Immortal Body] Units] is less than [1]> <on [Marathon] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <on [Quick] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <on [Standard] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <on [Epic] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <on [Marathon] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Quick] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Standard] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Epic] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [[{Demon from Beyond} {Rank Eight Gu Immortal}] Units] is more than [0]> <on [Marathon] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [9] turns> <after turn number [161]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Quick] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [13] turns> <after turn number [240]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Standard] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [20] turns> <after turn number [360]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Epic] game speed>
+A [Demon Hunter] rebels <upon turn start> <every [39] turns> <after turn number [720]> <when number of [[{Demon from Beyond} {Venerable}] Units] is more than [0]> <on [Marathon] game speed>
+[2] [Demon Hunter]s rebel <upon turn start> <every [5] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Quick] game speed>
+[2] [Demon Hunter]s rebel <upon turn start> <every [7] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Standard] game speed>
+[2] [Demon Hunter]s rebel <upon turn start> <every [10] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Epic] game speed>
+[2] [Demon Hunter]s rebel <upon turn start> <every [21] turns> <if [Fate Gu Scheme] is constructed> <if [Fate Gu] is constructed by anybody> <on [Marathon] game speed>
+[+30]% Strength
+[+100]% XP gained from combat
+[This Unit] gains [3] XP <upon turn start>
+[This Unit] upgrades for free <upon turn start> <in tiles without [{Major} {non-[Fang Yuan]}]> <in tiles without [City-States]> <in tiles without [Water]>
+[+1] Movement
+Withdraws before melee combat
+No damage penalty for wounded units
+Invisible to non-adjacent units
+[+25]% Strength <if [Shattered Fate] is constructed by anybody>
+[This Unit] loses the [Aptitude A] promotion
+[This Unit] loses the [Aptitude B] promotion
+[This Unit] loses the [Aptitude D] promotion
+[This Unit] gains the [Aptitude C] promotion
+[This Unit] gains [30] XP
+[+40]% Strength <when attacking>
+[-20]% Strength <when defending>
+[This Unit] gains [20] XP <upon defeating a [post-[Rank Five era]] unit>
+Gain a free [Sovereign Immortal Fetus] [in capital]
+Comment [The dao marks of every path live side by side in it: no path clashes with another, and the region walls do not drag it]
+Comment [Hunting a demon of the Demon Extermination List; when the hunt ends the hunter goes home]
+Only available <for [{Demon from Beyond} {Sovereign Immortal Body} {post-[Rank Seven era]}] units> <if [Fate Gu] is constructed by anybody>
+Unavailable <if [Fate Gu Scheme] is constructed by anybody>
+This Promotion is free
+Gain a free [Fate Gu Scheme] [in capital]
+[This Unit] loses the [Crush Fate Gu] promotion
+[+1000]% weight to this choice for AI decisions
+Unbuildable
+Unable to capture cities
+Unable to pillage tiles
+Can only attack [Fang Yuan] units
+Can see invisible [Fang Yuan] units
+Can pass through impassable tiles
+[+50]% Strength <vs [pre-[Rank Six era]] units>
+May travel on Water tiles without embarking
+Ignores terrain cost
+[+50]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>
+[This Unit] gains the [Demon Hunt] status for [10] turn(s)
+[This Unit] is destroyed <upon losing the [Demon Hunt] status>
+Cannot be purchased
+Triggers the following global alert: [In the ruins of Yi Tian Mountain, Fang Yuan has taken the rank-nine Sovereign Immortal Fetus Gu meant to bring back Spectral Soul. His body now holds every dao.]
+Suppress warning [is both granted free and could possibly be removed by triggers]
+Triggers the following global alert: [Fang Yuan has slipped into the Central Continent: Fate Gu itself is his quarry. Every turn it stands, the Heavenly Court loses ground mending it.]
+A [Fang Yuan] rebels <upon turn end> <after turn number [175]> <before turn number [176]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Quick] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [261]> <before turn number [262]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Standard] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [391]> <before turn number [392]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Epic] game speed>
+A [Fang Yuan] rebels <upon turn end> <after turn number [781]> <before turn number [782]> <when number of [Remaining [Fang Yuan] Civilizations] is less than [1]> <on [Marathon] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [161]> <before turn number [162]> <on [Quick] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [240]> <before turn number [241]> <on [Standard] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [360]> <before turn number [361]> <on [Epic] game speed>
+Triggers the following global alert: [The Battle of Yi Tian Mountain: the Heavenly Court has fallen on the Shadow Sect in the Southern Border and won, barely. Spectral Soul's Sovereign Immortal Fetus is lost in the ruins.] <upon turn start> <after turn number [720]> <before turn number [721]> <on [Marathon] game speed>
+Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [3] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [2] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [1] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when above [0] [Fate Restoration]> <on [Marathon] game speed>
+Instantly consumes [4] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [3] [Fate Restoration]> <on [Quick] game speed>
+Instantly consumes [3] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [2] [Fate Restoration]> <on [Standard] game speed>
+Instantly consumes [2] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [1] [Fate Restoration]> <on [Epic] game speed>
+Instantly consumes [1] [Fate Restoration] <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when at war> <when above [0] [Fate Restoration]> <on [Marathon] game speed>
+Triggers a [Fate Gu Shattered] event <upon turn start> <if [Fate Gu Scheme] is constructed by anybody> <if [Fate Gu] is constructed> <when below [8] [Fate Restoration]>
+[This Unit] gains the [Demon from Beyond] promotion <for [Fang Yuan] Civilizations> <for [Gu Master] units> <when number of [[Demon from Beyond] Units] is less than [1]>
+Can see invisible [Fang Yuan] units <for [Heavenly Court] Civilizations>
+[+15]% Strength <vs [Fang Yuan] units> <after adopting [Righteous Path]> <after turn number [161]> <on [Quick] game speed>
+[+15]% Strength <vs [Fang Yuan] units> <after adopting [Righteous Path]> <after turn number [240]> <on [Standard] game speed>
+[+15]% Strength <vs [Fang Yuan] units> <after adopting [Righteous Path]> <after turn number [360]> <on [Epic] game speed>
+[+15]% Strength <vs [Fang Yuan] units> <after adopting [Righteous Path]> <after turn number [720]> <on [Marathon] game speed>
+[+100]% Strength for cities
+[+2 Science] [in capital]
+[+2 Gold] [in capital]
+[+3 Science] [in capital]
+[+3 Gold] [in capital]
+[+3 Production] [in capital]
+[+10]% Strength <for [post-[Rank Five era]] units>
+[+20]% XP gained from combat
+[+300]% weight to [Spring Autumn Cicada] for AI decisions
+[+100]% weight to [Awakening Grounds] for AI decisions
+[+2000]% weight to this choice for AI decisions <for units with [Demon from Beyond]>
+Unavailable <in [Foreign Land] tiles> <for [non-[Fang Yuan]] Civilizations>
+Unavailable <in [{Major} {non-[Fang Yuan]}] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <in [City-States] tiles> <for [Fang Yuan] Civilizations>
+Unavailable <for [Fang Yuan] Civilizations> <for units without [Demon from Beyond]>
+Unavailable <for [Fang Yuan] Civilizations>
 ```

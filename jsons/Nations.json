@@ -439,7 +439,12 @@
     ],
     "introduction": "Fang Yuan. I have five hundred years on you, so skip the courtesies: what can you offer me?",
     "declaringWar": "Nothing personal. You stand between me and eternal life; that is reason enough.",
-    "defeated": "Is this the end? It never has been, for me."
+    "defeated": "Is this the end? It never has been, for me.",
+    "civilopediaText": [
+      {
+        "text": "Fang Yuan (方源), the demon from beyond the heavens, a clan of one: he races every clan, and you, for eternal life (永生). One city, his own aperture beside the rockmen he made slaves; he founds no village and keeps what he conquers as puppets. He bends the minor clans (influence that holds, a long ally bought outright) and draws a quarter of their science; five hundred years of memory give five techs and +50% science, +25% production and stones; he knows where the three qi pool (+1 of each a turn once he knows Three Qi); his aperture holds +50%. His body is the hero Demon from Beyond, the only one of his clan who can become a Venerable. From the Battle of Yi Tian Mountain he can take the Sovereign Immortal Body and go for Fate Gu, and the Heavenly Court's Demon Extermination List hunts him; every righteous clan fights his men harder."
+      }
+    ]
   },
   {
     "name": "Hairy Man Tribe",
@@ -1018,6 +1023,11 @@
     ],
     "uniques": [
       "[+100]% Strength for cities"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The Shadow Sect (影宗), Spectral Soul's split souls working tens of thousands of years to bring him back, seated in its blessed land in the Southern Border amid hidden natural immortal formations (+100% city strength). Its hoard is complete: a spirit spring, jade, and the foods of the shadow, soul, dream, wisdom, pill and formation paths, all of which its ally receives, with science, stones, production, +10% Strength for immortals and +20% XP. At Yi Tian Mountain the Heavenly Court breaks its plan, and the Sovereign Immortal Fetus falls to Fang Yuan."
+      }
     ]
   },
   {

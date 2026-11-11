@@ -210,6 +210,21 @@ unit add barbarians "Fang Yuan"                 # strength 30 (about 40 from T10
                                                 # anyone has built the Spring Autumn Cicada); in a new game he appears
                                                 # near the Gu Yue village on turn 30 and beside the Court's capital
                                                 # on turn 261 (Standard)
+# Layer 13 (2026-11-09): Fang Yuan the nation (Five Regions: "Select players from starting locations" adds him)
+# play as or against "Fang Yuan": one city (Fang Yuan's Aperture, beside the Rockmen); no Clan Settler to build; one
+# of his Gu Masters holds Demon from Beyond (+30%, double XP, +3 XP a turn, unseen beyond the next tile, grade C), and
+# climbs the mortal ranks by itself at turn start
+unit add fang-yuan "Rank Six Gu Immortal"        # disband his hero first: a turn later a Gu Master of the era's rank
+                                                # appears in his capital with his memories (30 XP)
+civ activatetrigger "[{Demon from Beyond} {post-[Rank Five era]}] units gain the [Sovereign Immortal Body] promotion"
+                                                # as Fang Yuan, with an immortal hero: +40% attacking, -20% defending,
+                                                # 20 XP per immortal killed, no wall strain; Sovereign Immortal Fetus
+                                                # appears in his capital with a world alert; from rank eight, while the
+                                                # Court holds Fate Gu, Crush Fate Gu is free (its mending drains 3 a turn)
+civ activatetrigger "A [Demon Hunter] rebels"   # as Fang Yuan: a hunter beside his capital that sees him hidden and
+                                                # strikes only his units and city; it goes home after 10 turns
+# Five Regions: the Shadow Sect city-state in the far south-east (+100% city strength); ally it to receive its hoard
+# (a spring, jade and six foods) and its stats; on turn 240 (Standard) the Battle of Yi Tian Mountain alert
 # Regions II (2026-11-08): the ten sects, the Wan coalition, the earth tide, the Refinement Conference
 # Five Regions map: the Central Continent holds ten Immortal Sect city-states; each shows its own emblem in diplomacy
 unit add gu-yue-clan "Rank Six Gu Immortal"   # end a turn in the Azure Water Wall: 10 (wall) + 5 (strain) damage;

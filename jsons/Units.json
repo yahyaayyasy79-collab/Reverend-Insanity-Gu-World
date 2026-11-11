@@ -1565,7 +1565,7 @@
     ],
     "civilopediaText": [
       {
-        "text": "Fang Yuan (方源), the demon from beyond the heavens (天外之魔): reborn five hundred years back with the Spring Autumn Cicada, he carries five centuries of memory and cunning, and only one aim: eternal life (永生). He comes to the Gu Yue village on turn 30 (Standard) and wanders unseen, harming no clan and pillaging nothing; on turn 260 he leaves for the Central Continent, where he hunts the Heavenly Court's soldiers to break its mending of Fate Gu. Only an adjacent unit can see him (his Stealth Scales Gu); he slips away from melee, is hard to pin down (+50% when defending, +100% more against city walls), heals every turn and never takes a city. Strength 30 when he comes, about 144 by turn 340; once Fate Gu lies shattered he stands level with a Venerable (176 from turn 390), as he ends the canon as one. Fate Gu cannot read him: a Court soldier he strikes down costs its mending 25. Struck down by a unit, his Spring Autumn Cicada brings him back near his killer's city."
+        "text": "Fang Yuan (方源), the demon from beyond the heavens (天外之魔): reborn five hundred years back with the Spring Autumn Cicada, he carries five centuries of memory and cunning, and only one aim: eternal life (永生). He comes to the Gu Yue village on turn 30 (Standard) and wanders unseen, harming no clan and pillaging nothing; on turn 260 he leaves for the Central Continent, where he hunts the Heavenly Court's soldiers to break its mending of Fate Gu. Only an adjacent unit can see him (his Stealth Scales Gu); he slips away from melee, is hard to pin down (+50% when defending, +100% more against city walls), heals every turn and never takes a city. Strength 30 when he comes, about 144 by turn 340; once Fate Gu lies shattered he stands level with a Venerable (176 from turn 390), as he ends the canon as one. Fate Gu cannot read him: a Court soldier he strikes down costs its mending 25. Struck down by a unit, his Spring Autumn Cicada brings him back near his killer's city. Since Layer 13 he comes only in games without the Fang Yuan nation."
       }
     ]
   },
@@ -1591,6 +1591,11 @@
       "[+50]% Strength <if [Fate Gu Restored] is constructed by anybody> <if [Fate Gu] is constructed by anybody>",
       "[This Unit] gains the [Demon Hunt] status for [10] turn(s)",
       "[This Unit] is destroyed <upon losing the [Demon Hunt] status>"
+    ],
+    "civilopediaText": [
+      {
+        "text": "A hunter of the Demon Extermination List (诛魔榜), the Heavenly Court's roll of demons to be killed, issued every ten years: a Court immortal or a righteous one who answers the bounty. After the Battle of Yi Tian Mountain the list names Fang Yuan; every ten years (13 turns, Standard) a hunter comes for him beside his capital, more as he climbs and while he stalks Fate Gu. The list finds a listed demon, so a hunter sees him hidden; it strikes only Fang Yuan's men and city, takes and pillages nothing, fights 50% harder while Fate Gu stands whole, and goes home after 10 turns. It belongs to no clan."
+      }
     ]
   }
 ]

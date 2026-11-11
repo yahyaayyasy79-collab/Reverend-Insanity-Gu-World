@@ -332,6 +332,17 @@ public class Autoplay {
                 Set<String> promos = new HashSet<>(u.getPromotions().getPromotions());
                 Set<String> statuses = new HashSet<>(u.getStatusMap().keySet());
                 for (String pr : promos) inc(allPromotions, pr, 1);  // every promotion, not only Gu that eat
+                if (promos.contains("Demon from Beyond")) {   // Layer 13: Fang Yuan's own body
+                    StringBuilder can = new StringBuilder();
+                    Iterator<com.unciv.models.ruleset.unit.Promotion> ap = u.getPromotions().getAvailablePromotions().iterator();
+                    while (ap.hasNext()) {
+                        String pn = ap.next().getName();
+                        if (pn.equals("Crush Fate Gu") || pn.equals("Ascend to Venerable") || pn.equals("Seek Eternal Life")
+                                || pn.equals("Ascension") || pn.startsWith("Advance to")) can.append(pn).append('|');
+                    }
+                    rec.put("hero", u.getName() + ":" + u.getHealth() + ":" + u.getPromotions().getXP() + ":" + nb + ":"
+                            + u.getPromotions().xpForNextPromotion() + ":" + can);
+                }
                 for (String st : statuses) inc(allStatuses, st, 1);   // killer moves, hunger, target statuses
                 now.put(u.getId(), new UnitState(c.getCivName(), promos, statuses, nb, u.getHealth()));
                 UnitState p = prev.get(u.getId());

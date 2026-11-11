@@ -9,7 +9,7 @@ from __future__ import annotations
 import math
 
 from .glyphs import G, fist, gu_beetle, human, pips
-from .glyphs2 import aperture, coin, octagon_array, ranked_gu_master, roof
+from .glyphs2 import aperture, coin, octagon_array, ranked_gu_master, roof, scroll
 
 
 def _cloud(g: G, cx, cy, w, v=255):
@@ -602,6 +602,79 @@ def fate_restoration():
     return g
 
 
+def sovereign_body():
+    """Layer 13: the Sovereign Immortal Body: a curled body in a ring of nine marks, the dao of every path in one."""
+    g = G()
+    for k in range(9):
+        t = math.radians(90 + 40 * k)
+        g.circ(50 + 42 * math.cos(t), 50 - 42 * math.sin(t), 5)
+    g.circ(58, 36, 11)                                                          # the head
+    g.arc_band(48, 54, 24, 13, 150, 420)                                        # the body, curled
+    return g
+
+
+def demon_hunt():
+    """Layer 13: the Demon Extermination List: a scroll, a sword through it."""
+    g = G()
+    scroll(g, 50, 58, 30, 22)
+    g.line([(18, 92), (84, 12)], 7, 0)                                          # the sword's gap
+    g.line([(22, 88), (82, 14)], 4)                                             # the blade
+    g.line([(20, 72), (36, 88)], 5)                                             # the guard
+    return g
+
+
+def crush_fate_gu():
+    """Layer 13: Fate Gu's eye cracked from rim to rim, a fist closing on it."""
+    g = fate_gu()
+    g.line([(42, 4), (54, 30), (44, 52), (58, 96)], 8, 0)
+    fist(g, 70, 76, 0.55)
+    return g
+
+
+def sovereign_fetus():
+    """Layer 13: the rank-nine fetus Gu: an egg with a curled body inside and nine marks on its shell."""
+    g = G()
+    g.ell(24, 8, 76, 92)
+    g.circ(56, 38, 9, 0); g.arc_band(48, 56, 19, 11, 150, 420, 0)
+    for k in range(9):
+        t = math.radians(200 + 17.5 * k)
+        g.circ(50 + 20 * math.cos(t), 50 - 36 * math.sin(t), 2.2, 0)
+    return g
+
+
+def fate_gu_scheme():
+    """Layer 13: a hand in the dark reaching for Fate Gu's eye along a thread."""
+    g = fate_gu()
+    g.line([(2, 98), (26, 74)], 6)                                              # the arm from the shadows
+    for dx, dy in ((-2, -12), (6, -10), (11, -4)):                              # its fingers, spread
+        g.line([(26, 74), (26 + dx, 74 + dy)], 4)
+    g.line([(26, 62), (40, 54)], 2.5)                                           # the thread it follows
+    return g
+
+
+def demon_hunter_icon():
+    """Layer 13: an immortal under a halo, a long sword drawn."""
+    g = G(); human(g, 42, 18, 1.05)
+    g.arc_band(42, 18, 18, 14, 200, 340)
+    g.line([(58, 44), (88, 6)], 5)                                              # the blade
+    g.line([(52, 40), (64, 50)], 5)                                             # the guard
+    return g
+
+
+def fang_yuan_nation():
+    """Layer 13: the Spring Autumn Cicada before a ring of fate split open: the demon who will break it."""
+    g = G()
+    g.circ(50, 50, 44); g.circ(50, 50, 37, 0)                                   # the ring of fate
+    g.poly([(64, 0), (80, 0), (60, 36), (52, 30)], 0)                           # split open
+    g.ell(42, 30, 58, 76); g.circ(50, 28, 7)                                    # the cicada
+    for side in (-1, 1):
+        g.poly([(50, 40), (50 + side * 32, 26), (50 + side * 28, 48)])
+        g.poly([(50, 52), (50 + side * 26, 56), (50 + side * 18, 70)])
+    for y in (48, 58, 68):
+        g.line([(43, y), (57, y)], 2, 0)
+    return g
+
+
 def immortal_zombie_icon():
     """A stiff figure with arms forward and a dead halo."""
     g = G(); human(g, 50, 18, 1.05, arms="forward")
@@ -737,6 +810,14 @@ ICONS3 = [
     ("BuildingIcons", "Fate Seized", fate_seized, "black"),
     ("BuildingIcons", "Fate Gu Restored", fate_restored, "black"),
     ("ResourceIcons", "Fate Restoration", fate_restoration, "black"),
+    # Layer 13
+    ("UnitPromotionIcons", "Sovereign Immortal Body", sovereign_body, "white"),
+    ("UnitPromotionIcons", "Demon Hunt", demon_hunt, "white"),
+    ("UnitPromotionIcons", "Crush Fate Gu", crush_fate_gu, "white"),
+    ("BuildingIcons", "Sovereign Immortal Fetus", sovereign_fetus, "black"),
+    ("BuildingIcons", "Fate Gu Scheme", fate_gu_scheme, "black"),
+    ("UnitIcons", "Demon Hunter", demon_hunter_icon, "white"),
+    ("NationIcons", "Fang Yuan", fang_yuan_nation, "white"),
     ("UnitIcons", "Immortal Zombie", immortal_zombie_icon, "white"),
     ("UnitIcons", "Heaven Overseeing Tower", heaven_overseeing_tower, "white"),
     ("TechIcons", "Rank Nine Immortal Gu Recipes", recipes_rank(9), "white"),

@@ -10,7 +10,7 @@ Builds, from the mod's own designed silhouettes (and the 3D leader figures):
   (tools/art/pixelunits.py) get the same shadow (`Images.Units/UnitPortraits/Background.png`);
 * a splash screen for every wonder (`Images.Wonders/WonderImages/<name>.png`, 2:1): an enamel dusk, a gold sun,
   ridges edged in gold, the wonder's medallion, a double gold border;
-* the eight majors' leader portraits (`Images/LeaderIcons/<leader>.png`): the leader in gold on the nation's enamel;
+* the nine majors' leader portraits (`Images.Victories/LeaderIcons/<leader>.png`): the leader in gold on the nation's enamel;
 * the victory illustrations (tools/art/victories.py) and Civilopedia icons for the unit types.
 
 Policy icons stay flat white: Unciv tints them by state (pickable, adopted) [src PolicyPickerScreen.PolicyButton].
@@ -209,7 +209,7 @@ def splash(draw, colour, key, w=256, h=128) -> Image.Image:
 LEADER_LOOK = {   # nation: (figure, rank)
     "Gu Yue Clan": ("moon", 4), "Bai Clan": ("water", 4), "Xiong Clan": ("strength", 4), "Wu Clan": ("wind", 4),
     "Heavenly Court": ("immortal", 8), "Huang Jin Family": ("immortal", 6), "Zombie Alliance": ("zombie", 6),
-    "Fang Clan": ("plain", 5)}
+    "Fang Clan": ("plain", 5), "Fang Yuan": ("immortal", 7)}
 
 
 def leader(nation: dict, px=256) -> Image.Image:
@@ -303,7 +303,11 @@ def build(registry, mod: Path, save) -> int:
     nations = json.loads((mod / "jsons" / "Nations.json").read_text(encoding="utf-8"))
     for n in nations:
         if n.get("leaderName") and n["name"] in LEADER_LOOK:
-            written += save(leader(n), mod / "Images" / "LeaderIcons" / f"{n['leaderName']}.png")
+            # Layer 13: nine leaders overflowed game.png into a game2.png (Unciv warns); the Victories atlas has room
+            stale = mod / "Images" / "LeaderIcons" / f"{n['leaderName']}.png"
+            if stale.exists():
+                stale.unlink()
+            written += save(leader(n), mod / "Images.Victories" / "LeaderIcons" / f"{n['leaderName']}.png")
     from . import victories   # layered scenes: Unciv stacks milestones, Won and Lost over the background
     written += victories.build(mod, json.loads((mod / "jsons" / "VictoryTypes.json").read_text(encoding="utf-8")), save)
     units = json.loads((mod / "jsons" / "Units.json").read_text(encoding="utf-8"))

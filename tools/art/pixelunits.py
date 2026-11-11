@@ -436,6 +436,26 @@ def fang_yuan(s: Sprite):
     s.light(hx, hy - 1.2, (255, 250, 200))
 
 
+def demon_hunter(s: Sprite):
+    """Layer 13: a hunter of the Demon Extermination List (诛魔榜): an immortal in white and gold on a cloud, a long
+    sword of white light drawn, a red seal of the list at the belt. A symbol of the role, no likeness."""
+    cx, feet = SOLDIER, FEET - 4
+    s.shadow(cx, FEET + 0.4, 6.5, 1.8, a=0.2)
+    ribbon(s, cx, feet - 16, (250, 236, 190), phase=0.7, r=10.5)
+    s.glow(s.ellipse(cx, feet - 28, 7.6, 7.6) & ~s.ellipse(cx, feet - 28, 6.2, 6.2), (255, 226, 150), 0.9)
+    hand = person(s, cx, feet, float_=True, hair="long", mantle=True, cap=True, robe=_ramp((226, 228, 236)),
+                  trim=_ramp((214, 172, 74)), sash=_ramp((190, 30, 36)))
+    for x, r in ((cx - 6, 3.8), (cx + 1, 4.8), (cx + 7.5, 3.6)):
+        s.round(s.ellipse(x, feet + 0.8, r, r * 0.62), CLOUD)
+    hx, hy = hand[0] + 0.6, hand[1] - 1.5                                       # the drawn sword, up and out
+    s.put(s.poly([(hx - 0.6, hy), (hx + 0.6, hy), (hx + 7.2, hy - 15.5), (hx + 6.0, hy - 16.0)]), (236, 244, 255))
+    s.put(s.poly([(hx - 2.2, hy + 0.8), (hx + 2.2, hy - 0.8), (hx + 2.6, hy + 0.2), (hx - 1.8, hy + 1.8)]), (214, 172, 74))
+    s.outline()
+    eyes(s, cx, feet)
+    s.glow(s.poly([(hx, hy), (hx + 7.6, hy - 16.4), (hx + 5.4, hy - 16.4)]), (220, 236, 255), 0.5)
+    s.light(hx + 6.6, hy - 15.6, (255, 255, 255))
+
+
 def immortal_zombie(s: Sprite):
     """An immortal zombie (仙僵): grey-green skin, stiff arms held out, a torn robe, pale glowing eyes, ghost fire."""
     cx = SOLDIER - 1
@@ -953,7 +973,7 @@ SPRITES = {   # name: (draw, design rows above the hex for tall subjects)
     "Rank Six Gu Immortal": (gu_immortal(6), 4), "Rank Seven Gu Immortal": (gu_immortal(7), 6),
     "Rank Eight Gu Immortal": (gu_immortal(8), 8), "Venerable": (venerable, 10),
     "Lone Gu Master": (lone_gu_master, 0), "Demonic Gu Master": (demonic(3), 0), "Demonic Elder": (demonic(5), 0),
-    "Immortal Zombie": (immortal_zombie, 0), "Fang Yuan": (fang_yuan, 0),
+    "Immortal Zombie": (immortal_zombie, 0), "Fang Yuan": (fang_yuan, 0), "Demon Hunter": (demon_hunter, 6),
     "Clan Settler": (clan_settler, 0), "Mortal Laborer": (mortal_laborer, 0),
     "Lightning Wolf": (wolf(), 0), "Bold Lightning Wolf": (wolf(1.2, 44, mane=True, streaks=2), 0),
     "Thunder Crown Wolf": (wolf(1.55, 37, mane=True, crown=True, streaks=2), 6),
@@ -977,6 +997,7 @@ ATTACKS = {   # name: (draw, frames); every unit has its own, so the unit-type f
     "Rank Six Gu Immortal": strike(6), "Rank Seven Gu Immortal": strike(7), "Rank Eight Gu Immortal": strike(8),
     "Venerable": strike(9), "Lone Gu Master": strike(2), "Demonic Gu Master": blood_slash(3),
     "Demonic Elder": blood_slash(5), "Immortal Zombie": miasma_claw(), "Fang Yuan": blood_slash(6),
+    "Demon Hunter": strike(7),
     "Clan Settler": None, "Mortal Laborer": None,
     "Lightning Wolf": lightning(), "Bold Lightning Wolf": lightning(), "Thunder Crown Wolf": lightning(crown=True),
     "Frenzy Lightning Wolf": lightning(),
@@ -1007,7 +1028,7 @@ def _portrait_colours(name):
             return CLAN[clan]
     if name in ("Lone Gu Master", "Demonic Gu Master", "Demonic Elder", "Fang Yuan") or "Wolf" in name or "Desolate" in name:
         return CLAN["Barbarians"]
-    if name == "Heaven Overseeing Tower" or "Immortal" in name and "Zombie" not in name or name == "Venerable":
+    if name in ("Heaven Overseeing Tower", "Venerable", "Demon Hunter") or "Immortal" in name and "Zombie" not in name:
         return CLAN["Heavenly Court"]
     if name == "Immortal Zombie":
         return CLAN["Zombie Alliance"]
@@ -1032,7 +1053,8 @@ def _ground(cv: Canvas, name: str):
     elif "Demonic" in name or name == "Fang Yuan":
         cv.patch(cv.ellipse(32, 30, 22, 12), ((44, 10, 14), (76, 18, 22), (104, 30, 30), (134, 50, 44), (170, 80, 64)),
                  "blood ground", specks=0.1)
-    elif "Immortal" in name or name == "Venerable" or name in ("Dragon Palace", "Myriad Year Flying Warship", "Dou Shen Palace"):
+    elif "Immortal" in name or name in ("Venerable", "Demon Hunter", "Dragon Palace", "Myriad Year Flying Warship",
+                                         "Dou Shen Palace"):
         for x, y, r in ((12, 22, 4.4), (52, 20, 4.4), (20, 40, 4), (46, 42, 4.2), (32, 10, 4)):
             cv.cloud(x, y, r)
     elif name in ("Calamity Luck Altar", "Heaven Overseeing Tower"):

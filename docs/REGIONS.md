@@ -122,7 +122,8 @@ armed and near a target (CAPABILITIES E14). The arc majors met those gates on 6-
 | Northern Plains | 3 free techs and three rank-two Gu Masters, −15% stones, +25% military production, +3 happiness (so the engine's AI can declare war, E14), the most warlike temperament, and the Imperial Court Contest every ~13 turns |
 | Eastern Sea | 3 free techs, +25% stones; the Fate Hunt on the Zombie Alliance while Fate Gu stands |
 | Western Desert | 2 free techs, +20% stones, a trading and cooperative temperament |
-| Southern Border | Unchanged: the baseline, and already at war |
+| Southern Border | Unchanged: the baseline, and already at war. Layer 13 (2026-11-09): Fang Yuan, a major of one city, in its south-west beside the Rockmen; the Shadow Sect city-state and its complete hoard in the far south-east; the Battle of Yi Tian Mountain (turn 240, Standard) |
+| The Court hunts the first demon (Layer 13) | After Yi Tian the Demon Extermination List sends hunters (no clan's units) against Fang Yuan every ten years, more as he climbs and while he stalks Fate Gu; the Court's men see him hidden; the righteous fight his men 15% harder. His scheme on Fate Gu drains its mending (twice as fast while the Court is at war) |
 | Ten great sects (Regions II) | All ten on the map as Immortal Sect city-states with +50% city strength, on their canon seats where the text names one (Heavenly Lotus's blessed land, Ancient Soul above the Earth Abyss in the far west, Myriad Dragon Dock on Dragon Lake beside the Immortal Crane Sect) |
 | Refinement Conference (Regions II) | A world event every ~130 turns (a hundred years): pay 150 stones for 20 Immortal Materials and +33% production on immortal Gu for 20 turns, or 60 stones for 8 materials, or stay home |
 | Wan coalition (Regions II) | The Wan clan of Gao Song Oasis as a city-state; a Fang clan holding more than three cities may face the coalition: pay 200 stones or meet two rank-five Gu Masters in the sand |

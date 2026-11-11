@@ -217,6 +217,23 @@ rest of the list is what a player or the next session should know before trustin
     Yuan, a clan at war with the Court, a beast or a demonic Gu Master. A Court that loses many soldiers early never
     mends it; one left in peace mends it in about 70 turns (Standard).
 
+33. **Fang Yuan is a nation of one city, not a schemer (Layer 13, 2026-11-09).** A barbarian can win nothing, so he is a
+    major; the engine's AI plays him like any clan, only with his temperament (science, diplomacy and trade first, no
+    loyalty, no villages) and nation uniques that look like his genius (puppets, minor clans bent to him, free techs,
+    +50% science). He cannot negotiate a betrayal or plan a trap. If his capital falls he is out of the game for good,
+    like any clan; his hero only returns while the city stands. Add him in the new-game screen ("Select players from
+    starting locations" does it on the Five Regions map); without the nation, the old barbarian wanderer comes instead.
+
+34. **The Demon Extermination List's hunters belong to no clan (Layer 13).** No trigger can give one civ's units to
+    another, so the Court's hunters are barbarian units that strike only Fang Yuan's units and city; the Court's own
+    army never marches on him (its declareWar stays 0, KNOWN_ISSUES 31). They come beside his capital, not beside his
+    hero, and go home after 10 turns.
+
+35. **Fang Yuan ascends in his land or the wilds, never in another clan's (Layer 13).** In the canon his body passes
+    for a local anywhere (R V5c151). An upgrade where the unit may not stand crashes Unciv [src UnitUpgradeManager], so
+    every other clan still ascends in friendly land only, and land owned by another clan or minor clan stays closed to
+    him too. Unowned land is safe: the new unit stands where the old one stood.
+
 ## Not yet seen in a real game
 
 * **Ink Night portraits on Android (2026-11-02).** Check that portraits fill their slot on a dark disc, not a small

@@ -106,6 +106,10 @@ def main(argv: list[str]) -> int:
     # Fang Yuan's icon and Layer 12's two (2026-11-10) overflowed game.png too
     food_icons = {("ResourceIcons", f) for f in new_foods} | {("UnitIcons", "Fang Yuan"), ("BuildingIcons", "Fate Gu Restored"),
                                                               ("ResourceIcons", "Fate Restoration")}
+    # Layer 13's (2026-11-09) likewise
+    food_icons |= {("UnitPromotionIcons", n) for n in ("Sovereign Immortal Body", "Demon Hunt", "Crush Fate Gu", "Demon from Beyond")} | {
+        ("BuildingIcons", "Sovereign Immortal Fetus"), ("BuildingIcons", "Fate Gu Scheme"), ("UnitIcons", "Demon Hunter"),
+        ("NationIcons", "Fang Yuan"), ("NationIcons", "Shadow Sect"), ("CityStateIcons", "Shadow Sect")}
     for folder, name, _, _ in registry:
         if folder == "UnitPromotionIcons" and " Hunger " in name and name.split(" Hunger ")[0] in food_gu:
             food_icons.add((folder, name))

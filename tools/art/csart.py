@@ -9,7 +9,7 @@ from __future__ import annotations
 import math
 
 from .arcart import _cloud
-from .glyphs import G, wolf_head
+from .glyphs import G, human, wolf_head
 from .glyphs2 import coin, ding, flame, roof, waves
 
 
@@ -497,6 +497,23 @@ def dong_fang_tribe():
         g.line([(50 - w, y), (50 + w, y)], 3.2)
     return g
 
+def shadow_sect():
+    """Layer 13: the Shadow Sect: a cultivator whose long shadow stands up on its own, a soul flame above it."""
+    g = G(); human(g, 36, 22, 0.95)
+    g.poly([(52, 96), (90, 96), (84, 56), (70, 50)])                            # the shadow, risen
+    g.circ(78, 40, 9); g.poly([(70, 38), (86, 38), (78, 10)])                   # its soul flame
+    return g
+
+
+def shadow_sect_type():
+    """Layer 13: the Shadow Sect's kind: a soul flame splitting into three."""
+    g = G()
+    for dx, top in ((-22, 30), (0, 6), (22, 30)):
+        g.circ(50 + dx, top + 36, 12); g.poly([(50 + dx - 11, top + 32), (50 + dx + 11, top + 32), (50 + dx, top)])
+    g.circ(50, 84, 8)
+    return g
+
+
 CITY_STATE_ICONS = [(n, f) for n, f in (
     ("Hairy Man Tribe", hairy_man_tribe), ("Foothill Villages", foothill_villages), ("Jia Clan", jia_clan),
     ("Lang Ya Sect", lang_ya_sect), ("Man Tribe", man_tribe), ("Ge Tribe", ge_tribe),
@@ -509,8 +526,9 @@ CITY_STATE_ICONS = [(n, f) for n, f in (
     ("Lan Clan", lan_clan), ("Xiao Clan", xiao_clan), ("Mo Clan", mo_clan), ("Wan Clan", wan_clan),
     ("Feathermen", feathermen), ("Snowmen", snowmen), ("Inkmen", inkmen), ("Rockmen", rockmen),
     ("Tie Clan", tie_clan), ("Tang Clan", tang_clan), ("Shen Clan", shen_clan), ("Ma Tribe", ma_tribe),
-    ("Liu Tribe", liu_tribe), ("Dong Fang Tribe", dong_fang_tribe))]
-FOLK_ICONS = [("Winged Folk", winged_folk), ("Snow Folk", snow_folk), ("Ink Folk", ink_folk), ("Stone Folk", stone_folk)]
+    ("Liu Tribe", liu_tribe), ("Dong Fang Tribe", dong_fang_tribe), ("Shadow Sect", shadow_sect))]
+FOLK_ICONS = [("Winged Folk", winged_folk), ("Snow Folk", snow_folk), ("Ink Folk", ink_folk), ("Stone Folk", stone_folk),
+              ("Shadow Sect", shadow_sect_type)]
 
 
 def icons():

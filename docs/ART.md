@@ -176,9 +176,9 @@ study (ink and jade, bronze medallion, spirit glow, ink night), with the full pa
 * **Units** keep their 3D portraits, now on the Ink Night disc (`Images.Units/UnitPortraits/Background.png`, 128 px).
 * **Wonder splash screens.** All 87 wonders have one (`Images.Wonders/WonderImages/`, 256 × 128): a misty ink
   landscape of layered ridges at night with a moon, and the wonder's portrait in its ensō.
-* **Leaders.** The eight majors' leaders are ink silhouettes, rim-lit in the nation's colour, before a great moon
+* **Leaders.** The nine majors' leaders are ink silhouettes, rim-lit in the nation's colour, before a great moon
   inside an ensō, each with its clan's path signs (moon blades, water rings, an immortal's halo) and seal
-  (`Images/LeaderIcons/`).
+  (`Images.Victories/LeaderIcons/`, in the Victories atlas since Layer 13: a ninth leader overflowed game.png).
 * **Victories** (fixed the same day: the user saw "only the white disc"). Unciv shows the `Background` always and stacks
   each reached milestone, `Won` or `Lost` over it [src VictoryScreenIllustrations]. The first version's background
   was an empty ensō, so that was all a new game showed. Now each victory is a layered scene (`tools/art/victories.py`):

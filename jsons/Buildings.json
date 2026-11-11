@@ -2275,6 +2275,11 @@
       "Unbuildable",
       "Cannot be purchased",
       "Triggers the following global alert: [In the ruins of Yi Tian Mountain, Fang Yuan has taken the rank-nine Sovereign Immortal Fetus Gu meant to bring back Spectral Soul. His body now holds every dao.]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The mark that Fang Yuan has taken the Sovereign Immortal Fetus from the ruins of Yi Tian Mountain: Spectral Soul's tens of thousands of years of planning, now his body."
+      }
     ]
   },
   {
@@ -2286,6 +2291,11 @@
       "Cannot be purchased",
       "Suppress warning [is both granted free and could possibly be removed by triggers]",
       "Triggers the following global alert: [Fang Yuan has slipped into the Central Continent: Fate Gu itself is his quarry. Every turn it stands, the Heavenly Court loses ground mending it.]"
+    ],
+    "civilopediaText": [
+      {
+        "text": "The mark of Fang Yuan's scheme on Fate Gu. While it stands and Fate Gu stands, the Heavenly Court loses ground mending it every turn, twice as fast while it fights a war, and Fate Gu breaks once the store runs under 8. It vanishes if his Sovereign Immortal Body falls."
+      }
     ]
   },
   {
